@@ -1,0 +1,106 @@
+<html> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    
+                    <pb-media-query query="min-width: 770px">
+                        <aside class="content-static__info-map">
+                            <p><pb-i18n key="places.aside.titre">Para saber más...</pb-i18n></p>
+                            <p><pb-i18n key="places.aside.para1">Haga clic en la imagen para descubrir nuestro mapa interactivo de topónimos.</pb-i18n></p>
+                            <a href="https://desenrollandoelcordel.github.io/peripleo-pliegos" target="_blank"><img src="resources/images/peripleo.png" width="100%"/></a>
+                        </aside>
+                    </pb-media-query>
+                    
+                    <main class="content-static" style="margin-right:6em;">
+                        <h1 class="content-static__main-title">
+                            <pb-i18n key="places.titre">Topónimos</pb-i18n>
+                        </h1>
+                        
+                        <pb-media-query query="max-width: 769px">
+                            <aside class="content-static__info-map">
+                                <p><pb-i18n key="places.aside.titre">Para saber más...</pb-i18n></p>
+                                <p><pb-i18n key="places.aside.para1">Haga clic en la imagen para descubrir nuestro mapa interactivo de topónimos.</pb-i18n></p>
+                                <a href="https://desenrollandoelcordel.github.io/peripleo-pliegos" target="_blank"><img src="resources/images/peripleo.png" width="100%"/></a>
+                            </aside>
+                        </pb-media-query>
+                        
+                        <div class="content-static_places-div">
+                            <h2><pb-i18n key="places.soustitre1">Objetivos y opciones científicas</pb-i18n></h2>
+                            
+                            <p><pb-i18n key="places.para1">Esta página presenta un estudio de nuestro corpus desde el punto de vista de los topónimos. Nuestros objetivos son 1) enriquecer nuestras ediciones digitales con información geográfica, 2) desarrollar un mapa interactivo que permita explorar dichos lugares, y 3) analizar estadísticamente los lugares identificados.</pb-i18n></p>
+                            <p><pb-i18n key="places.para2">Los topónimos se detectaron automáticamente utilizando el marco Flair, y después los enriquecimos manualmente con información nueva para ayudarnos a alcanzar nuestros objetivos. Para una presentación detallada del proceso técnico y las herramientas utilizadas, consulte la página Aspectos técnicos.</pb-i18n></p>
+                            <p><pb-i18n key="places.para3">Al tener en cuenta la antigüedad de nuestro corpus y la utilización de un repositorio moderno (Wikidata) para geolocalizar los topónimos, tuvimos que tomar una serie de decisiones para conciliar estos dos aspectos y poder localizar los lugares en un mapa:</pb-i18n>
+                                <ul style="width:95%;">
+                                    <li><pb-i18n key="places.item1">Nombres antiguos: si su forma moderna existe en Wikidata, le asignamos las coordenadas geográficas asociadas a la denominación moderna (por ejemplo, Golfo de Lepanto = Golfo de Corinto); si las denominaciones antiguas están presentes en Wikidata, asignamos las coordenadas correspondientes (por ejemplo, Castilla Vieja, Tracia).</pb-i18n></li>
+                                    <li><pb-i18n key="places.item2">Si una región y una ciudad tienen el mismo nombre y no es posible diferenciarlas, utilizamos las coordenadas geográficas de la ciudad.</pb-i18n></li>
+                                    <li><pb-i18n key="places.item3">En el caso de los nombres de calles, barrios o plazas, si el texto lo permite, los hemos asociado a las coordenadas de una ciudad específica.</pb-i18n></li>
+                                    <li><pb-i18n key="places.item4">Algunos lugares no aparecen en el mapa, bien porque son inclasificables, como Calidonio o Lacerda, bien porque son ambiguos, como la calle Limones o la Torre de San Pablo, que pueden corresponder a varios lugares. La lista de estas localidades figura en el índice.</pb-i18n></li>
+                                </ul>
+                            </p>
+                        </div>
+                        
+                        <div class="content-static_places-div">
+                            <h2><pb-i18n key="places.soustitre2">Análisis general del corpus</pb-i18n></h2>
+                            <p><pb-i18n key="places.para4">Los gráficos y las tablas se han elaborado con la herramienta R. Los datos proceden del análisis de los topónimos del corpus Moreno. A continuación, estos topónimos se cruzaron con otros datos, como la fecha de publicación o el nombre del editor. El código está disponible en</pb-i18n> Github.</p>
+                            
+                            <img src="resources/images/statistiques/graphique1.png" width="100%"/>
+                            
+                            <p><pb-i18n key="places.para5">Este gráfico pone de manifiesto la variedad de topónimos mencionados en el corpus. Mientras que España destaca por aparecer más de 200 veces, la frecuencia de otros topónimos disminuye rápidamente y se caracteriza por esta larga sucesión, con lugares mencionados 1 o 2 veces en el corpus. Sólo el 25 % de los lugares se citan más de 4 veces. La mitad de los lugares se citan menos de 2 veces.</pb-i18n></p>
+                            
+                                <h3><pb-i18n key="places.soustitre3">Los topónimos más comunes</pb-i18n></h3>
+                                <img src="resources/images/statistiques/graphique2.png" width="100%"/>
+                                <!--<p>[Explications]</p>-->
+                        </div>
+                        
+                        <div class="content-static_places-div">
+                            <h2><pb-i18n key="places.soustitre4">Análisis específicos</pb-i18n></h2>
+                            
+                            <h3><pb-i18n key="places.soustitre5">Distribución de topónimos por fecha de publicación</pb-i18n></h3>
+                            <table>
+                                <tr>
+                                    <td><img src="resources/images/statistiques/graphique3.png" width="100%"/></td>
+                                    <td><img src="resources/images/statistiques/graphique4.png" width="100%"/></td>
+                                </tr>
+                            </table>
+                            
+                            <p><pb-i18n key="places.para6">Clave de lectura: De todas las apariciones del lugar de Valencia, el 68,4 % tuvieron lugar entre 1850 y 1859.</pb-i18n></p>
+                            
+                            <h3><pb-i18n key="places.soustitre6">Distribución de los lugares según el aspecto sagrado/profano del texto</pb-i18n></h3>
+                            <table>
+                                <tr>
+                                    <td><img src="resources/images/statistiques/graphique5.png" width="100%"/></td>
+                                    <td><img src="resources/images/statistiques/graphique6.png" width="100%"/></td>
+                                </tr>
+                            </table>
+                            <p><pb-i18n key="places.para7">Clave de lectura : Roma representa el 13,8 % de los topónimos citados en los textos sagrados (sobre la base de topónimos citados más de 20 veces).</pb-i18n></p>
+                        </div>
+                    </main>
+                    
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+    
+</html>

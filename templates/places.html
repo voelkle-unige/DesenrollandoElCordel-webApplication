@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Index - Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <meta name="pb-template" content="places.html"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!--CSS & Javascript -->
+        <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+        <script type="module" src="pb-leaflet-map.js" data-template="pages:load-components"/>
+        
+        <style>
+            main {
+                max-width: 41rem;
+                margin: 0 auto;
+            }
+            pb-leaflet-map {
+                height: 40vh;
+                width: 100%;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+                <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <!-- Menu de navigation -->
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    
+                    <!-- Affichage de la carte -->
+                    <pb-leaflet-map id="map" subscribe="map" emit="map" zoom="4" cluster="" latitude="47.3686498" longitude="8.5391825">
+                        <pb-map-layer show="" base="" label="Mapbox OSM" url="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}" max-zoom="19" access-token="pk.eyJ1IjoibGVibGFuY2UiLCJhIjoiY2xsZGdrNmpoMGJqYTNjbHc3MjZ4YjJyMyJ9.DhLSLX7dGhny3yjw5fZGLQ" attribution="© Mapbox © OpenStreetMap">
+                        </pb-map-layer>
+                    </pb-leaflet-map>
+                    
+                    <!-- Breadcrumbs -->
+                    <header class="page-pliegos__filariane" data-template="pages:parse-params" data-path="/contexts/places/" data-target="toolbar-start">
+                        <a href="${app}/"><pb-i18n key="inicio.titre">Inicio</pb-i18n></a> &gt;                                 
+                        <pb-i18n key="places.index">Índice de lugares</pb-i18n>                               
+                    </header>  
+                    
+                    <main>
+                        <!-- Barre de recherche -->
+                        <pb-custom-form id="options" auto-submit="paper-input,paper-icon-button" emit="transcription">
+                            <paper-input id="query" name="search">
+                                <paper-icon-button icon="search" slot="suffix"/>
+                            </paper-input>
+                        </pb-custom-form>
+                        
+                        <p style="font-style:italic;margin-top:5px;margin-bottom:10px;font-size:11pt;">
+                            <pb-i18n key="places.nota">
+                                NB: Los nombres seguidos de un asterisco (*) pueden referirse a más de un lugar y no se han podido desambiguar a partir de los textos, o indican lugares inexistentes.
+                                Estos lugares no figuran en el mapa.
+                            </pb-i18n>
+                        </p>
+                        
+                        <!-- Liste des noms de lieux -->
+                        <pb-split-list url="api/places" subforms="#options" selected="A" emit="transcription" subscribe="transcription"/>
+                    </main>
+                    
+                    <footer data-template="lib:include" data-template-path="templates/footer.html"/>
+                </app-header-layout>
+        </pb-page>
+        <div class="splash"/>
+        <script>
+            window.addEventListener('WebComponentsReady', function() {
+                pbEvents.subscribe('pb-page-ready', null, function() {
+                    const endpoint = document.querySelector("pb-page").getEndpoint();
+                    const url = `${endpoint}/api/places/all`;
+                    console.log(`fetching places from: ${url}`);
+                    fetch(url)                
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(json) {
+                        pbEvents.emit("pb-update-map", "map", json)
+                    });
+                });
+
+                pbEvents.subscribe('pb-leaflet-marker-click', 'map', function(ev) {
+                    const label = ev.detail.label;
+                    const category = label.substring(0, 1);
+                    window.location = `places/${label}?category=${category}`;
+                });
+            });
+        </script>
+        
+    </body>
+</html>

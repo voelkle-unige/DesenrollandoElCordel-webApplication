@@ -1,0 +1,46 @@
+<app-toolbar class="page-pliegos__toolbar" sticky="sticky">
+    <div data-template="api:breadcrumbs-pliegos"/>
+
+    <section class="page-pliegos__breadcrumbs">
+        <pb-view id="page-pliegos__breadcrumbs-title" src="document1" xpath="//teiHeader/fileDesc" view="single">
+            <pb-param name="mode" value="title"/>
+        </pb-view>
+    </section>
+    
+    <section class="page-pliegos__toolbar-buttons">
+        <paper-button id="metadataToggle" class="toc-toogle" raised="raised" style="background-color:var(--pb-color-primary-green);color:var(--pb-color-primary);">
+            <pb-i18n key="notice.ficha"/>
+        </paper-button>
+        <paper-button id="tocToggle" class="toc-toggle" raised="raised" style="background-color:var(--pb-color-primary-green);color:var(--pb-color-primary);">
+            <pb-i18n key="notice.contenidos"/>
+        </paper-button>
+        <paper-button id="placesToggle" class="toc-toggle" raised="raised" style="background-color:var(--pb-color-primary-green);color:var(--pb-color-primary);">
+            <pb-i18n key="notice.places.button"/>
+        </paper-button>
+        <paper-button id="engravingToggle" class="toc-toggle" raised="raised" style="background-color:var(--pb-color-primary-green);color:var(--pb-color-primary);">
+            <pb-i18n key="notice.ilustraciones"/>
+        </paper-button>
+        <paper-button id="descargarToggle" class="toc-toggle" raised="raised" style="background-color:var(--pb-color-primary-green);color:var(--pb-color-primary);">
+            <pb-i18n key="notice.descargar.button"/>
+        </paper-button>
+        <!--<paper-button id="miradorButton" raised="raised" style="background-color:var(-\-pb-color-primary-green);color:var(-\-pb-color-primary);">
+            <span data-template="api:get-manifest"/>
+        </paper-button>
+        <a href="../ayuda.html" target="_blank" title="Go to the help page">
+            <iron-icon class="infobulle_mirador" icon="icons:help"/>
+        </a>-->
+        
+        <!--<pb-restricted login="login">
+            <pb-ajax subscribe="transcription" emit="transcription" url="api/odd" method="post" data-template="pages:parse-params" event="pb-refresh" title="Recompile ODD" data-i18n="[title]menu.admin.recompile">
+                <h3 slot="title"><pb-i18n key="menu.admin.recompile"/></h3>
+                <paper-icon-button icon="icons:refresh"/>
+            </pb-ajax>
+        </pb-restricted>-->
+    </section>
+    
+    <!--<a href="${app}/index.html?collection=${collection}" data-i18n="[title]browse.${collection}.title" title="" data-template="pages:parse-params">
+        <paper-icon-button icon="icons:folder-open"/>
+    </a>-->
+    
+    <!--<pb-progress subscribe="transcription" indeterminate="indeterminate" bottom-item="bottom-item"/>-->
+</app-toolbar>

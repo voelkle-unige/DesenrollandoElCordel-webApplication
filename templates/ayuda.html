@@ -1,0 +1,153 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    
+                    <main class="content-static">
+                        <h1 class="content-static__main-title">
+                            <pb-i18n key="ayuda.titre"/>
+                        </h1>
+                        
+                        <div class="content-static__collapsible">
+                            <!-- Fonctionnalités de recherche -->
+                            <div>
+                                <input type="checkbox" checked=""/>
+                                <h2 class="content-static__collapsible-title">
+                                    <span class="content-static__collapsible-plus">+</span>
+                                    <span class="content-static__collapsible-minus">-</span>
+                                    <pb-i18n key="search.helpSearch.titrePrincipal"/>
+                                </h2>
+                                
+                                <div class="content-static__collapsible-text">
+                                    
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gAh6_iE5lEo" referrerpolicy="no-referrer" SameSite="Strict" Secure="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""/>
+                                    
+                                    <div>
+                                        <h3><pb-i18n key="search.placeholder"/></h3>
+                                        <p>
+                                            <pb-i18n key="search.helpSearch.para1"/>
+                                            <ul>
+                                                <li><pb-i18n key="search.helpSearch.listItem1"/></li>
+                                                <li><pb-i18n key="search.helpSearch.listItem2"/></li>
+                                                <li><pb-i18n key="search.helpSearch.listItem3"/></li>
+                                                <li><pb-i18n key="search.helpSearch.listItem4"/></li>
+                                                <li><pb-i18n key="search.helpSearch.listItem5"/></li>
+                                                <li><pb-i18n key="search.helpSearch.listItem6"/></li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    
+                                    <div>
+                                        <h3><pb-i18n key="search.helpSearch.titre2"/></h3>
+                                        <p><pb-i18n key="search.helpSearch.para2"/></p>
+                                    </div>
+                                    
+                                    <div>
+                                        <h3><pb-i18n key="search.helpSearch.titre3"/></h3>
+                                        <p><pb-i18n key="search.helpSearch.para3"/></p>
+                                        <p><pb-i18n key="search.helpSearch.para4"/></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <!-- Mirador -->
+                            <!--<div>
+                                <input type="checkbox" checked=""/>
+                                <h2 class="content-static__collapsible-title">
+                                    <span class="content-static__collapsible-plus">+</span>
+                                    <span class="content-static__collapsible-minus">-</span>
+                                    <pb-i18n key="ayuda.mirador.titre"/>
+                                </h2>
+                                
+                                <div class="content-static__collapsible-text">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rw8wXEfFX7o" referrerpolicy="no-referrer" SameSite="Strict" Secure="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""/>
+                                    <ol>
+                                        <li><pb-i18n key="ayuda.mirador.item1"/></li>
+                                        <li><pb-i18n key="ayuda.mirador.item2"/></li>
+                                        <li><pb-i18n key="ayuda.mirador.item3"/></li>
+                                        <li><pb-i18n key="ayuda.mirador.item4"/></li>
+                                        <li><pb-i18n key="ayuda.mirador.item5"/></li>
+                                    </ol>
+                                </div>
+                            </div>-->
+                            
+                            <!-- VDiff -->
+                            <div>
+                                <input type="checkbox" checked=""/>
+                                <h2 class="content-static__collapsible-title">
+                                    <span class="content-static__collapsible-plus">+</span>
+                                    <span class="content-static__collapsible-minus">-</span>
+                                    <pb-i18n key="ayuda.vdiff.titre"/>
+                                </h2>
+                                
+                                <div class="content-static__collapsible-text">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vuQ2atOZ978" referrerpolicy="no-referrer" SameSite="Strict" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""/>
+                                    
+                                    <ol>
+                                        <li><pb-i18n key="ayuda.vdiff.item1"/></li>
+                                        <li><pb-i18n key="ayuda.vdiff.item2"/></li>
+                                        <li><pb-i18n key="ayuda.vdiff.item3"/></li>
+                                        <li><pb-i18n key="ayuda.vdiff.item4"/></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <!-- Peripleo -->
+                            <div>
+                                <input type="checkbox" checked=""/>
+                                <h2 class="content-static__collapsible-title">
+                                    <span class="content-static__collapsible-plus">+</span>
+                                    <span class="content-static__collapsible-minus">-</span>
+                                    <pb-i18n key="ayuda.peripleo.titre">Exploración de los topónimos (Peripleo)</pb-i18n>
+                                </h2>
+                                
+                                <div class="content-static__collapsible-text">
+                                    <!--<p>[Vidéo]</p>-->
+                                    
+                                    <ol>
+                                        <li><pb-i18n key="ayuda.peripleo.item1">En el menú, haga clic en "Resultados" y, a continuación, en "Mapa". Se abrirá un mapa en una nueva pestaña del navegador.</pb-i18n></li>
+                                        <li><pb-i18n key="ayuda.peripleo.item2">Puede hacer una visita guiada de la herramienta (en español) haciendo clic en el botón "Sí, haz la visita", o ver nuestro vídeo tutorial más arriba. Para saltarse la visita guiada, haga clic en "No, gracias".</pb-i18n></li>
+                                        <li><pb-i18n key="ayuda.peripleo.item3">Este mapa muestra todos los lugares mencionados en el corpus. Hay varias formas de estudiar estos lugares:</pb-i18n>
+                                            <ul>
+                                                <li><pb-i18n key="ayuda.peripleo.item4">Si está interesado en un lugar concreto, puede buscarlo haciendo clic en la lupa situada en la parte superior izquierda de la pantalla. Cuando empiece a escribir el nombre de un lugar, la herramienta le sugerirá automáticamente una serie de lugares, lo que le permitirá ver/verificar si el lugar que busca está presente en nuestro corpus. Al hacer clic en un lugar de la lista de sugerencias, el mapa se acercará a él.</pb-i18n></li>
+                                                <li><pb-i18n key="ayuda.peripleo.item5">Haciendo clic en el ícono del embudo (a la izquierda de la pantalla), puede filtrar los topónimos por ocurrencia, impresor, lugar de publicación, tipo de lugar, tipo de texto, texto sagrado/profano o fecha. Al escoger un tipo de filtro, los colores de los puntos cambian en el mapa. Para seleccionar un único filtro, haga clic en él. Por ejemplo, si sólo desea ver los lugares mencionados en sainetes, pulse sobre la palabra "sainetes" en la categoría "Tipos de texto". Puede filtrar varias facetas dentro de la misma categoría o cruzar varias categorías juntas.</pb-i18n></li>
+                                            </ul>
+                                        </li>
+                                        <li><pb-i18n key="ayuda.peripleo.item6">Al hacer clic en un punto del mapa, aparece una pequeña ventana. Esta muestra el número de veces que aparece un lugar determinado en todos los corpus y el número de documentos en los que se menciona dicho lugar.</pb-i18n></li>
+                                        <li><pb-i18n key="ayuda.peripleo.item7">Si hace clic en el enlace "Ver los {X} pliegos", la ventana mostrará la lista de documentos en los que aparece ese lugar. Para ver el texto del documento, pulse sobre su título: se abrirá una nueva ventana que mostrará el texto en nuestra biblioteca digital.</pb-i18n></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+    
+</html>

@@ -1,0 +1,786 @@
+<?xml-model href="Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_033">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Primera parte de los romances de Don Claudio y Doña Margarita</title>
+                        <respStmt xml:id="PJ">
+                              <name>Pauline Jacsont</name>
+                              <resp>Segmentación y transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="LF">
+                              <name>Lorysmar Franco</name>
+                              <resp>Corrección de la transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="EL">
+                              <name>Elina Leblanc</name>
+                              <resp>Codificación TEI</resp>
+                        </respStmt>
+                  </titleStmt>
+                  <publicationStmt>
+                        <authority role="rightsHolder">Bibliothèque Universitaire de
+                              Genève</authority>
+                        <availability status="restricted">
+                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+                        </availability>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <biblFull>
+                              <titleStmt>
+                                    <title type="titulo_completo">Primera parte, de los romances de
+                                          Don Claudio y Doña Margarita.</title>
+                                    <title type="titulo_breve"/>
+                              </titleStmt>
+                              <editionStmt>
+                                    <p/>
+                              </editionStmt>
+                              <publicationStmt>
+                                    <publisher>Herederos de la Viuda Pla</publisher>
+                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+                                    <date cert="low" when="1800-01-01">[s.a.]</date>
+                              </publicationStmt>
+                        </biblFull>
+                        <msDesc>
+                              <msIdentifier>
+                                    <country>Suisse</country>
+                                    <settlement>Genève</settlement>
+                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+                                    </repository>
+                                    <collection>Colección Varios</collection>
+                                    <idno type="cote"/>
+                                    <idno type="DOI">10.5281/zenodo.6817766</idno>
+                                    <altIdentifier>
+                                          <idno type="num_impresor"/>
+                                    </altIdentifier>
+                              </msIdentifier>
+                              <msContents>
+                                    <summary>Dos partes</summary>
+                                    <msItem>
+                                          <locus>1-5</locus>
+                                          <title>Primera parte, de los romances de Don Claudio y
+                                                Doña Margarita.</title>
+                                    </msItem>
+                                    <msItem>
+                                          <locus>5-8</locus>
+                                          <title>Segunda parte.</title>
+                                    </msItem>
+                              </msContents>
+                              <physDesc>
+                                    <objectDesc>
+                                          <supportDesc>
+                                                <support>
+                                                  <dim>in-4</dim>
+                                                  <material rend="amarillo"/>
+                                                </support>
+                                                <extent>
+                                                  <measure unit="página" quantity="8"/>8 p.</extent>
+                                                <condition>Bueno</condition>
+                                          </supportDesc>
+                                          <layoutDesc>
+                                                <p>2 columnas</p>
+                                          </layoutDesc>
+                                    </objectDesc>
+                                    <decoDesc>
+                                          <summary n="2">Dos grabados (p.1)</summary>
+                                          <decoNote type="lista_grabados">
+                                                <list>
+                                                      <item corresp="grabado_b_033_1.xml" facs="varios/BCN_033_1.jpg/198,148,600,800/100,/0/default.jpg">grabado_b_033_1</item>
+                                                      <item corresp="grabado_b_033_2.xml" facs="varios/BCN_033_1.jpg/1150,263,430,720/100,/0/default.jpg">grabado_b_033_2</item>
+                                                </list>
+                                          </decoNote>
+                                    </decoDesc>
+                                    <additions/>
+                              </physDesc>
+                              <history/>
+                        </msDesc>
+                  </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                  <projectDesc>
+                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+                              Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
+                              profesora Constance Carta de la Universidad de Ginebra, con el apoyo
+                              de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+                  </projectDesc>
+                  <editorialDecl corresp="#automaticTranscription">
+                        <correction>
+                              <p>OCR corregido</p>
+                        </correction>
+                        <normalization>
+                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
+                                    original.</p>
+                        </normalization>
+                        <punctuation>
+                              <p>Se conserva la puntuación original.</p>
+                        </punctuation>
+                  </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+                  <langUsage>
+                        <language ident="es">Español</language>
+                  </langUsage>
+                  <textClass>
+                        <keywords xml:base="http://datos.bne.es/tema/">
+                              <term target="XX527614.html" type="tipo_texto">Romances</term>
+                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+                              <term type="verso_prosa">Verso</term>
+                              <term type="sagrado_profano">Profano</term>
+                        </keywords>
+                  </textClass>
+            </profileDesc>
+            <revisionDesc>
+                  <change when="2023-10-11" who="#EL">Création du fichier TEI P5 et encodage du
+                        corps du texte</change>
+                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+            </revisionDesc>
+      </teiHeader>
+
+      <facsimile>
+            <graphic url="varios/BCN_033_1.jpg/full/200,/0/default.jpg"/>
+      </facsimile>
+      <text>
+            <body>
+                  <div>
+                        <div>
+                              <pb n="1" source="BCN_033_1.jpg" facs="varios/BCN_033_1.jpg/"/>
+
+                              <div type="parte" n="1">
+                                    <head type="primer_titulo">
+                                          <lb/>PRIMERA PARTE, DE LOS ROMANCES<lb/>DE DON CLAUDIO Y
+                                          DOÑA MARGARITA.</head>
+
+                                    <l><hi rend="negrita">O</hi>y señores, oy se alienta</l>
+                                    <l>mi discurso por un rato,</l>
+                                    <l>á referir las mayores</l>
+                                    <l>penas, congojas, trabajos</l>
+                                    <l>de una principal señora,</l>
+                                    <l>la cual en un reyno estraño</l>
+                                    <l>vino á vivir de tal suerte,</l>
+                                    <l>que de su venida y estado</l>
+                                    <l>de padecer fué la causa,</l>
+                                    <l>como lo iré declarando.</l>
+                                    <l>Estaba, pues, en la corte,</l>
+                                    <l>siendo grande de palacio,</l>
+                                    <l>de Francia un gran cavallero,</l>
+                                    <l>cuyo nombre era don Claudio:</l>
+                                    <l>rendido de la hermosura</l>
+                                    <l>de esta señora, ha intentado,</l>
+                                    <l>por lograr su estrecho amor,</l>
+                                    <l>entrar en su mismo cuarto</l>
+                                    <l>por las tapias de un jardin,</l>
+                                    <l>hizo avance, y reparando</l>
+                                    <l>era el alfombrado suelo</l>
+                                    <l>de aqueste hechizo descanso;</l>
+                                    <l>con las flechas de Cupido,</l>
+                                    <l>aunque no sin sobresalto,</l>
+                                    <l>con fino amor atropella</l>
+                                    <l>los terminos del recato.</l>
+                                    <l>Entró en su cuarto y apenas</l>
+                                    <l>vido el Sol tan á su salvo</l>
+                                    <l>con alhagos la acaricia,</l>
+                                    <l>con finezas la ha templado.</l>
+                                    <l>Dijo entonces la señora</l>
+                                    <l>el semblante demudado:</l>
+                                    <l>Que es aquesto, caballero?</l>
+                                    <l>mucho, aquesta accion estraño,</l>
+                                    <l>si buscais retraimiento,</l>
+                                    <l>el motivo es mi cuidado,</l>
+                                    <l>siendo la ocasion disculpa,</l>
+                                    <l>todo está á vuestro mandado.</l>
+                                    <l>Dijo el caballero entonces:</l>
+                                    <l>señora vengo buscando</l>
+                                    <l>todo mi total remedio,</l>
+                                    <l>cuando en fino amor me abraso:</l>
+                                    <l>Y no os admire, que yo</l>
+                                    <l>haga aqueste exceso, cuando</l>
+                                    <fw type="reclamo">vi-</fw>
+
+                                    <pb n="2" source="BCN_033_2.jpg" facs="varios/BCN_033_2.jpg/"/>
+
+                                    <l>vivo solo en vuestras luces,</l>
+                                    <l>me mantenga con los rayos.</l>
+                                    <l>Bien sabeis mi calidad,</l>
+                                    <l>y que en el estrecho lazo</l>
+                                    <l>del matrimonio se igualan</l>
+                                    <l>las calidades de entrambos.</l>
+                                    <l>Si os hizo Dios tan hermosa,</l>
+                                    <l>no estrañes que mi cuydado</l>
+                                    <l>se anticipe de esta suerte;</l>
+                                    <l>no puedo mas remediarlo.</l>
+                                    <l>Dijole asi la señora:</l>
+                                    <l>Debajo de ese contrato</l>
+                                    <l>(ya que habeis hecho el arrojo)</l>
+                                    <l>á vuestro gusto me allano.</l>
+                                    <l>Estos fueron los principios</l>
+                                    <l>paraque estrecho lazo</l>
+                                    <l>lograran de matrimonio</l>
+                                    <l>el efecto consumado;</l>
+                                    <l>siendo de los dos testigo</l>
+                                    <l>un soberano retrato</l>
+                                    <l>de la Virgen de la paz</l>
+                                    <l>Madre del Verbo encarnado.</l>
+                                    <l>Se efectuáron las bodas</l>
+                                    <l>con rumbo y aparato</l>
+                                    <l>que en tal caso corresponde,</l>
+                                    <l>segun el porte de entrambos.</l>
+                                    <l>Ya fenecidas las bodas,</l>
+                                    <l>por mayordomo han tomado</l>
+                                    <l>un mozo de mucho porte,</l>
+                                    <l>don Alberto era llamado:</l>
+                                    <l>demonio devió de ser</l>
+                                    <l>pues entre los dos casados,</l>
+                                    <l>con su dañada intencion</l>
+                                    <l>introdujo tal estrago.</l>
+                                    <l>Fué preciso el ausentarse,</l>
+                                    <l>su esposa y casa dejando,</l>
+                                    <l>y obedeciendo á su Rey,</l>
+                                    <l>fué á la campaña don Claudio:</l>
+                                    <l>Dejó en casa el mayordomo,</l>
+                                    <l>juntamente dos criados,</l>
+                                    <l>paraque á su esposa asistan,</l>
+                                    <l>y que estén á su mandado;</l>
+                                    <l>tambien algunas criadas,</l>
+                                    <l>y una dueña, que á su lado</l>
+                                    <l>no le falta á la señora,</l>
+                                    <l>que es de la virtud dechado.</l>
+                                    <l>Quedó la noble señora</l>
+                                    <l>con mucha pena y quebranto</l>
+                                    <l>por la ausencia de su esposo,</l>
+                                    <l>á quien estimaba tanto.</l>
+                                    <l>Doblemos aqui la hoja,</l>
+                                    <l>y vamos á que arrestado</l>
+                                    <l>el traydor del mayordomo,</l>
+                                    <l>con pecho falso y dañado,</l>
+                                    <l>en lascivos pensamientos</l>
+                                    <l>quiso emplear su cuydado;</l>
+                                    <l>que quien tiene mala sangre</l>
+                                    <l>obra en fin como villano.</l>
+                                    <l>Intentó (gran desverguenza!)</l>
+                                    <l>manchar (accion de inhumano!)</l>
+                                    <l>el honor á la señora,</l>
+                                    <l>su respeto atropellando.</l>
+                                    <l>Rompió el silencio la voz;</l>
+                                    <l>un dia que salió al campo,</l>
+                                    <l>por divertir sus pasiones,</l>
+                                    <l>y dar treguas al cuydado.</l>
+                                    <l>Con la ocasion de asistirla</l>
+                                    <l>el mayordomo, ha llegado,</l>
+                                    <l>y con cifradas razones</l>
+                                    <l>su maldad fué declarando,</l>
+                                    <l>hasta que dijo: señora,</l>
+                                    <l>en fuego de amor me abraso,</l>
+                                    <l>gocemos de la ocasion,</l>
+                                    <l>con la ausencia de mi amo.</l>
+                                    <l>Era muger muy prudente,</l>
+                                    <l>y con disimulo estraño,</l>
+                                    <l>sin ser de nadie notada,</l>
+                                    <l>esta respuesta le ha dado:</l>
+                                    <l>Vive Dios, hombre traydor,</l>
+                                    <l>si lo que dices, villano,</l>
+                                    <l>no entendiera que era chanza,</l>
+                                    <l>y que es lisonja del prado,</l>
+                                    <l>yo misma os diera la muerte</l>
+                                    <l>yo, si os hiciera pedazos:</l>
+                                    <fw type="reclamo">re-</fw>
+
+                                    <pb n="3" source="BCN_033_3.jpg" facs="varios/BCN_033_3.jpg/"/>
+
+                                    <l>reprima su fantasía,</l>
+                                    <l>y agradezca que no hago,</l>
+                                    <l>por solo escusar la nota,</l>
+                                    <l>con él un exceso estraño.</l>
+                                    <l>Quedó Alberto muy corrido,</l>
+                                    <l>suspenso y avergonzado</l>
+                                    <l>discurriendo en la ocasion</l>
+                                    <l>vengarse como tirano.</l>
+                                    <l>Cumplió el amo su campaña,</l>
+                                    <l>y en su esposa contemplando,</l>
+                                    <l>anhelaba por llegar</l>
+                                    <l>á su casa y á sus brazos.</l>
+                                    <l>Trazó una grande traicion,</l>
+                                    <l>con un testimonio falso,</l>
+                                    <l>que el gusto volvió en veneno,</l>
+                                    <l>y en rigor trocó el alhago.</l>
+                                    <l>Bajó la noble señora,</l>
+                                    <l>por recibir, en los brazos</l>
+                                    <l>su dueño y querido esposo</l>
+                                    <l>la casa se ha alborotado.</l>
+                                    <l>Bajaba tambien un page,</l>
+                                    <l>que desde niño han criado,</l>
+                                    <l>y delante de su ama</l>
+                                    <l>con una hacha alumbrando.</l>
+                                    <l>Bajaba Alberto tambien,</l>
+                                    <l>y del demonio incitado;</l>
+                                    <l>quiso lograr la ocasion</l>
+                                    <l>que el tiempo le está brindando.</l>
+                                    <l>Se juntaron en la mesa</l>
+                                    <l>de la escalera y sacando</l>
+                                    <l>un puñal, le dió la muerte</l>
+                                    <l>al page que va nombrado;</l>
+                                    <l>quedó la señora inmobil,</l>
+                                    <l>viendo tan notable estrago,</l>
+                                    <l>al tiempo que el caballero</l>
+                                    <l>subia ya á su descanso.</l>
+                                    <l>Que es esto, dice, que es esto?</l>
+                                    <l>y el traydor, disimulado,</l>
+                                    <l>ha dicho: aqueste traydor</l>
+                                    <l>en este sitio ha violado</l>
+                                    <l>tu honor y yo soy testigo,</l>
+                                    <l>y asi he querido vengarlo.</l>
+                                    <l>La noble señora entonces,</l>
+                                    <l>aumentando el sobresalto,</l>
+                                    <l>amortecida cayó</l>
+                                    <l>á los pies de este malvado.</l>
+                                    <l>Entonces el caballero,</l>
+                                    <l>afligido y angustiado</l>
+                                    <l>lloraba su infausta suerte,</l>
+                                    <l>todo el hecho confirmando.</l>
+                                    <l>Ay mi Margarita, dice,</l>
+                                    <l>como lo que estoy mirando</l>
+                                    <l>con tanta evidencia, juzgo</l>
+                                    <l>que no es capaz de tu estado.</l>
+                                    <l>Si en ti no hay culpa, desdicen</l>
+                                    <l>los afectos inhumanos;</l>
+                                    <l>pero no tiene remedio,</l>
+                                    <l>el Cielo te dé su amparo.</l>
+                                    <l>Dejóla y al retirarse,</l>
+                                    <l>el corazon quebrantado,</l>
+                                    <l>le ofrece el amor disculpas,</l>
+                                    <l>que no admite el ser honrado.</l>
+                                    <l>Vuelta su esposa en su acuerdo,</l>
+                                    <l>su pena va duplicando,</l>
+                                    <l>viendo que en su esposo obravan</l>
+                                    <l>los efectos del agravio.</l>
+                                    <l>No halla disculpa, ni halla</l>
+                                    <l>con que aclarar del villano</l>
+                                    <l>la traicion, ni halla tampoco</l>
+                                    <l>por donde salir del cargo:</l>
+                                    <l>satisfacer con razones,</l>
+                                    <l>diciendo lo que ha pasado,</l>
+                                    <l>no lo prueba, que es indicio,</l>
+                                    <l>de que él lo ha fomentado,</l>
+                                    <l>y por disculpar su error</l>
+                                    <l>quiere culpar al criado:</l>
+                                    <l>y asi, no hallando remedio,</l>
+                                    <l>todo lo remite en llanto.</l>
+                                    <l>Dijo su esposo: á esta fiera</l>
+                                    <l>la habeis de sacar al campo,</l>
+                                    <l>y de las mas altas peña</l>
+                                    <l>cual precipitado rayo,</l>
+                                    <l>la arrojad y luego al punto</l>
+                                    <l>abriendo el pecho tirano,</l>
+
+                                    <pb n="4" source="BCN_033_4.jpg" facs="varios/BCN_033_4.jpg/"/>
+
+                                    <l>sacareisle el corazon</l>
+                                    <l>con un dedo de la mano,</l>
+                                    <l>me lo trahereis, porque quede</l>
+                                    <l>satisfecho de este agravio.</l>
+                                    <l>Vos mayordomo, no ireis</l>
+                                    <l>á ejecutar lo que mando,</l>
+                                    <l>porque aunque os preciais de fino,</l>
+                                    <l>estais muy apasionado:</l>
+                                    <l>(parece que el corazon</l>
+                                    <l>la traicion está dictando.)</l>
+                                    <l>Dos criados la cogieron,</l>
+                                    <l>y retirandola al campo,</l>
+                                    <l>entre peñas y entre riscos</l>
+                                    <l>con gran dolor la han entrado.</l>
+                                    <l>Van los dos muy satisfechos,</l>
+                                    <l>de que es testimonio falso,</l>
+                                    <l>ya la inocencia del ama</l>
+                                    <l>procuran dejar en salvo.</l>
+                                    <l>Dijo el uno: yo, señora,</l>
+                                    <l>y el que me está acompañando,</l>
+                                    <l>somos leales y finos,</l>
+                                    <l>no homicidas, ni inhumanos;</l>
+                                    <l>quedaos aqui y el Cielo,</l>
+                                    <l>que todo lo está mirando,</l>
+                                    <l>volverá por vuestra causa,</l>
+                                    <l>y se despiden llorando.</l>
+                                    <l>Dijo la señora, hijos,</l>
+                                    <l>ejecutad el mandato</l>
+                                    <l>de mi esposo, que no es justo,</l>
+                                    <l>que os suceda algun quebranto.</l>
+                                    <l>Se fueron á un hospital,</l>
+                                    <l>donde una difunta hallando,</l>
+                                    <l>le sacan el corazon,</l>
+                                    <l>para cumplir con su amo,</l>
+                                    <l>llevando tambien un dedo,</l>
+                                    <l>salieron de su cuydado.</l>
+                                    <l>Quedó la triste señora</l>
+                                    <l>sola afligida en el campo,</l>
+                                    <l>preñada de nueve meses,</l>
+                                    <l>y con dolores del parto.</l>
+                                    <l>Entre confusas angustias,</l>
+                                    <l>y rigor tan inhumano</l>
+                                    <l>parió dos infantes tiernos,</l>
+                                    <l>que al Sol quitaban los rayos.</l>
+                                    <l>Pasó por alli una osa,</l>
+                                    <l>y el un niño se ha llevado</l>
+                                    <l>á su cueva, pero el otro</l>
+                                    <l>lo tomó su madre en brazos:</l>
+                                    <l>Toda mortal y sin fuerzas</l>
+                                    <l>iba buscando en el campo</l>
+                                    <l>donde cristianar al niño,</l>
+                                    <l>no muere sin ser Cristiano:</l>
+                                    <l>Vido bajar á un pastor</l>
+                                    <l>desde una altura á lo llano,</l>
+                                    <l>que al refresco de una fuente</l>
+                                    <l>viene el tal encaminado;</l>
+                                    <l>que el Cielo en tales conflictos</l>
+                                    <l>á nadie ha desamparado.</l>
+                                    <l>Llegó el pastor; pero viendo</l>
+                                    <l>suceso tan impensado</l>
+                                    <l>como la dama le cuenta</l>
+                                    <l>quedó admirado del caso.</l>
+                                    <l>Y en la cristalina fuente</l>
+                                    <l>tomando el niño en los brazos,</l>
+                                    <l>y de la fuente el cristal,</l>
+                                    <l>con una concha en su mano,</l>
+                                    <l>dijo: en el nombre de Dios</l>
+                                    <l>Padre, Hijo y Espiritu santo,</l>
+                                    <l>te bautizo, Valentin,</l>
+                                    <l>que es el nombre que le ha dado.</l>
+                                    <l>Llevó á la triste señora</l>
+                                    <l>á su cabaña y llegando,</l>
+                                    <l>se la entregaba á su esposa,</l>
+                                    <l>paraque con gran cuydado</l>
+                                    <l>la asiste, cuyde y regale,</l>
+                                    <l>que está muy debil del parto.</l>
+                                    <l>Recogieron la señora,</l>
+                                    <l>y á su hijo acariciando,</l>
+                                    <l>dió en sus pechos alimento,</l>
+                                    <l>dandole el pastor su amparo.</l>
+                                    <l>En el segundo romance</l>
+                                    <l>se prosigue este fracaso,</l>
+                                    <l>donde alli verá el curioso</l>
+                                    <l>el suceso tan estraño,</l>
+                                    <fw type="reclamo">que</fw>
+
+                                    <pb n="5" source="BCN_033_5.jpg" facs="varios/BCN_033_5.jpg/"/>
+
+                                    <l>que sucedió con el niño</l>
+                                    <l>que la osa está criando,</l>
+                                    <l>y como fué descubierto</l>
+                                    <l>este testimonio falso,</l>
+                                    <l>castigada la maldad,</l>
+                                    <l>y en lo cierto el desengaño.</l>
+                              </div>
+
+                              <div type="parte" n="2">
+                                    <head type="titulo_parte">
+                                          <lb/>SEGUNDA PARTE.</head>
+
+                                    <l><hi rend="negrita">Y</hi>a dice el primer romance</l>
+                                    <l>como quedó en la cabaña</l>
+                                    <l>recogida esta señora</l>
+                                    <l>asistida y regalada</l>
+                                    <l>de los humildes pastores;</l>
+                                    <l>y volvamos á que estaba</l>
+                                    <l>con muy grande sentimiento</l>
+                                    <l>don Claudio de ver la falta</l>
+                                    <l>de su bella Margarita;</l>
+                                    <l>la cual, con ansias sobradas</l>
+                                    <l>se acordaba por instantes</l>
+                                    <l>del esposo de su alma,</l>
+                                    <l>y de aquel infante tierno,</l>
+                                    <l>que nació de sus entrañas,</l>
+                                    <l>el que se llevó la osa</l>
+                                    <l>á la cueva; y la crianza</l>
+                                    <l>que tuvo fué entre animales,</l>
+                                    <l>entre bosques y montañas:</l>
+                                    <l>vestido andaba de pieles</l>
+                                    <l>de animales; y era tanta</l>
+                                    <l>su monstruosidad, asombra</l>
+                                    <l>con lo feróz de su cara,</l>
+                                    <l>pues una clave traia</l>
+                                    <l>en sus hombros, que por armas</l>
+                                    <l>de defensa le servia,</l>
+                                    <l>asombrando cuantos pasan.</l>
+                                    <l>Cuantos le ven se amedrentan,</l>
+                                    <l>los pastores se recatan,</l>
+                                    <l>pues en viendole se dejan</l>
+                                    <l>solo el ganado que guardan.</l>
+                                    <l>Llegó á Francia esta noticia,</l>
+                                    <l>y don Claudio se aprestaba</l>
+                                    <l>para salir á buscarle,</l>
+                                    <l>toma recados de caza,</l>
+                                    <l>se partió con los monteros,</l>
+                                    <l>llevandose en su compaña</l>
+                                    <l>criados y mayordomos,</l>
+                                    <l>y desta suerte les habla:</l>
+                                    <l>Voy á buscar esta fiera,</l>
+                                    <l>que tanto asombra y espanta.</l>
+                                    <l>Dando ya vista á los montes,</l>
+                                    <l>permitió Dios que llegara</l>
+                                    <l>adonde encontró al pastor,</l>
+                                    <l>que el ganado apacentaba.</l>
+                                    <l>Saludóle cortesano,</l>
+                                    <l>y atento le preguntaba,</l>
+                                    <l>que si por ventura habria</l>
+                                    <l>alguna choza, ó cabaña,</l>
+                                    <l>donde tuviesen alvergue,</l>
+                                    <l>que la noche se acercaba.</l>
+                                    <l>Dijo el pastor: cavalleros,</l>
+                                    <l>aquella pobre cabaña</l>
+                                    <l>donde yo asisto será</l>
+                                    <l>de ustedes la posada.</l>
+                                    <l>Suban por aquel collado,</l>
+                                    <l>y en lo hondo, en la bajada,</l>
+                                    <l>hallarán mi pobre choza,</l>
+                                    <l>donde penitencia hagan.</l>
+                                    <l>Vino el pastor y dispuso,</l>
+                                    <l>de que luego al punto hagan</l>
+                                    <l>de cenar cumplidamente,</l>
+                                    <l>por ser gente de importancia.</l>
+                                    <l>Vió don Claudio á Margarita,</l>
+                                    <l>y reparando en su gracia,</l>
+                                    <l>saltos le dá el corazon,</l>
+                                    <l>y sospechas le dá el alma.</l>
+                                    <l>Ay Dios, como le parece</l>
+                                    <l>aquella hermosa zagala</l>
+                                    <l>á la triste de mi esposa,</l>
+                                    <l>que en gloria tenga su alma.</l>
+                                    <fw type="reclamo">Tam-</fw>
+
+                                    <pb n="6" source="BCN_033_6.jpg" facs="varios/BCN_033_6.jpg/"/>
+
+                                    <l>Tambien doña Margarita,</l>
+                                    <l>toda confusa y turbada,</l>
+                                    <l>ha conocido á su esposo</l>
+                                    <l>y de él mucho se recata,</l>
+                                    <l>que teme ser conocida,</l>
+                                    <l>aunque le llevava el alma.</l>
+                                    <l>Grande recelo concibe</l>
+                                    <l>de ver cuanto la miraba,</l>
+                                    <l>si viene á darle muerte,</l>
+                                    <l>sabiendo que viva estaba.</l>
+                                    <l>Quiere ausentarse y no acierta,</l>
+                                    <l>y en turbacion tan estraña,</l>
+                                    <l>á la Virgen de la Paz,</l>
+                                    <l>muy fina se encomendaba.</l>
+                                    <l>Dijole luego á su hijo,</l>
+                                    <l>que á la gente preguntára,</l>
+                                    <l>quien era aquel caballero,</l>
+                                    <l>por si ella estaba engañada,</l>
+                                    <l>que cuydado les traia</l>
+                                    <l>por aquella tierra estraña</l>
+                                    <l>para salir de temores,</l>
+                                    <l>y quedar desengañada.</l>
+                                    <l>Y despues de haber cenado</l>
+                                    <l>el mozo les preguntaba,</l>
+                                    <l>quien era aquel caballero,</l>
+                                    <l>que le llevava toda el alma?</l>
+                                    <l>Respondióle el mayordomo,</l>
+                                    <l>sin recelarse de nada:</l>
+                                    <l>Es un grande de la Corte,</l>
+                                    <l>al cual don Claudio lo llaman:</l>
+                                    <l>dicen, que hay en este sitio</l>
+                                    <l>una fiera tan estraña,</l>
+                                    <l>que asombra cuantos la han visto,</l>
+                                    <l>y que al mundo alborotaba;</l>
+                                    <l>y con aquesta noticia,</l>
+                                    <l>mi amo se encaprichaba,</l>
+                                    <l>que este animal muerto, ó vivo,</l>
+                                    <l>no ha de escapar de sus armas.</l>
+                                    <l>Se aseguró Margarita</l>
+                                    <l>en lo que tanto importaba,</l>
+                                    <l>y sin faltarle el recato,</l>
+                                    <l>muchas veces suspiraba,</l>
+                                    <l>viendo delante el traydor,</l>
+                                    <l>y que estaba en la privanza</l>
+                                    <l>de su esposo, siendo ella</l>
+                                    <l>por su traícion desdichada.</l>
+                                    <l>Del Cielo venga el castigo,</l>
+                                    <l>y vuelva por esta causa,</l>
+                                    <l>descubriendo la verdad,</l>
+                                    <l>queda mi opinion sin mancha.</l>
+                                    <l>Pasaron aquella noche,</l>
+                                    <l>y á otro dia de mañana</l>
+                                    <l>salieron con el cuydado</l>
+                                    <l>de dar principio á la caza,</l>
+                                    <l>para vér si el monstruo encuentran</l>
+                                    <l>lograr toda su esperanza.</l>
+                                    <l>Con el deseo que llevan,</l>
+                                    <l>todo el monte paseaban,</l>
+                                    <l>sin que se logre el intento,</l>
+                                    <l>que Dios asi lo ordenaba.</l>
+                                    <l>Viendose muy fatigado</l>
+                                    <l>don Claudio, luego se entraba</l>
+                                    <l>en la choza, ó caseria,</l>
+                                    <l>sin que nadie lo notara.</l>
+                                    <l>Estaba su triste esposa</l>
+                                    <l>en un transportal sentada;</l>
+                                    <l>siendo raudales sus ojos,</l>
+                                    <l>muchas veces los limpiaba.</l>
+                                    <l>Ay, esposo de mi vida,</l>
+                                    <l>cada instante pronunciaba,</l>
+                                    <l>quien te diere el desengaño;</l>
+                                    <l>y se fuera en tu compaña!</l>
+                                    <l>Quedó don Claudio confuso</l>
+                                    <l>de vér cosa tan estraña;</l>
+                                    <l>y sin que sea sentido,</l>
+                                    <l>mas á escuchar se aplicaba.</l>
+                                    <l>Estando en tal confusion,</l>
+                                    <l>vido que al corral entraba</l>
+                                    <l>aquel mozo Valentin,</l>
+                                    <l>y de esta suerte le hablaba:</l>
+                                    <l>Madre mia, que es aquesto,</l>
+                                    <l>que veo en vos tal mudanza</l>
+                                    <l>despues que vino esta gente,</l>
+                                    <l>que es razon sepa la causa.</l>
+                                    <fw type="reclamo">Res-</fw>
+
+                                    <pb n="7" source="BCN_033_7.jpg" facs="varios/BCN_033_7.jpg/"/>
+
+                                    <l>Respondió aumentando el llanto:</l>
+                                    <l>hijo mio de mi alma,</l>
+                                    <l>que ha de tener una triste,</l>
+                                    <l>que aqui se vé desterrada,</l>
+                                    <l>no muerta por gran piedad</l>
+                                    <l>viva si, mas desgraciada.</l>
+                                    <l>Ese noble caballero,</l>
+                                    <l>que vino á posar á casa</l>
+                                    <l>es tu padre y mi marido,</l>
+                                    <l>y no puedo hablar palabra.</l>
+                                    <l>Aquel traydor que les asiste,</l>
+                                    <l>mayordomo allá en mi casa</l>
+                                    <l>en ausencia de tu padre,</l>
+                                    <l>quiso que le diese entrada;</l>
+                                    <l>y por no darle lugar,</l>
+                                    <l>tomó una infama venganza:</l>
+                                    <l>me levantó un testimonio falso</l>
+                                    <l>con un page de la casa,</l>
+                                    <l>diciendo estaba conmigo,</l>
+                                    <l>le dio muerte á puñaladas.</l>
+                                    <l>Tu padre que aquesto vido,</l>
+                                    <l>dando credito á la infamia,</l>
+                                    <l>mandó luego á dos criados</l>
+                                    <l>me traygan á esta montaña,</l>
+                                    <l>donde me quiten la vida;</l>
+                                    <l>y ellos me la dan de gracia.</l>
+                                    <l>Nacistes tu en estos montes,</l>
+                                    <l>con otro hermano en compaña,</l>
+                                    <l>e cual me llevó una fiera,</l>
+                                    <l>sn que yo lo remediara,</l>
+                                    <l>y de todas estas penas</l>
+                                    <l>se ha refrescado la llaga.</l>
+                                    <l>Qedó el mozo enternecido,</l>
+                                    <l>y su madre consolaba:</l>
+                                    <l>peo oyendo esto don Claudio,</l>
+                                    <l>de puro gozo lloraba;</l>
+                                    <l>dismuló cuanto pudo,</l>
+                                    <l>y vendo traicion tan clara</l>
+                                    <l>del nfame mayordomo,</l>
+                                    <l>soloespira á la venganza.</l>
+                                    <l>Valetin se sale el campo,</l>
+                                    <l>al myordomo buscaba,</l>
+                                    <l>el cual venia rendido</l>
+                                    <l>de andar buscando la casa:</l>
+                                    <l>Y llegando azia él,</l>
+                                    <l>le ha dado una puñalada</l>
+                                    <l>que cayó á sus pies rendido,</l>
+                                    <l>sin saber que fué la causa.</l>
+                                    <l>Confiesa, dice traydor,</l>
+                                    <l>el testimonio, ó infamia</l>
+                                    <l>que á la ilustre Margarita</l>
+                                    <l>levantado has sin causa:</l>
+                                    <l>ya vas á dar cuenta á Dios,</l>
+                                    <l>mira traydor por tu alma.</l>
+                                    <l>Todos se llegan por ver</l>
+                                    <l>esta maravilla rara;</l>
+                                    <l>y cuando los vido juntos</l>
+                                    <l>ha dicho aquestas palabras:</l>
+                                    <l>Yo señores, soy aquel</l>
+                                    <l>que imputando de liviana</l>
+                                    <l>á mi señora, maté</l>
+                                    <l>al page que estaba en casa,</l>
+                                    <l>fué este falso testimonio,</l>
+                                    <l>solo para tomar venganza</l>
+                                    <l>de aquella noble matrona,</l>
+                                    <l>que es honrada , honesta y casta.</l>
+                                    <l>A todos pido perdon,</l>
+                                    <l>por Dios, por la Virgen Santa;</l>
+                                    <l>asi lo alcancen de Dios,</l>
+                                    <l>y su Madre Soberana.</l>
+                                    <l>Quiso acabarlo don Claudio,</l>
+                                    <l>mas todos se lo embarazan,</l>
+                                    <l>diciendo, que lo perdone,</l>
+                                    <l>porque descanse su alma.</l>
+                                    <l>Despues de haber espirado,</l>
+                                    <l>los amantes se miraron,</l>
+                                    <l>y del gozo y sentimiento</l>
+                                    <l>no aciertan á hablar palabra</l>
+                                    <l>y prorrumpiendo don Claudio</l>
+                                    <l>la dice: esposa del alma,</l>
+                                    <l>ó es encantado cuanto miro,</l>
+                                    <l>ó es sueño lo que me pasa;</l>
+                                    <l>sin poderse contener,</l>
+                                    <l>estrechamente la abraza.</l>
+                                    <fw type="reclamo">Y</fw>
+
+                                    <pb n="8" source="BCN_033_8.jpg" facs="varios/BCN_033_8.jpg/"/>
+
+                                    <l>Y volviendo sobre acuerdo,</l>
+                                    <l>pretenden con vigilancia</l>
+                                    <l>buscar aquel monstruo, que</l>
+                                    <l>tanto horror y espanto causa.</l>
+                                    <l>Les previene Margarita:</l>
+                                    <l>que si acaso lo encontraban,</l>
+                                    <l>no le hagan mal ninguno,</l>
+                                    <l>que le da impulsos el alma,</l>
+                                    <l>que aquel ha de ser su hijo,</l>
+                                    <l>y que asi el Cielo lo guarda.</l>
+                                    <l>Y descubriendo en el monte</l>
+                                    <l>no dejan cerro, cañada,</l>
+                                    <l>que no la miden á pasos,</l>
+                                    <l>hasta que de entre unas ramas</l>
+                                    <l>don Claudio lo descubrió,</l>
+                                    <l>y vió que es persona humana,</l>
+                                    <l>el mismo se fué á su padre,</l>
+                                    <l>que la sangre lo llamaba.</l>
+                                    <l>Viendo tan grande prodigio,</l>
+                                    <l>lo acaricia y agasaja,</l>
+                                    <l>ni entiende lo que le dicen,</l>
+                                    <l>ni acierta hablar palabra;</l>
+                                    <l>iba siguiendo á su padre,</l>
+                                    <l>hasta entrar en la cabaña:</l>
+                                    <l>se fué derecho á su madre,</l>
+                                    <l>y de ella no se estrañaba.</l>
+                                    <l>La osa, que lo echó menos,</l>
+                                    <l>como una ovejuela mansa,</l>
+                                    <l>hasta entrar dentro en Paris</l>
+                                    <l>fué siguiendo sus pisadas.</l>
+                                    <l>Hizo el caso tal ruido,</l>
+                                    <l>que conmovida la Francia</l>
+                                    <l>van á ver tan gran prodigio,</l>
+                                    <l>y es un jubileo la casa.</l>
+                                    <l>Enseñaronle á hablar,</l>
+                                    <l>y la Doctrina Cristiana,</l>
+                                    <l>y despues le bautizaron,</l>
+                                    <l>y desde entonces le llaman</l>
+                                    <l>Ventura Osón; y su padre</l>
+                                    <l>instantaneamente manda,</l>
+                                    <l>que á la Virgen de la Paz,</l>
+                                    <l>en hacimiento de gracias</l>
+                                    <l>de este suceso feliz,</l>
+                                    <l>una lampara le hagan,</l>
+                                    <l>que pese cuarenta libras</l>
+                                    <l>de plata sobredorada,</l>
+                                    <l>y á los criados mil pesos:</l>
+                                    <l>Y aqui la historia se acaba,</l>
+                                    <l>pidiendo ahora el poéta,</l>
+                                    <l>perdon de todas sus faltas.</l>
+                              </div>
+
+                              <trailer>FIN.</trailer>
+                        </div>
+                        <div type="colofon">
+                              <p>
+                                    <lb/><hi rend="cursiva">Barcelona</hi> : En la Imprenta de los
+                                    Herederos de la Viuda Pla, <lb/>calle de Cotoners.</p>
+                        </div>
+                  </div>
+            </body>
+      </text>
+</TEI>

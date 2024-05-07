@@ -1,0 +1,151 @@
+<html lang="es"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    
+                    <main class="content-static">
+                        <h1 class="content-static__main-title">
+                            <pb-i18n key="collection.collection"/>
+                        </h1>
+                        
+                        <!-- Fond espagnol -->
+                        <section class="content-static__section">
+                            <h2><pb-i18n key="collection.spanish-collection">Fondo español</pb-i18n></h2>
+                            <p>
+                                <pb-i18n key="collection.para0">Este fondo reúne todos los pliegos de cordel españoles conservados en la Biblioteca de la Universidad de Ginebra. Se ha dividido en dos colecciones: la colección Moreno, dedicada a los pliegos impresos por el impresor andaluz José María Moreno, y la colección Pliegos varios, que incluye todos los demás impresos de lo fondo ginebrino.</pb-i18n>
+                            </p>
+                            
+                            <table class="content-static__table" role="presentation">
+                                <!-- Toutes les collections -->
+                                <tr>
+                                    <td class="content-static__table-img content-static__table-border">
+                                        <a href="index.html?collection=Pliegos" tabindex="-1">
+                                            <img src="resources/images/img_collections.png" width="150" alt="Woodcut of a solider fighting three other men"/>
+                                        </a>
+                                    </td>
+                                    <td class="content-static__table-text content-static__table-border">
+                                        <h2 class="content-static__title-name">
+                                            <a href="index.html?collection=Pliegos">
+                                                <pb-i18n key="collection.completa">Colección completa</pb-i18n>
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            <pb-i18n key="collection.para4">Esta colección contiene los 912 pliegos de cordel conservados en la Biblioteca de la Universidad de Ginebra, es decir, los 374 documentos impresos en Carmona y los 538 documentos editados en toda España.</pb-i18n>
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Collection Moreno -->
+                                <tr>
+                                    <td class="content-static__table-img content-static__table-border">
+                                        <a href="index.html?collection=Pliegos&amp;facet-collection=Colleción+Moreno" tabindex="-1">
+                                            <img src="resources/images/img_moreno3.png" width="150" alt="Woodcut of a saint with a cross and a flower"/>
+                                        </a>
+                                    </td>
+                                    <td class="content-static__table-text content-static__table-border">
+                                        <h2 class="content-static__title-name">
+                                            <a href="index.html?collection=Pliegos&amp;facet-collection=Colleción+Moreno">
+                                                <pb-i18n key="collection.moreno">Colección Moreno</pb-i18n>
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            <pb-i18n key="collection.para1">Poco más del 40 % de los pliegos conservados en Ginebra (374 de 912) procede de los talleres de un único impresor andaluz, José María Moreno, cuya actividad se desarrolló durante la segunda mitad del siglo XIX en la pequeña ciudad de Carmona, en la provincia de Sevilla.</pb-i18n>
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Collection Varios -->
+                                <tr>
+                                    <td class="content-static__table-img content-static__table-border">
+                                        <a href="index.html?collection=Pliegos&amp;facet-collection=Colección+Varios" tabindex="-1">
+                                            <img src="resources/images/img_varios.png" width="150" alt="Woodcut of a lady playing the guitar under a tree"/>
+                                        </a>
+                                    </td>
+                                    <td class="content-static__table-text content-static__table-border">
+                                        <h2 class="content-static__title-name">
+                                            <a href="index.html?collection=Pliegos&amp;facet-collection=Colección+Varios">
+                                                <pb-i18n key="collection.varios">Colección Pliegos varios</pb-i18n>
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            <pb-i18n key="collection.para2">Cerca del 60 % de los pliegos conservados en Ginebra (538 de 912) fueron editados entre finales del siglo XVIII y principios del XX.  Proceden de los principales centros de impresión españoles: Madrid, Barcelona, Valencia, Palma de Mallorca y Sevilla. Muchos de ellos están escritos en catalán.</pb-i18n>
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Collections Ilustraciones -->
+                                <tr>
+                                    <td class="content-static__table-img content-static__table-border">
+                                        <a href="index.html?collection=Illustraciones" tabindex="-1">
+                                            <img src="resources/images/img_grabados.png" width="150" alt="Woodcut of a frog at the barber shop"/>
+                                        </a>
+                                    </td>
+                                    <td class="content-static__table-text content-static__table-border">
+                                        <h2 class="content-static__title-name">
+                                            <a href="index.html?collection=Illustraciones">
+                                                <pb-i18n key="collection.illustration">Ilustraciones</pb-i18n>
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            <pb-i18n key="collection.para3">Los grabados que ilustran los pliegos de nuestro corpus han sido extraídos uno por uno para componer este catálogo de imágenes que permite una búsqueda por palabras clave y una comparación de motivos. Aunque figuran solo los grabados presentes en los pliegos impresos por José María Moreno, en un futuro próximo se incorporará el resto de imágenes que acompañan toda la colección de pliegos ginebrinos.</pb-i18n>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+                        
+                        <!-- Fond brésilien -->
+                        <!--<section class="content-static__section">
+                            <h2><pb-i18n key="collection.brazilian-content">Fondo brasileño</pb-i18n></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta porttitor dolor at lobortis. Proin eget commodo est, a euismod felis. In id leo et dui euismod varius in non lorem. Donec ut ligula ut erat auctor euismod eget eu nibh. Proin vitae justo id sem viverra vestibulum et eu sapien. Phasellus eget lacus massa.</p>
+                            
+                            <table class="content-static__table" role="presentation">
+                                <tr>
+                                    <td class="content-static__table-img content-static__table-border">
+                                        <a href="#" tabindex="-1">
+                                            <img src="resources/images/carloMagno_folhetos.png" width="150" alt="Brazilian woodcut representing Carlo Magno"/>
+                                        </a>
+                                    </td>
+                                    <td class="content-static__table-text content-static__table-border">
+                                        <h2 class="content-static__title-name">
+                                            <a href="#">
+                                                <pb-i18n key="">Collection du MEG</pb-i18n>
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            <pb-i18n key="">Phasellus ut odio blandit, faucibus enim eget, ullamcorper diam. Mauris malesuada venenatis tristique. Quisque eget auctor est. Fusce rhoncus erat eu scelerisque molestie.</pb-i18n>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>-->
+                    </main>
+                    
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+    
+</html>

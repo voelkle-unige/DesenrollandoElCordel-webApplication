@@ -1,0 +1,411 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Custom API",
+        "description": "This is the place to add your own path endpoints"
+    },
+    "servers": [
+        {
+            "description": "Endpoint for testing on localhost",
+            "url":"http://localhost:8080/exist/apps/projet-cordel"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "basicAuth": {
+                "type": "http",
+                "scheme": "basic"
+            },
+            "cookieAuth": {
+                "type": "apiKey",
+                "name": "teipublisher.com.login",
+                "in": "cookie"
+            }
+        }
+    },
+    "paths": {
+        "/api/manifest": {
+            "get": {
+                "summary": "IIIF Manifest",
+                "description": "Retrieve a manifest in format required by Mirador",
+                "operationId": "custom:manifest",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "example": "Pliegos/Moreno_007.xml"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Manifests to display",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "manifest": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }                
+            }
+        },
+        
+        "/api/manifests-list": {
+            "get": {
+                "summary": "IIIF manifests list",
+                "description": "Get a list of manifests",
+                "operationId": "custom:manifests-list",
+                "responses": {
+                    "200": {
+                        "description": "List of manifests",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "list": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        
+        "/Documentation/{doc}": {
+				"get": {
+					"summary": "Retrieve the HTML template used for displaying a document",
+					"description": "Get the HTML template associated with the given document. This is called whenever the users tries to view a document. The actual content of the document will then be loaded by the template.",
+					"tags": ["view"],
+					"operationId": "custom:view-about",
+					"parameters": [
+						{
+							"name": "doc",
+							"in": "path",
+							"description": "Relative path to the document",
+							"required": true,
+							"schema": {
+								"type": "string",
+								"example": "credits"
+							},
+							"allowReserved": true
+						},
+						{
+							"name": "template",
+							"in": "query",
+							"description": "Name of the template to be used. Overwrites any default template setting.",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"name": "view",
+							"in": "query",
+							"schema": {
+								"type": "string",
+								"enum": ["page", "div", "single"]
+							},
+							"default": "single",
+							"description": "The view type used by the main view which displays the document, e.g. 'page' or 'div'. This has an influence on the generated links, which need to differ when linking to a page rather than a section."
+						},
+						{
+							"name": "odd",
+							"in": "query",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"name": "action",
+							"in": "query",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"responses": {
+						"200": {
+							"description": "HTML view for the document",
+							"content": {
+								"text/html": {
+									"schema": {
+										"type": "string"
+									}
+								}
+							}
+						},
+						"404": {
+							"description": "The document was not found",
+							"content": {
+								"text/html": {
+									"schema": {
+										"type": "string"
+									}
+								}
+							}
+						},
+						"500": {
+							"description": "An error occurred",
+							"content": {
+								"text/html": {
+									"schema": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			
+			"/api/places/all": {
+                "get": {
+                    "summary": "List all places",
+                    "description": "Retrieve list of all places",
+                    "operationId": "custom:places-all",
+                    "responses": {
+                        "200": {
+                            "description": "List of all places",
+                            "content": {
+                                "application/json": {
+                                    "schema": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "latitude":{
+                                                    "type": "string"
+                                                },
+                                                "longitude":{
+                                                    "type": "string"
+                                                },
+                                                "label": {
+                                                    "type": "string",
+                                                    "description": "Label to show in the tooltip"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }			
+            },
+
+			"/api/places": {
+			    "get": {
+			        "summary": "List places",
+			        "description": "Retrieve list of places in format required by pb-split-list",
+			        "operationId": "custom:places",
+			        "parameters": [
+			            {
+			                "name": "category",
+			                "in": "query",
+			                "schema": {
+			                    "type": "string",
+			                    "example": "1"
+			                }
+			            },
+			            {
+			                "name": "limit",
+			                "in": "query",
+			                "schema": {
+			                    "type": "integer",
+			                    "default": "50"
+			                }
+			            },
+			            {
+			                "name": "search",
+			                "in": "query",
+			                "schema": {
+			                    "type": "string"
+			                }
+			            }
+			        ],
+			        "responses": {
+			            "200": {
+			                "description": "Categories and places to display",
+			                "content": {
+			                    "application/json": {
+			                        "schema": {
+			                            "type": "object",
+			                            "properties": {
+			                                "items": {
+			                                    "type": "array",
+			                                    "items": {
+			                                        "type": "string"
+			                                    }
+			                                },
+			                                "categories": {
+			                                    "type": "array",
+			                                    "items": {
+			                                        "type": "object",
+			                                        "properties": {
+			                                            "category": {
+			                                                "type": "string"
+			                                            },
+			                                            "count": {
+			                                                "type": "integer"
+			                                            }
+			                                        }
+			                                    }
+			                                }
+			                            }
+			                        }
+			                    }
+			                }
+			            }
+			        }
+			    }
+			},
+			
+			"/contexts/places": {
+                "get": {
+                    "summary": "Landing page for places",
+                    "description": "Get the HTML template for the places landing page",
+                    "tags": ["view"],
+                    "operationId": "vapi:html",
+                    "x-error-handler": "vapi:handle-error",
+                    "parameters": [
+                        {
+                            "name": "file",
+                            "in": "query",
+                            "schema": {
+                                "type": "string",
+                                "default": "places"
+                            }
+                        },
+   					{
+   						"name": "uri",
+   						"in": "query",
+   						"schema": {
+   							"type": "string",
+   							"default": "contexts/places"
+   						}
+   					}
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "HTML view for the document",
+                            "content": {
+                                "text/html": {
+                                    "schema": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "404": {
+                            "description": "The document was not found",
+                            "content": {
+                                "text/html": {
+                                    "schema": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "500": {
+                            "description": "An error occurred",
+                            "content": {
+                                "text/html": {
+                                    "schema": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            
+            "/contexts/places/{name}": {
+                "get": {
+                    "summary": "Retrieve the HTML template used for displaying places metadata",
+                    "description": "Get the HTML template associated with the given document. This is called whenever the users tries to view a document. The actual content of the document will then be loaded by the template.",
+                    "tags": ["view"],
+                    "operationId": "vapi:html",
+                    "parameters": [
+                        {
+                            "name": "name",
+                            "in": "path",
+                            "description": "Name of the place",
+                            "required": true,
+                            "schema": {
+                                "type": "string",
+                                "example": "Acebedo"
+                            },
+                            "allowReserved": true
+                        },
+                        {
+                            "name": "file",
+                            "in": "query",
+                            "schema": {
+                                "type": "string",
+                                "default": "pages/place"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "HTML view for the document",
+                            "content": {
+                                "text/html": {
+                                    "schema": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "404": {
+                            "description": "The document was not found",
+                            "content": {
+                                "text/html": {
+                                    "schema": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "500": {
+                            "description": "An error occured",
+                            "content": {
+                                "text/html": {
+                                    "schema": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    },
+    
+    "security": [
+        {
+            "cookieAuth": []
+        },
+        {
+            "basicAuth": []
+        }
+    ]
+}

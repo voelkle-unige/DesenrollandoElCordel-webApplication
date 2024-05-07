@@ -1,0 +1,175 @@
+<app-toolbar class="menubar" data-template="pages:parse-params">
+    <!-- Affichage du logo -->
+    <a href="inicio.html" class="logo" data-template="pages:parse-params"/>
+    
+    <!-- Affichage du menu pour les écrans de plus de 1024px -->
+    <pb-media-query query="min-width: 1024px">
+        <a href="inicio.html" role="button">
+            <pb-i18n key="inicio.titre">Inicio</pb-i18n>
+        </a>
+        
+        <!-- Onglet Corpus -->
+        <paper-menu-button>
+            <a href="#" slot="dropdown-trigger" data-template="pages:parse-params" role="button">
+                Corpus
+            </a>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <a href="${app}/description_collection.html" role="button">
+                        <pb-i18n key="collection.description">Descripción de las colecciones</pb-i18n>
+                    </a>
+                </paper-item>
+                
+                <p class="menubar__titreOnglet">
+                    <pb-i18n key="collection.spanish-collection">Fondo español</pb-i18n>
+                </p>
+                <paper-item>
+                    <a href="${app}/index.html?collection=Pliegos" role="button">
+                        <pb-i18n key="collection.completa">Todos los documentos</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/index.html?collection=Pliegos&amp;facet-collection=Colleción+Moreno" role="button">
+                        <pb-i18n key="collection.moreno">Colección Moreno</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/index.html?collection=Pliegos&amp;facet-collection=Colección+Varios" role="button">
+                        <pb-i18n key="collection.varios">Colección Pliegos varios</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/index.html?collection=Illustraciones" role="button">
+                        <pb-i18n key="collection.illustration">Ilustraciones</pb-i18n>
+                    </a>
+                </paper-item>
+                
+                <!--<p class="menubar__titreOnglet"><pb-i18n key="collection.brazilian-content">Fondo brasileño</pb-i18n></p>
+                <paper-item>
+                    <a href="#" role="button">
+                        <pb-i18n key="">Collection du MEG</pb-i18n>
+                    </a>
+                </paper-item>-->
+            </paper-listbox>
+        </paper-menu-button>
+        
+        <!-- Onglet Résultats -->
+        <paper-menu-button>
+            <a href="#" slot="dropdown-trigger" data-template="pages:parse-params" role="button">
+                <pb-i18n key="mapa.recherche">Resultados</pb-i18n>
+            </a>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <a href="${app}/resultados.html" role="button">
+                        <pb-i18n key="mapa.publi_com">Publicaciones y comunicaciones</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/datos_lugares.html" role="button">
+                        <pb-i18n key="places.titre">Topónimos</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/contexts/places" role="button">
+                        <pb-i18n key="places.index">Índice de lugares</pb-i18n>
+                    </a>
+                </paper-item>
+            </paper-listbox>
+        </paper-menu-button>
+        
+        <!-- Onglet À propos -->
+        <paper-menu-button>
+            <a href="#" slot="dropdown-trigger" data-template="pages:parse-params" role="button">
+                <pb-i18n key="mapa.acerca">Acerca de</pb-i18n>
+            </a>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <a href="${app}/Documentation/presentacion_proyecto" role="button">
+                        <pb-i18n key="proyecto.titre">Presentación del proyecto</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/Documentation/criterios_edicion" role="button">
+                        <pb-i18n key="criterios.titre">Criterios de edición</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/equipo.html" role="button">
+                        <pb-i18n key="equipo.titre">Equipo</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/Documentation/proceso_tecnico" role="button">
+                        <pb-i18n key="tecnico.titre">Proceso tecnico</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/Documentation/aviso_legal" role="button">
+                        <pb-i18n key="aviso.titre">Aviso legal</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/Documentation/contacto" role="button">
+                        <pb-i18n key="contacto.titre">Contacto</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/enlaces.html" role="button">
+                        <pb-i18n key="enlaces.titre">Proyectos relacionados</pb-i18n>
+                    </a>
+                </paper-item>
+            </paper-listbox>
+        </paper-menu-button>
+        
+        <!-- Onglet Aide -->
+        <a href="${app}/ayuda.html" role="button">
+            <pb-i18n key="ayuda.titre">Ayuda</pb-i18n>
+        </a>
+        
+        <!-- Affiché uniquement si connexion -->
+        <pb-restricted login="login">
+            <paper-menu-button>
+                <a href="#" slot="dropdown-trigger">
+                    <pb-i18n key="menu.admin.title">Admin</pb-i18n>
+                </a>
+                <paper-listbox slot="dropdown-content">
+                    <paper-item data-template="pages:edit-odd-list"/>
+                    <paper-item>
+                        <pb-download url="api/apps/download">
+                            <pb-i18n key="appgen.xar-download">Download App as .xar</pb-i18n>
+                        </pb-download>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/api.html" data-template="pages:parse-params" target="_blank">API Documentation</a>
+                    </paper-item>
+                </paper-listbox>
+            </paper-menu-button>
+        </pb-restricted>
+        
+        <!--<pb-search action="${app}/search.html" data-template="pages:parse-params" value="${query}" redirect="redirect"/>-->
+        
+        <pb-lang name="lang" data-template="pages:languages"/>
+        
+        <!--<pb-login id="login" group="tei"/>-->
+    </pb-media-query>
+    
+    <!-- Affichage du menu pour les écrans inférieurs à 1023px -->
+    <pb-media-query query="max-width: 1023px">
+        <pb-search action="search.html" data-template="pages:parse-params" value="${query}" redirect="redirect"/>
+        <paper-icon-button icon="icons:menu" drawer-toggle="drawer-toggle"/>
+    </pb-media-query>
+    
+    <paper-dialog id="downloadDialog">
+        <h2>
+            <pb-i18n key="dialogs.generatingFile">Generating file ...</pb-i18n>
+        </h2>
+        <paper-dialog-scrollable>
+            <pb-i18n key="dialogs.downloadMessage"/>
+        </paper-dialog-scrollable>
+        <div class="buttons">
+            <paper-button dialog-confirm="dialog-confirm" autofocus="autofocus">
+                <pb-i18n key="dialogs.close">Close</pb-i18n>
+            </paper-button>
+        </div>
+    </paper-dialog>
+</app-toolbar>

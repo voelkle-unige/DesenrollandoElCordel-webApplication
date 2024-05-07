@@ -1,0 +1,966 @@
+<?xml-model href="Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_026">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Seguidillas para cantar boleros con estrivillo</title>
+                        <respStmt xml:id="PJ">
+                              <name>Pauline Jacsont</name>
+                              <resp>Segmentación y transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="LF">
+                              <name>Lorysmar Franco</name>
+                              <resp>Corrección de la transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="EL">
+                              <name>Elina Leblanc</name>
+                              <resp>Codificación TEI</resp>
+                        </respStmt>
+                  </titleStmt>
+                  <publicationStmt>
+                        <authority role="rightsHolder">Bibliothèque Universitaire de
+                              Genève</authority>
+                        <availability status="restricted">
+                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+                        </availability>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <biblFull>
+                              <titleStmt>
+                                    <title type="titulo_completo">Seguidillas para cantar boleros
+                                          con estrivillo</title>
+                                    <title type="titulo_breve"/>
+                              </titleStmt>
+                              <editionStmt>
+                                    <p>Otra impresión (s.a.): <ref target="BCN_027.xml">BCN_027</ref></p>
+                              </editionStmt>
+                              <publicationStmt>
+                                    <publisher>Bernardo Pla</publisher>
+                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+                                    <date cert="low" when="1800-01-01">[s.a.]</date>
+                              </publicationStmt>
+                        </biblFull>
+                        <msDesc>
+                              <msIdentifier>
+                                    <country>Suisse</country>
+                                    <settlement>Genève</settlement>
+                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+                                    </repository>
+                                    <collection>Colección Varios</collection>
+                                    <idno type="cote"/>
+                                    <idno type="DOI">10.5281/zenodo.6811331</idno>
+                                    <altIdentifier>
+                                          <idno type="num_impresor"/>
+                                    </altIdentifier>
+                              </msIdentifier>
+                              <msContents>
+                                    <summary>Dos seguidillas</summary>
+                                    <msItem>
+                                          <locus>1-4</locus>
+                                          <title>Seguidillas para cantar boleros con
+                                                estrivillo</title>
+                                    </msItem>
+                                    <msItem>
+                                          <locus>5-8</locus>
+                                          <title>Otras Seguidillas Boleras sin estrivillo.</title>
+                                    </msItem>
+                              </msContents>
+                              <physDesc>
+                                    <objectDesc>
+                                          <supportDesc>
+                                                <support>
+                                                  <dim>in-4</dim>
+                                                  <material rend="amarillo"/>
+                                                </support>
+                                                <extent>
+                                                  <measure unit="página" quantity="8"/>8 p.</extent>
+                                                <condition>Bueno</condition>
+                                          </supportDesc>
+                                          <layoutDesc>
+                                                <p>2 columnas</p>
+                                          </layoutDesc>
+                                    </objectDesc>
+                                    <decoDesc>
+                                          <summary n="3">Tres grabados (p.1) </summary>
+                                          <decoNote type="lista_grabados">
+                                                <list>
+                                                      <item corresp="grabado_b_026_1.xml" facs="varios/BCN_026_1.jpg/1022,185,450,700/100,/0/default.jpg">grabado_b_026_1</item>
+                                                      <item corresp="grabado_b_026_2.xml" facs="varios/BCN_026_1.jpg/320,177,380,700/100,/0/default.jpg">grabado_b_026_2</item>
+                                                      <item corresp="grabado_b_026_3.xml" facs="varios/BCN_026_1.jpg/684,177,380,700/100,/0/default.jpg">grabado_b_026_3</item>
+                                                </list>
+                                          </decoNote>
+                                    </decoDesc>
+                                    <additions/>
+                              </physDesc>
+                              <history/>
+                        </msDesc>
+                  </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                  <projectDesc>
+                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+                              Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
+                              profesora Constance Carta de la Universidad de Ginebra, con el apoyo
+                              de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+                  </projectDesc>
+                  <editorialDecl corresp="#automaticTranscription">
+                        <correction>
+                              <p>OCR corregido</p>
+                        </correction>
+                        <normalization>
+                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
+                                    original.</p>
+                        </normalization>
+                        <punctuation>
+                              <p>Se conserva la puntuación original.</p>
+                        </punctuation>
+                  </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+                  <langUsage>
+                        <language ident="es">Español</language>
+                  </langUsage>
+                  <textClass>
+                        <keywords xml:base="http://datos.bne.es/tema/">
+                              <term target="XX5711649.html" type="tipo_texto">Seguidillas</term>
+                              <term target="XX5711649.html" type="tipo_estrofa">Seguidillas</term>
+                              <term type="verso_prosa">Verso</term>
+                              <term type="sagrado_profano">Profano</term>
+                        </keywords>
+                  </textClass>
+            </profileDesc>
+            <revisionDesc>
+                  <change when="2023-10-10" who="#EL">Création du fichier TEI P5 et encodage du
+                        corps du texte</change>
+                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+            </revisionDesc>
+      </teiHeader>
+
+      <facsimile>
+            <graphic url="varios/BCN_026_1.jpg/full/200,/0/default.jpg"/>
+      </facsimile>
+      <text>
+            <body>
+                  <div>
+                        <div>
+                              <div>
+                                    <pb n="1" source="BCN_026_1.jpg" facs="varios/BCN_026_1.jpg/"/>
+
+                                    <head type="primer_titulo">
+                                          <lb/><hi rend="negrita">SEGUIDILLAS</hi>
+                                          <lb/><hi rend="cursiva">PARA CANTAR BOLEROS CON
+                                                ESTRIVILLO</hi></head>
+
+                                    <lg>
+                                          <l><hi rend="negrita">L</hi>A dulce tiranía</l>
+                                          <l>de la hermosura</l>
+                                          <l>rinde, triunfa, avasalla,</l>
+                                          <l>mas poco dura:</l>
+                                          <l rend="indent">y es la desgracia</l>
+                                          <l>que pasa desde el trono</l>
+                                          <l>á ser esclava.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Es amor un deseo</l>
+                                          <l>que durar suele</l>
+                                          <l>el tiempo que se goza</l>
+                                          <l>lo que se quiere:</l>
+                                          <l rend="indent">pero en logrando,</l>
+                                          <l>lo que ántes agradaba</l>
+                                          <l>va fastidiando.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Nace amor como planta</l>
+                                          <l>en el corazon,</l>
+                                          <l>el cariño la riega,</l>
+                                          <l>la seca el rigor:</l>
+                                          <l rend="indent">y si se arraiga,</l>
+                                          <l>se arranca al apartarle</l>
+                                          <l>parte del alma.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Soñé que me querias</l>
+                                          <l>la otra mañana,</l>
+                                          <l>y soñé al mismo tiempo</l>
+                                          <l>que lo soñaba:</l>
+                                          <l rend="indent">que á un infelice</l>
+                                          <l>aun las dichas soñadas</l>
+                                          <l>son imposibles.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ojos mios, lloremos,</l>
+                                          <l>que es el arbitrio</l>
+                                          <l>que les queda á los tristes</l>
+                                          <l>para su alivio:</l>
+                                          <l rend="indent">lloremos tanto</l>
+                                          <l>que se aneguen mis ansias</l>
+                                          <l>en vuestro llanto.</l>
+                                    </lg>
+                                    <fw type="reclamo">Ten-</fw>
+
+                                    <pb n="2" source="BCN_026_2.jpg" facs="varios/BCN_026_2.jpg/"/>
+
+
+                                    <lg>
+                                          <l rend="indent">Tengo en el pecho escritas</l>
+                                          <l>tus falsedades,</l>
+                                          <l>tengo de publicarlas</l>
+                                          <l>mas que te enfades:</l>
+                                          <l rend="indent">pues no creyera</l>
+                                          <l>que me hubieras vendido</l>
+                                          <l>de esta manera.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ay de mi! que te amo!</l>
+                                          <l>ay! que te quiero,</l>
+                                          <l>ay! que tú me aborreces,</l>
+                                          <l>ay! que yo muero:</l>
+                                          <l rend="indent">reniego en vano</l>
+                                          <l>de quien soy, de quien eres,</l>
+                                          <l>y de mi estado.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Pensamiento que vuelas</l>
+                                          <l>mas que las aves,</l>
+                                          <l>llévale ese suspiro</l>
+                                          <l>á quien tu sabes:</l>
+                                          <l rend="indent">y dile á mi amor</l>
+                                          <l>que tengo su retrato</l>
+                                          <l>en mi corazon.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Hazme, mi bien, desdenes,</l>
+                                          <l>que todo el tiempo</l>
+                                          <l>que se tarda la dicha</l>
+                                          <l>vive el deseo:</l>
+                                          <l rend="indent">y en mi amor noble</l>
+                                          <l>suponen esperanzas</l>
+                                          <l>mas que favores.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Finezas y desprecios</l>
+                                          <l>no los archivo,</l>
+                                          <l>que los vuelvo al instante</l>
+                                          <l>que los recibo:</l>
+                                          <l rend="indent">de esta manera</l>
+                                          <l>á cada uno le pago</l>
+                                          <l>en su moneda.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">El amor que te tengo</l>
+                                          <l>parece sombra,</l>
+                                          <l>miéntras mas apartado</l>
+                                          <l>mas cuerpo toma:</l>
+                                          <l rend="indent">y de esta forma</l>
+                                          <l>miéntras mas te retiras</l>
+                                          <l>mas me enamoras.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Puesto en zancos un hombre</l>
+                                          <l>de baja esfera</l>
+                                          <l>es insolente y vano,</l>
+                                          <l>aunque él no quiera:</l>
+                                          <l rend="indent">nadie lo ignore,</l>
+                                          <l>porque es fuerza que tire</l>
+                                          <l>la cabra al monte.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Un pájaro en la mano</l>
+                                          <l>yo bien le tuve,</l>
+                                          <l>le dejé que se fuera,</l>
+                                          <l>¡qué tonta anduve!</l>
+                                          <l rend="indent">mas si él volviera,</l>
+                                          <l>por vida de mi nombre</l>
+                                          <l>que no se fuera.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">¡O cruel rigurosa</l>
+                                          <l>fortuna mia!</l>
+                                          <l>¿cuando de ser humana</l>
+                                          <l>llegará el dia?</l>
+                                          <l rend="indent">¿cuando tu rueda</l>
+                                          <l>parará la inconstancia</l>
+                                          <l>de su carrera?</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Si un afligido pecho</l>
+                                          <l>no suspirára,</l>
+                                          <l>el rigor de su pena</l>
+                                          <l>lo devorára:</l>
+                                          <l rend="indent">que los suspiros</l>
+                                          <l>no son la menor parte</l>
+                                          <l>para el alivio.</l>
+                                    </lg>
+                                    <fw type="reclamo">¡O</fw>
+
+                                    <pb n="3" source="BCN_026_3.jpg" facs="varios/BCN_026_3.jpg/"/>
+
+
+                                    <lg>
+                                          <l rend="indent">¡O muerte que en mis dichas</l>
+                                          <l>eres tirana!</l>
+                                          <l>¿por qué en mis tristes penas</l>
+                                          <l>no me acompañas?</l>
+                                          <l rend="indent">pero ya advierto</l>
+                                          <l>que para un infelice</l>
+                                          <l>no hay muerte á tiempo.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Solo por un efecto</l>
+                                          <l>de mi cariño</l>
+                                          <l>pudieron tolerarse</l>
+                                          <l>tus desvaríos:</l>
+                                          <l rend="indent">y aun de este modo</l>
+                                          <l>á tus locas ideas</l>
+                                          <l>no me acomodo.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Si la pasion te ciega,</l>
+                                          <l>mira primero</l>
+                                          <l>donde pones los ojos,</l>
+                                          <l>no llores luego:</l>
+                                          <l rend="indent">los ojos abre,</l>
+                                          <l>mira que cuando acuerdes</l>
+                                          <l>ya será tarde.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Acuérdome de un tiempo</l>
+                                          <l>que en tí vivia,</l>
+                                          <l>y por tí hago memoria</l>
+                                          <l>que me moria:</l>
+                                          <l rend="indent">no hay bien estable;</l>
+                                          <l>sépase que no hay cosa</l>
+                                          <l>que no se pase.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">La mucha confianza</l>
+                                          <l>entibia el amor,</l>
+                                          <l>y su fuego se apaga</l>
+                                          <l>con la posesion:</l>
+                                          <l rend="indent">para avivarle</l>
+                                          <l>unos zelos á tiempo</l>
+                                          <l>suelen bastarle.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">El que jura ser firme</l>
+                                          <l>y eterno en amar,</l>
+                                          <l>cuenta con que su gusto</l>
+                                          <l>no se ha de acabar:</l>
+                                          <l rend="indent">mas luego el tiempo</l>
+                                          <l>le muda, y lo jurado</l>
+                                          <l>lo lleva el viento.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Herido de las flechas</l>
+                                          <l>del niño ciego</l>
+                                          <l>estuve muchos años</l>
+                                          <l>en cautiverio:</l>
+                                          <l rend="indent">pero he logrado</l>
+                                          <l>escapar por la puerta</l>
+                                          <l>del desengaño.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ví tu hermosura, y luego</l>
+                                          <l>que tus ojos ví,</l>
+                                          <l>con un suspiro dije:</l>
+                                          <l>¡ay triste de mí!</l>
+                                          <l rend="indent">que prisionero</l>
+                                          <l>tan solo por mirarte</l>
+                                          <l>ahora me veo.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Algun dia sentía</l>
+                                          <l>tus esquiveces,</l>
+                                          <l>y hoy me son tus finezas</l>
+                                          <l>indiferentes:</l>
+                                          <l rend="indent">de esta mudanza</l>
+                                          <l>pregúntate á tí misma</l>
+                                          <l>cual es la causa.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Llora una dama hermosa</l>
+                                          <l>porque dió oídos</l>
+                                          <l>á las falsas cautelas</l>
+                                          <l>del dios Cupido:</l>
+                                          <l rend="indent">y al ver que yerra,</l>
+                                          <l>dice anegada en llanto:</l>
+                                          <l>¡quién lo creyera!</l>
+                                    </lg>
+                                    <fw type="reclamo">Lle-</fw>
+
+                                    <pb n="4" source="BCN_026_4.jpg" facs="varios/BCN_026_4.jpg/"/>
+
+                                    <lg>
+                                          <l rend="indent">Llevo bandera roja,</l>
+                                          <l>porque es mi intento</l>
+                                          <l>hacer guerra á Cupido</l>
+                                          <l>á sangre y fuego:</l>
+                                          <l rend="indent">y es el motivo</l>
+                                          <l>que él y los zelos siempre</l>
+                                          <l>están unidos.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">No fies en halagos</l>
+                                          <l>del dios Cupido,</l>
+                                          <l>aunque veas dulzuras</l>
+                                          <l>en el camino:</l>
+                                          <l rend="indent">serán cautelas</l>
+                                          <l>para ponerte á riesgo</l>
+                                          <l>de que te pierdas.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Siempre que de tu vista</l>
+                                          <l>me aparto, lloro</l>
+                                          <l>temiendo que mis dichas</l>
+                                          <l>las logre otro:</l>
+                                          <l rend="indent">que en mis pesares</l>
+                                          <l>las dichas son ligeras,</l>
+                                          <l>largos los males.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">A la rama mas alta</l>
+                                          <l>de tu amor subí,</l>
+                                          <l>vino un ayre contrario,</l>
+                                          <l>y al suelo caí:</l>
+                                          <l rend="indent">que esto sucede</l>
+                                          <l>al que en alas de cera</l>
+                                          <l>al sol se atreve.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">No hay cosa en este mundo</l>
+                                          <l>que no se mude;</l>
+                                          <l>el que hoy está abatido,</l>
+                                          <l>mañana sube:</l>
+                                          <l rend="indent">que la fortuna</l>
+                                          <l>como viene de prisa,</l>
+                                          <l>así se muda.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Va un gilguerillo alegre</l>
+                                          <l>á saciar la sed,</l>
+                                          <l>y el cazador astuto</l>
+                                          <l>le coge en la red:</l>
+                                          <l rend="indent">¡ó cuantas veces</l>
+                                          <l>busca un hombre su alivio,</l>
+                                          <l>y halla su muerte!</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Amor es una escuela</l>
+                                          <l>de desengaños,</l>
+                                          <l>que en ella siempre aprenden</l>
+                                          <l>aun los mas sabios:</l>
+                                          <l rend="indent">pero aunque aprendan,</l>
+                                          <l>ciegos en sus pasiones</l>
+                                          <l>nunca escarmientan.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Mi corazon se abrasa,</l>
+                                          <l>y como es cuerdo,</l>
+                                          <l>no quiere dar indicios</l>
+                                          <l>de aqueste incendio:</l>
+                                          <l rend="indent">porque ha observado</l>
+                                          <l>que firmeza en los hombres</l>
+                                          <l>nunca se ha hallado.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Yo sembré una mirada,</l>
+                                          <l>nació un deseo,</l>
+                                          <l>floreció una esperanza,</l>
+                                          <l>cogí un afecto:</l>
+                                          <l rend="indent">feliz quien siembra,</l>
+                                          <l>si al fin de sus trabajos</l>
+                                          <l>tiene cosecha.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">De todas tres potencias</l>
+                                          <l>que el alma tiene,</l>
+                                          <l>sola una me ha quedado,</l>
+                                          <l>cuál es la infiere:</l>
+                                          <l rend="indent">pero has de advertir</l>
+                                          <l>que me la he reservado</l>
+                                          <l>por no estar sin tí.</l>
+                                    </lg>
+                                    <fw type="reclamo"><hi rend="cursiva">OTRAS</hi></fw>
+                              </div>
+
+                              <div>
+                                    <pb n="5" source="BCN_026_5.jpg" facs="varios/BCN_026_5.jpg/"/>
+
+                                    <head type="primer_titulo" rend="cursiva">
+                                          <lb/>OTRAS SEGUIDILLAS<lb/>Boleras sin estrivillo.</head>
+
+                                    <lg>
+                                          <l><hi rend="negrita">N</hi>ace amor como planta</l>
+                                          <l>en el corazon,</l>
+                                          <l>los halagos la riegan,</l>
+                                          <l>la seca el rigor.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">¿Cómo quieres que tenga</l>
+                                          <l>gusto sin verte</l>
+                                          <l>si eres la que mas quiero</l>
+                                          <l>y estás ausente?</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Corazon que en la pena</l>
+                                          <l>tu alivio encuentras,</l>
+                                          <l>si en la pena descansas</l>
+                                          <l>¿de qué te quejas?</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">¿Qué haré yo con contarte</l>
+                                          <l>todas mis penas,</l>
+                                          <l>si aunque me las escuches</l>
+                                          <l>no las remedias?</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Tus suspiros que vienen</l>
+                                          <l>los mios que van,</l>
+                                          <l>si se encuentran al paso</l>
+                                          <l>¿qué estremos no harán?</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Siento mucho el dejarte</l>
+                                          <l>que eres bonita,</l>
+                                          <l>aunque estoy enfadado,</l>
+                                          <l>pasion no quita: : :</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Discurriendo en tus aras</l>
+                                          <l>hallar piedades,</l>
+                                          <l>solo hallo sinsabores</l>
+                                          <l>y falsedades.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Mi corazon padece</l>
+                                          <l>penas crueles</l>
+                                          <l>por no saber de cierto</l>
+                                          <l>si tú me quieres.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">El templo de la fama</l>
+                                          <l>he registrado,</l>
+                                          <l>y sobre una columna</l>
+                                          <l>ví tu retrato.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Supuesto que me has muerto</l>
+                                          <l>manda me entierren,</l>
+                                          <l>en el panteon triste</l>
+                                          <l>de tus desdenes.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Pondrás por epitafio</l>
+                                          <l>en mi sepulcro,</l>
+                                          <l>aquí murió, aquí yace</l>
+                                          <l>quien amar supo.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">No inventó Diocleciano</l>
+                                          <l>tormento mayor</l>
+                                          <l>que de dos que se quieren</l>
+                                          <l>la separacion.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Si hacer pruebas pretendes</l>
+                                          <l>de mi fino amor,</l>
+                                          <l>solo has de hallar constancias</l>
+                                          <l>contra tu rigor.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">En láminas de bronce</l>
+                                          <l>tengo de imprimir</l>
+                                          <l>un fúnebre epitafio</l>
+                                          <l>que diga ¡ay de mí!</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Muchos hay que no logran</l>
+                                          <l>lo que desean:</l>
+                                          <l>por ser cortos de genio</l>
+                                          <l>cortos se quedan.</l>
+                                    </lg>
+
+                                    <pb n="6" source="BCN_026_6.jpg" facs="varios/BCN_026_6.jpg/"/>
+
+                                    <lg>
+                                          <l rend="indent">Un corazon que vive</l>
+                                          <l>desconfiado</l>
+                                          <l>de ser correspondido</l>
+                                          <l>vive penando.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">De unos ojos hermosos</l>
+                                          <l>preso y cautivo,</l>
+                                          <l>humilde el yugo sufro</l>
+                                          <l>de su capricho.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Con zelosos discursos</l>
+                                          <l>divierto el tiempo,</l>
+                                          <l>desde que amor sus flechas</l>
+                                          <l>tiró á mi pecho.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">En la funesta guerra</l>
+                                          <l>de mi memoria,</l>
+                                          <l>solo podrá el olvido</l>
+                                          <l>lograr victoria.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">En el lóbrego abismo</l>
+                                          <l>de mi tormento,</l>
+                                          <l>solo las penas mias</l>
+                                          <l>hallan consuelo.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Que te tuve en mis brazos</l>
+                                          <l>anoche soñé,</l>
+                                          <l>lo que reí dormido,</l>
+                                          <l>dispierto lloré.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">A mí mismo me quiero</l>
+                                          <l>por quererte á tí,</l>
+                                          <l>y si tú no me quieres</l>
+                                          <l>yo tampoco á mí.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">No es gloria de famosos</l>
+                                          <l>conquistadores</l>
+                                          <l>usar cón quien se rinde</l>
+                                          <l>tantos rigores.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Al rayo ardiente y ciego</l>
+                                          <l>del dios vendado</l>
+                                          <l>nuestra amor ser mas firme</l>
+                                          <l>que el fuego airado.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Confuso está mi pecho</l>
+                                          <l>desde que te ví:</l>
+                                          <l>de mí ya no me acuerdo,</l>
+                                          <l>solo pienso en tí.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ya está el carro cargado</l>
+                                          <l>de tus desprecios,</l>
+                                          <l>mira no falta el exe</l>
+                                          <l>del sufrimiento.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ay! qué tristes cadenas!</l>
+                                          <l>qué dura cárcel!</l>
+                                          <l>á esto se han reducido</l>
+                                          <l>mis libertades.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Cárcel es mi esperanza,</l>
+                                          <l>juez mi voluntad,</l>
+                                          <l>tus ojos son los reos,</l>
+                                          <l>la causa es amar.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">En la bóveda obscura</l>
+                                          <l>de tu falsedad</l>
+                                          <l>resonaban los ecos</l>
+                                          <l>de mi lealtad.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">¡Qué funesto es el tiempo</l>
+                                          <l>que sin tí paso!</l>
+                                          <l>¡cuántas fatigas sufro,</l>
+                                          <l>cuántos quebrantos!</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Retrocede á tu centro,</l>
+                                          <l>suspiro mio,</l>
+                                          <l>que en el alma te dejas</l>
+                                          <l>á quien te envio.</l>
+                                    </lg>
+                                    <fw type="reclamo">La</fw>
+
+                                    <pb n="7" source="BCN_026_7.jpg" facs="varios/BCN_026_7.jpg/"/>
+
+                                    <lg>
+                                          <l rend="indent">La pasion oprimida</l>
+                                          <l>es como el rayo,</l>
+                                          <l>cuanto mas resistencia</l>
+                                          <l>mayor estrago.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Mas allá de la vida</l>
+                                          <l>he de quererte,</l>
+                                          <l>que amor está en el alma</l>
+                                          <l>y esa no muere.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Al impulso violento</l>
+                                          <l>de una mudanza</l>
+                                          <l>se desquician los exes</l>
+                                          <l>de una esperanza.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">De una chispa tan sola,</l>
+                                          <l>que no hice caso,</l>
+                                          <l>se originó el incendio</l>
+                                          <l>en que me abraso.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Muchos son los privados</l>
+                                          <l>que en tí se miran:</l>
+                                          <l>solo á mí, desdichado,</l>
+                                          <l>¿por qué me privas?</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">¿Cual de los dos amantes</l>
+                                          <l>tendrá mas pena,</l>
+                                          <l>el que se ausenta libre,</l>
+                                          <l>ó el que se queda?</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Soy peñasco, soy risco,</l>
+                                          <l>soy dura piedra,</l>
+                                          <l>para todos soy bronce,</l>
+                                          <l>para tí cera.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Memoria que en el tiempo</l>
+                                          <l>de los desvíos</l>
+                                          <l>se acuerda de la dicha,</l>
+                                          <l>dobla el martirio.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">En amantes dolencias</l>
+                                          <l>suelen los zelos</l>
+                                          <l>ser á veces sangrías</l>
+                                          <l>hechas á tiempo.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Esperanza consuela</l>
+                                          <l>posesion cansa,</l>
+                                          <l>apetecer desvela,</l>
+                                          <l>no lograr mata.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Por mas que nos separe</l>
+                                          <l>la tiranía,</l>
+                                          <l>he de ser siempre tuyo,</l>
+                                          <l>tú siempre mia.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Te hablaré por los ojos,</l>
+                                          <l>que es mas segura</l>
+                                          <l>lengua, que por los ojos</l>
+                                          <l>se esplica muda.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Es el amor un fuego</l>
+                                          <l>cuya materia,</l>
+                                          <l>cuanto mas se consume</l>
+                                          <l>mas se fomenta.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">¡Ay de aquel infelice</l>
+                                          <l>que hacer no puede!</l>
+                                          <l>¡y ay de aquel que pudiendo</l>
+                                          <l>hacer no quiere!</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Fin en mi fino pecho</l>
+                                          <l>tu amor no tendrá,</l>
+                                          <l>y esta fineza el tiempo</l>
+                                          <l>la acreditará.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Mi corazon del pecho</l>
+                                          <l>salir pretende:</l>
+                                          <l>yo no sé lo que busca,</l>
+                                          <l>tú ya lo entiendes.</l>
+                                    </lg>
+                                    <fw type="reclamo">Con</fw>
+
+                                    <pb n="8" source="BCN_026_8.jpg" facs="varios/BCN_026_8.jpg/"/>
+                                    <lg>
+                                          <l rend="indent">Con lo que me consuelo</l>
+                                          <l>cuando estoy triste,</l>
+                                          <l>es con ver el camino</l>
+                                          <l>por donde fuiste.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">La tortolilla triste</l>
+                                          <l>de ver se admira</l>
+                                          <l>cómo mi pecho tierno</l>
+                                          <l>su canto imita.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">¡Ay cómo te remontas,</l>
+                                          <l>memoria ufana!</l>
+                                          <l>mira que no es lo mismo</l>
+                                          <l>hoy que mañana.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ya se acabó aquel tiempo,</l>
+                                          <l>todo se acaba,</l>
+                                          <l>que solo con mirarte</l>
+                                          <l>me alimentaba.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Dime, dueño del alma,</l>
+                                          <l>dime si quedó</l>
+                                          <l>ceniza de aquel fuego</l>
+                                          <l>que algun tiempo ardió.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Toda la noche velo</l>
+                                          <l>considerando</l>
+                                          <l>cuando serás tu mia,</l>
+                                          <l>yo tuyo cuando.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Porfian en quererte</l>
+                                          <l>las ansias mias,</l>
+                                          <l>pero tú en despreciarlas</l>
+                                          <l>tambien porfias.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">El que ama no siendo</l>
+                                          <l>correspondido</l>
+                                          <l>ese sí que merece</l>
+                                          <l>nombrarse fino.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Tuve cierto cariño,</l>
+                                          <l>y aun no me pesa,</l>
+                                          <l>aunque fué muy ingrata</l>
+                                          <l>la recompensa.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">A Dios, y mis cuidados</l>
+                                          <l>no te los dejo,</l>
+                                          <l>por ser la única alhaja</l>
+                                          <l>que de tí llevo.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Arrojé una mirada,</l>
+                                          <l>sembré un deseo,</l>
+                                          <l>floreció una esperanza,</l>
+                                          <l>cogí un desprecio.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ingrata, que me engañas</l>
+                                          <l>bien lo conozco,</l>
+                                          <l>pasas conmigo el tiempo,</l>
+                                          <l>con otro el gozo.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Si despues de un desprecio</l>
+                                          <l>dura el afecto,</l>
+                                          <l>pasion es incurable</l>
+                                          <l>y amor perfecto.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Mi querer será eterno,</l>
+                                          <l>mi amor sin tasa,</l>
+                                          <l>mi voluntad de bronce;</l>
+                                          <l>mi fé de malla.</l>
+                                    </lg>
+                              </div>
+                        </div>
+
+                        <div type="colofon">
+                              <p>
+                                    <lb/><hi rend="cursiva">Barcelona</hi>: En la Imprenta de Bernat
+                                    Pla, calle de Cotoners. </p>
+                        </div>
+                  </div>
+            </body>
+      </text>
+</TEI>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Desenrollando el cordel - Mirador</title>
+        <link rel="stylesheet" href="/style.css"/>
+        <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"/>
+    </head>
+    <body>
+        <h1>Mirador</h1>
+        
+        <div id="mirador"/>
+        <!--<p id="url"></p>-->
+                
+        <script type="text/javascript">
+            let urlString = document.URL;
+            let manifestBaseUri = "https://iiif.unige.ch/dhportal/";
+            let paramString = urlString.split('?')[1];
+            let params_arr = paramString.split('&amp;');
+            for (let i = 0; i &lt; params_arr.length; i++) {
+                let pair = params_arr[i].split('=');
+                let manifestUrl = manifestBaseUri.concat(pair[1])
+                // console.log(manifestUrl);
+                const mirador = Mirador.viewer(
+                {
+                    "id": "mirador",
+                    "language": 'es',
+                    "selectedTheme": "light",
+                    "openManifestsPage": true,
+                    "window": {
+                        "panels": {
+                            "annotations": false,
+                        },
+                    },
+                    
+                    "workspace": {
+                        "isWorkspaceAddVisible": false,
+                        "showZoomControls": true
+                    },
+                    
+                    "windows": [ 
+                        {"manifestId": manifestUrl},
+                        {"manifestId": "https://iiif.unige.ch/collection/pliegos/manifest"},
+                    ],
+                });
+            }
+            
+        </script>
+    </body>
+</html>

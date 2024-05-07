@@ -1,0 +1,197 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title lang="es">Desenrollando el cordel</title>
+        <meta name="description" content="La biblioteca digital Desenrollando el cordel está dedicada a la colección de pliegos de cordel españoles del siglo XIX de la Biblioteca Universitaria de Ginebra."/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json" locale-fallback-ns="app">
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <!-- Menu de navigation -->
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu_inicio.html"/>
+                    </app-header>
+                    
+                    <main class="content-static__main-inicio">
+                        <!-- Barre de recherche -->
+                        <div class="content-static__searchPanel">
+                            <pb-search class="content-static__searchBar" action="search.html" data-template="pages:parse-params" value="${query}" redirect="redirect">
+                                <a href="ayuda.html" target="_blank" title="Search help" aria-label="Open the Search help in a new tab">
+                                    <iron-icon class="content-static__iconHelp" icon="icons:help"/>
+                                </a>
+                            </pb-search>
+                        </div>
+                        
+                        <h1>
+                            <pb-i18n key="inicio.titre-projet">Desenrollando el cordel</pb-i18n>
+                        </h1>
+                        <span>
+                            <pb-i18n key="inicio.sous-titre-projet">La biblioteca digital (Universidad de Ginebra)</pb-i18n>
+                        </span>
+                        
+                        <p>
+                            <pb-i18n key="inicio.para1">Este sitio web le permite descubrir la colección de pliegos de cordel de la Universidad de Ginebra. Puede buscar por temas, explorar los textos, comparar las imágenes digitalizadas y sus transcripciones con las de otros ejemplares, y hojear las ilustraciones que adornan estos documentos.</pb-i18n>
+                        </p>
+                        <p style="margin-top:0;">
+                            <span class="italic">
+                                <pb-i18n key="inicio.question">¿Qué es la literatura de cordel?</pb-i18n>
+                            </span> <pb-i18n key="inicio.para1bis.portion1">En el mundo hispánico, especialmente en la Península Ibérica </pb-i18n> (<span class="italic">pliegos</span>) <pb-i18n key="inicio.para1bis.portion2">y Brasil </pb-i18n> (<span class="italic">folhetos</span>), <pb-i18n key="inicio.para1bis.portion3">la expresión designa un conjunto de impresos populares a la venta en la calle suspendidos en cordeles.</pb-i18n>
+                        </p>
+                        
+                        <h2 class="content-static__subtitle">
+                            <pb-i18n key="inicio.titre-section1">Las colecciones de Ginebra</pb-i18n>
+                        </h2>
+                        <div class="content-static__img-gallery">
+                            <!-- Section : Toutes les collections -->
+                            <div class="content-static__img-gallery-container">
+                                <a href="description_collection.html">
+                                    <img src="resources/images/img_collections.png" alt="Woodcut of a solider fighting three other men"/>
+                                    <div class="content-static__img-gallery-text">
+                                        <h3>
+                                            <pb-i18n key="collection.completa">Colección completa</pb-i18n>
+                                        </h3>
+                                        <p class="text">
+                                            <pb-i18n key="inicio.para2">Acceda a todos los pliegos de cordel, independientemente de la imprenta o el lugar de impresión (915 documentos).</pb-i18n>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Section : Moreno -->
+                            <div class="content-static__img-gallery-container">
+                                <a href="index.html?collection=Pliegos&amp;facet-collection=Colleción+Moreno">
+                                    <img src="resources/images/img_moreno3.png" alt="Woodcut of a saint with a cross and a flower"/>
+                                    <div class="content-static__img-gallery-text">
+                                        <h3>
+                                            <pb-i18n key="collection.moreno">Colección Moreno</pb-i18n>
+                                        </h3>
+                                        <p class="text">
+                                            <pb-i18n key="inicio.para3">Descubra la colección de pliegos de cordel del impresor andaluz José María Moreno (376 documentos).</pb-i18n>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Section : Varios -->
+                            <div class="content-static__img-gallery-container">
+                                <a href="index.html?collection=Pliegos&amp;facet-collection=Colección+Varios">
+                                    <img src="resources/images/img_varios.png" alt="Woodcut of a lady playing the guitar under a tree"/>
+                                    <div class="content-static__img-gallery-text">
+                                        <h3>
+                                            <pb-i18n key="collection.varios">Colección Pliegos varios</pb-i18n>
+                                        </h3>
+                                        <p class="text">
+                                            <pb-i18n key="inicio.para4">Madrid, Barcelona, Sevilla… Explore los pliegos de cordel publicados en los principales centros de impresión  españoles (538 documentos).</pb-i18n>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Section : Illustrations -->
+                            <div class="content-static__img-gallery-container">
+                                <a href="index.html?collection=Illustraciones">
+                                    <img src="resources/images/img_grabados.png" alt="Woodcut of a frog at the barber shop"/>
+                                    <div class="content-static__img-gallery-text">
+                                        <h3>
+                                            <pb-i18n key="collection.illustration">Ilustraciones</pb-i18n>
+                                        </h3>
+                                        <p class="text">
+                                            <pb-i18n key="inicio.para5">Explore los impresos a través de sus ilustraciones. Músicos, caballeros, viragos o animales, ¡hay para todos los gustos!</pb-i18n>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="clearfix"/>
+                        </div>
+                        
+                        <h2 class="content-static__subtitle">
+                            <pb-i18n key="inicio.titre-section2">Enfoque en...</pb-i18n>
+                        </h2>
+                        
+                        <div class="content-static__img-gallery">
+                            <!-- Section : Le projet -->
+                            <div class="content-static__img-gallery-container">
+                                <a href="Documentation/presentacion_proyecto">
+                                    <img src="resources/images/img_proyecto4.png" alt="Woodcut of a man reading a chapbook in the street"/>
+                                    <div class="content-static__img-gallery-text">
+                                        <h3>
+                                            <pb-i18n key="inicio.titre-vignette4">El proyecto</pb-i18n>
+                                        </h3>
+                                        <p class="text">
+                                            <pb-i18n key="inicio.para6">Más información sobre el corpus, el proyecto y nuestros objetivos.</pb-i18n>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Section : L'exposition -->
+                            <div class="content-static__img-gallery-container">
+                                <a href="https://demelerlecordelexpo2022.wpcomstaging.com/" target="_blank" aria-label="Open a new tab with the exhibition website">
+                                    <img src="resources/images/img_expo.png" alt="Woodcut representing men and women walking in the street"/>
+                                    <div class="content-static__img-gallery-text">
+                                        <h3>
+                                            <pb-i18n key="inicio.titre-vignette5">La exposición</pb-i18n>
+                                        </h3>
+                                        <p class="text">
+                                            <pb-i18n key="inicio.para7">Descubra la exposición virtual “Histoires extraordinaires des imprimés ordinaires”, que prolonga la exposición organizada en Ginebra del 3 de mayo al 29 de julio de 2022.</pb-i18n>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Section : Les noms de lieu -->
+                            <div class="content-static__img-gallery-container">
+                                <a href="contexts/places">
+                                    <img src="resources/images/img_toponimos.jpg" alt="Woodcut of a couple riding a horse"/>
+                                    <div class="content-static__img-gallery-text">
+                                        <h3>
+                                            <pb-i18n key="places.titre">Topónimos</pb-i18n>
+                                        </h3>
+                                        <p class="text">
+                                            <pb-i18n key="inicio.para8">¡Explore los topónimos mencionados en nuestro corpus con un mapa interactivo y un índice!</pb-i18n>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Section : Ephemera Kit -->
+                            <div class="content-static__img-gallery-container">
+                                <a href="https://desenrollandoelcordel.github.io/ephemerakit/" target="_blank" aria-label="Open a new tab with the Ephemera Kit">
+                                    <img src="resources/images/img_masPliegos.jpg" alt="Woodcut of a peddler distributing chapbooks"/>
+                                    <div class="content-static__img-gallery-text">
+                                        <h3>
+                                            <pb-i18n key="inicio.titre-vignette7">El Ephemera Kit</pb-i18n>
+                                        </h3>
+                                        <p class="text">
+                                            <pb-i18n key="inicio.para9">¡Cree su propio pliego de cordel y explore nuestra colección de ilustraciones de una manera diferente!</pb-i18n>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="clearfix"/>
+                        </div>
+                    </main>
+                    
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        
+        <div class="splash"/>
+    </body>
+</html>

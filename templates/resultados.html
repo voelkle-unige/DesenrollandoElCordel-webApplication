@@ -1,0 +1,193 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    <main class="content-static">
+                        <h1 class="content-static__main-title">
+                            <pb-i18n key="mapa.recherche">Resultados</pb-i18n>
+                        </h1>
+                        
+                        <div class="content-static__collapsible">
+                            <!-- Publications -->
+                            <div>
+                                <input type="checkbox" checked=""/>
+                                <h2 class="content-static__collapsible-title">
+                                    <span class="content-static__collapsible-plus">+</span>
+                                    <span class="content-static__collapsible-minus">-</span>
+                                    <pb-i18n key="resultat.publication">Publicaciones</pb-i18n>
+                                </h2>
+                                <div class="content-static__collapsible-text">
+                                    <ul class="content-static__list">
+                                        <li>
+                                            <span class="bold">2024</span>
+                                            <ul>
+                                                <li>LEBLANC Elina (2024), «Building an Interface as an Argument? The Case Study of <i>Untangling the Cordel</i>», <i>Digital Humanities Quarterly</i> [<a href="http://www.digitalhumanities.org/dhq/vol/18/1/000695/000695.html" target="_blank">En ligne</a>]</li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="bold">2023</span>
+                                            <ul>
+                                                <li>CARTA Constance (2023), «Carlomagno en cordel: de amores y magia», <i>Actas del Coloquio Internacional de la Asociación Hispánica de Literatura Medieval. Pervivencia y Literatura: documentos periféricos al texto literario (Córdoba, 2-4 de septiembre de 2021)</i>, pp. 201-213</li>
+                                                <!--<li>CARTA Constance, BRERO Thalia, BERMÚDEZ Luana y PALACIOS Belinda, éd. (en préparation), <i>Ephémères, ordinaires, populaires ? Pour une autre histoire des imprimés de large circulation</i></li>-->
+                                                <li>JACSONT Pauline y LEBLANC Elina (2023), «Impact of Image Enhancement Methods on Automatic Transcription Trainings with <i>eScriptorium</i>», <i>Journal of data mining and digital humanities</i> [<a href="https://doi.org/10.46298/jdmdh.10262" target="_blank">En ligne</a>]</li>
+                                                <li>JACSONT Pauline y LEBLANC Elina (sous presse), « L'ATR en pratique: lumière sur les techniques de transcription automatique à Genève », <i>Actes du colloque Humanistica 2023</i>, Association francophone des humanités numériques</li>
+                                                <li>LEBLANC Elina (2023), «Modeling of a Heterogeneous Corpus: The Example of Chapbook Literature», <i>Digital Studies/Le Champ numérique</i> [<a href="https://doi.org/10.16995/dscn.8091" target="_blank">En ligne</a>]</li>
+                                                <li>LEBLANC Elina (2023), « Une bibliothèque numérique face à son public : l'exemple de l'enquête utilisateurs du projet <i>Démêler le cordel</i> », <i>Actes du colloque Humanistica 2023</i>, Association francophone des humanités numériques [<a href="https://hal.science/HUMANISTICA-2023/hal-04094188v1" target="_blank">En ligne</a>]</li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="bold">2022</span>
+                                            <ul>
+                                                <li>CARTA Constance y MADROÑAL Abraham, coord. (2022), <span class="content-static__italic">De los cantares de gesta a los cantares de ciego. Una historia de reelaboraciones entre oralidad y escritura</span>, New York: IDEA </li>
+                                                    <ul>
+                                                        <li>BERMÚDEZ Luana (2022), «“Les sacó los corazones / y en aceite los ha frito”: estrategias sensacionalistas en los pliegos de cordel», en Carta C. y A. Madroñal (coord.), <span class="content-static__italic">De los cantares de gesta a los cantares de ciegos</span>, New York: IDEA</li>
+                                                        <li>CARTA Constance (2022), «El anillo mágico: orígenes y pervivencia de un tema en dos historias de cordel», en Carta C. y A. Madroñal (coord.), <span class="content-static__italic">De los cantares de gesta a los cantares de ciegos</span>, New York: IDEA</li>
+                                                    </ul>
+                                                    
+                                                <li>CARTA Constance (2022), «Pliegos de cordel conservados en Ginebra: una base para investigar la labor del impresor carmonense José María Moreno», <span class="content-static__italic">Actas del XX Congreso de la Asociación Internacional de Hispanistas (Jerusalén, 7-12 de julio de 2019)</span>, Iberoamericana/Vervuert</li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="bold">2021</span>
+                                            <ul>
+                                                <li>CARTA Constance, GARCÍA SÁNCHEZ-MIGALLÓN Patricia, PALACIOS Belinda, MARTÍNEZ TORRES Cristina y BERMÚDEZ Luana (2021), «Impresos efímeros: una historia de reelaboraciones populares», <span class="content-static__italic">Boletín Hispánico Helvético</span>, 37-38, pp.97-186</li>
+                                                <ul>
+                                                    <li>BERMÚDEZ Luana (2021), «La Guerra Civil en viñetas: los impresos efímeros entre dos siglos», <span class="content-static__italic">Boletín Hispánico Helvético</span>, 37-38, pp. 161-185</li>
+                                                    <li>CARTA Constance (2021), Prologue du dossier thématique «Impresos efímeros: una historia de reelaboraciones populares», <span class="content-static__italic">Boletín Hispánico Helvético</span>, 37-38, pp. 97-102</li>
+                                                    <li>PALACIOS Belinda (2021), «Vidas populares: reconstruyendo la Vida i sucesos de la Monja Alférez a través de los pliegos de cordel sevillanos», <span class="content-static__italic">Boletín Hispánico Helvético</span>, 37-38, pp. 115-136</li>
+                                                </ul>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Communications scientifiques -->
+                            <div>
+                                <input type="checkbox" checked=""/>
+                                <h2 class="content-static__collapsible-title">
+                                    <span class="content-static__collapsible-plus">+</span>
+                                    <span class="content-static__collapsible-minus">-</span>
+                                    <pb-i18n key="resultat.communication">Comunicaciones científicas</pb-i18n>
+                                </h2>
+                                <div class="content-static__collapsible-text">
+                                    <ul class="content-static__list">
+                                        <li>
+                                            <span class="bold">2024</span>
+                                            <ul>
+                                                <li>Leblanc Elina, Noël Zoé y Jacsont Pauline, "Spanish chapbooks and place names. Enriching digital scholarly editions with geographical data", <pb-i18n key="resultat.conference"/> <span class="italic">Open Up Digital Editions</span>, Zurich, 24/25-01-2024.</li>
+                                            </ul>
+                                        </li>
+                                        
+                                        
+                                        <li>
+                                            <span class="bold">2023</span>
+                                            <ul>
+                                                <li>Bermúdez Luana, Carta Constance, Franco Lorysmar, Jacsont Pauline, Leblanc Elina y Palacios Bélinda, "Desenrollando el Cordel. From Text to Images", <pb-i18n key="resultat.conference"/> <span class="italic">Woodcuts. Studying the Images of Popular Prints: Methods and Theory</span>, Valencia, 6-03-2023.</li>
+                                                <li>Bermúdez Luana, "Viñetas en tiempos de guerra: las aleluyas", <pb-i18n key="resultat.je">Jornada de estudios</pb-i18n> <span class="italic">Del ocio a la propaganda: las noticias del cordel</span>, Genève, 17-04-2023.</li>
+                                                <li>Palacios Belinda, "Noticias sobre partos singulares en los pliegos de cordel", <pb-i18n key="resultat.je">Jornada de estudios</pb-i18n> <span class="italic">Del ocio a la propaganda: las noticias del cordel</span>, Genève, 17-04-2023.</li>
+                                                <li>Bermúdez Luana, "“35 maneras de morir en Mauthausen”: el trauma concentracionario en viñetas", <pb-i18n key="resultat.congres">Congreso internacional</pb-i18n> <span class="italic">La Historia en viñetas. La España contemporánea en el cómic</span>, Madrid, 18/19-05-2023.</li>
+                                                <li>Leblanc Elina, "Une bibliothèque numérique face à son public : l'exemple de l'enquête utilisateurs du projet Démêler le cordel", <pb-i18n key="resultat.conference"/> <span class="italic">Humanistica 2023</span>, Genève, 26/28-06-2023.</li>
+                                                <li>Bermúdez Luana, Carta Constance, Martínez-Torres Cristina, Palacios Belinda, "Desenrollando el cordel /Démêler le cordel / Untangling the cordel (2020-2024)", XXI <pb-i18n key="resultat.congres">Congreso internacional</pb-i18n> <span class="italic">AIH</span>, Neuchâtel, 10/15-07-2023.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold">2022</span>
+                                            <ul>
+                                                <li>Carta Constance, "La vertu héroïque et ses multiples visages dans l'Espagne médiévale: du <span class="italic">miles heroicus</span> au <span class="italic">rex litteratus</span>", <pb-i18n key="resultat.conference">Conferencia</pb-i18n> CEM (Centre d’études médiévales), Genève, 02-03-2022.</li>
+                                                <li>Carta Constance y Leblanc Elina, "Une bibliothèque numérique pour la littérature éphémère espagnole : entre texte et images", <pb-i18n key="resultat.seminaire"/> <span class="italic">Questions de recherche</span>, Genève, 07-04-2022.</li>
+                                                <li>Leblanc Elina y Jacsont Pauline, "Modéliser le rapport entre texte et images : le cas des imprimés éphémères espagnols du XIXe siècle", <pb-i18n key="resultat.conference"/> <span class="italic">Humanistica 2022</span>, <pb-i18n key="resultat.ligne">en línea</pb-i18n>, 21-05-2022.</li>
+                                                <li>Carta Constance, "Sur les traces d’un imprimeur andalou du XIXe siècle", "Midi Expo", <span class="italic">Histoire extraordinaire des imprimés ordinaires</span>, Genève, 25-05-2022.</li>
+                                                <li>Bermúdez Luana, "En los orígenes del cómic : las aleluyas", "Midi Expo", <span class="italic">Histoire extraordinaire des imprimés ordinaires</span>, Genève, 09-06-2022.</li>
+                                                <li>Palacios Belinda, "Monstruos y prodigios en los ancestros de la prensa", "Midi Expo", <span class="italic">Histoire extraordinaire des imprimés ordinaires</span>, Genève, 09-06-2022.</li>
+                                                <li>Jacsont Pauline y Leblanc Elina, "De Transkribus à eScriptorium : retours d'expérience sur l'usage d'outils d'HTR appliqué à un corpus d'imprimés espagnols du XIXe siècle", <pb-i18n key="resultat.conference"/> <span class="italic">Ancient Documents and Automatic Recognition of Handwritting</span>, École nationales des Chartes, Paris, 23-06-2022.</li>
+                                                <li>Barras Marie, "Vampires et sorcières", "Midi Expo", <span class="italic">Histoire extraordinaire des imprimés ordinaires</span>, Genève, 20-07-2022.</li>
+                                                <li>Leblanc Elina y Jacsont Pauline, "Between Data and Interface: Building a Digital Library for Spanish Chapbooks with TEI-Publisher", <pb-i18n key="resultat.conference"/> <span class="italic">TEI 2022</span>, Newcastle, 14-09-2022.</li>
+                                                <li>Leblanc Elina y Jacsont Pauline, "Encoding Complex Structures: The Case of a Gospel Spanish Chapbook", <pb-i18n key="resultat.conference"/> <span class="italic">TEI 2022</span>, Newcastle, 16-09-2022.</li>
+                                                <li>Carta Constance, "Avalorar y estudiar el patrimonio impreso: el caso de los pliegos de cordel", <pb-i18n key="resultat.symposium">Simposio internacional</pb-i18n> DUhMAR <span class="italic">Entre tradición e innovación digital</span>, Córdoba, 06/07-10-2022.</li>
+                                                <li>Leblanc Elina y Jacsont Pauline, "Digital Tools for Promoting and Enhancing a Spanish Chapbooks Collection", <pb-i18n key="resultat.je"/> <span class="italic">Dariah-CH</span>, Mendrisio, 20-10-2022.</li>
+                                                <li>Carta Constance, "Falsificar menudencias de imprenta", <pb-i18n key="resultat.congres">Congreso internacional</pb-i18n> GRETE <span class="italic">La máscara y el guante. Juegos autoriales en la Modernidad hispánica</span>, Genève, 04-11-2022.</li>
+                                                <li>Palacios Belinda, "La “Nonne lieutenante” : la construction d’une femme aventurière dans les “pliegos de cordel” du XVIIe siècle", <pb-i18n key="resultat.je">Jornada de estudios</pb-i18n> <span class="italic">Imaginaires et représentations des aventurières Un regard croisé : Moyen Âge-Renaissance / XXe-XXIe siècles</span>, La Rochelle, 09-12-2022.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold">2021</span>
+                                            <ul>
+                                                <li>Bermúdez Luana, "La Guerra Civil en viñetas: las aleluyas entre dos siglos", <pb-i18n key="resultat.je">Jornada de estudios</pb-i18n> <span class="italic">Impresos efímeros: una historia de reelaboraciones populares</span>,  <pb-i18n key="resultat.ligne">en línea</pb-i18n>, 22-03-2021.</li>
+                                                <li>Carta Constance, "Leyendas medievales revisitadas: sorpresas a lo largo del camino", <pb-i18n key="resultat.je">Jornada de estudios</pb-i18n> <span class="italic">Impresos efímeros: una historia de reelaboraciones populares</span>,  <pb-i18n key="resultat.ligne">en línea</pb-i18n>, 22-03-2021.</li>
+                                                <li>Palacios Belinda, "Vidas populares: reconstruyendo la Vida i sucesos de la Monja Alférez a través de los pliegos de cordel", <pb-i18n key="resultat.je">Jornada de estudios</pb-i18n> <span class="italic">Impresos efímeros: una historia de reelaboraciones populares</span>,  <pb-i18n key="resultat.ligne">en línea</pb-i18n>, 22-03-2021.</li>
+                                                <li>Carta Constance y Leblanc Elina, "Desenrollando el cordel: Structuration of a Large Corpus with an XML Database", <span class="italic">Database Working Group</span>, <pb-i18n key="resultat.ligne">en línea</pb-i18n>, 01-04-2021.</li>
+                                                <li>Carta Constance y Leblanc Elina, "Démêler le cordel : une bibliothèque numérique pour l'étude de la littérature éphémère espagnole du XIXe siècle", <pb-i18n key="resultat.conference"/> <span class="italic">Humanistica 2021</span>, <pb-i18n key="resultat.ligne">en línea</pb-i18n>, 10-05-2021.</li>
+                                                <li>Carta Constance, "Carlomagno en cordel: de amores y magia", <pb-i18n key="resultat.congres">Congreso internacional</pb-i18n> <span class="italic">AHLM-Association hispanique de Littérature médiévale</span>, 2021.
+                                                </li>
+                                                <li>Carta Constance, "Pervivencia y literatura: documentos periféricos al texto literario", Córdoba, 02/04-09-2021.</li>
+                                                <li>Carta Constance, "Quand Charlemagne emprunte le chemin de Saint-Jacques : entre création savante, et littérature populaire", <pb-i18n key="resultat.lecon">Lección inaugural</pb-i18n> <span class="italic">Soirée des lettres</span>, Genève, 06-12-2021.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold">2020</span>
+                                            <ul>
+                                                <li>Carta Constance y Leblanc Elina, "Littérature de colportage et humanités numériques. Des lignes de code pour lire entre les lignes du texte", <pb-i18n key="resultat.seminaire"/> <span class="italic">Questions de recherche</span>, Genève, 26-11-2020.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Manifestations scientifiques -->
+                            <div>
+                                <input type="checkbox" checked=""/>
+                                <h2 class="content-static__collapsible-title">
+                                    <span class="content-static__collapsible-plus">+</span>
+                                    <span class="content-static__collapsible-minus">-</span>
+                                    <pb-i18n key="resultat.manifestation">Eventos científicos</pb-i18n>
+                                </h2>
+                                <div class="content-static__collapsible-text">
+                                    <ul class="content-static__list">
+                                        <li>08-09/05/2025 - <a href="https://ephemeragva.sciencesconf.org/"> 2e <pb-i18n key="resultat.congres"/> "La longue vie des imprimés éphémères"</a>, Genève</li>
+                                        <li>17/04/2023 - <pb-i18n key="resultat.je"/> "Del ocio a la propaganda: las noticias del cordel", Genève</li>
+                                        <li>06-07/03/2023 - <pb-i18n key="resultat.conference"/> "Woodcuts. Studying the Images of Popular Prints: Methods and Theory", Valencia</li>
+                                        <li>05-07/05/2022 - <a href="https://ephemeragva2022.sciencesconf.org/"> <pb-i18n key="resultat.congres"/> "La longue vie des imprimés éphémères"</a>, Genève
+                                        </li>
+                                        <li>03/05-29/07/2022 - <a href="https://demelerlecordelexpo2022.wpcomstaging.com">
+                                                <pb-i18n key="resultat.exposition"/> "Histoire extraordinaire des imprimés ordinaires"</a>, Genève
+                                        </li>
+                                        <li>22/03/2021 - <a href="https://www.unige.ch/lettres/roman/unites/espagnol/archives-des-evenements-recents-et-passes/impresos-efimeros-una-historia-de-reelaboraciones-populares/">
+                                                <pb-i18n key="resultat.je"/> "Una historia de reelaboraciones populares"</a>, Genève
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="img-resultados" src="resources/images/femme_danseuse4.png" width="300px" alt=""/>
+                    </main>
+                    
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+</html>

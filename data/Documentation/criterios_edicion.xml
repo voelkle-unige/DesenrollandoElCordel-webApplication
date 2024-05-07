@@ -1,0 +1,198 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="es">Criterios de edición</title>
+            <title xml:lang="fr">Critères d'édition</title>
+            <title xml:lang="en">Editorial principles</title>
+            <respStmt>
+               <name>Constance Carta</name>
+               <name>Luana Bermúdez</name>
+               <name>Lorysmar Franco</name>
+               <name>Pauline Jacsont</name>
+               <name>Belinda Palacios</name>
+               <resp>Redacción del texto</resp>
+            </respStmt>
+            <respStmt>
+               <name>Elina Leblanc</name>
+               <resp>Codificación del texto</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Université de Genève</authority>
+            <availability status="restricted">
+               <licence>CC-BY</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Presentación de los criterios de edición utilizados para la codificación de textos y topónimos, y para la descripción de grabados.</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body xml:id="static">
+         <!-- Spanish text -->
+         <div xml:lang="es">
+            <head type="main">Criterios de edición</head>
+            <p>
+               Esta edición digital se ha realizado en varias etapas: en primer lugar, se ha puesto en línea todo el corpus <hi rend="italic">Moreno</hi> y los grabados asociados a dichos documentos.
+               En un segundo momento, se pondrán a disposición el corpus de <hi rend="italic">Pliegos Varios</hi> y sus respectivos grabados.
+               Los documentos se han codificado en XML-TEI. El ODD utilizado para los pliegos y los grabados se encuentra disponible en línea, en <ref target="https://github.com/DesenrollandoElCordel">GitHub</ref>.
+            </p>
+            <p>
+               <graphic url="../../resources/images/homme_ciseau.png" height="300px" rend="right"/>
+               Las transcripciones propuestas son semi-diplomáticas. Hemos respetado la ortografía original (<hi rend="italic">muger</hi>, <hi rend="italic">mujer</hi>), así como la acentuación (<hi rend="italic">José</hi>, <hi rend="italic">Josè</hi>) y la puntuación que aparece en cada pliego.
+               Los errores de impresión se indican en rojo. Se sugiere una corrección en un globo o <hi rend="italic">tooltip</hi>, que aparece al pasar el cursor por encima de la palabra (<hi rend="italic">EIN</hi> &gt; <hi rend="italic">FIN</hi>; <hi rend="italic">qne</hi> &gt; <hi rend="italic">que</hi>).
+               Las palabras añadidas en en el interlineado se indican en verde y se muestran en superíndice si están por encima de la línea, o en subíndice si están por debajo.
+            </p>
+            <p>
+               Se respetan los saltos de página y de línea, así como las mayúsculas, las cursivas y las negritas.
+               Sin embargo, hemos optado por no tener en cuenta la separación en varias columnas, ni la posición de las estrofas en la página (salvo en el caso de los títulos y colofones, que aparecen automáticamente centrados).
+            </p>
+            <p>
+               Las palabras que faltan (debido a desgarros o a un mal recorte) se restauran entre [ ] si es posible.
+               En caso contrario, se indican de la siguiente manera: [...].
+            </p>
+            
+            <div>
+               <head type="sub">Principios y puesta en práctica para la clasificación de los grabados</head>
+               <p>
+                  Esta parte presenta y aclara algunas decisiones tomadas durante la elaboración y aplicación de nuestros criterios de clasificación de los grabados. Recogemos únicamente los términos que podrían generar cierta incertidumbre en el utilizador al consultar nuestra base de datos. Estas decisiones se aplican a todas nuestras colecciones («Moreno» y «Varios») y no tienen en cuenta el contexto textual en el que se utilizan las imágenes.
+                  <list>
+                     <item>La subcategoría <hi rend="bold">Grupos de personajes: Hombres y mujeres</hi> se utiliza para designar tanto a las parejas como a los grupos de personajes mixtos, incluso si aparece representada una sola mujer entre varios hombres, o viceversa. Así, las subcategorías <hi rend="bold">Hombres</hi> y <hi rend="bold">Mujeres</hi> se usan exclusivamente en las imágenes donde aparecen solo hombres o solo mujeres.</item>
+                     <item>La subcategoría <hi rend="bold">Acción: Hablando</hi> se ciñe a las imágenes en las que se identifica a un personaje con la boca abierta o realizando un gesto de habla.</item>
+                     <item>La subcategoría <hi rend="bold">Acción: Abrazando</hi> se utiliza tanto para las escenas en las que dos personajes se besan como para aquellas que muestran abrazos o cualquier otro gesto cercano que exprese afecto.</item>
+                     <item>Cuando un personaje lleva accesorios significativos que no corresponden a ningún término preestablecido, estos se clasifican con <hi rend="bold">Accesorios: Otros</hi>.</item>
+                     <item>En las escenas de ejecución se utiliza el término <hi rend="bold">Muerte</hi>, incluso si el personaje aún no ha muerto. La presencia de un espectro se señala también con <hi rend="bold">Muerte: Muerte</hi>, como se ilustra en el grabado_v_291_1.</item>
+                     <item>Los pájaros que interactúan con los seres humanos, como las palomas mensajeras, se clasifican en la subcategoría <hi rend="bold">Animales domésticos</hi>; de lo contrario, se recurre a la subcategoría <hi rend="bold">Animales salvajes</hi>.</item>
+                     <item>El término <hi rend="bold">Fuego</hi> no incluye velas o lámparas a petróleo.</item>
+                     <item>El término <hi rend="bold">Árbol</hi> se utiliza para describir las imágenes que contienen únicamente uno o dos árboles (en contraste con la representación de un <hi rend="bold">Bosque</hi>).</item>
+                     <item><hi rend="bold">Jardín</hi> se utiliza para describir una escena al aire libre que incluya al menos un elemento construido por el hombre (un banco, una fuente, etc.), lo que distingue a esta categoría de los espacios naturales que en principio no han sido modificados por el ser humano.</item>
+                     <item>El término <hi rend="bold">Casa</hi> hace referencia a una casa vista desde el exterior; si se representa un interior doméstico, prevalece el término <hi rend="bold">Interior de un edificio</hi>.</item>
+                     <item>Cuando se utiliza la subcategoría <hi rend="bold">Ciudad o pueblo</hi>, se evita el uso del término <hi rend="bold">Casa</hi>, excepto en situaciones pertinentes. Por ejemplo, si la escena incluye un elemento que distingue una <hi rend="bold">Casa</hi> en particular, como una persona en un balcón.</item>
+                     <item>Dentro de la categoría <hi rend="bold">Medios de transporte</hi>, se utiliza la subcategoría <hi rend="bold">Otros</hi> para clasificar los medios de transporte que no correspondan a las subcategorías <hi rend="bold">Navío/Barco</hi> o <hi rend="bold">Vehículo con ruedas</hi>, como ocurre en el grabado_v_434_1 con el globo aerostático. <hi rend="bold">Vehículo con ruedas</hi>, por su parte, incluye bicicletas, carros, carruajes, automóviles, patines, etc.</item>
+                     <item>Cupido, en el grabado_v_283_1, se clasifica en la subcategoría <hi rend="bold">Ángel-es</hi>, debido a la proximidad visual y a la escasez de su presencia en el corpus.</item>
+                  </list>
+               </p>
+               
+            </div>
+            
+            <div>
+               <head type="sub">Codificación de los topónimos</head>
+               <p>Los topónimos se codificaron automáticamente (véase la página <ref target="proceso_tecnico">Proceso técnico</ref>): en el cuerpo del texto con el elemento &lt;name&gt; y en los metadatos con el elemento &lt;listPlace&gt;, que enumera todos los lugares mencionados en un texto con su frecuencia y coordenadas geográficas.</p>
+               <p>También se ha generado automáticamente un <ref target="../contexts/places">índice</ref> que enumera todos los lugares mencionados en nuestro corpus. Se basa en el modelo del proyecto <ref target="https://github.com/stazh/briefedition-escher">Briefe Edition</ref>.</p>
+            </div>
+         </div>
+         
+         <!-- French text -->
+         <div xml:lang="fr">
+            <head type="main">Critères d'édition</head>
+            <p>
+               La présente édition numérique a été réalisée en plusieurs étapes : dans un premier temps, a été mis en ligne l’ensemble du corpus <hi rend="italic">Moreno</hi> et des gravures associées.
+               Dans un second temps, sera mis en ligne le corpus des <hi rend="italic">Pliegos Varios</hi>, ainsi que leurs gravures.
+               Les documents ont été encodés en XML-TEI. L’ODD utilisée pour les pliegos et les gravures est disponible en ligne, sur <ref target="https://github.com/DesenrollandoElCordel">GitHub</ref>
+            </p>
+            
+            <p>
+               <graphic url="../../resources/images/homme_ciseau.png" height="300px" rend="right"/>
+               Les transcriptions proposées sont semi-diplomatiques. Nous avons respecté la graphie d’origine (<hi rend="italic">muger</hi>, <hi rend="italic">mujer</hi>), ainsi que l’accentuation (<hi rend="italic">José</hi>, <hi rend="italic">Josè</hi>) et la ponctuation utilisée.
+               Les erreurs d’imprimerie sont indiquées en rouge. Une correction est proposée dans une infobulle, qui apparaît au survol de la souris (<hi rend="italic">EIN</hi> &gt; <hi rend="italic">FIN</hi> ; <hi rend="italic">qne</hi> &gt; <hi rend="italic">que</hi>).
+               Les mots ajoutés en interligne sont indiqués en vert et affichés en exposant s’ils sont au-dessus de la ligne ou en indice s’ils sont en dessous de la ligne.
+            </p>
+            
+            <p>
+               Les changements de page et les retours à la ligne sont respectés, tout comme la casse, les italiques et les gras.
+               Nous avons cependant choisi de ne pas prendre en compte la séparation en plusieurs colonnes ni la position des strophes sur la page (sauf dans le cas des titres et des colophons, qui sont automatiquement centrés).
+            </p>
+            
+            <p>
+               Les mots manquants (en raison d’une déchirure ou d’un mauvais massicotage) sont rétablis entre [ ] lorsque cela est possible.
+               Dans le cas contraire, ils sont indiqués de la manière suivante : [...].
+            </p>
+            
+            <div>
+               <head type="sub">Principes et pratiques de classification des gravures</head>
+               <p>
+                  Cette partie vise à présenter et à clarifier quelques choix opérés durant l’élaboration et l’application de nos critères de classification des gravures. Ces choix s’appliquent à l’ensemble de nos collections (« Moreno » et « Varios ») et ne tiennent pas compte du contexte textuel dans lequel les images sont employées. La description qui suit met l’accent sur les termes qui peuvent donner lieu à des incertitudes quant à leur interprétation, afin de garantir la pertinence des résultats obtenus lors de l’interrogation de notre base de données. Les principaux choix opérés ont été les suivants :
+                  <list>
+                     <item>La sous-catégorie <hi rend="bold">Grupos de personajes: Hombres y mujeres</hi> s’utilise pour désigner tant les couples que les groupes mixtes de personnages, même s’il n’y a qu’une seule femme pour plusieurs hommes, ou vice-versa. Ainsi, les sous-catégories <hi rend="bold">Hombres</hi> et <hi rend="bold">Mujeres</hi> désignent, respectivement, les images où apparaissent seulement des hommes ou seulement des femmes.</item>
+                     <item>Dans la sous-catégorie <hi rend="bold">Acción: Hablando</hi>, l'utilisation est restreinte aux cas où une bouche ouverte ou un geste de parole est visible.</item>
+                     <item>La sous-catégorie <hi rend="bold">Acción: Abrazando</hi> est utilisée aussi bien pour des scènes où deux personnages s'embrassent, que pour des représentations d'étreintes ou de gestes rapprochés témoignant l'affection.</item>
+                     <item>Lorsqu'un personnage est muni d'accessoires significatifs ne correspondant à aucun terme préétabli, le terme <hi rend="bold">Accesorios: Otros</hi> est utilisé.</item>
+                     <item>Dans les scènes d'exécution, le terme <hi rend="bold">Muerte</hi> est utilisé, même si le personnage n'est pas encore mort. La présence d'un spectre exige l'utilisation de <hi rend="bold">Muerte: Muerte</hi>, comme illustré dans le grabado_v_291_1.</item>
+                     <item>Pour les oiseaux interagissant clairement avec les humains, comme les pigeons voyageurs, ils sont classés dans la sous-catégorie <hi rend="bold">Animales domésticos</hi> ; autrement, la sous-catégorie <hi rend="bold">Animales salvajes</hi> est utilisée.</item>
+                     <item>Le terme <hi rend="bold">Fuego</hi> n’inclut pas les bougies ou les lampes à pétrole.</item>
+                     <item><hi rend="bold">Árbol</hi> est employé pour désigner une image contenant un ou deux arbres (par opposition à une forêt, <hi rend="bold">Bosque</hi>).</item>
+                     <item><hi rend="bold">Jardín</hi> est utilisé pour décrire une scène d’extérieur comprenant au moins un élément construit par l’homme (comme un banc, une fontaine, etc.), afin de distinguer cette catégorie des espaces naturels en principe dénués de présence humaine.</item>
+                     <item>Le terme <hi rend="bold">Casa</hi> désigne une maison vue de l’extérieur ; si c’est un intérieur domestique qui est représenté, c’est le terme <hi rend="bold">Interior de un edificio</hi> qui prévaut.</item>
+                     <item>Lorsque la sous-catégorie <hi rend="bold">Ciudad o pueblo</hi> est employée, l'utilisation du terme <hi rend="bold">Casa</hi> est évitée, sauf dans des situations pertinentes. Par exemple, il est approprié de mentionner une <hi rend="bold">Casa</hi> si elle inclut un élément distinctif, tel qu'une personne au balcon.</item>
+                     <item>Au sein de la catégorie <hi rend="bold">Medios de transporte</hi>, la sous-catégorie <hi rend="bold">Otros</hi> est utilisée pour classer les moyens de transport ne correspondant pas aux sous-catégories <hi rend="bold">Navío/Barco</hi> ou <hi rend="bold">Véhiculo con ruedas</hi>, comme illustré par le grabado_v_434_1 avec une montgolfière. <hi rend="bold">Vehiculo con ruedas</hi>, quant à lui, inclut vélo, charrette, carrosse, automobile, patins à roulettes, etc.</item>
+                     <item>Cupidon, dans le grabado_v_283_1, est classé dans la sous-catégorie <hi rend="bold">Ángel-es</hi>, par proximité thématique.</item>
+                  </list>
+               </p>
+            </div>
+            
+            <div>
+               <head type="sub">Encodage des noms de lieu</head>
+               <p>L’encodage des noms de lieu a été réalisé automatiquement (Voir la page <ref target="proceso_tecnico">Aspects techniques</ref>) : dans le corps du texte avec l’élément &lt;name&gt; et dans les métadonnées avec l’élément &lt;listPlace&gt;, qui liste l’ensemble des lieux cités dans un texte avec leur fréquence et leur coordonnées géographiques.</p>
+               <p>Un <ref target="../contexts/places">index</ref>, répertoriant l’ensemble des lieux mentionnés dans notre corpus, a également été généré automatiquement. Il s’appuie sur le modèle du projet <ref target="https://github.com/stazh/briefedition-escher">Briefe Edition</ref>.</p>
+            </div>
+         </div>
+         
+         <!-- English text -->
+         <div xml:lang="en">
+            <head type="main">Editorial principles</head>
+            <p>
+               This digital edition has been produced in several stages: first, the complete <hi rend="italic">Moreno</hi> corpus and its engravings have been put online.
+               In a second phase, the corpus of the <hi rend="italic">Pliegos Varios</hi> and their engravings will be put online.
+               The documents have been encoded in XML-TEI. The ODD used for the pliegos and engravings is available online on <ref target="https://github.com/DesenrollandoElCordel">GitHub</ref>.
+            </p>
+            
+            <p>
+               <graphic url="../../resources/images/homme_ciseau.png" height="300px" rend="right"/>
+               The proposed transcriptions are semi-diplomatic. We respected the original spelling (<hi rend="italic">muger</hi>, <hi rend="italic">mujer</hi>), as well as the original accentuation (<hi rend="italic">José</hi>, <hi rend="italic">Josè</hi>) and punctuation. Printing errors are indicated in red.
+               A correction is suggested in a tooltip, which appears on mouseover (<hi rend="italic">EIN</hi> &gt; <hi rend="italic">FIN</hi>; <hi rend="italic">qne</hi> &gt; <hi rend="italic">que</hi>). Words added in the line spaces are indicated in green and displayed in superscript if they are above the line or in subscript if below the line.
+            </p>
+            
+            <p>
+               Page breaks and line breaks are respected, along with case, italics and bolding.
+               However, we have chosen not to consider the separation into several columns, nor the position of stanzas on the page (except in the case of titles and colophons, which are automatically centred).
+            </p>
+            
+            <p>
+               Missing words (due to tearing or poor trimming) are restored in [ ] where possible.
+               Otherwise, they are indicated as follows: [...].
+            </p>
+            
+            <div>
+               <head type="sub">Principles and methods of classification of woodcuts</head>
+               <p>
+                  The aim of this section is to present and clarify some of the choices made in developing and applying our criteria for classifying engravings. These choices apply to our collections as a whole ("Moreno" and "Varios") and do not take account of the textual context in which the images are used. The following description focuses on terms that may be subject to uncertainty as to their interpretation, in order to ensure the relevance of the results obtained when querying our database. The main choices made were as follows:
+                  <list>
+                     <item>The subcategory <hi rend="bold">Grupos de personajes: Hombres y mujeres</hi> is used to designate both couples and mixed groups of characters, even if there is only one woman for several men, or vice versa. In this way, the subcategories <hi rend="bold">Hombres</hi> and <hi rend="bold">Mujeres</hi> refer to images in which only men or only women appear, respectively.</item>
+                     <item>For the subcategory <hi rend="bold">Acción: Hablando</hi>, use is restricted to cases where an open mouth or speaking gesture is visible.</item>
+                     <item>The subcategory <hi rend="bold">Abrazando</hi> is used for scenes in which two characters embrace, as well as for representations of embraces or close-up gestures showing affection.</item>
+                     <item>When a character is equipped with significant accessories that do not correspond to any pre-established term, the term <hi rend="bold">Accesorios: Otros</hi> is used.</item>
+                     <item>In execution scenes, the term <hi rend="bold">Muerte</hi> is used, even if the character is not yet dead. The presence of a spectre requires the use of <hi rend="bold">Muerte: Muerte</hi>, as illustrated in grabado_v_291_1.</item>
+                     <item>Birds that clearly interact with humans, such as carrier pigeons, are classified in the subcategory <hi rend="bold">Animales domésticos</hi>; otherwise, the subcategory <hi rend="bold">Animales salvajes</hi> is used.</item>
+                     <item>The term <hi rend="bold">Fuego</hi> does not include candles or oil lamps.</item>
+                     <item><hi rend="bold">Árbol</hi> is used to describe an image containing one or two trees (as opposed to a forest, <hi rend="bold">Bosque</hi>).</item>
+                     <item><hi rend="bold">Jardín</hi> is used to describe an outdoor scene that includes at least one man-made feature (such as a bench, fountain, etc.), to distinguish this category from natural spaces that are in principle free of human presence.</item>
+                     <item>The term <hi rend="bold">Casa</hi> refers to a house seen from the outside; if it is a domestic interior that is being represented, the term <hi rend="bold">Interior de un edificio</hi> is preferred.</item>
+                     <item>When the subcategory <hi rend="bold">Ciudad o pueblo</hi> is employed, the use of the term <hi rend="bold">Casa</hi> is avoided, except in relevant situations. For example, it is appropriate to mention a <hi rend="bold">Casa</hi> if it includes a distinctive feature, such as a person on a balcony.</item>
+                     <item>Within the category <hi rend="bold">Medios de transporte</hi>, the subcategory <hi rend="bold">Otros</hi> is used to classify means of transport that do not correspond to the subcategories <hi rend="bold">Navío/Barco</hi> or <hi rend="bold">Véhiculo con ruedas</hi>, as illustrated by grabado_v_434_1 with a hot-air balloon. <hi rend="bold">Vehiculo con ruedas</hi>, on the other hand, includes bicycles, carts, carriages, automobiles, roller skates, etc.</item>
+                     <item>Cupid, in grabado_v_283_1, is classified in the subcategory <hi rend="bold">Ángel-es</hi>, due to its thematic proximity.</item>
+                  </list>
+               </p>
+            </div>
+            
+            <div>
+               <head type="sub">Encoding of place names</head>
+               <p>Place names were encoded automatically (see the <ref target="proceso_tecnico">Technical aspects</ref> page): in the body of the text with the &lt;name&gt; element and in the metadata with the &lt;listPlace&gt; element, which lists all the places mentioned in a text with their frequency and geographical coordinates.</p>
+               <p>An <ref target="../contexts/places">index</ref>, listing all the places mentioned in our corpus, was also generated automatically. It is based on the model of the <ref target="https://github.com/stazh/briefedition-escher">Briefe Edition</ref> project.</p>
+            </div>
+         </div>
+      </body>
+  </text>
+</TEI>

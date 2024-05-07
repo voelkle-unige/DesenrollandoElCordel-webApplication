@@ -1,0 +1,643 @@
+<?xml-model href="Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_017">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Romance, de como el Conde Don Ramon de Barcelona libró a la Emperatriz de Alemania</title>
+                        <respStmt xml:id="PJ">
+                              <name>Pauline Jacsont</name>
+                              <resp>Segmentación y transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="LF">
+                              <name>Lorysmar Franco</name>
+                              <resp>Corrección de la transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="EL">
+                              <name>Elina Leblanc</name>
+                              <resp>Codificación TEI</resp>
+                        </respStmt>
+                  </titleStmt>
+                  <publicationStmt>
+                        <authority role="rightsHolder">Bibliothèque Universitaire de
+                              Genève</authority>
+                        <availability status="restricted">
+                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+                        </availability>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <biblFull>
+                              <titleStmt>
+                                    <title type="titulo_completo">Romance, de como el Conde Don
+                                          Ramon de Barcelona libró a la Emperatriz de Alemania, que
+                                          la tenian para quemar, con todo lo demás que verá el
+                                          curioso Letor</title>
+                                    <title type="titulo_breve">Romance, de como el Conde Don Ramon
+                                          de Barcelona libró a la Emperatriz de Alemania</title>
+                              </titleStmt>
+                              <editionStmt>
+                                    <p/>
+                              </editionStmt>
+                              <publicationStmt>
+                                    <publisher>Herederos de Juan Jolis</publisher>
+                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+                                    <date cert="low" when="1800-01-01">[s.a.]</date>
+                              </publicationStmt>
+                        </biblFull>
+                        <msDesc>
+                              <msIdentifier>
+                                    <country>Suisse</country>
+                                    <settlement>Genève</settlement>
+                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+                                    </repository>
+                                    <collection>Colección Varios</collection>
+                                    <idno type="cote"/>
+                                    <idno type="DOI">10.5281/zenodo.6811273</idno>
+                                    <altIdentifier>
+                                          <idno type="num_impresor">XLI</idno>
+                                    </altIdentifier>
+                              </msIdentifier>
+                              <msContents>
+                                    <summary/>
+                                    <msItem>
+                                          <locus/>
+                                          <title/>
+                                    </msItem>
+                              </msContents>
+                              <physDesc>
+                                    <objectDesc>
+                                          <supportDesc>
+                                                <support>
+                                                  <dim>in-4</dim>
+                                                  <material rend="amarillo"/>
+                                                </support>
+                                                <extent>
+                                                  <measure unit="página" quantity="4"/>4 p.</extent>
+                                                <condition>Bueno</condition>
+                                          </supportDesc>
+                                          <layoutDesc>
+                                                <p>2 columnas</p>
+                                          </layoutDesc>
+                                    </objectDesc>
+                                    <decoDesc>
+                                          <summary n="3">Tres grabados (p.1)</summary>
+                                          <decoNote type="lista_grabados">
+                                                <list>
+                                                      <item corresp="grabado_b_017_1.xml" facs="varios/BCN_017_1.jpg/477,254,700,620/100,/0/default.jpg">grabado_b_017_1</item>
+                                                      <item corresp="grabado_b_017_2.xml" facs="varios/BCN_017_1.jpg/1176,224,500,650/100,/0/default.jpg">grabado_b_017_2</item>
+                                                      <item corresp="grabado_b_017_3.xml" facs="varios/BCN_017_1.jpg/139,255,300,650/100,/0/default.jpg">grabado_b_017_3</item>
+                                                </list>
+                                          </decoNote>
+                                    </decoDesc>
+                                    <additions/>
+                              </physDesc>
+                              <history/>
+                        </msDesc>
+                  </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                  <projectDesc>
+                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+                              Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
+                              profesora Constance Carta de la Universidad de Ginebra, con el apoyo
+                              de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+                  </projectDesc>
+                  <editorialDecl corresp="#automaticTranscription">
+                        <correction>
+                              <p>OCR corregido</p>
+                        </correction>
+                        <normalization>
+                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
+                                    original.</p>
+                        </normalization>
+                        <punctuation>
+                              <p>Se conserva la puntuación original.</p>
+                        </punctuation>
+                  </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+                  <langUsage>
+                        <language ident="es">Español</language>
+                  </langUsage>
+                  <textClass>
+                        <keywords xml:base="http://datos.bne.es/tema/">
+                              <term target="XX527614.html" type="tipo_texto">Romances</term>
+                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+                              <term type="verso_prosa">Verso</term>
+                              <term type="sagrado_profano">Profano</term>
+                        </keywords>
+                  </textClass>
+            </profileDesc>
+            <revisionDesc>
+                  <change when="2023-10-02" who="#EL">Création du fichier TEI P5 et encodage du
+                        corps du texte</change>
+                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+            </revisionDesc>
+      </teiHeader>
+
+      <facsimile>
+            <graphic url="varios/BCN_017_1.jpg/full/200,/0/default.jpg"/>
+      </facsimile>
+      <text>
+            <body>
+                  <div>
+                        <div>
+                              <pb n="1" source="BCN_017_1.jpg" facs="varios/BCN_017_1.jpg/"/>
+
+                              <head type="primer_titulo">
+                                    <lb/><hi rend="negrita">ROMANCE,</hi><lb/>DE COMO EL CONDE DON
+                                    RAMON DE BARCELONA<lb/>libró à la Emperatriz de Alemania, que
+                                    la tenian para quemar,<lb/>con todo lo demàs que verà el curioso
+                                    Letor,</head>
+
+                              <lg>
+                                    <l><hi rend="negrita">E</hi>N el tiempo que reynava</l>
+                                    <l>y en virtudes florecia</l>
+                                    <l>este Conde Don Ramon</l>
+                                    <l>flor de la Cavalleria.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">En Barcelona la grande,</l>
+                                    <l>que por suya la tenia</l>
+                                    <l>nuevas ciertas de dolor</l>
+                                    <l>de un Estrangero sabia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Que allà en Alemania</l>
+                                    <l>grande llanto se hacia,</l>
+                                    <l>por la Noble Emperatriz,</l>
+                                    <l>que en virtudes resplandecia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Que dos malos Cavalleros</l>
+                                    <l>la acusan de alevosia</l>
+                                    <l>ante el gran Emperador,</l>
+                                    <l>que mas que à si la queria.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Diciendo: Sepa tu Alteza,</l>
+                                    <l>gran Señor si te placia,</l>
+                                    <l>que nosotros hemos visto</l>
+                                    <l>à la Emperatriz un dia</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Holgar con un Cavallero</l>
+                                    <l>no mirando que hacia,</l>
+                                    <l>traicion à ti, Señor,</l>
+                                    <l>y à tu gran genealogia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">El Emperador muy turbado,</l>
+                                    <l>desta suerte respondia;</l>
+                                    <l>si es verdad Cavalleros</l>
+                                    <l>essa tan gran villania,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Yo haré un tal castigo</l>
+                                    <l>qual conviene à la honra mia;</l>
+                                    <l>mandóla luego prender,</l>
+                                    <l>y en prisiones la ponia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Hasta ser cumplido el plazo,</l>
+                                    <l>que la ley le disponia,</l>
+                                    <l>buscasse dos Cavalleros,</l>
+                                    <l>que defiendan la su vida.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Contra los Acusadores,</l>
+                                    <l>que en el compo se veria</l>
+                                    <l>la justicia cuya era,</l>
+                                    <l>y à quien Dios favorecia.</l>
+                              </lg>
+                              <fw type="reclamo">Pues</fw>
+
+                              <pb n="2" source="BCN_017_2.jpg" facs="varios/BCN_017_2.jpg/"/>
+
+                              <lg>
+                                    <l rend="indent">Pues sabido por el Conde,</l>
+                                    <l>esta nueva adolorida,</l>
+                                    <l>determina de partir</l>
+                                    <l>à librarla si podia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Con no mas de un Escudero</l>
+                                    <l>de quien el mucho se fia,</l>
+                                    <l>andando por sus jornadas,</l>
+                                    <l>sin parar noche, ni dia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Llegado pues à las Cortes</l>
+                                    <l>que el Emperador tenia</l>
+                                    <l>para dar la gan sentencia</l>
+                                    <l>de alli al tercero dia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">De quemar la Emperatris,</l>
+                                    <l>cosa de muy gran manzilla,</l>
+                                    <l>pues no havia Cavallero</l>
+                                    <l>en tan gran Cavalleria;</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Que por una tal Señora</l>
+                                    <l>quiera aventurar su vida,</l>
+                                    <l>por ser los acusadores</l>
+                                    <l>de gran suerte, y gran valia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Pues el Conde ya llegado,</l>
+                                    <l>preguntó, si ser podia,</l>
+                                    <l>hablar con la Emperatriz,</l>
+                                    <l>por cosa que le cumplia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Supo que ninguno entrava</l>
+                                    <l>do estava su Señoria,</l>
+                                    <l>sino es su Confessor,</l>
+                                    <l>Frayle de muy santa vida,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Vase el Conde por el,</l>
+                                    <l>desta suerte le decia:</l>
+                                    <l>Padre yo soy estrangero</l>
+                                    <l>de lexas tierras venia</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">A librar (si Dios quisiesse)</l>
+                                    <l>ò morir en tal porfia,</l>
+                                    <l>à la gran Emperatriz,</l>
+                                    <l>que es sin culpa, yo creia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Mas primero si es possible,</l>
+                                    <l>gran descanso me seria</l>
+                                    <l>hablar con su Magestad,</l>
+                                    <l>si esto hacer se podia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Yo daré orden Señor,</l>
+                                    <l>el buen Frayle respondia,</l>
+                                    <l>tomará vuestra merced</l>
+                                    <l>un Habito que yo tenia;</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Y vestir se ha como Frayle,</l>
+                                    <l>é irá en mi compañia,</l>
+                                    <l>ya se parte el buen Conde</l>
+                                    <l>con el Frayle que lo guia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Llegados que fueron dentro</l>
+                                    <l>en la carcel do yacia,</l>
+                                    <l>las rodillas por el suelo</l>
+                                    <l>el buen Conde assi decia:</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Yo soy muy alta Señora,</l>
+                                    <l>de España la ennoblecida,</l>
+                                    <l>y de Barcelona Conde</l>
+                                    <l>Ciudad de muy gran valia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Estando en la mi Corte,</l>
+                                    <l>con solaz y alegria</l>
+                                    <l>por muy cierta nueva supe</l>
+                                    <l>la congoxa que tenia</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Vuestra Real Magestad,</l>
+                                    <l>de lo qual yo me dolia,</l>
+                                    <l>y por esso yo partí</l>
+                                    <l>à poner por vos la vida.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">La Emperatriz que esto oyera</l>
+                                    <l>de gozo no cabia,</l>
+                                    <l>grandes lagrimas de sus ojos</l>
+                                    <l>por su linda faz vertia;</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Tomóle por las manos,</l>
+                                    <l>desta suerte le decia:</l>
+                                    <l>bien seas venido Conde,</l>
+                                    <l>buena sea vuestra venida.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Vuestra Nobleza, y valor,</l>
+                                    <l>vuestro esfuerzo, y valentia;</l>
+                                    <l>ya me hace ser muy cierta</l>
+                                    <l>de mi honra, y vuestra vida.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Mi innocencia os librará,</l>
+                                    <l>pues que Dios bien lo sabia</l>
+                                    <l>de la falsa acusacion,</l>
+                                    <l>que contra mi se ponia.</l>
+                              </lg>
+                              <fw type="reclamo">Ya</fw>
+
+                              <pb n="3" source="BCN_017_3.jpg" facs="varios/BCN_017_3.jpg/"/>
+
+                              <lg>
+                                    <l rend="indent">Ya se despide el buen Conde,</l>
+                                    <l>ya las manos le pedia</l>
+                                    <l>para haverlas de besar,</l>
+                                    <l>mas ella no consentia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Vasse para su posada,</l>
+                                    <l>ya el plazo se cumplia,</l>
+                                    <l>armado de todas armas</l>
+                                    <l>bien à punto se ponia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Y el como era muy dispuesto,</l>
+                                    <l>ó quan bien que parecia!</l>
+                                    <l>Su escudero iba con el</l>
+                                    <l>bien armado que salia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">En un Cavallo morzillo</l>
+                                    <l>muy rixoso en demasia;</l>
+                                    <l>yendo para la plaza,</l>
+                                    <l>con orgullo que trahia</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Encontró con un muchacho,</l>
+                                    <l>que de verlo era manzilla,</l>
+                                    <l>en ver que luego murió,</l>
+                                    <l>sin remedio de su vida.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Lo Escudero que esto vido,</l>
+                                    <l>con temor que en el havia,</l>
+                                    <l>comenzó luego à huir,</l>
+                                    <l>quanto el cavallo podia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Y quedó el Conde solo</l>
+                                    <l>mas no de esfuerzo, y valentia,</l>
+                                    <l>y como era valeroso</l>
+                                    <l>no dexó de hacer su via.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Y puesto entre los Jueces,</l>
+                                    <l>dixo: que defenderia</l>
+                                    <l>ser maldad, y traicion</l>
+                                    <l>ser embidia, y ser falsia</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">La acusacion que le ponen</l>
+                                    <l>à su alta Señoria;</l>
+                                    <l>y que salgan uno, à uno,</l>
+                                    <l>pues estoy sin compañia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Estas palabras diciendo,</l>
+                                    <l>ya el Acusador venia</l>
+                                    <l>con trompetas, y atabales,</l>
+                                    <l>gran estruendo, y gallardia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Parten el sol los Jueces,</l>
+                                    <l>cada qual tomó su via,</l>
+                                    <l>arremeten los cavallos,</l>
+                                    <l>gran encuentro se hacia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Del Acusador la lanza</l>
+                                    <l>en piezas bolado havia,</l>
+                                    <l>sin herir à Don Ramon,</l>
+                                    <l>ni menearlo de la silla.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Don Ramon à su Contrario,</l>
+                                    <l>de tal encuentro lo heria</l>
+                                    <l>que del cavallo abaxo</l>
+                                    <l>derribado lo havia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">El Conde que assi lo vído</l>
+                                    <l>del cavallo descendia,</l>
+                                    <l>vá para el con denuedo,</l>
+                                    <l>donde le quitó la vida.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">El otro Acusador</l>
+                                    <l>vió tanta valentia</l>
+                                    <l>en lestraño Cavallero,</l>
+                                    <l>gran temor en si tenia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Y viendo que falsamente</l>
+                                    <l>el acusacion hacia,</l>
+                                    <l>demandó misericordia,</l>
+                                    <l>y al buen Conde se rendia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Don Ramon con gran nobleza</l>
+                                    <l>desta suerte respondia;</l>
+                                    <l>no soy parte Cavallero,</l>
+                                    <l>para yo fiaros la vida.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Pedidla à su Magestad,</l>
+                                    <l>que es quien darosla podia,</l>
+                                    <l>y preguntó à los Jueces,</l>
+                                    <l>si mas hacer se devia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Por librar la Emperatriz</l>
+                                    <l>de lo que se le imponia?</l>
+                                    <l>Respondieron que la honra</l>
+                                    <l>el ganada la tenia,</l>
+                                    <l>que en su libertad estava</l>
+                                    <l>de hacer lo queria.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Desque aquesto oyera el Conde</l>
+                                    <l>del palenque de se salia:</l>
+
+                                    <fw type="reclamo">vase</fw>
+
+                                    <pb n="4" source="BCN_017_4.jpg" facs="varios/BCN_017_4.jpg/"/>
+
+                                    <l>vase para su posada,</l>
+                                    <l>no reposa hora ni dia;</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Mas encima su cavallo</l>
+                                    <l>desarmado se salia,</l>
+                                    <l>el camino de su tierra</l>
+                                    <l>en breve passado havia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Bolviendo al Emperador,</l>
+                                    <l>grande fiesta se hacia,</l>
+                                    <l>sacaron la Emperatriz</l>
+                                    <l>con graudissima alegria,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Con los juegos, y las fiestas</l>
+                                    <l>la Ciudad toda se hundia,</l>
+                                    <l>todos ivan muy galanes,</l>
+                                    <l>cada qual quien mas podia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">El Emperador muy contento</l>
+                                    <l>por el Vencedor pedia,</l>
+                                    <l>para hacerle aquella honra,</l>
+                                    <l>que su bondad merecia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Desque supo que se havia ido</l>
+                                    <l>gran dolor en si tenia,</l>
+                                    <l>à la Emperatriz pregunta,</l>
+                                    <l>le responda por su vida:</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Quien era su Cavallero,</l>
+                                    <l>que tan bien la defendia?</l>
+                                    <l>Respondele, Señor,</l>
+                                    <l>yo jurado le tenia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">No decir quien era el,</l>
+                                    <l>dentro del tercero dia,</l>
+                                    <l>mas despues de ser passado</l>
+                                    <l>ante muchos lo decia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Como era el gran Conde</l>
+                                    <l>flor de la Cavalleria,</l>
+                                    <l>y Señor de Cataluña,</l>
+                                    <l>y de toda se valia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">El Emperador que esto supo</l>
+                                    <l>de contento no cabia,</l>
+                                    <l>viendo que tan gran Señor</l>
+                                    <l>de su honra se dolia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">La Emperatriz determina,</l>
+                                    <l>y el Emperador lo queria,</l>
+                                    <l>de partirse para España,</l>
+                                    <l>y assi luego se partia,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Para ver su Cavallero</l>
+                                    <l>à quien ella tanto devia;</l>
+                                    <l>con trecientos de Cavallo</l>
+                                    <l>empezó hacer su via.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Dos Cardenales con èlla</l>
+                                    <l>por tenerle compañia,</l>
+                                    <l>muchos Duques, muchos Condes</l>
+                                    <l>con muy gran Cavalleria</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">El buen Conde que lo supo</l>
+                                    <l>gran aparato hazia,</l>
+                                    <l>y cerca de Barcelona</l>
+                                    <l>à recibir la salia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Acompañado de los Grandes</l>
+                                    <l>de su gran Señoria;</l>
+                                    <l>y una legua de camino,</l>
+                                    <l>y otros mas dicen que havia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Mandó poner grandes mesas</l>
+                                    <l>de comer muy bastecidas,</l>
+                                    <l>pues recibida que fué,</l>
+                                    <l>con muy grande cortesia.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Entraron en Barcelona</l>
+                                    <l>la qual estava guarnecida</l>
+                                    <l>de muy ricos paramentos,</l>
+                                    <l>y de gran tapiceria.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Hazen justas, y torneos,</l>
+                                    <l>y otras fiestas de alegria;</l>
+                                    <l>desta manera el buen Conde</l>
+                                    <l>à la Emperatriz servia,</l>
+                                    <l>hasta que para su tierra</l>
+                                    <l>de bolverse fué servida.</l>
+                              </lg>
+                        </div>
+                        <div type="colofon">
+                              <p>
+                                    <lb/><hi rend="cursiva">Barcelona</hi>: Por los Herederos de
+                                    Juan Jolis, en los Algodoneros. </p>
+                        </div>
+                  </div>
+            </body>
+      </text>
+</TEI>

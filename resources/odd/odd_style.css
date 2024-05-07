@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+.center {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.static-title-main, .static-title-sub, .static-title-section {
+    font-weight: var(--pb-heading-font-weight);
+    line-height: var(--pb-heading-line-height);
+    margin-bottom: 1em;
+}
+
+.static-title-main {
+    font-family: var(--pb-cursive-font-family);
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 0.5em;
+}
+
+.static-title-sub, .static-title-section {
+    font-family: var(--pb-heading-font-family);
+}
+
+.static-title-sub {
+    font-size: 24px;
+}
+
+.static-title-section {
+    font-size: 18px;
+}
+
+.margin-top {
+    margin-top: 1em;
+}
+
+.margin-bottom {
+    margin-bottom: 0.5em;
+}
+
+.margin-left {
+    margin-left: 1em;
+}
+
+.padding-bottom {
+    padding-bottom: 0.5em;
+}
+
+.padding-left {
+    padding-left: 1em;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.red {
+    color: #8B0000;
+}
+
+.green {
+    color: #006400;
+}
+
+.sup {
+    vertical-align: super;
+}
+
+.sub {
+    vertical-align: sub;
+}
+
+.metadata-title h4{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.metadata-list ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+.metadata-list .tei-term1::before {
+    content: " - ";
+}
+
+.metadata-list .tei-term1:first-child::before {
+    content: "";
+}
+
+.metadata-link {
+    color: var(--pb-color-primary-green-text);
+}
+
+.metadata-link:hover {
+    color: var(--pb-color-secondary);
+}
+
+.border-green {
+    border-top: 1px dotted var(--pb-color-primary-green-text);
+    margin-top: 1.5em;
+}
+
+.img-right {
+    float: right;
+    padding-left: 1.5em;
+}
+
+.img-left {
+    float: left;
+    padding-right: 1.5em;
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.thumbnail img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.catch-right {
+    margin-left: 50%;
+}
+
+@media (max-width : 769px) {
+    .tei-p5 img {
+        display: none;
+    }
+}

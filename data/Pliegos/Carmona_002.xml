@@ -1,0 +1,511 @@
+<?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Carmona_002">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Colección de Canciones andaluzas</title>
+                        <respStmt xml:id="PJ">
+                              <name>Pauline Jacsont</name>
+                              <resp>Segmentación y transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="BP">
+                              <name>Belinda Palacios</name>
+                              <resp>Corrección de la transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="EL">
+                              <name>Elina Leblanc</name>
+                              <resp>Codificación TEI</resp>
+                        </respStmt>
+                  </titleStmt>
+                  <publicationStmt>
+                        <authority role="rightsHolder">Bibliothèque Universitaire de
+                              Genève</authority>
+                        <availability status="restricted">
+                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+                        </availability>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <biblFull>
+                              <titleStmt>
+                                    <title type="titulo_completo">Colección de Canciones
+                                          andaluzas.</title>
+                                    <title type="titulo_breve"/>
+                              </titleStmt>
+                              <editionStmt>
+                                    <p/>
+                              </editionStmt>
+                              <publicationStmt>
+                                    <publisher>José María Marés</publisher>
+                                    <pubPlace ref="https://www.geonames.org/3117735/madrid.html">Madrid</pubPlace>
+                                    <date cert="high" when="1870-01-01">1870</date>
+                              </publicationStmt>
+                        </biblFull>
+                        <msDesc>
+                              <msIdentifier>
+                                    <country>Suisse</country>
+                                    <settlement>Genève</settlement>
+                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+                                    </repository>
+                                    <collection>Colección Varios</collection>
+                                    <idno type="cote"/>
+                                    <idno type="DOI">10.5281/zenodo.6821398</idno>
+                                    <altIdentifier>
+                                          <idno type="num_impresor">76</idno>
+                                    </altIdentifier>
+                              </msIdentifier>
+                              <msContents>
+                                    <summary>Quatro canciones</summary>
+                                    <msItem>
+                                          <locus>1-2</locus>
+                                          <title>Las ligas de mi morena.</title>
+                                    </msItem>
+                                    <msItem>
+                                          <locus>2-3</locus>
+                                          <title>La zal de la canela.</title>
+                                    </msItem>
+                                    <msItem>
+                                          <locus>3-4</locus>
+                                          <title>La jaca e tersiopelo.</title>
+                                    </msItem>
+                                    <msItem>
+                                          <locus>4</locus>
+                                          <title>Er mosito er barrio.</title>
+                                    </msItem>
+                              </msContents>
+                              <physDesc>
+                                    <objectDesc>
+                                          <supportDesc>
+                                                <support>
+                                                  <dim>in-4</dim>
+                                                  <material rend="amarillo"/>
+                                                </support>
+                                                <extent>
+                                                  <measure unit="página" quantity="4"/>4 p.</extent>
+                                                <condition>Bueno</condition>
+                                          </supportDesc>
+                                          <layoutDesc>
+                                                <p>2 columnas</p>
+                                          </layoutDesc>
+                                    </objectDesc>
+                                    <decoDesc>
+                                          <summary n="1">Un grabado (p.1)</summary>
+                                          <decoNote type="lista_grabados">
+                                                <list>
+                                                      <item corresp="grabado_c_002_1.xml" facs="varios/Carmona_002_1.jpg/514,124,764,963/100,/0/default.jpg">grabado_c_002_1</item>
+                                                </list>
+                                          </decoNote>
+                                    </decoDesc>
+                                    <additions/>
+                              </physDesc>
+                              <history/>
+                        </msDesc>
+                  </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                  <projectDesc>
+                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+                              Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
+                              profesora Constance Carta de la Universidad de Ginebra, con el apoyo
+                              de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+                  </projectDesc>
+                  <editorialDecl corresp="#automaticTranscription">
+                        <correction>
+                              <p>OCR corregido</p>
+                        </correction>
+                        <normalization>
+                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
+                                    original.</p>
+                        </normalization>
+                        <punctuation>
+                              <p>Se conserva la puntuación original.</p>
+                        </punctuation>
+                  </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+                  <langUsage>
+                        <language ident="es">Español</language>
+                  </langUsage>
+                  <textClass>
+                        <keywords xml:base="http://datos.bne.es/tema/">
+                              <term target="XX525577.html" type="tipo_texto">Canciones</term>
+                              <term type="tipo_estrofa">Octavillas y cuartetas</term>
+                              <term type="verso_prosa">Verso</term>
+                              <term type="sagrado_profano">Profano</term>
+                        </keywords>
+                  </textClass>
+            </profileDesc>
+            <revisionDesc>
+                  <change when="2023-11-02" who="#EL">Création du fichier TEI P5 et encodage du
+                        corps du texte</change>
+                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+            </revisionDesc>
+      </teiHeader>
+
+      <facsimile>
+            <graphic url="varios/Carmona_002_1.jpg/full/200,/0/default.jpg"/>
+      </facsimile>
+      <text>
+            <body>
+                  <div>
+                        <div>
+                              <pb n="1" source="Carmona_002_1.jpg" facs="varios/Carmona_002_1.jpg/"/>
+
+                              <fw type="impresorNum">(Núm. 76.)</fw>
+
+                              <head type="primer_titulo">
+                                    <lb/><hi rend="negrita">COLECCION.</hi>
+                                    <lb/>DE<lb/><hi rend="negrita">CANCIONES ANDALUZAS.</hi></head>
+
+                              <div type="cancion" n="1">
+                                    <head type="titulo_cancion">LAS LIGAS DE MI MORENA.</head>
+
+                                    <lg>
+                                          <l rend="indent">Yo no te puedo ecir,</l>
+                                          <l>Colasa, lo que me gusta</l>
+                                          <l>sobre una pierna robusta</l>
+                                          <l>una liga coloráa.</l>
+                                          <l>Levanta los faralaes</l>
+                                          <l>y luce la pantorriya,</l>
+                                          <l>que vales mas, Colasiya,</l>
+                                          <l>que toita una toráa.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Vaya un ángel retrechero, ¡juy!</l>
+                                          <l>me tienen como alma en pena,</l>
+                                          <l>¡salero!....</l>
+                                          <l>las ligas de mi morena.</l>
+                                    </lg>
+
+                                    <pb n="2" source="Carmona_002_2.jpg" facs="varios/Carmona_002_2.jpg/"/>
+
+                                    <lg>
+                                          <l rend="indent">Por Dios, serrana, por Dios,</l>
+                                          <l>que vea esa pierna un poco;</l>
+                                          <l>que me estás volviendo loco,</l>
+                                          <l>por instantes, puñaláa.</l>
+                                          <l>Déjame que absorto mire</l>
+                                          <l>de tu edificio la base;</l>
+                                          <l>deja que el alma se abrase</l>
+                                          <l>contemplándote, saláa.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Vaya una curra, ¡salero!</l>
+                                          <l>¡que viva la gente güena!</l>
+                                          <l>valen más que el mundo entero</l>
+                                          <l>las ligas de mi morena.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Vaya unos ojos ladrones,</l>
+                                          <l>temerarios y atrevíos;</l>
+                                          <l>¿por qué me miran reñíos,</l>
+                                          <l>si no les hice por qué?</l>
+                                          <l>Vaya unas cejas reondas,</l>
+                                          <l>y qué pestañas... salero!</l>
+                                          <l>¡vaya un mirar retrechero!</l>
+                                          <l>¡vaya una jembra gachona!</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Que soy capaz, si me muero</l>
+                                          <l>de placer en la faena,</l>
+                                          <l>de llevarme... !ole salero!</l>
+                                          <l>las ligas de mi morena.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Tan dura de corazon</l>
+                                          <l>es la negra de mis ojos,</l>
+                                          <l>que hasta verme hecho despojos</l>
+                                          <l>no se ha de compadecer.</l>
+                                          <l>Por más que la digo: reina,</l>
+                                          <l>¿hasta cuándo ha de durar</l>
+                                          <l>este modo de jugar</l>
+                                          <l>que tienes, mi malagueña?</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">¡Colasiya.... Resalero!</l>
+                                          <l>hermosa, blanca azucena,</l>
+                                          <l>no te enfaes... porque quiero</l>
+                                          <l>las ligas de mi morena.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">verte pronto declaráa,</l>
+                                          <l>Vamos, gachona, que quiero</l>
+                                          <l>y esa liga coloráa,</l>
+                                          <l>hacerla dos mil pedazos.</l>
+                                          <l>Menea toa esa tienda</l>
+                                          <l>de ropa con mas soltura;</l>
+                                          <l>!várgame Dios, criatura!</l>
+                                          <l>vente pronto entre mis brazos.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Y luego en el fondeaero</l>
+                                          <l>echaremos la caena,</l>
+                                          <l>y diré: ¡vivan, salero,</l>
+                                          <l>las ligas de mi morena!</l>
+                                    </lg>
+                              </div>
+
+                              <div type="cancion" n="2">
+                                    <head type="titulo_cancion" rend="negrita"><lb/>LA ZAL DE LA
+                                          CANELA.</head>
+
+                                    <lg>
+                                          <l rend="indent">Con ese cabeyo rojo</l>
+                                          <l>que al mármol roba la calma,</l>
+                                          <l>y ez el iman de mi antojo,</l>
+                                          <l>haz puesto, niña del alma,</l>
+                                          <l>mi corazon en remojo .</l>
+                                          <l rend="indent">Zi algun mángria lo murmura</l>
+                                          <l>que ze lo cuente á zu abuela,</l>
+                                          <l>criatura!</l>
+                                          <l>ay, benaya eza cintura,</l>
+                                          <l>que ez la zal de la canela.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Tú zabes y yo bien zé</l>
+                                          <l>que en el punto en que te ví</l>
+                                          <l>mi corazon te entregué.</l>
+                                          <l>Zi yo te digo: alto aquí,</l>
+                                          <l>no digas que no hay de qué</l>
+                                          <l>Porque ez tanta tu hermosura,</l>
+                                          <l>que perderé la cautela,</l>
+                                          <l>criatura!</l>
+                                          <l>en guiñando eza cintura,</l>
+                                          <l>que ez la zal de la canela.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ay, zi un galan turuleque</l>
+                                          <l>la paz e mi pecho inquieta,</l>
+                                          <l>dile, niña, que no peque,</l>
+                                          <l>ó en la punta de la jeta</l>
+
+                                          <pb n="3" source="Carmona_002_3.jpg" facs="varios/Carmona_002_3.jpg/"/>
+
+                                          <l>le he de pintar un jabeque.</l>
+                                          <l>ó le arrimaré candela,</l>
+                                          <l rend="indent">Naide goce tu ternura</l>
+                                          <l>puez me encanta eza cintura</l>
+                                          <l>criatura!</l>
+                                          <l>que ez la zal de la canela.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ay! que ez tal mi frenesí,</l>
+                                          <l>que zi tú eres ingrata,</l>
+                                          <l>no me importa que por tí</l>
+                                          <l>me dé la ley por corbata</l>
+                                          <l>los calzones del buchí.</l>
+                                          <l rend="indent">Yo quiero la zepultura</l>
+                                          <l>zi allí con amor me vela,</l>
+                                          <l>criatura!</l>
+                                          <l>eza divina cintura</l>
+                                          <l>que en la zal de la canela.</l>
+                                    </lg>
+                              </div>
+
+                              <div type="cancion" n="3">
+                                    <head type="titulo_cancion" rend="negrita"><lb/>LA JACA E
+                                          TERSIOPELO.</head>
+
+                                    <lg>
+                                          <l rend="indent">Una jaca e tersiopelo,</l>
+                                          <l>un retaco y caliá,</l>
+                                          <l>son, gachona e mi viá,</l>
+                                          <l>mis bienes y mi caudal.</l>
+                                          <l>Pero tengo unas patiyas,</l>
+                                          <l>qué patiyas... puñaláa!</l>
+                                          <l>quez lo mejor que za visto</l>
+                                          <l>desde Jesucristo acá.</l>
+                                    </lg>
+
+                                    <lg rend="cursiva">
+                                          <l rend="indent">Ven, gachona, que tu Jaque</l>
+                                          <l>te espera en el olivar;</l>
+                                          <l>sonsoniche y cayandito,</l>
+                                          <l>que tu maire va á espertá.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Yo no la temo á la ronda,</l>
+                                          <l>porque me conoce ya,</l>
+                                          <l>y los perros con mendrugos</l>
+                                          <l>no se acuerdan de ladrar;</l>
+                                          <l>y si acaso me ladrasen,</l>
+                                          <l>de una sola bofetáa...</l>
+                                          <l>los mando mas de cien leguas</l>
+                                          <l>encima la eterniá.</l>
+                                    </lg>
+
+                                    <l rend="indent"><hi rend="cursiva">Ven, gachona, etc.</hi></l>
+
+                                    <lg>
+                                          <l rend="indent">Cuando en grupa e mi jaca</l>
+                                          <l>vamos, niña, á Portugal,</l>
+                                          <l>dicen los mozos al verte:</l>
+                                          <l>vaya una curra saláa!</l>
+                                          <l>y nosotros en la venta,</l>
+                                          <l>entre vino y palmotear,</l>
+                                          <l>bailamos cuatro fandangos</l>
+                                          <l>y unas boleras que ya.</l>
+                                    </lg>
+
+                                    <l rend="indent"><hi rend="cursiva">Ven, gachona, etc.</hi></l>
+
+                                    <lg>
+                                          <l rend="indent">Allí libres de sorpresa,</l>
+                                          <l>sin cuidaos ni pesar,</l>
+                                          <l>entre un bríndis y otro bríndis</l>
+                                          <l>nos juramos adorar;</l>
+                                          <l>y despues de haber logrado</l>
+                                          <l>la conciencia descargar,</l>
+                                          <l>repetimos: vaya otra,</l>
+                                          <l>várgame Dios, qué bromáa!</l>
+                                    </lg>
+
+                                    <l rend="indent"><hi rend="cursiva">Ven, gachona, etc.</hi></l>
+
+                                    <lg>
+                                          <l rend="indent">Qué me importa á mí que el mundo</l>
+                                          <l>me persiga sin cesar,</l>
+                                          <l>si hayo en tu pecho un albergue</l>
+                                          <l>que no pueden penetrar?</l>
+                                          <l>En estando yo en tus brazos</l>
+                                          <l>con mi jaca preparáa,</l>
+                                          <l>vengan todos cuantos quieran</l>
+                                          <l>robar mi feliciá.</l>
+                                    </lg>
+
+                                    <l rend="indent"><hi rend="cursiva">Ven, gachona, etc.</hi></l>
+
+                                    <lg>
+                                          <l rend="indent">Que á ninguno tengo miedo</l>
+                                          <l>bien lo pueo acreditar,</l>
+                                          <l>pues más que el viento ligero</l>
+                                          <l>es mi jaca pa volar:</l>
+                                          <l>díganlo sinó los mozos</l>
+                                          <l>que están á mi recaláa</l>
+                                          <l>esperando para darme</l>
+                                          <l>arcance... ¡quite osté allá!</l>
+                                    </lg>
+
+                                    <l rend="indent"><hi rend="cursiva">Ven, gachona, etc.</hi></l>
+
+                                    <lg>
+                                          <l rend="indent">Es sobre tóo mi jaca,</l>
+                                          <l>una jaca... que ya, ya,</l>
+                                          <l>y mi trabuco mas terne</l>
+                                          <l>que la mesma Trenía;</l>
+                                          <l>y sobre tóo, es mi negra</l>
+                                          <l>más gitana y más saláa</l>
+                                          <l>que todos los africanos</l>
+                                          <l>del Arbolí de Granáa.</l>
+                                    </lg>
+
+                                    <l rend="indent"><hi rend="cursiva">Ven, gachona, etc.</hi></l>
+                                    
+                                    <pb n="4" source="Carmona_002_4.jpg" facs="varios/Carmona_002_4.jpg/"/>
+                                    
+                                    <lg>
+                                          <l rend="indent">Vivo con ella en la gloria,</l>
+                                          <l>y á su lao .. puñaláa!</l>
+                                          <l>paso más gusto que pasan</l> 
+                                          <l>navíos sobre la mar;</l>
+                                          <l>es un jarabe su pico,</l> 
+                                          <l>su figura celestial,</l>
+                                          <l>y sobre tóo, mas bella</l>
+                                          <l>que el lucero primordial.</l>
+                                    </lg>
+                                    
+                                    <lg rend="cursiva">
+                                          <l rend="indent">Ven, gachona, que tu Jaque</l>
+                                          <l>te espera en el olivar:</l>
+                                          <l>sonsoniche y cayandito, </l>
+                                          <l>que tu marre va á espertá.</l>
+                                    </lg>
+                              </div>
+                              
+                              <div type="cancion" n="4">
+                                    <head type="titulo_cancion">ER MOSITO ER BARRIO</head>
+                                    
+                                    <lg>
+                                          <l rend="indent">Cuando yo me pongo feo,</l>
+                                          <l>to Dioz ze jecha á tembrar;</l>
+                                          <l>porque si larrimo un deo</l>
+                                          <l>ze junde la catredá.</l>
+                                          <l>¿Está osté?</l>
+                                          <l>Na mas que porque se pué.</l>
+                                          <l rend="indent">Y por ezo mi Carmela</l>
+                                          <l>rezaláa, rezaláa,</l>
+                                          <l>cuando yo la pio un bezo,</l>
+                                          <l>zabe Dioz lo que me dá.</l>
+                                          <l>¡Puñaláa!</l>
+                                          <l rend="indent">Soy er mosito er barrio:</l>
+                                          <l>¿lo entiendosté, camará?</l>
+                                    </lg>
+                                    
+                                    <lg>
+                                          <l rend="indent">Si Dioz me manda al infierno;</l>
+                                          <l>pa poermelas guiyá</l>
+                                          <l>le trineo al diablo de un cuerno,</l>
+                                          <l>y le cozo á puñalás.</l>
+                                          <l>¿Está osté?</l>
+                                          <l>Na mas que porque se pué.</l>
+                                          <l rend="indent">Conque chiquiya, me entiendes?</l>
+                                          <l>anda ayá, anda ayá.</l>
+                                          <l>Como tú eres mi virgen,</l>
+                                          <l>en tu capiya quieo entrá.</l>
+                                          <l>¡Puñaláa!</l>
+                                          <l rend="indent">Soy er mosito er barrio;</l>
+                                          <l>¿lo entiendosté, camará?</l>
+                                    </lg>
+                                    
+                                    <lg>
+                                          <l rend="indent">Zi argun gaché á mi chiquiya</l>
+                                          <l>la pretende jonjabar,</l>
+                                          <l>lo ajorco con mi patiya</l>
+                                          <l>y á Dioz ze lo va á contar.</l>
+                                          <l>¿Está osté?</l>
+                                          <l>Nada mas que porque se pué.</l>
+                                          <l rend="indent">No tapures, Carmelita,</l>
+                                          <l>ven acá, ven acá.</l>
+                                          <l>Pues que sabes que en tu poso me gusta á mí refrescá.</l>
+                                          <l>¡Puñaláa!</l>
+                                          <l rend="indent">Soy er mosito er barrio:</l>
+                                          <l>¿lo entiendosté camará?</l>
+                                    </lg>
+                                    
+                                    <lg>
+                                          <l rend="indent">Si argun majo Tirabeque </l>
+                                          <l>me la quiere chusguear, </l>
+                                          <l>yo le pintaré un jabeque </l>
+                                          <l>en la fila, á su pesar.</l>
+                                          <l>¿Esta osté?</l>
+                                          <l>Na mas que porque se pué.</l>
+                                          <l rend="indent">Si tú quieres, Carmelita, </l>
+                                          <l>el hacer el cla-cla-cla. </l>
+                                          <l>paecerás á la gayina, </l>
+                                          <l>y yo al gayo tu galan.</l>
+                                          <l>¡Puñaláa!</l>
+                                          <l rend="indent">Soy er mosito er barrio,</l>
+                                          <l>¿lo entiendosté camará?</l>
+                                    </lg>
+                              </div>
+                        </div>
+                        <div type="colofon">
+                              <p>
+                                    <lb/>MADRID-1870.
+                                    <lb/>Despacho de Marés y Compañía, Juanelo, 19.
+                              </p>
+                        </div>
+                  </div>
+            </body>
+      </text>
+</TEI>

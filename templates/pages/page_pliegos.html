@@ -1,0 +1,121 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <meta name="description" content="Page pliegos"/>
+        <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    
+    <body class="page-pliegos">
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <pb-document id="document1" data-template="pages:pb-document"/>
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" fixed="fixed">
+                        <!-- Menu de navigation principal -->
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                        <!-- Barre d'outils (Boutons Ficha Bibliográfica, Grabados et Contenidos) -->
+                        <app-toolbar data-template="templates:include" data-template-path="templates/toolbar.html"/>
+                    </app-header>
+                    
+                    <!-- Contenu du bouton "Ficha bibliográfica" -->
+                    <pb-drawer toggle="metadataToggle" class="tocDrawer" emit="metadata" subscribe="transcription">
+                        <div class="drawer-content">
+                            <span class="drawer-content__closeBtn">X</span>
+                            <pb-view id="commentary" src="document1" xpath="//teiHeader" view="single" subscribe="metadata">
+                                <pb-param name="mode" value="commentary"/>
+                            </pb-view>
+                        </div>
+                    </pb-drawer>
+                    
+                    <!-- Contenu du bouton "Contenidos" -->
+                    <pb-drawer toggle="tocToggle" class="toc" emit="toc" subscribe="transcription">
+                        <div class="drawer-content">
+                            <span class="drawer-content__closeBtn">X</span>
+                            <p class="italic"><pb-i18n key="notice.contentHelp">Haga clic en la flecha a la izquierda del título para ver la lista completa de contenidos.</pb-i18n></p>
+                            <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" load-once="load-once">
+                                <pb-i18n key="dialogs.loading">Loading</pb-i18n>
+                            </pb-load>
+                        </div>
+                    </pb-drawer>
+                    
+                    <!-- Contenu du bouton "Lugares" -->
+                    <pb-drawer toggle="placesToggle" class="tocDrawer" emit="places" subscribe="transcription">
+                        <div class="drawer-content">
+                            <span class="drawer-content__closeBtn">X</span>
+                            <pb-view id="figures" src="document1" xpath="//teiHeader" view="single" subscribe="places">
+                                <pb-param name="mode" value="places"/>
+                            </pb-view>
+                            <p class="page-pliegos__drawerPlaces-paragraph"><pb-i18n key="notice.places.para1"/> <a href="#"><pb-i18n key="notice.places.link1"/></a>. <pb-i18n key="notice.places.para2"/><a href="../Documentation/contacto"><pb-i18n key="notice.places.link2"/></a>.</p>
+                        </div>
+                    </pb-drawer>
+                    
+                    <!-- Contenu du bouton "Grabados" -->                    
+                    <pb-drawer toggle="engravingToggle" class="tocDrawer" emit="engraving" subscribe="transcription">
+                        <div class="drawer-content">
+                            <span class="drawer-content__closeBtn">X</span>
+                            <pb-view id="figures" src="document1" xpath="//teiHeader" view="single" subscribe="engraving">
+                                <pb-param name="mode" value="figures"/>
+                            </pb-view>
+                        </div>
+                    </pb-drawer>
+                    
+                    <!-- Contenu du bouton "Descargar" -->
+                    <pb-drawer toggle="descargarToggle" class="toc">
+                        <div class="drawer-content">
+                            <span class="drawer-content__closeBtn">X</span>
+                            <h3>
+                                <pb-i18n key="notice.descargar.texto">Descargar el texto</pb-i18n>
+                            </h3>
+                            <pb-download type="pdf" src="document1">
+                                <paper-button raised="">PDF</paper-button>
+                            </pb-download>
+                            <pb-download type="epub" src="document1">
+                                <paper-button raised="">ePub</paper-button>
+                            </pb-download>
+                            
+                            <span data-template="api:download-tei"/>
+
+                            <h3>
+                                <pb-i18n key="notice.descargar.imagen">Descargar las imágenes</pb-i18n>
+                            </h3>
+                            <span data-template="api:download-pdf"/>
+                        </div>
+                    </pb-drawer>
+                    
+                    <!-- Transcription + Images -->
+                    <main class="page-pliegos__content-body">                       
+                        <pb-navigation class="page-pliegos__navigation-left" emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">
+                            <paper-icon-button icon="icons:chevron-left" class="page-pliegos__navigation-chevron"/>
+                        </pb-navigation>
+                        
+                        <pb-view id="page-pliegos__view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription" wait-for="#facsimile"/>
+                        
+                        <pb-navigation class="page-pliegos__navigation-right" emit="transcription" keyboard="right" subscribe="transcription" direction="forward" unit="page">
+                            <paper-icon-button icon="icons:chevron-right" class="page-pliegos__navigation-chevron"/>
+                        </pb-navigation>
+                        
+                        <!--<p class="loading_message"><pb-i18n key="notice.loading"/></p>-->
+                        <span class="loader loading_message"/>
+                        
+                        <pb-facsimile id="page-pliegos__facsimile" base-uri="https://iiif.unige.ch/iiif/2/" default-zoom-level="0" show-navigator="" show-navigation-control="" show-home-control="" subscribe="transcription"/>
+                    </main>
+                    
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+    
+</html>

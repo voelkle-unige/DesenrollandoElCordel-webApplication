@@ -1,0 +1,487 @@
+<?xml-model href="Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_006">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Coplas al sagrado nacimiento del Niño Jesus en el Portal de Belén</title>
+                        <respStmt xml:id="PJ">
+                              <name>Pauline Jacsont</name>
+                              <resp>Segmentación y transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="LF">
+                              <name>Lorysmar Franco</name>
+                              <resp>Corrección de la transcripción</resp>
+                        </respStmt>
+                        <respStmt xml:id="EL">
+                              <name>Elina Leblanc</name>
+                              <resp>Codificación TEI</resp>
+                        </respStmt>
+                  </titleStmt>
+                  <publicationStmt>
+                        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+                        <availability status="restricted">
+                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+                        </availability>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <biblFull>
+                              <titleStmt>
+                                    <title type="titulo_completo">Coplas al sagrado nacimiento del
+                                          Niño Jesus en el Portal de Belén</title>
+                                    <title type="titulo_breve"/>
+                              </titleStmt>
+                              <editionStmt>
+                                    <p/>
+                              </editionStmt>
+                              <publicationStmt>
+                                    <publisher>Juan Jolis</publisher>
+                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+                                    <date cert="low" when="1800-01-01">[s.a.]</date>
+                              </publicationStmt>
+                        </biblFull>
+                        <msDesc>
+                              <msIdentifier>
+                                    <country>Suisse</country>
+                                    <settlement>Genève</settlement>
+                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+                                    </repository>
+                                    <collection>Colección Varios</collection>
+                                    <idno type="cote"/>
+                                    <idno type="DOI">10.5281/zenodo.6807201</idno>
+                                    <altIdentifier>
+                                          <idno type="num_impresor">XXIX</idno>
+                                    </altIdentifier>
+                              </msIdentifier>
+                              <msContents>
+                                    <summary>Tres coplas</summary>
+                                    <msItem>
+                                          <locus>1-2</locus>
+                                          <title>Coplas al sagrado nacimiento del Niño Jesus en el
+                                                Portal de Belén.</title>
+                                    </msItem>
+                                    <msItem>
+                                          <locus>3-4</locus>
+                                          <title>Siguense otras coplas.</title>
+                                    </msItem>
+                              </msContents>
+                              <physDesc>
+                                    <objectDesc>
+                                          <supportDesc>
+                                                <support>
+                                                  <dim>in-4</dim>
+                                                  <material rend="amarillo"/>
+                                                </support>
+                                                <extent>
+                                                  <measure unit="página" quantity="4"/>4 p.</extent>
+                                                <condition>Bueno</condition>
+                                          </supportDesc>
+                                          <layoutDesc>
+                                                <p>2 columnas</p>
+                                          </layoutDesc>
+                                    </objectDesc>
+                                    <decoDesc>
+                                          <summary n="3">Tres grabados(p.1) </summary>
+                                          <decoNote type="lista_grabados">
+                                                <list>
+                                                      <item corresp="grabado_b_006_1.xml" facs="varios/BCN_006_1.jpg/173,464,380,250/100,/0/default.jpg">grabado_b_006_1</item>
+                                                      <item corresp="grabado_b_006_2.xml" facs="varios/BCN_006_1.jpg/1316,485,340,250/100,/0/default.jpg">grabado_b_006_2</item>
+                                                      <item corresp="grabado_b_006_3.xml" facs="varios/BCN_006_1.jpg/543,220,780,720/100,/0/default.jpg">grabado_b_006_3</item>
+                                                </list>
+                                          </decoNote>
+                                    </decoDesc>
+                                    <additions/>
+                              </physDesc>
+                              <history/>
+                        </msDesc>
+                  </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                  <projectDesc>
+                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+                              Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
+                              profesora Constance Carta de la Universidad de Ginebra, con el apoyo
+                              de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+                  </projectDesc>
+                  <editorialDecl corresp="#automaticTranscription">
+                        <correction>
+                              <p>OCR corregido</p>
+                        </correction>
+                        <normalization>
+                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
+                                    original.</p>
+                        </normalization>
+                        <punctuation>
+                              <p>Se conserva la puntuación original.</p>
+                        </punctuation>
+                  </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+                  <langUsage>
+                        <language ident="es">Español</language>
+                  </langUsage>
+                  <textClass>
+                        <keywords xml:base="http://datos.bne.es/tema/">
+                              <term target="XX5501105.html" type="tipo_texto">Coplas</term>
+                              <term type="tipo_estrofa">Cuarteta</term>
+                              <term type="verso_prosa">Verso</term>
+                              <term type="sagrado_profano">Sagrado</term>
+                        </keywords>
+                  </textClass>
+            </profileDesc>
+            <revisionDesc>
+                  <change when="2023-09-26" who="#EL">Création du fichier TEI P5 et encodage du
+                        corps du texte</change>
+                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+            </revisionDesc>
+      </teiHeader>
+
+      <facsimile>
+            <graphic url="varios/BCN_006_1.jpg/full/200,/0/default.jpg"/>
+      </facsimile>
+      <text>
+            <body>
+                  <div>
+                        <pb n="1" source="BCN_006_1.jpg" facs="varios/BCN_006_1.jpg/"/>
+
+                        <div>
+                              <head type="primer_titulo">
+                                    <lb/>COPLAS<lb/>AL SAGRADO NACIMIENTO<lb/>del Niño Jesus en el
+                                    Portal<lb/>de Belén. </head>
+
+                              <lg>
+                                    <l><hi rend="negrita">A</hi>Legraos gente Christiana</l>
+                                    <l>que esta noche passadera</l>
+                                    <l>ha nacido en carne humana</l>
+                                    <l>el que todo el mundo espera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">En un portal en Belén</l>
+                                    <l>que la media noche era,</l>
+                                    <l>resplandece nuestro bien</l>
+                                    <l>mas que el Sol quando saliera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Una Virgen lo ha parido</l>
+                                    <l>quedando Virgen entera,</l>
+                                    <l>assi lo afirma Isaias,</l>
+                                    <l>y Salomon lo escribiera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Su proprio nombre es Jesus,</l>
+                                    <l>Nazareno por cimera,</l>
+                                    <l>por armas lleva la Cruz</l>
+                                    <l>esta es su real bandera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">No nació en cama de campo</l>
+                                    <l>sino en una pesebrera,</l>
+                                    <l>por pavellon telarañas,</l>
+                                    <l>y piedras por cabecera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Por manta tiene el gran frio</l>
+                                    <l>con aquesta se cubriera,</l>
+                                    <l>por cortinas resplandor</l>
+                                    <l>que del mesmo procediera.</l>
+                              </lg>
+                              <fw type="reclamo">Assi</fw>
+
+                              <pb n="2" source="BCN_006_2.jpg" facs="varios/BCN_006_2.jpg/"/>
+
+                              <lg>
+                                    <l rend="indent">Assi está el rècien nacido</l>
+                                    <l>entre un buey, y una sumera</l>
+                                    <l>con su hija, esposa, y madre;</l>
+                                    <l>de nuestro bien tesorera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Christiano quieres el Cielo</l>
+                                    <l>dexa el mundo, y su carrera,</l>
+                                    <l>toma la Cruz en el ombro</l>
+                                    <l>siguele de esta manera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">La Madre le está embolviendo.</l>
+                                    <l>muy alegre, y placentera</l>
+                                    <l>en pobres paños le empaña,</l>
+                                    <l>que mejores nó tuviera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Joseph le está cantando</l>
+                                    <l>mil canciones le dixera</l>
+                                    <l>con gran fé le está adorando</l>
+                                    <l>que de gozo no cupiera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">De Angeles muy cercado</l>
+                                    <l>todo aquello rebervera,</l>
+                                    <l>decian gloria al Señor,</l>
+                                    <l>y en tierra paz verdadera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">De dos en dos los Pastores</l>
+                                    <l>cantando à voz muy entera</l>
+                                    <l>dicen vos sois Rey de Reyes</l>
+                                    <l>hijo de Dios que se aurea.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Uno le dá el zamarro</l>
+                                    <l>à que sirva alli de estera,</l>
+                                    <l>y otro le dá el cordero,</l>
+                                    <l>cada qual lo que tuviera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Los Reyes vienen de Oriente</l>
+                                    <l>sin camino, ni sendera</l>
+                                    <l>adorar vienen su Rey</l>
+                                    <l>que la gran fé los truxera,</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Todos tres dexan sus bienes,</l>
+                                    <l>y toda su parentela,</l>
+                                    <l>y traenle grandes presentes</l>
+                                    <l>para mostrar quien él era.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">La Estrella que los guiava</l>
+                                    <l>hasta Belèn los trugera,</l>
+                                    <l>sobre el portal se paró,</l>
+                                    <l>de alli passar no quisiera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Los Reyes que vieron esto</l>
+                                    <l>turbados en gran manera,</l>
+                                    <l>miraron al rededor,</l>
+                                    <l>y vieron donde el Niño era.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Todos tres entraron juntos</l>
+                                    <l>hasta donde Jesus naciera,</l>
+                                    <l>cada qual alli le adora</l>
+                                    <l>con la mas fé que pudiera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Oro le ofreció el primero</l>
+                                    <l>mostrando como Rey era;</l>
+                                    <l>y el segundo como à Dios</l>
+                                    <l>el Encienfo que le diera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">El tercero fe humilló</l>
+                                    <l>y en la Mirra que ofreciera</l>
+                                    <l>declaró la humanidad</l>
+                                    <l>que por nos morir espera.</l>
+                              </lg>
+
+                              <lg>
+                                    <l rend="indent">Por el gozo soberano</l>
+                                    <l>que os alegró en tal manera</l>
+                                    <l>sed à todo fiel Christiano,</l>
+                                    <l>ante el Hijo medianera.</l>
+                              </lg>
+                              <fw type="reclamo">SI-</fw>
+                        </div>
+
+                        <div>
+                              <pb n="3" source="BCN_006_3.jpg" facs="varios/BCN_006_3.jpg/"/>
+
+                              <head type="primer_titulo">
+                                    <lb/>SIGUENSE OTRAS COPLAS. </head>
+
+                              <div>
+                                    <lg>
+                                          <l><hi rend="negrita">A</hi>Nda acá conmigo Blas</l>
+                                          <l>mira que cosas veràs;</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">A noche fuí al lugar</l>
+                                          <l>con mis amos à cenar,</l>
+                                          <l>y cosas ohi à cantar,</l>
+                                          <l>que te maravillarás.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Dicen que Dios es venido</l>
+                                          <l>como era prometido,</l>
+                                          <l>de una doncella nacido</l>
+                                          <l>muy hermosa à demás</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Y dicen que muchos llegavan,</l>
+                                          <l>que ante él se arrodillavan,</l>
+                                          <l>y como à Dios le adoravan,</l>
+                                          <l>y el como niño mama,</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Con aquestas nuevas tales</l>
+                                          <l>han ido allà míl zagales</l>
+                                          <l>Pastores, y Mayorales,</l>
+                                          <l>y tu descuydado estás.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Yo, y Bendito Pasqual</l>
+                                          <l>el hijo del mayoral,</l>
+                                          <l>le vímos en el portal,</l>
+                                          <l>que nunca tal ví jamás.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Los Angeles en Belén</l>
+                                          <l>donde es nacido nuestro bien;</l>
+                                          <l>cantan, y tañen tambien,</l>
+                                          <l>que de vello te holgarás.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Alli está tambien un viejo</l>
+                                          <l>que barría el portalejo,</l>
+                                          <l>y aunque dixo un cantarejo</l>
+                                          <l>mia fé yo cantava mas.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Anda acá vamos priado</l>
+                                          <l>no estés encaperuzado,</l>
+                                          <l>dexemos aqui el ganado</l>
+                                          <l>que presto te bolveràs.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Y en llegando que lleguemos</l>
+                                          <l>juro à san luego baylemos,</l>
+                                          <l>un cantar luego cantemos</l>
+                                          <l>que tu me responderás.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Llevarèmos mi barril,</l>
+                                          <l>y tambien mi tamboril,</l>
+                                          <l>porque baylemos yo, y Cil</l>
+                                          <l>que tu nos le tañeràs.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Yo baylarè con Juanilla,</l>
+                                          <l>tu tambien con Antonilla,</l>
+                                          <l>juro à mi que aunque es en villa,</l>
+                                          <l>que no me queda yo atrás.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Y llamarémos à Mingon</l>
+                                          <l>porque es dia de Domingo,</l>
+                                          <l>y darà el salto respingo,</l>
+                                          <l>tu verémos que harás.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Yo harè la revellada</l>
+                                          <l>la caperuza quitada</l>
+                                          <l>altibaxo, y y zapatada,</l>
+                                          <l>que verme te espantarás.</l>
+                                    </lg>
+                                    <lg>
+                                          <l rend="indent">Anda toma tu cayado</l>
+                                          <l>no seas tan empachado,</l>
+
+                                          <fw type="reclamo">que</fw>
+
+                                          <pb n="4" source="BCN_006_4.jpg" facs="varios/BCN_006_4.jpg/"/>
+
+                                          <l>que te verás espantado</l>
+                                          <l>de lo que passar verás.</l>
+                                    </lg>
+                              </div>
+
+                              <div>
+                                    <head type="titulo_cancion">
+                                          <lb/>OTRAS. </head>
+
+                                    <lg>
+                                          <l><hi rend="negrita">P</hi>Astorcico tu que vienes</l>
+                                          <l>donde la Virgen está,</l>
+                                          <l>di que nuevas hay allá.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Tu que fuiste tan dichoso</l>
+                                          <l>que te fuesse revelado</l>
+                                          <l>ser nacido el deseado</l>
+                                          <l>hijo de Dios poderoso;</l>
+                                          <l>tu que vienes tan gozoso,</l>
+                                          <l>donde la Virgen está,</l>
+                                          <l>di que nuevas hay allá.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Hay maravillas de vèr</l>
+                                          <l>que perturban el sentido</l>
+                                          <l>digos que Dios es nacido</l>
+                                          <l>esta noche de muger,</l>
+                                          <l>ví cantar, ví tañer</l>
+                                          <l>donde la Virgen està,</l>
+                                          <l>y estas nuevas hay allá.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Ví canticos celestiales</l>
+                                          <l>en el pobre portalejo</l>
+                                          <l>cantan la madre, y el viejo</l>
+                                          <l>con coros angelicales</l>
+                                          <l>puesto entre dos animales</l>
+                                          <l>todo nuestro bien està,</l>
+                                          <l>y estas nuevas hay allà.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Hay tantos de musicorios</l>
+                                          <l>que es para maravillar</l>
+                                          <l>tanto danzar, y baylar</l>
+                                          <l>que parecen desposorios,</l>
+                                          <l>y llena de relumbrorios</l>
+                                          <l>aquella casilla està,</l>
+                                          <l>y estas nuevas hay allà.</l>
+                                    </lg>
+
+                                    <lg>
+                                          <l rend="indent">Pastores de mil maneras</l>
+                                          <l>le vàn à besar la mano,</l>
+                                          <l>Juan Gancho, y su hermano</l>
+                                          <l>Mayorales de las eras,</l>
+                                          <l>tantas mozas cantaderas</l>
+                                          <l>que placer os tomará,</l>
+                                          <l>y estas nuevas hay allà.</l>
+                                    </lg>
+                              </div>
+                        </div>
+
+                        <div type="colofon">
+                              <p>
+                                    <lb/><hi rend="cursiva">BARCELONA</hi>: En la Imprenta de los
+                                    Herederos de Juan Jolis en la calle de los Algodoneros. </p>
+                        </div>
+                  </div>
+            </body>
+      </text>
+</TEI>
