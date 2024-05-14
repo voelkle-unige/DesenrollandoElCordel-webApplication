@@ -87,7 +87,7 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             (:Facets for illusrations:)
             case "engraver" return head((
                 $header//tei:author[@role="grabador"]
-            ))            
+            ))
             
             case "masculino" return (
                 idx:get-masculino($header)
