@@ -22,6 +22,12 @@ declare variable $idx:app-root :=
 declare function idx:parse-date($date) {
     if (matches($date, "184\d")) then
         "1840-1849/" || $date
+    else if (matches($date, "177\d")) then
+        "1770-1779/" || $date
+    else if (matches($date, "178\d")) then
+        "1780-1789/" || $date
+    else if (matches($date, "181\d")) then
+        "1810-1819/" || $date
     else if (matches($date, "182\d")) then
         "1820-1829/" || $date
     else if (matches($date, "183\d")) then
@@ -34,6 +40,8 @@ declare function idx:parse-date($date) {
         "1870-1879/" || $date
     else if (matches($date, "188\d")) then
         "1880-1889/" || $date
+    else if (matches($date, "189\d")) then
+        "1890-1899/" || $date
     else if (matches($date, "[s.a]")) then
         $date
     else ()

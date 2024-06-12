@@ -1,0 +1,1341 @@
+<?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Varios_424">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>El cantor de las hermosas</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+        <respStmt xml:id="BP">
+          <name>Belinda Palacios</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Verificación de la codificación y carga en el sitio web</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">El cantor de las hermosas. Trovas de amor dedicadas al
+              bello sexo por unos aficionados</title>
+            <title type="titulo_breve">El cantor de las hermosas</title>
+          </titleStmt>
+          <editionStmt>
+            <p/>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Tipografía Española</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="high" when="1881-01-01">1881</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.6795057</idno>
+            <altIdentifier>
+              <idno type="num_impresor">Núm. 11.</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary>Tres canciones</summary>
+            <msItem>
+              <locus>1-2</locus>
+              <title>Faustino el Cazador</title>
+              <author role="letrista">Enrique Gavarró</author>
+            </msItem>
+            <msItem>
+              <locus>3</locus>
+              <title>A Lucila. Cancion.</title>
+              <author role="letrista">Enrique Gavarró</author>
+            </msItem>
+            <msItem>
+              <locus>4</locus>
+              <title>Camarellas dedicadas à La niña de los cabellos de oro. Duo</title>
+              <author role="letrista">J. C.</author>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material/>
+                </support>
+                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="1">Un grabado (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_v_424_1.xml" facs="varios/Varios_424_1.jpg/132,609,1583,1146/100,/0/default.jpg">grabado_v_424_1</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions>
+              <stamp>Se hallará de venta en casa los sucesores de Antonio Bosch</stamp>
+            </additions>
+          </physDesc>
+          <history>
+            <origin>
+              <p>Tipografía Española</p>
+            </origin>
+            <provenance>
+              <stamp>Se hallará de venta en casa los sucesores de Antonio Bosch</stamp>
+            </provenance>
+            <acquisition>
+              <stamp>COL-LECCIÓ MANUEL MASSÓ</stamp>
+            </acquisition>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el Cordel/Démêler le
+          cordel/Untangling the cordel, dirigido por la profesora Constance Carta de la Universidad
+          de Ginebra, con el apoyo de la Fundación filantrópica Famille Sandoz-Monique de
+          Meuron.</p>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term target="XX525577.html" type="tipo_texto">Canciones</term>
+          <term target="XX525577.html" type="tipo_estrofa">Canciones</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-12-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du
+        texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/Varios_424_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <sourceDoc xml:id="automaticTranscription">
+    <surface xml:id="Varios_424_1" type="page" cert="silver">
+      <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/full/full/0/default.jpg"/>
+      <zone xml:id="Varios_424_1_BT223_1" n="1" type="CustomZone" subtype="title" points="1722,180 1722,596 105,596 105,180 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/105.0,180.0,1617.0,416.0/full/0/default" corresp="CustomZone:title">
+        <zone xml:id="Varios_424_1_BT223_1__1" type="HeadingLine" subtype="none" points="916,181 901,181 886,181 875,181 857,191 860,267 862,293 888,283 902,289 913,293 914,293 916,293 974,280 974,264 970,191 927,181 916,181 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/857.0,181.0,117.0,112.0/full/0/default" corresp="HeadingLine">
+          <path xml:id="Varios_424_1_BT223_1__1_1" points="860,267 974,264 "/>
+          <line>EL</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT223_1__2" type="HeadingLine" subtype="none" points="154,481 236,473 265,481 268,481 270,481 271,481 322,480 606,467 632,473 641,474 642,474 704,471 803,465 834,468 885,473 886,473 888,473 904,467 919,461 949,465 990,471 992,471 1025,464 1044,460 1063,462 1104,470 1106,470 1173,460 1202,457 1303,457 1542,460 1544,460 1678,448 1678,432 1674,302 1602,293 1601,293 1599,293 1598,293 1583,302 1575,308 1272,309 1196,305 1104,300 1103,300 1024,306 908,318 879,318 863,308 856,305 854,305 853,305 851,305 837,308 805,316 767,309 749,306 748,306 717,309 623,321 464,312 436,311 435,311 410,312 241,327 151,315 154,455 154,481 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/151.0,293.0,1527.0,188.0/full/0/default" corresp="HeadingLine">
+          <path xml:id="Varios_424_1_BT223_1__2_1" points="154,455 1678,432 "/>
+          <line>CANTOR DE LAS HERMOSAS</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT223_1__3" type="HeadingLine" subtype="none" points="444,530 444,543 1380,536 1380,517 1373,477 1363,484 1328,477 1307,474 1306,474 1304,474 1288,479 1263,486 1111,487 1085,480 1073,477 1072,477 1070,477 1038,480 959,492 902,492 892,481 891,481 889,481 888,481 886,481 883,483 857,492 810,483 800,481 799,481 789,483 751,492 726,484 724,484 723,484 721,484 720,484 708,493 661,484 650,483 648,483 647,483 641,484 613,495 587,486 584,484 582,484 581,484 580,484 577,486 544,496 442,487 444,530 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/442.0,474.0,938.0,69.0/full/0/default" corresp="HeadingLine">
+          <path xml:id="Varios_424_1_BT223_1__3_1" points="444,530 1380,517 "/>
+          <line>TROVAS DE AMOR DEDICADAS AL BELLO SEXO</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT223_1__4" type="HeadingLine" subtype="none" points="663,572 663,582 1155,581 1155,563 1152,534 1082,527 1081,527 1046,534 756,533 755,533 661,541 663,572 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/661.0,527.0,494.0,55.0/full/0/default" corresp="HeadingLine">
+          <path xml:id="Varios_424_1_BT223_1__4_1" points="663,572 1155,563 "/>
+          <line>POR UNOS AFICIONADOS.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_1_BT221_2" n="2" type="CustomZone" subtype="impresorNum" points="1689,139 1689,206 1499,206 1499,139 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/1499.0,139.0,190.0,67.0/full/0/default" corresp="CustomZone:impresorNum">
+        <zone xml:id="Varios_424_1_BT221_2__1" type="DefaultLine" subtype="none" points="1675,140 1661,140 1646,140 1632,140 1617,140 1602,140 1588,140 1573,140 1559,140 1544,140 1529,140 1515,140 1500,140 1502,172 1502,189 1519,189 1521,189 1535,204 1535,205 1537,205 1538,205 1540,207 1591,207 1591,205 1592,205 1623,188 1683,185 1683,169 1680,140 1675,140 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/1500.0,140.0,183.0,67.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT221_2__1_1" points="1502,172 1683,169 "/>
+          <line>Núm. 51.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_1_BT223_3" n="3" type="CustomZone" subtype="title" points="1713,1772 1713,1941 127,1941 127,1772 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/127.0,1772.0,1586.0,169.0/full/0/default" corresp="CustomZone:title">
+        <zone xml:id="Varios_424_1_BT223_3__1" type="HeadingLine" subtype="none" points="1601,1772 1579,1772 1557,1772 1535,1772 1513,1772 1491,1772 1469,1772 1447,1772 1425,1772 1403,1772 1381,1772 1359,1772 1346,1772 1333,1774 1322,1774 1313,1774 1298,1772 1294,1772 1272,1772 1250,1772 1228,1772 1206,1772 1184,1772 1177,1772 1162,1774 1155,1774 1153,1774 1151,1772 1140,1772 1118,1772 1096,1772 1087,1774 1072,1776 1044,1774 1022,1772 1008,1772 987,1772 965,1772 943,1772 921,1772 899,1772 877,1772 855,1772 833,1772 818,1772 774,1774 682,1778 666,1774 658,1772 658,1772 636,1772 627,1772 625,1774 618,1778 579,1774 557,1772 548,1772 526,1772 504,1772 497,1772 493,1774 480,1781 175,1776 177,1892 177,1912 247,1912 256,1914 287,1930 289,1930 291,1930 293,1930 296,1930 315,1916 331,1930 331,1932 333,1932 335,1932 427,1938 429,1938 552,1930 554,1930 557,1930 572,1914 581,1910 647,1914 862,1934 864,1934 987,1914 1037,1908 1096,1914 1116,1916 1118,1916 1136,1914 1210,1906 1245,1914 1307,1932 1309,1932 1311,1932 1313,1932 1368,1914 1401,1903 1465,1903 1500,1914 1541,1930 1544,1930 1546,1932 1645,1932 1645,1930 1647,1930 1682,1914 1682,1879 1677,1774 1620,1772 1601,1772 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/175.0,1772.0,1507.0,166.0/full/0/default" corresp="HeadingLine">
+          <path xml:id="Varios_424_1_BT223_3__1_1" points="178,1895 808,1892 902,1887 1683,1881 "/>
+          <line>FAUSTINO EL CAZADOR</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_1_BT227_4" n="4" type="MainZone" subtype="columns" points="692,1934 692,2479 131,2479 131,1934 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/131.0,1934.0,561.0,545.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_1_BT227_4__1" type="DefaultLine" subtype="none" points="522,1934 500,1934 478,1934 478,1984 478,2022 528,2015 528,1984 526,1934 522,1934 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/478.0,1934.0,50.0,88.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_4__1_1" points="479,1985 529,1985 " corresp="DefaultLine"/>
+          <line>I</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_4__2" type="DefaultLine" subtype="none" points="195,2076 195,2092 261,2100 263,2100 264,2100 283,2092 287,2092 391,2097 393,2097 394,2097 395,2097 406,2091 412,2088 670,2088 670,2066 664,2019 635,2027 626,2019 620,2015 620,2014 619,2014 618,2014 616,2014 534,2015 533,2015 531,2015 527,2019 509,2034 495,2021 495,2019 493,2019 492,2019 471,2019 470,2019 469,2019 467,2019 442,2034 423,2025 422,2025 420,2025 419,2025 417,2025 403,2037 375,2021 374,2021 372,2021 371,2021 369,2021 369,2022 352,2040 257,2043 235,2043 216,2024 216,2022 214,2022 213,2022 192,2022 195,2076 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/192.0,2014.0,478.0,86.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_4__2_1" points="195,2076 670,2066 " corresp="DefaultLine"/>
+          <line>Trepando montes y breñas</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_4__3" type="DefaultLine" subtype="none" points="156,2126 156,2147 258,2136 309,2144 311,2144 395,2135 543,2139 544,2120 542,2094 419,2082 417,2082 416,2082 414,2082 414,2084 407,2091 403,2095 368,2095 362,2090 355,2084 353,2084 352,2084 293,2084 292,2084 290,2084 289,2084 289,2085 284,2088 277,2095 251,2090 249,2090 201,2097 188,2087 187,2085 185,2085 184,2085 182,2085 154,2085 156,2126 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/154.0,2082.0,390.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_4__3_1" points="156,2126 544,2120 " corresp="DefaultLine"/>
+          <line>paso las horas del dia,</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_4__4" type="DefaultLine" subtype="none" points="157,2174 157,2192 528,2184 528,2167 526,2142 429,2132 428,2132 426,2132 401,2142 400,2142 398,2142 385,2133 384,2133 382,2133 311,2133 309,2133 308,2133 293,2142 287,2145 284,2142 279,2136 277,2136 276,2136 274,2136 273,2136 271,2136 265,2142 260,2145 156,2142 157,2174 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/156.0,2132.0,372.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_4__4_1" points="157,2174 528,2167 " corresp="DefaultLine"/>
+          <line>lacerada el alma mia</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_4__5" type="DefaultLine" subtype="none" points="153,2222 153,2239 195,2246 197,2246 198,2246 200,2246 210,2239 213,2237 239,2237 347,2240 349,2240 375,2234 382,2233 388,2234 419,2243 420,2243 422,2243 423,2243 425,2243 425,2241 433,2233 435,2231 477,2231 480,2231 492,2241 493,2241 495,2241 496,2243 543,2243 543,2241 544,2241 546,2241 546,2240 553,2233 553,2217 550,2190 350,2184 349,2184 347,2184 327,2193 325,2195 236,2195 235,2195 223,2187 222,2187 220,2187 219,2187 217,2187 191,2195 170,2187 169,2187 168,2187 166,2187 151,2193 153,2222 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/151.0,2184.0,402.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_4__5_1" points="153,2222 553,2217 " corresp="DefaultLine"/>
+          <line>cual amante trovador.</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_4__6" type="DefaultLine" subtype="none" points="201,2271 201,2284 375,2291 376,2291 378,2291 395,2284 463,2290 464,2290 466,2290 486,2279 488,2279 492,2279 540,2288 542,2288 543,2288 561,2278 563,2278 641,2278 641,2263 638,2236 566,2227 565,2227 502,2236 496,2236 493,2236 467,2227 466,2227 464,2227 425,2236 416,2239 347,2239 344,2236 338,2231 338,2230 337,2230 336,2230 289,2230 287,2230 286,2230 284,2230 277,2236 273,2240 260,2236 242,2231 241,2231 239,2231 200,2236 201,2271 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/200.0,2227.0,441.0,64.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_4__6_1" points="201,2271 641,2263 " corresp="DefaultLine"/>
+          <line>Y del bosque la espesura</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_4__7" type="DefaultLine" subtype="none" points="163,2319 165,2341 188,2331 245,2338 270,2341 271,2341 395,2332 499,2326 562,2326 565,2326 588,2336 590,2336 591,2336 593,2336 594,2336 594,2335 601,2326 601,2313 597,2288 466,2288 394,2278 393,2278 391,2278 357,2291 303,2291 277,2279 276,2279 274,2279 273,2279 271,2279 271,2281 270,2281 265,2287 178,2282 176,2282 175,2282 173,2282 162,2290 163,2319 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/162.0,2278.0,439.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_4__7_1" points="163,2319 601,2313 " corresp="DefaultLine"/>
+          <line>y del aura el beso suave,</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_4__8" type="DefaultLine" subtype="none" points="163,2364 165,2386 185,2377 239,2385 246,2385 248,2385 327,2383 328,2383 330,2383 330,2382 331,2382 337,2374 587,2374 588,2357 585,2332 526,2322 524,2322 274,2335 248,2326 246,2326 245,2326 162,2338 163,2364 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/162.0,2322.0,426.0,64.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_4__8_1" points="163,2364 588,2357 " corresp="DefaultLine"/>
+          <line>y el gayo trinar del ave</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_4__9" type="DefaultLine" subtype="none" points="160,2412 160,2452 268,2452 268,2450 270,2450 295,2442 341,2425 376,2425 388,2436 398,2443 400,2443 401,2443 403,2443 450,2439 451,2439 452,2439 452,2437 460,2430 466,2424 584,2421 584,2405 580,2371 452,2380 436,2376 422,2371 420,2371 419,2371 417,2371 416,2371 416,2373 410,2377 404,2382 356,2379 283,2374 281,2374 280,2374 248,2383 239,2385 227,2383 175,2376 173,2376 172,2376 170,2376 159,2382 160,2412 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/159.0,2371.0,425.0,81.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_4__9_1" points="160,2412 584,2405 " corresp="DefaultLine"/>
+          <line>todo aquí respira amor.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_1_BT227_5" n="5" type="MainZone" subtype="columns" points="1512,1928 1512,2447 976,2447 976,1928 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/976.0,1928.0,536.0,519.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_1_BT227_5__1" type="DefaultLine" subtype="none" points="1374,1929 1360,1929 1355,1929 1350,1932 1338,1938 1323,1929 1316,1929 1301,1929 1287,1929 1288,1967 1288,1977 1389,1984 1390,1984 1392,1984 1393,1984 1402,1976 1402,1964 1401,1938 1383,1929 1374,1929 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/1287.0,1929.0,115.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__1_1" points="1288,1967 1402,1964 " corresp="DefaultLine"/>
+          <line>CORO.</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_5__2" type="DefaultLine" subtype="none" points="1038,2017 1038,2040 1420,2037 1420,2017 1420,1981 1408,1973 1407,1973 1405,1973 1404,1973 1402,1973 1382,1983 1361,1973 1360,1973 1358,1973 1357,1973 1355,1973 1342,1983 1323,1973 1322,1973 1320,1973 1319,1973 1290,1981 1284,1984 1236,1984 1230,1980 1220,1971 1218,1971 1217,1971 1215,1971 1214,1971 1198,1979 1193,1981 1192,1979 1186,1974 1186,1973 1184,1973 1183,1973 1182,1973 1152,1979 1148,1979 1146,1977 1138,1970 1136,1970 1135,1970 1133,1970 1132,1970 1130,1970 1122,1977 1116,1981 1110,1977 1101,1970 1101,1968 1100,1968 1098,1968 1097,1968 1038,1974 1038,2017 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/1038.0,1968.0,382.0,72.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__2_1" points="1038,2017 1420,2017 " corresp="DefaultLine"/>
+          <line>Escucha sí, mi dolor,</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_5__3" type="DefaultLine" subtype="none" points="997,2068 997,2087 1101,2078 1132,2082 1151,2085 1152,2085 1154,2085 1161,2082 1173,2076 1240,2079 1329,2082 1331,2082 1332,2082 1333,2082 1333,2081 1335,2081 1339,2075 1341,2073 1412,2073 1414,2060 1409,2033 996,2033 997,2068 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/996.0,2033.0,418.0,54.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__3_1" points="997,2068 1414,2060 " corresp="DefaultLine"/>
+          <line>lebrel que conmigo vás</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_5__4" type="DefaultLine" subtype="none" points="1000,2116 1002,2135 1022,2128 1070,2133 1089,2135 1091,2135 1455,2120 1455,2109 1450,2081 1393,2081 1392,2081 1364,2071 1363,2071 1361,2071 1360,2071 1333,2081 1331,2082 1315,2082 1199,2073 1198,2073 1196,2073 1177,2084 1173,2085 1154,2084 1111,2079 1110,2079 1108,2079 1092,2084 1085,2087 1082,2085 1072,2076 1070,2076 1069,2076 1068,2076 1066,2076 1043,2085 1037,2087 1033,2085 1011,2078 1009,2078 1008,2078 1006,2078 1005,2078 999,2081 1000,2116 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/999.0,2071.0,456.0,64.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__4_1" points="1000,2116 1455,2109 " corresp="DefaultLine"/>
+          <line>y á la prenda de mi amor</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_5__5" type="DefaultLine" subtype="none" points="999,2163 999,2179 1383,2171 1383,2158 1380,2132 1243,2125 1241,2125 1240,2125 1220,2132 1208,2123 1206,2123 1205,2123 1165,2123 1164,2123 1116,2132 1107,2135 1066,2135 1063,2132 1052,2125 1050,2125 1049,2125 1047,2125 997,2132 999,2163 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/997.0,2123.0,386.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__5_1" points="999,2163 1383,2158 " corresp="DefaultLine"/>
+          <line>mis suspiros llevarás.</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_5__6" type="DefaultLine" subtype="none" points="1046,2211 1046,2221 1133,2233 1135,2233 1183,2224 1198,2221 1208,2224 1231,2231 1233,2231 1234,2231 1236,2231 1255,2224 1266,2221 1298,2225 1336,2230 1338,2230 1371,2225 1404,2222 1491,2227 1493,2205 1490,2177 1401,2177 1399,2176 1390,2167 1390,2166 1389,2166 1388,2166 1386,2166 1385,2166 1361,2174 1354,2177 1301,2177 1298,2174 1293,2168 1293,2167 1291,2167 1290,2167 1288,2167 1253,2173 1225,2179 1206,2173 1192,2168 1190,2168 1189,2168 1168,2173 1129,2180 1044,2171 1046,2211 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/1044.0,2166.0,449.0,67.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__6_1" points="1046,2211 1493,2205 " corresp="DefaultLine"/>
+          <line>Ya sabes cuanto la quiero</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_5__7" type="DefaultLine" subtype="none" points="1002,2258 1002,2271 1445,2268 1446,2255 1445,2233 1399,2220 1398,2220 1396,2220 1342,2231 1271,2220 1269,2220 1268,2220 1230,2231 1168,2222 1167,2222 1120,2233 1035,2221 1034,2221 1033,2221 1000,2233 1002,2258 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/1000.0,2220.0,446.0,51.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__7_1" points="1002,2258 1446,2255 " corresp="DefaultLine"/>
+          <line>anda, corre, vete, y dí...</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_5__8" type="DefaultLine" subtype="none" points="1002,2309 1002,2328 1012,2335 1014,2335 1015,2335 1016,2335 1094,2328 1108,2326 1113,2328 1144,2342 1145,2342 1146,2342 1182,2341 1183,2341 1184,2341 1201,2331 1212,2325 1263,2325 1278,2332 1278,2333 1279,2333 1281,2333 1282,2333 1288,2333 1329,2323 1351,2335 1360,2339 1361,2339 1363,2341 1424,2341 1424,2339 1426,2339 1427,2339 1427,2338 1428,2336 1434,2332 1484,2338 1485,2304 1483,2277 1392,2271 1390,2271 1291,2279 1275,2279 1269,2279 1233,2272 1231,2272 1069,2281 1054,2274 1053,2274 1052,2274 1000,2282 1002,2309 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/1000.0,2271.0,485.0,71.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__8_1" points="1002,2309 1485,2304 " corresp="DefaultLine"/>
+          <line>que yo, por ella me muero;</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_5__9" type="DefaultLine" subtype="none" points="1285,2355 1285,2370 1358,2374 1360,2352 1355,2317 1282,2320 1285,2355 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/1282.0,2317.0,78.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__9_1" points="1285,2355 1360,2352 " corresp="DefaultLine"/>
+          <line>¡ay!</line>
+        </zone>
+        <zone xml:id="Varios_424_1_BT227_5__10" type="DefaultLine" subtype="none" points="1003,2408 1003,2439 1035,2439 1035,2437 1037,2437 1040,2436 1070,2423 1106,2430 1107,2430 1183,2420 1209,2427 1228,2433 1230,2433 1231,2433 1233,2433 1234,2433 1243,2425 1246,2424 1252,2425 1271,2430 1272,2430 1274,2430 1275,2430 1290,2423 1293,2423 1300,2423 1341,2427 1342,2427 1344,2427 1345,2427 1345,2425 1351,2420 1357,2415 1404,2417 1405,2398 1401,2369 1320,2370 1319,2370 1282,2357 1281,2357 1236,2357 1234,2357 1233,2357 1231,2357 1231,2358 1230,2358 1222,2367 1177,2358 1176,2358 1174,2358 1173,2358 1173,2360 1160,2373 1117,2360 1116,2360 1114,2360 1113,2360 1057,2377 1056,2377 1053,2377 1027,2369 1025,2369 1024,2369 1022,2369 1002,2376 1003,2408 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/1002.0,2357.0,403.0,82.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_1_BT227_5__10_1" points="1003,2408 1405,2398 " corresp="DefaultLine"/>
+          <line>y que se apiade de mí.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_1_BT224_6" n="6" type="GraphicZone" subtype="illustration" points="132,609 132,1764 1707,1764 1707,609 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_1/132.0,609.0,1575.0,1155.0/full/0/default" corresp="GraphicZone:illustration"/>
+    </surface>
+    <surface xml:id="Varios_424_2" type="page" cert="silver">
+      <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/full/full/0/default.jpg"/>
+      <zone xml:id="Varios_424_2_BT227_1" n="1" type="MainZone" subtype="columns" points="645,81 645,562 414,562 414,574 419,574 419,615 76,615 76,81 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/76.0,81.0,569.0,534.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_1_LT83_1" type="DefaultLine" subtype="none" points="414,119 414,132 483,132 483,119 483,86 414,85 414,119 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/414.0,85.0,69.0,47.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_1_LT83_1_1" points="414,119 483,119 " corresp="DefaultLine"/>
+          <line>II.</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_1_LT83_2" type="DefaultLine" subtype="none" points="133,214 133,231 496,232 497,232 498,232 518,224 518,210 514,163 330,174 316,163 310,157 310,155 308,155 307,155 259,155 257,155 256,155 254,155 245,163 227,176 203,165 202,165 132,163 133,214 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/132.0,155.0,386.0,77.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_1_LT83_2_1" points="133,214 518,210 " corresp="DefaultLine"/>
+          <line>Edelmira àngel bello</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_1_LT83_3" type="DefaultLine" subtype="none" points="92,261 90,276 544,281 547,264 547,238 511,236 498,225 498,224 497,224 496,224 494,224 447,225 446,225 445,225 431,236 429,238 358,238 354,235 319,223 318,223 267,223 265,223 264,223 263,223 263,224 250,235 249,235 213,223 212,223 210,223 209,223 208,223 208,224 197,234 195,236 143,236 139,234 117,224 115,224 114,224 113,224 92,232 92,261 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/90.0,223.0,457.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_1_LT83_3_1" points="92,261 547,264 " corresp="DefaultLine"/>
+          <line>iman de mi pensamiento,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_1_LT83_4" type="DefaultLine" subtype="none" points="90,307 89,327 113,334 114,334 115,334 117,334 118,334 125,327 130,325 135,327 139,332 140,332 141,332 143,332 163,327 184,323 192,327 203,333 205,333 206,333 249,327 277,323 289,327 314,334 315,334 316,334 374,329 425,336 427,336 428,336 429,336 443,326 446,325 567,325 570,310 570,283 536,275 534,275 533,275 518,282 511,275 509,275 508,275 507,275 505,275 493,282 491,282 486,282 446,275 445,275 443,275 442,275 434,281 429,282 90,276 90,307 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/89.0,275.0,481.0,61.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_1_LT83_4_1" points="90,307 570,310 " corresp="DefaultLine"/>
+          <line>que feliz, si oigo tu acento</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_1_LT83_5" type="DefaultLine" subtype="none" points="92,358 92,372 494,369 496,355 493,332 292,325 290,325 289,325 283,327 275,332 268,327 264,323 263,323 261,323 205,323 203,323 190,326 159,332 148,325 147,323 146,323 144,323 143,323 90,323 92,358 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/90.0,323.0,406.0,49.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_1_LT83_5_1" points="92,358 496,355 " corresp="DefaultLine"/>
+          <line>mis canciones repetir.</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_1_LT83_6" type="DefaultLine" subtype="none" points="126,405 125,417 129,421 129,422 130,422 132,422 133,422 548,417 549,407 547,374 449,377 441,374 429,370 428,370 427,370 401,374 381,377 367,374 341,369 340,369 339,369 323,374 319,376 315,374 290,367 289,367 288,367 286,367 285,367 285,369 278,374 277,377 245,377 243,374 237,369 237,367 235,367 234,367 152,367 151,367 150,367 126,374 126,405 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/125.0,367.0,424.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_1_LT83_6_1" points="126,405 549,407 " corresp="DefaultLine"/>
+          <line>Por tí sola flor querida</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_1_LT83_7" type="DefaultLine" subtype="none" points="92,451 90,468 548,473 551,454 551,422 497,416 496,416 467,420 429,427 420,420 420,418 418,418 417,418 416,418 403,418 351,422 334,417 329,416 327,416 326,416 325,416 323,416 322,417 311,425 254,418 253,418 146,425 92,413 92,451 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/90.0,413.0,461.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_1_LT83_7_1" points="92,451 551,454 " corresp="DefaultLine"/>
+          <line>Se enagena el pecho mio,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_1_LT83_8" type="DefaultLine" subtype="none" points="92,502 92,523 144,513 254,522 256,522 257,522 259,522 272,513 314,519 315,519 316,519 339,512 540,520 542,500 540,475 498,467 497,467 496,467 494,467 494,468 487,475 436,475 423,475 395,464 394,464 392,464 391,464 351,475 316,464 315,464 314,464 275,465 274,465 272,465 253,478 166,478 133,468 132,468 130,468 129,468 90,478 92,502 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/90.0,464.0,452.0,59.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_1_LT83_8_1" points="92,502 542,500 " corresp="DefaultLine"/>
+          <line>y tu amor tan solo ansio,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_1_LT83_9" type="DefaultLine" subtype="none" points="92,548 90,582 223,586 224,586 226,586 227,586 237,578 243,574 249,578 254,582 256,582 257,582 259,582 260,582 261,582 267,578 283,566 358,566 396,574 458,586 460,586 461,586 463,586 489,571 496,567 541,567 544,569 555,580 555,581 556,581 558,581 559,581 560,581 589,567 591,567 625,567 627,551 627,522 611,512 610,512 609,512 554,512 552,512 551,512 522,523 384,512 383,512 381,512 362,522 256,515 254,515 213,522 192,511 191,511 190,511 188,511 159,522 158,522 157,522 114,513 113,513 111,513 92,520 92,548 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/90.0,511.0,537.0,75.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_1_LT83_9_1" points="92,548 627,551 " corresp="DefaultLine"/>
+          <line>que el no amarte, no es vivir.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_2" n="2" type="MainZone" subtype="columns" points="645,574 645,615 496,615 496,574 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/496.0,574.0,149.0,41.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_2_LT83_1" type="DefaultLine" subtype="none" points="494,599 494,629 556,631 558,631 559,631 562,629 582,622 591,629 595,599 595,577 527,562 526,562 494,566 494,599 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/494.0,562.0,101.0,69.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_2_LT83_1_1" points="494,599 595,599 " corresp="DefaultLine"/>
+          <line>Coro.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_3" n="3" type="MainZone" subtype="columns" points="804,662 802,1060 507,1117 484,1148 73,1150 68,662 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/68.0,662.0,736.0,488.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_3_LT83_1" type="DefaultLine" subtype="none" points="474,662 460,662 446,662 432,662 418,662 417,662 405,662 406,697 406,713 479,709 480,694 476,662 474,662 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/405.0,662.0,75.0,51.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_3_LT83_1_1" points="406,697 480,694 " corresp="DefaultLine"/>
+          <line>III.</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_3_LT83_2" type="DefaultLine" subtype="none" points="132,789 132,803 574,808 577,786 573,753 505,760 490,752 487,750 486,750 485,750 474,752 442,756 431,752 423,748 421,748 420,748 418,748 410,750 390,760 365,750 354,746 352,746 351,746 350,746 348,746 348,748 344,750 333,763 318,763 307,752 307,750 305,750 304,750 272,750 254,750 253,750 252,750 250,750 238,761 217,750 216,750 214,750 213,750 188,756 130,749 132,789 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/130.0,746.0,447.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_3_LT83_2_1" points="132,789 577,786 " corresp="DefaultLine"/>
+          <line>Yo de tu jardin las flores</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_3_LT83_3" type="DefaultLine" subtype="none" points="90,852 578,852 580,839 578,801 421,811 410,803 409,803 407,803 406,803 405,803 403,803 392,810 358,799 356,799 355,799 352,799 286,808 238,797 235,797 234,797 232,797 231,797 231,799 220,810 169,810 161,801 161,800 159,800 158,800 157,800 118,808 93,796 92,834 90,852 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/90.0,796.0,490.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_3_LT83_3_1" points="92,834 580,839 " corresp="DefaultLine"/>
+          <line>beso en la noche tranquila;</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_3_LT83_4" type="DefaultLine" subtype="none" points="96,885 97,906 119,898 496,896 497,883 496,859 463,850 461,850 460,850 392,858 351,850 350,850 299,859 294,859 293,859 283,851 282,851 281,851 279,851 278,851 277,851 264,859 263,859 261,859 241,851 239,851 238,851 237,851 219,859 216,859 214,859 192,851 191,851 190,851 95,858 96,885 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/95.0,850.0,402.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_3_LT83_4_1" points="96,885 497,883 " corresp="DefaultLine"/>
+          <line>y se inunda mí pupila</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_3_LT83_5" type="DefaultLine" subtype="none" points="93,949 208,953 209,953 235,949 252,946 268,949 294,953 296,953 297,953 311,949 319,946 337,947 384,954 385,954 387,954 405,947 406,947 570,947 571,932 570,906 498,906 494,903 478,896 476,896 475,896 474,896 450,902 441,905 436,902 429,898 428,898 427,898 425,898 376,901 350,902 341,899 327,895 326,895 325,895 252,898 113,903 97,894 95,930 93,949 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/93.0,894.0,478.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_3_LT83_5_1" points="95,930 571,932 " corresp="DefaultLine"/>
+          <line>con mil lágrimas de amor.</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_3_LT83_6" type="DefaultLine" subtype="none" points="106,980 104,1000 175,1011 176,1011 235,1003 250,1001 254,1003 270,1011 271,1011 272,1011 274,1011 275,1011 275,1009 282,1004 285,1001 288,1004 292,1008 293,1008 294,1008 296,1008 323,1004 356,1000 374,1005 391,1011 392,1011 394,1011 395,1011 396,1011 402,1005 412,1000 443,1000 555,1007 556,1007 558,1007 578,1001 595,1009 600,1012 602,1012 603,1014 784,1014 785,983 782,943 763,952 741,943 740,943 738,943 737,943 731,943 702,949 697,943 693,941 693,939 691,939 690,939 689,939 665,945 657,946 654,945 647,939 646,939 644,939 558,939 556,939 555,939 554,939 554,941 548,945 545,949 479,952 416,946 340,941 339,941 337,941 325,947 318,952 203,952 197,949 172,941 170,941 169,941 106,949 106,980 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/104.0,939.0,681.0,75.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_3_LT83_6_1" points="106,980 785,983 " corresp="DefaultLine"/>
+          <line>¡Siempre pienso en ti! ¡Edelmira!...</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_3_LT83_7" type="DefaultLine" subtype="none" points="90,1029 90,1041 139,1041 146,1047 146,1048 147,1048 148,1048 150,1048 186,1042 192,1041 555,1047 556,1029 556,1005 491,1004 491,1003 483,996 483,994 482,994 480,994 479,994 478,994 476,994 465,1003 464,1004 454,1003 414,994 413,994 380,1000 361,1004 341,1000 318,994 316,994 315,994 299,998 278,1004 263,997 254,994 253,994 252,994 231,997 186,1004 159,996 155,994 154,994 90,994 90,1029 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/90.0,994.0,466.0,54.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_3_LT83_7_1" points="90,1029 556,1029 " corresp="DefaultLine"/>
+          <line>la que robastes mi calma,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_3_LT83_8" type="DefaultLine" subtype="none" points="88,1073 86,1085 107,1096 108,1096 110,1098 202,1098 202,1096 203,1096 239,1087 299,1098 300,1098 406,1088 417,1095 418,1095 420,1095 421,1095 423,1095 435,1089 443,1098 443,1099 445,1099 446,1099 447,1100 531,1100 531,1099 585,1088 587,1077 584,1045 545,1051 537,1045 531,1041 530,1041 529,1041 527,1041 505,1045 490,1048 482,1045 474,1042 472,1042 471,1042 453,1045 428,1051 424,1045 418,1041 418,1040 417,1040 416,1040 414,1040 413,1040 412,1040 412,1041 406,1045 402,1051 373,1051 362,1047 343,1040 341,1040 340,1040 339,1040 337,1040 327,1047 322,1049 265,1047 181,1042 180,1042 154,1048 150,1048 146,1048 107,1038 106,1038 104,1038 88,1045 88,1073 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/86.0,1038.0,501.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_3_LT83_8_1" points="88,1073 587,1077 " corresp="DefaultLine"/>
+          <line>dále un consuelo á mi alma</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_3_LT83_9" type="DefaultLine" subtype="none" points="90,1124 89,1157 110,1160 111,1160 113,1160 114,1160 117,1158 137,1144 231,1160 239,1160 241,1160 242,1160 243,1160 261,1146 278,1160 279,1160 281,1160 282,1160 283,1160 285,1160 285,1158 303,1143 337,1143 387,1158 388,1158 390,1158 391,1158 392,1158 392,1157 407,1143 423,1143 447,1161 449,1161 450,1161 452,1162 478,1162 479,1127 476,1093 90,1095 90,1124 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/89.0,1093.0,390.0,69.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_3_LT83_9_1" points="90,1124 479,1127 " corresp="DefaultLine"/>
+          <line>impregnada de dolor.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_4" n="4" type="MainZone" subtype="columns" points="647,1146 647,1203 508,1203 508,1146 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/508.0,1146.0,139.0,57.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_4_LT83_1" type="DefaultLine" subtype="none" points="555,1146 541,1146 533,1146 527,1151 527,1178 527,1204 562,1204 562,1202 563,1202 565,1202 565,1201 567,1198 576,1191 635,1191 636,1178 636,1154 562,1146 555,1146 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/527.0,1146.0,109.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_4_LT83_1_1" points="527,1178 636,1178 " corresp="DefaultLine"/>
+          <line>Coro.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_5" n="5" type="MainZone" subtype="columns" points="669,1223 667,1715 61,1720 61,1223 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/61.0,1223.0,608.0,497.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_5_LT83_1" type="DefaultLine" subtype="none" points="401,1273 401,1293 412,1303 413,1303 414,1303 416,1303 472,1290 472,1273 472,1235 401,1235 401,1273 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/401.0,1235.0,71.0,68.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_5_LT83_1_1" points="401,1273 472,1273 " corresp="DefaultLine"/>
+          <line>IV.</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_5_LT83_2" type="DefaultLine" subtype="none" points="126,1368 126,1384 133,1390 135,1390 136,1390 137,1390 139,1390 163,1383 212,1390 213,1390 642,1381 642,1368 640,1314 610,1318 609,1318 607,1318 591,1332 560,1317 559,1317 558,1317 556,1317 523,1333 406,1333 385,1322 367,1315 366,1315 327,1314 326,1314 325,1314 323,1314 323,1315 312,1325 307,1330 296,1326 259,1314 257,1314 166,1314 165,1314 163,1314 162,1314 143,1332 141,1333 126,1333 126,1368 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/126.0,1314.0,516.0,76.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_5_LT83_2_1" points="126,1368 642,1368 " corresp="DefaultLine"/>
+          <line>¿Porqué no colmas de gloria</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_5_LT83_3" type="DefaultLine" subtype="none" points="89,1413 89,1427 552,1427 552,1413 551,1379 468,1386 461,1380 458,1377 457,1377 456,1377 361,1376 359,1376 358,1376 356,1376 356,1377 351,1381 347,1387 300,1387 294,1383 281,1376 279,1376 278,1376 277,1376 263,1383 257,1387 220,1387 217,1384 209,1377 209,1376 208,1376 206,1376 161,1376 159,1376 158,1376 157,1376 143,1386 126,1376 125,1376 124,1376 122,1376 89,1386 89,1413 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/89.0,1376.0,463.0,51.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_5_LT83_3_1" points="89,1413 552,1413 " corresp="DefaultLine"/>
+          <line>á tu Faustino, Edelmira?</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_5_LT83_4" type="DefaultLine" subtype="none" points="85,1459 84,1472 212,1486 213,1486 268,1476 277,1475 285,1476 341,1486 343,1486 344,1486 345,1486 355,1478 409,1488 410,1489 450,1489 450,1488 452,1488 453,1488 453,1486 461,1479 501,1488 503,1488 504,1488 522,1481 526,1479 592,1481 595,1464 595,1441 534,1430 533,1430 531,1430 503,1437 489,1430 487,1430 486,1430 485,1430 483,1430 474,1437 471,1437 469,1437 463,1430 463,1428 461,1428 460,1428 458,1428 427,1435 417,1437 410,1434 392,1427 391,1427 390,1427 354,1432 334,1435 330,1431 325,1427 325,1426 323,1426 322,1426 321,1426 293,1430 264,1437 238,1437 230,1428 227,1427 227,1426 226,1426 224,1426 223,1426 221,1426 220,1426 217,1428 208,1435 135,1435 85,1424 85,1459 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/84.0,1424.0,511.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_5_LT83_4_1" points="85,1459 595,1464 " corresp="DefaultLine"/>
+          <line>No ves que el pobre suspira,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_5_LT83_5" type="DefaultLine" subtype="none" points="93,1512 95,1533 119,1523 155,1525 166,1533 169,1536 170,1536 172,1536 173,1536 187,1533 234,1523 272,1533 277,1534 278,1534 279,1534 288,1533 348,1523 372,1533 377,1536 378,1536 380,1536 438,1533 438,1512 438,1489 399,1489 399,1488 391,1481 391,1479 390,1479 388,1479 387,1479 385,1479 358,1488 356,1488 355,1488 271,1479 270,1479 93,1486 93,1512 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/93.0,1479.0,345.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_5_LT83_5_1" points="93,1512 438,1512 " corresp="DefaultLine"/>
+          <line>y suspira para tí...</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_5_LT83_6" type="DefaultLine" subtype="none" points="89,1559 89,1574 503,1580 504,1580 566,1570 566,1559 566,1536 545,1536 545,1534 534,1525 534,1523 533,1523 531,1523 530,1523 529,1523 493,1534 490,1534 482,1526 480,1526 479,1526 478,1526 429,1533 413,1534 392,1532 322,1523 321,1523 272,1530 239,1534 176,1534 170,1529 166,1525 166,1523 165,1523 163,1523 162,1523 161,1523 150,1527 144,1530 137,1527 128,1523 126,1523 125,1523 89,1526 89,1559 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/89.0,1523.0,477.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_5_LT83_6_1" points="89,1559 566,1559 " corresp="DefaultLine"/>
+          <line>!Pobre cazador!... cazando</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_5_LT83_7" type="DefaultLine" subtype="none" points="89,1618 150,1629 151,1629 231,1621 259,1620 512,1627 514,1609 514,1584 443,1574 442,1574 336,1580 264,1583 241,1577 228,1574 227,1574 226,1574 224,1574 223,1574 220,1577 213,1581 208,1577 206,1574 205,1574 203,1574 202,1574 187,1576 147,1583 139,1576 139,1574 137,1574 136,1574 135,1574 133,1574 130,1574 111,1581 90,1574 89,1609 89,1618 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/89.0,1574.0,425.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_5_LT83_7_1" points="89,1609 514,1609 " corresp="DefaultLine"/>
+          <line>no puede cazar amores,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_5_LT83_8" type="DefaultLine" subtype="none" points="90,1657 90,1672 523,1674 525,1654 522,1629 427,1629 409,1620 407,1620 406,1620 405,1620 403,1620 403,1621 395,1629 350,1629 336,1620 334,1620 333,1620 332,1620 330,1620 329,1620 316,1628 308,1620 307,1620 305,1620 304,1620 303,1620 270,1629 252,1621 250,1621 217,1621 216,1621 214,1621 213,1621 206,1628 198,1621 197,1621 195,1621 144,1621 143,1621 141,1621 140,1621 140,1623 132,1631 89,1631 90,1657 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/89.0,1620.0,436.0,54.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_5_LT83_8_1" points="90,1657 525,1654 " corresp="DefaultLine"/>
+          <line>que del hado los rigores</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_5_LT83_9" type="DefaultLine" subtype="none" points="101,1702 100,1733 121,1734 122,1734 124,1734 125,1734 125,1733 136,1723 161,1723 175,1734 176,1734 177,1734 179,1734 180,1734 181,1734 199,1726 217,1734 219,1734 220,1734 221,1734 223,1734 224,1734 224,1733 235,1723 305,1723 316,1733 316,1734 318,1734 319,1734 344,1736 345,1736 390,1734 391,1734 392,1734 392,1733 399,1727 410,1734 412,1736 413,1736 414,1736 416,1736 501,1734 503,1734 504,1734 516,1724 584,1734 587,1705 582,1668 571,1676 559,1668 558,1667 556,1667 555,1667 554,1667 552,1667 551,1667 551,1668 549,1668 541,1678 485,1678 476,1669 476,1668 475,1668 474,1668 472,1668 468,1668 429,1676 380,1668 374,1668 373,1668 372,1668 369,1668 344,1676 318,1668 307,1665 305,1665 203,1665 202,1665 201,1665 191,1668 173,1675 101,1669 101,1702 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/100.0,1665.0,487.0,71.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_5_LT83_9_1" points="101,1702 587,1705 " corresp="DefaultLine"/>
+          <line>e concretan contra él... sí.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_6" n="6" type="MainZone" subtype="columns" points="626,1732 626,1776 491,1776 491,1732 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/491.0,1732.0,135.0,44.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_6_LT83_1" type="DefaultLine" subtype="none" points="602,1733 588,1733 574,1733 560,1733 555,1733 505,1733 507,1753 507,1781 548,1791 549,1791 551,1791 552,1791 552,1789 566,1775 571,1769 609,1770 610,1751 606,1733 602,1733 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/505.0,1733.0,105.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_6_LT83_1_1" points="507,1753 610,1751 " corresp="DefaultLine"/>
+          <line>Coro.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_7" n="7" type="MainZone" subtype="columns" points="662,1805 662,2121 70,2121 70,1805 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/70.0,1805.0,592.0,316.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_7_LT83_1" type="DefaultLine" subtype="none" points="126,1944 126,1964 254,1956 631,1957 633,1938 629,1908 445,1909 435,1908 390,1899 388,1899 387,1899 385,1899 376,1906 363,1895 363,1894 362,1894 361,1894 359,1894 358,1894 334,1902 321,1894 319,1894 318,1894 250,1894 249,1894 206,1895 205,1895 203,1895 203,1897 191,1908 183,1901 183,1899 181,1899 180,1899 144,1897 143,1897 141,1897 140,1897 125,1905 126,1944 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/125.0,1894.0,508.0,70.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_7_LT83_1_1" points="126,1944 633,1938 " corresp="DefaultLine"/>
+          <line>¿No recuerdas los momentos</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_7_LT83_2" type="DefaultLine" subtype="none" points="86,1989 86,2004 286,2007 288,2007 326,2001 336,2000 341,2001 366,2007 367,2007 369,2007 424,2000 425,2000 427,2000 465,2007 467,2007 468,2007 480,2000 490,2007 491,2007 493,2007 494,2008 494,2007 496,2007 497,2007 508,1999 508,1986 505,1959 296,1953 294,1953 190,1961 173,1955 172,1955 170,1955 169,1955 168,1955 168,1956 161,1961 101,1956 100,1956 99,1956 85,1961 86,1989 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/85.0,1953.0,423.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_7_LT83_2_1" points="86,1989 508,1986 " corresp="DefaultLine"/>
+          <line>qne te juraba constante</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_7_LT83_3" type="DefaultLine" subtype="none" points="86,2039 86,2054 201,2052 203,2054 221,2061 223,2061 224,2061 226,2061 241,2052 242,2052 246,2052 294,2061 296,2061 297,2061 311,2054 330,2061 332,2061 333,2061 372,2051 581,2048 581,2036 580,2011 551,2001 549,2001 548,2001 547,2001 523,2010 522,2011 373,2011 372,2008 365,2003 365,2001 363,2001 362,2001 361,2001 359,2001 340,2008 329,2012 288,2012 283,2007 279,2004 279,2003 278,2003 277,2003 183,2003 181,2003 180,2003 179,2003 175,2006 166,2011 152,2006 144,2003 143,2003 141,2003 85,2004 86,2039 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/85.0,2001.0,496.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_7_LT83_3_1" points="86,2039 581,2036 " corresp="DefaultLine"/>
+          <line>el ser á más que un amante</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_7_LT83_4" type="DefaultLine" subtype="none" points="86,2088 86,2131 146,2131 146,2130 147,2130 148,2130 148,2128 151,2127 159,2119 199,2119 201,2119 202,2119 203,2119 203,2117 212,2110 226,2123 232,2128 232,2130 234,2130 235,2130 237,2131 256,2131 256,2130 257,2130 259,2130 259,2128 268,2120 268,2119 296,2119 318,2117 319,2117 321,2117 321,2116 330,2108 406,2108 412,2112 427,2127 427,2128 428,2128 429,2128 431,2130 465,2130 465,2128 467,2128 468,2128 503,2108 503,2106 527,2105 527,2085 525,2055 85,2055 86,2088 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/85.0,2055.0,442.0,76.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_7_LT83_4_1" points="86,2088 527,2085 " corresp="DefaultLine"/>
+          <line>un osposo casto y fiel...?</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_8" n="8" type="MainZone" subtype="columns" points="1519,74 1519,274 1381,274 1163,274 1163,294 926,294 926,74 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/926.0,74.0,593.0,220.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_8_LT83_1" type="DefaultLine" subtype="none" points="988,124 989,144 1022,136 1094,136 1101,141 1101,143 1102,143 1103,143 1105,143 1502,135 1503,121 1496,81 1482,89 1444,81 1429,78 1427,78 1404,81 1371,85 1324,81 1292,78 1291,78 1289,78 1281,81 1269,85 1255,81 1247,78 1245,78 1244,78 1243,78 1236,81 1210,92 1040,92 1025,81 1025,79 1023,79 1022,79 1021,79 986,79 988,124 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/986.0,78.0,517.0,66.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_8_LT83_1_1" points="988,124 1503,121 " corresp="DefaultLine"/>
+          <line>¿Pues porqué bella Edelmira</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_8_LT83_2" type="DefaultLine" subtype="none" points="941,170 941,181 997,191 999,191 1000,191 1021,183 1036,192 1037,192 1039,192 1040,192 1119,183 1143,192 1145,192 1146,192 1229,183 1249,192 1251,192 1252,192 1254,192 1289,183 1316,190 1317,190 1318,190 1416,186 1429,192 1430,192 1431,192 1433,192 1434,192 1436,192 1447,184 1447,170 1445,136 1372,143 1321,137 1305,136 1303,136 1280,137 1233,143 1226,139 1223,136 1222,136 1221,136 1219,136 1218,136 1216,136 1216,137 1214,139 1210,144 1149,144 1138,140 1121,136 1120,136 1119,136 1117,136 1116,136 1110,140 1106,144 941,144 941,170 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/941.0,136.0,506.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_8_LT83_2_1" points="941,170 1447,170 " corresp="DefaultLine"/>
+          <line>no consuelas mi quebranto?</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_8_LT83_3" type="DefaultLine" subtype="none" points="942,220 942,232 1076,241 1077,241 1079,241 1080,241 1092,231 1098,231 1149,239 1150,239 1152,239 1176,231 1181,231 1351,238 1353,238 1354,238 1378,228 1378,216 1374,183 1313,188 1291,184 1266,180 1265,180 1263,180 1251,186 1244,188 1241,186 1234,180 1233,180 1232,180 1230,180 1229,180 1227,180 1219,187 1212,191 1168,191 1161,188 1141,181 1139,181 1138,181 1136,181 1135,181 1125,188 1123,191 1047,191 1040,191 960,183 959,183 957,183 941,191 942,220 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/941.0,180.0,437.0,61.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_8_LT83_3_1" points="942,220 1378,216 " corresp="DefaultLine"/>
+          <line>¡Enjuga niña mi llanto!</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_8_LT83_4" type="DefaultLine" subtype="none" points="944,267 942,287 1004,293 1006,293 1007,293 1008,293 1008,292 1014,287 1019,282 1154,282 1160,286 1172,294 1174,294 1175,294 1176,296 1291,296 1291,294 1292,294 1294,294 1310,283 1311,283 1313,283 1353,294 1354,294 1356,294 1357,294 1402,282 1404,270 1402,243 1351,243 1350,241 1342,234 1342,232 1340,232 1339,232 1338,232 1336,232 1307,239 1298,242 1223,238 1183,235 1182,235 1165,235 1085,241 1052,234 1051,234 1011,241 1001,232 1001,231 1000,231 999,231 944,230 944,267 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/942.0,230.0,462.0,66.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_8_LT83_4_1" points="944,267 1404,270 " corresp="DefaultLine"/>
+          <line>¡No me seas tan cruel!....</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_9" n="9" type="MainZone" subtype="columns" points="1389,294 1389,348 1490,348 1490,294 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1389.0,294.0,101.0,54.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_9_LT83_1" type="DefaultLine" subtype="none" points="1382,315 1382,329 1426,341 1427,341 1429,341 1430,341 1478,326 1478,312 1474,257 1380,271 1382,315 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1380.0,257.0,98.0,84.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_9_LT83_1_1" points="1382,315 1478,312 " corresp="DefaultLine"/>
+          <line>Coro.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_10" n="10" type="MainZone" subtype="columns" points="906,877 906,410 1250,410 1250,326 1361,326 1361,410 1554,410 1554,807 1508,807 1508,805 1307,805 1307,824 1317,824 1317,877 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/906.0,326.0,648.0,551.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_10_LT83_1" type="DefaultLine" subtype="none" points="1306,326 1292,326 1278,326 1265,326 1267,365 1267,378 1295,391 1296,391 1298,391 1299,391 1331,377 1331,362 1328,327 1306,326 1306,326 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1265.0,326.0,66.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_10_LT83_1_1" points="1267,365 1331,362 " corresp="DefaultLine"/>
+          <line>VI.</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_10_LT83_2" type="DefaultLine" subtype="none" points="977,458 977,469 1379,471 1382,456 1379,421 975,420 977,458 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/975.0,420.0,407.0,51.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_10_LT83_2_1" points="977,458 1382,456 " corresp="DefaultLine"/>
+          <line>Para mi serás la reina</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_10_LT83_3" type="DefaultLine" subtype="none" points="938,527 1004,522 1030,530 1039,533 1040,533 1041,534 1092,534 1092,533 1094,533 1095,533 1095,531 1097,531 1105,523 1114,529 1116,529 1117,529 1119,529 1120,529 1121,529 1130,522 1221,522 1233,531 1234,533 1234,534 1236,534 1237,534 1238,535 1291,535 1291,534 1292,534 1294,534 1294,533 1295,533 1303,524 1329,533 1334,534 1335,534 1336,534 1338,534 1339,534 1339,533 1349,523 1407,523 1431,534 1433,534 1434,534 1436,534 1437,534 1438,534 1438,533 1449,523 1477,534 1478,534 1480,535 1535,535 1536,508 1536,480 1524,480 1524,479 1506,462 1506,461 1504,461 1503,461 1430,461 1429,461 1427,461 1426,461 1408,475 1402,479 1394,475 1372,464 1371,464 1369,464 1368,464 1367,464 1353,473 1349,476 1345,472 1339,468 1338,468 1336,468 1335,468 1334,468 1332,468 1332,469 1328,472 1320,480 1266,480 1244,469 1232,464 1230,464 1229,464 1198,468 1193,468 1192,467 1185,461 1183,461 1182,461 1181,461 1179,461 1165,467 1143,475 1124,468 1123,468 1121,468 1120,468 1119,468 1119,469 1110,478 1058,478 1043,469 1041,469 1040,469 1039,469 1037,469 1036,469 1025,479 993,479 941,458 939,505 938,527 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/938.0,458.0,598.0,77.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_10_LT83_3_1" points="939,505 1536,508 " corresp="DefaultLine"/>
+          <line>De este mundo en que he nacido,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_10_LT83_4" type="DefaultLine" subtype="none" points="941,553 941,567 1402,567 1402,553 1402,529 1375,518 1374,518 1372,518 1332,524 1309,518 1307,518 1306,518 1305,518 1283,527 1278,529 1186,527 1185,524 1176,518 1175,518 1174,518 1172,518 1171,518 1159,524 1152,529 1145,524 1135,518 1134,518 1132,518 1131,518 1102,523 1074,529 941,520 941,553 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/941.0,518.0,461.0,49.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_10_LT83_4_1" points="941,553 1402,553 " corresp="DefaultLine"/>
+          <line>Lo que anheles, preferido</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_10_LT83_5" type="DefaultLine" subtype="none" points="937,600 935,611 1360,614 1362,603 1358,567 1339,575 1305,567 1303,567 1302,567 1300,567 1299,567 1299,569 1291,577 1244,577 1218,567 1216,567 1215,567 1149,575 937,564 937,600 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/935.0,564.0,427.0,50.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_10_LT83_5_1" points="937,600 1362,603 " corresp="DefaultLine"/>
+          <line>Niña hermosa te será...</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_10_LT83_6" type="DefaultLine" subtype="none" points="970,650 970,677 1030,677 1030,676 1032,676 1033,676 1033,675 1046,665 1123,676 1128,676 1130,676 1131,676 1132,676 1159,665 1243,664 1277,670 1278,670 1346,664 1357,673 1357,675 1358,675 1360,675 1361,675 1364,675 1427,664 1438,673 1438,675 1440,675 1441,675 1442,675 1444,675 1445,675 1445,673 1455,665 1469,675 1470,675 1471,675 1473,675 1513,673 1513,647 1509,621 1481,622 1474,620 1453,611 1452,611 1451,611 1402,620 1380,622 1368,618 1349,611 1347,611 1346,611 1345,611 1343,611 1336,618 1335,618 1331,618 1287,613 1285,613 1284,613 1273,617 1261,624 1198,624 1178,615 1165,611 1164,611 1163,611 1161,611 1147,615 1138,618 1098,615 1051,611 1050,611 1048,611 1041,614 1025,624 1017,614 1014,613 1014,611 1012,611 1011,611 1010,611 968,613 970,650 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/968.0,611.0,545.0,66.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_10_LT83_6_1" points="970,650 1513,647 " corresp="DefaultLine"/>
+          <line>Sí, Edelmira... cual la madre</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_10_LT83_7" type="DefaultLine" subtype="none" points="935,712 1066,708 1152,715 1183,717 1185,717 1197,715 1229,709 1249,716 1255,717 1256,717 1258,717 1259,717 1266,716 1289,709 1300,716 1305,719 1306,719 1307,719 1309,720 1364,720 1364,719 1365,719 1371,716 1383,710 1470,716 1473,698 1471,672 1390,662 1389,662 1356,668 1340,670 1317,668 1272,661 1270,661 1230,665 1193,669 1185,664 1182,661 1181,661 1179,661 1178,661 1176,661 1175,661 1175,662 1172,664 1168,669 1153,664 1146,661 1145,661 1143,661 1142,661 1136,662 1119,669 1102,662 1097,659 1095,659 1094,659 1092,659 1087,661 1069,668 1048,661 1044,659 1043,659 1041,659 1040,659 1039,659 1039,661 1026,669 970,669 938,658 937,694 935,712 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/935.0,658.0,538.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_10_LT83_7_1" points="937,694 1473,698 " corresp="DefaultLine"/>
+          <line>Que el sèr dió, á tu Faustino;</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_10_LT83_8" type="DefaultLine" subtype="none" points="935,742 934,755 945,763 946,763 948,763 949,763 985,757 1004,764 1006,764 1007,764 1008,764 1036,755 1057,764 1058,764 1059,764 1159,755 1174,766 1175,766 1176,766 1178,766 1251,756 1274,764 1276,764 1277,764 1386,755 1387,745 1386,721 1327,713 1325,713 1324,713 1300,720 1291,712 1291,710 1289,710 1288,710 1287,710 1168,720 1164,720 1163,720 1150,710 1149,710 1147,710 1146,710 1103,719 945,709 944,709 942,709 941,709 941,710 935,716 935,742 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/934.0,709.0,453.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_10_LT83_8_1" points="935,742 1387,745 " corresp="DefaultLine"/>
+          <line>Sea bueno ó malo el sino</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_10_LT83_9" type="DefaultLine" subtype="none" points="935,793 938,821 957,810 1043,810 1051,818 1054,819 1054,821 1055,821 1057,821 1058,822 1149,822 1149,821 1150,821 1152,821 1160,814 1167,810 1205,810 1212,812 1227,821 1229,821 1230,821 1291,811 1300,810 1306,811 1349,821 1350,821 1351,821 1376,808 1376,793 1376,767 1336,757 1335,757 1334,757 1332,757 1331,757 1318,767 1317,767 1306,766 1236,757 1234,757 1233,757 1232,757 1232,759 1225,764 1223,767 1117,767 1087,760 1076,759 1074,759 1065,760 1023,767 1006,759 1003,757 1001,757 935,757 935,793 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/935.0,757.0,441.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_10_LT83_9_1" points="935,793 1376,793 " corresp="DefaultLine"/>
+          <line>Niña, siempre te amará.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_11" n="11" type="MainZone" subtype="columns" points="1376,822 1376,874 1493,874 1493,822 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1376.0,822.0,117.0,52.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_11_LT83_1" type="DefaultLine" subtype="none" points="1379,844 1379,863 1390,870 1391,870 1393,870 1394,870 1480,862 1480,841 1477,819 1420,817 1419,815 1412,808 1412,807 1411,807 1409,807 1408,807 1378,811 1379,844 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1378.0,807.0,102.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_11_LT83_1_1" points="1379,844 1480,841 " corresp="DefaultLine"/>
+          <line>Coro.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_12" n="12" type="MainZone" subtype="columns" points="1443,1356 923,1356 923,856 1317,856 1317,881 1344,881 1344,931 1443,931 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/923.0,856.0,520.0,500.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_12_LT83_1" type="DefaultLine" subtype="none" points="1288,856 1274,856 1261,856 1247,856 1247,891 1247,902 1334,916 1335,891 1335,858 1291,856 1288,856 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1247.0,856.0,88.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_12_LT83_1_1" points="1247,891 1335,891 " corresp="DefaultLine"/>
+          <line>VII.</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_12_LT83_2" type="DefaultLine" subtype="none" points="978,985 978,998 1090,998 1092,998 1105,1005 1106,1005 1108,1005 1160,998 1179,997 1190,1000 1210,1004 1211,1004 1212,1004 1243,1000 1270,996 1277,1000 1281,1003 1283,1003 1284,1003 1285,1003 1376,1000 1378,982 1374,945 1320,945 1318,945 1309,935 1309,934 1307,934 1306,934 1274,931 1273,931 1249,932 1248,932 1247,932 1247,934 1234,945 1234,946 1176,946 1176,945 1163,934 1163,932 1161,932 1160,932 1159,932 1108,941 1097,931 1097,930 1095,930 1094,930 1007,930 1006,930 1004,930 977,943 978,985 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/977.0,930.0,401.0,75.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_12_LT83_2_1" points="978,985 1378,982 " corresp="DefaultLine"/>
+          <line>No desoigas Edelmira</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_12_LT83_3" type="DefaultLine" subtype="none" points="945,1030 944,1045 1375,1048 1378,1033 1378,1005 1360,998 1358,998 1357,998 1284,1004 1266,1005 1256,1004 1232,998 1230,998 1229,998 1227,998 1223,1003 1219,1005 1205,1003 1185,998 1183,998 1182,998 1174,1001 1165,1005 1132,1001 1105,997 1103,997 1074,1000 1026,1004 1019,998 1019,997 1018,997 1017,997 945,997 945,1030 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/944.0,997.0,434.0,51.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_12_LT83_3_1" points="945,1030 1378,1033 " corresp="DefaultLine"/>
+          <line>Mis cancioues amorosas,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_12_LT83_4" type="DefaultLine" subtype="none" points="944,1081 944,1098 1000,1095 1007,1098 1017,1102 1018,1102 1019,1102 1021,1102 1037,1098 1047,1095 1051,1098 1058,1103 1058,1104 1059,1104 1061,1104 1062,1106 1124,1106 1124,1104 1125,1104 1127,1104 1138,1096 1141,1095 1147,1096 1172,1103 1174,1103 1175,1104 1229,1104 1229,1103 1230,1103 1247,1095 1252,1093 1262,1095 1284,1100 1285,1100 1287,1100 1288,1100 1294,1095 1296,1093 1397,1093 1400,1078 1394,1044 1368,1051 1283,1047 1238,1044 1237,1044 1214,1048 1193,1051 1185,1048 1171,1044 1170,1044 1168,1044 1167,1044 1149,1049 1138,1052 1130,1049 1117,1045 1116,1045 1114,1045 1113,1045 1102,1051 1097,1052 1076,1051 1014,1045 1012,1045 977,1052 953,1045 952,1045 950,1045 949,1045 948,1045 942,1048 944,1081 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/942.0,1044.0,458.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_12_LT83_4_1" points="944,1081 1400,1078 " corresp="DefaultLine"/>
+          <line>Que si nó, despiden rosas</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_12_LT83_5" type="DefaultLine" subtype="none" points="942,1128 942,1140 1196,1147 1197,1147 1269,1140 1270,1140 1273,1140 1335,1147 1336,1147 1380,1139 1380,1128 1380,1104 1339,1095 1338,1095 1300,1102 1294,1104 1171,1104 1161,1099 1152,1095 1150,1095 1149,1095 1147,1095 1134,1099 1116,1103 1041,1096 1018,1095 1017,1095 1015,1095 1012,1096 996,1103 942,1095 942,1128 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/942.0,1095.0,438.0,52.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_12_LT83_5_1" points="942,1128 1380,1128 " corresp="DefaultLine"/>
+          <line>Encierran el puro amor.</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_12_LT83_6" type="DefaultLine" subtype="none" points="974,1178 974,1194 1387,1189 1387,1178 1387,1153 1316,1153 1295,1142 1294,1142 1292,1142 1291,1142 1261,1151 1236,1142 1234,1142 1233,1142 1192,1150 1171,1142 1170,1142 1168,1142 1167,1142 1150,1150 1119,1142 1117,1142 1116,1142 1114,1142 1113,1142 1099,1153 1073,1153 1062,1143 1062,1142 1061,1142 1059,1142 1032,1142 1030,1142 1029,1142 1028,1142 1028,1143 1019,1151 997,1143 996,1143 995,1143 993,1143 974,1151 974,1178 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/974.0,1142.0,413.0,52.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_12_LT83_6_1" points="974,1178 1387,1178 " corresp="DefaultLine"/>
+          <line>A tus piés bella Sirena</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_12_LT83_7" type="DefaultLine" subtype="none" points="935,1222 934,1238 1127,1238 1142,1241 1161,1245 1163,1245 1236,1242 1364,1238 1383,1245 1387,1224 1387,1195 1376,1189 1375,1189 1374,1189 1372,1189 1327,1195 935,1191 935,1222 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/934.0,1189.0,453.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_12_LT83_7_1" points="935,1222 1387,1224 " corresp="DefaultLine"/>
+          <line>Está de hinojos postrado,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_12_LT83_8" type="DefaultLine" subtype="none" points="938,1271 938,1284 974,1292 975,1292 1091,1286 1156,1284 1338,1289 1339,1268 1335,1235 1216,1242 1207,1235 1205,1235 1204,1235 1203,1235 1201,1235 1186,1242 1181,1237 1181,1235 1179,1235 1178,1235 1083,1235 1081,1235 1080,1235 1079,1235 1066,1244 1050,1237 1048,1237 1047,1237 999,1244 937,1237 938,1271 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/937.0,1235.0,402.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_12_LT83_8_1" points="938,1271 1339,1268 " corresp="DefaultLine"/>
+          <line>Esperando acongojado</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_12_LT83_9" type="DefaultLine" subtype="none" points="937,1346 1065,1335 1116,1335 1127,1343 1138,1350 1139,1350 1141,1350 1142,1351 1176,1351 1176,1350 1178,1350 1179,1350 1190,1340 1200,1350 1200,1351 1201,1351 1203,1351 1204,1352 1261,1352 1261,1351 1262,1351 1263,1351 1281,1337 1324,1336 1325,1321 1324,1296 1256,1285 1255,1285 1254,1285 1252,1285 1252,1286 1245,1292 1243,1296 1207,1296 1203,1290 1197,1285 1197,1284 1196,1284 1194,1284 1193,1284 1192,1284 1179,1289 1171,1293 1163,1289 1150,1284 1149,1284 1147,1284 1121,1288 1085,1293 1076,1286 1073,1284 1072,1284 1070,1284 1069,1284 1051,1285 975,1292 939,1281 938,1317 937,1346 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/937.0,1281.0,388.0,71.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_12_LT83_9_1" points="938,1317 1325,1321 " corresp="DefaultLine"/>
+          <line>Este amante cazador.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_13" n="13" type="MainZone" subtype="columns" points="1215,1442 1215,1384 1366,1384 1366,1442 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1215.0,1384.0,151.0,58.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_13_LT83_1" type="DefaultLine" subtype="none" points="1244,1384 1230,1384 1230,1416 1229,1428 1345,1438 1347,1419 1346,1394 1255,1384 1244,1384 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1229.0,1384.0,118.0,54.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_13_LT83_1_1" points="1230,1416 1347,1419 " corresp="DefaultLine"/>
+          <line>CORO.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_14" n="14" type="MainZone" subtype="columns" points="1508,1946 914,1946 914,1481 1215,1481 1215,1479 1508,1479 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/914.0,1479.0,594.0,467.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_14_LT83_1" type="DefaultLine" subtype="none" points="977,1512 977,1529 1136,1525 1147,1527 1171,1533 1172,1533 1174,1533 1175,1533 1190,1526 1196,1525 1218,1526 1311,1533 1313,1533 1356,1523 1356,1512 1356,1478 1309,1471 1307,1471 1306,1471 1305,1471 1298,1476 1291,1482 1278,1476 1272,1474 1270,1474 1269,1474 1267,1474 1266,1474 1263,1476 1256,1483 1172,1483 1160,1475 1156,1472 1154,1472 1153,1472 1152,1472 1150,1472 1143,1475 1128,1482 1114,1475 1108,1471 1106,1471 1105,1471 977,1472 977,1512 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/977.0,1471.0,379.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_14_LT83_1_1" points="977,1512 1356,1512 " corresp="DefaultLine"/>
+          <line>Escucha si, mi dolor</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_14_LT83_2" type="DefaultLine" subtype="none" points="938,1559 937,1574 1269,1583 1270,1583 1272,1583 1273,1583 1283,1574 1313,1574 1358,1583 1360,1583 1361,1583 1380,1573 1382,1562 1382,1536 1347,1527 1346,1527 1309,1533 1299,1534 1287,1533 1249,1527 1248,1527 1247,1527 1238,1532 1232,1534 1063,1534 1057,1527 1057,1526 1055,1526 1054,1526 1052,1526 1046,1526 1007,1533 1000,1527 1000,1526 999,1526 997,1526 938,1525 938,1559 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/937.0,1525.0,445.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_14_LT83_2_1" points="938,1559 1382,1562 " corresp="DefaultLine"/>
+          <line>Lebrel que conmigo vás,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_14_LT83_3" type="DefaultLine" subtype="none" points="941,1624 1010,1621 1039,1625 1070,1629 1072,1629 1073,1629 1085,1625 1097,1621 1124,1624 1168,1629 1170,1629 1204,1624 1211,1623 1212,1624 1219,1629 1221,1629 1222,1629 1223,1629 1225,1629 1237,1624 1240,1623 1244,1623 1281,1631 1283,1631 1284,1631 1303,1623 1305,1623 1307,1623 1354,1631 1356,1631 1405,1621 1407,1610 1407,1585 1311,1584 1309,1581 1291,1574 1289,1574 1288,1574 1254,1580 1230,1584 1215,1578 1201,1574 1200,1574 1198,1574 1197,1574 1187,1578 1178,1584 1172,1578 1168,1574 1168,1573 1167,1573 1165,1573 1164,1573 1120,1576 1043,1583 1026,1573 1025,1573 1023,1573 1022,1573 1021,1573 1019,1573 1006,1584 979,1584 944,1572 942,1607 941,1624 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/941.0,1572.0,466.0,59.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_14_LT83_3_1" points="942,1607 1407,1610 " corresp="DefaultLine"/>
+          <line>Y á la prenda de mi amor</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_14_LT83_4" type="DefaultLine" subtype="none" points="939,1656 939,1676 1324,1675 1324,1656 1324,1631 1285,1621 1284,1621 1283,1621 1281,1621 1263,1629 1262,1629 1172,1621 1171,1621 1170,1621 1168,1621 1168,1623 1163,1627 1159,1631 1109,1631 1105,1625 1102,1624 1102,1623 1101,1623 1099,1623 1098,1623 1097,1623 1095,1623 1095,1624 1094,1625 1087,1632 996,1632 979,1621 978,1621 977,1621 939,1621 939,1656 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/939.0,1621.0,385.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_14_LT83_4_1" points="939,1656 1324,1656 " corresp="DefaultLine"/>
+          <line>Mis suspiros llevarás.</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_14_LT83_5" type="DefaultLine" subtype="none" points="978,1723 1030,1727 1032,1727 1055,1723 1077,1719 1112,1722 1165,1727 1167,1727 1168,1727 1170,1727 1178,1722 1182,1719 1207,1720 1284,1729 1285,1729 1287,1729 1321,1720 1335,1729 1336,1729 1338,1729 1339,1729 1340,1729 1358,1720 1386,1727 1387,1727 1389,1727 1390,1727 1409,1720 1442,1727 1444,1727 1445,1727 1447,1727 1447,1726 1452,1719 1453,1707 1452,1682 1382,1671 1380,1671 1340,1678 1325,1680 1318,1678 1305,1671 1303,1671 1280,1671 1278,1671 1277,1671 1276,1671 1276,1672 1272,1676 1266,1680 1094,1680 1085,1672 1085,1671 1084,1671 1083,1671 1081,1671 1080,1671 1059,1678 1051,1671 1051,1669 1050,1669 1048,1669 1047,1669 1046,1669 1044,1669 1018,1678 981,1668 979,1704 978,1723 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/978.0,1668.0,475.0,61.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_14_LT83_5_1" points="979,1704 1453,1707 " corresp="DefaultLine"/>
+          <line>Ya sabes cuanto la quiero,</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_14_LT83_6" type="DefaultLine" subtype="none" points="935,1769 1022,1767 1026,1769 1040,1774 1041,1774 1043,1774 1044,1774 1046,1774 1051,1769 1055,1766 1136,1766 1141,1767 1154,1774 1156,1774 1157,1774 1159,1774 1174,1767 1176,1766 1181,1767 1204,1774 1205,1774 1207,1774 1208,1774 1223,1767 1226,1766 1234,1767 1285,1774 1287,1774 1391,1764 1391,1753 1391,1730 1350,1730 1347,1729 1331,1718 1329,1718 1328,1718 1327,1718 1325,1718 1300,1724 1294,1719 1294,1718 1292,1718 1291,1718 1289,1718 1288,1718 1287,1718 1273,1726 1269,1729 1247,1726 1203,1719 1201,1719 1174,1723 1145,1729 1088,1722 1057,1718 1055,1718 1054,1718 1048,1720 1032,1729 1011,1719 1007,1718 1006,1718 1004,1718 1003,1718 997,1719 966,1727 937,1718 935,1753 935,1769 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/935.0,1718.0,456.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_14_LT83_6_1" points="935,1753 1391,1753 " corresp="DefaultLine"/>
+          <line>Anda, corre, vete, y dí...</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_14_LT83_7" type="DefaultLine" subtype="none" points="934,1802 934,1818 1012,1818 1023,1828 1023,1829 1025,1829 1026,1829 1028,1829 1077,1824 1084,1829 1084,1831 1085,1831 1087,1831 1088,1832 1185,1832 1185,1831 1208,1829 1210,1829 1211,1829 1226,1817 1389,1829 1390,1829 1391,1829 1393,1829 1393,1828 1404,1818 1426,1824 1427,1824 1429,1824 1430,1824 1431,1824 1431,1822 1433,1822 1437,1817 1437,1799 1433,1764 1222,1771 1207,1769 1183,1763 1182,1763 1181,1763 1170,1769 1161,1774 1127,1774 1097,1770 1025,1764 1023,1764 1022,1764 993,1773 985,1766 985,1764 983,1764 982,1764 949,1764 948,1764 946,1764 933,1770 934,1802 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/933.0,1763.0,504.0,69.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_14_LT83_7_1" points="934,1802 1437,1799 " corresp="DefaultLine"/>
+          <line>Que yo, por ella me muero;</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_14_LT83_8" type="DefaultLine" subtype="none" points="1221,1850 1222,1876 1238,1868 1248,1873 1252,1876 1254,1876 1255,1876 1256,1876 1258,1876 1288,1868 1288,1850 1287,1818 1221,1822 1221,1850 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1221.0,1818.0,67.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_14_LT83_8_1" points="1221,1850 1288,1850 " corresp="DefaultLine"/>
+          <line>¡ay!</line>
+        </zone>
+        <zone xml:id="Varios_424_2_BT227_14_LT83_9" type="DefaultLine" subtype="none" points="935,1898 938,1927 945,1922 978,1922 983,1927 986,1928 986,1930 988,1930 989,1930 990,1930 1015,1926 1041,1922 1057,1926 1090,1934 1091,1934 1092,1934 1094,1934 1095,1934 1105,1928 1110,1933 1110,1934 1112,1934 1113,1934 1114,1935 1207,1935 1207,1934 1350,1928 1351,1928 1353,1928 1353,1927 1360,1920 1360,1897 1357,1862 1302,1855 1300,1855 1299,1855 1298,1855 1298,1857 1292,1861 1283,1871 1261,1871 1245,1860 1241,1857 1240,1857 1238,1857 1237,1857 1236,1857 1234,1857 1234,1858 1232,1860 1222,1869 1170,1861 1168,1861 1167,1861 1165,1861 1165,1862 1159,1869 1048,1869 1026,1860 1025,1860 1023,1860 1022,1860 999,1869 970,1857 967,1855 966,1855 964,1855 934,1855 935,1898 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/934.0,1855.0,426.0,80.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_14_LT83_9_1" points="935,1898 1360,1897 " corresp="DefaultLine"/>
+          <line>Y que se apiade de mí.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_15" n="15" type="MainZone" subtype="columns" points="1618,1952 1618,2031 1218,2031 1218,1952 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1218.0,1952.0,400.0,79.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_2_BT227_15_LT83_1" type="DefaultLine" subtype="none" points="1240,2030 1277,2037 1278,2037 1280,2037 1281,2037 1294,2029 1306,2021 1318,2029 1329,2037 1331,2037 1332,2037 1334,2037 1335,2037 1365,2028 1375,2036 1375,2037 1376,2037 1378,2037 1449,2039 1451,2039 1452,2039 1478,2025 1484,2022 1593,2022 1594,1997 1594,1967 1560,1956 1558,1956 1557,1956 1555,1956 1538,1964 1533,1966 1521,1964 1491,1959 1489,1959 1471,1961 1453,1966 1448,1961 1442,1956 1442,1955 1441,1955 1440,1955 1418,1953 1416,1953 1364,1957 1287,1964 1243,1953 1241,1995 1240,2030 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1240.0,1953.0,354.0,86.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_2_BT227_15_LT83_1_1" points="1241,1995 1594,1997 " corresp="DefaultLine"/>
+          <line>ENRIQUE GAVARRÓ.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_2_BT227_16" n="16" type="MainZone" subtype="columns" points="1250,341 1250,321 1361,321 1361,341 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_2/1250.0,321.0,111.0,20.0/full/0/default" corresp="MainZone:columns"/>
+    </surface>
+    <surface xml:id="Varios_424_3" type="page" cert="silver">
+      <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/full/full/0/default.jpg"/>
+      <zone xml:id="Varios_424_3_BT227_1" n="1" type="MainZone" subtype="columns" points="794,464 794,1775 250,1775 250,464 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/250.0,464.0,544.0,1311.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_3_BT227_1_LT83_1" type="DefaultLine" subtype="none" points="305,512 305,524 438,533 439,533 441,533 461,526 478,533 479,533 480,533 609,526 742,533 744,533 745,533 760,524 760,512 760,487 722,478 720,478 719,478 718,478 709,486 708,487 625,487 620,483 603,473 602,473 600,473 599,473 519,482 472,487 439,487 432,479 425,475 425,473 424,473 423,473 421,473 420,473 407,479 394,487 374,487 365,478 361,475 361,473 359,473 358,473 356,473 305,476 305,512 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/305.0,473.0,455.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_1_1" points="305,512 760,512 " corresp="DefaultLine"/>
+          <line>Escucha mi dulce acento</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_2" type="DefaultLine" subtype="none" points="270,558 268,574 706,581 709,562 709,535 665,524 664,524 620,531 603,534 476,534 463,526 461,526 460,526 458,526 454,526 427,533 417,524 416,523 414,523 413,523 412,523 410,523 406,524 384,531 370,523 369,522 367,522 366,522 365,522 363,522 359,523 337,531 329,523 329,522 327,522 326,522 270,520 270,558 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/268.0,520.0,441.0,61.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_2_1" points="270,558 709,562 " corresp="DefaultLine"/>
+          <line>Lucila, imàgen querida,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_3" type="DefaultLine" subtype="none" points="274,618 359,626 361,626 402,620 409,618 410,620 421,628 423,628 424,628 425,628 560,620 571,620 573,620 595,629 596,629 598,629 649,622 684,629 686,629 687,629 720,620 722,608 722,584 679,570 678,570 676,570 675,570 643,581 635,584 624,581 602,574 600,574 599,574 598,574 585,578 574,584 566,578 552,569 551,569 549,569 548,569 496,575 435,582 424,571 420,569 420,567 418,567 417,567 416,567 414,567 406,571 384,582 332,582 277,566 275,604 274,618 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/274.0,566.0,448.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_3_1" points="275,604 722,608 " corresp="DefaultLine"/>
+          <line>Ya que la noche convida</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_4" type="DefaultLine" subtype="none" points="271,651 270,668 722,670 724,655 724,631 667,620 665,620 664,620 647,626 598,621 596,621 555,624 515,628 508,622 504,620 504,618 503,618 501,618 500,618 498,618 497,618 491,622 482,629 425,629 398,620 391,617 390,617 388,617 387,617 383,618 369,626 340,618 339,618 337,618 336,618 312,626 303,618 303,617 301,617 300,617 271,615 271,651 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/270.0,615.0,454.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_4_1" points="271,651 724,655 " corresp="DefaultLine"/>
+          <line>De la luna al resplandor,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_5" type="DefaultLine" subtype="none" points="311,702 310,712 348,721 350,721 447,715 483,721 485,721 486,721 501,715 529,723 530,723 531,723 533,723 534,723 545,716 738,723 740,723 741,723 742,723 749,715 751,705 751,676 723,669 722,669 720,669 606,673 541,676 531,672 520,668 519,668 518,668 461,670 380,675 373,669 373,668 372,668 370,668 311,668 311,702 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/310.0,668.0,441.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_5_1" points="311,702 751,705 " corresp="DefaultLine"/>
+          <line>Y gozarás de un amante</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_6" type="DefaultLine" subtype="none" points="270,748 268,767 658,767 665,772 665,774 667,774 668,774 669,774 671,774 672,774 683,766 684,753 684,726 581,713 580,713 578,713 577,713 567,721 566,723 560,721 534,715 533,715 531,715 497,720 476,723 376,723 366,716 356,710 355,710 354,710 352,710 327,716 308,720 301,715 297,712 297,710 296,710 294,710 293,710 270,713 270,748 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/268.0,710.0,416.0,64.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_6_1" points="270,748 684,753 " corresp="DefaultLine"/>
+          <line>La trova mas cariñosa,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_7" type="DefaultLine" subtype="none" points="268,810 281,817 282,817 283,817 285,817 402,810 629,819 631,819 697,812 731,819 733,819 734,819 748,811 749,801 749,772 570,772 552,767 536,764 534,764 533,764 531,764 529,767 523,772 431,772 401,764 395,763 394,763 392,763 378,763 303,770 271,761 270,797 268,810 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/268.0,761.0,481.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_7_1" points="270,797 749,801 " corresp="DefaultLine"/>
+          <line>Que te canta niña hermosa</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_8" type="DefaultLine" subtype="none" points="270,847 268,862 740,869 742,850 741,821 658,814 657,814 633,818 611,822 599,817 591,814 589,814 588,814 587,814 585,814 581,817 571,822 434,822 402,814 398,812 396,812 395,812 394,812 392,812 383,822 333,822 270,811 270,847 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/268.0,811.0,474.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_8_1" points="270,847 742,850 " corresp="DefaultLine"/>
+          <line>Lleno el corazon de amor.</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_9" type="DefaultLine" subtype="none" points="308,939 307,956 369,963 370,963 520,956 537,956 538,956 562,964 563,964 565,964 566,964 595,957 757,964 759,964 760,964 762,964 770,956 771,942 771,913 723,901 722,901 720,901 686,912 673,901 673,899 672,899 671,899 669,899 569,901 567,901 566,901 566,902 556,912 555,912 500,912 500,910 491,903 491,902 490,902 489,902 487,902 486,902 485,902 475,909 465,901 465,899 464,899 463,899 438,898 436,898 435,898 405,910 403,912 384,912 383,910 372,901 372,899 370,899 369,899 367,899 308,909 308,939 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/307.0,898.0,464.0,66.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_9_1" points="308,939 771,942 " corresp="DefaultLine"/>
+          <line>Aquellas horas tranquilas</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_10" type="DefaultLine" subtype="none" points="270,989 268,1004 689,1008 691,993 691,965 555,965 548,960 542,956 541,956 540,956 538,956 483,958 412,963 392,956 387,954 385,954 384,954 370,956 314,961 270,953 270,989 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/268.0,953.0,423.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_10_1" points="270,989 691,993 " corresp="DefaultLine"/>
+          <line>De solaz y de bonanza,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_11" type="DefaultLine" subtype="none" points="270,1052 705,1049 706,1038 705,1014 613,1014 607,1011 592,1004 591,1004 589,1004 547,1008 509,1012 490,1007 475,1003 474,1003 472,1003 471,1003 463,1007 454,1011 446,1005 442,1003 441,1003 439,1003 438,1003 423,1005 392,1011 380,1004 378,1003 377,1003 376,1003 374,1003 373,1003 372,1003 372,1004 362,1012 310,1012 272,1001 271,1036 270,1052 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/270.0,1001.0,436.0,51.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_11_1" points="271,1036 706,1038 " corresp="DefaultLine"/>
+          <line>Eran lu dulce esperanza</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_12" type="DefaultLine" subtype="none" points="270,1085 270,1100 380,1100 387,1106 387,1107 388,1107 390,1107 391,1107 469,1100 514,1107 515,1109 581,1109 581,1107 582,1107 584,1107 593,1100 657,1107 658,1107 660,1107 679,1100 708,1107 709,1107 711,1107 712,1107 713,1107 722,1100 722,1085 722,1062 600,1062 596,1059 574,1051 573,1051 571,1051 570,1051 569,1051 559,1059 558,1059 531,1051 530,1051 529,1051 527,1051 526,1051 526,1052 519,1058 516,1060 508,1058 482,1051 480,1051 479,1051 478,1051 456,1058 447,1059 439,1056 421,1051 420,1051 376,1051 374,1051 373,1051 362,1056 352,1060 270,1055 270,1085 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/270.0,1051.0,452.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_12_1" points="270,1085 722,1085 " corresp="DefaultLine"/>
+          <line>Que abrigaba el corazon.</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_13" type="DefaultLine" subtype="none" points="305,1133 305,1146 450,1146 453,1146 463,1153 464,1153 465,1153 467,1153 507,1147 531,1143 544,1147 554,1150 555,1150 556,1150 661,1147 662,1131 660,1107 570,1107 559,1099 558,1099 556,1099 555,1099 554,1099 537,1106 482,1096 480,1096 436,1106 407,1098 406,1098 405,1098 403,1098 402,1098 402,1099 392,1107 359,1099 358,1099 356,1099 355,1099 340,1107 326,1099 325,1099 323,1099 322,1099 321,1099 304,1107 305,1133 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/304.0,1096.0,358.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_13_1" points="305,1133 662,1131 " corresp="DefaultLine"/>
+          <line>A tu lado yo sentia</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_14" type="DefaultLine" subtype="none" points="271,1183 271,1198 281,1205 282,1205 283,1205 285,1205 350,1197 355,1197 363,1197 420,1205 421,1205 472,1200 503,1197 544,1197 554,1201 559,1205 560,1205 562,1205 563,1205 592,1202 644,1197 671,1204 675,1205 676,1205 678,1205 679,1205 680,1205 691,1197 735,1205 737,1183 737,1155 712,1149 711,1149 709,1149 708,1149 684,1155 662,1147 661,1147 660,1147 658,1147 642,1155 620,1149 618,1149 617,1149 547,1155 538,1149 538,1147 537,1147 536,1147 438,1147 436,1147 271,1155 271,1183 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/271.0,1147.0,466.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_14_1" points="271,1183 737,1183 " corresp="DefaultLine"/>
+          <line>que se extasiaba mi alma,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_15" type="DefaultLine" subtype="none" points="711,1206 638,1195 636,1195 596,1202 580,1205 574,1201 565,1195 563,1195 562,1195 560,1195 559,1195 558,1195 558,1197 552,1201 547,1206 508,1206 501,1200 496,1195 496,1194 494,1194 493,1194 491,1194 434,1197 321,1204 277,1193 275,1228 275,1252 303,1244 319,1252 323,1253 325,1253 326,1253 363,1251 453,1244 471,1249 491,1255 493,1255 494,1255 536,1248 552,1245 566,1246 614,1255 616,1255 711,1244 712,1231 711,1206 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/275.0,1193.0,437.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_15_1" points="275,1228 712,1231 " corresp="DefaultLine"/>
+          <line>Y que tornabas la calma</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_16" type="DefaultLine" subtype="none" points="271,1277 270,1299 310,1292 329,1299 341,1304 343,1304 344,1304 345,1304 347,1304 355,1299 369,1290 394,1297 407,1302 409,1302 410,1302 435,1296 443,1295 446,1296 456,1304 456,1306 457,1306 458,1306 460,1307 519,1307 519,1306 520,1306 522,1306 522,1304 533,1295 534,1292 644,1290 646,1279 644,1252 530,1244 529,1244 527,1244 512,1251 509,1252 424,1252 423,1251 401,1242 399,1242 398,1242 396,1242 376,1251 374,1251 358,1244 356,1244 355,1244 325,1251 322,1251 312,1242 311,1242 310,1242 308,1242 271,1249 271,1277 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/270.0,1242.0,376.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_16_1" points="271,1277 646,1279 " corresp="DefaultLine"/>
+          <line>A mi sincera pasion.</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_17" type="DefaultLine" subtype="none" points="310,1373 310,1387 377,1397 378,1397 380,1397 399,1390 405,1388 490,1388 493,1392 497,1395 497,1397 498,1397 500,1397 501,1397 503,1397 518,1392 534,1388 540,1394 542,1395 542,1397 544,1397 545,1397 547,1397 584,1394 657,1390 693,1397 694,1373 694,1344 662,1332 661,1332 660,1332 616,1333 614,1333 613,1333 613,1335 603,1344 573,1332 571,1332 570,1332 569,1332 544,1344 544,1346 460,1346 458,1344 439,1332 438,1332 436,1332 435,1332 394,1333 392,1333 391,1333 391,1335 383,1343 373,1335 373,1333 372,1333 370,1333 330,1333 329,1333 327,1333 310,1341 310,1373 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/310.0,1332.0,384.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_17_1" points="310,1373 694,1373 " corresp="DefaultLine"/>
+          <line>Amor eterno jurabas</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_18" type="DefaultLine" subtype="none" points="271,1420 270,1431 296,1441 297,1441 299,1441 460,1434 469,1442 471,1442 472,1442 474,1442 531,1435 650,1442 651,1442 653,1442 654,1442 665,1434 667,1423 667,1398 620,1388 618,1388 617,1388 616,1388 606,1397 566,1390 565,1390 534,1397 531,1397 530,1397 468,1386 467,1386 327,1395 318,1387 318,1386 316,1386 315,1386 286,1386 285,1386 283,1386 282,1386 271,1392 271,1420 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/270.0,1386.0,397.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_18_1" points="271,1420 667,1423 " corresp="DefaultLine"/>
+          <line>Al amante que se oia;</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_19" type="DefaultLine" subtype="none" points="275,1470 275,1482 355,1482 358,1482 374,1492 376,1492 377,1493 407,1493 407,1492 409,1492 410,1492 410,1490 418,1483 420,1482 428,1483 483,1492 485,1492 617,1485 617,1470 617,1442 525,1442 522,1438 515,1432 515,1431 514,1431 512,1431 511,1431 450,1437 396,1441 390,1434 387,1432 387,1431 385,1431 384,1431 383,1431 381,1431 373,1434 356,1439 345,1432 344,1431 343,1431 341,1431 340,1431 332,1432 308,1438 275,1431 275,1470 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/275.0,1431.0,342.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_19_1" points="275,1470 617,1470 " corresp="DefaultLine"/>
+          <line>Y la flor allí servia</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_20" type="DefaultLine" subtype="none" points="270,1514 268,1527 281,1534 282,1534 283,1534 336,1527 435,1536 436,1536 438,1536 467,1529 527,1537 529,1537 605,1530 704,1538 705,1538 706,1538 708,1538 716,1530 718,1519 718,1493 607,1479 606,1479 605,1479 589,1488 584,1490 574,1488 562,1483 560,1483 559,1483 545,1486 526,1490 493,1485 486,1483 485,1483 469,1483 322,1488 270,1476 270,1514 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/268.0,1476.0,450.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_20_1" points="270,1514 718,1519 " corresp="DefaultLine"/>
+          <line>De testigo á tanto amor.</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_21" type="DefaultLine" subtype="none" points="305,1566 305,1578 325,1588 326,1588 327,1588 329,1588 351,1580 476,1588 478,1588 712,1578 712,1566 712,1541 584,1533 582,1533 565,1536 545,1540 540,1536 533,1530 533,1529 531,1529 530,1529 529,1529 497,1534 478,1537 468,1533 458,1529 457,1529 456,1529 454,1529 453,1529 453,1530 449,1533 443,1538 431,1533 429,1533 428,1533 427,1533 410,1540 392,1530 388,1529 387,1529 385,1529 384,1529 380,1530 361,1540 351,1530 351,1529 350,1529 348,1529 305,1529 305,1566 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/305.0,1529.0,407.0,59.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_21_1" points="305,1566 712,1566 " corresp="DefaultLine"/>
+          <line>El clavel y la azucena</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_22" type="DefaultLine" subtype="none" points="270,1613 268,1628 344,1635 345,1635 390,1631 431,1627 438,1632 443,1636 445,1636 446,1636 447,1638 482,1638 482,1636 483,1636 485,1636 485,1635 489,1632 491,1628 548,1628 585,1634 610,1638 611,1638 647,1635 712,1629 720,1636 722,1638 723,1638 724,1638 726,1638 771,1636 773,1617 773,1589 712,1577 691,1577 690,1577 689,1577 687,1577 687,1578 678,1587 678,1588 675,1587 651,1577 650,1577 649,1577 647,1577 646,1577 632,1587 629,1588 617,1585 569,1576 567,1576 566,1576 537,1584 529,1587 522,1584 501,1576 500,1576 498,1576 497,1576 496,1576 487,1584 485,1585 482,1583 474,1577 474,1576 472,1576 471,1576 441,1574 439,1574 438,1574 436,1574 425,1583 418,1585 270,1580 270,1613 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/268.0,1574.0,505.0,64.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_22_1" points="270,1613 773,1617 " corresp="DefaultLine"/>
+          <line>Daban, con la siempreviva,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_23" type="DefaultLine" subtype="none" points="268,1676 457,1674 476,1680 479,1682 480,1682 482,1682 494,1680 549,1675 631,1683 643,1683 644,1683 650,1683 691,1675 723,1683 727,1664 726,1632 635,1627 633,1627 632,1627 624,1629 607,1636 589,1629 588,1629 587,1629 585,1629 571,1636 498,1629 497,1629 456,1635 418,1627 413,1625 412,1625 410,1625 407,1625 383,1636 304,1636 271,1624 270,1661 268,1676 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/268.0,1624.0,459.0,59.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_23_1" points="270,1661 727,1664 " corresp="DefaultLine"/>
+          <line>La prueba mas espresiva</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_1_LT83_24" type="DefaultLine" subtype="none" points="267,1733 350,1734 351,1734 352,1734 367,1727 387,1740 406,1753 407,1753 409,1753 410,1753 412,1753 413,1753 429,1742 452,1729 482,1729 509,1736 522,1747 530,1755 530,1756 531,1756 533,1756 534,1756 536,1756 537,1756 545,1748 566,1731 627,1730 657,1755 662,1759 664,1759 665,1759 667,1760 757,1760 759,1712 759,1687 727,1678 726,1678 724,1678 723,1678 722,1678 713,1686 671,1686 651,1686 650,1685 639,1676 638,1676 636,1676 635,1676 633,1676 620,1683 614,1686 602,1683 580,1678 578,1678 577,1678 576,1678 574,1678 569,1682 562,1686 540,1680 514,1675 512,1675 511,1675 501,1679 493,1683 469,1679 450,1675 449,1675 447,1675 442,1678 428,1686 394,1686 381,1676 380,1676 378,1676 377,1676 315,1683 270,1672 268,1707 267,1733 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/267.0,1672.0,492.0,88.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_1_LT83_24_1" points="268,1707 759,1712 " corresp="DefaultLine"/>
+          <line>Con su aroma y su frescor.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_3_BT223_2" n="2" type="CustomZone" subtype="title" points="1341,54 1341,225 602,225 602,54 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/602.0,54.0,739.0,171.0/full/0/default" corresp="CustomZone:title">
+        <zone xml:id="Varios_424_3_BT223_2_LT83_1" type="HeadingLine" subtype="none" points="1219,55 1218,55 1210,55 1196,55 1182,55 1168,55 1154,55 1150,55 1149,55 1147,55 1146,55 1146,56 1136,64 1120,63 1119,63 1117,63 1116,63 1102,75 1087,71 1085,71 1084,71 1083,71 1061,82 1036,63 1034,63 1033,63 1032,63 986,68 955,55 948,55 934,55 920,55 906,55 897,55 883,68 774,70 773,70 771,70 755,85 753,85 682,60 680,60 679,60 678,60 676,60 644,85 643,85 618,85 618,176 617,205 658,214 660,214 661,214 686,205 694,201 784,201 788,205 799,214 799,216 800,216 802,216 803,216 804,216 824,206 833,214 833,216 835,216 836,216 979,217 981,217 982,217 983,217 1006,203 1010,202 1058,202 1059,203 1070,213 1070,214 1072,214 1073,214 1116,216 1117,216 1192,203 1211,219 1212,219 1214,219 1215,220 1254,220 1254,219 1255,219 1295,202 1328,202 1329,179 1328,88 1267,88 1266,86 1221,55 1219,55 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/617.0,55.0,712.0,165.0/full/0/default" corresp="HeadingLine">
+          <path xml:id="Varios_424_3_BT223_2_LT83_1_1" points="618,176 1329,179 "/>
+          <line>A LUCILA.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_3_BT227_3" n="3" type="MainZone" subtype="columns" points="1500,450 1500,1729 921,1740 941,456 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/921.0,450.0,579.0,1290.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_3_BT227_3_LT83_1" type="DefaultLine" subtype="none" points="941,377 939,377 921,365 920,365 919,365 873,365 872,365 870,365 869,365 869,366 864,372 864,394 864,416 1076,424 1077,394 1070,394 1057,394 1043,394 1029,394 1015,394 1001,394 988,394 974,394 960,394 946,394 941,377 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/864.0,365.0,213.0,59.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_1_1" points="864,394 1077,394 " corresp="DefaultLine"/>
+          <line>CANCION.</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_2" type="DefaultLine" subtype="none" points="996,512 995,527 1006,534 1007,534 1008,534 1010,534 1040,527 1047,533 1047,534 1048,534 1050,534 1160,535 1161,535 1216,529 1298,535 1299,535 1300,535 1320,529 1365,535 1367,535 1489,529 1491,516 1491,483 1458,467 1456,467 1455,467 1453,467 1452,467 1425,483 1391,478 1390,478 1389,478 1375,483 1374,484 1374,483 1368,479 1368,478 1367,478 1365,478 1364,478 1334,483 1325,484 1254,484 1254,483 1240,471 1240,469 1238,469 1237,469 1160,464 1159,464 1157,464 1113,480 1034,469 1033,469 1032,469 996,480 996,512 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/995.0,464.0,496.0,71.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_2_1" points="996,512 1491,516 " corresp="DefaultLine"/>
+          <line>Al pié de un sauce sentados</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_3" type="DefaultLine" subtype="none" points="957,560 956,573 1015,581 1017,581 1018,581 1030,575 1037,573 1080,573 1088,577 1099,582 1101,582 1102,582 1103,582 1113,578 1123,574 1174,580 1190,581 1192,581 1193,581 1197,580 1214,575 1232,581 1244,585 1245,585 1247,585 1270,582 1320,575 1387,585 1390,564 1389,537 1347,537 1345,534 1332,524 1331,524 1329,524 1328,524 1327,524 1309,533 1269,524 1267,524 1266,524 1243,530 1236,533 1233,530 1229,524 1227,524 1227,523 1226,523 1225,523 1223,523 1171,529 1108,534 1034,523 1033,523 1032,523 1030,523 1029,523 1017,533 957,520 957,560 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/956.0,520.0,434.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_3_1" points="957,560 1390,564 " corresp="DefaultLine"/>
+          <line>Gozàbamos mil delicias,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_4" type="DefaultLine" subtype="none" points="967,611 968,631 996,624 1376,626 1379,610 1376,588 1328,580 1327,580 1325,580 1324,580 1316,586 1300,578 1299,578 1298,578 1296,578 1295,578 1285,585 1281,588 1201,588 1196,582 1189,577 1187,577 1186,577 1185,577 1128,581 1083,585 1074,580 1069,577 1068,577 1066,577 1065,577 1063,577 1058,580 1044,586 966,578 967,611 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/966.0,577.0,413.0,54.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_4_1" points="967,611 1379,610 " corresp="DefaultLine"/>
+          <line>Y en inocentes caricias</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_5" type="DefaultLine" subtype="none" points="964,655 963,666 1296,677 1299,661 1299,637 1244,629 1243,629 1241,629 1225,635 1218,636 1214,633 1198,622 1197,622 1196,622 1127,621 1125,621 1085,629 1062,633 1025,633 1015,626 1008,621 1007,621 1006,621 1004,621 964,624 964,655 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/963.0,621.0,336.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_5_1" points="964,655 1299,661 " corresp="DefaultLine"/>
+          <line>Oíamos el trinar...</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_6" type="DefaultLine" subtype="none" points="996,706 996,721 1407,721 1407,706 1405,679 1340,680 1338,679 1327,669 1325,669 1324,669 1323,669 1321,669 1302,679 1299,679 1294,679 1259,672 1258,672 1256,672 1255,672 1245,679 1240,682 1198,682 1187,679 1159,672 1157,672 1119,679 1106,680 1101,679 1080,669 1079,669 1004,669 1003,669 1001,669 1000,669 1000,670 996,675 996,706 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/996.0,669.0,411.0,52.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_6_1" points="996,706 1407,706 " corresp="DefaultLine"/>
+          <line>De las aves seductoras</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_7" type="DefaultLine" subtype="none" points="963,752 961,770 1401,768 1402,756 1402,728 1357,719 1356,719 1321,726 1310,727 1186,727 1176,720 1172,717 1171,717 1170,717 1168,717 1141,720 1090,724 1073,717 1069,716 1068,716 1066,716 1057,717 1010,724 963,715 963,752 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/961.0,715.0,441.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_7_1" points="963,752 1402,756 " corresp="DefaultLine"/>
+          <line>Mecidas en la enramada;</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_8" type="DefaultLine" subtype="none" points="960,803 959,822 1364,823 1367,806 1365,779 1335,779 1335,778 1325,770 1325,768 1324,768 1323,768 1321,768 1320,768 1318,768 1305,778 1303,778 1281,770 1280,770 1278,770 1277,770 1262,777 1259,778 1251,777 1207,768 1205,768 1204,768 1185,775 1178,778 1147,778 1145,775 1135,767 1134,767 1132,767 1131,767 1130,767 1110,774 1103,777 1091,774 1059,767 1058,767 960,771 960,803 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/959.0,767.0,408.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_8_1" points="960,803 1367,806 " corresp="DefaultLine"/>
+          <line>¡Oh Lucila, apreciada,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_9" type="DefaultLine" subtype="none" points="961,870 1061,879 1062,879 1063,879 1081,873 1103,868 1128,874 1139,877 1141,877 1142,877 1159,874 1205,868 1256,877 1261,877 1262,877 1267,877 1327,869 1358,879 1361,852 1361,826 1345,819 1343,819 1342,819 1340,819 1339,819 1329,826 1329,828 1324,826 1295,821 1294,821 1267,826 1259,828 1256,825 1251,821 1251,819 1249,819 1248,819 1247,819 1245,819 1229,825 1221,828 1218,825 1211,819 1210,819 1208,819 1207,819 1205,819 1192,825 1181,828 1113,823 1058,819 1057,819 1055,819 1054,819 1051,822 1043,829 992,829 963,821 961,852 961,870 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/961.0,819.0,400.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_9_1" points="961,852 1361,852 " corresp="DefaultLine"/>
+          <line>Aquello era disfrutar!</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_10" type="DefaultLine" subtype="none" points="1000,963 1179,960 1196,968 1197,968 1198,968 1200,968 1201,968 1203,968 1219,961 1226,967 1226,968 1227,968 1229,968 1230,968 1237,968 1313,963 1460,971 1463,952 1463,921 1427,921 1426,918 1416,910 1416,909 1415,909 1413,909 1412,909 1411,909 1409,909 1400,917 1396,920 1358,916 1327,913 1325,913 1316,914 1287,918 1278,913 1266,901 1265,901 1263,901 1262,901 1261,901 1241,909 1226,898 1225,898 1223,898 1222,898 1221,898 1200,909 1187,916 1170,907 1145,896 1143,896 1097,895 1066,895 1065,895 1063,895 1062,895 1062,896 1054,902 1041,914 1003,901 1001,945 1000,963 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/1000.0,895.0,463.0,76.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_10_1" points="1001,945 1463,952 " corresp="DefaultLine"/>
+          <line>Mas un dia, niña ingrata,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_11" type="DefaultLine" subtype="none" points="961,992 960,1005 1316,1014 1318,997 1317,969 1272,963 1270,963 1269,963 1259,967 1249,971 1236,967 1221,961 1219,961 1218,961 1216,961 1215,961 1215,963 1211,965 1207,969 1152,969 1138,964 1128,960 1127,960 1125,960 1090,961 1012,967 961,958 961,992 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/960.0,958.0,358.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_11_1" points="961,992 1318,997 " corresp="DefaultLine"/>
+          <line>Mí corazon padecia,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_12" type="DefaultLine" subtype="none" points="964,1041 963,1054 1003,1063 1004,1063 1006,1063 1025,1058 1032,1063 1032,1065 1033,1065 1034,1065 1036,1065 1037,1065 1065,1058 1069,1056 1069,1058 1076,1063 1077,1063 1079,1063 1080,1063 1198,1060 1309,1059 1336,1065 1354,1069 1356,1069 1357,1069 1367,1066 1380,1062 1482,1069 1485,1047 1485,1016 1463,1008 1462,1008 1460,1008 1354,1014 1317,1015 1310,1012 1298,1007 1296,1007 1295,1007 1262,1011 1229,1015 1215,1009 1208,1007 1207,1007 1205,1007 1185,1008 1139,1014 1119,1007 1114,1005 1113,1005 1112,1005 1110,1005 1109,1005 1108,1007 1099,1012 1091,1005 1090,1004 1088,1004 1087,1004 1085,1004 1072,1005 1015,1012 964,1003 964,1041 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/963.0,1003.0,522.0,66.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_12_1" points="964,1041 1485,1047 " corresp="DefaultLine"/>
+          <line>Porqué te encontré aquel dia</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_13" type="DefaultLine" subtype="none" points="961,1089 960,1102 981,1110 982,1110 983,1111 1055,1111 1055,1110 1057,1110 1058,1110 1058,1109 1065,1103 1226,1111 1227,1111 1365,1104 1367,1092 1367,1066 1340,1056 1339,1056 1338,1056 1288,1065 1238,1056 1237,1056 1236,1056 1234,1056 1234,1058 1226,1065 1226,1066 1167,1066 1165,1065 1153,1055 1152,1055 1150,1055 1149,1055 1092,1063 1080,1055 1079,1055 1077,1055 1076,1055 995,1062 972,1055 971,1055 970,1055 968,1055 967,1055 961,1059 961,1089 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/960.0,1055.0,407.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_13_1" points="961,1089 1367,1092 " corresp="DefaultLine"/>
+          <line>Con otro jóven doncel.</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_14" type="DefaultLine" subtype="none" points="999,1139 997,1155 1006,1161 1007,1161 1008,1161 1010,1161 1156,1157 1197,1155 1204,1157 1219,1162 1221,1162 1222,1164 1441,1164 1442,1142 1441,1116 1393,1107 1391,1107 1336,1113 1320,1114 1302,1113 1252,1106 1251,1106 1249,1106 1233,1111 1221,1114 1152,1114 1146,1110 1141,1104 1139,1104 1138,1104 1136,1104 1102,1109 1074,1111 999,1107 999,1139 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/997.0,1104.0,445.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_14_1" points="999,1139 1442,1142 " corresp="DefaultLine"/>
+          <line>Mis ojos se oscurecieron,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_15" type="DefaultLine" subtype="none" points="961,1189 961,1205 1350,1206 1351,1189 1350,1157 1221,1161 1214,1155 1212,1154 1212,1153 1211,1153 1210,1153 1143,1153 1142,1153 1141,1153 1132,1154 1108,1161 1085,1154 1080,1153 1079,1153 1077,1153 1069,1154 1037,1161 961,1154 961,1189 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/961.0,1153.0,390.0,53.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_15_1" points="961,1189 1351,1189 " corresp="DefaultLine"/>
+          <line>Lacerada el alma mia</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_16" type="DefaultLine" subtype="none" points="963,1231 961,1253 1091,1255 1092,1255 1094,1255 1101,1252 1109,1248 1117,1252 1125,1256 1127,1256 1128,1256 1150,1251 1167,1248 1181,1251 1212,1257 1214,1257 1215,1257 1216,1257 1216,1256 1223,1251 1225,1249 1329,1249 1331,1235 1331,1212 1300,1202 1299,1202 1298,1202 1296,1202 1270,1209 1263,1211 1258,1209 1240,1202 1238,1202 1237,1202 1236,1202 1234,1202 1229,1208 1225,1211 1021,1209 963,1198 963,1231 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/961.0,1198.0,370.0,59.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_16_1" points="963,1231 1331,1235 " corresp="DefaultLine"/>
+          <line>Sin esperanza, tenia</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_17" type="DefaultLine" subtype="none" points="963,1284 963,1297 1043,1297 1044,1297 1052,1306 1054,1306 1055,1306 1057,1306 1091,1297 1097,1297 1103,1299 1146,1306 1147,1306 1149,1306 1150,1306 1159,1299 1164,1296 1192,1299 1237,1304 1238,1304 1240,1304 1258,1300 1269,1297 1280,1300 1295,1304 1296,1304 1298,1304 1354,1300 1354,1281 1351,1255 1218,1246 1216,1246 1189,1252 1172,1255 1145,1251 1119,1248 1117,1248 1116,1248 1114,1248 1114,1249 1112,1251 1106,1257 1011,1257 961,1249 963,1284 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/961.0,1246.0,393.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_17_1" points="963,1284 1354,1281 " corresp="DefaultLine"/>
+          <line>La copa llena de hiel.</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_18" type="DefaultLine" subtype="none" points="999,1377 997,1397 1055,1403 1057,1403 1058,1403 1077,1397 1094,1392 1178,1392 1189,1397 1193,1399 1194,1399 1196,1399 1197,1399 1205,1397 1222,1392 1234,1397 1249,1403 1251,1403 1252,1403 1357,1398 1364,1403 1364,1405 1365,1405 1367,1405 1368,1405 1447,1397 1448,1380 1444,1341 1425,1352 1339,1352 1317,1341 1316,1341 1314,1341 1270,1351 1256,1339 1256,1337 1255,1337 1254,1337 1223,1336 1222,1336 1221,1336 1216,1337 1193,1351 1156,1351 1095,1336 1094,1336 1092,1336 1091,1336 1048,1348 1030,1336 1029,1336 1028,1336 999,1335 999,1377 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/997.0,1335.0,451.0,70.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_18_1" points="999,1377 1448,1380 " corresp="DefaultLine"/>
+          <line>Y solo en umbrio bosque</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_19" type="DefaultLine" subtype="none" points="963,1438 1369,1445 1372,1428 1372,1398 1336,1388 1335,1388 1334,1388 1332,1388 1302,1397 1300,1397 1299,1397 1284,1388 1283,1388 1281,1388 1280,1388 1262,1395 1254,1398 1245,1395 1232,1388 1230,1388 1229,1388 1227,1388 1226,1388 1226,1390 1221,1394 1216,1399 1194,1399 1163,1392 1138,1387 1136,1387 1135,1387 1127,1391 1113,1397 1044,1390 1043,1390 1004,1397 966,1386 964,1426 963,1438 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/963.0,1386.0,409.0,59.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_19_1" points="964,1426 1372,1428 " corresp="DefaultLine"/>
+          <line>Cual en árido desierto,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_20" type="DefaultLine" subtype="none" points="964,1471 963,1489 1167,1485 1219,1488 1311,1493 1313,1493 1383,1485 1385,1474 1383,1449 1339,1438 1338,1438 1262,1445 1223,1448 1218,1443 1214,1439 1214,1438 1212,1438 1211,1438 1167,1437 1165,1437 1164,1437 1163,1437 1163,1438 1159,1441 1153,1448 1017,1448 964,1435 964,1471 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/963.0,1435.0,422.0,58.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_20_1" points="964,1471 1385,1474 " corresp="DefaultLine"/>
+          <line>De pesar estaba muerto</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_21" type="DefaultLine" subtype="none" points="964,1532 1139,1532 1141,1532 1154,1538 1156,1538 1157,1538 1336,1532 1338,1522 1336,1497 1243,1486 1241,1486 1196,1492 1157,1496 1127,1489 1108,1485 1106,1485 1105,1485 1099,1488 1091,1492 1052,1486 1040,1485 1039,1485 1037,1485 1036,1485 1036,1486 1030,1492 1015,1485 1014,1485 1012,1485 1011,1485 1010,1485 1000,1493 967,1483 966,1519 964,1532 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/964.0,1483.0,374.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_21_1" points="966,1519 1338,1522 " corresp="DefaultLine"/>
+          <line>Tal falsía recordar...</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_22" type="DefaultLine" subtype="none" points="999,1570 999,1581 1387,1589 1389,1570 1389,1545 1368,1545 1368,1544 1357,1534 1357,1533 1356,1533 1354,1533 1353,1533 1351,1533 1321,1543 1318,1543 1314,1543 1262,1532 1261,1532 1259,1532 1258,1532 1245,1540 1238,1544 1208,1538 1185,1534 1183,1534 1182,1534 1176,1537 1163,1545 1113,1545 1080,1534 1076,1533 1074,1533 1073,1533 1072,1533 1069,1533 1046,1541 999,1532 999,1570 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/999.0,1532.0,390.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_22_1" points="999,1570 1389,1570 " corresp="DefaultLine"/>
+          <line>Pasé un año solitario</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_23" type="DefaultLine" subtype="none" points="964,1618 963,1635 1371,1638 1374,1621 1372,1595 1295,1584 1294,1584 1226,1591 1190,1594 1179,1589 1171,1585 1170,1585 1168,1585 1134,1588 1081,1592 1055,1585 1041,1583 1040,1583 1039,1583 1037,1583 1032,1585 1019,1591 964,1584 964,1618 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/963.0,1583.0,411.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_23_1" points="964,1618 1374,1621 " corresp="DefaultLine"/>
+          <line>En incesante martirio,</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_24" type="DefaultLine" subtype="none" points="966,1676 1007,1678 1015,1686 1015,1687 1017,1687 1018,1687 1019,1687 1021,1687 1050,1679 1051,1679 1156,1689 1157,1689 1159,1689 1160,1689 1160,1687 1168,1680 1171,1679 1182,1682 1210,1686 1211,1686 1212,1686 1223,1682 1227,1680 1229,1682 1237,1690 1237,1691 1238,1691 1240,1691 1241,1693 1303,1693 1303,1691 1305,1691 1325,1685 1335,1680 1339,1685 1343,1689 1345,1689 1346,1689 1347,1689 1349,1689 1357,1685 1365,1680 1376,1685 1389,1690 1390,1690 1391,1690 1462,1686 1463,1668 1460,1636 1413,1638 1402,1635 1385,1629 1383,1629 1382,1629 1307,1634 1218,1638 1204,1631 1196,1628 1194,1628 1193,1628 1154,1631 1077,1636 1065,1629 1063,1628 1062,1628 1061,1628 1011,1628 1010,1628 1008,1628 1007,1628 1007,1629 999,1636 968,1628 967,1665 966,1676 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/966.0,1628.0,497.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_24_1" points="967,1665 1463,1668 " corresp="DefaultLine"/>
+          <line>Y en brazos de aquel delirio</line>
+        </zone>
+        <zone xml:id="Varios_424_3_BT227_3_LT83_25" type="DefaultLine" subtype="none" points="960,1712 959,1747 1010,1749 1011,1749 1012,1749 1014,1749 1015,1748 1032,1738 1041,1748 1043,1748 1043,1749 1044,1749 1046,1749 1047,1751 1085,1751 1085,1749 1087,1749 1090,1748 1112,1738 1168,1738 1179,1749 1181,1749 1181,1751 1182,1751 1183,1751 1185,1751 1196,1749 1230,1744 1240,1749 1243,1752 1244,1752 1245,1752 1247,1752 1248,1752 1249,1752 1252,1749 1269,1740 1328,1740 1356,1751 1360,1716 1358,1691 1187,1690 1182,1686 1170,1676 1168,1676 1167,1676 1141,1676 1139,1676 1138,1676 1136,1676 1128,1683 1124,1687 1114,1683 1094,1675 1092,1675 1091,1675 1090,1675 1065,1682 1044,1687 1026,1680 1018,1678 1017,1678 1015,1678 1014,1678 1008,1680 997,1685 992,1679 988,1676 988,1675 986,1675 985,1675 983,1675 960,1678 960,1712 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/959.0,1675.0,401.0,77.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_3_BT227_3_LT83_25_1" points="960,1712 1360,1716 " corresp="DefaultLine"/>
+          <line>Solo anhelaba espirar.</line>
+        </zone>
+        <zone xml:id="_BT227_3_LT81_26" type="CustomLine" subtype="propriedad" points="1269,1730 1269,1762 1267,1818 1309,1820 1310,1820 1311,1820 1318,1817 1339,1806 1356,1814 1365,1820 1367,1820 1368,1820 1369,1820 1371,1820 1378,1814 1394,1802 1408,1813 1412,1815 1413,1815 1415,1815 1416,1815 1445,1814 1447,1814 1448,1814 1453,1810 1464,1803 1471,1809 1482,1818 1482,1820 1484,1820 1485,1820 1487,1820 1488,1820 1517,1807 1526,1802 1531,1806 1539,1814 1539,1815 1540,1815 1542,1815 1543,1815 1544,1815 1546,1815 1560,1804 1562,1803 1616,1802 1617,1767 1617,1741 1600,1733 1598,1733 1597,1733 1595,1733 1576,1740 1572,1740 1565,1738 1525,1731 1524,1731 1447,1734 1357,1737 1294,1730 1283,1730 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/1267.0,1730.0,350.0,90.0/full/0/default" corresp="CustomLine:propriedad">
+          <path xml:id="Varios_424_3_BT227_3_LT81_26_1" points="1269,1762 1617,1767 " corresp="CustomLine:propriedad"/>
+          <line>ENRIQUE GAVARRÓ.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_3_BT223_4" n="4" type="CustomZone" subtype="title" points="1083,351 1083,416 853,416 853,351 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/853.0,351.0,230.0,65.0/full/0/default" corresp="CustomZone:title"/>
+      <zone xml:id="Varios_424_3_BT226_5" n="5" type="MainZone" subtype="none" points="1635,1726 1635,1822 1255,1822 1255,1726 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_3/1255.0,1726.0,380.0,96.0/full/0/default" corresp="MainZone"/>
+    </surface>
+    <surface xml:id="Varios_424_4" type="page" cert="silver">
+      <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/full/full/0/default.jpg"/>
+      <zone xml:id="Varios_424_4_BT223_1" n="1" type="CustomZone" subtype="title" points="1627,235 1627,593 214,593 214,235 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/214.0,235.0,1413.0,358.0/full/0/default" corresp="CustomZone:title">
+        <zone xml:id="Varios_424_4_BT223_1_LT84_1" type="HeadingLine" subtype="none" points="720,309 718,321 768,334 770,334 885,325 901,335 902,335 904,335 905,335 907,335 940,325 1003,334 1005,334 1082,328 1104,338 1106,338 1107,338 1177,327 1179,315 1179,262 1125,249 1123,249 1122,249 1043,261 1041,261 949,246 948,246 946,246 910,258 856,246 854,246 853,246 851,246 851,248 841,258 812,258 806,258 805,258 759,245 758,245 756,245 755,245 753,245 753,246 740,258 739,258 720,258 720,309 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/718.0,245.0,461.0,93.0/full/0/default" corresp="HeadingLine">
+          <path xml:id="Varios_424_4_BT223_1_LT84_1_1" points="720,309 1179,315 "/>
+          <line>CAMARELLAS</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT223_1_LT84_2" type="HeadingLine" subtype="none" points="799,379 797,404 1053,406 1056,382 1056,357 1024,347 1022,347 1021,347 986,354 965,346 964,346 962,346 961,346 930,356 929,356 927,356 911,344 910,344 908,344 907,344 905,344 878,354 856,344 854,344 853,344 799,353 799,379 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/797.0,344.0,259.0,62.0/full/0/default" corresp="HeadingLine">
+          <path xml:id="Varios_424_4_BT223_1_LT84_2_1" points="799,379 1056,382 "/>
+          <line>dedicadas à</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT223_1_LT84_3" type="HeadingLine" subtype="none" points="268,518 305,534 306,534 372,536 374,536 490,522 496,522 542,522 542,524 558,534 559,534 561,534 562,534 604,524 619,521 625,525 644,538 645,538 647,538 679,540 680,540 740,527 761,522 780,527 812,537 813,537 815,537 816,537 834,528 838,527 843,528 863,536 864,536 866,536 867,536 883,530 895,525 1024,527 1031,533 1040,538 1041,538 1043,538 1044,538 1046,538 1063,533 1078,528 1095,533 1119,540 1120,540 1122,540 1160,534 1180,531 1192,534 1225,547 1227,547 1228,547 1230,547 1259,538 1287,549 1288,549 1290,550 1358,550 1358,549 1360,549 1390,538 1407,533 1420,538 1445,550 1446,550 1447,552 1490,552 1490,550 1491,550 1493,550 1507,540 1515,536 1522,541 1525,543 1526,543 1528,543 1529,543 1531,543 1538,541 1561,534 1591,541 1595,519 1595,430 1550,417 1548,417 1488,416 1487,416 1485,416 1452,427 1447,430 1405,430 1401,426 1393,420 1392,420 1390,420 1389,420 1335,425 1300,427 1288,423 1271,417 1269,417 1268,417 1266,417 1247,423 1233,426 1212,422 1183,416 1182,416 1144,420 1125,422 1116,419 1087,410 1085,410 1084,410 1082,410 1066,419 1063,420 897,422 885,413 883,413 882,413 881,413 879,413 876,413 848,420 837,413 837,411 835,411 834,411 832,411 831,411 829,411 812,420 793,411 781,406 780,406 778,406 777,406 767,410 751,419 740,411 739,411 737,411 736,411 620,417 588,406 578,403 577,403 575,403 540,404 450,411 428,403 426,403 425,403 423,403 384,414 349,400 347,400 346,400 344,400 343,400 309,413 273,398 270,500 268,518 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/268.0,398.0,1327.0,154.0/full/0/default" corresp="HeadingLine">
+          <path xml:id="Varios_424_4_BT223_1_LT84_3_1" points="270,500 1595,519 "/>
+          <line>LA NIÑA DE LOS CABELLOS DE ORO.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_4_BT227_2" n="2" type="MainZone" subtype="columns" points="759,696 759,2016 206,2016 206,696 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/206.0,696.0,553.0,1320.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_4_BT227_2_LT83_1" type="DefaultLine" subtype="none" points="600,696 584,696 582,727 578,755 609,759 613,730 613,696 600,696 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/578.0,696.0,35.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_1_1" points="582,727 613,730 " corresp="DefaultLine"/>
+          <line>I.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_2" type="DefaultLine" subtype="none" points="280,771 279,781 715,790 718,778 718,744 676,731 675,731 673,731 620,741 606,743 559,740 558,737 546,728 544,728 543,728 542,728 467,734 375,740 280,725 280,771 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/279.0,725.0,439.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_2_1" points="280,771 718,778 " corresp="DefaultLine"/>
+          <line>En la noche mas oscura</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_3" type="DefaultLine" subtype="none" points="246,828 271,836 273,836 274,836 306,831 308,831 702,842 705,825 704,797 661,788 660,788 658,788 637,794 628,796 625,793 613,785 612,785 610,785 609,785 607,785 606,785 606,787 600,793 597,796 562,796 549,791 524,782 523,782 521,782 460,787 404,791 391,784 387,782 385,782 384,782 369,784 330,788 317,781 315,781 314,781 312,781 311,781 309,781 289,790 249,779 248,817 246,828 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/246.0,779.0,459.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_3_1" points="248,817 705,825 " corresp="DefaultLine"/>
+          <line>Va brillando cual estrella</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_4" type="DefaultLine" subtype="none" points="242,867 241,879 680,885 683,871 682,835 537,842 530,836 530,835 528,835 527,835 526,835 417,841 390,832 388,832 387,832 349,839 344,833 343,833 343,832 341,832 340,832 338,832 290,838 242,831 242,867 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/241.0,831.0,442.0,54.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_4_1" points="242,867 683,871 " corresp="DefaultLine"/>
+          <line>De tu sin par hermosura</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_5" type="DefaultLine" subtype="none" points="239,933 711,933 713,921 711,895 629,885 628,885 626,885 613,890 609,893 606,890 599,885 599,883 597,883 596,883 594,883 536,889 493,892 486,886 480,882 479,882 477,882 476,882 474,882 463,886 450,890 409,885 390,882 388,882 365,883 267,889 242,879 241,915 239,933 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/239.0,879.0,474.0,54.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_5_1" points="241,915 713,921 " corresp="DefaultLine"/>
+          <line>La viva y celestial huella.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_6" type="DefaultLine" subtype="none" points="279,963 277,981 730,990 733,971 733,944 644,931 642,931 641,931 618,939 609,942 606,939 596,930 594,930 593,930 521,928 469,928 467,928 466,928 464,928 464,930 460,933 452,939 371,931 369,931 315,937 303,927 303,925 302,925 300,925 279,925 279,963 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/277.0,925.0,456.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_6_1" points="279,963 733,971 " corresp="DefaultLine"/>
+          <line>Son tus cabellos dorados,</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_7" type="DefaultLine" subtype="none" points="238,1028 331,1028 337,1031 346,1039 347,1039 349,1039 350,1041 382,1041 382,1039 384,1039 407,1032 417,1029 425,1032 439,1041 441,1041 442,1041 502,1034 530,1031 544,1035 558,1038 559,1038 561,1038 580,1035 594,1032 597,1035 604,1041 604,1042 606,1042 607,1042 609,1042 743,1036 745,1019 745,993 685,993 680,990 661,980 660,980 629,980 628,980 626,980 625,980 616,987 612,990 528,984 474,980 473,980 471,980 467,981 445,988 410,978 407,978 406,978 404,978 403,978 401,978 391,987 378,977 376,975 375,975 374,975 338,974 337,974 327,975 283,985 241,972 239,1012 238,1028 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/238.0,972.0,507.0,70.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_7_1" points="239,1012 745,1019 " corresp="DefaultLine"/>
+          <line>Es tu frente hermosa y pura</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_8" type="DefaultLine" subtype="none" points="238,1061 236,1080 431,1076 448,1085 450,1085 451,1085 452,1085 463,1085 533,1077 625,1085 628,1064 626,1036 582,1026 581,1026 580,1026 553,1034 549,1036 483,1036 479,1032 473,1028 471,1028 470,1028 469,1028 467,1028 450,1032 436,1035 425,1031 406,1025 404,1025 403,1025 401,1025 379,1031 366,1034 359,1029 349,1025 347,1025 346,1025 325,1029 302,1034 238,1028 238,1061 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/236.0,1025.0,392.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_8_1" points="238,1061 628,1064 " corresp="DefaultLine"/>
+          <line>A mis ojos admirados</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_9" type="DefaultLine" subtype="none" points="238,1108 236,1124 385,1134 387,1134 388,1134 390,1134 401,1127 431,1134 432,1134 433,1134 435,1134 436,1134 445,1127 448,1126 562,1126 563,1129 572,1136 574,1136 575,1136 577,1136 679,1129 680,1112 680,1083 672,1076 670,1076 669,1076 667,1076 613,1085 606,1086 536,1086 530,1082 523,1074 521,1074 520,1074 518,1074 455,1079 388,1083 375,1076 372,1073 371,1073 369,1073 368,1073 356,1074 327,1082 238,1072 238,1108 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/236.0,1072.0,444.0,64.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_9_1" points="238,1108 680,1112 " corresp="DefaultLine"/>
+          <line>Del amor prenda segura.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_10" type="DefaultLine" subtype="none" points="511,1172 653,1175 654,1162 654,1133 613,1123 612,1123 610,1123 577,1127 547,1131 512,1123 511,1162 511,1172 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/511.0,1123.0,143.0,52.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_10_1" points="511,1162 654,1162 " corresp="DefaultLine"/>
+          <line>CORO.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_11" type="DefaultLine" subtype="none" points="312,1206 311,1223 321,1229 322,1229 324,1229 325,1229 416,1223 450,1222 467,1225 489,1229 490,1229 492,1229 493,1229 496,1226 502,1222 686,1231 689,1209 689,1178 680,1172 679,1172 677,1172 647,1172 645,1172 644,1172 642,1172 642,1174 635,1180 634,1181 629,1180 593,1172 591,1172 590,1172 577,1180 572,1181 562,1178 536,1172 534,1172 533,1172 531,1172 520,1178 511,1181 483,1177 445,1171 444,1171 442,1171 429,1175 419,1180 312,1174 312,1206 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/311.0,1171.0,378.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_11_1" points="312,1206 689,1209 " corresp="DefaultLine"/>
+          <line>Sal, pues, niña bella</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_12" type="DefaultLine" subtype="none" points="274,1264 293,1273 295,1273 452,1275 454,1275 455,1275 457,1275 461,1270 466,1267 650,1277 653,1258 651,1229 445,1218 444,1218 419,1219 371,1225 338,1216 336,1216 334,1216 333,1216 331,1216 330,1216 302,1223 277,1215 276,1253 274,1264 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/274.0,1215.0,379.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_12_1" points="276,1253 653,1258 " corresp="DefaultLine"/>
+          <line>Sal pronto al balcon,</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_13" type="DefaultLine" subtype="none" points="280,1299 279,1313 353,1324 355,1324 419,1317 476,1326 477,1326 479,1326 480,1326 488,1318 501,1327 502,1327 504,1327 505,1327 645,1320 647,1307 647,1280 610,1269 609,1269 607,1269 555,1276 533,1279 518,1275 499,1267 498,1267 391,1267 390,1267 388,1267 353,1276 280,1261 280,1299 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/279.0,1261.0,368.0,66.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_13_1" points="280,1299 647,1307 " corresp="DefaultLine"/>
+          <line>Ven, gentil doncella</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_14" type="DefaultLine" subtype="none" points="276,1346 274,1367 539,1367 604,1375 607,1353 607,1327 578,1317 577,1317 575,1317 526,1323 505,1324 492,1320 470,1314 469,1314 467,1314 448,1318 429,1323 423,1317 423,1315 422,1315 422,1314 420,1314 419,1314 417,1314 403,1315 368,1321 347,1313 343,1311 341,1311 340,1311 338,1311 334,1313 319,1317 276,1310 276,1346 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/274.0,1310.0,333.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_14_1" points="276,1346 607,1353 " corresp="DefaultLine"/>
+          <line>A oir mi cancion.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_15" type="DefaultLine" subtype="none" points="309,1396 308,1406 349,1418 350,1418 352,1418 393,1409 439,1419 441,1419 482,1413 606,1422 607,1422 661,1412 663,1402 663,1368 309,1365 309,1396 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/308.0,1365.0,355.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_15_1" points="309,1396 663,1402 " corresp="DefaultLine"/>
+          <line>Oh! bella hechícera</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_16" type="DefaultLine" subtype="none" points="273,1443 271,1456 362,1467 363,1467 450,1460 477,1469 479,1469 480,1469 482,1469 508,1460 626,1460 629,1448 629,1422 588,1412 587,1412 585,1412 561,1418 552,1421 549,1418 544,1412 543,1412 543,1410 542,1410 540,1410 539,1410 499,1416 471,1419 461,1413 452,1409 451,1409 450,1409 448,1409 435,1413 416,1418 375,1410 374,1410 372,1410 371,1410 369,1410 360,1418 273,1406 273,1443 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/271.0,1406.0,358.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_16_1" points="273,1443 629,1448 " corresp="DefaultLine"/>
+          <line>Prenda de mi amor</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_17" type="DefaultLine" subtype="none" points="273,1508 572,1507 574,1495 572,1467 527,1457 526,1457 524,1457 501,1463 490,1466 485,1463 476,1456 474,1456 473,1456 471,1456 470,1456 457,1462 448,1464 439,1460 431,1456 429,1456 428,1456 391,1459 317,1463 276,1453 274,1491 273,1508 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/273.0,1453.0,301.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_17_1" points="274,1491 574,1495 " corresp="DefaultLine"/>
+          <line>Eres de la tierra</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_18" type="DefaultLine" subtype="none" points="271,1540 270,1558 594,1555 596,1543 596,1516 543,1516 540,1513 530,1504 528,1504 527,1504 526,1504 524,1504 523,1504 511,1513 507,1516 485,1516 482,1511 474,1505 474,1504 473,1504 471,1504 470,1504 469,1504 444,1510 438,1511 432,1510 409,1502 407,1502 406,1502 404,1502 403,1502 403,1504 397,1508 393,1513 376,1508 355,1502 353,1502 352,1502 350,1502 349,1502 344,1507 336,1513 271,1505 271,1540 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/270.0,1502.0,326.0,56.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_18_1" points="271,1540 596,1543 " corresp="DefaultLine"/>
+          <line>La mas bella flor.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_19" type="DefaultLine" subtype="none" points="550,1592 549,1600 610,1606 613,1594 612,1540 550,1551 550,1592 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/549.0,1540.0,64.0,66.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_19_1" points="550,1592 613,1594 " corresp="DefaultLine"/>
+          <line>II.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_20" type="DefaultLine" subtype="none" points="270,1635 268,1653 471,1653 477,1654 505,1663 507,1663 508,1663 599,1656 653,1665 654,1665 715,1654 717,1641 713,1605 698,1609 691,1603 677,1594 676,1594 675,1594 638,1594 637,1594 635,1594 634,1594 634,1596 626,1602 618,1610 528,1602 527,1602 451,1608 439,1600 438,1600 436,1600 435,1600 433,1600 403,1608 381,1596 371,1590 369,1590 338,1590 337,1590 336,1590 334,1590 334,1592 331,1594 325,1599 319,1593 317,1592 317,1590 315,1590 314,1590 312,1590 270,1592 270,1635 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/268.0,1590.0,449.0,75.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_20_1" points="270,1635 717,1641 " corresp="DefaultLine"/>
+          <line>Faros son tus lindos ojos</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_21" type="DefaultLine" subtype="none" points="232,1685 230,1705 704,1705 705,1691 704,1654 610,1662 585,1654 584,1654 582,1654 520,1660 508,1653 507,1651 505,1651 504,1651 502,1651 501,1651 495,1653 473,1660 466,1653 463,1651 463,1650 461,1650 460,1650 414,1650 413,1650 412,1650 410,1650 407,1653 398,1659 368,1653 344,1648 343,1648 341,1648 333,1653 321,1657 232,1653 232,1685 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/230.0,1648.0,475.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_21_1" points="232,1685 705,1691 " corresp="DefaultLine"/>
+          <line>Que al puerto de salvacion</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_22" type="DefaultLine" subtype="none" points="230,1733 229,1743 252,1752 254,1752 255,1752 287,1746 309,1754 311,1754 312,1754 371,1748 512,1757 514,1757 653,1748 654,1738 651,1700 515,1707 509,1700 508,1700 508,1698 507,1698 505,1698 504,1698 498,1698 372,1705 230,1697 230,1733 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/229.0,1697.0,425.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_22_1" points="230,1733 654,1738 " corresp="DefaultLine"/>
+          <line>A través de mil abrojos</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_23" type="DefaultLine" subtype="none" points="230,1778 229,1796 461,1808 463,1808 464,1808 466,1808 476,1799 477,1799 493,1806 495,1806 496,1806 615,1800 616,1786 616,1762 574,1751 572,1751 571,1751 569,1751 553,1759 547,1761 539,1758 518,1751 517,1751 515,1751 486,1755 463,1759 452,1754 444,1749 442,1749 441,1749 439,1749 438,1749 438,1751 435,1752 431,1757 409,1752 384,1746 382,1746 381,1746 379,1746 375,1749 363,1758 315,1758 309,1749 308,1749 308,1748 306,1748 305,1748 303,1748 302,1748 289,1755 277,1745 276,1745 274,1745 230,1743 230,1778 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/229.0,1743.0,387.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_23_1" points="230,1778 616,1786 " corresp="DefaultLine"/>
+          <line>Llevan á mi corazon.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_24" type="DefaultLine" subtype="none" points="265,1827 264,1841 336,1850 337,1850 398,1844 404,1844 406,1844 414,1851 416,1851 417,1851 419,1851 689,1849 691,1835 691,1811 265,1797 265,1827 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/264.0,1797.0,427.0,54.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_24_1" points="265,1827 691,1835 " corresp="DefaultLine"/>
+          <line>Cuando la ronrisa pura</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_25" type="DefaultLine" subtype="none" points="232,1876 230,1887 641,1898 644,1884 644,1853 588,1844 587,1844 585,1844 584,1844 574,1851 563,1843 563,1841 562,1841 561,1841 559,1841 518,1850 515,1850 509,1850 419,1840 417,1840 295,1846 293,1846 284,1838 284,1837 283,1837 281,1837 280,1837 232,1844 232,1876 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/230.0,1837.0,414.0,61.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_25_1" points="232,1876 644,1884 " corresp="DefaultLine"/>
+          <line>Abre tus lábios de rosa</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_26" type="DefaultLine" subtype="none" points="230,1926 229,1942 398,1949 400,1949 517,1942 539,1942 547,1942 596,1951 597,1951 695,1942 696,1930 694,1895 549,1901 539,1892 539,1891 537,1891 536,1891 534,1891 526,1892 486,1900 473,1891 471,1891 470,1891 469,1891 467,1891 466,1891 466,1892 457,1900 403,1892 401,1892 400,1892 398,1892 387,1900 357,1889 356,1889 355,1889 353,1889 308,1898 295,1889 293,1889 292,1889 230,1888 230,1926 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/229.0,1888.0,467.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_26_1" points="230,1926 696,1930 " corresp="DefaultLine"/>
+          <line>Quien lograra tal ventura</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_2_LT83_27" type="DefaultLine" subtype="none" points="230,1971 229,2011 238,2021 238,2022 239,2022 241,2022 363,2024 365,2024 366,2024 404,2006 425,1996 445,2006 450,2008 451,2008 452,2008 463,2006 502,1996 527,2006 536,2009 537,2009 539,2009 540,2009 549,2006 572,1998 626,1998 635,2006 639,2009 641,2009 642,2009 644,2009 692,2005 694,1979 692,1951 654,1942 653,1942 651,1942 632,1948 562,1941 561,1941 559,1941 558,1941 550,1946 547,1948 539,1946 520,1941 518,1941 517,1941 515,1941 514,1941 514,1942 509,1945 507,1948 492,1945 467,1939 466,1939 439,1943 417,1946 413,1942 409,1939 409,1938 407,1938 406,1938 404,1938 387,1942 372,1945 368,1941 365,1939 365,1938 363,1938 362,1938 230,1938 230,1971 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/229.0,1938.0,465.0,86.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_2_LT83_27_1" points="230,1971 694,1979 " corresp="DefaultLine"/>
+          <line>De cojer flor tan preciosa.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_4_BT227_3" n="3" type="MainZone" subtype="columns" points="1454,672 1454,2072 903,2072 900,772 1157,735 1194,672 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/900.0,672.0,554.0,1400.0/full/0/default" corresp="MainZone:columns">
+        <zone xml:id="Varios_424_4_BT227_3_LT84_1" type="DefaultLine" subtype="none" points="870,676 870,705 914,725 916,725 919,725 921,725 956,714 978,707 1008,718 1013,676 1008,615 945,630 870,624 870,676 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/870.0,615.0,143.0,110.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT84_1_1" points="872,679 1014,679 " corresp="DefaultLine"/>
+          <line>DUO</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_2" type="DefaultLine" subtype="none" points="1206,736 1206,750 1342,749 1344,734 1342,702 1298,689 1297,689 1296,689 1294,689 1274,698 1263,701 1205,693 1206,736 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/1205.0,689.0,139.0,61.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_2_1" points="1206,736 1344,734 " corresp="DefaultLine"/>
+          <line>CORO.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_3" type="DefaultLine" subtype="none" points="1006,781 1005,796 1028,807 1030,807 1031,807 1129,800 1152,798 1161,801 1183,809 1184,809 1186,809 1187,809 1206,803 1221,798 1227,804 1228,804 1228,806 1230,806 1231,806 1233,806 1243,804 1279,800 1291,807 1293,809 1294,809 1296,809 1297,809 1298,809 1303,807 1329,800 1376,810 1379,785 1379,756 1347,744 1345,744 1344,744 1342,744 1316,755 1312,756 1310,755 1300,746 1300,744 1298,744 1297,744 1296,744 1214,750 1145,755 1133,747 1132,747 1130,747 1129,747 1088,753 1078,744 1076,743 1076,741 1075,741 1073,741 1072,741 1070,741 1065,743 1049,750 1041,743 1041,741 1040,741 1038,741 1006,741 1006,781 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/1005.0,741.0,374.0,69.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_3_1" points="1006,781 1379,785 " corresp="DefaultLine"/>
+          <line>Sal, pues, niña bella</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_4" type="DefaultLine" subtype="none" points="968,839 1002,850 1003,850 1005,850 1084,844 1094,844 1095,844 1101,850 1101,851 1103,851 1104,851 1106,851 1152,847 1170,845 1347,852 1350,835 1348,804 1282,807 1271,801 1262,797 1260,797 1259,797 1258,797 1246,800 1231,804 1208,800 1189,796 1187,796 1186,796 1179,798 1165,804 1141,797 1139,797 1138,797 1136,797 1129,797 1046,803 1030,794 1027,793 1025,793 1024,793 1022,793 1019,794 1005,801 971,793 970,828 968,839 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/968.0,793.0,382.0,59.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_4_1" points="970,828 1350,835 " corresp="DefaultLine"/>
+          <line>Sal pronto al balcon,</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_5" type="DefaultLine" subtype="none" points="974,888 1066,902 1068,902 1151,892 1176,904 1177,904 1179,904 1250,895 1300,905 1301,905 1303,905 1341,893 1342,882 1341,851 1265,844 1263,844 1243,847 1218,851 1211,845 1208,844 1206,844 1205,844 1203,844 1202,844 1198,845 1183,851 1164,844 1154,841 1152,841 1151,841 1149,841 1144,844 1130,851 1107,844 1106,844 1104,844 1103,844 1101,844 1092,851 1014,851 977,838 976,876 974,888 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/974.0,838.0,368.0,67.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_5_1" points="976,876 1342,882 " corresp="DefaultLine"/>
+          <line>Ven, gentil doncella</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_6" type="DefaultLine" subtype="none" points="968,924 967,939 1281,946 1284,928 1284,899 968,895 968,924 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/967.0,895.0,317.0,51.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_6_1" points="968,924 1284,928 " corresp="DefaultLine"/>
+          <line>A oir mi cancion.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_7" type="DefaultLine" subtype="none" points="1002,977 1002,990 1008,996 1009,996 1011,996 1012,996 1072,988 1078,988 1167,988 1173,991 1179,996 1180,996 1182,996 1183,996 1239,993 1320,988 1361,996 1363,977 1360,937 1339,949 1284,949 1271,940 1266,937 1265,937 1263,937 1262,937 1234,942 1201,946 1195,943 1186,937 1184,937 1183,937 1182,937 1180,937 1179,937 1179,939 1173,943 1168,947 1152,943 1127,939 1126,939 1125,939 1108,944 1101,947 1088,946 1033,937 1031,937 1030,937 1002,947 1002,977 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/1002.0,937.0,361.0,59.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_7_1" points="1002,977 1363,977 " corresp="DefaultLine"/>
+          <line>¡Oh bella hechicera!</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_8" type="DefaultLine" subtype="none" points="968,1019 967,1041 1119,1036 1142,1044 1145,1045 1146,1045 1148,1045 1161,1045 1234,1038 1322,1045 1325,1022 1322,991 1158,996 1144,985 1142,985 1141,985 1060,982 1059,982 1057,982 1056,982 1028,994 968,981 968,1019 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/967.0,981.0,358.0,64.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_8_1" points="968,1019 1325,1022 " corresp="DefaultLine"/>
+          <line>Prenda de mi amor.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_9" type="DefaultLine" subtype="none" points="968,1069 968,1083 990,1092 992,1092 993,1092 1027,1086 1040,1083 1044,1086 1053,1092 1054,1092 1056,1092 1057,1092 1084,1088 1106,1083 1265,1092 1268,1067 1260,1029 1243,1041 1189,1041 1179,1034 1174,1029 1173,1029 1171,1029 1170,1029 1168,1029 1167,1029 1167,1031 1163,1034 1157,1041 1136,1041 1123,1035 1107,1029 1106,1029 1104,1029 1103,1029 1101,1029 1101,1031 1094,1036 1092,1039 1087,1036 1075,1032 1073,1032 1072,1032 1070,1032 1054,1038 1052,1039 1052,1038 1043,1031 1043,1029 1041,1029 1040,1029 977,1029 976,1029 974,1029 973,1029 973,1031 971,1031 967,1035 968,1069 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/967.0,1029.0,301.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_9_1" points="968,1069 1268,1067 " corresp="DefaultLine"/>
+          <line>Eres de la tierra</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_10" type="DefaultLine" subtype="none" points="965,1143 1285,1143 1285,1120 1285,1091 1249,1091 1247,1088 1237,1079 1237,1077 1236,1077 1234,1077 1233,1077 1231,1077 1206,1085 1179,1076 1177,1076 1176,1076 1174,1076 1154,1085 1146,1088 1144,1085 1138,1079 1138,1077 1136,1077 1135,1077 1088,1076 1087,1076 1085,1076 1084,1076 1078,1082 1068,1089 1024,1082 1022,1082 1021,1082 996,1089 967,1077 965,1120 965,1143 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/965.0,1076.0,320.0,67.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_10_1" points="965,1120 1285,1120 " corresp="DefaultLine"/>
+          <line>La mas bella flor.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_11" type="DefaultLine" subtype="none" points="1233,1171 1233,1184 1306,1191 1307,1171 1307,1136 1233,1134 1233,1171 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/1233.0,1134.0,74.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_11_1" points="1233,1171 1307,1171 " corresp="DefaultLine"/>
+          <line>III.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_12" type="DefaultLine" subtype="none" points="962,1215 962,1231 1056,1231 1060,1232 1070,1240 1072,1240 1073,1240 1075,1240 1122,1234 1149,1231 1168,1235 1187,1240 1189,1240 1190,1240 1192,1240 1202,1237 1211,1232 1215,1237 1218,1240 1220,1240 1221,1240 1222,1240 1224,1240 1233,1237 1244,1232 1255,1237 1260,1240 1262,1240 1263,1240 1278,1238 1316,1232 1377,1240 1379,1215 1379,1187 1357,1187 1357,1185 1347,1177 1347,1175 1345,1175 1344,1175 1342,1175 1291,1184 1282,1185 962,1180 962,1215 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/962.0,1175.0,417.0,65.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_12_1" points="962,1215 1379,1215 " corresp="DefaultLine"/>
+          <line>De mi pecho los latidos</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_13" type="DefaultLine" subtype="none" points="929,1258 927,1272 1363,1282 1366,1264 1364,1237 929,1232 929,1258 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/927.0,1232.0,439.0,50.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_13_1" points="929,1258 1366,1264 " corresp="DefaultLine"/>
+          <line>Calma niña con tu amor</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_14" type="DefaultLine" subtype="none" points="926,1308 924,1321 1022,1323 1025,1324 1050,1333 1052,1333 1053,1333 1097,1327 1106,1326 1113,1327 1138,1333 1139,1333 1141,1333 1168,1329 1179,1327 1220,1330 1287,1334 1288,1334 1290,1334 1296,1332 1304,1327 1313,1332 1319,1334 1320,1334 1322,1336 1430,1336 1431,1314 1427,1276 1418,1283 1386,1275 1383,1275 1382,1275 1380,1275 1374,1275 1317,1283 1296,1273 1288,1270 1287,1270 1285,1270 1284,1270 1282,1270 1282,1272 1279,1273 1271,1283 1202,1283 1187,1272 1184,1269 1183,1269 1182,1269 1180,1269 1165,1272 1148,1276 1142,1272 1141,1270 1141,1269 1139,1269 1138,1269 1079,1269 1078,1269 1076,1269 1073,1270 1056,1280 1046,1270 1044,1269 1044,1267 1043,1267 1041,1267 1040,1267 1038,1267 1033,1270 1014,1279 926,1269 926,1308 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/924.0,1267.0,507.0,69.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_14_1" points="926,1308 1431,1314 " corresp="DefaultLine"/>
+          <line>Si no han de ser convertidos</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_15" type="DefaultLine" subtype="none" points="926,1370 1307,1380 1310,1359 1309,1333 1258,1324 1256,1324 1211,1329 1202,1329 1199,1327 1183,1320 1182,1320 1180,1320 1142,1321 1141,1321 1139,1321 1139,1323 1136,1326 1130,1332 1108,1332 1101,1324 1098,1321 1098,1320 1097,1320 1095,1320 1094,1320 1059,1321 965,1329 929,1317 927,1355 926,1370 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/926.0,1317.0,384.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_15_1" points="927,1355 1310,1359 " corresp="DefaultLine"/>
+          <line>En gemidos de dolor.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_16" type="DefaultLine" subtype="none" points="962,1426 1246,1422 1255,1422 1348,1429 1350,1429 1351,1429 1352,1429 1361,1422 1361,1407 1361,1383 1326,1374 1325,1374 1323,1374 1322,1374 1322,1375 1315,1381 1313,1384 1173,1384 1146,1377 1129,1374 1127,1374 1126,1374 1125,1374 1125,1375 1122,1377 1116,1383 1066,1375 1059,1375 1057,1375 1056,1375 1054,1375 1046,1383 1019,1375 1016,1374 1015,1374 1014,1374 1012,1374 1011,1374 995,1383 964,1374 962,1407 962,1426 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/962.0,1374.0,399.0,55.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_16_1" points="962,1407 1361,1407 " corresp="DefaultLine"/>
+          <line>A tu ventana asomada</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_17" type="DefaultLine" subtype="none" points="927,1472 1138,1469 1146,1476 1146,1478 1148,1478 1149,1478 1151,1478 1161,1478 1211,1470 1218,1476 1218,1478 1220,1478 1221,1478 1222,1478 1230,1478 1331,1472 1348,1479 1352,1457 1352,1432 1316,1432 1315,1429 1306,1422 1306,1421 1304,1421 1303,1421 1301,1421 1300,1421 1271,1428 1258,1431 1241,1426 1221,1422 1220,1422 1218,1422 1202,1425 1186,1429 1180,1425 1176,1421 1176,1419 1174,1419 1173,1419 1141,1418 1139,1418 1138,1418 1126,1422 1113,1428 1094,1421 1092,1421 1091,1421 1089,1421 1088,1421 1087,1421 1087,1422 1079,1428 1012,1428 1005,1421 1005,1419 1003,1419 1002,1419 1000,1419 999,1419 973,1426 930,1415 929,1451 927,1472 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/927.0,1415.0,425.0,64.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_17_1" points="929,1451 1352,1457 " corresp="DefaultLine"/>
+          <line>Verte aguarda con afan</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_18" type="DefaultLine" subtype="none" points="921,1499 920,1516 959,1527 961,1527 962,1527 964,1527 1000,1518 1019,1529 1021,1529 1022,1529 1024,1529 1025,1529 1038,1518 1040,1518 1041,1518 1173,1532 1174,1532 1231,1521 1236,1521 1239,1521 1281,1529 1282,1529 1284,1529 1285,1529 1294,1523 1296,1521 1297,1523 1310,1535 1312,1535 1313,1535 1315,1536 1415,1536 1415,1535 1417,1535 1418,1535 1418,1533 1424,1526 1426,1505 1426,1482 1396,1470 1395,1470 1393,1470 1392,1470 1361,1479 1281,1479 1269,1469 1268,1469 1266,1469 1265,1469 1195,1478 1171,1467 1170,1467 1168,1467 1126,1475 1070,1467 1069,1467 1068,1467 1049,1476 1043,1469 1041,1469 1041,1467 1040,1467 1038,1467 1037,1467 1035,1467 1016,1473 1005,1466 1003,1466 1002,1466 1000,1466 999,1466 980,1476 921,1476 921,1499 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/920.0,1466.0,506.0,70.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_18_1" points="921,1499 1426,1505 " corresp="DefaultLine"/>
+          <line>Aquí á tus piés, niña amada</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_19" type="DefaultLine" subtype="none" points="923,1546 921,1561 1136,1575 1138,1575 1139,1575 1163,1568 1294,1578 1296,1578 1350,1570 1351,1555 1351,1530 1301,1530 1297,1527 1282,1517 1281,1517 1279,1517 1278,1517 1277,1517 1253,1524 1249,1526 1236,1524 1183,1516 1182,1516 1180,1516 1179,1516 1171,1521 1161,1526 1116,1526 1084,1517 1065,1513 1063,1513 1046,1516 995,1523 923,1510 923,1546 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/921.0,1510.0,430.0,68.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_19_1" points="923,1546 1351,1555 " corresp="DefaultLine"/>
+          <line>Tu rendido y fiel galan.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_20" type="DefaultLine" subtype="none" points="1205,1600 1203,1609 1287,1619 1288,1619 1345,1612 1347,1603 1347,1574 1260,1564 1259,1564 1258,1564 1241,1570 1234,1562 1233,1562 1231,1562 1230,1562 1228,1562 1205,1570 1205,1600 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/1203.0,1562.0,144.0,57.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_20_1" points="1205,1600 1347,1603 " corresp="DefaultLine"/>
+          <line>CORO.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_21" type="DefaultLine" subtype="none" points="995,1646 993,1659 1052,1669 1053,1669 1054,1669 1072,1662 1079,1669 1081,1669 1082,1669 1084,1670 1367,1670 1369,1650 1369,1619 1329,1610 1328,1610 1326,1610 1306,1618 1290,1606 1288,1606 1287,1606 1246,1605 1244,1605 1243,1605 1199,1616 1168,1605 1167,1605 1165,1605 1164,1605 1163,1605 1148,1616 1146,1618 1123,1618 1122,1616 1106,1603 1104,1603 1103,1603 1101,1603 1100,1603 1078,1615 1028,1603 1027,1603 1025,1603 995,1613 995,1646 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/993.0,1603.0,376.0,67.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_21_1" points="995,1646 1369,1650 " corresp="DefaultLine"/>
+          <line>Sal, pues, niña bella</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_22" type="DefaultLine" subtype="none" points="962,1707 1021,1707 1022,1708 1028,1713 1028,1714 1030,1714 1031,1714 1033,1714 1068,1710 1085,1707 1089,1710 1095,1716 1097,1716 1098,1716 1100,1716 1152,1713 1208,1708 1234,1714 1246,1717 1247,1717 1249,1717 1262,1716 1296,1710 1335,1717 1338,1697 1336,1669 1183,1660 1182,1660 1180,1660 1179,1660 1176,1663 1170,1669 1091,1669 1019,1659 1016,1659 1015,1659 1014,1659 999,1666 965,1657 964,1692 962,1707 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/962.0,1657.0,376.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_22_1" points="964,1692 1338,1697 " corresp="DefaultLine"/>
+          <line>Sal pronto al balcon,</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_23" type="DefaultLine" subtype="none" points="967,1739 965,1752 1009,1764 1011,1764 1104,1758 1129,1757 1141,1759 1171,1767 1173,1767 1174,1767 1201,1761 1217,1758 1239,1758 1243,1762 1246,1767 1247,1767 1247,1768 1249,1768 1250,1768 1252,1768 1272,1764 1293,1759 1333,1765 1336,1745 1335,1716 1296,1708 1294,1708 1272,1713 1247,1717 1206,1710 1186,1707 1184,1707 1183,1707 1182,1707 1179,1708 1168,1716 1146,1707 1136,1704 1135,1704 1133,1704 1132,1704 1130,1704 1126,1707 1113,1716 1060,1716 967,1701 967,1739 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/965.0,1701.0,371.0,67.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_23_1" points="967,1739 1336,1745 " corresp="DefaultLine"/>
+          <line>Ven, gentil doncella</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_24" type="DefaultLine" subtype="none" points="961,1789 959,1800 1171,1811 1173,1811 1275,1803 1277,1793 1275,1768 961,1764 961,1789 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/959.0,1764.0,318.0,47.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_24_1" points="961,1789 1277,1793 " corresp="DefaultLine"/>
+          <line>A oir mi cancion.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_25" type="DefaultLine" subtype="none" points="995,1840 996,1863 1022,1853 1157,1853 1187,1863 1189,1863 1190,1863 1253,1856 1352,1865 1354,1840 1354,1799 1329,1799 1328,1799 1326,1799 1325,1799 1325,1800 1315,1811 1148,1811 1144,1805 1141,1803 1141,1802 1139,1802 1138,1802 1136,1802 1117,1805 1101,1809 1098,1806 1091,1800 1091,1799 1089,1799 1088,1799 1011,1799 1009,1799 1008,1799 1006,1799 995,1806 995,1840 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/995.0,1799.0,359.0,66.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_25_1" points="995,1840 1354,1840 " corresp="DefaultLine"/>
+          <line>¡Oh bella hechicera!</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_26" type="DefaultLine" subtype="none" points="958,1898 1316,1908 1319,1888 1319,1860 1203,1860 1186,1854 1170,1850 1168,1850 1167,1850 1165,1850 1157,1853 1141,1859 1126,1851 1119,1849 1117,1849 1116,1849 1085,1850 1000,1856 961,1846 959,1882 958,1898 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/958.0,1846.0,361.0,62.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_26_1" points="959,1882 1319,1888 " corresp="DefaultLine"/>
+          <line>Prenda de mi amor.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_27" type="DefaultLine" subtype="none" points="959,1945 1250,1946 1253,1935 1252,1906 1107,1894 1106,1894 1104,1894 1103,1894 1103,1895 1098,1898 1094,1903 1076,1897 1065,1894 1063,1894 1062,1894 1060,1894 1059,1894 1059,1895 1057,1897 1050,1904 996,1904 962,1892 961,1932 959,1945 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/959.0,1892.0,294.0,54.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_27_1" points="961,1932 1253,1935 " corresp="DefaultLine"/>
+          <line>Eres de la tierra</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT227_3_LT83_28" type="DefaultLine" subtype="none" points="957,2017 1040,2018 1041,2018 1043,2018 1044,2018 1044,2017 1063,1998 1113,1998 1176,2009 1177,2009 1228,1999 1249,2018 1249,2019 1250,2019 1252,2019 1253,2021 1269,2021 1271,1981 1271,1954 1190,1945 1189,1945 1187,1945 1176,1949 1165,1954 1151,1949 1139,1945 1138,1945 1136,1945 1135,1945 1127,1948 1116,1954 1104,1946 1101,1945 1100,1945 1098,1945 1097,1945 1095,1945 1094,1945 1092,1946 1085,1954 987,1954 959,1942 958,1979 957,2017 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/957.0,1942.0,314.0,79.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT227_3_LT83_28_1" points="958,1979 1271,1981 " corresp="DefaultLine"/>
+          <line>La mas bella flor.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_4_BT226_4" n="4" type="MainZone" subtype="none" points="1636,1940 1636,2020 1499,2020 1499,1940 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/1499.0,1940.0,137.0,80.0/full/0/default" corresp="MainZone">
+        <zone xml:id="_BT226_4_LT83_1" type="DefaultLine" subtype="none" points="1516,1987 1516,2005 1613,2011 1614,1987 1614,1957 1576,1951 1575,1951 1573,1951 1553,1960 1551,1960 1550,1960 1534,1951 1532,1951 1531,1951 1529,1951 1528,1951 1516,1958 1516,1987 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/1516.0,1951.0,98.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT226_4_LT83_1_1" points="1516,1987 1614,1987 " corresp="DefaultLine"/>
+          <line>J. C.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_4_BT226_5" n="5" type="MainZone" subtype="none" points="1632,2213 1632,2294 1365,2294 1365,2213 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/1365.0,2213.0,267.0,81.0/full/0/default" corresp="MainZone">
+        <zone xml:id="_BT226_5_LT83_1" type="DefaultLine" subtype="none" points="1491,2214 1477,2214 1475,2214 1374,2222 1374,2253 1373,2278 1488,2287 1490,2287 1491,2287 1493,2287 1493,2285 1504,2277 1504,2275 1507,2277 1534,2285 1535,2285 1537,2285 1613,2274 1614,2256 1613,2227 1506,2227 1504,2225 1494,2214 1491,2214 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/1373.0,2214.0,241.0,73.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT226_5_LT83_1_1" points="1374,2253 1614,2256 " corresp="DefaultLine"/>
+          <line>Es propiedad.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_4_BT228_6" n="6" type="MarginTextZone" subtype="colophon" points="1640,2436 1640,2575 184,2575 184,2436 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/184.0,2436.0,1456.0,139.0/full/0/default" corresp="MarginTextZone:colophon">
+        <zone xml:id="Varios_424_4_BT228_6_LT83_1" type="DefaultLine" subtype="none" points="1091,2436 1089,2436 1088,2436 1052,2444 1050,2444 999,2436 997,2436 946,2443 919,2447 841,2442 756,2436 752,2436 737,2436 723,2436 708,2436 698,2436 676,2440 648,2446 616,2446 606,2439 601,2436 591,2436 577,2436 562,2436 547,2436 533,2436 518,2436 504,2436 489,2436 474,2436 460,2436 451,2436 450,2437 438,2443 406,2436 401,2436 387,2436 372,2436 357,2436 343,2436 328,2436 314,2436 299,2436 284,2436 270,2436 255,2436 241,2436 226,2436 226,2471 225,2485 1608,2499 1611,2482 1610,2453 1545,2452 1528,2440 1526,2440 1525,2440 1523,2440 1452,2450 1437,2452 1402,2452 1399,2450 1382,2439 1380,2439 1379,2439 1377,2439 1376,2439 1345,2449 1339,2452 1266,2452 1227,2450 1222,2447 1206,2437 1205,2437 1203,2437 1139,2437 1138,2437 1136,2437 1135,2437 1122,2446 1119,2447 1116,2446 1092,2436 1091,2436 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/225.0,2436.0,1386.0,63.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT228_6_LT83_1_1" points="226,2471 1611,2482 "/>
+          <line>Se hallará de venta en casa los sucesores de Antonio Bosch, calle del Bou de la
+            Plaza Nueva, núm. 13, tienda.</line>
+        </zone>
+        <zone xml:id="Varios_424_4_BT228_6_LT83_2" type="DefaultLine" subtype="none" points="379,2532 379,2554 558,2551 580,2555 618,2563 619,2564 705,2564 705,2563 707,2563 708,2563 717,2555 720,2554 733,2555 796,2564 797,2564 914,2558 926,2566 927,2566 929,2566 930,2566 1000,2557 1009,2555 1012,2557 1024,2566 1025,2566 1027,2566 1098,2567 1100,2567 1455,2557 1456,2541 1455,2516 379,2507 379,2532 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/379.0,2507.0,1077.0,60.0/full/0/default" corresp="DefaultLine">
+          <path xml:id="Varios_424_4_BT228_6_LT83_2_1" points="379,2532 1456,2541 "/>
+          <line>Barcelona.—Tipografía Española, calle del Hospital, núm. 87.—1881.</line>
+        </zone>
+      </zone>
+      <zone xml:id="Varios_424_4_BT223_7" n="7" type="CustomZone" subtype="title" points="842,640 842,727 1048,727 1048,640 " source="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_424_4/842.0,640.0,206.0,87.0/full/0/default" corresp="CustomZone:title"/>
+    </surface>
+  </sourceDoc>
+  <text>
+    <body>
+      <div>
+        <pb n="1" source="Varios_424_1.jpg" facs="varios/Varios_424_1.jpg/"/>
+        
+        <fw type="impresorNum">Núm. 51.</fw>
+        
+        <head type="primer_titulo"><lb/>EL<lb/><hi rend="negrita">CANTOR DE LAS
+          HERMOSAS</hi></head>
+        <head type="subtitulo"><lb/>TROVAS DE AMOR DEDICADAS AL BELLO SEXO<lb/>POR UNOS AFICIONADOS.</head>
+        
+        <div n="1">
+          <head type="titulo_cancion" rend="negrita"><lb/>FAUSTINO EL CAZADOR</head>
+          
+          <lg>
+            <head type="titulo_estrofa">I</head>
+            <l rend="indent">Trepando montes y breñas</l>
+            <l>paso las horas del dia,</l>
+            <l>lacerada el alma mia</l>
+            <l>cual amante trovador.</l>
+            <l rend="indent">Y del bosque la espesura</l>
+            <l>y del aura el beso suave,</l>
+            <l>y el gayo trinar del ave</l>
+            <l>todo aquí respira amor.</l>
+          </lg>
+          <lg>
+            <head type="titulo_estrofa">CORO.</head>
+            <l rend="indent">Escucha sí, mi dolor,</l>
+            <l>lebrel que conmigo vás</l>
+            <l>y á la prenda de mi amor</l>
+            <l>mis suspiros llevarás.</l>
+            <l rend="indent">Ya sabes cuanto la quiero</l>
+            <l>anda, corre, vete, y dí...</l>
+            <l>que yo, por ella me muero;</l>
+            <l>¡ay!</l>
+            <l>y que se apiade de mí.</l>
+          </lg>
+          
+          <pb n="2" source="Varios_424_2.jpg" facs="varios/Varios_424_2.jpg/"/>
+          
+          <lg>
+            <head type="titulo_estrofa">II.</head>
+            <l rend="indent">Edelmira àngel bello</l>
+            <l>iman de mi pensamiento,</l>
+            <l>que feliz, si oigo tu acento</l>
+            <l>mis canciones repetir.</l>
+            <l rend="indent">Por tí sola flor querida</l>
+            <l>Se enagena el pecho mio,</l>
+            <l>y tu amor tan solo ansio,</l>
+            <l>que el no amarte, no es vivir.</l>
+          </lg>
+          <p rend="cursiva"><lb/>Coro.</p>
+          <lg>
+            <head type="titulo_estrofa">III.</head>
+            <l rend="indent">Yo de tu jardin las flores</l>
+            <l>beso en la noche tranquila;</l>
+            <l>y se inunda mí pupila</l>
+            <l>con mil lágrimas de amor.</l>
+            <l rend="indent">¡Siempre pienso en ti! ¡Edelmira!...</l>
+            <l>la que robastes mi calma,</l>
+            <l>dále un consuelo á mi alma</l>
+            <l>impregnada de dolor.</l>
+          </lg>
+          <p rend="cursiva"><lb/>Coro.</p>
+          <lg>
+            <head type="titulo_estrofa">IV.</head>
+            <l rend="indent">¿Porqué no colmas de gloria</l>
+            <l>á tu Faustino, Edelmira?</l>
+            <l>Faustino, Edelmira?</l>
+            <l>No ves que el pobre suspira,</l>
+            <l>y suspira para tí...</l>
+            <l>!Pobre cazador!... cazando</l>
+            <l>no puede cazar amores,</l>
+            <l>que del hado los rigores</l>
+            <l>e concretan contra él... sí.</l>
+          </lg>
+          <p rend="cursiva"><lb/>Coro.</p>
+          <lg>
+            <head type="titulo_estrofa">V.</head>
+            <l rend="indent">¿No recuerdas los momentos</l>
+            <l>qne te juraba constante</l>
+            <l>el ser á más que un amante</l>
+            <l>un osposo casto y fiel...?</l>
+            <l rend="indent">¿Pues porqué bella Edelmira</l>
+            <l>no consuelas mi quebranto?</l>
+            <l>¡Enjuga niña mi llanto!</l>
+            <l>¡No me seas tan cruel!....</l>
+          </lg>
+          <p rend="cursiva"><lb/>Coro.</p>
+          <lg>
+            <head type="titulo_estrofa">VI.</head>
+            <l rend="indent">Para mi serás la reina</l>
+            <l>De este mundo en que he nacido,</l>
+            <l>Lo que anheles, preferido</l>
+            <l>Niña hermosa te será...</l>
+            <l rend="indent">Sí, Edelmira... cual la madre</l>
+            <l>Que el sèr dió, á tu Faustino;</l>
+            <l>Sea bueno ó malo el sino</l>
+            <l>Niña, siempre te amará.</l>
+          </lg>
+          <p rend="cursiva"><lb/>Coro.</p>
+          <lg>
+            <head type="titulo_estrofa">VII.</head>
+            <l rend="indent">No desoigas Edelmira</l>
+            <l>Mis cancioues amorosas,</l>
+            <l>Que si nó, despiden rosas</l>
+            <l>Encierran el puro amor.</l>
+            <l rend="indent">A tus piés bella Sirena</l>
+            <l>Está de hinojos postrado,</l>
+            <l>Esperando acongojado</l>
+            <l>Este amante cazador.</l>
+          </lg>
+          <lg>
+            <head type="titulo_estrofa">CORO.</head>
+            <l rend="indent">Escucha si, mi dolor</l>
+            <l>Lebrel que conmigo vás,</l>
+            <l>Y á la prenda de mi amor</l>
+            <l>Mis suspiros llevarás.</l>
+            <l rend="indent">Ya sabes cuanto la quiero,</l>
+            <l>Anda, corre, vete, y dí...</l>
+            <l>Que yo, por ella me muero;</l>
+            <l>¡ay!</l>
+            <l>Y que se apiade de mí.</l>
+          </lg>
+          
+          <p><lb/>ENRIQUE GAVARRÓ.</p>
+        </div>
+        
+        <pb n="3" source="Varios_424_3.jpg" facs="varios/Varios_424_3.jpg/"/>
+        
+        <div n="2">
+          <head type="titulo_cancion"><lb/>A LUCILA.</head>
+          <head type="subtitulo_cancion">CANCION.</head>
+          
+          <lg>
+            <l rend="indent">Escucha mi dulce acento</l>
+            <l>Lucila, imàgen querida,</l>
+            <l>Ya que la noche convida</l>
+            <l>De la luna al resplandor,</l>
+            <l rend="indent">Y gozarás de un amante</l>
+            <l>La trova mas cariñosa,</l>
+            <l>Que te canta niña hermosa</l>
+            <l>Lleno el corazon de amor.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Aquellas horas tranquilas</l>
+            <l>De solaz y de bonanza,</l>
+            <l>Eran lu dulce esperanza</l>
+            <l>Que abrigaba el corazon.</l>
+            <l rend="indent">A tu lado yo sentia</l>
+            <l>que se extasiaba mi alma,</l>
+            <l>Y que tornabas la calma</l>
+            <l>A mi sincera pasion.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Amor eterno jurabas</l>
+            <l>Al amante que se oia;</l>
+            <l>Y la flor allí servia</l>
+            <l>De testigo á tanto amor.</l>
+            <l rend="indent">El clavel y la azucena</l>
+            <l>Daban, con la siempreviva,</l>
+            <l>La prueba mas espresiva</l>
+            <l>Con su aroma y su frescor.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Al pié de un sauce sentados</l>
+            <l>Gozàbamos mil delicias,</l>
+            <l>Y en inocentes caricias</l>
+            <l>Oíamos el trinar...</l>
+            <l rend="indent">De las aves seductoras</l>
+            <l>Mecidas en la enramada;</l>
+            <l>¡Oh Lucila, apreciada,</l>
+            <l>Aquello era disfrutar!</l>
+          </lg>
+          <lg>
+            <l rend="indent">Mas un dia, niña ingrata,</l>
+            <l>Mí corazon padecia,</l>
+            <l>Porqué te encontré aquel dia</l>
+            <l>Con otro jóven doncel.</l>
+            <l rend="indent">Mis ojos se oscurecieron,</l>
+            <l>Lacerada el alma mia</l>
+            <l>Sin esperanza, tenia</l>
+            <l>La copa llena de hiel.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y solo en umbrio bosque</l>
+            <l>Cual en árido desierto,</l>
+            <l>De pesar estaba muerto</l>
+            <l>Tal falsía recordar...</l>
+            <l rend="indent">Pasé un año solitario</l>
+            <l>En incesante martirio,</l>
+            <l>Y en brazos de aquel delirio</l>
+            <l>Solo anhelaba espirar.</l>
+          </lg>
+          
+          <p><lb/>ENRIQUE GAVARRÓ.</p>
+        </div>
+        
+        <pb n="4" source="Varios_424_4.jpg" facs="varios/Varios_424_4.jpg/"/>
+        
+        <div n="3">
+          <head type="titulo_cancion"><lb/>CAMARELLAS<lb/>dedicadas à<lb/>LA NIÑA DE LOS CABELLOS DE ORO.<lb/></head>
+          <head type="subtitulo_cancion" rend="negrita">DUO</head>
+          
+          <lg>
+            <head type="titulo_estrofa">I.</head>
+            <l rend="indent">En la noche mas oscura</l>
+            <l>Va brillando cual estrella</l>
+            <l>De tu sin par hermosura</l>
+            <l>La viva y celestial huella.</l>
+            <l rend="indent">Son tus cabellos dorados,</l>
+            <l>Es tu frente hermosa y pura</l>
+            <l>A mis ojos admirados</l>
+            <l>Del amor prenda segura.</l>
+          </lg>
+          <lg>
+            <head type="titulo_estrofa">CORO.</head>
+            <l rend="indent">Sal, pues, niña bella</l>
+            <l>Sal pronto al balcon,</l>
+            <l>Ven, gentil doncella</l>
+            <l>A oir mi cancion.</l>
+            <l rend="indent">Oh! bella hechícera</l>
+            <l>Prenda de mi amor</l>
+            <l>Eres de la tierra</l>
+            <l>La mas bella flor.</l>
+          </lg>
+          <lg>
+            <head type="titulo_estrofa">II.</head>
+            <l rend="indent">Faros son tus lindos ojos</l>
+            <l>Que al puerto de salvacion</l>
+            <l>A través de mil abrojos</l>
+            <l>Llevan á mi corazon.</l>
+            <l rend="indent">Cuando la ronrisa pura</l>
+            <l>Abre tus lábios de rosa</l>
+            <l>Quien lograra tal ventura</l>
+            <l>De cojer flor tan preciosa.</l>
+          </lg>
+          <lg>
+            <head type="titulo_estrofa">CORO.</head>
+            <l rend="indent">Sal, pues, niña bella</l>
+            <l>Sal pronto al balcon,</l>
+            <l>Ven, gentil doncella</l>
+            <l>A oir mi cancion.</l>
+            <l rend="indent">¡Oh bella hechicera!</l>
+            <l>Prenda de mi amor.</l>
+            <l>Eres de la tierra</l>
+            <l>La mas bella flor.</l>
+          </lg>
+          <lg>
+            <head type="titulo_estrofa">III.</head>
+            <l rend="indent">De mi pecho los latidos</l>
+            <l>Calma niña con tu amor</l>
+            <l>Si no han de ser convertidos</l>
+            <l>En gemidos de dolor.</l>
+            <l rend="indent">A tu ventana asomada</l>
+            <l>Verte aguarda con afan</l>
+            <l>Aquí á tus piés, niña amada</l>
+            <l>Tu rendido y fiel galan.</l>
+          </lg>
+          <lg>
+            <head type="titulo_estrofa">CORO.</head>
+            <l rend="indent">Sal, pues, niña bella</l>
+            <l>Sal pronto al balcon,</l>
+            <l>Ven, gentil doncella</l>
+            <l>A oir mi cancion.</l>
+            <l rend="indent">¡Oh bella hechicera!</l>
+            <l>Prenda de mi amor.</l>
+            <l>Eres de la tierra</l>
+            <l>La mas bella flor.</l>
+          </lg>
+          <p><lb/>J.C. <lb/><hi rend="cursiva">Es propiedad.</hi></p>
+        </div>
+        
+        <div type="colofon">
+          <p><lb/><hi rend="cursiva">Se hallará de venta en casa los sucesores de Antonio Bosch, calle del Bou de la
+            Plaza Nueva, núm. 13, tienda.</hi></p>
+          <p><lb/>Barcelona.—Tipografía Española, calle del Hospital, núm. 87.—1881.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

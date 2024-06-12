@@ -53,7 +53,7 @@ declare variable $config:enable-proxy-caching :=
  : If a version is given, the components will be loaded from a public CDN.
  : This is recommended unless you develop your own components.
  :)
-declare variable $config:webcomponents :="2.10.3";
+declare variable $config:webcomponents :="2.15.3";
 
 (:~
  : CDN URL to use for loading webcomponents. Could be changed if you created your
@@ -337,7 +337,8 @@ declare variable $config:facets := [
         "output": function($label) {
             switch($label)
                 case "Navío/Barco" return <pb-i18n key="facets.ship">Navío/Barco</pb-i18n>
-                case "Véhiculo con ruedas" return <pb-i18n key="facets.vehicle">Véhiculo con ruedas</pb-i18n>
+                case "Vehículo" return <pb-i18n key="facets.vehicle">Vehículo</pb-i18n>
+                case "Otros accesorios" return <pb-i18n key="facets.other">Otros accesorios</pb-i18n>
                 default return $label
         }
     },
