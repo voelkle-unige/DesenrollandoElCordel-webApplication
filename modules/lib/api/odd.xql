@@ -86,8 +86,8 @@ declare function oapi:recompile($request as map(*)) {
                             <p class="list-group-item-text">File not saved.</p>
                         </div>
                     else if ($request?parameters?check) then
-                        let $src := util:binary-to-string(util:binary-doc($outputRoot || "/" || $file))
-                        let $compiled := util:compile-query($src, $outputRoot)
+                        let $src := util:binary-to-string(util:binary-doc($file))
+                        let $compiled := util:compile-query($src, ())
                         return
                             if ($compiled/error) then
                                 <div class="list-group-item-danger">
@@ -122,8 +122,9 @@ declare function oapi:recompile($request as map(*)) {
 
 declare function oapi:list-odds($request as map(*)) {
     array {
-        for $doc in distinct-values(($config:odd-available, $config:odd-internal))
+        for $doc in xmldb:get-child-resources(xs:anyURI($config:odd-root))
         let $resource := $config:odd-root || "/" || $doc
+        where ends-with($resource, ".odd")
         let $name := replace($resource, "^.*/([^/\.]+)\..*$", "$1")
         let $displayName := (
             doc($resource)/TEI/teiHeader/fileDesc/titleStmt/title[@type = "short"]/string(),
@@ -131,7 +132,6 @@ declare function oapi:list-odds($request as map(*)) {
             $name
         )[1]
         let $description :=  doc($resource)/TEI/teiHeader/fileDesc/titleStmt/title/desc/string()
-        order by $displayName
         return
             map {
                 "name": $name,
@@ -223,8 +223,7 @@ return
         return 
             router:response(201, "application/json", map {
                 "path": $stored,
-                "report": $report,
-                "source": $updated
+                "report": $report
             })
     else 
             router:response(401, "application/json", map {
@@ -376,11 +375,10 @@ declare function oapi:get-odd($request as map(*)) {
 
 declare function oapi:lint($request as map(*)) {
     let $code := $request?parameters?code
-    let $query := ``[xquery version "3.1";import module namespace global="http://www.tei-c.org/tei-simple/config" at "../modules/config.xqm";declare variable $parameters := map {};declare variable $mode := '';declare variable $node := ();declare variable $get := (); () ! (
+    let $query := ``[xquery version "3.1";declare variable $parameters := map {};declare variable $mode := '';declare variable $node := ();declare variable $get := (); () ! (
 `{$code}`
 )]``
-    let $outputRoot := head(($request?parameters?output-root, $config:output-root))
-    let $r := util:compile-query($query, $outputRoot)
+    let $r := util:compile-query($query, ())
     return
         if ($r/@result = 'fail') then
             let $error := $r/*:error

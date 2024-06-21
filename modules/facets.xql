@@ -150,29 +150,3 @@ declare function facets:display($config as map(*), $nodes as element()+) {
             }
         </div>
 };:)
-
-declare function facets:get-parameter($name as xs:string) {
-    let $param := request:get-parameter($name, ())
-    return
-        if (exists($param)) then
-            $param
-        else
-            let $fromSession := session:get-attribute($config:session-prefix || '.params')
-            return
-                if (exists($fromSession)) then
-                    $fromSession?($name)
-                else
-                    ()
-};
-
-declare function facets:translate($config as map(*)?, $language as xs:string?, $label as xs:string) {
-    if (exists($config) and map:contains($config, "output")) then
-        let $fn := $config?output
-        return
-            if (function-arity($fn) = 2) then
-                $fn($label, $language)
-            else
-                $fn($label)
-    else
-        $label
-};
