@@ -2,15 +2,32 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Sátira burlesca de la vida, milagros, usos y costumbres de cuatro clases de
-               mugeres que hay en Madrid</title>
+            <title>Sátira burlesca de la vida, milagros, usos y costumbres de cuatro clases de mugeres que hay en Madrid</title>
             <respStmt>
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0">
+               <title>Segunda versión de la edición, enriquecida con topónimos</title>
+               <date>2024</date>
+            </edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -35,7 +52,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6447659</idno>
@@ -67,10 +84,10 @@
                      <summary n="4">Cuatro grabados (p.1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_018_1.xml" facs="fedora_ug8103487/261,312,348,776/100,/0/default.jpg">grabado_m_018_1</item>
-                           <item corresp="grabado_m_018_2.xml" facs="fedora_ug8103487/604,390,318,658/100,/0/default.jpg">grabado_m_018_2</item>
-                           <item corresp="grabado_m_018_3.xml" facs="fedora_ug8103487/948,411,329,652/100,/0/default.jpg">grabado_m_018_3</item>
-                           <item corresp="grabado_m_018_4.xml" facs="fedora_ug8103487/1307,390,356,673/100,/0/default.jpg">grabado_m_018_4</item>
+                            <item corresp="grabado_m_018_1.xml" facs="moreno/Moreno_018_1.jpg/261,312,348,776/100,/0/default.jpg">grabado_m_018_1</item>
+                            <item corresp="grabado_m_018_2.xml" facs="moreno/Moreno_018_1.jpg/604,390,318,658/100,/0/default.jpg">grabado_m_018_2</item>
+                            <item corresp="grabado_m_018_3.xml" facs="moreno/Moreno_018_1.jpg/948,411,329,652/100,/0/default.jpg">grabado_m_018_3</item>
+                            <item corresp="grabado_m_018_4.xml" facs="moreno/Moreno_018_1.jpg/1307,390,356,673/100,/0/default.jpg">grabado_m_018_4</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -113,6 +130,12 @@
                      <geo>41.651980555556 -4.7285611111111</geo>
                   </location>
                </place>
+               <place n="1" corresp="Q8810">
+                  <placeName key="Granada">Granada</placeName>
+                  <location>
+                     <geo>37.178056 -3.600833</geo>
+                  </location>
+               </place>
                <place n="1" corresp="Q15682">
                   <placeName key="Cádiz">Cádiz</placeName>
                   <location>
@@ -143,7 +166,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -177,14 +200,14 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8104501/manifest">
-      <graphic url="fedora_ug8103487/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_018_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
             <div>
-               <pb n="1" source="Moreno_018_1.jpg" facs="fedora_ug8103487/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_018_1.jpg" facs="moreno/Moreno_018_1.jpg"/>
 
                <fw type="impresorNum">(Número 18.)</fw>
 
@@ -210,7 +233,7 @@
                <lg type="estribillo">
                   <head type="estribillo">ESTRIVILLO.</head>
                   <l rend="cursiva">Alerta jóvenes,</l>
-                  <l rend="cursiva">alerta vaya, </l>
+                  <l rend="cursiva">alerta vaya,</l>
                   <l rend="cursiva">guardarse todos</l>
                   <l rend="cursiva">de esta canalla.</l>
                </lg>
@@ -235,19 +258,19 @@
                   <l>de un teniente coronel,</l>
                   <l>que murió en esta campaña;</l>
 
-                  <pb n="2" source="Moreno_018_2.jpg" facs="fedora_ug8107783/full/full/0/default.jpg"/>
+                  <pb n="2" source="Moreno_018_2.jpg" facs="moreno/Moreno_018_2.jpg"/>
 
                   <l>otra dice: yo soy hija</l>
                   <l>de un brigadier de <name>España</name>;</l>
                   <l>otra: yo soy prima hermana</l>
                   <l>de un caballero sobrino</l>
-                  <l>del marques de la Romana, </l>
+                  <l>del marques de la Romana,</l>
                   <l>y de este modo á los bobos </l>
                   <l>les van sacando la plata.</l>
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
@@ -257,8 +280,8 @@
                   <l>pronto lo voy á decir.</l>
                   <l>Las primeras son maestras,</l>
                   <l>las segundas comerciantas</l>
-                  <l>las sterceras cazadoras</l>
-                  <l>y lás cuartas son murgantas:</l>
+                  <l>las terceras cazadoras</l>
+                  <l>y las cuartas son murgantas:</l>
                   <l>las maestras son aquellas</l>
                   <l>que tienen muy ricas camas,</l>
                   <l>mesas, sofas, canapes,</l>
@@ -270,14 +293,14 @@
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
                   <l rend="indent">Os voy á decir quién son</l>
                   <l>las señoras comerciantas,</l>
                   <l>se en tiende de este comercio</l>
-                  <l>que hasta en el mi abuela andaz</l>
+                  <l>que hasta en el mi abuela anda:</l>
                   <l>no quiero deciros mas,</l>
                   <l>estas son aquellas que anda</l>
                   <l>en tertulias y visitas</l>
@@ -295,12 +318,12 @@
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
                   <l rend="indent">De las cazadoras voy</l>
-                  <l>á hablar algo sin tardanza,</l>
+                  <l>á hablar algo sin tardanza;</l>
                   <l>quien son, ya las conoceis</l>
                   <l>son unas tias taimadas,</l>
                   <l>estas andan muy bien puestas</l>
@@ -321,14 +344,14 @@
                   <l>pronto mudan las palabras:</l>
                   <l>si ven que es aficionado</l>
                   <l>al instante me lo agarran,</l>
-                  <l>á la casa me lo llevan,</l>
+                  <l>y á la casa me lo llevan,</l>
                   <l>y entre toda esta jarana</l>
                   <l>el pupilo que le buscan</l>
-                  <l>es el dejarle sin blanca:</l>
+                  <l>es el dejarle sin blanca.</l>
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
@@ -343,11 +366,11 @@
                   <l>otra con un carretero</l>
                   <l>de la famosa brigada,</l>
                   <l>y algunas con los tambores,</l>
-                  <l>porque tambien las gustaban</l>
+                  <l>porque tambien las gustaban.</l>
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
@@ -358,7 +381,7 @@
                   <l>¿que es lo que han adelantado?</l>
                   <l>el quedarse abandonadas</l>
                   <l>unas en <name>Valladolid</name>,</l>
-                  <l>otras cerca de granada,</l>
+                  <l>otras cerca de <name>granada</name>,</l>
                   <l>otras en <name>Cádiz</name>, <name>Sevilla</name>,</l>
                   <l>en <name>Valencia</name>; desdichadas,</l>
                   <l>á espensas de cualesquiera</l>
@@ -369,10 +392,10 @@
                   <l>un pastel á una campana.</l>
                </lg>
 
-               <pb n="3" source="Moreno_018_3.jpg" facs="fedora_ug8106429/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_018_3.jpg" facs="moreno/Moreno_018_3.jpg"/>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes etc.</l>
                </lg>
 
                <lg>
@@ -398,7 +421,7 @@
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg rend="indent">
@@ -419,11 +442,11 @@
                   <l>otros la llaman morena,</l>
                   <l>otros la llaman salada</l>
                   <l>y otros la llaman demonio</l>
-                  <l>cuando les dejan sin blanca</l>
+                  <l>cuando les dejan sin blanca.</l>
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
@@ -450,18 +473,18 @@
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
                   <l rend="indent">No entienda que es uno solo</l>
                   <l>al que estas cosas le pasan,</l>
-                  <l>que son á todos los mas,</l>
+                  <l>que son á todos los mas</l>
                   <l>los que por caminos anda,</l>
                   <l>arrieros y carreteros,</l>
                   <l>y en fin gente aficionada</l>
-                  <l>al jaleo y á las tias, ganan:</l>
-                  <l>y á gastar mas que ellos</l>
+                  <l>al jaleo y á las tias,</l>
+                  <l>y á gastar mas que ellos ganan:</l>
                   <l>asi se quedan sin mulas:</l>
                   <l>y asi alguna tienen, mala,</l>
                   <l>el carro víejo y fiado</l>
@@ -477,7 +500,7 @@
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
@@ -486,7 +509,7 @@
                   <l>hasta que llega la noche</l>
                   <l>que buscan donde pegarla:</l>
                   <l>sus paseos siempre son</l>
-                  <l>olazuela de la Cebada,</l>
+                  <l>plazuela de la Cebada,</l>
                   <l>bodegones y cuarteles;</l>
                   <l>las tabernas y posadas,</l>
                   <l>y tambien dan sus paseos</l>
@@ -497,11 +520,20 @@
                   <l>que ellas por nombre la llaman</l>
                   <l>el café de los Paletos,</l>
                   <l>á quienes los cuartos sacan.</l>
-                  <l>Alertas jóvenes, etc.</l>
-                  <l>Tambien el embarcadero</l>
+               </lg>
 
-                  <pb n="4" source="Moreno_018_4.jpg" facs="fedora_ug8106446/full/full/0/default.jpg"/>
+               <lg type="estribillo">
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
+               </lg>
 
+               <lg>
+                  <l rend="indent">Tambien el embarcadero</l>
+               </lg>
+
+
+               <pb n="4" source="Moreno_018_4.jpg" facs="moreno/Moreno_018_4.jpg"/>
+
+               <lg>
                   <l>á la Fuentecilla llaman,</l>
                   <l>porque al dar las oraciones</l>
                   <l>embarcan y desembarcan;</l>
@@ -524,7 +556,7 @@
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
@@ -551,7 +583,7 @@
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>
@@ -578,7 +610,7 @@
                </lg>
 
                <lg type="estribillo">
-                  <l rend="cursiva">Alerta jóvenes etc. </l>
+                  <l rend="cursiva">Alerta jóvenes, etc.</l>
                </lg>
 
                <lg>

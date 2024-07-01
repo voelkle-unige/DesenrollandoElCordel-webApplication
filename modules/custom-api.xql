@@ -40,6 +40,30 @@ declare function functx:capitalize-first($arg as xs:string?)  as xs:string? {
 };
 
 declare function api:get-manifest($node as node(), $model as map(*)) {
+    (: Information about the document:)
+    let $docId := $model?doc
+    let $doc := doc($config:data-root || "/" ||$docId)
+    let $id := $doc/tei:TEI/string(@xml:id)
+    
+    (: Information about the manifest :)
+    let $manifestFile := doc($config:data-root || "/manifest.xml")
+    let $manifest := $manifestFile//tei:item[@n=$id]
+        =>substring-after("l/")
+    let $manifestN := $manifestFile//tei:item/string(@n)
+    
+    return if($id = $manifestN) then
+        <span>
+            <a href="../mirador.html?manifest={$manifest}" target="_blank">
+                <pb-i18n key="notice.comparar">Comparar</pb-i18n>
+                <img src="resources/images/logos/mirador.png"
+                     alt="Logo de Mirador" height="22"
+                     style="display:inline-block; padding-left:10px; vertical-align:middle;"/>
+            </a>
+        </span>
+        else()
+};
+
+(:declare function api:get-manifest($node as node(), $model as map(*)) {
     let $id := $model?doc
     let $doc := doc($config:data-root || "/" ||$id)
     let $manifest := $doc//tei:facsimile/string(@facs)
@@ -53,7 +77,7 @@ declare function api:get-manifest($node as node(), $model as map(*)) {
                      style="display:inline-block; padding-left:10px; vertical-align:middle;"/>
             </a>
         </span>
-};
+};:)
 
 (:Retrieve one manifest:)
 declare function api:manifest($requests as map(*)) {
@@ -120,7 +144,7 @@ declare function api:display-illustration($node as node(), $model as map(*)) {
     let $ID := $model?doc
     => substring-after('/')
     let $doc := doc($config:data-root || "/Illustraciones/" || $ID)
-    let $URI := concat("https://iiif.unige.ch/iiif/2/", $doc//tei:figure/tei:graphic/string(@url))
+    let $URI := concat("https://iiif.hedera.unige.ch/iiif/3/pliegos/", $doc//tei:figure/tei:graphic/string(@url))
     
     
     return

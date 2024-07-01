@@ -2,8 +2,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Curioso romance en que se declara la historia de los quince novios y once amores
-               nuevos que tuvo una Señora de Andalucía</title>
+            <title>Curioso romance en que se declara la historia de los quince novios y once amores nuevos que tuvo una Señora de Andalucía</title>
             <respStmt>
                <name xml:id="MB">Miguel Betti</name>
                <resp>Codificación TEI</resp>
@@ -12,9 +11,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -40,7 +56,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6473218</idno>
@@ -72,7 +88,7 @@
                      <summary n="1">Un grabado (p. 1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_182_1.xml" facs="fedora_ug8109674/670,222,564,915/100,/0/default.jpg">grabado_m_182_1</item>
+                            <item corresp="grabado_m_182_1.xml" facs="moreno/Moreno_182_1.jpg/670,222,564,915/100,/0/default.jpg">grabado_m_182_1</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -91,12 +107,6 @@
                      <geo>37.4718153 -4.4335616</geo>
                   </location>
                </place>
-               <place n="1" corresp="Q1446328">
-                  <placeName key="La_Parra">La Parra</placeName>
-                  <location>
-                     <geo>38.5212182 -6.6229261</geo>
-                  </location>
-               </place>
                <place n="1" corresp="Q5836">
                   <placeName key="Toledo">Toledo</placeName>
                   <location>
@@ -107,6 +117,12 @@
                   <placeName key="Teba">Teba</placeName>
                   <location>
                      <geo>36.9832531 -4.9184036</geo>
+                  </location>
+               </place>
+               <place n="1" corresp="Q1448444">
+                  <placeName key="Espera">Espera</placeName>
+                  <location>
+                     <geo>36.872213 -5.804288</geo>
                   </location>
                </place>
             </listPlace>
@@ -121,7 +137,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -155,8 +171,8 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8103809/manifest">
-      <graphic url="fedora_ug8109674/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_182_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
@@ -165,13 +181,13 @@
 
             <div>
 
-               <pb n="1" source="Moreno_182_1.jpg" facs="fedora_ug8109674/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_182_1.jpg" facs="moreno/Moreno_182_1.jpg"/>
 
                <fw type="impresorNum">Núm. 190.</fw>
 
                <head type="primer_titulo"><hi rend="negrita">CURIOSO ROMANCE,</hi>
                   <lb/>en que se declara la historia de los quince no- <lb/>vios y once amores
-                  nuevos que tuvo una <lb/>Señora de Andalucía.</head>
+                  nuevos que tuvo una <lb/>Señora de <name>Andalucía</name>.</head>
 
                <l rend="indent">Puesto que me preguntais</l>
                <l>la causa de mis tristezas</l>
@@ -204,13 +220,13 @@
                <l>era muy vana por galas,</l>
                <l>y en los usos la primera,</l>
 
-               <pb n="2" source="Moreno_182_2.jpg" facs="fedora_ug8109364/full/full/0/default.jpg"/>
+               <pb n="2" source="Moreno_182_2.jpg" facs="moreno/Moreno_182_2.jpg"/>
 
                <l>pues no venian al mundo</l>
                <l>que ya yo no las tuviera.</l>
                <l>Siempre estaba aderezada,</l>
                <l>mi mayor cuidado era</l>
-               <l>irme á mirar al espejo, </l>
+               <l>irme á mirar al espejo,</l>
                <l>y el asomarme a la puerta,</l>
                <l>no tanto por ver la calle</l>
                <l>como porque á mi me vieran.</l>
@@ -223,7 +239,7 @@
                <l>pretendi tomar estado</l>
                <l>como lo manda la iglesia,</l>
                <l>y por ser los pretendientes</l>
-               <l>tantos, que ár nadie le pesa</l>
+               <l>tantos, que á nadie le pesa</l>
                <l>el ser querida de muchos,</l>
                <l>eché la línea á mi idea</l>
                <l>para buscar entre tantos</l>
@@ -237,7 +253,7 @@
                <l>amigo de visitar</l>
                <l>bodegones y tabernas.</l>
                <l>Despues quise á uno del campo;</l>
-               <l>pero aunque del campo era, </l>
+               <l>pero aunque del campo era,</l>
                <l>muy galan por su persona,</l>
                <l>gran tocador de vigüela,</l>
                <l>buen músico y bailador;</l>
@@ -247,11 +263,11 @@
                <l>Despues quise á un zapatero,</l>
                <l>cosa de semana y media;</l>
                <l>á este le dejé tambien</l>
-               <l>por causa no muy pequeña, </l>
+               <l>por causa no muy pequeña,</l>
                <l>porque era calvo y tiñoso</l>
                <l>y picado de viruelas.</l>
                <l>Despues de esto un fundidor,</l>
-               <l>me quiso con tales veras, </l>
+               <l>me quiso con tales veras,</l>
                <l>que me dió á entender su amor,</l>
                <l>con dádivas y finezas;</l>
                <l>yo le vine á dar el sí</l>
@@ -262,8 +278,8 @@
                <l>dos barriles de manteca,</l>
                <l>sin maldita la pestaña</l>
                <l>ni cosa que lo valiera.</l>
-               <l>Quise despues á un barbero, </l>
-               <l>y me quiso de manera, </l>
+               <l>Quise despues á un barbero,</l>
+               <l>y me quiso de manera,</l>
                <l>que andaba por mí penando:</l>
                <l>mas yo lo saqué de penas,</l>
                <l>que por ser tuerto de un ojo</l>
@@ -273,8 +289,8 @@
                <l>porque una noche traspuso</l>
                <l>y me llevó alguas prendas.</l>
                <l>Quise un oficial de ollero,</l>
-               <l>y como su oficio quiebra, </l>
-               <l>yo le quebré la palabra, </l>
+               <l>y como su oficio quiebra,</l>
+               <l>yo le quebré la palabra,</l>
                <l>que en la muger no hay firmeza.</l>
                <l>Quise á un oficial de herrero,</l>
                <l>y una tarde que á mi puerta</l>
@@ -290,11 +306,11 @@
                <l>me puso una mala pieza,</l>
                <l>porque me dejó el taimado</l>
                <l>antes que lo aborreciera.</l>
-               <l>Me pretendió un Carpintero, </l>
+               <l>Me pretendió un Carpintero,</l>
                <l>pero fué cosa de fiesta,</l>
                <l>que lo eché con los diablos</l>
                <l>por tener la boca tuerta.</l>
-               <l>Despues quise á un Panadero, </l>
+               <l>Despues quise á un Panadero,</l>
                <l>y sin duda con el fuera</l>
                <l>mi casamiento, si yo</l>
                <l>en su casa conociera</l>
@@ -303,7 +319,7 @@
                <l>Despues quise á un Pastelero,</l>
                <l>es muy cierto que en su tienda</l>
 
-               <pb n="3" source="Moreno_182_3.jpg" facs="fedora_ug8110044/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_182_3.jpg" facs="moreno/Moreno_182_3.jpg"/>
 
                <l>no se forjaba pastel</l>
                <l>que á mi casa no viniera;</l>
@@ -317,7 +333,7 @@
                <l>era yo niña de teta;</l>
                <l>pues daba entender su rostro.</l>
                <l>pasaba de los noventa;</l>
-               <l>era natural de <name>Cabra</name>, </l>
+               <l>era natural de <name>Cabra</name>,</l>
                <l>y decia que en su tierra</l>
                <l>tenia tanto caudal,</l>
                <l>y asi mis padres por esta</l>
@@ -355,8 +371,8 @@
                <l>me armaba un baile de cuenta,</l>
                <l>mas quiso Dios que á este tiempo</l>
                <l>mi esposo malo cayera:</l>
-               <l>viéndose malo en la cama:</l>
-               <l>mandó llamar un Albeitar, </l>
+               <l>viéndose malo en la cama</l>
+               <l>mandó llamar un Albeitar,</l>
                <l>el cual vino á visitarlo,</l>
                <l>y luego al punto receta</l>
                <l>que se le dé una uncion fruerte</l>
@@ -370,10 +386,10 @@
                <l>hizo la Cruz y empezó</l>
                <l>diciendo de esta manera:</l>
                <l>Digo yo Pedro Corrucho,</l>
-               <l>de <name>Parra</name>, Gil y Contreras, </l>
-               <l>hijo natural de <name>Cabra</name>, </l>
+               <l>de Parra, Gil y Contreras,</l>
+               <l>hijo natural de <name>Cabra</name>,</l>
                <l>descendiente de Guinea,</l>
-               <l>nieto de Pedro Camacho, </l>
+               <l>nieto de Pedro Camacho,</l>
                <l>y Laura Sanchez mi abuela:</l>
                <l>mando, si muero, me entierren,</l>
                <l>y para esta diligencia</l>
@@ -402,10 +418,10 @@
                <l>ésta mando se le dé</l>
                <l>en largando sus monedas</l>
 
-               <pb n="4" source="Moreno_182_4.jpg" facs="fedora_ug8104338/full/full/0/default.jpg"/>
+               <pb n="4" source="Moreno_182_4.jpg" facs="moreno/Moreno_182_4.jpg"/>
 
                <l>á un sobrinito que, tengo</l>
-               <l>que está viviendo en Espera,</l>
+               <l>que está viviendo en <name>Espera</name>,</l>
                <l>que quiere tanto á su padre</l>
                <l>como á un gran dolor de muelas.</l>
                <l>De deudas dejo, mil pesos,</l>
@@ -416,7 +432,7 @@
                <l>que ha de ser Monja profesa.</l>
                <l>Dos tios mios que tengo</l>
                <l>nombro por mis Albaceas,</l>
-               <l>uno es Verdugo en <name>Toledo</name>, </l>
+               <l>uno es Verdugo en <name>Toledo</name>,</l>
                <l>otro es Pregonero en <name>Teba</name>:</l>
                <l>el testamento no abran</l>
                <l>hasta tanto que yo muera.</l>
@@ -431,15 +447,15 @@
                <l>y como unos torbellinos</l>
                <l>todos á huir aprietan:</l>
                <l>trajéronmelo á mi casa,</l>
-               <l>¡ó nunca el acá viniera! </l>
-               <l>Sanó en fin de sus achaques, </l>
+               <l>¡ó nunca el acá viniera!</l>
+               <l>Sanó en fin de sus achaques,</l>
                <l>ay qué dolor y que pena;</l>
                <l>pues cada dia me daba</l>
                <l>seis sobas por buena cuenta;</l>
                <l>mas quiso Dios que á este tiempo</l>
                <l>ó su dicha mala ó buena,</l>
                <l>que fué un dia á un campanario,</l>
-               <l>se cayó de la escalera, </l>
+               <l>se cayó de la escalera,</l>
                <l>se partió por la cintura,</l>
                <l>y se quebró ambas piernas;</l>
                <l>se le desconsertó un brazo,</l>

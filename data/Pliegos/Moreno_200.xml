@@ -2,8 +2,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Nuevo y curioso romance en el que se declaran las excelencias de la gente del
-               campo</title>
+            <title>Nuevo y curioso romance en el que se declaran las excelencias de la gente del campo</title>
             <respStmt>
                <name xml:id="MB">Miguel Betti</name>
                <resp>Codificación TEI</resp>
@@ -12,9 +11,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -41,7 +57,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6473333</idno>
@@ -80,8 +96,8 @@
                      <summary n="2">Dos grabados (p. 1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_200_1.xml" facs="fedora_ug8106961/398,267,410,782/100,/0/default.jpg">grabado_m_200_1</item>
-                           <item corresp="grabado_m_200_2.xml" facs="fedora_ug8106961/816,276,449,768/100,/0/default.jpg">grabado_m_200_2</item>
+                            <item corresp="grabado_m_200_1.xml" facs="moreno/Moreno_200_1.jpg/398,267,410,782/100,/0/default.jpg">grabado_m_200_1</item>
+                            <item corresp="grabado_m_200_2.xml" facs="moreno/Moreno_200_1.jpg/816,276,449,768/100,/0/default.jpg">grabado_m_200_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -118,6 +134,10 @@
                      <geo>42.27386491 -1.725587482</geo>
                   </location>
                </place>
+               <place n="1">
+                  <placeName key="Las_Agujas">Las Agujas</placeName>
+                  <desc>Ambiguos</desc>
+               </place>
             </listPlace>
          </sourceDesc>
       </fileDesc>
@@ -130,7 +150,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -165,15 +185,15 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8104226/manifest">
-      <graphic url="fedora_ug8106961/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_200_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
 
          <div>
 
-            <pb n="1" source="Moreno_200_1.jpg" facs="fedora_ug8106961/full/full/0/default.jpg"/>
+            <pb n="1" source="Moreno_200_1.jpg" facs="moreno/Moreno_200_1.jpg"/>
 
             <fw type="impresorNum">(Núm. 211.)</fw>
 
@@ -213,7 +233,7 @@
                <l>sin razon y sin sustancia.</l>
                <l>Tiré un golpe á la vigüela,</l>
                <l>y la hize mil migajas,</l>
-               <l>y cargando sobre todos, </l>
+               <l>y cargando sobre todos,</l>
                <l>nos dicen que perdonarán,</l>
                <l>que quien compuso el romance</l>
                <l>con ellos no se hallaba,</l>
@@ -222,7 +242,7 @@
                <l>Yo le dije: caballeros,</l>
                <l>luego que llegue mañana,</l>
 
-               <pb n="2" source="Moreno_200_2.jpg" facs="fedora_ug8109028/full/full/0/default.jpg"/>
+               <pb n="2" source="Moreno_200_2.jpg" facs="moreno/Moreno_200_2.jpg"/>
 
                <l>les tengo de componer</l>
                <l>un romance de alabazas</l>
@@ -266,11 +286,14 @@
                <l>virtud Teologal tan Santa,</l>
                <l>que el que confia por cierto</l>
                <l>tiene en Dios firme esperanza;</l>
-               <l>en el esmpo siembran lino,</l>
+               <l>en el <choice>
+                     <sic>csmpo</sic>
+                     <corr>campo</corr>
+                  </choice> siembran lino,</l>
                <l>cañamo, viñas que bastan</l>
                <l>unos á vestir los hombres,</l>
                <l>y otras mil bebidas varias;</l>
-               <l>en el campo hay olivares, </l>
+               <l>en el campo hay olivares,</l>
                <l>y jardines con mil gracias,</l>
                <l>y multitud de ganados,</l>
                <l>con sus carnes regaladas;</l>
@@ -285,7 +308,7 @@
                <l>y soledades de <name>Egipto</name></l>
                <l>y en los yermos de <name>Tebaida</name>,</l>
                <l>fueron las Congregaciones</l>
-               <l>de gente del campo tantas, </l>
+               <l>de gente del campo tantas,</l>
                <l>que dicen los Coronitas,</l>
                <l>para su digna alabanza,</l>
                <l>que debajo de un gobierno,</l>
@@ -293,13 +316,13 @@
                <l>se gobernaban por él,</l>
                <l>con obediencia tan alta,</l>
                <l>que al superior le temian,</l>
-               <l>y como á Dios respetaban, </l>
+               <l>y como á Dios respetaban,</l>
                <l>y eran hasta quince mil</l>
-               <l>los que uno gobernaba, </l>
+               <l>los que uno gobernaba,</l>
                <l>otros hubo á doce mil,</l>
                <l>otros menos y otros pasan.</l>
                <l>De aquí salió el grande Antonio,</l>
-               <l>y aquel autor de gran fama, </l>
+               <l>y aquel autor de gran fama,</l>
                <l>llamado San Juan Climaco,</l>
                <l>Doctor de la Iglesia Santa,</l>
                <l>sin infinitos que dejo,</l>
@@ -309,13 +332,13 @@
                <l>que un ángel los enseñó</l>
                <l>á que esto ejecutaran.</l>
 
-               <pb n="3" source="Moreno_200_3.jpg" facs="fedora_ug8104771/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_200_3.jpg" facs="moreno/Moreno_200_3.jpg"/>
 
                <l>Digo que fueron del campo</l>
                <l>los famosos Patriarcas,</l>
                <l>que en el Testamento víejo</l>
                <l>la Santa Escritura trata,</l>
-               <l>libro cuarto de los Reyes, </l>
+               <l>libro cuarto de los Reyes,</l>
                <l>de los profetas que estaban</l>
                <l>en los <name>montes del Carmelo</name>,</l>
                <l>que tanto boló su fama,</l>
@@ -328,7 +351,7 @@
                <l>que era una maldita hembra,</l>
                <l>de que prendiera y matára </l>
                <l>á Elías y á los Profetas</l>
-               <l>de Dios: qué maldad tan rara! </l>
+               <l>de Dios: qué maldad tan rara!</l>
                <l>para prenderlo embió</l>
                <l>capitanes con escuadras</l>
                <l>de soldados muy valientes,</l>
@@ -342,7 +365,7 @@
                <l>Señor, llueva sobre aquestos</l>
                <l>fuego, y muera esta canalla,</l>
                <l>porque ultrajan vuestro nombre;</l>
-               <l>qué maravilla tan rara! </l>
+               <l>qué maravilla tan rara!</l>
                <l>Que del cielo las centellas</l>
                <l>á todos los abrasaba </l>
                <l>hasta volverlos ceniza,</l>
@@ -396,13 +419,13 @@
                <l>que á la puerta de la cárcel</l>
                <l>á las manos los miraba</l>
 
-               <pb n="4" source="Moreno_200_4.jpg" facs="fedora_ug8109023/full/full/0/default.jpg"/>
+               <pb n="4" source="Moreno_200_4.jpg" facs="moreno/Moreno_200_4.jpg"/>
 
                <l>y el que con cayos lo veia,</l>
                <l>al punto suelta le daba</l>
                <l>diciendo, que los del campo,</l>
                <l>si faltan de la labranza,</l>
-               <l>perecen los oficiales, </l>
+               <l>perecen los oficiales,</l>
                <l>y el ejército en campaña.</l>
                <l>Dijo el otro: amigo mio,</l>
                <l>tu gente no vale nada,</l>
@@ -420,7 +443,7 @@
                <l>pan blanco y sus rebanadas,</l>
                <l>que no les dé el sol, ni el frio,</l>
                <l>en estando una semena</l>
-               <l>en el servicio del Rey, </l>
+               <l>en el servicio del Rey,</l>
                <l>con mala comida y cama,</l>
                <l>á la inclemencia del tiempo,</l>
                <l>todos al hospital marchan,</l>
@@ -440,7 +463,7 @@
                <l>en virtudes, letras y armas:</l>
                <l>y hoy dia tambien miro</l>
                <l>los Conventos, que se hallan</l>
-               <l>en el campo solamente, </l>
+               <l>en el campo solamente,</l>
                <l>son de mas virtud y fama.</l>
                <l>San Isidro Labrador</l>
                <l>con su arado y ahijada,</l>
@@ -466,8 +489,11 @@
                <l>por los mismos filos pasan.</l>
                <l>A mi unos oficiales</l>
                <l>me quisieron dar la baya,</l>
-               <l>por ultrajarme del campo, </l>
-               <l>pero sns oficios andan</l>
+               <l>por ultrajarme del campo,</l>
+               <l>pero <choice>
+                     <sic>sns</sic>
+                     <corr>sus</corr>
+                  </choice> oficios andan</l>
                <l>mas perdidos y peor,</l>
                <l>y asi no hablen palabra.</l>
                <l>Y aquí Francisco Serranoz;</l>
@@ -481,11 +507,11 @@
 
             <div n="2" type="parte">
 
-               <pb n="5" source="Moreno_200_5.jpg" facs="fedora_ug8109094/full/full/0/default.jpg"/>
+               <pb n="5" source="Moreno_200_5.jpg" facs="moreno/Moreno_200_5.jpg"/>
 
                <head rend="negrita" type="titulo_parte">SEGUNDA PARTE.</head>
-               <head rend="cursiva" type="subtitulo_parte">En la que se prosiguen las Eacelencias de
-                  la gente del campo de <lb/>clara los muchos Santos, y ezcelentes Varones que ha
+               <head rend="cursiva" type="subtitulo_parte">En la que se prosiguen las Excelencias de
+                  la gente del campo, de-<lb/>clara los muchos Santos, y excelentes Varones que ha
                   habido <lb/>del campo, y se les dá saludable doctrina, con lo demas que <lb/>verá
                   el curioso lector,</head>
 
@@ -514,7 +540,7 @@
                <l>no tienen que responder;</l>
                <l>paso á otro asunto dichoso,</l>
                <l>qüe es dar doctrina muy santa,</l>
-               <l>que el Cielo ganemos todos.</l>
+               <l>que el Cielo ganemos todos,</l>
                <l>Ya dije, nuestros antiguos</l>
                <l>fueron santos como todos,</l>
                <l>David, Profeta de Dios,</l>
@@ -558,7 +584,7 @@
                <l>con impaciencia, con fieros,</l>
                <l>te serán tormentos todos</l>
 
-               <pb n="6" source="Moreno_200_6.jpg" facs="fedora_ug8105223/full/full/0/default.jpg"/>
+               <pb n="6" source="Moreno_200_6.jpg" facs="moreno/Moreno_200_6.jpg"/>
 
                <l>en esta presente vida,</l>
                <l>y allá te aguardan los otros</l>
@@ -587,7 +613,7 @@
                <l>estaban todos segando</l>
                <l>al sol con gran alboroso.</l>
                <l>El Santo dijo entre sí:</l>
-               <l>aquestos hombres dichosos, </l>
+               <l>aquestos hombres dichosos,</l>
                <l>con tan inmensos trabajos</l>
                <l>el cielo ganaran todos;</l>
                <l>yo me estoy aquí metido,</l>
@@ -602,7 +628,7 @@
                <l>pues soles tan rigorosos,</l>
                <l>y trabajos tan tremendos,</l>
                <l>y que en amor de Dios todos,</l>
-               <l>con esta eonformidad</l>
+               <l>con esta conformidad</l>
                <l>ganarian un tesoro.</l>
                <l>Pero sucedió al contrario,</l>
                <l>porque todo su alboroto</l>
@@ -614,11 +640,11 @@
                <l>la doncella, y asi todos</l>
                <l>de todos decian mal,</l>
                <l>clérigos y religiosos.</l>
-               <l>El Santo que aquesto oyó, </l>
+               <l>El Santo que aquesto oyó,</l>
                <l>dijo con zelo pasmoso:</l>
                <l>No quiero vuestra compaña,</l>
                <l>que vais al infierno todos,</l>
-               <l>y aunque padeceis trabajos, </l>
+               <l>y aunque padeceis trabajos,</l>
                <l>sois martires del demonio:</l>
                <l>pero despues compasivo,</l>
                <l>viendo se perdian todos,</l>
@@ -645,9 +671,9 @@
                <l>concedió su peticion,</l>
                <l>que del cielo oyó sonoro</l>
 
-               <pb n="7" source="Moreno_200_7.jpg" facs="fedora_ug8107218/full/full/0/default.jpg"/>
+               <pb n="7" source="Moreno_200_7.jpg" facs="moreno/Moreno_200_7.jpg"/>
 
-               <l>una voz qne le decia;</l>
+               <l>una voz qne le decia:</l>
                <l>En la iglesia está el tesoro,</l>
                <l>vé á su puerta y hallarás</l>
                <l>lo que pídes que te otorgo.</l>
@@ -699,7 +725,7 @@
                <l>es muy justo y santo todo,</l>
                <l>y de aquí tengo aprendido,</l>
                <l>que el Señor como piadoso,</l>
-               <l>aquello que me ordenare, </l>
+               <l>aquello que me ordenare,</l>
                <l>que sea alegre ó gustoso,</l>
                <l>dulce ó amargo, esto es</l>
                <l>á mi voluntad gustoso,</l>
@@ -724,7 +750,7 @@
                <l>Si Dios te hechara al Infierno,</l>
                <l>qué hieras contigo propio?</l>
                <l>Y entonces dijo: si Dios</l>
-               <l>como Todopoderoso, </l>
+               <l>como Todopoderoso,</l>
                <l>esto ordenara, yo tengo</l>
                <l>dos brazos con que amoroso,</l>
                <l>á mi Dios abrazaria:</l>
@@ -732,7 +758,7 @@
                <l>y este lo pongo debajo</l>
                <l>de Jesus, Padre amoroso,</l>
 
-               <pb n="8" source="Moreno_200_8.jpg" facs="fedora_ug8105371/full/full/0/default.jpg"/>
+               <pb n="8" source="Moreno_200_8.jpg" facs="moreno/Moreno_200_8.jpg"/>
 
                <l>y unido á su humanidad</l>
                <l>en amor de union gozoso:</l>
@@ -804,7 +830,7 @@
                <l>y con lejias de fuego</l>
                <l>del Infierno abrasa á todos.</l>
                <l>Admirado quedó el Santo</l>
-               <l>con tan divino coloquio, </l>
+               <l>con tan divino coloquio,</l>
                <l>y edificado procura</l>
                <l>ponerlo por obra todo.</l>
                <l>Y aqui Francisco Serrano,</l>

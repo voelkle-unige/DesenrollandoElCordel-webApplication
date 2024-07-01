@@ -11,9 +11,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -40,7 +57,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6473273</idno>
@@ -76,9 +93,9 @@
                      <summary n="3">Tres grabados (p. 1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_190_1.xml" facs="fedora_ug8104410/303,316,356,673/100,/0/default.jpg">grabado_m_190_1</item>
-                           <item corresp="grabado_m_190_2.xml" facs="fedora_ug8104410/689,237,314,747/100,/0/default.jpg">grabado_m_190_2</item>
-                           <item corresp="grabado_m_190_3.xml" facs="fedora_ug8104410/1018,222,360,777/100,/0/default.jpg">grabado_m_190_3</item>
+                            <item corresp="grabado_m_190_1.xml" facs="moreno/Moreno_190_1.jpg/303,316,356,673/100,/0/default.jpg">grabado_m_190_1</item>
+                            <item corresp="grabado_m_190_2.xml" facs="moreno/Moreno_190_1.jpg/689,237,314,747/100,/0/default.jpg">grabado_m_190_2</item>
+                            <item corresp="grabado_m_190_3.xml" facs="moreno/Moreno_190_1.jpg/1018,222,360,777/100,/0/default.jpg">grabado_m_190_3</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -109,11 +126,9 @@
                      <geo>37.0183652 -4.5596649</geo>
                   </location>
                </place>
-               <place n="1" corresp="Q13522657">
-                  <placeName key="Provincia_del_Rosellón">Rosellón</placeName>
-                  <location>
-                     <geo>42.5 2.75</geo>
-                  </location>
+               <place n="1">
+                  <placeName key="Rosellón">Rosellón</placeName>
+                  <desc>Ambiguos</desc>
                </place>
             </listPlace>
          </sourceDesc>
@@ -127,7 +142,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -161,23 +176,23 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8105200/manifest">
-      <graphic url="fedora_ug8104410/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_190_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
 
          <div>
 
-            <pb n="1" source="Moreno_190_1.jpg" facs="fedora_ug8104410/full/full/0/default.jpg"/>
+            <pb n="1" source="Moreno_190_1.jpg" facs="moreno/Moreno_190_1.jpg"/>
 
             <fw type="impresorNum">Núm. 199.</fw>
 
-            <head rend="negrita" type="primer_titulo">EL MALTES DE MADRID.</head>
+            <head rend="negrita" type="primer_titulo">EL MALTES DE <name>MADRID</name>.</head>
             <head rend="cursiva" type="subtitulo">Romance en que se declara una prision que ha sido
-               hecha en la córte <lb/>de Madrid de tres hombres y dos mujeres, por haber dado muerte
-               á <lb/>veinte y siete personas; y como se descubrió por un caballero Maltés <lb/>con
-               quien querian ejecutar lo mismo con él.</head>
+               hecha en la córte <lb/>de <name>Madrid</name> de tres hombres y dos mujeres, por
+               haber dado muerte á <lb/>veinte y siete personas; y como se descubrió por un
+               caballero Maltés <lb/>con quien querian ejecutar lo mismo con él.</head>
 
             <div n="1" type="parte">
 
@@ -212,7 +227,7 @@
                <l>llegándose al caballero,</l>
                <l>le dice aquestas palabras:</l>
 
-               <pb n="2" source="Moreno_190_2.jpg" facs="fedora_ug8107675/full/full/0/default.jpg"/>
+               <pb n="2" source="Moreno_190_2.jpg" facs="moreno/Moreno_190_2.jpg"/>
 
                <fw type="paginaNum">2</fw>
 
@@ -305,7 +320,7 @@
                <l>diciendo: que buen reloj:</l>
                <l>Veámosle camarada,</l>
 
-               <pb n="3" source="Moreno_190_3.jpg" facs="fedora_ug8109848/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_190_3.jpg" facs="moreno/Moreno_190_3.jpg"/>
 
                <fw type="paginaNum">3</fw>
 
@@ -364,7 +379,7 @@
                <l>mejor que este que teneis,</l>
                <l>y es mi gusto que se traiga,</l>
                <l>y así si quereis, llamad</l>
-               <l>á mi criado, y que vaya, </l>
+               <l>á mi criado, y que vaya,</l>
                <l>porque una poca de mistela</l>
                <l>juntamente con él traiga</l>
                <l>que para estas ocasiones</l>
@@ -398,12 +413,12 @@
                <l>cuatro fuertes carabinas,</l>
                <l>y á la papelera marcha.</l>
 
-               <pb n="4" source="Moreno_190_4.jpg" facs="fedora_ug8109063/full/full/0/default.jpg"/>
+               <pb n="4" source="Moreno_190_4.jpg" facs="moreno/Moreno_190_4.jpg"/>
 
                <fw type="paginaNum">4</fw>
 
                <l>dondo halló un par de pistolas:</l>
-               <l>pasmado quedo, al mirarlas,</l>
+               <l>pasmado quedó al mirarlas,</l>
                <l>porque al instante pensó,</l>
                <l>que su amo en aprieto se halla.</l>
                <l>Salió á la calle ligero</l>
@@ -462,7 +477,7 @@
                <l>solamente de contarla,</l>
                <l>en tres artesas tenian</l>
                <l>cubiertos de sal y agua</l>
-               <l>á seis racionales cuerpos:</l>
+               <l>à seis racionales cuerpos:</l>
                <l>y mirando bien la cuadra.</l>
                <l>encontraron de otros seis</l>
                <l>solamente las estátuas</l>
@@ -489,10 +504,10 @@
 
             <div n="2" type="parte">
 
-               <pb n="5" source="Moreno_190_5.jpg" facs="fedora_ug8110016/full/full/0/default.jpg"/>
+               <pb n="5" source="Moreno_190_5.jpg" facs="moreno/Moreno_190_5.jpg"/>
 
                <head rend="negrita" type="titulo_parte">SEGUNDA PARTE.</head>
-               <head rend="negrita" type="primer_titulo">EL MALTES DE MADRID.</head>
+               <head rend="negrita" type="primer_titulo">EL MALTES DE <name>MADRID</name>.</head>
 
                <l rend="indent">Ya dije en la primera parte,</l>
                <l>discreto auditorio mio,</l>
@@ -551,7 +566,7 @@
                <l>los tenian allí presos.</l>
                <l>Y por los señores visto</l>
 
-               <pb n="6" source="Moreno_190_6.jpg" facs="fedora_ug8106214/full/full/0/default.jpg"/>
+               <pb n="6" source="Moreno_190_6.jpg" facs="moreno/Moreno_190_6.jpg"/>
 
                <fw type="paginaNum">6</fw>
 
@@ -572,7 +587,7 @@
                <l>yo confesaré, señores;</l>
                <l>suéltenme por Jesucristo</l>
                <l>afloja luego las cuerdas</l>
-               <l>del cáñamo retorcido,</l>
+               <l>del cáñamo retorcido.</l>
                <l>empezó su confesion</l>
                <l>con lágrimas y suspiros,</l>
                <l>diciendo: sepan señores,</l>
@@ -589,7 +604,7 @@
                <l>con alhagos, ni castigos,</l>
                <l>corregir el corazon</l>
                <l>mi natural tan altivo.</l>
-               <l>Llegué á cumplir quince abriles, </l>
+               <l>Llegué á cumplir quince abriles,</l>
                <l>y entregándome á los vicios,</l>
                <l>en casa de una vecina</l>
                <l>lograba mis apetitos.</l>
@@ -644,7 +659,7 @@
                <l>se iban de noche sacando,</l>
                <l>y se tiraban al rio;</l>
 
-               <pb n="7" source="Moreno_190_7.jpg" facs="fedora_ug8108761/full/full/0/default.jpg"/>
+               <pb n="7" source="Moreno_190_7.jpg" facs="moreno/Moreno_190_7.jpg"/>
 
                <fw type="paginaNum">7</fw>
 
@@ -737,7 +752,7 @@
                <l>los sacaron de la cárcel,</l>
                <l>y de caridad movidos</l>
 
-               <pb n="8" source="Moreno_190_8.jpg" facs="fedora_ug8109747/full/full/0/default.jpg"/>
+               <pb n="8" source="Moreno_190_8.jpg" facs="moreno/Moreno_190_8.jpg"/>
 
                <fw type="paginaNum">8</fw>
 
@@ -786,7 +801,7 @@
                <l>la encienden el corazon,</l>
                <l>que mueve á llanto el oirlos.</l>
                <l>Empezó á decir el Credo,</l>
-               <l>y llegando á UNico niyo,</l>
+               <l>y llegando á ÚNICO HIJO,</l>
                <l>de la escalera le arrojan,</l>
                <l>y quedó cadáver frio,</l>
                <l>dando muestra de que fué</l>

@@ -7,9 +7,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="LF">Lorysmar Franco</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -33,7 +50,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6483494</idno>
@@ -69,8 +86,8 @@
                      <summary n="2">Dos grabados (p.1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_315_1.xml" facs="fedora_ug8104827/512,174,508,940/100,/0/default.jpg">grabado_m_315_1</item>
-                           <item corresp="grabado_m_315_2.xml" facs="fedora_ug8104827/1022,437,418,675/100,/0/default.jpg">grabado_m_315_2</item>
+                            <item corresp="grabado_m_315_1.xml" facs="moreno/Moreno_315_1.jpeg/512,174,508,940/100,/0/default.jpg">grabado_m_315_1</item>
+                            <item corresp="grabado_m_315_2.xml" facs="moreno/Moreno_315_1.jpeg/1022,437,418,675/100,/0/default.jpg">grabado_m_315_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -88,7 +105,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -122,13 +139,13 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8106822/manifest">
-      <graphic url="fedora_ug8104827/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_315_1.jpeg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
-            <pb n="1" source="Moreno_315_1.jpeg" facs="fedora_ug8104827/full/full/0/default.jpg"/>
+            <pb n="1" source="Moreno_315_1.jpeg" facs="moreno/Moreno_315_1.jpeg"/>
 
             <head rend="negrita" type="primer_titulo">DECIMAS NUEVAS.</head>
 
@@ -143,22 +160,22 @@
                <lg>
                   <l rend="indent">Has de tener advertida,</l>
                   <l>que sí tu me das el sí,</l>
-                  <l>mal trato hallarás en mí;,</l>
+                  <l>mal trato hallarás en mí,</l>
                   <l>hasta acabar con tu vida;</l>
                   <l>siempre andarás afligida,</l>
                   <l>con sollozos y con gritos,</l>
                   <l>y si Dios nos dá un hijito</l>
                   <l>serán mas grandes tus penillas,</l>
-                  <l>Esto mi amor te lo ordena, </l>
+                  <l>Esto mi amor te lo ordena,</l>
                   <l>ahora que estamos solitos.</l>
                </lg>
 
                <lg>
-                  <l rend="indent">No soy de los mas viciosos, </l>
+                  <l rend="indent">No soy de los mas viciosos,</l>
                   <l>solo me gusta el beber,</l>
                   <l>jugador, de buen comer,</l>
                   <l>reñidor y escandaloso.</l>
-                  <l>En mi no se halla reposo, </l>
+                  <l>En mi no se halla reposo,</l>
                   <l>solamente crueldad,</l>
                   <l>bastante necesidad;</l>
                   <l>y palos de cuando en cuando,</l>
@@ -172,7 +189,7 @@
                   <l>de jerga te haré camisa,</l>
                   <l>y palos en las caderas</l>
 
-                  <pb n="2" source="Moreno_315_2.jpeg" facs="fedora_ug8107554/full/full/0/default.jpg"/>
+                  <pb n="2" source="Moreno_315_2.jpeg" facs="moreno/Moreno_315_2.jpeg"/>
 
                   <l>Esto te digo deveras,</l>
                   <l>atiende lo que te digo</l>
@@ -192,7 +209,7 @@
                   <l>siempre palida andarás,</l>
                   <l>y toda llena de andrajos,</l>
                   <l>que para pasar trabajos</l>
-                  <l>hambre no te ha de faltar,</l>
+                  <l>hambre no te ha de faltar.</l>
                </lg>
 
                <lg>
@@ -218,7 +235,7 @@
                <lg>
                   <l rend="indent">Si un hijito yo tuviera</l>
                   <l>y sin mas resolucion,</l>
-                  <l>su mayor obligacion, </l>
+                  <l>su mayor obligacion,</l>
                   <l>llamar que su padre fuera,</l>
                   <l>y como despues bebieras</l>
                   <l>ó jugaras cantidades,</l>
@@ -230,7 +247,7 @@
 
                <lg>
                   <l rend="indent">Si por caso escandaloso</l>
-                  <l>me gritabas ó reñías, </l>
+                  <l>me gritabas ó reñías,</l>
                   <l>yo mas alto gritería,</l>
                   <l>que es mi genio soberbioso,</l>
                   <l>Si se acudia curioso,</l>
@@ -258,7 +275,7 @@
             </div>
 
             <div n="2" type="parte">
-               <pb n="3" source="Moreno_315_3.jpeg" facs="fedora_ug8105240/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_315_3.jpeg" facs="moreno/Moreno_315_3.jpeg"/>
 
                <head type="titulo_parte">SEGUNDA PARTE.</head>
 
@@ -331,7 +348,7 @@
                   <l>advierte que Tomasita</l>
                   <l>tiene el genio de alacran,</l>
 
-                  <pb n="4" source="Moreno_315_4.jpeg" facs="fedora_ug8108457/full/full/0/default.jpg"/>
+                  <pb n="4" source="Moreno_315_4.jpeg" facs="moreno/Moreno_315_4.jpeg"/>
 
                   <l>las partidas de alazan,</l>
                   <l>de caballo la intencion,</l>

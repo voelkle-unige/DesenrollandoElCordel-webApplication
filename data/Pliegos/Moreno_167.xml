@@ -11,9 +11,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -22,8 +39,8 @@
             <biblFull>
                <titleStmt>
                   <title type="titulo_completo">La princesa Ismenia. Verdadero y curioso romance de
-                     la Princesa Ismenia hermana del Gran Turco Osmán, en que se declara y da cuenta
-                     de la embajada que envió Osmán á nuestro Rey de España Felipe Il, la respuesta
+                     la Princesa Ismenia hermana del Gran Turco Osmán, en que se declara y dà cuenta
+                     de la embajada que envió Osmàn á nuestro Rey de España Felipe II, la respuesta
                      que se le volvió, y el fin desesperado que tuvo la Princesa, como lo verá el
                      curioso lector</title>
                   <title type="titulo_breve">La princesa Ismenia.</title>
@@ -41,7 +58,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6473026</idno>
@@ -73,8 +90,8 @@
                      <summary n="2">Dos grabados (p. 1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_167_1.xml" facs="fedora_ug8106473/331,215,484,738/100,/0/default.jpg">grabado_m_167_1</item>
-                           <item corresp="grabado_m_167_2.xml" facs="fedora_ug8106473/801,255,423,695/100,/0/default.jpg">grabado_m_167_2</item>
+                            <item corresp="grabado_m_167_1.xml" facs="moreno/Moreno_167_1.jpg/331,215,484,738/100,/0/default.jpg">grabado_m_167_1</item>
+                            <item corresp="grabado_m_167_2.xml" facs="moreno/Moreno_167_1.jpg/801,255,423,695/100,/0/default.jpg">grabado_m_167_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -147,7 +164,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -179,8 +196,8 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8103214/manifest">
-      <graphic url="fedora_ug8106473/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_167_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
@@ -189,15 +206,15 @@
 
             <div>
 
-               <pb n="1" source="Moreno_167_1.jpg" facs="fedora_ug8106473/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_167_1.jpg" facs="moreno/Moreno_167_1.jpg"/>
 
                <fw type="impresorNum">Núm. 178.</fw>
 
                <head type="primer_titulo">LA PRINCESA ISMENIA.</head>
                <head type="subtitulo">VERDADERO Y CURIOSO ROMANCE DE LA <lb/><hi rend="cursiva">Princesa Ismenia hermana del Gran Turco Os-</hi>
-                  <lb/><hi rend="cursiva">mán, en que se declara y da cuenta de la emba-</hi>
-                  <lb/><hi rend="cursiva">jada que envió Osmán á nuestro Rey de España</hi>
-                  <lb/><hi rend="cursiva">Felipe Il, la respuesta que se le volvió, y el jin</hi>
+                  <lb/><hi rend="cursiva">mán, en que se declara y dà cuenta de la emba-</hi>
+                  <lb/><hi rend="cursiva">jada que envió Osmàn á nuestro Rey de España</hi>
+                  <lb/><hi rend="cursiva">Felipe II, la respuesta que se le volvió, y el fin</hi>
                   <lb/><hi rend="cursiva">desesperado que tuvo la Princesa, como lo verá</hi>
                   <lb/><hi rend="cursiva">el curioso lector</hi>
                </head>
@@ -213,11 +230,11 @@
                <l>carrosa de la fortuna,</l>
                <l>reina de todas las ciencias,</l>
                <l>lucero de la <name>Turquia</name>,</l>
-               <l>por quien su nombre veneran, </l>
+               <l>por quien su nombre veneran,</l>
                <l>y como estátua la adoran</l>
                <l>los mártires de su sécta.</l>
 
-               <pb n="2" source="Moreno_167_2.jpg" facs="fedora_ug8109382/full/full/0/default.jpg"/>
+               <pb n="2" source="Moreno_167_2.jpg" facs="moreno/Moreno_167_2.jpg"/>
 
                <fw type="paginaNum">2</fw>
 
@@ -280,10 +297,10 @@
                <l>Con esto despachó el pliego,</l>
                <l>con grandísima presteza</l>
                <l>al palacio de Felipe,</l>
-               <l>(que Dios en su gloria tenga</l>
+               <l>(que Dios en su gloria tenga)</l>
                <l>y viendo las arrogancias,</l>
                <l>responde de esta manera:</l>
-               <l rend="indent">A tí, gran Osmán Muley, </l>
+               <l rend="indent">A tí, gran Osmán Muley,</l>
                <l>señor de todas tus tierras,</l>
                <l>que la voluntad divina</l>
                <l>te pedirá estrecha cuenta:</l>
@@ -299,7 +316,7 @@
                <l>yo te empedraré tus tierras.</l>
                <l>Dices me darás á <name>Francia</name>,</l>
 
-               <pb n="3" source="Moreno_167_3.jpg" facs="fedora_ug8105815/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_167_3.jpg" facs="moreno/Moreno_167_3.jpg"/>
 
                <fw type="paginaNum">3</fw>
 
@@ -313,7 +330,7 @@
                <l>Dices que la casa Santa,</l>
                <l>que tanto deseo el verla,</l>
                <l>querrá Dios, que en algun tiempo</l>
-               <l>te derribe de esa Mela.</l>
+               <l>te derribe de esa Meka.</l>
                <l>Duerme sobre tu corona,</l>
                <l>y mira donde te acuestas</l>
                <l>que tengo algunos leones,</l>
@@ -346,7 +363,7 @@
                <l>ni hay tígre con mas soberbia,</l>
                <l>que con ella se compare,</l>
                <l>se escupe, araña y patea.</l>
-               <l>Nanda prevenir su armada,</l>
+               <l>Manda prevenir su armada,</l>
                <l>que ha de llevarle las nuevas</l>
                <l>al de <name>Austria</name>, como su amor</l>
                <l>le paga de esta manera.</l>
@@ -382,7 +399,7 @@
                <l>porque la pasion me ciega,</l>
                <l>porque su ley ya me abrasa,</l>
 
-               <pb n="4" source="Moreno_167_4.jpg" facs="fedora_ug8105139/full/full/0/default.jpg"/>
+               <pb n="4" source="Moreno_167_4.jpg" facs="moreno/Moreno_167_4.jpg"/>
 
                <fw type="paginaNum">4</fw>
 
@@ -397,7 +414,7 @@
                <l>diciendo de esta manera:</l>
                <l>Los que leyeren mi historia</l>
                <l>sabrán que muero por ella,</l>
-               <l>solo por guardar mi ley, </l>
+               <l>solo por guardar mi ley,</l>
                <l>porque el alcorán lo ordena,</l>
                <l>dijo, y con su cimitárra,</l>
                <l>sobre una nevada piedra</l>

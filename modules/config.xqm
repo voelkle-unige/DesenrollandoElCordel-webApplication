@@ -53,7 +53,7 @@ declare variable $config:enable-proxy-caching :=
  : If a version is given, the components will be loaded from a public CDN.
  : This is recommended unless you develop your own components.
  :)
-declare variable $config:webcomponents :="2.10.3";
+declare variable $config:webcomponents :="2.24.0";
 
 (:~
  : CDN URL to use for loading webcomponents. Could be changed if you created your

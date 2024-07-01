@@ -7,9 +7,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="LF">Lorysmar Franco</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -19,8 +36,8 @@
                <titleStmt>
                   <title type="titulo_completo">Satira graciosa. De los ciento y ocho motivos que
                      manifestamos ta mugeres, por los cuales los hombres deben casarse, estimarnos y
-                     querernos; pues por razon natural nos quieren y nos aman, como no lo
-                     pueden.</title>
+                     querernos; pues por razon natural nos quieren y nos aman, como no lo pueden
+                     negar.</title>
                   <title type="titulo_breve">Satira graciosa. De los ciento y ocho motivos</title>
                </titleStmt>
                <editionStmt>
@@ -36,7 +53,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6475620</idno>
@@ -51,7 +68,7 @@
                      <title type="titulo_completo">Satira graciosa. De los ciento y ocho motivos que
                         manifestamos ta mugeres, por los cuales los hombres deben casarse,
                         estimarnos y querernos; pues por razon natural nos quieren y nos aman, como
-                        no lo pueden.</title>
+                        no lo pueden negar.</title>
                   </msItem>
                   <msItem>
                      <locus>2-4</locus>
@@ -75,8 +92,8 @@
                      <summary n="2">Dos grabados (p.1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_217_1.xml" facs="fedora_ug8107368/556,499,329,661/100,/0/default.jpg">grabado_m_217_1</item>
-                           <item corresp="grabado_m_217_2.xml" facs="fedora_ug8107368/889,353,459,786/100,/0/default.jpg">grabado_m_217_2</item>
+                            <item corresp="grabado_m_217_1.xml" facs="moreno/Moreno_217_1.jpg/556,499,329,661/100,/0/default.jpg">grabado_m_217_1</item>
+                            <item corresp="grabado_m_217_2.xml" facs="moreno/Moreno_217_1.jpg/889,353,459,786/100,/0/default.jpg">grabado_m_217_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -128,22 +145,25 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8106863/manifest">
-      <graphic url="fedora_ug8107368/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_217_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
             <div>
-               <pb n="1" source="Moreno_217_1.jpg" facs="fedora_ug8107368/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_217_1.jpg" facs="moreno/Moreno_217_1.jpg"/>
 
                <fw type="impresorNum">(Número 227.)</fw>
 
-               <head type="primer_titulo">SATIRA GRASIOSA.</head>
+               <head type="primer_titulo">SATIRA GRACIOSA.</head>
                <head rend="cursiva" type="subtitulo">
-                  <lb/>De los ciento y ocho motivos que manifestamos ta mugeres, por <lb/>los cuales
-                  los hombres deben casarse, estimarnos y querernos; pues <lb/>por razon natural nos
-                  quieren y nos aman, como no lo pueden <lb/>negar. </head>
+                  <lb/>De los ciento y ocho motivos que manifestamos <choice>
+                     <sic>ta</sic>
+                     <corr>las</corr>
+                  </choice> mugeres, por <lb/>los cuales los hombres deben casarse, estimarnos y
+                  querernos; pues <lb/>por razon natural nos quieren y nos aman, como no lo pueden
+                  <lb/>negar. </head>
 
                <l rend="indent">Viste, Marica, el papel</l>
                <l>que publicaron los ciegos</l>
@@ -153,7 +173,7 @@
                <l>si todas no defendemos</l>
                <l>tantas cosas como dicen</l>
                <l>de nuestro infeliz sezo.</l>
-               <l>¿Quien mil demonios los llama, </l>
+               <l>¿Quien mil demonios los llama,</l>
                <l>y quién va á pretenderlos?</l>
                <l>esténse en sus casas quietos,</l>
                <l>que nosotras lo estaremos.</l>
@@ -164,7 +184,7 @@
                <l>Tan inocentes y tontos</l>
                <l>se hacen estos caballeros,</l>
 
-               <pb n="2" source="Moreno_217_2.jpg" facs="fedora_ug8105968/full/full/0/default.jpg"/>
+               <pb n="2" source="Moreno_217_2.jpg" facs="moreno/Moreno_217_2.jpg"/>
 
                <l>que es menester los avisen</l>
                <l>hasta en la calle los ciegos.</l>
@@ -183,17 +203,17 @@
                <l>Y apenas caen enfermos</l>
                <l>tienen bien quien los asista,</l>
                <l>y aunque pasen malas noches</l>
-               <l>siempre con cara de risa. </l>
+               <l>siempre con cara de risa.</l>
                <l>Si miran á gastar mucho</l>
                <l>¿no lo gastan con las amas?</l>
                <l>no lo gastan en los cafés:</l>
-               <l>fondas y otras bobadas? </l>
+               <l>fondas y otras bobadas?</l>
                <l>Si tienen sus disensiones;</l>
-               <l>tambien los platos regañan, </l>
+               <l>tambien los platos regañan,</l>
                <l>y tambien regañan ellos</l>
                <l>que por bien poco se enfadan.</l>
                <l>Cuando estuvieran solteros</l>
-               <l>y nunca gastaran nada, </l>
+               <l>y nunca gastaran nada,</l>
                <l>podian decir gastábamos</l>
                <l>todo lo que ellos ganaban.</l>
                <l>Pero es todo lo contrario,</l>
@@ -218,13 +238,13 @@
                <l>y si es por mal fin,</l>
                <l>doblemos la hoja.</l>
                <l>Pues tener marido</l>
-               <l>es tener un amoy</l>
+               <l>es tener un amo,</l>
                <l>que todo nos quita,</l>
                <l>hasta un mal salario.</l>
-               <l>Si quieren criadas, </l>
+               <l>Si quieren criadas,</l>
                <l>que por conveniencia</l>
 
-               <pb n="3" source="Moreno_217_3.jpg" facs="fedora_ug8104751/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_217_3.jpg" facs="moreno/Moreno_217_3.jpg"/>
 
                <l>le tengan de valde</l>
                <l>y con residencia,</l>
@@ -249,7 +269,7 @@
                <l>nos dejan por otra,</l>
                <l>aunque sea peor,</l>
                <l>Para nosotras nada;</l>
-               <l>todo para ellas, </l>
+               <l>todo para ellas,</l>
                <l>vestidos, mantillas,</l>
                <l>y ricas meriendas.</l>
                <l>Y reciba á gusto</l>
@@ -257,11 +277,11 @@
                <l>pues si hay mala cara </l>
                <l>luego el palo endereza.</l>
                <l>Ya pega en el brazo,</l>
-               <l>ya rompe cabeza, </l>
+               <l>ya rompe cabeza,</l>
                <l>ya quiebra costilla,</l>
                <l>¡adios pobre pierna!</l>
                <l>Estas son las magras</l>
-               <l>y las longanizas, </l>
+               <l>y las longanizas,</l>
                <l>que comen las pobres</l>
                <l>los mas de los dias.</l>
                <l>Este el rico lomo</l>
@@ -276,27 +296,27 @@
                <l>y cuatro habas frias,</l>
                <l>pasamos las noches</l>
                <l>los mas de los dias.</l>
-               <l>Este sí que es gusto, </l>
+               <l>Este sí que es gusto,</l>
                <l>y este gran regalo,</l>
                <l>comer unas sopas</l>
                <l>y hartarnos de palos.</l>
                <l>Y si lo contamos</l>
-               <l>al padre ó la madre, </l>
+               <l>al padre ó la madre,</l>
                <l>nos cogen del brazo</l>
                <l>y echan á la calle.</l>
                <l>Y con gran enfado</l>
-               <l>dicen: picarona, </l>
-               <l>toma esas patatas, </l>
+               <l>dicen: picarona,</l>
+               <l>toma esas patatas,</l>
                <l>cuéntaselo ahora:</l>
                <l>y como enfadado</l>
                <l>se vuelve de espalda,</l>
 
-               <pb n="4" source="Moreno_217_4.jpg" facs="fedora_ug8107936/full/full/0/default.jpg"/>
+               <pb n="4" source="Moreno_217_4.jpg" facs="moreno/Moreno_217_4.jpg"/>
 
                <l>rièndose solo,</l>
                <l>dando carcajadas.</l>
                <l>Y ella la pobre</l>
-               <l>no le habla palabra, </l>
+               <l>no le habla palabra,</l>
                <l>temiendo no vuelva</l>
                <l>otra empalizada.</l>
                <l>Todo cuanto digo</l>
@@ -307,15 +327,15 @@
                <l>si hacen juramento</l>
                <l>de enmendarse luego,</l>
                <l>quiero casamiento.</l>
-               <l>Porque Dios lo manda, </l>
+               <l>Porque Dios lo manda,</l>
                <l>porque en sí es bueno,</l>
                <l>amándose todos</l>
                <l>como es de derecho.</l>
-               <l>Y no hay disputas; </l>
+               <l>Y no hay disputas;</l>
                <l>y seamos constantes;</l>
                <l>amándonos siempre</l>
                <l>como los amantes.</l>
-               <l>Pues es cosa cierta, </l>
+               <l>Pues es cosa cierta,</l>
                <l>que si esto se logra,</l>
                <l>estaremos siempre</l>
                <l>llenitas de gloria:</l>

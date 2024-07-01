@@ -2,15 +2,31 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Sátira graciosa en que se declara el litigio que tienen entre suegra y
-               nuera</title>
+            <title>Sátira graciosa en que se declara el litigio que tienen entre suegra y nuera</title>
             <respStmt>
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -35,7 +51,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6461561</idno>
@@ -67,8 +83,8 @@
                      <summary n="2">Dos grabados (p.1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_109_1.xml" facs="fedora_ug8104321/87,271,1058,911/100,/0/default.jpg">grabado_m_109_1</item>
-                           <item corresp="grabado_m_109_2.xml" facs="fedora_ug8104321/1133,338,423,828/100,/0/default.jpg">grabado_m_109_2</item>
+                            <item corresp="grabado_m_109_1.xml" facs="moreno/Moreno_109_1.jpg/87,271,1058,911/100,/0/default.jpg">grabado_m_109_1</item>
+                            <item corresp="grabado_m_109_2.xml" facs="moreno/Moreno_109_1.jpg/1133,338,423,828/100,/0/default.jpg">grabado_m_109_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -86,7 +102,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -120,14 +136,14 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8106160/manifest">
-      <graphic url="fedora_ug8104321/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_109_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
             <div>
-               <pb n="1" source="Moreno_109_1.jpg" facs="fedora_ug8104321/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_109_1.jpg" facs="moreno/Moreno_109_1.jpg"/>
 
                <fw type="impresorNum">(Núm. 117)</fw>
 
@@ -154,7 +170,7 @@
                <sp>
                   <speaker rend="cursiva">Suegra.</speaker>
                   <l> Mal haya quien me juntó</l>
-                  <l>con una maldita nuera; </l>
+                  <l>con una maldita nuera;</l>
                   <l>desde que entró en mi casa</l>
                   <l>no puedo vivir con ella,</l>
                   <l>porque es un demonio</l>
@@ -167,11 +183,11 @@
                   <l>siempre la hallo hablando.</l>
                </sp>
 
-               <pb n="2" source="Moreno_109_2.jpg" facs="fedora_ug8107616/full/full/0/default.jpg"/>
+               <pb n="2" source="Moreno_109_2.jpg" facs="moreno/Moreno_109_2.jpg"/>
 
                <sp>
                   <speaker rend="cursiva">N.</speaker>
-                  <l> Mi marido me engaño</l>
+                  <l> Mi marido me engañó</l>
                   <l>cuando dijo me casase,</l>
                   <l>¿por que no medió á entender</l>
                   <l>el vil genio de su madre?</l>
@@ -180,7 +196,7 @@
                   <l>antes que en mi casa</l>
                   <l>él hubiera entrado;</l>
                   <l>muy bien estaria</l>
-                  <l>sa vo no tuviera</l>
+                  <l>si yo no tuviera</l>
                   <l>quien siempre detrás</l>
                   <l>mirándome fuera.</l>
                </sp>
@@ -211,7 +227,7 @@
                   <l>tengo gran matraca</l>
                   <l>yo con mi marido;</l>
                   <l>aquí ha venido</l>
-                  <l>la vieja emplumada, </l>
+                  <l>la vieja emplumada,</l>
                   <l>llévela el diablo</l>
                   <l>y cargue con su alma.</l>
                </sp>
@@ -266,7 +282,7 @@
                <sp>
                   <speaker rend="cursiva">N.</speaker>
                   <l> Usted hace guisadillos,</l>
-                  <l>diciendo que está colando, </l>
+                  <l>diciendo que está colando,</l>
                   <l>nunca le falta el jarrito;</l>
                   <l>usted siempre engulle</l>
                   <l>como si rezára,</l>
@@ -286,10 +302,10 @@
                   <l>comes la buena empanada;</l>
                   <l>¡oh que picardia</l>
 
-                  <pb n="3" source="Moreno_109_3.jpg" facs="fedora_ug8108641/full/full/0/default.jpg"/>
+                  <pb n="3" source="Moreno_109_3.jpg" facs="moreno/Moreno_109_3.jpg"/>
 
                   <l>demonio de nuera;</l>
-                  <l>ruega que mi hijo. </l>
+                  <l>ruega que mi hijo.</l>
                   <l>jamás te se muera,</l>
                   <l>que si ahora comes</l>
                   <l>muchas empanadas</l>
@@ -386,7 +402,10 @@
                   <l>que si no lo hace</l>
                   <l>será una bribona,</l>
                   <l>la muy desollada</l>
-                  <l>lu muy picarona;</l>
+                  <l><choice>
+                        <sic>lu</sic>
+                        <corr>la</corr>
+                     </choice> muy picarona;</l>
                   <l>y así la cochina</l>
                   <l>calle en enhoramala,</l>
                   <l>váyase á fregar,</l>
@@ -403,9 +422,9 @@
                   <l>solo de tabaco</l>
                   <l>doscientos cahices,</l>
 
-                  <pb n="4" source="Moreno_109_4.jpg" facs="fedora_ug8109385/full/full/0/default.jpg"/>
+                  <pb n="4" source="Moreno_109_4.jpg" facs="moreno/Moreno_109_4.jpg"/>
 
-                  <l>Ella es la cochina, </l>
+                  <l>Ella es la cochina,</l>
                   <l>pues los mocos echa,</l>
                   <l>no es mucho: pues es</l>
                   <l>su misma cosecha.</l>
@@ -445,7 +464,7 @@
 
                <sp>
                   <speaker rend="cursiva">S.</speaker>
-                  <l> lAh pícara relamida!</l>
+                  <l> !Ah pícara relamida!</l>
                   <l>¿de aquesta suerte has de hablar</l>
                   <l>á la honrada de tu suegra?</l>
                   <l>lo tengo de castigor</l>
@@ -453,7 +472,7 @@
                   <l>será tu castigo;</l>
                   <l>para que no hables</l>
                   <l>otra vez conmigo:</l>
-                  <l>vete al demonio, </l>
+                  <l>vete al demonio,</l>
                   <l>vil desvergonzada,</l>
                   <l>sirvate de enmienda</l>
                   <l>esta bofetada.</l>

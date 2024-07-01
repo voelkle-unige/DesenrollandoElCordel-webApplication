@@ -7,9 +7,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -17,7 +34,7 @@
          <sourceDesc>
             <biblFull>
                <titleStmt>
-                  <title type="titulo_completo">Decimas glosadas</title>
+                  <title type="titulo_completo">Decimas glosadas.</title>
                   <title type="titulo_breve"/>
                </titleStmt>
                <editionStmt>
@@ -33,7 +50,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6448069</idno>
@@ -74,8 +91,8 @@
                      <summary n="2">Dos grabados</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_043_1.xml" facs="fedora_ug8110211/403,189,492,909/100,/0/default.jpg">grabado_m_043_1</item>
-                           <item corresp="grabado_m_043_2.xml" facs="fedora_ug8110211/1066,228,415,869/100,/0/default.jpg">grabado_m_043_2</item>
+                            <item corresp="grabado_m_043_1.xml" facs="moreno/Moreno_043_1.jpg/403,189,492,909/100,/0/default.jpg">grabado_m_043_1</item>
+                            <item corresp="grabado_m_043_2.xml" facs="moreno/Moreno_043_1.jpg/1066,228,415,869/100,/0/default.jpg">grabado_m_043_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -112,7 +129,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -146,13 +163,13 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8108907/manifest">
-      <graphic url="fedora_ug8110211/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_043_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
-            <pb n="1" source="Moreno_043_1.jpg" facs="fedora_ug8110211/full/full/0/default.jpg"/>
+            <pb n="1" source="Moreno_043_1.jpg" facs="moreno/Moreno_043_1.jpg"/>
 
             <fw type="impresorNum">Núm. 48.</fw>
 
@@ -167,11 +184,11 @@
 
             <lg>
                <l rend="indent">Al cielo mil veces clamo</l>
-               <l>él gran error que yo hice,</l>
+               <l>el gran error que yo hice,</l>
                <l>sembrar desde luego quise</l>
                <l>en un deleitoso campo:</l>
                <l>al fin habiendo logrado</l>
-               <l>lo que yo queria hacer, </l>
+               <l>lo que yo queria hacer,</l>
                <l>al sembrarlo me pinché</l>
                <l>con penetrantes espinas,</l>
                <l>que en una tierra maldita</l>
@@ -217,11 +234,11 @@
                <l rend="cursiva">cojí abrojos y espinas.</l>
             </lg>
 
-            <pb n="2" source="Moreno_043_2.jpg" facs="fedora_ug8106135/full/full/0/default.jpg"/>
+            <pb n="2" source="Moreno_043_2.jpg" facs="moreno/Moreno_043_2.jpg"/>
 
             <lg rend="cursiva" type="estribillo">
                <l rend="indent">Un moro de gran valor</l>
-               <l>le decia á su cautíua,</l>
+               <l>le decia á su cautíva,</l>
                <l>tu serás la gran sufiana,</l>
                <l>renegando serás mia.</l>
             </lg>
@@ -234,7 +251,7 @@
                <l>en tan grande cautiverio,</l>
                <l>declararte con amor,</l>
                <l>que mis ojos con pasion</l>
-               <l>se enternecen ál mirarte,</l>
+               <l>se enternecen al mirarte,</l>
                <l>de ti quiere ser amante</l>
                <l rend="cursiva">un moro de gran valor.</l>
             </lg>
@@ -248,7 +265,7 @@
                <l>te hace dueño de su vida:</l>
                <l>oye, hermosa clavellina,</l>
                <l>deja gozar tus fragancias,</l>
-               <l>cesaras de ser esclava,</l>
+               <l>cesarás de ser esclava,</l>
                <l rend="cursiva">le decia á su cautiva.</l>
             </lg>
 
@@ -258,7 +275,7 @@
                <l>los esclavos y cautivas</l>
                <l>humildes te servirán,</l>
                <l>á mi mesa asistirás</l>
-               <l>y te llevarás la palma, </l>
+               <l>y te llevarás la palma,</l>
                <l>los aplausos y alabanzas</l>
                <l>te daré con mis riquezas,</l>
                <l>y si admites tal fineza</l>
@@ -269,7 +286,7 @@
                <l rend="indent">Desde el punto que reniegues</l>
                <l>mandarás en mi persona,</l>
                <l>y tambien en la corona</l>
-               <l>que me cedieron los reyes, </l>
+               <l>que me cedieron los reyes,</l>
                <l>dispon que tu sola eres</l>
                <l>la reyna de mis delicias</l>
                <l>escojida entre las ninfas</l>
@@ -279,7 +296,7 @@
             </lg>
 
             <lg rend="cursiva">
-               <l rend="indent">Estaré triste y cauliva</l>
+               <l rend="indent">Estaré triste y cautiva</l>
                <l>toda mi vida en <name>Argel</name>,</l>
                <l>metida en tristes mazmorras</l>
                <l>yo jamás renegaré.</l>
@@ -287,7 +304,7 @@
 
             <lg>
                <l rend="indent">Eres necio en ofrecer,</l>
-               <l>pues de todo hago desprecio, </l>
+               <l>pues de todo hago desprecio,</l>
                <l>cristiana de nacimiento,</l>
                <l>yo jamás renegaré:</l>
                <l>en prisiones estaré</l>
@@ -312,10 +329,10 @@
             </lg>
 
             <lg>
-               <l rend="indent">Aunque me dieras mas oro, </l>
+               <l rend="indent">Aunque me dieras mas oro,</l>
                <l>que valen las <name>Indias</name> todas,</l>
-               <l>no gozarás ui persona</l>
-               <l>ni mancharas mi decoro, </l>
+               <l>no gozarás mi persona</l>
+               <l>ni mancharas mi decoro,</l>
                <l>yo renuncio de tu trono</l>
                <l>y támbien de tu corona,</l>
                <l>diré á la brillante aurora</l>
@@ -326,7 +343,7 @@
 
             <lg>
                <l rend="indent">Pasaré mi crutiverio</l>
-               <l>entre grillos y cadenas, </l>
+               <l>entre grillos y cadenas,</l>
                <l>la diré á la luna escelsa</l>
                <l>que mande á los elementos</l>
                <l>que publiquen los tormentos</l>
@@ -337,7 +354,7 @@
                <l rend="cursiva">yo jamas renegaré.</l>
             </lg>
 
-            <pb n="3" source="Moreno_043_3.jpg" facs="fedora_ug8106595/full/full/0/default.jpg"/>
+            <pb n="3" source="Moreno_043_3.jpg" facs="moreno/Moreno_043_3.jpg"/>
 
             <lg rend="cursiva" type="estribillo">
                <l rend="indent">Debajo de un naranjal</l>
@@ -375,7 +392,7 @@
             <lg>
                <l rend="indent">Se resistió el enemigo,</l>
                <l>segunda vez batallé,</l>
-               <l>á las cinco descansé, </l>
+               <l>á las cinco descansé,</l>
                <l>estropeado y molido:</l>
                <l>yo soy aquel peregrino</l>
                <l>que dejó tu puerta franca,</l>
@@ -400,18 +417,18 @@
 
             <lg rend="cursiva" type="estribillo">
                <l>Calla falso, no publiques</l>
-               <l>mi triste fragilidad.</l>
+               <l>mi triste fragilidad</l>
                <l>miráras que soy mujer,</l>
                <l>y bien pudieras callar.</l>
             </lg>
 
             <lg>
-               <l rend="indent">Me diste buenes palabras,</l>
-               <l>me hiciste buenos acciones, </l>
+               <l rend="indent">Me diste buenas palabras,</l>
+               <l>me hiciste buenos acciones,</l>
                <l>mas con tus malas razones</l>
                <l>me dijiste que era ingrata,</l>
                <l>yo jamás te he sido falsa,</l>
-               <l>pues con firmeza te quise, </l>
+               <l>pues con firmeza te quise,</l>
                <l>tu mal me correspondiste</l>
                <l>diciendole al mundo entero;</l>
                <l>que gozaste de mi cuerpo,</l>
@@ -452,14 +469,14 @@
                <l>mas ya que pública es</l>
                <l>mi desdicha tan fatal,</l>
                <l>en un justo tribunal</l>
-               <l>me quejaré como debo, </l>
+               <l>me quejaré como debo,</l>
                <l>sabes que sé tus secretos</l>
                <l rend="cursiva">y bien pudieras callar.</l>
             </lg>
          </div>
 
          <div>
-            <pb n="4" source="Moreno_043_4.jpg" facs="fedora_ug8107954/full/full/0/default.jpg"/>
+            <pb n="4" source="Moreno_043_4.jpg" facs="moreno/Moreno_043_4.jpg"/>
 
             <head rend="negrita" type="primer_titulo">TROVOS.</head>
 
@@ -471,7 +488,7 @@
             </lg>
 
             <lg>
-               <l rend="indent">Con bubones y almorranas, </l>
+               <l rend="indent">Con bubones y almorranas,</l>
                <l>calenturas y diviesos,</l>
                <l>lleno de herpes y de sarna</l>
                <l>de tal suerte le pusieron</l>
@@ -495,7 +512,7 @@
             </lg>
 
             <lg>
-               <l rend="indent">Ay infeliz artillero, </l>
+               <l rend="indent">Ay infeliz artillero,</l>
                <l>que ya has perdido la mecha,</l>
                <l>te has quedado sin empleo,</l>
                <l>sin honor y sin herencia,</l>
@@ -511,8 +528,8 @@
 
             <lg>
                <l rend="indent">Es un villano grosero</l>
-               <l>aquel que no tiene blanca, </l>
-               <l>si la tiene es caballero, </l>
+               <l>aquel que no tiene blanca,</l>
+               <l>si la tiene es caballero,</l>
                <l>y sin ti, no somos nada,</l>
                <l rend="cursiva">¡oh que maldito dinero!</l>
             </lg>
@@ -535,7 +552,7 @@
 
             <lg>
                <l rend="indent">Los generales por oro</l>
-               <l>luego se hacen rebeldes, </l>
+               <l>luego se hacen rebeldes,</l>
                <l>venden sus soldados todos,</l>
                <l>y de aqueste modo venden</l>
                <l rend="cursiva">á los reyes con sus tronos.</l>
@@ -577,7 +594,7 @@
                <l>lo que hiciste con tu dueño,</l>
                <l>si fué obra de los dos,</l>
                <l>jamás salga de tu seno</l>
-               <l rend="cursiva">lo que hieimos tú y yó.</l>
+               <l rend="cursiva">lo que hicimos tú y yó.</l>
             </lg>
 
             <trailer>FIN.</trailer>

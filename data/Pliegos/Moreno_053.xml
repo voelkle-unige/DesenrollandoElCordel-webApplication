@@ -1,4 +1,4 @@
-<?xml-model href="Schema/oddPliego_varios2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moreno_053">
+<?xml-model href="../Schema/oddPliego_varios2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moreno_053">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -7,9 +7,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -35,7 +52,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6452302</idno>
@@ -73,8 +90,8 @@
                      <summary n="2">Dos grabados (p.1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_053_1.xml" facs="fedora_ug8109900/400,280,471,657/100,/0/default.jpg">grabado_m_053_1</item>
-                           <item corresp="grabado_m_053_2.xml" facs="fedora_ug8109900/870,280,420,652/100,/0/default.jpg">grabado_m_053_2</item>
+                            <item corresp="grabado_m_053_1.xml" facs="moreno/Moreno_053_1.jpg/400,280,471,657/100,/0/default.jpg">grabado_m_053_1</item>
+                            <item corresp="grabado_m_053_2.xml" facs="moreno/Moreno_053_1.jpg/870,280,420,652/100,/0/default.jpg">grabado_m_053_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -105,7 +122,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -139,14 +156,14 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8103863/manifest">
-      <graphic url="fedora_ug8109900/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_053_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
             <div>
-               <pb n="1" source="Moreno_053_1.jpg" facs="fedora_ug8109900/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_053_1.jpg" facs="moreno/Moreno_053_1.jpg"/>
 
                <fw type="impresorNum">Número 14.</fw>
 
@@ -187,7 +204,7 @@
                   <l>no hay cosa mas segura</l>
                   <l>que la mediana.</l>
 
-                  <pb n="2" source="Moreno_053_2.jpg" facs="fedora_ug8110299/full/full/0/default.jpg"/>
+                  <pb n="2" source="Moreno_053_2.jpg" facs="moreno/Moreno_053_2.jpg"/>
 
                   <l rend="indent">Que la busques te digo</l>
                   <l>limpia y curiosa,</l>
@@ -197,8 +214,8 @@
                   <l>que por limpiar algunas</l>
                   <l>lo limpian todo.</l>
                   <l rend="indent">No muy gorda, ni flaca</l>
-                  <l>te lá encamino,</l>
-                  <l>sino entre magro y gerdo</l>
+                  <l>te la encamino,</l>
+                  <l>sino entre magro y gordo</l>
                   <l>como el tocino:</l>
                   <l>porque la flaca</l>
                   <l>tiene cara de acelga,</l>
@@ -248,12 +265,12 @@
                   <l rend="indent">De doncellas sirvientes</l>
                   <l>huirá tu estrella</l>
                   <l>no sea que te encuentres</l>
-                  <l>sin la doncella:</l>
+                  <l>sín la doncella:</l>
                   <l>porque ya todas</l>
                   <l>quieren salir mas majas,</l>
                   <l>que sus señoras.</l>
                   <l rend="indent">Para bodas las viudas,</l>
-                  <l>son el demonio, </l>
+                  <l>son el demonio,</l>
                   <l>porque saben las cosas</l>
                   <l>del matrimonio:</l>
                   <l>pues se comprehende,</l>
@@ -276,7 +293,7 @@
                   <l rend="indent">Ultimamente dicen</l>
                   <l>las seguidillas.</l>
 
-                  <pb n="3" source="Moreno_053_3.jpg" facs="fedora_ug8103406/full/full/0/default.jpg"/>
+                  <pb n="3" source="Moreno_053_3.jpg" facs="moreno/Moreno_053_3.jpg"/>
 
                   <l>que no te andes con fiestas</l>
                   <l>con las chiquillas:</l>
@@ -288,16 +305,16 @@
                   <l>lo zampan en la Carcel</l>
                   <l>de la Corona:</l>
                   <l>donde el menguado</l>
-                  <l>por bien que salgá, sale</l>
+                  <l>por bien que salga, sale</l>
                   <l>ya coronado.</l>
                   <l rend="indent">Hasta aqui mi discurso</l>
                   <l>decir previno</l>
                   <l>cuatro verdades puras</l>
                   <l>como el buen vino:</l>
                   <l>y solo falta </l>
-                  <l>que aprovecheis algunas</l>
-                  <l>y santas Pascuas</l>
-                  <trailer>F<hi rend="cursiva">in de la primera parte.</hi></trailer>
+                  <l>que aprovecheis algunas,</l>
+                  <l>y santas Pascuas.</l>
+                  <trailer rend="cursiva">Fin de la primera parte.</trailer>
                </div>
 
                <div n="2" type="parte">
@@ -358,9 +375,9 @@
                   <l>por sacar raja.</l>
                   <l rend="indent">De los Pajes no creas.</l>
 
-                  <pb n="4" source="Moreno_053_4.jpg" facs="fedora_ug8104552/full/full/0/default.jpg"/>
+                  <pb n="4" source="Moreno_053_4.jpg" facs="moreno/Moreno_053_4.jpg"/>
 
-                  <l>necias bambollas, </l>
+                  <l>necias bambollas,</l>
                   <l>porque son muy amigos</l>
                   <l>de cazarpollas;</l>
                   <l>y si se casan,</l>
@@ -409,7 +426,7 @@
                   <l>que á sus mugeres pegan</l>
                   <l>palos de muerte.</l>
                   <l rend="indent">Aunque rabies por Novio,</l>
-                  <l>no te descubras, </l>
+                  <l>no te descubras,</l>
                   <l>pues no habrá quien te diga</l>
                   <l>por ahi te pudras:</l>
                   <l>mantente firme,</l>

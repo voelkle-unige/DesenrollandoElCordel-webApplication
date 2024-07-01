@@ -7,9 +7,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="LF">Lorysmar Franco</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -33,7 +50,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6477639</idno>
@@ -73,8 +90,8 @@
                      <summary n="2">Dos grabados (p.1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_294_1.xml" facs="fedora_ug8106730/70,242,807,870/100,/0/default.jpg">grabado_m_294_1</item>
-                           <item corresp="grabado_m_294_2.xml" facs="fedora_ug8106730/887,282,675,830/100,/0/default.jpg">grabado_m_294_2</item>
+                            <item corresp="grabado_m_294_1.xml" facs="moreno/Moreno_294_1.jpeg/70,242,807,870/100,/0/default.jpg">grabado_m_294_1</item>
+                            <item corresp="grabado_m_294_2.xml" facs="moreno/Moreno_294_1.jpeg/887,282,675,830/100,/0/default.jpg">grabado_m_294_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -207,6 +224,18 @@
                      <geo>41.58197 1.33848</geo>
                   </location>
                </place>
+               <place n="1" corresp="Q1410">
+                  <placeName key="Gibraltar">Gibraltar</placeName>
+                  <location>
+                     <geo>36.14 -5.35</geo>
+                  </location>
+               </place>
+               <place n="1" corresp="Q142">
+                  <placeName key="Francia">Francia</placeName>
+                  <location>
+                     <geo>47 2</geo>
+                  </location>
+               </place>
                <place n="1">
                   <placeName key="Plaza_del_Mercado">Plaza del Mercado</placeName>
                   <desc>Ambiguos</desc>
@@ -257,14 +286,14 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8106107/manifest">
-      <graphic url="fedora_ug8106730/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_294_1.jpeg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
             <div>
-               <pb n="1" source="Moreno_294_1.jpeg" facs="fedora_ug8106730/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_294_1.jpeg" facs="moreno/Moreno_294_1.jpeg"/>
 
                <fw type="impresorNum">Número 308.</fw>
 
@@ -275,7 +304,7 @@
                   <head rend="cursiva" type="titulo_parte">PRIMERA PARTE.</head>
 
                   <l rend="indent">A la Antorcha mas brillante</l>
-                  <l>de la <name>Valencia</name>na tierra,</l>
+                  <l>de la Valenciana tierra,</l>
                   <l>Madre de Desamparados,</l>
                   <l>norte, asilo, puerto, estrella,</l>
                   <l>le pido me de su amparo,</l>
@@ -301,7 +330,7 @@
                   <l>en este lugar pasó</l>
                   <l>el niño su edad primera,</l>
 
-                  <pb n="2" source="Moreno_294_2.jpeg" facs="fedora_ug8109772/full/full/0/default.jpg"/>
+                  <pb n="2" source="Moreno_294_2.jpeg" facs="moreno/Moreno_294_2.jpeg"/>
 
                   <fw type="paginaNum">2</fw>
 
@@ -312,7 +341,7 @@
                   <l>los vecinos Santa Cruz</l>
                   <l>le apodaron de carrera.</l>
                   <l>Sus padres, como es costumbre,</l>
-                  <l>le onviaron á la escuela:</l>
+                  <l>le enviaron á la escuela:</l>
                   <l>pasó en ella su niñez</l>
                   <l>con inclinacion perfecta,</l>
                   <l>y al cabo de algunos años</l>
@@ -362,7 +391,7 @@
                   <l>la muger dijo: te encargo,</l>
                   <l>que por ningun modo a Vela</l>
                   <l>le trabajes: y él responde:</l>
-                  <l>tútienes alguna queja:</l>
+                  <l>tú tienes alguna queja:</l>
                   <l>y ella respondió: si vas</l>
                   <l>gran disgusto se me espera.</l>
                   <l>Y al cabo de pocos dias</l>
@@ -375,9 +404,9 @@
                   <l>una manada de ovejas</l>
                   <l>suyas, y le dijo: amigo,</l>
                   <l>por mí una cosa quisiera</l>
-                  <l>que hicieras, que importa muche,</l>
+                  <l>que hicieras, que importa mucho,</l>
                   <l>y el Pastor le dijo á Vela:</l>
-                  <l> ya puede mandar, señor, </l>
+                  <l> ya puede mandar, señor,</l>
                   <l>que mi voluntad es vuestra.</l>
                   <l>Pues mira: irás al rebaño</l>
                   <l>mañana cuando amanezca,</l>
@@ -397,12 +426,12 @@
                   <l> que Santa Cruz las degüella</l>
                   <l>y como escondió las tripas:</l>
                   <l>y pieles en la maleza.</l>
-                  <l>sLe dió parte á la Justicia</l>
+                  <l>Le dió parte á la Justicia</l>
                   <l>y á Santa Cruz preso llevan</l>
                   <l>á la Cárcel de <name>Pedralva</name>,</l>
                   <l>y asegurado lo dejan.</l>
 
-                  <pb n="3" source="Moreno_294_3.jpeg" facs="fedora_ug8108259/full/full/0/default.jpg"/>
+                  <pb n="3" source="Moreno_294_3.jpeg" facs="moreno/Moreno_294_3.jpeg"/>
 
                   <fw type="paginaNum">3</fw>
 
@@ -422,8 +451,8 @@
                   <l>escuchaba la conversa;</l>
                   <l>presumiendo Santa Cruz</l>
                   <l>que lo enviaba el tal</l>
-                  <l>abrió la puerta al insta</l>
-                  <l>y allí muerto se lo de</l>
+                  <l>abrió la puerta al instante</l>
+                  <l>y allí muerto se lo deja</l>
                   <l>con un fiero trabucazo</l>
                   <l>Dios en el cielo le tenga</l>
                   <l>Cometido este delito,</l>
@@ -466,17 +495,17 @@
                   <l>le hizo medir la tierra,</l>
                   <l> y lo acabó de matar</l>
                   <l>Santa Cruz, y con presteza,</l>
-                  <l>marcharon á <name>Chestalgar</name>, ¡:</l>
+                  <l>marcharon á <name>Chestalgar</name>,</l>
                   <l>y en una espléndida cena,</l>
-                  <l>aquella noche estuvieron, .</l>
+                  <l>aquella noche estuvieron,</l>
                   <l>y siguiendo su carrera,</l>
-                  <l>alscabo de pocos dias,</l>
-                  <l>que no sé cierto la cuenta, ..</l>
-                  <l>le dió la muerte al pastor..</l>
+                  <l>al cabo de pocos dias,</l>
+                  <l>que no sé cierto la cuenta,</l>
+                  <l>le dió la muerte al pastor</l>
                   <l>que falso testigo era.</l>
                   <l>Sabido esto en la Sala,</l>
-                  <l>comisiones,con presteza</l>
-                  <l>enviaron, pero el</l>
+                  <l>comisiones con presteza</l>
+                  <l>enviaron, pero él</l>
                   <l>lo supo, y con diligencia</l>
                   <l>para el puente de <name>Bugarra</name></l>
                   <l>tomó el camino, y encuentra</l>
@@ -503,7 +532,7 @@
                   <l>de miñones y soldados,</l>
                   <l>y él á <name>Pedralva</name> dió vuelta,</l>
 
-                  <pb n="4" source="Moreno_294_4.jpeg" facs="fedora_ug8104762/full/full/0/default.jpg"/>
+                  <pb n="4" source="Moreno_294_4.jpeg" facs="moreno/Moreno_294_4.jpeg"/>
 
                   <fw type="paginaNum">4</fw>
 
@@ -518,12 +547,12 @@
                   <l>luego le puso un figon</l>
                   <l>á la muger, y la deja,</l>
                   <l>y con tres amigos marchan</l>
-                  <l>á Gibraltar de carrera:</l>
+                  <l>á <name>Gibraltar</name> de carrera:</l>
                   <l>estos eran andaluces,</l>
                   <l>y á la salida se encuentran</l>
                   <l>una partida muy grande</l>
-                  <l>de soldados, y le cercan, </l>
-                  <l>y él disparando el trabuco, </l>
+                  <l>de soldados, y le cercan,</l>
+                  <l>y él disparando el trabuco,</l>
                   <l>mató á dos, y con presteza</l>
                   <l>le fué preciso escapar</l>
                   <l>sin las cargas, porque eran</l>
@@ -543,7 +572,7 @@
                   <l>y no paró hasta su tierra.</l>
                   <l>Despues vino la muger,</l>
                   <l>y en este tiempo se encuentra</l>
-                  <l>con el Mudo, que era amigo, </l>
+                  <l>con el Mudo, que era amigo,</l>
                   <l>y este una comision cierta</l>
                   <l>llevaba para prenderle;</l>
                   <l>y con muy grande cautela</l>
@@ -558,7 +587,7 @@
                   <l>y empiezan á conversar.</l>
                   <l>Dijo Santa Cruz: quisiera</l>
                   <l>que nuestras armas, amigo,</l>
-                  <l>ostuvieran bien ligeras;</l>
+                  <l>estuvieran bien ligeras;</l>
                   <l>y tomando las del Mudo,</l>
                   <l>las disparó con presteza,</l>
                   <l>y luego tomó las suyas,</l>
@@ -573,7 +602,7 @@
                   <l>por tu vida no lo creas.</l>
                   <l>Santa Cruz dijo: la sacas,</l>
                   <l>ó te saco de esta tierra:</l>
-                  <l>en fin, sacó los papeles, </l>
+                  <l>en fin, sacó los papeles,</l>
                   <l>y á Santa Cruz los entrega;</l>
                   <l>tambien le entregó el dinero,</l>
                   <l>y desarmado lo deja,</l>
@@ -590,7 +619,7 @@
                <div n="2" type="parte">
                   <head type="titulo_parte">SEGUNDA PARTE.</head>
 
-                  <l rend="indent">Ya saben como quedé, </l>
+                  <l rend="indent">Ya saben como quedé,</l>
                   <l>noble auditorio, empeñado</l>
                   <l>que en esta segunda parte</l>
                   <l>continuaria los casos</l>
@@ -606,7 +635,7 @@
                   <l>le pareció que el paisano</l>
                   <l>seria algun desertor,</l>
 
-                  <pb n="5" source="Moreno_294_5.jpeg" facs="fedora_ug8104763/full/full/0/default.jpg"/>
+                  <pb n="5" source="Moreno_294_5.jpeg" facs="moreno/Moreno_294_5.jpeg"/>
 
                   <fw type="paginaNum">5</fw>
 
@@ -615,7 +644,7 @@
                   <l>luego se amparó de un arbol,</l>
                   <l>y disparando el trabuco</l>
                   <l>en tierra lo ha derribado;</l>
-                  <l>en la espesura lo metè</l>
+                  <l>en la espesura lo mete</l>
                   <l>con una soga arrastrando,</l>
                   <l>al punto lo despojó,</l>
                   <l>y se le llevó el caballo;</l>
@@ -645,7 +674,7 @@
                   <l>por andar muy bien armado,</l>
                   <l>y que lo mejor seria</l>
                   <l>prenderlo ó aprisionarlo.</l>
-                  <l>Dijo el alcalde: zá que hora</l>
+                  <l>Dijo el alcalde: ¿á que hora</l>
                   <l>se quedó determinado?</l>
                   <l>Respondió: al anochecer.</l>
                   <l>Por la tarde se emboscaron</l>
@@ -653,12 +682,12 @@
                   <l>por todo aquel vecindado,</l>
                   <l>llegó la emplazada hora,</l>
                   <l>y así que lo divisaron</l>
-                  <l>se le arrojaron encima, </l>
+                  <l>se le arrojaron encima,</l>
                   <l>y á la cárcel lo llevaron.</l>
                   <l>Aquí dijo Santa Cruz,</l>
                   <l>sirva mi industria de amparo,</l>
                   <l>y lo primero que hizo</l>
-                  <l>fué llamar á un escribano, </l>
+                  <l>fué llamar á un escribano,</l>
                   <l>que le hiciese un testimonio,</l>
                   <l>pues queria despacharlo</l>
                   <l>á <name>Madrid</name>, dándole queja</l>
@@ -674,7 +703,7 @@
                   <l>está á la orden de usia,</l>
                   <l>dice que es comisionado</l>
                   <l>de ese famoso bandido</l>
-                  <l>que es del reino valeaciano, </l>
+                  <l>que es del reino valeaciano,</l>
                   <l>y se llama Santa Cruz.</l>
                   <l>Al instante se marcharon</l>
                   <l>á la cárcel por el preso;</l>
@@ -707,7 +736,7 @@
                   <l>estaba ya pregonado:</l>
                   <l>este á un sugeto de Chelva</l>
 
-                  <pb n="6" source="Moreno_294_6.jpeg" facs="fedora_ug8107600/full/full/0/default.jpg"/>
+                  <pb n="6" source="Moreno_294_6.jpeg" facs="moreno/Moreno_294_6.jpeg"/>
 
                   <fw type="paginaNum">6</fw>
 
@@ -718,14 +747,14 @@
                   <l>y le contó todo el caso,</l>
                   <l>y le dijo: si te atreves</l>
                   <l>á tal sugeto matarlo</l>
-                  <l>te daré seis onzas de oro, </l>
+                  <l>te daré seis onzas de oro,</l>
                   <l>y Santa Cruz aceptando</l>
                   <l>el partido, dijo así</l>
                   <l>pero sin premio ni pago.</l>
                   <l>Corrió, pues, esta noticia,</l>
-                  <l>que á Montes participaron, </l>
+                  <l>que á Montes participaron,</l>
                   <l>y un dia por su desgracia</l>
-                  <l>estos sugetos. se hallaron</l>
+                  <l>estos sugetos se hallaron</l>
                   <l>en término de la Yesa.</l>
                   <l>en una casa de campo:</l>
                   <l>y Montes á Santa Cruz.</l>
@@ -740,7 +769,7 @@
                   <l>á la Yesa lo llevaron,</l>
                   <l>y á los dos dias murió,</l>
                   <l>Dios le dé eterno descanso.</l>
-                  <l>Santa Cruz cobró el dinero, </l>
+                  <l>Santa Cruz cobró el dinero,</l>
                   <l>y no se hablò mas del caso.</l>
                   <l>A <name>Pedralva</name> se volvió,</l>
                   <l>y vió que un niño pelando</l>
@@ -806,9 +835,9 @@
                   <l>á un pueblo de allí cercano,</l>
                   <l>por robarle le mató,</l>
                   <l>y se le llevó el caballo.</l>
-                  <l>Y en la etra tercera parte</l>
+                  <l>Y en la otra tercera parte</l>
 
-                  <pb n="7" source="Moreno_294_7.jpeg" facs="fedora_ug8109738/full/full/0/default.jpg"/>
+                  <pb n="7" source="Moreno_294_7.jpeg" facs="moreno/Moreno_294_7.jpeg"/>
 
                   <fw type="paginaNum">7</fw>
 
@@ -829,7 +858,7 @@
                   <l>que fué preciso rendirse</l>
                   <l>y á la cárcel lo llevaron;</l>
                   <l>Santa Cruz se mudó el nombre,</l>
-                  <l>y al instante se-ha llamado</l>
+                  <l>y al instante se ha llamado</l>
                   <l>Anton de Vicente Roja</l>
                   <l>y luego le sentenciaron </l>
                   <l>al presidio de <name>Alhucemas</name>,</l>
@@ -853,9 +882,9 @@
                   <l>en que oficio se empleaba</l>
                   <l>en su tierra. Cirujano</l>
                   <l>luego al punto respondió;</l>
-                  <l>dijo el moro: con cuidado, </l>
+                  <l>dijo el moro: con cuidado,</l>
                   <l>que se halla un pariente enfermo</l>
-                  <l>de locura; y si tus manos..</l>
+                  <l>de locura; y si tus manos</l>
                   <l>le dan remedio, prometo</l>
                   <l>que te será bien pagado;</l>
                   <l>dijo Santa Cruz que sí,</l>
@@ -887,31 +916,31 @@
                   <l>y le puso prontamente:</l>
                   <l>en el pescuezo un emplastío</l>
                   <l>que le hizo saltar los ojos.</l>
-                  <l>al punto; peró: mivando</l>
-                  <l>los parientes tal efucto</l>
+                  <l>al punto; pero mirando</l>
+                  <l>los parientes tal efecto</l>
                   <l>á la cárcel lo llevarón.</l>
-                  <l>Santa Cruz Tompió una reja,</l>
+                  <l>Santa Cruz rompió una reja,</l>
                   <l>y al instante se ha escapados</l>
                   <l>nueve dias por los montes</l>
                   <l>continuamente ayunando,</l>
                   <l>solo comia las yervas</l>
-                  <l>que se crian por los eampos, </l>
+                  <l>que se crian por los campos,</l>
                   <l>hasta qne á un rio llegó</l>
                   <l>y tortugas iba asando;</l>
-                  <l>allí ebmió cuanto pudo,</l>
-                  <l>y fué en buseá de un hermanó, </l>
+                  <l>allí comió cuanto pudo,</l>
+                  <l>y fué en buscá de un hermano,</l>
                   <l>y supo que ya era muerto,</l>
-                  <l>y en un lugar ha eneontrado</l>
+                  <l>y en un lugar ha encontrado</l>
                   <l>cuatro compañeros suyos</l>
                   <l>y uno que Pina es llamado</l>
                   <l>se vino con él á <name>España</name>,</l>
                   <l>y los otros se quedaron:</l>
-                  <l>en una lancha vibieron;</l>
-                  <l>luego que desembarearon</l>
+                  <l>en una lancha vinieron;</l>
+                  <l>luego que desembarcaron</l>
                   <l>dentro de muy pocos dias</l>
                   <l>en <name>Villamarchante</name> entraron,</l>
 
-                  <pb n="8" source="Moreno_294_8.jpeg" facs="fedora_ug8109377/full/full/0/default.jpg"/>
+                  <pb n="8" source="Moreno_294_8.jpeg" facs="moreno/Moreno_294_8.jpeg"/>
 
                   <fw type="paginaNum">8</fw>
 
@@ -923,7 +952,7 @@
                   <l>y á un labrador le ha mandado</l>
                   <l>que le acompañe, y le dió</l>
                   <l>tres duros, y le ha entregado</l>
-                  <l>el caballo que quitó, </l>
+                  <l>el caballo que quitó,</l>
                   <l>que se lo volviese al amo.</l>
                   <l>Se marchó con la muger,</l>
                   <l>y por los montes rodando</l>
@@ -934,7 +963,7 @@
                   <l>á su muger, en la torre</l>
                   <l>de Serranos la dejaron.</l>
                   <l>Santa Cruz tomó el camino,</l>
-                  <l>y á la Francia se ha pasado:</l>
+                  <l>y á la <name>Francia</name> se ha pasado:</l>
                   <l>hizo allí muchos arrojos,</l>
                   <l>tres veces fué aprisionado,</l>
                   <l>pero siempre se escapó;</l>
@@ -942,7 +971,7 @@
                   <l>servia de cocinero</l>
                   <l>de una casa, y con el amo</l>
                   <l>una noche se enfadó,</l>
-                  <l>e y á todos ha degollado.</l>
+                  <l>y á todos ha degollado.</l>
                   <l>Marchó á la ciudad de <name>Brest</name>,</l>
                   <l>embarcóse, y escapando</l>
                   <l>por <name>Lisboa</name> á <name>Portugal</name>,</l>

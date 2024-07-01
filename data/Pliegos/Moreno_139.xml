@@ -2,15 +2,31 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Trovos modernos por los que manifiesta un galán a su dama el mucho amor que le
-               tiene</title>
+            <title>Trovos modernos por los que manifiesta un galán a su dama el mucho amor que le tiene</title>
             <respStmt>
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -36,7 +52,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6470770</idno>
@@ -68,8 +84,8 @@
                      <summary n="2">Dos grabados (p.1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_139_1.xml" facs="fedora_ug8105227/559,347,374,792/100,/0/default.jpg">grabado_m_139_1</item>
-                           <item corresp="grabado_m_139_2.xml" facs="fedora_ug8105227/940,412,371,710/100,/0/default.jpg">grabado_m_139_2</item>
+                            <item corresp="grabado_m_139_1.xml" facs="moreno/Moreno_139_1.jpg/559,347,374,792/100,/0/default.jpg">grabado_m_139_1</item>
+                            <item corresp="grabado_m_139_2.xml" facs="moreno/Moreno_139_1.jpg/940,412,371,710/100,/0/default.jpg">grabado_m_139_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -94,7 +110,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -128,14 +144,14 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8105494/manifest">
-      <graphic url="fedora_ug8105227/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_139_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
             <div>
-               <pb n="1" source="Moreno_139_1.jpg" facs="fedora_ug8105227/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_139_1.jpg" facs="moreno/Moreno_139_1.jpg"/>
 
                <fw type="impresorNum">Número 147.</fw>
 
@@ -151,11 +167,11 @@
                </lg>
 
                <lg>
-                  <l rend="indent">Hermosisimo lucero, </l>
+                  <l rend="indent">Hermosisimo lucero,</l>
                   <l>no te puedo merecer,</l>
                   <l>porque el padre que te hizo</l>
                   <l>tiene la gracia y poder</l>
-                  <l rend="cursiva">del árbol. del paraiso.</l>
+                  <l rend="cursiva">del árbol del paraiso.</l>
                </lg>
 
                <lg>
@@ -182,7 +198,7 @@
                   <l rend="cursiva">tres Isabeles preciosas.</l>
                </lg>
 
-               <pb n="2" source="Moreno_139_2.jpg" facs="fedora_ug8110274/full/full/0/default.jpg"/>
+               <pb n="2" source="Moreno_139_2.jpg" facs="moreno/Moreno_139_2.jpg"/>
 
                <lg rend="cursiva">
                   <l rend="indent">Cuando veo una Tereza</l>
@@ -220,7 +236,7 @@
                   <l>prenda de mi corazon,</l>
                   <l>te diré de buena gana,</l>
                   <l>que eres linda como, el sol,</l>
-                  <l rend="cursiva">mas yo quiero afeliciana.</l>
+                  <l rend="cursiva">mas yo quiero a feliciana.</l>
                </lg>
 
                <lg rend="cursiva">
@@ -232,7 +248,7 @@
 
                <lg>
                   <l rend="indent">Qué triste me dejarás,</l>
-                  <l>miraré y no te veré, </l>
+                  <l>miraré y no te veré,</l>
                   <l>no cesaré de llorar,</l>
                   <l>tan sola me quedare,</l>
                   <l rend="cursiva">dueño mio si te vás.</l>
@@ -301,7 +317,7 @@
                   <l rend="cursiva">pierde cuidado que vuelvo.</l>
                </lg>
 
-               <pb n="3" source="Moreno_139_3.jpg" facs="fedora_ug8107888/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_139_3.jpg" facs="moreno/Moreno_139_3.jpg"/>
 
                <lg rend="cursiva">
                   <l rend="indent">A Dios, hermoso lucero,</l>
@@ -314,7 +330,7 @@
                   <l rend="indent">A Dios le suplico y ruego</l>
                   <l>el gozar del amor fino,</l>
                   <l>con tus brazos fuera al cielo</l>
-                  <l>¡éste es mi clamor continuo! </l>
+                  <l>¡éste es mi clamor continuo!</l>
                   <l rend="cursiva">á Dios hermoso lucero.</l>
                </lg>
 
@@ -354,7 +370,7 @@
                   <l>te hablo con lealtad,</l>
                   <l>sabes que muero portí</l>
                   <l>y me tratas de olvidar,</l>
-                  <l rend="cursiva">tú eres falsa para mi.</l>
+                  <l rend="cursiva">tú eres falsa para mí.</l>
                </lg>
 
                <lg>
@@ -420,7 +436,7 @@
                   <l rend="cursiva">hermosa luna de enero.</l>
                </lg>
 
-               <pb n="4" source="Moreno_139_4.jpg" facs="fedora_ug8109649/full/full/0/default.jpg"/>
+               <pb n="4" source="Moreno_139_4.jpg" facs="moreno/Moreno_139_4.jpg"/>
 
                <lg>
                   <l rend="indent">¿Como puédes, linda dama,</l>
@@ -434,7 +450,7 @@
                   <l>todas las horas del dia,</l>
                   <l>dónde estás, prenda adorada,</l>
                   <l>te quiero y has de ser mia</l>
-                  <l rend="cursiva">¿como puedes, linda damax</l>
+                  <l rend="cursiva">¿como puedes, linda dama.?</l>
                </lg>
 
                <lg>
@@ -450,7 +466,10 @@
                   <l>y veo la hermosa estrella,</l>
                   <l>la digo muy vigilante,</l>
                   <l>¿por que eres ingrata, y bella,</l>
-                  <l rend="cursiva">sabiendo que soy tu omante?</l>
+                  <l rend="cursiva">sabiendo que soy tu <choice>
+                        <sic>omante</sic>
+                        <corr>amante</corr>
+                     </choice>?</l>
                </lg>
 
                <lg>
@@ -470,8 +489,8 @@
 
                <lg>
                   <l rend="indent">Ausente de tu hermosura,</l>
-                  <l>sin encontrar iedicina,</l>
-                  <l>la catentura maligna</l>
+                  <l>sin encontrar medicina,</l>
+                  <l>la calentura maligna</l>
                   <l>me lleva á la sepultura;</l>
                   <l>no hallo para mi mal cura</l>
                   <l>en tan terrible dolencia,</l>

@@ -1,4 +1,4 @@
-<?xml-model href="Schema/oddPliego_varios2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moreno_015">
+<?xml-model href="../Schema/oddPliego_varios2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moreno_015">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -7,9 +7,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -38,7 +55,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6447568</idno>
@@ -74,7 +91,7 @@
                      <summary n="1">Un grabado (p.1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_015_1.xml" facs="fedora_ug8106636/500,354,700,990/100,/0/default.jpg">grabado_m_015_1</item>
+                            <item corresp="grabado_m_015_1.xml" facs="moreno/Moreno_015_1.jpeg/500,354,700,990/100,/0/default.jpg">grabado_m_015_1</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -105,7 +122,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -140,15 +157,15 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8109662/manifest">
-      <graphic url="fedora_ug8106636/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_015_1.jpeg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
             <div>
                <div n="1" type="parte">
-                  <pb n="1" source="Moreno_015_1.jpeg" facs="fedora_ug8106636/full/full/0/default.jpg"/>
+                  <pb n="1" source="Moreno_015_1.jpeg" facs="moreno/Moreno_015_1.jpeg"/>
 
                   <head type="titulo_parte">
                      <lb/><hi rend="negrita">CANTICO</hi>
@@ -159,10 +176,10 @@
                      <lb/>Magnífica de la Virgen, defensa singular para toda clase de tormentas, nu-
                      <lb/>bes tempestuosas, rayos y centellas. </head>
 
-                  <l rend="indent">Magnífica y engrandece.</l>
+                  <l rend="indent">Magnífica y engrandece</l>
                   <l>mi alma con todo amor</l>
                   <l>al Señor Omnipotente,</l>
-                  <l>que el cielo y tierra cri</l>
+                  <l>que el cielo y tierra crió</l>
                   <l>y con admirable gozo</l>
                   <l>mi espiritu se alegró</l>
                   <l>en Dios su querido Hijo</l>
@@ -170,21 +187,24 @@
                   <l>por que miró la bajeza</l>
                   <l>de su Sierva y me ensalzó</l>
                   <l>á una dignidad tan alta</l>
-                  <l>que otra pinguñá igualo,</l>
-                  <l>sin duda por ótra causa.</l>
-                  <l>toda fiel genéración</l>
-                  <l>dirá que por exceleñcia</l>
-                  <l>Bienaventurada soy, </l>
-                  <l>porque obró eñ mi grañdes cosas</l>
-                  <l>el que poderóso Dios</l>
-                  <l>y su nombre sáñto y uigno</l>
+                  <l>que otra ninguna igualó,</l>
+                  <l>sin duda por otra causa</l>
+                  <l>toda fiel generación</l>
+                  <l>dirá que por excelencia</l>
+                  <l>Bienaventurada soy,</l>
+                  <l>porque obró en mi grañdes cosas</l>
+                  <l>el que poderoso Dios</l>
+                  <l>y su nombre santo y digno</l>
                   <l>de eterna veneracion,</l>
                   <l>y su gran misericordia</l>
-                  <l>de gente en gente pasó,</l>
+                  <l>de gente en gente pasó.</l>
 
-                  <pb n="2" source="Moreno_015_2.jpeg" facs="fedora_ug8107097/full/full/0/default.jpg"/>
+                  <pb n="2" source="Moreno_015_2.jpeg" facs="moreno/Moreno_015_2.jpeg"/>
 
-                  <l>y todos los que le virven</l>
+                  <l>y todos los que le <choice>
+                        <sic>virven</sic>
+                        <corr>sirven</corr>
+                     </choice> .</l>
                   <l>con reverencia y amor</l>
                   <l>mostró en su Divino brazo</l>
                   <l>de su potencia el valor</l>
@@ -222,11 +242,11 @@
                   <head rend="cursiva" type="subtitulo_parte">
                      <lb/>COMPUESTA POR EL S. OBISPO DE TORTOSA PARA <lb/>que todos los fieles pidan
                      al Señor misericordia, y concede el dicho <lb/>señor Obispo cuarenta dias de
-                     indulgencias á todas las per sonas que <lb/>diariamente rezaren ó leyeren dicha
+                     indulgencias á todas las personas que <lb/>diariamente rezaren ó leyeren dicha
                      Jaculatoria. </head>
 
                   <l rend="indent">Pues que te amo Señor,</l>
-                  <l>mas que á mi alma y mi</l>
+                  <l>mas que á mi alma y mi vida</l>
                   <l>me duelo de tu caida</l>
                   <l>aqui me valga tu amor,</l>
                   <l>no me mires con rigor</l>

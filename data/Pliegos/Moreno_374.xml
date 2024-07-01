@@ -7,9 +7,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -23,8 +40,7 @@
                      español</title>
                </titleStmt>
                <editionStmt>
-                  <p>Otra impresión: <ref target="Moreno_338.xml">Moreno_338</ref>
-                        </p>
+                  <p>Otra impresión (s.a.): <ref target="Moreno_338.xml">Moreno_338</ref></p>
                </editionStmt>
                <publicationStmt>
                   <publisher>José María Moreno</publisher>
@@ -36,7 +52,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6505208</idno>
@@ -76,8 +92,8 @@
                      <summary n="2">Dos grabados (p.1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_374_1.xml" facs="fedora_ug8108992/415,120,370,489/100,/0/default.jpg">grabado_m_374_1</item>
-                           <item corresp="grabado_m_374_2.xml" facs="fedora_ug8108992/95,123,289,470/100,/0/default.jpg">grabado_m_374_2</item>
+                            <item corresp="grabado_m_374_1.xml" facs="moreno/Moreno_374_1.jpeg/415,120,370,489/100,/0/default.jpg">grabado_m_374_1</item>
+                            <item corresp="grabado_m_374_2.xml" facs="moreno/Moreno_374_1.jpeg/95,123,289,470/100,/0/default.jpg">grabado_m_374_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -173,20 +189,19 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8106765/manifest">
-      <graphic url="fedora_ug8108992/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_374_1.jpeg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
             <div>
-               <pb n="1" source="Moreno_374_1.jpeg" facs="fedora_ug8108992/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_374_1.jpeg" facs="moreno/Moreno_374_1.jpeg"/>
 
                <fw type="impresorNum">Núm. 36</fw>
 
                <head type="primer_titulo">
-                  <lb/>
-                        <hi rend="negrita">DÉCIMAS TROVADAS,</hi>
+                  <lb/><hi rend="negrita">DÉCIMAS TROVADAS,</hi>
                   <lb/>que cantan al valiente ejército español vencedor <lb/>de la raza mahometana
                   en Africa. </head>
 
@@ -211,7 +226,7 @@
                      <l rend="cursiva">Dios libre á los españoles,</l>
                   </lg>
 
-                  <pb n="2" source="Moreno_374_2.jpeg" facs="fedora_ug8104167/full/full/0/default.jpg"/>
+                  <pb n="2" source="Moreno_374_2.jpeg" facs="moreno/Moreno_374_2.jpeg"/>
 
                   <fw type="paginaNum">2</fw>
 
@@ -229,7 +244,7 @@
                   </lg>
 
                   <lg>
-                     <l rend="indent">Vivan nuestros generales, </l>
+                     <l rend="indent">Vivan nuestros generales,</l>
                      <l>O'Donnell, Rios y Prim,</l>
                      <l>Echagüe, que ha de batir </l>
                      <l>á esos infieles árabes:</l>
@@ -246,7 +261,7 @@
                      <l>hasta morir en accion,</l>
                      <l>que el honor de un español </l>
                      <l>es morir brillante en guerra,</l>
-                     <l>preparad la cartuchera, </l>
+                     <l>preparad la cartuchera,</l>
                      <l>y que en ella no haya falta,</l>
                      <l>que vuestras fuertes murallas</l>
                      <l>con todas sus baterias;</l>
@@ -271,9 +286,8 @@
                      <l>ni el señor Muley -Abbas,</l>
                      <l>me quitan que tome á <name>Tánger</name>.</l>
                      <l>Llevo conmigo aquel Ángel</l>
-                     <l>de mi division teniente, </l>
-                     <l>que ha venido del <name>Oriente</name>
-                            </l>
+                     <l>de mi division teniente,</l>
+                     <l>que ha venido del <name>Oriente</name></l>
                      <l>á destruir tu nacion:</l>
                      <l>yo pierdo mi corazon</l>
                      <l rend="cursiva">por mis soldados valientes.</l>
@@ -293,7 +307,7 @@
                      <l rend="cursiva">pierdo todo mi tesoro.</l>
                   </lg>
 
-                  <pb n="3" source="Moreno_374_3.jpeg" facs="fedora_ug8110101/full/full/0/default.jpg"/>
+                  <pb n="3" source="Moreno_374_3.jpeg" facs="moreno/Moreno_374_3.jpeg"/>
 
                   <fw type="paginaNum">3</fw>
 
@@ -302,17 +316,17 @@
                      <l>¿de qué sirven tus cañones,</l>
                      <l>si con diez mil españoles</l>
                      <l>té haré salir de tus tierras?</l>
-                     <l>Venganza tomar quisiera, </l>
+                     <l>Venganza tomar quisiera,</l>
                      <l>pero vuestra cobardía</l>
                      <l>con espingarda y gumía,</l>
-                     <l>dale frente á mis lanceros, </l>
+                     <l>dale frente á mis lanceros,</l>
                      <l>y verás mis coraceros</l>
                      <l rend="cursiva">con valor y bizarria.</l>
                   </lg>
 
                   <lg>
-                     <l rend="indent">Húsares y tiradores, </l>
-                     <l>lanceros y coraceros, </l>
+                     <l rend="indent">Húsares y tiradores,</l>
+                     <l>lanceros y coraceros,</l>
                      <l>ingenieros, granaderos,</l>
                      <l>fusileros, cazadores;</l>
                      <l>perseguid á esos traidores,</l>
@@ -331,15 +345,14 @@
                   </lg>
 
                   <lg>
-                     <l rend="indent">Salid al campo de <name>Marruecos</name>
-                            </l>
+                     <l rend="indent">Salid al campo de <name>Marruecos</name></l>
                      <l>darle el frente á mis Cristianos,</l>
                      <l>os harán cantar de plano</l>
                      <l>aunque vengais de refresco.</l>
                      <l>Si de ignorancia peco</l>
                      <l>para mí serán los males;</l>
                      <l>con mis soldados leales</l>
-                     <l>me coloqué en <name>Tetuan</name>, </l>
+                     <l>me coloqué en <name>Tetuan</name>,</l>
                      <l>y en toda <name>España</name> dirán</l>
                      <l rend="cursiva">vivan nuestros generales.</l>
                   </lg>
@@ -353,7 +366,7 @@
                      <l>venga tu mala region,</l>
                      <l>bárbaros sin religion,</l>
                      <l>¿de qué os sirve atacar,</l>
-                     <l>si os teneis que acordar, </l>
+                     <l>si os teneis que acordar,</l>
                      <l rend="cursiva">del Ejército español?</l>
                   </lg>
 
@@ -385,14 +398,14 @@
                </div>
 
                <div n="3">
-                  <pb n="4" source="Moreno_374_4.jpeg" facs="fedora_ug8108721/full/full/0/default.jpg"/>
+                  <pb n="4" source="Moreno_374_4.jpeg" facs="moreno/Moreno_374_4.jpeg"/>
 
                   <fw type="paginaNum">4</fw>
 
                   <head type="titulo_parte">TOMA DE TETUAN.</head>
 
                   <lg rend="cursiva">
-                     <l rend="indent">Viva la Reina Isabel, </l>
+                     <l rend="indent">Viva la Reina Isabel,</l>
                      <l>viva nuestra gran victoria,</l>
                      <l>viva la <name>España</name> valiente</l>
                      <l>que se ha colmado de gloria.</l>
@@ -425,8 +438,8 @@
                   </lg>
 
                   <lg>
-                     <l rend="indent">O'Donnell, gefe arrogante, </l>
-                     <l>que nombre habeis alcanzado, </l>
+                     <l rend="indent">O'Donnell, gefe arrogante,</l>
+                     <l>que nombre habeis alcanzado,</l>
                      <l>muéstrate al par del soldado</l>
                      <l>en defensa del Infante:</l>
                      <l>Tuyo será el estandarte</l>
@@ -455,8 +468,7 @@
             </div>
 
             <div type="colofon">
-               <p>
-                        <lb/>Carmona.—Imp. y lib. de don José M. Moreno, Madre de Dios, 1.</p>
+               <p><lb/>Carmona.—Imp. y lib. de don José M. Moreno, Madre de Dios, 1.</p>
             </div>
          </div>
       </body>

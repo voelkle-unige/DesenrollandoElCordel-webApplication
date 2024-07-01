@@ -11,9 +11,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -40,7 +57,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6473276</idno>
@@ -76,9 +93,9 @@
                      <summary n="3">Tres grabados (p. 1)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabados_m_191_1.xml" facs="fedora_ug8104528/454,310,381,762/100,/0/default.jpg">grabados_m_191_1</item>
-                           <item corresp="grabados_m_191_2.xml" facs="fedora_ug8104528/830,319,298,731/100,/0/default.jpg">grabados_m_191_2</item>
-                           <item corresp="grabados_m_191_3.xml" facs="fedora_ug8104528/1153,288,345,768/100,/0/default.jpg">grabados_m_191_3</item>
+                            <item corresp="grabados_m_191_1.xml" facs="moreno/Moreno_191_1.jpg/454,310,381,762/100,/0/default.jpg">grabados_m_191_1</item>
+                            <item corresp="grabados_m_191_2.xml" facs="moreno/Moreno_191_1.jpg/830,319,298,731/100,/0/default.jpg">grabados_m_191_2</item>
+                            <item corresp="grabados_m_191_3.xml" facs="moreno/Moreno_191_1.jpg/1153,288,345,768/100,/0/default.jpg">grabados_m_191_3</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -109,11 +126,9 @@
                      <geo>37.0183652 -4.5596649</geo>
                   </location>
                </place>
-               <place n="1" corresp="Q13522657">
-                  <placeName key="Provincia_del_Rosellón">Rosellón</placeName>
-                  <location>
-                     <geo>42.5 2.75</geo>
-                  </location>
+               <place n="1">
+                  <placeName key="Rosellón">Rosellón</placeName>
+                  <desc>Ambiguos</desc>
                </place>
             </listPlace>
          </sourceDesc>
@@ -127,7 +142,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -161,23 +176,23 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8105720/manifest">
-      <graphic url="fedora_ug8104528/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_191_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
 
          <div>
 
-            <pb n="1" source="Moreno_191_1.jpg" facs="fedora_ug8104528/full/full/0/default.jpg"/>
+            <pb n="1" source="Moreno_191_1.jpg" facs="moreno/Moreno_191_1.jpg"/>
 
             <fw type="impresorNum">(Núm. 199.)</fw>
 
-            <head type="primer_titulo">EL MALTES DE MADRID.</head>
+            <head type="primer_titulo">EL MALTES DE <name>MADRID</name>.</head>
             <head rend="cursiva" type="subtitulo">Romance. en que se declara una prision que ha sido
-               hecha en la <lb/>córte de Madrid de tres hombres y dos mugeres, por haber dado
-               <lb/>muerte á veinte y siete personas; y cómo se descubrió por un <lb/>caballero
-               maltés con quien querian ejecutar lo mismo con él.</head>
+               hecha en la <lb/>córte de <name>Madrid</name> de tres hombres y dos mugeres, por
+               haber dado <lb/>muerte á veinte y siete personas; y cómo se descubrió por un
+               <lb/>caballero maltés con quien querian ejecutar lo mismo con él.</head>
 
             <div n="1" type="parte">
 
@@ -212,7 +227,7 @@
                <l>llegándose al caballero,</l>
                <l>le dice aquestas palabras:</l>
 
-               <pb n="2" source="Moreno_191_2.jpg" facs="fedora_ug8110033/full/full/0/default.jpg"/>
+               <pb n="2" source="Moreno_191_2.jpg" facs="moreno/Moreno_191_2.jpg"/>
 
                <fw type="paginaNum">2</fw>
 
@@ -280,7 +295,7 @@
                <l>con mil súplicas alcanza</l>
                <l>que beba siquiera un trago,</l>
                <l>ya que comer rehusaba.</l>
-               <l>Cuando de improviso vieroi,</l>
+               <l>Cuando de improviso vieron,</l>
                <l>por la puerta de la sala</l>
                <l>entrar á tres embozados,</l>
                <l>sin hablar una palabra.</l>
@@ -290,7 +305,7 @@
                <l>volvió la cara á la dama,</l>
                <l>diciéndola: ya Señora,</l>
                <l>es hora de que me vaya.</l>
-               <l>Y sacando su relo)</l>
+               <l>Y sacando su reloj</l>
                <l>de plata sobredorada</l>
                <l>ha dicho las ocho son.</l>
                <l>y hago gran falta en mi casa.</l>
@@ -305,7 +320,7 @@
                <l>diciendo; que buen reloj:</l>
                <l>Veámosle camarada,</l>
 
-               <pb n="3" source="Moreno_191_3.jpg" facs="fedora_ug8108105/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_191_3.jpg" facs="moreno/Moreno_191_3.jpg"/>
 
                <fw type="paginaNum">3</fw>
 
@@ -329,7 +344,7 @@
                <l>pues luego pasó la caja</l>
                <l>á acompañar al reloj</l>
                <l>á las manos de la dama.</l>
-               <l>Viéndose el buen caballeró</l>
+               <l>Viéndose el buen caballero</l>
                <l>en confusion tan estraña,</l>
                <l>con el corazon pedía</l>
                <l>á la Virgen Soberana</l>
@@ -368,8 +383,8 @@
                <l>porque una poca mistela</l>
                <l>juntamente con él traiga,</l>
                <l>que para estas ocasiones</l>
-               <l>tambien la tengo guardada:</l>
-               <l>llamar arriba al criado,</l>
+               <l>tambien la tengo guardada</l>
+               <l>llamar arriba al criado:</l>
                <l>por escusar que bajara</l>
                <l>el amo, y le diera cuenta</l>
                <l>de lo que allí le pasaba.</l>
@@ -387,7 +402,7 @@
                <l>sin que nadie lo notara</l>
                <l>le apretó el amo la mano</l>
                <l>con una fuerza estremada.</l>
-               <l>Novedad le hizo al criádo</l>
+               <l>Novedad le hizo al criado</l>
                <l>ver esta accion nunca usada,</l>
                <l>y tambien ver los tres hombres;</l>
                <l>que embozados se paseaban.</l>
@@ -398,7 +413,7 @@
                <l>cuatro fuertes carabinas,</l>
                <l>y á la papelera marcha.</l>
 
-               <pb n="4" source="Moreno_191_4.jpg" facs="fedora_ug8103695/full/full/0/default.jpg"/>
+               <pb n="4" source="Moreno_191_4.jpg" facs="moreno/Moreno_191_4.jpg"/>
 
                <fw type="paginaNum">4</fw>
 
@@ -419,7 +434,7 @@
                <l>que vayan diez granaderos</l>
                <l>con bayoneta calada.</l>
                <l>Todos á la casa llegan,</l>
-               <l>el criado á la puertá llama,</l>
+               <l>el criado á la puerta llama,</l>
                <l>bajó la criada á abrirle,</l>
                <l>y asi que abre, la agarran,</l>
                <l>diciéndo: calla, sino,</l>
@@ -434,7 +449,7 @@
                <l>las manos atrás atadas,</l>
                <l>tendido en el duro suelo</l>
                <l>lo tenian y esperaban</l>
-               <l>á que el criado viniese, </l>
+               <l>á que el criado viniese,</l>
                <l>para que le acompañara</l>
                <l>en la muerte, y al instante</l>
                <l>con valentia bizarra,</l>
@@ -489,10 +504,10 @@
 
             <div n="2" type="parte">
 
-               <pb n="5" source="Moreno_191_5.jpg" facs="fedora_ug8106027/full/full/0/default.jpg"/>
+               <pb n="5" source="Moreno_191_5.jpg" facs="moreno/Moreno_191_5.jpg"/>
 
                <head rend="negrita" type="titulo_parte">SEGUNDA PARTE.</head>
-               <head rend="negrita" type="primer_titulo">EL MALTES DE MADRID.</head>
+               <head rend="negrita" type="primer_titulo">EL MALTES DE <name>MADRID</name>.</head>
 
                <l rend="indent">Ya dije en la primer parte,</l>
                <l>discreto auditorio mio,</l>
@@ -551,7 +566,7 @@
                <l>los tenian allí presos.</l>
                <l>Y por los Señores visto</l>
 
-               <pb n="6" source="Moreno_191_6.jpg" facs="fedora_ug8107245/full/full/0/default.jpg"/>
+               <pb n="6" source="Moreno_191_6.jpg" facs="moreno/Moreno_191_6.jpg"/>
 
                <fw type="paginaNum">6</fw>
 
@@ -577,7 +592,7 @@
                <l>con lágrimas y suspiros,</l>
                <l>diciendo; sepan, Señores,</l>
                <l>asi mi historia principio,</l>
-               <l>que mi nombre es Lconarda,</l>
+               <l>que mi nombre es Leonarda,</l>
                <l>y Robles por apellido.</l>
                <l>Nací en la noble <name>Antequera</name>,</l>
                <l>que mejor hubiera sido</l>
@@ -644,7 +659,7 @@
                <l>se iban de noche sacando,</l>
                <l>y se tiraban al rio;</l>
 
-               <pb n="7" source="Moreno_191_7.jpg" facs="fedora_ug8104928/full/full/0/default.jpg"/>
+               <pb n="7" source="Moreno_191_7.jpg" facs="moreno/Moreno_191_7.jpg"/>
 
                <fw type="paginaNum">7</fw>
 
@@ -737,7 +752,7 @@
                <l>los sacaron de la carcel,</l>
                <l>y de caridad movidos</l>
 
-               <pb n="8" source="Moreno_191_8.jpg" facs="fedora_ug8107323/full/full/0/default.jpg"/>
+               <pb n="8" source="Moreno_191_8.jpg" facs="moreno/Moreno_191_8.jpg"/>
 
                <fw type="paginaNum">8</fw>
 
@@ -786,7 +801,7 @@
                <l>la encienden el corazon,</l>
                <l>que mueve á llanto el oirlos.</l>
                <l>Empezó á decir el Credo,</l>
-               <l>y llegando á ánico hijo,</l>
+               <l>y llegando á <hi rend="cursiva">único hijo</hi>,</l>
                <l>de la escalera le arrojan,</l>
                <l>y quedó cadáver frio,</l>
                <l>dando muestra de que fué</l>

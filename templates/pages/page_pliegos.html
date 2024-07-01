@@ -43,7 +43,9 @@
                     <pb-drawer toggle="tocToggle" class="toc" emit="toc" subscribe="transcription">
                         <div class="drawer-content">
                             <span class="drawer-content__closeBtn">X</span>
-                            <p class="italic"><pb-i18n key="notice.contentHelp">Haga clic en la flecha a la izquierda del título para ver la lista completa de contenidos.</pb-i18n></p>
+                            <p class="italic">
+                                <pb-i18n key="notice.contentHelp">Haga clic en la flecha a la izquierda del título para ver la lista completa de contenidos.</pb-i18n>
+                            </p>
                             <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" load-once="load-once">
                                 <pb-i18n key="dialogs.loading">Loading</pb-i18n>
                             </pb-load>
@@ -57,7 +59,13 @@
                             <pb-view id="figures" src="document1" xpath="//teiHeader" view="single" subscribe="places">
                                 <pb-param name="mode" value="places"/>
                             </pb-view>
-                            <p class="page-pliegos__drawerPlaces-paragraph"><pb-i18n key="notice.places.para1"/> <a href="#"><pb-i18n key="notice.places.link1"/></a>. <pb-i18n key="notice.places.para2"/><a href="../Documentation/contacto"><pb-i18n key="notice.places.link2"/></a>.</p>
+                            <p class="page-pliegos__drawerPlaces-paragraph">
+                                <pb-i18n key="notice.places.para1"/> <a href="#">
+                                    <pb-i18n key="notice.places.link1"/>
+                                </a>. <pb-i18n key="notice.places.para2"/>
+                                <a href="../Documentation/contacto">
+                                    <pb-i18n key="notice.places.link2"/>
+                                </a>.</p>
                         </div>
                     </pb-drawer>
                     
@@ -109,7 +117,7 @@
                         <!--<p class="loading_message"><pb-i18n key="notice.loading"/></p>-->
                         <span class="loader loading_message"/>
                         
-                        <pb-facsimile id="page-pliegos__facsimile" base-uri="https://iiif.unige.ch/iiif/2/" default-zoom-level="0" show-navigator="" show-navigation-control="" show-home-control="" subscribe="transcription"/>
+                        <pb-facsimile id="page-pliegos__facsimile" base-uri="https://iiif.hedera.unige.ch/iiif/3/pliegos/" default-zoom-level="0" show-navigator="" show-navigation-control="" show-home-control="" subscribe="transcription"/>
                     </main>
                     
                 </app-header-layout>

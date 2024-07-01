@@ -7,9 +7,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -33,7 +50,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6461189</idno>
@@ -69,8 +86,8 @@
                      <summary n="2">Dos grabados (p.1, p.5)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_083_1.xml" facs="fedora_ug8105101/512,297,677,693/100,/0/default.jpg">grabado_m_083_1</item>
-                           <item corresp="grabado_m_083_2.xml" facs="fedora_ug8109433/344,333,1084,992/100,/0/default.jpg">grabado_m_083_2</item>
+                            <item corresp="grabado_m_083_1.xml" facs="moreno/Moreno_083_1.jpg/512,297,677,693/100,/0/default.jpg">grabado_m_083_1</item>
+                            <item corresp="grabado_m_083_2.xml" facs="moreno/Moreno_083_5.jpg/344,333,1084,992/100,/0/default.jpg">grabado_m_083_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -141,7 +158,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -175,14 +192,14 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8103848/manifest">
-      <graphic url="fedora_ug8105101/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_083_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
          <div>
             <div>
-               <pb n="1" source="Moreno_083_1.jpg" facs="fedora_ug8105101/full/full/0/default.jpg"/>
+               <pb n="1" source="Moreno_083_1.jpg" facs="moreno/Moreno_083_1.jpg"/>
 
                <fw type="impresorNum">Número 93,</fw>
 
@@ -204,9 +221,9 @@
                   <l>Tenia una propiedad;</l>
                   <l>cuando subia á caballo,</l>
                   <l>se santiguaba diciendo:</l>
-                  <l>líbreme Dios de los diablos, </l>
-                  <l>de enemigos y ladrones, </l>
-                  <l>de rodeos y peñascos, </l>
+                  <l>líbreme Dios de los diablos,</l>
+                  <l>de enemigos y ladrones,</l>
+                  <l>de rodeos y peñascos,</l>
                   <l>de traiciones y maldades,</l>
                   <l>de cuestas y de barrancos:</l>
                   <l>y con estas bendiciones</l>
@@ -224,25 +241,25 @@
                   <l>De la Cruz el diablo huye,</l>
                   <l>el enemigo del lazo,</l>
 
-                  <pb n="2" source="Moreno_083_2.jpg" facs="fedora_ug8109241/full/full/0/default.jpg"/>
+                  <pb n="2" source="Moreno_083_2.jpg" facs="moreno/Moreno_083_2.jpg"/>
 
                   <l>de la eseopeta el ladron</l>
                   <l>por las cuestas rodeando.</l>
-                  <l>Mas de las mujeres, cruces, </l>
+                  <l>Mas de las mujeres, cruces,</l>
                   <l>lazos, escopetas, dardos,</l>
                   <l>no bastan para librar</l>
                   <l>al hombre de sus engaños.</l>
                   <l>Juan Prados se disculpó</l>
                   <l>diciendo: no os dé cuidado</l>
                   <l>Juana Gutierrez aqueso,</l>
-                  <l>que por muchos hombres vaigo;</l>
-                  <l>no me dan penas mujeres.</l>
+                  <l>que por muchos hombres valgo;</l>
+                  <l>no me dan penas mujeres,</l>
                   <l>que bien conozco su trato;</l>
                   <l>yo sé que no habrá ninguna</l>
                   <l>que me toque en el zapato:</l>
                   <l>soy Zahorí con las viejas,</l>
                   <l>con las viudas lapidario,</l>
-                  <l>con las doncellas Macías, </l>
+                  <l>con las doncellas Macías,</l>
                   <l>con las taimadas taimado;</l>
                   <l>hago recetas á muchas</l>
                   <l>fingiendo ser boticario,</l>
@@ -254,23 +271,26 @@
                   <l>porque yo soy jubilado,</l>
                   <l>y asi no me acuerdo de ellas</l>
                   <l>cuando mis jornadas hago;</l>
-                  <l>porque todas me conocen, </l>
-                  <l>y saben que soy Juan rados.</l>
-                  <l>Ausentóse, y la muje.</l>
+                  <l>porque todas me conocen,</l>
+                  <l>y saben que soy Juan Prados.</l>
+                  <l>Ausentóse, y la <choice>
+                        <sic>muje.</sic>
+                        <corr>mujer</corr>
+                     </choice></l>
                   <l>dijo: por vida de entrambos,</l>
                   <l>que me lo habeis de pagar</l>
                   <l>antes que se acabe el año.</l>
-                  <l>Llamó una parienta suya, </l>
+                  <l>Llamó una parienta suya,</l>
                   <l>y dióla cuenta del caso,</l>
                   <l>y ambas de conformidad,</l>
                   <l>solemne burla trazaron.</l>
                   <l>Tuvieron para la noche,</l>
-                  <l>porque volveria cansado, </l>
+                  <l>porque volveria cansado,</l>
                   <l>aderezada una cena</l>
                   <l>como para veinte y cuatro:</l>
-                  <l>mnuchospernilale tocino,</l>
-                  <l>diferencia de adobados, </l>
-                  <l>chorizos de <name>Estremadura</name> , </l>
+                  <l>mnucho pernil de tocino,</l>
+                  <l>diferencia de adobados,</l>
+                  <l>chorizos de <name>Estremadura</name> ,</l>
                   <l>jamon de <name>Rute</name> estremado,</l>
                   <l>aceitunas sevillanas,</l>
                   <l>nueces de Fuentes del Arco,</l>
@@ -298,9 +318,9 @@
                   <l>no habia descuido en darlo.</l>
                   <l>Sentia fuerza en el vino,</l>
                   <l>y cuando pedia aguado,</l>
-                  <l>en lugar de agua le, echaban</l>
-                  <l>vino blanco de tres, años.</l>
-                  <l>Comió poderosamente, </l>
+                  <l>en lugar de agua le echaban</l>
+                  <l>vino blanco de tres años.</l>
+                  <l>Comió poderosamente,</l>
                   <l>y obró tanto lo salado,</l>
                   <l>que un tudesco parecia</l>
                   <l>segun daba priesa al jarro.</l>
@@ -308,12 +328,12 @@
                   <l>dióle el vino tal zarpazo,</l>
                   <l>que con los ojos alegres</l>
                   <l>hacía tornasolados.</l>
-                  <l>Mirába alCielo y decia:</l>
-                  <l>é no veis qué de hombres aimados</l>
+                  <l>Mirába al Cielo y decia:</l>
+                  <l>¿no veis qué de hombres armados</l>
 
-                  <pb n="3" source="Moreno_083_3.jpg" facs="fedora_ug8108581/full/full/0/default.jpg"/>
+                  <pb n="3" source="Moreno_083_3.jpg" facs="moreno/Moreno_083_3.jpg"/>
 
-                  <l>bajan? dad acá mis armas, </l>
+                  <l>bajan? dad acá mis armas,</l>
                   <l>Juana Gutierrez, ¿qué aguardo?</l>
                   <l>hacia una mona alegre,</l>
                   <l>era donaire escucharlo:</l>
@@ -329,7 +349,7 @@
                   <l>entra de revés tirando:</l>
                   <l>estocada uñas arriba,</l>
                   <l>revuelve uñas abajo,</l>
-                  <l>cuchillada de mandoble, </l>
+                  <l>cuchillada de mandoble,</l>
                   <l>mete el pie izquierdo de un salto:</l>
                   <l>entra con furia, revuelve,</l>
                   <l>buena dale á tu contrario,</l>
@@ -355,7 +375,7 @@
                   <l>junto el gran Lázaro el santo,</l>
                   <l>y dejándole sujeto</l>
                   <l>á las escarchas del campo,</l>
-                  <l>das mujeres muy risueñas</l>
+                  <l>las mujeres muy risueñas</l>
                   <l>volvieron y se acostaron,</l>
                   <l>y él triste, la fria noche</l>
                   <l>la sentia tanto cuanto.</l>
@@ -388,22 +408,22 @@
                   <l>le preguntó ¿qué queria?</l>
                   <l>Dijo : saber dónde vamos.</l>
                   <l>Díjole el descalzo entonces:</l>
-                  <l>para <name>Simancas</name> me parta</l>
-                  <l>á decir Misa mañana, </l>
+                  <l>para <name>Simancas</name> me parto</l>
+                  <l>á decir Misa mañana,</l>
                   <l>por ser dia de san Márcos,</l>
                   <l>y me holgaria infinito,</l>
                   <l>si es predicador, que ambos</l>
                   <l>hiciéramos el Oficio:</l>
                   <l>Juan Prados dijo: sí, vamos.</l>
                   <l>Fuéronse ambos á <name>Simancas</name>,</l>
-                  <l>y el cura regecijado</l>
+                  <l>y el cura regocijado</l>
 
-                  <pb n="4" source="Moreno_083_4.jpg" facs="fedora_ug8110234/full/full/0/default.jpg"/>
+                  <pb n="4" source="Moreno_083_4.jpg" facs="moreno/Moreno_083_4.jpg"/>
 
                   <l>al nuevo Predicador</l>
                   <l>le recibe entre los brazos.</l>
                   <l>Diéronle una librería</l>
-                  <l>en que estudiase algun rato.:</l>
+                  <l>en que estudiase algun rato;</l>
                   <l>tocaron luego al sermon,</l>
                   <l>la campana hacian pedazos.</l>
                   <l>Juan Prados abrió los libros</l>
@@ -418,7 +438,7 @@
                   <l>vestido y puestos los hábitos,</l>
                   <l>que es ordinario en arrieros</l>
                   <l>acostarse con zapatos.</l>
-                  <l>Despertóle la campana, </l>
+                  <l>Despertóle la campana,</l>
                   <l>que daba grandes golpazos,</l>
                   <l>clamoreando el sermon:</l>
                   <l>dijo la misa el descalzo;</l>
@@ -434,20 +454,20 @@
                   <l>y la burla celebraron:</l>
                   <l>Juan Prados, siendo ya noche,</l>
                   <l>en <name>Valladolid</name> se ha entrado.</l>
-                  <l>Fuése derecho á su casa, </l>
+                  <l>Fuése derecho á su casa,</l>
                   <l>y poco á poco llamando,</l>
                   <l>se asomó Juana Gutierrez,</l>
-                  <l>y dijo : á quién ha llamado?</l>
+                  <l>y dijo : ¿á quién ha llamado?</l>
                   <l>¿quién está ahí ? Respondió:</l>
                   <l>abre, mujer que yo llamo.</l>
-                  <l>¿ Fraile en mi casa ? Deo gratias: </l>
+                  <l>¿ Fraile en mi casa ? Deo gratias:</l>
                   <l>váyase el padre bigardo,</l>
-                  <l>que si flamo á mi marido</l>
+                  <l>que si llamo á mi marido</l>
                   <l>haré le dé muchos palos.</l>
-                  <l>Mujer, que Juan Prados soy, </l>
+                  <l>Mujer, que Juan Prados soy,</l>
                   <l>abridme que soy Juan Prados.</l>
-                  <l>tespondió Juana Gutierrez:</l>
-                  <l>mnire no le tire un canto,</l>
+                  <l>Respondió Juana Gutierrez:</l>
+                  <l>mire no le tire un canto,</l>
                   <l>que le suma la capilla</l>
                   <l>juntamente con los cascos.</l>
                   <l>Dijo el marido: señora,</l>
@@ -466,7 +486,7 @@
                   <l>si son las mujeres diablos,</l>
                   <l>para santiaguarse de ellas</l>
                   <l>cuando subia á caballo,</l>
-                  <l>y que huyese de sus mañas, </l>
+                  <l>y que huyese de sus mañas,</l>
                   <l>que no se alabase tanto,</l>
                   <l>que si quiere una mujer</l>
                   <l>hará de un diablo cuatro.</l>
@@ -479,7 +499,7 @@
                   <l>quince dias, en los cuales</l>
                   <l>sucedió un cuento galano,</l>
                   <l>que verá el lector curioso</l>
-                  <l>en otro Romance raro, </l>
+                  <l>en otro Romance raro,</l>
                   <l>donde con ardid notable</l>
                   <l>se satisfizo el buen Prados,</l>
                   <l>de la burla tan pesada</l>
@@ -487,14 +507,14 @@
                </div>
 
                <div n="2" type="parte">
-                  <pb n="5" source="Moreno_083_5.jpg" facs="fedora_ug8109433/full/full/0/default.jpg"/>
+                  <pb n="5" source="Moreno_083_5.jpg" facs="moreno/Moreno_083_5.jpg"/>
 
                   <head type="titulo_parte">
                      <lb/><hi rend="negrita">JUAN DE PRADOS,</hi>
                      <lb/>ó <lb/>CHASCO DEL ARRIERO. </head>
                   <head type="subtitulo_parte">SEGUNDA PARTE.</head>
 
-                  <l><hi rend="negrita">P</hi>ieado Juan Prados luego</l>
+                  <l><hi rend="negrita">P</hi>icado Juan Prados luego</l>
                   <l>de aquel tan pesado chasco</l>
                   <l>que su mujer le dispuso,</l>
                   <l>despicarse quiso honrado.</l>
@@ -510,14 +530,14 @@
                   <l>en la fiesta, contemplando</l>
                   <l>la voz del predicador,</l>
                   <l>cuyos ecos le gustaroa.</l>
-                  <l>Enamoróse del padre, </l>
+                  <l>Enamoróse del padre,</l>
                   <l>vino á su casa alabando</l>
                   <l>á su marido tal gracia,</l>
                   <l>boca, discrecion y garbo.</l>
                   <l>Juan Prados lo entendió luego,</l>
                   <l>y dijo : por Dios sagrado,</l>
 
-                  <pb n="6" source="Moreno_083_6.jpg" facs="fedora_ug8103070/full/full/0/default.jpg"/>
+                  <pb n="6" source="Moreno_083_6.jpg" facs="moreno/Moreno_083_6.jpg"/>
 
                   <l>que en el cuerno de la luna</l>
                   <l>y me quieren poner mis hados.</l>
@@ -531,7 +551,7 @@
                   <l>traiga al padre convidado.</l>
                   <l>Dijo Juan Prados: mujer,</l>
                   <l>yo tengo muchos cuidados,</l>
-                  <l>quédese para otro dia, </l>
+                  <l>quédese para otro dia,</l>
                   <l>que quiero ir mañana al campo.</l>
                   <l>Prevenid aquesta alforja;</l>
                   <l>ella ordenó todo el hato</l>
@@ -541,7 +561,7 @@
                   <l>y apartó luego al criado,</l>
                   <l>y díjole :tú has de hacer</l>
                   <l>un hecho como Romano.</l>
-                  <l>En <name>Valladolid</name> me quedo, </l>
+                  <l>En <name>Valladolid</name> me quedo,</l>
                   <l>y te daré diez ducados</l>
                   <l>si me guardas el secreto,</l>
                   <l>y haces como fiel criado.</l>
@@ -560,7 +580,7 @@
                   <l>dirásle luego en saliendo</l>
                   <l>que yo le beso la mano,</l>
                   <l>y que para cierto intento</l>
-                  <l>dentro enmi casa le aguardo, </l>
+                  <l>dentro enmi casa le aguardo,</l>
                   <l>Salió el mozo con gran priesa,</l>
                   <l>fuese derecho á su amo,</l>
                   <l>contándole de su ama</l>
@@ -573,7 +593,7 @@
                   <l>como merece su trato,</l>
                   <l>y que el prior no consiente</l>
                   <l>que á tales horas salgamos;</l>
-                  <l>pero que mañana voy, </l>
+                  <l>pero que mañana voy,</l>
                   <l>aunque me siento cansado,</l>
                   <l>y predico en <name>Gavaldon</name>,</l>
                   <l>que es junto á Lázaro el Santo:</l>
@@ -585,7 +605,7 @@
                   <l>y dando parte del caso,</l>
                   <l>á su ama, comenzó</l>
                   <l>á prevenir el canasto.</l>
-                  <l>Mató una gorda gallina, </l>
+                  <l>Mató una gorda gallina,</l>
                   <l>hizo rellenar un ganso,</l>
                   <l>lavóse bien por la noche,</l>
                   <l>vistióse toda de raso.</l>
@@ -601,10 +621,10 @@
                   <l>haciéndole mil halagos,</l>
                   <l>á quien el marido astuto</l>
                   <l>recibió con muchos palos.</l>
-                  <l>Meneóla las costillas, </l>
+                  <l>Meneóla las costillas,</l>
                   <l>diciendo con ecos raros;</l>
 
-                  <pb n="7" source="Moreno_083_7.jpg" facs="fedora_ug8107655/full/full/0/default.jpg"/>
+                  <pb n="7" source="Moreno_083_7.jpg" facs="moreno/Moreno_083_7.jpg"/>
 
                   <l>acude á vuestro marido,</l>
                   <l>no busqueis tres piés al gato,</l>
@@ -617,13 +637,13 @@
                   <l>ella entendió que era el fraile,</l>
                   <l>y estaba toda temblando.</l>
                   <l>Molióla todos los huesos,</l>
-                  <l>porque la daba á dos manos, </l>
+                  <l>porque la daba á dos manos,</l>
                   <l>á cuyos golpes huyó</l>
-                  <l>Juana Gutierrez sin manto,</l>
+                  <l>Juana Gutierrez sin manto.</l>
                   <l>Fuése á casa y acostóse</l>
-                  <l>hizo llamar cirujanos, </l>
+                  <l>hizo llamar cirujanos,</l>
                   <l>y á otro dia su marido</l>
-                  <l>yino muy disimulado:</l>
+                  <l>vino muy disimulado:</l>
                   <l>preguntó por su mujer,</l>
                   <l>dióla á ella un sobresalto,</l>
                   <l>y al fin el marido alegre</l>
@@ -633,7 +653,7 @@
                   <l>es, señora, aqueste tiempo,</l>
                   <l>si á este fraile convidamos;</l>
                   <l>mañana se ha de traer</l>
-                  <l>si os agrada. Mi Juan Prados, </l>
+                  <l>si os agrada. Mi Juan Prados,</l>
                   <l>por Dios te pido no venga,</l>
                   <l>que me moriré de espanto</l>
                   <l>no le traigais á mi casa,</l>
@@ -656,7 +676,7 @@
                   <l>diósela, tomó su encargo,</l>
                   <l>y fuése á comer con ellos;</l>
                   <l>y luego que hubo llegado,</l>
-                  <l>se halló con la mesa puesta, </l>
+                  <l>se halló con la mesa puesta,</l>
                   <l>y aderezados los platos.</l>
                   <l>Juana Gutierrez sentada,</l>
                   <l>y sentida de los palos</l>
@@ -669,12 +689,12 @@
                   <l>hácia el fraile, á quien mostraba</l>
                   <l>una cara de ahorcado.</l>
                   <l>Tenia baja la cabeza,</l>
-                  <l>y entre sí estana hablando, </l>
+                  <l>y entre sí estana hablando,</l>
                   <l>jurándosela con gestos,</l>
                   <l>con ojos , dedos y manos.</l>
                   <l>Acaso faltó en la mesa</l>
                   <l>maliciosamente un vaso:</l>
-                  <l>daba Juan Prados mil voces, </l>
+                  <l>daba Juan Prados mil voces,</l>
                   <l>no respondiendo el criado,</l>
                   <l>colérico levantóse</l>
                   <l>á buscarle, y entretanto,</l>
@@ -691,7 +711,7 @@
                   <l>vive Dios que he de molerle.</l>
                   <l>Estaba el fraile temblando,</l>
 
-                  <pb n="8" source="Moreno_083_8.jpg" facs="fedora_ug8105939/full/full/0/default.jpg"/>
+                  <pb n="8" source="Moreno_083_8.jpg" facs="moreno/Moreno_083_8.jpg"/>
 
                   <l>y la mujer arrojóle</l>
                   <l>hácia la cabeza un plato.</l>
@@ -703,12 +723,12 @@
                   <l>decia el Te Deum, laudamus:</l>
                   <l>lástimábase de verla,</l>
                   <l>y ella arrojábale platos:</l>
-                  <l>santiguábase mil veces, </l>
-                  <l>las Letanías rezando, </l>
+                  <l>santiguábase mil veces,</l>
+                  <l>las Letanías rezando,</l>
                   <l>decia: Jesús, señora,</l>
                   <l>confesad vuestros pecados.</l>
                   <l>Y vióse tan afligido</l>
-                  <l> el fraile de ollas y bancos, </l>
+                  <l> el fraile de ollas y bancos,</l>
                   <l>que bajó por la escalera </l>
                   <l>con mayor furia que un rayo.</l>
                   <l>Siguióle Juana Gutierrez,</l>
@@ -719,8 +739,8 @@
                   <l>lo estaba todo mirando;</l>
                   <l>lleno de risa salió</l>
                   <l>menudeando los pasos,</l>
-                  <l>¡hizo piernas en la sala,</l>
-                  <l>caló el sombrero muy bajo, </l>
+                  <l>hizo piernas en la sala,</l>
+                  <l>caló el sombrero muy bajo,</l>
                   <l>y con una risa falsa </l>
                   <l>remuquetes apuntando,</l>
                   <l>la dijo, qué hay, mi señora?</l>
@@ -736,7 +756,7 @@
                   <l>pena semejante es poca</l>
                   <l>y aun estar en un cadalso.</l>
                   <l>Tambien burlar al marido</l>
-                  <l>con hábito de <name>san Pablo</name>, </l>
+                  <l>con hábito de <name>san Pablo</name>,</l>
                   <l>aunque sea un pobre arriero,</l>
                   <l>no os ha sido bien contado.</l>
                   <l>Dióla por aquella burla</l>

@@ -11,9 +11,26 @@
                <name xml:id="EL">Elina Leblanc</name>
                <resp>Codificación TEI</resp>
             </respStmt>
+            <respStmt>
+               <name xml:id="BP">Belinda Palacios</name>
+               <resp>Corrección de la transcripción</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="2.0"><title>Segunda versión de la edición, enriquecida con
+                  topónimos</title><date>2024</date></edition>
+            <respStmt>
+               <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+               <resp>Creación del modelo de reconocimiento automático de topónimos y codificación
+                  TEI</resp>
+            </respStmt>
+            <respStmt>
+               <name>Belinda Palacios y Lorysmar Franco</name>
+               <resp>Corrección de los resultados</resp>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+            <authority role="rightsHolder">Bibliothèque de l'Université de Genève</authority>
             <availability status="restricted">
                <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
             </availability>
@@ -37,7 +54,7 @@
                <msIdentifier>
                   <country>Suisse</country>
                   <settlement>Genève</settlement>
-                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
+                  <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque de l'Université de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
                   <idno type="DOI">10.5281/zenodo.6473171</idno>
@@ -73,8 +90,8 @@
                      <summary n="2">Dos grabados (p.1, p.5)</summary>
                      <decoNote type="lista_grabados">
                         <list>
-                           <item corresp="grabado_m_176_1.xml" facs="fedora_ug8109834/182,211,1351,707/100,/0/default.jpg">grabado_m_176_1</item>
-                           <item corresp="grabado_m_176_2.xml" facs="fedora_ug8108188/149,268,1558,200/100,/0/default.jpg">grabado_m_176_2</item>
+                            <item corresp="grabado_m_176_1.xml" facs="moreno/Moreno_176_1.jpg/182,211,1351,707/100,/0/default.jpg">grabado_m_176_1</item>
+                            <item corresp="grabado_m_176_2.xml" facs="moreno/Moreno_176_5.jpg/149,268,1558,200/100,/0/default.jpg">grabado_m_176_2</item>
                         </list>
                      </decoNote>
                   </decoDesc>
@@ -173,7 +190,7 @@
          </projectDesc>
          <editorialDecl corresp="#automaticTranscription">
             <correction>
-               <p>OCR no corregido</p>
+               <p>OCR corregido</p>
             </correction>
             <normalization>
                <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
@@ -207,15 +224,15 @@
             header</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile facs="https://iiif.unige.ch/dhportal/ug8104134/manifest">
-      <graphic url="fedora_ug8109834/full/200,/0/default.jpg"/>
+   <facsimile>
+      <graphic url="moreno/Moreno_176_1.jpg/full/200,/0/default.jpg"/>
    </facsimile>
    <text>
       <body>
 
          <div>
 
-            <pb n="1" source="Moreno_176_1.jpg" facs="fedora_ug8109834/full/full/0/default.jpg"/>
+            <pb n="1" source="Moreno_176_1.jpg" facs="moreno/Moreno_176_1.jpg"/>
 
             <fw type="impresorNum">Número 186.</fw>
 
@@ -234,7 +251,7 @@
                <l>nació en <name>Cañete</name> la Real,</l>
                <l>que es preciso declararlo,</l>
                <l>el valiente Juan Nebrón,</l>
-               <l>que en nombrarlo me acobardo, </l>
+               <l>que en nombrarlo me acobardo,</l>
                <l>porque con su mucha furia</l>
                <l>todo lo tiene postrado.</l>
                <l>Luego que Juan tuvo tres</l>
@@ -244,7 +261,7 @@
                <l>mas nunca compaña quiso,</l>
                <l>porque no queria amparo</l>
                <l>de criaturas humanas,</l>
-               <l>sino de Dios soberano:</l>
+               <l>sino de Dios soberano.</l>
                <l>Tuvo noticia este jóven</l>
                <l>como un poco de tabaco</l>
                <l>en <name>Gibraltar</name> se vendia</l>
@@ -270,7 +287,7 @@
                <l>á donde al instante fué</l>
                <l>su género despachado.</l>
 
-               <pb n="2" source="Moreno_176_2.jpg" facs="fedora_ug8110047/full/full/0/default.jpg"/>
+               <pb n="2" source="Moreno_176_2.jpg" facs="moreno/Moreno_176_2.jpg"/>
 
                <fw type="paginaNum">2</fw>
 
@@ -294,7 +311,7 @@
                <l>un cuarto desocupado,</l>
                <l>en que hospedarse, y responde,</l>
                <l>que tan solo habia uno alto.</l>
-               <l>Dijo Nebrón lo mostrase, </l>
+               <l>Dijo Nebrón lo mostrase,</l>
                <l>y la mujer ha tomado</l>
                <l>un candíl, detrás de ella</l>
                <l>se fué, y admitió su cuarto.</l>
@@ -305,7 +322,7 @@
                <l>La ventera renegaba,</l>
                <l>porque subia el caballo:</l>
                <l>y Nebrón la sosegó</l>
-               <l>con modos muy cortesanos, </l>
+               <l>con modos muy cortesanos,</l>
                <l>diciendo, que él dormia</l>
                <l>siempre junto á su caballo.</l>
                <l>Se sosegó la ventera,</l>
@@ -355,7 +372,7 @@
                <l>arrimóse ácia la puerta</l>
                <l>con el rejon en la mano,</l>
 
-               <pb n="3" source="Moreno_176_3.jpg" facs="fedora_ug8106280/full/full/0/default.jpg"/>
+               <pb n="3" source="Moreno_176_3.jpg" facs="moreno/Moreno_176_3.jpg"/>
 
                <fw type="paginaNum">3</fw>
 
@@ -437,10 +454,10 @@
                <l>y las barbas ha tirado,</l>
                <l>con que quedó hecho un mancebo</l>
                <l>con charpa y coleto armado.</l>
-               <l>Y arrimándose á la Cruz, </l>
+               <l>Y arrimándose á la Cruz,</l>
                <l>vió que con grande cuidado,</l>
 
-               <pb n="4" source="Moreno_176_4.jpg" facs="fedora_ug8106942/full/full/0/default.jpg"/>
+               <pb n="4" source="Moreno_176_4.jpg" facs="moreno/Moreno_176_4.jpg"/>
 
                <fw type="paginaNum">4</fw>
 
@@ -501,7 +518,7 @@
 
             <div n="2" type="parte">
 
-               <pb n="5" source="Moreno_176_5.jpg" facs="fedora_ug8108188/full/full/0/default.jpg"/>
+               <pb n="5" source="Moreno_176_5.jpg" facs="moreno/Moreno_176_5.jpg"/>
 
                <head rend="negrita" type="primer_titulo">JUAN GARCIA NEBRON.</head>
                <head type="titulo_parte">SEGUNDA PARTE.</head>
@@ -548,10 +565,10 @@
                <l>refiriendo sus sucesos,</l>
                <l>á todos los que allí estaban</l>
                <l>pidió le diesen silencio.</l>
-               <l>Nací en <name>Cañete</name> la Real, </l>
+               <l>Nací en <name>Cañete</name> la Real,</l>
                <l>hijo de padres muy buenos:</l>
 
-               <pb n="6" source="Moreno_176_6.jpg" facs="fedora_ug8109862/full/full/0/default.jpg"/>
+               <pb n="6" source="Moreno_176_6.jpg" facs="moreno/Moreno_176_6.jpg"/>
 
                <fw type="paginaNum">6</fw>
 
@@ -575,12 +592,12 @@
                <l>mi obstinado pensamiento,</l>
                <l>me hinchó la escopeta de agua,</l>
                <l>porque no surtiese efecto.</l>
-               <l>Apenas el otro dia, </l>
+               <l>Apenas el otro dia,</l>
                <l>tendió el sol sus rayos bellos,</l>
                <l>salí á buscar á mi tio,</l>
-               <l>y apenas vi al pobre viejo, </l>
+               <l>y apenas vi al pobre viejo,</l>
                <l>cuando atrevido disparo,</l>
-               <l>y erró la escopsta el fuego:</l>
+               <l>y erró la escopeta el fuego:</l>
                <l>Fué providencia divina</l>
                <l>el no hacer tal desacierto,</l>
                <l>dando la muerte á un anciano,</l>
@@ -597,7 +614,7 @@
                <l>yo, como era forastero,</l>
                <l>le quise dar á entender,</l>
                <l>que conociese mi aliento.</l>
-               <l>Le dí muerte aquella noche, </l>
+               <l>Le dí muerte aquella noche,</l>
                <l>y los demás compañeros</l>
                <l>se fueron, y me dejaron,</l>
                <l>y como si nada hecho</l>
@@ -606,10 +623,10 @@
                <l>Alegre me paseaba, v</l>
                <l>y una noche cuando el Cielo</l>
                <l>parecia que esgrimia</l>
-               <l>contra mi, rayos y truenos,</l>
+               <l>contra mí, rayos y truenos,</l>
                <l>vino una requisitoria</l>
                <l>con tan profundo secreto,</l>
-               <l>que en una prision me hallé, </l>
+               <l>que en una prision me hallé,</l>
                <l>sin ser de mis armas dueño.</l>
                <l>Valime de una señora,</l>
                <l>que era Doña Elvira Tello,</l>
@@ -634,9 +651,9 @@
                <l>aguardaba por instantes,</l>
                <l>que viniera el carcelero:</l>
                <l>cuando allá por la mañana,</l>
-               <l>y que el alba iba rompiendo, </l>
+               <l>y que el alba iba rompiendo,</l>
 
-               <pb n="7" source="Moreno_176_7.jpg" facs="fedora_ug8108822/full/full/0/default.jpg"/>
+               <pb n="7" source="Moreno_176_7.jpg" facs="moreno/Moreno_176_7.jpg"/>
 
                <fw type="paginaNum">7</fw>
 
@@ -653,7 +670,7 @@
                <l>Trinitario, donde estuve,</l>
                <l>amparado del silencio.</l>
                <l>Don Francisco Berrandon,</l>
-               <l>que era de mi padre deudo, </l>
+               <l>que era de mi padre deudo,</l>
                <l>me avisó de que mi tio</l>
                <l>ha dias de que era muerto,</l>
                <l>y que al tiempo de morir,</l>
@@ -680,7 +697,7 @@
                <l>de alguaciles y porteros,</l>
                <l>me cercan toda la casa</l>
                <l>con indecible secreto.</l>
-               <l>Yo que cercado me ví, </l>
+               <l>Yo que cercado me ví,</l>
                <l>me levanté echando retos,</l>
                <l>con el rejon en la mano,</l>
                <l>estas palabras diciendo.</l>
@@ -691,7 +708,7 @@
                <l>que se me puso delante</l>
                <l>el corregidor, diciendo:</l>
                <l>date preso á la justicia,</l>
-               <l>y yo agravíado de aquesto,</l>
+               <l>y yo agraviado de aquesto,</l>
                <l>mano metí á una pistola,</l>
                <l>y asertando el tiro al pecho,</l>
                <l>por no dar luz el fogon,</l>
@@ -714,14 +731,14 @@
                <l>pero fué con tal esfuerzo,</l>
                <l>que lo que subió de pies,</l>
                <l>volvió á bajar de cerebro.</l>
-               <l>Me fuí á curar á <name>Cañete</name>, </l>
+               <l>Me fuí á curar á <name>Cañete</name>,</l>
                <l>y luego así que supieron</l>
                <l>mis amigos este caso,</l>
                <l>lo han tomado por empeño.</l>
                <l>Juan Gomez el de <name>Granada</name>,</l>
                <l>que es mi leal compañero,</l>
 
-               <pb n="8" source="Moreno_176_8.jpg" facs="fedora_ug8109001/full/full/0/default.jpg"/>
+               <pb n="8" source="Moreno_176_8.jpg" facs="moreno/Moreno_176_8.jpg"/>
 
                <fw type="paginaNum">8</fw>
 
@@ -770,7 +787,7 @@
                <l>marquesas ambas hermanas,</l>
                <l>su intercesion propusieron</l>
                <l>á los señores Togados</l>
-               <l>del Hlustrísimo acuerdo;</l>
+               <l>del Ilustrísimo acuerdo;</l>
                <l>por conseguir concediesen</l>
                <l>la vida de aqueste reo,</l>
                <l>y los señores piadosos,</l>
