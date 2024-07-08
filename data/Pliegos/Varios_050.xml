@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve"/>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_266.xml">Varios_266</ref></p>
+            <p>Otra impresión: <ref target="Varios_266.xml">Varios_266</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Sucesores de A. Bosch</publisher>
@@ -81,7 +96,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -106,6 +122,56 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q15681">
+            <placeName key="Jaén">Jaén</placeName>
+            <location>
+              <geo>37.769722222222 -3.7888888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q84">
+            <placeName key="Londres">Londres</placeName>
+            <location>
+              <geo>51.507222222222 -0.1275</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q60">
+            <placeName key="Nueva_York">Nueva York</placeName>
+            <location>
+              <geo>40.7 -74</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1312844">
+            <placeName key="Alberique">Alberique</placeName>
+            <location>
+              <geo>39.116666666667 -0.52111111111111</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q4040">
+            <placeName key="Aragón">Aragón</placeName>
+            <location>
+              <geo>41 -1</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5030">
+            <placeName key="Sagua_la_Grande">Sagua La Grande</placeName>
+            <location>
+              <geo>22.808611111111 -80.071111111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -146,7 +212,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_050_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_050_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_050_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_050_1/full/full/0/default.jpg"/>
@@ -1619,11 +1687,12 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_050_1.jpg" facs="varios/Varios_050_1.jpg"/>
 
           <div n="1">
-            <head type="primer_titulo"><lb/>CANCIONES DE LA VUELTA AL MUNDO.</head>
-
+            <head type="primer_titulo">
+              <lb/>CANCIONES DE LA VUELTA AL MUNDO.</head>
             <lg n="1">
               <head type="titulo_estrofa">I.</head>
               <l rend="indent">Por correr tras la galera</l>
@@ -1644,7 +1713,6 @@
               <l>para dar concierto</l>
               <l>en la exposición.</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">2.ª</head>
               <l rend="indent">Como soy de policía</l>
@@ -1669,7 +1737,6 @@
             <pb n="2" source="Varios_050_2.jpg" facs="varios/Varios_050_2.jpg"/>
 
             <fw type="paginaNum">-2-</fw>
-
             <lg n="3">
               <head type="titulo_estrofa">3.ª</head>
               <l rend="indent">Hace ya bastantes noches</l>
@@ -1685,11 +1752,10 @@
               <l>alzaba la cola</l>
               <l>y se sonreia,</l>
               <l>hasta que me dijo</l>
-              <l>uno de Jaen:</l>
+              <l>uno de <name>Jaen</name>:</l>
               <l>no es burro, que es burra,</l>
               <l>mírelo usted bien.</l>
             </lg>
-
             <lg n="4">
               <head type="titulo_estrofa">4.ª</head>
               <l rend="indent">Esta noche mi jumento</l>
@@ -1710,7 +1776,6 @@
               <l>mirando la falla</l>
               <l>de mosen Sorell.</l>
             </lg>
-
             <lg n="5">
               <head type="titulo_estrofa">5.ª</head>
               <l rend="indent">Esta noche mi borrico,</l>
@@ -1731,7 +1796,6 @@
               <l>si usted fuera burro,</l>
               <l>misté que rediós.</l>
             </lg>
-
             <lg n="6">
               <head type="titulo_estrofa">6.ª</head>
               <l rend="indent">Este pobre animalito</l>
@@ -1752,7 +1816,6 @@
               <l>figúrense ustedes</l>
               <l>por donde le entró.</l>
             </lg>
-
             <lg n="7">
               <head type="titulo_estrofa">7.ª</head>
               <l rend="indent">Me decia este borrico</l>
@@ -1765,7 +1828,7 @@
               <l>y viva la religión.</l>
               <l rend="indent">Cuando yá son ricos</l>
               <l>sueltan el fusil</l>
-              <l>y se van á Francia</l>
+              <l>y se van á <name>Francia</name></l>
               <l>en ferro-carril</l>
               <l rend="indent">Y dicen á Carlos</l>
               <l>cuando allí se ven</l>
@@ -1773,10 +1836,9 @@
               <l>mande usted á otros</l>
               <l>que yo ya chupé.</l>
             </lg>
-
             <lg n="8">
               <head type="titulo_estrofa">8.ª</head>
-              <l rend="indent">Este burro, que allá en Lóndres</l>
+              <l rend="indent">Este burro, que allá en <name>Lóndres</name></l>
               <l>el comprí despues ahir,</l>
               <l>es un burro de gran mérit</l>
               <l>per lo atent y cumplit.</l>
@@ -1793,14 +1855,12 @@
               <l>no es pot fer millor.</l>
             </lg>
           </div>
-
           <div n="2">
+
             <pb n="3" source="Varios_050_3.jpg" facs="varios/Varios_050_3.jpg"/>
 
             <fw type="paginaNum">-3-</fw>
-
             <head type="titulo_estrofa">SEGUIDILLAS.</head>
-
             <lg n="1">
               <head type="titulo_estrofa">I.ª</head>
               <l rend="indent">Al pescar un boquerón</l>
@@ -1819,7 +1879,6 @@
               <l>¡ay que manera</l>
               <l>de colear!</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">2.ª</head>
               <l rend="indent">Cuando las cigarreras</l>
@@ -1839,14 +1898,13 @@
               <l>de estornudar!</l>
             </lg>
           </div>
-
           <div n="3">
-            <head type="titulo_estrofa"><lb/>CANCIONES DEL INGLÉS</head>
-
+            <head type="titulo_estrofa">
+              <lb/>CANCIONES DEL INGLÉS</head>
             <lg>
-              <l rend="indent">En Nueva-York hay un tram-via</l>
+              <l rend="indent">En <name>Nueva-York</name> hay un tram-via</l>
               <l>por cuatro cuartos nada mas.</l>
-              <l>y allà en Madrid fuera del coche,</l>
+              <l>y allà en <name>Madrid</name> fuera del coche,</l>
               <l>cade diez pasos cuesta un real.</l>
               <l>Allí el que gasta coche y lujo</l>
               <l>paga una gran contribución,</l>
@@ -1877,15 +1935,13 @@
               <l>¡oh que maguifica</l>
               <l>civilización!</l>
             </lg>
-
             <lg>
               <head rend="cursiva" type="titulo_estrofa">Coro.</head>
               <l rend="indent">¡Oh que patria, etc.</l>
             </lg>
-
             <lg>
               <head type="titulo_estrofa">3.ª</head>
-              <l rend="indent">En Nueva-Yorck si bay elecciones</l>
+              <l rend="indent">En <name>Nueva-Yorck</name> si bay elecciones</l>
               <l>toda la gente va á votar</l>
               <l>y aquí se marchan á los toros</l>
               <l>en cuanto hay lucha electoral.</l>
@@ -1902,12 +1958,10 @@
               <l>¡oh que magnifica</l>
               <l>civilización!</l>
             </lg>
-
             <lg>
               <head rend="cursiva" type="titulo_estrofa">Coro.</head>
               <l rend="indent">¡Oh que patria, etc.</l>
             </lg>
-
             <lg>
               <head type="titulo_estrofa">4.ª</head>
               <l rend="indent">Allí se gasta el dinero</l>
@@ -1919,7 +1973,7 @@
               <l>y aquí te trenquen una cama</l>
               <l>en un cohet així de llarch.</l>
               <l>El altre dia unu siñora,</l>
-              <l>que ha vengudo de Alberich</l>
+              <l>que ha vengudo de <name>Alberich</name></l>
               <l>li varen cremar la roba</l>
               <l>y altres cosas que no dich.</l>
               <l>¡Oh que patria rica!</l>
@@ -1927,7 +1981,6 @@
               <l>¡oh que magnífica</l>
               <l>civilización!</l>
             </lg>
-
             <lg>
               <head rend="cursiva" type="titulo_estrofa">Coro.</head>
               <l rend="indent">¡Oh que patria, etc.</l>
@@ -1936,7 +1989,6 @@
             <pb n="4" source="Varios_050_4.jpg" facs="varios/Varios_050_4.jpg"/>
 
             <fw type="paginaNum">-4-</fw>
-
             <lg>
               <head type="titulo_estrofa">FINAL</head>
               <l rend="indent">Manana mismo si Dios quiere</l>
@@ -1949,10 +2001,9 @@
               <l>que habeis de amparar</l>
             </lg>
           </div>
-
           <div n="4">
-            <head type="titulo_cancion"><lb/>TANGO DE LOS NEGROS.<lb/>DEL CUARTO ACTO</head>
-
+            <head type="titulo_cancion">
+              <lb/>TANGO DE LOS NEGROS.<lb/>DEL CUARTO ACTO</head>
             <lg n="1">
               <head type="titulo_estrofa">1.°</head>
               <l rend="indent">Una guajirata antigua</l>
@@ -1964,7 +2015,7 @@
               <l>no me vengas á buscar</l>
               <l>no me vengas à buscar.</l>
               <l rend="indent">¡Ay! mulatita</l>
-              <l>nacida en Sagua</l>
+              <l>nacida en <name>Sagua</name></l>
               <l>eres mas dulce</l>
               <l>que un coco de agua :</l>
               <l>si pa quererte</l>
@@ -1985,7 +2036,6 @@
               <l>a neguito congo</l>
               <l>es lo mejor.</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">2.°</head>
               <l rend="indent">El que quiera una neguita</l>
@@ -2019,25 +2069,24 @@
               <l>es lo mejor.</l>
             </lg>
           </div>
-
           <div n="5">
-            <head type="titulo_cancion"><lb/>JOTA DE LA FLOR DE ARAGÓN.</head>
-
+            <head type="titulo_cancion">
+              <lb/>JOTA DE LA FLOR DE ARAGÓN.</head>
             <l rend="indent">A regalarte venimos</l>
             <l>si venimos, si venimos,</l>
             <l>Maria luz de estos valles,</l>
             <l>las zagalas bellas flores</l>
             <l>y el corazón los zagales.</l>
             <l rend="indent">Siempre crece la alegría</l>
-            <l>e los campos de Aragón</l>
+            <l>e los campos de <name>Aragón</name></l>
             <l>con las sombras de la noche</l>
             <l>y con los rayos del sol.</l>
             <l>Para cantar, la guitarra,</l>
             <l>la jota para bailar,</l>
-            <l>viva la flor de Aragón</l>
+            <l>viva la flor de <name>Aragón</name></l>
             <l>que es la vírgen del Pilar.</l>
             <l>Siempre crece la alegría, etc.</l>
-            <l>Viva la flor de Aragón, etc.</l>
+            <l>Viva la flor de <name>Aragón</name>, etc.</l>
             <l rend="indent">Cuando alegre y placentera,</l>
             <l>placentera, placentera</l>
             <l>María bajas al valle,</l>
@@ -2046,20 +2095,20 @@
             <l rend="indent">Pues eres la diosa del valle</l>
             <l>del mundo la admiración, admiración</l>
             <l>la reina de la hermosura</l>
-            <l>y la rosa de Aragón.</l>
+            <l>y la rosa de <name>Aragón</name>.</l>
             <l>Niños, jóvenes y ancianos</l>
             <l>te salen á recibir</l>
             <l>dándote mil parabienes</l>
             <l>que aplauden con frenesí.</l>
             <l>Tú eres la diosa del valle, etc.</l>
-            <l>Viva la flor de Aragón, etc,</l>
-
+            <l>Viva la flor de <name>Aragón</name>, etc,</l>
             <trailer>FIN.</trailer>
           </div>
         </div>
-
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">Se halla de venta en casa los sucesores de Antonio Bosch, Bou de la
+          <p>
+            <lb/>
+            <hi rend="cursiva">Se halla de venta en casa los sucesores de Antonio Bosch, Bou de la
             Plaza Nueva,</hi> 13</p>
         </div>
       </div>

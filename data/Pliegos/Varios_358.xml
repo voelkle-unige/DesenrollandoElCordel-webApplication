@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -105,6 +120,32 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q15695">
+            <placeName key="Salamanca">Salamanca</placeName>
+            <location>
+              <geo>40.965 -5.66416666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q686362">
+            <placeName key="Sierra_Morena">Sierra Morena</placeName>
+            <location>
+              <geo>38.3 -5.4</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5818">
+            <placeName key="Córdoba">Córdoba</placeName>
+            <location>
+              <geo>37.883333333333 -4.7666666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -140,8 +181,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-02" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-02" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -2778,19 +2818,20 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_358_1.jpg" facs="varios/Varios_358_1.jpg"/>
 
         <fw type="impresorNum">(Núm. 6.)</fw>
-
-        <head type="primer_titulo" rend="negrita"><lb/>RELACION</head>
-        <head type="subtitulo_parte" rend="cursiva"><lb/>de los varios sucesos de don Manuel de
+        <head type="primer_titulo" rend="negrita">
+          <lb/>RELACION</head>
+        <head type="subtitulo_parte" rend="cursiva">
+          <lb/>de los varios sucesos de don Manuel de
           Contreras y doña Teresa de<lb/>Rivera, enque se declara como don Manuel sacó á doña
           Teresa de<lb/>un convento de la ciudad de Salamanca, y caminando para<lb/>Córdoba fué
           muerto en Sierra-Morena por un hermano de<lb/>doña Teresa.</head>
-
         <div type="parte" n="1">
-          <head type="titulo_parte"><lb/>PRIMERA PARTE.</head>
-
+          <head type="titulo_parte">
+            <lb/>PRIMERA PARTE.</head>
           <l rend="indent">En las ásperas montañas</l>
           <l>de Guadalupe, que vuelvan</l>
           <l>por el mundo sus noticias,</l>
@@ -2819,7 +2860,6 @@
           <pb n="2" source="Varios_358_2.jpg" facs="varios/Varios_358_2.jpg"/>
 
           <fw type="paginaNum">— 2 —</fw>
-
           <l>Era en estremo tan linda,</l>
           <l>que si el mismo cielo ostenta</l>
           <l>un sol para adorno suyo</l>
@@ -2914,7 +2954,6 @@
           <pb n="3" source="Varios_358_3.jpg" facs="varios/Varios_358_3.jpg"/>
 
           <fw type="paginaNum">— 3 —</fw>
-
           <l>Todos á un tiempo la piden</l>
           <l>que de la forma que pueda</l>
           <l>les cuente su amarga historia,</l>
@@ -2925,7 +2964,7 @@
           <l>siendo justa la obediencia,</l>
           <l>á referir mi suceso,</l>
           <l>si acaso el dolor me deja.</l>
-          <l>En la noble Salamanca</l>
+          <l>En la noble <name>Salamanca</name></l>
           <l>(esta es mi patria y mi tierra)</l>
           <l>nací de muy nobles padres;</l>
           <l>mi nombre propio es Teresa.</l>
@@ -3009,7 +3048,6 @@
           <pb n="4" source="Varios_358_4.jpg" facs="varios/Varios_358_4.jpg"/>
 
           <fw type="paginaNum">— 4 —</fw>
-
           <l>á las ancas me sentó,</l>
           <l>y á Córdoba la opulenta</l>
           <l>caminábamos, á donde</l>
@@ -3104,7 +3142,6 @@
           <pb n="5" source="Varios_358_5.jpg" facs="varios/Varios_358_5.jpg"/>
 
           <fw type="paginaNum">— 5 —</fw>
-
           <l>En esto espira en mis brazos,</l>
           <l>y yo quedé con la pena</l>
           <l>entregada al gran dolor</l>
@@ -3132,11 +3169,10 @@
           <l>en lo que vino á parar</l>
           <l>doña Teresa en la cueva.</l>
         </div>
-
         <div type="parte" n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>SEGUNDA PARTE DE DOÑA TERESA DE
+          <head type="titulo_parte" rend="negrita">
+            <lb/>SEGUNDA PARTE DE DOÑA TERESA DE
             RIVERA.</head>
-
           <l rend="indent">Dije en el primer romance</l>
           <l>como se quedó metida</l>
           <l>doña Teresa en la cueva,</l>
@@ -3175,7 +3211,7 @@
           <l>solamente en Dios tenia.</l>
           <l>Tal era su penitencia,</l>
           <l>tanto en la virtud camina,</l>
-          <l>que una Catalina en Roma</l>
+          <l>que una Catalina en <name>Roma</name></l>
           <l>solo pudo competirla;</l>
           <l>la Ejipciaca y Magdalena</l>
           <l>que tanto en la lglesia admiran,</l>
@@ -3191,7 +3227,6 @@
           <pb n="6" source="Varios_358_6.jpg" facs="varios/Varios_358_6.jpg"/>
 
           <fw type="paginaNum">— 6 —</fw>
-
           <l>y con diabólica traza,</l>
           <l>para mejor persuadirla,</l>
           <l>tomó el traje y semejanza</l>
@@ -3286,7 +3321,6 @@
           <pb n="7" source="Varios_358_7.jpg" facs="varios/Varios_358_7.jpg"/>
 
           <fw type="paginaNum">— 7 —</fw>
-
           <l>Respondió el demonio entonces:</l>
           <l>escucha, Teresa mia,</l>
           <l>¿no me diste voluntaria</l>
@@ -3381,7 +3415,6 @@
           <pb n="8" source="Varios_358_8.jpg" facs="varios/Varios_358_8.jpg"/>
 
           <fw type="paginaNum">— 8 —</fw>
-
           <l>de don Manuel que por tí</l>
           <l>goza en la Gloria dichas:</l>
           <l>Dios oyó tu peticion,</l>
@@ -3451,9 +3484,9 @@
           <l>perdonen sus muchas faltas</l>
           <l>que en estos romances cifra.</l>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID. — Despacho : Sucesores de Hernando, Arenal. 11.</p>
+          <p>
+            <lb/>MADRID. — Despacho : Sucesores de Hernando, Arenal. 11.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -31,7 +45,8 @@
             <title type="titulo_breve">Las tres canciones</title>
           </titleStmt>
           <editionStmt>
-            <p>Otras impresiones: <ref target="Varios_146.xml">Varios_146</ref>, <ref target="Varios_263.xml">Varios_263</ref> y <ref target="Varios_456.xml">Varios_456</ref></p>
+            <p>Otras impresiones: <ref target="Varios_146.xml">Varios_146</ref>, <ref target="Varios_263.xml">Varios_263</ref> y <ref target="Varios_456.xml">Varios_456</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Llorens</publisher>
@@ -74,7 +89,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -101,6 +117,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -136,8 +160,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -886,13 +909,15 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_341_1.jpg" facs="varios/Varios_341_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>LAS TRES CANCIONES.</head>
-          <head type="subtitulo" rend="negrita"><lb/>LA CASTAÑERA DE MADRID.<lb/>LOS TOROS DEL
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LAS TRES CANCIONES.</head>
+          <head type="subtitulo" rend="negrita">
+            <lb/>LA CASTAÑERA DE MADRID.<lb/>LOS TOROS DEL
             PUERTO,<lb/>Y<lb/>EL NUEVO TANGO AMERICANO.</head>
-
           <lg>
             <l rend="indent">Aunque vendo castañas asaás</l>
             <l>aguantando las lluvias y el frio</l>
@@ -954,10 +979,9 @@
             <l rend="cursiva">Calentitas yo las vendo etc.</l>
           </lg>
         </div>
-
         <div n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>LOS TOROS DEL PUERTO.</head>
-
+          <head type="titulo_parte" rend="negrita">
+            <lb/>LOS TOROS DEL PUERTO.</head>
           <lg>
             <l rend="indent">Que vivan los cuerpos buenos</l>
             <l>Que viva la gente crua</l>
@@ -1018,16 +1042,16 @@
             <l>Con mi saláa Juanita,</l>
             <l>¿Quién se embarca para el puerto?</l>
           </lg>
-          
           <trailer>FIN.</trailer>
         </div>
 
         <pb n="3" source="Varios_341_3.jpg" facs="varios/Varios_341_3.jpg"/>
 
         <div n="3">
-          <head type="titulo_parte"><lb/>EL NUEVO TANGO AMERICANO.</head>
-          <head type="subtitulo_parte"><lb/>SEGUNDA PARTE.</head>
-          
+          <head type="titulo_parte">
+            <lb/>EL NUEVO TANGO AMERICANO.</head>
+          <head type="subtitulo_parte">
+            <lb/>SEGUNDA PARTE.</head>
           <lg>
             <l rend="indent">Pobe Fansica se va casá</l>
             <l>Sin tener ropa ni tener naá</l>
@@ -1052,9 +1076,9 @@
             <l>Guarapo chupe que duce etá.</l>
             <l>Al guarapo bueno y duce guaná!</l>
             <l>Que mame mamey mamita</l>
-          
-          <pb n="4" source="Varios_341_4.jpg" facs="varios/Varios_341_4.jpg"/>
-          
+
+            <pb n="4" source="Varios_341_4.jpg" facs="varios/Varios_341_4.jpg"/>
+
             <l>Guarapo chupe que duce etá</l>
             <l>Que si chupa la tetilla</l>
             <l>Rechupa y chupa y no saca naá.</l>
@@ -1131,9 +1155,9 @@
           </lg>
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona: Imp. de Llorens, Palma de Sta. Catalina, n.° 6..</p>
+          <p>
+            <lb/>Barcelona: Imp. de Llorens, Palma de Sta. Catalina, n.° 6..</p>
         </div>
       </div>
     </body>

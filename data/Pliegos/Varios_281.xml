@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -68,7 +82,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -97,6 +112,30 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q8818">
+            <placeName key="Valencia">Valencia</placeName>
+            <location>
+              <geo>39.47 -0.376388888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q801">
+            <placeName key="Israel">Israel</placeName>
+            <location>
+              <geo>31 35</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q3297078">
+            <placeName key="Sodoma">Sodoma</placeName>
+            <location>
+              <geo>31.2 35.5</geo>
+            </location>
+          </place>
+          <place n="1">
+            <placeName key="Gomorra">Gomorra</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -132,8 +171,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1438,16 +1476,21 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_281_1.jpg" facs="varios/Varios_281_1.jpg"/>
+
         <fw type="impresorNum">(Núm. 50.)</fw>
         <div>
-          <head type="primer_titulo"><lb/>EL NIÑO SABIO.</head>
-          <head type="subtitulo_parte"><lb/>NUEVA RELACION<hi rend="cursiva"><lb/>en la que se
+          <head type="primer_titulo">
+            <lb/>EL NIÑO SABIO.</head>
+          <head type="subtitulo_parte">
+            <lb/>NUEVA RELACION<hi rend="cursiva">
+              <lb/>en la que se
               refiere como un niño de seis años esplicó la fealdda<lb/>del pecado mortal y sus
               consecuencias, con algunos pasajes de la<lb/>Sagrada Escritura, consiguiendo que
               veinte y cinco bandidos se<lb/>volviesen á Dios, é hiciesen penitencia de sus culpas
-              y pecados.</hi></head>
-
+              y pecados.</hi>
+          </head>
           <l rend="indent">Dios Padre, Rey sempiterno,</l>
           <l>me dé su auxilio sagrado;</l>
           <l>Dios Hijo me dé su gracia,</l>
@@ -1466,7 +1509,7 @@
           <l>lo que un niño de seis años</l>
           <l>en este papel ofrece</l>
           <l>para nuestro desengaño.</l>
-          <l>En la ciudad de Valencia,</l>
+          <l>En la ciudad de <name>Valencia</name>,</l>
           <l>segun noticia me han dado</l>
           <l>vivia Luis de La-Puente</l>
           <l>con Juana Nuñez casado.</l>
@@ -1493,7 +1536,7 @@
           <l>cayó en tierra desmayado:</l>
           <l>volvió en si del accidente</l>
           <l>el niño, y deshecho en llanto</l>
-          <l>esclamó: ¡Dios de Israel!</l>
+          <l>esclamó: ¡Dios de <name>Israel</name>!</l>
           <l>si tan feo es el retrato,</l>
           <l>¿qué será el original?</l>
           <l>¡y es posible que haya tantos</l>
@@ -1664,7 +1707,7 @@
           <l>dicen los libros sagrados,</l>
           <l>redujo Dios á cenizas</l>
           <l>á todos los ciudadanos</l>
-          <l>de Sodoma y de Gomorra...</l>
+          <l>de <name>Sodoma</name> y de <name>Gomorra</name>...</l>
           <l>pero no necesitamos</l>
           <l>de sucesos tan antiguos.</l>
           <l>En nuestros dias lloramos</l>
@@ -1765,7 +1808,8 @@
           <l>Dios premiará sus trabajos.</l>
         </div>
         <div type="colofon">
-          <p><lb/>MADRID.—Despacho: Sucesores de Hernando, Arenal. 11.</p>
+          <p>
+            <lb/>MADRID.—Despacho: Sucesores de Hernando, Arenal. 11.</p>
         </div>
       </div>
     </body>

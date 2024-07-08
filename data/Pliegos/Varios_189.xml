@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,7 @@
             </acquisition>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +146,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1377,11 +1392,13 @@
     <body>
       <div>
         <div>
-          <pb n="1" source="Varios_189_1.jpg" facs="varios/Varios_189_1.jpg"/>
-          <div>
-            <head type="primer_titulo"><lb/>CONVERSACIÓ<lb/>EN QUE SIS CRIADAS<lb/>TREYAN A VENAL LA
-              CONDICIÓ DE SAS MESTRESSAS.</head>
 
+          <pb n="1" source="Varios_189_1.jpg" facs="varios/Varios_189_1.jpg"/>
+
+          <div>
+            <head type="primer_titulo">
+              <lb/>CONVERSACIÓ<lb/>EN QUE SIS CRIADAS<lb/>TREYAN A VENAL LA
+              CONDICIÓ DE SAS MESTRESSAS.</head>
             <l rend="indent">Un dia estant retirat</l>
             <l>en una part molt secreta,</l>
             <l>sens serne vist ni ohit,</l>
@@ -1647,7 +1664,6 @@
             <l>y tot l' any darrera merda.</l>
             <l>Jo servesch á un capellá,</l>
             <l>la companya no m' enquieta,</l>
-
             <l>ni en tot lo discurs del any</l>
             <l>may la mestressa me renya :</l>
             <l>es senyor de bona pasta,</l>
@@ -1689,9 +1705,9 @@
             <l>doná fi la tal comedia.</l>
             <trailer>FI.</trailer>
           </div>
-          
           <div type="colofon">
-            <p><hi rend="cursiva">Barcelona</hi>: Estampa dels Hereus de la V. Pla , carrer de la Princesa.</p>
+            <p>
+              <hi rend="cursiva">Barcelona</hi>: Estampa dels Hereus de la V. Pla , carrer de la Princesa.</p>
           </div>
         </div>
       </div>

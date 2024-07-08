@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +111,122 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q669037">
+            <placeName key="Indias_Occidentales">Indias Occidentales</placeName>
+            <location>
+              <geo>21.98333333 -79.03333333</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q28">
+            <placeName key="Hungría">Hungría</placeName>
+            <location>
+              <geo>47 19</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q34">
+            <placeName key="Suecia">Suecia</placeName>
+            <location>
+              <geo>61 15</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q159">
+            <placeName key="Rusia">Rusia</placeName>
+            <location>
+              <geo>66.4166666666667 94.25</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q43">
+            <placeName key="Turquía">Turquía</placeName>
+            <location>
+              <geo>39 36</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1460">
+            <placeName key="Sicilia">Sicilia</placeName>
+            <location>
+              <geo>37.599958333333 14.015377777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q39193">
+            <placeName key="Bohemia">Bohemia</placeName>
+            <location>
+              <geo>49.833333333333 14.333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1173">
+            <placeName key="Borgoña">Borgoña</placeName>
+            <location>
+              <geo>47 4.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q12130">
+            <placeName key="Bretaña">Bretaña</placeName>
+            <location>
+              <geo>48 -3</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q35">
+            <placeName key="Dinamarca">Dinamarca</placeName>
+            <location>
+              <geo>56 10</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q41">
+            <placeName key="Grecia">Grecia</placeName>
+            <location>
+              <geo>38.5 23</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q234">
+            <placeName key="Flandes">Flandes</placeName>
+            <location>
+              <geo>51 4.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q36">
+            <placeName key="Polonia">Polonia</placeName>
+            <location>
+              <geo>52 19</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q183">
+            <placeName key="Alemania">Alemania</placeName>
+            <location>
+              <geo>51 10</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q12745">
+            <placeName key="Saboya">Saboya</placeName>
+            <location>
+              <geo>45.583333333333 6.3333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q38">
+            <placeName key="Italia">Italia</placeName>
+            <location>
+              <geo>42.5 12.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q399">
+            <placeName key="Armenia">Armenia</placeName>
+            <location>
+              <geo>40.383333 44.95</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +262,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-03" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-03" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1460,17 +1590,19 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_360_1.jpg" facs="varios/Varios_360_1.jpg"/>
 
           <fw type="impresorNum">(Núm. 43.)</fw>
-
-          <head type="primer_titulo"><lb/>EL TRIGO Y EL DINERO.</head>
+          <head type="primer_titulo">
+            <lb/>EL TRIGO Y EL DINERO.</head>
           <head type="subtitulo">
-            <lb/><hi rend="negrita">NUEVA RELACION</hi>
-            <hi rend="cursiva"><lb/>en que se refiere la disputa que tuvieron el Trigo y el Dinero,
+            <lb/>
+            <hi rend="negrita">NUEVA RELACION</hi>
+            <hi rend="cursiva">
+              <lb/>en que se refiere la disputa que tuvieron el Trigo y el Dinero,
               sobre cuál<lb/>de los dos es de mayor excelencia.</hi>
           </head>
-
           <l rend="indent">Pare su dorado carro</l>
           <l>el rubicundo planeta,</l>
           <l>la luna tenga su móvil</l>
@@ -1602,7 +1734,7 @@
           <l>canela, azúcar y almendras.</l>
           <l>En el mar tengo navíos,</l>
           <l>bergantines y corbetas.</l>
-          <l>Por mí va la flota á Indias,</l>
+          <l>Por mí va la flota á <name>Indias</name>,</l>
           <l>y mil marchante sen ella.</l>
           <l>Yo redimo los cautivos,</l>
           <l>yo contra infieles doy guerra,</l>
@@ -1700,16 +1832,16 @@
           <l>Mantengo reinos, provincias,</l>
           <l>ciudades, villas y aldeas.</l>
           <l>Yo alimento á toda España,</l>
-          <l>á Francia, Hungría y Suecia,</l>
-          <l>á la Rusia y la Turquía,</l>
-          <l>á Sicilia y á Bohemia,</l>
+          <l>á <name>Francia</name>, Hungría y <name>Suecia</name>,</l>
+          <l>á la <name>Rusia</name> y la <name>Turquía</name>,</l>
+          <l>á <name>Sicilia</name> y á <name>Bohemia</name>,</l>
           <l>á Borgoña y á Bretaña,</l>
-          <l>Dinamarca, Esparta y Grecia;</l>
+          <l><name>Dinamarca</name>, <name>Esparta</name> y <name>Grecia</name>;</l>
 
           <pb n="4" source="Varios_360_4.jpg" facs="varios/Varios_360_4.jpg"/>
 
-          <l>Flandes, Polonia, Alemania,</l>
-          <l>Saboya, Italia y Armenia.</l>
+          <l><name>Flandes</name>, <name>Polonia</name>, <name>Alemania</name>,</l>
+          <l><name>Saboya</name>, <name>Italia</name> y <name>Armenia</name>.</l>
           <l>Soy la quietud de los reinos;</l>
           <l>de los campos la cosecha,</l>
           <l>abasto de los poblados,</l>
@@ -1792,12 +1924,11 @@
           <l>y ufano con esta empresa.</l>
           <l>Y ahora Sebastian Lopez</l>
           <l>pide perdon de la letra.</l>
-          
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.—Despacho de Marés y Compañía, Juanelo, 19.</p>
+          <p>
+            <lb/>MADRID.—Despacho de Marés y Compañía, Juanelo, 19.</p>
         </div>
       </div>
     </body>

@@ -1,371 +1,398 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_003">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Nuevo romance</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LF">
-                              <name>Lorysmar Franco</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Nuevo romance, en que se da cuenta
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Nuevo romance</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LF">
+          <name>Lorysmar Franco</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Nuevo romance, en que se da cuenta
                                           del mas lastimoso caso, que ha sucedido en la Imperial
                                           Ciudad de Toledo, entre dos Amantes, que despues de muchos
                                           enredos murieron entrambos; contodo lo demas que verá el
                                           curioso Letor</title>
-                                    <title type="titulo_breve">Nuevo romance</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p/>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Herederos de Juan Jolis</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6807174</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">XXIII</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="1">Un grabado (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_003_1.xml" facs="varios/BCN_003_1.jpg/345,256,1200,830/100,/0/default.jpg">grabado_b_003_1</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+            <title type="titulo_breve">Nuevo romance</title>
+          </titleStmt>
+          <editionStmt>
+            <p/>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Herederos de Juan Jolis</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.12643693</idno>
+            <altIdentifier>
+              <idno type="num_impresor">XXIII</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="1">Un grabado (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_003_1.xml" facs="varios/BCN_003_1.jpg/345,256,1200,830/100,/0/default.jpg">grabado_b_003_1</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q5836">
+            <placeName key="Toledo">Toledo</placeName>
+            <location>
+              <geo>39.866666666667 -4.0333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term target="XX527614.html" type="tipo_texto">Romances</term>
-                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-09-26" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
-      <facsimile>
-            <graphic url="varios/BCN_003_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_003_1.jpg" facs="varios/BCN_003_1.jpg"/>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term target="XX527614.html" type="tipo_texto">Romances</term>
+          <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-09-26" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_003_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-                              <head type="primer_titulo">
-                                    <lb/>ROMANCE,<lb/>EN QUE SE DA CUENTA DEL MAS
+          <pb n="1" source="BCN_003_1.jpg" facs="varios/BCN_003_1.jpg"/>
+
+          <head type="primer_titulo">
+            <lb/>ROMANCE,<lb/>EN QUE SE DA CUENTA DEL MAS
                                     LASTIMOSO<lb/>caso, que ha sucedido en la Imperial Ciudad de
                                     Toledo, en-<lb/>tre dos Amantes, que despues de muchos enredos
                                     mu-<lb/>rieron entrambos; con todo lo demas que verá<lb/>el
                                     curioso Letor. </head>
+          <l>
+            <hi rend="negrita">A</hi>Tento escuchen los ayres,</l>
+          <l>entre las tinieblas varias</l>
+          <l>de la noche, que sus luces</l>
+          <l>por las cumbres se levanta.</l>
+          <l>Quando del Oriente sale</l>
+          <l>la Aurora hermosa, y clara</l>
+          <l>derramando por el suelo</l>
+          <l>menuda aljofar de plata</l>
+          <l>Los pajarillos humildes,</l>
+          <l>alegres entre las ramas</l>
+          <l>alaban al Criador,</l>
+          <l>porque su bendita gracia</l>
+          <l>nos dé, porque sin ella</l>
+          <l>no puede mi lengua flaca</l>
+          <l>dar principio à esta historia,</l>
+          <l>no siendo para loarla;</l>
+          <fw type="reclamo">con</fw>
 
-                              <l><hi rend="negrita">A</hi>Tento escuchen los ayres,</l>
-                              <l>entre las tinieblas varias</l>
-                              <l>de la noche, que sus luces</l>
-                              <l>por las cumbres se levanta.</l>
-                              <l>Quando del Oriente sale</l>
-                              <l>la Aurora hermosa, y clara</l>
-                              <l>derramando por el suelo</l>
-                              <l>menuda aljofar de plata</l>
-                              <l>Los pajarillos humildes,</l>
-                              <l>alegres entre las ramas</l>
-                              <l>alaban al Criador,</l>
-                              <l>porque su bendita gracia</l>
-                              <l>nos dé, porque sin ella</l>
-                              <l>no puede mi lengua flaca</l>
-                              <l>dar principio à esta historia,</l>
-                              <l>no siendo para loarla;</l>
-                              <fw type="reclamo">con</fw>
+          <pb n="2" source="BCN_003_2.jpg" facs="varios/BCN_003_2.jpg"/>
 
-                              <pb n="2" source="BCN_003_2.jpg" facs="varios/BCN_003_2.jpg"/>
+          <l>con el favor de la Virgen</l>
+          <l>diré la primer palabra.</l>
+          <l>En la Ciudad de <name>Toledo</name>
+          </l>
+          <l>por todo el mundo nombrada,</l>
+          <l>la mas llena de virtudes</l>
+          <l>que hay en la Imperial España:</l>
+          <l>allí se crió un mancebo</l>
+          <l>de sangre calificada,</l>
+          <l>desde su pequeña edad</l>
+          <l>fué ejercitado à las armas;</l>
+          <l>salió tan diestro en ellas,</l>
+          <l>que es de todos embidiado.</l>
+          <l>Este tal se enamoró</l>
+          <l>de la mas hermosa Dama,</l>
+          <l>que se pudo hallar entonces</l>
+          <l>en <name>Toledo</name>, y su Comarca.</l>
+          <l>Acudió el Cielo divino,</l>
+          <l>dotó en hermosura tanta,</l>
+          <l>tanto, que mas no se pudo,</l>
+          <l>porque era muy envidiada.</l>
+          <l>Mucho se quieren los dos,</l>
+          <l>tanto, que ya no se halla</l>
+          <l>sin la vista el uno al otro,</l>
+          <l>que solo en la vista basta.</l>
+          <l>De aquellos que bien se quieren</l>
+          <l>se tienen en sus entrañas</l>
+          <l>amor, que son las cadenas</l>
+          <l>flechas que llegan al alma;</l>
+          <l>que como dice el refrán:</l>
+          <l>siente el amor su palabra:</l>
+          <l>fue que su paloma bella,</l>
+          <l>la encierran en una sala</l>
+          <l>los hermanos de ella, y dicen:</l>
+          <l>Aqui has de ser castigada,</l>
+          <l>hasta que de aquel traydor</l>
+          <l>aleve, tome venganza</l>
+          <l>mi espada, y con ella quite</l>
+          <l>la vida de quien me agravia</l>
+          <l>y despues de tus cabellos</l>
+          <l>haré una soga delgada,</l>
+          <l>y te ahorcaré con ella,</l>
+          <l>porque mueras afrentada.</l>
+          <l>La noble doncella entonces,</l>
+          <l>con el corazon llamaba;</l>
+          <l>aquel que dentro su pecho</l>
+          <l>la libertad deseaba;</l>
+          <l>sacó de un estuche nuevo</l>
+          <l>una tixera delgada,</l>
+          <l>y en su mismo brazo hizo</l>
+          <l>una herida, porque salga</l>
+          <l>sangre, y le sirva de tinta;</l>
+          <l>y en una toca delgada</l>
+          <l>de seda escribe un villete,</l>
+          <l>y en una pequeña criada</l>
+          <l>se le dá, porque la lleve,</l>
+          <l>en señas de como estaba</l>
+          <l>su Amante entre paredes,</l>
+          <l>muy triste, y desconsolada.</l>
+          <l>Tomó la toca, y besóla,</l>
+          <l>y del medio desenlaza</l>
+          <l>un ñudo que tiene hecho;</l>
+          <l>vido la sangre firmada</l>
+          <l>de aquella blanca azucena,</l>
+          <l>siempre metida en el alma.</l>
+          <l>Leyendo el primer renglon;</l>
+          <l>dueño, y querido del alma,</l>
+          <l>si ser mi esposo pretendes,</l>
+          <l>à qué esperas, ò que aguardas?</l>
+          <l>Mis hermanos me encerraron</l>
+          <l>en una pequeña sala</l>
+          <l>tienen hecho juramento</l>
+          <l>sobre la cruz de su espada,</l>
+          <l>de quitarte á tí la vida,</l>
+          <l>y que yo muera afrentada;</l>
+          <fw type="reclamo">mas</fw>
 
-                              <l>con el favor de la Virgen</l>
-                              <l>diré la primer palabra.</l>
-                              <l>En la Ciudad de Toledo</l>
-                              <l>por todo el mundo nombrada,</l>
-                              <l>la mas llena de virtudes</l>
-                              <l>que hay en la Imperial España:</l>
-                              <l>allí se crió un mancebo</l>
-                              <l>de sangre calificada,</l>
-                              <l>desde su pequeña edad</l>
-                              <l>fué ejercitado à las armas;</l>
-                              <l>salió tan diestro en ellas,</l>
-                              <l>que es de todos embidiado.</l>
-                              <l>Este tal se enamoró</l>
-                              <l>de la mas hermosa Dama,</l>
-                              <l>que se pudo hallar entonces</l>
-                              <l>en Toledo, y su Comarca.</l>
-                              <l>Acudió el Cielo divino,</l>
-                              <l>dotó en hermosura tanta,</l>
-                              <l>tanto, que mas no se pudo,</l>
-                              <l>porque era muy envidiada.</l>
-                              <l>Mucho se quieren los dos,</l>
-                              <l>tanto, que ya no se halla</l>
-                              <l>sin la vista el uno al otro,</l>
-                              <l>que solo en la vista basta.</l>
-                              <l>De aquellos que bien se quieren</l>
-                              <l>se tienen en sus entrañas</l>
-                              <l>amor, que son las cadenas</l>
-                              <l>flechas que llegan al alma;</l>
-                              <l>que como dice el refrán:</l>
-                              <l>siente el amor su palabra:</l>
-                              <l>fue que su paloma bella,</l>
-                              <l>la encierran en una sala</l>
-                              <l>los hermanos de ella, y dicen:</l>
-                              <l>Aqui has de ser castigada,</l>
-                              <l>hasta que de aquel traydor</l>
-                              <l>aleve, tome venganza</l>
-                              <l>mi espada, y con ella quite</l>
-                              <l>la vida de quien me agravia</l>
-                              <l>y despues de tus cabellos</l>
-                              <l>haré una soga delgada,</l>
-                              <l>y te ahorcaré con ella,</l>
-                              <l>porque mueras afrentada.</l>
-                              <l>La noble doncella entonces,</l>
-                              <l>con el corazon llamaba;</l>
-                              <l>aquel que dentro su pecho</l>
-                              <l>la libertad deseaba;</l>
-                              <l>sacó de un estuche nuevo</l>
-                              <l>una tixera delgada,</l>
-                              <l>y en su mismo brazo hizo</l>
-                              <l>una herida, porque salga</l>
-                              <l>sangre, y le sirva de tinta;</l>
-                              <l>y en una toca delgada</l>
-                              <l>de seda escribe un villete,</l>
-                              <l>y en una pequeña criada</l>
-                              <l>se le dá, porque la lleve,</l>
-                              <l>en señas de como estaba</l>
-                              <l>su Amante entre paredes,</l>
-                              <l>muy triste, y desconsolada.</l>
-                              <l>Tomó la toca, y besóla,</l>
-                              <l>y del medio desenlaza</l>
-                              <l>un ñudo que tiene hecho;</l>
-                              <l>vido la sangre firmada</l>
-                              <l>de aquella blanca azucena,</l>
-                              <l>siempre metida en el alma.</l>
-                              <l>Leyendo el primer renglon;</l>
-                              <l>dueño, y querido del alma,</l>
-                              <l>si ser mi esposo pretendes,</l>
-                              <l>à qué esperas, ò que aguardas?</l>
-                              <l>Mis hermanos me encerraron</l>
-                              <l>en una pequeña sala</l>
-                              <l>tienen hecho juramento</l>
-                              <l>sobre la cruz de su espada,</l>
-                              <l>de quitarte á tí la vida,</l>
-                              <l>y que yo muera afrentada;</l>
-                              <fw type="reclamo">mas</fw>
+          <pb n="3" source="BCN_003_3.jpg" facs="varios/BCN_003_3.jpg"/>
 
-                              <pb n="3" source="BCN_003_3.jpg" facs="varios/BCN_003_3.jpg"/>
+          <l>mas creo que á tu valor</l>
+          <l>aqueso no importa nada.</l>
+          <l>Si no me sacas de aqui,</l>
+          <l>de la tiranía mas alta</l>
+          <l>me he de entregar á la muerte,</l>
+          <l>como una desesperada.</l>
+          <l>Yá se encasqueta el sombrero,</l>
+          <l>yá daba tiento á la espada,</l>
+          <l>furioso mira la tierra,</l>
+          <l>diciendo: Si se levanta</l>
+          <l>el mundo contra mi enojo,</l>
+          <l>he de quitar con mi espada</l>
+          <l>la vida en el que quisiere</l>
+          <l>aun estorbarme la entrada.</l>
+          <l>Al fin yá vino la noche,</l>
+          <l>fuese á casa de la Dama,</l>
+          <l>hizo señas á la puerta,</l>
+          <l>y salió mejor que el Alva;</l>
+          <l>y preguntó de allá dentro:</l>
+          <l>Quién es, que à esta triste llama?</l>
+          <l>Yo Señora, que te tengo</l>
+          <l>en el corazon sellada.</l>
+          <l>Los hermanos de ella entonces,</l>
+          <l>reconociendo palabras</l>
+          <l>de aquel guapo, que pretende</l>
+          <l>la libertad de su Dama,</l>
+          <l>furiosos salen los quatro</l>
+          <l>con colera, y arrogancia;</l>
+          <l>el guapo desque los vido,</l>
+          <l>de aquesta suerte les habla:</l>
+          <l>Así como quatro venis,</l>
+          <l>de quatrocientos pasáreis,</l>
+          <l>os diera aleves la muerte.</l>
+          <l>Traydores, cómo, y sin causa,</l>
+          <l>quereis quitar á mis ojos</l>
+          <l>el espejo de mi alma?</l>
+          <l>Primero tengo de vér</l>
+          <l>con vuestra sangre manchadas</l>
+          <l>las piedras con mi valor,</l>
+          <l>dijo; y sacando la espada,</l>
+          <l>en breve tiempo les dió</l>
+          <l>la muerte dentro su casa.</l>
+          <l>Tan solo de todos quatro</l>
+          <l>el uno se le escapó</l>
+          <l>con tres heridas mortales;</l>
+          <l>y fué su desdicha tanta</l>
+          <l>que ántes de dar quatro pasos</l>
+          <l>tomó la arena por cama:</l>
+          <l>y el guapo con la doncella</l>
+          <l>en una yegua lozana huyeron.</l>
+          <l>Pero no quiso la Virgen pura</l>
+          <l>que estos dos se gozasen,</l>
+          <l>que al rebolver de una esquina</l>
+          <l>toda la Justicia estaba,</l>
+          <l>y el padre de la doncella</l>
+          <l>á grandes voces gritava:</l>
+          <l>Prendan este traydor, dice,</l>
+          <l>que me ha escalado mi casa,</l>
+          <l>y me ha quitado la honra,</l>
+          <l>con la prenda mas amada.</l>
+          <l>Mas el guapo que pretende</l>
+          <l>la libertad de su Dama,</l>
+          <l>entra por los Alguaciles,</l>
+          <l>ya destroza, hiere, y mata:</l>
+          <l>en el brio, y el esfuerzo</l>
+          <l>y en el jugar de las armas</l>
+          <l>á seis Ministros dió muerte,</l>
+          <l>y á un Secretario de fama;</l>
+          <l>y el Señor Corregidor</l>
+          <l>de su furia no se escapa,</l>
+          <l>porque tambien le alcanzó</l>
+          <l>una muy fuerte estocada.</l>
+          <l>Echó un por vida, diciendo:</l>
+          <l>Si hay alguno que le haga</l>
+          <fw type="reclamo">la</fw>
 
-                              <l>mas creo que á tu valor</l>
-                              <l>aqueso no importa nada.</l>
-                              <l>Si no me sacas de aqui,</l>
-                              <l>de la tiranía mas alta</l>
-                              <l>me he de entregar á la muerte,</l>
-                              <l>como una desesperada.</l>
-                              <l>Yá se encasqueta el sombrero,</l>
-                              <l>yá daba tiento á la espada,</l>
-                              <l>furioso mira la tierra,</l>
-                              <l>diciendo: Si se levanta</l>
-                              <l>el mundo contra mi enojo,</l>
-                              <l>he de quitar con mi espada</l>
-                              <l>la vida en el que quisiere</l>
-                              <l>aun estorbarme la entrada.</l>
-                              <l>Al fin yá vino la noche,</l>
-                              <l>fuese á casa de la Dama,</l>
-                              <l>hizo señas á la puerta,</l>
-                              <l>y salió mejor que el Alva;</l>
-                              <l>y preguntó de allá dentro:</l>
-                              <l>Quién es, que à esta triste llama?</l>
-                              <l>Yo Señora, que te tengo</l>
-                              <l>en el corazon sellada.</l>
-                              <l>Los hermanos de ella entonces,</l>
-                              <l>reconociendo palabras</l>
-                              <l>de aquel guapo, que pretende</l>
-                              <l>la libertad de su Dama,</l>
-                              <l>furiosos salen los quatro</l>
-                              <l>con colera, y arrogancia;</l>
-                              <l>el guapo desque los vido,</l>
-                              <l>de aquesta suerte les habla:</l>
-                              <l>Así como quatro venis,</l>
-                              <l>de quatrocientos pasáreis,</l>
-                              <l>os diera aleves la muerte.</l>
-                              <l>Traydores, cómo, y sin causa,</l>
-                              <l>quereis quitar á mis ojos</l>
-                              <l>el espejo de mi alma?</l>
-                              <l>Primero tengo de vér</l>
-                              <l>con vuestra sangre manchadas</l>
-                              <l>las piedras con mi valor,</l>
-                              <l>dijo; y sacando la espada,</l>
-                              <l>en breve tiempo les dió</l>
-                              <l>la muerte dentro su casa.</l>
-                              <l>Tan solo de todos quatro</l>
-                              <l>el uno se le escapó</l>
-                              <l>con tres heridas mortales;</l>
-                              <l>y fué su desdicha tanta</l>
-                              <l>que ántes de dar quatro pasos</l>
-                              <l>tomó la arena por cama:</l>
-                              <l>y el guapo con la doncella</l>
-                              <l>en una yegua lozana huyeron.</l>
-                              <l>Pero no quiso la Virgen pura</l>
-                              <l>que estos dos se gozasen,</l>
-                              <l>que al rebolver de una esquina</l>
-                              <l>toda la Justicia estaba,</l>
-                              <l>y el padre de la doncella</l>
-                              <l>á grandes voces gritava:</l>
-                              <l>Prendan este traydor, dice,</l>
-                              <l>que me ha escalado mi casa,</l>
-                              <l>y me ha quitado la honra,</l>
-                              <l>con la prenda mas amada.</l>
-                              <l>Mas el guapo que pretende</l>
-                              <l>la libertad de su Dama,</l>
-                              <l>entra por los Alguaciles,</l>
-                              <l>ya destroza, hiere, y mata:</l>
-                              <l>en el brio, y el esfuerzo</l>
-                              <l>y en el jugar de las armas</l>
-                              <l>á seis Ministros dió muerte,</l>
-                              <l>y á un Secretario de fama;</l>
-                              <l>y el Señor Corregidor</l>
-                              <l>de su furia no se escapa,</l>
-                              <l>porque tambien le alcanzó</l>
-                              <l>una muy fuerte estocada.</l>
-                              <l>Echó un por vida, diciendo:</l>
-                              <l>Si hay alguno que le haga</l>
-                              <fw type="reclamo">la</fw>
+          <pb n="4" source="BCN_003_4.jpg" facs="varios/BCN_003_4.jpg"/>
 
-                              <pb n="4" source="BCN_003_4.jpg" facs="varios/BCN_003_4.jpg"/>
-
-                              <l>la vida estorvo en el cuerpo,</l>
-                              <l>salga luego á la demanda.</l>
-                              <l>Apenas huvo dicho</l>
-                              <l>estas postreras palabras,</l>
-                              <l>quando una bala perdida</l>
-                              <l>de parte á parta lo passa:</l>
-                              <l>cayó el Toledano en tierra,</l>
-                              <l>diciendo Jesus me valga.</l>
-                              <l>A esto la blanca niña</l>
-                              <l>todo lo estaba mirando,</l>
-                              <l>quando vió su Amante muerto</l>
-                              <l>de esta manera hablaba:</l>
-                              <l>Nunca yo huviera nacido,</l>
-                              <l>ni en el mundo me criára,</l>
-                              <l>ni Dios me diera hermosura,</l>
-                              <l>pues no me sirve de nada.</l>
-                              <l>Pluguiera el Cielo divino</l>
-                              <l>quando mi madre me daba</l>
-                              <l>el pecho, se me bolviera</l>
-                              <l>veneno, y no me criára.</l>
-                              <l>Aqui tomareis exemplo</l>
-                              <l>madresr, las que quitavais</l>
-                              <l>á las hijas de su gusto,</l>
-                              <l>veis aqui, que en esto paran</l>
-                              <l>Ya no pudo decir mas,</l>
-                              <l>porque arrancando una daga,</l>
-                              <l>que su difunto tenia</l>
-                              <l>de la pretina colgada.</l>
-                              <l>Se echó de pecho sobre ella,</l>
-                              <l>diciendo: Con esto acaba</l>
-                              <l>la que fué espejo en Toledo,</l>
-                              <l>en que todos se miravan.</l>
-                              <l>Murieron los dos Amantes,</l>
-                              <l>pecho á pecho, y cara á cara,</l>
-                              <l>esto sucedió Señores,</l>
-                              <l>en la Ciudad ya nombrada.</l>
-
-                        </div>
-                        <div type="colofon">
-                              <p>
-                                    <lb/><hi rend="cursiva">Barcelona</hi>: En la Imprenta de los
+          <l>la vida estorvo en el cuerpo,</l>
+          <l>salga luego á la demanda.</l>
+          <l>Apenas huvo dicho</l>
+          <l>estas postreras palabras,</l>
+          <l>quando una bala perdida</l>
+          <l>de parte á parta lo passa:</l>
+          <l>cayó el Toledano en tierra,</l>
+          <l>diciendo Jesus me valga.</l>
+          <l>A esto la blanca niña</l>
+          <l>todo lo estaba mirando,</l>
+          <l>quando vió su Amante muerto</l>
+          <l>de esta manera hablaba:</l>
+          <l>Nunca yo huviera nacido,</l>
+          <l>ni en el mundo me criára,</l>
+          <l>ni Dios me diera hermosura,</l>
+          <l>pues no me sirve de nada.</l>
+          <l>Pluguiera el Cielo divino</l>
+          <l>quando mi madre me daba</l>
+          <l>el pecho, se me bolviera</l>
+          <l>veneno, y no me criára.</l>
+          <l>Aqui tomareis exemplo</l>
+          <l>madresr, las que quitavais</l>
+          <l>á las hijas de su gusto,</l>
+          <l>veis aqui, que en esto paran</l>
+          <l>Ya no pudo decir mas,</l>
+          <l>porque arrancando una daga,</l>
+          <l>que su difunto tenia</l>
+          <l>de la pretina colgada.</l>
+          <l>Se echó de pecho sobre ella,</l>
+          <l>diciendo: Con esto acaba</l>
+          <l>la que fué espejo en <name>Toledo</name>,</l>
+          <l>en que todos se miravan.</l>
+          <l>Murieron los dos Amantes,</l>
+          <l>pecho á pecho, y cara á cara,</l>
+          <l>esto sucedió Señores,</l>
+          <l>en la Ciudad ya nombrada.</l>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona</hi>: En la Imprenta de los
                                     Herederos de Juan Jolis, en la calle de Cotoners. </p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +113,32 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="5" corresp="Q241">
+            <placeName key="Cuba">Cuba</placeName>
+            <location>
+              <geo>22 -79.5</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5783">
+            <placeName key="Andalucía">Andalucía</placeName>
+            <location>
+              <geo>37.405 -5.9875</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,8 +174,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-08-02" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-08-02" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1119,11 +1159,13 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_111_1.jpg" facs="varios/Varios_111_1.jpg"/>
+
         <fw type="impresorNum">Núm. 6.</fw>
-        
         <div n="1">
-          <head type="primer_titulo"><lb/>HIMNO DE LA GUERRA DE CUBA</head>
+          <head type="primer_titulo">
+            <lb/>HIMNO DE LA GUERRA DE CUBA</head>
           <lg>
             <l>Al dejar las playas españolas,</l>
             <l>Mi corazon debia de penar;</l>
@@ -1131,7 +1173,7 @@
             <l>Hijo mio, dime donde vas.</l>
           </lg>
           <lg>
-            <l>Voy á la Isla de Cuba</l>
+            <l>Voy á la <name>Isla de Cuba</name></l>
             <l>Le respondió y con salero,</l>
             <l>Voy en busca viva el cielo</l>
             <l>Del enemigo traidor,</l>
@@ -1143,7 +1185,7 @@
           <lg>
             <l>Al cruzar esos horribles mares,</l>
             <l>¡ oh ! ¡ que horror causa la tempestad !</l>
-            <l>Yo llegué á la Isla de Cuba,</l>
+            <l>Yo llegué á la <name>Isla de Cuba</name>,</l>
             <l>Madre mia no tuve novedad.</l>
           </lg>
           <lg>
@@ -1156,9 +1198,9 @@
             <l>Para los hijos de España</l>
             <l>Que allí van á pelear.</l>
           </lg>
-          
+
           <pb n="2" source="Varios_111_2.jpg" facs="varios/Varios_111_2.jpg"/>
-          
+
           <lg>
             <l>¡ Oh que Escuadra de fragatas tiene !</l>
             <l>¡ Oh que mozos tiene galardon !</l>
@@ -1249,21 +1291,22 @@
             <l>Para que veais que somos fieles</l>
             <l>En cumplir nuestra campaña</l>
             <l>Mientras que la Luna brille</l>
-            <l>Cuba debe ser de España:</l>
+            <l><name>Cuba</name> debe ser de España:</l>
             <l>Y mientras que brille el Sol</l>
             <l>Y nuestra madre la Aurora,</l>
-            <l>Cuba ha de ser Española</l>
+            <l><name>Cuba</name> ha de ser Española</l>
             <l>O se pierde la nacion</l>
           </lg>
         </div>
-        
         <div n="2">
+
           <pb n="3" source="Varios_111_3.jpg" facs="varios/Varios_111_3.jpg"/>
-          
-          <head type="titulo_cancion"><lb/>COPLAS FLAMENCAS</head>
-          
+
+          <head type="titulo_cancion">
+            <lb/>COPLAS FLAMENCAS</head>
           <lg>
-            <head type="titulo_estrofa"><lb/>I.</head>
+            <head type="titulo_estrofa">
+              <lb/>I.</head>
             <l rend="indent">Las mocitas de hoy en dia,</l>
             <l>Tienen mucha gracia y sal,</l>
             <l>Son rumbosas, sandungueras</l>
@@ -1275,9 +1318,9 @@
             <l>Muy finas,</l>
             <l>Que son bellas y divinas.</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>II.</head>
+            <head type="titulo_estrofa">
+              <lb/>II.</head>
             <l rend="indent">Las criadas de servicio</l>
             <l>Cuando por la Rambla van</l>
             <l>Solo miran con juicio</l>
@@ -1289,9 +1332,9 @@
             <l>Y buscan un buen empeño</l>
             <l>Alegres y placenteras.</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>III.</head>
+            <head type="titulo_estrofa">
+              <lb/>III.</head>
             <l rend="indent">Una pollita modiste</l>
             <l>De un pollo se enamoró,</l>
             <l>Mas él la tiene á la lista</l>
@@ -1303,9 +1346,9 @@
             <l>Y la pobre está llorando</l>
             <l>Ba di tincon de su casa</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>IV.</head>
+            <head type="titulo_estrofa">
+              <lb/>IV.</head>
             <l rend="indent">Una viudita me quiere</l>
             <l>Por que tengo buen pulmon</l>
             <l>En cantar á lo flamenco</l>
@@ -1317,9 +1360,9 @@
             <l>Y yo siempre la camelo</l>
             <l>Por ser hermosa y fresquita.</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>V.</head>
+            <head type="titulo_estrofa">
+              <lb/>V.</head>
             <l rend="indent">Una niña de quince años</l>
             <l>Como la flor del Abril,</l>
             <l>Me roba siempre la calma</l>
@@ -1331,9 +1374,9 @@
             <l>Y si yo puedo pescarla,</l>
             <l>Será feliz nuestra Estrellas.</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>VI.</head>
+            <head type="titulo_estrofa">
+              <lb/>VI.</head>
             <l rend="indent">«Eres el sol de los soles»</l>
             <l>Un soldado dijo un dia</l>
             <l>A una muchacha, salero,</l>
@@ -1345,11 +1388,12 @@
             <l>Por tí de amores me abraso</l>
             <l>Por ti yo pierdo la vida.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_111_4.jpg" facs="varios/Varios_111_4.jpg"/>
-          
+
           <lg>
-            <head type="titulo_estrofa"><lb/>VII.</head>
+            <head type="titulo_estrofa">
+              <lb/>VII.</head>
             <l rend="indent">Madre mia de mi vida</l>
             <l>Estoy muriendo de amor</l>
             <l>Y siento dentro del pecho</l>
@@ -1361,9 +1405,9 @@
             <l>Que me palpita ¡ ay ! el pecho</l>
             <l>Y me mata la ilusion.</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>VIII.</head>
+            <head type="titulo_estrofa">
+              <lb/>VIII.</head>
             <l rend="indent">Un viejo verde mamita</l>
             <l>Me persigue sin cesar,</l>
             <l>Con sus palabras me irrita</l>
@@ -1375,9 +1419,9 @@
             <l>Mas yo le inspiro desprecio</l>
             <l>Pues no le quiero adorar.</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>IX.</head>
+            <head type="titulo_estrofa">
+              <lb/>IX.</head>
             <l rend="indent">Una jamona me hace</l>
             <l>Mil guinos con rumbo y sal,</l>
             <l>La pobre me satisface</l>
@@ -1389,9 +1433,9 @@
             <l>Y á su reja con cariño</l>
             <l>Yo siempre le canto el DENGUE.</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>X.</head>
+            <head type="titulo_estrofa">
+              <lb/>X.</head>
             <l rend="indent">Una pollita hace dias</l>
             <l>Que me busca con teson,</l>
             <l>Por calmar sus agonías</l>
@@ -1403,11 +1447,11 @@
             <l>Y si me caso con ella</l>
             <l>Seré el hombre más feliz.</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>XI.</head>
+            <head type="titulo_estrofa">
+              <lb/>XI.</head>
             <l rend="indent">Un chulo con una chula</l>
-            <l>En las calles de Madrid,</l>
+            <l>En las calles de <name>Madrid</name>,</l>
             <l>Un puro amor se juraban</l>
             <l>Y ella le decia así...</l>
             <l>«Por via el alma mi abuela</l>
@@ -1417,9 +1461,9 @@
             <l>Y el chulo con mucha gracia</l>
             <l>Le regalaba un corpiño.</l>
           </lg>
-          
           <lg>
-            <head type="titulo_estrofa"><lb/>XII.</head>
+            <head type="titulo_estrofa">
+              <lb/>XII.</head>
             <l rend="indent">Por cantar canto flamenco</l>
             <l>No hay como la Andalucía</l>
             <l>Saben templar la guitarra</l>
@@ -1433,9 +1477,10 @@
           </lg>
           <p rend="cursiva">(Es propiedad)</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">Se halla de venta en casa</hi> JOSÉ CLARA, <hi rend="cursiva">Bou de la Plaza Nueva</hi>, 20.—<hi rend="cursiva">Barcelona</hi>.</p>
+          <p>
+            <lb/>
+            <hi rend="cursiva">Se halla de venta en casa</hi> JOSÉ CLARA, <hi rend="cursiva">Bou de la Plaza Nueva</hi>, 20.—<hi rend="cursiva">Barcelona</hi>.</p>
         </div>
       </div>
     </body>

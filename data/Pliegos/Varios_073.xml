@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -75,7 +89,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -104,6 +119,26 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1773540">
+            <placeName key="Tetuán">Tetuán</placeName>
+            <location>
+              <geo>40.460556 -3.7</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q850593">
+            <placeName key="La_Rambla">La Rambla</placeName>
+            <location>
+              <geo>41.381389 2.173056</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q835012">
+            <placeName key="Villafranca_del_Panadés">Villafranca Del Panadés</placeName>
+            <location>
+              <geo>41.344722222222 1.6994444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -139,8 +174,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-06-16" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-06-16" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1316,12 +1350,14 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_073_1.jpg" facs="varios/Varios_073_1.jpg"/>
 
           <div n="1">
-            <head type="primer_titulo"><lb/>EL AS DE BASTOS</head>
-            <head type="subtitulo_parte"><lb/>Polka del popular maestro D. Enrique Martí.</head>
-
+            <head type="primer_titulo">
+              <lb/>EL AS DE BASTOS</head>
+            <head type="subtitulo_parte">
+              <lb/>Polka del popular maestro D. Enrique Martí.</head>
             <lg>
               <l rend="indent">Es el aa de bastos, niña,</l>
               <l>una carta singular,</l>
@@ -1345,8 +1381,8 @@
               <l>las cartas entre el hombre y la mujer.</l>
 
               <pb n="2" source="Varios_073_2.jpg" facs="varios/Varios_073_2.jpg"/>
-              <fw type="paginaNum">-2-</fw>
 
+              <fw type="paginaNum">-2-</fw>
               <l rend="indent">Por un beso, vida mía,</l>
               <l>de tu boquita de miel,</l>
               <l>todo un mundo te daria</l>
@@ -1365,7 +1401,6 @@
               <l>quiero partir.</l>
               <l rend="indent">¡Ay! que bonito siempre es el jugar, etc.</l>
             </lg>
-
             <lg>
               <l rend="indent">Con las cartas en la mano</l>
               <l>yo el amor te esplicaré.</l>
@@ -1385,7 +1420,6 @@
               <l>ya que otro no,</l>
               <l rend="indent">¡Ay! que bonito siempre es el jugar, etc.</l>
             </lg>
-
             <lg>
               <l rend="indent">Será mi cuarto la escuela</l>
               <l>y yo seré el profesor,</l>
@@ -1405,7 +1439,6 @@
               <l>lo que es amar.</l>
               <l rend="indent">¡Ay! que bonito siempre es el jugar, etc.</l>
             </lg>
-
             <lg>
               <l rend="indent">Cuando juegues con tu amante</l>
               <l>ten cuidado en el tirar,</l>
@@ -1426,12 +1459,12 @@
               <l rend="indent">¡Ay! que bonito siempre es el jugar, etc.</l>
             </lg>
           </div>
-
           <div n="2">
-            <head type="titulo_cancion" rend="negrita"><lb/>LAS FIRAS Y FESTAS.</head>
-            <head type="subtitulo_cancion"><lb/>Pera cantar ab la tonada de: En Zumalacarregui diu
+            <head type="titulo_cancion" rend="negrita">
+              <lb/>LAS FIRAS Y FESTAS.</head>
+            <head type="subtitulo_cancion">
+              <lb/>Pera cantar ab la tonada de: En Zumalacarregui diu
               que vol venir.</head>
-
             <lg>
               <l rend="indent">Ara venen festas</l>
               <l>que bonas serán</l>
@@ -1442,14 +1475,12 @@
               <l>si ab la bossa plena</l>
               <l>prou la buydarán</l>
             </lg>
-
             <lg>
               <l>ay, ay, ay que riurém</l>
               <l>ab las firas y festas</l>
               <l>ay, ay, ay que riurém</l>
               <l>ab tot lo que veurem.</l>
             </lg>
-
             <lg>
               <l rend="indent">Aquest any tres dias</l>
               <l>no més ni aurán;</l>
@@ -1457,18 +1488,17 @@
               <l>tan curtas sorón.</l>
 
               <pb n="3" source="Varios_073_3.jpg" facs="varios/Varios_073_3.jpg"/>
-              <fw type="paginaNum">-3-</fw>
 
-              <l>com no hi ha <hi rend="cursiva">dinero</hi></l>
+              <fw type="paginaNum">-3-</fw>
+              <l>com no hi ha <hi rend="cursiva">dinero</hi>
+              </l>
               <l>hi haurá poch <hi rend="cursiva">sarmon</hi>,</l>
               <l>l'any que ve ja diuhen</l>
               <l>que serán millors.</l>
             </lg>
-
             <l>ay, ay, ay que riurém etc.</l>
-
             <lg>
-              <l>A la Rambla globos</l>
+              <l>A la <name>Rambla</name> globos</l>
               <l>jo no hi encendrán</l>
               <l>dos ó tres domassos</l>
               <l>no més posarán</l>
@@ -1477,9 +1507,7 @@
               <l>que ja fa alguns dias</l>
               <l>no 'ls Lan espolsat.</l>
             </lg>
-
             <l>ay. ay, ay que riurém, etc.</l>
-
             <lg>
               <l rend="indent">No hi haura mulasea</l>
               <l>ni tempoch gegants</l>
@@ -1490,9 +1518,7 @@
               <l>ni res del que deyan</l>
               <l>hi haura en lo Parch.</l>
             </lg>
-
             <l>ay, ay, ay que riurém, etc.</l>
-
             <lg>
               <l rend="indent">Cuatre correcamas</l>
               <l>un vespre encendran,</l>
@@ -1501,11 +1527,9 @@
               <l>que á les Hermanitas</l>
               <l>diu que 'ls tirarám</l>
               <l>á la plassa nova</l>
-              <l>que es de Tetuan</l>
+              <l>que es de <name>Tetuan</name></l>
             </lg>
-
             <l>ay, ay, ay que riurem etc.</l>
-
             <lg>
               <l>A las set, dissapte</l>
               <l>sortirán soldats</l>
@@ -1516,9 +1540,7 @@
               <l>com si tots los viudos</l>
               <l>s' haguessin casat...</l>
             </lg>
-
             <l>Ay, ay, ay, que riurém, etc.</l>
-
             <lg>
               <l rend="indent">Carretons dels gossos</l>
               <l>també correrán</l>
@@ -1529,9 +1551,7 @@
               <l>perque los de fora</l>
               <l>n' están ignorants.</l>
             </lg>
-
             <l>Ay. ay, ay, que riurém etc,</l>
-
             <lg>
               <l rend="indent">Pera fer més gresca</l>
               <l>també correrán</l>
@@ -1542,16 +1562,15 @@
               <l>que 'ls escombriaires</l>
               <l>ara fan portá.</l>
             </lg>
-
             <l>A. ay, ay, que riurém, ete!</l>
-
-            <p rend="cursiva"><lb/>(Torna la primera estrofa.)</p>
+            <p rend="cursiva">
+              <lb/>(Torna la primera estrofa.)</p>
           </div>
-
           <div n="3">
-            <head type="titulo_cancion" rend="negrita"><lb/>St. St. St.</head>
-            <head type="subtitulo_cancion"><lb/>Polka del popular maestro D. Enrique Martí.</head>
-
+            <head type="titulo_cancion" rend="negrita">
+              <lb/>St. St. St.</head>
+            <head type="subtitulo_cancion">
+              <lb/>Polka del popular maestro D. Enrique Martí.</head>
             <lg>
               <l>St. st. st</l>
               <l>Hermana mia ven por Dios</l>
@@ -1581,7 +1600,6 @@
               <pb n="4" source="Varios_073_4.jpg" facs="varios/Varios_073_4.jpg"/>
 
               <fw type="paginaNum">—4—</fw>
-
               <l>si ta vas st., st, si ta vas st., st.,</l>
               <l>que es al cabo la mujer</l>
               <l>la que amor hace sentir.</l>
@@ -1602,7 +1620,6 @@
               <l>si á volver</l>
               <l>va el amor.</l>
             </lg>
-
             <lg>
               <l>St. st. st.,</l>
               <l>me gritan desde su balcon</l>
@@ -1648,7 +1665,6 @@
               <l>no vendra,</l>
               <l>no, el amor.</l>
             </lg>
-
             <lg>
               <l>St., st., st.,</l>
               <l>sal moreníta á contemplar</l>
@@ -1696,9 +1712,10 @@
             </lg>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">Barcelona: Imp. Peninsular, calle del Conde del Asalto,
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona: Imp. Peninsular, calle del Conde del Asalto,
               núm.</hi> 69.</p>
         </div>
       </div>

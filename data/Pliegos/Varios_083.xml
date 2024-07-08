@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -70,7 +84,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -100,6 +115,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -135,8 +158,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-26" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-26" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1390,12 +1412,14 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_083_1.jpg" facs="varios/Varios_083_1.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>LA VERDAD EN CHANZA.</head>
-          <head type="subtitulo"><lb/>Del modo que hacen las mugeres á los hombres<lb/>cabran los
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA VERDAD EN CHANZA.</head>
+          <head type="subtitulo">
+            <lb/>Del modo que hacen las mugeres á los hombres<lb/>cabran los
             ojos.</head>
-
           <div type="parte" n="1">
             <lg>
               <l rend="indent">Aunque con broma cumplida</l>
@@ -1403,77 +1427,66 @@
               <l>voy á cantar una vida</l>
               <l>que es agria, dulce y amarga.</l>
             </lg>
-
             <lg>
               <l rend="indent">Es muy chistosa</l>
               <l>al declararla,</l>
               <l>y tiene golpes</l>
               <l>de cornicabra.</l>
             </lg>
-
             <lg>
               <l rend="indent">Mientras quieren á la niña</l>
               <l>con intencion de casarla,</l>
               <l>la cortejan y la sirven</l>
               <l>la divierten y regulan.</l>
             </lg>
-
             <lg>
               <l rend="indent">Pero estas fiestas</l>
               <l>se acaban pronto</l>
               <l>y dan principio</l>
               <l>los alborotos.</l>
             </lg>
-
             <lg>
               <l rend="indent">Viendo la suegra á la nuera</l>
               <l>que la trata con despego,</l>
               <l>le dice : mas te valiera</l>
               <l>mirar que ese es un borrego.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y es tu marido</l>
               <l>y hombre de suerte</l>
               <l>y el testimonio</l>
               <l>lleva en la frente.</l>
             </lg>
-
             <lg>
               <l rend="indent">La nuera responde</l>
               <l>á su suegra que ese es el cuento</l>
               <l>comer bien y vivir bien</l>
               <l>no se puede hacer á un tiempo.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y asi este estado</l>
               <l>le corresponde</l>
               <l>á este marcado</l>
               <l>Hay muchas que se mantienen</l>
             </lg>
-
             <lg>
               <l rend="indent">por ser buen hombre.</l>
               <l>de ser correo de oreja,</l>
               <l>ya que otra cosa no pueden</l>
               <l>porque la edad no les deja.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y estas enredan</l>
               <l>con gran desuello</l>
               <l>á otras que sean</l>
               <l>Tambien hay otras mezuelas</l>
             </lg>
-
             <lg>
               <l rend="indent">lo que ellas fueron.</l>
               <l>que en regalar á los novios</l>
               <l>suelen gastar cuanto tienen</l>
               <l>y lo suelen perder todo.</l>
             </lg>
-
             <lg>
               <l rend="indent">Porque ellos dicen</l>
               <l>y no es de lejos</l>
@@ -1489,147 +1502,126 @@
               <l>si pudieran desharian</l>
               <l>el nudo del matrimonio.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y es que mirando</l>
               <l>su gusto á menos</l>
               <l>suelen ir ambos</l>
               <l>á esquilar cuernos.</l>
             </lg>
-
             <lg>
               <l rend="indent">Se les acabó el cariño</l>
               <l>suponiendo que era poco,</l>
               <l>él la envia con su madre</l>
               <l>y ella le dice guilopo.</l>
             </lg>
-
             <lg>
               <l rend="indent">Si no eres hombre</l>
               <l>de cumplimiento,</l>
               <l>porque trataste</l>
               <l>de casamiento.</l>
             </lg>
-
             <lg>
               <l rend="indent">Esto escucha el marido</l>
               <l>aunque tiene razon ella,</l>
               <l>con una vara atrevido</l>
               <l>le llena el cuerpo de leña.</l>
             </lg>
-
             <lg>
               <l rend="indent">Viene la suegra</l>
               <l>con las cuñadas,</l>
               <l>y todas llevan</l>
               <l>de la ensalada.</l>
             </lg>
-
             <lg>
               <l rend="indent">Entre las suegras y nueras</l>
               <l>diablos, cuñadas y yernos,</l>
               <l>mueven tan grande quimera</l>
               <l>que es imposible entenderlo.</l>
             </lg>
-
             <lg>
               <l rend="indent">Ellos se dicen</l>
               <l>mil disparates,</l>
               <l>y al fin se quedan</l>
               <l>mejor que antes.</l>
             </lg>
-
             <lg>
               <l rend="indent">Las cuñadas dicen : madre</l>
               <l>hablando fuera de chanza,</l>
               <l>siempre que la nuera viene</l>
               <l>es á escalar la casa.</l>
             </lg>
-
             <lg>
               <l rend="indent">Muy bien lo creo</l>
               <l>dice la suegra,</l>
               <l>pues cuanto pilla</l>
               <l>tanto se lleva.</l>
             </lg>
-
             <lg>
               <l rend="indent">La suegra dice á la nuera</l>
               <l>ores una vil infame,</l>
               <l>no quieres á tu marido</l>
               <l>si solo para que gane.</l>
             </lg>
-
             <lg>
               <l rend="indent">Tú en peregiles</l>
               <l>lo gastas todo,</l>
               <l>y él siempre sale,</l>
               <l>hecho un Juan horro.</l>
             </lg>
-
             <lg>
               <l rend="indent">Mira que flaco lo tienes,</l>
               <l>del mal trato que le das,</l>
               <l>y tú bien comes y bebes</l>
               <l>por esa razon estás.</l>
             </lg>
-
             <lg>
               <l rend="indent">Pegando mangas</l>
               <l>con uno y otró</l>
               <l>y pues esquile</l>
               <l>quien fuere tonto.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y lavale esa camisa</l>
               <l>que salga limpio algun dia;</l>
               <l>y la nuera eon gran risa</l>
               <l>le responde apretorla.</l>
             </lg>
-
             <lg>
               <l rend="indent">Que al rio baya</l>
               <l>yo á refrescarme</l>
               <l>muy noramala,</l>
               <l>vaya su madre.</l>
             </lg>
-
             <lg>
               <l rend="indent">Mira cual está ese hombre</l>
               <l>solo por mirar por ti,</l>
               <l>y la nuera le responde</l>
               <l>á otro churri que no á mí.</l>
             </lg>
-
             <lg>
               <l rend="indent">Si visto y calzo</l>
               <l>ó como y bebo,</l>
               <l>otro el cuidado</l>
               <l>tiene de hacerlo.</l>
             </lg>
-
             <lg>
               <l rend="indent">La suegra que está escuchando</l>
               <l>la respuesta de la nuera</l>
               <l>se acerca para embestirle,</l>
               <l>y ella le dá muy ligera.</l>
             </lg>
-
             <lg>
               <l rend="indent">Un cierto golpe</l>
               <l>en las canillas,</l>
               <l>con que la suegra</l>
               <l>dió de rodillas.</l>
             </lg>
-
             <lg>
               <l rend="indent">Aqui hace meditacion</l>
               <l>esta relacion chocante,</l>
               <l>si me prestan atencion</l>
               <l>dirè la segunda parte.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y es el asunto,</l>
               <l>porque ahora entra</l>
@@ -1637,166 +1629,144 @@
               <l>de cornamenta.</l>
             </lg>
           </div>
-
           <div type="parte" n="2">
+
             <pb n="3" source="Varios_083_3.jpg" facs="varios/Varios_083_3.jpg"/>
 
-            <head type="titulo_parte"><lb/>SEGUNDA PARTE.</head>
-
+            <head type="titulo_parte">
+              <lb/>SEGUNDA PARTE.</head>
             <lg>
               <l rend="indent">Hay hombres imprudentes</l>
               <l>que se salen de su casa</l>
               <l>y en tomar el aguardiente</l>
               <l>toda la mañana pasan,</l>
             </lg>
-
             <lg>
               <l rend="indent">Luego se meten</l>
               <l>á jugar el truque,</l>
               <l>y se dívierten</l>
               <l>como unos duques.</l>
             </lg>
-
             <lg>
               <l rend="indent">Con todas estas grandezas</l>
               <l>en su casa no han dejado</l>
               <l>ni para un cuarto de especias</l>
               <l>ni tuvieron tal cuidado.</l>
             </lg>
-
             <lg>
               <l rend="indent">Siguen jugando,</l>
               <l>con que hacer boca</l>
               <l>y las cuartillas</l>
               <l>una con otra.</l>
             </lg>
-
             <lg>
               <l rend="indent">Ya es tanto lo que han chupado</l>
               <l>que muy faltos de razon</l>
               <l>están todos asomados</l>
               <l>sin pasar la procesion.</l>
             </lg>
-
             <lg>
               <l rend="indent">Pero se salen</l>
               <l>con grande prisa</l>
               <l>á media tarde</l>
               <l>buscando misa.</l>
             </lg>
-
             <lg>
               <l rend="indent">Tambien hay bombres crueles</l>
               <l>con huesos en la barriga,</l>
               <l>que mandan á sus mugeres</l>
               <l>lo que no está en la cartilla.</l>
             </lg>
-
             <lg>
               <l rend="indent">Muger, le dicen,</l>
               <l>tu estás muy tonta</l>
               <l>no estás mirando</l>
               <l>lo que hacen otras.</l>
             </lg>
-
             <lg>
               <l rend="indent">Si te sale una ocasion</l>
               <l>lógrala con diligencia</l>
               <l>y aunque robes no hay dolor</l>
               <l>nunca encargues tu conciencia.</l>
             </lg>
-
             <lg>
               <l rend="indent">Verás que vida</l>
               <l>de caballeros,</l>
               <l>y mas que digan</l>
               <l>de Dios digeron.</l>
             </lg>
-
             <lg>
               <l rend="indent">Tienen algunas mugeres</l>
               <l>colores de rosa fina.</l>
               <l>y son para el que las quiere</l>
               <l>mas amargos que la quina.</l>
             </lg>
-
             <lg>
               <l rend="indent">Pues al que estiman</l>
               <l>le dan en dote</l>
-              <l>para Granada</l>
+              <l>para <name>Granada</name></l>
               <l>Muchas madres à sus hijas</l>
             </lg>
-
             <lg>
               <l rend="indent">su pasaporte.</l>
               <l>las sucan á pasear,</l>
               <l>por ver si alguno se aplica</l>
               <l>á quererlas cortejar.</l>
             </lg>
-
             <lg>
               <l rend="indent">Siempre la hija</l>
               <l>de punta en blanco,</l>
               <l>aunque en rigor la tripa</l>
               <l>A la hija se le ofrece</l>
             </lg>
-
             <lg>
               <l rend="indent">lleve el quebranto.</l>
               <l>ir compuesta con esmero</l>
               <l>pero la madre parece</l>
               <l>á la tonta del quijero.</l>
             </lg>
-
             <lg>
               <l rend="indent">la madre al trote,</l>
               <l>La hija vucla</l>
               <l>dándole campo</l>
               <l>no se sofoque.</l>
             </lg>
-
             <lg>
               <l rend="indent">Va la madre de la hija</l>
               <l>lo menos cincuenta varas,</l>
               <l>por si habla con el nobio</l>
               <l>no tragarse las palabras.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y si resulta</l>
               <l>de esto algun chasco;</l>
               <l>dan por disculpa</l>
               <l>que son muchachos.</l>
             </lg>
-
             <lg>
               <l rend="indent">Tambien hay algunas madres</l>
               <l>que son nobias de sus yernos,</l>
               <l>casamientos mas infames</l>
               <l>no se hacen en los infiernos.</l>
             </lg>
-
             <lg>
               <l rend="indent">La hija dice</l>
               <l>que vaya el novio</l>
               <l>y con su madre</l>
               <l>para el otoño.</l>
             </lg>
-
             <lg>
               <l rend="indent">Por eso se estiman tanto</l>
               <l>si se llegan á casar,</l>
               <l>como dos perros y un gato</l>
               <l>metidos en un costal.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y asi se juntan</l>
               <l>ciertos casados</l>
               <l>con muchas puntas</l>
               <l>sin tener ganado.</l>
             </lg>
-
             <lg>
               <l rend="indent">Tambien hay hombres celosos</l>
               <l>que están siempre en centinela,</l>
@@ -1812,125 +1782,109 @@
               <l>queden burlados</l>
               <l>y agradecides.</l>
             </lg>
-
             <lg>
               <l rend="indent">Muchas hay que se madrugan</l>
               <l>con pretesto de ir á misa,</l>
               <l>y lo que mas bien procuran</l>
               <l>es hacerse de noticias.</l>
             </lg>
-
             <lg>
               <l rend="indent">Salen y entran</l>
               <l>de casa en casa,</l>
               <l>y con sus lenguas</l>
               <l>todo lo abrasan.</l>
             </lg>
-
             <lg>
               <l rend="indent">Se entran con mucho agrado</l>
               <l>diciendo ¡ Jesus que frio!</l>
               <l>cuatro misas he almorzado</l>
               <l>si Dios ha sido servido.</l>
             </lg>
-
             <lg>
               <l rend="indent">Luego suspira</l>
               <l>la muy taimada,</l>
               <l>diciendo amiga</l>
               <l>¿ no sabes nada?</l>
             </lg>
-
             <lg>
               <l rend="indent">No sabeis como fulana,</l>
               <l>Dios no me lo tome en cuenta,</l>
               <l>la encontraron con fulano</l>
               <l>anoche por cosa cierta.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y le responden</l>
               <l>como sentidas</l>
               <l>eso se calla</l>
               <l>por ser amiga.</l>
             </lg>
-
             <lg>
               <l rend="indent">Tambien dice la mas buena</l>
               <l>si yo á Dios no le ofendiera</l>
               <l>bien claramente dijera</l>
               <l>con quien fulana se emplea.</l>
             </lg>
-
             <lg>
               <l rend="indent">Dilo responden</l>
               <l>no seas tonta,</l>
               <l>que aqui se queda</l>
               <l>entre nosotras.</l>
             </lg>
-
             <lg>
               <l rend="indent">En fin no queda doncella</l>
               <l>viuda honesta, ni casada</l>
               <l>que no lleve su pasada</l>
               <l>de estas lenguas de centellas.</l>
             </lg>
-
             <lg>
               <l rend="indent">Pues como andan</l>
               <l>siempre á la oreja,</l>
               <l>asi son lobos</l>
               <l>con piel de obeja.</l>
             </lg>
-
             <lg>
               <l rend="indent">Tambien hay ciertas beatas</l>
               <l>que tratan en lo divino,</l>
               <l>y le arman un casorio</l>
               <l>á una torba de molino.</l>
             </lg>
-
             <lg>
               <l rend="indent">Ellas lo urden</l>
               <l>y lo entretegen,</l>
               <l>despues los novios</l>
               <l>mas que se ensegen.</l>
             </lg>
-
             <lg>
               <l rend="indent">En fin se hizo el casamiento</l>
               <l>y como fué sin cariño</l>
               <l>uno y otro no quisieran</l>
               <l>ni aun tenerse por vecínos.</l>
             </lg>
-
             <lg>
               <l rend="indent">Sin pan ni harina,</l>
               <l>todas son grescas,</l>
               <l>ni queda criada</l>
               <l>que no refresca.</l>
             </lg>
-
             <lg>
               <l rend="indent">A esta nueva relacion</l>
               <l>no ha habido quien ponga tacha</l>
               <l>por esta misma razon</l>
               <l>llaman la verdad en chanza.</l>
             </lg>
-
             <lg>
               <l rend="indent">Y al que imagina</l>
               <l>que esta sin faja,</l>
               <l>á este le pilla de rabo á oreja</l>
               <l>y aqui se acaba toda la fiesta.</l>
             </lg>
-
-            <trailer><hi rend="cursiva">FIN</hi>.</trailer>
+            <trailer>
+              <hi rend="cursiva">FIN</hi>.</trailer>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona, Imprenta de Ignacio Estivill, calle de la Boria.</p>
+          <p>
+            <lb/>Barcelona, Imprenta de Ignacio Estivill, calle de la Boria.</p>
         </div>
       </div>
     </body>

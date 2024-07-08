@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +113,38 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="5" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q24022058">
+            <placeName key="Melilla">Melilla</placeName>
+            <location>
+              <geo>35.29187 -2.9409</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q60">
+            <placeName key="Nueva_York">Nueva York</placeName>
+            <location>
+              <geo>40.7 -74</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q185157">
+            <placeName key="Tetuán">Tetuán</placeName>
+            <location>
+              <geo>35.566666666667 -5.3666666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q606775">
+            <placeName key="Larache">Larache</placeName>
+            <location>
+              <geo>35.183333333333 -6.15</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,8 +180,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-13" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-13" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -968,23 +1014,27 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_387_1.jpg" facs="varios/Varios_387_1.jpg"/>
 
-        <head type="subtitulo_parte" rend="negrita"><lb/>PREMIADO POR S. M. EL REY D. ALFONSO
+        <head type="subtitulo_parte" rend="negrita">
+          <lb/>PREMIADO POR S. M. EL REY D. ALFONSO
           XIII</head>
-        <head type="titulo_parte" rend="negrita"><lb/>LA CANCION DEL SOLDADO<lb/>Aires militares
-          españoles<lb/></head>
-
+        <head type="titulo_parte" rend="negrita">
+          <lb/>LA CANCION DEL SOLDADO<lb/>Aires militares
+          españoles<lb/>
+        </head>
         <div type="colofon">
-          <p><lb/>Imp. Aldana, 12.—BARCELONA.</p>
+          <p>
+            <lb/>Imp. Aldana, 12.—BARCELONA.</p>
         </div>
 
         <pb n="2" source="Varios_387_2.jpg" facs="varios/Varios_387_2.jpg"/>
 
         <div n="1">
           <div n="1" type="parte">
-            <head type="titulo_parte" rend="negrita"><lb/>La canción del Soldado</head>
-
+            <head type="titulo_parte" rend="negrita">
+              <lb/>La canción del Soldado</head>
             <lg>
               <l rend="indent">Soldado soy de España</l>
               <l>y estoy en el cuartel,</l>
@@ -1054,11 +1104,11 @@
               <l>se me ensancha el corazón.</l>
             </lg>
           </div>
-
           <div type="parte" n="2">
-            <head type="titulo_parte" rend="negrita"><lb/>La canción del soldado</head>
-            <head type="subtitulo_parte"><lb/>SEGUNDA PARTE</head>
-
+            <head type="titulo_parte" rend="negrita">
+              <lb/>La canción del soldado</head>
+            <head type="subtitulo_parte">
+              <lb/>SEGUNDA PARTE</head>
             <l rend="indent">Adios mi comandante</l>
             <l>adios mi coronel,</l>
             <l>adios mis compañeros</l>
@@ -1072,7 +1122,7 @@
             <l>mil besos le daré.</l>
             <l rend="indent">Por fin llegó la hora</l>
             <l>de poder abandonar,</l>
-            <l>Melilla y el Larache</l>
+            <l><name>Melilla</name> y el <name>Larache</name></l>
             <l>y los montes de Tetuán</l>
             <l>madre de mi corazón</l>
             <l>que contenta vas a estar</l>
@@ -1094,7 +1144,7 @@
             <l>alerta está, alerta está.</l>
             <l rend="indent">Madre mia, patria mia,</l>
             <l>por tí con valor peleé</l>
-            <l>en los campos de Melilla</l>
+            <l>en los campos de <name>Melilla</name></l>
             <l>nunca el peligro reparé</l>
             <l>y gritando: ¡Viva Esgaña!</l>
             <l>la bandera tremolé,</l>
@@ -1107,8 +1157,8 @@
         <pb n="3" source="Varios_387_3.jpg" facs="varios/Varios_387_3.jpg"/>
 
         <div n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>QUE la MaR ES MUY TRAIDORA</head>
-
+          <head type="titulo_parte" rend="negrita">
+            <lb/>QUE la MaR ES MUY TRAIDORA</head>
           <lg>
             <head type="titulo_estrofa">I</head>
             <l>Cuando en las noches claras de blanca luna</l>
@@ -1147,8 +1197,8 @@
         <pb n="4" source="Varios_387_4.jpg" facs="varios/Varios_387_4.jpg"/>
 
         <div n="3">
-          <head type="titulo_parte" rend="negrita"><lb/>Que la mar es muy traidora</head>
-
+          <head type="titulo_parte" rend="negrita">
+            <lb/>Que la mar es muy traidora</head>
           <lg>
             <l>Mucho cuidado joven nunca te fies</l>
             <l>de la mujer</l>
@@ -1159,7 +1209,8 @@
             <l>a observarla valiente chasco</l>
             <l>que me lleve</l>
             <l>la encontre una mañana con un soldado que hiba del</l>
-            <l>brazo y luego por la noche la vi con un cabo en el<add place="debajo">(teatro</add></l>
+            <l>brazo y luego por la noche la vi con un cabo en el<add place="debajo">(teatro</add>
+            </l>
             <l>cuando su cabo dejó</l>
             <l>muy deprisa se marchó al muelle se dirijió</l>
             <l>un sargento la esperó</l>
@@ -1191,7 +1242,7 @@
           </lg>
           <lg>
             <l>Era un lorito rico y bonito</l>
-            <l>que nació en Nuevayork</l>
+            <l>que nació en <name>Nuevayork</name></l>
             <l>que lo tenia Doña Matilde</l>
             <l>para su distracción.</l>
             <l>Un día el señorito con la criada</l>
@@ -1208,7 +1259,6 @@
             <l>que me quemarian el pico.</l>
           </lg>
         </div>
-
       </div>
     </body>
   </text>

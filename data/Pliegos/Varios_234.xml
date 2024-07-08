@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -74,7 +88,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -103,6 +118,32 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q3824017">
+            <placeName key="Paseo_de_Colón">Paseo De Colón</placeName>
+            <location>
+              <geo>41.3766666666667 2.17861111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q850593">
+            <placeName key="La_Rambla">La Rambla</placeName>
+            <location>
+              <geo>41.381389 2.173056</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q3447905">
+            <placeName key="Calle_de_Ferran">Calle De Ferran</placeName>
+            <location>
+              <geo>41.381536 2.175686</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5046067">
+            <placeName key="calle_de_Aragón">Calle De Aragón</placeName>
+            <location>
+              <geo>41.395319444444 2.1691222222222</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -138,8 +179,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1334,15 +1374,16 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_234_1.jpg" facs="varios/Varios_234_1.jpg"/>
 
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>Modernos y alegres couplets de la<lb/>FALDA
+          <head type="primer_titulo" rend="negrita">
+            <lb/>Modernos y alegres couplets de la<lb/>FALDA
             PANTALON<lb/>Primera parte</head>
-
           <div type="parte" n="1">
-            <head type="titulo_parte"><lb/>Primera parte</head>
-
+            <head type="titulo_parte">
+              <lb/>Primera parte</head>
             <lg>
               <l rend="indent">Por capricho la Joaquina</l>
               <l>anoche á tomar café</l>
@@ -1383,7 +1424,7 @@
               <l>y ponerles el pantalón.</l>
             </lg>
             <lg>
-              <l rend="indent">En la calle de Fernando</l>
+              <l rend="indent">En la <name>calle de Fernando</name></l>
               <l>una señora cayó,</l>
               <l>al ir á subir la acera</l>
               <l>iba estrecha y tropezó</l>
@@ -1463,14 +1504,14 @@
               <l>un paraguas sin bastón.</l>
             </lg>
           </div>
-
           <div type="parte" n="2">
-            <head type="titulo_cancion" rend="negrita"><lb/>Modernos y alegres couplets de
+            <head type="titulo_cancion" rend="negrita">
+              <lb/>Modernos y alegres couplets de
               la<lb/>FALDA PANTALON</head>
-            <head type="titulo_parte" rend="negrita"><lb/>Segunda parte</head>
-
+            <head type="titulo_parte" rend="negrita">
+              <lb/>Segunda parte</head>
             <lg>
-              <l rend="indent">En la rambla de las Flores</l>
+              <l rend="indent">En la <name>rambla de las Flores</name></l>
               <l>á una joven se le cayó</l>
               <l>el pañuelo de la mano</l>
               <l>no lo pudo recoger no</l>
@@ -1540,10 +1581,9 @@
             </lg>
           </div>
         </div>
-
         <div>
-          <head type="titulo_cancion" rend="negrita"><lb/>CONDE DE LUXEMBURGO</head>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>CONDE DE LUXEMBURGO</head>
           <lg>
             <l>Es la felicidad la que me llama aquí</l>
             <l>es el amor que en vano busqué</l>
@@ -1668,9 +1708,9 @@
             <l>¡Por favor! ¡Por favor!</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imp. E. Pamies, Unión, 54.—Tarragona.</p>
+          <p>
+            <lb/>Imp. E. Pamies, Unión, 54.—Tarragona.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -31,7 +45,8 @@
             <title type="titulo_breve">El Sepulcro</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_339.xml">Varios_339</ref></p>
+            <p>Otra impresión: <ref target="Varios_339.xml">Varios_339</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Luis Raynaud</publisher>
@@ -71,7 +86,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +115,7 @@
             <acquisition/>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -135,8 +152,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-18" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-18" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -984,98 +1000,120 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_247_1.jpg" facs="varios/Varios_247_1.jpg"/>
+
         <fw type="impresorNum">Núm. 56.</fw>
-
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>EL SEPULCRO<lb/>Lo que puede el Amor</head>
-          <head type="subtitulo"><lb/>Trágico fin de Leandro al pie del Sepulcro de su<lb/>adorada
+          <head type="primer_titulo" rend="negrita">
+            <lb/>EL SEPULCRO<lb/>Lo que puede el Amor</head>
+          <head type="subtitulo">
+            <lb/>Trágico fin de Leandro al pie del Sepulcro de su<lb/>adorada
             Emilia</head>
-          <head type="titulo_parte" rend="negrita"><lb/>Segunda parte del Sepulturero</head>
-
+          <head type="titulo_parte" rend="negrita">
+            <lb/>Segunda parte del Sepulturero</head>
           <sp>
             <speaker rend="cursiva">Leandro.</speaker>
-            <p><lb/>Ha de casa? <lb/>Sepulturero. Quién llama?</p>
+            <p>
+              <lb/>Ha de casa? <lb/>Sepulturero. Quién llama?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leandro.</speaker>
-            <p><lb/>Me conoces? soy yo.</p>
+            <p>
+              <lb/>Me conoces? soy yo.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p><lb/>Voy señor. A estas horas venir?</p>
+            <p>
+              <lb/>Voy señor. A estas horas venir?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p><lb/>Sí, dame las llaves del ce- <lb/>menterio.</p>
+            <p>
+              <lb/>Sí, dame las llaves del ce- <lb/>menterio.</p>
           </sp>
 
           <pb n="2" source="Varios_247_2.jpg" facs="varios/Varios_247_2.jpg"/>
 
           <sp>
             <speaker rend="cursiva">Sepult.</speaker>
-            <p><lb/>No puede ser: el sol se po- <lb/>ne: es muy tarde.</p>
+            <p>
+              <lb/>No puede ser: el sol se po- <lb/>ne: es muy tarde.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p><lb/>Tanto mejor: así no seré <lb/>visto.</p>
+            <p>
+              <lb/>Tanto mejor: así no seré <lb/>visto.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sepult.</speaker>
-            <p><lb/>No hagais como la otra no- <lb/>che que no os podía hacer mar- <lb/>char.</p>
+            <p>
+              <lb/>No hagais como la otra no- <lb/>che que no os podía hacer mar- <lb/>char.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p><lb/>Ah! no. No será como la <lb/>otra noche! Te lo prometo.... No <lb/>será.</p>
+            <p>
+              <lb/>Ah! no. No será como la <lb/>otra noche! Te lo prometo.... No <lb/>será.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sepult.</speaker>
-            <p><lb/>¡Gran Dios! Que cara lle- <lb/>vais. Vuestro rostro desencajado <lb/>y pálido
+            <p>
+              <lb/>¡Gran Dios! Que cara lle- <lb/>vais. Vuestro rostro desencajado <lb/>y pálido
               me horroriza. Señor, me <lb/>dais compasión.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p><lb/>No: no me compadezcas <lb/>amigo: pues hoy ya soy feliz.</p>
+            <p>
+              <lb/>No: no me compadezcas <lb/>amigo: pues hoy ya soy feliz.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sepult.</speaker>
-            <p><lb/>Feliz decís? la palidez de <lb/>vuestro rostro, los labios sin color <lb/>y
+            <p>
+              <lb/>Feliz decís? la palidez de <lb/>vuestro rostro, los labios sin color <lb/>y
               estos ojos sin luz ni brillo: me <lb/>revelan señor, que en estremo pa- <lb/>deceis.
               Por Dios: reportaos un <lb/>momento.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p><lb/>Dadme las llaves.</p>
+            <p>
+              <lb/>Dadme las llaves.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sepult.</speaker>
-            <p><lb/>Siendo ya de noche y cono- <lb/>ciéndoos cuasi desesperado no me <lb/>atrevo.
+            <p>
+              <lb/>Siendo ya de noche y cono- <lb/>ciéndoos cuasi desesperado no me <lb/>atrevo.
               <lb/>Leand Me lo prometisteis la otra <lb/>vez: y así cumple tu palabra que <lb/>yo
               cumplo ya la mía. Aquí tienes <lb/>el dinero prometido: todo en oro, <lb/>abre pues:
               ó mejor, vengan las <lb/>llaves.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sepult.</speaker>
-            <p><lb/>Aquí las teneis, vos mismo, <lb/>abrid. Sobre todo, gran pru- <lb/>dencia.</p>
+            <p>
+              <lb/>Aquí las teneis, vos mismo, <lb/>abrid. Sobre todo, gran pru- <lb/>dencia.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p><lb/>No vuelvas hasta que sea <lb/>de día: déjame enteramente solo. <lb/>Procurarás
+            <p>
+              <lb/>No vuelvas hasta que sea <lb/>de día: déjame enteramente solo. <lb/>Procurarás
               que nadie se acerque <lb/>aquí.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sepult.</speaker>
-            <p><lb/>Pero señor.... temo de vos <lb/>una locura.</p>
+            <p>
+              <lb/>Pero señor.... temo de vos <lb/>una locura.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p><lb/>Marcha. Retírate.</p>
+            <p>
+              <lb/>Marcha. Retírate.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sepult.</speaker>
-            <p><lb/>Ya cerró él mismo la puer- <lb/>ta interiormente. Temo mucho no <lb/>pierda su
+            <p>
+              <lb/>Ya cerró él mismo la puer- <lb/>ta interiormente. Temo mucho no <lb/>pierda su
               razón. Quizá su vida es- <lb/>tá en peligro.</p>
-            <p><lb/>No le abandonemos, desde aquí <lb/>podré observarle sin ser visto, la
+            <p>
+              <lb/>No le abandonemos, desde aquí <lb/>podré observarle sin ser visto, la
               <lb/>luna está muy clara... alerta pues. <lb/>¡Pobre joven! arrodillado está á
               <lb/>los piés del sepulcro de su amada. <lb/>El otro día cuasi no podía arran-
               <lb/>carle de allí. ¡Infeliz! Saca unos <lb/>papeles, los besa, los moja con sus
@@ -1084,21 +1122,26 @@
               <lb/>dadero amor! Se levanta; parece <lb/>desesperado.... golpea la loza....
               <lb/>intenta arrancarla.... la besa.... <lb/>sus lágrimas corren por el már-
               <lb/>mol.... ¡Infeliz!</p>
-            <p><lb/>Al fin se sentó al pie de aquella <lb/>tumba: parece sosegado: está
+            <p>
+              <lb/>Al fin se sentó al pie de aquella <lb/>tumba: parece sosegado: está
               <lb/>tranquilo: sólo algún suspiro se <lb/>le oye de cuando en cuando.... <lb/>puedo
               retirarme sin temor. Vá- <lb/>monos á contar el dinero que me <lb/>ha dado.
               Váse.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leandro.</speaker>
-            <p><lb/>¡Ilusiones fantásticas!.... <lb/>sueños de mi mente acalorada de- <lb/>jadme
+            <p>
+              <lb/>¡Ilusiones fantásticas!.... <lb/>sueños de mi mente acalorada de- <lb/>jadme
               en paz! ¡Emilia!.... mi dul- <lb/>ce Emilia ven, sombra querida de <lb/>mis ensueños,
               no te apartes de <lb/>mí!.... ¿No pedía tu amor el sacri- <lb/>ficio de mi
               existencia?.... ya está <lb/>consumado.... ya no pertenezco á <lb/>los vivientes, ya
               no queda de tu <lb/>Leandro sino el espíritu que lleno <lb/>del más puro y acendrado
               amor <lb/>vuela hacia tí.</p>
-            <p><lb/>Las doce dan, prenda querida, <lb/>las doce dan ¿y vivo aún? No: <lb/>no
-              viviré ya mucho tiempo. El <lb/>veneno mortal que he bebido, me <pb n="3" source="Varios_247_3.jpg" facs="varios/Varios_247_3.jpg"/>
+            <p>
+              <lb/>Las doce dan, prenda querida, <lb/>las doce dan ¿y vivo aún? No: <lb/>no
+              viviré ya mucho tiempo. El <lb/>veneno mortal que he bebido, me
+ <pb n="3" source="Varios_247_3.jpg" facs="varios/Varios_247_3.jpg"/>
+
               <lb/>está acabando ya. Me siento aquí <lb/>un fuego que me abrasa... no pue- <lb/>do
               respirar aquí..,. me ahogo.... <lb/>¡Emilia! ¡Emilia! voy á morir.... <lb/>estoy
               contigo..., me ahogo.... me <lb/>abraso....</p>
@@ -1106,7 +1149,8 @@
           <sp>
             <speaker rend="cursiva">Sepult.</speaker>
             <stage rend="cursiva">(Sale).</stage>
-            <p><lb/>Son cerca las tres <lb/>y el enamorado aún no sale. El <lb/>sueño le habrá
+            <p>
+              <lb/>Son cerca las tres <lb/>y el enamorado aún no sale. El <lb/>sueño le habrá
               vencido y estará <lb/>tal vez durmiendo al pie del pan- <lb/>teón. ¡Pobre joven! al
               fin morirá <lb/>del frenesí. ¡Qué desgracia! ¡Gas- <lb/>tar la vida de este modo en
               la flor <lb/>de la edad! Tres veces ha visitado <lb/>ya este lúgubre recinto en altas
@@ -1117,14 +1161,17 @@
               <lb/>¡Infeliz! Su cuerpo yace frio y en <lb/>desorden sobre el mármol.... Un
               <lb/>papel lleva en la mano.... á ver <lb/>démosle una ojeada y tal vez po-
               <lb/>damos aclarar algo.</p>
-            <p><lb/>«A nadie se culpe de mi muerte; <lb/>»yo mismo me la he dado: héme <lb/>»bebido
+            <p>
+              <lb/>«A nadie se culpe de mi muerte; <lb/>»yo mismo me la he dado: héme <lb/>»bebido
               un veneno. Amaba á Emi- <lb/>»lia.... Ella murió: y no pudiendo <lb/>»yo vivir sin
               ella, voy á morir pi- <lb/>»diendo me coloquen en su mis- <lb/>»ma tumba». <lb/>«<hi rend="cursiva">Leandro</hi>».</p>
-            <p><lb/>¡Infeliz! Murió víctima de su <lb/>amor! ¡murió envenenado!.... y yo
+            <p>
+              <lb/>¡Infeliz! Murió víctima de su <lb/>amor! ¡murió envenenado!.... y yo
               <lb/>imbécil que le permití penetrar en <lb/>este sagrado recinto dando fe á
               <lb/>sus palabras y figurándome que <lb/>sólo deseaba llorar sobre la tum- <lb/>ba
               de la que fué su amada.</p>
-            <p><lb/>Es necesario buscar un medio <lb/>para salir de todo compromiso. <lb/>En mi
+            <p>
+              <lb/>Es necesario buscar un medio <lb/>para salir de todo compromiso. <lb/>En mi
               habitación podré reflexio- <lb/>nar mejor. Váse.</p>
           </sp>
           <trailer rend="negrita">FIN DE LA SEGUNDA PARTE</trailer>
@@ -1133,9 +1180,10 @@
         <pb n="4" source="Varios_247_4.jpg" facs="varios/Varios_247_4.jpg"/>
 
         <div n="2">
-          <head type="titulo_cancion" rend="negrita"><lb/>NUEVA CANCION<lb/>MORIR DE AMOR</head>
-          <head type="titulo_parte"><lb/>SEGUNDA PARTE DEL SEPULCRO</head>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>NUEVA CANCION<lb/>MORIR DE AMOR</head>
+          <head type="titulo_parte">
+            <lb/>SEGUNDA PARTE DEL SEPULCRO</head>
           <lg>
             <l rend="indent">Abre querida</l>
             <l>tus tiernos brazos</l>
@@ -1198,9 +1246,9 @@
           </lg>
           <trailer>FIN</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imps. de Luís Raynaud, Sucesor de Vda. de A. Llorens, Calle Hospítal, 19. <hi rend="cursiva">El Abaníco</hi> — Barcelona</p>
+          <p>
+            <lb/>Imps. de Luís Raynaud, Sucesor de Vda. de A. Llorens, Calle Hospítal, 19. <hi rend="cursiva">El Abaníco</hi> — Barcelona</p>
         </div>
       </div>
     </body>

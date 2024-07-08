@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +113,50 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q8818">
+            <placeName key="Valencia">Valencia</placeName>
+            <location>
+              <geo>39.47 -0.376388888888889</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1840938">
+            <placeName key="Cañete">Cañete</placeName>
+            <location>
+              <geo>40.041797 -1.6490269</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q430776">
+            <placeName key="Nazaret">Nazaret</placeName>
+            <location>
+              <geo>32.702102777778 35.29785</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q162615">
+            <placeName key="Cartagena">Cartagena</placeName>
+            <location>
+              <geo>37.6019444444444 -0.984166666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8851">
+            <placeName key="Málaga">Málaga</placeName>
+            <location>
+              <geo>36.716666666667 -4.4166666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q928">
+            <placeName key="Filipinas">Filipinas</placeName>
+            <location>
+              <geo>12 123</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q131818">
+            <placeName key="Orán">Orán</placeName>
+            <location>
+              <geo>35.696944444444 -0.63305555555556</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,12 +192,13 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-06-01" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-06-01" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_052_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_052_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_052_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_052_1/full/full/0/default.jpg"/>
@@ -2134,17 +2194,19 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_052_1.jpg" facs="varios/Varios_052_1.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>RAHONAMENT Y COLOQUI NOU <lb/>DE NELO EL
+          <head type="primer_titulo" rend="negrita">
+            <lb/>RAHONAMENT Y COLOQUI NOU <lb/>DE NELO EL
             TRIPERO.</head>
-          <head type="subtitulo"><lb/>En el que es referix els grans casos que li pasaren; chic
+          <head type="subtitulo">
+            <lb/>En el que es referix els grans casos que li pasaren; chic
             molt<lb/>hábil pera el estudio de la uña; natural de Valensia, fill del<lb/>carrer de
             Cañete, en lo demés que vorá el curiós lector.</head>
-
           <div n="1" type="parte">
-            <head type="titulo_parte"><lb/>PRIMERA PART.</head>
-
+            <head type="titulo_parte">
+              <lb/>PRIMERA PART.</head>
             <l>En esta bola redona,</l>
             <l>Asó no es palla, familia,</l>
             <l>cuant se escarrama el compás,</l>
@@ -2157,7 +2219,6 @@
             <pb n="2" source="Varios_052_2.jpg" facs="varios/Varios_052_2.jpg"/>
 
             <fw type="paginaNum">2</fw>
-
             <l rend="cursiva">aqui yace Don Fulano,</l>
             <l>murió de un dolor de cap,</l>
             <l>y si no mes fora que estos;</l>
@@ -2218,7 +2279,8 @@
             <l>alabarme, ixca un átre:</l>
             <l>desde el cul de un cósi gran</l>
             <l>traía yo els lleonets.</l>
-            <l>La paella? <hi rend="cursiva">otro que tal:</hi></l>
+            <l>La paella? <hi rend="cursiva">otro que tal:</hi>
+            </l>
             <l>pera arrancarli els menuts</l>
             <l>sense eixirmen mascarat,</l>
             <l>sempre he segut el asombro.</l>
@@ -2248,7 +2310,6 @@
             <pb n="3" source="Varios_052_3.jpg" facs="varios/Varios_052_3.jpg"/>
 
             <fw type="paginaNum">3</fw>
-
             <l>ragudes selles y cap,</l>
             <l>en lo plomallet al tós.</l>
             <l>Cuant habia bóus reals,</l>
@@ -2339,8 +2400,7 @@
             <pb n="4" source="Varios_052_4.jpg" facs="varios/Varios_052_4.jpg"/>
 
             <fw type="paginaNum">4</fw>
-
-            <l>y á Valensia vach tornar,</l>
+            <l>y á <name>Valensia</name> vach tornar,</l>
             <l>y me ampará un palleter,</l>
             <l>y feu una acsió lleal.</l>
             <l>quem doná sária y palletes</l>
@@ -2362,20 +2422,20 @@
             <l>algun poc de soliman,</l>
             <l>pera acabar el coloqui</l>
             <l>en la atra segona part.</l>
-
             <trailer>FI DE LA PRIMERA PART.</trailer>
           </div>
-
           <div n="2">
+
             <pb n="5" source="Varios_052_5.jpg" facs="varios/Varios_052_5.jpg"/>
 
             <fw type="paginaNum">3</fw>
-
-            <head type="titulo_parte"><lb/><hi rend="negrita">SEGONA PART</hi><lb/>DEL RAHOÑAMENT Y
+            <head type="titulo_parte">
+              <lb/>
+              <hi rend="negrita">SEGONA PART</hi>
+              <lb/>DEL RAHOÑAMENT Y
               COLOOUI NOU<lb/>DE NELO EL TRIPERO.</head>
             <head type="subtitulo_parte">En el que acaba de relatar quines fóren totes le escóles
               de la<lb/>sehua carrera.</head>
-
             <l rend="indent">Yo sé que alguns de este rógle</l>
             <l>un gran amic del corral,</l>
             <l>estarán ya desichant</l>
@@ -2417,13 +2477,13 @@
             <l>ixqui com un condenat</l>
             <l>atropellant la plaseta;</l>
             <l>sáben ahon aní á parar?</l>
-            <l>á Nazaret, y me encontrí</l>
+            <l>á <name>Nazaret</name>, y me encontrí</l>
             <l>á la vóra de la mar,</l>
             <l>fiu chunta en uns bolichers</l>
             <l>hasta que pasá el llevánt,</l>
             <l>y en la nit que meñs pensaba</l>
             <l>la tenda váren sercar,</l>
-            <l>y me baixen á Valensia</l>
+            <l>y me baixen á <name>Valensia</name></l>
             <l>lo mateix que un novisiet,</l>
             <l>em tanquen en sent Arsis;</l>
             <l>si em traurán, si no em traurán,</l>
@@ -2479,7 +2539,7 @@
             <l>no pot haber home gran</l>
             <l>que no siga perseguit;</l>
             <l>pero al cap tot se apañá</l>
-            <l>en déu añs de Filipines,</l>
+            <l>en déu añs de <name>Filipines</name>,</l>
             <l>vach anar y vach tornar,</l>
             <l>y em tirí als camps del Remey;</l>
             <l>la correcheta, els didals.</l>
@@ -2499,7 +2559,6 @@
             <pb n="7" source="Varios_052_7.jpg" facs="varios/Varios_052_7.jpg"/>
 
             <fw type="paginaNum">7</fw>
-
             <l rend="cursiva">en las reales galeras</l>
             <l>qui tenia de remar?</l>
             <l rend="cursiva">arriba al palo mayor</l>
@@ -2581,8 +2640,8 @@
             <l>que á tots els deixaben solts,</l>
             <l>y á mí em tenien ferrat.</l>
             <l>Séuta,Melilla, el Peñó,</l>
-            <l>Cartagena, el Arsenal,</l>
-            <l>Málaga, en les Filipines,</l>
+            <l><name>Cartagena</name>, el Arsenal,</l>
+            <l>Málaga, en les <name>Filipines</name>,</l>
             <l>latre Peñó y en Orá,</l>
             <l>Gurumete y pagesillo,</l>
             <l>le que dihnen gat de nan,</l>
@@ -2590,7 +2649,6 @@
             <pb n="8" source="Varios_052_8.jpg" facs="varios/Varios_052_8.jpg"/>
 
             <fw type="paginaNum">8</fw>
-
             <l>(escóles de ma carrera;</l>
             <l>y he eixit tan aprofitat</l>
             <l>que endivine desde fora</l>
@@ -2643,13 +2701,12 @@
             <l>com yo me la estic pasant,</l>
             <l>asó es lo que os convé,</l>
             <l>si no ho voleu fer, abant.</l>
-
             <trailer>FI.</trailer>
           </div>
         </div>
-
         <div type="colofon">
-          <p><lb/>Alcoy, 1867: Imprenta de José Martí.</p>
+          <p>
+            <lb/>Alcoy, 1867: Imprenta de José Martí.</p>
         </div>
       </div>
     </body>

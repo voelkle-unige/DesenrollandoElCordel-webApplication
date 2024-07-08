@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -32,7 +46,8 @@
             <author role="letrista">J. F. (a) Queri</author>
           </titleStmt>
           <editionStmt>
-            <p>Otras impresiones: <ref target="Varios_021.xml">Varios_021</ref>, <ref target="Varios_219.xml">Varios_219</ref> y <ref target="Varios_308.xml">Varios_308</ref></p>
+            <p>Otras impresiones: <ref target="Varios_021.xml">Varios_021</ref>, <ref target="Varios_219.xml">Varios_219</ref> y <ref target="Varios_308.xml">Varios_308</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>El Abanico</publisher>
@@ -71,7 +86,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -97,6 +113,44 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q995601">
+            <placeName key="Cornudella">Cornudella</placeName>
+            <location>
+              <geo>41.2657 0.90504</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q90">
+            <placeName key="París">París</placeName>
+            <location>
+              <geo>48.8566666666667 2.35222222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5705">
+            <placeName key="Cataluña">Cataluña</placeName>
+            <location>
+              <geo>41.8375 1.53777777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q41">
+            <placeName key="Grecia">Grecia</placeName>
+            <location>
+              <geo>38.5 23</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q850593">
+            <placeName key="La_Rambla">La Rambla</placeName>
+            <location>
+              <geo>41.381389 2.173056</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -132,8 +186,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1285,16 +1338,16 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_251_1.jpg" facs="varios/Varios_251_1.jpg"/>
 
         <fw type="impresorNum">Núm. 100</fw>
-
-        <head type="primer_titulo" rend="negrita"><lb/>Coplas novas, humorísticas y
-          epigramáticas</head>
-        <head type="subtitulo"><lb/>Seguit de unas endevinallas modernas extretas de lletras del
-          abecedari <hi rend="negrita"><lb/>Escritas per J. F. (a) Queri</hi></head>
-        
-
+        <head type="primer_titulo" rend="negrita">
+          <lb/>Coplas novas, humorísticas y epigramáticas</head>
+        <head type="subtitulo">
+          <lb/>Seguit de unas endevinallas modernas extretas de lletras del abecedari <hi rend="negrita">
+          <lb/>Escritas per J. F. (a) Queri</hi>
+        </head>
         <div n="1">
           <lg>
             <l rend="indent">Un pagés bastant tanoca</l>
@@ -1377,8 +1430,8 @@
             <l rend="cursiva">—¡Vaya un fenómeno més estrany!</l>
           </lg>
           <lg>
-            <l rend="indent">Un casat de Cornudella</l>
-            <l>á Barcelona va aná,</l>
+            <l rend="indent">Un casat de <name>Cornudella</name></l>
+            <l>á <name>Barcelona</name> va aná,</l>
             <l>y al torín á veure'ls toros</l>
             <l>un amich lo va portá.</l>
             <l>Y al veure aquella corrida</l>
@@ -1453,7 +1506,9 @@
             <l>li va dar una gran llenyada.</l>
             <l rend="cursiva">—Llenya ray pel seu damunt.</l>
           </lg>
+
           <pb n="3" source="Varios_251_3.jpg" facs="varios/Varios_251_3.jpg"/>
+
           <lg>
             <l rend="indent">Una modisteta hermosa</l>
             <l>un dia molt dematí.</l>
@@ -1543,7 +1598,7 @@
             <l rend="cursiva">—No va calgué posarhi la barra.</l>
           </lg>
           <lg>
-            <l rend="indent">Una florista á la Rambla</l>
+            <l rend="indent">Una florista á la <name>Rambla</name></l>
             <l>venía allí varias flors,</l>
             <l>y á més, ne tenía una</l>
             <l>que enveijaban molts senyors.</l>
@@ -1578,16 +1633,15 @@
             <l>¡Ay xata...! ja t'he filat.</l>
             <l rend="cursiva">—Picava especies ab la ma de morté.</l>
           </lg>
-
           <trailer>PROU SALSA DE PEBRE PER ARA...</trailer>
         </div>
-
         <div n="2">
-          <head type="primer_titulo" rend="negrita"><lb/>ENDEVINALLAS DE LAS MÉS MODERNAS</head>
-          <head type="subtitulo"><lb/>extretas de lletras del abecedari, las quals se podrán
+          <head type="primer_titulo" rend="negrita">
+            <lb/>ENDEVINALLAS DE LAS MÉS MODERNAS</head>
+          <head type="subtitulo">
+            <lb/>extretas de lletras del abecedari, las quals se podrán
             usar en tertulias ó<lb/>reunions pera distreures un rato, entre amichs ó
             amigas;<lb/>pensadas per lo mateix autor</head>
-
           <lg>
             <l rend="indent">¿Quin nom de poble es lo que una lle-</l>
             <l>tra que may es cru? La Cecuita. C.</l>
@@ -1614,7 +1668,8 @@
           </lg>
           <lg>
             <l rend="indent">¿Quina es la lletra que es més bestia?</l>
-            <l>La K <hi rend="cursiva">es un gos en catalá.</hi></l>
+            <l>La K <hi rend="cursiva">es un gos en catalá.</hi>
+            </l>
           </lg>
           <lg>
             <l rend="indent">Quan un marit y mulle han fet una</l>
@@ -1623,12 +1678,14 @@
           </lg>
           <lg>
             <l rend="indent">Y'l que no endevina una cosa ¿quina</l>
-            <l>falta comet? Erra. R. <hi rend="cursiva">Que vol dir equi-</hi></l>
+            <l>falta comet? Erra. R. <hi rend="cursiva">Que vol dir equi-</hi>
+            </l>
             <l rend="cursiva">vocá.</l>
           </lg>
           <lg>
             <l rend="indent">¿Quina lletra es la més franca, més</l>
-            <l>noble y més lliberal? La T <hi rend="cursiva">perque tot</hi></l>
+            <l>noble y més lliberal? La T <hi rend="cursiva">perque tot</hi>
+            </l>
             <l rend="cursiva">ho dona.</l>
           </lg>
           <lg>
@@ -1636,7 +1693,7 @@
             <l>may se'n va? La ve. V.</l>
           </lg>
           <lg>
-            <l rend="indent">¿Quina es la lletra filla de Grecia? La</l>
+            <l rend="indent">¿Quina es la lletra filla de <name>Grecia</name>? La</l>
             <l>y grega. Y.</l>
           </lg>
           <lg>
@@ -1665,12 +1722,11 @@
             <l rend="indent">¿Quin es l'ofici que mata una lletra?</l>
             <l>Lo matalacé. C.</l>
           </lg>
-
           <trailer rend="negrita">PROU Y BASTA</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imps. Hospital, 19 «El Abanico»</p>
+          <p>
+            <lb/>Imps. Hospital, 19 «El Abanico»</p>
         </div>
       </div>
     </body>

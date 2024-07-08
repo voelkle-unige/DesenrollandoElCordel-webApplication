@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,62 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+          <place n="6" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q610025">
+            <placeName key="Santa_Ana">Santa Ana</placeName>
+            <location>
+              <geo>39.3089877 -5.9901745</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q38">
+            <placeName key="Italia">Italia</placeName>
+            <location>
+              <geo>42.5 12.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1114855">
+            <placeName key="Cerezo_de_Río_Tirón">Cerezo De Río Tirón</placeName>
+            <location>
+              <geo>42.491111111111 -3.1355555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q4040">
+            <placeName key="Aragón">Aragón</placeName>
+            <location>
+              <geo>41 -1</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1647034">
+            <placeName key="Alba">Alba</placeName>
+            <location>
+              <geo>40.6187451 -1.3455814</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q773408">
+            <placeName key="Saldaña">Saldaña</placeName>
+            <location>
+              <geo>42.5201666666667 -4.73727777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q17126413">
+            <placeName key="Puerta_Real">Puerta Real</placeName>
+            <location>
+              <geo>37.17372222 -3.59966667</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +201,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1471,19 +1541,20 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_338_1.jpg" facs="varios/Varios_338_1.jpg"/>
-        
+
         <fw type="impresorNum">(Núm. 66</fw>
-        
         <div type="parte" n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>PASILLO</head>
-          <head type="subtitulo_parte" rend="negrita"><lb/>DE D. SANCHO Y SU MAYORDOMO
+          <head type="primer_titulo" rend="negrita">
+            <lb/>PASILLO</head>
+          <head type="subtitulo_parte" rend="negrita">
+            <lb/>DE D. SANCHO Y SU MAYORDOMO
             CRISPIN.</head>
-          
           <sp>
             <speaker>D. San.</speaker>
             <l>No he visto gente mas soza</l>
-            <l>que la de aquí de Granada;</l>
+            <l>que la de aquí de <name>Granada</name>;</l>
             <l>pues digo, mi mayordomo,</l>
             <l>ya las diez y media dadas,</l>
             <l>sabiendo que la tertulia</l>
@@ -1572,14 +1643,14 @@
             <speaker>C.</speaker>
             <l>En las tablas de la cama.</l>
           </sp>
-          
+
           <pb n="2" source="Varios_338_2.jpg" facs="varios/Varios_338_2.jpg"/>
-          
+
           <sp>
             <speaker>S.</speaker>
             <l>Habra hombre mas menguado!</l>
             <l>tú por todo te atascas.</l>
-            <l>En Madrid entra un forastero</l>
+            <l>En <name>Madrid</name> entra un forastero</l>
             <l>tal como hoy por la mañana,</l>
             <l>y al medio dia ya tiene</l>
             <l>su habitacion pertrechada</l>
@@ -1587,13 +1658,13 @@
           </sp>
           <sp>
             <speaker>C.</speaker>
-            <l>¡Pues qué, en Madrid no se gasta</l>
+            <l>¡Pues qué, en <name>Madrid</name> no se gasta</l>
             <l>dineros para esas cosas?</l>
           </sp>
           <sp>
             <speaker>S.</speaker>
             <l>¿Pues piensas tú que reparan</l>
-            <l>en Madrid en intereses?</l>
+            <l>en <name>Madrid</name> en intereses?</l>
             <l>Vaya, ves á por eso, anda.</l>
           </sp>
           <sp>
@@ -1603,7 +1674,7 @@
           </sp>
           <sp>
             <speaker>S.</speaker>
-            <l>Ve corriendo á Puerta-Real,</l>
+            <l>Ve corriendo á <name>Puerta-Real</name>,</l>
             <l>á casa de la Mariana,</l>
             <l>que para esta noche avio</l>
             <l>de diez á doce garrafas</l>
@@ -1658,7 +1729,7 @@
             <speaker>S.</speaker>
             <l>Ella vendrá que no tarda.</l>
             <l>Qué hombre de tan poco pecho!</l>
-            <l>Madrid de toda mi alma,</l>
+            <l><name>Madrid</name> de toda mi alma,</l>
             <l>qué tierra aquella, qué gente!</l>
             <l>allí nadie se acobarda</l>
             <l>aunque la corte se hunda.</l>
@@ -1804,9 +1875,9 @@
             <l>y hemos estado comiendo;</l>
             <l>queria usted que aun duraran?</l>
           </sp>
-          
+
           <pb n="3" source="Varios_338_3.jpg" facs="varios/Varios_338_3.jpg"/>
-          
+
           <sp>
             <speaker>C.</speaker>
             <l>Este es un despilfarro</l>
@@ -1827,7 +1898,7 @@
           <stage rend="cursiva">(Por fin saca una moneda)</stage>
           <sp>
             <speaker>C.</speaker>
-            <l>Alabada sea Santa Ana.</l>
+            <l>Alabada sea <name>Santa Ana</name>.</l>
           </sp>
           <sp>
             <speaker>S.</speaker>
@@ -1843,11 +1914,13 @@
             <l>Pasado</l>
             <l>te veas tú como una pasa.</l>
             <l>Ven, que ya no es menester;</l>
-            <l>aquí hay papel, so maula. <stage rend="cursiva">Escribe.</stage></l>
+            <l>aquí hay papel, so maula. <stage rend="cursiva">Escribe.</stage>
+            </l>
           </sp>
           <sp>
             <speaker>C.</speaker>
-            <l><stage rend="cursiva">(Aparte)</stage> Bolsillo más prevenido</l>
+            <l>
+              <stage rend="cursiva">(Aparte)</stage> Bolsillo más prevenido</l>
             <l>que el de mi amo no se halla:</l>
             <l>siempre con malas monedas</l>
             <l>con botones y medallas,</l>
@@ -1861,7 +1934,8 @@
           <sp>
             <speaker>S.</speaker>
             <stage rend="cursiva">(Lee)</stage>
-            <p><lb/>Sr. D. Fernando Peralta.—Un
+            <p>
+              <lb/>Sr. D. Fernando Peralta.—Un
             <lb/>estrecho lance en que me veo sin arbitrio
             <lb/>de poder desempeñarle como noble, por
             <lb/>hallarme en esta triste ciudad, me ha
@@ -1870,7 +1944,8 @@
             <lb/>300 rs. que en cuanto venga una libranza
             <lb/>que por instantes espero, le serán á V. sa-
             <lb/>tisfechos.—B. L. M. de V. su amigo.—
-            <lb/><hi rend="cursiva">Sancho</hi>.</p>
+            <lb/>
+              <hi rend="cursiva">Sancho</hi>.</p>
           </sp>
           <sp>
             <speaker>C.</speaker>
@@ -1909,7 +1984,7 @@
           <sp>
             <speaker>S.</speaker>
             <l>¡Qué tierras tan miserables!</l>
-            <l>si allá en Madrid escucharan</l>
+            <l>si allá en <name>Madrid</name> escucharan</l>
             <l>estos términos: morcilla,</l>
             <l>bodegon, mondongo, panza;</l>
             <l>que vergüenza! aunque tambien</l>
@@ -1919,8 +1994,8 @@
             <l>los quince duros, saldremos</l>
             <l>con honor de esta entruchada,</l>
             <l>que para otra vez Dios sabe</l>
-            <l>si yo estaré ya en ltalia.</l>
-            <l>¡Ay Madrid quién estuviera</l>
+            <l>si yo estaré ya en <name>ltalia</name>.</l>
+            <l>¡Ay <name>Madrid</name> quién estuviera</l>
             <l>en medio de aquellas plazas,</l>
             <l>aquel Prado tan hermoso,</l>
             <l>aquellas calles tan anchas,</l>
@@ -1929,7 +2004,7 @@
             <l>Algun ángel me acordó</l>
             <l>que don Pernando aqui estaba,</l>
             <l>para pedirle dinero,</l>
-            <l>pues la gente de Granada</l>
+            <l>pues la gente de <name>Granada</name></l>
             <l>ni un real dará ninguno</l>
             <l>aunque le asaetearan:</l>
             <l>pero ya mi Crispin viene</l>
@@ -1981,9 +2056,9 @@
             <l>que si no hecho á correr</l>
             <l>entre los dos me rematan.</l>
           </sp>
-          
+
           <pb n="4" source="Varios_338_4.jpg" facs="varios/Varios_338_4.jpg"/>
-          
+
           <sp>
             <speaker>S.</speaker>
             <l>¿Pero dió los quince duros?</l>
@@ -2028,8 +2103,8 @@
           <sp>
             <speaker>S.</speaker>
             <l>Y de las primeras casas</l>
-            <l>de Castilla y de Aragon</l>
-            <l>primo del duque de Alba,</l>
+            <l>de <name>Castilla</name> y de <name>Aragon</name></l>
+            <l>primo del duque de <name>Alba</name>,</l>
             <l>y pariente muy cercano...</l>
           </sp>
           <sp>
@@ -2039,7 +2114,7 @@
           <sp>
             <speaker>S.</speaker>
             <l>Del mariscal de Viroa</l>
-            <l>y del conde de Saldana.</l>
+            <l>y del conde de <name>Saldana</name>.</l>
             <l>Soy mas de lo que tú piensas.</l>
           </sp>
           <sp>
@@ -2084,7 +2159,8 @@
           </sp>
           <sp>
             <speaker>C.</speaker>
-            <l>Yo le arañaré la cara. <stage rend="cursiva">(lo hace.)</stage></l>
+            <l>Yo le arañaré la cara. <stage rend="cursiva">(lo hace.)</stage>
+            </l>
           </sp>
           <sp>
             <speaker>S.</speaker>
@@ -2107,9 +2183,9 @@
             <l>el perdon de nuestras faltas.</l>
           </sp>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.—Despacho : Sucesores de Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID.—Despacho : Sucesores de Hernando, Arenal, 11.</p>
         </div>
       </div>
     </body>

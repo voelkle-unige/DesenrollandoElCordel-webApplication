@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -77,7 +91,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -103,6 +118,32 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1641801">
+            <placeName key="Eslava">Eslava</placeName>
+            <location>
+              <geo>42.563889 -1.458333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8692">
+            <placeName key="Bilbao">Bilbao</placeName>
+            <location>
+              <geo>43.262222222222 -2.9533333333333</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8356">
+            <placeName key="Valladolid">Valladolid</placeName>
+            <location>
+              <geo>41.651980555556 -4.7285611111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -138,8 +179,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1562,11 +1602,13 @@
     <body>
       <div>
         <div n="1">
+
           <pb n="1" source="Varios_233_1.jpg" facs="varios/Varios_233_1.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>LA GRAN-VIA.</head>
-          <head type="subtitulo"><lb/>AMERICANA</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA GRAN-VIA.</head>
+          <head type="subtitulo">
+            <lb/>AMERICANA</head>
           <lg>
             <head type="titulo_estrofa">I.</head>
             <l rend="indent">Pobre chica la que tiene que servir</l>
@@ -1612,7 +1654,7 @@
             <l>pero al darme el señorito</l>
             <l>la cartilla y el parné,</l>
             <l>fué y me dijo, por lo bajo:</l>
-            <l>te espero en Eslaba</l>
+            <l>te espero en <name>Eslaba</name></l>
             <l>tomando café.</l>
           </lg>
           <lg>
@@ -1646,7 +1688,6 @@
             <pb n="2" source="Varios_233_2.jpg" facs="varios/Varios_233_2.jpg"/>
 
             <fw type="paginaNum">— 2 —</fw>
-
             <l>pues no mete baza</l>
             <l>ni el Gobernador.</l>
             <l>Y si es la muchacha de aquellas listas</l>
@@ -1743,7 +1784,6 @@
             <l>lo dejes ¡ay! quemar.</l>
           </lg>
         </div>
-
         <div n="2">
           <lg>
             <head type="titulo_estrofa">I.</head>
@@ -1757,16 +1797,15 @@
           <lg>
             <head type="titulo_estrofa">II.</head>
             <l rend="indent">El domingo pasao,</l>
-            <l>á un pendon que es de al lao de Bilbao</l>
+            <l>á un pendon que es de al lao de <name>Bilbao</name></l>
             <l>el permiso la di,</l>
-            <l>para ir al teatro Madrid;</l>
+            <l>para ir al teatro <name>Madrid</name>;</l>
             <l>y la dije en la escalera</l>
             <l>cuando ya se iba á marchar:</l>
 
             <pb n="3" source="Varios_233_3.jpg" facs="varios/Varios_233_3.jpg"/>
 
             <fw type="paginaNum">— 3 —</fw>
-
             <l>cuidadito, que te vengas así que se acabe,</l>
             <l>por si hay que fregar,</l>
           </lg>
@@ -1780,10 +1819,12 @@
           </lg>
           <lg>
             <head type="titulo_estrofa">IV.</head>
-            <l rend="indent">Tuve otra que era de Valladolid</l>
+            <l rend="indent">Tuve otra que era de <name>Valladolid</name></l>
             <l>y tenia unos bigotes así</l>
-            <l>y mi señor marido, que es peluquero por <add place="debajo">(aficion.</add></l>
-            <l>me dijo, á esta la pago con la navaja y <add place="debajo">(con el jabon.</add></l>
+            <l>y mi señor marido, que es peluquero por <add place="debajo">(aficion.</add>
+            </l>
+            <l>me dijo, á esta la pago con la navaja y <add place="debajo">(con el jabon.</add>
+            </l>
           </lg>
           <lg>
             <head type="titulo_estrofa">V.</head>
@@ -1806,10 +1847,9 @@
             <l>glotona, bribona y san se acabò.</l>
           </lg>
         </div>
-
         <div n="3">
-          <head type="titulo_cancion"><lb/>WALZ LOS RATAS</head>
-
+          <head type="titulo_cancion">
+            <lb/>WALZ LOS RATAS</head>
           <l rend="indent">Soy el rata primero</l>
           <l>yo el segundo, yo el tercero</l>
           <l>siempre que nos echa mano la autoridad</l>
@@ -1871,15 +1911,14 @@
         <pb n="4" source="Varios_233_4.jpg" facs="varios/Varios_233_4.jpg"/>
 
         <fw type="paginaNum">— 4 —</fw>
-
         <div n="4">
-          <head type="titulo_cancion" rend="negrita"><lb/>WALZ EL CABALLERO DE GRACIA</head>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>WALZ EL CABALLERO DE GRACIA</head>
           <lg>
             <l rend="indent">Caballero de gracia me llaman</l>
             <l>y efectivamente soy asi,</l>
             <l>pues sabido es que á mi me conocen</l>
-            <l>por mis amorios todo Madrid.</l>
+            <l>por mis amorios todo <name>Madrid</name>.</l>
             <l rend="indent">Es verdad que estoy un poco antiguo</l>
             <l>pero que en poniéndome mi frac,</l>
             <l>soy un tipo gentil de carácter jovial</l>
@@ -1919,7 +1958,7 @@
               <l>que ya no cabe más.</l>
               <l rend="indent">¡Qué necio es este señor!</l>
               <l>¡qué baladi! qué farfanton!</l>
-              <l>ciento como él hay en Madrid</l>
+              <l>ciento como él hay en <name>Madrid</name></l>
               <l>que no se alaban así.</l>
             </lg>
           </sp>
@@ -1956,7 +1995,7 @@
               <l rend="indent">Caballero de gracia me llaman</l>
               <l>y efectivamente soy así</l>
               <l>pues sabido es que à mí me conocen</l>
-              <l>por sus amorios todo Madrid.</l>
+              <l>por sus amorios todo <name>Madrid</name>.</l>
               <l rend="indent">Es verdad que estoy un poco antiguo</l>
               <l>pero que en poniéndome mi frac,</l>
               <l>soy un tipo gentil de caràcter jovial</l>
@@ -1975,7 +2014,7 @@
               <l rend="indent">Soy un milord, soy un dandy</l>
               <l>yo soy la crème</l>
               <l>lo comme il faut</l>
-              <l>soy lo más fino de todo Madrid,</l>
+              <l>soy lo más fino de todo <name>Madrid</name>,</l>
               <l>soy un milord, soy un dandy</l>
               <l>muy queridito de la sociedad</l>
               <l>la nata y flor de lo gentil,</l>
@@ -1984,9 +2023,9 @@
             </lg>
           </sp>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Palma.—Imprenta de B. Rotger.</p>
+          <p>
+            <lb/>Palma.—Imprenta de B. Rotger.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -72,7 +86,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -102,6 +117,7 @@
             </acquisition>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -137,8 +153,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-04" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-04" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1363,21 +1378,23 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_129_1.jpg" facs="varios/Varios_129_1.jpg"/>
 
           <fw type="numeroPliego">(Núm. 125).</fw>
-
-          <head type="primer_titulo"><lb/><hi rend="negrita">COPLAS FUNEBRES,</hi><lb/>LASTIMOSAS Y
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">COPLAS FUNEBRES,</hi>
+            <lb/>LASTIMOSAS Y
             CONTEMPLATIVAS,</head>
-
-          <head type="subtitulo_parte" rend="cursiva"><lb/>de los lamentos que dán las benditas
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>de los lamentos que dán las benditas
             ànimas del Purgatorio implorando<lb/>el favor y auxilio á todos los fieles cristianos,
             el socorro y alivto de sus<lb/>mayores penas y tormentos, esperando las saguen de alli
             para descansar<lb/>en el Señor.</head>
-
           <div type="parte" n="1">
-            <head type="titulo_parte"><lb/>PRIMERA PARTE.</head>
-
+            <head type="titulo_parte">
+              <lb/>PRIMERA PARTE.</head>
             <l rend="indent">Oid, mortales, oid,</l>
             <l>devotos contemplativos,</l>
             <l>almas piadosas y santas,</l>
@@ -1514,12 +1531,12 @@
             <l>Y en otra parte daré</l>
             <l>el romance concluido</l>
           </div>
-
           <div type="parte" n="2">
+
             <pb n="3" source="Varios_129_3.jpg" facs="varios/Varios_129_3.jpg"/>
 
-            <head type="titulo_parte"><lb/>SEGUNDA PARTE.</head>
-
+            <head type="titulo_parte">
+              <lb/>SEGUNDA PARTE.</head>
             <l rend="indent">Voy a referir aas penas</l>
             <l>y tormentosos martirios</l>
             <l>que las ánimas padecen</l>
@@ -1681,13 +1698,14 @@
             <l>y rogaremos á Cristo</l>
             <l>que vayais á acompañarnos</l>
             <l>en su gloria, Cielo empíreo,</l>
-            <l>donde <hi rend="cursiva">requiescant in pace</hi></l>
+            <l>donde <hi rend="cursiva">requiescant in pace</hi>
+            </l>
             <l>por los siglos de los siglos. AMEN</l>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.— Despacho : Sucesores de Hernando, Arenal. 11.</p>
+          <p>
+            <lb/>MADRID.— Despacho : Sucesores de Hernando, Arenal. 11.</p>
         </div>
       </div>
     </body>

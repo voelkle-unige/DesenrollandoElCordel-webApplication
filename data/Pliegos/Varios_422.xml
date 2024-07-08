@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -31,7 +45,8 @@
             <title type="titulo_breve">El cantor de las Hermosas</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_038.xml">Varios_038</ref></p>
+            <p>Otra impresión: <ref target="Varios_038.xml">Varios_038</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Narciso Ramírez</publisher>
@@ -82,7 +97,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -117,6 +133,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -153,8 +177,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1008,21 +1031,25 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_422_1.jpg" facs="varios/Varios_422_1.jpg"/>
-        
+
         <fw type="impresorNum">Núm. 11.</fw>
-        
-        <head type="primer_titulo"><lb/><hi rend="negrita">EL<lb/>CANTOR DE LAS
-          HERMOSAS</hi></head>
-        <head type="subtitulo"><lb/>TROVAS DE AMOR DEDICADAS AL BELLO SEXO<lb/>POR UNOS AFICIONADOS</head>
-        
+        <head type="primer_titulo">
+          <lb/>
+          <hi rend="negrita">EL<lb/>CANTOR DE LAS
+          HERMOSAS</hi>
+        </head>
+        <head type="subtitulo">
+          <lb/>TROVAS DE AMOR DEDICADAS AL BELLO SEXO<lb/>POR UNOS AFICIONADOS</head>
         <div n="1">
-          <head type="titulo_cancion" rend="negrita"><lb/>31 LA<lb/>TURRONERA DE MADRID.</head>
-          
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>31 LA<lb/>TURRONERA DE MADRID.</head>
           <lg>
             <head type="titulo_estrofa">I.</head>
-            <l rend="indent">De Madrid en una acera</l>
-            <l><hi rend="cursiva">Turron</hi> fino voy vendieno,</l>
+            <l rend="indent">De <name>Madrid</name> en una acera</l>
+            <l>
+              <hi rend="cursiva">Turron</hi> fino voy vendieno,</l>
             <l>Todo el dia repitiendo</l>
             <l>«¿Quién compra à la <hi rend="cursiva">Turronera</hi>?»</l>
             <l>El <hi rend="cursiva">Turron</hi> fino,</l>
@@ -1034,18 +1061,18 @@
             <head type="titulo_estrofa">II.</head>
             <l rend="indent">Aqui está el <hi rend="cursiva">Turron</hi> sabroso:</l>
             <l>El barató, güieno y fino!</l>
-            <l>Aqui está el <hi rend="cursiva">alicantino</hi></l>
+            <l>Aqui está el <hi rend="cursiva">alicantino</hi>
+            </l>
             <l>Que es mas que la miel gustoso?</l>
             <l>El <hi rend="cursiva">Turron</hi> fino,</l>
             <l>Sebroso y güeno,</l>
             <l>Prueben, señores,</l>
             <l>Que es el que vendo.</l>
           </lg>
-          
+
           <pb n="2" source="Varios_422_2.jpg" facs="varios/Varios_422_2.jpg"/>
-          
+
           <fw type="paginaNum">42</fw>
-          
           <lg>
             <head type="titulo_estrofa">III.</head>
             <l rend="indent">El que una vez ha probaho</l>
@@ -1078,14 +1105,14 @@
             <l>Al sabor de tal dulzuara.</l>
             <l>El turron fino, etc.</l>
           </lg>
-          
-          <p><lb/>–B. C.–</p>
+          <p>
+            <lb/>–B. C.–</p>
         </div>
-        
         <div n="2">
-          <head type="titulo_cancion"><lb/>EL GACHE EN LA NOCHE BUENA.</head>
-          <head type="subtitulo_cancion"><lb/>(CANCION ANDALUZA.)</head>
-          
+          <head type="titulo_cancion">
+            <lb/>EL GACHE EN LA NOCHE BUENA.</head>
+          <head type="subtitulo_cancion">
+            <lb/>(CANCION ANDALUZA.)</head>
           <lg>
             <head type="titulo_estrofa">I.</head>
             <l rend="indent">Mira, Juaniya, mi pena</l>
@@ -1119,16 +1146,17 @@
             <l>Hue se muera</l>
             <l>Tu <hi rend="cursiva">Gashé</hi>.</l>
           </lg>
-          
-          <p><lb/>—B. C.—</p>
+          <p>
+            <lb/>—B. C.—</p>
         </div>
-        
+
         <pb n="3" source="Varios_422_3.jpg" facs="varios/Varios_422_3.jpg"/>
-        
+
         <div n="3">
-          <head type="titulo_cancion" rend="negrita"><lb/>33 LA NATIVIDAD DEL SEÑOR</head>
-          <head type="subtitulo_cancion" rend="negrita"><lb/>JOTA</head>
-          
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>33 LA NATIVIDAD DEL SEÑOR</head>
+          <head type="subtitulo_cancion" rend="negrita">
+            <lb/>JOTA</head>
           <lg>
             <head type="titulo_estrofa">I.</head>
             <l rend="indent">De Jesús el Nacimiento</l>
@@ -1144,7 +1172,8 @@
             <l>Del gozo la aroma.</l>
             <l rend="indent">A tan bello dia</l>
             <l>No falta alegría:</l>
-            <l>Ni el dulce <hi rend="cursiva">turron</hi></l>
+            <l>Ni el dulce <hi rend="cursiva">turron</hi>
+            </l>
             <l>El de <hi rend="cursiva">manzanilla</hi>;</l>
             <l>Ni á mí, <hi rend="cursiva">morenilla</hi>,</l>
             <l>Tu fiel corazon.</l>
@@ -1154,10 +1183,12 @@
             <l rend="indent">¡Oh! que dia tan gloriosa</l>
             <l>Fué el de la NATIVIDAD</l>
             <l>Fué el de la NATIVIDAD</l>
-            <l>Del que <hi rend="cursiva">rico</hi> y <hi rend="cursiva">poderoso</hi></l>
+            <l>Del que <hi rend="cursiva">rico</hi> y <hi rend="cursiva">poderoso</hi>
+            </l>
             <l>Nació POBRE!..¡Qué humildad!</l>
           </lg>
-          <p rend="cursiva"><lb/>– Coro.–</p>
+          <p rend="cursiva">
+            <lb/>– Coro.–</p>
           <lg>
             <l rend="indent">Celebremos la alegria</l>
             <l>De su Madre angelical</l>
@@ -1165,7 +1196,8 @@
             <l>De su parto VIRGINAL</l>
             <l>De su parto VIRGINAL</l>
           </lg>
-          <p rend="cursiva"><lb/>– Coro.–</p>
+          <p rend="cursiva">
+            <lb/>– Coro.–</p>
           <lg>
             <head type="titulo_estrofa">IV.</head>
             <l rend="indent">Ya rendida pleitesía</l>
@@ -1173,19 +1205,20 @@
             <l>Celebremos este día</l>
             <l>Con algazara y humor</l>
           </lg>
-          <p rend="cursiva"><lb/>– Coro.–</p>
-          
-          <p><lb/>– J. A. C. –</p>
+          <p rend="cursiva">
+            <lb/>– Coro.–</p>
+          <p>
+            <lb/>– J. A. C. –</p>
         </div>
-        
+
         <pb n="4" source="Varios_422_4.jpg" facs="varios/Varios_422_4.jpg"/>
-        
+
         <fw type="paginaNum">44</fw>
-        
         <div n="4">
-          <head type="titulo_cancion"><lb/>LA VIGILIA DE NADAL.</head>
-          <head type="subtitulo_cancion"><lb/>CANSÓ CATALANA.</head>
-          
+          <head type="titulo_cancion">
+            <lb/>LA VIGILIA DE NADAL.</head>
+          <head type="subtitulo_cancion">
+            <lb/>CANSÓ CATALANA.</head>
           <lg>
             <head type="titulo_estrofa">I.</head>
             <l rend="indent">La vigilia de Nadal....</l>
@@ -1231,7 +1264,8 @@
             <l>¿Que compon per San Joan?</l>
             <l>¡Tothom vetlla aquella nit:</l>
             <l>Y hasta el pobre mes petit...</l>
-            <l><hi rend="cursiva">Carn de ploma</hi>... y endevant!</l>
+            <l>
+              <hi rend="cursiva">Carn de ploma</hi>... y endevant!</l>
             <l rend="indent">Y en sent un poch mes tardet,</l>
             <l>¡Quina degollina hi há!</l>
             <l>No 's repara si fa fret</l>
@@ -1264,11 +1298,13 @@
             <l>Y per lo que costa, en fí</l>
             <l>BONAS FESTAS PER TOTHOM!!</l>
           </lg>
-          <p><lb/>—A. C.— <lb/>(<hi rend="cursiva">Es propiedad.</hi>)</p>
+          <p>
+            <lb/>—A. C.— <lb/>(<hi rend="cursiva">Es propiedad.</hi>)</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">Se halla de venta en casa de los sucesores de Antonio Bosch, Bou de la plaza
+          <p>
+            <lb/>
+            <hi rend="cursiva">Se halla de venta en casa de los sucesores de Antonio Bosch, Bou de la plaza
             nueva, núm.</hi> 13. <lb/>Barcelona.—Tipografía Española, calle del Hospital número, 87,
             bajos—1881.</p>
         </div>

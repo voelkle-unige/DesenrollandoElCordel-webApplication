@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -102,6 +117,50 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="5" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="13" corresp="Q4040">
+            <placeName key="Aragón">Aragón</placeName>
+            <location>
+              <geo>41 -1</geo>
+            </location>
+          </place>
+          <place n="9" corresp="Q10305">
+            <placeName key="Zaragoza">Zaragoza</placeName>
+            <location>
+              <geo>41.65 -0.88333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5783">
+            <placeName key="Andalucía">Andalucía</placeName>
+            <location>
+              <geo>37.405 -5.9875</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q10965">
+            <placeName key="Ebro">Ebro</placeName>
+            <location>
+              <geo>43.0375 -4.37</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q496424">
+            <placeName key="Calatayud">Calatayud</placeName>
+            <location>
+              <geo>41.35 -1.633333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -137,8 +196,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1331,30 +1389,32 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_218_1.jpg" facs="varios/Varios_218_1.jpg"/>
-        
+
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>Hermosas, nuevas y variadas
+          <head type="primer_titulo" rend="negrita">
+            <lb/>Hermosas, nuevas y variadas
             canciones</head>
-          <head type="subtitulo"><lb/>De la jota Aragonesa, seguidas de una canción<lb/>o despido
+          <head type="subtitulo">
+            <lb/>De la jota Aragonesa, seguidas de una canción<lb/>o despido
             de su patria, de un quinto aragonés al marcharse al<lb/>servicio militar. Escrita por
             J. F. (a) Q.</head>
-
           <l rend="indent">Hay en el mundo una España</l>
           <l>y en España un Aragón,</l>
           <l>y en Aragón unas mozas</l>
           <l>tan hermosas como el Sol.</l>
           <l rend="indent">Aragón tiene ciudades,</l>
           <l>pero la más principal</l>
-          <l>es la heróica Zaragoza</l>
+          <l>es la heróica <name>Zaragoza</name></l>
           <l>la inmortal capital.</l>
-          <l rend="indent">Zaragoza está en un llano</l>
+          <l rend="indent"><name>Zaragoza</name> está en un llano</l>
           <l>y la torre nueva en medio;</l>
           <l>y la Vírgen del Pilar</l>
-          <l>a la orillita del Ebro.</l>
+          <l>a la orillita del <name>Ebro</name>.</l>
           <l rend="indent">Hay muchos aragoneses</l>
           <l>que no les cautiva el mar</l>
-          <l>quien les cautiva es el Ebro</l>
+          <l>quien les cautiva es el <name>Ebro</name></l>
           <l>y su Vírgen del Pilar.</l>
           <l rend="indent">Un día quedé prendado</l>
           <l>de una noble baronesa,</l>
@@ -1363,7 +1423,7 @@
 
           <pb n="2" source="Varios_218_2.jpg" facs="varios/Varios_218_2.jpg"/>
 
-          <l rend="indent">Quien bien mira el rio Ebro</l>
+          <l rend="indent">Quien bien mira el rio <name>Ebro</name></l>
           <l>halla al corazón consuelo</l>
           <l>porque ve dentro sus aguas</l>
           <l>claro y puro el mismo cielo.</l>
@@ -1374,7 +1434,7 @@
           <l rend="indent">El que quiere cortejar</l>
           <l>y hallar una buena moza</l>
           <l>con mucha sal y sandunga,</l>
-          <l>que se vaya a Zaragoza.</l>
+          <l>que se vaya a <name>Zaragoza</name>.</l>
           <l rend="indent">Para cantar bien la jota,</l>
           <l>—lo he dicho más de mil veces—</l>
           <l>que no hay cantores al mundo</l>
@@ -1383,9 +1443,9 @@
           <l>tengo una sed que me muero;</l>
           <l>dame un poquito de agua</l>
           <l>mezclada con tu salero.</l>
-          <l rend="indent">Adiós, adiós, Barcelona</l>
+          <l rend="indent">Adiós, adiós, <name>Barcelona</name></l>
           <l>con todos tus festivales</l>
-          <l>que me voy a Zaragoza</l>
+          <l>que me voy a <name>Zaragoza</name></l>
           <l>a ver los toros reales.</l>
           <l rend="indent">Pasé por Andalucía</l>
           <l>y me llamó la atención,</l>
@@ -1399,7 +1459,7 @@
           <l>aragonesa querida,</l>
           <l>quisiera a mí me llevases</l>
           <l>y te daría mi vida.</l>
-          <l rend="indent">Para atravesar el Ebro</l>
+          <l rend="indent">Para atravesar el <name>Ebro</name></l>
           <l>jamás conocí el temor;</l>
           <l>el temor que solo siento</l>
           <l>es que me niegues tu amor.</l>
@@ -1415,14 +1475,14 @@
           <l>tu que llevas alpargatas,</l>
           <l>con este andar tan ligero,</l>
           <l>el corazón me arrebatas.</l>
-          <l rend="indent">Quien no ha visto Zaragoza</l>
+          <l rend="indent">Quien no ha visto <name>Zaragoza</name></l>
           <l>no sabe lo que es hermoso</l>
           <l>porque en ella hay un tesoro</l>
           <l>y esta es la calle del Coso.</l>
           <l rend="indent">Lo que es cosa deliciosa,</l>
           <l>de comodidad y gracia,</l>
           <l>es el hermoso paseo</l>
-          <l>llamado de Santa Engracia.</l>
+          <l>llamado de <name>Santa Engracia</name>.</l>
           <l rend="indent">El mirar la Torre nueva</l>
           <l>causa respeto y no es broma;</l>
           <l>dudan como se sostiene</l>
@@ -1431,11 +1491,11 @@
           <l>a muchos la atención llama</l>
           <l>pues desde allí se descubre</l>
           <l>tan hermoso panorama.</l>
-          <l rend="indent">Ricas márgenes del Ebro,</l>
+          <l rend="indent">Ricas márgenes del <name>Ebro</name>,</l>
           <l>fértiles más que ninguna,</l>
           <l>dais a los aragoneses</l>
           <l>mucha salud y fortuna.</l>
-          <l rend="indent">Adorado rio Ebro,</l>
+          <l rend="indent">Adorado rio <name>Ebro</name>,</l>
           <l>me das contento y pesar,</l>
           <l>que después de ser hermoso</l>
           <l>al fin se te traga el mar.</l>
@@ -1443,7 +1503,7 @@
           <l>no hubo ninguna nación,</l>
           <l>que jamás pudo igualarse</l>
           <l>con los hijos de Aragón.</l>
-          <l rend="indent">El sitio de Zaragoza</l>
+          <l rend="indent">El sitio de <name>Zaragoza</name></l>
           <l>según nos cuenta la historia,</l>
           <l>ganaron los nobles hijos</l>
           <l>con honra, valor y gloria.</l>
@@ -1469,8 +1529,8 @@
           <l rend="indent">El bailar la aragonesa</l>
           <l>quiere salero y requiebro;</l>
           <l>para esto se pintan solas</l>
-          <l>las mismas hijas del Ebro.</l>
-          <l rend="indent">A Zaragoza me voy</l>
+          <l>las mismas hijas del <name>Ebro</name>.</l>
+          <l rend="indent">A <name>Zaragoza</name> me voy</l>
           <l>y me marcho esta mañana,</l>
           <l>tan solo para aprender</l>
           <l>cantar la zaragozana.</l>
@@ -1479,7 +1539,7 @@
           <l>y si miras sus vecinas</l>
           <l>te llaman el corazón.</l>
           <l rend="indent">Quien no ha visto la ribera</l>
-          <l>del Ebro y sus cercanías,</l>
+          <l>del <name>Ebro</name> y sus cercanías,</l>
           <l>su corazón no ha sentido</l>
           <l>ni placeres ni alegrías.</l>
           <l rend="indent">También me gustan zarzuelas</l>
@@ -1505,7 +1565,7 @@
           <l rend="indent">Resalada prenda mía,</l>
           <l>al verte mi pecho goza;</l>
           <l>ya te conozco en la cara</l>
-          <l>que has nacido en Zaragoza.</l>
+          <l>que has nacido en <name>Zaragoza</name>.</l>
           <l rend="indent">Rubita de ojos azules</l>
           <l>encantadora hechicera,</l>
           <l>tus gracias y tus encantos</l>
@@ -1514,11 +1574,11 @@
           <l>pues me late el corazón,</l>
           <l>voy a buscarme una novia</l>
           <l>en el reino de Aragón.</l>
-          <l rend="indent">A Zaragoza me voy</l>
+          <l rend="indent">A <name>Zaragoza</name> me voy</l>
           <l>para encontrar buenas mozas;</l>
           <l>según me ha dicho un amigo</l>
           <l>allí las hay muy hermosas.</l>
-          <l rend="indent">Por pan bueno a Zaragoza</l>
+          <l rend="indent">Por pan bueno a <name>Zaragoza</name></l>
           <l>con esto no hay que dudar,</l>
           <l>y por muchachas rumbosas</l>
           <l>allí encontrareis la mar.</l>
@@ -1543,17 +1603,17 @@
           <l>y no gustándome nada</l>
           <l>vuelvo otra vez a Aragón.</l>
           <l rend="indent">Una vez sentí un gran frío</l>
-          <l>estando en Calatayud,</l>
+          <l>estando en <name>Calatayud</name>,</l>
           <l>pero en cambio es una tierra</l>
           <l>que me volvió la salud.</l>
           <l rend="indent">Si quieres tener mujer</l>
           <l>guapa, linda y buena moza,</l>
           <l>sin trabajo de escoger;</l>
-          <l>vete pronto a Zaragoza.</l>
+          <l>vete pronto a <name>Zaragoza</name>.</l>
           <l rend="indent">Si te vas al Aragón</l>
           <l>con mucha atención repara</l>
           <l>que allí los aragoneses</l>
-          <l>cantan la Zaragozana.</l>
+          <l>cantan la <name>Zaragoza</name>na.</l>
           <l rend="indent">Mirando la torre nueva</l>
           <l>un día quedé extasiado,</l>
           <l>porque me encontré al volverme</l>
@@ -1585,7 +1645,7 @@
           <l>es alegre y seductor,</l>
           <l>pero el baile de la jota</l>
           <l>no tiene competidor.</l>
-          <l rend="indent">Adiós, adiós Zaragoza,</l>
+          <l rend="indent">Adiós, adiós <name>Zaragoza</name>,</l>
           <l>tierra donde yo nací,</l>
           <l>cuanto más lejos me encuentre</l>
           <l>mucho más pensaré en tí.</l>
@@ -1595,51 +1655,48 @@
           <l>y a mi prenda más querida.</l>
           <l rend="indent">La despedida les doy</l>
           <l>a hombres, niños y mujeres,</l>
-          <l>que me voy a Zaragoza</l>
+          <l>que me voy a <name>Zaragoza</name></l>
           <l>para vivir con placeres.</l>
-
           <trailer>FIN DE LAS CANCIONES DE LA JOTA</trailer>
         </div>
-        
         <div n="2">
-          <head type="titulo_cancion" rend="negrita"><lb/>Cantο de un quintο aragonés al despedirse
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>Cantο de un quintο aragonés al despedirse
             de su patria<lb/>marchándοse al serviciο militar</head>
-          
-            <l rend="indent">Adios patria, de tí me despido</l>
-            <l>con agudo y cruel sentimiento;</l>
-            <l>el dejarte me causa tormento</l>
-            <l>que mi alma yo siento llorar.</l>
-            <l rend="indent">En tí dejo mis bellas pasiones</l>
-            <l>mi contento y mi dulce alegría,</l>
-            <l>me es fatal y terrible este día</l>
-            <l>por tenerme de tí que ausentar.</l>
-            <l rend="indent">Tu fiel recuerdo</l>
-            <l>me dará aliento</l>
-            <l>y así contento</l>
-            <l>yo partiré.</l>
-            <l rend="indent">Mas si la ausencia</l>
-            <l>me causa pena</l>
-            <l>esa cadena</l>
-            <l>yo romperé.</l>
-            <l rend="indent">Ya vendrán dias mejores</l>
-            <l>que el dolor será placer,</l>
-            <l>cuando te volveré a ver</l>
-            <l>te hallaré llena de flores.</l>
-            <l rend="indent">Pero hoy que la desgracia</l>
-            <l>nos separa a los dos,</l>
-            <l>me marcho muy afligido</l>
-            <l>adios patria mia, adiós.</l>
-          
+          <l rend="indent">Adios patria, de tí me despido</l>
+          <l>con agudo y cruel sentimiento;</l>
+          <l>el dejarte me causa tormento</l>
+          <l>que mi alma yo siento llorar.</l>
+          <l rend="indent">En tí dejo mis bellas pasiones</l>
+          <l>mi contento y mi dulce alegría,</l>
+          <l>me es fatal y terrible este día</l>
+          <l>por tenerme de tí que ausentar.</l>
+          <l rend="indent">Tu fiel recuerdo</l>
+          <l>me dará aliento</l>
+          <l>y así contento</l>
+          <l>yo partiré.</l>
+          <l rend="indent">Mas si la ausencia</l>
+          <l>me causa pena</l>
+          <l>esa cadena</l>
+          <l>yo romperé.</l>
+          <l rend="indent">Ya vendrán dias mejores</l>
+          <l>que el dolor será placer,</l>
+          <l>cuando te volveré a ver</l>
+          <l>te hallaré llena de flores.</l>
+          <l rend="indent">Pero hoy que la desgracia</l>
+          <l>nos separa a los dos,</l>
+          <l>me marcho muy afligido</l>
+          <l>adios patria mia, adiós.</l>
           <trailer rend="negrita">FIN</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>REUS.—Véndese en la Librería «La Fleca» de Vda. Juan Girau Gené, calle Aleus,
+          <p>
+            <lb/>REUS.—Véndese en la Librería «La Fleca» de Vda. Juan Girau Gené, calle Aleus,
             1.</p>
         </div>
-        
         <div type="productos_a_la_venta ">
-          <p><lb/>En la misma casa se halla un gran surtido ue romances, sainetes, libritos,
+          <p>
+            <lb/>En la misma casa se halla un gran surtido ue romances, sainetes, libritos,
             historias, co-<lb/>medias, aleluyas de redolines, hojas de santos y soldados. Naipes y
             libritos para fumar. <lb/>Papel para escribir, sobres para cartas, plumas, mangos, etc.
             Todo a precios baratos. </p>

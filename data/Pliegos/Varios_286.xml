@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -32,7 +46,8 @@
             <title type="titulo_breve">La divina peregrina</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_239.xml">Varios_239</ref></p>
+            <p>Otra impresión: <ref target="Varios_239.xml">Varios_239</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>José María Marés</publisher>
@@ -73,7 +88,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -104,6 +120,20 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q14314">
+            <placeName key="Santiago_de_Compostela">Santiago De Compostela</placeName>
+            <location>
+              <geo>42.883333333333 -8.5333333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -139,8 +169,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-23" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-23" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1012,17 +1041,20 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_286_1.jpg" facs="varios/Varios_286_1.jpg"/>
+
         <fw type="impresorNum">(Núm. 106.)</fw>
-
         <div n="1">
-          <head type="primer_titulo"><lb/>LA DIVINA PEREGRINA.</head>
-          <head type="subtitulo" rend="negrita"><lb/>CANCION MÍSTICA</head>
-          <head type="subtitulo" rend="cursiva"><lb/>que cantaba un religioso á María Santísima,
+          <head type="primer_titulo">
+            <lb/>LA DIVINA PEREGRINA.</head>
+          <head type="subtitulo" rend="negrita">
+            <lb/>CANCION MÍSTICA</head>
+          <head type="subtitulo" rend="cursiva">
+            <lb/>que cantaba un religioso á María Santísima,
             apareciéndosele en figura de<lb/>Peregrina, caminando de Roma para Santiago.</head>
-
           <lg>
-            <l rend="indent">Camino de Santiago,</l>
+            <l rend="indent">Camino de <name>Santiago</name>,</l>
             <l>con grande halago,</l>
             <l>mi Peregrina</l>
             <l>la encontré yo;</l>
@@ -1178,11 +1210,12 @@
             <l>pido perdon.</l>
           </lg>
         </div>
-
         <div n="2">
-          <head type="titulo_parte"><lb/>SALVE Á MARÍA SANTÍSIMA <lb/><hi rend="negrita">MADRE Y
-              PASTORA DE LAS ALMAS.</hi></head>
-
+          <head type="titulo_parte">
+            <lb/>SALVE Á MARÍA SANTÍSIMA <lb/>
+            <hi rend="negrita">MADRE Y
+              PASTORA DE LAS ALMAS.</hi>
+          </head>
           <lg>
             <l rend="indent">Salve, Vírgen bella,</l>
             <l>Partora agradable,</l>
@@ -1295,9 +1328,10 @@
             <l>Salve, Salve, Salve.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>PALMA. Tienda de M. Borrás. Cuesta del Teatro <lb/><hi rend="negrita">MADRID</hi>. <lb/>Despacho de Marés y
+          <p>
+            <lb/>PALMA. Tienda de M. Borrás. Cuesta del Teatro <lb/>
+            <hi rend="negrita">MADRID</hi>. <lb/>Despacho de Marés y
             Compañía, Juanelo, 19.</p>
         </div>
       </div>

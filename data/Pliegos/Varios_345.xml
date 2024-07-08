@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -31,7 +45,8 @@
             <title type="titulo_breve">Trovos nuevos y divertidos</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_367.xml">Varios_367</ref></p>
+            <p>Otra impresión: <ref target="Varios_367.xml">Varios_367</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>José Tauló</publisher>
@@ -66,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -93,6 +109,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q957828">
+            <placeName key="Triana">Triana</placeName>
+            <location>
+              <geo>37.383580555556 -6.0052</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -128,8 +152,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-21" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-21" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1141,12 +1164,13 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_345_1.jpg" facs="varios/Varios_345_1.jpg"/>
-        
+
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>TROVOS NUEVOS Y DIVERTIDOS,<lb/>para cantar
+          <head type="primer_titulo" rend="negrita">
+            <lb/>TROVOS NUEVOS Y DIVERTIDOS,<lb/>para cantar
             los aficionados con guitarra.</head>
-          
           <lg rend="cursiva">
             <l rend="indent">Debajo de tus balcones,</l>
             <l>Te daré una serenata,</l>
@@ -1181,9 +1205,9 @@
             <l>Podré algun dia esperar</l>
             <l rend="cursiva">Verte en mis brazos tirana.</l>
           </lg>
-          
+
           <pb n="2" source="Varios_345_2.jpg" facs="varios/Varios_345_2.jpg"/>
-          
+
           <lg rend="cursiva">
             <l rend="indent">Enseguida que nací</l>
             <l>Buen mozo, se me llamó</l>
@@ -1242,7 +1266,7 @@
             <l>Que todo el cuerpo remoja</l>
             <l>Si no me apellidas suave</l>
             <l>Mira que vengo por tí</l>
-            <l>Desde el barrio de Triana</l>
+            <l>Desde el barrio de <name>Triana</name></l>
             <l>Y ya que tanto corrí</l>
             <l rend="cursiva">Asómate á la ventana.</l>
           </lg>
@@ -1276,9 +1300,9 @@
             <l>O tu me vuelves á amar</l>
             <l rend="cursiva">O me despido de ti.</l>
           </lg>
-          
+
           <pb n="3" source="Varios_345_3.jpg" facs="varios/Varios_345_3.jpg"/>
-          
+
           <lg rend="cursiva">
             <l rend="indent">Con la flecha del amor</l>
             <l>Adoré yo á una mujer;</l>
@@ -1379,9 +1403,9 @@
             <l>O bien mata á ella el secreto,</l>
             <l rend="cursiva">o el secreto á la muger.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_345_4.jpg" facs="varios/Varios_345_4.jpg"/>
-          
+
           <lg rend="cursiva">
             <l rend="indent">Este mundo es una bola</l>
             <l>Y es claro que ha de rodar;</l>
@@ -1454,12 +1478,11 @@
             <l>Pues que al verte á mí amor sorda</l>
             <l rend="cursiva">La muerte Pepa prefiero.</l>
           </lg>
-          
           <trailer rend="negrita">FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>lmp. de J. Tauló.— 1853.<lb/>Barcelona: En casa Juan Llorens, calle de la Palma de
+          <p>
+            <lb/>lmp. de J. Tauló.— 1853.<lb/>Barcelona: En casa Juan Llorens, calle de la Palma de
             Santa Catalina.</p>
         </div>
       </div>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +111,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +154,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-02" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-02" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1244,15 +1266,16 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_127_1.jpg" facs="varios/Varios_127_1.jpg"/>
 
           <fw type="numeroPliego">(Núm. 110.)</fw>
-
-          <head type="primer_titulo"><lb/>LA QUINTA DE LAS MUJERES</head>
-          <head type="subtitulo" rend="cursiva"><lb/>Donde se verá la espocición que piensan
+          <head type="primer_titulo">
+            <lb/>LA QUINTA DE LAS MUJERES</head>
+          <head type="subtitulo" rend="cursiva">
+            <lb/>Donde se verá la espocición que piensan
             dirigir las solteras al Ministro<lb/>para que les conceda el ir á la guerra, á ver si
             de este modo<lb/>encuentran maridos.</head>
-
           <l rend="indent">Al ver que se van llevando</l>
           <l>á la guerra con empeño</l>
           <l>á toda la juventud</l>
@@ -1281,7 +1304,6 @@
           <pb n="2" source="Varios_127_2.jpg" facs="varios/Varios_127_2.jpg"/>
 
           <fw type="paginaNum">— 2 —</fw>
-
           <l>de los que abrasan al alma</l>
           <l>con sus miradas de fuego,</l>
           <l>dominándolas á todas,</l>
@@ -1372,19 +1394,17 @@
           <l>con tan eficaces términos,</l>
 
           <pb n="3" source="Varios_127_3.jpg" facs="varios/Varios_127_3.jpg"/>
-          <fw type="paginaNum">— 3 —</fw>
 
+          <fw type="paginaNum">— 3 —</fw>
           <l>que no dudo nos concedan</l>
           <l>al punto lo que queremos.</l>
           <l>Mas por si acaso á vosotras</l>
           <l>se os ocurriera algo nuevo,</l>
           <l>escuchadme, la léeré</l>
           <l>si todas guardáis silencio:</l>
-
-
           <div>
-            <head type="titulo_parte"><lb/>EXPOSICIÓN</head>
-
+            <head type="titulo_parte">
+              <lb/>EXPOSICIÓN</head>
             <l rend="indent">A Su Excelencia, señor,</l>
             <l>humildemente rogamos,</l>
             <l>cuantas solteras estamos,</l>
@@ -1455,8 +1475,8 @@
             <l>con la mayor impaciencia.</l>
 
             <pb n="4" source="Varios_127_4.jpg" facs="varios/Varios_127_4.jpg"/>
-            <fw type="paginaNum">— 4 —</fw>
 
+            <fw type="paginaNum">— 4 —</fw>
             <l rend="indent">Es gracia que en el momento</l>
             <l>ansiamos ver conseguida,</l>
             <l>rogando á Dios que su vida</l>
@@ -1529,9 +1549,9 @@
             <l>quitadlas de ser solteras.</l>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Madrid. — Despacho: Arenal, 11, librería.</p>
+          <p>
+            <lb/>Madrid. — Despacho: Arenal, 11, librería.</p>
         </div>
       </div>
     </body>

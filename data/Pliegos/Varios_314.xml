@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material subtype="naranja"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +111,38 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q686362">
+            <placeName key="Sierra_Morena">Sierra Morena</placeName>
+            <location>
+              <geo>38.3 -5.4</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q324489">
+            <placeName key="Trujillo">Trujillo</placeName>
+            <location>
+              <geo>39.465277777778 -5.8788888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5818">
+            <placeName key="Córdoba">Córdoba</placeName>
+            <location>
+              <geo>37.883333333333 -4.7666666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q97626442">
+            <placeName key="Convento_de_Santa_Isabel_de_los_Ángeles">Convento De Santa Isabel De Los Ángeles</placeName>
+            <location>
+              <geo>37.8894303 -4.775453183</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +178,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1357,20 +1403,23 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_314_1.jpg" facs="varios/Varios_314_1.jpg"/>
+
         <fw type="impresorNum">Núm. 51</fw>
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>LA DESGRACIADA ROSAURA</head>
-          <head type="subtitulo"><lb/>Breve relación de sus infurtunios, modo como fué hallada
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA DESGRACIADA ROSAURA</head>
+          <head type="subtitulo">
+            <lb/>Breve relación de sus infurtunios, modo como fué hallada
             y<lb/>castigo ejemplar de sus infames seductores</head>
-
           <l rend="indent">Sobre una alfombra de flores,</l>
           <l>cercada de hermosas plantas</l>
           <l>adonde las avecillas</l>
           <l>tienden sus pintadas alas,</l>
           <l rend="indent">Y con su música alegre</l>
           <l>al Rey del cielo dan gracias.</l>
-          <l>En la gran Sierra-Morena,</l>
+          <l>En la gran <name>Sierra-Morena</name>,</l>
           <l>de tantos delitos causa,</l>
           <l rend="indent">Amparo de aquel que ofende,</l>
           <l>defensa del que mal anda,</l>
@@ -1444,7 +1493,7 @@
           <l>agradecida responde</l>
           <l>estas siguientes palabras:</l>
           <l rend="indent">«Has de saber, noble joven,</l>
-          <l>que en Trujillo fuí criada,</l>
+          <l>que en <name>Trujillo</name> fuí criada,</l>
           <l>hija soy de un caballero</l>
           <l>que don Diego el se llama.</l>
           <l rend="indent">De Castro por apellido,</l>
@@ -1568,7 +1617,7 @@
           <l>de esta manera le habla:</l>
           <l rend="indent">«Conocerás, señor mío,</l>
           <l>á la que disteis el agua</l>
-          <l>del bautismo allá en Trujillo</l>
+          <l>del bautismo allá en <name>Trujillo</name></l>
           <l>y le pusisteis Rosaura.</l>
           <l rend="indent">Has de saber que yo soy</l>
           <l>la que nunca se criara,</l>
@@ -1585,7 +1634,7 @@
           <l rend="indent">Dos traidores me han robado,</l>
           <l>sacándome de mi casa,</l>
           <l>y me han quitado el honor</l>
-          <l>en Sierra Morena brava.</l>
+          <l>en <name>Sierra Morena</name> brava.</l>
 
           <pb n="4" source="Varios_314_4.jpg" facs="varios/Varios_314_4.jpg"/>
 
@@ -1596,8 +1645,8 @@
           <l rend="indent">Y antes de partir dispuso</l>
           <l>dejarla depositada</l>
           <l>con su hermana en un convento</l>
-          <l>que de Santa Isabel llaman</l>
-          <l rend="indent">Camina luego á Trujillo</l>
+          <l>que de <name>Santa Isabel</name> llaman</l>
+          <l rend="indent">Camina luego á <name>Trujillo</name></l>
           <l>y un criado le acompaña,</l>
           <l>que quiere entrar en secreto</l>
           <l>porque no se sepa nada.</l>
@@ -1663,9 +1712,9 @@
           <l>cuando de esta vida pase.</l>
           <trailer>FIN</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>EL ABANICO</p>
+          <p>
+            <lb/>EL ABANICO</p>
         </div>
       </div>
     </body>

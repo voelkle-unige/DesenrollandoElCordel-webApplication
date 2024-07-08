@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="26"/>26 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="26"/>26 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -92,6 +107,60 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="6" corresp="Q828">
+            <placeName key="América">América</placeName>
+            <location>
+              <geo>19 -96</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1486">
+            <placeName key="Buenos_Aires">Buenos Aires</placeName>
+            <location>
+              <geo>-34.599722222222 -58.381944444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15">
+            <placeName key="África">África</placeName>
+            <location>
+              <geo>21.09375 7.1881</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q12233">
+            <placeName key="Santander">Santander</placeName>
+            <location>
+              <geo>43.466666666667 -3.8</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q97">
+            <placeName key="océano_Atlántico">Océano Atlántico</placeName>
+            <location>
+              <geo>0 -30</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q23988230">
+            <placeName key="Islas_Canarias">Islas Canarias</placeName>
+            <location>
+              <geo>28 -15.5</geo>
+            </location>
+          </place>
+          <place n="6" corresp="Q15682">
+            <placeName key="Cádiz">Cádiz</placeName>
+            <location>
+              <geo>36.535 -6.2975</geo>
+            </location>
+          </place>
+          <place n="1">
+            <placeName key="Roca_de_la_Esperanza">Roca de la Esperanza</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -126,8 +195,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -6422,37 +6490,49 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_433_1.jpg" facs="varios/Varios_433_1.jpg"/>
-        <fw><lb/>GALERÍA HISTÓRICA MODERNA.</fw>
-        
-        <head type="primer_titulo"><lb/><hi rend="negrita">HISTORIA</hi><lb/>DE<lb/>UN JURAMENTO DE
-            AMOR<lb/>ó<lb/><hi rend="negrita">¡FLOR DE UN DIA!</hi></head>
-        
+
+        <fw>
+          <lb/>GALERÍA HISTÓRICA MODERNA.</fw>
+        <head type="primer_titulo">
+          <lb/>
+          <hi rend="negrita">HISTORIA</hi>
+          <lb/>DE<lb/>UN JURAMENTO DE
+            AMOR<lb/>ó<lb/>
+          <hi rend="negrita">¡FLOR DE UN DIA!</hi>
+        </head>
         <div type="colofon">
-          <p><lb/><hi rend="negrita">BARCELONA</hi>: Imprenta de LLORENS, Palma de Sta. Catalina,
+          <p>
+            <lb/>
+            <hi rend="negrita">BARCELONA</hi>: Imprenta de LLORENS, Palma de Sta. Catalina,
             núm. 6.</p>
         </div>
-        
+
         <pb n="2" source="Varios_433_2.jpg" facs="varios/Varios_433_2.jpg"/>
+
         <div type="propiedad">
-          <p><lb/>(Es propiedad.)</p>
+          <p>
+            <lb/>(Es propiedad.)</p>
         </div>
-        
+
         <pb n="3" source="Varios_433_3.jpg" facs="varios/Varios_433_3.jpg"/>
-        
+
         <div type="parte" n="1">
-          <head type="primer_titulo"><lb/>HISTORIA<lb/>DE<lb/>UN JURAMENTO DE AMOR<lb/>ó<lb/>¡FLOR
+          <head type="primer_titulo">
+            <lb/>HISTORIA<lb/>DE<lb/>UN JURAMENTO DE AMOR<lb/>ó<lb/>¡FLOR
             DE UN DIA!</head>
-          
           <div type="capitulo" n="1">
-            <head type="titulo_parte" rend="negrita"><lb/>CAPÍTULO I.</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>De quien era D. Diego de Carvajal.-
+            <head type="titulo_parte" rend="negrita">
+              <lb/>CAPÍTULO I.</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>De quien era D. Diego de Carvajal.-
               Interesante historia del negro Juan y de su hijo. -La<lb/>esclavitud.—La caza de la
               pantera y del toro salvaje en los bosques de América.—D.Die-<lb/>go salva la vida al
               negro Juan.—La fuga.-La compra de un eselavo.—Horrores de una<lb/>tempestad.—El
               bergantin pirata.-Escenas interesantes en el mar durante la tempestad.</head>
-            
-            <p rend="indent"><lb/>La dulce media tinta de la noche y el dia, ese <lb/>ser y no ser que tiene algo
+            <p rend="indent">
+              <lb/>La dulce media tinta de la noche y el dia, ese <lb/>ser y no ser que tiene algo
               semejante al caos, <lb/>el crepúsculo de la mañana, muestra su pálida <lb/>faz
               llena de melancólicos encantos. El crepús- <lb/>culo de la mañana, bello siempre
               bajo todos los <lb/>cielos y en todos los climas, es sobre los campos <lb/>de la
@@ -6468,12 +6548,12 @@
               <lb/>fantásticas porque mientras el astro de la no- <lb/>che pasa y se aleja, los
               pinos, los abetos, los co- <lb/>coteros y cafeteros, los álamos y encinas, los
               <lb/>jarlaes, arbustos y malezas, dan su sombra en <lb/>confusion tal, que fascina los
-              sentidos, fingién- <lb/>doles un mundo lleno da fantasmas. Pero aso- 
+              sentidos, fingién- <lb/>doles un mundo lleno da fantasmas. Pero aso-
+ 
               
               <pb n="4" source="Varios_433_4.jpg" facs="varios/Varios_433_4.jpg"/>
-              
+
               <fw type="paginaNum">— 4—</fw>
-              
               <lb/>man los primeros reflejos del alba, y ya las ji-<lb/>gantescas masas se achican
               ó se dibujan con mas<lb/>claridad, y todos los matices de primorosos co-<lb/>lores,
               del cielo y del suelo, se van apareciendo<lb/>como por encanto á la vista del que
@@ -6482,9 +6562,10 @@
               purpúrea<lb/>amapola, húmedas del rocío, hermosean con<lb/>sus primorosos colores
               las llanuras, las monta-<lb/>ñas y los riscos asemejándoles á un bello y
               de-<lb/>licioso paraiso. </p>
-            <p rend="indent"><lb/>En la hora pues en que la América en con-<lb/>junto presenta este espectáculo
+            <p rend="indent">
+              <lb/>En la hora pues en que la América en con-<lb/>junto presenta este espectáculo
               tan bello, en la<lb/>hora del crepúsculo matutino y en la parte mas<lb/>occidental de
-              Buenos Aires, en una hermosa<lb/>mañana del mes de Abril de 1822, un hombre<lb/>de
+              <name>Buenos Aires</name>, en una hermosa<lb/>mañana del mes de Abril de 1822, un hombre<lb/>de
               color tostado, perteneciente á la raza des-<lb/>graciada de los negros, corria
               presuroso por<lb/>medio del espeso bosque, llevando en sus robus-<lb/>tos brazos un
               niño que á juzgar tambien por el<lb/>color de su cara, debia sin duda ser su hijo.
@@ -6518,7 +6599,7 @@
               atrevido, <lb/>desgraciado, á penetrar sin arma alguna por <lb/>este espeso bosque
               esponiendo así á ese pobre <lb/>niño á la inclemencia de las fieras?» El negro
               <lb/>con los ojos bañados en lágrimas se arrojó á los <lb/>piés de su libertador
-              y le dijo de este modo: <lb/>«Caballero : nacido en las playas del Africa, se-
+              y le dijo de este modo: <lb/>«Caballero : nacido en las playas del <name>Africa</name>, se-
               <lb/>gun podeis inferir por el color de mi rostro, la <lb/>fortuna adversa me redujo
               á la esclavitud y fuí <lb/>conducido á América hace ya diez años, donde <lb/>he
               trabajado sin descanso, labrando la tierra y <lb/>regándola con mis lágrimas y el
@@ -6537,11 +6618,11 @@
               vos fueseis <lb/>mi salvador.» El jóven caballero, que se llamaba <lb/>D.Diego de
               Carvajal, natural de aquel pais y <lb/>descendiente de una de las familias mas ricas,
               y <lb/>de nobles sentimientos, no pudo reprimir su in-
+
               
               <pb n="5" source="Varios_433_5.jpg" facs="varios/Varios_433_5.jpg"/>
-              
+
               <fw type="paginaNum">—5—</fw>
-              
               <lb/>dignacion y lástima al oir la relacion del desdi- <lb/>chado negro, que tenia
               por nombre Juan, y pro- <lb/>curando consolarle le dijo: «Cese tu afliccion,
               <lb/>desventurado, que yo compraré tu sangre y la <lb/>de tu hijo á tu vil amo á
@@ -6577,7 +6658,8 @@
               podido llevar á cabo su <lb/>generoso intento. D. Diego apreció con gratitud
               <lb/>aquella accion de Juan y le tendió su mano ase- <lb/>gurándole que siempre le
               protegeria. </p>
-            <p rend="indent"><lb/>A pocos minutos llegaron los perros seguidos <lb/>ya de un capataz y criados,
+            <p rend="indent">
+              <lb/>A pocos minutos llegaron los perros seguidos <lb/>ya de un capataz y criados,
               los cuales viendo a <lb/>Juan iban á arrojarse sobre él para mania- <lb/>tarle, cuando
               interponiéndose D. Diego, montó <lb/>su rifle y les dijo con imperio: deteneos mise-
               <lb/>rables verdugos de la humanidad y no os atre- <lb/>vais á tocar á ese
@@ -6589,32 +6671,35 @@
               apuntó con el <lb/>rifle al capataz mandándole que al punto los <lb/>llamase y
               sujetase. Aquel viéndose en tan grande <lb/>apuro no tuvo otro remedio que obedecer y
               así <lb/>marcháronse del bosque á dar cuenta de lo su- <lb/>cedido. </p>
-            <p rend="indent"><lb/>Cuando D.Diego de Carbajal llegó á la ciu- <lb/>dad en compañía de Juan y el
+            <p rend="indent">
+              <lb/>Cuando D.Diego de Carbajal llegó á la ciu- <lb/>dad en compañía de Juan y el
               niño, su primer <lb/>cuidado fué el rescate de ambos; lo cual logró <lb/>bien
               pronto aunque por una suma bastante cre- <lb/>cida que no tuvo reparo en entregar al
               punto.</p>
-            <p rend="indent"><lb/>Dos años poco mas habian trascurrido desde <lb/>que esto sucediera cuando
+            <p rend="indent">
+              <lb/>Dos años poco mas habian trascurrido desde <lb/>que esto sucediera cuando
               tuvo lugar la escena <lb/>que vamos á referir. Deseoso D. Diego de visi- <lb/>D.Diego
-              de visi- <lb/>tar la península española, tanto por la grande <lb/>inclinación que
+              de visi- <lb/>tar la península <name>españo</name>la, tanto por la grande <lb/>inclinación que
               tenia á la navegación, cuanto <lb/>por visitar las bellas ciudades de nuestra Espa-
               <lb/>ña, pidió para ello licencia á su anciano padre <lb/>y habiendo dejado confinado
               á su proteccion al <lb/>hijo de Juan, embarcose con éste fiel criado en <lb/>una
-              fragata holandesa que se hacía á la vela <lb/>para Santander. Los primeros dias de
+              fragata holandesa que se hacía á la vela <lb/>para <name>Santander</name>. Los primeros dias de
               navega- <lb/>cion fueron felices. D. Diego cuya imaginacion <lb/>D.Diego cuya
               imaginacion <lb/>ardiente se estasiaba contemplando las imponen- <lb/>tes y
               amenazadoras masas de agua que azota- <lb/>ban con terrible furia los costados de la
-              fragata <lb/>en medio del Atlántico, pasaba la mayor parte <lb/>de las noches sentado
+              fragata <lb/>en medio del <name>Atlántico</name>, pasaba la mayor parte <lb/>de las noches sentado
               en una de las banquetas <lb/>del alcázar deleitándose con el mugido del vien- <lb/>to
               y el bramido del mar, y sentia tanto placer <lb/>que no se cansaba de admirar las
               juguetonas <lb/>olas. La luna derramando sus rayos de blanca
+
               
               <pb n="6" source="Varios_433_6.jpg" facs="varios/Varios_433_6.jpg"/>
-              
+
               <fw type="paginaNum">— 6—</fw>
-              
               <lb/>luz plateaba con encanto las empinadas crestas <lb/>contribuyendo á hermosear
               las noches. </p>
-            <p rend="indent"><lb/>A los quince ó diez y seis dias de navegacion <lb/>en una hermosísima mañana
+            <p rend="indent">
+              <lb/>A los quince ó diez y seis dias de navegacion <lb/>en una hermosísima mañana
               de mayo, la auro- <lb/>ra empezaba á despuntar á través de un cielo <lb/>azul y
               trasparente, y cansado D. Diego de haber <lb/>pasado la noche en el alcázar como ya
               hemos <lb/>dicho iba á retirarse ya á su camarote, cuando <lb/>oyó que el piloto
@@ -6675,12 +6760,12 @@
               el mayor encarnizamiento, pero <lb/>los piratas diezmados por el plomo enemigo ape-
               <lb/>nas podian continuar en la defensa, pues el ber- <lb/>gantin agujereado á flor
               de agua se iba hun- <lb/>diendo poco á poco, y los pocos hombres que <lb/>quedaban
-              apenas podian dar abasto para el ma- 
+              apenas podian dar abasto para el ma-
+ 
               
               <pb n="7" source="Varios_433_7.jpg" facs="varios/Varios_433_7.jpg"/>
-              
+
               <fw type="paginaNum">— 7 —</fw>
-              
               <lb/>nejo de las bombas. El viento rugia con furia<lb/>amenazando á ambos buques; la
               tempestad se<lb/>desencadenaba por instantes y era preciso pre-<lb/>pararse para
               luchar con ese otro enemigo. Las<lb/>embravecidas olas azotadas por el huracan
@@ -6693,19 +6778,20 @@
               que habia tomado el mando, <lb/>puesto que el capitan y los dos pilotos fueron
               <lb/>las primeras víctimas que cayeron heridas por <lb/>el plomo del pirata.</p>
           </div>
-          
+
           <pb n="8" source="Varios_433_8.jpg" facs="varios/Varios_433_8.jpg"/>
-          
+
           <fw type="paginaNum">—8—</fw>
-          
           <div type="capitulo" n="2">
-            <head type="titulo_parte" rend="negrita"><lb/>CAPÍTULO II.</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>Última esperanza de dos náufragos.—Del
+            <head type="titulo_parte" rend="negrita">
+              <lb/>CAPÍTULO II.</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>Última esperanza de dos náufragos.—Del
               baron de Espinosa y de la hermosa Lola.—Amo-<lb/>res de Lola y don Diego de
               Carvajal.—Tiernas escenas entre ambos amantes.—.La mala<lb/>nueva.—El deber de un hijo
               con sus padres.—La despedida-—Una rosa y un beso.—Pro-<lb/>mesa de amor.</head>
-            
-            <p rend="indent"><lb/>Dos horas poco mas hacia que caminaba su- <lb/>friendo el récio temporal cuando
+            <p rend="indent">
+              <lb/>Dos horas poco mas hacia que caminaba su- <lb/>friendo el récio temporal cuando
               dos marineros <lb/>subieron á cubierta gritando que la bodega y <lb/>la sentina se
               anegaban. D. Diego cuyo corazon <lb/>no desmayaba nunca á vista del peligro corrió
               <lb/>en seguida á uno y otro puesto y aplicando las <lb/>bombas, él fué el primero
@@ -6723,15 +6809,16 @@
               elementos. La fra- <lb/>gata llena ya de agua desapareció para siempre <lb/>con todas
               las riquezas que llevaba: poco tiempo <lb/>habia durado su victoria : ella á su vez
               pagaba <lb/>tambien la derrota que habia causado al ber- <lb/>gantin.</p>
-            <p rend="indent"><lb/>El primer cuidado de D. Diego fué armar la <lb/>pequeña vela á fin de
+            <p rend="indent">
+              <lb/>El primer cuidado de D. Diego fué armar la <lb/>pequeña vela á fin de
               adelantar algun terreno, <lb/>y no tardaron en perder de vista las tres balsas <lb/>en
               que quedaban sus desdichados compañeros <lb/>de naufragio. Su idea habia sido feliz
-              pues la <lb/>lancha afianzada entre los dos maderos cami- 
+              pues la <lb/>lancha afianzada entre los dos maderos cami-
+ 
               
               <pb n="9" source="Varios_433_9.jpg" facs="varios/Varios_433_9.jpg"/>
-              
+
               <fw type="paginaNum">—9—</fw>
-              
               <lb/>naba siempre recta, é impelida por el huracan <lb/>adelantaba muchas millas. Sin
               embargo á cada <lb/>paso estaban espuestos á zozobrar por la mucha <lb/>agua que les
               entraba, pero el incansable <lb/>afan del negro Juan acudia á todo, ya sujetán-
@@ -6757,7 +6844,8 @@
               otros buques que ha- <lb/>bian arribado el mismo dia al puerto, referian <lb/>haber
               visto muchos cadáveres flotando sobre <lb/>las aguas hechos juguetes de las olas, y
               espar- <lb/>cidos por todas partes los maderos de las balsas.</p>
-            <p rend="indent"><lb/>Una vez ya en tierra D. Diego, fué su primer <lb/>cuidado tomar pasaje para
+            <p rend="indent">
+              <lb/>Una vez ya en tierra D. Diego, fué su primer <lb/>cuidado tomar pasaje para
               Cádiz donde ya le <lb/>esperaban, pues habiendo perdido toda su ropa <lb/>equipaje y
               demás en el naufragio, se veia en <lb/>la precision de dirigirse á aquella ciudad
               para <lb/>donde tenia buenas recomendaciones, á fin de <lb/>proveerse de todo cuanto
@@ -6771,7 +6859,8 @@
               y virtuoso padre de quien no se sepa- <lb/>raba un solo instante, deseosa siempre de
               disi- <lb/>par con sus cariñosos cuidados las mas ligeras <lb/>sombras de disgusto
               con que el peso de los años <lb/>abrumaba el corazon del virtuoso anciano.</p>
-            <p rend="indent"><lb/>Al dia siguiente de su llegada á Cádiz pre- <lb/>sentóse D. Diego en casa del
+            <p rend="indent">
+              <lb/>Al dia siguiente de su llegada á Cádiz pre- <lb/>sentóse D. Diego en casa del
               Baron donde fué <lb/>D.Diego en casa del Baron donde fué <lb/>recibido con
               particular estimacion á pesar de <lb/>que no le conocian, pero bastaba solo ver el
               <lb/>rostro honrado y franco del jóven caballero, <lb/>sus nobles maneras y otras
@@ -6795,13 +6884,13 @@
               momento poseida de la misma sensacion, y <lb/>aquellas dos nobles almas aquellos dos
               ardien- <lb/>tes corazones se comprendieron con una mirada <lb/>y se confundieron en
               un solo suspiro.</p>
-              <fw type="sig">2</fw>
-            
+            <fw type="sig">2</fw>
+
             <pb n="10" source="Varios_433_10.jpg" facs="varios/Varios_433_10.jpg"/>
-            
+
             <fw type="paginaNum">— 10—</fw>
-            
-            <p rend="indent"><lb/>El Baron de Espinosa hombre ilustrado, <lb/>virtuoso y de larga esperiencia,
+            <p rend="indent">
+              <lb/>El Baron de Espinosa hombre ilustrado, <lb/>virtuoso y de larga esperiencia,
               comprendió al <lb/>momento lo mucho que valia el corazon y la <lb/>amistad del
               generoso jóven, y desde entonces <lb/>quedó su casa abierta á todas horas para don
               <lb/>Diego.Este se despidió aunque con pesar, del <lb/>noble anciano y de la
@@ -6824,7 +6913,8 @@
               entrar, una sonrisa de júbilo entreabrió <lb/>sus lábios de amapola, y su dulce y
               apasionada <lb/>mirada leyó al momento en los ojos de su ama- <lb/>do los tiernos
               sentimientos de su corazon.</p>
-            <p rend="indent"><lb/>D.Diego frecuentaba cada dia la casa del <lb/>Baron en la cual era querido como
+            <p rend="indent">
+              <lb/>D.Diego frecuentaba cada dia la casa del <lb/>Baron en la cual era querido como
               si fuese de <lb/>la familia. Su alma noble y grande habia sa- <lb/>bido grangearse el
               mejor puesto en el corazon <lb/>del virtuoso anciano y de su hermosa hija. Los
               <lb/>dias se deslizaban serenos y encantadores para <lb/>aquellas tres personas sin
@@ -6843,10 +6933,11 @@
               <lb/>cuencia de una penosa enfermedad y del peso <lb/>de los años, le rogaba fuese
               cuanto antes pues <lb/>queria tener el consuelo de exhalar su último <lb/>suspiro en
               los brazos de su amado hijo. Al mis- <lb/>mo tiempo, y enterado ya de sus amores con
-              la <lb/>hermosa Lola, le encargaba se casase y par- <lb/>tiese para América en
+              la <lb/>hermosa Lola, le encargaba se casase y par- <lb/>tiese para <name>América</name> en
               compañía de su esposa <lb/>pues queria tener el consuelo de conocerla y <lb/>bendecir
               su union.</p>
-            <p rend="indent"><lb/>Grande fué el pesar del jóven al recibir <lb/>tan triste nueva, no solo por el
+            <p rend="indent">
+              <lb/>Grande fué el pesar del jóven al recibir <lb/>tan triste nueva, no solo por el
               estado en que <lb/>se encontraba su anciano padre á quien ama- <lb/>ba con delirio si
               no tambien por el disgusto que <lb/>tendrian Lola y el Baron al saber esta noticia,
               <lb/>pero no teniendo en quien depositar sus penas <lb/>mas que en el corazon de su
@@ -6864,16 +6955,18 @@
               <lb/>llenos de lágrimas sus ojos. « Tus palabras me <lb/>entristecen, hijo mio, y
               quisiera tener el valor <lb/>suficiente para concederte lo que me pides. Veo <lb/>que
               tu amor es grande y noble lo mismo que <lb/>tu alma y que solo tú eres digno de mi
-              hija. Pe- 
+              hija. Pe-
+ 
               
               <pb n="11" source="Varios_433_11.jpg" facs="varios/Varios_433_11.jpg"/>
-              
+
               <fw type="paginaNum">— 11—</fw>
-              
-              <note><p rend="cursiva"><lb/>D. Diego depositó un tierno y apasionado beso en la mano
+              <note>
+                <p rend="cursiva">
+                  <lb/>D. Diego depositó un tierno y apasionado beso en la mano
                   de Lola y salió de aquella casa con<lb/>el alma traspasada de dolor. Cap. II.
-                  pág 12.</p></note>
-              
+                  pág 12.</p>
+              </note>
               <lb/>ro, como quieres hijo mio, que este pobre<lb/>anciano se prive del cariño de su
               hija en el pos-<lb/>trer momento de su vida ? ¡imposible Diego! si<lb/>Lola partiese
               contigo este pobre anciano no<lb/>veria la aurora del nuevo dia : mi corazon
@@ -6895,11 +6988,11 @@
               presentó á su amante <lb/>diciendo: Toma esta rosa Diego mio, como una <lb/>prenda
               de mi amor; en ella leerás cada dia el <lb/>tierno amor de tu querida Lola : ya que
               el des-
+
               
               <pb n="12" source="Varios_433_12.jpg" facs="varios/Varios_433_12.jpg"/>
-              
+
               <fw type="paginaNum">— 12 —</fw>
-              
               <lb/>tino lo quiere separémonos, y ojalá el cielo te <lb/>vuelva pronto á mis
               brazos. Parte tranquilo que <lb/>mi tierno corazon te seguirá á todas partes.»
               <lb/>Diego tomó la rosa con el mayor cariño y besán- <lb/>dola con emocion la
@@ -6911,21 +7004,22 @@
               en los brazos del Ba- <lb/>ron, depositó un tierno y apasionado beso en la <lb/>mano
               de su amada y salió de aquella casa con <lb/>el alma traspasada de dolor. </p>
           </div>
-          
+
           <pb n="13" source="Varios_433_13.jpg" facs="varios/Varios_433_13.jpg"/>
-          
+
           <fw type="paginaNum">— 13—</fw>
-          
           <div type="capitulo" n="3">
-            <head type="titulo_parte" rend="negrita"><lb/>CAPÍTULO III.</head>
-            <head type="titulo_parte" rend="negrita"><lb/>La isla de las serpientes.—La roca de la
+            <head type="titulo_parte" rend="negrita">
+              <lb/>CAPÍTULO III.</head>
+            <head type="titulo_parte" rend="negrita">
+              <lb/>La isla de las serpientes.—La roca de la
               Esperanza en el desierto.—Los seis náufragos.— <lb/>Recuerdos de amor en el
               desierto.—Tiernos recuerdos de Lola.—Enfermedad y muerte <lb/>del Baron.—La amante
               infiel.—El olvido de un juramento.—Casamiento de Lola con el <lb/>Marqués de
               Hontero.—El recuerdo de amor.—La amargura en la opulencia.—D. Diego <lb/>salva la vida
               del Marqués, con otros hechos curiosos.</head>
-            
-            <p rend="indent"><lb/>A los pocos dias de haber arribado á su pais <lb/>D.Diego en compañía del
+            <p rend="indent">
+              <lb/>A los pocos dias de haber arribado á su pais <lb/>D.Diego en compañía del
               negro Juan, despues <lb/>de una feliz navegacion, tuvo el sentimiento de <lb/>ver
               espirar en sus brazos á su anciano padre, <lb/>por lo que no teniendo ya obstáculo
               alguno que <lb/>le separase de su amada cuyo nombre no se <lb/>apartaba un instante de
@@ -6945,12 +7039,12 @@
               no habia que <lb/>pensar en la salvación porque era imposible: <lb/>hiciéronse cuantos
               esfuerzos fueron posibles por <lb/>apagar el fuego, pero éste aumentaba mas y
               <lb/>mas. En tal apuro no hubo mas remedio que <lb/>cortar los mástiles antes que
-              fuesen consumidos <lb/>por las llamas, y formar con ellos una balsa. 
+              fuesen consumidos <lb/>por las llamas, y formar con ellos una balsa.
+ 
               
               <pb n="14" source="Varios_433_14.jpg" facs="varios/Varios_433_14.jpg"/>
-              
+
               <fw type="paginaNum">—14—</fw>
-              
               <lb/>D.Diego, su criado y seis pasajeros mas salta- <lb/>ron sobre ella con algunas
               provisiones en tanto <lb/>que los marineros recogian el equipaje y cuan- <lb/>to
               podian con objeto de salvarlo, pero antes <lb/>que pudiesen saltar á la balsa, un
@@ -7003,7 +7097,8 @@
               cocote- <lb/>ros y otros árboles, la cual se hallaba bastante <lb/>cerca de la playa
               y allí determinaron cons- <lb/>truir una barraca que les sirviese de vivienda
               <lb/>hasta que el cielo se complaciese de sus infor- <lb/>tunios.</p>
-            <p rend="indent"><lb/>Lola entretanto suspiraba amargamente vien- <lb/>do pasar los dias y los meses
+            <p rend="indent">
+              <lb/>Lola entretanto suspiraba amargamente vien- <lb/>do pasar los dias y los meses
               sin tener noticias <lb/>de su amante ni haber recibido contestacion <lb/>á las
               sentidas cartas (1) que le escribió, pero <lb/>firme al principio en el tierno amor
               que ha- <lb/>bia jurado, guardaba en su corazon la grata me- <lb/>moria de D. Diego, y
@@ -7012,14 +7107,16 @@
               contra su pecho. Sin <lb/>embargo habian pasado ya dos años y D. Diego <lb/>no habia
               parecido ni se habian podido adquirir <lb/>noticias de su paradero. Por este tiempo
               vino, <lb/>á Cádiz el Marqués de Montero, jóven elegante <lb/>de ilustre cuna y
-              pingüe patrimonio, el cual <note><p rend="cursiva"><lb/>(1) Véase al final de la
-                  historia.</p></note>
-              
+              pingüe patrimonio, el cual <note>
+                <p rend="cursiva">
+                  <lb/>(1) Véase al final de la
+                  historia.</p>
+              </note>
+
               <pb n="15" source="Varios_433_15.jpg" facs="varios/Varios_433_15.jpg"/>
-              
+
               <fw type="paginaNum">— 15—</fw>
-              
-              <lb/>como hubiese conocido en Santander á una her- <lb/>mana del Baron de Espinosa y
+              <lb/>como hubiese conocido en <name>Santander</name> á una her- <lb/>mana del Baron de Espinosa y
               trajese reco- <lb/>mendacion de ella, fué recibido con el mayor <lb/>agrado y
               distincion en casa del padre de Lola, <lb/>los cuales no tardaron en aficionarse mucho
               á <lb/>él, tanto por su despejo, talento y finura, <lb/>cuanto por el mucho afecto
@@ -7033,7 +7130,8 @@
               dia le volvería á ver. El <lb/>Marqués no desistió por esto de su empeño, an-
               <lb/>tes al contrario redobló sus instancias procu- <lb/>rando atraer á su partido
               el corazon de Lola.</p>
-            <p rend="indent"><lb/>El anciano Baron entre tanto sufria una pe- <lb/>nosa enfermedad que bien pronto
+            <p rend="indent">
+              <lb/>El anciano Baron entre tanto sufria una pe- <lb/>nosa enfermedad que bien pronto
               le condujo <lb/>al sepulcro. Durante este trance fatal supo el <lb/>Marqués
               conducirse de tal modo, ya con su <lb/>afectuosa solicitud, ya con sus desvelos y
               tier- <lb/>nos consuelos que prodigaba á Lola, que al fin <lb/>esta, vencida, no
@@ -7050,7 +7148,8 @@
               del Marqués, con- <lb/>sintió en unir su vida con él por medio del <lb/>matrimonio,
               olvidando el solemne juramento <lb/>que pronunciara para asegurar de su eterno y
               <lb/>constante amor á su querido Diego.</p>
-            <p rend="indent"><lb/>La fiesta se celebró con el mayor lucimiento <lb/>y regocijo. Lola que habia
+            <p rend="indent">
+              <lb/>La fiesta se celebró con el mayor lucimiento <lb/>y regocijo. Lola que habia
               creido que con aque- <lb/>lla union y el afecto de su esposo acabaría de <lb/>olvidar
               para siempre á Diego, vió con terrible <lb/>amargura que ahora mas que nunca se
               levan- <lb/>taba en su corazon el grito amenazador é im- <lb/>ponente de su fé
@@ -7063,7 +7162,8 @@
               <lb/>esforzaba con el mas tierno afecto en hacer di- <lb/>chosa á Lola, y ésta aun
               que sufria un horrible <lb/>martirio, callaba y padecía en secreto procu- <lb/>rando
               ocultar el verdadero estado de su co- <lb/>razon.</p>
-            <p rend="indent"><lb/>Mientras que Lola y el Marqués nadaban en <lb/>la opulencia, en la comodidad,
+            <p rend="indent">
+              <lb/>Mientras que Lola y el Marqués nadaban en <lb/>la opulencia, en la comodidad,
               el lujo y el re- <lb/>galo, D. Diego y su fiel criado labraban la tier- <lb/>D.Diego y
               su fiel criado labraban la tier- <lb/>ra regándola con el copioso sudor de su abrasa-
               <lb/>da frente á fin de hacerla producir algunas <lb/>yerbas que eran su único
@@ -7082,12 +7182,12 @@
               bosque y cuya san- <lb/>gre redimiera, le pagaba ahora con usura, todo <lb/>cuanto por
               él habia hecho, pues él era su único <lb/>consuelo en las desgracias que le
               rodeaban, y <lb/>sin su cuidado y sus desvelos acaso hubiera <lb/>muerto el noble
-              jóven víctima de su desventura. 
+              jóven víctima de su desventura.
+ 
               
               <pb n="16" source="Varios_433_16.jpg" facs="varios/Varios_433_16.jpg"/>
-              
+
               <fw type="paginaNum">— 16—</fw>
-              
               <lb/>Mientras el uno labraba la tierra y recogia las <lb/>pocas frutas para la comida,
               el otro se colocaba <lb/>en lo alto de una roca esperando con infatiga- <lb/>ble afan
               el momento de divisar algun buque <lb/>que les recogiese y pusiese fin á sus
@@ -7112,7 +7212,8 @@
               trata- <lb/>dos con todas las atenciones y cuidados que <lb/>necesitaban, y
               haciéndose á la vela hizo rumbo <lb/>á Cádiz llegando á la vista del puerto
               despues <lb/>de veinte dias de feliz navegacion.</p>
-            <p rend="indent"><lb/>El mismo dia en que el bergantin daba vista <lb/>á Cádiz, tenia lugar la
+            <p rend="indent">
+              <lb/>El mismo dia en que el bergantin daba vista <lb/>á Cádiz, tenia lugar la
               escena que vamos á re- <lb/>ferir. El marqués de Montero, muy aficiona- <lb/>do á
               las diversiones desde que se casara, salió <lb/>aquella mañana á caballo con objeto
               de dar un <lb/>paseo, pero tanto espoleó al animal que era fo- <lb/>goso y de pura
@@ -7140,7 +7241,8 @@
               <lb/>to le habia ocurrido, no pudo reprimir su agi- <lb/>tacion pues al oir á su
               esposo referir las señas <lb/>del que le habia salvado, su corazon le predijo
               <lb/>una desgracia.</p>
-            <p rend="indent"><lb/>¡Si fuera D. Diego! decia ella para sí ane- <lb/>gada en llanto y con un acento
+            <p rend="indent">
+              <lb/>¡Si fuera D. Diego! decia ella para sí ane- <lb/>gada en llanto y con un acento
               de amargura <lb/>imposible de describir. Ahora mas que nunca <lb/>se agolpaban á su
               imaginacion tristes recuerdos. <lb/>Su corazon estaba intranquilo; el mas leve rui-
               <lb/>do la asustaba y á cada instante veía represen- <lb/>társele como en sueños el
@@ -7150,20 +7252,21 @@
               perecido en el naufragio y que <lb/>podia estar tranquila con respecto á él. Esperó
               <lb/>pnes la llegada de la noche en que quizás debía <lb/>decidir de su suerte.</p>
           </div>
-          
+
           <pb n="17" source="Varios_433_17.jpg" facs="varios/Varios_433_17.jpg"/>
-          
+
           <fw type="paginaNum">— 17 —</fw>
-          
           <div type="capitulo" n="4">
-            <head type="titulo_parte" rend="negrita"><lb/>CAPÍTULO IV.</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>Olvido de un juramento de amor y
+            <head type="titulo_parte" rend="negrita">
+              <lb/>CAPÍTULO IV.</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>Olvido de un juramento de amor y
               amargas consecuencias.—Un baile en casa del Marqués<lb/>de Montero.— Los celos.—El
               desafío.—Grandeza de alma de Diego.—El perdon.—La pa-<lb/>labra de honor de un
               caballero.—Eacenas de familia.—El testamento, la cajita de aloé<lb/>y la
               rosa.—Preparativos de viaje.—La despedida.</head>
-            
-            <p rend="indent"><lb/>En la noche á que nos referimos dábase un <lb/>gran baile en los lujosos y
+            <p rend="indent">
+              <lb/>En la noche á que nos referimos dábase un <lb/>gran baile en los lujosos y
               elegantes salones <lb/>de la casa del marqués de Montero. Su primer <lb/>cuidado fué
               enviar su coche al Hotel donde se <lb/>hospedaba su generoso libertador y esperó la
               <lb/>llegada del hombre á quien tanta gratitud de- <lb/>bia. Diego no tardó en
@@ -7172,7 +7275,7 @@
               cortesía sin reparar en la <lb/>Marquesa, pero no bien sus ojos se encontra- <lb/>ron
               con los de Lola, quedó frio como un már- <lb/>mol. ¿Cómo se habia de pensar él
               aquella va- <lb/>riacion en el corazon de una mujer que tanto <lb/>amaba? Él que la
-              creia fiel á su palabra, que <lb/>solo ansiaba la llegada á Cadiz para ser su es-
+              creia fiel á su palabra, que <lb/>solo ansiaba la llegada á <name>Cadiz</name> para ser su es-
               <lb/>poso y labrar su dicha, vió de repente disipa- <lb/>das como el humo todas sus
               ilusiones. El Mar- <lb/>qués que nada habia reparado, rogó á su espo- <lb/>sa que
               cumpliese por él con D. Diego mientras <lb/>que él cumplia por ella en los salones,
@@ -7185,12 +7288,12 @@
               sabia lo que le pasa- <lb/>ba. Sentia un dolor terrible en su corazon y el <lb/>fuego
               de la ira se retrataba con todos sus colo- <lb/>res en su rostro tostado por los
               ardientes rayos <lb/>del sol de los trópicos. Al fin tomó su calma ha- <lb/>bitual y
-              mirando á Lola con indignacion la dijo 
+              mirando á Lola con indignacion la dijo
+ 
               
               <pb n="18" source="Varios_433_18.jpg" facs="varios/Varios_433_18.jpg"/>
-              
+
               <fw type="paginaNum">— 18—</fw>
-              
               <lb/>con amargo acento: <hi rend="cursiva">Dime Lola mia, si juguete <lb/>de la
                 inclemencia de los mares llega á tus oidos la <lb/>noticia de mi nanfragio,
                 ¿guardarás á tu aman- <lb/>te un lugar en tu corazon ? ...</hi> vos me respon-
@@ -7253,12 +7356,12 @@
               mujer á quien tanto habia amado y á quien <lb/>ya habia perdido para siempre, habia
               quedado <lb/>como el lirio del valle azotado por el huracan. <lb/>Ya nada tenia que
               hacer en aquella casa; el <lb/>baile no podia ofrecerle diversion alguna, por <lb/>que
-              la sola vista de Lola agravaba la herida de 
+              la sola vista de Lola agravaba la herida de
+ 
               
               <pb n="19" source="Varios_433_19.jpg" facs="varios/Varios_433_19.jpg"/>
-              
+
               <fw type="paginaNum">— 19—</fw>
-              
               <lb/>su corazon y renovaba todo su martirio. Miró <lb/>por última vez á su amada
               con una dolorosa <lb/>espresion de compasion y la dijo: « Si ha habi- <lb/>do alguna
               persona que os amara mas que yo os <lb/>he amado, decídmelo y os perdono, señora: es
@@ -7272,7 +7375,8 @@
               con toda la ternura de mi cora- <lb/>zon y que no podré borrar de mi memoria
               <lb/>vuestro nombre. Adios, señora y el cielo os <lb/>haga tan feliz como yo soy
               desgraciado.»</p>
-            <p rend="indent"><lb/>D.Diego guardó silencio y ya iba á retirarse <lb/>cuando el Marqués que habia
+            <p rend="indent">
+              <lb/>D.Diego guardó silencio y ya iba á retirarse <lb/>cuando el Marqués que habia
               oido toda la con- <lb/>versacion, se presentó furioso y deteniendo la <lb/>marcha del
               jóven le dijo : «Caballero, he oido <lb/>toda vuestra conversacion y no sé como
               puedo <lb/>contener mi enojo. Hasta ahora habia vivido <lb/>feliz creyendo que mi
@@ -7305,7 +7409,8 @@
               me ciega y necesito sangre, mu- <lb/>cha sangre para lavar mi honra, quiero matar
               <lb/>ó morir ¿lo entendeis ? Señaladme hora, sitio y <lb/>armas y elegid vuestro
               padrino.»</p>
-            <p rend="indent"><lb/>D.Diego ya no pudo contenerse; dirigió una <lb/>mirada terrible al esposo de
+            <p rend="indent">
+              <lb/>D.Diego ya no pudo contenerse; dirigió una <lb/>mirada terrible al esposo de
               Lola y le dijo: <lb/>«Si hubiese habido algun motivo que empaña- <lb/>se el brillo de
               vuestro nombre, yo mismo os <lb/>entregaria mi vida para que fueseis feliz ; esto
               <lb/>lo haria bajo la consideracion de que sois el es- <lb/>poso de Lola; pero me
@@ -7317,20 +7422,24 @@
               no pa- <lb/>decerá la honra de la Marquesa porque el se- <lb/>creto queda entre
               nosotros dos y Dios.» Ambos <lb/>quedaron convenidos para batirse á la mañana
               <lb/>siguiente.</p>
-            <p rend="indent"><lb/>D.Diego se retiró á su casa, tomó papel y <lb/>estendió su testamento en que
+            <p rend="indent">
+              <lb/>D.Diego se retiró á su casa, tomó papel y <lb/>estendió su testamento en que
               dejaba todos <lb/>sus bienes á su fiel criado Juan: queria dejarlo <lb/>todo
               arreglado porque habia tomado la resolu- <lb/>cion de dejarse matar por el Marqués á
               fin de <lb/>no labrar para siempre la eterna desventura <lb/>de la desgraciada Lola.
-              Tomó la cajita de aloé <lb/>en que conservaba aquella delicada rosa que su 
+              Tomó la cajita de aloé <lb/>en que conservaba aquella delicada rosa que su
+ 
               
               <pb n="20" source="Varios_433_20.jpg" facs="varios/Varios_433_20.jpg"/>
-              
+
               <fw type="paginaNum">—20—</fw>
-              
-              <note><p rend="cursiva"><lb/><lb/>El Marqués impaciente tomó su espada y se puso en
+              <note>
+                <p rend="cursiva">
+                  <lb/>
+                  <lb/>El Marqués impaciente tomó su espada y se puso en
                   guardia, pero en menos de cinco minutos<lb/>fué desarmado dos veces. Cap. IV,
-                  pág. 21.</p></note>
-              
+                  pág. 21.</p>
+              </note>
               <lb/>amada le diera como prenda de su amor; es- <lb/>tampó en ella un doloroso beso
               en que emitia <lb/>todo el recuerdo de felicidad soñada, y llamando <lb/>á Juan le
               dijo : « Juan, querido amigo, toma <lb/>estos papeles, y si á las diez de la mañana
@@ -7351,12 +7460,12 @@
               marchó en casa de Lola. D. Diego se di- <lb/>rigió apenas fué de dia al sitio
               convenido y no <lb/>tardó en llegar tambien el Marqués. Éste estaba <lb/>pálido,
               furioso y sediento de sangre; estaba <lb/>loco de celos: D. Diego por el contrario
-              estaba 
+              estaba
+ 
               
               <pb n="21" source="Varios_433_21.jpg" facs="varios/Varios_433_21.jpg"/>
-              
+
               <fw type="paginaNum">— 21—</fw>
-              
               <lb/>firme y sereno: en su semblante se dibujaba <lb/>la mayor resignacion y calma, y
               no habia duda <lb/>que la ventaja estaba en su favor. El Marqués <lb/>impaciente
               tomó su espada y se puso en guar- <lb/>dia pero en menos de cinco minutos fué desar-
@@ -7377,7 +7486,8 @@
               criatura que tan digna <lb/>era de él y concluia la carta de este modo: <lb/>«
               Marqués, hacedla tan feliz como merece su <lb/>desgracia, y amadla por vos y por
               mí.»</p>
-            <p rend="indent"><lb/>El Marqués hacia sus preparativos de viaje <lb/>lo mismo que D. Diego, pero
+            <p rend="indent">
+              <lb/>El Marqués hacia sus preparativos de viaje <lb/>lo mismo que D. Diego, pero
               apenas hubo reci- <lb/>bido de manos de Juan la carta de aquel, leyó <lb/>con
               indiferencia su contenido, y no bien habia <lb/>comprendido la inmensa generosidad de
               aquel <lb/>hombre tan grande y tan caballero, corrió en <lb/>busca de su esposa y
@@ -7419,12 +7529,12 @@
               la últi- <lb/>ma vez y darle mi postrer adios de despedida, <lb/>acaso esto
               endulzaria mis penas algun tanto.» <lb/>El Marqués ya no era el ofendido y celoso es-
               <lb/>poso de Lola, era su mas tierno amigo, así es <lb/>que compadecido del dolor
-              acerbo de aquella 
+              acerbo de aquella
+ 
               
               <pb n="22" source="Varios_433_22.jpg" facs="varios/Varios_433_22.jpg"/>
-              
+
               <fw type="paginaNum">— 22—</fw>
-              
               <lb/>hermosa criatura, mas hermosa y bella aun en <lb/>su lánguida amargura,
               ofrecióla hacer cuanto <lb/>pudiese por lograrlo. Tomó el coche y fuese en <lb/>casa
               de D. Diego que se disponia ya para mar- <lb/>char al puerto. Aquel Marqués tan
@@ -7452,18 +7562,19 @@
             <trailer>FIN.</trailer>
           </div>
         </div>
-        
+
         <pb n="23" source="Varios_433_23.jpg" facs="varios/Varios_433_23.jpg"/>
-        
+
         <fw type="paginaNum">—23—</fw>
-        
         <div type="parte" n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>Cartas que escribió Lola á su amante Diego
+          <head type="titulo_parte" rend="negrita">
+            <lb/>Cartas que escribió Lola á su amante Diego
             du-<lb/>rante los tres años de su ausencia.</head>
-          
           <div type="carte" n="1">
-            <head type="titulo_parte"><lb/>CARTA PRIMERA.</head>
-            <p rend="indent"><lb/>Mi querido é inolvidable Diego : Cuando esta llegue á tus manos, acaso hará
+            <head type="titulo_parte">
+              <lb/>CARTA PRIMERA.</head>
+            <p rend="indent">
+              <lb/>Mi querido é inolvidable Diego : Cuando esta llegue á tus manos, acaso hará
               <lb/>pocos dias que habrás tenido el consuelo de abrazar á tu querido padre. Yo de-
               <lb/>bia esperar que tu me escribieses primero, pero el amor dispierta la impaciencia
               <lb/>en mi corazon, y tu ausencia es un nuevo tormento que aumenta cada dia la
@@ -7474,12 +7585,14 @@
               <lb/>Vuelve pronto amado mio, que tu fiel y enamorada Lola no puede vivir sin su
               <lb/>querido Diego. Estas líneas, humedecidas con mis lágrimas, te llevan un ar-
               <lb/>diente beso de tu apasionada</p>
-            <p rend="cursiva"><lb/>Lola.</p>
+            <p rend="cursiva">
+              <lb/>Lola.</p>
           </div>
-          
           <div type="carte" n="2">
-            <head type="titulo_parte"><lb/>CARTA SEGUNDA.</head>
-            <p rend="indent"><lb/>Inolvidable Diego mio : hoy cumplen ocho meses desde que te escribí la pri-
+            <head type="titulo_parte">
+              <lb/>CARTA SEGUNDA.</head>
+            <p rend="indent">
+              <lb/>Inolvidable Diego mio : hoy cumplen ocho meses desde que te escribí la pri-
               <lb/>mera, y en todo este tiempo no he recibido ni la mas lijera nueva del hombre á
               <lb/>quien tanto amo. ¿Será acaso que el destino, ó tal vez tú, querais probar la
               <lb/>constancia del amor de la angustiada Lola ? No, Diego mio, tu Lola no te olvida
@@ -7488,22 +7601,25 @@
               re- <lb/>cuerdo de tu inmenso amor sostiene su esperanza y la hace amar la vida para
               <lb/>renovarte el juramento de su tierno amor al pié de los altares. Sufro mucho,
               <lb/>Diego mio con tu silencio : á cada momento espero oir tu dulce voz, pero nunca
-              <lb/>llega el instante de mi dicha. No prolongues mi martirio, Diego mio, y vuelve 
+              <lb/>llega el instante de mi dicha. No prolongues mi martirio, Diego mio, y vuelve
+ 
               
               <pb n="24" source="Varios_433_24.jpg" facs="varios/Varios_433_24.jpg"/>
-              
+
               <fw type="paginaNum">—24 —</fw>
-              
               <lb/>pronto, pues acaso no podré resistir el peso de mi amargura y bajaré á la
               tum-<lb/>ba, sin poder exhalar en tus brazos mi postrer suspiro. Mis ojos son dos
               rau-<lb/>dales de lágrimas que borran estas cortas líneas. ¡Ojalá las brisas de los
-              mares<lb/>lleven á tu oido los suspiros y amorosas quejas de tu apasionada<lb/></p>
-            <p rend="cursiva"><lb/>Lola.</p>
+              mares<lb/>lleven á tu oido los suspiros y amorosas quejas de tu apasionada<lb/>
+            </p>
+            <p rend="cursiva">
+              <lb/>Lola.</p>
           </div>
-          
           <div type="carte" n="3">
-            <head type="titulo_parte"><lb/>CARTA TERCERA.</head>
-            <p rend="indent"><lb/>Querido Diego mio : tiemblo al escribirte por tercera vez, por que me
+            <head type="titulo_parte">
+              <lb/>CARTA TERCERA.</head>
+            <p rend="indent">
+              <lb/>Querido Diego mio : tiemblo al escribirte por tercera vez, por que me
               temo<lb/>que esta triste carta será el último rayo que brille de mi esperanza.
               ¡Cuántas<lb/>penas y amarguras en dos años de ausencia, Diego mio! Mi alma, muda de
               do-<lb/>lor, no puede espresarte hasta donde llega la terrible intensidad de su
@@ -7516,20 +7632,23 @@
               que<lb/>yo? No; imposible, Diego mio ; sácame pronto de esta cruel incertidumbre
               que<lb/>me mata. Mi vida se consume como la débil luz de una bugía, y sin
               embargo<lb/>aun te ama y te amará hasta la tumba tu querida</p>
-            <p rend="cursiva"><lb/>Lola.</p>
-            
+            <p rend="cursiva">
+              <lb/>Lola.</p>
             <note>
-              <p><lb/>Nota.—La conclusion de esta interesante y verdadera historia vá en la
+              <p>
+                <lb/>Nota.—La conclusion de esta interesante y verdadera historia vá en la
                 se-<lb/>gunda parte titulada : « Espinas de una flor.»</p>
             </note>
           </div>
-          
+
           <pb n="25" source="Varios_433_25.jpg" facs="varios/Varios_433_25.jpg"/>
-          
+
+
           <pb n="26" source="Varios_433_26.jpg" facs="varios/Varios_433_26.jpg"/>
-          
+
           <div type="productos_a_la_venta">
-            <head rend="negrita"><lb/>HISTORIAS PUBLICADAS EN ESTA GALERÍA.</head>
+            <head rend="negrita">
+              <lb/>HISTORIAS PUBLICADAS EN ESTA GALERÍA.</head>
             <listBibl>
               <bibl>Aventuras de Leontino y amores con la reina Nelsa.</bibl>
               <bibl>El Conde del Valle y sus tiernos amores con la Princesa Moraima</bibl>

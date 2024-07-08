@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +113,32 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q957828">
+            <placeName key="Triana">Triana</placeName>
+            <location>
+              <geo>37.383580555556 -6.0052</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q10965">
+            <placeName key="Ebro">Ebro</placeName>
+            <location>
+              <geo>43.0375 -4.37</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q4040">
+            <placeName key="Aragón">Aragón</placeName>
+            <location>
+              <geo>41 -1</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -138,7 +179,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_023_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_023_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_023_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_023_1/full/full/0/default.jpg"/>
@@ -1412,11 +1455,14 @@
     <body>
       <div>
         <div n="1">
+
           <pb n="1" source="Varios_023_1.jpg" facs="varios/Varios_023_1.jpg"/>
 
-          <head type="primer_titulo"><lb/><hi rend="negrita">EL DUO DE LA
-            AFRICANA</hi><lb/>JOTA</head>
-
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">EL DUO DE LA
+            AFRICANA</hi>
+            <lb/>JOTA</head>
           <lg>
             <l rend="indent">Comprendo lo grave</l>
             <l>de mi situación,</l>
@@ -1435,7 +1481,7 @@
             <l>ve con mamá.</l>
             <l rend="indent">–Africana gitana</l>
             <l>nacida muy cerca</l>
-            <l>del puente de Triana,</l>
+            <l>del puente de <name>Triana</name>,</l>
             <l>por qué te vi yo.</l>
             <l>por qué tu mirada,</l>
             <l>que amores decía,</l>
@@ -1443,7 +1489,7 @@
             <l>por qué me engañó?</l>
             <l rend="indent">–Ay! baturro fogoso,</l>
             <l>nacido muy cerca</l>
-            <l>del Ebro famoso</l>
+            <l>del <name>Ebro</name> famoso</l>
             <l>¿por qué te vi yo,</l>
             <l>y por qué tu cariño</l>
             <l>de noche y de día</l>
@@ -1454,7 +1500,7 @@
 
             <l rend="indent">—Africana gitana</l>
             <l>nacida muy cerca</l>
-            <l>del puente de Triana,</l>
+            <l>del puente de <name>Triana</name>,</l>
             <l>si yo te seguí</l>
             <l>es que al verte, la muerte,</l>
             <l>temiendo no verte,</l>
@@ -1462,7 +1508,7 @@
             <l>del alma sentí.</l>
             <l rend="indent">—Ay! baturro fogoso,</l>
             <l>nacido muy cerca</l>
-            <l>del Ebro famoso</l>
+            <l>del <name>Ebro</name> famoso</l>
             <l>no sigas ya más,</l>
             <l>que pierdes el tiempo</l>
             <l>conmigo, alma mía,</l>
@@ -1479,10 +1525,9 @@
             <l>—Verás que dichosos</l>
             <l>seremos allí.</l>
           </lg>
-
           <lg>
             <l rend="indent">No cantes más la africana</l>
-            <l>vente conmigo Aragón,</l>
+            <l>vente conmigo <name>Aragón</name>,</l>
             <l>y allí la Jota que es gloria</l>
             <l>nos cantaremos los dos.</l>
             <l rend="indent">Vente conmigo y no temas</l>
@@ -1551,7 +1596,6 @@
             <l>él solo es el dueño</l>
             <l>de mi corazón).</l>
           </lg>
-
           <lg>
             <l rend="indent">Dice un marido á su esposa</l>
             <l>cuando la luna de miel</l>
@@ -1626,13 +1670,12 @@
             <l>de luna de miel.</l>
           </lg>
         </div>
-
         <div n="2">
-          <head type="primer_titulo"><lb/>WALZ INGLÉS</head>
-
+          <head type="primer_titulo">
+            <lb/>WALZ INGLÉS</head>
           <lg n="1">
             <head type="titulo_estrofa">I</head>
-            <l rend="indent">Crucé la España</l>
+            <l rend="indent">Crucé la <name>España</name></l>
             <l>rico país,</l>
             <l>que lindas damas</l>
             <l>se ven allí;</l>
@@ -1687,7 +1730,6 @@
             <l>muera de dolor y pena</l>
             <l>mi corazón.</l>
           </lg>
-
           <lg n="3">
             <head type="titulo_estrofa">3</head>
             <l rend="indent">Abre esa reja</l>
@@ -1715,7 +1757,6 @@
             <l>ese sí tan descado</l>
             <l>bello ideal.</l>
           </lg>
-
           <lg n="4">
             <head type="titulo_estrofa">4.</head>
             <l rend="indent">No hay quien te mire,</l>
@@ -1744,10 +1785,9 @@
             <l>en el Edén.</l>
           </lg>
         </div>
-
         <div n="3">
-          <head type="titulo_cancion"><lb/>LÁZARO Á DOLORES</head>
-
+          <head type="titulo_cancion">
+            <lb/>LÁZARO Á DOLORES</head>
           <l>¡Di que es verdad que me llamas,</l>
           <l>dí que es verdad que no sueño,</l>
           <l>di que es verdad que me amas,</l>
@@ -1757,9 +1797,9 @@
           <l>Dilo y será un paraíso</l>
           <l>la tierra para los dos!</l>
         </div>
-
         <div type="colofon">
-          <p><lb/>Imps. Hospital, 19, «El Abanico»</p>
+          <p>
+            <lb/>Imps. Hospital, 19, «El Abanico»</p>
         </div>
       </div>
     </body>

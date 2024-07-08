@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de
                               Genève</authority>
@@ -44,7 +58,7 @@
             <country>Suisse</country>
             <settlement>Genève</settlement>
             <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
+            </repository>
             <collection>Colección Varios</collection>
             <idno type="cote"/>
             <idno type="DOI">10.5281/zenodo.6802805</idno>
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="24"/>24 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="24"/>24 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -91,6 +106,74 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q48">
+            <placeName key="Asia">Asia</placeName>
+            <location>
+              <geo>43.6811111111111 87.3311111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q200441">
+            <placeName key="Antioquía_del_Orontes">Antioquía Del Orontes</placeName>
+            <location>
+              <geo>36.2047222222222 36.1816666666667</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q1218">
+            <placeName key="Jerusalén">Jerusalén</placeName>
+            <location>
+              <geo>31.7788888888889 35.2255555555556</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q80561">
+            <placeName key="Antioquía">Antioquía</placeName>
+            <location>
+              <geo>36.2025 36.1605555555555</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1294629">
+            <placeName key="Samaria">Samaria</placeName>
+            <location>
+              <geo>32.14306 35.26062</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q104028">
+            <placeName key="Judea">Judea</placeName>
+            <location>
+              <geo>31.698889 35.306389</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q858">
+            <placeName key="Siria">Siria</placeName>
+            <location>
+              <geo>35.216667 38.583333</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q79">
+            <placeName key="Egipto">Egipto</placeName>
+            <location>
+              <geo>27 29</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q82070">
+            <placeName key="Tiro">Tiro</placeName>
+            <location>
+              <geo>33.266666666667 35.2</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q165867">
+            <placeName key="Modi_ín">Modi'ín</placeName>
+            <location>
+              <geo>31.933888888889 34.985555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q573182">
+            <placeName key="Ptolemaida">Ptolemaida</placeName>
+            <location>
+              <geo>40.51472 21.67861</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,7 +212,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_444_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_444_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_444_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_444_1/full/full/0/default.jpg"/>
@@ -3512,26 +3597,41 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_444_1.jpg" facs="varios/Varios_444_1.jpg"/>
-        <head type="primer_titulo"><lb/><hi rend="negrita">HISTORIA<lb/>SAGRADA</hi><lb/>DE LOS MAS VALIENTES SOLDADOS,<lb/>DEL
-                              PUEBLO DE DIOS,<lb/><hi rend="negrita">JUDAS MACABEO,</hi><lb/>Y SUS ESFORZADOS
+
+        <head type="primer_titulo">
+          <lb/>
+          <hi rend="negrita">HISTORIA<lb/>SAGRADA</hi>
+          <lb/>DE LOS MAS VALIENTES SOLDADOS,<lb/>DEL
+                              PUEBLO DE DIOS,<lb/>
+          <hi rend="negrita">JUDAS MACABEO,</hi>
+          <lb/>Y SUS ESFORZADOS
                               HERMANOS,</head>
-        <head type="subtitulo_parte"><lb/>Sacada de la Sagrada Escritura, Santos
+        <head type="subtitulo_parte">
+          <lb/>Sacada de la Sagrada Escritura, Santos
                               Padres, Joseph Gorion,<lb/>y otros Historiadores.</head>
         <div type="propiedad">
-          <p><lb/>SU AUTOR DON HILARIO SANTOS ALONSO.<lb/>CON LAS LICENCIAS
+          <p>
+            <lb/>SU AUTOR DON HILARIO SANTOS ALONSO.<lb/>CON LAS LICENCIAS
                                     NECESSARIAS.</p>
         </div>
         <div type="colofon">
-          <p><lb/>En Murcia, en la Imprenta, y Libreria de Francisco
+          <p>
+            <lb/>En Murcia, en la Imprenta, y Libreria de Francisco
                                     Benedito, <lb/>vive en la calle de la Plateria, donde se hallarà
                                     esta, y otras diferentes. <lb/>Año de 1772.</p>
         </div>
+
         <pb n="2" source="Varios_444_2.jpg" facs="varios/Varios_444_2.jpg"/>
+
         <fw type="paginaNum">2</fw>
         <div type="parte" n="1">
-          <head type="titulo_parte"><lb/>RESUMEN DE LA HISTORIA.</head>
-          <p><lb/>TYRANIAS DEL REY ANTIOCO.<hi rend="cursiva"><lb/>Levantase
+          <head type="titulo_parte">
+            <lb/>RESUMEN DE LA HISTORIA.</head>
+          <p>
+            <lb/>TYRANIAS DEL REY ANTIOCO.<hi rend="cursiva">
+              <lb/>Levantase
                                           Matathias contra èl, y su exhortacion a los que<lb/>le
                                           siguen. Zelo, y animosos sucessos de Matathias. Hace
                                           algu-<lb/>nos daños à los enemgos. Muere Matathias, y
@@ -3561,17 +3661,21 @@
                                           en un banquete con dos hijos; pero reservòse el uno,
                                           lla-<lb/>mado Hircano, que continuò la succession de los
                                           Macabeos,<lb/>hasta que Herodes el Grande acabò
-                                          tyranicamente con esta ilus-<lb/>tre familia.</hi></p>
+                                          tyranicamente con esta ilus-<lb/>tre familia.</hi>
+          </p>
         </div>
         <fw type="reclamos">No</fw>
+
         <pb n="3" source="Varios_444_3.jpg" facs="varios/Varios_444_3.jpg"/>
+
         <fw type="paginaNum">3</fw>
         <fw type="titulo_corriente" rend="cursiva">de Judas Macabeo.</fw>
         <div type="parte" n="2">
-          <p><lb/>No ay plumas para ponderar las llustres hazañas <lb/>del
+          <p>
+            <lb/>No ay plumas para ponderar las llustres hazañas <lb/>del
                                     esclarecido Soldado del Pueblo de Dios, Ju- <lb/>das Macabeo.
                                     Hizo Dios, que naciesse en un Siglo la- <lb/>mentable, á tiempo
-                                    que el Rey Antioco, que llamaron <lb/>el llustre, moviò aquella
+                                    que el Rey <name>Antioco</name>, que llamaron <lb/>el llustre, moviò aquella
                                     horrible persecucion contra los <lb/>Judios, que hizo llorar los
                                     Cielos, y bañar en sangre la <lb/>tierra. Diò este barbaro en
                                     profanar las cosas santas, y <lb/>hacer exercicio continuo de
@@ -3586,10 +3690,11 @@
                                     grutas de bestias, manifes- <lb/>tando un asqueroso expectaculo,
                                     que daba mas gana de <lb/>morir, que animo de conservar la
                                     vida.</p>
-          <p><lb/>En medio de estos desconsuelos se hallò un generoso
+          <p>
+            <lb/>En medio de estos desconsuelos se hallò un generoso
                                     <lb/>viejo, llamado Matathias, padre de muchos hijos, y to-
                                     <lb/>dos alentados ; el qual saliò de Jerusalèn para retirarse
-                                    à <lb/>la Ciudad de Modin. Alli juntò todos los de su familia,
+                                    à <lb/>la Ciudad de <name>Modin</name>. Alli juntò todos los de su familia,
                                     <lb/>á quien siguieron tambien los mas animosos, para opo-
                                     <lb/>nerse al furor del Tyrano, y conservar las reliquias de
                                     <lb/>la verdadera Religion. Como los Infieles vieron, que tan
@@ -3599,13 +3704,16 @@
                                     <lb/>notificò à Matathias, que se rindiesse con los suyos, y
                                     <lb/>ofreciesse incienso á los Idolos : pero este venerable, y
                                           <fw type="reclamos">A2</fw>
-                                    <fw type="reclamos">vic-</fw>
-                                    <pb n="4" source="Varios_444_4.jpg" facs="varios/Varios_444_4.jpg"/>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+            <fw type="reclamos">vic-</fw>
+
+            <pb n="4" source="Varios_444_4.jpg" facs="varios/Varios_444_4.jpg"/>
+
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>victorioso varon, juntando sus hijos , y Aliados, los
+            <lb/>victorioso varon, juntando sus hijos , y Aliados, los
                                     <lb/>hablò de esta manera.</p>
-          <p><lb/>Seria tener demasiado amor à la vida el querer conservar-
+          <p>
+            <lb/>Seria tener demasiado amor à la vida el querer conservar-
                                     <lb/>la, y retenerla con pèrdida de la Religion. Pesame de aver
                                     vi <lb/>vido, considerando el tiempo à que Dios me ha traìdo en
                                     mi <lb/>vejèz, para ver los desastres de mi Pueblo, y la
@@ -3623,7 +3731,7 @@
                                     las llamas. Fuera de esto, què prorecho <lb/>podemos tener de la
                                     vida, si no es para vengar el agravio que se ha- <lb/>ce à
                                     nuestro Dios? Prometenme todas las honras, y bienes licita-
-                                    <lb/>mente que puedo esperar, si quiero obedecer al Rey Antioco,
+                                    <lb/>mente que puedo esperar, si quiero obedecer al Rey <name>Antioco</name>,
                                     y <lb/>hacerme de la parte de los que tan cobardemente han hecho
                                     traycion <lb/>à su Ley. Pero no permita Dios, que yo cayga jamas
                                     en una <lb/>tal prostitucion de juicio, ò de animo. Quando todos
@@ -3637,10 +3745,13 @@
                                     camno de la libertad, y la gloria, para dar exemplo <lb/>á la
                                     posteridad.</p>
           <fw type="reclamos">En</fw>
+
           <pb n="5" source="Varios_444_5.jpg" facs="varios/Varios_444_5.jpg"/>
+
           <fw type="paginaNum">5</fw>
           <fw type="titulo_corriente" rend="cursiva">de Judas Macabeo.</fw>
-          <p><lb/>En este medio los Comissarios del Rey apretaban à <lb/>que
+          <p>
+            <lb/>En este medio los Comissarios del Rey apretaban à <lb/>que
                                     cada uno se declarasse, y sacrificasse, à tiempo que <lb/>un
                                     Judio, ò bien por atemorizado del rigor de los su-
                                     <lb/>plicios, ò porque le atraxeron con promessas, y recom-
@@ -3657,11 +3768,12 @@
                                     <lb/>animoso la muerte, declarando desde entonces la guerra
                                     <lb/>abierta á los enemigos de Dios, que le querian forzar á
                                     <lb/>dexar su Santa Ley.</p>
-          <p><lb/>Es cosa de admirar el considerar el poder de un hom- <lb/>bre
+          <p>
+            <lb/>Es cosa de admirar el considerar el poder de un hom- <lb/>bre
                                     zeloso, que no hace caso de la vida, y hace gloria de <lb/>la
                                     muerte. Este Santo viejo comenzò á juntar un peque- <lb/>ño
                                     Exercito con los cinco hijos, que tenia, y algunos pa-
-                                    <lb/>rientes. Dexò la Ciudad de Modin, donde no podia bien
+                                    <lb/>rientes. Dexò la Ciudad de <name>Modin</name>, donde no podia bien
                                     <lb/>assegurarse, y se retirò á un monte, adonde todos los
                                     zelo- <lb/>sos de la defensa de la Antigua Religion venian de
                                     todas <lb/>partes con sus mugeres, hijos, y ganados con
@@ -3670,17 +3782,20 @@
                                     Tropas, hi- <lb/>zo algunas surtidas, que le sucedieron bien ; y
                                     no conten- <lb/>tandose solo con rechazar á los Infieles, les
                                     fue á atacar en <fw type="reclamos">sus</fw>
-                                    <pb n="6" source="Varios_444_6.jpg" facs="varios/Varios_444_6.jpg"/>
-                                    <fw type="paginaNum">6</fw>́ <fw type="titulo_corriente" rend="cursiva">Historia verdadera</fw>
-                                    <lb/>sus retiros, y los derrotò : por lo qual con toda libertad
+
+            <pb n="6" source="Varios_444_6.jpg" facs="varios/Varios_444_6.jpg"/>
+
+            <fw type="paginaNum">6</fw>́ <fw type="titulo_corriente" rend="cursiva">Historia verdadera</fw>
+            <lb/>sus retiros, y los derrotò : por lo qual con toda libertad
                                     <lb/>comenzò á demoler los Altares profanos, que ellos avian
                                     <lb/>erigido en varios lugares, è hizo que se administrase la
                                     <lb/>Circuncision à los niños, y se sacassen los Libros Sagra-
                                     <lb/>dos del poder de los enemigos.</p>
-          <p><lb/>En fin, este valeroso Capitan despues de muchos com-
+          <p>
+            <lb/>En fin, este valeroso Capitan despues de muchos com-
                                     <lb/>bates, viendo se le acababan sus dias hizo una larga Pla-
                                     <lb/>tica á sus hijos, inflamandolos en el zelo de su Religion
-                                    <lb/>contra la tyranìa del Rey Antioco, y despues de nombrar
+                                    <lb/>contra la tyranìa del Rey <name>Antioco</name>, y despues de nombrar
                                     <lb/>à Judas por Caudillo de la Milicia, y á Simeon, ò Simon
                                     <lb/>por su Consejero, pues tenian assi uno como otro pren-
                                     <lb/>das correspondientes à tales empleos, les echò à todos
@@ -3704,11 +3819,14 @@
                                     aunque fuesse à costa de la hacien- <lb/>da, vida, y honra, y
                                     todo lo mas estimado en este mundo.</p>
           <fw type="reclamos">Con</fw>
+
           <pb n="7" source="Varios_444_7.jpg" facs="varios/Varios_444_7.jpg"/>
+
           <fw type="titulo_corriente" rend="cursiva">de Judas Macabeo.</fw>
-          <p><lb/>Con este pie tan Catholico entrò Judas en sus empres-
+          <p>
+            <lb/>Con este pie tan Catholico entrò Judas en sus empres-
                                     <lb/>sas, resistiendo por espacio de seis años las grandes, y
-                                    pro- <lb/>digiosas fuerzas de tres Reyes de la Asia, oponiendose
+                                    pro- <lb/>digiosas fuerzas de tres Reyes de la <name>Asia</name>, oponiendose
                                     con <lb/>un pequeño Esquadron bolante á Exercitos de quarenta,
                                     <lb/>sesenta, y de cien mil hombres, á quienes derrotò, y ven-
                                     <lb/>ciò ayudado de su Dios, que le miraba piadoso, compla-
@@ -3725,22 +3843,25 @@
                                     se mos- <lb/>traba muy reconocido á los favores del Cielo, y
                                     queria que <lb/>Dios triunfasse primero en todos los buenos
                                     sucessos, que <lb/>obtenian sus Vanderas.</p>
-          <p><lb/>Viòse palpablemente muchissimas veces la assistencia <lb/>de
+          <p>
+            <lb/>Viòse palpablemente muchissimas veces la assistencia <lb/>de
                                     su Dios; y mas quando èl solo desafiò en batalla cam- <lb/>pal
                                     à nueve Generales de Infieles, matando à algunos con <lb/>sus
                                     proprias manos, y llevandose los despojos. El prime- <lb/>ro de
                                     ellos fue Apolonio, hombre de grande reputacion en <lb/>el Reyno
-                                    de Antioco. Este fue el que entrò en Jerusalèn <lb/>con una
+                                    de <name>Antioco</name>. Este fue el que entrò en Jerusalèn <lb/>con una
                                     armada de veinte y dos mil hombres, y con color <lb/>de paz hizo
                                     un terrible destrozo. Sabiendo, pues, que Ju- <lb/>das Macabeo
                                     se havia puesto en Campaña con fuerzas de <lb/>poca
                                     consideracion ; èl no obstante, juntò grandes Tropas, <lb/>por
                                     impedir los progressos de los Judios, y salir con toda <fw type="reclamos">se-</fw>
-                                    <pb n="8" source="Varios_444_8.jpg" facs="varios/Varios_444_8.jpg"/>
-                                    <fw type="paginaNum">3</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+
+            <pb n="8" source="Varios_444_8.jpg" facs="varios/Varios_444_8.jpg"/>
+
+            <fw type="paginaNum">3</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>segurdad. Pero el valeroso Macabeo diò sobre él con tan-
+            <lb/>segurdad. Pero el valeroso Macabeo diò sobre él con tan-
                                     <lb/>ta presteza, que no tuvo lugar de ponerse en orden. Diòle
                                     <lb/>la batalla, en que viendo sus gentes los esfuerzos de los
                                     <lb/>Hebreos, que parecian fuertes como Gigantes, comenza-
@@ -3754,7 +3875,8 @@
                                     <lb/>Exercito temeroso, quitòle la cabeza, y la espada, de la
                                     <lb/>qual usò todo lo restante de su vida en muchas, y glorio-
                                     <lb/>sas batallas.</p>
-          <p><lb/>Seron, que era Lugar Teniente de Apolonio, llevado <lb/>del
+          <p>
+            <lb/>Seron, que era Lugar Teniente de Apolonio, llevado <lb/>del
                                     empeño de la venganza, y de la gloria, andaba bus- <lb/>cando
                                     con todo cuidado ocasiones, en que señalarse. Pen- <lb/>sò,
                                     pues, que la desgracia de Apolonio avia sido casual, <lb/>y que
@@ -3770,15 +3892,18 @@
                                     <lb/>le parecia à Seron lo havia mas con lobos habrientos,
                                     <lb/>que con hombres, y aunque vino echando brabatas, re-
                                     <lb/>conociò bien presto, que avia cantado el triunfo antes <fw type="reclamos">de</fw>
-                                    <pb n="9" source="Varios_444_9.jpg" facs="varios/Varios_444_9.jpg"/>
-                                    <fw type="paginaNum">9</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">de Judas
+
+            <pb n="9" source="Varios_444_9.jpg" facs="varios/Varios_444_9.jpg"/>
+
+            <fw type="paginaNum">9</fw>
+            <fw type="titulo_corriente" rend="cursiva">de Judas
                                           Macabeo.</fw>
-                                    <lb/>de la victoria, y tuvo harto que hacer en salvar la vida,
+            <lb/>de la victoria, y tuvo harto que hacer en salvar la vida,
                                           <fw type="paginaNum">9</fw>
-                                    <lb/>contentandose con huir despues de aver tenido esperan-
+            <lb/>contentandose con huir despues de aver tenido esperan-
                                     <lb/>zas de vencer.</p>
-          <p><lb/>Lyfias, que era Privado del Rey Antioco, rabioso <lb/>de verse
+          <p>
+            <lb/>Lyfias, que era Privado del Rey <name>Antioco</name>, rabioso <lb/>de verse
                                     atajado con un tan pequeño Exercito de gentes <lb/>abatidas, y
                                     no sabia què cuenta dar al Rey su Señor, à <lb/>quien avia
                                     prometido que destruiria todo el Pueblo He- <lb/>breo, sin que
@@ -3804,12 +3929,14 @@
                                     de las batallas, antes bien dexò <lb/>prender á Judas por
                                     traycion, pues era invencible por <lb/>fuerza. Hizo muestra de
                                     buscarle de paz, y con color <fw type="signaturas">B</fw>
-                                    <fw type="reclamos">de</fw>
-                                    <pb n="10" source="Varios_444_10.jpg" facs="varios/Varios_444_10.jpg"/>
-                                    <fw type="paginaNum">10</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+            <fw type="reclamos">de</fw>
+
+            <pb n="10" source="Varios_444_10.jpg" facs="varios/Varios_444_10.jpg"/>
+
+            <fw type="paginaNum">10</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>de amistad trabar con èl conversacion, y con ella apode-
+            <lb/>de amistad trabar con èl conversacion, y con ella apode-
                                     <lb/>rarse de èl, pareciendole ser éste el mas breve medio pa-
                                     <lb/>ra acabar la guerra. Pero Judas puso buena orden en la
                                     <lb/>seguridad de su persona, con lo que divirtiò el mal in-
@@ -3826,24 +3953,27 @@
                                     <lb/>Judas, y Nicanor. Por esta causa le fue forzoso ir de pres-
                                     <lb/>to á la Corte, para justificarse, y quedò bien; pero con
                                     un <lb/>expresso mandato, que embiasse preso al Macabeo à la
-                                    <lb/>Ciudad de Antioquia, si queria que le creyesse sus escu-
-                                    <lb/>sas. Bolviò, pues, á Judea, continuando siempre sus
+                                    <lb/>Ciudad de <name>Antioquia</name>, si queria que le creyesse sus escu-
+                                    <lb/>sas. Bolviò, pues, á <name>Judea</name>, continuando siempre sus
                                     <lb/>trazas: pero Judas advertido, no se confiò de èl, y dexò
-                                    á <lb/>Jerusalèn por retirarse á Samaria. Nicanor notificò a
+                                    á <lb/>Jerusalèn por retirarse á <name>Samaria</name>. Nicanor notificò a
                                     los <lb/>Sacerdotes, que se lo entregassen muerto, ò vivo ; y
                                     en <lb/>caso de no hacerlo, amenazaba, que profanaria el Tem-
                                     <lb/>plo, y lo dedicaria á sus falsos Dioses. Los Sacerdotes le
                                     <lb/>juraron que estaba fuera de su poder; y assi, viendo que
                                     <lb/>Judas avia dexado la Ciudad, se retirò con intento de bus-
                                     <lb/>carle por todas partes, y llevarle preso al Rey.</p>
-          <p><lb/>Judas tuvo à mengua no salirle al encuentro. Dispuso
+          <p>
+            <lb/>Judas tuvo à mengua no salirle al encuentro. Dispuso
                                     <lb/>todo su Exercito con devociones extraordinarias, y fer-
                                     <lb/>vorosas exhortaciones, para emprender uno de los mas <fw type="reclamos">im-</fw>
-                                    <pb n="11" source="Varios_444_11.jpg" facs="varios/Varios_444_11.jpg"/>
-                                    <fw type="titulo_corriente" rend="cursiva">de Judas
+
+            <pb n="11" source="Varios_444_11.jpg" facs="varios/Varios_444_11.jpg"/>
+
+            <fw type="titulo_corriente" rend="cursiva">de Judas
                                           Macabeo.</fw>
-                                    <fw type="paginaNum">14</fw>
-                                    <lb/>importantes cembates. Nicaror hizo marchar sus Tro¬
+            <fw type="paginaNum">14</fw>
+            <lb/>importantes cembates. Nicaror hizo marchar sus Tro¬
                                     <lb/>pas, que era en gran numero, y seresolviò á dar la bata¬
                                     <lb/>launSabado, pareciendole, queporser dia de fieſta ha¬
                                     <lb/>fiamejor deſtrozo de la sangre de los enemigos. Tenia en
@@ -3854,14 +3984,16 @@
                                     es¬ <lb/>tediaSabado para favorecer su pureza? Ellos respondie¬
                                     <lb/>ron, que Dios del Cielo era qulen lo avia deſtinado para
                                     <lb/>gloria suya: à lo que èl respondiò sobervio, y
-                                    arrogante: <hi rend="cursiva"><lb/>Que el Dios del Cielo se
+                                    arrogante: <hi rend="cursiva">
+              <lb/>Que el Dios del Cielo se
                                           contentase de hacer leyes en su dominio, y <lb/>que ll,
                                           que era todopoderoso en la tierra, les mandaba marchasen
                                           <lb/>por los negocios del Rey. O blasfemo! tu pagarás la
                                           maldad.</hi>
-                                    <lb/>Arrogancia propria de un diffoluto Co dado, que muchos
+            <lb/>Arrogancia propria de un diffoluto Co dado, que muchos
                                     <lb/>fundan su valor en semejantes difloluciones.</p>
-          <p><lb/>Diò, en fin, la batalla; y como la venganza de Dios <lb/>le
+          <p>
+            <lb/>Diò, en fin, la batalla; y como la venganza de Dios <lb/>le
                                     perseguia por blasfemo, sucediòle tan mal, que fiendo
                                     <lb/>totalmente derrotado por Judas, dexò treinta y cinco mil
                                     <lb/>hombres muertos en el campo, y èl aumentò el numero,
@@ -3874,14 +4006,17 @@
                                     <lb/>Eſte fin tuvo aquel blasfemo, dando doctrina : que nunca
                                     <lb/>se menosprecia á Dios en la vida, que no seexperimente
                                     <lb/>su juita venganza en la muerte.</p>
-          <p><lb/>Llegaron las noticias de eſta derrota al Rey Antioco, <fw type="signaturas">B2</fw>
-                                    <fw type="reclamos">y</fw>
-                                    <pb n="12" source="Varios_444_12.jpg" facs="varios/Varios_444_12.jpg"/>
-                                    <fw type="paginaNum">12</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+          <p>
+            <lb/>Llegaron las noticias de eſta derrota al Rey <name>Antioco</name>, <fw type="signaturas">B2</fw>
+            <fw type="reclamos">y</fw>
+
+            <pb n="12" source="Varios_444_12.jpg" facs="varios/Varios_444_12.jpg"/>
+
+            <fw type="paginaNum">12</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>y como el esforzado Macabeo avia derrotado toda la
-                                    <lb/>gente, que ténia en Judea con sus tres Capitanes. Fue mu-
+            <lb/>y como el esforzado Macabeo avia derrotado toda la
+                                    <lb/>gente, que ténia en <name>Judea</name> con sus tres Capitanes. Fue mu-
                                     <lb/>cho el sentimiento de este Principe; y como este fracaso
                                     <lb/>caìa sobre otro que acababa de recibir èl mismo, donde
                                     <lb/>perdiò toda su gente; y èl estuvo à pique de perecer, se
@@ -3904,7 +4039,8 @@
                                     miserable <lb/>cuerpo de extrañas maneras. La hediondèz era
                                     tan grande, <lb/>que todo su Exercito sentia la infeccion, y aun
                                     èl mis- <lb/>mo apenas se podia sufrir.</p>
-          <p><lb/>Era horrible el tormento que padecia este desdichado <lb/>Rey
+          <p>
+            <lb/>Era horrible el tormento que padecia este desdichado <lb/>Rey
                                     : unas veces estaba tan colerico, que vomitaba blas- <lb/>femias
                                     execrables; otras se ponia á llorar, haciendo cosas
                                     <lb/>indecentes à su Dignidad, lamentandose de la pèrdida de
@@ -3912,10 +4048,13 @@
                                     <lb/>fante, y lleno de honra, sanidad, contentos, y
                                     delicias.</p>
           <fw type="reclamos">Otras</fw>
+
           <pb n="13" source="Varios_444_13.jpg" facs="varios/Varios_444_13.jpg"/>
+
           <fw type="titulo_corriente" rend="cursiva">de Judas Macabeo.</fw>
           <fw type="paginaNum">13</fw>
-          <p><lb/>Otras veces padecia formidables assombros, y tenia ter-
+          <p>
+            <lb/>Otras veces padecia formidables assombros, y tenia ter-
                                     <lb/>ribles remordimientos sobre su vida passada, diciendo,
                                     <lb/>que toda su desdicha le venia de aver profanado el Tem-
                                     <lb/>plo de Jerusalèn, y hecho una tan sangrienta carnicerìa
@@ -3927,7 +4066,8 @@
                                     salud, <lb/>avia de reparar todas sus faltas con una piedad
                                     extraor- <lb/>dinaria, colmando de riquezas el Templo, que èl
                                     avia <lb/>saqueado.</p>
-          <p><lb/>Proponia, que trataria á los Judios con todo agassajo, y
+          <p>
+            <lb/>Proponia, que trataria á los Judios con todo agassajo, y
                                     <lb/>con todas las liberalidades possibles à un Rey poderoso:
                                     <lb/>que restituiria todos los vasos sagrados que avia usurpa-
                                     <lb/>do al Templo; y añadia á esto, que haria profession de
@@ -3946,17 +4086,20 @@
                                     <lb/>años, para sufrir una eternidad de suplicios, y tormen-
                                     <lb/>tos el Infierno.</p>
           <fw type="reclamos">Hase</fw>
+
           <pb n="14" source="Varios_444_14.jpg" facs="varios/Varios_444_14.jpg"/>
+
           <fw type="paginaNum">14</fw>
           <fw type="titulo_corriente" rend="cursiva">Historia verdadera</fw>
-          <p><lb/>Hase notado en muchas Historias, que los Tyranos <lb/>muy
+          <p>
+            <lb/>Hase notado en muchas Historias, que los Tyranos <lb/>muy
                                     sangrientos no han acabado con la espada, sino con <lb/>alguna
                                     enfermedad estraña, y llagas visibles, que les qui- <lb/>taban
                                     la vida poco á poco, y les hacian testigos de su pro- <lb/>pria
                                     deshonra, y de sus proprios funerales. Assi murieron
                                     <lb/>Herodes, Tyberio, Alcymo, Copronimo, Leon, y otros.
-                                    <lb/>Este desdichado Rey Antioco dexò un hijo de pequeña
-                                    <lb/>edad, llamado Antioco Eupator, que succediò á su pa-
+                                    <lb/>Este desdichado Rey <name>Antioco</name> dexò un hijo de pequeña
+                                    <lb/>edad, llamado <name>Antioco</name> Eupator, que succediò á su pa-
                                     <lb/>dre, assi en la desdicha, como en el Imperio. Tomòle a
                                     <lb/>su cargo Lysias, haciendo de Governador, y principal
                                     <lb/>Ministro de Estado en el Imperio de este joven Rey.
@@ -3964,11 +4107,12 @@
                                     <lb/>sus delicias, acompañadas de mil promessas, de que le
                                     <lb/>haria vivir el mas contento, y mas triunfante Monarca
                                     <lb/>del mundo.</p>
-          <p><lb/>El nuevo Governador, fuesse por el odio que tenia <lb/>à los
+          <p>
+            <lb/>El nuevo Governador, fuesse por el odio que tenia <lb/>à los
                                     Judios, ò por desear luciessen las armas de su Prin- <lb/>cipe,
                                     ò por las quexas que cada dia oìa de las hazañas,
                                     <lb/>progressos del Macabeo, juntò un formidable, y grues-
-                                    <lb/>so Exercito, y vino con èl contra Judea. Compomianse
+                                    <lb/>so Exercito, y vino con èl contra <name>Judea</name>. Compomianse
                                     <lb/>estas Tropas de cien mil Infantes, y veinte mil Cavallos,
                                     <lb/>con treinta y dos Elefantes armados, repartidos en dife-
                                     <lb/>rentes Legiones, que traìan encima torres de madera
@@ -3981,10 +4125,13 @@
                                     tanta <lb/>multitud de Paganos, q para su infinito Poder eran un
                                     soplo.</p>
           <fw type="reclamos">Ju-</fw>
+
           <pb n="15" source="Varios_444_15.jpg" facs="varios/Varios_444_15.jpg"/>
+
           <fw type="paginaNum">15</fw>
           <fw type="titulo_corriente" rend="cursiva">de Judas Macabeo.</fw>
-          <p><lb/>Judas, en fin, tuvo animo para salir de la Fortaleza
+          <p>
+            <lb/>Judas, en fin, tuvo animo para salir de la Fortaleza
                                     <lb/>donde estaba à ir à reconocerlos, y oponerse á sus
                                     inten- <lb/>tos. Pero apenas fue visto, quando el Exercito
                                     enemigo <lb/>se puso en batalla delante de su Rey mozo, que
@@ -4014,11 +4161,13 @@
                                     <lb/>legò hasta donde estaba esta formidable bestia, y arre-
                                     <lb/>metiendo á ella, la atravesò con su espada; pero hallan-
                                     <lb/>dose embarazado con la muchedumbre de gente que le <fw type="reclamos">ro-</fw>
-                                    <pb n="16" source="Varios_444_16.jpg" facs="varios/Varios_444_16.jpg"/>
-                                    <fw type="paginaNum">16</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+
+            <pb n="16" source="Varios_444_16.jpg" facs="varios/Varios_444_16.jpg"/>
+
+            <fw type="paginaNum">16</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>rodeaba por todas partes, y cayendo muerto aquel ani-
+            <lb/>rodeaba por todas partes, y cayendo muerto aquel ani-
                                     <lb/>mado baluarte, le cogiò debaxo, y le matò sin poderse
                                     <lb/>prontamente retirarse: y à esto dixo el Doctor S. Ambro-
                                     <lb/>sio, que <hi rend="cursiva">Eliazaro valiente se hallo
@@ -4027,7 +4176,8 @@
                                     aviendo reconocido las poderofas fuer- <lb/>zas de su contrario,
                                     considerò, que no era el partido igual, <lb/>è hizo una honrada
                                     retirada, y se entrò en Jerusalèn.</p>
-          <p><lb/>Lysias le fue siguiendo apretadissimamente ; èl se defen-
+          <p>
+            <lb/>Lysias le fue siguiendo apretadissimamente ; èl se defen-
                                     <lb/>dia con gran valor, resuelto á morir antes en el puesto,
                                     <lb/>que rendir la Plaza con ningun genero de cobardia. <lb/>Los
                                     sitiados despues de algun tiempo fueron reducidos á <lb/>la
@@ -4046,26 +4196,34 @@
                                     viendose libres de tan formidable Exercito. O <lb/>Clementissimo
                                     Dios, y qué piadofo sois con vuestros <lb/>siervos,
                                     aisitiendolos fiempre en sus mayores tribula- <lb/>ciones!</p>
-          <p><lb/>Pretendia un tal Demetrio, tio del Rey mozo Eu- <lb/>pator,
-                                    invadir los Estados de su sobrino. Este Deme- <fw type="reclamos">trio</fw><pb n="17" source="Varios_444_17.jpg" facs="varios/Varios_444_17.jpg"/><fw type="titulo_corriente" rend="cursiva">de Judas
-                                          Macabeo.</fw><fw type="paginaNum">17</fw><lb/>trio se declarò, y tomò la Diadema con un general aplau-
-                                    <lb/>so de los de Tyro, que hacian una gran faccion. Lysias
+          <p>
+            <lb/>Pretendia un tal Demetrio, tio del Rey mozo Eu- <lb/>pator,
+                                    invadir los Estados de su sobrino. Este Deme- <fw type="reclamos">trio</fw>
+
+            <pb n="17" source="Varios_444_17.jpg" facs="varios/Varios_444_17.jpg"/>
+
+            <fw type="titulo_corriente" rend="cursiva">de Judas
+                                          Macabeo.</fw>
+            <fw type="paginaNum">17</fw>
+            <lb/>trio se declarò, y tomò la Diadema con un general aplau-
+                                    <lb/>so de los de <name>Tyro</name>, que hacian una gran faccion. Lysias
                                     <lb/>con su Eupator se hallò asustado con esta nueva, y estu-
                                     <lb/>vo mucho tiempo en determinarse, si iria à recibirle, y
-                                    <lb/>darle batalla, ò retirarse à la Ciudad de Antioquia, y
+                                    <lb/>darle batalla, ò retirarse à la Ciudad de <name>Antioquia</name>, y
                                     <lb/>aguardarle fortificado. Este ultimo medio le pareciò mas
                                     <lb/>seguro; pero era menos glorioso encerrarse luego al pun-
                                     <lb/>to al primer ruido de una sedicion, y como un cobarde
                                     <lb/>animal, esconderse en su cueva. Los que deseaban mas
                                     <lb/>la ruina de Lysias eran los que mas le adulaban con el
                                     <lb/>valor, y generosidad, no deseando mas, que verle en
-                                    <lb/>campaña. Esto fue lo que le hizo salir de Antioquia, por
+                                    <lb/>campaña. Esto fue lo que le hizo salir de <name>Antioquia</name>, por
                                     <lb/>ir à encontrar à Demetrio. Pero èl, que parecia iba bien
                                     <lb/>acompañado, se hallò casi solo en el peligro; porque sus
                                     <lb/>proprios Soldados le cogieron con traycion, y le vendie-
                                     <lb/>ron, apoderandose del Rey mozo; y de el, para entre-
                                     <lb/>garlo à Demetrio.</p>
-          <p><lb/>Este estaba aun con grande incertidumbre del sucesso;
+          <p>
+            <lb/>Este estaba aun con grande incertidumbre del sucesso;
                                     <lb/>pero breve le dieron las nuevas, de que Lysias, y su
                                     <lb/>Pupilo el Rey, estaban presos por consentimiento de to-
                                     <lb/>das las Legiones, y que ya los traìan à su poder. Llega-
@@ -4077,26 +4235,29 @@
                                     <lb/>hiciesse, porque le vituperassen menos la accion, y pu-
                                     <lb/>diesse èl justificar facilmente en el Senado Romano so-
                                     <lb/>bre la muerte de este Rey mozo. Los Soldados acabaron <fw type="signaturas">C</fw>
-                                    <fw type="reclamos">lo</fw>
-                                    <pb n="18" source="Varios_444_18.jpg" facs="varios/Varios_444_18.jpg"/>
-                                    <fw type="paginaNum">18</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+            <fw type="reclamos">lo</fw>
+
+            <pb n="18" source="Varios_444_18.jpg" facs="varios/Varios_444_18.jpg"/>
+
+            <fw type="paginaNum">18</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>lo que él avia comenzado. Mataron á Lysias, y fue-
+            <lb/>lo que él avia comenzado. Mataron á Lysias, y fue-
                                     <lb/>ron con sus manos sangrientas á dar contra la persona
                                     <lb/>del pobre Eupator, sin hacer reparo, ni en la inocen-
                                     <lb/>cia de su vida, ni en lo tierno de su edad, ni en el ca-
                                     <lb/>racter que tenia. En fin, Demetrio se viò luego al pun-
                                     <lb/>to Rey por consentimiento general de todos los Estados
                                     <lb/>del Reyno.</p>
-          <p><lb/>Apenas fue puesto en el trono, quando por desdicha <lb/>se
+          <p>
+            <lb/>Apenas fue puesto en el trono, quando por desdicha <lb/>se
                                     viò enredado en la guerra contra los Macabeos. Al- <lb/>cimo,
                                     que era un Judio desleal, y traydor á su Nacion, <lb/>picado de
                                     la ambicion del Pontificado, y rabioso en su- <lb/>mo grado de
                                     los grandes progressos de Judas, fue à ha- <lb/>blar à este
                                     Principe, que era muy facil de creer, y le pu- <lb/>so en mal
                                     con su contrario, diciendole horribles calum- <lb/>nias, y
-                                    procurando empeñar todos los Reyes de Syria <lb/>para su ruina.
+                                    procurando empeñar todos los Reyes de <name>Syria</name> <lb/>para su ruina.
                                     Este forjador de guerras, y batallas alcan- <lb/>zò todo lo que
                                     quiso con sus detestables artificios, è hi- <lb/>zo venir los
                                     Exercitos á la ruina, y desolacion de su Pa- <lb/>tria. Judas
@@ -4109,9 +4270,16 @@
                                     Reynado. Por esta causa hizo poner en <lb/>campaña Exercito
                                     sobre Exercito, con tantas fuerzas, <lb/>que no avia mas medio
                                     de resistirlas.</p>
-          <p><lb/>Con todo esso el gran corazon del Macabeo no se po- <lb/>dia
-                                    rendir, y bogaba contra el viento, y marea, hacien- <fw type="reclamos">do</fw><pb n="19" source="Varios_444_19.jpg" facs="varios/Varios_444_19.jpg"/><fw type="paginaNum">19</fw><fw type="titulo_corriente" rend="cursiva">de Judas
-                                          Macabeo.</fw><lb/>do los pensamientos de su valor olvidar los de su peligro.
+          <p>
+            <lb/>Con todo esso el gran corazon del Macabeo no se po- <lb/>dia
+                                    rendir, y bogaba contra el viento, y marea, hacien- <fw type="reclamos">do</fw>
+
+            <pb n="19" source="Varios_444_19.jpg" facs="varios/Varios_444_19.jpg"/>
+
+            <fw type="paginaNum">19</fw>
+            <fw type="titulo_corriente" rend="cursiva">de Judas
+                                          Macabeo.</fw>
+            <lb/>do los pensamientos de su valor olvidar los de su peligro.
                                     <lb/>Tenia aun tres mil hombres, gente determinada, con
                                     <lb/>quien se prometia continuar sus victorias : pero aviendose
                                     <lb/>aparecido el General Bachides con un Exercito de vein-
@@ -4124,7 +4292,8 @@
                                     <lb/>muy afligido, viendose desamparado de sus amigos en la
                                     <lb/>mayor necessidad; y confiderando la poca gente que te-
                                     <lb/>nia, rebentaba de enojo.</p>
-          <p><lb/>Era evidente peligro el acercarse al enemigo, y una
+          <p>
+            <lb/>Era evidente peligro el acercarse al enemigo, y una
                                     <lb/>muerte el acercarse. Diversos pensamientos sobre este
                                     <lb/>combate disputaban en su corazon; pero los que favore-
                                     <lb/>cian su valor salieron con la suya. Vamos, dixo á su gen-
@@ -4141,15 +4310,18 @@
                                     que tomè las ar- <lb/>mas. Què es esto ? Dònde està la
                                     generosidad, que siempre he re- <lb/>conocido en vosotros? No es
                                     menester tener tanto amor à la vi- <fw type="signaturas">C2</fw>
-                                    <fw type="reclamos">da,</fw>
-                                    <pb n="20" source="Varios_444_20.jpg" facs="varios/Varios_444_20.jpg"/>
-                                    <fw type="paginaNum">20</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+            <fw type="reclamos">da,</fw>
+
+            <pb n="20" source="Varios_444_20.jpg" facs="varios/Varios_444_20.jpg"/>
+
+            <fw type="paginaNum">20</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>da, si nuestra hora es ya llegada : muramos valerosamante
+            <lb/>da, si nuestra hora es ya llegada : muramos valerosamante
                                     por <lb/>nuestros hermanos, y no dexemos mancha ninguna en el
                                     explendor <lb/>de la honra que hemos adquirido.</p>
-          <p><lb/>Con esta exhortacion los traxo à todos á su autoridad, y
+          <p>
+            <lb/>Con esta exhortacion los traxo à todos á su autoridad, y
                                     <lb/>se resolvieron à vencer, ò morir. Empezaron á sonar las
                                     <lb/>trompetas de una y otra parte : resonaba la tierra con el
                                     <lb/>ruido de las armas, y gritos de los Soldados. Bachides
@@ -4169,25 +4341,29 @@
                                     <lb/>ble Macabeo, despues de aver recibido muchas heridas,
                                     <lb/>abriò otras tantas puertas sangrientas á su generosa alma
                                     <lb/>pará bolar al otro mundo.</p>
-          <p><lb/>No ay Colosos, ni Pyramides que puedan igualar los <lb/>hechos
+          <p>
+            <lb/>No ay Colosos, ni Pyramides que puedan igualar los <lb/>hechos
                                     de este generoso varon. Nunca persona peleò me- <lb/>jor, ni
                                     por mas buena causa. Su corazon era una fuente <lb/>de llamas
                                     bizarras: su mano era el mismo rayo: su vir- <lb/>tud un
                                     milagro: su vida un exemplo; y su muerte venia <lb/>á ser el
                                     fin de toda su Patria, si sus hermanos Jonatàs <fw type="reclamos">y</fw>
-                                    <pb n="21" source="Varios_444_21.jpg" facs="varios/Varios_444_21.jpg"/>
-                                    <fw type="paginaNum">21</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">de Judas
+
+            <pb n="21" source="Varios_444_21.jpg" facs="varios/Varios_444_21.jpg"/>
+
+            <fw type="paginaNum">21</fw>
+            <fw type="titulo_corriente" rend="cursiva">de Judas
                                           Macabeo.</fw>
-                                    <lb/>y Simon no huviessen dilatado sus hazañas con la imita-
+            <lb/>y Simon no huviessen dilatado sus hazañas con la imita-
                                     <lb/>cion de sus proezas, haciendo las maravillas que á todo
                                     <lb/>el mundo es notorio. Quedò enflaquecido el buen parti-
                                     <lb/>do por la muerte del que era el alma de toda su Patria, y
-                                    <lb/>parecia que Judea avia de ser bien presto tragada de las
+                                    <lb/>parecia que <name>Judea</name> avia de ser bien presto tragada de las
                                     <lb/>grandes fuerzas del Rey Demetrio. Pero la mano socor-
                                     <lb/>redora del Dios de los Exercitos no faltò à sus siervos
                                     en <lb/>lo estremo de sus miserias.</p>
-          <p><lb/>El pernicioso Alcimo, que avia levantado esta borras- <lb/>ca,
+          <p>
+            <lb/>El pernicioso Alcimo, que avia levantado esta borras- <lb/>ca,
                                     quando pensò obtener sus pretensiones, fue herido <lb/>de una
                                     llaga del Cielo, y muriò presto de una estraña en-
                                     <lb/>fermedad. Demetrio, despues de aver reynado algunos
@@ -4208,27 +4384,30 @@
                                     Llegaron las de Demetrio á tanto, que le hi- <lb/>zo todas
                                     estas promessas. Haciale essento de todos los <lb/>tributos, le
                                     quitaba las guarniciones, le daba presenta- <fw type="reclamos">das</fw>
-                                    <pb n="22" source="Varios_444_22.jpg" facs="varios/Varios_444_22.jpg"/>
-                                    <fw type="paginaNum">22</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+
+            <pb n="22" source="Varios_444_22.jpg" facs="varios/Varios_444_22.jpg"/>
+
+            <fw type="paginaNum">22</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>das algunas Plazas de importancia, prometiale recibir
+            <lb/>das algunas Plazas de importancia, prometiale recibir
                                     <lb/>los Judios à los Oficios, y Goviernos, le entregaba to-
                                     <lb/>dos los de su Nacion que tenia en rehenes, le daba en-
                                     <lb/>tera libertad de su Religion, y Govierno, y tambien
                                     <lb/>rentas para el Templo, de modo, que no avia ma <lb/>que
                                     desear.</p>
-          <p><lb/>Con todo esso, Jonatàs nunca quiso seguir sus Es-
+          <p>
+            <lb/>Con todo esso, Jonatàs nunca quiso seguir sus Es-
                                     <lb/>tandartes ; y como los agravios estaban frescos, dolian
                                     <lb/>mas que los antiguos. Los Judios tuvieron por mejor
                                     <lb/>seguir à Alexandro, que à Demetrio, que les avia muer-
                                     <lb/>to á su querido Macabeo, y les tenia aun tan oprimi-
                                     <lb/>da la libertad. En fin, hecha la faccion, Demetrio fue
                                     <lb/>vencido, y muerto. Subiò Alexandro al Trono, y luego
-                                    <lb/>Philometor, Rey de Egypto, que le avia amparado mu-
+                                    <lb/>Philometor, Rey de <name>Egypto</name>, que le avia amparado mu-
                                     <lb/>cho por sus particulares intereses, le diò á su hija Cleo-
                                     <lb/>patra en casamiento, cuyas bodas fueron pomposamen- <lb/>te
-                                    celebradas en la Ciudad de Ptolomayda en presen- <lb/>cia de los
+                                    celebradas en la Ciudad de <name>Ptolomayda</name> en presen- <lb/>cia de los
                                     dos Reyes. Tambien se hallò alli Jonatás, <lb/>que fuè
                                     acariciado por entrambos con favores extraordi- <lb/>narios, y
                                     dispuso ventajosamente todas las materias de <lb/>su Estado.
@@ -4237,17 +4416,20 @@
                                     assi sus Vassallos como los gran- <lb/>des, se levantaron contra
                                     èl: huyò vestido de muger por <lb/>dissimular, y salvarse: pero
                                     cogido en este mismo tra- <lb/>ge, fue muerto.</p>
-          <p><lb/>Bolvieron á acordarse, y echar menos á Demetrio, <lb/>y
+          <p>
+            <lb/>Bolvieron á acordarse, y echar menos á Demetrio, <lb/>y
                                     sabiendo avia dexado dos hijos, llamaron al mayor, <lb/>que era
-                                    Antioco Sydeses, para darle la Corona. Philo- <fw type="reclamos">me-</fw>
-                                    <pb n="23" source="Varios_444_23.jpg" facs="varios/Varios_444_23.jpg"/>
-                                    <fw type="titulo_corriente" rend="cursiva">de Judas
+                                    <name>Antioco</name> Sydeses, para darle la Corona. Philo- <fw type="reclamos">me-</fw>
+
+            <pb n="23" source="Varios_444_23.jpg" facs="varios/Varios_444_23.jpg"/>
+
+            <fw type="titulo_corriente" rend="cursiva">de Judas
                                           Macabeo.</fw>
-                                    <fw type="paginaNum">23</fw>
-                                    <lb/>metor, que estaba afrentado de los procederes de su
+            <fw type="paginaNum">23</fw>
+            <lb/>metor, que estaba afrentado de los procederes de su
                                     <lb/>yerno, debaxo del pretexto de moderacion, metiò la
-                                    <lb/>mano, y tirò á juntar la Corona de Syria con la de
-                                    <lb/>Egypto; y assi diò al joven Demetrio su hija Cleopatra.
+                                    <lb/>mano, y tirò á juntar la Corona de <name>Syria</name> con la de
+                                    <lb/><name>Egypto</name>; y assi diò al joven Demetrio su hija Cleopatra.
                                     <lb/>Este tambien se viciò mucho despues que se viò en el
                                     <lb/>Trono ; y esto fue causa de nuevas sediciones, que se le-
                                     <lb/>vantaron en su Reyno. Tripon, que avia sido de las
@@ -4259,26 +4441,29 @@
                                     <lb/>sus designios, y deshacer la trama de sus ambiciones, le
                                     <lb/>cogiò con una detestable traycion, y le hizo matar con
                                     <lb/>sus hijos.</p>
-          <p><lb/>El malvado Tripon matò despues á su Pupilo, fin-
+          <p>
+            <lb/>El malvado Tripon matò despues á su Pupilo, fin-
                                     <lb/>giendo, que avia muerto de enfermedad, y tomò la
                                     <lb/>Diadema, diciendo era èl el vengador del tyrano, y <lb/>el
-                                    Rey legitimo de Syria. A èste persiguiò Antioco Sy-
+                                    Rey legitimo de <name>Syria</name>. A èste persiguiò Antioco Sy-
                                     <lb/>deses, y aviendole sitiado en la Ciudad de Dora, vien-
                                     <lb/>dose desesperado de socorro, se matò con sus proprias
                                     <lb/>manos. El vencedor acordòse, que los Macabeos en los
-                                    <lb/>alborotos de Syria avian hecho grandes progressos, y los
+                                    <lb/>alborotos de <name>Syria</name> avian hecho grandes progressos, y los
                                     <lb/>quiso reprimir haciendo guerra à Simon, que avia suc-
                                     <lb/>cedido á su hermano Jonatàs, y en un banquete fue
                                     <lb/>muerto por Ptolomeo, aviendo aprobado el Rey este
                                     <lb/>cruel insulto. Dos de sus hijos fueron embueltos en la
                                     <lb/>desdicha de su padre. Los matadores quisieron hacer lo
                                     <lb/>mismo con Hircano, hijo del mismo Simon : pero te <fw type="reclamos">nien-</fw>
-                                    <pb n="24" source="Varios_444_24.jpg" facs="varios/Varios_444_24.jpg"/>
-                                    <fw type="paginaNum">24</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+
+            <pb n="24" source="Varios_444_24.jpg" facs="varios/Varios_444_24.jpg"/>
+
+            <fw type="paginaNum">24</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>niendo aviso de ello, se guardò muy bien, y governò à
-                                    <lb/>Judea mas de treinta años con mucha prudencia, y feli-
+            <lb/>niendo aviso de ello, se guardò muy bien, y governò à
+                                    <lb/><name>Judea</name> mas de treinta años con mucha prudencia, y feli-
                                     <lb/>cidad. Hircano tuvo por succeſlor á su hijo Aristobulo,
                                     <lb/>despues de una larga interrupcion : lo qual sucediò cien
                                     <lb/>años antes del Nacimiento de Christo. Los de su linage
@@ -4294,7 +4479,8 @@
           <p>Reimprimase. Guemes.</p>
         </div>
         <div type="colofon">
-          <p rend="cursiva"><lb/>Se
+          <p rend="cursiva">
+            <lb/>Se
                                     hallarà en Murcia en la Imprenta, y Libreria de Francisco
                                     Benedito, vive en la calle de la Plateria, donde se hallaràn de
                                     otras diferentes.</p>

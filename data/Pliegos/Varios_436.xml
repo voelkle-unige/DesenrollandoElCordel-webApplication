@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -43,7 +57,7 @@
             <country>Suisse</country>
             <settlement>Genève</settlement>
             <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
+            </repository>
             <collection>Colección Varios</collection>
             <idno type="cote"/>
             <idno type="DOI">10.5281/zenodo.6798731</idno>
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="32"/>32 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="32"/>32 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -102,6 +117,98 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q21">
+            <placeName key="Inglaterra">Inglaterra</placeName>
+            <location>
+              <geo>53 -1</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q23988230">
+            <placeName key="Islas_Canarias">Islas Canarias</placeName>
+            <location>
+              <geo>28 -15.5</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q155">
+            <placeName key="Brasil">Brasil</placeName>
+            <location>
+              <geo>-14 -53</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1055">
+            <placeName key="Hamburgo">Hamburgo</placeName>
+            <location>
+              <geo>53.55 10</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q84">
+            <placeName key="Londres">Londres</placeName>
+            <location>
+              <geo>51.507222222222 -0.1275</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q15">
+            <placeName key="África">África</placeName>
+            <location>
+              <geo>21.09375 7.1881</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q597">
+            <placeName key="Lisboa">Lisboa</placeName>
+            <location>
+              <geo>38.708042 -9.139016</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q166131">
+            <placeName key="Antillas">Antillas</placeName>
+            <location>
+              <geo>18.2176 -67.8639</geo>
+            </location>
+          </place>
+          <place n="6" corresp="Q828">
+            <placeName key="América">América</placeName>
+            <location>
+              <geo>19 -96</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q183">
+            <placeName key="Alemania">Alemania</placeName>
+            <location>
+              <geo>51 10</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q285235">
+            <placeName key="Bañuelos_de_Bureba">Bañuelos De Bureba</placeName>
+            <location>
+              <geo>42.500833333333 -3.2805555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q241">
+            <placeName key="Cuba">Cuba</placeName>
+            <location>
+              <geo>22 -79.5</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q15682">
+            <placeName key="Cádiz">Cádiz</placeName>
+            <location>
+              <geo>36.535 -6.2975</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q72259">
+            <placeName key="Portsmouth">Portsmouth</placeName>
+            <location>
+              <geo>50.805833333333 -1.0872222222222</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -142,7 +249,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_436_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_436_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_436_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_436_1/full/full/0/default.jpg"/>
@@ -5695,22 +5804,32 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_436_1.jpg" facs="varios/Varios_436_1.jpg"/>
-        <head type="primer_titulo"><lb/>HISTORIA <lb/>DE <lb/>ROBINSON.</head>
+
+        <head type="primer_titulo">
+          <lb/>HISTORIA <lb/>DE <lb/>ROBINSON.</head>
         <div type="colofon">
-          <p><lb/>MADRID.—Despacho: Sucesores de Hernando, Arenal, 11—</p>
+          <p>
+            <lb/>MADRID.—Despacho: Sucesores de Hernando, Arenal, 11—</p>
         </div>
+
         <pb n="2" source="Varios_436_2.jpg" facs="varios/Varios_436_2.jpg"/>
+
+
         <pb n="3" source="Varios_436_3.jpg" facs="varios/Varios_436_3.jpg"/>
+
         <div type="parte" n="1">
           <head type="titulo_parte">AL LECTOR.</head>
-          <p><lb/>La historia verdadera del NUEVO ROBINSON que damos al
+          <p>
+            <lb/>La historia verdadera del NUEVO ROBINSON que damos al
                                     publi-<lb/>co, es una de aquellas historias que son buscadas con
                                     afan y avides<lb/>por todas las personas que gustan instruirse
                                     con aquellos libros que,<lb/>lejos de perjudicar la moral y
                                     buenas costumbres, las mejoran por<lb/>los ejemplos que
                                     ofrecen.</p>
-          <p><lb/>En la historia de Robinson encontrarán los lectores un
+          <p>
+            <lb/>En la historia de Robinson encontrarán los lectores un
                                     sinnúme-<lb/>ro de ejemplos saludables y dignos de imitarse,
                                     porque todos ellos<lb/>tienden á manifestar el agradecimiento
                                     que debe darse á Dios por los<lb/>contínuos beneficios que nos
@@ -5718,7 +5837,8 @@
                                     adversidades no abandona á sus criaturas, antes<lb/>al
                                     contrario, les tiende su mano protectora para sacarles de la
                                     infeli-<lb/>cidad.</p>
-          <p><lb/>Robinson es una prueba de esta verdad, pues si bien por su
+          <p>
+            <lb/>Robinson es una prueba de esta verdad, pues si bien por su
                                     ca-<lb/>pricho, ya mal aconsejado y desobedeciendo á sus padres
                                     se apartó<lb/>del camino que le impusieran las leyes de la
                                     naturaleza, aunque su-<lb/>frió mil trabajos y penalidades,
@@ -5727,20 +5847,25 @@
                                     per-<lb/>mitió que despues de sus miserias volviese al seno de
                                     la familia, de<lb/>donde tan sin fundamento se habia
                                     apartado.</p>
-          <p><lb/>Pero de todos modos, debemos procurar huir de los escollos
+          <p>
+            <lb/>Pero de todos modos, debemos procurar huir de los escollos
                                     que<lb/>se presentan á nuestra vista en medio de la vida fugaz,
                                     para lo cual<lb/>creemos bastarán los ejemplos que le ponemos
                                     delante con la historia<lb/>de un hombre que pasó inmensos
                                     trabajos por no escuchar los salu-<lb/>dables consejos de sus
                                     padres.</p>
+
           <pb n="4" source="Varios_436_4.jpg" facs="varios/Varios_436_4.jpg"/>
-          <p><lb/>De otra parte. siendo muchísimas las personas que han
+
+          <p>
+            <lb/>De otra parte. siendo muchísimas las personas que han
                                     leido la<lb/>obra de Robinson y tal gusto han sacado de su
                                     argumento, que nin-<lb/>guno ha podido olvidar los lances tan
                                     extraordinarios que le sucedie-<lb/>ron á este héroe por lo
                                     mucho que maquinó para poder subsistir en<lb/>una isla
                                     desconocida, frecuentada tan solo por salvajes.</p>
-          <p><lb/>Así es que no hay pueblo en España, grande ó pequeño, que
+          <p>
+            <lb/>Así es que no hay pueblo en España, grande ó pequeño, que
                                     deje<lb/>de haber quien tenga noticias de las aventuras de
                                     Robinson; pero co-<lb/>mo unos lo cuentan salteado, otros con
                                     muy poca explicacion, hay<lb/>muchos que desean leer esta obra
@@ -5751,24 +5876,31 @@
                                     aconteci-<lb/>mientos más notables desde que Robinson salió
                                     del pueblo en que<lb/>viera la primera luz hasta que regresó á
                                     él.</p>
-          <p><lb/>En todo se ha atendido á la utilidad de los jóvenes, y se ha
+          <p>
+            <lb/>En todo se ha atendido á la utilidad de los jóvenes, y se ha
                                     ador-<lb/>nado con algunos grabados para proporcionarles un
                                     atractivo que les<lb/>haga más interesante la lectura.</p>
         </div>
+
         <pb n="5" source="Varios_436_5.jpg" facs="varios/Varios_436_5.jpg"/>
+
         <div type="parte" n="2">
-          <head type="primer_titulo"><lb/>HISTORIA<lb/>DEL NUEVO ROBINSON,<lb/>SUS VIAJES Y
+          <head type="primer_titulo">
+            <lb/>HISTORIA<lb/>DEL NUEVO ROBINSON,<lb/>SUS VIAJES Y
                                     PERMANENCIA<lb/>EN UNA ISLA DEL OCÉANO ATLÁNTICO.</head>
           <div type="capitulo" n="1">
-            <head type="titulo_parte"><lb/>CAPITULO PRIMERO.</head>
-            <head type="subtitulo_parte"><lb/>Patria y padres de Robinson.
+            <head type="titulo_parte">
+              <lb/>CAPITULO PRIMERO.</head>
+            <head type="subtitulo_parte">
+              <lb/>Patria y padres de Robinson.
                                           Sus deseos de viajar.—Embárcase y sufre una
                                           tem<lb/>pestad que le arroja á Inglaterra.—Nuevo viaje.
                                           Llega á las islas Canarias.—<lb/>Embárcase de nuevo para
                                           el Brasil, sufriendo otra tempestad más horrorosa<lb/>que
                                           la primera; naufraga y se salva en una isla
                                           desierta.</head>
-            <p><lb/>Vivia en la ciudad de Hamburgo un hombre apellidado
+            <p>
+              <lb/>Vivia en la ciudad de <name>Hamburgo</name> un hombre apellidado
                                           Robinson<lb/>que tenia tres hijos. Los dos primeros se le
                                           desgraciaron, quedándole<lb/>solo el menor llamado
                                           Conrado á quien amaba más de lo que debiera.<lb/>Crecia
@@ -5777,20 +5909,26 @@
                                           aficion y solo queria viajar<lb/>para ver tierras, ó lo
                                           que es lo mismo, queria vivir con entera
                                           li-<lb/>bertad.</p>
-            <p><lb/>Ya habia cumplido diez y seis años y aun no sabia nada.
+            <p>
+              <lb/>Ya habia cumplido diez y seis años y aun no sabia nada.
                                           Todos<lb/>los dias pedia licencia á su padre para viajar,
                                           pero éste nunca se la<lb/>concedia.</p>
-            <p><lb/>Un dia, segun tenia de costumbre, habia ido á corretear
+            <p>
+              <lb/>Un dia, segun tenia de costumbre, habia ido á corretear
                                           hácia el<lb/>puerto y encontró un amigo. Este era hijo
                                           del capitan de un navío y<lb/>estaba entonces para partir
                                           á Lóndres con su padre.</p>
+
             <pb n="6" source="Varios_436_6.jpg" facs="varios/Varios_436_6.jpg"/>
+
             <fw type="paginaNum">— 6 —</fw>
-            <p><lb/>Propuso á Robinson le acompañase diciéndole que
+            <p>
+              <lb/>Propuso á Robinson le acompañase diciéndole que
                                           dentro de tres<lb/>semanas estarian de vuelta. Robinson
                                           hizo alguna resistencia, mas al<lb/>fin accedió á ello
                                           sin solicitar el permiso de su padre.</p>
-            <p><lb/>Embarcóse Conrado, á quien desde ahora llamaremos solo
+            <p>
+              <lb/>Embarcóse Conrado, á quien desde ahora llamaremos solo
                                           conel<lb/>apellido de Robinson, que era el de su padre y
                                           por consiguiente el<lb/>suyo, y navegaron dos dias sin
                                           novedad; pero al tercero una horri-<lb/>ble tempestad les
@@ -5798,26 +5936,32 @@
                                           los que en él iban hubiesen perecido á no haber llegado
                                           otro<lb/>buque en su socorro que los recogió y condujo
                                           felizmente á Lóndres.</p>
-            <p><lb/>En cuanto llegaron á esta ciudad, Robinson, olvidando
+            <p>
+              <lb/>En cuanto llegaron á esta ciudad, Robinson, olvidando
                                           lo pasado<lb/>y despreciando los consejos que le daba un
                                           honrado capitan para que<lb/>se volviese con sus padres,
                                           se embarcó en otro navío para pasar á<lb/>Guinea.</p>
-            <p><lb/>A los pocos dias de viaje fué impelido el buque por
-                                          un viento fuer-<lb/>te que le arrojó hácia el Africa;
+            <p>
+              <lb/>A los pocos dias de viaje fué impelido el buque por
+                                          un viento fuer-<lb/>te que le arrojó hácia el <name>Africa</name>;
                                           mas por fin pudo llegar á las islas Ca-<lb/>narias, donde
                                           desembarcó su tripulacion.</p>
-            <p><lb/>Teniendo necesidad el capitan del navío de hacer en él
+            <p>
+              <lb/>Teniendo necesidad el capitan del navío de hacer en él
                                           algunas<lb/>composturas, Robinson. que era tan impaciente
-                                          y antojadizo, se <pb n="7" source="Varios_436_7.jpg" facs="varios/Varios_436_7.jpg"/>
-                                          <fw type="paginaNum">— 7 —</fw>
-                                          <lb/>cansó luego de permanecer allí. En este tiempo
+                                          y antojadizo, se
+ <pb n="7" source="Varios_436_7.jpg" facs="varios/Varios_436_7.jpg"/>
+
+              <fw type="paginaNum">— 7 —</fw>
+              <lb/>cansó luego de permanecer allí. En este tiempo
                                           habia llegado otro na-<lb/>vío portugués que venia de
-                                          Lisboa y que pasaba luego al Brasil: tra-<lb/>bó amistad
+                                          <name>Lisboa</name> y que pasaba luego al Brasil: tra-<lb/>bó amistad
                                           con el capitan, y apenas oyó hablar á éste de los
                                           muchos<lb/>polvos de oro y piedras preciosas que hay en
                                           dicho país, se hubiera<lb/>dejado sacrificar por ir
                                           allá.</p>
-            <p><lb/>El capitan portugués estaba pronto á llevarle sin
+            <p>
+              <lb/>El capitan portugués estaba pronto á llevarle sin
                                           pagar nada, y<lb/>como además el navío inglés habia de
                                           detenerse lo menos quince dias,<lb/>no pudo ya resistir el
                                           ánsia de ver tierras, y sin más rodeos se
@@ -5825,17 +5969,20 @@
                                           habiendo sabido en aque-<lb/>llos dias por boca del mismo
                                           Robinson que andaba viajando sin per-<lb/>miso de su
                                           padre, se alegró de deshacerse de él.</p>
-            <p><lb/>Embarcóse Robinson para el Brasil con tiempo muy
+            <p>
+              <lb/>Embarcóse Robinson para el <name>Brasil</name> con tiempo muy
                                           favorable,<lb/>que duró varios dias consecutivos; pero de
                                           repente se levantó un fu-<lb/>rioso viento.</p>
-            <p><lb/>Las espumosas olas que se encrespaban como grandes
+            <p>
+              <lb/>Las espumosas olas que se encrespaban como grandes
                                           casas,<lb/>traian el navío de aquí para allí,
                                           continuando la tempestad seis dias,<lb/>la cual les echó
                                           tan lejos que ya ni el capitan, ni el piloto podian
                                           sa-<lb/>ber dónde estaban. Sin embargo, consultando el
                                           mapa les pareció<lb/>que se hallaban no muy distantes de
-                                          las islas Caribes, habitadas por<lb/>salvajes.</p>
-            <p><lb/>Al amanecer del sétimo dia causó un marinero extremado
+                                          las <name>islas Caribes</name>, habitadas por<lb/>salvajes.</p>
+            <p>
+              <lb/>Al amanecer del sétimo dia causó un marinero extremado
                                           gozo á<lb/>toda la tripulacion,
                                           exclamando:<lb/>—¡Tierral... ¡tierral...<lb/>Salieron
                                           todos sobre cubierta á ver la tierra, pero de
@@ -5861,50 +6008,64 @@
                                           formarse una idea de la consternacion en que es-<lb/>taban
                                           sumidos aquellos infelices náufragos.<lb/>Bien pronto
                                           gritaron:<lb/>—¡Se ha abierto el buque!<lb/>Esta horrible
-                                          noticia les hace volver en sí. Acuden todos, echan <pb n="8" source="Varios_436_8.jpg" facs="varios/Varios_436_8.jpg"/>
-                                          <fw type="paginaNum">— 8 —</fw>
-                                          <lb/>la lancha al agua con la mayor aceleracion y saltan
+                                          noticia les hace volver en sí. Acuden todos, echan
+ <pb n="8" source="Varios_436_8.jpg" facs="varios/Varios_436_8.jpg"/>
+
+              <fw type="paginaNum">— 8 —</fw>
+              <lb/>la lancha al agua con la mayor aceleracion y saltan
                                           en ella con algu-<lb/>nas provisiones; mas era tanto el
                                           peso que sobre ella cargó que casi<lb/>sumergida apenas
                                           sobresalia un palmo del agua.</p>
-            <p><lb/>La tierra quedaba tan distante y era tan violenta la
+            <p>
+              <lb/>La tierra quedaba tan distante y era tan violenta la
                                           borrasca que<lb/>miraron como cosa imposible llegar á la
                                           costa.</p>
-            <p><lb/>Sin embargo, hicieron fuerza de remo, y ya el viento
+            <p>
+              <lb/>Sin embargo, hicieron fuerza de remo, y ya el viento
                                           los iba<lb/>acercando felizmente á tierra cuando viene
                                           una ola como un monte<lb/>y estrellándose contra la
                                           lancha la vuelca y el mar embravecido ab-<lb/>sorbe á
                                           cuantos en ella iban.</p>
-            <p><lb/>Otra furiosa ola arrebató á Robinson y le arrojó
+            <p>
+              <lb/>Otra furiosa ola arrebató á Robinson y le arrojó
                                           hácia la costa, sa-<lb/>cudiéndole con tal fuerza contra
                                           un peñasco, que el dolor le hizo des-<lb/>pertar de su
                                           letargo.</p>
-            <p><lb/>Abrió los ojos y viéndose inesperadamente casi á la
+            <p>
+              <lb/>Abrió los ojos y viéndose inesperadamente casi á la
                                           orilla, como<lb/>sabia nadar hizo el último esfuerzo para
                                           acabar de llegar á ella.</p>
           </div>
+
           <pb n="9" source="Varios_436_9.jpg" facs="varios/Varios_436_9.jpg"/>
+
           <fw type="paginaNum">— 9 —</fw>
           <div type="capitulo" n="2">
-            <head type="titulo_parte"><lb/>CAPITULO II.</head>
-            <head type="subtitulo_parte"><lb/>Robinson da gracias á Dios
+            <head type="titulo_parte">
+              <lb/>CAPITULO II.</head>
+            <head type="subtitulo_parte">
+              <lb/>Robinson da gracias á Dios
                                           por haberle salvado la vida.—Aquéjale el hambre
                                           y<lb/>busca medio de satisfacerla.—Sube á la cima de un
                                           monte y conoce se halla en<lb/>una isla.—Encuentra una
                                           cueva y construye en ella su morada.</head>
-            <p><lb/>Llegó Robinson á tierra, pero se desmayó al
+            <p>
+              <lb/>Llegó Robinson á tierra, pero se desmayó al
                                           instante, y por muy<lb/>largo rato permaneció sin
                                           sentido. Volviendo en sí se levantó y em-<lb/>pezó á
                                           mirar á todas partes. Pero ¡oh dolor! sus compañeros
                                           habian<lb/>perecido. Temblando y confuso entre el gozo y
-                                          el temor, dió gracias <pb n="10" source="Varios_436_10.jpg" facs="varios/Varios_436_10.jpg"/>
-                                          <fw type="paginaNum">— 10 —</fw>
-                                          <lb/>un agua deliciosa. En seguida buscó un paraje en que
+                                          el temor, dió gracias
+ <pb n="10" source="Varios_436_10.jpg" facs="varios/Varios_436_10.jpg"/>
+
+              <fw type="paginaNum">— 10 —</fw>
+              <lb/>un agua deliciosa. En seguida buscó un paraje en que
                                           poder des-<lb/>cansar, pues apenas podia tenerse en pié,
                                           mas no vió lugar alguno<lb/>donde poder estar con
                                           seguridad, y resolvió subirse á un árbol y<lb/>dormir
                                           entre sus ramas.</p>
-            <p><lb/>Despertó al amanecer y bajó del árbol terriblemente
+            <p>
+              <lb/>Despertó al amanecer y bajó del árbol terriblemente
                                           acosado del<lb/>hambre, pues en todo el dia anterior no se
                                           habia desayunado. An-<lb/>duvo de una parte á otra; pero
                                           fué grande su afliccion al no encon-<lb/>trar alimento
@@ -5912,7 +6073,8 @@
                                           le<lb/>dió ánimo, y recorrió con cuidado la orilla del
                                           mar. Su buena suerte<lb/>quiso que encontrase ostras con
                                           abundancia.</p>
-            <p><lb/>Estaba Robinson enagenado de contento por haber
+            <p>
+              <lb/>Estaba Robinson enagenado de contento por haber
                                           encontrado con<lb/>que satisfacer el apetito; pero le
                                           inquietaba el no saber dónde guare-<lb/>cerse por temor
                                           á las fieras y salvajes. Su primer albergue habia
@@ -5924,7 +6086,8 @@
                                           Fortalecido<lb/>con esto, se puso en marcha para buscar
                                           una guarida que en cierto<lb/>modo pudiera servirle de
                                           asilo.</p>
-            <p><lb/>Lo que más sentia era no saber en qué parte de
+            <p>
+              <lb/>Lo que más sentia era no saber en qué parte de
                                           América se ha-<lb/>llaba, si era tierra firme ó isla.
                                           Para adquirir algun conocimiento so-<lb/>bre esto se
                                           encaminó á un monte que descubrió á lo lejos, y á
@@ -5943,7 +6106,8 @@
                                           plantarlos bien es-<lb/>pesos enfrente del hueco, de
                                           suerte que formasen una especie de pa-<lb/>red para que
                                           cuando creciesen pudiera dormir con seguridad.</p>
-            <p><lb/>Regocijado con tan feliz ocurrencia empezó
+            <p>
+              <lb/>Regocijado con tan feliz ocurrencia empezó
                                           inmediatamente á<lb/>arrancar árboles, aunque con mucho
                                           trabajo, y llevarlos al puesto es-<lb/>cogido para
                                           vivienda. Aquí era necesario cavar con las manos
@@ -5956,11 +6120,14 @@
                                           pleamar, y así hubo de recogerse sin cenar.
                                           Subióse<lb/>á un árbol y despues de haberse encomendado
                                           al Criador se durmió.</p>
-            <p><lb/>Despertó al amanecer y se dirigió á la playa en bosca
+            <p>
+              <lb/>Despertó al amanecer y se dirigió á la playa en bosca
                                           de ostras con<lb/>ánimo de volver inmediatamente al
-                                          trabajo; pero habiendo tomado <pb n="11" source="Varios_436_11.jpg" facs="varios/Varios_436_11.jpg"/>
-                                          <fw type="paginaNum">— 11 —</fw>
-                                          <lb/>por distinto camino tuvo la fortuna de encontrar un
+                                          trabajo; pero habiendo tomado
+ <pb n="11" source="Varios_436_11.jpg" facs="varios/Varios_436_11.jpg"/>
+
+              <fw type="paginaNum">— 11 —</fw>
+              <lb/>por distinto camino tuvo la fortuna de encontrar un
                                           árbol cuya fruta<lb/>era bantante abultada, y aunque no
                                           la conocia le pareció podria co-<lb/>merse; echó una al
                                           suelo. Era cierta especie de nuez triangular
@@ -5976,7 +6143,8 @@
                                           coco. Para el hambrien-<lb/>to Robinson fué esto un
                                           expléndido banquete. El árbol era bastante<lb/>crecido,
                                           mas no se descubria otro en toda la comarca.</p>
-            <p><lb/>Robinson habia quedado satisfecho, pero no por eso dejó
+            <p>
+              <lb/>Robinson habia quedado satisfecho, pero no por eso dejó
                                           de acu-<lb/>dir á la playa en busca de ostras. Aunque en
                                           corto número halló<lb/>algunas y las guardó para el
                                           medio dia, continuando la tarea del
@@ -6016,14 +6184,17 @@
                                           cual quedó dueño de<lb/>una hacha. Tambien habia
                                           encontrado otras dos piedras, de las que<lb/>la una tenia
                                           la figura de un mazo, y la otra de una cuña. Supo inge-
+
                                                 <pb n="12" source="Varios_436_12.jpg" facs="varios/Varios_436_12.jpg"/>
-                                          <fw type="paginaNum">— 12 —</fw>
-                                          <lb/>niarse tan bien que fijando en la tierra y en la peña
+
+              <fw type="paginaNum">— 12 —</fw>
+              <lb/>niarse tan bien que fijando en la tierra y en la peña
                                           la cuña y dando<lb/>en ella con el mazo desprendió muchos
                                           pedazos. De este modo en<lb/>pocos dias le pareció haber
                                           dejado ya concavidad bastante para ser-<lb/>virle de
                                           receptáculo y abrigo.</p>
-            <p><lb/>Habia cogido de antemano gran cantidad de yerba y
+            <p>
+              <lb/>Habia cogido de antemano gran cantidad de yerba y
                                           puéstola á<lb/>secar al sol. Cuando estaba seca la
                                           llevó á su cueva para hacer una<lb/>buena cama. Con tan
                                           acertada providencia consiguió volver á
@@ -6042,7 +6213,8 @@
                                           de hallarse abandonado de todo género humano,<lb/>y le
                                           prometia enmendarse cada vez más y perseverar en su
                                           cristiana<lb/>obediencia.</p>
-            <p><lb/>Para no olvidar el órden de los dias de la semana y
+            <p>
+              <lb/>Para no olvidar el órden de los dias de la semana y
                                           saber á pun-<lb/>to fijo cuándo era domingo, pensó en
                                           hacer un calendario; pero no<lb/>teniendo papel ni otro
                                           recado de escribir, eligió cuatro árboles de
@@ -6058,29 +6230,36 @@
                                           los meses llegasen á<lb/>doce pensaba señalar con otra
                                           en el cuarto árbol el año cabal que hu-<lb/>biese
                                           corrido.</p>
-            <p><lb/>Entretanto habia apurado casi todos los cocos del único
+            <p>
+              <lb/>Entretanto habia apurado casi todos los cocos del único
                                           árbol de<lb/>ellos que hasta entonces habia descubierto,
                                           y escaseando ya tanto las<lb/>ostras en la playa, que no
                                           le bastaban para alimentarse, empezó á<lb/>virir con
                                           sobresalto y á recelar llegase á faltarle el
                                           mantenimierto.</p>
           </div>
+
           <pb n="13" source="Varios_436_13.jpg" facs="varios/Varios_436_13.jpg"/>
+
           <fw type="paginaNum">— 13 —</fw>
           <div type="capitulo" n="3">
-            <head type="titulo_parte"><lb/>CAPITULO III.</head>
-            <head type="subtitulo_parte"><lb/>Robinson emprende una caminata
+            <head type="titulo_parte">
+              <lb/>CAPITULO III.</head>
+            <head type="subtitulo_parte">
+              <lb/>Robinson emprende una caminata
                                           para recorrer la isla.—Descubre una manala<lb/>de llamas,
                                           mata uno y lo lleva consigo.—Una tempestad horrorosa le
                                           pone en<lb/>el mayor pavor.—Cae un rayo sobre su cueva y
                                           le proporciona tener fuego.</head>
-            <p><lb/>Contenido y acobardado hasta aquel dia no se habia
+            <p>
+              <lb/>Contenido y acobardado hasta aquel dia no se habia
                                           atrevido á<lb/>alejarse mucho de su morada, temiendo á
                                           los animales feroces y á los<lb/>hombres, que no serian
                                           menos, si acaso los habia en aquel país; pero<lb/>la
                                           necesidad le obligó á vencer la repugnancia, prefiriendo
                                           cualquier<lb/>género de muerte á la del hambre.</p>
-            <p><lb/>Resolvió, pues, ponerse en camino con la ayuda de Dios,
+            <p>
+              <lb/>Resolvió, pues, ponerse en camino con la ayuda de Dios,
                                           y tra-<lb/>tó de fabricar un quitasol que le resguardase.
                                           Formó con vástagos de<lb/>sauce un enrejado en figura de
                                           media naranja, y por el centro atra-<lb/>vesó un palo
@@ -6096,12 +6275,14 @@
                                           un<lb/>cordel grueso para colgarlo al cuello. Fué tal la
                                           alegría que le causó<lb/>el buen resultado de su trabajo
                                           que no durmió aquella noche.</p>
-            <p><lb/>Aun no asomaba el sol cuando levantándose Robinson se
+            <p>
+              <lb/>Aun no asomaba el sol cuando levantándose Robinson se
                                           dispuso<lb/>imediatamente para la jornada. Se colgó el
                                           morral al cuello, se ciñó<lb/>el cuerpo con una cuerda
                                           para llevar el hacha, tomó el quitasol y<lb/>empezó el
                                           viaje con alentado espíritu.</p>
-            <p><lb/>Era la mañana muy apacible, lo que contribuyó mucho á
+            <p>
+              <lb/>Era la mañana muy apacible, lo que contribuyó mucho á
                                           animar<lb/>á nuestro héroe. Receloso todavía con el
                                           miedo de los animales mon-<lb/>taraces y á los salvajes
                                           evitó cuanto pudo atravesar selvas espesas
@@ -6111,7 +6292,8 @@
                                           más estériles de la isla, de modo que llevaba andado un
                                           lar-<lb/>go trecho sin haber hecho el menor
                                           descubrimiento.</p>
-            <p><lb/>Divisó una espesura y le pareció conveniente el
+            <p>
+              <lb/>Divisó una espesura y le pareció conveniente el
                                           acercarse á ella.<lb/>Eran unas plantas muy apiñadas
                                           formando un bosquecillo, y advir-<lb/>tió que en unas
                                           habia flores rojizas y en otras blancas, y algunas
@@ -6120,9 +6302,11 @@
                                           se podia comer. Arrancó la planta y al<lb/>hacer esto
                                           vió que de las raices pendian otras casi redondas.
                                           Sospe-<lb/>chó que podia ser aquello el verdadero fruto
-                                          de la planta, y probó uno <pb n="14" source="Varios_436_14.jpg" facs="varios/Varios_436_14.jpg"/>
-                                          <fw type="paginaNum">— 14 —</fw>
-                                          <lb/>pero lo halló duro é insípido. Ocurrióle echar
+                                          de la planta, y probó uno
+ <pb n="14" source="Varios_436_14.jpg" facs="varios/Varios_436_14.jpg"/>
+
+              <fw type="paginaNum">— 14 —</fw>
+              <lb/>pero lo halló duro é insípido. Ocurrióle echar
                                           unos cuantos en su<lb/>morral para examinarlos cuando
                                           estuviera más despacio. Este fruto<lb/>eran patatas, que
                                           Robinson no habia visto nunca, pues en aquel tiem-<lb/>po
@@ -6137,7 +6321,8 @@
                                           tenian corcoba. Estos<lb/>animales, desconocidos para
                                           Robinson y muy abundantes en Améri-<lb/>ca, se llaman
                                           llamas.</p>
-            <p><lb/>En cuanto Robinson vió aquel ganado sintió un vivo
+            <p>
+              <lb/>En cuanto Robinson vió aquel ganado sintió un vivo
                                           deseo de co-<lb/>mer carne. Se escondió detrás de un
                                           árbol y empuñando el hacha<lb/>aguardó que pasasen
                                           junto á él. Al primero que se acercó le sacudió<lb/>un
@@ -6177,11 +6362,14 @@
                                           comer. Esprimió sobre ella<lb/>un poco de zumo de limon,
                                           con lo que le pareció deliciosísima. Como<lb/>ya era
                                           tarde, se acostó en seguida.</p>
-            <p><lb/>Al dia siguiente quiso hacer otra cacería; pero no
+            <p>
+              <lb/>Al dia siguiente quiso hacer otra cacería; pero no
                                           pudo. Una fu<lb/>riosa tempestad le impidió salir de la
-                                          cueva, mas esta misma tem- <pb n="15" source="Varios_436_15.jpg" facs="varios/Varios_436_15.jpg"/>
-                                          <fw type="paginaNum">— 15 —</fw>
-                                          <lb/>pestad le proporcionó lo que tanto deseaba. Un rayo
+                                          cueva, mas esta misma tem-
+ <pb n="15" source="Varios_436_15.jpg" facs="varios/Varios_436_15.jpg"/>
+
+              <fw type="paginaNum">— 15 —</fw>
+              <lb/>pestad le proporcionó lo que tanto deseaba. Un rayo
                                           que cayó sobre<lb/>un árbol, le incendió, pudiendo así
                                           encender Robinson un tizo, con<lb/>lo que tuvo lumbre para
                                           asar un trozo de llama. A fin de que no se<lb/>le apagase
@@ -6199,7 +6387,8 @@
                                           hombres!... ¡De qué me<lb/>sirves? De buena gana te
                                           cederia por un puñado de clavos ó cual-<lb/>quiera
                                           herramienta útil.</p>
-            <p><lb/>Al otro dia se dirigió á la playa en solicitud de
+            <p>
+              <lb/>Al otro dia se dirigió á la playa en solicitud de
                                           algunas ostras:<lb/>halló poquísimas, pero en cambio
                                           encontró una tortuga tan grande que<lb/>pesaba cerca de
                                           un quintal. Cogióla como pudo y llevóla a su
@@ -6214,15 +6403,18 @@
                                           sirviese de pan en lo sucesivo.</p>
           </div>
           <div type="capitulo" n="4">
-            <head type="titulo_parte"><lb/>CAPITULO IV.</head>
-            <head type="subtitulo_parte"><lb/>Coge Robinson unos llamas y
+            <head type="titulo_parte">
+              <lb/>CAPITULO IV.</head>
+            <head type="subtitulo_parte">
+              <lb/>Coge Robinson unos llamas y
                                           logra domesticarlos.—Un terremoto le ocasiona un<lb/>susto
                                           terrible.—Desplómase parte de su vivienda y logra
                                           habitacion más capaz.<lb/>—Se ingenia en hacerse un
                                           vestido de pieles y otras cosas útiles.—Le
                                           acomete<lb/>una enfermedad que le pone á las puertas del
                                           sepulero.</head>
-            <p><lb/>Despues de varios dias le ocurrió coger con lazos
+            <p>
+              <lb/>Despues de varios dias le ocurrió coger con lazos
                                           algunos llamas<lb/>y domesticarlos. En efecto, logró
                                           coger una hembra con dos hijuelos.<lb/>Su primer cuidado
                                           fué hacer una segunda cerca en que albergarlos<lb/>por el
@@ -6233,18 +6425,22 @@
                                           pues ya podia hacer salmuera en que guardar la
                                           carne,<lb/>porque con el agua del mar no se conservaba muy
                                           bien:</p>
-            <p><lb/>Pasó algun tiempo sin que hubiese la menor novedad,
+            <p>
+              <lb/>Pasó algun tiempo sin que hubiese la menor novedad,
                                           hasía que<lb/>una noche, hallándose durmiendo, de
-                                          repente tembló extraordinaria- <pb n="16" source="Varios_436_16.jpg" facs="varios/Varios_436_16.jpg"/>
-                                          <fw type="paginaNum">— 16 —</fw>
-                                          <lb/>mente la tierra y se oyó un ruido espantoso.
+                                          repente tembló extraordinaria-
+ <pb n="16" source="Varios_436_16.jpg" facs="varios/Varios_436_16.jpg"/>
+
+              <fw type="paginaNum">— 16 —</fw>
+              <lb/>mente la tierra y se oyó un ruido espantoso.
                                           Despertó despavorido<lb/>sin saber lo que le pasaba. Las
                                           terribles conmociones no se daban<lb/>lugar unas á otras:
                                           continuaba un ruido subterráneo, y un furioso<lb/>huracan
                                           derribaba los árboles y las peñas, y el mar bramaba de
                                           un<lb/>modo espantoso; luchaban entre sí los elementos y
                                           parecia que la na-<lb/>turaleza tiraba á destruirse.</p>
-            <p><lb/>Acosado de mortales angustias salió al patio; pero no
+            <p>
+              <lb/>Acosado de mortales angustias salió al patio; pero no
                                           bien se ha-<lb/>llaba en él cuando se desplomó sobre el
                                           sitio en que estaba su cama<lb/>toda la mole de peñascos
                                           que coronaban la gruta. Robinson huyó al<lb/>campo é iba
@@ -6294,15 +6490,19 @@
                                           que si no tan buenas coma las que salen de manos
                                           de<lb/>los alfareros, para Robinson fueron de una utilidad
                                           inconcebible.</p>
+
             <pb n="17" source="Varios_436_17.jpg" facs="varios/Varios_436_17.jpg"/>
+
             <fw type="paginaNum">— 17 —</fw>
-            <p><lb/>Prosiguiendo en ocuparse de otras cosas hizo una red
+            <p>
+              <lb/>Prosiguiendo en ocuparse de otras cosas hizo una red
                                           para pescar, <lb/>fabricó un arco y unas flechas, á las
                                           que puso por puntas espinas de <lb/>peces; una lanza
                                           compuesta de un palo largo y una piedra puntia- <lb/>guda.
                                           Arreglóse tambien como pudo é hizo un vestido de pieles,
                                           pues </p>
-            <p><lb/>la ropa con que se habia librado del naufragio estaba
+            <p>
+              <lb/>la ropa con que se habia librado del naufragio estaba
                                           enteramente <lb/>inútil. En fin, ya estaba preparado para
                                           todo, cuando una enferme- <lb/>dad que le sobrevino
                                           desbarató sus planes. <lb/>Sintiéndose reducido á una
@@ -6319,9 +6519,12 @@
                                           tener la propie- <lb/>dad de poder pasar varios dias sin
                                           comer ni beber.</p>
             <fw type="signaturas">ROBINSON. 2</fw>
+
             <pb n="18" source="Varios_436_18.jpg" facs="varios/Varios_436_18.jpg"/>
+
             <fw type="paginaNum">— 18 —</fw>
-            <p><lb/>Levántose al fin Robinson y hallándose sin fuego ni
+            <p>
+              <lb/>Levántose al fin Robinson y hallándose sin fuego ni
                                           carne cocida,<lb/>se alimentócon leche de llamas hasta
                                           que pudo volver á salir de su<lb/>morada. Pasó
                                           entretanto el tiempo de la convalecencia haciendo
@@ -6333,13 +6536,16 @@
                                           fae¬<lb/>nas acostumbradas.</p>
           </div>
           <div type="capitulo" n="5">
-            <head type="titulo_parte"><lb/>CAPITULO V.</head>
-            <head type="subtitulo_parte"><lb/>Se dedica Robinson á
+            <head type="titulo_parte">
+              <lb/>CAPITULO V.</head>
+            <head type="subtitulo_parte">
+              <lb/>Se dedica Robinson á
                                           construir una canoa.—Emprende segundo viaje por la
                                           isla.<lb/>—Desembarco de unos salvajes.—Libra de la muerte
                                           á un infeliz indio; se lo<lb/>lleva á su vivienda y hace
                                           de él un grato compañero.</head>
-            <p><lb/>En cuanto pudo salir de su albergue volvió á sus
+            <p>
+              <lb/>En cuanto pudo salir de su albergue volvió á sus
                                           caminatas por la<lb/>isla. En una de ellas encontró
                                           varias mazorcas de maiz, y en otra des-<lb/>cubrió un
                                           árbol muy corpulento, aunque desconocido para él.
@@ -6355,7 +6561,8 @@
                                           el árbol del pan,<lb/>llamado así porque su fruto, ya
                                           sea como se coge de la rama, ya mo-<lb/>lido y reducido á
                                           masa, sirve de pan á los salvajes.</p>
-            <p><lb/>Advirtió que el tronco de este árbol estaba algo hueco
+            <p>
+              <lb/>Advirtió que el tronco de este árbol estaba algo hueco
                                           por un lado,<lb/>por lo cual le pareció muy á propósito
                                           para hacer una barca ó canoa,<lb/>con el objeto de salir
                                           de la isla y dirigirse á muerte ó á vida á la
@@ -6366,7 +6573,8 @@
                                           en<lb/>que se hallaba dicho árbol y se retiró á su
                                           vivienda con intencion de<lb/>meditar sobre ello más
                                           profundamente.</p>
-            <p><lb/>Prosiguiendo su camino encontró lo que habia deseado
+            <p>
+              <lb/>Prosiguiendo su camino encontró lo que habia deseado
                                           por mu-<lb/>cho tiempo, un nido de papagayos. Acércase á
                                           él, y alarga el brazo<lb/>para introducirlo en el nido.
                                           Los pollitos más crecidos se le escapa-<lb/>ron volando,
@@ -6375,9 +6583,12 @@
                                           contento como si aca-<lb/>base de adquirir un amigo. A
                                           fuerza de paciencia consiguió domes-<lb/>ticarlo y luego
                                           le sirvió de mucha distraccion.</p>
+
             <pb n="19" source="Varios_436_19.jpg" facs="varios/Varios_436_19.jpg"/>
+
             <fw type="paginaNum">— 19 —</fw>
-            <p><lb/>Al dia siguiente y despues de haber reflexionado
+            <p>
+              <lb/>Al dia siguiente y despues de haber reflexionado
                                           detenidamente<lb/>sobre si construiria ó no la canoa, se
                                           decidió á ello, no dudando ob-<lb/>tener un éxito
                                           favorable. Con este objeto salió de su morada y se
@@ -6423,9 +6634,12 @@
                                           impro-<lb/>viso, pálido el rostro, los miembros
                                           trémulos, mira alrededor y se<lb/>queda imóvil. Era el
                                           caso que habia visto huellas de hombre es-</p>
+
             <pb n="20" source="Varios_436_20.jpg" facs="varios/Varios_436_20.jpg"/>
+
             <fw type="paginaNum">— 20 —</fw>
-            <p><lb/>tampadas en la arena, y apenas las divisó se figuró
+            <p>
+              <lb/>tampadas en la arena, y apenas las divisó se figuró
                                           que eran senales<lb/>ciertas de habitar allí hombres
                                           bárbaros y crueles prontos á comerle,<lb/>ó degollarle.
                                           Fué tanto su pavor que echó á correr como si
@@ -6437,7 +6651,8 @@
                                           varios huesos de cuerpos hu-<lb/>manos, que eran indicios
                                           ciertos de haberse comido en aquel sitio<lb/>carne
                                           humana.</p>
-            <p><lb/>Apartó Robinson la vista de aquel espectáculo,
+            <p>
+              <lb/>Apartó Robinson la vista de aquel espectáculo,
                                           sintióse removido<lb/>y hubiera caido desmayado á no
                                           haberse desahogado su naturaleza<lb/>en provocar cuanto
                                           tenia en el estómago. Recobrada algun tanto
@@ -6447,7 +6662,8 @@
                                           pasos del llama se le figuraban que eran los de
                                           un<lb/>salvaje que le perseguia; mas al fin empezó á
                                           andar con paso menos<lb/>acelerado.</p>
-            <p><lb/>Tanto se habia conmovido que en todo el dia no sintió
+            <p>
+              <lb/>Tanto se habia conmovido que en todo el dia no sintió
                                           hambre,<lb/>y solo se detuvo una vez á apagar la sed en
                                           un manantial.<lb/>Creyó llegar con sol á su morada, pero
                                           no le fué posible, pues al<lb/>anochecer se halló á
@@ -6460,7 +6676,8 @@
                                           su vivienda, conoció que el miedo<lb/>del dia anterior
                                           habia sido excesivo; pero no por eso dejó de
                                           tomar<lb/>algunas precauciones.</p>
-            <p><lb/>Empezó por plantar á la parte exterior de la
+            <p>
+              <lb/>Empezó por plantar á la parte exterior de la
                                           empalizada que ro-<lb/>deaba su habitacion un bosque
                                           espeso que le ocultase por todos los<lb/>lados. Con este
                                           objeto empleó varios dias en plantar más de dos
@@ -6479,18 +6696,23 @@
                                           le sobrevino un rarísimo acontecimiento que influyó en
                                           la fortuna<lb/>de nuestro amigo más que cuanto le habia
                                           pasado desde que estaba<lb/>en la isla.</p>
-            <p><lb/>Una mañana que trabajaba en ahondar su canoa, observó
+            <p>
+              <lb/>Una mañana que trabajaba en ahondar su canoa, observó
                                           que á lo</p>
+
             <pb n="21" source="Varios_436_21.jpg" facs="varios/Varios_436_21.jpg"/>
+
             <fw type="paginaNum">— 21 —</fw>
-            <p><lb/>lejos se levantaba un denso humo, y la curiosidad le
+            <p>
+              <lb/>lejos se levantaba un denso humo, y la curiosidad le
                                           obligó subir á <lb/>la cumbre de una colina para
                                           descubrir la causa de aquella humare- <lb/>da. No bien
                                           llegó á lo alto cuando vió cinco ó seis canoas
                                           amarradas <lb/>la orilla y unos treinta salvajes que con
                                           feroces gritos bailaban al- <lb/>ededor de una
                                           hoguera.</p>
-            <p><lb/>Volvió á su morada, se armó y encomendándose á la
+            <p>
+              <lb/>Volvió á su morada, se armó y encomendándose á la
                                           Providencia <lb/>resolvió defender su vida hasta el
                                           último extremo, y en seguida se <lb/>puso á observar los
                                           movimientos de los enemigos. <lb/>Divisó dos infelices á
@@ -6502,7 +6724,8 @@
                                           <lb/>romper las ataduras que le sujetaban poniéndose en
                                           fuga con increi- <lb/>ble rapidez en direccion á
                                           Robinson.</p>
-            <p><lb/>El gozo, la confianza, el miedo y el horror se
+            <p>
+              <lb/>El gozo, la confianza, el miedo y el horror se
                                           apoderaron alter- <lb/>nativamente del ánimo de nuestro
                                           Robinson, asomándose á su sem- <lb/>blante ya pálido,
                                           ya encendido. Sentia no poco regocijo al advertir <lb/>que
@@ -6520,7 +6743,8 @@
                                           puso en marcha contra ellos. Cuando estuvo á <lb/>tiro
                                           del primero, esfuerza su valor, hiere con la lanza al
                                           salvaje ene- <lb/>migo y le deja tendido en el puesto</p>
-            <p><lb/>No habia Robinson concluido su tarea como él creia,
+            <p>
+              <lb/>No habia Robinson concluido su tarea como él creia,
                                           pues bien <lb/>pronto vió que el salvaje á quien creia
                                           muerto no estaba más que he- <lb/>rido; pues apenas habia
                                           caido al suelo cuando recobrando nuevas <lb/>fuerzas, tuvo
@@ -6542,13 +6766,17 @@
                                           de su libertador, se arroja á sus plantas besando la
                                           <lb/>tierra, y cogiéndole un pié lo puso sobre su cabeza
                                           para manifestarle</p>
+
             <pb n="22" source="Varios_436_22.jpg" facs="varios/Varios_436_22.jpg"/>
+
             <fw type="paginaNum">— 22 —</fw>
-            <p><lb/>que era su esclavo; mas Robinson, ansioso de tener un
+            <p>
+              <lb/>que era su esclavo; mas Robinson, ansioso de tener un
                                           amigo y no<lb/>un siervo, le levantó y procuró acreditar
                                           por cuantos medios le ocur-<lb/>riesen, que le trataria
                                           con amistad.</p>
-            <p><lb/>Por órden de Robinson el indio se apoderó de los
+            <p>
+              <lb/>Por órden de Robinson el indio se apoderó de los
                                           arcos y flechas<lb/>de los perseguidores y enterró los
                                           cadáveres para evitar que sus com-<lb/>pañeros llegasen
                                           á descubrir algo si acaso volvian á buscarlos.
@@ -6564,14 +6792,18 @@
                                           lanudo, la nariz pequeña, los labios delgados y<lb/>los
                                           dientes blancos como el marfil. Tenia pendientes en las
                                           orejas y<lb/>estaba enteramente desnudo.</p>
-            <p><lb/>Apenas cabia á Robinson en el pecho el gozo de haber
+            <p>
+              <lb/>Apenas cabia á Robinson en el pecho el gozo de haber
                                           logrado al<lb/>cabo de tanto tiempo un amigo; pero
                                           ignorando el ingenio del indi-<lb/>creyó prudente para su
-                                          seguridad mantenerle en cierta sujecion res <pb n="23" source="Varios_436_23.jpg" facs="varios/Varios_436_23.jpg"/>
-                                          <fw type="paginaNum">— 23 —</fw>
-                                          <lb/>petuosa. Acostáronse en cuanto cenaron y se durmieron
+                                          seguridad mantenerle en cierta sujecion res
+ <pb n="23" source="Varios_436_23.jpg" facs="varios/Varios_436_23.jpg"/>
+
+              <fw type="paginaNum">— 23 —</fw>
+              <lb/>petuosa. Acostáronse en cuanto cenaron y se durmieron
                                           profunda- <lb/>mente.</p>
-            <p><lb/>A la mañana siguiente fueron ambos á reconocer el
+            <p>
+              <lb/>A la mañana siguiente fueron ambos á reconocer el
                                           sitio donde lo <lb/>salvajes habian celebrado su bárbaro
                                           festin. ¡Qué espectáculo se ofre- <lb/>ció á su vista!
                                           Empapada en sangre la tierra, huesos esparcidos.....
@@ -6586,7 +6818,8 @@
                                           de aquel movimiento sopló el fuego y levantó llama.
                                           Robinson <lb/>se llenó de gozo, y tomando un tizon se
                                           apresuró á volver con Do- <lb/>mingo á su vivienda.</p>
-            <p><lb/>Por este medio llegó á tener fuego segunda vez,
+            <p>
+              <lb/>Por este medio llegó á tener fuego segunda vez,
                                           llenándole de <lb/>alegría. En seguida pensó en
                                           fortificar su morada algo más para po- <lb/>nerse al
                                           abrigo de cualquiera invasion de salvajes, lo que consi-
@@ -6600,18 +6833,22 @@
                                           un poco á hablar, concluyó su canoa.</p>
           </div>
           <div type="capitulo" n="6">
-            <head type="titulo_parte"><lb/>CAPITULO VI.</head>
-            <head type="subtitulo_parte"><lb/>Consigue Robinson concluir la
+            <head type="titulo_parte">
+              <lb/>CAPITULO VI.</head>
+            <head type="subtitulo_parte">
+              <lb/>Consigue Robinson concluir la
                                           canoa.—Naufraga un navío cerca de la isla y
                                           Ro-<lb/>binson se aprovecha de los objetos abandonados en
                                           él.—Combate con los sal-<lb/>vajes.</head>
-            <p><lb/>Poseia Domingo la habilidad de hacer con las cortezas
+            <p>
+              <lb/>Poseia Domingo la habilidad de hacer con las cortezas
                                           estoposas <lb/>de los cocos ciertas telas muy á
                                           propósito para vestirse, y además <lb/>sabia hacer
                                           cuerdas muy superiores á las que fabricaba Robinson. En
                                           <lb/>poco tiempo concluyeron la canoa, poniéndola remos y
                                           una vela, é <lb/>inmediatamente se echó al agua.</p>
-            <p><lb/>Embarcáronse en la canoa de allí á pocos dias
+            <p>
+              <lb/>Embarcáronse en la canoa de allí á pocos dias
                                           llevando á bordo <lb/>abundantes provisiones con
                                           intencion de dirigirse al continente de <lb/>América;
                                           pero una tempestad les obligó á volverse, dejando la
@@ -6619,9 +6856,12 @@
                                           siguió se la llevó por el <lb/>mar adelante, dejando
                                           así desconsolados á nuestros dos amigos, que <lb/>vieron
                                           perdido el fruto de su largo trabajo</p>
+
             <pb n="24" source="Varios_436_24.jpg" facs="varios/Varios_436_24.jpg"/>
+
             <fw type="paginaNum">— 24 —</fw>
-            <p><lb/>Durante esta tempestad oyó Robinson algunos
+            <p>
+              <lb/>Durante esta tempestad oyó Robinson algunos
                                           cañonazos y per-<lb/>suadido de que seria algun buque que
                                           se hallaba perdido y pedia<lb/>auxilio, encendió una
                                           hoguera. Al dia siguiente subió á un monte,<lb/>desde
@@ -6630,11 +6870,13 @@
                                           distante y no tenia la canoa para<lb/>acercarse á él.
                                           Sin embargo, Domingo se ofreció á ir nadando
                                           hasta<lb/>donde estaba.</p>
-            <p><lb/>Llegó felizmente cerca del navío y dió vueltas
+            <p>
+              <lb/>Llegó felizmente cerca del navío y dió vueltas
                                           alrededor de él<lb/>gritando por si alguien le oia; pero
                                           nadie respondió. Advirtió que<lb/>estaba colgada la
                                           escalera, y subió por ella.</p>
-            <p><lb/>En cuanto llegó á la cubierta se espantó de ver un
+            <p>
+              <lb/>En cuanto llegó á la cubierta se espantó de ver un
                                           animal que no<lb/>conocia, el cual apenas vió á Domingo
                                           empezó á dar aullidos ex-<lb/>traordinarios. No tardó
                                           en callar y en mostrarse tan manso, que Do-<lb/>mingo
@@ -6645,7 +6887,8 @@
                                           ver otro animal con astas muy retorcidas y una
                                           barba<lb/>larga. Domingo dió un grito y se arrojó al
                                           mar. El perro de aguas<lb/>se arrojó tras él.</p>
-            <p><lb/>Domingo, al sentir caer el perro en el agua, creyó que
+            <p>
+              <lb/>Domingo, al sentir caer el perro en el agua, creyó que
                                           era el móns-<lb/>truo de los cuernos, y fué tal el
                                           terror que le sobrecogió que á poco se<lb/>ahoga; pero
                                           felizmente llegó á la orilla casi desmayado.
@@ -6658,11 +6901,13 @@
                                           Ocurrióle hacer una balsa con varios made-<lb/>ros
                                           trabados entre sí y de este modo pudieron dirigirse á la
                                           embar-<lb/>cacion.</p>
-            <p><lb/>Se dió prisa á subir á bordo para examinar cuál era
+            <p>
+              <lb/>Se dió prisa á subir á bordo para examinar cuál era
                                           el carga-<lb/>mento y si estaba averiado. Tenia Domingo
                                           tan presente el susto de la<lb/>antevíspera que con
                                           dificultad se determinó á acompañar á su amo.</p>
-            <p><lb/>Empieza Robinson á reconocer el navío, pasa de un
+            <p>
+              <lb/>Empieza Robinson á reconocer el navío, pasa de un
                                           camarote á<lb/>otro, encontrando en todas partes mil
                                           cosas de infinito aprecio para él.<lb/>Aquí halaba
                                           provisiones de galleta, arroz, harina, vino; allá
@@ -6674,14 +6919,18 @@
                                           medias, zapatos y otras muchas cosas, cada una de<lb/>las
                                           cuales preferia al pedazo de oro que hacia tiempo tenia
                                           olvidado.</p>
-            <p><lb/>Domingo estaba atónito á la vista de tantos objetos,
+            <p>
+              <lb/>Domingo estaba atónito á la vista de tantos objetos,
                                           cuyo uso ni<lb/>remotamente podia haber imaginado. Por
                                           otra parte, Robinson todo<lb/>lo tentaba, todo lo cogia
                                           para volverlo á dejar apenas advertia otra<lb/>cosa que
                                           le parecia preferible.</p>
+
             <pb n="25" source="Varios_436_25.jpg" facs="varios/Varios_436_25.jpg"/>
+
             <fw type="paginaNum">— 25 —</fw>
-            <p><lb/>Empezó á discurrir qué llevaria en el primer viaje, y no
+            <p>
+              <lb/>Empezó á discurrir qué llevaria en el primer viaje, y no
                                           acertaba <lb/>á resolverlo. Al cabo fija la eleccion en
                                           dos barriles de pólvora y mu- <lb/>niciones; seis pequeños
                                           cañones de artillería, seis fusiles, pistolas, es-
@@ -6694,7 +6943,8 @@
                                           cajita llena de diamantes y un barril de pol- <lb/>vos de
                                           oro: esto último lo llevaba con intencion de volvérselo á
                                           su <lb/>dueño si algun dia lo encontraba.</p>
-            <p><lb/>Tanto se detuvo en registrar el navío que cuando
+            <p>
+              <lb/>Tanto se detuvo en registrar el navío que cuando
                                           concluyó la ope- <lb/>racion solo faltaba una hora para
                                           que empezase á subir la marea, sin <lb/>la cual no les
                                           hubiera sido dable volver á tierra. Robinson quiso de-
@@ -6713,7 +6963,8 @@
                                           suavemente por el flujo hácia la isla. Llegaron á la
                                           orilla y se die- <lb/>ron prisa á desembarcar los efectos
                                           de que iba cargada.</p>
-            <p><lb/>Robinson se retiró detrás de unas matas para ponerse
+            <p>
+              <lb/>Robinson se retiró detrás de unas matas para ponerse
                                           el vestido <lb/>completo que habia traido, presentándose
                                           de repente á Domingo. <lb/>Sorprendido éste dió algunos
                                           pasos atrás, dudando si seria su amo. <lb/>Robinson no
@@ -6739,12 +6990,16 @@
                                           <lb/>do con balbuciente lengua: <lb/>—¡Ahí están, ahí
                                           están!</p>
             <fw type="signaturas">ROBINSON.</fw>
+
             <pb n="26" source="Varios_436_26.jpg" facs="varios/Varios_436_26.jpg"/>
+
             <fw type="paginaNum">— 26 —</fw>
-            <p><lb/>—¿Quién? preguntó Robinson asustado.<lb/>—¡Amo mio,
+            <p>
+              <lb/>—¿Quién? preguntó Robinson asustado.<lb/>—¡Amo mio,
                                           amo de mi alma, seis canoas!... respondió
                                           Do-<lb/>mingo.</p>
-            <p><lb/>Robinson subió aceleradamente á la colina y vió que
+            <p>
+              <lb/>Robinson subió aceleradamente á la colina y vió que
                                           Domingo<lb/>decia verdad, pues distinguia las seis canoas
                                           llenas de salvajes pró-<lb/>ximas á la orilla. Bajó sin
                                           dilacion y confortando al trémulo Domin-<lb/>go, le
@@ -6754,7 +7009,8 @@
                                           mi vida, respondió su compañero.<lb/>—Pues bien,
                                           acudamos á impedir que esos mónstruos consigan
                                           su<lb/>horrible intento.</p>
-            <p><lb/>En esto bajó del terraplen un cañon con su cureña de
+            <p>
+              <lb/>En esto bajó del terraplen un cañon con su cureña de
                                           ruedas, to-<lb/>mó seis fusiles cargados, cuatro pistolas
                                           y dos sables, repartiéndolos<lb/>entre él y el indio.
                                           Prevenidos de municiones tiraron del cañon,
@@ -6775,11 +7031,13 @@
                                           Robinson, sin poder<lb/>contener su cólera, dijo á
                                           Domingo:<lb/>—Tú vas por la izquierda, yo por la derecha;
                                           vamos allá con la<lb/>ayuda de Dios.</p>
-            <p><lb/>Inmediatamente salen á campo raso y acometen á los
+            <p>
+              <lb/>Inmediatamente salen á campo raso y acometen á los
                                           salvajes:<lb/>éstos se resisten; mas viendo el estrago
                                           que causaban en ellos las ar-<lb/>mas de fuego, se iban
                                           retirando á sus canoas.</p>
-            <p><lb/>Durante el combate Robinson desató al prisionero, que
+            <p>
+              <lb/>Durante el combate Robinson desató al prisionero, que
                                           era espa-<lb/>ñol, y le dió armas para que se
                                           defendiese. Así que éste se vió arma-<lb/>do se
                                           avalanzó furioso sobre sus asesinos, y acabó con dos de
@@ -6795,11 +7053,14 @@
                                           mitad del cuerpo, le derribase<lb/>en tierra y le quitase
                                           el sable de las manos para degollarle; pero
                                           Ro-<lb/>binson, viendo en tan grande apuro al europeo, de
-                                          un tiro levantó al <pb n="27" source="Varios_436_27.jpg" facs="varios/Varios_436_27.jpg"/>
-                                          <fw type="paginaNum">— 27 —</fw>
-                                          <lb/>salvaje la tapa de los sesos, con lo cual quedaron
+                                          un tiro levantó al
+ <pb n="27" source="Varios_436_27.jpg" facs="varios/Varios_436_27.jpg"/>
+
+              <fw type="paginaNum">— 27 —</fw>
+              <lb/>salvaje la tapa de los sesos, con lo cual quedaron
                                           libres de todos sus<lb/>enemigos.</p>
-            <p><lb/>Despues de la batalla registró Robinson una de las
+            <p>
+              <lb/>Despues de la batalla registró Robinson una de las
                                           canoas que<lb/>habian abandonado los salvajes, y con la
                                           mayor admiracion encontró<lb/>allí otro infeliz atado de
                                           piés y manos y que parecia más muerto que<lb/>vivo.
@@ -6808,26 +7069,31 @@
                                           hacia era gemir. Como no<lb/>era europeo, sino indio,
                                           llamó á Domingo para que le hablase en su<lb/>lengua
                                           nativa.</p>
-            <p><lb/>Apenas Domingo fijó la vista en el prisionero cuando
+            <p>
+              <lb/>Apenas Domingo fijó la vista en el prisionero cuando
                                           arrebatado<lb/>súbitamente y fuera de sí, le estrecha en
                                           sus brazos, grita, llora, se<lb/>maltrata rostro y pecho;
                                           en una palabra, parecia un delirante. Pasó<lb/>largo rato
                                           antes que pudiese Robinson sacar de él esta breve
                                           res-<lb/>puesta:<lb/>—¡Es mi padre!</p>
-            <p><lb/>En seguida se trasladaron á su cueva, donde procuraron
+            <p>
+              <lb/>En seguida se trasladaron á su cueva, donde procuraron
                                           reanimar<lb/>al español y al padre de Domingo, á quien
                                           Robinson puso por nom-<lb/>bre Joviano, en atencion á ser
                                           jueves aquel dia.</p>
           </div>
           <div type="capitulo" n="7">
-            <head type="titulo_parte"><lb/>CAPITULO VII.</head>
-            <head type="subtitulo_parte"><lb/>El español hace relacion de
+            <head type="titulo_parte">
+              <lb/>CAPITULO VII.</head>
+            <head type="subtitulo_parte">
+              <lb/>El español hace relacion de
                                           todas sus aventuras.—Robinson dispone que éste y<lb/>el
                                           padre de Domingo vuelvan á su isla para traerse unos
                                           europeos y establecer<lb/>una colonia.—Llegada de un
                                           navío inglés á la isla: sucesos que
                                           ocurrieron.—<lb/>Regreso de Robinson á Europa.</head>
-            <p><lb/>Luego que el español estuvo restablecido contó su
+            <p>
+              <lb/>Luego que el español estuvo restablecido contó su
                                           historia, por <lb/>la que supo Robinson que era uno de los
                                           que iban en el navío que <lb/>habia naufragado cerca de
                                           su isla, y del cual habian sacado todos <lb/>los efectos
@@ -6836,19 +7102,22 @@
                                           <lb/>fragio y las causas que motivaron á abandonar el
                                           buque. <lb/>El español quiso satisfacer á Robinson con
                                           la relacion de sus <lb/>aventuras del modo siguiente:</p>
-            <p><lb/>—«Nuestro navío era de los que se emplean en el
+            <p>
+              <lb/>—«Nuestro navío era de los que se emplean en el
                                           comercio de <lb/>negros. Veníamos de las costas de
-                                          Africa, en donde habíamos ven- <lb/>dido diferentes
-                                          mercaderías de Europa á cambio de oro en polvo,
+                                          <name>Africa</name>, en donde habíamos ven- <lb/>dido diferentes
+                                          mercaderías de <name>Europa</name> á cambio de oro en polvo,
                                           <lb/>dientes de elefante y negros. Unos ciento de éstos
                                           teníamos á bordo <lb/>para conducirlos de venta á la
-                                          isla de Cuba. Ya se nos habian muerto <lb/>veinte por
+                                          isla de <name>Cuba</name>. Ya se nos habian muerto <lb/>veinte por
                                           haberlos apiñado demasiado unos sobre otros en sitio muy
                                           <lb/>estrecho. Un recio viento que duró bastantes dias
                                           nos alejó de nuestra <lb/>direccion, echándonos hácia
-                                          las costas del Brasil, y porque la embar- <pb n="28" source="Varios_436_28.jpg" facs="varios/Varios_436_28.jpg"/>
-                                          <fw type="paginaNum">— 28 —</fw>
-                                          <lb/>cacion hacia agua, no nos atrevíamos á alargarnos
+                                          las costas del <name>Brasil</name>, y porque la embar-
+ <pb n="28" source="Varios_436_28.jpg" facs="varios/Varios_436_28.jpg"/>
+
+              <fw type="paginaNum">— 28 —</fw>
+              <lb/>cacion hacia agua, no nos atrevíamos á alargarnos
                                           al mar y fuimos<lb/>costeando la tierra firme. De repente
                                           nos acometió otra tempestad de<lb/>la parte del Poniente
                                           que nos extravió de la costa, y naufragamos de<lb/>noche
@@ -6856,7 +7125,8 @@
                                           algu-<lb/>nos cañonazos, haciendo todas las demás
                                           señales de pedir socorro<lb/>con ánimo de no abandonar
                                           el bajel hasta el último trance.</p>
-            <p><lb/>»Tuvimos que quitar las prisiones á los esclavos negros
+            <p>
+              <lb/>»Tuvimos que quitar las prisiones á los esclavos negros
                                           para que<lb/>nos ayudasen á dar á la bomba, pues el
                                           navío se nos iba llenando de<lb/>agua, pero apenas se
                                           vieron sueltos se conjuraron contra nosotros,
@@ -6877,7 +7147,8 @@
                                           movieron á compasion y nos permitie-<lb/>ron embarcarnos
                                           con ellos en las lanchas, bajo la condicion de que<lb/>no
                                           llevásemos armas.</p>
-            <p><lb/>»Desarmados saltamos en las fanchas, y tan cargadas iban
+            <p>
+              <lb/>»Desarmados saltamos en las fanchas, y tan cargadas iban
                                           que á<lb/>cada momento consentíamos en ahogarnos. Nos
                                           esforzábamos por acer-<lb/>carnos á la isla; pero el
                                           viento cambió y nos engolfó en alta mar á<lb/>pesar del
@@ -6893,7 +7164,8 @@
                                           pues aquellos pobres<lb/>salvajes solo se mantienen de
                                           pesca y algunas frutas silvestres que<lb/>produce la
                                           isla.</p>
-            <p><lb/>»Hace pocos dias que una nacion vecina de bárbaros
+            <p>
+              <lb/>»Hace pocos dias que una nacion vecina de bárbaros
                                           acometió á<lb/>los de nuestra isla. Todos tomamos las
                                           armas, y hubiéramos creido<lb/>faltar á la obligacion
                                           más sagrada, si no hubiésemos auxiliado á<lb/>nuestros
@@ -6906,15 +7178,19 @@
                                           dias con sus no-<lb/>ches, atados de piés y manos y sin
                                           probar más alimento que algunos<lb/>peces podridos de los
                                           que el mar arroja á la playa.</p>
+
             <pb n="29" source="Varios_436_29.jpg" facs="varios/Varios_436_29.jpg"/>
+
             <fw type="paginaNum">— 29 —</fw>
-            <p><lb/>»Hoy al amanecer nos condujeron en canoas á ese lugar
+            <p>
+              <lb/>»Hoy al amanecer nos condujeron en canoas á ese lugar
                                           en que,<lb/>segun costumbre de aquellos bárbaros,
                                           debíamos ser pasto de su vo-<lb/>racidad. La Divina
                                           Providencia os trajo allí en favor nuestro,
                                           genero-<lb/>sos varones, para redimirnos. Os debemos lo
                                           que jamás os podremos<lb/>pagar.»</p>
-            <p><lb/>Calló el español, y lleno de agradecimiento empezó á
+            <p>
+              <lb/>Calló el español, y lleno de agradecimiento empezó á
                                           verter co-<lb/>piosas lágrimas. Robinson le preguntó
                                           sobre quién era el dueño de la<lb/>carga del navío, á
                                           lo que respondió que le habian fletado dos
@@ -6922,16 +7198,18 @@
                                           comprado negros, y el otro,<lb/>que abominaba semejante
                                           comercio, habia tomado oro en polvo á<lb/>cambio de sus
                                           mercancías.</p>
-            <p><lb/>Informándose igualmente de quién seria el dueño de
+            <p>
+              <lb/>Informándose igualmente de quién seria el dueño de
                                           los diaman-<lb/>tes y papeles interesantes que recogió,
                                           supo que unos y otros perte-<lb/>necian á un pasajero
                                           inglés que se restituia á su país; pero que
                                           ha-<lb/>biendo fallecido en el viaje, el navío español
                                           llevaba aquellos bienes<lb/>para hacerlos trasportar á
-                                          Inglaterra. Entonces Robinson mostró al<lb/>español
+                                          <name>Inglaterra</name>. Entonces Robinson mostró al<lb/>español
                                           todos aquellos efectos, que desde entonces miró como
                                           un<lb/>inviolable depósito confiado á su fidelidad.</p>
-            <p><lb/>En seguida Robinson propuso al español y á Joviano que
+            <p>
+              <lb/>En seguida Robinson propuso al español y á Joviano que
                                           volvie-<lb/>ran á la referida isla en busca de los demás
                                           europeos para ofrecerles<lb/>de su parte si querian venir
                                           á vivir en su compañía; pero antes de la<lb/>partida
@@ -6945,7 +7223,8 @@
                                           condiciones con que los habia de admitir,
                                           previ-<lb/>niendo no se daria partido al que
                                           anticipadamente no aceptase dichas<lb/>condiciones.</p>
-            <p><lb/>Contentísimo Robinson con la explicacion del español,
+            <p>
+              <lb/>Contentísimo Robinson con la explicacion del español,
                                           extendió<lb/>la contrata en estos términos:<lb/>«El que
                                           quiera establecerse en la isla de Robinson para gozar
                                           en<lb/>ella las comodidades de la vida con que desde ahora
@@ -6962,9 +7241,11 @@
                                           sí<lb/>querellarse ante el señor de la isla, ó ante la
                                           persona en quien éste<lb/>haya subdelegado el oficio de
                                           juez.<lb/>4.° Allanarse con toda sumision á desempeñar
-                                          las tareas que <pb n="30" source="Varios_436_30.jpg" facs="varios/Varios_436_30.jpg"/>
-                                          <fw type="paginaNum">— 30 —</fw>
-                                          <lb/>exija el bien de la sociedad y ayudar, siempre que el
+                                          las tareas que
+ <pb n="30" source="Varios_436_30.jpg" facs="varios/Varios_436_30.jpg"/>
+
+              <fw type="paginaNum">— 30 —</fw>
+              <lb/>exija el bien de la sociedad y ayudar, siempre que el
                                           caso lo requie-<lb/>ra, al señor de la isla, aunque sea
                                           á costa de su sangre y de su vida.<lb/>5.° Si alguno
                                           osase rebelarse contra cualquiera de estas
@@ -6978,8 +7259,10 @@
                                           promesa jurada) hagan firme resolucion de<lb/>guardar
                                           inviolablemente las condiciones que en ellas se
                                           contienen.</p>
-            <p><lb/>ROBINSON.»</p>
-            <p><lb/>En cuanto estuvo lista la escritura determinaron que
+            <p>
+              <lb/>ROBINSON.»</p>
+            <p>
+              <lb/>En cuanto estuvo lista la escritura determinaron que
                                           el español y<lb/>Joviano partiesen despues de dejar
                                           sembradas unas tierras diez tan-<lb/>tos á lo menos más
                                           extensas que las que antes cultivaban, en aten-<lb/>cion
@@ -7016,11 +7299,14 @@
                                           ambos se retiraron á observar<lb/>á los que se acercaban
                                           y procurar descubrir sus designios. Apostados<lb/>en un
                                           alto poblado de árboles vieron que la lancha, á cuyo
-                                          bordo ve- <pb n="31" source="Varios_436_31.jpg" facs="varios/Varios_436_31.jpg"/>
-                                          <fw type="paginaNum">— 31 —</fw>
-                                          <lb/>nian once hombres, habia llegado á la playa donde
+                                          bordo ve-
+ <pb n="31" source="Varios_436_31.jpg" facs="varios/Varios_436_31.jpg"/>
+
+              <fw type="paginaNum">— 31 —</fw>
+              <lb/>nian once hombres, habia llegado á la playa donde
                                           desembarcaron <lb/>ocho armados y tres maniatados.</p>
-            <p><lb/>Era el caso que se habia sublevado la tripulacion
+            <p>
+              <lb/>Era el caso que se habia sublevado la tripulacion
                                           contra el capi- <lb/>tan, el piloto y otro navegante, y
                                           pensando que aquella isla estaba <lb/>desierta
                                           determinaron saltar en tierra con intencion de dejarlos
@@ -7039,15 +7325,17 @@
                                           le dijo: <lb/>—Vos sois, generoso mortal, quien me ha
                                           salvado y me ha resti- <lb/>tuido el buque; de él y de mi
                                           persona podeis disponer á vuestro al- <lb/>bedrío.</p>
-            <p><lb/>Robinson contó en breves razones lo principal de sus
+            <p>
+              <lb/>Robinson contó en breves razones lo principal de sus
                                           aventuras, <lb/>que causaron singular admiracion al
                                           capitan. Luego le oreguntó éste <lb/>qué le mandaba
                                           hiciese en favor suyo.</p>
-            <p><lb/>—Amigo mio, respondió Robinson; tengo que pediros
+            <p>
+              <lb/>—Amigo mio, respondió Robinson; tengo que pediros
                                           por merced <lb/>que aguardemos á que vengan los
                                           españoles y el padre de Domingo, <lb/>recibiéndonos á
                                           bordo de vuestro navío con la obligacion de dirigir
-                                          <lb/>el rumbo á Inglaterra, tocando primero en Cádiz
+                                          <lb/>el rumbo á <name>Inglaterra</name>, tocando primero en Cádiz
                                           para desembarcar <lb/>á los españoles, y que perdoneis
                                           la vida á los cabezas de la sedicion, <lb/>sin imponerles
                                           otro castigo que el de quedarse en esta isla. <lb/>El
@@ -7064,25 +7352,30 @@
                                           permitiese que- <lb/>darse allí avecindados con sus
                                           consortes, respecto á las buenas noti- <lb/>cias que
                                           tenian de aquel territorio.</p>
-            <p><lb/>Aprobó Robinson su solicitud celebrando se
+            <p>
+              <lb/>Aprobó Robinson su solicitud celebrando se
                                           arrraigase en la isla <lb/>el establecimiento de una nueva
                                           colonia.</p>
-            <p><lb/>Despues de dejar arreglados algunos asuntos de
+            <p>
+              <lb/>Despues de dejar arreglados algunos asuntos de
                                           importancia y <lb/>embarcado todo lo necesario, llega la
                                           hora de la partida y con voz <lb/>comprimida se despide
                                           por última vez de la isla y de los colonos que <lb/>deja
                                           en ella, pasando á bordo en compañía de Domingo,
                                           Joviano y <lb/>los demás españoles <lb/>Fué la
                                           navegacion de las mas felices, porque á los veinticuatro
+
                                                 <pb n="32" source="Varios_436_32.jpg" facs="varios/Varios_436_32.jpg"/>
-                                          <fw type="paginaNum">— 32 —</fw>
-                                          <lb/>dias fondearon en Cádiz, desembarcando los pasajeros
+
+              <fw type="paginaNum">— 32 —</fw>
+              <lb/>dias fondearon en Cádiz, desembarcando los pasajeros
                                           españoles.<lb/>Robinson halló al dueño de los polvos de
                                           oro, y se los entregó re-<lb/>ligiosamente. De allí
                                           pasaron á Inglaterra y á su llegada á
-                                          Porstmouth<lb/>encontró tambien á la viuda á quien
+                                          <name>Porstmouth</name><lb/>encontró tambien á la viuda á quien
                                           pertenecian los diamantes.</p>
-            <p><lb/>Ultimamente, se dirigieron á Hamburgo, llegando con
+            <p>
+              <lb/>Ultimamente, se dirigieron á <name>Hamburgo</name>, llegando con
                                           felicidad.<lb/>Saltó Robinson en tierra y supo el
                                           fallecimiento de su madre. En se-<lb/>guida envió una
                                           persona que preparase el ánimo de su padre

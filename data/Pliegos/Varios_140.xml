@@ -16,6 +16,20 @@
           <resp>Verificación de la codificación y carga</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -70,7 +84,7 @@
                   <material/>
                 </support>
                 <extent>
-                                    <measure unit="página" quantity="4"/>4 p.</extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +109,68 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q8717">
+            <placeName key="Sevilla">Sevilla</placeName>
+            <location>
+              <geo>37.383333333333 -5.9833333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15098">
+            <placeName key="Cuenca">Cuenca</placeName>
+            <location>
+              <geo>40.071666666667 -2.135</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1449">
+            <placeName key="Génova">Génova</placeName>
+            <location>
+              <geo>44.407186111111 8.9339833333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1410">
+            <placeName key="Gibraltar">Gibraltar</placeName>
+            <location>
+              <geo>36.14 -5.35</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q528530">
+            <placeName key="Andújar">Andújar</placeName>
+            <location>
+              <geo>38.0392362 -4.0505603</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q686362">
+            <placeName key="Sierra_Morena">Sierra Morena</placeName>
+            <location>
+              <geo>38.3 -5.4</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q752280">
+            <placeName key="Almagro">Almagro</placeName>
+            <location>
+              <geo>38.888238 -3.7118218</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1601699">
+            <placeName key="Villamanrique_de_la_Condesa">Villamanrique De La Condesa</placeName>
+            <location>
+              <geo>37.246388888889 -6.3063888888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +206,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1270,23 +1345,23 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_140_1.jpg" facs="varios/Varios_140_1.jpg"/>
-        
+
         <div>
           <head type="primer_titulo">
-                        <lb/>XACARA NUEVA, EN QUE SE REFIERE, Y DA<lb/>cuenta de veinte
+            <lb/>XACARA NUEVA, EN QUE SE REFIERE, Y DA<lb/>cuenta de veinte
             muertes que una Donzella, llamada<lb/>Doña Tereſa de Llanos, natural de la Cindad de
             Sevilla,<lb/>ſiendo las primeras á dos hermanos ſuyos, por averle eſ¬<lb/>torvado el
             caſarſe. Y tambien fe declara como ſe viſtió de<lb/>hombre, y fue preſa, y ſentenciada
             à muerte, y ſe vió<lb/>libre, por averſe deſcubierto que era muger,<lb/>y el dichoſo
             fin que tuyo.</head>
-
           <l rend="indent">
-                        <hi rend="negrita">P</hi>Reſtame ſilencio el mundo,</l>
+            <hi rend="negrita">P</hi>Reſtame ſilencio el mundo,</l>
           <l>mientras que voy explicando</l>
           <l>de una muger los arrojos,</l>
           <l>valentias, y deſgarros.</l>
-          <l rend="indent">En la Ciudad de Sevilla,</l>
+          <l rend="indent">En la Ciudad de <name>Sevilla</name>,</l>
           <l>cuyo circulo, y eſpacio</l>
           <l>adorna Febo con luzes</l>
           <l>de ſus eminentes rayos.</l>
@@ -1373,7 +1448,7 @@
           <l>en una caſa de campo,</l>
           <l>caminando à toda priſſa</l>
           <l>con muchiſſimo cuydado.</l>
-          <l rend="indent">Entró en Cuenca una mañana,</l>
+          <l rend="indent">Entró en <name>Cuenca</name> una mañana,</l>
           <l>donde poſada buſcando,</l>
           <l>allí eſtuvo quatro dias</l>
           <l>donde una noche cenando,</l>
@@ -1401,7 +1476,6 @@
           <l>à cenar al otro barrio.</l>
           <l>De allí paſsó á Zaragoça,</l>
           <l>andandoſe paſſeando</l>
-
           <fw type="reclamo">Por</fw>
 
           <pb n="3" source="Varios_140_3.jpg" facs="varios/Varios_140_3.jpg"/>
@@ -1428,11 +1502,11 @@
           <l>y Don Geronymo Pardo</l>
           <l rend="indent">La facó deſte peligro,</l>
           <l>son que la puſo en ſalvo,</l>
-          <l>viniendo haſta Barcelona,</l>
+          <l>viniendo haſta <name>Barcelona</name>,</l>
           <l>ſirviendole de criado.</l>
-          <l rend="indent">De Genova dos Galeras</l>
+          <l rend="indent">De <name>Genova</name> dos Galeras</l>
           <l>en eſte Puerto llegaron,</l>
-          <l>ſe embarcó, y fueſſe a Gibraltar,</l>
+          <l>ſe embarcó, y fueſſe a <name>Gibraltar</name>,</l>
           <l>alli mato un Eſcrivano,</l>
           <l rend="indent">Porque le hizo un teſtimonio,</l>
           <l>pero ſe lo hizo falſo.</l>
@@ -1441,7 +1515,7 @@
           <l rend="indent">En la Puerta de la Mar</l>
           <l>en la meſa de los dados;</l>
           <l>ſobre jugar una ſuerte</l>
-          <l>à un valiente Sevillano,</l>
+          <l>à un valiente <name>Sevilla</name>no,</l>
           <l rend="indent">Se bolvieron contra élla</l>
           <l>catorze, ó quinze Soldados;</l>
           <l>tres eran en ſu favor,</l>
@@ -1466,7 +1540,7 @@
           <l>donde un día en el mercado</l>
           <l>à un primo de Serafin,</l>
           <l>el que eſtuvo apriſionado</l>
-          <l rend="indent">En la Corte de Madrid,</l>
+          <l rend="indent">En la Corte de <name>Madrid</name>,</l>
           <l>quiſo á un Labrador honrado</l>
           <l>engañarle en un doblon,</l>
           <l>y ella lo eſtava mirando,</l>
@@ -1480,15 +1554,14 @@
           <l>le echó à fuera los livianos.</l>
           <l rend="indent">Tres Torreros Andaluzes</l>
           <l>deſdeallí la acompañaron,</l>
-          <l>hasta la Ciudad de Andujar,</l>
-          <l>Sierra Morena paſſando.</l>
+          <l>hasta la Ciudad de <name>Andujar</name>,</l>
+          <l><name>Sierra Morena</name> paſſando.</l>
           <l rend="indent">En el camino encontró</l>
           <l>un hombre que iva llorando;</l>
           <l>preguntóle ſu afliccion,</l>
           <l>y èl le dixo: me han robado,</l>
           <l rend="indent">Muy poco trecho de aqui,</l>
           <l>ciento y cinquenta ducados,</l>
-
           <fw type="reclamo">lo</fw>
 
           <pb n="4" source="Varios_140_4.jpg" facs="varios/Varios_140_4.jpg"/>
@@ -1516,7 +1589,7 @@
           <l rend="indent">Un Cavallero ha ſalido,</l>
           <l>tan ſolo conſu criado,</l>
           <l>y trahe mas de mil doblones,</l>
-          <l>porque lo ſupe en Almagro.</l>
+          <l>porque lo ſupe en <name>Almagro</name>.</l>
           <l rend="indent">Lo que conviene, eſta noche</l>
           <l>es, que eſtèmos deſviados</l>
           <l>unos de otros, que aſſi</l>
@@ -1529,7 +1602,7 @@
           <l>con un fuerte carabinaço;</l>
           <l>quitóles la cantidad,</l>
           <l>que al otro avian robado.</l>
-          <l rend="indent">A Villa Manrique fué</l>
+          <l rend="indent">A <name>Villa Manrique</name> fué</l>
           <l>donde el dinero ha entregado</l>
           <l>al tal ſujeto, y quedó</l>
           <l>agradecido del caſo.</l>
@@ -1558,11 +1631,10 @@
           <l>la que hizo tantas muertes,</l>
           <l>ſu honor continuo guardando.</l>
         </div>
-        
         <div type="colofon">
           <p>
-                        <lb/>
-                        <hi rend="cursiva">Barcelona</hi>: Por JUAN JOLAS Impreſſor, à los Algodoneros.</p>
+            <lb/>
+            <hi rend="cursiva">Barcelona</hi>: Por JUAN JOLAS Impreſſor, à los Algodoneros.</p>
         </div>
       </div>
     </body>

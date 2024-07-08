@@ -1,583 +1,552 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_045">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Glosas nuevas para cantar las damas á los galanes</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LF">
-                              <name>Lorysmar Franco</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Trobos. Glosas nuevas para cantar
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Glosas nuevas para cantar las damas á los galanes</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LF">
+          <name>Lorysmar Franco</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Trobos. Glosas nuevas para cantar
                                           las damas á los galanes.</title>
-                                    <title type="titulo_breve">Glosas nuevas para cantar las damas á
+            <title type="titulo_breve">Glosas nuevas para cantar las damas á
                                           los galanes.</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p>Otra impresión (s.a.): <ref target="BCN_044.xml">BCN_044</ref></p>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Herederos de la Viuda Pla</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6817949</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">LXXIII</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="3">Tres grabados (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_045_1.xml" facs="varios/BCN_045_1.jpg/0,160,397,704/100,/0/default.jpg">grabado_b_045_1</item>
-                                                      <item corresp="grabado_b_045_2.xml" facs="varios/BCN_045_1.jpg/469,225,400,620/100,/0/default.jpg">grabado_b_045_2</item>
-                                                      <item corresp="grabado_b_045_3.xml" facs="varios/BCN_045_1.jpg/956,195,1351,650/100,/0/default.jpg">grabado_b_045_3</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+          </titleStmt>
+          <editionStmt>
+            <p>Otra impresión (s.a.): <ref target="BCN_044.xml">BCN_044</ref>
+            </p>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Herederos de la Viuda Pla</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.6817949</idno>
+            <altIdentifier>
+              <idno type="num_impresor">LXXIII</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="3">Tres grabados (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_045_1.xml" facs="varios/BCN_045_1.jpg/0,160,397,704/100,/0/default.jpg">grabado_b_045_1</item>
+                  <item corresp="grabado_b_045_2.xml" facs="varios/BCN_045_1.jpg/469,225,400,620/100,/0/default.jpg">grabado_b_045_2</item>
+                  <item corresp="grabado_b_045_3.xml" facs="varios/BCN_045_1.jpg/956,195,1351,650/100,/0/default.jpg">grabado_b_045_3</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term type="tipo_texto">Trovos</term>
-                              <term type="tipo_estrofa">Romance (en coplas)</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-10-17" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term type="tipo_texto">Trovos</term>
+          <term type="tipo_estrofa">Romance (en coplas)</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-10-17" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_045_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-      <facsimile>
-            <graphic url="varios/BCN_045_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_045_1.jpg" facs="varios/BCN_045_1.jpg"/>
+          <pb n="1" source="BCN_045_1.jpg" facs="varios/BCN_045_1.jpg"/>
 
-                              <head type="primer_titulo">
-                                    <lb/>TROBOS.<lb/><hi rend="negrita">GLOSAS</hi><lb/>NUEVAS<lb/>PARA CANTAR LAS DAMAS Á LOS
+          <head type="primer_titulo">
+            <lb/>TROBOS.<lb/>
+            <hi rend="negrita">GLOSAS</hi>
+            <lb/>NUEVAS<lb/>PARA CANTAR LAS DAMAS Á LOS
                                     GALANES.</head>
+          <lg n="1">
+            <head type="titulo_estrofa">
+              <lb/>TROBO I.</head>
+            <lg>
+              <l>
+                <hi rend="negrita">D</hi>e risa estoy que reviento</l>
+              <l>al contemplar en mi amante;</l>
+              <l>sin que cese noche y dia</l>
+              <l>se desvive por hablarme.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Al ver el ciego ardimiento</l>
+              <l>con que me vienes á hablar</l>
+              <l>causas mi entretenimiento,</l>
+              <l>y sin poderlo evitar</l>
+              <l>de risa estoy que reviento.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Cada hora, y cada instante</l>
+              <l>me divierte el pensamiento,</l>
+              <l>es mi delicia incesante,</l>
+              <l>y gozo todo contento</l>
+              <l>al contemplar en mi amante.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Vive mi amante á porfia,</l>
+              <l>opaco, triste y lloroso,</l>
+              <l>si no está en mi compañia,</l>
+              <l>y suspira pesaroso</l>
+              <l>sin que cese noche y dia.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Yo como sin alterarme:</l>
+              <l>él no duerme, y siempre ayuna,</l>
+              <l>yo de amor tengo un adarme,</l>
+              <l>y el loco al sol y á la luna</l>
+              <l>se desvive por hablarme.</l>
+            </lg>
+          </lg>
 
-                              <lg n="1">
-                                    <head type="titulo_estrofa"><lb/>TROBO I.</head>
-                                    <lg>
-                                          <l><hi rend="negrita">D</hi>e risa estoy que reviento</l>
-                                          <l>al contemplar en mi amante;</l>
-                                          <l>sin que cese noche y dia</l>
-                                          <l>se desvive por hablarme.</l>
-                                    </lg>
+          <pb n="2" source="BCN_045_2.jpg" facs="varios/BCN_045_2.jpg"/>
 
-                                    <lg>
-                                          <l rend="indent">Al ver el ciego ardimiento</l>
-                                          <l>con que me vienes á hablar</l>
-                                          <l>causas mi entretenimiento,</l>
-                                          <l>y sin poderlo evitar</l>
-                                          <l>de risa estoy que reviento.</l>
-                                    </lg>
+          <lg n="2">
+            <head type="titulo_estrofa">II.</head>
+            <lg>
+              <l rend="indent">No tengo ningun dolor,</l>
+              <l>ninguna angustia ó pesar,</l>
+              <l>con los hombres me divierto,</l>
+              <l>sin querer á nadie amar.</l>
+            </lg>
+            <lg>
+              <l rend="indent">lgnoro lo que es amor,</l>
+              <l>y vivo desamorada:</l>
+              <l>y libre de su ardor,</l>
+              <l>y por eso en mi morada</l>
+              <l>no tengo ningun dolor.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Muchas ciegas por amar</l>
+              <l>viven llenas de dolores;</l>
+              <l>yo consigo el descansar,</l>
+              <l>pues no me dan mis amores</l>
+              <l>ninguna angustia, ó pesar.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Yo, como en otras advierto</l>
+              <l>los disgustos que les dan,</l>
+              <l>á sus voces me dispierto,</l>
+              <l>y formando un nuevo plan</l>
+              <l>con los hombres me divierto.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Me vienen á visitar,</l>
+              <l>y me dicen: amor mio</l>
+              <l>conmigo te has de casar;</l>
+              <l>mas yo de todo me rio</l>
+              <l>sin querer á nadie amar.</l>
+            </lg>
+          </lg>
+          <lg n="3">
+            <head type="titulo_estrofa">III.</head>
+            <lg>
+              <l rend="indent">Libre la avecilla canta</l>
+              <l>divirtiendo la ribera,</l>
+              <l>la que en prisiones se halla</l>
+              <l>por su libertad lamenta.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Como el amor no me encanta,</l>
+              <l>de todo delicias tomo;</l>
+              <l>ninguna cosa me espanta,</l>
+              <l>pues siempre medito como</l>
+              <l>libre la avecilla canta.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Si enamorada estuviera</l>
+              <l>triste, opocada, amarilla,</l>
+              <l>llena de pesar viviera,</l>
+              <l>y no viera la avecilla</l>
+              <l>divirtiendo la ribera.</l>
+            </lg>
+            <lg>
+              <l rend="indent">En duras redes de malla</l>
+              <l>lamenta su triste suerte;</l>
+              <l>á toda delicia calla,</l>
+              <l>y solo aguarda la muerte</l>
+              <l>la que en prisiones se halla.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Todo objeto le atormenta</l>
+              <l>al corazon oprimido,</l>
+              <l>de lagrimas se alimenta,</l>
+              <l>y sin consuelo afligido</l>
+              <l>por su libertad lamenta.</l>
+            </lg>
+          </lg>
+          <lg n="4">
+            <head type="titulo_estrofa">IV.</head>
+            <lg>
+              <l rend="indent">Tomo de cabeza agena</l>
+              <l>los escarmientos de amor,</l>
+              <l>y por eso me divierto</l>
+              <l>con cualquiera diversion.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Metida una dama en trena</l>
+              <l>de amar, penas á millares</l>
+              <l>padece como otra Elena:</l>
+              <l>por eso estos ejemplares</l>
+              <l>tomo de cabeza agena.</l>
+            </lg>
+            <lg>
+              <l rend="indent">El cielo me hizo favor</l>
+              <l>de darme conocimiento</l>
+              <l>para mirar con horror,</l>
+              <l>grande discernimiento</l>
+              <l>los escarmientos de amor.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Todo discreta lo advierto,</l>
+              <l>vivo libre, y sosegada</l>
+              <l>no toma en mi el amor puerto:</l>
+              <l>de ninguno soy amada,</l>
+              <l>por eso me divierto.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Si estuviera en la prision</l>
+              <l>que el amor me prevenia,</l>
+              <l>me afligiera con razon,</l>
+              <l>y no me divertiria</l>
+              <l>con cualquiera diversion.</l>
+            </lg>
+          </lg>
 
-                                    <lg>
-                                          <l rend="indent">Cada hora, y cada instante</l>
-                                          <l>me divierte el pensamiento,</l>
-                                          <l>es mi delicia incesante,</l>
-                                          <l>y gozo todo contento</l>
-                                          <l>al contemplar en mi amante.</l>
-                                    </lg>
+          <pb n="3" source="BCN_045_3.jpg" facs="varios/BCN_045_3.jpg"/>
 
-                                    <lg>
-                                          <l rend="indent">Vive mi amante á porfia,</l>
-                                          <l>opaco, triste y lloroso,</l>
-                                          <l>si no está en mi compañia,</l>
-                                          <l>y suspira pesaroso</l>
-                                          <l>sin que cese noche y dia.</l>
-                                    </lg>
+          <lg n="5">
+            <head type="titulo_estrofa">V.</head>
+            <lg>
+              <l rend="indent">Amantes engañadores,</l>
+              <l>huiros de mi presencia,</l>
+              <l>no perturbeis mi reposo</l>
+              <l>con engaños ni sistemas.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Mis sentidos amadores</l>
+              <l>de la dulce soledad,</l>
+              <l>os conjuran con furores</l>
+              <l>á todos con igualdad,</l>
+              <l>amantes engañadores.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Con la mayor diligencia,</l>
+              <l>con la presteza mayor,</l>
+              <l>dejad vuestra impertinencia,</l>
+              <l>y con todo vuestro amor</l>
+              <l>huiros de mi presencia.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Tengo el corazon gozoso,</l>
+              <l>y libre mi voluntad,</l>
+              <l>el alvedrio animoso,</l>
+              <l>y vivo en tranquilidad,</l>
+              <l>no perturbeis mi reposo.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Corazon mio, no temas,</l>
+              <l>que mientras te guarde el cielo</l>
+              <l>del amor y sus emblemas,</l>
+              <l>no te echará por el suelo</l>
+              <l>con engaños, ni sistemas.</l>
+            </lg>
+          </lg>
+          <lg n="6">
+            <head type="titulo_estrofa">VI.</head>
+            <lg>
+              <l rend="indent">La que se casa afligida,</l>
+              <l>y vive desosegada,</l>
+              <l>mas le valiera morir</l>
+              <l>que no verse mal casada.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Haga cuenta que la vida</l>
+              <l>pierde el dia que se casa,</l>
+              <l>la muger que no es querida,</l>
+              <l>y que á los tormentos pasa,</l>
+              <l>la que se casa afligida.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Dia y noche atormentada</l>
+              <l>estará del pensamiento</l>
+              <l>la que se casó engañada,</l>
+              <l>no tiene ningun contento,</l>
+              <l>y vive desosegada.</l>
+            </lg>
+            <lg>
+              <l rend="indent">La muger, que por huir</l>
+              <l>de su buen padre querido,</l>
+              <l>casada quiere vivir,</l>
+              <l>sino la quiere el marido</l>
+              <l>mas le valiera el morir.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Mas valia sepultada</l>
+              <l>estar cualquiera muger,</l>
+              <l>ó en una prision cerrada,</l>
+              <l>y de dichas carecer,</l>
+              <l>que no verse mal casada.</l>
+            </lg>
+          </lg>
+          <lg n="7">
+            <head type="titulo_estrofa">VII.</head>
+            <lg>
+              <l rend="indent">La que no quiera ser presa</l>
+              <l>en los lazos del amor,</l>
+              <l>á ningun hombre no dé</l>
+              <l>ninguna conversacion.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Oid damas que interesa</l>
+              <l>á todas mi pensamiento,</l>
+              <l>guarde su conducta ilesa,</l>
+              <l>no dando al hombre el acento,</l>
+              <l>la que no quiera ser presa.</l>
+            </lg>
+            <lg>
+              <l rend="indent">La que no guarde su honor</l>
+              <l>con estimacion constante,</l>
+              <l>lamentará con dolor</l>
+              <l>inconstancias de un amante</l>
+              <l>en los lazos del amor.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Jamas vengarosa esté</l>
+              <l>la muger pundonorosa,</l>
+              <l>siempre viva en buena fe;</l>
+              <l>y conversacion viciosa</l>
+              <l>á ningun hombre no dé.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Esté en la suposicion,</l>
+              <l>segun llego á comprehender,</l>
+              <l>que por ninguna razon</l>
+              <l>es sana de hombre á muger</l>
+              <l>ninguna conversacion.</l>
+            </lg>
+          </lg>
 
-                                    <lg>
-                                          <l rend="indent">Yo como sin alterarme:</l>
-                                          <l>él no duerme, y siempre ayuna,</l>
-                                          <l>yo de amor tengo un adarme,</l>
-                                          <l>y el loco al sol y á la luna</l>
-                                          <l>se desvive por hablarme.</l>
-                                    </lg>
-                              </lg>
+          <pb n="4" source="BCN_045_4.jpg" facs="varios/BCN_045_4.jpg"/>
 
-                              <pb n="2" source="BCN_045_2.jpg" facs="varios/BCN_045_2.jpg"/>
-
-                              <lg n="2">
-                                    <head type="titulo_estrofa">II.</head>
-                                    <lg>
-                                          <l rend="indent">No tengo ningun dolor,</l>
-                                          <l>ninguna angustia ó pesar,</l>
-                                          <l>con los hombres me divierto,</l>
-                                          <l>sin querer á nadie amar.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">lgnoro lo que es amor,</l>
-                                          <l>y vivo desamorada:</l>
-                                          <l>y libre de su ardor,</l>
-                                          <l>y por eso en mi morada</l>
-                                          <l>no tengo ningun dolor.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Muchas ciegas por amar</l>
-                                          <l>viven llenas de dolores;</l>
-                                          <l>yo consigo el descansar,</l>
-                                          <l>pues no me dan mis amores</l>
-                                          <l>ninguna angustia, ó pesar.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Yo, como en otras advierto</l>
-                                          <l>los disgustos que les dan,</l>
-                                          <l>á sus voces me dispierto,</l>
-                                          <l>y formando un nuevo plan</l>
-                                          <l>con los hombres me divierto.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Me vienen á visitar,</l>
-                                          <l>y me dicen: amor mio</l>
-                                          <l>conmigo te has de casar;</l>
-                                          <l>mas yo de todo me rio</l>
-                                          <l>sin querer á nadie amar.</l>
-                                    </lg>
-                              </lg>
-
-                              <lg n="3">
-                                    <head type="titulo_estrofa">III.</head>
-                                    <lg>
-                                          <l rend="indent">Libre la avecilla canta</l>
-                                          <l>divirtiendo la ribera,</l>
-                                          <l>la que en prisiones se halla</l>
-                                          <l>por su libertad lamenta.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Como el amor no me encanta,</l>
-                                          <l>de todo delicias tomo;</l>
-                                          <l>ninguna cosa me espanta,</l>
-                                          <l>pues siempre medito como</l>
-                                          <l>libre la avecilla canta.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Si enamorada estuviera</l>
-                                          <l>triste, opocada, amarilla,</l>
-                                          <l>llena de pesar viviera,</l>
-                                          <l>y no viera la avecilla</l>
-                                          <l>divirtiendo la ribera.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">En duras redes de malla</l>
-                                          <l>lamenta su triste suerte;</l>
-                                          <l>á toda delicia calla,</l>
-                                          <l>y solo aguarda la muerte</l>
-                                          <l>la que en prisiones se halla.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Todo objeto le atormenta</l>
-                                          <l>al corazon oprimido,</l>
-                                          <l>de lagrimas se alimenta,</l>
-                                          <l>y sin consuelo afligido</l>
-                                          <l>por su libertad lamenta.</l>
-                                    </lg>
-                              </lg>
-
-                              <lg n="4">
-                                    <head type="titulo_estrofa">IV.</head>
-                                    <lg>
-                                          <l rend="indent">Tomo de cabeza agena</l>
-                                          <l>los escarmientos de amor,</l>
-                                          <l>y por eso me divierto</l>
-                                          <l>con cualquiera diversion.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Metida una dama en trena</l>
-                                          <l>de amar, penas á millares</l>
-                                          <l>padece como otra Elena:</l>
-                                          <l>por eso estos ejemplares</l>
-                                          <l>tomo de cabeza agena.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">El cielo me hizo favor</l>
-                                          <l>de darme conocimiento</l>
-                                          <l>para mirar con horror,</l>
-                                          <l>grande discernimiento</l>
-                                          <l>los escarmientos de amor.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Todo discreta lo advierto,</l>
-                                          <l>vivo libre, y sosegada</l>
-                                          <l>no toma en mi el amor puerto:</l>
-                                          <l>de ninguno soy amada,</l>
-                                          <l>por eso me divierto.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Si estuviera en la prision</l>
-                                          <l>que el amor me prevenia,</l>
-                                          <l>me afligiera con razon,</l>
-                                          <l>y no me divertiria</l>
-                                          <l>con cualquiera diversion.</l>
-                                    </lg>
-                              </lg>
-
-                              <pb n="3" source="BCN_045_3.jpg" facs="varios/BCN_045_3.jpg"/>
-
-                              <lg n="5">
-                                    <head type="titulo_estrofa">V.</head>
-                                    <lg>
-                                          <l rend="indent">Amantes engañadores,</l>
-                                          <l>huiros de mi presencia,</l>
-                                          <l>no perturbeis mi reposo</l>
-                                          <l>con engaños ni sistemas.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Mis sentidos amadores</l>
-                                          <l>de la dulce soledad,</l>
-                                          <l>os conjuran con furores</l>
-                                          <l>á todos con igualdad,</l>
-                                          <l>amantes engañadores.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Con la mayor diligencia,</l>
-                                          <l>con la presteza mayor,</l>
-                                          <l>dejad vuestra impertinencia,</l>
-                                          <l>y con todo vuestro amor</l>
-                                          <l>huiros de mi presencia.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Tengo el corazon gozoso,</l>
-                                          <l>y libre mi voluntad,</l>
-                                          <l>el alvedrio animoso,</l>
-                                          <l>y vivo en tranquilidad,</l>
-                                          <l>no perturbeis mi reposo.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Corazon mio, no temas,</l>
-                                          <l>que mientras te guarde el cielo</l>
-                                          <l>del amor y sus emblemas,</l>
-                                          <l>no te echará por el suelo</l>
-                                          <l>con engaños, ni sistemas.</l>
-                                    </lg>
-                              </lg>
-
-                              <lg n="6">
-                                    <head type="titulo_estrofa">VI.</head>
-                                    <lg>
-                                          <l rend="indent">La que se casa afligida,</l>
-                                          <l>y vive desosegada,</l>
-                                          <l>mas le valiera morir</l>
-                                          <l>que no verse mal casada.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Haga cuenta que la vida</l>
-                                          <l>pierde el dia que se casa,</l>
-                                          <l>la muger que no es querida,</l>
-                                          <l>y que á los tormentos pasa,</l>
-                                          <l>la que se casa afligida.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Dia y noche atormentada</l>
-                                          <l>estará del pensamiento</l>
-                                          <l>la que se casó engañada,</l>
-                                          <l>no tiene ningun contento,</l>
-                                          <l>y vive desosegada.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">La muger, que por huir</l>
-                                          <l>de su buen padre querido,</l>
-                                          <l>casada quiere vivir,</l>
-                                          <l>sino la quiere el marido</l>
-                                          <l>mas le valiera el morir.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Mas valia sepultada</l>
-                                          <l>estar cualquiera muger,</l>
-                                          <l>ó en una prision cerrada,</l>
-                                          <l>y de dichas carecer,</l>
-                                          <l>que no verse mal casada.</l>
-                                    </lg>
-                              </lg>
-
-                              <lg n="7">
-                                    <head type="titulo_estrofa">VII.</head>
-                                    <lg>
-                                          <l rend="indent">La que no quiera ser presa</l>
-                                          <l>en los lazos del amor,</l>
-                                          <l>á ningun hombre no dé</l>
-                                          <l>ninguna conversacion.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Oid damas que interesa</l>
-                                          <l>á todas mi pensamiento,</l>
-                                          <l>guarde su conducta ilesa,</l>
-                                          <l>no dando al hombre el acento,</l>
-                                          <l>la que no quiera ser presa.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">La que no guarde su honor</l>
-                                          <l>con estimacion constante,</l>
-                                          <l>lamentará con dolor</l>
-                                          <l>inconstancias de un amante</l>
-                                          <l>en los lazos del amor.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Jamas vengarosa esté</l>
-                                          <l>la muger pundonorosa,</l>
-                                          <l>siempre viva en buena fe;</l>
-                                          <l>y conversacion viciosa</l>
-                                          <l>á ningun hombre no dé.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Esté en la suposicion,</l>
-                                          <l>segun llego á comprehender,</l>
-                                          <l>que por ninguna razon</l>
-                                          <l>es sana de hombre á muger</l>
-                                          <l>ninguna conversacion.</l>
-                                    </lg>
-                              </lg>
-
-                              <pb n="4" source="BCN_045_4.jpg" facs="varios/BCN_045_4.jpg"/>
-
-                              <lg n="8">
-                                    <head type="titulo_estrofa">VIII.</head>
-                                    <lg>
-                                          <l rend="indent">La que en los hombres se fia</l>
-                                          <l>porque le prometen dar</l>
-                                          <l>sacará al fin amarguras,</l>
-                                          <l>y desazones sin par.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">De la suerte mas impia</l>
-                                          <l>ha de llegar á sufrir,</l>
-                                          <l>sin sosegar noche y dia,</l>
-                                          <l>y no ha de poder vivir</l>
-                                          <l>la que en los hombres se fia.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Suele alegre pasear</l>
-                                          <l>con hombres una muger,</l>
-                                          <l>sin llegar á penetrar</l>
-                                          <l>de que la pueden perder,</l>
-                                          <l>porque le prometen dar.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">De todas las aventuras</l>
-                                          <l>que haya alegre disfrutado,</l>
-                                          <l>y de todas las dulzuras,</l>
-                                          <l>que una dama haya logrado,</l>
-                                          <l>sacará al fin amarguras.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">No por mucho festejar</l>
-                                          <l>se suelen casar mejor,</l>
-                                          <l>antes llegan á sacar</l>
-                                          <l>el ver ajado su honor,</l>
-                                          <l>y desazones sin par.</l>
-                                    </lg>
-                              </lg>
-
-                              <lg n="9">
-                                    <head type="titulo_estrofa">IX.</head>
-                                    <lg>
-                                          <l rend="indent">A porfia vamos todos,</l>
-                                          <l>hombres, chicos y mugeres,</l>
-                                          <l>ellos á sufrir desprecios,</l>
-                                          <l>nosotras á dar desdenes.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">En dos mundanales lodos,</l>
-                                          <l>si vamos á examinar,</l>
-                                          <l>y á expresar por varios modos</l>
-                                          <l>que somos locos de atar,</l>
-                                          <l>á porfia vamos todos.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Con mil drogas y quereres</l>
-                                          <l>ciegos yá, y entusiasmados,</l>
-                                          <l>cada cual con sus haberes</l>
-                                          <l>hacen su giro obcecados</l>
-                                          <l>hombres, chicos y mugeres.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Compramos á caros precios</l>
-                                          <l>las damas nuestros amores,</l>
-                                          <l>y porque porfian necios</l>
-                                          <l>suelen ir entre clamores</l>
-                                          <l>ellos á sufrir desprecios.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Mira que no te encadenes</l>
-                                          <l>en la cadena que hacemos,</l>
-                                          <l>ni tampoco te enagenes:</l>
-                                          <l>pues solamente aprendemos</l>
-                                          <l>nosotras á dar desdenes.</l>
-                                    </lg>
-                              </lg>
-
-                              <lg n="10">
-                                    <head type="titulo_estrofa">X.</head>
-                                    <lg>
-                                          <l rend="indent">Ya es hora que me despida,</l>
-                                          <l>dejando aqueste instrumento,</l>
-                                          <l>diciendo, á Dios el amor,</l>
-                                          <l>y á cuantos quieran tenerlo.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Mi pasion enardecida</l>
-                                          <l>cantar mas y mas quisiera:</l>
-                                          <l>pero va la despedida</l>
-                                          <l>que aunque fuera lo que fuera</l>
-                                          <l>ya es hora que me despida.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">El sumo aborrecimiento</l>
-                                          <l>que tengo el nombre de amar,</l>
-                                          <l>me abruma el entendimiento,</l>
-                                          <l>y el canto me hace cesar</l>
-                                          <l>dejando aqueste instrumento.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Con firmeza y con ardor</l>
-                                          <l>de los hombres me despido,</l>
-                                          <l>renuncio todo favor,</l>
-                                          <l>y con esto habré cumplido,</l>
-                                          <l>diciendo, á Dios el amor.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Brindo pues (que puedo hacerlo)</l>
-                                          <l>con él á las madamitas</l>
-                                          <l>que suspiran por haberlo,</l>
-                                          <l>á las simplonas mocitas,</l>
-                                          <l>y á cuantos quieran tenerlo.</l>
-                                    </lg>
-                              </lg>
-
-                              <trailer>FIN.</trailer>
-                        </div>
-                        <div type="colofon">
-                              <p>
-                                    <lb/><hi rend="cursiva">Barcelona</hi>: Imprenta de los
+          <lg n="8">
+            <head type="titulo_estrofa">VIII.</head>
+            <lg>
+              <l rend="indent">La que en los hombres se fia</l>
+              <l>porque le prometen dar</l>
+              <l>sacará al fin amarguras,</l>
+              <l>y desazones sin par.</l>
+            </lg>
+            <lg>
+              <l rend="indent">De la suerte mas impia</l>
+              <l>ha de llegar á sufrir,</l>
+              <l>sin sosegar noche y dia,</l>
+              <l>y no ha de poder vivir</l>
+              <l>la que en los hombres se fia.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Suele alegre pasear</l>
+              <l>con hombres una muger,</l>
+              <l>sin llegar á penetrar</l>
+              <l>de que la pueden perder,</l>
+              <l>porque le prometen dar.</l>
+            </lg>
+            <lg>
+              <l rend="indent">De todas las aventuras</l>
+              <l>que haya alegre disfrutado,</l>
+              <l>y de todas las dulzuras,</l>
+              <l>que una dama haya logrado,</l>
+              <l>sacará al fin amarguras.</l>
+            </lg>
+            <lg>
+              <l rend="indent">No por mucho festejar</l>
+              <l>se suelen casar mejor,</l>
+              <l>antes llegan á sacar</l>
+              <l>el ver ajado su honor,</l>
+              <l>y desazones sin par.</l>
+            </lg>
+          </lg>
+          <lg n="9">
+            <head type="titulo_estrofa">IX.</head>
+            <lg>
+              <l rend="indent">A porfia vamos todos,</l>
+              <l>hombres, chicos y mugeres,</l>
+              <l>ellos á sufrir desprecios,</l>
+              <l>nosotras á dar desdenes.</l>
+            </lg>
+            <lg>
+              <l rend="indent">En dos mundanales lodos,</l>
+              <l>si vamos á examinar,</l>
+              <l>y á expresar por varios modos</l>
+              <l>que somos locos de atar,</l>
+              <l>á porfia vamos todos.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Con mil drogas y quereres</l>
+              <l>ciegos yá, y entusiasmados,</l>
+              <l>cada cual con sus haberes</l>
+              <l>hacen su giro obcecados</l>
+              <l>hombres, chicos y mugeres.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Compramos á caros precios</l>
+              <l>las damas nuestros amores,</l>
+              <l>y porque porfian necios</l>
+              <l>suelen ir entre clamores</l>
+              <l>ellos á sufrir desprecios.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Mira que no te encadenes</l>
+              <l>en la cadena que hacemos,</l>
+              <l>ni tampoco te enagenes:</l>
+              <l>pues solamente aprendemos</l>
+              <l>nosotras á dar desdenes.</l>
+            </lg>
+          </lg>
+          <lg n="10">
+            <head type="titulo_estrofa">X.</head>
+            <lg>
+              <l rend="indent">Ya es hora que me despida,</l>
+              <l>dejando aqueste instrumento,</l>
+              <l>diciendo, á Dios el amor,</l>
+              <l>y á cuantos quieran tenerlo.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Mi pasion enardecida</l>
+              <l>cantar mas y mas quisiera:</l>
+              <l>pero va la despedida</l>
+              <l>que aunque fuera lo que fuera</l>
+              <l>ya es hora que me despida.</l>
+            </lg>
+            <lg>
+              <l rend="indent">El sumo aborrecimiento</l>
+              <l>que tengo el nombre de amar,</l>
+              <l>me abruma el entendimiento,</l>
+              <l>y el canto me hace cesar</l>
+              <l>dejando aqueste instrumento.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Con firmeza y con ardor</l>
+              <l>de los hombres me despido,</l>
+              <l>renuncio todo favor,</l>
+              <l>y con esto habré cumplido,</l>
+              <l>diciendo, á Dios el amor.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Brindo pues (que puedo hacerlo)</l>
+              <l>con él á las madamitas</l>
+              <l>que suspiran por haberlo,</l>
+              <l>á las simplonas mocitas,</l>
+              <l>y á cuantos quieran tenerlo.</l>
+            </lg>
+          </lg>
+          <trailer>FIN.</trailer>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona</hi>: Imprenta de los
                                     Herederos de la Viuda Pla, calle Cotoners.</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

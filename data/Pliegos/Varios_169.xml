@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -92,6 +107,44 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q96">
+            <placeName key="México">México</placeName>
+            <location>
+              <geo>23 -102</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1563">
+            <placeName key="La_Habana">La Habana</placeName>
+            <location>
+              <geo>23.136666666667 -82.358888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q234">
+            <placeName key="Flandes">Flandes</placeName>
+            <location>
+              <geo>51 4.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1410">
+            <placeName key="Gibraltar">Gibraltar</placeName>
+            <location>
+              <geo>36.14 -5.35</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -127,8 +180,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-04-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-04-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1148,12 +1200,17 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_169_1.jpg" facs="varios/Varios_169_1.jpg"/>
+
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/><hi rend="cursiva">DECIMAS NUEVAS,</hi></head>
-          <head type="subtitulo_parte"><lb/>alegres y divertidas para pasar el rato des-<lb/>pues de
+          <head type="primer_titulo" rend="negrita">
+            <lb/>
+            <hi rend="cursiva">DECIMAS NUEVAS,</hi>
+          </head>
+          <head type="subtitulo_parte">
+            <lb/>alegres y divertidas para pasar el rato des-<lb/>pues de
             tener la panza llena,<lb/>pero no de aire.</head>
-          
           <lg rend="cursiva">
             <l rend="indent">Cuando un pobre se emborracha</l>
             <l>le llaman el borrachon,</l>
@@ -1178,9 +1235,9 @@
             <l>por que en no teniendo cobre</l>
             <l>de todos es abatido:</l>
             <l>no hay parentela ni amigos</l>
-          
-          <pb n="2" source="Varios_169_2.jpg" facs="varios/Varios_169_2.jpg"/>
-          
+
+            <pb n="2" source="Varios_169_2.jpg" facs="varios/Varios_169_2.jpg"/>
+
             <l>que conozcan la razon</l>
             <l>con mas dañada intencion</l>
             <l>le pretenden ultrajar,</l>
@@ -1266,9 +1323,9 @@
             <l>en llegando al vino tinto</l>
             <l rend="cursiva">todos los cinco perdemos.</l>
           </lg>
-          
+
           <pb n="3" source="Varios_169_3.jpg" facs="varios/Varios_169_3.jpg"/>
-          
+
           <lg>
             <l rend="indent">Los hombres mas entendidos</l>
             <l>emperadores y reyes,</l>
@@ -1353,9 +1410,9 @@
             <l>y asi con ansias mortales</l>
             <l rend="cursiva">busca el pobre su acomodo.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_169_4.jpg" facs="varios/Varios_169_4.jpg"/>
-          
+
           <lg>
             <l rend="indent">Tambien busca su reposo</l>
             <l>el tigre en las espesuras</l>
@@ -1403,7 +1460,7 @@
             <l>que hace años que murió,</l>
             <l>y á mi solo me dejo</l>
             <l>diez coches y una tartana;</l>
-            <l>tambien tengo yo en la Habana</l>
+            <l>tambien tengo yo en la <name>Habana</name></l>
             <l>hacienda de regadio,</l>
             <l>mas de quince mil plantíos</l>
             <l>y un grandísimo olivar,</l>
@@ -1411,9 +1468,9 @@
             <l rend="cursiva">tengo sesenta navíos.</l>
           </lg>
           <lg>
-            <l rend="indent">Tenga en Flandes cuatro tiendas</l>
+            <l rend="indent">Tenga en <name>Flandes</name> cuatro tiendas</l>
             <l>de valor y mucho precio,</l>
-            <l>en Francia tengo un comercio</l>
+            <l>en <name>Francia</name> tengo un comercio</l>
             <l>de algodones y de sedas,</l>
             <l>tengo cajas de moneda</l>
             <l>que me tocan por derecho</l>
@@ -1429,7 +1486,7 @@
             <l>tengo en estas cercanías.</l>
             <l>Tengo otra tesorerìa</l>
             <l>que no se puede contar</l>
-            <l>tambien tengo en Gibraltar</l>
+            <l>tambien tengo en <name>Gibraltar</name></l>
             <l>almacenes de quincalla</l>
             <l>y en varias partes de España</l>
             <l rend="cursiva">diez vapores por el mar.</l>
@@ -1448,7 +1505,8 @@
           </lg>
         </div>
         <div type="colofon">
-          <p><lb/>Lorca, Imp. y Librería de D. J. B. Campoy.</p>
+          <p>
+            <lb/>Lorca, Imp. y Librería de D. J. B. Campoy.</p>
         </div>
       </div>
     </body>

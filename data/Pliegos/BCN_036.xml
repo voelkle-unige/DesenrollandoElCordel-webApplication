@@ -1,595 +1,569 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_036">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Romance gracioso, para reir y pasar el tiempo</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LF">
-                              <name>Lorysmar Franco</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Romance gracioso, para reir y
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romance gracioso, para reir y pasar el tiempo</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LF">
+          <name>Lorysmar Franco</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Romance gracioso, para reir y
                                           pasar el tiempo, en que se da cuenta de una sangrienta
                                           batalla que en los campos de Arabiana tuvo el valiente y
                                           esforzado leon rey de los animales, con el famoso y
                                           alentado grillo rey de las sabandijas.</title>
-                                    <title type="titulo_breve">Romance gracioso, para reir y pasar
+            <title type="titulo_breve">Romance gracioso, para reir y pasar
                                           el tiempo</title>
-                                    <author role="letrista">Andrés de Porras Trenllado</author>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p/>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Herederos de la Viuda Pla</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6817787</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">LXV</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="1">Un grabado (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_036_1.xml" facs="varios/BCN_036_1.jpg/242,308,1300,780/100,/0/default.jpg">grabado_b_036_1</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+            <author role="letrista">Andrés de Porras Trenllado</author>
+          </titleStmt>
+          <editionStmt>
+            <p/>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Herederos de la Viuda Pla</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.6817787</idno>
+            <altIdentifier>
+              <idno type="num_impresor">LXV</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="1">Un grabado (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_036_1.xml" facs="varios/BCN_036_1.jpg/242,308,1300,780/100,/0/default.jpg">grabado_b_036_1</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q5783">
+            <placeName key="Andalucía">Andalucía</placeName>
+            <location>
+              <geo>37.405 -5.9875</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q11703415">
+            <placeName key="río_Guadiato">Río Guadiato</placeName>
+            <location>
+              <geo>37.809097222222 -5.0557055555556</geo>
+            </location>
+          </place>
+          <place n="1">
+            <placeName key="torre_de_San_Pablo">torre de San Pablo</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term target="XX527614.html" type="tipo_texto">Romances</term>
-                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-10-12" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term target="XX527614.html" type="tipo_texto">Romances</term>
+          <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-10-12" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_036_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-      <facsimile>
-            <graphic url="varios/BCN_036_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_036_1.jpg" facs="varios/BCN_036_1.jpg"/>
+          <pb n="1" source="BCN_036_1.jpg" facs="varios/BCN_036_1.jpg"/>
 
-                              <head type="primer_titulo">
-                                    <lb/><hi rend="negrita">ROMANCE GRACIOSO,</hi><lb/>PARA REIR Y
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">ROMANCE GRACIOSO,</hi>
+            <lb/>PARA REIR Y
                                     PASAR EL TIEMPO, EN QUE SE DA CUENTA<lb/>de una sangrienta
                                     batalla que en los campos de Arabiana tuvo<lb/>el valiente y
                                     esforzado leon rey de los animales, con el<lb/>famoso y alentado
                                     grillo rey de las sabandijas.</head>
-
-                              <head type="subtitulo" rend="cursiva">
-                                    <lb/>Compuesto por Andrés de Porras Trenllado.</head>
-
-                              <lg>
-                                    <l rend="indent"><hi rend="negrita">A</hi>tiende todo el
+          <head type="subtitulo" rend="cursiva">
+            <lb/>Compuesto por Andrés de Porras Trenllado.</head>
+          <lg>
+            <l rend="indent">
+              <hi rend="negrita">A</hi>tiende todo el
                                           orbe,</l>
-                                    <l>sin perder punto ni paso,</l>
-                                    <l>escuchando á boca abierta,</l>
-                                    <l>y los oidos tapados,</l>
-                              </lg>
+            <l>sin perder punto ni paso,</l>
+            <l>escuchando á boca abierta,</l>
+            <l>y los oidos tapados,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Que con esta calidad,</l>
+            <l>Andrés de Porras Trenllado</l>
+            <l>les dirá dos mil verdades,</l>
+            <l>aunque vestidas de ensayo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Mil mentiras afeitadas,</l>
+            <l>y embelecos estremados:</l>
+            <l>al fin contaré una historia</l>
+            <l>de pasatiempo y regalo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">De placer y de alegría,</l>
+            <l>que ha sucedido en el año</l>
+            <l>de cien mil y nuevecientos,</l>
+            <l>pasados noventa y tantos.</l>
+          </lg>
+          <lg>
+            <l rend="indent">En la fresca Andalucía,</l>
+            <l>en los abundosos campos</l>
+            <l>de la ilustre Arabiana,</l>
+            <l>y cristal de <name>Guadiato</name>,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Un domingo de mañana</l>
+            <l>se iba un leon paseando,</l>
+            <l>por una cañada arriba,</l>
+            <l>algo enfermo y maltratado,</l>
+            <l>porque una gran calentura</l>
+            <l>le tiene muy acosado.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y andando de aquesta suerte</l>
+            <l>pisó un grillo, que cantando</l>
+            <l>estaba con armonía,</l>
+            <l>sirena de aquellos campos.</l>
+          </lg>
 
-                              <lg>
-                                    <l rend="indent">Que con esta calidad,</l>
-                                    <l>Andrés de Porras Trenllado</l>
-                                    <l>les dirá dos mil verdades,</l>
-                                    <l>aunque vestidas de ensayo.</l>
-                              </lg>
+          <pb n="2" source="BCN_036_2.jpg" facs="varios/BCN_036_2.jpg"/>
 
-                              <lg>
-                                    <l rend="indent">Mil mentiras afeitadas,</l>
-                                    <l>y embelecos estremados:</l>
-                                    <l>al fin contaré una historia</l>
-                                    <l>de pasatiempo y regalo.</l>
-                              </lg>
+          <lg>
+            <l rend="indent">Viendose el bueno del grillo</l>
+            <l>del leon tan lastimado,</l>
+            <l>tan pisado y abatido,</l>
+            <l>colérico y enojado</l>
+          </lg>
+          <lg>
+            <l rend="indent">Le dijo: ¿cómo atrevido,</l>
+            <l>traidor, pérfido y villano,</l>
+            <l>embustero sodomita,</l>
+            <l>palaquin de oficio bajo,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Al rey de las sabandijas</l>
+            <l>tratas con tal desacato?</l>
+            <l>Volvió el leon la cabeza,</l>
+            <l>y como no haciendo caso,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Le dijo: ¿quien eres tú,</l>
+            <l>pobre esguizaro cuitado?</l>
+            <l>bachiller y malandrin,</l>
+            <l>cascarria de culo canto?</l>
+          </lg>
+          <lg>
+            <l rend="indent">Dices que de sabandijas</l>
+            <l>eres rey: donoso caso!</l>
+            <l>No te deshagas por cierto</l>
+            <l>de tan honrados vasallos.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Yo sí que soy rey supremo</l>
+            <l>de los animales bravos,</l>
+            <l>que en la tierra libremente</l>
+            <l>campa mi nombre ensalzado.</l>
+          </lg>
+          <lg>
+            <l rend="indent">El grillo con grande enojo,</l>
+            <l>remordiéndose los labios,</l>
+            <l>le dice: pues eres rey</l>
+            <l>tan supremo y tan bizarro,</l>
+            <l>para mañana en la tarde</l>
+            <l>convocarás tus vasallos,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Mientras yo hago lo mismo</l>
+            <l>con mis fuertes africanos,</l>
+            <l>y saldrémos á batalla,</l>
+            <l>cuerpo á cuerpo y brazo á brazo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Dijo el leon: soy contento,</l>
+            <l>doyme por desafiado:</l>
+            <l>y sin detenerse un punto,</l>
+            <l>parte mas recio que un rayo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Corrido de ver que un grillo</l>
+            <l>á campaña le ha retado,</l>
+            <l>fuése á su corte, y allí</l>
+            <l>que llamasen, ha mandado,</l>
+          </lg>
+          <lg>
+            <l rend="indent">A su general valiente,</l>
+            <l>que es un borrico estremado,</l>
+            <l>un asno con mas orejas</l>
+            <l>que la <name>torre de san Pablo</name>,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Abiertas ambas narices,</l>
+            <l>mas cabeza que un peñasco,</l>
+            <l>bien fornido de sus miembros,</l>
+            <l>galan, discreto y bizarro,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y de lindo entendimiento,</l>
+            <l>muy amoroso en su trato,</l>
+            <l>el cual. puesto en la presencia</l>
+            <l>del leon, así le ha hablado:</l>
+          </lg>
+          <lg>
+            <l rend="indent">¿Qué se te ofrece, señor?</l>
+            <l>que aquí estoy á tu mandado.</l>
+            <l>El leon le dijo: Amigo</l>
+            <l>buen general afamado,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Sabrás que un mal sabandijo,</l>
+            <l>que da vergüenza el nombrarlo,</l>
+            <l>á todos nos desafia,</l>
+            <l>atrevido y denodado.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Apercíbase la guerra,</l>
+            <l>convóquese todo el campo,</l>
+            <l>tremolen los estandartes,</l>
+            <l>los tambores resonando.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Díjole el borrico entonces:</l>
+            <l>Obedezco tu mandado;</l>
+            <l>despidióse, y luego al punto</l>
+            <l>mandó tocar los pifanos.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Acuden los animales,</l>
+            <l>como valientes soldados,</l>
+            <l>acude el valiente tigre,</l>
+            <l>el ciervo, el oso, el venado,</l>
+          </lg>
+          <lg>
+            <l rend="indent">El javalí, el elefante,</l>
+            <l>el lobo, el gimo, el centauro,</l>
+            <l>la corsa, el puerco espin,</l>
+            <l>el mastin, el dromedario,</l>
+          </lg>
 
-                              <lg>
-                                    <l rend="indent">De placer y de alegría,</l>
-                                    <l>que ha sucedido en el año</l>
-                                    <l>de cien mil y nuevecientos,</l>
-                                    <l>pasados noventa y tantos.</l>
-                              </lg>
+          <pb n="3" source="BCN_036_3.jpg" facs="varios/BCN_036_3.jpg"/>
 
-                              <lg>
-                                    <l rend="indent">En la fresca Andalucía,</l>
-                                    <l>en los abundosos campos</l>
-                                    <l>de la ilustre Arabiana,</l>
-                                    <l>y cristal de Guadiato,</l>
-                              </lg>
+          <lg>
+            <l rend="indent">La liebre, el conejo, el mono,</l>
+            <l>el mico, el toro, el caballo,</l>
+            <l>el camello y la oveja,</l>
+            <l>el tejon, guarduño y gato,</l>
+          </lg>
+          <lg>
+            <l rend="indent">El cerdon, el potro y mula,</l>
+            <l>el rinoceronte y gamo,</l>
+            <l>el grifo y el unicornio,</l>
+            <l>carnero, borrico y macho.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Junto el ejército todo,</l>
+            <l>puesto en órden todo el campo,</l>
+            <l>enviaron á la diestra zorra</l>
+            <l>por espía del contrario.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y ella orgullosa en estremo,</l>
+            <l>fuése á un cerro, y de lo alto</l>
+            <l>vido como el grillo andaba</l>
+            <l>su ejército concertando.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Vido acudir sabandijas</l>
+            <l>de todo lo comarcano;</l>
+            <l>la culebra, el serpentin,</l>
+            <l>la víbora, el lagarto,</l>
+          </lg>
+          <lg>
+            <l rend="indent">El liron, la comadreja,</l>
+            <l>la lagartija y el sapo,</l>
+            <l>la araña y el escorpion,</l>
+            <l>curiana y escarabajo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">El sapillo y el raton,</l>
+            <l>la hormiga y el gigarro,</l>
+            <l>el ciento piés y alacran,</l>
+            <l>la tarántula á caballo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">El tábano y el moscardon,</l>
+            <l>y la abeja y el gusano.</l>
+            <l>Junto el ejército todo,</l>
+            <l>mandó el grillo echar un bando</l>
+          </lg>
+          <lg>
+            <l rend="indent">Que toda la gente suya</l>
+            <l>se recojan al sagrado</l>
+            <l>de un cañuto, porque quiere</l>
+            <l>dejarlos allí encerrados,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Que como es gente de chusma,</l>
+            <l>teme le dejen burlado:</l>
+            <l>encerráronse las moscas,</l>
+            <l>los mosquitos se encerraron,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Las moscardas, las avispas,</l>
+            <l>y todo el demás ganado,</l>
+            <l>y la zorra desde el cerro</l>
+            <l>todo lo estaba mirando.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Viendo gente tan pequeña,</l>
+            <l>dijo en su pecho burlando:</l>
+            <l>para tan vil gente yo</l>
+            <l>solo, sin compañía, basto.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Fuése donde el grillo estaba,</l>
+            <l>y le dijo: Anda, menguado,</l>
+            <l>¿con tan vil gente pretendes</l>
+            <l>competir el fuerte bando</l>
+          </lg>
+          <lg>
+            <l rend="indent">del leon, que en fortaleza</l>
+            <l>excede al mundo abreviado?</l>
+            <l>Ahora verás, dijo el grillo,</l>
+            <l>si mis valientes vasallos</l>
+          </lg>
+          <lg>
+            <l rend="indent">podrán con el mundo entero</l>
+            <l>medir su invencible brazo.</l>
+            <l>Diciendo esto desarranca</l>
+            <l>de tábanos tres ó cuatro,</l>
+          </lg>
+          <lg>
+            <l rend="indent">con otras tantas avispas,</l>
+            <l>y enderezan como un rayo</l>
+            <l>Con la zorra, y ella viendo</l>
+            <l>que no puede desecharlos,</l>
+          </lg>
+          <lg>
+            <l rend="indent">parte como un torbellino,</l>
+            <l>dándose á cuatro mil diablos,</l>
+            <l>y sin detenerse un punto,</l>
+            <l>se ha lanzado en <name>Guadiato</name>.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y desque se vido libre</l>
+            <l>de tan penosos contrarios,</l>
+            <l>se salió la pobre zorra</l>
+            <l>con todo el hocico hinchado.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y se ha subido en un cerro,</l>
+            <l>escarmentada del caso;</l>
+            <l>y desde allí vió que el grillo</l>
+            <l>con su gente se ha llegado</l>
+            <l>á donde el leon estaba</l>
+            <l>poniendo en órden su campo.</l>
+          </lg>
 
-                              <lg>
-                                    <l rend="indent">Un domingo de mañana</l>
-                                    <l>se iba un leon paseando,</l>
-                                    <l>por una cañada arriba,</l>
-                                    <l>algo enfermo y maltratado,</l>
-                                    <l>porque una gran calentura</l>
-                                    <l>le tiene muy acosado.</l>
-                              </lg>
+          <pb n="4" source="BCN_036_4.jpg" facs="varios/BCN_036_4.jpg"/>
 
-                              <lg>
-                                    <l rend="indent">Y andando de aquesta suerte</l>
-                                    <l>pisó un grillo, que cantando</l>
-                                    <l>estaba con armonía,</l>
-                                    <l>sirena de aquellos campos.</l>
-                              </lg>
-
-                              <pb n="2" source="BCN_036_2.jpg" facs="varios/BCN_036_2.jpg"/>
-
-                              <lg>
-                                    <l rend="indent">Viendose el bueno del grillo</l>
-                                    <l>del leon tan lastimado,</l>
-                                    <l>tan pisado y abatido,</l>
-                                    <l>colérico y enojado</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Le dijo: ¿cómo atrevido,</l>
-                                    <l>traidor, pérfido y villano,</l>
-                                    <l>embustero sodomita,</l>
-                                    <l>palaquin de oficio bajo,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Al rey de las sabandijas</l>
-                                    <l>tratas con tal desacato?</l>
-                                    <l>Volvió el leon la cabeza,</l>
-                                    <l>y como no haciendo caso,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Le dijo: ¿quien eres tú,</l>
-                                    <l>pobre esguizaro cuitado?</l>
-                                    <l>bachiller y malandrin,</l>
-                                    <l>cascarria de culo canto?</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Dices que de sabandijas</l>
-                                    <l>eres rey: donoso caso!</l>
-                                    <l>No te deshagas por cierto</l>
-                                    <l>de tan honrados vasallos.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Yo sí que soy rey supremo</l>
-                                    <l>de los animales bravos,</l>
-                                    <l>que en la tierra libremente</l>
-                                    <l>campa mi nombre ensalzado.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">El grillo con grande enojo,</l>
-                                    <l>remordiéndose los labios,</l>
-                                    <l>le dice: pues eres rey</l>
-                                    <l>tan supremo y tan bizarro,</l>
-                                    <l>para mañana en la tarde</l>
-                                    <l>convocarás tus vasallos,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Mientras yo hago lo mismo</l>
-                                    <l>con mis fuertes africanos,</l>
-                                    <l>y saldrémos á batalla,</l>
-                                    <l>cuerpo á cuerpo y brazo á brazo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Dijo el leon: soy contento,</l>
-                                    <l>doyme por desafiado:</l>
-                                    <l>y sin detenerse un punto,</l>
-                                    <l>parte mas recio que un rayo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Corrido de ver que un grillo</l>
-                                    <l>á campaña le ha retado,</l>
-                                    <l>fuése á su corte, y allí</l>
-                                    <l>que llamasen, ha mandado,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">A su general valiente,</l>
-                                    <l>que es un borrico estremado,</l>
-                                    <l>un asno con mas orejas</l>
-                                    <l>que la torre de san Pablo,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Abiertas ambas narices,</l>
-                                    <l>mas cabeza que un peñasco,</l>
-                                    <l>bien fornido de sus miembros,</l>
-                                    <l>galan, discreto y bizarro,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y de lindo entendimiento,</l>
-                                    <l>muy amoroso en su trato,</l>
-                                    <l>el cual. puesto en la presencia</l>
-                                    <l>del leon, así le ha hablado:</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">¿Qué se te ofrece, señor?</l>
-                                    <l>que aquí estoy á tu mandado.</l>
-                                    <l>El leon le dijo: Amigo</l>
-                                    <l>buen general afamado,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Sabrás que un mal sabandijo,</l>
-                                    <l>que da vergüenza el nombrarlo,</l>
-                                    <l>á todos nos desafia,</l>
-                                    <l>atrevido y denodado.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Apercíbase la guerra,</l>
-                                    <l>convóquese todo el campo,</l>
-                                    <l>tremolen los estandartes,</l>
-                                    <l>los tambores resonando.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Díjole el borrico entonces:</l>
-                                    <l>Obedezco tu mandado;</l>
-                                    <l>despidióse, y luego al punto</l>
-                                    <l>mandó tocar los pifanos.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Acuden los animales,</l>
-                                    <l>como valientes soldados,</l>
-                                    <l>acude el valiente tigre,</l>
-                                    <l>el ciervo, el oso, el venado,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">El javalí, el elefante,</l>
-                                    <l>el lobo, el gimo, el centauro,</l>
-                                    <l>la corsa, el puerco espin,</l>
-                                    <l>el mastin, el dromedario,</l>
-                              </lg>
-
-                              <pb n="3" source="BCN_036_3.jpg" facs="varios/BCN_036_3.jpg"/>
-
-                              <lg>
-                                    <l rend="indent">La liebre, el conejo, el mono,</l>
-                                    <l>el mico, el toro, el caballo,</l>
-                                    <l>el camello y la oveja,</l>
-                                    <l>el tejon, guarduño y gato,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">El cerdon, el potro y mula,</l>
-                                    <l>el rinoceronte y gamo,</l>
-                                    <l>el grifo y el unicornio,</l>
-                                    <l>carnero, borrico y macho.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Junto el ejército todo,</l>
-                                    <l>puesto en órden todo el campo,</l>
-                                    <l>enviaron á la diestra zorra</l>
-                                    <l>por espía del contrario.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y ella orgullosa en estremo,</l>
-                                    <l>fuése á un cerro, y de lo alto</l>
-                                    <l>vido como el grillo andaba</l>
-                                    <l>su ejército concertando.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Vido acudir sabandijas</l>
-                                    <l>de todo lo comarcano;</l>
-                                    <l>la culebra, el serpentin,</l>
-                                    <l>la víbora, el lagarto,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">El liron, la comadreja,</l>
-                                    <l>la lagartija y el sapo,</l>
-                                    <l>la araña y el escorpion,</l>
-                                    <l>curiana y escarabajo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">El sapillo y el raton,</l>
-                                    <l>la hormiga y el gigarro,</l>
-                                    <l>el ciento piés y alacran,</l>
-                                    <l>la tarántula á caballo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">El tábano y el moscardon,</l>
-                                    <l>y la abeja y el gusano.</l>
-                                    <l>Junto el ejército todo,</l>
-                                    <l>mandó el grillo echar un bando</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Que toda la gente suya</l>
-                                    <l>se recojan al sagrado</l>
-                                    <l>de un cañuto, porque quiere</l>
-                                    <l>dejarlos allí encerrados,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Que como es gente de chusma,</l>
-                                    <l>teme le dejen burlado:</l>
-                                    <l>encerráronse las moscas,</l>
-                                    <l>los mosquitos se encerraron,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Las moscardas, las avispas,</l>
-                                    <l>y todo el demás ganado,</l>
-                                    <l>y la zorra desde el cerro</l>
-                                    <l>todo lo estaba mirando.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Viendo gente tan pequeña,</l>
-                                    <l>dijo en su pecho burlando:</l>
-                                    <l>para tan vil gente yo</l>
-                                    <l>solo, sin compañía, basto.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Fuése donde el grillo estaba,</l>
-                                    <l>y le dijo: Anda, menguado,</l>
-                                    <l>¿con tan vil gente pretendes</l>
-                                    <l>competir el fuerte bando</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">del leon, que en fortaleza</l>
-                                    <l>excede al mundo abreviado?</l>
-                                    <l>Ahora verás, dijo el grillo,</l>
-                                    <l>si mis valientes vasallos</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">podrán con el mundo entero</l>
-                                    <l>medir su invencible brazo.</l>
-                                    <l>Diciendo esto desarranca</l>
-                                    <l>de tábanos tres ó cuatro,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">con otras tantas avispas,</l>
-                                    <l>y enderezan como un rayo</l>
-                                    <l>Con la zorra, y ella viendo</l>
-                                    <l>que no puede desecharlos,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">parte como un torbellino,</l>
-                                    <l>dándose á cuatro mil diablos,</l>
-                                    <l>y sin detenerse un punto,</l>
-                                    <l>se ha lanzado en Guadiato.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y desque se vido libre</l>
-                                    <l>de tan penosos contrarios,</l>
-                                    <l>se salió la pobre zorra</l>
-                                    <l>con todo el hocico hinchado.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y se ha subido en un cerro,</l>
-                                    <l>escarmentada del caso;</l>
-                                    <l>y desde allí vió que el grillo</l>
-                                    <l>con su gente se ha llegado</l>
-                                    <l>á donde el leon estaba</l>
-                                    <l>poniendo en órden su campo.</l>
-                              </lg>
-
-                              <pb n="4" source="BCN_036_4.jpg" facs="varios/BCN_036_4.jpg"/>
-
-                              <lg>
-                                    <l rend="indent">Vido como á la batalla</l>
-                                    <l>del uno y el otro bando</l>
-                                    <l>hacen la seña, y que todos,</l>
-                                    <l>tan fuertes como bizarros,</l>
-                                    <l>se embisten unos á otros</l>
-                                    <l>con coraje endemoniado.</l>
-                              </lg>
-
-
-                              <lg>
-                                    <l rend="indent">Las fuertes culebras tiran</l>
-                                    <l>cruelísimos zarpazos,</l>
-                                    <l>y los tigres uñaradas,</l>
-                                    <l>grandes bocadas los asnos.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Mas como son tan valientes</l>
-                                    <l>los leones africanos,</l>
-                                    <l>de la sangrienta batalla</l>
-                                    <l>llevan lo mejor del campo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Viendo el grillo que su gente</l>
-                                    <l>va vencida del contrario,</l>
-                                    <l>con un ánimo invencible</l>
-                                    <l>fué donde están encerrados</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Los tábanos y moscardas,</l>
-                                    <l>y todo el demás ganado,</l>
-                                    <l>dando á todos puerta franca,</l>
-                                    <l>y animándolos al caso.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Ellos que se vieron sueltos,</l>
-                                    <l>como unos leones bravos</l>
-                                    <l>embisten furiosamente,</l>
-                                    <l>por todas partes picando.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Viendo la nacion jumenta</l>
-                                    <l>que la mosca en tanto grado</l>
-                                    <l>la persigue, que parece,</l>
-                                    <l>que el viento se ha desatado</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">En llover gente menuda,</l>
-                                    <l>se recogen al sagrado</l>
-                                    <l>de los piés, que en la ocasion</l>
-                                    <l>alas al viento prestaron.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y aguzando las orejas,</l>
-                                    <l>tirando pedos, y el rabo</l>
-                                    <l>esgrimiendo á todas partes,</l>
-                                    <l>van que los lleva el diablo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">El leon con grande enojo,</l>
-                                    <l>iracundo y blasfemando</l>
-                                    <l>del infame de su padre,</l>
-                                    <l>les dijo á voces: Villanos,</l>
-                                    <l>¿cómo uís de aquesta suerte,</l>
-                                    <l>gente vil de bajo trato?</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Estando en estas palabras,</l>
-                                    <l>veinte avispas han llegado,</l>
-                                    <l>y cercándole entre todas,</l>
-                                    <l>la pellica le han sobado.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Mas viéndose perseguido,</l>
-                                    <l>y que es defenderse en vano,</l>
-                                    <l>parte huyendo con su gente</l>
-                                    <l>que se va descuadrillando.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">La zorrá de un alto cerro,</l>
-                                    <l>les dice: Al agua, soldados;</l>
-                                    <l>toman ellos el consejo,</l>
-                                    <l>y en el rio se han entrado,</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Dándole al grillo la palma:</l>
-                                    <l>y Andrés de Porras Trenllado</l>
-                                    <l>de este romance burlesco</l>
-                                    <l>pide perdon al senado.</l>
-                              </lg>
-
-                        </div>
-                        <div type="colofon">
-                              <p>
-                                    <lb/><hi rend="cursiva">Barcelona</hi>: En la Imprenta de los
+          <lg>
+            <l rend="indent">Vido como á la batalla</l>
+            <l>del uno y el otro bando</l>
+            <l>hacen la seña, y que todos,</l>
+            <l>tan fuertes como bizarros,</l>
+            <l>se embisten unos á otros</l>
+            <l>con coraje endemoniado.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Las fuertes culebras tiran</l>
+            <l>cruelísimos zarpazos,</l>
+            <l>y los tigres uñaradas,</l>
+            <l>grandes bocadas los asnos.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Mas como son tan valientes</l>
+            <l>los leones africanos,</l>
+            <l>de la sangrienta batalla</l>
+            <l>llevan lo mejor del campo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Viendo el grillo que su gente</l>
+            <l>va vencida del contrario,</l>
+            <l>con un ánimo invencible</l>
+            <l>fué donde están encerrados</l>
+          </lg>
+          <lg>
+            <l rend="indent">Los tábanos y moscardas,</l>
+            <l>y todo el demás ganado,</l>
+            <l>dando á todos puerta franca,</l>
+            <l>y animándolos al caso.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Ellos que se vieron sueltos,</l>
+            <l>como unos leones bravos</l>
+            <l>embisten furiosamente,</l>
+            <l>por todas partes picando.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Viendo la nacion jumenta</l>
+            <l>que la mosca en tanto grado</l>
+            <l>la persigue, que parece,</l>
+            <l>que el viento se ha desatado</l>
+          </lg>
+          <lg>
+            <l rend="indent">En llover gente menuda,</l>
+            <l>se recogen al sagrado</l>
+            <l>de los piés, que en la ocasion</l>
+            <l>alas al viento prestaron.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y aguzando las orejas,</l>
+            <l>tirando pedos, y el rabo</l>
+            <l>esgrimiendo á todas partes,</l>
+            <l>van que los lleva el diablo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">El leon con grande enojo,</l>
+            <l>iracundo y blasfemando</l>
+            <l>del infame de su padre,</l>
+            <l>les dijo á voces: Villanos,</l>
+            <l>¿cómo uís de aquesta suerte,</l>
+            <l>gente vil de bajo trato?</l>
+          </lg>
+          <lg>
+            <l rend="indent">Estando en estas palabras,</l>
+            <l>veinte avispas han llegado,</l>
+            <l>y cercándole entre todas,</l>
+            <l>la pellica le han sobado.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Mas viéndose perseguido,</l>
+            <l>y que es defenderse en vano,</l>
+            <l>parte huyendo con su gente</l>
+            <l>que se va descuadrillando.</l>
+          </lg>
+          <lg>
+            <l rend="indent">La zorrá de un alto cerro,</l>
+            <l>les dice: Al agua, soldados;</l>
+            <l>toman ellos el consejo,</l>
+            <l>y en el rio se han entrado,</l>
+          </lg>
+          <lg>
+            <l rend="indent">Dándole al grillo la palma:</l>
+            <l>y Andrés de Porras Trenllado</l>
+            <l>de este romance burlesco</l>
+            <l>pide perdon al senado.</l>
+          </lg>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona</hi>: En la Imprenta de los
                                     Herederos de la V. Pla, <lb/>calle de Cotoners.</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

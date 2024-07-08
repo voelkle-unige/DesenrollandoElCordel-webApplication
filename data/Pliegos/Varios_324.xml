@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,36 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q234">
+            <placeName key="Flandes">Flandes</placeName>
+            <location>
+              <geo>51 4.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15684">
+            <placeName key="Segovia">Segovia</placeName>
+            <location>
+              <geo>40.948055555556 -4.1183333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q93366">
+            <placeName key="Vizcaya">Vizcaya</placeName>
+            <location>
+              <geo>43.25 -2.9833333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q661868">
+            <placeName key="La_Alpujarra">La Alpujarra</placeName>
+            <location>
+              <geo>36.93333333 -3.33333333</geo>
+            </location>
+          </place>
+          <place n="1">
+            <placeName key="Jauja">Jauja</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +175,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-08" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-08" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1461,13 +1505,13 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_324_1.jpg" facs="varios/Varios_324_1.jpg"/>
 
         <fw type="numeroPliego">(Núm. 33.)</fw>
-
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>TESTAMENTO DE UN ASNO.</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>TESTAMENTO DE UN ASNO.</head>
           <l rend="indent">Yo triste asno cansado,</l>
           <l>derrengado, pobre y viejo,</l>
           <l>que es la desdicha mayor</l>
@@ -1495,7 +1539,7 @@
           <l>Ya no me puedo mover</l>
           <l>con la flaqueza que tengo;</l>
           <l>irás, mi querido hijo,</l>
-          <l>á Jauja por el remedio;</l>
+          <l>á <name>Jauja</name> por el remedio;</l>
           <l>tráeme un doctor de asnos</l>
           <l>que pueda darme remedio.</l>
           <l>Te llevas un dromedario</l>
@@ -1534,7 +1578,7 @@
           <l>y comienzan á echar coces</l>
           <l>con ligereza admirable.</l>
           <l>Llegó en fin por sus jornadas</l>
-          <l>á Jauja, tierra agradable,</l>
+          <l>á <name>Jauja</name>, tierra agradable,</l>
           <l>fue á casa de un arlequin</l>
           <l>que le dió buen hospedage,</l>
           <l>le sirvió cebada fresca</l>
@@ -1645,7 +1689,7 @@
           <l>y mientras tanto que vuelvo</l>
           <l>procuren á consolarle.</l>
           <l>Partió el asno jovencito</l>
-          <l>y supo que estaba en Flandes</l>
+          <l>y supo que estaba en <name>Flandes</name></l>
           <l>jugando á dar carreras</l>
           <l>con otros asnos muy grandes.</l>
           <l>Se fue allá y contó el suceso,</l>
@@ -1740,13 +1784,13 @@
           <l>Mando á mi hijo, el borrico,</l>
           <l>treinta cargas de cebada,</l>
           <l>y seis cargas de alcacer</l>
-          <l>sembrado en las Alpujarras.</l>
+          <l>sembrado en las <name>Alpujarras</name>.</l>
           <l>Item, le mando tambien</l>
           <l>una dehesa muy nombrada</l>
-          <l>que está cerca de Segovia,</l>
+          <l>que está cerca de <name>Segovia</name>,</l>
           <l>con sus fuentes de agua clara;</l>
           <l>una espuerta de herraduras</l>
-          <l>forjadas allá en Vizcaya,</l>
+          <l>forjadas allá en <name>Vizcaya</name>,</l>
           <l>porque vayan bien calzados</l>
           <l>nuestra parentesca casta;</l>
           <l>cuarenta mantas de jerga</l>
@@ -1793,12 +1837,11 @@
           <l>nueve dias de alboraba,</l>
           <l>que uu asno de tales prendas</l>
           <l>no es mucho que así lo honráran.</l>
-
           <trailer rend="negrita">FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID: Imprenta á cargo de José M. Marés, plaza de la Cebada núm. 96.</p>
+          <p>
+            <lb/>MADRID: Imprenta á cargo de José M. Marés, plaza de la Cebada núm. 96.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,44 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="7" corresp="Q5818">
+            <placeName key="Córdoba">Córdoba</placeName>
+            <location>
+              <geo>37.883333333333 -4.7666666666667</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q686362">
+            <placeName key="Sierra_Morena">Sierra Morena</placeName>
+            <location>
+              <geo>38.3 -5.4</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2000446">
+            <placeName key="Carpio_del_Campo">Carpio Del Campo</placeName>
+            <location>
+              <geo>41.2126514 -5.10906</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q753825">
+            <placeName key="Utrera">Utrera</placeName>
+            <location>
+              <geo>37.1824646 -5.7817506</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q572041">
+            <placeName key="Antequera">Antequera</placeName>
+            <location>
+              <geo>37.0183652 -4.5596649</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +183,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-11" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-11" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1453,20 +1505,22 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_382_1.jpg" facs="varios/Varios_382_1.jpg"/>
 
-        <head type="primer_titulo"><lb/>JUAN PORTELA</head>
-        <head type="subtitulo" rend="negrita"><lb/>Relación puesta en trovas, de los
+        <head type="primer_titulo">
+          <lb/>JUAN PORTELA</head>
+        <head type="subtitulo" rend="negrita">
+          <lb/>Relación puesta en trovas, de los
           asesinatos y robos que<lb/>cometió en las inmediaciones de Córdoba</head>
-
         <div type="parte" n="1">
-          <head type="titulo_parte"><lb/>PRIMERA PARTE</head>
-          
+          <head type="titulo_parte">
+            <lb/>PRIMERA PARTE</head>
           <lg rend="cursiva">
             <l rend="indent">Escuchen señores mios</l>
             <l>Les diré de Juan Portela.</l>
             <l>El ladron mas afamado</l>
-            <l>Que en la gran Sierra-Morena.</l>
+            <l>Que en la gran <name>Sierra-Morena</name>.</l>
           </lg>
           <lg>
             <l rend="indent">De mis padres fuí querido</l>
@@ -1494,11 +1548,11 @@
             <l>Esta jóven se casó</l>
             <l>Con otro y á mi me deja,</l>
             <l>Cuya causa me llevó</l>
-            <l rend="cursiva">A la gran Sierra-Morena.</l>
+            <l rend="cursiva">A la gran <name>Sierra-Morena</name>.</l>
           </lg>
-          
+
           <pb n="2" source="Varios_382_2.jpg" facs="varios/Varios_382_2.jpg"/>
-          
+
           <lg rend="cursiva">
             <l rend="indent">Lloraba de noche y dia</l>
             <l>Siempre por una mujer,</l>
@@ -1583,7 +1637,7 @@
           <lg>
             <l rend="indent">Caminaba con cuidado</l>
             <l>Y al romper su claro dia</l>
-            <l>Junto á las ventas del Carpio</l>
+            <l>Junto á las ventas del <name>Carpio</name></l>
             <l>Un caballero venia</l>
             <l rend="cursiva">Con mi trabuco apuntado.</l>
           </lg>
@@ -1598,7 +1652,7 @@
             <l rend="indent">Se marchó el pobre pelado</l>
             <l>Como si fuera patena,</l>
             <l>Yo piré con mi caballo</l>
-            <l>Porque en los puertos de Utrera.</l>
+            <l>Porque en los puertos de <name>Utrera</name>.</l>
             <l rend="cursiva">Cuatro muertos he dejado.</l>
           </lg>
           <lg rend="cursiva">
@@ -1615,7 +1669,7 @@
             <l rend="cursiva">Las partidas me persiguen</l>
           </lg>
           <lg>
-            <l rend="indent">En los montes de Antequera</l>
+            <l rend="indent">En los montes de <name>Antequera</name></l>
             <l>Una mañana robé</l>
             <l>A un coche y una galera,</l>
             <l>Seiscientos machos choré</l>
@@ -1636,13 +1690,14 @@
             <l rend="cursiva">Y metiéndole la espuela.</l>
           </lg>
         </div>
-        
+
         <pb n="3" source="Varios_382_3.jpg" facs="varios/Varios_382_3.jpg"/>
-        
+
         <div type="parte" n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>JUAN PORTELA</head>
-          <head type="subtitulo_parte"><lb/>SEGUNDA PARTE EN DÉCIMAS GLOSADAS.</head>
-          
+          <head type="titulo_parte" rend="negrita">
+            <lb/>JUAN PORTELA</head>
+          <head type="subtitulo_parte">
+            <lb/>SEGUNDA PARTE EN DÉCIMAS GLOSADAS.</head>
           <lg rend="cursiva">
             <l rend="indent">A dar pienso à mi caballo,</l>
             <l>¡Ay de mi! que soy perdido</l>
@@ -1757,9 +1812,9 @@
             <l>Las fuerzas me faltan ya</l>
             <l>Del cielo baje el perdon.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_382_4.jpg" facs="varios/Varios_382_4.jpg"/>
-          
+
           <lg>
             <l rend="indent">La sangre que derramaba</l>
             <l>Me cubria el corazón,</l>
@@ -1874,12 +1929,11 @@
             <l>Y al decir su único Hijo</l>
             <l rend="cursiva">A pelear con la muerte.</l>
           </lg>
-          
           <trailer>FIN</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>REUS: En casa Juan Grau. calle del Metje Fortuny, núm. 5, hay un gran surtido de
+          <p>
+            <lb/>REUS: En casa Juan Grau. calle del Metje Fortuny, núm. 5, hay un gran surtido de
             <lb/>libros, comedias, historias, romances, etc... á precios equitativos. <lb/>Núm. 1232.</p>
         </div>
       </div>

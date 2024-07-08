@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -31,7 +45,8 @@
             <title type="titulo_breve">Gran historia de un pollí</title>
           </titleStmt>
           <editionStmt>
-            <p>Otras impresiones: <ref target="Varios_232.xml">Varios_232</ref> y <ref target="Varios_461.xml">Varios_461</ref></p>
+            <p>Otras impresiones: <ref target="Varios_232.xml">Varios_232</ref> y <ref target="Varios_461.xml">Varios_461</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>El Abanico</publisher>
@@ -66,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -91,6 +107,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -126,8 +150,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-06-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-06-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1316,12 +1339,13 @@
   <text>
     <body>
       <div>
-        <pb n="1" source="Varios_078_1.jpg" facs="varios/Varios_078_1.jpg"/>
-        
-        <div>
-          <head type="primer_titulo" rend="negrita"><lb/>GRAN HISTORIA DE UN POLLÍ <lb/>burro, ase,
-            bestia y animal;<lb/>y molt desgraciat per una petita ilusió</head>
 
+        <pb n="1" source="Varios_078_1.jpg" facs="varios/Varios_078_1.jpg"/>
+
+        <div>
+          <head type="primer_titulo" rend="negrita">
+            <lb/>GRAN HISTORIA DE UN POLLÍ <lb/>burro, ase,
+            bestia y animal;<lb/>y molt desgraciat per una petita ilusió</head>
           <l rend="indent">Un any per la primavera</l>
           <l>que es cuan cantan las granotas,</l>
           <l>un burru de cuatre potas</l>
@@ -1397,7 +1421,6 @@
           <l>y á la somereta arri.....</l>
           <l>es dí, van moure un xibarri</l>
           <l>que mes gran no 'l he vist jó.</l>
-
           <l rend="indent">Com mes al burro pegavan</l>
           <l>éll repartía mes guits;</l>
           <l>y 'ls feya ben aixerits</l>
@@ -1497,7 +1520,6 @@
           <l>alló semblava una fiera,</l>
           <l>y feu cap á una riera</l>
           <l>y allí crech que 's va abaltí.</l>
-
           <l rend="indent">Lo pagés torná al firal</l>
           <l>per vendre 'l burro aviat,</l>
           <l>y va quedá mort, glassat</l>
@@ -1544,9 +1566,9 @@
           <l>que 'n treurém algún cuartet».</l>
           <l rend="indent">A la fira van aná</l>
           <l>lo burro y aquells dos garenos</l>
-
           <note>
-            <p><lb/>(1) Quert: vol dir burro. (2) Gelén: fugí. (3) Can¬ <lb/>tipén : pudó. (4)
+            <p>
+              <lb/>(1) Quert: vol dir burro. (2) Gelén: fugí. (3) Can¬ <lb/>tipén : pudó. (4)
               Gelát : fugit. (5) Marél : cops <lb/>(6) Gelén: fuigim. </p>
           </note>
 
@@ -1583,22 +1605,23 @@
           <l>y aquell burro perdulari</l>
           <l>ballava d' alló milló.</l>
           <l rend="indent">Lo escombriaire va dí:</l>
-
           <l>«mireu com remena 'l cul...</l>
           <l>aixó ho fa que no es gandul</l>
           <l>y potser vol presumí.»</l>
           <l rend="indent">Lo gitano molt trempat</l>
           <l>li va dí ab tota la fé:</l>
-          <l>«cuan éll remena 'l <hi rend="cursiva">rulé</hi></l>
+          <l>«cuan éll remena 'l <hi rend="cursiva">rulé</hi>
+          </l>
           <l>es que gasta vanitat».</l>
           <l rend="indent">L' escombriarre mol content</l>
-          <l>tot seguit va tocá 'l <hi rend="cursiva">dos</hi></l>
+          <l>tot seguit va tocá 'l <hi rend="cursiva">dos</hi>
+          </l>
           <l>tot satisfet y orgullós</l>
           <l>de tení un ruch tan valent.</l>
           <l rend="indent">Pero ya la va fe bona</l>
           <l>ab tot aquell presumí,</l>
           <l>que 'l ruch se li va morí</l>
-          <l>ans d' arribá á Barcelona.</l>
+          <l>ans d' arribá á <name>Barcelona</name>.</l>
           <l rend="indent">De plors ya non vulgueu mes</l>
           <l>y ab tot lo gran sentiment</l>
           <l>lo va deixá en un torrent</l>
@@ -1610,17 +1633,19 @@
           <l rend="indent">Ne van fe cosa molt bona,</l>
           <l>pues sense rompres lo cap,</l>
           <l>per Corpus tothom ya sap</l>
-          <l>que ya professó á Barcelona.</l>
+          <l>que ya professó á <name>Barcelona</name>.</l>
           <l rend="indent">No l' busquéu per las estampas</l>
           <l>lo gran cás, ya us el diré:</l>
           <l>de aquella pell ne van fé</l>
           <l>los dos timbals de las trampas.</l>
-
-          <trailer><lb/><hi rend="negrita">Mort lo ruch, morta l'historia</hi><lb/>FÍ</trailer>
+          <trailer>
+            <lb/>
+            <hi rend="negrita">Mort lo ruch, morta l'historia</hi>
+            <lb/>FÍ</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imps. Hospital, 19, «El Abanico»</p>
+          <p>
+            <lb/>Imps. Hospital, 19, «El Abanico»</p>
         </div>
       </div>
     </body>

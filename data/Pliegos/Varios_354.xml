@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -92,6 +107,50 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q782278">
+            <placeName key="Naupacto">Naupacto</placeName>
+            <location>
+              <geo>38.391666666667 21.8275</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q484115">
+            <placeName key="Baraona">Baraona</placeName>
+            <location>
+              <geo>41.295277777778 -2.6572222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q828">
+            <placeName key="América">América</placeName>
+            <location>
+              <geo>19 -96</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1018048">
+            <placeName key="Covadonga">Covadonga</placeName>
+            <location>
+              <geo>43.31210679 -5.05887946</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -127,8 +186,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1430,13 +1488,13 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_354_1.jpg" facs="varios/Varios_354_1.jpg"/>
 
         <fw type="impresorNum">NÚMERO 38.</fw>
-
         <div>
-          <head type="primer_titulo"><lb/>El Rastro.</head>
-
+          <head type="primer_titulo">
+            <lb/>El Rastro.</head>
           <lg>
             <head type="titulo_estrofa" rend="negrita">I</head>
             <l rend="indent">Vaya un poco de romance</l>
@@ -1481,7 +1539,7 @@
             <l>En que esta tierra fué patria</l>
             <l>de aquellos que cultivaron</l>
             <l>con su sangre los laureles</l>
-            <l>de Covadonga y Lepanto.</l>
+            <l>de <name>Covadonga</name> y <name>Lepanto</name>.</l>
             <l>De las cumbres de la historia,</l>
             <l>tiempo es ya que descendamos,</l>
             <l>pues no hay varones que sigan</l>
@@ -1496,7 +1554,7 @@
             <l>hasta en las canas agrado,</l>
             <l>voy á probar si ciñendo</l>
             <l>á la máxima mi canto,</l>
-            <l>entre Granada y Cervantes</l>
+            <l>entre <name>Granada</name> y Cervantes</l>
             <l>hago un sitio para el Rastro.</l>
             <l>Volaré como sobre áscuas</l>
             <l>sobre estas cosas de fango,</l>
@@ -1533,7 +1591,7 @@
             <l>yo quiero ver si han logrado</l>
             <l>su intencion los que pretenden</l>
             <l>no dejar de tí ni <hi rend="cursiva">rastro</hi>.</l>
-            <l>Mas no, que el Madrid moderno</l>
+            <l>Mas no, que el <name>Madrid</name> moderno</l>
             <l>conserva en un lugar clásico,</l>
             <l>aquella lengua de tierra</l>
             <l>que le une con el de antaño.</l>
@@ -1577,9 +1635,9 @@
             <l>las banderas de Pelayo,</l>
             <l>aquella que soberana</l>
             <l>sobre el mar saludó Byron (1).</l>
-
             <note>
-              <p><lb/>(1) Léase Bairon</p>
+              <p>
+                <lb/>(1) Léase Bairon</p>
             </note>
 
             <pb n="3" source="Varios_354_3.jpg" facs="varios/Varios_354_3.jpg"/>
@@ -1632,7 +1690,7 @@
             <l>que hay supérfluo en el mundo algo,</l>
             <l>aunque se incluya lo inútil</l>
             <l>y de lo inútil lo malo.</l>
-            <l>Y entre si es ó no es Barahona,</l>
+            <l>Y entre si es ó no es <name>Barahona</name>,</l>
             <l>si es pradera ó es mosaico,</l>
             <l>ó el valle del <hi rend="cursiva">Rexurrexite</hi>,</l>
             <l>henos aquí en pleno Rastro.</l>
@@ -1655,7 +1713,8 @@
             <l>y con calzas moradas</l>
             <l>gallos sin crestas ..</l>
             <l rend="cursiva">Vino de balde...</l>
-            <l><hi rend="cursiva">peñas</hi> dice debajo</l>
+            <l>
+              <hi rend="cursiva">peñas</hi> dice debajo</l>
             <l>son dos verdades.</l>
             <l>Una mujer:</l>
             <l>—¿Quién pasa</l>
@@ -1685,9 +1744,9 @@
             <l>—Trenzas de moda.</l>
             <l>—¡Quién lleva una camisa</l>
             <l>para la novia!</l>
-            
+
             <pb n="4" source="Varios_354_4.jpg" facs="varios/Varios_354_4.jpg"/>
-            
+
             <l>Véase la clase.</l>
             <l>—¿De camisas ó novias?</l>
             <l>—No, de silbantes.</l>
@@ -1759,16 +1818,17 @@
             <l>cambia sólo el desengaño:</l>
             <l>allí cubiertas con oro,</l>
             <l>aquí regadas con llanto.</l>
-            <l>¿Qué es Madrid si no un inmenso</l>
+            <l>¿Qué es <name>Madrid</name> si no un inmenso</l>
             <l>bazar de géneros falsos?</l>
             <l>Prendas viejas las virtudes,</l>
             <l>desechos del mundo... ¡al Rastro!</l>
           </lg>
-          
-          <p><lb/>J.C.</p>
-          
+          <p>
+            <lb/>J.C.</p>
           <div type="colofon">
-            <p><lb/><hi rend="negrita">ES PROPIEDAD</hi>.<lb/>MADRID; 1872,—IMPRENTA DE JOSÉ NOGUERA, BORDADORES, 7. </p>
+            <p>
+              <lb/>
+              <hi rend="negrita">ES PROPIEDAD</hi>.<lb/>MADRID; 1872,—IMPRENTA DE JOSÉ NOGUERA, BORDADORES, 7. </p>
           </div>
         </div>
       </div>

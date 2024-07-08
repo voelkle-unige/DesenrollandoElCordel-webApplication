@@ -1,440 +1,490 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_004">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Blas de leon</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LF">
-                              <name>Lorysmar Franco</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Blas de leon, verdadera relacion
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Blas de leon</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LF">
+          <name>Lorysmar Franco</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Blas de leon, verdadera relacion
                                           de un rigurosa castigo que ejecutaron los Moros de Argél
                                           con un Cautivo natural de la villa de Ontiveros: dase
                                           cuenta como fué clavado en diez escarpias, donde estuvo
                                           tres dias vivo, predicando la fé de Jesucristo, con lo
                                           demas que verá el curioso </title>
-                                    <title type="titulo_breve">Blas de leon</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p/>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Herederos de Juan Jolis</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6807187</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">XXIV</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="2">Dos grabados (p.1) </summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_004_1.xml" facs="varios/BCN_004_1.jpg/921,158,470,735/100,/0/default.jpg">grabado_b_004_1</item>
-                                                      <item corresp="grabado_b_004_2.xml" facs="varios/BCN_004_1.jpg/333,183,500,700/100,/0/default.jpg">grabado_b_004_2</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+            <title type="titulo_breve">Blas de leon</title>
+          </titleStmt>
+          <editionStmt>
+            <p/>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Herederos de Juan Jolis</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.12643714</idno>
+            <altIdentifier>
+              <idno type="num_impresor">XXIV</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="2">Dos grabados (p.1) </summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_004_1.xml" facs="varios/BCN_004_1.jpg/921,158,470,735/100,/0/default.jpg">grabado_b_004_1</item>
+                  <item corresp="grabado_b_004_2.xml" facs="varios/BCN_004_1.jpg/333,183,500,700/100,/0/default.jpg">grabado_b_004_2</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="3" corresp="Q3561">
+            <placeName key="Argel">Argel</placeName>
+            <location>
+              <geo>36.776388888889 3.0586111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q679766">
+            <placeName key="Peñaranda_de_Bracamonte">Peñaranda De Bracamonte</placeName>
+            <location>
+              <geo>40.9017322 -5.1979686</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8851">
+            <placeName key="Málaga">Málaga</placeName>
+            <location>
+              <geo>36.716666666667 -4.4166666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q193785">
+            <placeName key="Monte_Tabor">Monte Tabor</placeName>
+            <location>
+              <geo>32.68625 35.392916666667</geo>
+            </location>
+          </place>
+          <place n="2">
+            <placeName key="Ontiveros">Ontiveros</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term target="XX527614.html" type="tipo_texto">Romances</term>
-                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-09-26" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term target="XX527614.html" type="tipo_texto">Romances</term>
+          <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-09-26" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_004_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-      <facsimile>
-            <graphic url="varios/BCN_004_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_004_1.jpg" facs="varios/BCN_004_1.jpg"/>
+          <pb n="1" source="BCN_004_1.jpg" facs="varios/BCN_004_1.jpg"/>
 
-                              <head type="primer_titulo">
-                                    <lb/><hi rend="negrita">BLAS DE LEON,</hi><lb/>VERDADERA
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">BLAS DE LEON,</hi>
+            <lb/>VERDADERA
                                     RELACION DE UN RIGUROSO<lb/>castigo que ejecutaron los Moros de
                                     Argél con un Cau-<lb/>tivo natural de la villa de Ontiveros:
                                     dase cuenta<lb/>como fué clavado en diez escarpias, donde
                                     estuvo<lb/>tres dias vivo, predicando la fé de
                                     Jesucristo,<lb/>con lo demas que verá el curioso.</head>
+          <l>
+            <hi rend="negrita">B</hi>Rame el mar y gima el ayre</l>
+          <l>y todos cuatro elementos,</l>
+          <l>en tan lastimoso caso,</l>
+          <l>se quejen de sentimiento:</l>
+          <l>de negras y densas nubes</l>
+          <l>se cubra de luto el cielo,</l>
+          <l>no luzca el sol ni la luna,</l>
+          <l>las estrellas y luceros;</l>
+          <l>y al oir caso tan raro</l>
+          <l>se aflija el mas duro pecho:</l>
+          <l>porque oirlo y no afligirse</l>
+          <l>sera de bronce ó acero,</l>
+          <l>ó mas bien no serán hombres</l>
+          <l>dotados de entendimiento.</l>
+          <l>Y así á todos mis oyentes</l>
+          <l>les pido me estén atentos;</l>
+          <l>mas para poder contarlo,</l>
+          <l>me pienso valer primero</l>
+          <l>de aquella Rosa impecable,</l>
+          <l>Señora de los Remedios,</l>
+          <l>pues con su divino amparo,</l>
+          <l>en el mar de tanto aprieto</l>
+          <l>naufragando mis potencias,</l>
+          <l>con victoria saldré al puerto.</l>
+          <l>No lejos de Peñaranda,</l>
+          <l>en la villa de <name>Ontiveros</name>,</l>
+          <fw type="reclamo">se</fw>
 
-                              <l><hi rend="negrita">B</hi>Rame el mar y gima el ayre</l>
-                              <l>y todos cuatro elementos,</l>
-                              <l>en tan lastimoso caso,</l>
-                              <l>se quejen de sentimiento:</l>
-                              <l>de negras y densas nubes</l>
-                              <l>se cubra de luto el cielo,</l>
-                              <l>no luzca el sol ni la luna,</l>
-                              <l>las estrellas y luceros;</l>
-                              <l>y al oir caso tan raro</l>
-                              <l>se aflija el mas duro pecho:</l>
-                              <l>porque oirlo y no afligirse</l>
-                              <l>sera de bronce ó acero,</l>
-                              <l>ó mas bien no serán hombres</l>
-                              <l>dotados de entendimiento.</l>
-                              <l>Y así á todos mis oyentes</l>
-                              <l>les pido me estén atentos;</l>
-                              <l>mas para poder contarlo,</l>
-                              <l>me pienso valer primero</l>
-                              <l>de aquella Rosa impecable,</l>
-                              <l>Señora de los Remedios,</l>
-                              <l>pues con su divino amparo,</l>
-                              <l>en el mar de tanto aprieto</l>
-                              <l>naufragando mis potencias,</l>
-                              <l>con victoria saldré al puerto.</l>
-                              <l>No lejos de Peñaranda,</l>
-                              <l>en la villa de Ontiveros,</l>
-                              <fw type="reclamo">se</fw>
+          <pb n="2" source="BCN_004_2.jpg" facs="varios/BCN_004_2.jpg"/>
 
-                              <pb n="2" source="BCN_004_2.jpg" facs="varios/BCN_004_2.jpg"/>
+          <l>se crió Blas de Leon</l>
+          <l>hijo de padres muy buenos,</l>
+          <l>mozo galan y alentado,</l>
+          <l>de mucho valor y esfuerzo,</l>
+          <l>muy cortés y bien criado,</l>
+          <l>y de lindo entendimiento.</l>
+          <l>Este tuvo una pendencia</l>
+          <l>en una casa de juego,</l>
+          <l>donde mató un mayorazgo</l>
+          <l>de lo mejor de aquel pueblo.</l>
+          <l>Por esta muerte fue fuerza</l>
+          <l>salir de su patria huyendo,</l>
+          <l>y para estar mas seguro,</l>
+          <l>pasó á <name>Málaga</name> en un vuelo,</l>
+          <l>y al instante se embarcó</l>
+          <l>en un navio pequeño,</l>
+          <l>que hacia viage á <name>Roma</name>,</l>
+          <l>y el claro cristal rompiendo,</l>
+          <l>navegaron cuatro dias</l>
+          <l>con próspero y feliz viento;</l>
+          <l>mas al cabo de los cuatro,</l>
+          <l>tuvieron un mal encuentro,</l>
+          <l>que seis fragatas de Moros</l>
+          <l>el navio les rindieron,</l>
+          <l>llevándoselos cautivos,</l>
+          <l>y en <name>Argel</name> vendidos fueron.</l>
+          <l>A Blas de Leon compró</l>
+          <l>un Moro rico y soberbio,</l>
+          <l>y muy voráz, pues tenia</l>
+          <l>una condicion de un perro.</l>
+          <l>Este tenia una hacienda,</l>
+          <l>una legua poco menos</l>
+          <l>de la ciudad, donde estaba</l>
+          <l>del año lo mas del tiempo.</l>
+          <l>Trabajaba allí el cautivo,</l>
+          <l>cultivando árboles buenos</l>
+          <l>frutales, que los habia</l>
+          <l>de todas suertes diversos.</l>
+          <l>Era el Moro, como he dicho,</l>
+          <l>de muy poco sufrimiento,</l>
+          <l>y asi por muy poca cosa</l>
+          <l>daba á diestro y á siniestro.</l>
+          <l>Un dia que Blas se hallaba</l>
+          <l>muy fatigado del sueño,</l>
+          <l>se recostó á reposar</l>
+          <l>de sus fatigas el peso.</l>
+          <l>Quedóse el pobre dormido,</l>
+          <l>y su amo en este tiempo</l>
+          <l>vino á dar vuelta á la hacienda,</l>
+          <l>y en fin lo encontró durmiendo.</l>
+          <l>Aquí es menester tener</l>
+          <l>gran valor y mucho aliento</l>
+          <l>para escuchar el castigo</l>
+          <l>que pasó el pobre mancebo.</l>
+          <l>Atado de pies y manos,</l>
+          <l>y desnudo todo el cuerpo,</l>
+          <l>sin piedad y sin clemencia</l>
+          <l>doscientos palos le dieron.</l>
+          <l>Quedó el mozo del castigo</l>
+          <l>maltratado y casi muerto,</l>
+          <l>y luego para curarlo,</l>
+          <l>le dan cauterio de fuego.</l>
+          <l>Convaleció del castigo,</l>
+          <l>y al trabajo volvió, haciendo</l>
+          <l>de su notable desdicha</l>
+          <l>á millares los conceptos.</l>
+          <l>Si queria rescatarse,</l>
+          <l>no le ayudaba el dinero.</l>
+          <l>Si huirse y dejar el amo,</l>
+          <l>se miraba sin remedio.</l>
+          <l>Envuelto en sus confusiones,</l>
+          <l>determinó con aliento</l>
+          <l>ser mártir de Jesu-Christo,</l>
+          <l>por su santa ley muriendo;</l>
+          <l>y por mejor conseguirlo,</l>
+          <l>trazó allá en su pensamiento</l>
+          <l>matar primero á los amos,</l>
+          <l>y á muchos Moros con ellos.</l>
+          <l>Resuelto y determinado,</l>
+          <l>buscó un cuchillo muy bueno</l>
+          <fw type="reclamo">para</fw>
 
-                              <l>se crió Blas de Leon</l>
-                              <l>hijo de padres muy buenos,</l>
-                              <l>mozo galan y alentado,</l>
-                              <l>de mucho valor y esfuerzo,</l>
-                              <l>muy cortés y bien criado,</l>
-                              <l>y de lindo entendimiento.</l>
-                              <l>Este tuvo una pendencia</l>
-                              <l>en una casa de juego,</l>
-                              <l>donde mató un mayorazgo</l>
-                              <l>de lo mejor de aquel pueblo.</l>
-                              <l>Por esta muerte fue fuerza</l>
-                              <l>salir de su patria huyendo,</l>
-                              <l>y para estar mas seguro,</l>
-                              <l>pasó á Málaga en un vuelo,</l>
-                              <l>y al instante se embarcó</l>
-                              <l>en un navio pequeño,</l>
-                              <l>que hacia viage á Roma,</l>
-                              <l>y el claro cristal rompiendo,</l>
-                              <l>navegaron cuatro dias</l>
-                              <l>con próspero y feliz viento;</l>
-                              <l>mas al cabo de los cuatro,</l>
-                              <l>tuvieron un mal encuentro,</l>
-                              <l>que seis fragatas de Moros</l>
-                              <l>el navio les rindieron,</l>
-                              <l>llevándoselos cautivos,</l>
-                              <l>y en Argel vendidos fueron.</l>
-                              <l>A Blas de Leon compró</l>
-                              <l>un Moro rico y soberbio,</l>
-                              <l>y muy voráz, pues tenia</l>
-                              <l>una condicion de un perro.</l>
-                              <l>Este tenia una hacienda,</l>
-                              <l>una legua poco menos</l>
-                              <l>de la ciudad, donde estaba</l>
-                              <l>del año lo mas del tiempo.</l>
-                              <l>Trabajaba allí el cautivo,</l>
-                              <l>cultivando árboles buenos</l>
-                              <l>frutales, que los habia</l>
-                              <l>de todas suertes diversos.</l>
-                              <l>Era el Moro, como he dicho,</l>
-                              <l>de muy poco sufrimiento,</l>
-                              <l>y asi por muy poca cosa</l>
-                              <l>daba á diestro y á siniestro.</l>
-                              <l>Un dia que Blas se hallaba</l>
-                              <l>muy fatigado del sueño,</l>
-                              <l>se recostó á reposar</l>
-                              <l>de sus fatigas el peso.</l>
-                              <l>Quedóse el pobre dormido,</l>
-                              <l>y su amo en este tiempo</l>
-                              <l>vino á dar vuelta á la hacienda,</l>
-                              <l>y en fin lo encontró durmiendo.</l>
-                              <l>Aquí es menester tener</l>
-                              <l>gran valor y mucho aliento</l>
-                              <l>para escuchar el castigo</l>
-                              <l>que pasó el pobre mancebo.</l>
-                              <l>Atado de pies y manos,</l>
-                              <l>y desnudo todo el cuerpo,</l>
-                              <l>sin piedad y sin clemencia</l>
-                              <l>doscientos palos le dieron.</l>
-                              <l>Quedó el mozo del castigo</l>
-                              <l>maltratado y casi muerto,</l>
-                              <l>y luego para curarlo,</l>
-                              <l>le dan cauterio de fuego.</l>
-                              <l>Convaleció del castigo,</l>
-                              <l>y al trabajo volvió, haciendo</l>
-                              <l>de su notable desdicha</l>
-                              <l>á millares los conceptos.</l>
-                              <l>Si queria rescatarse,</l>
-                              <l>no le ayudaba el dinero.</l>
-                              <l>Si huirse y dejar el amo,</l>
-                              <l>se miraba sin remedio.</l>
-                              <l>Envuelto en sus confusiones,</l>
-                              <l>determinó con aliento</l>
-                              <l>ser mártir de Jesu-Christo,</l>
-                              <l>por su santa ley muriendo;</l>
-                              <l>y por mejor conseguirlo,</l>
-                              <l>trazó allá en su pensamiento</l>
-                              <l>matar primero á los amos,</l>
-                              <l>y á muchos Moros con ellos.</l>
-                              <l>Resuelto y determinado,</l>
-                              <l>buscó un cuchillo muy bueno</l>
-                              <fw type="reclamo">para</fw>
+          <pb n="3" source="BCN_004_3.jpg" facs="varios/BCN_004_3.jpg"/>
 
-                              <pb n="3" source="BCN_004_3.jpg" facs="varios/BCN_004_3.jpg"/>
+          <l>para ejecutar el lance,</l>
+          <l>en dando ocasion al tiempo.</l>
+          <l>Llegado el mes de Setiembre,</l>
+          <l>cuando sus amos vinieron</l>
+          <l>para recoger los frutos,</l>
+          <l>y gozar de su recreo,</l>
+          <l>una noche se enfadó</l>
+          <l>con Blas el amo, y soberbio</l>
+          <l>quiso otra vez castigarlo,</l>
+          <l>viniendo para él derecho.</l>
+          <l>Pero Blas ya prevenido</l>
+          <l>con el cuchillo sangriento,</l>
+          <l>con el amo embiste airado,</l>
+          <l>derribándole en el suelo,</l>
+          <l>y al cuchillo echando mano,</l>
+          <l>con mucho valor y aliento</l>
+          <l>le cercenó la garganta</l>
+          <l>y alli se lo dejó muerto.</l>
+          <l>Comenzó el ama á dar gritos,</l>
+          <l>y Blas muy ligero y presto</l>
+          <l>porque mas no alborotase,</l>
+          <l>hizo con ella lo mesmo.</l>
+          <l>Despues les mató dos hijos;</l>
+          <l>tres negras y cuatro negros,</l>
+          <l>diez camellos que tenian,</l>
+          <l>gallinas, gatos y perros.</l>
+          <l>Luego por una ventana</l>
+          <l>los arrojaba diciendo:</l>
+          <l>andad, perros, á cenar</l>
+          <l>con los diablos al infierno.</l>
+          <l>Luego con gran desahogo</l>
+          <l>cenó con mucho sosiego,</l>
+          <l>y en cenando, se previno</l>
+          <l>de algunas armas de fuego.</l>
+          <l>Súpose en <name>Argel</name> el caso,</l>
+          <l>y salieron á prenderlo,</l>
+          <l>llenos de rabiosa saña,</l>
+          <l>los parientes de los muertos.</l>
+          <l>Mas ántes que ellos llegasen,</l>
+          <l>les salió Blas al encuentro,</l>
+          <l>y disparando un trabuco,</l>
+          <l>mató los dos delanteros.</l>
+          <l>Despues con dos carabinas</l>
+          <l>otros dos mató y cogiendo</l>
+          <l>un corbo alfange en la mano,</l>
+          <l>todos los demas huyeron,</l>
+          <l>del caso atemorizados,</l>
+          <l>y á voces iban diciendo:</l>
+          <l>este hombre es el demonio,</l>
+          <l>ó el demonio está en su cuerpo.</l>
+          <l>Llegó la noticia al Rey,</l>
+          <l>el qual mandó que al momento,</l>
+          <l>sin un punto dilatarlo,</l>
+          <l>lo trajesen vivo ó muerto.</l>
+          <l>Salieron pues á buscarlo</l>
+          <l>cincuenta Moros soberbios,</l>
+          <l>y lo hallaron abrasado</l>
+          <l>con una cruz que habia hecho.</l>
+          <l>Atadas atras las manos,</l>
+          <l>dandole golpes muy recios,</l>
+          <l>arrastrado y mal tratado</l>
+          <l>delante el Rey lo pusieron.</l>
+          <l>El Rey le dijo: Cautivo,</l>
+          <l>pues tuviste atrevimiento</l>
+          <l>de ejecutar tantas muertes,</l>
+          <l>has de morir sin remedio</l>
+          <l>con una muerte cruel,</l>
+          <l>por dar del rigor ejemplo,</l>
+          <l>y porque sirvas con ella</l>
+          <l>para todos de escarmiento.</l>
+          <l>La sentencia que le dió,</l>
+          <l>causa horror y causa miedo:</l>
+          <l>causa asombro y causa espanto</l>
+          <l>oír rigor tan violento.</l>
+          <l>Mandó poner en la plaza</l>
+          <l>un palo muy alto y grueso,</l>
+          <l>y en él diez fuertes escarpias</l>
+          <l>de fino templado acero,</l>
+          <l>y en ellas lo claven vivo</l>
+          <l>por la mitad de su cuerpo,</l>
+          <fw type="reclamo">y</fw>
 
-                              <l>para ejecutar el lance,</l>
-                              <l>en dando ocasion al tiempo.</l>
-                              <l>Llegado el mes de Setiembre,</l>
-                              <l>cuando sus amos vinieron</l>
-                              <l>para recoger los frutos,</l>
-                              <l>y gozar de su recreo,</l>
-                              <l>una noche se enfadó</l>
-                              <l>con Blas el amo, y soberbio</l>
-                              <l>quiso otra vez castigarlo,</l>
-                              <l>viniendo para él derecho.</l>
-                              <l>Pero Blas ya prevenido</l>
-                              <l>con el cuchillo sangriento,</l>
-                              <l>con el amo embiste airado,</l>
-                              <l>derribándole en el suelo,</l>
-                              <l>y al cuchillo echando mano,</l>
-                              <l>con mucho valor y aliento</l>
-                              <l>le cercenó la garganta</l>
-                              <l>y alli se lo dejó muerto.</l>
-                              <l>Comenzó el ama á dar gritos,</l>
-                              <l>y Blas muy ligero y presto</l>
-                              <l>porque mas no alborotase,</l>
-                              <l>hizo con ella lo mesmo.</l>
-                              <l>Despues les mató dos hijos;</l>
-                              <l>tres negras y cuatro negros,</l>
-                              <l>diez camellos que tenian,</l>
-                              <l>gallinas, gatos y perros.</l>
-                              <l>Luego por una ventana</l>
-                              <l>los arrojaba diciendo:</l>
-                              <l>andad, perros, á cenar</l>
-                              <l>con los diablos al infierno.</l>
-                              <l>Luego con gran desahogo</l>
-                              <l>cenó con mucho sosiego,</l>
-                              <l>y en cenando, se previno</l>
-                              <l>de algunas armas de fuego.</l>
-                              <l>Súpose en Argel el caso,</l>
-                              <l>y salieron á prenderlo,</l>
-                              <l>llenos de rabiosa saña,</l>
-                              <l>los parientes de los muertos.</l>
-                              <l>Mas ántes que ellos llegasen,</l>
-                              <l>les salió Blas al encuentro,</l>
-                              <l>y disparando un trabuco,</l>
-                              <l>mató los dos delanteros.</l>
-                              <l>Despues con dos carabinas</l>
-                              <l>otros dos mató y cogiendo</l>
-                              <l>un corbo alfange en la mano,</l>
-                              <l>todos los demas huyeron,</l>
-                              <l>del caso atemorizados,</l>
-                              <l>y á voces iban diciendo:</l>
-                              <l>este hombre es el demonio,</l>
-                              <l>ó el demonio está en su cuerpo.</l>
-                              <l>Llegó la noticia al Rey,</l>
-                              <l>el qual mandó que al momento,</l>
-                              <l>sin un punto dilatarlo,</l>
-                              <l>lo trajesen vivo ó muerto.</l>
-                              <l>Salieron pues á buscarlo</l>
-                              <l>cincuenta Moros soberbios,</l>
-                              <l>y lo hallaron abrasado</l>
-                              <l>con una cruz que habia hecho.</l>
-                              <l>Atadas atras las manos,</l>
-                              <l>dandole golpes muy recios,</l>
-                              <l>arrastrado y mal tratado</l>
-                              <l>delante el Rey lo pusieron.</l>
-                              <l>El Rey le dijo: Cautivo,</l>
-                              <l>pues tuviste atrevimiento</l>
-                              <l>de ejecutar tantas muertes,</l>
-                              <l>has de morir sin remedio</l>
-                              <l>con una muerte cruel,</l>
-                              <l>por dar del rigor ejemplo,</l>
-                              <l>y porque sirvas con ella</l>
-                              <l>para todos de escarmiento.</l>
-                              <l>La sentencia que le dió,</l>
-                              <l>causa horror y causa miedo:</l>
-                              <l>causa asombro y causa espanto</l>
-                              <l>oír rigor tan violento.</l>
-                              <l>Mandó poner en la plaza</l>
-                              <l>un palo muy alto y grueso,</l>
-                              <l>y en él diez fuertes escarpias</l>
-                              <l>de fino templado acero,</l>
-                              <l>y en ellas lo claven vivo</l>
-                              <l>por la mitad de su cuerpo,</l>
-                              <fw type="reclamo">y</fw>
+          <pb n="4" source="BCN_004_4.jpg" facs="varios/BCN_004_4.jpg"/>
 
-                              <pb n="4" source="BCN_004_4.jpg" facs="varios/BCN_004_4.jpg"/>
-
-                              <l>y hasta que llegue á espirar</l>
-                              <l>que lo dejen alli puesto.</l>
-                              <l>Ejecutóse el mandato,</l>
-                              <l>y en las escarpias pusieron</l>
-                              <l>clavado por las espaldas</l>
-                              <l>al referido mancebo.</l>
-                              <l>Tres dias estuvo en ellas,</l>
-                              <l>predicando el Evangelio,</l>
-                              <l>y de Dios la ley sagrada,</l>
-                              <l>en altas voces diciendo:</l>
-                              <l>viva la gran fé de Christo,</l>
-                              <l>Dios y hombre verdadero,</l>
-                              <l>y vivan de su ley santa</l>
-                              <l>los sacrosantos misterios.</l>
-                              <l>Su Encarnacion viva, viva,</l>
-                              <l>viva el sacro Nacimiento,</l>
-                              <l>donde Reyes y Pastores</l>
-                              <l>por Rey lo reconocieron.</l>
-                              <l>Vive el misterio que obró,</l>
-                              <l>quando se perdió en el templo,</l>
-                              <l>enseñando a que le busquen</l>
-                              <l>aquellos que le perdieron.</l>
-                              <l>Viva del monte Tabor</l>
-                              <l>la luz, que oculta en su pecho,</l>
-                              <l>muy claro manifestó</l>
-                              <l>ser Hijo del Padre Eterno.</l>
-                              <l>Viva la feliz memoria</l>
-                              <l>del sacrosanto Madero,</l>
-                              <l>donde libró con su muerte</l>
-                              <l>las almas de cautiverio.</l>
-                              <l>Viva su resurreccion,</l>
-                              <l>donde el triunfo consiguiendo,</l>
-                              <l>por su propia virtud pudo</l>
-                              <l>volver á vivir, ya muerto.</l>
-                              <l>Viva su Ascension, la qual</l>
-                              <l>abrió las puertas del cielo,</l>
-                              <l>que estaban por el pecado</l>
-                              <l>cerradas tan largo tiempo.</l>
-                              <l>Viva el triunfo de los triunfos</l>
-                              <l>de todos estos Misterios,</l>
-                              <l>que es, segun tengo entendido</l>
-                              <l>el del Santo Sacramento,</l>
-                              <l>que en él se cifró su amor</l>
-                              <l>muy cabal y por entero,</l>
-                              <l>pues se quedó con los hombres,</l>
-                              <l>y fué con su Padre al cielo.</l>
-                              <l>Viva de su santa Madre</l>
-                              <l>la pureza, cuyo templo</l>
-                              <l>á Dios sirvió de sagrario,</l>
-                              <l>por ser tan limpio aposento.</l>
-                              <l>Viva á pesar de Mahoma,</l>
-                              <l>de Calvino y de Lutero,</l>
-                              <l>su virginidad, pues pudo</l>
-                              <l>quedar doncella pariendo.</l>
-                              <l>Viva Jesus, viva, viva,</l>
-                              <l>volvió á decir, y con esto</l>
-                              <l>murió, dejando su alma</l>
-                              <l>en manos del Padre Eterno.</l>
-                              <l>Dé su salvacion ser cierta,</l>
-                              <l>muchos señales se vieron,</l>
-                              <l>de músicas celestiales</l>
-                              <l>y sonoros instrumentos.</l>
-                              <l>De la Trinidad los Frayles</l>
-                              <l>al Rey licencia pidieron</l>
-                              <l>para quitarlo del sitio,</l>
-                              <l>y dar sepultura al cuerpo.</l>
-                              <l>Obtenida la licencia,</l>
-                              <l>lo llevaron, y le hicieron</l>
-                              <l>con muy solemnes exequias</l>
-                              <l>un suntuosísimo entierro.</l>
-                              <l>Dios en su gloria lo tenga,</l>
-                              <l>y á nosotros nos dé aliento,</l>
-                              <l>para morir confesando</l>
-                              <l>la ley de Dios verdadero;</l>
-                              <l>y para si se ofreciere</l>
-                              <l>algun lance como aquestos,</l>
-                              <l>que nos dé su santa gracia,</l>
-                              <l>para poder con esfuerzo</l>
-                              <l>padecer con mucho gusto</l>
-                              <l>ansias, penas y tormentos.</l>
-                        </div>
-
-                        <div type="colofon">
-                              <p rend="cursiva"><lb/>Barcelona: Imprenta de los Herederos de Juan
+          <l>y hasta que llegue á espirar</l>
+          <l>que lo dejen alli puesto.</l>
+          <l>Ejecutóse el mandato,</l>
+          <l>y en las escarpias pusieron</l>
+          <l>clavado por las espaldas</l>
+          <l>al referido mancebo.</l>
+          <l>Tres dias estuvo en ellas,</l>
+          <l>predicando el Evangelio,</l>
+          <l>y de Dios la ley sagrada,</l>
+          <l>en altas voces diciendo:</l>
+          <l>viva la gran fé de Christo,</l>
+          <l>Dios y hombre verdadero,</l>
+          <l>y vivan de su ley santa</l>
+          <l>los sacrosantos misterios.</l>
+          <l>Su Encarnacion viva, viva,</l>
+          <l>viva el sacro Nacimiento,</l>
+          <l>donde Reyes y Pastores</l>
+          <l>por Rey lo reconocieron.</l>
+          <l>Vive el misterio que obró,</l>
+          <l>quando se perdió en el templo,</l>
+          <l>enseñando a que le busquen</l>
+          <l>aquellos que le perdieron.</l>
+          <l>Viva del monte <name>Tabor</name>
+          </l>
+          <l>la luz, que oculta en su pecho,</l>
+          <l>muy claro manifestó</l>
+          <l>ser Hijo del Padre Eterno.</l>
+          <l>Viva la feliz memoria</l>
+          <l>del sacrosanto Madero,</l>
+          <l>donde libró con su muerte</l>
+          <l>las almas de cautiverio.</l>
+          <l>Viva su resurreccion,</l>
+          <l>donde el triunfo consiguiendo,</l>
+          <l>por su propia virtud pudo</l>
+          <l>volver á vivir, ya muerto.</l>
+          <l>Viva su Ascension, la qual</l>
+          <l>abrió las puertas del cielo,</l>
+          <l>que estaban por el pecado</l>
+          <l>cerradas tan largo tiempo.</l>
+          <l>Viva el triunfo de los triunfos</l>
+          <l>de todos estos Misterios,</l>
+          <l>que es, segun tengo entendido</l>
+          <l>el del Santo Sacramento,</l>
+          <l>que en él se cifró su amor</l>
+          <l>muy cabal y por entero,</l>
+          <l>pues se quedó con los hombres,</l>
+          <l>y fué con su Padre al cielo.</l>
+          <l>Viva de su santa Madre</l>
+          <l>la pureza, cuyo templo</l>
+          <l>á Dios sirvió de sagrario,</l>
+          <l>por ser tan limpio aposento.</l>
+          <l>Viva á pesar de Mahoma,</l>
+          <l>de Calvino y de Lutero,</l>
+          <l>su virginidad, pues pudo</l>
+          <l>quedar doncella pariendo.</l>
+          <l>Viva Jesus, viva, viva,</l>
+          <l>volvió á decir, y con esto</l>
+          <l>murió, dejando su alma</l>
+          <l>en manos del Padre Eterno.</l>
+          <l>Dé su salvacion ser cierta,</l>
+          <l>muchos señales se vieron,</l>
+          <l>de músicas celestiales</l>
+          <l>y sonoros instrumentos.</l>
+          <l>De la Trinidad los Frayles</l>
+          <l>al Rey licencia pidieron</l>
+          <l>para quitarlo del sitio,</l>
+          <l>y dar sepultura al cuerpo.</l>
+          <l>Obtenida la licencia,</l>
+          <l>lo llevaron, y le hicieron</l>
+          <l>con muy solemnes exequias</l>
+          <l>un suntuosísimo entierro.</l>
+          <l>Dios en su gloria lo tenga,</l>
+          <l>y á nosotros nos dé aliento,</l>
+          <l>para morir confesando</l>
+          <l>la ley de Dios verdadero;</l>
+          <l>y para si se ofreciere</l>
+          <l>algun lance como aquestos,</l>
+          <l>que nos dé su santa gracia,</l>
+          <l>para poder con esfuerzo</l>
+          <l>padecer con mucho gusto</l>
+          <l>ansias, penas y tormentos.</l>
+        </div>
+        <div type="colofon">
+          <p rend="cursiva">
+            <lb/>Barcelona: Imprenta de los Herederos de Juan
                                     Jolis en los Cotoners.</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

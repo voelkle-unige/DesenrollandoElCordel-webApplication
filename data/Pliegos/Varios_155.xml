@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +113,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="5" corresp="Q5776">
+            <placeName key="Belén">Belén</placeName>
+            <location>
+              <geo>31.704444444444 35.206111111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,8 +156,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-19" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-19" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1495,14 +1517,14 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_155_1.jpg" facs="varios/Varios_155_1.jpg"/>
 
           <fw type="impresorNum">(Núm. 150)</fw>
-
           <div>
-            <head type="primer_titulo"><lb/>ALEGRES VILLANCICOS AL SANTO NACIMIENTO DEL HIJO DE
+            <head type="primer_titulo">
+              <lb/>ALEGRES VILLANCICOS AL SANTO NACIMIENTO DEL HIJO DE
               DIOS</head>
-
             <div n="1">
               <head type="titulo_estrofa">INTRODUCCIÓN</head>
               <lg>
@@ -1559,11 +1581,11 @@
                 <l>á todo el género humano.</l>
               </sp>
             </div>
-
             <div n="2">
               <head type="titulo_estrofa">VILLANCICO PRIMERO</head>
               <lg>
-                <l><hi rend="cursiva">Dúo.</hi> De un invierno muy cruel</l>
+                <l>
+                  <hi rend="cursiva">Dúo.</hi> De un invierno muy cruel</l>
                 <l>en la noche más callada,</l>
                 <l>un pastor todo asustado</l>
                 <l>se salió de su cabaña.</l>
@@ -1580,7 +1602,6 @@
                 <l>que duermen en su majada.</l>
               </lg>
             </div>
-
             <div n="3">
               <head type="titulo_estrofa">PASTORELA</head>
               <lg>
@@ -1644,7 +1665,6 @@
                 <l>CORO. Vamos, vamos, etc.</l>
               </lg>
             </div>
-
             <div n="4">
               <head type="titulo_estrofa">VILLANCICO SEGUNDO</head>
               <lg>
@@ -1674,7 +1694,6 @@
                 <l>atentos estamos.</l>
               </lg>
             </div>
-
             <div n="5">
               <head type="titulo_estrofa">TONADA.— NIÑOS.</head>
               <lg>
@@ -1728,11 +1747,11 @@
                 <l>CORO. Preciosa idea, etc.</l>
               </lg>
             </div>
-
             <div n="6">
               <head type="titulo_estrofa">VILLANCICO TERCERO</head>
               <lg>
-                <l><hi rend="cursiva">DÚO.</hi> Las zagalas y pastores</l>
+                <l>
+                  <hi rend="cursiva">DÚO.</hi> Las zagalas y pastores</l>
                 <l>reunidos en tropel,</l>
                 <l>llegan á Belén cantando</l>
                 <l>fatigados de correr;</l>
@@ -1742,7 +1761,6 @@
                 <l>y no se atreven á entrar.</l>
               </lg>
             </div>
-
             <div n="7">
               <head type="titulo_estrofa">PASTORELA</head>
               <lg>
@@ -1770,7 +1788,6 @@
                 <l>al hermoso Zagal.</l>
               </lg>
             </div>
-
             <div n="8">
               <head type="titulo_estrofa">TONADILLA A DÚO</head>
               <lg>
@@ -1783,7 +1800,6 @@
                 <l>CORO. Bienvenido seas, etc.</l>
               </lg>
             </div>
-
             <div n="9">
               <head type="titulo_estrofa">COPLAS</head>
               <lg>
@@ -1827,11 +1843,10 @@
               </lg>
             </div>
           </div>
-
           <div>
-            <head type="titulo_parte"><lb/>VILLANCICOS Y PASTORELA AL NACIMIENTO DEL HIJO DE
+            <head type="titulo_parte">
+              <lb/>VILLANCICOS Y PASTORELA AL NACIMIENTO DEL HIJO DE
               DIOS</head>
-
             <lg>
               <l rend="indent">Bien venido á vuestro valle,</l>
               <l>Pastorcito el celestial,</l>
@@ -1840,7 +1855,6 @@
               <l>pero sólo con tu vista</l>
               <l>ya se vuelve á restaurar.</l>
             </lg>
-
             <lg>
               <head type="estribillo">ESTRIBILLO</head>
               <l rend="cursiva">¡Ay qué lindo, ay qué bello,</l>
@@ -1848,7 +1862,6 @@
               <l rend="cursiva">que el amor á tus ovejas</l>
               <l rend="cursiva">del Cielo te hizo bajar.</l>
             </lg>
-
             <lg>
               <l rend="indent">Como al punto que has nacido</l>
               <l>de pastor señas nos das,</l>
@@ -1857,7 +1870,6 @@
               <l>no deseches las ofertas</l>
               <l>que vienen á tributar:</l>
             </lg>
-
             <lg rend="cursiva">
               <l>Ay qué lindo, ay qué bello, etc.</l>
             </lg>
@@ -1987,9 +1999,9 @@
             </lg>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Madrid. — Despacho: Arenal, 11, librería.</p>
+          <p>
+            <lb/>Madrid. — Despacho: Arenal, 11, librería.</p>
         </div>
       </div>
     </body>

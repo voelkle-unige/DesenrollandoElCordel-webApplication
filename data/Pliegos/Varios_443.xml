@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de
                               Genève</authority>
@@ -47,7 +61,7 @@
             <country>Suisse</country>
             <settlement>Genève</settlement>
             <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
+            </repository>
             <collection>Colección Varios</collection>
             <idno type="cote"/>
             <idno type="DOI">10.5281/zenodo.6802792</idno>
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="2"/>2 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="2"/>2 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +109,56 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q5836">
+            <placeName key="Toledo">Toledo</placeName>
+            <location>
+              <geo>39.866666666667 -4.0333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q10305">
+            <placeName key="Zaragoza">Zaragoza</placeName>
+            <location>
+              <geo>41.65 -0.88333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q79">
+            <placeName key="Egipto">Egipto</placeName>
+            <location>
+              <geo>27 29</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q16277">
+            <placeName key="Siracusa">Siracusa</placeName>
+            <location>
+              <geo>37.083333333333 15.283333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q11967">
+            <placeName key="Huesca">Huesca</placeName>
+            <location>
+              <geo>42.1401 -0.40889722222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q159605">
+            <placeName key="Tívoli">Tívoli</placeName>
+            <location>
+              <geo>41.966666666667 12.8</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -132,7 +197,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_443_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_443_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_443_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_443_1/full/full/0/default.jpg"/>
@@ -3163,23 +3230,38 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_443_1.jpg" facs="varios/Varios_443_1.jpg"/>
-        <head type="primer_titulo" rend="negrita"><lb/><hi rend="negrita">HISTORIA</hi><lb/>VERDADERA, Y EXEMPLAR<lb/>DEL GRAN MARTIR
-                              ESPAÑOL<lb/><hi rend="negrita">SAN LORENZO,</hi><lb/>SACADA DE SAN AMBROSIO, EUSEBIO</head>
-        <head type="subtitulo_parte"><lb/>Schedel Chronicon Mundi, Simeon
+
+        <head type="primer_titulo" rend="negrita">
+          <lb/>
+          <hi rend="negrita">HISTORIA</hi>
+          <lb/>VERDADERA, Y EXEMPLAR<lb/>DEL GRAN MARTIR
+                              ESPAÑOL<lb/>
+          <hi rend="negrita">SAN LORENZO,</hi>
+          <lb/>SACADA DE SAN AMBROSIO, EUSEBIO</head>
+        <head type="subtitulo_parte">
+          <lb/>Schedel Chronicon Mundi, Simeon
                               Me-<lb/>tafrafte, y otros.<lb/>Su autor Don Hilario Santos
                               Alonso<lb/>CON LAS LICENCIAS NECESSARIAS.</head>
         <div type="colofon">
-          <p><lb/>En Murcia, en la Imprenta, y Libreria de Francisco
+          <p>
+            <lb/>En Murcia, en la Imprenta, y Libreria de Francisco
                                     Benedito, <lb/>vive en la Plateria, donde se hallarà esta, y otras
                                     diferentes. <lb/>Año de 1772.</p>
         </div>
+
         <pb n="2" source="Varios_443_2.jpg" facs="varios/Varios_443_2.jpg"/>
+
+
         <pb n="3" source="Varios_443_3.jpg" facs="varios/Varios_443_3.jpg"/>
+
         <fw type="paginaNum">3</fw>
         <div type="parte" n="1">
-          <head type="titulo_parte"><lb/>RESUMEN DE LA HISTORIA.</head>
-          <p><lb/>MOTIVOS DE HAVER IDO A ROMA S. <hi rend="cursiva">
+          <head type="titulo_parte">
+            <lb/>RESUMEN DE LA HISTORIA.</head>
+          <p>
+            <lb/>MOTIVOS DE HAVER IDO A <name>ROMA</name> S. <hi rend="cursiva">
                                           LO-<lb/>renzo.Tyranias, y persecucion de la lglesa por los
                                           Em-<lb/>peradores Valeriano , y Galerio. Lamentos de la
                                           piadosa<lb/>Himilce. Hechos, y martyrio de San Sixto,
@@ -3201,28 +3283,32 @@
                                           Santo.<lb/>Martyriza à San Hypolito, a su muger Santa
                                           Concordia,<lb/>sus hijos, y demàs familia. Martyrio cruel
                                           de S. Hypolito.<lb/>Desastrado fin de los Tyranos, y en
-                                          especial el de Valeriano.</hi></p>
+                                          especial el de Valeriano.</hi>
+          </p>
         </div>
         <div type="parte" n="2">
-          <p><lb/>Por los años de doscientos cinquenta y tres de <lb/>nuestro
+          <p>
+            <lb/>Por los años de doscientos cinquenta y tres de <lb/>nuestro
                                     Redentor Jesu-Chrifto afirma el <hi rend="cursiva">Chro-
                                           <lb/>nicon Mundi</hi> de Schedel haver vénido à España
                                     el San- <lb/>to Pontifice y Martyr San Sixto à regir un
                                     Concilio <lb/>por orden del Papa San Cornelio. Predicò entonces
                                     <lb/>despues de haver concluido dicho Concilio (que se- <lb/>gun
                                     los Autores fuè el primero que se celebrò en <lb/>España en
-                                    la Ciudad de Toledo) la Fè Catholica este <fw type="signaturas">A2</fw>
-                                    <fw type="reclamos">Santo</fw>
-                                    <pb n="4" source="Varios_443_4.jpg" facs="varios/Varios_443_4.jpg"/>
-                                    <fw type="paginaNum">4</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+                                    la Ciudad de <name>Toledo</name>) la Fè Catholica este <fw type="signaturas">A2</fw>
+            <fw type="reclamos">Santo</fw>
+
+            <pb n="4" source="Varios_443_4.jpg" facs="varios/Varios_443_4.jpg"/>
+
+            <fw type="paginaNum">4</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>Santo à los Españoles, no solo en Toledo, sino en
-                                    <lb/>otras partes. Estuvo en Zaragoza, y dicen haver lle-
+            <lb/>Santo à los Españoles, no solo en <name>Toledo</name>, sino en
+                                    <lb/>otras partes. Estuvo en <name>Zaragoza</name>, y dicen haver lle-
                                     <lb/>vado de alli consigo al Gloriosisimo Martyr San Lo-
                                     <lb/>renzo con otros muchos Españoles, que despues fue-
                                     <lb/>ron grandes Ministros de la Religion Christiana.
-                                    <lb/>Bolviò San Sixto à Roma, haviendo concluido su
+                                    <lb/>Bolviò San Sixto à <name>Roma</name>, haviendo concluido su
                                     <lb/>Legacìa; y à los años de doscientos cinquenta y sie-
                                     <lb/>te fue hecho Pontifice. Gozaba la Iglesia de Dios por
                                     <lb/>aquellos tiempos no de mucha quietud; porque impe-
@@ -3233,11 +3319,12 @@
                                     Catholicos ; tanto, que dice Euse- <lb/>bio, que su Casa y
                                     Palacio era Iglesia, y morada de <lb/>todos ellos : pero despues
                                     siendo persuadido y enga- <lb/>ñado por un malvado
-                                    Nigromantico, natural de <lb/>Egypto, no solo los privò del
+                                    Nigromantico, natural de <lb/><name>Egypto</name>, no solo los privò del
                                     favor que les hacia, <lb/>pero los mandò perseguir por todas
                                     partes, y exe- <lb/>cutar con ellos grandes crueldades, y
                                     tyranìas.</p>
-          <p><lb/>Lo mismo executò su perverso hijo Galerio en- <lb/>gañado y
+          <p>
+            <lb/>Lo mismo executò su perverso hijo Galerio en- <lb/>gañado y
                                     persuadido de este maldito Mago Egypcio. <lb/>A este enseñò
                                     las Artes Magicas, y la Nigromancìa, <lb/>como tambien la
                                     invocacion de los Demonios : para <lb/>esto sacrificaban
@@ -3247,11 +3334,13 @@
                                     desde Tybe- <lb/>rio, y antes se havian olvidado, por conocerlas
                                     feas, <lb/>tyranas, y execrables, aun á fus falsos Dioses. De
                                           <fw type="reclamos">mu-</fw>
-                                    <pb n="5" source="Varios_443_5.jpg" facs="varios/Varios_443_5.jpg"/>
-                                    <fw type="paginaNum">5</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
+
+            <pb n="5" source="Varios_443_5.jpg" facs="varios/Varios_443_5.jpg"/>
+
+            <fw type="paginaNum">5</fw>
+            <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
                                           Martyr.</fw>
-                                    <lb/>muchos de los Christianos se valian estos malvados,
+            <lb/>muchos de los Christianos se valian estos malvados,
                                     <lb/>quando ya los tenian destinados al martyrio, y ha-
                                     <lb/>cian a fus iniquos Sacerdotes, segun el estilo de Egyp-
                                     <lb/>to, indagasen en sus entrañas los sucesos futuros. O
@@ -3260,11 +3349,12 @@
                                     <lb/>ñas, è inferir por ellas sus falsas adivinaciones : y
                                     <lb/>quando esto no hacian, los daban otro genero de
                                     <lb/>tormentos, sacrificandoselos á sus Dioses.</p>
-          <p><lb/>Suscitòse este genero de inhumanidad, ya olvidado <lb/>en
+          <p>
+            <lb/>Suscitòse este genero de inhumanidad, ya olvidado <lb/>en
                                     muchas Provincias por entonces. Unas la dejaban, <lb/>porque las
                                     daban en rostro semejantes crueldades: <lb/>mas otras proseguian
                                     inhumanas ejecutandolas.Los <lb/>que mas se singularizaron
-                                    despues de los Romanos <lb/>fueron los Cartaginenses, siendo los
+                                    despues de los <name>Roma</name>nos <lb/>fueron los Cartaginenses, siendo los
                                     mas rebeldes en <lb/>estos horrendos sacrificios; porque eran
                                     entre ellos los <lb/>mas solemnes, y especiales de que usaban
                                     los de <lb/>los tiernos y delicados infantes ; cuya crueldad
@@ -3276,13 +3366,16 @@
                                     <lb/>nia ciegos el infernal culto de sus Dioses. Pondrè en
                                     <lb/>nuestro idioma las tristes lamencaciones de esta afli-
                                     <lb/>gida Heroìna, reduciendolas à metro, segun las llora.</p>
-          <p rend="cursiva"><lb/>Què piedad es manchar con sangre humana <lb/>El
+          <p rend="cursiva">
+            <lb/>Què piedad es manchar con sangre humana <lb/>El
                                     Templo! O causa infiel de las maldades! <lb/>Què, ignoran de los
                                     Dioses la clemente <lb/>Naturaleza impios los mortales! <fw type="reclamos">Id,</fw>
-                                    <pb n="6" source="Varios_443_6.jpg" facs="varios/Varios_443_6.jpg"/>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+
+            <pb n="6" source="Varios_443_6.jpg" facs="varios/Varios_443_6.jpg"/>
+
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>Id, y llenad de religioso incienso <lb/>En fragrantes
+            <lb/>Id, y llenad de religioso incienso <lb/>En fragrantes
                                     aromas los Altares: <lb/>Quitad los torpes ritos, no os acuse
                                     <lb/>Un sacrifico solo mil crueldades. <lb/>Dios, à quien
                                     disgustais con vuestros cultos, <lb/>Es tierno, es amoroso, y es
@@ -3298,18 +3391,21 @@
                                     os suspende? <lb/>Si no, porquè ha de seros favorable
                                     <lb/>Despojar à las Tierras Africanas <lb/>De a indole mejor de
                                     las edades ?</p>
-          <p><lb/>Assi lloraba la piadosa Himilce los tiernos infantes <lb/>que
+          <p>
+            <lb/>Assi lloraba la piadosa Himilce los tiernos infantes <lb/>que
                                     aquellos Barbaros sacrificaban: pero no bastò este
                                     <lb/>razonamiento tan compasivo y lastimofo à que mitiga-
                                     <lb/>sen sus crueldades, hasta que Dario Histapis las pro-
                                     <lb/>hibiò, como dice Juſtino ; y fuè una de las condi-
-                                    <lb/>ciones que Gelon, Tyrano de Siracusa, puso en la <lb/>paz
+                                    <lb/>ciones que Gelon, Tyrano de <name>Siracusa</name>, puso en la <lb/>paz
                                     que capitulò con ellos, prohibir las victimas hu- <lb/>manas.
                                     Pero aunque suspendieron tan inhumanos <fw type="reclamos">fa-</fw>
-                                    <pb n="7" source="Varios_443_7.jpg" facs="varios/Varios_443_7.jpg"/>
-                                    <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
+
+            <pb n="7" source="Varios_443_7.jpg" facs="varios/Varios_443_7.jpg"/>
+
+            <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
                                           Martyr</fw>
-                                    <lb/>sacrificios, ò los minoraron, no los dejaron hasta que
+            <lb/>sacrificios, ò los minoraron, no los dejaron hasta que
                                     <lb/>pereciò Carthago, segun Curcio, ni olvidaron tan
                                     <lb/>abominable supersticion los que se salvaron de la
                                     <lb/>guerra ; pues en el Proconsulado de Tyberio, y de <lb/>su
@@ -3317,7 +3413,8 @@
                                     y excitaban à esta maldad en los arbo- <lb/>les que hacian
                                     sombra à los templos : y lo mismo <lb/>hizo ejecutar en otras
                                     partes.</p>
-          <p><lb/>No bastò tan merecido y espantoso castigo á apar-
+          <p>
+            <lb/>No bastò tan merecido y espantoso castigo á apar-
                                     <lb/>tarlos de esta crueldad; pues Tertuliano dice que <lb/>en
                                     su tiempo sacrificaban ocultamente niños. Y se- <lb/>gun
                                     refieren Eusebio y Genebrardo, en un dia sacri- <lb/>ficaron
@@ -3326,30 +3423,34 @@
                                     que tenian. Y creo que por <lb/>eso se lamentaba tanto Himilce;
                                     porque huvo oca- <lb/>sion que la sacrificaron un hijo tierno
                                     quando Anibal <lb/>se hallaba en un gran conflicto en la guerra
-                                    de los <lb/>Romanos. Y Justino confirma el hecho, diciendo,
+                                    de los <lb/><name>Roma</name>nos. Y Justino confirma el hecho, diciendo,
                                     <lb/>que estando los Cartaginenses oprimidos de una <lb/>gran
                                     peste, ofrecieron en sacrificio muchos niños y <lb/>muchachos,
                                     para con la sangre de ellos pedir la paz <lb/>de los Dioses, y
                                     la salud para la gente.</p>
-          <p><lb/>Pues estas inhumanidades fueron las que suscita- <lb/>ron y
+          <p>
+            <lb/>Pues estas inhumanidades fueron las que suscita- <lb/>ron y
                                     sacaron del olvido los malvados Emperado- <lb/>res Valeriano y
                                     su hijo Galerio, que no siendoles <lb/>bastantes á saciar su
                                     crueldad los tiernos infantes, <lb/>echavan mano de los Martyres
                                     para practicar sus in- <lb/>humanidades, y ejecutar sus
                                     idolatrados cultos. En <lb/>eltos tiempos tan crueles campearon
                                     nuestros ilus- <fw type="reclamos">tres</fw>
-                                    <pb n="8" source="Varios_443_8.jpg" facs="varios/Varios_443_8.jpg"/>
-                                    <fw type="paginaNum">8</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+
+            <pb n="8" source="Varios_443_8.jpg" facs="varios/Varios_443_8.jpg"/>
+
+            <fw type="paginaNum">8</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>tres y gloriosos Santos y Martyres de Jesu-Christo,
+            <lb/>tres y gloriosos Santos y Martyres de Jesu-Christo,
                                     <lb/>Sixto Pontifice, y Lorenzo su Diacono. Serà bien que
                                     <lb/>digamos algo de San Sixto antes de entrar en el mar-
                                     <lb/>tyrio de nuestro San Lorenzo, como quien tiene tanta
                                     <lb/>conexion con fu gran triunfo.</p>
-          <p><lb/>Fue San Sixto muy apasionado de los Españoles, <lb/>à quienes
+          <p>
+            <lb/>Fue San Sixto muy apasionado de los Españoles, <lb/>à quienes
                                     queria y estimaba entrañablemente; y por <lb/>eso acaso se
-                                    llevaria consigo á Roma à nueſtro Mar- <lb/>tyr San Lorenzo,
+                                    llevaria consigo á <name>Roma</name> à nueſtro Mar- <lb/>tyr San Lorenzo,
                                     quando antes de subir al Trono vi- <lb/>no á España. Lo cierto
                                     es, que bastantemente lo de- <lb/>muestra en una clausula de
                                     aquella Carta Decretal que <lb/>escriviò à los Obispos de
@@ -3359,13 +3460,14 @@
                                     mal. Y que aunque estaba muy lejos <lb/>por la distancia de
                                     tierra, estaba muy cerca de ellos, te- <lb/>niendolos dentro de
                                     su corazon.</p>
-          <p><lb/>Llegò en fin este santo Pontifice à los terminos de <lb/>su
+          <p>
+            <lb/>Llegò en fin este santo Pontifice à los terminos de <lb/>su
                                     vida, que la finalizò con la corona del martyrio en <lb/>los
                                     tiempos en que estaba en el mayor vigor la perse- <lb/>cucion de
                                     los malvados Emperadores Valeriano y <lb/>Galerio. Estos iniquos
                                     Principes expidieron un Edic- <lb/>to, en que mandaba se
                                     castigafen los Obispos, Pres- <lb/>byteros, y Diaconos. Los
-                                    Senadores, Varones ilus- <lb/>tres, y Cavalleros Romanos fuesen
+                                    Senadores, Varones ilus- <lb/>tres, y Cavalleros <name>Roma</name>nos fuesen
                                     privados de sus <lb/>Dignidades, y confiscados sus bienes. Y
                                     hecho todo <lb/>esto, si todavia perseverasen en ser
                                     Christianos, les <lb/>fuese quitada la vida con los tormentos
@@ -3373,7 +3475,9 @@
                                     priva- <lb/>das de sus bienes y hacienda, fuesen
                                     desterradas.</p>
           <fw type="reclamos">En</fw>
+
           <pb n="9" source="Varios_443_9.jpg" facs="varios/Varios_443_9.jpg"/>
+
           <fw type="titulo_corriente" rend="cursiva">de San Lorenzo Martyr.</fw>
           <fw type="paginaNum">
             <choice>
@@ -3381,7 +3485,8 @@
               <corr>9</corr>
             </choice>
           </fw>
-          <p><lb/>En esta ocasion fue preso y martyrizado nuestro
+          <p>
+            <lb/>En esta ocasion fue preso y martyrizado nuestro
                                     <lb/>Pontifice San Sixto con otros muchos, como San
                                     <lb/>Felicisimo, Agapito, Januario, Magno, Inocencio,
                                     <lb/>Estefano, y Quarto. Llevabanle preso al Santo á la
@@ -3404,15 +3509,18 @@
                                     Va- <lb/>"rones alcanzaron renombre de victoriofos por ha-
                                     <lb/>"ver vencido: muchos Capitanes triunfaron por ha- <lb/>"ver
                                     sus foldados peleado valerosamente."</p>
-          <p><lb/>Como esto dixese San Lorenzo con entrañable <lb/>afecto, y
+          <p>
+            <lb/>Como esto dixese San Lorenzo con entrañable <lb/>afecto, y
                                     muchas lagrimas, el santo Pontifice Sixto <lb/>le respondiò,
                                     consolandole, y diciendole: ,,No te <lb/>"dejo yo, hijo mio, que
                                     te llevo en mi corazon, ni <lb/>"te desecho por cobarde, y
                                     pusilanime ; antes te <fw type="signaturas">B</fw>
-                                    <fw type="reclamos">"hago</fw>
-                                    <pb n="10" source="Varios_443_10.jpg" facs="varios/Varios_443_10.jpg"/>
-                                    <fw type="paginaNum">10</fw>
-                                    <lb/>"hago saber, que te queda otra batalla mas terrible
+            <fw type="reclamos">"hago</fw>
+
+            <pb n="10" source="Varios_443_10.jpg" facs="varios/Varios_443_10.jpg"/>
+
+            <fw type="paginaNum">10</fw>
+            <lb/>"hago saber, que te queda otra batalla mas terrible
                                     <lb/>"que la mia, y otros tormentos mas rigurosos: que <lb/>"por
                                     ser yo viejo, y flaco, mi tormento serà breve, <lb/>"y ligero: 
                                     mas tù, que eres mozo, y robusto, triun- <lb/>"farás con mayor
@@ -3420,7 +3528,8 @@
                                     dias me seguirás. Solo te <lb/>"encomiendo, que los thesoros de
                                     la Iglesia que <lb/>"están à tu cargo, los repartas á los
                                     pobres, co- <lb/>"mo mejor te pareciere."</p>
-          <p><lb/>Luego al punto puso por obra San Lorenzo lo que <lb/>su
+          <p>
+            <lb/>Luego al punto puso por obra San Lorenzo lo que <lb/>su
                                     santissimo Maestro le havia mandado, y con gran <lb/>diligencia
                                     saliò á buscar à los pobres para repartir los <lb/>caudales
                                     que havia en el Erario de la Iglefia. Entrò <lb/>en casa de una
@@ -3440,11 +3549,13 @@
                                     <lb/>de ellos tiernamente, consolandolos al mismo tiempo.
                                     <lb/>De aqui pasò á otra casa de un Christiano, lla- <lb/>mado
                                     Narciso, donde hallò un gran numero de <fw type="reclamos">Chris-</fw>
-                                    <pb n="11" source="Varios_443_11.jpg" facs="varios/Varios_443_11.jpg"/>
-                                    <fw type="paginaNum">11</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
+
+            <pb n="11" source="Varios_443_11.jpg" facs="varios/Varios_443_11.jpg"/>
+
+            <fw type="paginaNum">11</fw>
+            <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
                                           Martyr.</fw>
-                                    <lb/>Christianos angustiados, temerosos, y afligidos, á los
+            <lb/>Christianos angustiados, temerosos, y afligidos, á los
                                     <lb/>quales consolò. Lavòlos asimismo los pies, y les diò
                                     <lb/>limosnas crecidas para que se mantuviesen. Entre <lb/>ellos
                                     havia un ciego llamado Crescencio; y haciendo <lb/>la señal de
@@ -3462,25 +3573,29 @@
                                     <lb/>tierra con una santa, y religiosa contienda, sobre
                                     <lb/>quien los besaria al otro. Al fin venciò San Loren-
                                     <lb/>zo, y Justino se dejò besar los pies.</p>
-          <p><lb/>En estas piadosas obras gastò el Santo toda aque- <lb/>lla
+          <p>
+            <lb/>En estas piadosas obras gastò el Santo toda aque- <lb/>lla
                                     noche, cumpliendo enteramente la voluntad de <lb/>su Santifimo
                                     Padre y Maestro Sixto, al qual al dia <lb/>siguiente le
                                     sentenciaron á muerte. Llevabanle al san- <lb/>to Papa los
-                                    Ministros de los Jueces Romanos fuera <lb/>de la Ciudad para
+                                    Ministros de los Jueces <name>Roma</name>nos fuera <lb/>de la Ciudad para
                                     degollarle; y como San Lorenzo <lb/>lo supiefe, corriò pronto
                                     à encontrarse con èl. Hallòle <lb/>el Santo, y con voz alta,
                                     y llorosa le dixo :<hi rend="cursiva">No me <lb/>desampares,
                                           Padre Santo : cumplì tu mandamiento, y dis- <lb/>tribui à
                                           los pobres los thesoros que me encargaste.</hi> Mas co-
                                     <lb/>mo los Ministros de justicia oyesen estas palabras á <fw type="signaturas">B2</fw>
-                                    <fw type="reclamos">la</fw>
-                                    <pb n="12" source="Varios_443_12.jpg" facs="varios/Varios_443_12.jpg"/>
-                                    <fw type="paginaNum">12</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+            <fw type="reclamos">la</fw>
+
+            <pb n="12" source="Varios_443_12.jpg" facs="varios/Varios_443_12.jpg"/>
+
+            <fw type="paginaNum">12</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>la voz de los thesoros, echaron mano de San Loren- <lb/>zo,
+            <lb/>la voz de los thesoros, echaron mano de San Loren- <lb/>zo,
                                     y prendiendole, le llevaron à la carcel.</p>
-          <p><lb/>Dieron luego noticia de ello al Emperador, el qual <lb/>se
+          <p>
+            <lb/>Dieron luego noticia de ello al Emperador, el qual <lb/>se
                                     holgò mucho con aquella nueva, esperando har- <lb/>tar, y
                                     saciar fu codicia, y juzgando tener, y poseer <lb/>grandes
                                     riquezas, y thesoros de la Iglesia, con despo- <lb/>jar á San
@@ -3498,7 +3613,8 @@
                                     <lb/>mismo tiempo, que creyese en Jesu-Christo. El lo <lb/>hizo,
                                     y se bautizò. Mas Dios le alumbrò los ojos <lb/>del alma, y
                                     juntamente los del cuerpo, restitu- <lb/>yendole la vista.</p>
-          <p><lb/>Divulgòse este milagro por toda la Ciudad de Ro- <lb/>ma, y
+          <p>
+            <lb/>Divulgòse este milagro por toda la Ciudad de Ro- <lb/>ma, y
                                     por la fama de èl concurrieron muchos cie- <lb/>gos à la
                                     carcel donde estaba el Santo, pidiendole re- <lb/>medio para su
                                     ceguedad. El Santo movido à pie- <lb/>dad, orò á su Dios y
@@ -3506,11 +3622,13 @@
                                     ellos la señal de la Cruz. <lb/>Viendo Hypolito los milagros
                                     que el Santo hacia, <lb/>ablandòse, y comenzò à conversar
                                     bastante continuo <fw type="reclamos">con</fw>
-                                    <pb n="13" source="Varios_443_13.jpg" facs="varios/Varios_443_13.jpg"/>
-                                    <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
+
+            <pb n="13" source="Varios_443_13.jpg" facs="varios/Varios_443_13.jpg"/>
+
+            <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
                                           Martyr.</fw>
-                                    <fw type="paginaNum">13</fw>
-                                    <lb/>con èl, y à rogarle, que le descubriese los thesoros
+            <fw type="paginaNum">13</fw>
+            <lb/>con èl, y à rogarle, que le descubriese los thesoros
                                     <lb/>que tenia escondidos, y de aqui tomò ocasion el <lb/>Santo
                                     para predicarle la Fè de Jesu-Christo, y decir- <lb/>le: O
                                     Hypolito! Si crees en Dios Padre todo pode- <lb/>roso, y en
@@ -3525,7 +3643,8 @@
                                     personas ; y <lb/>tanto regalò el Señor à Hypolito, que
                                     afirman haver <lb/>alcanzado á ver las almas de los que se
                                     bautizaban <lb/>con él muy alegres, y en extremo hermosas.</p>
-          <p><lb/>Como la codicia no le dejaba sosegar al Empera- <lb/>dor sobre
+          <p>
+            <lb/>Como la codicia no le dejaba sosegar al Empera- <lb/>dor sobre
                                     los thesoros de San Lorenzo, mandó que <lb/>se le traxesen à
                                     su presencia. Llegò Hypolito, que <lb/>ya era Christiano, y
                                     dixole al Santo, como le llama- <lb/>ba el Emperador : y San
@@ -3539,10 +3658,13 @@
                                     <lb/>tres dias de termino para recogerlos, que èl se los
                                     <lb/>traherìa.</p>
           <fw type="reclamos">Tu-</fw>
+
           <pb n="14" source="Varios_443_14.jpg" facs="varios/Varios_443_14.jpg"/>
+
           <fw type="paginaNum">14</fw>
           <fw type="titulo_corriente" rend="cursiva">Historia verdadera</fw>
-          <p><lb/>Tuvolo por bien el Emperador, y mandò á Hy- <lb/>polito, que
+          <p>
+            <lb/>Tuvolo por bien el Emperador, y mandò á Hy- <lb/>polito, que
                                     anduviese siempre à su lado, y no le per- <lb/>diese de vista
                                     en aquellos tres dias. Acrecentòse al <lb/>Tyrano mucho mas el
                                     gozo quando le dixo que ne- <lb/>cesitaba carros y camellos para
@@ -3556,7 +3678,8 @@
                                     : Me has pedido los thesoros que yo poseo, <lb/>aqui los tienes
                                     en estos carros y camellos : no son <lb/>otros los thesoros de
                                     la Iglesia de mi Dios, que sus <lb/>pobres, gozate de ellos.</p>
-          <p><lb/>No se puede facilmente explicar con palabras la <lb/>saña y
+          <p>
+            <lb/>No se puede facilmente explicar con palabras la <lb/>saña y
                                     enojo que recibiò el Tyrano, viendose bur- <lb/>lado de San
                                     Lorenzo, y frustradas sus esperanzas <lb/>de los thesoros que
                                     pensaba gozar : echaba llamas por <lb/>los ojos, espumarajo por
@@ -3570,7 +3693,9 @@
                                     <lb/>para que entendiese que por todos ellos havia de pa-
                                     <lb/>sar, si no se rendia á su voluntad.</p>
           <fw type="reclamos">Em-</fw>
+
           <pb n="15" source="Varios_443_15.jpg" facs="varios/Varios_443_15.jpg"/>
+
           <fw type="paginaNum">15</fw>
           <fw type="titulo_corriente" rend="cursiva">de San Lorenzo Martyr.</fw>
           <p>Empezaron à traer aquellos inhumanos verdugos los escorpiones de
@@ -3599,11 +3724,13 @@
                                     las que èl deseaba padecer : y asi le dixo al Tyrano: ,,Hombre
                                     desventurado, piensas "atemorizarme con tormentos ? Pues quiero
                                     que en- <fw type="reclamos">"tien-</fw>
-                                    <pb n="16" source="Varios_443_16.jpg" facs="varios/Varios_443_16.jpg"/>
-                                    <fw type="paginaNum">16</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+
+            <pb n="16" source="Varios_443_16.jpg" facs="varios/Varios_443_16.jpg"/>
+
+            <fw type="paginaNum">16</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>,,tiendas, que para ti son tormentos, y para mison
+            <lb/>,,tiendas, que para ti son tormentos, y para mison
                                     <lb/>,,regalos; que yo ninguna cosa mas he deseado, que
                                     <lb/>,,comer á esta mesa, y hartarme de estos manjares."
                                     <lb/>Desde alli lo llevaron cargado de cadenas ante un <lb/>Juez
@@ -3625,18 +3752,21 @@
                                     Padre, ten misericordia de tu <lb/>,,siervo; pues fiendo
                                     acusado, no te neguè, y sien- <lb/>,,do preguntado, te
                                     confesè."</p>
-          <p><lb/>Quanto mayor paciencia y gozo mostraba el santo <lb/>Martyr,
+          <p>
+            <lb/>Quanto mayor paciencia y gozo mostraba el santo <lb/>Martyr,
                                     tanto mas se embravecia el Tyrano; y <lb/>atribuyendo la gracia
                                     y favor del Cielo al Arte Ma- <lb/>gica, dixo: Haces burla de
                                     mis tormentos ? Pues yo <lb/>te juro por los Dioses inmortales,
                                     que has de sacri- <lb/>ficarles, ò padecer tantos, y tan
                                     grandes tormentos, <lb/>quantos ningun hombre hasta oy ha
                                     padecido. <fw type="reclamos">Ref-</fw>
-                                    <pb n="17" source="Varios_443_17.jpg" facs="varios/Varios_443_17.jpg"/>
-                                    <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
+
+            <pb n="17" source="Varios_443_17.jpg" facs="varios/Varios_443_17.jpg"/>
+
+            <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
                                           Martyr.</fw>
-                                    <fw type="paginaNum">17</fw>
-                                    <lb/>Respondiò el Santo con grande seguridad, y animo
+            <fw type="paginaNum">17</fw>
+            <lb/>Respondiò el Santo con grande seguridad, y animo
                                     <lb/>invencible: Tus tormentos se han de acabar, y yo <lb/>en
                                     nombre de mi Señor Jesu-Christo no los temo: <lb/>haz lo que
                                     quisieres, y no te canses. Enojòse sobre <lb/>manera el Tyrano,
@@ -3645,9 +3775,10 @@
                                     Lorenzo à Dios, <lb/>pidiendole, que fuese servido de recibir
                                     su alma; y <lb/>oyò una voz del Cielo, que le decia: Mucho te
                                     fal- <lb/>ta que padecer.</p>
-          <p><lb/>Esta voz oyeron los que estaban presentes, y el <lb/>mismo
+          <p>
+            <lb/>Esta voz oyeron los que estaban presentes, y el <lb/>mismo
                                     Juez, mas endurecido por eso diò voces, di- <lb/>ciendo :
-                                    Varones Romanos, no veis como los demo- <lb/>nios favorecen á
+                                    Varones <name>Roma</name>nos, no veis como los demo- <lb/>nios favorecen á
                                     este sacrilego, que ni teme à los Dio- <lb/>ses, ni à vuestros
                                     Principes, ni à tan crueles, y es- <lb/>quisitos tormentos ? Y
                                     embraveciendose mas el Tyra- <lb/>no, ciego con el furor, mandò
@@ -3666,14 +3797,17 @@
                                     de la tribulacion.</p>
           <fw type="signaturas">C</fw>
           <fw type="reclamos">Aca-</fw>
+
           <pb n="18" source="Varios_443_18.jpg" facs="varios/Varios_443_18.jpg"/>
+
           <fw type="paginaNum">18</fw>
           <fw type="titulo_corriente" rend="cursiva">Historia verdadera</fw>
-          <p><lb/>Acabada esta oracion del santo Martyr, enviò el
+          <p>
+            <lb/>Acabada esta oracion del santo Martyr, enviò el
                                     <lb/>Señor un Angel del Cielo, que le diese alivio en
                                     <lb/>aquel tormento, y con un lienzo le limpiase el su- <lb/>dor
                                     del rostro, y las llagas de su cuerpo. Un Sol- <lb/>dado de los
-                                    que alli estaban, llamado Romano, viò <lb/>el Angel que
+                                    que alli estaban, llamado <name>Roma</name>no, viò <lb/>el Angel que
                                     exercitaba este piadoso oficio, y alum- <lb/>brado con la luz
                                     del Cielo, pidiò despues el bau- <lb/>tismo, haviendo sido
                                     tambien Martyr. No se con- <lb/>tentò el cruel Tyrano de haver
@@ -3687,9 +3821,10 @@
                                     aquel Santo Arcediano, que ya estaba <lb/>despechado, y
                                     consumido à tanto dar sobre el Santo <lb/>martyrio sobre
                                     martyrio.</p>
-          <p><lb/>Sentado pues el Tyrano en su Tribunal, pregun- <lb/>tò à San
+          <p>
+            <lb/>Sentado pues el Tyrano en su Tribunal, pregun- <lb/>tò à San
                                     Lorenzo, de què tierra, y linage era? Y el <lb/>Santo
-                                    respondiò: Soy Español, y criado en Roma: <lb/>desde pequeño
+                                    respondiò: Soy Español, y criado en <name>Roma</name>: <lb/>desde pequeño
                                     fuy bautizado y enseñado en la ley <lb/>santa, y divina; Santa
                                     y divina llamas esa ley, dixo <lb/>el Tyrano, que te enseña à
                                     burlarte de los Dioses, <lb/>á no hacer caso de los tormentos,
@@ -3697,11 +3832,13 @@
                                     ? A esto <lb/>dixo el Santo : En el nombre de mi Señor Jesu-
                                     <lb/>Christo yo no temo tus tormentos. El Tyrano le di- <lb/>xo,
                                     que si no sacrificaba à los Dioses, toda aquella <fw type="reclamos">no-</fw>
-                                    <pb n="19" source="Varios_443_19.jpg" facs="varios/Varios_443_19.jpg"/>
-                                    <fw type="paginaNum">19</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
+
+            <pb n="19" source="Varios_443_19.jpg" facs="varios/Varios_443_19.jpg"/>
+
+            <fw type="paginaNum">19</fw>
+            <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
                                           Martyr.</fw>
-                                    <lb/>noche gastaria en atormentarlo. Respondiò el santo
+            <lb/>noche gastaria en atormentarlo. Respondiò el santo
                                     <lb/>Martyr: Si asi es, esta noche será clara, y llena de
                                     <lb/>alegria, para mi, y no tendrà obscuridad alguna.
                                     <lb/>Finalmente, mandò el Tyrano aparejar un lecho <lb/>ò cama
@@ -3724,12 +3861,20 @@
                                     decian, si te bur- <lb/>las de nuestros Dioses, de nuestros
                                     Principes, y de <lb/>nosotros. Pensabas, que los tormentos eran
                                     todos <lb/>unos ? Mira si con este te burlas.</p>
-          <p><lb/>Estaba el Tyrano con los ojos encarnizados, <lb/>echando
+          <p>
+            <lb/>Estaba el Tyrano con los ojos encarnizados, <lb/>echando
                                     espuma por la boca, con la cara turbada, <lb/>dando bramidos de
                                     rabia, y de furor, porque con <lb/>tantos martyrios y tantas
                                     trazas como havia inven- <lb/>tado fu crueldad, no podia
-                                    reducir, ni vencer al San- <fw type="signaturas">C2</fw><fw type="reclamos">to.</fw><pb n="20" source="Varios_443_20.jpg" facs="varios/Varios_443_20.jpg"/><fw type="paginaNum">20</fw><fw type="titulo_corriente" rend="cursiva">Historia
-                                          verdadera</fw><lb/>to. Los Sayones atizaban el fuego, y sus perversas
+                                    reducir, ni vencer al San- <fw type="signaturas">C2</fw>
+            <fw type="reclamos">to.</fw>
+
+            <pb n="20" source="Varios_443_20.jpg" facs="varios/Varios_443_20.jpg"/>
+
+            <fw type="paginaNum">20</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
+                                          verdadera</fw>
+            <lb/>to. Los Sayones atizaban el fuego, y sus perversas
                                     <lb/>lenguas para decirle blasfemias y afrentas. Los con-
                                     <lb/>currentes y circunstantes estaban atonitos y pasma-
                                     <lb/>dos, como pudiese haver hombre que huviese po- <lb/>dido
@@ -3745,7 +3890,8 @@
                                     carne del glo- <lb/>rioso Levita con la terrible de aquel
                                     tormento, la <lb/>vida con la muerte, y la Fè de Jesu-Christo
                                     triun- <lb/>fase de todo el poder del infierno.</p>
-          <p><lb/>No parecia que estaba San Lorenzo en sus par- <lb/>rillas, ò
+          <p>
+            <lb/>No parecia que estaba San Lorenzo en sus par- <lb/>rillas, ò
                                     cama de hierro asquado, y con tanto fue- <lb/>go debajo, sino en
                                     una cama blanda y regalada, en- <lb/>tretenido, y recreandose
                                     con suavissimos deleytes, y <lb/>como que hacia escarnio de las
@@ -3758,18 +3904,21 @@
                                     <lb/>,,otra, y tu puedas comer de mis carnes sazona- <lb/>,,das,
                                     y no, como pensabas, de las riquezas de la lgle- <lb/>,,sia, que
                                     ya estàn guardadas en el tesoro del Cielo, <fw type="reclamos">donde</fw>
-                                    <pb n="21" source="Varios_443_21.jpg" facs="varios/Varios_443_21.jpg"/>
-                                    <fw type="paginaNum">21</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
+
+            <pb n="21" source="Varios_443_21.jpg" facs="varios/Varios_443_21.jpg"/>
+
+            <fw type="paginaNum">21</fw>
+            <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
                                           Martyr.</fw>
-                                    <lb/>,,donde las manos de los pobres las llevaron." <lb/>Con
+            <lb/>,,donde las manos de los pobres las llevaron." <lb/>Con
                                     este razonamiento del Santo es imponderable lo <lb/>que se
                                     enfureciò el Tyrano: bramaba colerico, he- <lb/>cho todo èl un
                                     bolcan de ira, y furor, viendo que <lb/>no bastaban, ni tenia ya
                                     tormentos para saciar su <lb/>crueldad, y ser forzoso haver de
                                     verse corrido, ven- <lb/>cido, y avergonzado en ser vencido del
                                     Santo.</p>
-          <p><lb/>Siendo ya llegado el plazo que el Señor havia de-
+          <p>
+            <lb/>Siendo ya llegado el plazo que el Señor havia de-
                                     <lb/>terminado para coronar á este glorioso Santo, y ha-
                                     <lb/>viendo dado tan soberana victoria á su esforzado
                                     <lb/>Soldado, bolviò el Santo á hablar con Jesu-Christo,
@@ -3783,20 +3932,23 @@
                                     tomaron el santo cuerpo asado, y lo sepultaron <lb/>en una
                                     heredad de Ciriaca, la Viuda que el Santo <lb/>havia sanado del
                                     dolor de cabeza intensisimo ; la <lb/>qual heredad estaba en el
-                                    camino que vá á Tibuli, <lb/>y por esso se llama Via
+                                    camino que vá á <name>Tibuli</name>, <lb/>y por esso se llama Via
                                     Tiburtina. Juntaronse con <lb/>Hypolito y Justino otros
                                     Christianos, y estuvieron <lb/>alli tres dias ayunando; velando
                                     las noches, y derra- <lb/>mando muchas lagrimas sobre el
                                     sepulcro del santo <lb/>Arcediano, que tanto bien les havia
                                     hecho.</p>
-          <p><lb/>Este admirable martyrio, que por ser tan estra- <lb/>ño, qual
+          <p>
+            <lb/>Este admirable martyrio, que por ser tan estra- <lb/>ño, qual
                                     no se encuentra otro en la Iglesia de Dios <lb/>de tan
                                     singulares circunitancias, fue tan esclareci- <fw type="reclamos">do,</fw>
-                                    <pb n="22" source="Varios_443_22.jpg" facs="varios/Varios_443_22.jpg"/>
-                                    <fw type="paginaNum">22</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia
+
+            <pb n="22" source="Varios_443_22.jpg" facs="varios/Varios_443_22.jpg"/>
+
+            <fw type="paginaNum">22</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia
                                           verdadera</fw>
-                                    <lb/>do, que bastò para alumbrar è inflamar al mundo, <lb/>y
+            <lb/>do, que bastò para alumbrar è inflamar al mundo, <lb/>y
                                     para dejar en la Iglesia Catholica ilustrisimos triun- <lb/>fos,
                                     y nobilifimos trofeos de su gloria, y exemplo <lb/>para todos
                                     los fieles, honrandole Dios en este mun- <lb/>do con muchisimos
@@ -3804,13 +3956,14 @@
                                     en honor suyo in- <lb/>finitos milagros, á gloria y honor de
                                     este santo <lb/>Martyr Español, honra de toda España, y
                                     señala- <lb/>damente de su Patria, la inclyta Ciudad de
-                                    Huesca.</p>
-          <p><lb/>Despues de este glorioso martyrio, viendose, <lb/>afrentado el
+                                    <name>Huesca</name>.</p>
+          <p>
+            <lb/>Despues de este glorioso martyrio, viendose, <lb/>afrentado el
                                     Tyrano Emperador, rebolviò su saña <lb/>y furor contra otros:
                                     santos Martyres, especial- <lb/>mente contra los ilustres
                                     compañeros de San Lo- <lb/>renzo, y á quién el Santo havia
                                     convertido à la Fè <lb/>de Jesu-Christo, como San Hypolito,
-                                    San Roman, <lb/>que viò el Angel que le limpiaba el sudor, San
+                                    San <name>Roma</name>n, <lb/>que viò el Angel que le limpiaba el sudor, San
                                     <lb/>Justino, y San Casiano. Luego que supo como San
                                     <lb/>Hypolito, á quien havia encomendado la guarda <lb/>de San
                                     Lorenzo, se havia convertido á la Religion <lb/>Catholica, le
@@ -3824,11 +3977,13 @@
                                     pero el <lb/>Santo lo despreciò, y desde entonces fue entrega-
                                     <lb/>do al Prefecto para que le quitase la vida. Fue este
                                     <lb/>luego á su casa para echarse sobre sus bienes; y ha- <fw type="reclamos">vien-</fw>
-                                    <pb n="23" source="Varios_443_23.jpg" facs="varios/Varios_443_23.jpg"/>
-                                    <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
+
+            <pb n="23" source="Varios_443_23.jpg" facs="varios/Varios_443_23.jpg"/>
+
+            <fw type="titulo_corriente" rend="cursiva">de San Lorenzo
                                           Martyr.</fw>
-                                    <fw type="paginaNum">23</fw>
-                                    <lb/>viendo encontrado à toda su familia proclamando <lb/>la
+            <fw type="paginaNum">23</fw>
+            <lb/>viendo encontrado à toda su familia proclamando <lb/>la
                                     Fè de Jesu-Christo, à Concordia, muger de San <lb/>Hypolito,
                                     que esforzaba á sus hijos, y à todos los <lb/>demás, la
                                     mandò azotar con plomadas, y despues <lb/>los sacò á todos
@@ -3837,7 +3992,8 @@
                                     furiosos cavallos, le despedazò: <lb/>con que todos marcharon
                                     à la Gloria à verse, y <lb/>gozár de la compañia de su Dios,
                                     y de su santo <lb/>Maestro y Apostol San Lorenzo.</p>
-          <p><lb/>Los perversos y malvados Emperadores obtu- <lb/>vieron luego
+          <p>
+            <lb/>Los perversos y malvados Emperadores obtu- <lb/>vieron luego
                                     su merecido castigo : porque Valeria- <lb/>no haviendo hecho
                                     guerra á los Persas, saliò tan <lb/>mal de ella, que fue
                                     aprisionado por ellos: permi- <lb/>tiendolo Dios fuesse preso, y
@@ -3852,17 +4008,20 @@
                                     con èl : justo castigo por las <lb/>crueldades que havia
                                     ejecutado con los Christianos. <lb/>El hijo Galerio padeciò
                                     tambien mucho, persi- <lb/>guiendole los Persas, Godos, y
-                                    Alemanes, y alzan- <lb/>dosele treinta Capitanes Romanos por
+                                    Alemanes, y alzan- <lb/>dosele treinta Capitanes <name>Roma</name>nos por
                                     Emperado- <lb/>res; y en las contiendas de estos sublevados vino
                                     a <lb/>morir desastradamente: con que pagò aqui sus enor- <fw type="reclamos">mes</fw>
-                                    <pb n="24" source="Varios_443_24.jpg" facs="varios/Varios_443_24.jpg"/>
-                                    <fw type="paginaNum">24</fw>
-                                    <fw type="titulo_corriente" rend="cursiva">Historia de San
+
+            <pb n="24" source="Varios_443_24.jpg" facs="varios/Varios_443_24.jpg"/>
+
+            <fw type="paginaNum">24</fw>
+            <fw type="titulo_corriente" rend="cursiva">Historia de San
                                           Lorenzo Martyr.</fw>
-                                    <lb/>mes delitos y crueldades, y ahora por una eterni- <lb/>dad
+            <lb/>mes delitos y crueldades, y ahora por una eterni- <lb/>dad
                                     estará pagando con su malvado padre sus mal- <lb/>dades en el
                                     infierno.</p>
-          <p><lb/>En esto vienen á parar semejantes Tyranos, <lb/>en muertes
+          <p>
+            <lb/>En esto vienen á parar semejantes Tyranos, <lb/>en muertes
                                     desastradas y breves : y por esso dice <lb/>el Eclesiastico :
                                     Que la vida de todo Poderoso es breve. <lb/>Habla de estos
                                     Tyranos : porque verdaderamente <lb/>tiene contra sì miuchos
@@ -3879,15 +4038,18 @@
           <trailer rend="negrita">FIN</trailer>
         </div>
         <div type="colofon_impresora" n="1">
-          <p><lb/>Reimprimase<lb/>Guemes</p>
+          <p>
+            <lb/>Reimprimase<lb/>Guemes</p>
         </div>
         <div type="colofón_vendedor">
-          <p><lb/>Se hallarà esta, y otras diferentes<lb/>en Murcia en la
+          <p>
+            <lb/>Se hallarà esta, y otras diferentes<lb/>en Murcia en la
                                     Imprenta, y Li-<lb/>breria de Francisco Benedito,<lb/>vive en la
                                     Plateria.</p>
         </div>
         <div type="colofon_impresora" n="2">
-          <p><lb/>En Murcia, en la Imprenta, y Libreria de Francisco
+          <p>
+            <lb/>En Murcia, en la Imprenta, y Libreria de Francisco
                                     Benedito, vive en la Plateria, donde se hallarà esta, y otras
                                     diferentes. Año de 1772.</p>
         </div>

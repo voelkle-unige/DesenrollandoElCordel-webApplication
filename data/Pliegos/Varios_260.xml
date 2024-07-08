@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -33,7 +47,8 @@
             <author role="letrista">J. F.</author>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_055.xml">Varios_065</ref></p>
+            <p>Otra impresión: <ref target="Varios_055.xml">Varios_065</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>El Abanico</publisher>
@@ -68,7 +83,8 @@
                   <dim>in-4</dim>
                   <material subtype="azul"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -93,6 +109,7 @@
             <acquisition/>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -128,8 +145,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1392,13 +1408,17 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_260_1.jpg" facs="varios/Varios_260_1.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>LA ESTISORA</head>
-          <head type="subtitulo_parte"><lb/>TERCERA PART<lb/>La mes retalladora que s' ha conegut
-            hasta la hora present<lb/><hi rend="negrita">Versos escrits ab las puntas de la mateixa
-              estisora, per J. F.</hi></head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA ESTISORA</head>
+          <head type="subtitulo_parte">
+            <lb/>TERCERA PART<lb/>La mes retalladora que s' ha conegut
+            hasta la hora present<lb/>
+            <hi rend="negrita">Versos escrits ab las puntas de la mateixa
+              estisora, per J. F.</hi>
+          </head>
           <l rend="indent">Gent de Deu: ya arribat la hora,</l>
           <l>que ha sortit una estisora</l>
           <l>més talladora que cap;</l>
@@ -1707,12 +1727,11 @@
           <l>an aquell que se escapará.</l>
           <l>Perdoneume si aixó cou</l>
           <l>per avuy ja ni ha prou.</l>
-
           <trailer>FÍ</trailer>
         </div>
-
         <div type="colofon">
-          <p><lb/>Imps. Hospital, 19, (El Abanico)</p>
+          <p>
+            <lb/>Imps. Hospital, 19, (El Abanico)</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -70,7 +84,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -100,6 +115,26 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q79923">
+            <placeName key="Puebla">Puebla</placeName>
+            <location>
+              <geo>19.003611111111 -97.888333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q96">
+            <placeName key="México">México</placeName>
+            <location>
+              <geo>23 -102</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q191087">
+            <placeName key="Aqueronte">Aqueronte</placeName>
+            <location>
+              <geo>39.236111111111 20.476111111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -135,8 +170,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1130,12 +1164,16 @@
     <body>
       <div>
         <div>
-          <pb n="1" source="Varios_191_1.jpg" facs="varios/Varios_191_1.jpg"/>
-          <head type="primer_titulo"><lb/>LA DIVINA HURI.</head>
-          <head type="subtitulo" rend="negrita"><lb/>AMERICANA DEDICADA Á LAS LINDAS
-            MEJICANAS.</head>
 
-          <head type="titulo_estrofa" rend="negrita"><lb/>CORO.</head>
+          <pb n="1" source="Varios_191_1.jpg" facs="varios/Varios_191_1.jpg"/>
+
+          <head type="primer_titulo">
+            <lb/>LA DIVINA HURI.</head>
+          <head type="subtitulo" rend="negrita">
+            <lb/>AMERICANA DEDICADA Á LAS LINDAS
+            MEJICANAS.</head>
+          <head type="titulo_estrofa" rend="negrita">
+            <lb/>CORO.</head>
           <lg rend="cursiva">
             <l rend="indent">Mí Mejicana</l>
             <l>! Divina hurí !</l>
@@ -1158,7 +1196,8 @@
             <l>no descanso noche y dia</l>
             <l>pensando en tí.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Eres linda mejicana</l>
             <l>divina flor.</l>
@@ -1169,12 +1208,12 @@
             <l>tus ojos llevan al alma</l>
             <l>dulce arrebol.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
 
           <pb n="2" source="Varios_191_2.jpg" facs="varios/Varios_191_2.jpg"/>
 
           <fw type="paginaNum">– 2 –</fw>
-
           <lg>
             <l rend="indent">Son tus divinos labios</l>
             <l>puro carmin,</l>
@@ -1185,7 +1224,8 @@
             <l>todas las maravillas</l>
             <l>del Criador.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Son tus dulces miradas</l>
             <l>et fiero arpon,</l>
@@ -1196,10 +1236,11 @@
             <l>deja que yo la beba</l>
             <l>pichona mia.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Llevame mi Chumbita</l>
-            <l>llevame á Puebla,</l>
+            <l>llevame á <name>Puebla</name>,</l>
             <l>verás si yo te defiendo</l>
             <l>á toda prueba,</l>
             <l rend="indent">Si á Méjico te marchas</l>
@@ -1207,7 +1248,8 @@
             <l>que quiero defenderte</l>
             <l>del enemigo.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Si un gachiquin te quiere</l>
             <l>dile que nones.</l>
@@ -1218,7 +1260,8 @@
             <l>vete a molar cuchillos</l>
             <l>y las tigeras.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Que eres paloma blanca</l>
             <l>como el armiño</l>
@@ -1229,18 +1272,20 @@
             <l>la que crió el Eterno</l>
             <l>solo por mí,</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Yo por tí pasaría</l>
             <l>el negro ponte,</l>
             <l>me embarcara en la barea</l>
-            <l>de Aqueronte.</l>
+            <l>de <name>Aqueronte</name>.</l>
             <l rend="indent">Que si juras amarme</l>
             <l>cual, yo a tí,</l>
             <l>seré de todo el mundo</l>
             <l>el mas feliz.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Y sino eres la reyna</l>
             <l>del Universo,</l>
@@ -1253,14 +1298,13 @@
           </lg>
           <trailer>FIN.</trailer>
         </div>
-
         <div>
-          <pb n="3" source="Varios_191_3.jpg" facs="varios/Varios_191_3.jpg"/>
-          
-          <fw type="paginaNum">— 3 —</fw>
 
-          <head type="titulo_parte"><lb/>LA LINDA RAMILLETERA.</head>
-          
+          <pb n="3" source="Varios_191_3.jpg" facs="varios/Varios_191_3.jpg"/>
+
+          <fw type="paginaNum">— 3 —</fw>
+          <head type="titulo_parte">
+            <lb/>LA LINDA RAMILLETERA.</head>
           <head type="titulo_estrofa" rend="negrita">CORO.</head>
           <lg rend="cursiva">
             <l rend="indent">Entre rosas y claveles</l>
@@ -1334,11 +1378,10 @@
             <l>tan solo te vide á ti.</l>
           </lg>
           <p>CORO.</p>
-          
+
           <pb n="4" source="Varios_191_4.jpg" facs="varios/Varios_191_4.jpg"/>
-          
+
           <fw type="paginaNum">— 4 —</fw>
-          
           <lg>
             <l rend="indent">Llegarán los Pensamientos</l>
             <l>Junto con la Camamilla</l>
@@ -1427,11 +1470,10 @@
             <l>ay no te olvides de mí.</l>
           </lg>
           <p>CORO.</p>
-          
-          <p><lb/>(Es propiedad.)</p>
+          <p>
+            <lb/>(Es propiedad.)</p>
           <trailer rend="negrita">FIN.</trailer>
         </div>
-        
         <div type="colofon">
           <p>Barcelona : Imprenta de Cristóbal Miró, c. de Arrepentidas n.° 5. —1863.</p>
         </div>

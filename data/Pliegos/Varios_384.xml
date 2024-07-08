@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -78,7 +92,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -105,6 +120,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q10313">
+            <placeName key="San_Sebastián">San Sebastián</placeName>
+            <location>
+              <geo>43.32 -1.98</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -140,8 +163,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1302,12 +1324,14 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_384_1.jpg" facs="varios/Varios_384_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>FLOR DE AZAR</head>
-          <head type="subtitulo_parte" rend="negrita"><lb/>POR LA RAQUEL MELLER</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>FLOR DE AZAR</head>
+          <head type="subtitulo_parte" rend="negrita">
+            <lb/>POR LA RAQUEL MELLER</head>
           <lg>
             <head type="titulo_estrofa">I</head>
             <l rend="indent">Por Margot estaba loco</l>
@@ -1373,7 +1397,8 @@
             <l rend="indent">No, no,</l>
             <l>mi dulce amor</l>
             <l>por una flor</l>
-            <l>Yo es que pensab que haciendo <add place="debajo">(un favor</add></l>
+            <l>Yo es que pensab que haciendo <add place="debajo">(un favor</add>
+            </l>
             <l>no sufres tú,</l>
             <l>daba una prueba de onesta virtud</l>
             <l rend="indent">No, no</l>
@@ -1384,11 +1409,11 @@
             <l>y tu te convenceras.</l>
           </lg>
         </div>
-
         <div n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>El Nicolás</head>
-          <head type="subtitulo_parte" rend="negrita"><lb/>Primera parte</head>
-
+          <head type="titulo_parte" rend="negrita">
+            <lb/>El Nicolás</head>
+          <head type="subtitulo_parte" rend="negrita">
+            <lb/>Primera parte</head>
           <lg>
             <lg>
               <head type="titulo_estrofa">I</head>
@@ -1456,13 +1481,14 @@
             </lg>
           </lg>
         </div>
-        
+
         <pb n="3" source="Varios_384_3.jpg" facs="varios/Varios_384_3.jpg"/>
-        
+
         <div n="3">
-          <head type="titulo_parte" rend="negrita"><lb/>Bonitos couplets del pastor</head>
-          <head type="subtitulo_parte" rend="negrita"><lb/>Por la Raquel Meller</head>
-          
+          <head type="titulo_parte" rend="negrita">
+            <lb/>Bonitos couplets del pastor</head>
+          <head type="subtitulo_parte" rend="negrita">
+            <lb/>Por la Raquel Meller</head>
           <lg>
             <head type="titulo_estrofa">I</head>
             <l rend="indent">Ya a la pastora hermosa y linda</l>
@@ -1530,11 +1556,11 @@
             <l>Margaritina seras la reina.</l>
           </lg>
         </div>
-        
         <div n="4">
-          <head type="titulo_parte" rend="negrita"><lb/>Como se hace el amor</head>
-          <head type="subtitulo_parte" rend="negrita"><lb/>Por la Raquel Meller</head>
-          
+          <head type="titulo_parte" rend="negrita">
+            <lb/>Como se hace el amor</head>
+          <head type="subtitulo_parte" rend="negrita">
+            <lb/>Por la Raquel Meller</head>
           <lg>
             <head type="titulo_estrofa">I</head>
             <l>De mi paiseito de sus padrosy orizontes</l>
@@ -1550,12 +1576,15 @@
           </lg>
           <lg>
             <head type="titulo_estrofa">II</head>
-            <l>Cuando por Junio la siembra el sol ha <add place="debajo">dorado</add></l>
+            <l>Cuando por Junio la siembra el sol ha <add place="debajo">dorado</add>
+            </l>
           </lg>
           <lg>
             <l>la moza al prado se va a segar</l>
-            <l>Corta que corta, el viento al alza su <add place="debajo">vestido</add></l>
-            <l>mientras escondido el la suele contem-<add place="debajo">plar</add></l>
+            <l>Corta que corta, el viento al alza su <add place="debajo">vestido</add>
+            </l>
+            <l>mientras escondido el la suele contem-<add place="debajo">plar</add>
+            </l>
             <l>Como jadean sus senos</l>
             <l>que brazos morenos</l>
             <l>que encantos más llenos</l>
@@ -1567,14 +1596,17 @@
             <l>se hace el amor.</l>
           </lg>
         </div>
-        
+
         <pb n="4" source="Varios_384_4.jpg" facs="varios/Varios_384_4.jpg"/>
-        
+
         <div n="5">
-          <head type="titulo_parte" rend="negrita"><lb/>¡NICOLAS! (EL ESCONDITE)</head>
-          <head type="subtitulo_parte"><lb/>SEGUNDA PARTE<lb/><hi rend="negrita">Por la Raquel
-              Meller</hi></head>
-          
+          <head type="titulo_parte" rend="negrita">
+            <lb/>¡NICOLAS! (EL ESCONDITE)</head>
+          <head type="subtitulo_parte">
+            <lb/>SEGUNDA PARTE<lb/>
+            <hi rend="negrita">Por la Raquel
+              Meller</hi>
+          </head>
           <lg>
             <head type="titulo_estrofa">I</head>
             <l rend="indent">Como soy tan estudiosa</l>
@@ -1616,11 +1648,11 @@
             <l>(Estribilio</l>
           </lg>
         </div>
-        
         <div n="6">
-          <head type="titulo_parte"><lb/>NICOLAS</head>
-          <head type="subtitulo_parte"><lb/>TEIICERA PARTE</head>
-          
+          <head type="titulo_parte">
+            <lb/>NICOLAS</head>
+          <head type="subtitulo_parte">
+            <lb/>TEIICERA PARTE</head>
           <lg>
             <head type="titulo_estrofa">IV</head>
             <l rend="indent">Las pollitas de hoy en día</l>

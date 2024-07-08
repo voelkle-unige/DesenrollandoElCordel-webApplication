@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de
                               Genève</authority>
@@ -44,7 +58,7 @@
             <country>Suisse</country>
             <settlement>Genève</settlement>
             <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
+            </repository>
             <collection>Colección Varios</collection>
             <idno type="cote"/>
             <idno type="DOI">10.5281/zenodo.6802815</idno>
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="24"/>24 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="24"/>24 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -91,6 +106,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q170516">
+            <placeName key="Calvario">Calvario</placeName>
+            <location>
+              <geo>31.778611111111 35.229444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -128,7 +151,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_445_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_445_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_445_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_445_1/full/full/0/default.jpg"/>
@@ -5853,31 +5878,49 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_445_1.jpg" facs="varios/Varios_445_1.jpg"/>
-        <head type="primer_titulo"><lb/><hi rend="negrita">HISTORIA</hi><lb/>SAGRADA<lb/><hi rend="negrita">DE LA CREACION DEL MUNDO</hi><lb/>Y FORMACION DEL
+
+        <head type="primer_titulo">
+          <lb/>
+          <hi rend="negrita">HISTORIA</hi>
+          <lb/>SAGRADA<lb/>
+          <hi rend="negrita">DE LA CREACION DEL MUNDO</hi>
+          <lb/>Y FORMACION DEL
                               HOMBRE,</head>
-        <head type="subtitulo_parte"><lb/>SACADA DE LA ESCRITURA, SAN AMBROSIO,<lb/>San Geronymo, San Agustin, y otros Santos Padres,<lb/>y Autores clasicos.</head>
-        <p><lb/>SU AUTOR <lb/>D.MANUEL JOSEPH MARTIN, residente en esta Corte.</p>
+        <head type="subtitulo_parte">
+          <lb/>SACADA DE LA ESCRITURA, SAN AMBROSIO,<lb/>San Geronymo, San Agustin, y otros Santos Padres,<lb/>y Autores clasicos.</head>
+        <p>
+          <lb/>SU AUTOR <lb/>D.MANUEL JOSEPH MARTIN, residente en esta Corte.</p>
         <div type="colofon">
-          <p><lb/>MADRID : MDCCLXXXI. <lb/>Por D. MANUEL JOSEPH MARTIN, calle de
+          <p>
+            <lb/>MADRID : MDCCLXXXI. <lb/>Por D. MANUEL JOSEPH MARTIN, calle de
                                     la CRUZ, donde se <lb/>hallará, y otras diferentes.</p>
         </div>
         <div type="propiedad">
-          <p><lb/>Con las licencias necesarias.</p>
+          <p>
+            <lb/>Con las licencias necesarias.</p>
         </div>
+
         <pb n="2" source="Varios_445_2.jpg" facs="varios/Varios_445_2.jpg"/>
+
+
         <pb n="3" source="Varios_445_3.jpg" facs="varios/Varios_445_3.jpg"/>
+
         <fw type="paginaNum">3</fw>
         <div type="parte" n="1">
-          <head type="titulo_parte"><lb/>RESUMEN DE LA HISTORIA.</head>
-          <p><lb/>Quándo fe la Creacion del Mundo. Formacion de los
+          <head type="titulo_parte">
+            <lb/>RESUMEN DE LA HISTORIA.</head>
+          <p>
+            <lb/>Quándo fe la Creacion del Mundo. Formacion de los
                                     <lb/>Cielos, y Tierra. Creacion de la Luz, y principio de
                                     <lb/>los dias, y las nocbes. Creacion del Firmamento, del
                                     <lb/>Mar, y produccion de las plantas. Formacion y descrip-
                                     <lb/>cion del Parayso. Creacion del Sol, Luna, y Estrellas,
                                     <lb/>y para qué fueron criados. Produccion de Aves, Peces,
                                     <lb/>y Animales terrestres. Creacion y formacion del Hombre.</p>
-          <p><lb/>Etimologia del nombre Adan. Formacion maravillosa, y
+          <p>
+            <lb/>Etimologia del nombre Adan. Formacion maravillosa, y
                                     <lb/>curiosa del Hombre, segun la pintan algunos Santos
                                     <lb/>Padres. Creacion prodigiosa del alma, y su adorno, y
                                     <lb/>excelencias maravillosas. Formacion de nuestra madre
@@ -5890,22 +5933,28 @@
                                     <lb/>de un hermano con otro. Procreacion de los primeros hom-
                                     <lb/>bres, y acrecentamiento del mundo. La edad de que
                                     <lb/>murió Adan, y dónde fue sepultado.</p>
-          <p><lb/>Crió Dios el mundo á im- <lb/>pulsos de su divino <lb/>amor.
+          <p>
+            <lb/>Crió Dios el mundo á im- <lb/>pulsos de su divino <lb/>amor.
                                     Empezó á formarle <lb/>en aquella noche que pre- <lb/>cedió
                                     al dia veinte y tres de <lb/>Octubre segun el sentir de
                                     <lb/>Natal Alexandro, con otros <lb/>muchos Autores. Este dia
                                     <lb/>precedió á la Era de nues- <lb/>tro Redentor, conforme al
                                     <lb/>cómputo hecho desde este <lb/>tiempo, quatro mil y quatro
                                     <lb/>años. En este dia fueron for- <lb/>mados los <hi rend="cursiva">Globos Celestes</hi>, y <lb/>este infimo
-                                    que habitamos, <lb/>compuesto de tierra y <lb/><hi rend="cursiva">agua</hi>.</p>
-          <p><lb/>Aqui empezó el Supremo <fw type="reclamos">Cria-</fw>
-                                    <pb n="4" source="Varios_445_4.jpg" facs="varios/Varios_445_4.jpg"/>
-                                    <fw type="paginaNum">4</fw>
-                                    <lb/>Criador á ostentar su Divino <lb/>Poder ; brillando al
+                                    que habitamos, <lb/>compuesto de tierra y <lb/>
+            <hi rend="cursiva">agua</hi>.</p>
+          <p>
+            <lb/>Aqui empezó el Supremo <fw type="reclamos">Cria-</fw>
+
+            <pb n="4" source="Varios_445_4.jpg" facs="varios/Varios_445_4.jpg"/>
+
+            <fw type="paginaNum">4</fw>
+            <lb/>Criador á ostentar su Divino <lb/>Poder ; brillando al
                                     mismo <lb/>tiempo su Omnipotencia, y <lb/>Sabiduria en la vasta
                                     y ma- <lb/>ravillosa maquina de los Cie- <lb/>los y la
                                     tierra.</p>
-          <p><lb/>Formados los Cielos, y la <lb/>tierra en este primer dia,
+          <p>
+            <lb/>Formados los Cielos, y la <lb/>tierra en este primer dia,
                                     <lb/>hallabase esta sin culto, y or- <lb/>nato alguno; y
                                     predominan- <lb/>do aun las tinieblas aquel <lb/>abysmo, Dios
                                     con sola su pa- <lb/>labra produxo la luz; la qual <lb/>sirvió
@@ -5927,7 +5976,8 @@
                                     Pla- <lb/>netas ; mas en el quarto dia se <lb/>vió esta misma
                                     luz incorpo- <lb/>rada en el Sol, y repartida <lb/>por los
                                     Astros Celestes.</p>
-          <p><lb/>Llegado el segundo dia, <lb/>hizo Dios el Firmamento, á
+          <p>
+            <lb/>Llegado el segundo dia, <lb/>hizo Dios el Firmamento, á
                                     <lb/>quien llamó Cielo. Por el <lb/>Firmamento entienden mu-
                                     <lb/>chos padres, y Expositores <lb/>todo aquel intervalo de ay-
                                     <lb/>re en que se juntan las nu- <lb/>bes. A este dió el cargo
@@ -5939,10 +5989,13 @@
                                     venidas rega- <lb/>sen, y fertilizasen la tierra. <lb/>Esenta ya
                                     la tierra de las a- <lb/>guas, mandó el Divino Cria- <lb/>dor,
                                     que empezasen á produ- <fw type="reclamos">cir-</fw>
-                                    <pb n="5" source="Varios_445_5.jpg" facs="varios/Varios_445_5.jpg"/>
-                                    <fw type="paginaNum">5</fw>
-                                    <lb/>cir plantas, yerbas, y frutos.</p>
-          <p><lb/>Al mismo tiempo formó <lb/>el Paraíso, adornandole de
+
+            <pb n="5" source="Varios_445_5.jpg" facs="varios/Varios_445_5.jpg"/>
+
+            <fw type="paginaNum">5</fw>
+            <lb/>cir plantas, yerbas, y frutos.</p>
+          <p>
+            <lb/>Al mismo tiempo formó <lb/>el Paraíso, adornandole de
                                     <lb/>maravillosos Arboles, y en- <lb/>tre ellos aquel Arbol de
                                     la <lb/>Vida, y de la Ciencia del <lb/>Bien, y del Mal, de don-
                                     <lb/>de nos nació toda nuestra <lb/>infelicidad. Este Paraíso
@@ -5962,7 +6015,8 @@
                                     sobre si existe <lb/>este Paraíso, ó falta, desde <lb/>las
                                     ruinas del Diluvio; pero <lb/>San Agustin es de sentir, <lb/>que
                                     aun existe.</p>
-          <p><lb/>En el quarto dia crió Dios <lb/>el Sol, la Luna, y las Es-
+          <p>
+            <lb/>En el quarto dia crió Dios <lb/>el Sol, la Luna, y las Es-
                                     <lb/>trellas. A la Luna y al Sol <lb/>llama la Escritura Sagrada
                                     <lb/>Lumbreras mayores. Todos <lb/>estos Astros luminosos fue-
                                     <lb/>ron formados en los Cielos, <lb/>donde residen ; á
@@ -5977,8 +6031,10 @@
                                     <lb/>fortuitos, y casuales de los <lb/>hombres, segun imaginan
                                     <lb/>los Astrologos, Supersticio- <lb/>sos, y Adivinos, como re-
                                     <lb/>prehende el docto Natal <fw type="reclamos">Ale-</fw>
-                                    <pb n="6" source="Varios_445_6.jpg" facs="varios/Varios_445_6.jpg"/>
-                                    <lb/>Alexandro, pues todos estos <lb/>Pronosticos, y Almanakes
+
+            <pb n="6" source="Varios_445_6.jpg" facs="varios/Varios_445_6.jpg"/>
+
+            <lb/>Alexandro, pues todos estos <lb/>Pronosticos, y Almanakes
                                     <lb/>condenan, y reprueban los <lb/>Santos Padres San Basilio,
                                     <lb/>San Agustin, Teodoreto, <lb/>y otros, y la Sagrada Es-
                                     <lb/>critura no puede estar mas <lb/>clara en varios Lugares,
@@ -5987,8 +6043,10 @@
                                     <lb/>Jeremias : <hi rend="cursiva">que no queramos <lb/>temer
                                           las señales del Cielo <lb/>así como los Gentiles ; por-
                                           <lb/>que todas las Leyes de estos <lb/>Pueblos barbaros
-                                          son vanas <lb/>y supersticiosas.</hi></p>
-          <p><lb/>En el quinto dia crió <lb/>Dios las Aves, y los Peces,
+                                          son vanas <lb/>y supersticiosas.</hi>
+          </p>
+          <p>
+            <lb/>En el quinto dia crió <lb/>Dios las Aves, y los Peces,
                                     <lb/>quienes fueron producidos <lb/>de las mismas aguas. De los
                                     <lb/>Peces no se duda ; de las <lb/>Aves hay algunos reparos:
                                     <lb/>pero los mas asienten á la <lb/>afirmativa. En el sexto
@@ -5996,10 +6054,13 @@
                                     mismo <lb/>dia fue quando el Soberano <lb/>Artifice crió al
                                     HOMBRE <lb/>á su imagen y semejanza:<hi rend="cursiva">Fa-
                                           <lb/>ciamus HOMINEM ad ima- <lb/>ginem, et similitadinem
-                                          nos- <lb/>tram.</hi></p>
-          <p><lb/>Quedó para lo ultimo <lb/>de sus maravillosas obras la
+                                          nos- <lb/>tram.</hi>
+          </p>
+          <p>
+            <lb/>Quedó para lo ultimo <lb/>de sus maravillosas obras la
                                     <lb/>formacion del hombre ; y <lb/>al primer hombre que crió
-                                    <lb/>le llamó ADAN, de la voz <lb/><hi rend="cursiva">Adama</hi>, que significa en el <lb/>Hebréo tierra
+                                    <lb/>le llamó ADAN, de la voz <lb/>
+            <hi rend="cursiva">Adama</hi>, que significa en el <lb/>Hebréo tierra
                                     virgen ; y <lb/>aura, segun San Gerony- <lb/>mo : de la qual fue
                                     forma- <lb/>do el primer hombre que <lb/>vino al mundo. Algunos
                                     <lb/>Santos Padres, aunque no <lb/>fundados en la Escritura, di-
@@ -6014,9 +6075,11 @@
                                     <lb/>Prescribese evidente la <lb/>dignidad de su excelencia
                                     <lb/>en la estupenda maquina <lb/>del Orbe, que fabricó la
                                     <lb/>mano Omipotente para <fw type="reclamos">do-</fw>
-                                    <pb n="7" source="Varios_445_7.jpg" facs="varios/Varios_445_7.jpg"/>
-                                    <fw type="paginaNum">7</fw>
-                                    <lb/>domicilio de su trono. El <lb/>Cielo, el Sol, la Luna, las
+
+            <pb n="7" source="Varios_445_7.jpg" facs="varios/Varios_445_7.jpg"/>
+
+            <fw type="paginaNum">7</fw>
+            <lb/>domicilio de su trono. El <lb/>Cielo, el Sol, la Luna, las
                                     <lb/>Estrellas, y el vasto resto <lb/>de innumerables criaturas,
                                     <lb/>todas fueron obras del Agen- <lb/>te Divino, providenciando
                                     <lb/>en esto lo que practican las <lb/>Ciudades en el recibo de
@@ -6044,15 +6107,18 @@
                                     Sol ; la Luna, y otros As- <lb/>tros; pero no leo que des-
                                     <lb/>cansase en ellos. Mas des- <lb/>pues me dice, que crió al
                                     <lb/>hombre ; y al instante leo <lb/>que descansó en él.</p>
-          <p><lb/>Dispuso el Soberano Ar- <lb/>tifice, que el hombre fuese
+          <p>
+            <lb/>Dispuso el Soberano Ar- <lb/>tifice, que el hombre fuese
                                     <lb/>la ultima operacion de sus <lb/>maravillosas obras, como
                                     <lb/>que habia de ser forma- <lb/>do á su imagen y semejan-
                                     <lb/>za. Portóse en su fabrica, <lb/>dice San Ambrosio, como
                                     <lb/>el que forma un libro de <lb/>cuentas, que va sacando al
                                     <lb/>margen varias partidas, unas <fw type="reclamos">gran-</fw>
-                                    <pb n="8" source="Varios_445_8.jpg" facs="varios/Varios_445_8.jpg"/>
-                                    <fw type="paginaNum">8</fw>
-                                    <lb/>grandes, y otras menores, y <lb/>despues las suma todas en
+
+            <pb n="8" source="Varios_445_8.jpg" facs="varios/Varios_445_8.jpg"/>
+
+            <fw type="paginaNum">8</fw>
+            <lb/>grandes, y otras menores, y <lb/>despues las suma todas en
                                     <lb/>una, que vale mas que cada <lb/>una de por sí, y monta
                                     <lb/>tanto como todas juntas. <lb/>Puso Dios en una partida la
                                     <lb/>belleza de los Cielos con la <lb/>hermosura de los Astros.
@@ -6062,7 +6128,8 @@
                                     habi- <lb/>tan. En otra puso el ayre, <lb/>ó firmamento, segun
                                     hemos <lb/>dicho, con la variedad de <lb/>vistosas aves que le
                                     pueblan.</p>
-          <p><lb/>Quiso despues á el sexto <lb/>dia de la creacion del mun-
+          <p>
+            <lb/>Quiso despues á el sexto <lb/>dia de la creacion del mun-
                                     <lb/>do sacar la suma de todas <lb/>aquellas obras que habia
                                     <lb/>formado ; y en solo el <lb/>hombre compendió, y epi-
                                     <lb/>logó las perfecciones todas, <lb/>que en las demás
@@ -6076,7 +6143,8 @@
                                     de aves, que le <lb/>gyran, y le cruzan; y en <lb/>fin, mas que
                                     todo lo que <lb/>hasta allí habia criado en <lb/>el mundo : <hi rend="cursiva">Quasi suma ope- <lb/>ris</hi>, dixo el
                                     Santo Doctor.</p>
-          <p><lb/>Esta suma de maravi- <lb/>llas la formó el Divino Cria-
+          <p>
+            <lb/>Esta suma de maravi- <lb/>llas la formó el Divino Cria-
                                     <lb/>dor, tomando aquel Sobe- <lb/>rano Artifice el todo en sus
                                     <lb/>manos, de que habia de ser <lb/>formado Adan, y haciendo
                                     <lb/>como de escultor ó pintor, <lb/>segun dice San Agustin,
@@ -6087,14 +6155,17 @@
                                     la <lb/>boca con gala, torneó el <lb/>cuello con magestad,
                                     <lb/>apartó los hombros con <lb/>proporcion, extendió los
                                     <lb/>brazos con medida, puliólas <fw type="reclamos">ma-</fw>
-                                    <pb n="9" source="Varios_445_9.jpg" facs="varios/Varios_445_9.jpg"/>
-                                    <lb/>manos con belleza, com- <lb/>puso el pecho con hidal-
+
+            <pb n="9" source="Varios_445_9.jpg" facs="varios/Varios_445_9.jpg"/>
+
+            <lb/>manos con belleza, com- <lb/>puso el pecho con hidal-
                                     <lb/>guía, apretó la cintura <lb/>con gracia, sacó los pies
                                     <lb/>con delicadeza, y finalmen- <lb/>te corrió todo el cuerpo
                                     <lb/>con valentía, adornandole <lb/>con disposiciones
                                     perfectas, <lb/>con partes heterogeneas, y <lb/>con oficinas
                                     acomodadas.</p>
-          <p><lb/>Hecho esto, convocó <lb/>á toda la naturaleza pa- <lb/>ra
+          <p>
+            <lb/>Hecho esto, convocó <lb/>á toda la naturaleza pa- <lb/>ra
                                     epilogar en la estatura <lb/>del hombre su perfeccion <lb/>toda.
                                     Trasladó á la cabeza <lb/>la orbicular perfeccion de <lb/>la
                                     Esfera, copió en los ojos <lb/>los Astros, reservó para la
@@ -6110,7 +6181,8 @@
                                     indole ma- <lb/>gestuosa; de Venus la apa- <lb/>cibilidad ; de
                                     Mercurio lo <lb/>ingenioso ; de la Luna lo <lb/>fecundo, y
                                     mudable.</p>
-          <p><lb/>Distribuyó luego en to- <lb/>das sus partes, y miem-
+          <p>
+            <lb/>Distribuyó luego en to- <lb/>das sus partes, y miem-
                                     <lb/>bros la cuidadosa influen- <lb/>cia de los celestiales
                                     Signos <lb/>con maravillosa, y sabia <lb/>industria; porque la
                                     cabe- <lb/>za la sujetó á el Ariete. <lb/>el cuello á Tauro,
@@ -6123,9 +6195,11 @@
                                     inmensa, y <lb/>qué esmero pusisteis en la <lb/>formacion del
                                     hombre ! Prue- <lb/>ba de que le formabas pa- <lb/>ra blanco de
                                     tus cariños. <lb/>Despues de todo esto, <fw type="reclamos">em-</fw>
-                                    <pb n="10" source="Varios_445_10.jpg" facs="varios/Varios_445_10.jpg"/>
-                                    <fw type="paginaNum">10</fw>
-                                    <lb/>empezó el Divino Artifi- <lb/>ce á dar realce á su pro-
+
+            <pb n="10" source="Varios_445_10.jpg" facs="varios/Varios_445_10.jpg"/>
+
+            <fw type="paginaNum">10</fw>
+            <lb/>empezó el Divino Artifi- <lb/>ce á dar realce á su pro-
                                     <lb/>digiosa fabrica. Vistióla <lb/>de carnes, adornóla de ca-
                                     <lb/>bellos, enriquecióla de <lb/>sentidos, atóla con nervios,
                                     <lb/>fortalecióla con huesos, <lb/>organizóla con venas, y
@@ -6140,7 +6214,8 @@
                                           <hi rend="cursiva">Ad imaginem, si- <lb/>militudinem
                                           nostram :</hi> Qué <lb/>mayor privilegio ? Qué ma-
                                     <lb/>yor gracia?</p>
-          <p><lb/>Ahora de paso deseo <lb/>reconvenir á los mortales <lb/>con
+          <p>
+            <lb/>Ahora de paso deseo <lb/>reconvenir á los mortales <lb/>con
                                     aquella justisima que- <lb/>ja del Niseno : Que mons-
                                     <lb/>truosidad es servir el que <lb/>nació para imperar ! El
                                     <lb/>hombre, criado para co- <lb/>merciar con Dios en el Im-
@@ -6158,7 +6233,13 @@
                                     <lb/>presentacion tanta viveza, <lb/>prorumpió en general
                                     aplau- <lb/>so, diciendo : Nó es es- <lb/>te Baco representado
                                     ? El <lb/>mismo Dios parece que es <lb/>en su persona.</p>
-          <p><lb/>Entonces el mismo Ni- <fw type="reclamos">sias,</fw><pb n="11" source="Varios_445_11.jpg" facs="varios/Varios_445_11.jpg"/><fw type="paginaNum">11</fw><lb/>sias, haciendo con ade- <lb/>manes silencio en aquel
+          <p>
+            <lb/>Entonces el mismo Ni- <fw type="reclamos">sias,</fw>
+
+            <pb n="11" source="Varios_445_11.jpg" facs="varios/Varios_445_11.jpg"/>
+
+            <fw type="paginaNum">11</fw>
+            <lb/>sias, haciendo con ade- <lb/>manes silencio en aquel
                                     <lb/>numeroso concurso, ex- <lb/>clamó de esta manera : <hi rend="cursiva">Va- <lb/>rones Athenienses, tengo <lb/>por
                                           cosa indigna, que sirva <lb/>mas de aqui adelante este
                                           <lb/>mancebo; á quien el aplauso <lb/>comun de vuestros
@@ -6176,7 +6257,8 @@
                                     <lb/>mos la imagen del verda- <lb/>dero Dios en el anima,
                                     <lb/>impresa con el mismo sér <lb/>de nuestra humana natu-
                                     <lb/>raleza ?</p>
-          <p><lb/>Volvamos á coger el hi- <lb/>lo de nuestra Sagrada
+          <p>
+            <lb/>Volvamos á coger el hi- <lb/>lo de nuestra Sagrada
                                     <lb/>Historia. Formado ya el <lb/>hombre, é inspirado su
                                     <lb/>aliento, participó su alma <lb/>del sér infinito de Dios
                                     <lb/>todas sus perfecciones, te- <lb/>niendo un espiritu invi-
@@ -6191,10 +6273,12 @@
                                     <lb/>conocimiento de todas las <lb/>ciencias, siendo capáz de
                                     <lb/>la sabiduria, y gracia so- <lb/>brenatural, como de ver
                                     <lb/>sin sombra la inmensi- <lb/>dad de su Dlos. <fw type="signaturas">B2</fw>
-                                    <fw type="reclamos">Y</fw>
-                                    <pb n="12" source="Varios_445_12.jpg" facs="varios/Varios_445_12.jpg"/>
-                                    <fw type="paginaNum">12</fw>
-                                    <lb/>Y finalmente, es tal <lb/>el alma del hombre, que
+            <fw type="reclamos">Y</fw>
+
+            <pb n="12" source="Varios_445_12.jpg" facs="varios/Varios_445_12.jpg"/>
+
+            <fw type="paginaNum">12</fw>
+            <lb/>Y finalmente, es tal <lb/>el alma del hombre, que
                                     <lb/>domina en todos los ir- <lb/>racionales á semejanza de
                                     <lb/>su Criador, y contiene <lb/>en sí la perfeccion de to-
                                     <lb/>das las criaturas. Es tal, <lb/>que imita la inmensidad
@@ -6205,7 +6289,8 @@
                                     en las po- <lb/>tencias ; pues Dios es uno <lb/>en la esencia, y
                                     trino en <lb/>las personas, y el alma <lb/>es una con tres
                                     poten- <lb/>cias.</p>
-          <p><lb/>Con todo eso, no se <lb/>contentó el Criador con <lb/>las
+          <p>
+            <lb/>Con todo eso, no se <lb/>contentó el Criador con <lb/>las
                                     perfecciones que puso <lb/>en ella, como Autor de <lb/>la
                                     naturaleza. Parecióle <lb/>que le faltaba el realce <lb/>de los
                                     adornos sobrenatu- <lb/>rales de su gracia, para <lb/>que fuese
@@ -6226,14 +6311,17 @@
                                     <lb/>raleza , despues la hizo <lb/>aun mas hermosa con los
                                     <lb/>dotes de la gracia. Este <lb/>es el collar de oro de la
                                     <lb/>caridad, engastado de la fi- <fw type="reclamos">li-</fw>
-                                    <pb n="13" source="Varios_445_13.jpg" facs="varios/Varios_445_13.jpg"/>
-                                    <lb/>ligrana de plata de las <lb/>virtudes sobrenaturales in-
+
+            <pb n="13" source="Varios_445_13.jpg" facs="varios/Varios_445_13.jpg"/>
+
+            <lb/>ligrana de plata de las <lb/>virtudes sobrenaturales in-
                                     <lb/>fusas, con que se realza <lb/>tanto la belleza de la ima-
                                     <lb/>gen, que no solo repre- <lb/>senta la hermosura, del
                                     <lb/>Criador, sino que parti- <lb/>cipando su sér Divino, se
                                     <lb/>eleva sobre toda la Natu- <lb/>raleza criada, y en cierto
                                     <lb/>modo, sin que parezca ar- <lb/>rojo, se diviniza.</p>
-          <p><lb/>Hermosa prenda es en <lb/>el alma el entendimien- <lb/>to,
+          <p>
+            <lb/>Hermosa prenda es en <lb/>el alma el entendimien- <lb/>to,
                                     asiento de la razon, <lb/>trono de la verdad, tri- <lb/>bunal
                                     del juicio, donde <lb/>se califica la hidalguía de <lb/>lo
                                     bueno, y villanía de <lb/>lo malo. Pero sin com- <lb/>paracion
@@ -6253,15 +6341,18 @@
                                     <lb/>nuestro Dios los mortales <lb/>todos, y esta es la for-
                                     <lb/>macion, y privilegio del <lb/>hombre, y esto el haber-
                                     <lb/>nos hecho á su imagen y <lb/>semejanza.</p>
-          <p><lb/>Despues que el Divi- <lb/>no Poder, y Sabiduría de
+          <p>
+            <lb/>Despues que el Divi- <lb/>no Poder, y Sabiduría de
                                     <lb/>nuestro Dios formó á nues- <lb/>tro primer Padre Adan,
                                     <lb/>pasó á formar tambien <lb/>á nuestra primera Madre
                                     <lb/>Eva, pareciendo ser mas <lb/>conveniente darle á Adan
                                     <lb/>compañia, que dexarle <lb/>solo. Para esto infundió,
                                     <lb/>como consta del mismo <fw type="reclamos">Tex-</fw>
-                                    <pb n="14" source="Varios_445_14.jpg" facs="varios/Varios_445_14.jpg"/>
-                                    <fw type="paginaNum">14</fw>
-                                    <lb/>Texto, un gran sueño á <lb/>Adan; y sacandole una
+
+            <pb n="14" source="Varios_445_14.jpg" facs="varios/Varios_445_14.jpg"/>
+
+            <fw type="paginaNum">14</fw>
+            <lb/>Texto, un gran sueño á <lb/>Adan; y sacandole una
                                     <lb/>costilla de sue cuerpo, la <lb/>adornó de carnes ; mas
                                     <lb/>dandole vitalidad, quedó <lb/>formada Eva, Madre de
                                     <lb/>todos los vivientes. Hizo- <lb/>sela reconocer el Divi-
@@ -6273,7 +6364,8 @@
                                     <lb/>to Sagrado , ni demos- <lb/>trarnos mas expresivamen-
                                     <lb/>te, y á la letra la crea- <lb/>cion de nuestra primera
                                     <lb/>Madre Eva.</p>
-          <p><lb/>Mas con todo no faltan <lb/>perversos Heresiarcas que
+          <p>
+            <lb/>Mas con todo no faltan <lb/>perversos Heresiarcas que
                                     <lb/>procuran ofuscar esta <lb/>Creacio con sus mali-
                                     <lb/>ciosas ideas, y perversas <lb/>inteligencias de la Escri-
                                     <lb/>tura, transtornando su sen- <lb/>tido veridico, para lle-
@@ -6284,7 +6376,8 @@
                                     <lb/>porque se encuentran al- <lb/>gunos, que ponen reparo
                                     <lb/>sobre la costilla, que <lb/>Dios quitó á nuestro Pa-
                                     <lb/>dre Adan, para formar á <lb/>Eva.</p>
-          <p><lb/>Dicen, pues : ó aque- <lb/>lla costilla de que Dios
+          <p>
+            <lb/>Dicen, pues : ó aque- <lb/>lla costilla de que Dios
                                     <lb/>fabricó á Eva, era de <lb/>las necesarias que tenia
                                     <lb/>Adan, y le era á este su- <lb/>perflua, ó de ningun pro-
                                     <lb/>vecho ? Si era necesaria, <lb/>sin duda quedaria Adan
@@ -6294,9 +6387,11 @@
                                     <lb/>decirlo de Adan, quan- <lb/>do el mismo Criador puso
                                     <lb/>todo su esmero en criar- <lb/>le el mas hermoso, y per-
                                     <lb/>fecto , como el primer hom- <fw type="reclamos">bre,</fw>
-                                    <pb n="15" source="Varios_445_15.jpg" facs="varios/Varios_445_15.jpg"/>
-                                    <fw type="paginaNum">15</fw>
-                                    <lb/>bre, que habia formado <lb/>su sabio Poder. A todo
+
+            <pb n="15" source="Varios_445_15.jpg" facs="varios/Varios_445_15.jpg"/>
+
+            <fw type="paginaNum">15</fw>
+            <lb/>bre, que habia formado <lb/>su sabio Poder. A todo
                                     <lb/>esto se responde, que <lb/>aunque aquella costilla fue-
                                     <lb/>se á Adan como á qual- <lb/>quiera hombre particular,
                                     <lb/>supernumeraria, no por <lb/>eso quedó monstruoso su
@@ -6312,15 +6407,18 @@
                                     de car- <lb/>ne aquella parte de donde <lb/>la habia abstrahido,
                                     como <lb/>se expresa en la Historia <lb/>Sagrada por estas pala-
                                     <lb/>bras: <hi rend="cursiva">Tulit unam de costis <lb/>ejus,
-                                          replevit carnem <lb/>pro ea.</hi></p>
-          <p><lb/>El formar Dios á Eva <lb/>de la costilla de Adan, <lb/>y no
+                                          replevit carnem <lb/>pro ea.</hi>
+          </p>
+          <p>
+            <lb/>El formar Dios á Eva <lb/>de la costilla de Adan, <lb/>y no
                                     de otra parte, dice <lb/>Santo Thomas, San Agus- <lb/>tin, y el
                                     Maestro de las <lb/>Sentencias, que fue con- <lb/>veniente,
                                     porque el hom- <lb/>bre no entienda, que es <lb/>su Señora,
                                     pues no la <lb/>formó de su cabeza ; ni <lb/>tampoco su
                                     esclava, pues <lb/>no la formó de sus pies, <lb/>sino es su
                                     compañera.</p>
-          <p><lb/>Criados ya Adan, y <lb/>Eva los dió el Soberano <lb/>Hacedor
+          <p>
+            <lb/>Criados ya Adan, y <lb/>Eva los dió el Soberano <lb/>Hacedor
                                     por morada un <lb/>Paraíso de sumas delicias, <lb/>sobre el
                                     qual ya lleva- <lb/>mos dicho lo bastante: <lb/>ahora viene bien
                                     aqui el <lb/>que indaguemos , de qué <lb/>especie fuese aquel
@@ -6328,9 +6426,11 @@
                                     <lb/>supieron del Bien, y del <lb/>grada anda tan sucinta
                                     <lb/>en especificarnosle, por <lb/>mas que los Autores tra-
                                     <lb/>bajan por saberlo, no <fw type="reclamos">pue-</fw>
-                                    <pb n="16" source="Varios_445_16.jpg" facs="varios/Varios_445_16.jpg"/>
-                                    <fw type="paginaNum">16</fw>
-                                    <lb/>pueden proponernos cosa <lb/>cierta. Unos dicen, que
+
+            <pb n="16" source="Varios_445_16.jpg" facs="varios/Varios_445_16.jpg"/>
+
+            <fw type="paginaNum">16</fw>
+            <lb/>pueden proponernos cosa <lb/>cierta. Unos dicen, que
                                     <lb/>fue una Vid ; pero con <lb/>poco fundamento. Otros,
                                     <lb/>que una Higuera, funda- <lb/>dos en que las hojas de
                                     <lb/>que se cubrió luego Eva <lb/>eran de este arbol, que
@@ -6343,7 +6443,8 @@
                                     <lb/>mo lo dice el Texto, qué <lb/>delectacion, y hermosura
                                     <lb/>tien la Higuera, que <lb/>no la excedan otros mu- <lb/>chos
                                     arboles mas bellos, y <lb/>deliciosos?</p>
-          <p><lb/>Lo mas comun es, <lb/>que fue Manzano, y es <lb/>lo que corre
+          <p>
+            <lb/>Lo mas comun es, <lb/>que fue Manzano, y es <lb/>lo que corre
                                     generalmen- <lb/>te entre el vulgo, y no <lb/>vulgo. El que no
                                     es vul- <lb/>go se vale de aquel <lb/>Texto de los Cantares,
                                     <lb/>donde dice Salomon, ha- <lb/>blando de la Esposa, es-
@@ -6363,9 +6464,11 @@
                                     Ciencia sobre el Bien, <lb/>y el Mal ; pues en qualquie- <lb/>ra
                                     otro en que Dios hu- <lb/>viese impuesto su precep- <lb/>to
                                     aconteceria lo mismo <fw type="reclamos">y</fw>
-                                    <pb n="17" source="Varios_445_17.jpg" facs="varios/Varios_445_17.jpg"/>
-                                    <fw type="paginaNum">17</fw>
-                                    <lb/>y asi dice el Chrisostomo, <lb/>que se llamó de Ciencia
+
+            <pb n="17" source="Varios_445_17.jpg" facs="varios/Varios_445_17.jpg"/>
+
+            <fw type="paginaNum">17</fw>
+            <lb/>y asi dice el Chrisostomo, <lb/>que se llamó de Ciencia
                                     del <lb/>Bien, y del Mal, por la <lb/>ocasion de haberse de
                                     exer- <lb/>cer en él la obediencia, y <lb/>desobediencia de
                                     nuestros <lb/>primeros Padres. No admi- <lb/>te duda, dice el
@@ -6376,11 +6479,13 @@
                                     <lb/>con el titulo de Ciencia del <lb/>Bien y del Mal ; pues
                                     des- <lb/>de entonces empezó Adan <lb/>á conocer, asi del mal,
                                     co- <lb/>mo del bien.</p>
-          <p><lb/>Theodoreto pone un <lb/>exemplo, que lo conven- <lb/>ce
+          <p>
+            <lb/>Theodoreto pone un <lb/>exemplo, que lo conven- <lb/>ce
                                     bastantemente, en el <lb/>Arbol de la Cruz. Dice, <lb/>pues, que
                                     aquel Sagrado <lb/>Arbol no era de diversa na- <lb/>turaleza que
                                     los demás ar- <lb/>boles que produce la tier- <lb/>ra ; y con
-                                    todo se llama, <lb/>y con sobradisima razon, <lb/><hi rend="cursiva">Arbol de la vida</hi> ; porque <lb/>de alli
+                                    todo se llama, <lb/>y con sobradisima razon, <lb/>
+            <hi rend="cursiva">Arbol de la vida</hi> ; porque <lb/>de alli
                                     le vino todo su re- <lb/>medio al Genero Huma- <lb/>no. Mas este
                                     Arbol no te- <lb/>nia de suyo la virtud de co- <lb/>municar á
                                     los hombres la <lb/>salud, sino por haber obra- <lb/>do en él
@@ -6393,21 +6498,25 @@
                                     <lb/>los ojos ; pero que no fue <lb/>para ver, pues antes ya
                                     <lb/>veían, sino para discernir <lb/>entre el bien que habian
                                     <lb/>perdido, y el mal en que <lb/>habian incurrido.</p>
-          <p><lb/>Colocados Adan, y Eva <lb/>en el Paraíso, les conce-
+          <p>
+            <lb/>Colocados Adan, y Eva <lb/>en el Paraíso, les conce-
                                     <lb/>dió Dios el dominio de to- <lb/>do aquel ameno Jardin, di-
                                     <lb/>ciendoles, que gozasen de <lb/>todas sus delicias, y junta-
                                     <lb/>mente de todos sus frutos: <lb/>solamente les vedó el que
                                     <lb/>comiesen del arbol, que <fw type="signaturas">C</fw>
-                                    <fw type="reclamos">fue</fw>
-                                    <pb n="18" source="Varios_445_18.jpg" facs="varios/Varios_445_18.jpg"/>
-                                    <fw type="paginaNum">18</fw>
-                                    <lb/>fue el de la Ciencia del <lb/>Bien, y del Mal, asegu-
+            <fw type="reclamos">fue</fw>
+
+            <pb n="18" source="Varios_445_18.jpg" facs="varios/Varios_445_18.jpg"/>
+
+            <fw type="paginaNum">18</fw>
+            <lb/>fue el de la Ciencia del <lb/>Bien, y del Mal, asegu-
                                     <lb/>randoles, que si comian, y <lb/>faltaban a su precepto, mo-
                                     <lb/>ririan, y caerian de su gra- <lb/>cia. Poco les duró esta
                                     fe- <lb/>licidad, pues á pocas ho <lb/>ras quebrantaron el
                                     precep- <lb/>to que Dios les habia im- <lb/>puesto, comiendo de
                                     aquel <lb/>arbol vedado.</p>
-          <p><lb/>De aqui se les siguió á <lb/>nuestros primeros Padres
+          <p>
+            <lb/>De aqui se les siguió á <lb/>nuestros primeros Padres
                                     <lb/>toda su desdicha, y á sus <lb/>hijos nuestra mayor des-
                                     <lb/>gracia. Todos lloramos aque- <lb/>lla culpa. Crióse para
                                     no- <lb/>sotros un Paraíso, á <lb/>breves horas se nos noti-
@@ -6420,7 +6529,8 @@
                                     <lb/>a obsequio de su Principe <lb/>el hombre. Obedecian las
                                     <lb/>criaturas gustosas, porque <lb/>imperaba la razon ; pero
                                     <lb/>mudóse el Teatro con el <lb/>delito.</p>
-          <p><lb/>A el quebrantar el pre- <lb/>cepto nuestros primeros
+          <p>
+            <lb/>A el quebrantar el pre- <lb/>cepto nuestros primeros
                                     <lb/>padres, se siguió el echar- <lb/>les Dios del Paraíso,
                                     des- <lb/>terrandoles de sus delicias, <lb/>en castigo de su
                                     culpa. Co- <lb/>locó Dios un Querubin en <lb/>su entrada con
@@ -6433,7 +6543,13 @@
                                     él al Demonio. <lb/>La razon que da para po- <lb/>nerle al
                                     Demonio este im- <lb/>pedimento no es menos <lb/>curiosa que
                                     provechosa.</p>
-          <p><lb/>Parecia excusado el cuida- <lb/>do de vedarle al Demo- <fw type="reclamos">nio</fw><pb n="19" source="Varios_445_19.jpg" facs="varios/Varios_445_19.jpg"/><fw type="paginaNum">19</fw><lb/>nio el fruto del Arbol; por- <lb/>que ni podia alimentarse
+          <p>
+            <lb/>Parecia excusado el cuida- <lb/>do de vedarle al Demo- <fw type="reclamos">nio</fw>
+
+            <pb n="19" source="Varios_445_19.jpg" facs="varios/Varios_445_19.jpg"/>
+
+            <fw type="paginaNum">19</fw>
+            <lb/>nio el fruto del Arbol; por- <lb/>que ni podia alimentarse
                                     de <lb/>él, ni podia en su ser inmor- <lb/>tal tener efecto ese
                                     alimen- <lb/>to : luego para qué es po- <lb/>ner desvelo en
                                     recatar lo <lb/>que él no puede apetecer? <lb/>Es verdad que al
@@ -6463,13 +6579,16 @@
                                     fuera que una <lb/>muger hiciera mala cara á <lb/>una tentacion
                                     que se la <lb/>aseguraba buena, y her- <lb/>mosa, y sin arrugas
                                     por <lb/>muchos siglos!</p>
-          <p><lb/>Desterrado Adan del <lb/>Paraiso con su consorte <lb/>Eva, le
+          <p>
+            <lb/>Desterrado Adan del <lb/>Paraiso con su consorte <lb/>Eva, le
                                     intimó Dios el cas- <lb/>tigo de su inobediencia, <lb/>que fue
                                     el que trabajase la <lb/>tierra, y ésta á costa de <fw type="signaturas">C2</fw>
-                                    <fw type="reclamos">sus</fw>
-                                    <pb n="20" source="Varios_445_20.jpg" facs="varios/Varios_445_20.jpg"/>
-                                    <fw type="paginaNum">20</fw>
-                                    <lb/>sus fatigas, y sudores le <lb/>concediese el sustento. A
+            <fw type="reclamos">sus</fw>
+
+            <pb n="20" source="Varios_445_20.jpg" facs="varios/Varios_445_20.jpg"/>
+
+            <fw type="paginaNum">20</fw>
+            <lb/>sus fatigas, y sudores le <lb/>concediese el sustento. A
                                     <lb/>este extremo vino á parar <lb/>nuestro primer padre Adan,
                                     <lb/>y nuestra primera madre <lb/>Eva, despues de un rega-
                                     <lb/>lo, y delicia como el que <lb/>gozaban en el Paraíso. En-
@@ -6480,8 +6599,10 @@
                                     segunda, <lb/>que fue el Diluvio Univer- <lb/>sal; los quales
                                     fueron <hi rend="cursiva">Adan, <lb/>Seth, Enos, Cainan, Ma-
                                           <lb/>laleel, Fared, Enoch, Ma- <lb/>thusalá, Lamech,
-                                          Noé.</hi></p>
-          <p><lb/>De estos dos hijos pri- <lb/>meros que tuvo Adan,
+                                          Noé.</hi>
+          </p>
+          <p>
+            <lb/>De estos dos hijos pri- <lb/>meros que tuvo Adan,
                                     <lb/>Caín, y Abél, aquel fue <lb/>impío, y dado á muchos
                                     <lb/>vicios ; mas éste fue jus- <lb/>to, y de grandes virtudes.
                                     <lb/>San Judas en una de sus <lb/>Cartas Canonicas dice, que
@@ -6503,9 +6624,11 @@
                                     <lb/>ce el Santo, que resenti- <lb/>do Caín de la mala acep-
                                     <lb/>tacion de su Sacrificio, em- <lb/>pezó á decir á Abél,
                                     que <fw type="reclamos">no</fw>
-                                    <pb n="21" source="Varios_445_21.jpg" facs="varios/Varios_445_21.jpg"/>
-                                    <fw type="paginaNum">21</fw>
-                                    <lb/>no habia justicia, ni Juez <lb/>bueno, que premiase lo
+
+            <pb n="21" source="Varios_445_21.jpg" facs="varios/Varios_445_21.jpg"/>
+
+            <fw type="paginaNum">21</fw>
+            <lb/>no habia justicia, ni Juez <lb/>bueno, que premiase lo
                                     <lb/>justo, y castigase lo malo. <lb/>Que Dios nada misericor-
                                     <lb/>dioso habia criado el mun- <lb/>do, ni por su misericordia
                                     <lb/>se gobernaba, lo qual ex- <lb/>perimentaba claro , quan-
@@ -6521,7 +6644,8 @@
                                     no <lb/>haberle ofrecido como de <lb/>bia. Hasta aqui San Gero-
                                     <lb/>nymo en el tom. I de Na- <lb/>tal Alexandro in aetat. mun-
                                     <lb/>di, art. a. S. II.</p>
-          <p><lb/>Fue muerto Abél por <lb/>su hermano Caín, como se <lb/>puede
+          <p>
+            <lb/>Fue muerto Abél por <lb/>su hermano Caín, como se <lb/>puede
                                     discurrir por este re- <lb/>trueque que le hizo aquel <lb/>de su
                                     malvada infelicidad; <lb/>y esto aconteció á el año <lb/>de
                                     la Creacion del mun- <lb/>do rgo. en el qual año <lb/>tuvo Adan
@@ -6538,9 +6662,11 @@
                                     sentido totalmente <lb/>de tan abominables malda- <lb/>des,
                                     acabó con todos ellos, <lb/>á excepcion de Noé, y sus
                                     <lb/>hijos, que salvaron sus vi- <fw type="reclamos">das</fw>
-                                    <pb n="22" source="Varios_445_22.jpg" facs="varios/Varios_445_22.jpg"/>
-                                    <fw type="paginaNum">22</fw>
-                                    <lb/>das en el Arca que le man- <lb/>dó á Noé fabricar Dios.
+
+            <pb n="22" source="Varios_445_22.jpg" facs="varios/Varios_445_22.jpg"/>
+
+            <fw type="paginaNum">22</fw>
+            <lb/>das en el Arca que le man- <lb/>dó á Noé fabricar Dios.
                                     <lb/>Todo el tiempo que se- <lb/>gun la Escritura, vivió
                                     <lb/>Adan, fueron novecientos <lb/>y treinta años : sus huesos,
                                     <lb/>dice Torniello, citado por <lb/>Soloriano, fueron guarda-
@@ -6548,15 +6674,17 @@
                                     <lb/>do el Diluvio, los repartió <lb/>el Patriarca en las tres
                                     par- <lb/>tes del mundo, que enton- <lb/>ces no se conocian
                                     mas.</p>
-          <p><lb/>Otros dicen, que Adan, y <lb/>Eva fueron enterrados en <lb/>el
-                                    monte Calvario en la <lb/>misma parte que Christo, <lb/>Vida
+          <p>
+            <lb/>Otros dicen, que Adan, y <lb/>Eva fueron enterrados en <lb/>el
+                                    <name>monte Calvario</name> en la <lb/>misma parte que Christo, <lb/>Vida
                                     nuestra, fue crucifi- <lb/>cado ; de suerte, que la <lb/>Cruz
                                     vino á ponerse sobre <lb/>la cabeza de Adan ; y de <lb/>aqui
                                     dicen se tomó el po- <lb/>ner una calavera á los pies <lb/>de
                                     los Crucifixos, ó por- <lb/>que la de Adan lo estuvo
                                     <lb/>primero, ó para significar, <lb/>que Christo venció á la
                                     <lb/>muerte con la suya.</p>
-          <p><lb/>Seth, el tercer hijo de <lb/>Adan, se le fue dado en
+          <p>
+            <lb/>Seth, el tercer hijo de <lb/>Adan, se le fue dado en
                                     <lb/>lugar de Abél, que mató <lb/>Caín, y fue engendrado á
                                     <lb/>los 130. años de su padre. <lb/>Este fue el segundo de los
                                     <lb/>Patriarcas de la primera <lb/>edad del mundo. Sus hi-
@@ -6574,9 +6702,11 @@
                                     Dios espiritu de <lb/>Profecía, y fue traslada- <lb/>do
                                     milagrosamente á los <lb/>365. años de su vida, des- <lb/>pues
                                     de haber engendrado <lb/>á Mathusalá, ó Mathusa- <fw type="reclamos">len,</fw>
-                                    <pb n="23" source="Varios_445_23.jpg" facs="varios/Varios_445_23.jpg"/>
-                                    <fw type="paginaNum">23</fw>
-                                    <lb/>len, al Paraíso, segun di- <lb/>cen algunos Doctores, y
+
+            <pb n="23" source="Varios_445_23.jpg" facs="varios/Varios_445_23.jpg"/>
+
+            <fw type="paginaNum">23</fw>
+            <lb/>len, al Paraíso, segun di- <lb/>cen algunos Doctores, y
                                     <lb/>que existe en carne mor- <lb/>tal hasta la venida del Anti-
                                     <lb/>Christo, que ha de ve- <lb/>nir á predicar, y á forta-
                                     <lb/>lecer á los fieles. Mathusa- <lb/>len engendró á Lamech
@@ -6593,15 +6723,19 @@
                                     vivido 950. años, <lb/>vino á morir despues del <lb/>Diluvio
                                     Universal al año de <lb/>2612. siendo el Diluvio <lb/>en el
                                     año de 2262. el que <lb/>duró un año. Pusole su pa- <lb/>dre
-                                    Lamech Noé por espi- <lb/>ritu Profetico, diciendo: <lb/><hi rend="cursiva">Este
+                                    Lamech Noé por espi- <lb/>ritu Profetico, diciendo: <lb/>
+            <hi rend="cursiva">Este
                                     nos ha de consolar á <lb/>todos, y aliviar de las obras <lb/>y
                                     trabajos de nuestras ma- <lb/>nos, que padecemos en la
-                                    <lb/>tierra que maldixo el Señor.</hi> <lb/>Vaticinóle el Señor el
+                                    <lb/>tierra que maldixo el Señor.</hi>
+            <lb/>Vaticinóle el Señor el
                                     Di- <lb/>luvio Universal, y le man- <lb/>dó hacer el Arca para
                                     la <lb/>conservacion, y propaga- <lb/>cion del nuevo Mundo.</p>
           <trailer rend="negrita">FIN.</trailer>
         </div>
+
         <pb n="24" source="Varios_445_24.jpg" facs="varios/Varios_445_24.jpg"/>
+
       </div>
     </body>
   </text>

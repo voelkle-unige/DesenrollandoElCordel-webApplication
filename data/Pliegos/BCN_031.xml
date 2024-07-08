@@ -1,753 +1,769 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_031">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Relacion del Conde Alarcos y de la Infanta</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LF">
-                              <name>Lorysmar Franco</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Relacion del Conde Alarcos y de la
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Relacion del Conde Alarcos y de la Infanta</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LF">
+          <name>Lorysmar Franco</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Relacion del Conde Alarcos y de la
                                           Infanta. Trata de como mató á sumujer, para casarse con la
                                           Infanta. Al fin va continuada una graciosa jácara
                                           titulada: Picaros hay con fortuna.</title>
-                                    <title type="titulo_breve">Relacion del Conde Alarcos y de la
+            <title type="titulo_breve">Relacion del Conde Alarcos y de la
                                           Infanta.</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p/>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Herederos de la Viuda Pla</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6817735</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">LIX</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary>Relacion + Jácara</summary>
-                                    <msItem>
-                                          <locus>1-7</locus>
-                                          <title>Relacion del Conde Alarcos y de la Infanta.</title>
-                                    </msItem>
-                                    <msItem>
-                                          <locus>7-8</locus>
-                                          <title>Famosa Jácara</title>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="8"/>8 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="3">Tres grabados (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_031_1.xml" facs="varios/BCN_031_1.jpg/709,1036,450,670/100,/0/default.jpg">grabado_b_031_1</item>
-                                                      <item corresp="grabado_b_031_2.xml" facs="varios/BCN_031_1.jpg/1198,1026,400,670/100,/0/default.jpg">grabado_b_031_2</item>
-                                                      <item corresp="grabado_b_031_3.xml" facs="varios/BCN_031_1.jpg/230,1030,490,640/100,/0/default.jpg">grabado_b_031_3</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+          </titleStmt>
+          <editionStmt>
+            <p/>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Herederos de la Viuda Pla</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.6817735</idno>
+            <altIdentifier>
+              <idno type="num_impresor">LIX</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary>Relacion + Jácara</summary>
+            <msItem>
+              <locus>1-7</locus>
+              <title>Relacion del Conde Alarcos y de la Infanta.</title>
+            </msItem>
+            <msItem>
+              <locus>7-8</locus>
+              <title>Famosa Jácara</title>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="3">Tres grabados (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_031_1.xml" facs="varios/BCN_031_1.jpg/709,1036,450,670/100,/0/default.jpg">grabado_b_031_1</item>
+                  <item corresp="grabado_b_031_2.xml" facs="varios/BCN_031_1.jpg/1198,1026,400,670/100,/0/default.jpg">grabado_b_031_2</item>
+                  <item corresp="grabado_b_031_3.xml" facs="varios/BCN_031_1.jpg/230,1030,490,640/100,/0/default.jpg">grabado_b_031_3</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q28">
+            <placeName key="Hungría">Hungría</placeName>
+            <location>
+              <geo>47 19</geo>
+            </location>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term type="tipo_texto">Relaciones</term>
-                              <term target="XX5382203.html" type="tipo_texto">Jácaras</term>
-                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-10-11" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term type="tipo_texto">Relaciones</term>
+          <term target="XX5382203.html" type="tipo_texto">Jácaras</term>
+          <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-10-11" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_031_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-      <facsimile>
-            <graphic url="varios/BCN_031_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_031_1.jpg" facs="varios/BCN_031_1.jpg"/>
+          <pb n="1" source="BCN_031_1.jpg" facs="varios/BCN_031_1.jpg"/>
 
-                              <head type="primer_titulo">
-                                    <lb/>RELACION<lb/><hi rend="negrita">DEL CONDE
-                                    ALARCOS</hi><lb/>y de la Infanta. Trata de como mató<lb/>á su
+          <head type="primer_titulo">
+            <lb/>RELACION<lb/>
+            <hi rend="negrita">DEL CONDE
+                                    ALARCOS</hi>
+            <lb/>y de la Infanta. Trata de como mató<lb/>á su
                                     mujer, para casarse con la<lb/>Infanta.</head>
+          <head type="subtitulo">
+            <hi rend="cursiva">
+              <lb/>Al fin va continuada una graciosa jácara
+                                          titulada:</hi>
+            <lb/>Pícaros hay con fortuna </head>
+          <div>
+            <l>
+              <hi rend="negrita">R</hi>étirada está la Infanta,</l>
+            <l>bien así como solia,</l>
+            <l>viviendo muy descontenta</l>
+            <l>de la vida que tenia,</l>
+            <l>viendo que se le pasaba</l>
+            <l>toda la flor de su vida,</l>
+            <l>y que el Rey no la casaba</l>
+            <l>ni tal cuidado tenia.</l>
+            <l>Entre sí estaba pensando</l>
+            <l>á quien se descubriria:</l>
+            <l>acordó llamar al Rey,</l>
+            <l>como siempre hacer solia,</l>
+            <l>por decirle su secreto</l>
+            <l>y la intencion que tenia.</l>
+            <l>Vino él, siendo llamado,</l>
+            <l>que no tardó su venida;</l>
+            <l>vídola estar apartada,</l>
+            <l>sola está y sin compañía.</l>
 
-                              <head type="subtitulo">
-                                    <hi rend="cursiva"><lb/>Al fin va continuada una graciosa jácara
-                                          titulada:</hi><lb/>Pícaros hay con fortuna </head>
+            <pb n="2" source="BCN_031_2.jpg" facs="varios/BCN_031_2.jpg"/>
 
-                              <div>
-                                    <l><hi rend="negrita">R</hi>étirada está la Infanta,</l>
-                                    <l>bien así como solia,</l>
-                                    <l>viviendo muy descontenta</l>
-                                    <l>de la vida que tenia,</l>
-                                    <l>viendo que se le pasaba</l>
-                                    <l>toda la flor de su vida,</l>
-                                    <l>y que el Rey no la casaba</l>
-                                    <l>ni tal cuidado tenia.</l>
-                                    <l>Entre sí estaba pensando</l>
-                                    <l>á quien se descubriria:</l>
-                                    <l>acordó llamar al Rey,</l>
-                                    <l>como siempre hacer solia,</l>
-                                    <l>por decirle su secreto</l>
-                                    <l>y la intencion que tenia.</l>
-                                    <l>Vino él, siendo llamado,</l>
-                                    <l>que no tardó su venida;</l>
-                                    <l>vídola estar apartada,</l>
-                                    <l>sola está y sin compañía.</l>
+            <fw type="paginaNum">2</fw>
+            <l>Su lindo rostro mostraba</l>
+            <l>ser mas triste que solia.</l>
+            <l>Conociera luego el Rey</l>
+            <l>el enojo que tenia.</l>
+            <l>¿Qué es aquesto, la Infanta?</l>
+            <l>¿qué es aquesto, hija mia?</l>
+            <l>Contadme vuestros enojos,</l>
+            <l>no tengais melancolía,</l>
+            <l>que en sabiendo la verdad</l>
+            <l>todo se remediaría.</l>
+            <l>Menester será, buen Rey,</l>
+            <l>remediar la vida mia,</l>
+            <l>que á vos quedé encomendada</l>
+            <l>de la madre que tenia.</l>
+            <l>Darásme, buen Rey, marido,</l>
+            <l>que mi edad lo requeria;</l>
+            <l>con vergüenza os lo demando,</l>
+            <l>no con gana que tenia,</l>
+            <l>que aquestos cuidados tales</l>
+            <l>á vos, Rey, pertenecian.</l>
+            <l>Escuchada su demanda,</l>
+            <l>el buen Rey le respondia:</l>
+            <l>Esa culpa, la mi Infanta,</l>
+            <l>vuestra era, que no mia;</l>
+            <l>que ya fuérades casada</l>
+            <l>con el Príncipe de Ungría.</l>
+            <l>No quisisteis escuchar</l>
+            <l>la embajada que os venía;</l>
+            <l>pues acá en las nuestras cortes</l>
+            <l>mal recaudo, hija; habia;</l>
+            <l>porque en todos los mis reinos</l>
+            <l>vuestro par igual no habia,</l>
+            <l>sino era el conde Alarcos,</l>
+            <l>hijos y mujer tenia.</l>
+            <l>Combidadle, vos el Rey,</l>
+            <l>al conde Alarcos un dia,</l>
+            <l>y desque hayais comido,</l>
+            <l>decidle de parte mia;</l>
+            <l>decidle, que se acuerde</l>
+            <l>de la fee que de él tenia,</l>
+            <l>la cual él me prometiera,</l>
+            <l>que yo no se la pedia,</l>
+            <l>de ser siempre mi marido,</l>
+            <l>yo que su mujer seria.</l>
+            <l>Yo soy deso muy contenta,</l>
+            <l>y no me arrepentiria:</l>
+            <l>si caso con la Condesa,</l>
+            <l>que mirase lo que hacia,</l>
+            <l>que yo por él no casé</l>
+            <l>con el Príncipe de Ungría:</l>
+            <l>si la Condesa es burlada,</l>
+            <l>della es culpa, que no mia.</l>
+            <l>Perdiera el Rey en oirlo</l>
+            <l>el sentido que tenia;</l>
+            <l>mas despues en sí tornando,</l>
+            <l>con enojo respondia:</l>
+            <l>No son esos los consejos</l>
+            <l>que vuestra madre os decia;</l>
+            <l>mal mirasteis vos, la lnfanta,</l>
+            <l>dó era la honra mia:</l>
+            <l>si verdad es todo eso,</l>
+            <l>vuestra honra ya es perdida</l>
+            <l>No podeis vos ser casada,</l>
+            <l>siendo la Condesa viva:</l>
+            <l>si se hace el casamiento</l>
+            <l>por razon ó por justicia,</l>
+            <l>en el decir de las gentes,</l>
+            <l>por mala seréis tenida.</l>
+            <l>Dadme vos, hija, consejo,</l>
+            <l>que el mio no bastaria;</l>
+            <l>que ya es muerta vuestra madre,</l>
+            <l>á quien consejos pedia.</l>
+            <l>Yo vos lo daré, buen Rey,</l>
+            <l>deste poco que tenia;</l>
+            <l>Mate el Conde á la Condesa,</l>
+            <l>que ninguno lo sabria:</l>
 
-                                    <pb n="2" source="BCN_031_2.jpg" facs="varios/BCN_031_2.jpg"/>
+            <pb n="3" source="BCN_031_3.jpg" facs="varios/BCN_031_3.jpg"/>
 
-                                    <fw type="paginaNum">2</fw>
+            <fw type="paginaNum">3</fw>
+            <l>eche fama que ella es muerta</l>
+            <l>de un cierto mal que tenia,</l>
+            <l>y trátase el casamiento</l>
+            <l>como cosa no sabida;</l>
+            <l>desta manera, buen Rey,</l>
+            <l>mi honra se guardaria.</l>
+            <l>De allí se sale el buen Rey,</l>
+            <l>no con placer que tenia;</l>
+            <l>lleno va de pensamiento</l>
+            <l>de la nueva que traia.</l>
+            <l>Vido estar el conde Alarcos</l>
+            <l>entre muchos, que decia:</l>
+            <l>¿Qué aprovecha, caballeros,</l>
+            <l>amar y servir amiga,</l>
+            <l>que son servicios perdidos</l>
+            <l>donde firmeza no habia?</l>
+            <l>No puede por mí decirse</l>
+            <l>aquesto que yo decia,</l>
+            <l>que en tiempo que yo serví</l>
+            <l>una que tanto valia,</l>
+            <l>si muy bien la quise entonces,</l>
+            <l>ahora mas la queria;</l>
+            <l>mas por mí podrán decir:</l>
+            <l>quien bien ama, tarde olvida.</l>
+            <l>Estas palabras diciendo,</l>
+            <l>vido al buen Rey que venia,</l>
+            <l>y para hablar con el Rey</l>
+            <l>de entre todos'se salia.</l>
+            <l>Díjole el buen Rey al Conde,</l>
+            <l>hablando con cortesía:</l>
+            <l>Combidaros quiero, Conde,</l>
+            <l>para mañana aquel dia,</l>
+            <l>que querais comer conmigo,</l>
+            <l>por tenerme compañia.</l>
+            <l>Que se haga de buen grado</l>
+            <l>lo que tu alteza pedia;</l>
+            <l>beso tus reales manos,</l>
+            <l>por la buena cortesía</l>
+            <l>de tenerme aquí mañana,</l>
+            <l>aunque estaba de partida,</l>
+            <l>que la Condesa me espera,</l>
+            <l>segun la carta me envia.</l>
+            <l>Otro dia de mañana,</l>
+            <l>el Rey de misa salia;</l>
+            <l>asentóse á comer,</l>
+            <l>no por gana que tenia,</l>
+            <l>sino para hablar al Conde</l>
+            <l>lo que hablarle queria:</l>
+            <l>allí fueron bien servidos,</l>
+            <l>como al Rey pertenecia.</l>
+            <l>Despues que hubieron comido,</l>
+            <l>toda la gente salia:</l>
+            <l>quedóse el Rey con el Conde</l>
+            <l>en la cuadra dó comian;</l>
+            <l>empezó á hablar el Rey</l>
+            <l>la embajada que traia.</l>
+            <l>Unas nuevas traigo, Conde,</l>
+            <l>que dellas no me placia,</l>
+            <l>por las cuales yo me quejo</l>
+            <l>de vuestra descortesía.</l>
+            <l>Prometisteis á la Infanta</l>
+            <l>lo que ella no os pedia,</l>
+            <l>de siempre ser su marido,</l>
+            <l>y á ella que le placia;</l>
+            <l>y si otras cosas pasaron,</l>
+            <l>no entro en esta porfía,</l>
+            <l>que no se lo demandé,</l>
+            <l>ni se lo demandaría.</l>
+            <l>Otra cosa os digo, Conde,</l>
+            <l>de mas, que os pesaria</l>
+            <l>que mateis á la Condesa,</l>
+            <l>que cumple á la honra mia,</l>
+            <l>y echeis fama que ella es muerta</l>
+            <l>de cierto mal que tenia;</l>
+            <l>y tratarse ha el casamiento,</l>
+            <l>como cosa no sabida,</l>
 
-                                    <l>Su lindo rostro mostraba</l>
-                                    <l>ser mas triste que solia.</l>
-                                    <l>Conociera luego el Rey</l>
-                                    <l>el enojo que tenia.</l>
-                                    <l>¿Qué es aquesto, la Infanta?</l>
-                                    <l>¿qué es aquesto, hija mia?</l>
-                                    <l>Contadme vuestros enojos,</l>
-                                    <l>no tengais melancolía,</l>
-                                    <l>que en sabiendo la verdad</l>
-                                    <l>todo se remediaría.</l>
-                                    <l>Menester será, buen Rey,</l>
-                                    <l>remediar la vida mia,</l>
-                                    <l>que á vos quedé encomendada</l>
-                                    <l>de la madre que tenia.</l>
-                                    <l>Darásme, buen Rey, marido,</l>
-                                    <l>que mi edad lo requeria;</l>
-                                    <l>con vergüenza os lo demando,</l>
-                                    <l>no con gana que tenia,</l>
-                                    <l>que aquestos cuidados tales</l>
-                                    <l>á vos, Rey, pertenecian.</l>
-                                    <l>Escuchada su demanda,</l>
-                                    <l>el buen Rey le respondia:</l>
-                                    <l>Esa culpa, la mi Infanta,</l>
-                                    <l>vuestra era, que no mia;</l>
-                                    <l>que ya fuérades casada</l>
-                                    <l>con el Príncipe de Ungría.</l>
-                                    <l>No quisisteis escuchar</l>
-                                    <l>la embajada que os venía;</l>
-                                    <l>pues acá en las nuestras cortes</l>
-                                    <l>mal recaudo, hija; habia;</l>
-                                    <l>porque en todos los mis reinos</l>
-                                    <l>vuestro par igual no habia,</l>
-                                    <l>sino era el conde Alarcos,</l>
-                                    <l>hijos y mujer tenia.</l>
-                                    <l>Combidadle, vos el Rey,</l>
-                                    <l>al conde Alarcos un dia,</l>
-                                    <l>y desque hayais comido,</l>
-                                    <l>decidle de parte mia;</l>
-                                    <l>decidle, que se acuerde</l>
-                                    <l>de la fee que de él tenia,</l>
-                                    <l>la cual él me prometiera,</l>
-                                    <l>que yo no se la pedia,</l>
-                                    <l>de ser siempre mi marido,</l>
-                                    <l>yo que su mujer seria.</l>
-                                    <l>Yo soy deso muy contenta,</l>
-                                    <l>y no me arrepentiria:</l>
-                                    <l>si caso con la Condesa,</l>
-                                    <l>que mirase lo que hacia,</l>
-                                    <l>que yo por él no casé</l>
-                                    <l>con el Príncipe de Ungría:</l>
-                                    <l>si la Condesa es burlada,</l>
-                                    <l>della es culpa, que no mia.</l>
-                                    <l>Perdiera el Rey en oirlo</l>
-                                    <l>el sentido que tenia;</l>
-                                    <l>mas despues en sí tornando,</l>
-                                    <l>con enojo respondia:</l>
-                                    <l>No son esos los consejos</l>
-                                    <l>que vuestra madre os decia;</l>
-                                    <l>mal mirasteis vos, la lnfanta,</l>
-                                    <l>dó era la honra mia:</l>
-                                    <l>si verdad es todo eso,</l>
-                                    <l>vuestra honra ya es perdida</l>
-                                    <l>No podeis vos ser casada,</l>
-                                    <l>siendo la Condesa viva:</l>
-                                    <l>si se hace el casamiento</l>
-                                    <l>por razon ó por justicia,</l>
-                                    <l>en el decir de las gentes,</l>
-                                    <l>por mala seréis tenida.</l>
-                                    <l>Dadme vos, hija, consejo,</l>
-                                    <l>que el mio no bastaria;</l>
-                                    <l>que ya es muerta vuestra madre,</l>
-                                    <l>á quien consejos pedia.</l>
-                                    <l>Yo vos lo daré, buen Rey,</l>
-                                    <l>deste poco que tenia;</l>
-                                    <l>Mate el Conde á la Condesa,</l>
-                                    <l>que ninguno lo sabria:</l>
+            <pb n="4" source="BCN_031_4.jpg" facs="varios/BCN_031_4.jpg"/>
 
-                                    <pb n="3" source="BCN_031_3.jpg" facs="varios/BCN_031_3.jpg"/>
-                                    
-                                    <fw type="paginaNum">3</fw>
+            <fw type="paginaNum">4</fw>
+            <l>porque no sea deshonrada</l>
+            <l>hija que tanto queria.</l>
+            <l>Oidas estas razones,</l>
+            <l>el buen Conde respondia:</l>
+            <l>No puedo negar al Rey</l>
+            <l>lo que la Infanta decia,</l>
+            <l>sino que es todo verdad,</l>
+            <l>todo cuanto le pedia.</l>
+            <l>Por miedo de vos, el Rey,</l>
+            <l>no casé con quien decia,</l>
+            <l>no pensé que vuestra alteza</l>
+            <l>en ello consentiria.</l>
+            <l>De casarme con la Infanta,</l>
+            <l>yo, señor, bien casaria;</l>
+            <l>mas matar á la Condesa,</l>
+            <l>yo, señor, no lo haria;</l>
+            <l>porque no debe morir</l>
+            <l>la que mal no merecia.</l>
+            <l>De morir tiene, el buen Conde,</l>
+            <l>por salvar la honra mia,</l>
+            <l>pues no mirasteis primero</l>
+            <l>lo que mirar se debia.</l>
+            <l>Si no muere la Condesa,</l>
+            <l>á vos costará la vida,</l>
+            <l>que por honra de los Reyes,</l>
+            <l>muchos sin culpa morian;</l>
+            <l>pues que muera la Condesa</l>
+            <l>no es mucha maravilla.</l>
+            <l>Yo la mataré, buen Rey,</l>
+            <l>mas no será culpa mia;</l>
+            <l>vos os avendréis con Dios</l>
+            <l>en la fin de vuestra vida.</l>
+            <l>Y prometo á vuestra alteza,</l>
+            <l>á fee de caballería,</l>
+            <l>que me escriba por traidor,</l>
+            <l>si lo dicho no cumplia,</l>
+            <l>de matar á la Condesa,</l>
+            <l>aunque mal no merecia:</l>
+            <l>antes que llegase el Conde</l>
+            <l>buen Rey, si me dais licencia,</l>
+            <l>yo luego me partiria.</l>
+            <l>Idos con Dios, el buen Conde,</l>
+            <l>ordenad vuestra partida.</l>
+            <l>Llorando se parte el Conde,</l>
+            <l>llorando sin alegría;</l>
+            <l>llorando por la Condesa,</l>
+            <l>que mas que á sí la queria.</l>
+            <l>Lloraba tambien el Conde</l>
+            <l>por tres hijos que tenia;</l>
+            <l>el uno era de pecho,</l>
+            <l>que la Condesa lo cria,</l>
+            <l>que no queria mamar</l>
+            <l>de tres amas que tenia,</l>
+            <l>si no era de su madre</l>
+            <l>que muy bien la conocia.</l>
+            <l>Los otros eran pequeños,</l>
+            <l>poco sentido tenian:</l>
+            <l>estas razones decia:</l>
+            <l>¿Quien podrá mirar, Condesa,</l>
+            <l>vuestra cara de alegría,</l>
+            <l>que saldréis á recibirme</l>
+            <l>á la fin de vuestra vida?</l>
+            <l>Yo soy el triste culpado,</l>
+            <l>esta culpa toda es mia.</l>
+            <l>En diciendo estas palabras,</l>
+            <l>la Condesa ya salia,</l>
+            <l>que un page le habia dicho</l>
+            <l>como el Conde ya venia.</l>
+            <l>Vido la Condesa al Conde</l>
+            <l>la tristeza que traia:</l>
+            <l>vióle los ojos llorosos,</l>
+            <l>que inchados los tenia,</l>
+            <l>de llorar por el camino,</l>
+            <l>mirando el bien que perdia.</l>
+            <l>Dije la Condesa al Conde:</l>
+            <l>Bien vengais, bien de mi vida.</l>
 
-                                    <l>eche fama que ella es muerta</l>
-                                    <l>de un cierto mal que tenia,</l>
-                                    <l>y trátase el casamiento</l>
-                                    <l>como cosa no sabida;</l>
-                                    <l>desta manera, buen Rey,</l>
-                                    <l>mi honra se guardaria.</l>
-                                    <l>De allí se sale el buen Rey,</l>
-                                    <l>no con placer que tenia;</l>
-                                    <l>lleno va de pensamiento</l>
-                                    <l>de la nueva que traia.</l>
-                                    <l>Vido estar el conde Alarcos</l>
-                                    <l>entre muchos, que decia:</l>
-                                    <l>¿Qué aprovecha, caballeros,</l>
-                                    <l>amar y servir amiga,</l>
-                                    <l>que son servicios perdidos</l>
-                                    <l>donde firmeza no habia?</l>
-                                    <l>No puede por mí decirse</l>
-                                    <l>aquesto que yo decia,</l>
-                                    <l>que en tiempo que yo serví</l>
-                                    <l>una que tanto valia,</l>
-                                    <l>si muy bien la quise entonces,</l>
-                                    <l>ahora mas la queria;</l>
-                                    <l>mas por mí podrán decir:</l>
-                                    <l>quien bien ama, tarde olvida.</l>
-                                    <l>Estas palabras diciendo,</l>
-                                    <l>vido al buen Rey que venia,</l>
-                                    <l>y para hablar con el Rey</l>
-                                    <l>de entre todos'se salia.</l>
-                                    <l>Díjole el buen Rey al Conde,</l>
-                                    <l>hablando con cortesía:</l>
-                                    <l>Combidaros quiero, Conde,</l>
-                                    <l>para mañana aquel dia,</l>
-                                    <l>que querais comer conmigo,</l>
-                                    <l>por tenerme compañia.</l>
-                                    <l>Que se haga de buen grado</l>
-                                    <l>lo que tu alteza pedia;</l>
-                                    <l>beso tus reales manos,</l>
-                                    <l>por la buena cortesía</l>
-                                    <l>de tenerme aquí mañana,</l>
-                                    <l>aunque estaba de partida,</l>
-                                    <l>que la Condesa me espera,</l>
-                                    <l>segun la carta me envia.</l>
-                                    <l>Otro dia de mañana,</l>
-                                    <l>el Rey de misa salia;</l>
-                                    <l>asentóse á comer,</l>
-                                    <l>no por gana que tenia,</l>
-                                    <l>sino para hablar al Conde</l>
-                                    <l>lo que hablarle queria:</l>
-                                    <l>allí fueron bien servidos,</l>
-                                    <l>como al Rey pertenecia.</l>
-                                    <l>Despues que hubieron comido,</l>
-                                    <l>toda la gente salia:</l>
-                                    <l>quedóse el Rey con el Conde</l>
-                                    <l>en la cuadra dó comian;</l>
-                                    <l>empezó á hablar el Rey</l>
-                                    <l>la embajada que traia.</l>
-                                    <l>Unas nuevas traigo, Conde,</l>
-                                    <l>que dellas no me placia,</l>
-                                    <l>por las cuales yo me quejo</l>
-                                    <l>de vuestra descortesía.</l>
-                                    <l>Prometisteis á la Infanta</l>
-                                    <l>lo que ella no os pedia,</l>
-                                    <l>de siempre ser su marido,</l>
-                                    <l>y á ella que le placia;</l>
-                                    <l>y si otras cosas pasaron,</l>
-                                    <l>no entro en esta porfía,</l>
-                                    <l>que no se lo demandé,</l>
-                                    <l>ni se lo demandaría.</l>
-                                    <l>Otra cosa os digo, Conde,</l>
-                                    <l>de mas, que os pesaria</l>
-                                    <l>que mateis á la Condesa,</l>
-                                    <l>que cumple á la honra mia,</l>
-                                    <l>y echeis fama que ella es muerta</l>
-                                    <l>de cierto mal que tenia;</l>
-                                    <l>y tratarse ha el casamiento,</l>
-                                    <l>como cosa no sabida,</l>
+            <pb n="5" source="BCN_031_5.jpg" facs="varios/BCN_031_5.jpg"/>
 
-                                    <pb n="4" source="BCN_031_4.jpg" facs="varios/BCN_031_4.jpg"/>
+            <fw type="paginaNum">5</fw>
+            <l>Porque llorais, vida mia,</l>
+            <l>que venís tan demudado,</l>
+            <l>que cierto no os conocia?</l>
+            <l>No parece vuestra cara</l>
+            <l>aquella que ser solia.</l>
+            <l>Dadme parte del enojo,</l>
+            <l>como dais de la alegría:</l>
+            <l>decídmelo luego, Conde,</l>
+            <l>no mateis la vida mia.</l>
+            <l>Yo vos lo diré, Condesa,</l>
+            <l>cuando la hora seria.</l>
+            <l>Si no me lo decís, Conde,</l>
+            <l>cierto yo reventaria.</l>
+            <l>No me fatigueis, señora,</l>
+            <l>que no es la hora venida:</l>
+            <l>cenemos luego, Condesa,</l>
+            <l>de aquello que en casa habia.</l>
+            <l>Aparejado está, Conde,</l>
+            <l>como otras veces solia.</l>
+            <l>Sentóse el Conde á la mesa,</l>
+            <l>no cenaba, ni podia,</l>
+            <l>con sus hijos al costado,</l>
+            <l>que muy mucho los queria.</l>
+            <l>Echóse sobre los brazos,</l>
+            <l>hizo como que dormia;</l>
+            <l>de lágrimas de sus ojos</l>
+            <l>toda la mesa cubria.</l>
+            <l>Mirábalo la Condesa,</l>
+            <l>que la causa no sabia,</l>
+            <l>no le preguntaba nada,</l>
+            <l>que no osaba, ni podia.</l>
+            <l>Levantóse luego el Conde,</l>
+            <l>dijo que dormir queria:</l>
+            <l>dijo tambien la Condesa</l>
+            <l>que ella tambien dormiria:</l>
+            <l>mas entre ellos no habia sueño,</l>
+            <l>y la verdad se decia.</l>
+            <l>Desque esto oyó'la Condesa</l>
+            <l>¿Qué habeis, el Conde Alarcos?</l>
+            <l>Vanse el Conde y la Condesa</l>
+            <l>á dormir, como solian,</l>
+            <l>dejando los niños fuera,</l>
+            <l>que el Conde no les queria.</l>
+            <l>Lleváronse el mas chiquito,</l>
+            <l>el que la Condesa cria:</l>
+            <l>cerrara el Conde las puertas,</l>
+            <l>lo que hacer no solia.</l>
+            <l>Empezó de hablar el Conde</l>
+            <l>con dolor y con mancilla:</l>
+            <l>¡Oh desdichada Condesa,</l>
+            <l>grande fué la tu desdicha!</l>
+            <l>No soy desdichada, Conde,</l>
+            <l>por dichosa me tenia,</l>
+            <l>solo en ser vuestra mujer,</l>
+            <l>esta fué gran dicha mia.</l>
+            <l>Si bien sabeis, la Condesa,</l>
+            <l>esta es vuestra desdicha.</l>
+            <l>Sabed que en tiempo pasado</l>
+            <l>yo amé á quien queria,</l>
+            <l>la cual era la Infanta,</l>
+            <l>por desdicha vuestra y mia.</l>
+            <l>Prometí casar con ella,</l>
+            <l>y ella que le placia:</l>
+            <l>demandóme por marido,</l>
+            <l>por la fee que me tenia;</l>
+            <l>púdolo muy bien hacer</l>
+            <l>de razon y de justicia,</l>
+            <l>díjomelo el Rey su padre,</l>
+            <l>porque della lo sabia.</l>
+            <l>Otra cosa manda el Rey</l>
+            <l>que lastima el alma mia:</l>
+            <l>manda que muerta seais</l>
+            <l>por la honra de su hija,</l>
+            <l>que no puede tener honra</l>
+            <l>siendo vos, Condesa, viva.</l>
+            <l>cayó en tierra amortecida;</l>
 
-                                    <fw type="paginaNum">4</fw>
+            <pb n="6" source="BCN_031_6.jpg" facs="varios/BCN_031_6.jpg"/>
 
-                                    <l>porque no sea deshonrada</l>
-                                    <l>hija que tanto queria.</l>
-                                    <l>Oidas estas razones,</l>
-                                    <l>el buen Conde respondia:</l>
-                                    <l>No puedo negar al Rey</l>
-                                    <l>lo que la Infanta decia,</l>
-                                    <l>sino que es todo verdad,</l>
-                                    <l>todo cuanto le pedia.</l>
-                                    <l>Por miedo de vos, el Rey,</l>
-                                    <l>no casé con quien decia,</l>
-                                    <l>no pensé que vuestra alteza</l>
-                                    <l>en ello consentiria.</l>
-                                    <l>De casarme con la Infanta,</l>
-                                    <l>yo, señor, bien casaria;</l>
-                                    <l>mas matar á la Condesa,</l>
-                                    <l>yo, señor, no lo haria;</l>
-                                    <l>porque no debe morir</l>
-                                    <l>la que mal no merecia.</l>
-                                    <l>De morir tiene, el buen Conde,</l>
-                                    <l>por salvar la honra mia,</l>
-                                    <l>pues no mirasteis primero</l>
-                                    <l>lo que mirar se debia.</l>
-                                    <l>Si no muere la Condesa,</l>
-                                    <l>á vos costará la vida,</l>
-                                    <l>que por honra de los Reyes,</l>
-                                    <l>muchos sin culpa morian;</l>
-                                    <l>pues que muera la Condesa</l>
-                                    <l>no es mucha maravilla.</l>
-                                    <l>Yo la mataré, buen Rey,</l>
-                                    <l>mas no será culpa mia;</l>
-                                    <l>vos os avendréis con Dios</l>
-                                    <l>en la fin de vuestra vida.</l>
-                                    <l>Y prometo á vuestra alteza,</l>
-                                    <l>á fee de caballería,</l>
-                                    <l>que me escriba por traidor,</l>
-                                    <l>si lo dicho no cumplia,</l>
-                                    <l>de matar á la Condesa,</l>
-                                    <l>aunque mal no merecia:</l>
-                                    <l>antes que llegase el Conde</l>
-                                    <l>buen Rey, si me dais licencia,</l>
-                                    <l>yo luego me partiria.</l>
-                                    <l>Idos con Dios, el buen Conde,</l>
-                                    <l>ordenad vuestra partida.</l>
-                                    <l>Llorando se parte el Conde,</l>
-                                    <l>llorando sin alegría;</l>
-                                    <l>llorando por la Condesa,</l>
-                                    <l>que mas que á sí la queria.</l>
-                                    <l>Lloraba tambien el Conde</l>
-                                    <l>por tres hijos que tenia;</l>
-                                    <l>el uno era de pecho,</l>
-                                    <l>que la Condesa lo cria,</l>
-                                    <l>que no queria mamar</l>
-                                    <l>de tres amas que tenia,</l>
-                                    <l>si no era de su madre</l>
-                                    <l>que muy bien la conocia.</l>
-                                    <l>Los otros eran pequeños,</l>
-                                    <l>poco sentido tenian:</l>
-                                    <l>estas razones decia:</l>
-                                    <l>¿Quien podrá mirar, Condesa,</l>
-                                    <l>vuestra cara de alegría,</l>
-                                    <l>que saldréis á recibirme</l>
-                                    <l>á la fin de vuestra vida?</l>
-                                    <l>Yo soy el triste culpado,</l>
-                                    <l>esta culpa toda es mia.</l>
-                                    <l>En diciendo estas palabras,</l>
-                                    <l>la Condesa ya salia,</l>
-                                    <l>que un page le habia dicho</l>
-                                    <l>como el Conde ya venia.</l>
-                                    <l>Vido la Condesa al Conde</l>
-                                    <l>la tristeza que traia:</l>
-                                    <l>vióle los ojos llorosos,</l>
-                                    <l>que inchados los tenia,</l>
-                                    <l>de llorar por el camino,</l>
-                                    <l>mirando el bien que perdia.</l>
-                                    <l>Dije la Condesa al Conde:</l>
-                                    <l>Bien vengais, bien de mi vida.</l>
+            <fw type="paginaNum">6</fw>
+            <l>mas despues en sí tornando</l>
+            <l>estas palabras decia:</l>
+            <l>Pago son de mis servicios,</l>
+            <l>Conde, con que os servia;</l>
+            <l>si no me matais, el Conde,</l>
+            <l>bien os aconsejaria.</l>
+            <l>Enviasme á las mis tierras</l>
+            <l>que mi padre me tenia;</l>
+            <l>yo criaré vuestros hijos</l>
+            <l>mejor que la que venia,</l>
+            <l>y os mantendré lealtad,</l>
+            <l>como siempre os mantenia.</l>
+            <l>De morir teneis, Condesa,</l>
+            <l>aun antes que venga el dia.</l>
+            <l>Bien parece, el conde Alarcos,</l>
+            <l>yo ser sola en esta vida,</l>
+            <l>porque tengo el padre viejo,</l>
+            <l>mi madre es ya fallecida,</l>
+            <l>y mataron á mi hermano,</l>
+            <l>el buen conde don García,</l>
+            <l>que el Rey lo mandó matar</l>
+            <l>por miedo que de él tenia.</l>
+            <l>No me pesa de mi muerte</l>
+            <l>porque yo morir tenia;</l>
+            <l>mas me pesa de mis hijos</l>
+            <l>que pierden mi compañía.</l>
+            <l>Hacédmelos venir, Conde,</l>
+            <l>y veréis mi despedida.</l>
+            <l>No los veréis mas, Condesa,</l>
+            <l>en dias de vuestra vida;</l>
+            <l>abrazad á este chiquito,</l>
+            <l>que aqueste es el que pedia.</l>
+            <l>Pésame de vos; Condesa,</l>
+            <l>cuanto pesar me podia;</l>
+            <l>no os puedo valer, señora,</l>
+            <l>que mas me va que la vida.</l>
+            <l>Encomendaos á Dios,</l>
+            <l>que esto de hacerse tenia.</l>
+            <l>Dejeisme decir, el Conde,</l>
+            <l>una oracion que sabía;</l>
+            <l>decidla presto, Condesa,</l>
+            <l>antes que se venga el dia.</l>
+            <l>Presto la habré dicho, Conde,</l>
+            <l>no estaré una Ave María.</l>
+            <l>Hincó la rodilla en tierra,</l>
+            <l>y aquesta oracion decia:</l>
+            <l>En las tus manos, Señor,</l>
+            <l>encomiendo el alma mia.</l>
+            <l>No me juzgueis mis pecados,</l>
+            <l>segun que yo merecia;</l>
+            <l>mas segun tu gran piedad</l>
+            <l>y la tu gracia infinita.</l>
+            <l>Acabada es ya, buen Conde,</l>
+            <l>la oracion que yo sabia:</l>
+            <l>abrazaros quiero, Conde,</l>
+            <l>por el amor que os tenia.</l>
+            <l>Encomiéndoos esos hijos</l>
+            <l>que entre vos y mí habia;</l>
+            <l>y rogad á Dios por mí,</l>
+            <l>mientras tuviérades vida,</l>
+            <l>que á ello sois obligado,</l>
+            <l>pues que sin culpa moria.</l>
+            <l>Deisme acá aquese hijo;</l>
+            <l>mamará por despedida.</l>
+            <l>No le desperteis, Condesa,</l>
+            <l>dejadle estar, que dormia,</l>
+            <l>sino os demando perdon</l>
+            <l>porque se viene ya el dia.</l>
+            <l>A vos yo os perdono, Conde,</l>
+            <l>por el amor que os tenia;</l>
+            <l>mas yo no perdono al Rey,</l>
+            <l>ni á la Infanta su hija,</l>
+            <l>sino que queden citados</l>
+            <l>delante la Alta Justicia;</l>
+            <l>que allá vayan á juicio</l>
+            <l>dentro de los treinta días.</l>
 
-                                    <pb n="5" source="BCN_031_5.jpg" facs="varios/BCN_031_5.jpg"/>
+            <pb n="7" source="BCN_031_7.jpg" facs="varios/BCN_031_7.jpg"/>
 
-                                    <fw type="paginaNum">5</fw>
-
-                                    <l>Porque llorais, vida mia,</l>
-                                    <l>que venís tan demudado,</l>
-                                    <l>que cierto no os conocia?</l>
-                                    <l>No parece vuestra cara</l>
-                                    <l>aquella que ser solia.</l>
-                                    <l>Dadme parte del enojo,</l>
-                                    <l>como dais de la alegría:</l>
-                                    <l>decídmelo luego, Conde,</l>
-                                    <l>no mateis la vida mia.</l>
-                                    <l>Yo vos lo diré, Condesa,</l>
-                                    <l>cuando la hora seria.</l>
-                                    <l>Si no me lo decís, Conde,</l>
-                                    <l>cierto yo reventaria.</l>
-                                    <l>No me fatigueis, señora,</l>
-                                    <l>que no es la hora venida:</l>
-                                    <l>cenemos luego, Condesa,</l>
-                                    <l>de aquello que en casa habia.</l>
-                                    <l>Aparejado está, Conde,</l>
-                                    <l>como otras veces solia.</l>
-                                    <l>Sentóse el Conde á la mesa,</l>
-                                    <l>no cenaba, ni podia,</l>
-                                    <l>con sus hijos al costado,</l>
-                                    <l>que muy mucho los queria.</l>
-                                    <l>Echóse sobre los brazos,</l>
-                                    <l>hizo como que dormia;</l>
-                                    <l>de lágrimas de sus ojos</l>
-                                    <l>toda la mesa cubria.</l>
-                                    <l>Mirábalo la Condesa,</l>
-                                    <l>que la causa no sabia,</l>
-                                    <l>no le preguntaba nada,</l>
-                                    <l>que no osaba, ni podia.</l>
-                                    <l>Levantóse luego el Conde,</l>
-                                    <l>dijo que dormir queria:</l>
-                                    <l>dijo tambien la Condesa</l>
-                                    <l>que ella tambien dormiria:</l>
-                                    <l>mas entre ellos no habia sueño,</l>
-                                    <l>y la verdad se decia.</l>
-                                    <l>Desque esto oyó'la Condesa</l>
-                                    <l>¿Qué habeis, el Conde Alarcos?</l>
-                                    <l>Vanse el Conde y la Condesa</l>
-                                    <l>á dormir, como solian,</l>
-                                    <l>dejando los niños fuera,</l>
-                                    <l>que el Conde no les queria.</l>
-                                    <l>Lleváronse el mas chiquito,</l>
-                                    <l>el que la Condesa cria:</l>
-                                    <l>cerrara el Conde las puertas,</l>
-                                    <l>lo que hacer no solia.</l>
-                                    <l>Empezó de hablar el Conde</l>
-                                    <l>con dolor y con mancilla:</l>
-                                    <l>¡Oh desdichada Condesa,</l>
-                                    <l>grande fué la tu desdicha!</l>
-                                    <l>No soy desdichada, Conde,</l>
-                                    <l>por dichosa me tenia,</l>
-                                    <l>solo en ser vuestra mujer,</l>
-                                    <l>esta fué gran dicha mia.</l>
-                                    <l>Si bien sabeis, la Condesa,</l>
-                                    <l>esta es vuestra desdicha.</l>
-                                    <l>Sabed que en tiempo pasado</l>
-                                    <l>yo amé á quien queria,</l>
-                                    <l>la cual era la Infanta,</l>
-                                    <l>por desdicha vuestra y mia.</l>
-                                    <l>Prometí casar con ella,</l>
-                                    <l>y ella que le placia:</l>
-                                    <l>demandóme por marido,</l>
-                                    <l>por la fee que me tenia;</l>
-                                    <l>púdolo muy bien hacer</l>
-                                    <l>de razon y de justicia,</l>
-                                    <l>díjomelo el Rey su padre,</l>
-                                    <l>porque della lo sabia.</l>
-                                    <l>Otra cosa manda el Rey</l>
-                                    <l>que lastima el alma mia:</l>
-                                    <l>manda que muerta seais</l>
-                                    <l>por la honra de su hija,</l>
-                                    <l>que no puede tener honra</l>
-                                    <l>siendo vos, Condesa, viva.</l>
-                                    <l>cayó en tierra amortecida;</l>
-
-                                    <pb n="6" source="BCN_031_6.jpg" facs="varios/BCN_031_6.jpg"/>
-
-                                    <fw type="paginaNum">6</fw>
-
-                                    <l>mas despues en sí tornando</l>
-                                    <l>estas palabras decia:</l>
-                                    <l>Pago son de mis servicios,</l>
-                                    <l>Conde, con que os servia;</l>
-                                    <l>si no me matais, el Conde,</l>
-                                    <l>bien os aconsejaria.</l>
-                                    <l>Enviasme á las mis tierras</l>
-                                    <l>que mi padre me tenia;</l>
-                                    <l>yo criaré vuestros hijos</l>
-                                    <l>mejor que la que venia,</l>
-                                    <l>y os mantendré lealtad,</l>
-                                    <l>como siempre os mantenia.</l>
-                                    <l>De morir teneis, Condesa,</l>
-                                    <l>aun antes que venga el dia.</l>
-                                    <l>Bien parece, el conde Alarcos,</l>
-                                    <l>yo ser sola en esta vida,</l>
-                                    <l>porque tengo el padre viejo,</l>
-                                    <l>mi madre es ya fallecida,</l>
-                                    <l>y mataron á mi hermano,</l>
-                                    <l>el buen conde don García,</l>
-                                    <l>que el Rey lo mandó matar</l>
-                                    <l>por miedo que de él tenia.</l>
-                                    <l>No me pesa de mi muerte</l>
-                                    <l>porque yo morir tenia;</l>
-                                    <l>mas me pesa de mis hijos</l>
-                                    <l>que pierden mi compañía.</l>
-                                    <l>Hacédmelos venir, Conde,</l>
-                                    <l>y veréis mi despedida.</l>
-                                    <l>No los veréis mas, Condesa,</l>
-                                    <l>en dias de vuestra vida;</l>
-                                    <l>abrazad á este chiquito,</l>
-                                    <l>que aqueste es el que pedia.</l>
-                                    <l>Pésame de vos; Condesa,</l>
-                                    <l>cuanto pesar me podia;</l>
-                                    <l>no os puedo valer, señora,</l>
-                                    <l>que mas me va que la vida.</l>
-                                    <l>Encomendaos á Dios,</l>
-                                    <l>que esto de hacerse tenia.</l>
-                                    <l>Dejeisme decir, el Conde,</l>
-                                    <l>una oracion que sabía;</l>
-                                    <l>decidla presto, Condesa,</l>
-                                    <l>antes que se venga el dia.</l>
-                                    <l>Presto la habré dicho, Conde,</l>
-                                    <l>no estaré una Ave María.</l>
-                                    <l>Hincó la rodilla en tierra,</l>
-                                    <l>y aquesta oracion decia:</l>
-                                    <l>En las tus manos, Señor,</l>
-                                    <l>encomiendo el alma mia.</l>
-                                    <l>No me juzgueis mis pecados,</l>
-                                    <l>segun que yo merecia;</l>
-                                    <l>mas segun tu gran piedad</l>
-                                    <l>y la tu gracia infinita.</l>
-                                    <l>Acabada es ya, buen Conde,</l>
-                                    <l>la oracion que yo sabia:</l>
-                                    <l>abrazaros quiero, Conde,</l>
-                                    <l>por el amor que os tenia.</l>
-                                    <l>Encomiéndoos esos hijos</l>
-                                    <l>que entre vos y mí habia;</l>
-                                    <l>y rogad á Dios por mí,</l>
-                                    <l>mientras tuviérades vida,</l>
-                                    <l>que á ello sois obligado,</l>
-                                    <l>pues que sin culpa moria.</l>
-                                    <l>Deisme acá aquese hijo;</l>
-                                    <l>mamará por despedida.</l>
-                                    <l>No le desperteis, Condesa,</l>
-                                    <l>dejadle estar, que dormia,</l>
-                                    <l>sino os demando perdon</l>
-                                    <l>porque se viene ya el dia.</l>
-                                    <l>A vos yo os perdono, Conde,</l>
-                                    <l>por el amor que os tenia;</l>
-                                    <l>mas yo no perdono al Rey,</l>
-                                    <l>ni á la Infanta su hija,</l>
-                                    <l>sino que queden citados</l>
-                                    <l>delante la Alta Justicia;</l>
-                                    <l>que allá vayan á juicio</l>
-                                    <l>dentro de los treinta días.</l>
-
-                                    <pb n="7" source="BCN_031_7.jpg" facs="varios/BCN_031_7.jpg"/>
-                                    
-                                    <fw type="paginaNum">7</fw>
-
-                                    <l>Estas palabras diciendo,</l>
-                                    <l>el Conde se apercebia:</l>
-                                    <l>échale por la garganta</l>
-                                    <l>una toca que tenia;</l>
-                                    <l>apretó con las dos manos</l>
-                                    <l>con la fuerza que tenia;</l>
-                                    <l>no le aflojó la garganta</l>
-                                    <l>mientras que vida tenia.</l>
-                                    <l>Cuando ya la vido el Conde</l>
-                                    <l>traspasada y fallecida,</l>
-                                    <l>desnudóle los vestidos</l>
-                                    <l>y la ropa que tenia:</l>
-                                    <l>echóla encima la cama,</l>
-                                    <l>cubrióla como solia,</l>
-                                    <l>desnudóse á su costado</l>
-                                    <l>obra de una Ave María:</l>
-                                    <l>levantóse dando voces</l>
-                                    <l>á la gente que tenia.</l>
-                                    <l>Socorred, mis escuderos,</l>
-                                    <l>que la Condesa ya fina.</l>
-                                    <l>Hallan la Condesa muerta</l>
-                                    <l>los que á socorrer venian.</l>
-                                    <l>Así murió la Condesa</l>
-                                    <l>sin razon y sin justicia;</l>
-                                    <l>mas tambien todos murieron</l>
-                                    <l>antes de los treinta dias.</l>
-                                    <l>Los doce dias pasados</l>
-                                    <l>la Infanta ya se moria,</l>
-                                    <l>el Rey á los veinte y cinco,</l>
-                                    <l>el Conde al tercero dia.</l>
-                                    <l>Allá fueron á contar</l>
-                                    <l>con la Justicia divina:</l>
-                                    <l>acá nos dé Dios su gracia,</l>
-                                    <l>y allá la gloria cumplida.</l>
-                              </div>
-
-                              <div>
-                                    <head type="primer_titulo">
-                                          <lb/>FAMOSA JÁCARA,<hi rend="cursiva"><lb/>graciosa y
+            <fw type="paginaNum">7</fw>
+            <l>Estas palabras diciendo,</l>
+            <l>el Conde se apercebia:</l>
+            <l>échale por la garganta</l>
+            <l>una toca que tenia;</l>
+            <l>apretó con las dos manos</l>
+            <l>con la fuerza que tenia;</l>
+            <l>no le aflojó la garganta</l>
+            <l>mientras que vida tenia.</l>
+            <l>Cuando ya la vido el Conde</l>
+            <l>traspasada y fallecida,</l>
+            <l>desnudóle los vestidos</l>
+            <l>y la ropa que tenia:</l>
+            <l>echóla encima la cama,</l>
+            <l>cubrióla como solia,</l>
+            <l>desnudóse á su costado</l>
+            <l>obra de una Ave María:</l>
+            <l>levantóse dando voces</l>
+            <l>á la gente que tenia.</l>
+            <l>Socorred, mis escuderos,</l>
+            <l>que la Condesa ya fina.</l>
+            <l>Hallan la Condesa muerta</l>
+            <l>los que á socorrer venian.</l>
+            <l>Así murió la Condesa</l>
+            <l>sin razon y sin justicia;</l>
+            <l>mas tambien todos murieron</l>
+            <l>antes de los treinta dias.</l>
+            <l>Los doce dias pasados</l>
+            <l>la Infanta ya se moria,</l>
+            <l>el Rey á los veinte y cinco,</l>
+            <l>el Conde al tercero dia.</l>
+            <l>Allá fueron á contar</l>
+            <l>con la Justicia divina:</l>
+            <l>acá nos dé Dios su gracia,</l>
+            <l>y allá la gloria cumplida.</l>
+          </div>
+          <div>
+            <head type="primer_titulo">
+              <lb/>FAMOSA JÁCARA,<hi rend="cursiva">
+                <lb/>graciosa y
                                                 entretenida para reir y pasar el tiempo despues
                                                 de<lb/>la panza llena, y no de caldo de
-                                                campana.</hi></head>
+                                                campana.</hi>
+            </head>
+            <l>
+              <hi rend="negrita">P</hi>ìcaros hay con fortuna,</l>
+            <l>y pìcaros hay sin ella,</l>
+            <l>en esta pìcara vida,</l>
+            <l>que pìcaramente rueda.</l>
+            <l>Parióme pìcara madre,</l>
+            <l>crióme pìcara abuela,</l>
+            <l>pìcara leche mamé</l>
+            <l>de aquellas pìcaras tetas.</l>
+            <l>Y el pìcaro de mi padre,</l>
+            <l>que pìcara vida tenga,</l>
+            <l>pìcaramente me puso</l>
+            <l>á una picarilla escuela.</l>
+            <l>Y el pìcaro del maestro,</l>
+            <l>que pìcara vida tenga,</l>
+            <l>pìcaramente enseñóme</l>
+            <l>unas seis pícaras letras,</l>
+            <l>en un pìcaro papel</l>
+            <l>picado á la picaresca.</l>
+            <l>Ya que fuì pìcaro grande,</l>
+            <l>con pìcaras diligencias</l>
+            <l>compré un pìcaro vestido:</l>
+            <l>me vestì á la picaresca,</l>
+            <l>que como pìcaro soy,</l>
+            <l>pìcaro el vestido era.</l>
+            <l>Compré pìcaro zapato</l>
+            <l>con una pìcara media,</l>
+            <l>unos pìcaros calzones,</l>
+            <l>casaca á la picaresca;</l>
+            <l>una picarilla espada,</l>
+            <l>mi sombrero á la chamberga.</l>
 
-                                    <l><hi rend="negrita">P</hi>ìcaros hay con fortuna,</l>
-                                    <l>y pìcaros hay sin ella,</l>
-                                    <l>en esta pìcara vida,</l>
-                                    <l>que pìcaramente rueda.</l>
-                                    <l>Parióme pìcara madre,</l>
-                                    <l>crióme pìcara abuela,</l>
-                                    <l>pìcara leche mamé</l>
-                                    <l>de aquellas pìcaras tetas.</l>
-                                    <l>Y el pìcaro de mi padre,</l>
-                                    <l>que pìcara vida tenga,</l>
-                                    <l>pìcaramente me puso</l>
-                                    <l>á una picarilla escuela.</l>
-                                    <l>Y el pìcaro del maestro,</l>
-                                    <l>que pìcara vida tenga,</l>
-                                    <l>pìcaramente enseñóme</l>
-                                    <l>unas seis pícaras letras,</l>
-                                    <l>en un pìcaro papel</l>
-                                    <l>picado á la picaresca.</l>
-                                    <l>Ya que fuì pìcaro grande,</l>
-                                    <l>con pìcaras diligencias</l>
-                                    <l>compré un pìcaro vestido:</l>
-                                    <l>me vestì á la picaresca,</l>
-                                    <l>que como pìcaro soy,</l>
-                                    <l>pìcaro el vestido era.</l>
-                                    <l>Compré pìcaro zapato</l>
-                                    <l>con una pìcara media,</l>
-                                    <l>unos pìcaros calzones,</l>
-                                    <l>casaca á la picaresca;</l>
-                                    <l>una picarilla espada,</l>
-                                    <l>mi sombrero á la chamberga.</l>
+            <pb n="8" source="BCN_031_8.jpg" facs="varios/BCN_031_8.jpg"/>
 
-                                    <pb n="8" source="BCN_031_8.jpg" facs="varios/BCN_031_8.jpg"/>
-
-                                    <fw type="paginaNum">8</fw>
-
-                                    <l>Pìcaramente enamoro</l>
-                                    <l>á una pìcara mozuela,</l>
-                                    <l>y una noche picarilla</l>
-                                    <l>pìcaro hablaba cón ella.</l>
-                                    <l>Pìcara fué, porque tuve</l>
-                                    <l>una pìcara pendencia</l>
-                                    <l>con un pìcaro alguacil;</l>
-                                    <l>vienen con él mas de treinta</l>
-                                    <l>de corchetes y agarrantes</l>
-                                    <l>de pretina y faldriquera.</l>
-                                    <l>Saqué mi pìcara espada,</l>
-                                    <l>dì con un pìcaro en tierra;</l>
-                                    <l>mil pìcaros daban voces,</l>
-                                    <l>mas pìcaros acudieran.</l>
-                                    <l>Pìcaramente caì</l>
-                                    <l>en la picarilla arena;</l>
-                                    <l>pìcaramente me agarran,</l>
-                                    <l>y pìcaramente me llevan</l>
-                                    <l>á esa picarilla cárcel</l>
-                                    <l>que está de pìcaros llena.</l>
-                                    <l>Y en mis picarillos piés</l>
-                                    <l>picarillos grillos me echan;</l>
-                                    <l>y el pìcaro del escribano,</l>
-                                    <l>que pìcara vida tenga,</l>
-                                    <l>pìcaramente tomó</l>
-                                    <l>la pluma, con que sentencia</l>
-                                    <l>unos seis pìcaros años</l>
-                                    <l>á las pìcaras galeras.</l>
-                                    <l>Pìcaramente me rapan</l>
-                                    <l>mi picarilla melena,</l>
-                                    <l>con mis pìcaros bigotes,</l>
-                                    <l>tambien mis pìcaras cejas;</l>
-                                    <l>pìcaramente me echaron</l>
-                                    <l>á una pìcara galera.</l>
-                                    <l>Pìcaro andaba remando,</l>
-                                    <l>me dieron pìcaras nuevas,</l>
-                                    <l>que mi pìcara se casa,</l>
-                                    <l>que mi pìcara me deja.</l>
-                                    <l>Plegue á Dios, pìcara mia,</l>
-                                    <l>que el pìcaro no te quiera,</l>
-                                    <l>porque te he querido bien,</l>
-                                    <l>y asì, pìcara, me dejas.</l>
-                                    <l>Cumplì mis pìcaros años,</l>
-                                    <l>vine á mi pìcara tierra,</l>
-                                    <l>pìcaramente caséme</l>
-                                    <l>con otra pìcara mozuela.</l>
-                                    <l>Pìcaro fué mi padrino,</l>
-                                    <l>la madrina pìcara era;</l>
-                                    <l>pìcaro es el sacristan,</l>
-                                    <l>que enciende pìcaras velas,</l>
-                                    <l>y llamó al señor cura,</l>
-                                    <l>que la misa nos dijera:</l>
-                                    <l>en fin, me quedé casado</l>
-                                    <l>con mi pìcara mozuela.</l>
-                                    <l>Ya no quiero picar mas,</l>
-                                    <l>que dirán pìcaras lenguas:</l>
-                                    <l>¿Quien es este picaron</l>
-                                    <l>que canta la picaresca?</l>
-                                    <l>Pìcaro es el tocador,</l>
-                                    <l>y pìcara la vihuela,</l>
-                                    <l>y pìcaras las clavijas,</l>
-                                    <l>pìcaros trastes y cuerdas,</l>
-                                    <l>y pìcaros los que escuchan</l>
-                                    <l>en esta pìcara rueda.</l>
-                                    <l>Todo pìcaro escarmiente</l>
-                                    <l>desta historia picaresca,</l>
-                                    <l>que ha sucedido este año,</l>
-                                    <l>de cuando no se me acuerda.</l>
-                                    <l>No sé mas, ni digo mas,</l>
-                                    <l>porque si á decirlo fuera,</l>
-                                    <l>no hubiera cuenta, ni cabo</l>
-                                    <l>de cantar la picaresca.</l>
-                                    <l>La jácara buena ha estado;</l>
-                                    <l>cómprenla todos, que es buena</l>
-                                    <l>para reir y pasar tiempo,</l>
-                                    <l>despues de la panza llena.</l>
-                              </div>
-                        </div>
-
-                        <div type="colofon">
-                              <p>
-                                    <lb/><hi rend="cursiva">Barcelona</hi>: Imprenta de los
+            <fw type="paginaNum">8</fw>
+            <l>Pìcaramente enamoro</l>
+            <l>á una pìcara mozuela,</l>
+            <l>y una noche picarilla</l>
+            <l>pìcaro hablaba cón ella.</l>
+            <l>Pìcara fué, porque tuve</l>
+            <l>una pìcara pendencia</l>
+            <l>con un pìcaro alguacil;</l>
+            <l>vienen con él mas de treinta</l>
+            <l>de corchetes y agarrantes</l>
+            <l>de pretina y faldriquera.</l>
+            <l>Saqué mi pìcara espada,</l>
+            <l>dì con un pìcaro en tierra;</l>
+            <l>mil pìcaros daban voces,</l>
+            <l>mas pìcaros acudieran.</l>
+            <l>Pìcaramente caì</l>
+            <l>en la picarilla arena;</l>
+            <l>pìcaramente me agarran,</l>
+            <l>y pìcaramente me llevan</l>
+            <l>á esa picarilla cárcel</l>
+            <l>que está de pìcaros llena.</l>
+            <l>Y en mis picarillos piés</l>
+            <l>picarillos grillos me echan;</l>
+            <l>y el pìcaro del escribano,</l>
+            <l>que pìcara vida tenga,</l>
+            <l>pìcaramente tomó</l>
+            <l>la pluma, con que sentencia</l>
+            <l>unos seis pìcaros años</l>
+            <l>á las pìcaras galeras.</l>
+            <l>Pìcaramente me rapan</l>
+            <l>mi picarilla melena,</l>
+            <l>con mis pìcaros bigotes,</l>
+            <l>tambien mis pìcaras cejas;</l>
+            <l>pìcaramente me echaron</l>
+            <l>á una pìcara galera.</l>
+            <l>Pìcaro andaba remando,</l>
+            <l>me dieron pìcaras nuevas,</l>
+            <l>que mi pìcara se casa,</l>
+            <l>que mi pìcara me deja.</l>
+            <l>Plegue á Dios, pìcara mia,</l>
+            <l>que el pìcaro no te quiera,</l>
+            <l>porque te he querido bien,</l>
+            <l>y asì, pìcara, me dejas.</l>
+            <l>Cumplì mis pìcaros años,</l>
+            <l>vine á mi pìcara tierra,</l>
+            <l>pìcaramente caséme</l>
+            <l>con otra pìcara mozuela.</l>
+            <l>Pìcaro fué mi padrino,</l>
+            <l>la madrina pìcara era;</l>
+            <l>pìcaro es el sacristan,</l>
+            <l>que enciende pìcaras velas,</l>
+            <l>y llamó al señor cura,</l>
+            <l>que la misa nos dijera:</l>
+            <l>en fin, me quedé casado</l>
+            <l>con mi pìcara mozuela.</l>
+            <l>Ya no quiero picar mas,</l>
+            <l>que dirán pìcaras lenguas:</l>
+            <l>¿Quien es este picaron</l>
+            <l>que canta la picaresca?</l>
+            <l>Pìcaro es el tocador,</l>
+            <l>y pìcara la vihuela,</l>
+            <l>y pìcaras las clavijas,</l>
+            <l>pìcaros trastes y cuerdas,</l>
+            <l>y pìcaros los que escuchan</l>
+            <l>en esta pìcara rueda.</l>
+            <l>Todo pìcaro escarmiente</l>
+            <l>desta historia picaresca,</l>
+            <l>que ha sucedido este año,</l>
+            <l>de cuando no se me acuerda.</l>
+            <l>No sé mas, ni digo mas,</l>
+            <l>porque si á decirlo fuera,</l>
+            <l>no hubiera cuenta, ni cabo</l>
+            <l>de cantar la picaresca.</l>
+            <l>La jácara buena ha estado;</l>
+            <l>cómprenla todos, que es buena</l>
+            <l>para reir y pasar tiempo,</l>
+            <l>despues de la panza llena.</l>
+          </div>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona</hi>: Imprenta de los
                                     Herederos de la V. Pla, calle Cotoners</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

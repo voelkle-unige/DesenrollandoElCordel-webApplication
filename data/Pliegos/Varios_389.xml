@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +111,42 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q8356">
+            <placeName key="Valladolid">Valladolid</placeName>
+            <location>
+              <geo>41.651980555556 -4.7285611111111</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q43">
+            <placeName key="Turquía">Turquía</placeName>
+            <location>
+              <geo>39 36</geo>
+            </location>
+          </place>
+          <place n="8" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q55006">
+            <placeName key="Baiano">Baiano</placeName>
+            <location>
+              <geo>40.953611111111 14.6175</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q59975">
+            <placeName key="Bugía">Bugía</placeName>
+            <location>
+              <geo>36.7511111111111 5.06416666666667</geo>
+            </location>
+          </place>
+          <place n="1">
+            <placeName key="Santa_Clara">Santa Clara</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +182,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1703,15 +1753,18 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_389_1.jpg" facs="varios/Varios_389_1.jpg"/>
 
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>La Renegada de Valladolid</head>
-          <head type="subtitulo"><lb/>Dáse cuenta de la santa penitencia que hizo en
+          <head type="primer_titulo" rend="negrita">
+            <lb/>La Renegada de Valladolid</head>
+          <head type="subtitulo">
+            <lb/>Dáse cuenta de la santa penitencia que hizo en
             la<lb/>montaña, y como convirtió á dos hijos que tenia<lb/>en Turquía sin conocer
             estos á su madre, hasta<lb/>que se hallaron en Roma.</head>
-          <head type="titulo_parte"><lb/>SEGUNDA PARTE</head>
-
+          <head type="titulo_parte">
+            <lb/>SEGUNDA PARTE</head>
           <l rend="indent">Dios, Padre, Rey sempiterno,</l>
           <l>sea quien siempre me ampare.</l>
           <l>Dios hijo me dé gobierno,</l>
@@ -1722,7 +1775,7 @@
           <l>pues con vicios nos perdemos</l>
           <l>y nuevo ejemplo tenemos,</l>
           <l>de una mujer penitente.</l>
-          <l>En Valladolid nacida</l>
+          <l>En <name>Valladolid</name> nacida</l>
           <l>fué esta bienaventurada</l>
           <l>y por enmendar su vida</l>
           <l>es de Jesucristo amada.</l>
@@ -1744,19 +1797,18 @@
           <pb n="2" source="Varios_389_2.jpg" facs="varios/Varios_389_2.jpg"/>
 
           <fw type="paginaNum">— 2 —</fw>
-
           <l>y buscando el pan de vida</l>
           <l>con propósito de enmienda.</l>
           <l>Vereis quien sirvió á Mahoma</l>
           <l>veinte y seis años cabales,</l>
-          <l>que se viene para Roma</l>
+          <l>que se viene para <name>Roma</name></l>
           <l>por penitenciar sus males.</l>
           <l>Vereis quien vivido habia</l>
           <l>tantos años al revés,</l>
           <l>como descalza venía</l>
           <l>corriendo sangre los piés.</l>
           <l>Vereis que como se vió</l>
-          <l>en Roma puerto seguro,</l>
+          <l>en <name>Roma</name> puerto seguro,</l>
           <l>la tierra santa besó</l>
           <l>con entrañable amor puro.</l>
           <l>Y como en San Pedro entrara</l>
@@ -1788,7 +1840,7 @@
           <l>que su hermana no queria</l>
           <l>volver al pais natal.</l>
           <l>—Pues sabes tú que es famosa</l>
-          <l>Valladolid y cumplida,</l>
+          <l><name>Valladolid</name> y cumplida,</l>
           <l>de todo bien abundosa.</l>
           <l>sobre todas escogida.</l>
           <l>Ella dijo: no se aplaca</l>
@@ -1808,7 +1860,7 @@
           <l>y su hermana se partió</l>
           <l>para el árido desierto.</l>
           <l>Veinte y una leguas fué</l>
-          <l>de Roma al monte Arsíano,</l>
+          <l>de <name>Roma</name> al <name>monte Arsíano</name>,</l>
           <l>no padeció hambre y sed</l>
           <l>por Jesus, Rey soberano.</l>
           <l>Jesus, Rey soberano.</l>
@@ -1837,7 +1889,7 @@
           <l>y los piés antes pulidos,</l>
           <l>abiertos y ensangrentados.</l>
           <l>La Semana Santa entraba</l>
-          <l>en Roma con humildad,</l>
+          <l>en <name>Roma</name> con humildad,</l>
           <l>y sus vestidos llevaba</l>
           <l>solo por la honestidad.</l>
           <l>Luego al desierto tornaba</l>
@@ -1872,7 +1924,6 @@
           <pb n="3" source="Varios_389_3.jpg" facs="varios/Varios_389_3.jpg"/>
 
           <fw type="paginaNum">— 3 —</fw>
-
           <l>Seiscientas leguas anduvo</l>
           <l>padeciendo hambre y sed,</l>
           <l>para que sus hijos turcos</l>
@@ -1911,7 +1962,7 @@
           <l>después que de aquí partió?</l>
           <l>Dijo: yo la conocí,</l>
           <l>desde que era aún muy niña,</l>
-          <l>y juntas de Valladolid</l>
+          <l>y juntas de <name>Valladolid</name></l>
           <l>salimos en igual día.</l>
           <l>Cuando vino á Bujía,</l>
           <l>la servi y la acompañé,</l>
@@ -1982,7 +2033,7 @@
           <l>que vuestra madre está buena,</l>
           <l>de tanta riqueza llena</l>
           <l>que no hay número ni cuento.</l>
-          <l>En Roma la ví muy buena;</l>
+          <l>En <name>Roma</name> la ví muy buena;</l>
           <l>firme en la divina fé,</l>
           <l>que en esta santa cuaresma</l>
           <l>con ella estuve y hablé;</l>
@@ -1999,7 +2050,6 @@
           <pb n="4" source="Varios_389_4.jpg" facs="varios/Varios_389_4.jpg"/>
 
           <fw type="paginaNum">— 4 —</fw>
-
           <l>una carta traigo aquí,</l>
           <l>ved si conoceis así</l>
           <l>la firma de vuestra madre.</l>
@@ -2010,7 +2060,7 @@
           <l>la leian sin cesar,</l>
           <l>y á la mujer la decian</l>
           <l>de que manera podrian</l>
-          <l>seguros en Roma entrar.</l>
+          <l>seguros en <name>Roma</name> entrar.</l>
           <l>Dijo la madre: tomad</l>
           <l>los esclavos que teneis</l>
           <l>y á otros cuatro comprad,</l>
@@ -2034,7 +2084,7 @@
           <l>Tanta fortuna tuvieron,</l>
           <l>que por su buen navegar</l>
           <l>en treinta y seis dias fueron</l>
-          <l>á Roma á desembarcar,</l>
+          <l>á <name>Roma</name> á desembarcar,</l>
           <l>y siendo desembarcados</l>
           <l>la buena mujer habló</l>
           <l>diciendo: hijos amados.</l>
@@ -2071,7 +2121,7 @@
           <l>y entre él y los prelados</l>
           <l>de limosnas les juntaron</l>
           <l>mas de veinte mil ducados.</l>
-          <l>En Santa Clara se entró</l>
+          <l>En <name>Santa Clara</name> se entró</l>
           <l>la madre segun es cierto,</l>
           <l>que de cansada enfermó</l>
           <l>con lo que pasó al desierto.</l>
@@ -2096,12 +2146,11 @@
           <l>en que ejemplo hemos tomado:</l>
           <l>y por ella caminemos</l>
           <l>á la perdurable gloria.</l>
-
           <trailer>FIN</trailer>
         </div>
-
         <div type="colofon">
-          <p><lb/>Barcelona: Impresos de la Vda. de A. Llorens, Palma de Sta. Catalina, 6.</p>
+          <p>
+            <lb/>Barcelona: Impresos de la Vda. de A. Llorens, Palma de Sta. Catalina, 6.</p>
         </div>
       </div>
     </body>

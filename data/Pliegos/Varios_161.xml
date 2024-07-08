@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -32,7 +46,8 @@
             <title type="titulo_breve">Nuevo y curioso papel</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_046.xml">Varios_046</ref></p>
+            <p>Otra impresión: <ref target="Varios_046.xml">Varios_046</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>García</publisher>
@@ -71,7 +86,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +115,44 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q1645666">
+            <placeName key="Berzocana">Berzocana</placeName>
+            <location>
+              <geo>39.437777777778 -5.4619444444444</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q15678">
+            <placeName key="Cáceres">Cáceres</placeName>
+            <location>
+              <geo>39.473055555556 -6.3711111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q17012">
+            <placeName key="Guadalupe">Guadalupe</placeName>
+            <location>
+              <geo>16.2595 -61.5605</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1632442">
+            <placeName key="Logrosán">Logrosán</placeName>
+            <location>
+              <geo>39.337222222222 -5.4922222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q81977">
+            <placeName key="provincia_de_Cáceres">Provincia De Cáceres</placeName>
+            <location>
+              <geo>39.667 -6</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -134,8 +188,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-03-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-03-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1116,15 +1169,19 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_161_1.jpg" facs="varios/Varios_161_1.jpg"/>
-          <head type="primer_titulo"><lb/><hi rend="negrita">Nuevo y curioso papel</hi><lb/>en el
+
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">Nuevo y curioso papel</hi>
+            <lb/>en el
             que se da cuenta y declara el horrible asesinato que<lb/>han ejecutado en el pueblo de
             Berzocana,<lb/>provincia de Cáceres<lb/>en la madrugada del 26 de octubre del presento
             año</head>
-
           <div n="1" type="parte">
-            <head type="titulo_parte"><lb/>PRIMERA PARTE</head>
-
+            <head type="titulo_parte">
+              <lb/>PRIMERA PARTE</head>
             <l rend="indent">A la bellísíma aurora,</l>
             <l>Madre del divino Verbo,</l>
             <l>le pido me dé su gracia</l>
@@ -1134,10 +1191,10 @@
             <l>para poder explicar</l>
             <l>el caso más estupendo.</l>
             <l rend="indent">En la provincia de Cáceres</l>
-            <l>en la sierra de Guadalupe,</l>
+            <l>en la sierra de <name>Guadalupe</name>,</l>
             <l>que por españa es nombrada,</l>
             <l>se encuentra nn famoso pueblo</l>
-            <l>que se llama Berzocana;</l>
+            <l>que se llama <name>Berzocana</name>;</l>
             <l>habitaba un caballero</l>
             <l>que don Fulgencio se llama,</l>
             <l>casado con doña Dolores</l>
@@ -1242,16 +1299,16 @@
             <l>abandonon la matanza</l>
             <l>y se dedican al robo</l>
             <l>de cuanto había en la casa.</l>
-
             <div type="colofon">
               <p>Tip. M. Garcia; Miláns, 4.=Barcelona</p>
             </div>
           </div>
-
           <div n="2" type="parte">
-            <pb n="3" source="Varios_161_3.jpg" facs="varios/Varios_161_3.jpg"/>
-            <head type="titulo_parte"><lb/>SEGUNDA PARTE</head>
 
+            <pb n="3" source="Varios_161_3.jpg" facs="varios/Varios_161_3.jpg"/>
+
+            <head type="titulo_parte">
+              <lb/>SEGUNDA PARTE</head>
             <l rend="indent">Abren cómodas y cofres</l>
             <l>y las aroas que encontraban</l>
             <l>buscando todo el dinero,</l>
@@ -1360,13 +1417,16 @@
             <l>de pensar acciones malas,</l>
             <l>y dospués de buena muerte</l>
             <l>nos premie en la gloria santa.</l>
-
             <trailer>FIN</trailer>
           </div>
         </div>
-
         <div type="colofon">
-          <p><lb/>IMPRENTA GARCÍA <lb/>LA MÁS ECONÓMICA <lb/><choice><sic>ILANS</sic><corr>MILANS</corr></choice>, 4, (<hi rend="cursiva">ezquina Gignáts</hi>)
+          <p>
+            <lb/>IMPRENTA GARCÍA <lb/>LA MÁS ECONÓMICA <lb/>
+            <choice>
+              <sic>ILANS</sic>
+              <corr>MILANS</corr>
+            </choice>, 4, (<hi rend="cursiva">ezquina Gignáts</hi>)
             BARCELONA</p>
         </div>
       </div>

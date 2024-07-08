@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +113,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q10400">
+            <placeName key="Almería">Almería</placeName>
+            <location>
+              <geo>36.84 -2.4675</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,8 +156,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1016,17 +1038,21 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_414_1.jpg" facs="varios/Varios_414_1.jpg"/>
-        
-        <head type="primer_titulo"><lb/>COPLAS NUEVAS Y DIVERTIDAS</head>
-        
+
+        <head type="primer_titulo">
+          <lb/>COPLAS NUEVAS Y DIVERTIDAS</head>
         <div>
-          <head type="subtitulo_parte"><lb/>para cantar los amantes á sus damas y ellas
+          <head type="subtitulo_parte">
+            <lb/>para cantar los amantes á sus damas y ellas
             sepan<lb/>corresponder á sus amantes.</head>
-          
           <div n="1">
-            <head type="titulo_trovo"><lb/>TROVO PRIMERO <lb/><hi rend="cursiva">El
-              amante.</hi></head>
+            <head type="titulo_trovo">
+              <lb/>TROVO PRIMERO <lb/>
+              <hi rend="cursiva">El
+              amante.</hi>
+            </head>
             <lg>
               <l rend="indent">Desde que te conocí</l>
               <l>en tí puse mi aficion,</l>
@@ -1043,9 +1069,9 @@
             <lg>
               <l rend="indent">Me sale del corazon</l>
               <l>el quererte prenda mía,</l>
-              
+
               <pb n="2" source="Varios_414_2.jpg" facs="varios/Varios_414_2.jpg"/>
-              
+
               <l>y al ver tu hermoso color</l>
               <l>tu tipo y tu gallardía,</l>
               <l>en tí puse mi afición.</l>
@@ -1066,7 +1092,10 @@
             </lg>
           </div>
           <div n="2">
-            <head type="titulo_trovo"><lb/>TROVO SEGUNDO <lb/><hi rend="cursiva">La dama</hi></head>
+            <head type="titulo_trovo">
+              <lb/>TROVO SEGUNDO <lb/>
+              <hi rend="cursiva">La dama</hi>
+            </head>
             <lg>
               <l rend="indent">A mí no me hace cuenta</l>
               <l>el darme el sí tan ligero,</l>
@@ -1103,8 +1132,11 @@
             </lg>
           </div>
           <div n="3">
-            <head type="titulo_trovo"><lb/>TROVO TERCERO<lb/><hi rend="cursiva">El
-              amante</hi></head>
+            <head type="titulo_trovo">
+              <lb/>TROVO TERCERO<lb/>
+              <hi rend="cursiva">El
+              amante</hi>
+            </head>
             <lg>
               <l rend="indent">Cada día que se pasa</l>
               <l>pienso más en tu querer,</l>
@@ -1140,11 +1172,14 @@
               <l>por querer á otra mujer.</l>
             </lg>
           </div>
-          
+
           <pb n="3" source="Varios_414_3.jpg" facs="varios/Varios_414_3.jpg"/>
-          
+
           <div n="4">
-            <head type="titulo_trovo"><lb/>TROVO CUARTO<lb/><hi rend="cursiva">La dama</hi></head>
+            <head type="titulo_trovo">
+              <lb/>TROVO CUARTO<lb/>
+              <hi rend="cursiva">La dama</hi>
+            </head>
             <lg>
               <l rend="indent">Como sigas así siempre</l>
               <l>yo nunca te olvidaré,</l>
@@ -1181,7 +1216,10 @@
             </lg>
           </div>
           <div n="5">
-            <head type="titulo_trovo"><lb/>TROVO QUINTO<lb/><hi rend="cursiva">El amante</hi></head>
+            <head type="titulo_trovo">
+              <lb/>TROVO QUINTO<lb/>
+              <hi rend="cursiva">El amante</hi>
+            </head>
             <lg>
               <l rend="indent">Es para mí una ventaja</l>
               <l>el quererte con buen fin;</l>
@@ -1218,7 +1256,10 @@
             </lg>
           </div>
           <div n="6">
-            <head type="titulo_trovo"><lb/>TROVO SEXTO<lb/><hi rend="cursiva">La dama</hi></head>
+            <head type="titulo_trovo">
+              <lb/>TROVO SEXTO<lb/>
+              <hi rend="cursiva">La dama</hi>
+            </head>
             <lg>
               <l rend="indent">Ya se me quitó la duda</l>
               <l>que yo tenía de tí;</l>
@@ -1236,9 +1277,9 @@
               <l rend="indent">No quería darte el sí</l>
               <l>cuando entrastes en mi casa,</l>
               <l>y al comprender tu buen fin</l>
-              
+
               <pb n="4" source="Varios_414_4.jpg" facs="varios/Varios_414_4.jpg"/>
-              
+
               <l>perdí la descofianza</l>
               <l>que yo tenía de tí.</l>
             </lg>
@@ -1258,7 +1299,10 @@
             </lg>
           </div>
           <div n="7">
-            <head type="titulo_trovo"><lb/>TROVO ULTIMO<lb/><hi rend="cursiva">El amante</hi></head>
+            <head type="titulo_trovo">
+              <lb/>TROVO ULTIMO<lb/>
+              <hi rend="cursiva">El amante</hi>
+            </head>
             <lg>
               <l rend="indent">Tengo dentro de mi pecho</l>
               <l>un gran placer y alegría</l>
@@ -1293,14 +1337,13 @@
               <l>nos eche la bendición</l>
               <l>porque de fijo seas mía.</l>
             </lg>
-            
-            <p><lb/>Compuesto por Francisco Jimenez, natural de Almería.</p>
-            
+            <p>
+              <lb/>Compuesto por Francisco Jimenez, natural de Almería.</p>
             <trailer rend="negrita">FIN</trailer>
           </div>
-          
           <div type="colofon">
-            <p><lb/>PALMA. Tienda de M. Borrás. Cuesta del Teatro. <lb/>Imp. de J. Colomar—Palma.</p>
+            <p>
+              <lb/>PALMA. Tienda de M. Borrás. Cuesta del Teatro. <lb/>Imp. de J. Colomar—Palma.</p>
           </div>
         </div>
       </div>

@@ -8,6 +8,20 @@
           <resp>Codificación TEI</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -59,7 +73,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -84,6 +99,26 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q615722">
+            <placeName key="Santa_Fe">Santa Fe</placeName>
+            <location>
+              <geo>37.189444444444 -3.7180555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -124,7 +159,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_022_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_022_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_022_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_022_1/full/full/0/default.jpg"/>
@@ -1296,13 +1333,16 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_022_1.jpg" facs="varios/Varios_022_1.jpg"/>
 
-          <head type="primer_titulo"><lb/><hi rend="negrita">VERDADERO Y NUEVO EJEMPLAR</hi><lb/>en
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">VERDADERO Y NUEVO EJEMPLAR</hi>
+            <lb/>en
             el que se dá cuenta y declara la cruel<lb/>muerte que le han dado á un tal Joaquin
             de<lb/>Mata y á su hijo, entre su esposa y un<lb/>querido en el pueblo de Santa Fé,
             provincia<lb/>de Granada, en este presente año.</head>
-
           <l rend="indent">Que ponga todo cristiauo</l>
           <l>atencion á estas palabras,</l>
           <l>las que esplica este papel,</l>
@@ -1589,9 +1629,9 @@
           <l>levemos con devocion</l>
           <l>á esta Vírgen Soberana.</l>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imprenta del Diario.</p>
+          <p>
+            <lb/>Imprenta del Diario.</p>
         </div>
       </div>
     </body>

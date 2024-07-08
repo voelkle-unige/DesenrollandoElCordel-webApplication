@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -97,6 +112,32 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q15">
+            <placeName key="África">África</placeName>
+            <location>
+              <geo>21.09375 7.1881</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q584">
+            <placeName key="Rin">Rin</placeName>
+            <location>
+              <geo>51.980833333333 4.0930555555556</geo>
+            </location>
+          </place>
+          <place n="6" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -132,8 +173,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-18" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-18" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1601,12 +1641,13 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_329_1.jpg" facs="varios/Varios_329_1.jpg"/>
 
         <div>
-          <head type="primer_titulo"><lb/>HECHOS GLORIOSOS<lb/>DE NUESTRO EJÉRCITO
+          <head type="primer_titulo">
+            <lb/>HECHOS GLORIOSOS<lb/>DE NUESTRO EJÉRCITO
           <lb/>EN LOS CAMPOS DE AFRICA,<lb/>EL DIA 25 DE NOVIEMBRE DE ESTE AÑO.</head>
-
           <l rend="indent">Opaco el cielo y nublado</l>
           <l>apareció en este dia,</l>
           <l>y el oficial y el soldado</l>
@@ -1619,7 +1660,7 @@
           <l>con un denso y negro velo;</l>
           <l>rotas las nubes, al fin,</l>
           <l>en copiosos aguaceros</l>
-          <l>cual acontece en el Rin,</l>
+          <l>cual acontece en el <name>Rin</name>,</l>
           <l>privan á nuestros guerreros,</l>
           <l>del moro observar el fin:</l>
           <l>este, astuto y cauteloso,</l>
@@ -1700,7 +1741,7 @@
           <l>el árabe aventurero;</l>
           <l>¿pero ignora que en España</l>
           <l>murió su nombre guerrero?</l>
-          <l>¿ignora que de Granada</l>
+          <l>¿ignora que de <name>Granada</name></l>
           <l>fué con ignominia echado</l>
           <l>y su hueste destrozada?</l>
           <l>¿qué pretende hoy el cuitado</l>
@@ -1966,9 +2007,9 @@
           <l>de hundir su imperio es capaz</l>
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.—1859. <lb/>Imprenta de José M. Marés, plazuela de la Cebada, núm. 96.</p>
+          <p>
+            <lb/>MADRID.—1859. <lb/>Imprenta de José M. Marés, plazuela de la Cebada, núm. 96.</p>
         </div>
       </div>
     </body>

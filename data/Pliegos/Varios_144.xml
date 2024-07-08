@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve">La confesion de una niña</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Carmona_005.xml">Carmona_005</ref></p>
+            <p>Otra impresión: <ref target="Carmona_005.xml">Carmona_005</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>José María Marés</publisher>
@@ -69,7 +84,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +112,7 @@
             <acquisition/>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -132,8 +149,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-03-08" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-03-08" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1436,12 +1452,12 @@
       <div>
         <div>
           <div n="1">
+
             <pb n="1" source="Varios_144_1.jpg" facs="varios/Varios_144_1.jpg"/>
 
             <fw type="impresorNum">(Núm. 195.)</fw>
-
-            <head type="primer_titulo"><lb/>LA CONFESION DE UNA NIÑA.</head>
-
+            <head type="primer_titulo">
+              <lb/>LA CONFESION DE UNA NIÑA.</head>
             <l rend="indent">Vivia una cierta niña</l>
             <l>en perpétua reclusion,</l>
             <l>sufriendo el genio intratable</l>
@@ -1499,7 +1515,6 @@
             <l>ó finjida compuncion,</l>
             <l>tras un momento de pausa,</l>
             <l>su culpa asi confesó :</l>
-
             <sp>
               <speaker rend="cursiva">Niña.</speaker>
               <l rend="indent">Es inutil ocultaros</l>
@@ -1737,12 +1752,14 @@
             </sp>
             <trailer>FIN.</trailer>
           </div>
-
           <div n="2">
+
             <pb n="4" source="Varios_144_4.jpg" facs="varios/Varios_144_4.jpg"/>
 
-            <head type="primer_titulo"><lb/>CANCION QUE SE CANTA EN EL DRAMA TITULADO<lb/><hi rend="negrita">LA SEGUNDA DAMA DUENDE.</hi></head>
-
+            <head type="primer_titulo">
+              <lb/>CANCION QUE SE CANTA EN EL DRAMA TITULADO<lb/>
+              <hi rend="negrita">LA SEGUNDA DAMA DUENDE.</hi>
+            </head>
             <lg>
               <l rend="indent">Han sonado tres palmadas</l>
               <l>y es cerca de anochecer,</l>
@@ -1825,9 +1842,9 @@
             </lg>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Madrid: 1854. Imprenta de D. José Marés, calle de Relatores, núm. 17.</p>
+          <p>
+            <lb/>Madrid: 1854. Imprenta de D. José Marés, calle de Relatores, núm. 17.</p>
         </div>
       </div>
     </body>

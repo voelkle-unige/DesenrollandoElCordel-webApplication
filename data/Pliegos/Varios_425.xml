@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="3"/>32 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="3"/>32 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,106 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="3" corresp="Q16869">
+            <placeName key="Constantinopla">Constantinopla</placeName>
+            <location>
+              <geo>41.0125 28.98</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q3766">
+            <placeName key="Damasco">Damasco</placeName>
+            <location>
+              <geo>33.513055555556 36.291944444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q183">
+            <placeName key="Alemania">Alemania</placeName>
+            <location>
+              <geo>51 10</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2634">
+            <placeName key="Nápoles">Nápoles</placeName>
+            <location>
+              <geo>40.8358333333333 14.2486111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q159">
+            <placeName key="Rusia">Rusia</placeName>
+            <location>
+              <geo>66.4166666666667 94.25</geo>
+            </location>
+          </place>
+          <place n="20" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="6" corresp="Q151985">
+            <placeName key="Ardenas">Ardenas</placeName>
+            <location>
+              <geo>50.25 5.6666666666667</geo>
+            </location>
+          </place>
+          <place n="14" corresp="Q90">
+            <placeName key="París">París</placeName>
+            <location>
+              <geo>48.8566666666667 2.35222222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1020526">
+            <placeName key="Sena">Sena</placeName>
+            <location>
+              <geo>41.715555555556 -0.043611111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q794">
+            <placeName key="Irán">Irán</placeName>
+            <location>
+              <geo>32 53</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q25263">
+            <placeName key="Azores">Azores</placeName>
+            <location>
+              <geo>38.66 -28.07</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q4055">
+            <placeName key="Castillo_de_Blois">Castillo De Blois</placeName>
+            <location>
+              <geo>47.585501 1.33095</geo>
+            </location>
+          </place>
+          <place n="7" corresp="Q160927">
+            <placeName key="Blois">Blois</placeName>
+            <location>
+              <geo>47.593055555556 1.3272222222222</geo>
+            </location>
+          </place>
+          <place n="4">
+            <placeName key="Cabezadoire">Cabezadoire</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+          <place n="1">
+            <placeName key="Bles">Bles</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +244,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -5195,62 +5309,68 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_425_1.jpg" facs="varios/Varios_425_1.jpg"/>
-        
+
         <fw type="numeroPliego">(CUATRO PLIEGOS)</fw>
-        
-        <head type="primer_titulo"><lb/>HISTORIA DEL MUY NOBLE<lb/>Y ESFORZADO CABALLERO<lb/>CONDE
+        <head type="primer_titulo">
+          <lb/>HISTORIA DEL MUY NOBLE<lb/>Y ESFORZADO CABALLERO<lb/>CONDE
           PARTINOPLES</head>
-        <head type="subtitulo_parte" rend="negrita"><lb/>el cual de un modo raro llegó á ser
+        <head type="subtitulo_parte" rend="negrita">
+          <lb/>el cual de un modo raro llegó á ser
           emperador de Conntantisopla. <lb/>Reformada y compendiada de la que compuso Gaspar
           Aldana.</head>
-        
         <div type="colofon">
-          <p><lb/>MADRID Despacho: Sucesores de Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID Despacho: Sucesores de Hernando, Arenal, 11.</p>
         </div>
-        
+
         <pb n="2" source="Varios_425_2.jpg" facs="varios/Varios_425_2.jpg"/>
-        
+
         <div type="propiedad">
-          <p><lb/>ES PROPIEDAD</p>
+          <p>
+            <lb/>ES PROPIEDAD</p>
         </div>
-        
+
         <pb n="3" source="Varios_425_3.jpg" facs="varios/Varios_425_3.jpg"/>
-        
+
         <div>
-          <head type="primer_titulo"><lb/>HISTORIA<lb/>DEL CONDE PARTINOPLES.</head>
-          
+          <head type="primer_titulo">
+            <lb/>HISTORIA<lb/>DEL CONDE PARTINOPLES.</head>
           <div type="parte" n="1">
-            <head type="titulo_parte"><lb/>CAPITULO PRIMERO</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>De la infidelidad del primer esposo de
+            <head type="titulo_parte">
+              <lb/>CAPITULO PRIMERO</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>De la infidelidad del primer esposo de
               la emperatriz de Cons-<lb/>tantinopla, y determinacion que esta tomó con su
               marido.</head>
-            
-              <p rend="indent"><lb/>Habia en Constantinopla antes de ser conquistada por los tur-<lb/>cos, un
+            <p rend="indent">
+              <lb/>Habia en <name>Constantinopla</name> antes de ser conquistada por los tur-<lb/>cos, un
               emperador llamado Juan, casado con una notabilísima y<lb/>hermosa dama de aquel
               país, de la que no tenia sucesion; y para<lb/>conseguir sus deseos apeló á la
               credulidad de los encantamientos,<lb/>presentándosele á la sazon una mora que poseia
               este arte, la cual<lb/>le ofreció tendria hijos de la emperatriz tan luego como él
               pasara<lb/>á la tierra del rey Hernan y viese en su palacio una jóven
               damas-<lb/>quina. Complacido el emperador de tan halagüeña noticia, se
-              de-<lb/>cidió á partir á la ciudad de Damasco, á pesar de la enemistad
+              de-<lb/>cidió á partir á la ciudad de <name>Damasco</name>, á pesar de la enemistad
               que<lb/>entre él y el rey existia entonces, á quien invitó con este motivo<lb/>por
               medio de sus mensajeros á una cacería, que aquel aceptó con<lb/>suma
               satisfaccion.</p>
-              <p rend="indent"><lb/>El emperador vió y se enamoró de la jóven damasquina así
+            <p rend="indent">
+              <lb/>El emperador vió y se enamoró de la jóven damasquina así
               que<lb/>la habló; y ésta, tan hermosa como complaciente, correspondió á<lb/>su
               amor, de cuyas resultas tuvo una niña, que el emperador adoptó<lb/>por hija suya,
               con el nombre de Leonisa, mandando á todos los
-            
+
             <pb n="4" source="Varios_425_4.jpg" facs="varios/Varios_425_4.jpg"/>
-            
-            <fw type="paginaNum">— 4 —</fw>
-            
+
+              <fw type="paginaNum">— 4 —</fw>
               <lb/>reyes y grandes del imperio la reconociesen por su legítima su-<lb/>cesora y
               heredera del imperio.</p>
-              <p><lb/>La infidelidad del emperador dió márgen á que su esposa
+            <p>
+              <lb/>La infidelidad del emperador dió márgen á que su esposa
               le<lb/>abandonase, trasladándose del palacio imperial al castillo titula-<lb/>do de
-              Cabezadoire, donde se estableció; pero no contenta con esta<lb/>determinacion,
+              <name>Cabezadoire</name>, donde se estableció; pero no contenta con esta<lb/>determinacion,
               convocó en él á todos sus parciales, entre ellos al-<lb/>gunos reyes y varios
               caballeros del imperio que la fueron fieles,<lb/>quienes negaron la obediencia al
               emperador, aconsejando á su es-<lb/>posa su casamiento con un príncipe extranjero. En
@@ -5261,9 +5381,9 @@
               cometido, y á su regreso dieron cono-<lb/>cimiento á la emperatriz los emisarios de
               Alemanía, Nápoles y Ru-<lb/>sia de las muchas noblezas de príncipes, duques, condes
               y otros<lb/>grandes señores que por aquellas tierras habia; mas los mensaje-<lb/>ros
-              de Francia no quisieron hablar hasta que los demas concluye-<lb/>ran, los cuales
+              de <name>Francia</name> no quisieron hablar hasta que los demas concluye-<lb/>ran, los cuales
               dijeron: señora, cuanto estos señores han dicho, es<lb/>nada en comparacion de lo
-              que nosotros con esquisitas diligencias<lb/>que practicamos hemos hallado en Francia,
+              que nosotros con esquisitas diligencias<lb/>que practicamos hemos hallado en <name>Francia</name>,
               que es un doncel so-<lb/>brino del rey, sin poder enumerar tanta nobleza é hidalguía
               como<lb/>le adornan, por ser descendiente de los godos; es varon de veinte<lb/>años,
               y su cuerpo manifiesta más edad; su presencia es muy ga-<lb/>llarda, hermoso de
@@ -5275,25 +5395,26 @@
               llevando consigo la nave por encantamiento, cuyo<lb/>estudio y enseñanza habia
               adquirido con otras muchas cosas se-<lb/>cretas de una aya que tuvo despues de la
               infidencia de su esposo.<lb/>Llegó frente de la sierra de Ardeña, dejando la nave
-              fondeada en<lb/>una ensenada, y partió para el castillo de Bles, donde el
-              conde<lb/>Partinoples habitaba; á su llegada encontró al rey de Francia y
+              fondeada en<lb/>una ensenada, y partió para el castillo de <name>Bles</name>, donde el
+              conde<lb/>Partinoples habitaba; á su llegada encontró al rey de <name>Francia</name> y
               al<lb/>conde, jugando al ajedrez. Púsose á mirar al conde muy á su
               sa-<lb/>tisfaccion, sin que nadie pudiese notarla, y le pareció tan bien,<lb/>que
               desde luego se propuso ganar su corazon por voluntad, ó<lb/>bien por la habilidad de
               su arte de encantamiento.</p>
           </div>
-          
+
           <pb n="5" source="Varios_425_5.jpg" facs="varios/Varios_425_5.jpg"/>
-          
+
           <fw type="paginaNum">— 5—</fw>
-          
           <div type="parte" n="2">
-            <head type="titulo_parte"><lb/>CAPITULO II.</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>El conde Partinoples se pierde en el
+            <head type="titulo_parte">
+              <lb/>CAPITULO II.</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>El conde Partinoples se pierde en el
               monte yendo de caza<lb/>con el rey su tio.—Es conducido en una nave al castillo
               de<lb/>Cabezadoire.</head>
-            
-              <p rend="indent"><lb/>El rey, después de la diversidad del juego que tenia con su so-<lb/>brino,
+            <p rend="indent">
+              <lb/>El rey, después de la diversidad del juego que tenia con su so-<lb/>brino,
               mandó llamar sus monteros, y se dirigieron á la sierra de<lb/>Ardeña, inmediata al
               castillo, permaneciendo la emperatriz du-<lb/>rante la cacería á cierta distancia de
               ellos, emboscada con su nave<lb/>invisible; despues de haber muerto algunas piezas, se
@@ -5322,14 +5443,15 @@
               que le conducian y rodeaban. En esta<lb/>ocasion, comenzó á afligirse
               encomendándose á Dios, rogándole<lb/>le hiciese la merced de manifestarle el
               misterio que encerraba
+
             
               <pb n="6" source="Varios_425_6.jpg" facs="varios/Varios_425_6.jpg"/>
-            
+
               <fw type="paginaNum">— 6 —</fw>
-            
               <lb/>aquello que observaba, ó si iba conducido por algunos genios
               in-<lb/>fernales.</p>
-              <p rend="indent"><lb/>Tres dias con sus noches andubo de esta suerte sin tomar
+            <p rend="indent">
+              <lb/>Tres dias con sus noches andubo de esta suerte sin tomar
               ali-<lb/>mento alguno, y alzando los ojos al cielo imploraba su ayuda y fa-<lb/>vor
               diciendo algunas veces: ¡desventurado de mí, y en qué ma-<lb/>la hora me metí en el
               mar! Si me hallara en tierra podia buscar<lb/>algun asilo, más aquí no observo otra
@@ -5337,7 +5459,7 @@
               desconsuelo po-<lb/>dia ablandar el corazon más empedernido. Pasados los tres
               dias,<lb/>apareció el tiempo sereno y la tierra inmediata, en la que vió<lb/>un
               hermoso castillo blanco como una paloma el cual pertenecía<lb/>á la emperatriz. Este
-              castillo era el de Cabezadoire, formado en<lb/>una isla bastante amena y deliciosa, á
+              castillo era el de <name>Cabezadoire</name>, formado en<lb/>una isla bastante amena y deliciosa, á
               la cual se podia arribar de<lb/>todas partes; luego que el conde la descubrió,
               hincóse humilde-<lb/>mente de rodillas, suplicando á Dios le permitiese saltar en
               tier-<lb/>ra: en efecto, la nave dió fondo en la bahía, y observó que le
@@ -5363,11 +5485,11 @@
               que por una mano invisible se le prodigaban<lb/>cuantos obsequios y finezas pudiese
               él apetecer, por lo que decía<lb/>entre sí: caso que yo muera en este palacio, daré
               por bien em-<lb/>pleada mi muerte. A la noche, observando de nuevo la mesa
+
             
             <pb n="7" source="Varios_425_7.jpg" facs="varios/Varios_425_7.jpg"/>
-            
-            <fw type="paginaNum">— 7—</fw>
-            
+
+              <fw type="paginaNum">— 7—</fw>
               <lb/>puesta, se sentó a ella, y vió que con direccion á él venia una<lb/>copa de
               licor, de la que pendia un hermoso canastillo y encima<lb/>de él una piedra preciosa
               de inestimable valor: tomó la copa y bebió,<lb/>despues le fueron sirviendo
@@ -5390,7 +5512,8 @@
               él, tambien lo seria aquella riquísima cama:<lb/>desnudóse de sus ropas y se metió
               en ella, confiado en la volun-<lb/>tad de Dios, de quien creia emanaban tantos
               favores.</p>
-              <p rend="indent"><lb/>La emperatriz que habia permanecido invisible siempre á la<lb/>vista del
+            <p rend="indent">
+              <lb/>La emperatriz que habia permanecido invisible siempre á la<lb/>vista del
               conde, como igualmente lo habian sido todos los de su<lb/>córte, contó á Oriana
               (dama que se hallaba en su compañía),<lb/>cuanto habia acaecido al conde
               Partinoples, cómo lo habia traido<lb/>allí y con qué objeto. Oriana manifestó
@@ -5399,17 +5522,18 @@
               á ello, y que resultaria desvanecerse todo el encanta-<lb/>miento, cayendo en una
               gran vergüenza, por cuantos sus tuto-<lb/>res le habian prefijado dos años de plazo
               para que tomase marido,<lb/>y ella se habia adelantado á hacerlo.</p>
-              <p><lb/>En seguida la emperatriz se dirigió al aposento donde descan-<lb/>sabe el conde, y se acostó en el
+            <p>
+              <lb/>En seguida la emperatriz se dirigió al aposento donde descan-<lb/>sabe el conde, y se acostó en el
               mismo lecho, diciendo en alta voz:<lb/>encomiéndome á Dios, á María Santisima y á
               todos los santos y<lb/>santas de la Córte celestial. Al oirla el conde sintiéndola
               á su la-<lb/>do, exclamó: ¡Oh Dios mio! ¿quién está aquí conmigo? Ella
               con-<lb/>testándole, dijo: soy emperatriz, tengo siete reyes á mi mando,
+
               
                 <pb n="8" source="Varios_425_8.jpg" facs="varios/Varios_425_8.jpg"/>
-                
-                <fw type="paginaNum">— 8 —</fw>
-              
-                <lb/>duques, condes y marqueses, sin ser nadie osado á entrar en este<lb/>mi palacio;
+
+              <fw type="paginaNum">— 8 —</fw>
+              <lb/>duques, condes y marqueses, sin ser nadie osado á entrar en este<lb/>mi palacio;
               más vos, quien quiera que seais, que aquí os hallo<lb/>acostado, decidme al punto
               quién sois. Contestóle entonces aquel<lb/>revelándole su nombre y circunstancias,
               implorándola el perdon<lb/>de su imprudencia; pero la emperatriz con tono altivo le
@@ -5426,7 +5550,8 @@
               quieta sin decirle nada. El conde, creyendo que la interlo-<lb/>cutora voz habia
               quedado convencida de las razones que habia<lb/>expuesto, qued ó profundamente
               dormido á causa de la gran sen-<lb/>sacion que habia experimentado.</p>
-              <p rend="indent"><lb/>Al siguiente
+            <p rend="indent">
+              <lb/>Al siguiente
               dia, al dispertarse el conde, se encontró solo en<lb/>el lecho, creyendo desde luego
               que cuanto le acababa de suceder<lb/>era una mera ilusion ó un delicioso sueño de su
               imaginacion tras-<lb/>tornada; pero no era así, pues se convenció de lo contrario al
@@ -5439,19 +5564,20 @@
               calentado salió<lb/>del palacio á pasear por sus inmediaciones, admirado de sus
               pre-<lb/>ciosos jardines, adornados de bellas fuentes y de diversidad de<lb/>flores
               olorosas que exhalaban diferentes olores aromáticos que re-<lb/>creaban los sentidos.</p>
-              <p rend="indent"><lb/>La emperatriz estaba tan segura de salir bien con su empresa,<lb/>que contó el
+            <p rend="indent">
+              <lb/>La emperatriz estaba tan segura de salir bien con su empresa,<lb/>que contó el
               hecho á sus confidentes, los cuales quedaron asombra-<lb/>dos de su astucia y
               sagacidad. Cuando llegó la hora de comer volvió<lb/>el conde al palacio y halló la
               mesa bien cubierta de cuantas viandas<lb/>pudiese apetecer: sentóse en la silla y
               fué tan bien servido deman-<lb/>jares y frutas, que no podia desear más el mayor
               monarca del mun-<lb/>do. Despues de haber comido se levantó y fué á pasear por el
               alcázar.</p>
-            
+
             <pb n="9" source="Varios_425_9.jpg" facs="varios/Varios_425_9.jpg"/>
-            
+
             <fw type="paginaNum">— 9 —</fw>
-            
-            <p rend="indent"><lb/>Por la noche, como por ensalmo, se vió rodeado de muchas ha- <lb/>chas
+            <p rend="indent">
+              <lb/>Por la noche, como por ensalmo, se vió rodeado de muchas ha- <lb/>chas
               encendidas, á las que siguió sin poder divisar quiénes fuesen <lb/>los que las
               llevaban. Le condujeron á un hermoso salon del palacio: <lb/>sentóse en un rico
               estrado, en cuyo estado sintió le desnudaban <lb/>de ropa y le conducian en seguida á
@@ -5466,7 +5592,7 @@
               entrambos; <lb/>cualquiera otra cosa os la perdonaría, más esto no; á lo que con-
               <lb/>testo el conde: os prometo, señora, el preferir antes la muerte que <lb/>tal
               hiciere: la emperatriz volvió á decirle que si queria divertir- <lb/>se por la ribera
-              del Azores podia hacerlo á su beneplácito, pues ha- <lb/>bia muy bnenos halcones; que
+              del <name>Azores</name> podia hacerlo á su beneplácito, pues ha- <lb/>bia muy bnenos halcones; que
               al amanecer hallaria un buen caba- <lb/>llo ensillado á la puerta del alcázar, el cual
               le conduciria á paraje <lb/>donde pudiera divertirse sin recelo de nada, supuesto que
               ella <lb/>siempre se hallaba á su lado, aunque no la viese. Cuando amane- <lb/>ció, ya
@@ -5484,17 +5610,17 @@
               donde fué recibido y obsequiado por una música <lb/>muy sonora, sin poder distinguir
               persona alguna, ni á la misma <lb/>emperatriz, aunque no le perdia de vista, y á pesar
               de sus conver- <lb/>saciones nocturnas.</p>
-              <p rend="indent"><lb/>Así pasaron un año cumplido, en cuyo
-              tiempo trataba de con- <lb/>quistar el reino de Francia un rey moro llamado Lisuarte,
+            <p rend="indent">
+              <lb/>Así pasaron un año cumplido, en cuyo
+              tiempo trataba de con- <lb/>quistar el reino de <name>Francia</name> un rey moro llamado Lisuarte,
               el cual <lb/>llevaba en su ejército dos jefes llamados Casion y Ausin, los que
             
                 <fw type="reclamo">PARTINOPLES. 2</fw>
-            
-                <pb n="10" source="Varios_425_10.jpg" facs="varios/Varios_425_10.jpg"/>
-            
-                <fw type="paginaNum">— 10 —</fw>
-            
-                <lb/>tanto se internaron en el reino de Francia, que llegaron á poner<lb/>sitio á
+
+              <pb n="10" source="Varios_425_10.jpg" facs="varios/Varios_425_10.jpg"/>
+
+              <fw type="paginaNum">— 10 —</fw>
+              <lb/>tanto se internaron en el reino de <name>Francia</name>, que llegaron á poner<lb/>sitio á
               París. Todo cuanto allí pasaba lo sabia la emperatriz por<lb/>medio de su arte; pero
               no queria decir nada al conde, porque no<lb/>tomase desazon y tratase de querer ir en
               ayuda de su tio, pues<lb/>como lo amaba de corazon, no queria se separase de ella.
@@ -5507,7 +5633,7 @@
               que<lb/>le rogaba se lo dijese. Entonces la contestó el conde: señora, por<lb/>el
               gran cuidado que tengo de mi madre y de mi tio es por lo que<lb/>suspiro. La
               emperatriz le replicó: sabed que la sangre os llama á<lb/>vuestra patria, porque se
-              trata de conquistar la Francia por el<lb/>rey moro llamado Lisuarte, quien tiene
+              trata de conquistar la <name>Francia</name> por el<lb/>rey moro llamado Lisuarte, quien tiene
               cercado á vuestro tio en<lb/>París; y así, quiero que marcheis á socorrerle,
               guardándoos, so-<lb/>bre todo, de descubrir nada de lo que ha pasado entre los dos
               cuando<lb/>volvais, porque seria mi deshonra y vuestra muerte: yo os daré<lb/>diez
@@ -5516,28 +5642,31 @@
               venerable; haced cuanto él<lb/>os dijere que nada os faltará: mañana al ser de dia
               ireis á la puer-<lb/>ta del alcázar y hallareis al viejo con los camellos cargados,
               y<lb/>por donde él guiare podeis seguirle, seguro de que os llevará en<lb/>derechura
-              al castillo de Bles.</p>
-              <p rend="indent"><lb/>El conde se mostró muy agradecido á la emperatriz por el
-              in-<lb/>terés que se tomaba en favor del rey de Francia, prometiéndole<lb/>no
+              al castillo de <name>Bles</name>.</p>
+            <p rend="indent">
+              <lb/>El conde se mostró muy agradecido á la emperatriz por el
+              in-<lb/>terés que se tomaba en favor del rey de <name>Francia</name>, prometiéndole<lb/>no
               descubrirla en nada hasta que se efectuase el casamiento que<lb/>tenian proyectado.
               Despidióse de ella partiendo para su patria,<lb/>ofreciéndole el regreso tan luego
               como terminase la guerra, mar-<lb/>chándose en seguida, llevándose las lanzas,
               camellos, riquezas y<lb/>al viejo conductor para su custodia.</p>
-              <p rend="indent"><lb/>El viaje desde la
-              isla hasta las costas de Francia se verificó<lb/>como se habia hecho antes, envuelto
+            <p rend="indent">
+              <lb/>El viaje desde la
+              isla hasta las costas de <name>Francia</name> se verificó<lb/>como se habia hecho antes, envuelto
               en una densa nube.</p>
           </div>
-          
+
           <pb n="11" source="Varios_425_11.jpg" facs="varios/Varios_425_11.jpg"/>
-          
+
           <fw type="paginaNum">— 11 —</fw>
-          
           <div type="parte" n="3">
-            <head type="titulo_parte"><lb/>CAPITULO III.</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>Lo que sucedió en Francia al conde
+            <head type="titulo_parte">
+              <lb/>CAPITULO III.</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>Lo que sucedió en Francia al conde
               Partinoples á su regre-<lb/>so al castillo de Bles.—Llegada á París.</head>
-            
-              <p rend="indent"><lb/>Llegó felizmente el conde Partinoples al castillo de Bles, donde<lb/>se hallaba
+            <p rend="indent">
+              <lb/>Llegó felizmente el conde Partinoples al castillo de <name>Bles</name>, donde<lb/>se hallaba
               su madre, la que le recibió con el mayor cariño estre-<lb/>chándole en sus brazos
               como hijo que consideraba perdido ó muer-<lb/>to, creyendo que las fieras le hubieran
               devorado en las sierras de Ar-<lb/>deña. Alborotáronse las gentes á la llegada del
@@ -5545,14 +5674,15 @@
               del<lb/>rey su tio, cuya generosa oferta fué aceptada por aquel con mues-<lb/>tras de
               gratitud. En seguida convocó á los suyos para hacer un alis-<lb/>tamiento general:
               además, pidió á España diez mil lanceros, los<lb/>cuales se presentaron al poco
-              tiempo en el castillo de Bles: todos eran<lb/>jóvenes, gente muy lucida y valiente;
+              tiempo en el castillo de <name>Bles</name>: todos eran<lb/>jóvenes, gente muy lucida y valiente;
               luego que vieron al conde,<lb/>fué grande su placer haciéndole pleito-homenaje de
               morir con él<lb/>antes que desistir de su empresa. Mandó el conde fuesen
               aposen-<lb/>tados en el castillo y sus arrabales, dándoles muy buen trato:
               allí<lb/>descansaron en dia; y al siguiente ordenado el ejército en divisio-<lb/>nes
               se dirigieron á París, poniéndose al frente de ellos el
               conde<lb/>Partinoples.</p>
-              <p rend="indent"><lb/>Cuando llegaron á las inmediaciones de la capital, tocaron
+            <p rend="indent">
+              <lb/>Cuando llegaron á las inmediaciones de la capital, tocaron
               las<lb/>trompetas y tambores con el objeto de reunir las tropas que se ha-<lb/>llaban
               vagando por la ciudad, creyendo que seria otra cosa, pues<lb/>así lo indicaban las
               voces de alarma y el repique de campanas. Los<lb/>parisienses se dispusieron á la
@@ -5566,14 +5696,15 @@
               confianza al encuen-<lb/>tro de su sobrino; abriéronse de su órden las puertas de la
               ciudad,<lb/>y á poco rato tuvieron el placer de abrazarse. Toda la córte
               celebró<lb/>con regocijos públicos el socorro que les habia venido tan inopi-
+
             
                 <pb n="12" source="Varios_425_12.jpg" facs="varios/Varios_425_12.jpg"/>
-            
-                <fw type="paginaNum">— 112 —</fw>
-            
-                <lb/>nadamente. El rey y el conde se retiraron á palacio, pasando la<lb/>mayor parte
+
+              <fw type="paginaNum">— 112 —</fw>
+              <lb/>nadamente. El rey y el conde se retiraron á palacio, pasando la<lb/>mayor parte
               de la noche en referirse ambos lo ocurrido desde su<lb/>separacion.</p>
-              <p rend="indent"><lb/>Al siguiente
+            <p rend="indent">
+              <lb/>Al siguiente
               dia por la madrugada se oyó tocar á rebato las<lb/>campanas, y las cajas y clarines
               á una alarma general: el conde<lb/>enterado de ello, saltó al momento de la cama,
               suplicando á su tio<lb/>le permitiese salir al campo para averiguar por sí mismo la
@@ -5586,14 +5717,15 @@
               diez mil que eran los moros,<lb/>solo dos mil pudieron escapar, quedando los demás
               muertos ó<lb/>prisioneros.</p>
           </div>
-          
           <div type="parte" n="4">
-            <head type="titulo_parte"><lb/>CAPITULO IV.</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>Entrada triunfante del conde
+            <head type="titulo_parte">
+              <lb/>CAPITULO IV.</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>Entrada triunfante del conde
               Partinoples en París despues<lb/>de la batalla dada á las huestes del rey
               Lisuarte.</head>
-            
-            <p rend="indent"><lb/>Al regresar el conde á París despues de alcanzar tan gran vic-<lb/>toria, le
+            <p rend="indent">
+              <lb/>Al regresar el conde á París despues de alcanzar tan gran vic-<lb/>toria, le
               salió á recibir su tio, que le abrazó con particular cariño<lb/>y en medio de
               públicas aclamaciones en que todos á porfía se lan-<lb/>zaban sobre las riendas del
               caballo para detenerle, contemplando<lb/>de cerca á un guerrero tan gallardo y
@@ -5604,34 +5736,37 @@
               gentes que le seguia victoreándolo, salió á reci-<lb/>birle en triunfo y con palmas
               guarnecidas de flores toda la gran-<lb/>deza del reino, distinguiéndose en estos
               obsequios debidos á su<lb/>valor y heroismo, todo el bello sexo.</p>
-              <p rend="indent"><lb/>Agradecido el
+            <p rend="indent">
+              <lb/>Agradecido el
               conde al público por los favores que le prodigaba,<lb/>se desprendió de todas las
               riquezas que la emperatriz su querida le<lb/>habia regalado en su despedida, mandando
               se distribuyesen entre
+
             
                 <pb n="13" source="Varios_425_13.jpg" facs="varios/Varios_425_13.jpg"/>
-            
-                <fw type="paginaNum">—13 —</fw>
-            
-                <lb/>las familias más necesitadas de la capital: asi terminó su brillan-<lb/>te
+
+              <fw type="paginaNum">—13 —</fw>
+              <lb/>las familias más necesitadas de la capital: asi terminó su brillan-<lb/>te
               entrada.</p>
-              <p rend="indent"><lb/>Avergonzado el rey Lisuarte de la derrota que acababa de su-<lb/>frir por
+            <p rend="indent">
+              <lb/>Avergonzado el rey Lisuarte de la derrota que acababa de su-<lb/>frir por
               los franceses, preguntó á sus capitanes, que quién habia<lb/>sido el valiente
               campeon que con tanta bizarría y acierto dirigió<lb/>las huestes enemigas
               causándole la pérdida de la mayor parte de<lb/>su gente; á lo cual le contestaron
               que el conde Partinoples, jóven<lb/>de unos veinte años, y sobrino del rey de
-              Francia, que el dia an-<lb/>terior habia llegado en su socorro procedente del castillo
-              de Bles,<lb/>habiendo venido con diez mil lanceros aliados. Irritado aquel
+              <name>Francia</name>, que el dia an-<lb/>terior habia llegado en su socorro procedente del castillo
+              de <name>Bles</name>,<lb/>habiendo venido con diez mil lanceros aliados. Irritado aquel
               or-<lb/>gulloso monarca al contemplar que un mancebo de tan corta edad<lb/>y sin
               experiencia fuese causa de su afrenta y humillacion, le en-<lb/>vió un mensajero
-              emplazándole á singular combate en las orillas<lb/>del Sena, con la precisa
+              emplazándole á singular combate en las orillas<lb/>del <name>Sena</name>, con la precisa
               condicion, de que el vencido seria sumer-<lb/>gido en el rio para que su cuerpo
               sirviese de pasto á las peces.<lb/>Así que el conde recibió el mensaje se mostró
               sumamente com-<lb/>placido, y temeroso al mismo tiempo de que su tio, bajo cuya
               tu-<lb/>tela se hallaba, no consintiera en ello por la condicion expresada;<lb/>mas,
               sin embargo la aceptó el jóven héroe contestando al moro su<lb/>conformidad,
               señalándole dia y hora para el desafío.</p>
-              <p rend="indent"><lb/>Informado que fué el rey por su sobrino
+            <p rend="indent">
+              <lb/>Informado que fué el rey por su sobrino
               del compromiso que es-<lb/>te tenia contraido con su rival, le negó su
               consentimiento; cuyo<lb/>suceso se hizo público en París, y un gran número de
               moradores,<lb/>sin distincion de clases, acudieron á palacio suplicando al rey
@@ -5651,24 +5786,25 @@
               he-<lb/>roismo han cautivado mi corazon, enterneciéndome de tal mo-<lb/>do, que mi
               sensibilidad me hace presumir de que yo voy á per-<lb/>derte para siempre; pero por
               otra parte tu deshonra fuera para mí
+
             
                   <pb n="14" source="Varios_425_14.jpg" facs="varios/Varios_425_14.jpg"/>
-            
-                  <fw type="paginaNum">— 14—</fw>
-            
-                  <lb/>aun más sensible que la misma muerte, en cuya inteligencia, ca-<lb/>ballero
-              conde Partinoples, el rey de Francia os otorga la libertad<lb/>para que vuestra
+
+              <fw type="paginaNum">— 14—</fw>
+              <lb/>aun más sensible que la misma muerte, en cuya inteligencia, ca-<lb/>ballero
+              conde Partinoples, el rey de <name>Francia</name> os otorga la libertad<lb/>para que vuestra
               voluntad sea cumplida. No bien hubo concluido<lb/>este razonamiento, cuando en todos
               los ángulos del salon fué sa-<lb/>ludado por los circunstantes con prolongados vivas
               y aclamaciones,<lb/>en cuyo estado el jóven, prosternado á los pies del monarca,
               im-<lb/>ploraba su bendicion para partir al sitio marcado donde debia
               de<lb/>verificarse el combate, el cual fué del modo siguiente:</p>
-              <p rend="indent"><lb/>Los franceses
+            <p rend="indent">
+              <lb/>Los franceses
               aprestaron al conde de todo lo necesario lo mejor<lb/>que pudieron, y lo mismo
               hicieron los moros con su rey Lisuarte.<lb/>A espaldas del conde iba su tio con diez
               mil hombres de todas ar-<lb/>mas, y al rey moro le seguia el conde de Mars, que era su
               mayor-<lb/>domo mayor con un numeroso acompañamiento, en cuya forma<lb/>llegaron unos
-              y otros al campo. El rey de Francia acompañó á su<lb/>sobrino al sitio del combate,
+              y otros al campo. El rey de <name>Francia</name> acompañó á su<lb/>sobrino al sitio del combate,
               en el que le dió su bendicion enco-<lb/>mendándole á Dios, y lo propio hizo el
               conde de Mars con su rey.<lb/>En seguida se aproximaron los dos campeones saludándose
               con<lb/>toda cortesía, y luego cada uno se encomendó á su Dios. Conclui-<lb/>da la
@@ -5693,11 +5829,11 @@
               cum-<lb/>pliese lo pactado; á cuya intimacion le contestó el conde que se
               de-<lb/>fendiese, pues él no le tenia miedo Entonces el moro picó con
               las<lb/>espuelas á su caballo queriendo atropellar al conde; pero este, con
+
             
             <pb n="15" source="Varios_425_15.jpg" facs="varios/Varios_425_15.jpg"/>
-            
-            <fw type="paginaNum">— 15—</fw>
-            
+
+              <fw type="paginaNum">— 15—</fw>
               <lb/>mucha agilidad, dió un salto al través, alzó el brazo cuanto pu-<lb/>do, y
               dió con la espada un gran golpe á la cabeza del caballo,<lb/>que le hendió los
               sesos, de modo que cayó el rey dándose tan fuer-<lb/>te golpe que creyeron se habia
@@ -5733,16 +5869,17 @@
               guardaba el campo bajo su fé y ju-<lb/>ramento de que ninguno de los suyos habia de
               tomar parte en<lb/>aquella parcial contienda, hizo que todos los que estaban allí
               con<lb/>él arrojaseu las capas con que tenian cubiertas las armas, ponien-
+
             
                 <pb n="16" source="Varios_425_16.jpg" facs="varios/Varios_425_16.jpg"/>
-            
-                <fw type="paginaNum">— 16 —</fw>
-            
-                <lb/>do mano á las espadas y entraron al campo, lo que verificaron con<lb/>grandes
+
+              <fw type="paginaNum">— 16 —</fw>
+              <lb/>do mano á las espadas y entraron al campo, lo que verificaron con<lb/>grandes
               alaridos, llevándose consigo al conde; lo que visto por los<lb/>franceses, entraron
               igualmente en el campo y se apoderaren á vi-<lb/>va fuerza del rey Lisuarte, huyendo
               con él á la ciudad.</p>
-              <p rend="indent"><lb/>El rey de Francia y los caballeros tuvieron gran
+            <p rend="indent">
+              <lb/>El rey de <name>Francia</name> y los caballeros tuvieron gran
               sentimiento<lb/>pensando en la suerte que podia caber al desgraciado conde
               en<lb/>poder de aquellos bárbaros, en particular su tio, que encerrado en<lb/>el
               palacio se hallaba inconsolable. Así estuvo toda aquella noche,<lb/>y al dia
@@ -5753,9 +5890,9 @@
               tenia hecho. Nunca quiera Alá, dijo el prisionero, que yo sea<lb/>traidor, pues por
               fiarme del conde de Mars, me veo en vuestro po-<lb/>der. El rey francés le contestó:
               reniego del soberano que fia su<lb/>campo á hombre que no sea hidalgo y que pueda
-              faltar á su ho-<lb/>nor. Entonces dijo el rey Lisuarte al de Francia: señor,
+              faltar á su ho-<lb/>nor. Entonces dijo el rey Lisuarte al de <name>Francia</name>: señor,
               mandad<lb/>mensajeros á todos los capitanes de mi real, y que de mi parte
-              les<lb/>notifiquen, que si el conde de Bles, vuestro sobrino, fuere vivo,<lb/>se lo
+              les<lb/>notifiquen, que si el conde de <name>Bles</name>, vuestro sobrino, fuere vivo,<lb/>se lo
               entreguen inmediatamente; y que si por casualidad lo hu-<lb/>biesen muerto, haced de
               mí lo que quisiéreis, supuesto que me<lb/>hallo en vuestro poder. Oyendo esto el
               monarca francés, se puso á<lb/>reconocer al moro mirándole de piés á cabeza, y
@@ -5770,16 +5907,16 @@
               tenian cautivo, al saber por el contenido de<lb/>aquellas que su señor era vivo; mas
               no se resolvieron á entregar<lb/>la persona del conde, creyendo que acaso los
               meusajeros habrian<lb/>urdido aquella trama para llevarse á su jefe y asesinar al rey
-              Li-<lb/>suarte, arrojándole luego al rio Sena, segun lo que se habia esti-<lb/>pulado
+              Li-<lb/>suarte, arrojándole luego al rio <name>Sena</name>, segun lo que se habia esti-<lb/>pulado
               en el desafio; por lo que le contestaron los generales á su rey,<lb/>que el conde de
               Mars habia perecido á manos de los moros por<lb/>haber comprometido á la persona de
               su monarca, y que si per-<lb/>manecia este más tiempo en cautividad con los franceses
               le su-
+
             
               <pb n="17" source="Varios_425_17.jpg" facs="varios/Varios_425_17.jpg"/>
-            
+
               <fw type="paginaNum">—17—</fw>
-            
               <lb/>cederia lo mismo al sobrino de su rey, sufriendo igual suerte<lb/>que el conde
               de Mars. Regresaron los mensajeros á París con<lb/>esta embajada, y el pueblo se
               amotinó contra los moros. En vista<lb/>de esto mandó el rey publicar un bando, por
@@ -5800,25 +5937,26 @@
               le victoreaba sin cesar hasta su llegada al<lb/>palacio, donde declaró á presencia
               de los caballeros que el rey Li-<lb/>suarte á quien habia vencido en el campo del
               honor, quedaba<lb/>relevado de la condicion bajo la cual pelearon, pero que debia
-              de<lb/>abandonar la Francia, dejando á su legítimo soberano dueño y<lb/>señor de
+              de<lb/>abandonar la <name>Francia</name>, dejando á su legítimo soberano dueño y<lb/>señor de
               ella, en quieta y pacífica posesion. Así prometió hacer-<lb/>lo bajo su palabra de
               honor, y lo ejecutó, retirándose al dia si-<lb/>guiente con todo el ejército. De
               esta manera terminó el ruidoso<lb/>asunto del desafío, y con él la guerra que
               amenazaba á la Fran-<lb/>cia con muy fatales consecuencias.</p>
             <fw type="reclamo">PARTINOPLES. 3</fw>
           </div>
-          
+
           <pb n="18" source="Varios_425_18.jpg" facs="varios/Varios_425_18.jpg"/>
-          
+
           <fw type="paginaNum">— 18—</fw>
-          
           <div type="parte" n="5">
-            <head type="titulo_parte"><lb/>CAPITULO V.</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>De cómo tratan de casar al conde com
+            <head type="titulo_parte">
+              <lb/>CAPITULO V.</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>De cómo tratan de casar al conde com
               una sobrina del Papa.<lb/>—Por consejo de un mágico márchase el conde estaba
               la<lb/>emperatriz, en cuyo palacio le sucedieron algunos lances<lb/>apurados.</head>
-            
-              <p rend="indent"><lb/>Así que supo la madre del conde que su hijo habla librado á<lb/>su patria de
+            <p rend="indent">
+              <lb/>Así que supo la madre del conde que su hijo habla librado á<lb/>su patria de
               tan gran peligro, se fué para París, saliendo á reci-<lb/>birla su hermano el rey y
               el conde, acompañándola hasta el pa-<lb/>lacio llenos de satisfaccion y contento.
               Estando un dia juntos en<lb/>conversacion, dijo la madre al rey, que le parecia
@@ -5829,14 +5967,14 @@
               hablar, y que de no hacerlo así, se daria lugar<lb/>á que su amor hácia aquella le
               indujese á marcharse para no vol-<lb/>ver jamás. El rey contestó que aprobaba el
               pensamiento, y que<lb/>regularmente el Papa convendria en dicho enlace de muy
-              buena<lb/>voluntad, por lo que enviaron comisionados á Roma, y presen-<lb/>tándose
+              buena<lb/>voluntad, por lo que enviaron comisionados á <name>Roma</name>, y presen-<lb/>tándose
               á Su Santidad, este los recibió con mucho agrado, ente-<lb/>rándose de las
               pretensiones que traian, á las que accedió; y lla-<lb/>mando á un cardenal, mandó
               que se dispusiese para acompañar<lb/>á su sobrina á París, donde tenia que
               celebrar su boda, otorgándo-<lb/>la en dote cuatro castillos y diez millones en
               dinero, todo lo que<lb/>daba el Papa por las buenas noticias que habia oido del conde,
               y<lb/>por lo gustoso que era que se casase con su sobrina. Cuando la<lb/>doncella, el
-              cardenal y demás comitiva llegaron cerca de Paris,<lb/>salió á recibirlos con gran
+              cardenal y demás comitiva llegaron cerca de <name>Paris</name>,<lb/>salió á recibirlos con gran
               pompa y séquito el rey y toda su cór-<lb/>te, acompañándoles hasta el alcázar,
               donde fueron hospedados.<lb/>Ocho dias estuvieron tratando con el conde Partinoples
               sobre lo<lb/>conveniente que le era el casamiento con la sobrina del Santo Pa-<lb/>dre
@@ -5845,18 +5983,19 @@
               empeñada, lo que manifestaba<lb/>púbicamente, por lo cual trataron de embriagarle
               con cierta<lb/>reparacion mezclada en el vino Así lo hicieron como lo<lb/>ensaron, y
               conseguido su objeto trajeron, á la doncella
+
             
                 <pb n="19" source="Varios_425_19.jpg" facs="varios/Varios_425_19.jpg"/>
-            
-                <fw type="paginaNum">– 19 –</fw>
-            
-                <lb/>y los dejaron en un cuarto solos; pero nada se adelantó, pues<lb/>luego que el
+
+              <fw type="paginaNum">– 19 –</fw>
+              <lb/>y los dejaron en un cuarto solos; pero nada se adelantó, pues<lb/>luego que el
               conde se halló despejado, empezó á dar voces de que<lb/>no queria casarse, y que le
               trajesen su caballo que queria irse á<lb/>ver á la emperatriz. La doncella trató de
               contenerle diciéndole,<lb/>que no le dejaria marchar, porque él habia de ser su
               marido; y en-<lb/>tonces el conde la dió un empujon apartándola de sí con
               violencia.</p>
-              <p rend="indent"><lb/>Viéndose la sobrina de Su Santidad atropellada de esta
+            <p rend="indent">
+              <lb/>Viéndose la sobrina de Su Santidad atropellada de esta
               con-<lb/>formidad, y desairada por un caballero tan distinguido, cuya her-<lb/>mosura
               y gallardía habian cautivado su corazon desde el momen-<lb/>to que le habia visto,
               acudió en aquel estado llena de vergüenza,<lb/>y con los ojos bañados en llanto, al
@@ -5882,17 +6021,18 @@
               levantareis la ropa presentando á su rostro la linterna<lb/>para que al despertarse
               os vea bien; los efectos que esto produzca,<lb/>el tiempo es hará ver que serán
               favorables á vuestros deseos: y<lb/>dicho esto se despidió.</p>
-              <p rend="indent"><lb/>El conde Partinoples
+            <p rend="indent">
+              <lb/>El conde Partinoples
               prometió al mágico haria todo cuanto le<lb/>habia encargado; y poniéndolo en
               ejecucion, al dia siguiente mon-<lb/>tó á caballo y se fué hasta donde estaba la
               nave que le habia con-<lb/>ducido: embarcóse en ella é hizo su viaje hasta llegar al
               castillo<lb/>donde estaba la emperatriz. Habiendo arribado el conde al puerto<lb/>de
               la isla, saltó en tierra con mucha precaucion, temeroso de ser
+
             
                 <pb n="20" source="Varios_425_20.jpg" facs="varios/Varios_425_20.jpg"/>
-            
-                <fw type="paginaNum">— 20 —</fw>
-            
+
+              <fw type="paginaNum">— 20 —</fw>
               <lb/>descubierto, por ser la emperatriz muy perspicaz y advertida.<lb/>Llegada la
               noche se dirigió hácia el alcázar temblándole las car-<lb/>nes: penetró, en fin,
               hasta la pieza donde estaba la cámara de la<lb/>emperatriz, y se arrimó á un rincon
@@ -5902,7 +6042,8 @@
               llegada á la estancia se desnudó y metió en la cama, que-<lb/>dándose dormida al
               poco tiempo; el conde al observarlo, sacó la<lb/>linterna con mucho cuidado, y la
               fué descubriendo el rostro sin<lb/>que ella hiciese el menor movimiento.</p>
-              <p rend="ident"><lb/>El conde embriagado de placer al contemplar aquella hermo-<lb/>sura tan perfecta, no se hartaba
+            <p rend="ident">
+              <lb/>El conde embriagado de placer al contemplar aquella hermo-<lb/>sura tan perfecta, no se hartaba
               de mirarla: pero inadvertidamente<lb/>dejó que le cayera una gota de aceite en los
               pechos, y despertó<lb/>despavorida. Luego que la emperatriz se vió descubierta de la
               ro-<lb/>pa, dió un grito, diciendo: ¡ay Dios mio, soy perdida! y se desma-<lb/>yó:
@@ -5926,13 +6067,14 @@
               fué á colocar frente de la ventana donde el<lb/>conde se encoutraba asomado, el que
               á pesar del peligro que le<lb/>amenazaba, no hacia sino mirarla, pareciéndole cada
               vez más<lb/>hermosa.</p>
-              <p rend="indent"><lb/>A todo esto, las puertas del palacio, abiertas por órden de
+            <p rend="indent">
+              <lb/>A todo esto, las puertas del palacio, abiertas por órden de
               la em-<lb/>peratriz, se hallaban perfectamente guardadas por muchos centine-
+
             
               <pb n="21" source="Varios_425_21.jpg" facs="varios/Varios_425_21.jpg"/>
-            
+
               <fw type="paginaNum">— 21 —</fw>
-            
               <lb/>las y los primeros rayos del dia prestaban suficiente luz para dis-<lb/>tinguir
               claramente los objetos. Despues que la emperatriz perma-<lb/>neció algun tiempo en
               aquella posicion, se dirigió al jefe de la fuer-<lb/>za armada y le habló
@@ -5965,33 +6107,36 @@
               sobrino de un rey, á quien iba á sacrificar; mas ni aun esta<lb/>amenaza pudo
               retraerla de su criminal empeño; por último,<lb/>se decidió la protectora del
               jóven á morir con él en caso nece-<lb/>sario.</p>
-              <p rend="indent"><lb/>Oriana, le tomó de la mano, y
+            <p rend="indent">
+              <lb/>Oriana, le tomó de la mano, y
               los dos se dirigieron por la<lb/>puerta donde estaban los hombres armados, los cuales
               desenvai-<lb/>naron las espadas para decapitarlo; pero Oriana les dijo:
               deteneos,<lb/>señores, que no es este el caballero que la emperatriz manda ma-
+
             
               <pb n="22" source="Varios_425_22.jpg" facs="varios/Varios_425_22.jpg"/>
-            
+
               <fw type="paginaNum">—22 —</fw>
-            
               <lb/>tar; cuando salga el otro, matadle: pues este es un escudero que<lb/>se envía
               á una comision importante.</p>
-              <p rend="indent"><lb/>Cuando se vieron fuera del palacio, tomaron
+            <p rend="indent">
+              <lb/>Cuando se vieron fuera del palacio, tomaron
               precipitadamen-<lb/>te el camino del puerto, y Oriana dijo al conde: tomad el
               caballo<lb/>que aquí dejásteis, y entregadlo al capitan de aquella nave,
               en-<lb/>cargándole que os lleve á vuestro país; y ella se metió en otra<lb/>nave,
-              temiendo la venganza de la emperatriz, dándose á la vela<lb/>para Constantinopla,
+              temiendo la venganza de la emperatriz, dándose á la vela<lb/>para <name>Constantinopla</name>,
               donde tenia su padre; pero tan enamorada<lb/>del conde, que nunca jamás le
               olvidó.</p>
           </div>
-          
           <div type="parte" n="6">
-            <head type="titulo_parte"><lb/>CAPITULO VI.</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>Destierro voluntario del conde á las
+            <head type="titulo_parte">
+              <lb/>CAPITULO VI.</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>Destierro voluntario del conde á las
               sierras de Ardeña, y lo<lb/>demás que á el se siguió por encuentro de
               Oriana.</head>
-            
-              <p rend="indent"><lb/>Cuando el conde llegó al castillo de Bles halló á su madre<lb/>sumamente
+            <p rend="indent">
+              <lb/>Cuando el conde llegó al castillo de <name>Bles</name> halló á su madre<lb/>sumamente
               afligida por ignorar su paradero; y al verle, le abra-<lb/>zó con la mayor ternura,
               alegrándose en estremo de tan feliz é<lb/>inesperado encuentro. Al momento se
               divulgó por todas partes<lb/>el arribo del jóven conde, presentándose á visitarle
@@ -6000,23 +6145,25 @@
               misteriosas palabras: «no es digno un hombre que<lb/>viene aquí á espiar un delito,
               de tanta merced.» Ninguno com-<lb/>prendió el sentido de estas palabras, guardando el
               conde en ello<lb/>la mayor reserva.</p>
-              <p rend="indent"><lb/>Concluidos los festejos, continuó el conde
+            <p rend="indent">
+              <lb/>Concluidos los festejos, continuó el conde
               viviendo retirado<lb/>en su habitacion, donde descansó de sus pasadas fatigas y
               pesa-<lb/>res, é instruyendo á su madre de todo cuanto le habia acontecido<lb/>con
               la emperatriz, mas sin mostar por eso arrepentimiento, ni<lb/>querer desistir de su
               empeño. El rey su tio continuaba en su pa-<lb/>lacio de París, y la sobrina del
               Papa, desengañada del proyectado<lb/>enlace, se habia marchado para su patria
               acompañada del carde-<lb/>nal y demás comitiva.</p>
-              <p rend="indent"><lb/>Al cabo de cinco meses que el
+            <p rend="indent">
+              <lb/>Al cabo de cinco meses que el
               conde permanecia en su retiro lle-<lb/>gó á su noticia que el marido de la
               emperatriz habia muerto: efec-<lb/>tivamente, así era; y en su consecuencia se habian
               reunido en su<lb/>palacio todos los grandes del imperio para concertar el
               matrimonio
+
             
                 <pb n="23" source="Varios_425_23.jpg" facs="varios/Varios_425_23.jpg"/>
-            
-                <fw type="paginaNum">— 23—</fw>
-            
+
+              <fw type="paginaNum">— 23—</fw>
               <lb/>Arrepentida ya la emperatriz de su mal comportamiento con el con-<lb/>de, quiso
               consultar con Oriana sobre el particular, y la envió un men-<lb/>sajero de toda su
               confianza para que regresase á su compañía; pero<lb/>ella no quiso condescender,
@@ -6034,7 +6181,8 @@
               que la agradeció<lb/>en extremo sus afectuosos desvelos. Restablecida
               completamente<lb/>de su enfermedad, suplicó á Oriana interpusiese toda su
               zagaci-<lb/>dad é influencia con el conde para que accediese en ser su esposo.</p>
-              <p rend="indent"><lb/>La noble Oriana tan condescendiente como generosa, contestó<lb/>á la emperatriz: mi
+            <p rend="indent">
+              <lb/>La noble Oriana tan condescendiente como generosa, contestó<lb/>á la emperatriz: mi
               corazon está dispuesto siempre á complaceros,<lb/>y quisiera en esta ocasion
               satisfacer vuestros deseos; mas un obs-<lb/>táculo invencible se opone á ello, el
               cual no debeis ignorar. A<lb/>cuyas expresiones se entristeció la emperatriz,
@@ -6043,7 +6191,7 @@
               habrá olvidado; y nunca perdonará mi debilidad,<lb/>recordando el fatal dia que
               decreté su muerte. En la misma per-<lb/>suasion se hallaba Oriana, y este
               convencimiento la retraía de dar<lb/>niugun paso en su favor: no obstante, se
-              decidió, por fin, á partir<lb/>para el castillo de Bles, donde creia hallar al conde
+              decidió, por fin, á partir<lb/>para el castillo de <name>Bles</name>, donde creia hallar al conde
               y suplicarle<lb/>encarecidamente se sirviese admitir la mano de la empreratriz
               que<lb/>tan enamorada estaba de él. Oido esto por aquella, la abrazó<lb/>tiernamente
               arrebatada del placer que sentia interiormente, dando<lb/>las disposiciones necesarias
@@ -6052,16 +6200,17 @@
               su doncella llama-<lb/>da Pérsides, en un hermoso navío, el cual se dió á la vela
               al mo-<lb/>mento que se presentó el viento favorable, volviendo la empera-<lb/>triz
               á su palacio con toda su comitiva.</p>
-              <p rend="indent"><lb/>Con feliz viaje llegó el navío á la vista de la sierra de Ardeña:
+            <p rend="indent">
+              <lb/>Con feliz viaje llegó el navío á la vista de la sierra de Ardeña:
+
             
                 <pb n="24" source="Varios_425_24.jpg" facs="varios/Varios_425_24.jpg"/>
-            
-                <fw type="paginaNum">— 24 —</fw>
-            
+
+              <fw type="paginaNum">— 24 —</fw>
               <lb/>el buque se aproximó á tierra, y tanto qué se oyó relinchar un
               ca-<lb/>ballo. Preguntó Oriana al capitan, qué tierra era aquella; y él
               la<lb/>contestó: señora, estas montañas que veis se llaman las sierras
-              de<lb/>Ardeña, las mas desiertas y áridas de la Francia: entonces Oriana<lb/>le dijo
+              de<lb/>Ardeña, las mas desiertas y áridas de la <name>Francia</name>: entonces Oriana<lb/>le dijo
               que echase la lancha al agua, porque deseaba saltar en tier-<lb/>ra: el capitan le
               manifestó era tierra de muchas fieras, y seria<lb/>exponerse mucho; mas insistió en
               ello aquella heroina, y el capi-<lb/>tan tuvo que ceder, dando fondo y echando un
@@ -6095,11 +6244,11 @@
               que ella hizo,<lb/>declarándole todo cuanto le habia dicho la emperatriz en favor
               del<lb/>conde Partinoples. Al oir esto, exclamó: ¿dónde está esa mujer
               mag-<lb/>nánima, que quiero verla y pedirle perdon del agravio que la hice?
+
             
                 <pb n="25" source="Varios_425_25.jpg" facs="varios/Varios_425_25.jpg"/>
-            
-                <fw type="paginaNum">— 25 —</fw>
-                
+
+              <fw type="paginaNum">— 25 —</fw>
               <lb/>y cayó desmayado en tierra: entonces se acabó de persuadir Oriana <lb/>de que
               era el mismo conde Partinoples. Sentóse junto á él ponién- <lb/>dole la cabeza en su
               regazo, diciendo á su doncella la ayudase á so- <lb/>correrle, y vuelto en sí
@@ -6137,11 +6286,10 @@
               Vistióse la <lb/>emperatriz su manto, y sentóse en el trono: los caballeros fueron
               <lb/>entrando á besar la mano, y en seguida se fueron colocando en sus
               <fw type="reclamo">PARTINOPLES. 4</fw>
-            
-                <pb n="26" source="Varios_425_26.jpg" facs="varios/Varios_425_26.jpg"/>
-            
-                <fw type="paginaNum">— 26 —</fw>
-            
+
+              <pb n="26" source="Varios_425_26.jpg" facs="varios/Varios_425_26.jpg"/>
+
+              <fw type="paginaNum">— 26 —</fw>
               <lb/>sitios teniendo cuidado de que el conde estuviese inmediato á la<lb/>puerta
               donde no le pudiese advertir la emperatriz; despues del<lb/>razonamiento que les hizo,
               se levantó y fué armándolos uno<lb/>por uno, presentándoselos la infanta: llegó
@@ -6155,15 +6303,16 @@
               acto, se despi-<lb/>dió Oriana de la emperatriz y se fué á la ciudad, llevándose
               al<lb/>conde en su compañía.</p>
           </div>
-          
           <div type="parte" n="7">
-            <head type="titulo_parte"><lb/>CAPITULO VII.</head>
-            <head type="subtitulo_parte" rend="negrita"><lb/>Como un dia divirtiendose el conde por
+            <head type="titulo_parte">
+              <lb/>CAPITULO VII.</head>
+            <head type="subtitulo_parte" rend="negrita">
+              <lb/>Como un dia divirtiendose el conde por
               la orilla del mar, fué<lb/>apresado y conducido á tierra de moros: y lo que le
               suce-<lb/>dió Iuego hasta ganar á fuerza de armas en el torneo Ia<lb/>mano de la
               emperatriz.</head>
-            
-              <p rend="indent"><lb/>Mientras que se hacian los preparativos para el torneo, y en<lb/>uno de los dias
+            <p rend="indent">
+              <lb/>Mientras que se hacian los preparativos para el torneo, y en<lb/>uno de los dias
               que se divertia el conde por las orillas del mar,<lb/>observó una lancha á su
               orilla, en la cual se metió é internó tanto,<lb/>que cuando quiso volver atrás ya
               no pudo, por causa de un fuerte<lb/>viento que le llevó á las costas del moro, donde
@@ -6172,17 +6321,18 @@
               de aquel conflicto; pero mandó le encerrasen en una maz-<lb/>morra subterránea; y
               teniendo el rey que ausentarse para asistir<lb/>al torneo, emprendió la marcha con
               toda su comitiva.</p>
-              <p rend="indent"><lb/>El esforzado conde, viéndose preso y sin poder asistir á
+            <p rend="indent">
+              <lb/>El esforzado conde, viéndose preso y sin poder asistir á
               aquella<lb/>fiesta, se quejaba amargamente de su suerte. Informada la sultana<lb/>de
               los tristes lamentos del cautivo, le mandó sacar y traer á su pre-<lb/>sencia, y por
               medio de su intérprete, le preguntó la causa de su pe-<lb/>sar, á lo que satisfizo
               con manifestarle el compromiso en que se<lb/>veia, de no poder asistir al torneo que
               debia celebrarse dentro de
+
             
                 <pb n="27" source="Varios_425_27.jpg" facs="varios/Varios_425_27.jpg"/>
-            
-                <fw type="paginaNum">— 27—</fw>
-            
+
+              <fw type="paginaNum">— 27—</fw>
               <lb/>diez dias. La sultana, enamorada de su presencia gallarda, le dijo<lb/>no se
               afligiese, y que si le daba la palabra de volver á la prision an-<lb/>tes que
               regresase el rey su esposo, ella le dejaria marchar dándole<lb/>caballo y armas: el
@@ -6197,7 +6347,7 @@
               buen caballero,<lb/>y le reservaria el secreto. Al oir Guadin el nombre de conde
               Par-<lb/>tinoples le dijo: por cierto, amigo, que deseo seamos
               compañeros,<lb/>rogándoos al mismo tiempo me digais sin la menor reserva, si
-              sois<lb/>sobrino del rey de Francia, porque tengo oido hablar de otro
+              sois<lb/>sobrino del rey de <name>Francia</name>, porque tengo oido hablar de otro
               Par-<lb/>tinoples. El conde contestó se lo diria de muy buena gana siem-<lb/>pre que
               prometiese, bajo palabra de caballero, guardar secreto<lb/>hasta que él se lo mandase
               descubrir: lo que ofrecido por Guadin<lb/>le manifestó el conde, que en efecto era el
@@ -6205,43 +6355,47 @@
               la fren-<lb/>te, diciéndole, que su corazon le anunciaba debia ser muy
               buen<lb/>caballero, y túvose por muy feliz en ser su compañero. En segui-<lb/>da que
               llegaron á la isla se dirigieron á una sierra contigua al<lb/>palacio de
-              Cabezadoire, en cuyo sitio puso una famosa tienda de<lb/>campaña que llevaba muy
+              <name>Cabezadoire</name>, en cuyo sitio puso una famosa tienda de<lb/>campaña que llevaba muy
               cómoda para ellos, los criados y las ca-<lb/>ballerías. Allí descansaron dos dias
               hasta el siguiente que debia<lb/>ser el primero del torneo.</p>
-              <p rend="indent"><lb/>Al amanecer se armaron
+            <p rend="indent">
+              <lb/>Al amanecer se armaron
               los dos campeones, y Guadin dijo al<lb/>conde, le parecia conveniente el hallarse de
               los primeros en la<lb/>palestra: en efecto; cabalgaron en sus caballos, y se fueron
               para<lb/>el palenque: el caballo que montaba el conde era negro y muy<lb/>fogoso; el
               escudo primorosamente labrado, y en campo azul pues-<lb/>tas estas polabras: <hi rend="cursiva">Solo
               lidio por amor:</hi> en el penacho llevaba una<lb/>pluma azul que manifestaba los celos de
               un amante.</p>
-              <p rend="indent"><lb/>Al presentarse los dos en la plaza del combate, fijaron la vis-<lb/>ta
+            <p rend="indent">
+              <lb/>Al presentarse los dos en la plaza del combate, fijaron la vis-<lb/>ta
               en ellos todo el concurso de gente, elogiando con particularidad<lb/>la bizarría del
               caballero de la divisa azul, quien se puso á pasear<lb/>por delante del palco real
               donde se encontraba la emperatriz acom-<lb/>pañada de Oriana, que manifestaba en su
               semblante algun pesar,<lb/>siendo, sin duda, el no saber el paradero del conde
               Partinoples ni
+
             
                 <pb n="28" source="Varios_425_28.jpg" facs="varios/Varios_425_28.jpg"/>
-            
-                <fw type="paginaNum">— 28—</fw>
-            
+
+              <fw type="paginaNum">— 28—</fw>
               <lb/>qué se pudo hacer de él; á su inmediacion se hallaban los reyes<lb/>que
               debian decidir de la suerte de la emperatriz y del caballero<lb/>afortunado que por
               armas la ganase en los tres dias de torneo.</p>
-              <p rend="indent"><lb/>Se mandó por los reyes pudiesen
+            <p rend="indent">
+              <lb/>Se mandó por los reyes pudiesen
               tornear todos los caballeros<lb/>turcos, moros, cristianos y demás que quisiesen, sin
               escepcion de<lb/>naciones; mas entre ellos tuvieron disputas sobre la bizarría
-              del<lb/>caballero de la divisa azul, y la valentía del soldan de Persia, que,<lb/>en
+              del<lb/>caballero de la divisa azul, y la valentía del soldan de <name>Persia</name>, que,<lb/>en
               efecto, sabian que era muy valiente; pero esta cuestion cesó<lb/>tan luego como
               hicieron la señal de dar principio al torneo to-<lb/>cando los clarines.</p>
-              <p rend="indent"><lb/>El conde, como se ha dicho, se andaba paseando por delante<lb/>del palco real, y
+            <p rend="indent">
+              <lb/>El conde, como se ha dicho, se andaba paseando por delante<lb/>del palco real, y
               observando debajo de él un apuesto caballero ar-<lb/>mado de muy lucidas armas,
               acompañado de un grande séquito;<lb/>preguntó á Guadin si sabia quién era aquel
-              personaje, y este le<lb/>contestó que el soldan de Persia, hombre esforzado y
+              personaje, y este le<lb/>contestó que el soldan de <name>Persia</name>, hombre esforzado y
               valiente,<lb/>bien conocido por sos hazañas. El conde le respondió: me
               parece<lb/>que en mal sitio se ha colocado: y en seguida se separó de Guadin<lb/>y se
-              fué para el soldan de Persia: este, apenas le vió delante de sí<lb/>y en ademan de
+              fué para el soldan de <name>Persia</name>: este, apenas le vió delante de sí<lb/>y en ademan de
               desafiarlo, salió de entre los suyos, en cuyo acto<lb/>fué Guadin al conde y le dijo
               disimuladamente: muy poderoso es<lb/>el soldan, andad con cuidado; pues si por
               desgracia lo pasara mal,<lb/>vendrán en su ayuda los demas parciales suyos: el conde
@@ -6263,11 +6417,11 @@
               primer puesto, y habiendo<lb/>sido armado de nuevo el conde con una gruesa lanza,
               salió al frente<lb/>otra vez para aguardar caballero que quisiese batirse; por lo
               cual
+
             
                 <pb n="29" source="Varios_425_29.jpg" facs="varios/Varios_425_29.jpg"/>
-            
-                <fw type="paginaNum">—29—</fw>
-            
+
+              <fw type="paginaNum">—29—</fw>
               <lb/>dijo uno de los reyes á los demás: muy valiente y esforzado es<lb/>este
               caballero; pues aun no ha escapado del peligro y ya se halla<lb/>de nuevo al frente;
               á lo que le costestaron los demás: hoy es el pri-<lb/>mer dia, y él se cansará y
@@ -6283,7 +6437,8 @@
               ambos en tierra; el conde recibió un fuerte golpe, y en<lb/>seguida acometió al
               soldan con tal denuedo que le hizo dar en<lb/>tierra; pero fué tan generoso que le
               ayudó á cabalgar otra vez.</p>
-              <p rend="indent"><lb/>En esto hicieron los clarines la señal de concluido
+            <p rend="indent">
+              <lb/>En esto hicieron los clarines la señal de concluido
               el torneo<lb/>de aquel dia: los dos compañeros se mantuvieron en la plaza has-<lb/>ta
               que no quedó caballero alguno en ella, retirándose en seguida<lb/>á su tienda hasta
               el otro dia que madrugaron, y despues de ha-<lb/>berse desayunado tomaron sus armas y
@@ -6304,14 +6459,15 @@
               francés, cuyo nombre y circunstancias le estaba prohi-<lb/>bido descubrir á nadie.
               En esto tocaron los clarines en señal de<lb/>concluido el torneo por aquel dia,
               retirándose despues los dos<lb/>compañeros amigos á su tienda.</p>
-            
+
             <pb n="30" source="Varios_425_30.jpg" facs="varios/Varios_425_30.jpg"/>
-            
+
             <fw type="paginaNum">— 30 —</fw>
-            
-            <p rend="indent"><lb/>Prevenidos al dia siguiente los dos campeones, cabalgaron en<lb/>sus briosos
+            <p rend="indent">
+              <lb/>Prevenidos al dia siguiente los dos campeones, cabalgaron en<lb/>sus briosos
               caballos, con la diferencia de que el conde llevaba el<lb/>penacho negro y quitadas
-              las letras del escudo; puso en su lugar<lb/><hi rend="cursiva">Morir ó vencer</hi>. Llegaron al palenque los
+              las letras del escudo; puso en su lugar<lb/>
+              <hi rend="cursiva">Morir ó vencer</hi>. Llegaron al palenque los
               dos, y todo el concurso<lb/>fijó la vista en el caballero del penacho negro, á quien
               conocieron<lb/>todos por el compañero de armas que llevaba. Púsose al
               frente<lb/>pidiendo campaña, mas nadie quiso justar con él por el recelo que<lb/>le
@@ -6322,7 +6478,7 @@
               fué<lb/>tal, que las lanzas quedaron reducidas á astillas, cayendo el rey<lb/>de su
               caballo, el cual tomó el conde de la brida y lo entregó<lb/>á Guadin. La emperatriz
               deseosa de saber quién fuese tan valien-<lb/>te campeon, lo mandó preguntar de su
-              parte; el conde contestó,<lb/>que era cristiano y del reino de Francia. En cierto
+              parte; el conde contestó,<lb/>que era cristiano y del reino de <name>Francia</name>. En cierto
               modo se pe-<lb/>netró la emperatriz de que fuera el conde Partinoples, y rogó
               á<lb/>Dios lo librase de todo peligro. El soldan y el rey Herman trata-<lb/>ron de
               vencer al conde, lo que observado por Guadin, se lo advir-<lb/>tió para que estuviese
@@ -6339,22 +6495,24 @@
               á la prision del rey moro, á lo que Gua-<lb/>din lo contestó era preciso cumplir
               como caballero; que iria en su<lb/>compañía, y dado caso que fuese necesario, él
               quedaria en la pri-<lb/>sion en rehenes.</p>
-              <p rend="indent"><lb/>Al otro dia de mañana se partieron ambos
+            <p rend="indent">
+              <lb/>Al otro dia de mañana se partieron ambos
               compañeros para Da-<lb/>masco; enterada la sultana de su llegada, y viendo haber
               cumplido<lb/>su palabra como caballero, le concedió la libertad, regresando
               am-<lb/>bos hácia el palacio de la emperatriz, en cuya ocasion estaban
               dis-<lb/>putando los reyes, unos elogiando al conde y otros al soldan; pero<lb/>no
               faltaba quien dijese, era muy cierto que el caballero del penacho
+
             
                 <pb n="31" source="Varios_425_31.jpg" facs="varios/Varios_425_31.jpg"/>
-            
-                <fw type="paginaNum">— 31—</fw>
-            
+
+              <fw type="paginaNum">— 31—</fw>
               <lb/>negro era quien habia ganado el torneo; pero se ignoraba quién fue-<lb/>se, á
-              lo que contestó el conde: yo soy el conde de Bles, sobrino<lb/>del rey de Francia, y
+              lo que contestó el conde: yo soy el conde de <name>Bles</name>, sobrino<lb/>del rey de <name>Francia</name>, y
               mi nombre es Partinoples: al oir la empera-<lb/>triz la relacion del conde, cayó sin
               sentido en tierra, recogiéndola<lb/>Oriana al momento en sus brazos.</p>
-              <p rend="indent"><lb/>Grande fué la cuestion que tuvieron los reyes sobre la eleccion<lb/>de emperador entre el soldan
+            <p rend="indent">
+              <lb/>Grande fué la cuestion que tuvieron los reyes sobre la eleccion<lb/>de emperador entre el soldan
               y el conde, y por último, determi-<lb/>naron que la emperatriz eligiese por esposo
               aquel que más le agra-<lb/>dase de los dos: así lo hicieron llevándolos ante su
               presencia: ente-<lb/>rada de lo convenido por los reyes, mandó al conde se quitase
@@ -6365,20 +6523,23 @@
               enhorabuena al nuevo<lb/>emperador: todos los caballeros fueron besándole la mano,
               siendo<lb/>el primero Guadin, diciéndole: viva, viva mi señor el emperador;<lb/>y
               los reyes le tomaron en brazos y le proclamaron por tal.</p>
-              <p rend="indent"><lb/>El soldan de Persia, con todo su séquito y acompañamiento,<lb/>despues de besar la mano y prestado la debida
+            <p rend="indent">
+              <lb/>El soldan de <name>Persia</name>, con todo su séquito y acompañamiento,<lb/>despues de besar la mano y prestado la debida
               obediencia al nue-<lb/>vo emperador, se despidió, marchando en seguida para sus
               tierras,<lb/>llevándose el desconsuelo de que la emperatriz hubiese elegido<lb/>por
               esposo á su rival; pero hubo de conformarse con la suerte que<lb/>le habia tocado,
               bien á pesar suyo.</p>
-              <p rend="indent"><lb/>Grandiosas fueron las fiestas que se hicieron en todo el
+            <p rend="indent">
+              <lb/>Grandiosas fueron las fiestas que se hicieron en todo el
               impe-<lb/>rio, en la coronacion del nuevo emperador, cuyas noticias llegadas<lb/>á
-              Francia fueron igualmente celebradas por la madre del conde,<lb/>el rey y demás
+              <name>Francia</name> fueron igualmente celebradas por la madre del conde,<lb/>el rey y demás
               grandeza del reino, que manifestaron el grande<lb/>placer que les causaba en haber
               sido reconocido y coronado por<lb/>emperador el conde de Partinoples; á cuyo efecto
               le enviaron em-<lb/>bajadores, felicitándole por su elevacion, y ofreciéndole los
               refuer-<lb/>zos y auxilios que pudiese necesitar; y formando desde aquella<lb/>época
               una completa alianza entre ambas naciones.</p>
-              <p rend="indent"><lb/>Pasados los primeros momentos del
+            <p rend="indent">
+              <lb/>Pasados los primeros momentos del
               placer que todos en ge-<lb/>neral habian disfrutado, quiso la emperatriz saber de la
               misma<lb/>boca de su esposo cuanto le habia ocurrido desde su huida del pa-<lb/>lacio,
               pues informada por Oriana, le habia estimulado su curiosi-<lb/>sidad. Muy sensible le
@@ -6386,12 +6547,13 @@
               sufrido; pero la satisfac-<lb/>cion que disfrutaban en aquellos instantes, les
               disipaba los pesares<lb/>pasados y que ya se les presentaba un dichoso
               porvenir.</p>
-              <p rend="indent"><lb/>El moro Guadin, compañero de armas del conde, pasados los
+            <p rend="indent">
+              <lb/>El moro Guadin, compañero de armas del conde, pasados los
+
             
                 <pb n="32" source="Varios_425_32.jpg" facs="varios/Varios_425_32.jpg"/>
-            
-                <fw type="paginaNum">— 32 —</fw>
-              
+
+              <fw type="paginaNum">— 32 —</fw>
               <lb/>festejos de la córte, pidió licencia para regresar á su patria
               con<lb/>sus criados: cuando el emperador lo oyó le causó gran pesar su<lb/>peticion,
               y por ello le rogó no se partiese de allí, pues desearia<lb/>tenerle á su lado, en
@@ -6401,12 +6563,12 @@
               lo que le estaba agradecido, por lo que él habia hecho.<lb/>Mucho placer recibió la
               emperatriz con semejante uueva, ofre-<lb/>ciéndose á ser su protectora, como
               igualmente á todos cuantos<lb/>habian contribuido á labrar su felicidad.</p>
-              <p rend="indent"><lb/>Reinaron en paz ambos esposos largos años con la sucesion<lb/>que les dió el cielo
+            <p rend="indent">
+              <lb/>Reinaron en paz ambos esposos largos años con la sucesion<lb/>que les dió el cielo
               en los hijos que tuvieron, estimados y obse-<lb/>quiados de todo su imperio, cuyos
               súbditos á porfía se esmeraron<lb/>siempre en complacerlos hasta la muerte, que
               recibieron con la<lb/>vor resignacion, dejando gratos recuerdos á la posteridad.</p>
           </div>
-          
           <trailer>FIN.</trailer>
         </div>
       </div>

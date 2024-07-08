@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -103,6 +118,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1773540">
+            <placeName key="Tetuán">Tetuán</placeName>
+            <location>
+              <geo>40.460556 -3.7</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -138,8 +161,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1423,15 +1445,20 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_336_1.jpg" facs="varios/Varios_336_1.jpg"/>
 
         <fw type="impresorNum">(Núm. 32.)</fw>
-
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>NOMBRES Y FALTAS DE LOS HOMBRES.</head>
-          <head type="subtitulo"><lb/><hi rend="negrita">SÁTIRA GRACIOSA</hi><lb/><hi rend="cursiva">en la que se manifiestan los nombres, propiedades y faltas, que han observado<lb/>las
-              mujeres en varios de los hombres del dia.</hi></head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>NOMBRES Y FALTAS DE LOS HOMBRES.</head>
+          <head type="subtitulo">
+            <lb/>
+            <hi rend="negrita">SÁTIRA GRACIOSA</hi>
+            <lb/>
+            <hi rend="cursiva">en la que se manifiestan los nombres, propiedades y faltas, que han observado<lb/>las
+              mujeres en varios de los hombres del dia.</hi>
+          </head>
           <lg>
             <l rend="indent">Escuche todo viviente,</l>
             <l>el que nos quiera escuchar,</l>
@@ -1669,7 +1696,7 @@
             <l>y si pensamos en ellos</l>
             <l>no podemos continuar,</l>
             <l>porque tan solo á su nombre</l>
-            <l>la musa se va á Tetuan.</l>
+            <l>la musa se va á <name>Tetuan</name>.</l>
           </lg>
           <lg>
             <l rend="indent">No hay historia verdadera</l>
@@ -1851,9 +1878,9 @@
             <l>por toda una eternidad.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID: 1873. <lb/>Despacho de Marés y Compañía, Juanelo, 19.</p>
+          <p>
+            <lb/>MADRID: 1873. <lb/>Despacho de Marés y Compañía, Juanelo, 19.</p>
         </div>
       </div>
     </body>

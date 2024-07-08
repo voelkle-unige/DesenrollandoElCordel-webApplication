@@ -14,6 +14,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -68,7 +82,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +111,32 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="6" corresp="Q5705">
+            <placeName key="Cataluña">Cataluña</placeName>
+            <location>
+              <geo>41.8375 1.53777777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q38">
+            <placeName key="Italia">Italia</placeName>
+            <location>
+              <geo>42.5 12.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q597320">
+            <placeName key="Ampurdán">Ampurdán</placeName>
+            <location>
+              <geo>42.081944444444 3.0719444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -137,7 +178,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_040_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_040_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_040_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_040_1/full/full/0/default.jpg"/>
@@ -1110,18 +1153,21 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_040_1.jpg" facs="varios/Varios_040_1.jpg"/>
 
           <fw type="impresorNum">Número 48.</fw>
-
-          <head type="primer_titulo"><lb/><hi rend="negrita">EL</hi><lb/>CANTOR DE LAS
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">EL</hi>
+            <lb/>CANTOR DE LAS
             HERMOSAS.</head>
-          <head type="titulo_parte"><lb/>TROVAS DE AMOR DEDICADAS AL BELLO SEXO<lb/>POR UNOS
+          <head type="titulo_parte">
+            <lb/>TROVAS DE AMOR DEDICADAS AL BELLO SEXO<lb/>POR UNOS
             AFICIONADOS.</head>
-
           <div n="1">
-            <head type="titulo_cancion"><lb/>LA ESTRELLA DEL DIA.<lb/>CANCION A DUO.</head>
-
+            <head type="titulo_cancion">
+              <lb/>LA ESTRELLA DEL DIA.<lb/>CANCION A DUO.</head>
             <lg n="1">
               <head type="titulo_estrofa">1.ª</head>
               <l rend="indent">Eres la luz de mis ojos,</l>
@@ -1133,7 +1179,6 @@
               <l>¡Amor mio! yo te ruego</l>
               <l>me dés tu fino querer.</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">2.ª</head>
               <l rend="indent">Apenas nace en Oriente</l>
@@ -1159,7 +1204,6 @@
               <l>me dá un sueño dulce, hermoso,</l>
               <l>y una delicia sin par.</l>
             </lg>
-
             <lg n="4">
               <head type="titulo_estrofa">4.ª</head>
               <l rend="indent">¡Estrella! ¡dulce consuelo!</l>
@@ -1171,7 +1215,6 @@
               <l>y de puro amor desecho</l>
               <l>rebosaré de placer.</l>
             </lg>
-
             <lg n="5">
               <head type="titulo_estrofa">5.ª</head>
               <l rend="indent">En bosque frondoso echado</l>
@@ -1183,7 +1226,6 @@
               <l>¡Hermosa Estrella del dia!</l>
               <l>tu reflejo es mi existir.</l>
             </lg>
-
             <lg n="6">
               <head type="titulo_estrofa">6.ª</head>
               <l rend="indent">Yo te busco noche y dia</l>
@@ -1195,7 +1237,6 @@
               <l>de estos dulces resplandores</l>
               <l>que dan inmenso placer.</l>
             </lg>
-
             <lg n="7">
               <head type="titulo_estrofa">7.ª</head>
               <l rend="indent">Cuando asoma en Oriente</l>
@@ -1207,7 +1248,6 @@
               <l>¡ídolo del alma mia,</l>
               <l>ven mi alma á consolar!</l>
             </lg>
-
             <lg n="8">
               <head type="titulo_estrofa">8.ª</head>
               <l rend="indent">Despues que de oscura noche</l>
@@ -1219,7 +1259,6 @@
               <l>y postrado yo de hinojos</l>
               <l>lloro triste su rigor.</l>
             </lg>
-
             <lg n="9">
               <head type="titulo_estrofa">9.ª</head>
               <l rend="indent">El canto de hermosas aves</l>
@@ -1231,7 +1270,6 @@
               <l>pues que vivir yo sin ella</l>
               <l>será vivir con dolor.</l>
             </lg>
-
             <lg n="10">
               <head type="titulo_estrofa">10.</head>
               <l rend="indent">Ya las flores no me brindan</l>
@@ -1257,7 +1295,6 @@
               <l>que yo te seré constante</l>
               <l>con cariño sin igual.</l>
             </lg>
-
             <lg n="12">
               <head type="titulo_estrofa">12.</head>
               <l rend="indent">Despreciado de mi Estrella</l>
@@ -1269,16 +1306,15 @@
               <l>¿Qué es vivir sin mi querida?</l>
               <l>¡Es un eterno sufrir!</l>
             </lg>
-            <p><lb/>F. T.</p>
+            <p>
+              <lb/>F. T.</p>
           </div>
-
           <div n="2">
             <head type="titulo_cancion" rend="negrita">DANZA CATALANA.</head>
             <head type="subtitulo_cancion">DEDICADA Á LAS NOYAS DE CATALUNYA.</head>
-
             <lg n="1">
               <head type="titulo_estrofa">I.</head>
-              <l rend="indent">Las noyas de Catalunya</l>
+              <l rend="indent">Las noyas de <name>Catalunya</name></l>
               <l>¿quí es lo que duptará,</l>
               <l>que son las flors més hermosas</l>
               <l>que en lo milló Eden hi ha?</l>
@@ -1291,12 +1327,11 @@
               <l>á vostras gracias</l>
               <l>rendim amor.</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">II.</head>
               <l rend="indent">No os fixeu solament jóves</l>
               <l>ab las noyas de ciutat,</l>
-              <l>que en lo plá de Barcelona</l>
+              <l>que en lo plá de <name>Barcelona</name></l>
               <l>hi ha lo més resalat;</l>
               <l rend="indent">Veureu allí pajeseta</l>
               <l>ab un vestí tan bufó,...</l>
@@ -1307,7 +1342,6 @@
               <l>vos aseguro</l>
               <l>que no hi ha amor.</l>
             </lg>
-
             <lg n="3">
               <head type="titulo_estrofa">III.</head>
               <l rend="indent">Sia al plá ó á la montanya,</l>
@@ -1323,11 +1357,10 @@
               <l>sino en la terra</l>
               <l>del Catalá.</l>
             </lg>
-
             <lg n="4">
               <head type="titulo_estrofa">IV.</head>
               <l rend="indent">No dupteu minyons del dia</l>
-              <l>que Catalunya es la fló</l>
+              <l>que <name>Catalunya</name> es la fló</l>
               <l>de totas las cosas bonas...</l>
               <l>y per noyas, la milló;</l>
               <l rend="indent">No hi ha estranjé quant arriba</l>
@@ -1357,7 +1390,6 @@
               <l>la més gran dicha</l>
               <l>dona en lo cor.</l>
             </lg>
-
             <lg n="6">
               <head type="titulo_estrofa">VI.</head>
               <l rend="indent">Canteulos de amor mil trovas</l>
@@ -1370,10 +1402,9 @@
               <l>més que dulzura y amor.</l>
               <l rend="indent">No dupteu jóves</l>
               <l>lo que os dich jo,</l>
-              <l>que á Catalunya</l>
+              <l>que á <name>Catalunya</name></l>
               <l>hi ha lo millor.</l>
             </lg>
-
             <lg n="7">
               <head type="titulo_estrofa">VII.</head>
               <l rend="indent">Teixiolos bellas guirnaldas</l>
@@ -1383,12 +1414,11 @@
               <l rend="indent">Tributeulos tot quant siga</l>
               <l>que será ben acullit,</l>
               <l>perque com las catalanas</l>
-              <l rend="indent">Ni á Italia, Fransa,</l>
+              <l rend="indent">Ni á <name>Italia</name>, Fransa,</l>
               <l>ni en cap estat,</l>
               <l>tanta hermosura</l>
               <l>Déu ha posat.</l>
             </lg>
-
             <lg n="8">
               <head type="titulo_estrofa">VIII.</head>
               <l rend="indent">No olvideu la vostra patria</l>
@@ -1397,24 +1427,25 @@
               <l>y cansons en castellá.</l>
               <l rend="indent">Teniu una terra de ánjels</l>
               <l>per darvos inspiració,</l>
-              <l>y os repetesch... Catalunya</l>
+              <l>y os repetesch... <name>Catalunya</name></l>
               <l>per noyas... la nata y flor.</l>
               <l rend="indent">Joyas preciosas</l>
               <l>de gran valor,</l>
               <l>á vostras gracias</l>
               <l>rendim amor.</l>
             </lg>
-            <p rend="cursiva"><lb/>(Es propiedad.)</p>
+            <p rend="cursiva">
+              <lb/>(Es propiedad.)</p>
             <trailer>FIN.</trailer>
           </div>
         </div>
-
         <div type="colofon">
-          <p rend="cursiva"><lb/>Se hallara de venta en casa Antonio Bosch, Bou de la Plaza Nueva,
+          <p rend="cursiva">
+            <lb/>Se hallara de venta en casa Antonio Bosch, Bou de la Plaza Nueva,
             núm. 13 tienda.</p>
-          <p><lb/>Imprenta de N. Ramirez y Compañia, pasaje de Escudilers número 4.</p>
+          <p>
+            <lb/>Imprenta de N. Ramirez y Compañia, pasaje de Escudilers número 4.</p>
         </div>
-
       </div>
     </body>
   </text>

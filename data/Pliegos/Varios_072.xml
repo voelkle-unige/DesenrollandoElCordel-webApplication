@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -35,7 +49,8 @@
             <title type="titulo_breve">Marcos de Cabra.</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_397.xml">Varios_397</ref></p>
+            <p>Otra impresión: <ref target="Varios_397.xml">Varios_397</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>[s.n.]</publisher>
@@ -70,7 +85,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +112,50 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q517450">
+            <placeName key="Guadarrama">Guadarrama</placeName>
+            <location>
+              <geo>40.672777777778 -4.0888888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q11953">
+            <placeName key="Guadalajara">Guadalajara</placeName>
+            <location>
+              <geo>40.633333333333 -3.1666666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1641642">
+            <placeName key="Arenas">Arenas</placeName>
+            <location>
+              <geo>36.8154342 -4.0441825</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2386849">
+            <placeName key="La_Alcarria">La Alcarria</placeName>
+            <location>
+              <geo>40.30666667 -2.87305556</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q984865">
+            <placeName key="Peralta">Peralta</placeName>
+            <location>
+              <geo>42.35688014 -1.801595739</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1630025">
+            <placeName key="Esquivias">Esquivias</placeName>
+            <location>
+              <geo>40.103055555556 -3.7647222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q178684">
+            <placeName key="Berlanga_de_Duero">Berlanga De Duero</placeName>
+            <location>
+              <geo>41.465 -2.8611111111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +191,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-06-16" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-06-16" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1330,20 +1389,25 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_072_1.jpg" facs="varios/Varios_072_1.jpg"/>
 
           <fw type="impresorNum">(Núm. 117.)</fw>
-
-          <head type="primer_titulo" rend="negrita"><lb/>MARCOS DE CABRA.</head>
-          <head type="subtitulo"><lb/><hi rend="negrita">NUEVA RELACION Y DIVERTIDO
-              ROMANCE,</hi><lb/><hi rend="cursiva">en que se refiere el trágico casamiento de este
+          <head type="primer_titulo" rend="negrita">
+            <lb/>MARCOS DE CABRA.</head>
+          <head type="subtitulo">
+            <lb/>
+            <hi rend="negrita">NUEVA RELACION Y DIVERTIDO
+              ROMANCE,</hi>
+            <lb/>
+            <hi rend="cursiva">en que se refiere el trágico casamiento de este
               pobre hombre, vecino<lb/>de Guadarrama, que despues de unas alegres bodas,
               esperimentó á<lb/>pocos meses tanta multitud de partos en su casa, que por asistir
               á<lb/>ellos no pudo comer ni descansar en todo el dia. Dase cuenta de su<lb/>grande
-              afliccion, y otras muchas circunstancias que verá el<lb/>curioso lector.</hi></head>
-
+              afliccion, y otras muchas circunstancias que verá el<lb/>curioso lector.</hi>
+          </head>
           <l rend="indent">En domingo se casó</l>
-          <l>Marcos el de Guadarrama,</l>
+          <l>Marcos el de <name>Guadarrama</name>,</l>
           <l>digo, de carnestolendas</l>
           <l>de la cuaresma pasada:</l>
           <l>casó con Juana Chamorro,</l>
@@ -1351,9 +1415,9 @@
           <l>él es hijo de Juan Crespo</l>
           <l>y de María la Larga,</l>
           <l>nieto del tamborilero</l>
-          <l>que nació en Guadalajara.</l>
+          <l>que nació en <name>Guadalajara</name>.</l>
           <l>Este tal tiene una tia</l>
-          <l>que es partera en Berlarga;</l>
+          <l>que es partera en <name>Berlarga</name>;</l>
           <l>la cual viniendo á la boda,</l>
           <l>la ofreció á su nuera Juana,</l>
           <l>para empezar á vivir</l>
@@ -1397,10 +1461,10 @@
           <l>y todas diferenciadas :</l>
           <l>primero pan y limon</l>
           <l>porque les abra las ganas;</l>
-          <l>el vino todo es de Arenas,</l>
-          <l>de Esquibias y de la Alcarria,</l>
+          <l>el vino todo es de <name>Arenas</name>,</l>
+          <l>de <name>Esquibias</name> y de la <name>Alcarria</name>,</l>
           <l>y para los desposados</l>
-          <l>tienen vino de Peralta,</l>
+          <l>tienen vino de <name>Peralta</name>,</l>
           <l>sopas manchegas, gigote,</l>
           <l>conejos, liebres gisadas,</l>
           <l>estofado y picadillo,</l>
@@ -1590,7 +1654,7 @@
           <l>y la perra querrá pan,</l>
           <l>y sopas querrá la gata;</l>
           <l>la gallina querrá trigo,</l>
-          <l>y yo vino de Peralta.</l>
+          <l>y yo vino de <name>Peralta</name>.</l>
           <l>Mas ¿comó será, Dios mio,</l>
           <l>si todo esto nos falta?</l>
           <l>y oigo que á este mismo tiempo,</l>
@@ -1628,9 +1692,10 @@
           <l>Y aqui el humilde poeta</l>
           <l>pide perdon de sus faltas,</l>
         </div>
-        
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">Madrid:</hi> 1849.— <hi rend="cursiva">Impta. de D.J. M.
+          <p>
+            <lb/>
+            <hi rend="cursiva">Madrid:</hi> 1849.— <hi rend="cursiva">Impta. de D.J. M.
               Marés, calle de Relatores núm.</hi> 17.</p>
         </div>
       </div>

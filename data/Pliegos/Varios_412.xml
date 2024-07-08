@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,26 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1404773">
+            <placeName key="El_Poblenou">El Poblenou</placeName>
+            <location>
+              <geo>41.39916667 2.20388889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15639">
+            <placeName key="San_Feliú_de_Llobregat">San Feliú De Llobregat</placeName>
+            <location>
+              <geo>41.383333333333 2.0438888888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +165,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1566,14 +1600,16 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_412_1.jpg" facs="varios/Varios_412_1.jpg"/>
 
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>LA FEBRE GROGA.</head>
-          <head type="subtitulo"><lb/>CANSÓ NOVA,<lb/>en la cual se esplican las tragedias, apuros
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA FEBRE GROGA.</head>
+          <head type="subtitulo">
+            <lb/>CANSÓ NOVA,<lb/>en la cual se esplican las tragedias, apuros
             y tribulacions que han passat<lb/>los Barcelonins que fugiren de la Ciutat per llibrarse
             de tal mal.</head>
-
           <lg>
             <head type="titulo_estrofa">1.</head>
             <l rend="indent">Si us voleu divertí un rato,</l>
@@ -1597,11 +1633,10 @@
             <l>que 'l mal era á la Ciutat,</l>
             <l>cada cual á casa sèva</l>
             <l>corría desesperat.</l>
-            
+
             <pb n="2" source="Varios_412_2.jpg" facs="varios/Varios_412_2.jpg"/>
-            
+
             <fw type="paginaNum">2</fw>
-            
             <l rend="indent">Arreglant baguls y fardos</l>
             <l>com si no hi fossin á temps</l>
             <l>y tapantse tots los nassos</l>
@@ -1728,11 +1763,10 @@
             <l>»se'ls hagués endut plegats.»</l>
             <l rend="cursiva">Tururut, etc.</l>
           </lg>
-          
+
           <pb n="3" source="Varios_412_3.jpg" facs="varios/Varios_412_3.jpg"/>
-          
+
           <fw type="paginaNum">3</fw>
-          
           <lg>
             <head type="titulo_estrofa">13.</head>
             <l rend="indent">De passatjes com aquestos</l>
@@ -1751,10 +1785,10 @@
             <l>y la senyora Manjó,</l>
             <l>que venent mitjas de llana</l>
             <l>han omplert molt bè 'l mitjó,</l>
-            <l rend="indent">Per fugí de Barcelona,</l>
+            <l rend="indent">Per fugí de <name>Barcelona</name>,</l>
             <l>refiats del parentiu,</l>
             <l>van aná ab una cosina</l>
-            <l>que tenen á San Feliu.</l>
+            <l>que tenen á <name>San Feliu</name>.</l>
             <l rend="cursiva">Tururut, etc.</l>
           </lg>
           <lg>
@@ -1847,7 +1881,7 @@
             <l>van agafá los trastets,</l>
             <l>y fugint de sa cosina,</l>
             <l>s' en varen aná solets.</l>
-            <l rend="indent">Tornaren á Barcelona,</l>
+            <l rend="indent">Tornaren á <name>Barcelona</name>,</l>
             <l>mentres deyan pèl camí:</l>
             <l>«Per mes que la peste 'ns mati</l>
             <l>»no tornarém á sortí.»</l>
@@ -1859,9 +1893,9 @@
             <l>y dirán «prou es ben cert,»</l>
             <l>que han passat, poch mes ó menos,</l>
             <l>algun cas com ara aquet.</l>
-            
+
             <pb n="4" source="Varios_412_4.jpg" facs="varios/Varios_412_4.jpg"/>
-            
+
             <l rend="indent">Mes per completá bè 'l quadro</l>
             <l>parlarem ab detenció</l>
             <l>de altre classe, que per cert</l>
@@ -1882,7 +1916,7 @@
           </lg>
           <lg>
             <head type="titulo_estrofa">25.</head>
-            <l rend="indent">En lo Poble Nou tenian</l>
+            <l rend="indent">En lo <name>Poble Nou</name> tenian</l>
             <l>un amich que es filadó,</l>
             <l>contant que 'ls aculliria,</l>
             <l>mes que fos an un recó.</l>
@@ -1897,7 +1931,7 @@
             <l rend="indent">Són pare la prengué en brassos,</l>
             <l>y carregat com un bou,</l>
             <l>ab pena ó doló arribaren</l>
-            <l>á dintre del Poble Nou.</l>
+            <l>á dintre del <name>Poble Nou</name>.</l>
             <l rend="indent">Arribaren á la casa</l>
             <l>de aquell amich filadó,</l>
             <l>lo qual los rebé ab carinyo,</l>
@@ -1920,7 +1954,7 @@
             <head type="titulo_estrofa">28.</head>
             <l rend="indent">No passaren gaires dias</l>
             <l>en trovarse en aquet cas,</l>
-            <l>tornaren á Barcelona</l>
+            <l>tornaren á <name>Barcelona</name></l>
             <l>casi sens poder da un pas.</l>
             <l rend="indent">Se aculliren á la sopa,</l>
             <l>y encara válgals aixó,</l>
@@ -1932,7 +1966,7 @@
             <head type="titulo_estrofa">29.</head>
             <l rend="indent">No penseu que en tots los puestos</l>
             <l>sempre aixís hagia passat,</l>
-            <l>puig que alguns de Barcelona</l>
+            <l>puig que alguns de <name>Barcelona</name></l>
             <l>bastant mal s' han aportat.</l>
             <l rend="indent">Jo us diré d' una familia</l>
             <l>que han pagat mólt malament,</l>
@@ -1977,10 +2011,17 @@
             <l rend="cursiva">Tururut, etc.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">Se trovará de venta en casa Anton Bosch, carrer del Bou de la Plassa Nova, n°.13.</hi></p>
-          <p><lb/><choice><sic>Imprempta</sic> <corr>Imprenta</corr></choice> de Ramirez y Comp, Passatje de Escudellers, núm. 4.—1870.</p>
+          <p>
+            <lb/>
+            <hi rend="cursiva">Se trovará de venta en casa Anton Bosch, carrer del Bou de la Plassa Nova, n°.13.</hi>
+          </p>
+          <p>
+            <lb/>
+            <choice>
+              <sic>Imprempta</sic>
+              <corr>Imprenta</corr>
+            </choice> de Ramirez y Comp, Passatje de Escudellers, núm. 4.—1870.</p>
         </div>
       </div>
     </body>

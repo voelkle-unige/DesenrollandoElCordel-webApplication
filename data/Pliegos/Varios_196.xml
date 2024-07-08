@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -92,6 +107,32 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q5783">
+            <placeName key="Andalucía">Andalucía</placeName>
+            <location>
+              <geo>37.405 -5.9875</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q4040">
+            <placeName key="Aragón">Aragón</placeName>
+            <location>
+              <geo>41 -1</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q419">
+            <placeName key="Perú">Perú</placeName>
+            <location>
+              <geo>-9.4 -76</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -127,8 +168,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-09" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-09" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -946,17 +986,19 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_196_1.jpg" facs="varios/Varios_196_1.jpg"/>
-        
-        <fw type="impresorNum"><lb/>( Num. 96. )</fw>
-        
-        <head type="primer_titulo" rend="negrita"><lb/>EL NUEVO CURRO MARINERO.</head>
 
+        <fw type="impresorNum">
+          <lb/>( Num. 96. )</fw>
+        <head type="primer_titulo" rend="negrita">
+          <lb/>EL NUEVO CURRO MARINERO.</head>
         <div>
-          <head type="titulo_cancion"><lb/>SEGUNDA PARTE.<lb/><hi rend="negrita">DESPEDIDA.</hi></head>
-
+          <head type="titulo_cancion">
+            <lb/>SEGUNDA PARTE.<lb/>
+            <hi rend="negrita">DESPEDIDA.</hi>
+          </head>
           <p>( ÉL Á ELLA. )</p>
-
           <lg>
             <head type="titulo_estrofa">
               <l>CORO.</l>
@@ -1038,8 +1080,8 @@
           <lg>
             <l rend="indent">Que es mayor la sal que encierra</l>
             <l>su basquiña y su jubon</l>
-            <l>que toda la Andalucia</l>
-            <l>y Granada y Aragon.</l>
+            <l>que toda la <name>Andalucia</name></l>
+            <l>y <name>Granada</name> y <name>Aragon</name>.</l>
             <l rend="cursiva">Adios, mi etc.</l>
           </lg>
           <lg>
@@ -1116,10 +1158,8 @@
             <l rend="cursiva">Adios, mi etc.</l>
           </lg>
         </div>
-
         <div>
           <p>( ELLA A ÉL. )</p>
-
           <lg>
             <head type="titulo_estrofa">
               <l>CORO.</l>
@@ -1174,9 +1214,9 @@
             <l>tu desvelo y mi ansiedad.</l>
             <l rend="cursiva">Adios, curro etc.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_196_4.jpg" facs="varios/Varios_196_4.jpg"/>
-          
+
           <lg>
             <l rend="indent">Si el relámpago brillaba</l>
             <l>en el cielo por azar,</l>
@@ -1277,13 +1317,13 @@
           </lg>
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="propriedad">
-          <p rend="cursiva"><lb/>(Autorizado segun la ley vigente.)</p>
+          <p rend="cursiva">
+            <lb/>(Autorizado segun la ley vigente.)</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Reus: Reimpreso por N. Roca.—Se hallará en casa Vilal, arrabal alta de Jesús,
+          <p>
+            <lb/>Reus: Reimpreso por N. Roca.—Se hallará en casa Vilal, arrabal alta de Jesús,
             núm. 5</p>
         </div>
       </div>

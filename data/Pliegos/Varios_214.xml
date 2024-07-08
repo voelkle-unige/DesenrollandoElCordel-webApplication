@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +109,56 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q84">
+            <placeName key="Londres">Londres</placeName>
+            <location>
+              <geo>51.507222222222 -0.1275</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1297">
+            <placeName key="Chicago">Chicago</placeName>
+            <location>
+              <geo>41.85003 -87.65005</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1156">
+            <placeName key="Bombay">Bombay</placeName>
+            <location>
+              <geo>19.0758333333333 72.8775</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q48">
+            <placeName key="Asia">Asia</placeName>
+            <location>
+              <geo>43.6811111111111 87.3311111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q205668">
+            <placeName key="prefectura_de_Magnesia">Prefectura De Magnesia</placeName>
+            <location>
+              <geo>39.35 22.983333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q3359409">
+            <placeName key="Micronesia">Micronesia</placeName>
+            <location>
+              <geo>12 152</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q37394">
+            <placeName key="Melanesia">Melanesia</placeName>
+            <location>
+              <geo>-7.44981388888889 157.720169444445</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +194,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1412,13 +1476,14 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_214_1.jpg" facs="varios/Varios_214_1.jpg"/>
 
-        <head type="primer_titulo"><lb/>COPLAS<lb/>DE LA ZARZUELA</head>
-
+        <head type="primer_titulo">
+          <lb/>COPLAS<lb/>DE LA ZARZUELA</head>
         <div n="1">
-          <head type="titulo_cancion" rend="negrita"><lb/>LOS COCINEROS</head>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>LOS COCINEROS</head>
           <l>¡Mira qué bonito,</l>
           <l>que bien hecho está!</l>
           <l>Es un muñequito</l>
@@ -1696,51 +1761,50 @@
           <l>Con gracia y á compás</l>
           <l>bailemos el chotis,</l>
           <l>porque ese baile es el</l>
-          <l>más chulo de Madrid.</l>
+          <l>más chulo de <name>Madrid</name>.</l>
           <l>sin desageración.</l>
           <l>Como este no le hay</l>
-          <l>ni en Londres ni en Chicago,</l>
-          <l>ni en Bombay, caray, caray</l>
+          <l>ni en <name>Londres</name> ni en <name>Chicago</name>,</l>
+          <l>ni en <name>Bombay</name>, caray, caray</l>
           <l>Caray cara y.</l>
           <l>Pues no le hay.</l>
-          <l>Ni en el Asia,</l>
-          <l>ni Melanesia,</l>
-          <l>Mecronesia,</l>
-          <l>ni en Magnesia</l>
-          <l>ni en Bombay.</l>
+          <l>Ni en el <name>Asia</name>,</l>
+          <l>ni <name>Melanesia</name>,</l>
+          <l><name>Mecronesia</name>,</l>
+          <l>ni en <name>Magnesia</name></l>
+          <l>ni en <name>Bombay</name>.</l>
           <l>Rao, rao.</l>
           <l>Ya se acabao.</l>
         </div>
-        
         <div n="2">
           <head type="titulo_cancion" rend="negrita">COUPLETS PARA REPETIR</head>
-          
-            <l>Se prohibe que penetren las nodrizas</l>
-            <l>que no traigan preparado el biberón</l>
-            <l>porque pueden enseñarnos ciertas cosas</l>
-            <l>relativas...</l>
-            <l>Al pudor.</l>
-            <l>Por supuesto que si viene alguna guapa</l>
-            <l>se la lleva <hi rend="cursiva">deseguida</hi> al ambigú</l>
-            <l>y despues á que se marque una habanera</l>
-            <l>y después de la habanera...</l>
-            <l>Tururú.</l>
-            <l>Muy bien hablaq, etc, etc.</l>
-            <l>Hace días se casó la Nicanora</l>
-            <l>con Ubaldo Capirote el alguacil</l>
-            <l>y en la boda se gastó, y no <hi rend="cursiva">desagero</hi></l>
-            <l>diez pesetas.</l>
-            <l>Ni Roschil.</l>
-            <l>Y lo raro es que los novios se marcharon</l>
-            <l>á su pueblo con la mar de prontitud</l>
-            <l>y el gacho del Capirote que es un vivo</l>
-            <l>cuando entró en el primer tunel...</l>
-            <l>Tururú.</l>
-            <l>May bien hablado. etc., etc.</l>
+          <l>Se prohibe que penetren las nodrizas</l>
+          <l>que no traigan preparado el biberón</l>
+          <l>porque pueden enseñarnos ciertas cosas</l>
+          <l>relativas...</l>
+          <l>Al pudor.</l>
+          <l>Por supuesto que si viene alguna guapa</l>
+          <l>se la lleva <hi rend="cursiva">deseguida</hi> al ambigú</l>
+          <l>y despues á que se marque una habanera</l>
+          <l>y después de la habanera...</l>
+          <l>Tururú.</l>
+          <l>Muy bien hablaq, etc, etc.</l>
+          <l>Hace días se casó la Nicanora</l>
+          <l>con Ubaldo Capirote el alguacil</l>
+          <l>y en la boda se gastó, y no <hi rend="cursiva">desagero</hi>
+          </l>
+          <l>diez pesetas.</l>
+          <l>Ni Roschil.</l>
+          <l>Y lo raro es que los novios se marcharon</l>
+          <l>á su pueblo con la mar de prontitud</l>
+          <l>y el gacho del Capirote que es un vivo</l>
+          <l>cuando entró en el primer tunel...</l>
+          <l>Tururú.</l>
+          <l>May bien hablado. etc., etc.</l>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Tipo-lit. de B. Rotger</p>
+          <p>
+            <lb/>Tipo-lit. de B. Rotger</p>
         </div>
       </div>
     </body>

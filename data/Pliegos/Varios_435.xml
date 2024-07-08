@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -43,7 +57,7 @@
             <country>Suisse</country>
             <settlement>Genève</settlement>
             <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
+            </repository>
             <collection>Colección Varios</collection>
             <idno type="cote"/>
             <idno type="DOI">10.5281/zenodo.6798723</idno>
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="16"/>16
+                <extent>
+                  <measure unit="página" quantity="16"/>16
                                                   p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
@@ -94,6 +109,38 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="30" corresp="Q79">
+            <placeName key="Egipto">Egipto</placeName>
+            <location>
+              <geo>27 29</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q620864">
+            <placeName key="Cilicia">Cilicia</placeName>
+            <location>
+              <geo>36.985 35.12</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q163329">
+            <placeName key="Canaán">Canaán</placeName>
+            <location>
+              <geo>32.766667 35.333333</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q1261081">
+            <placeName key="Gosén">Gosén</placeName>
+            <location>
+              <geo>30.8722222222222 31.4775</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q191687">
+            <placeName key="Heliópolis">Heliópolis</placeName>
+            <location>
+              <geo>30.129527777778 31.288888888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,7 +180,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_435_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_435_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_435_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_435_1/full/full/0/default.jpg"/>
@@ -3098,9 +3147,14 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_435_1.jpg" facs="varios/Varios_435_1.jpg"/>
+
         <fw type="numeroPliego">(DOS PLIEGOS)</fw>
-        <head type="primer_titulo"><lb/><hi rend="negrita">HISTORIA</hi><lb/>del redentor de los
+        <head type="primer_titulo">
+          <lb/>
+          <hi rend="negrita">HISTORIA</hi>
+          <lb/>del redentor de los
                               egipcios<lb/>EL PATRIARCA JOSÉ<lb/>LLAMADO EL CASTO POR SU GRAN
                               VIRTUD</head>
         <head type="subtitulo_parte">
@@ -3109,27 +3163,42 @@
                                     escrupulosamente de la Sagrada Escritura.</hi>
         </head>
         <div type="colofon">
-          <p><lb/>DESPACHOS:<lb/><hi rend="negrita">MADRID</hi><lb/>Hernando,
-                                    Arenal, 11.<lb/><hi rend="negrita">BARCELONA</hi><lb/>Bou de la
+          <p>
+            <lb/>DESPACHOS:<lb/>
+            <hi rend="negrita">MADRID</hi>
+            <lb/>Hernando,
+                                    Arenal, 11.<lb/>
+            <hi rend="negrita">BARCELONA</hi>
+            <lb/>Bou de la
                                     Plaza Nueva, 13.</p>
         </div>
+
         <pb n="2" source="Varios_435_2.jpg" facs="varios/Varios_435_2.jpg"/>
+
+
         <pb n="3" source="Varios_435_3.jpg" facs="varios/Varios_435_3.jpg"/>
+
         <div type="capitulo" n="1">
-          <head type="primer_titulo"><lb/>HISTORIA<lb/>DEL<lb/>PATRIARCA JOSÉ.<lb/></head>
-          <head type="titulo_parte"><lb/>CAPITULO PRIMERO.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Envidia de los hijos
+          <head type="primer_titulo">
+            <lb/>HISTORIA<lb/>DEL<lb/>PATRIARCA JOSÉ.<lb/>
+          </head>
+          <head type="titulo_parte">
+            <lb/>CAPITULO PRIMERO.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Envidia de los hijos
                                     de Jacob contra José su hermano: ellos le venden á
                                     los<lb/>Madianitas y estos á Putifar en Egigto, á donde le
                                     conducen.</head>
-          <p><lb/>La vida del Patriarca José es una de las mas maravillosas y
+          <p>
+            <lb/>La vida del Patriarca José es una de las mas maravillosas y
                                     ejem- <lb/>plares que nos refiere el antiguo testamento. En ella
                                     hallará el lector <lb/>mucho que aprender, mucho que meditar, y
                                     verá como Dios con su <lb/>omnipotente poder eleva al más
                                     encumbrado puesto al que ayer era <lb/>un pobre esclavo
                                     sacrificado por la malevolencia de sus propios her-
                                     <lb/>manos.</p>
-          <p><lb/>Solo contaba diez y seis años José, cuando ya estaba
+          <p>
+            <lb/>Solo contaba diez y seis años José, cuando ya estaba
                                     apacentando, <lb/>junto con sus hermanos, los rebaños de su
                                     padre Jacob. Amábale este <lb/>con extremado cariño, no solo
                                     por sus buenas cualidades, sino porque <lb/>le habia tenido en
@@ -3151,16 +3220,20 @@
                                     Jacob no pudo <lb/>menos de reñir á su hijo diciéndole:
                                     «¿Qué quiere decir este sueño <lb/>que viste? ¿Acaso yo, tu
                                     madre y tus hermanos te adoraremos sobre <lb/>la tierra?»</p>
-          <p><lb/>Empero Jacob, considerando la virtud y sencillez de su
+          <p>
+            <lb/>Empero Jacob, considerando la virtud y sencillez de su
                                     hijo, <lb/>reconocia la voz de Dios en la de José, que le
                                     decia, que aquel niño <lb/>estaba destinado para cosas grandes
                                     y maravillosas, y meditaba sobre <lb/>la inteligencia de sus
-                                    sueños. Si le riñó fué tan solo para que fuese <pb n="4" source="Varios_435_4.jpg" facs="varios/Varios_435_4.jpg"/>
-                                    <fw type="paginaNum">— 4—</fw>
-                                    <lb/>mas mirado elante de sus hermanos; pues conoció que estos
+                                    sueños. Si le riñó fué tan solo para que fuese
+ <pb n="4" source="Varios_435_4.jpg" facs="varios/Varios_435_4.jpg"/>
+
+            <fw type="paginaNum">— 4—</fw>
+            <lb/>mas mirado elante de sus hermanos; pues conoció que estos
                                     no po-<lb/>drian menos de envidiarle y mirarle con malos ojos,
                                     como efectiva-<lb/>mente sucedia.</p>
-          <p><lb/>El deseo de vengarse del inocente José, era el único
+          <p>
+            <lb/>El deseo de vengarse del inocente José, era el único
                                     pensamiento<lb/>que dominaba en sus hermanos, y lo satisfacieron
                                     del modo siguien-<lb/>te. Un dia en que estaban apacentando los
                                     ganados, envió Jacob á<lb/>su hijo á que viese lo que estaban
@@ -3174,7 +3247,8 @@
                                     con sangre de un cordero le haremos creer que una<lb/>fiera le
                                     ha devorado, lo cual demostrará la túnica ensangrentada
                                     y<lb/>hecha pedazos.</p>
-          <p><lb/>Ruben, el mayor de los hermanos, hizo cuanto le fué
+          <p>
+            <lb/>Ruben, el mayor de los hermanos, hizo cuanto le fué
                                     posible<lb/>para que abandonasen tan perversa determinacion,
                                     diciéndoles que<lb/>no matasen á José, que se acordaran que
                                     eran hermanos suyos, que<lb/>tenian su misma sangre; que para
@@ -3183,13 +3257,15 @@
                                     dieran la muerte. Esto les decia con el único objeto de
                                     salir<lb/>del paso, pues él pensaba sacarle despues y
                                     conducirlo á su anciano<lb/>padre.</p>
-          <p><lb/>Conformáronse todos con el parecer de Ruben y así que llegó
+          <p>
+            <lb/>Conformáronse todos con el parecer de Ruben y así que llegó
                                     á<lb/>ellos el inocente José, en vez de corresponder á sus
                                     caricias, le co-<lb/>gieron entre todos y despues de haberle
                                     quitado la túnica, le ataron<lb/>una cuerda á la cintura y le
                                     bajaron á una cisterna, que estaba sin<lb/>agua, para que en
                                     esta acabara sus dias.</p>
-          <p><lb/>Sentáronse luego cerca de la cisterna, y con toda
+          <p>
+            <lb/>Sentáronse luego cerca de la cisterna, y con toda
                                     tranquilidad<lb/>pusiéronse á comer; pero como no podia menos
                                     de suceder, la con-<lb/>versacion recayó sobre la accion
                                     inícua que habian cometido. Sin<lb/>duda, y es muy natural,
@@ -3198,18 +3274,22 @@
                                     conociendo por fin que era una infamia obrar de tal modo<lb/>con
                                     un inocente, que á más era su propio hermano, mudaron
                                     todos<lb/>de parecer.</p>
-          <p><lb/>Estando en esto vieron pasar por aquel sitio á unos
-                                    Ismaelitas<lb/>que iban á Egipto á vender sus mercancías, y
+          <p>
+            <lb/>Estando en esto vieron pasar por aquel sitio á unos
+                                    Ismaelitas<lb/>que iban á <name>Egipto</name> á vender sus mercancías, y
                                     Judá dijo á sus her-<lb/>manos, que era de parecer que más
                                     valia que matar á José, venderle<lb/>á aquellos mercaderes,
                                     los que se lo llevarian á lugares donde no<lb/>sabrian más de
                                     él. Aprobaron todos tal pensamiento, y sacando de
                                     la<lb/>cisterna al jóven cautivo lo llevaron á los Ismaelitas
                                     para ofrecérselo<lb/>en venta. Aceptaron estos, y dando por él
-                                    veinte dineros, siguieron<lb/>su camino hácia Egipto.</p>
+                                    veinte dineros, siguieron<lb/>su camino hácia <name>Egipto</name>.</p>
+
           <pb n="5" source="Varios_435_5.jpg" facs="varios/Varios_435_5.jpg"/>
+
           <fw type="paginaNum">— 5—</fw>
-          <p><lb/>Ruben, que poco antes de hablar Juda, se habia separado de
+          <p>
+            <lb/>Ruben, que poco antes de hablar Juda, se habia separado de
                                     sus<lb/>hermanos para reflexionar á solas cómo sacaria á su
                                     hermano José<lb/>del pozo, llegó pocos momentos despues de la
                                     venta.<lb/>«Y vuelto Ruben á la cisterna, no halló al
@@ -3233,7 +3313,7 @@
                                     á mi hijo llorando hasta el sepulcro.»<lb/>Dejemos al pobre
                                     anciano entregado á su dolor y á sus hijos con<lb/>el
                                     remordimiento de su infame conducta, y sigamos á José en
-                                    su<lb/>viaje á Egipto.<lb/>Llegado que hubieron allá los
+                                    su<lb/>viaje á <name>Egipto</name>.<lb/>Llegado que hubieron allá los
                                     mercaderes le pusieron en venta<lb/>en el mercado público de
                                     esclavos, y prendándose de él Putifar, gran<lb/>señor de
                                     aquella nacion y confidente intimo del rey, lo compró
@@ -3242,23 +3322,29 @@
                                     sucesos.</p>
         </div>
         <div type="capitulo" n="2">
-          <head type="titulo_parte"><lb/>CAPITULO II.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Putifar dá á José
+          <head type="titulo_parte">
+            <lb/>CAPITULO II.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Putifar dá á José
                                     la superintendencia de su casa.—Resiste á la violencia
                                     de<lb/>su señora, la que le calumnia, y es puesto en la
                                     cárcel, donde se gana la<lb/>confianza del alcaide.</head>
-          <p><lb/>Una vez llegado á casa de Putifar, despues de haber
+          <p>
+            <lb/>Una vez llegado á casa de Putifar, despues de haber
                                     presentado<lb/>el esclavo á su señora, encargóle algunas
                                     faenas que fueron desem-<lb/>peñadas por el jóven con gran
                                     celo é inteligencia; visto lo cual por<lb/>su señor, poco á
                                     poco le fué confiando distintos cargos, hasta
                                     que,<lb/>enteramente satisfecho de su conducta, le nombró su
                                     mayordomo, con<lb/>omnímodas facultades. Ya entonces el esclavo
-                                    se convirtió en dueño: <note><lb/>(1) Vestido de pelos de
+                                    se convirtió en dueño: <note>
+              <lb/>(1) Vestido de pelos de
                                           cabras de Cilicia.</note>
-                                    <pb n="6" source="Varios_435_6.jpg" facs="varios/Varios_435_6.jpg"/>
-                                    <fw type="paginaNum">— 6—</fw>
-                                    <lb/>entrególe su señor tan del todo el gobierno de la casa,
+
+            <pb n="6" source="Varios_435_6.jpg" facs="varios/Varios_435_6.jpg"/>
+
+            <fw type="paginaNum">— 6—</fw>
+            <lb/>entrególe su señor tan del todo el gobierno de la casa,
                                     que ya él mis-<lb/>mo no sabia lo que tenia, contentándose con
                                     que lo supiera José: él<lb/>que mandando en todos los criados,
                                     siendo él esclavo como ellos,<lb/>consiguió ser querido de
@@ -3281,7 +3367,8 @@
                                     no<lb/>pudiendo contenerse, siendo su pasion mayor que todo su
                                     decoro y<lb/>dignidad, espuso sin rebozo y con toda claridad su
                                     intento al jóven<lb/>mayordomo.</p>
-          <p><lb/>Resistióse José, afeándole al mismo tiempo su
+          <p>
+            <lb/>Resistióse José, afeándole al mismo tiempo su
                                     comportamiento;<lb/>pero ni el desprecio, ni las razones, ni el
                                     deber de esposa encontraron<lb/>eco en ella. Vuestro esposo y mi
                                     señor, la decia José, que me compró<lb/>por muy poco dinero,
@@ -3307,9 +3394,11 @@
                                     marido se fué á él y presentándole la capa<lb/>de José,
                                     valiéndose de mil zalamerías, le contó como el jóven
                                     la<lb/>habia querido seducir; que no habiendo alcanzado nada con
-                                    ha- <pb n="7" source="Varios_435_7.jpg" facs="varios/Varios_435_7.jpg"/>
-                                    <fw type="paginaNum">— 7 —</fw>
-                                    <lb/>lagos, habia echado mano de la fuerza, y que en la lucha se
+                                    ha-
+ <pb n="7" source="Varios_435_7.jpg" facs="varios/Varios_435_7.jpg"/>
+
+            <fw type="paginaNum">— 7 —</fw>
+            <lb/>lagos, habia echado mano de la fuerza, y que en la lucha se
                                     habia <lb/>quedado con la capa que le presentaba. Púsose
                                     furioso Putifar al oir <lb/>tal relato, y sin reflexionar ni
                                     inquirir la verdad mandó inmediata- <lb/>mente encerrar á
@@ -3336,11 +3425,14 @@
                                     posible los <lb/>trabajos de sus compañeros de infortunio.</p>
         </div>
         <div type="capitulo" n="3">
-          <head type="titulo_parte"><lb/>CAPITULO III.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Estando en la cárcel
+          <head type="titulo_parte">
+            <lb/>CAPITULO III.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Estando en la cárcel
                                     dos criados de Faraon, les esplica é interprela José<lb/>unos
                                     sueños que tuvieron, y el suceso verifica la prediccion.</head>
-          <p><lb/>Inescrutable el cielo en sus obras, permitió las
+          <p>
+            <lb/>Inescrutable el cielo en sus obras, permitió las
                                     desgracias de José<lb/>para ensalzarle cada vez con mayor
                                     fortuna, y como no le abando-<lb/>naba en sus trabajos, una
                                     conformidad ciega hacia del desgraciado<lb/>un hombre feliz.
@@ -3359,9 +3451,11 @@
                                     copero habia soñado, que veia una vid con tres
                                     sarmientos,<lb/>que en un momento se habia cubierto de hojas,
                                     pámpanos y racimos<lb/>ya maduros; y que habiendo cogido su
-                                    fruto, lo habia esprimido en <pb n="8" source="Varios_435_8.jpg" facs="varios/Varios_435_8.jpg"/>
-                                    <fw type="paginaNum">—8—</fw>
-                                    <lb/>la copa de Faraon, que tenia en sus manos, y se lo habia
+                                    fruto, lo habia esprimido en
+ <pb n="8" source="Varios_435_8.jpg" facs="varios/Varios_435_8.jpg"/>
+
+            <fw type="paginaNum">—8—</fw>
+            <lb/>la copa de Faraon, que tenia en sus manos, y se lo habia
                                     servido.<lb/>—Soñó el panadero que llevaba tres cestas de
                                     harina en la cabeza y<lb/>le parecia que en la que estaba encima
                                     de todas, habia cosas muy deli-<lb/>cadas de su oficio, las que
@@ -3382,7 +3476,7 @@
                                     de Jacob sin esperanza de salir<lb/>de su encierro, cuando Dios
                                     que ya queria librar á su humilde siervo<lb/>de tantas
                                     penalidades, infundió á Faraon unos sueños tan llenos
-                                    de<lb/>misterio que ninguno de los adivinos de Egipto pudo darle
+                                    de<lb/>misterio que ninguno de los adivinos de <name>Egipto</name> pudo darle
                                     una ver-<lb/>dadera solucion. Recordó entonces el desagradecido
                                     copero lo que en<lb/>la cárcel le pasara, y habiéndoselo
                                     contado á Faraon, este se alegró<lb/>mucho de tal noticia y
@@ -3392,17 +3486,20 @@
                                     inquietudes.</p>
         </div>
         <div type="capitulo" n="4">
-          <head type="titulo_parte"><lb/>CAPITULO IV.</head>
-          <head type="subtitulo_parte"><lb/>José interpreta los sueños de
+          <head type="titulo_parte">
+            <lb/>CAPITULO IV.</head>
+          <head type="subtitulo_parte">
+            <lb/>José interpreta los sueños de
                                     Faraon, que le dá la superintendencia de
                                     todo<lb/>Egipto.</head>
-          <p><lb/>Sentado en su trono Faraon habló á José en estos
+          <p>
+            <lb/>Sentado en su trono Faraon habló á José en estos
                                     términos:<lb/>«Me parecia estar á la ribera del rio, y que
                                     subian del rio siete<lb/>vacas, hermosas en extremo, y de
                                     gruesas carnes: las cuales despun-<lb/>taban la yerba verde en
                                     el pasto de la laguna, y hé aquí que á estas<lb/>seguian
                                     otras siete vacas tan feas y flacas que nunca he visto
-                                    otras<lb/>tales en la tierra de Egipto: las cuales habiendo
+                                    otras<lb/>tales en la tierra de <name>Egipto</name>: las cuales habiendo
                                     devorado y consumi-<lb/>do á las primeras, ninguna muestra
                                     dieron de hartura, sino que esta-<lb/>ban entorpecidas con la
                                     flaqueza y saña de antes. Despertando, y<lb/>oprimido otra vez
@@ -3411,9 +3508,12 @@
                                     pica-<lb/>das de tizon salian tambien de una caña; las cuales
                                     se tragaron la<lb/>lozanía de las primeras. He contado á los
                                     adivinos el sueño y no hay<lb/>quien me lo declare.»</p>
+
           <pb n="9" source="Varios_435_9.jpg" facs="varios/Varios_435_9.jpg"/>
+
           <fw type="paginaNum">— 9—</fw>
-          <p><lb/>Respondió «José: el sueño del rey una misma cosa es: lo que
+          <p>
+            <lb/>Respondió «José: el sueño del rey una misma cosa es: lo que
                                     ha <lb/>de hacer Dios, lo ha mostrado á Faraon. Las siete vacas
                                     hermosas y <lb/>las espigas llenas, son siete años de
                                     abundancia, y comprende una <lb/>misma significacion del sueño.
@@ -3422,7 +3522,7 @@
                                     del viento abrasador, son siete años del hambre que ha de
                                     <lb/>venir. Los cuales se cumplirán con este órden: Hé aquí
                                     que vendrán <lb/>siete años de grande fertilidad en toda la
-                                    tierra de Egipto, á los cuáles <lb/>sucederán otros siete
+                                    tierra de <name>Egipto</name>, á los cuáles <lb/>sucederán otros siete
                                     años de una esterilidad tan grande, que será <lb/>echada en
                                     olvido toda la abundancia pasada; porque el hambre ha <lb/>de
                                     consumir toda la tierra, y la grandeza de la carestía ha de
@@ -3431,7 +3531,7 @@
                                     es un indicio de firmeza <lb/>por ser palabra de Dios y de que
                                     se cumplirá cuanto antes.» <lb/>Dicho esto aconsejó al rey que
                                     buscara un varon sábio é indus- <lb/>trioso y que le hiciera
-                                    gobernador de la tierra de Egipto; le aconsejó <lb/>que hiciera
+                                    gobernador de la tierra de <name>Egipto</name>; le aconsejó <lb/>que hiciera
                                     construir grandes graneros y almacenar en ellos todo el
                                     <lb/>trigo que fuera posible para echar mano de él en los años
                                     de hambre, <lb/>y á la par de estos le dió otros muchos
@@ -3447,17 +3547,19 @@
                                     de los principales pontífices de la ciudad de Heliópolis.
                                     Hízole <lb/>subir en un carro triunfal, en el que habia un
                                     pregonero puesto de <lb/>rodillas, y mandó que le pasearan por
-                                    toda la ciudad para que el <lb/>Egipto entero se postrara ante
+                                    toda la ciudad para que el <lb/><name>Egipto</name> entero se postrara ante
                                     él y le reconociese como su Soberano <lb/>Superintendente y que
                                     nada debia hacerse sin su órden, pues gozaba <lb/>de toda su
                                     real privanza.—Segun San Gerónimo el nombre que dió
                                     <lb/>Faraon á José era sinónimo de SALVADOR DEL MUNDO.</p>
-          <p><lb/>Como todo cuanto hacia José lo hacia tan solo por
+          <p>
+            <lb/>Como todo cuanto hacia José lo hacia tan solo por
                                     inspiracion <lb/>divina, todo cuanto emprendia le salia á
                                     medida de su deseo.—Fa- <lb/>raon cada vez más complacido del
                                     tino y fidelidad de José, no sabia <lb/>como remunerarle sus
                                     servicios.</p>
-          <p><lb/>Vamos á exponer de paso algunas consideraciones para
+          <p>
+            <lb/>Vamos á exponer de paso algunas consideraciones para
                                     mientras <lb/>dejamos á José haciendo el acopio de granos para
                                     los años de cares- <lb/>tía.—Ante todo es muy de alabar un
                                     jóven de su edad, pues solo <lb/>contaba 30 años, en medio de
@@ -3466,42 +3568,50 @@
                                     santos padres, sin alterar el servicio de su Dios con alguna
                                     <lb/>mancha de supersticion de los Egipcios. Modesto sin
                                     afectacion, se <fw type="signaturas">2</fw>
-                                    <pb n="10" source="Varios_435_10.jpg" facs="varios/Varios_435_10.jpg"/>
-                                    <fw type="paginaNum">— 10 —</fw>
-                                    <lb/>vió encumbrado con tantas honras, vitores y aclamaciones
+
+            <pb n="10" source="Varios_435_10.jpg" facs="varios/Varios_435_10.jpg"/>
+
+            <fw type="paginaNum">— 10 —</fw>
+            <lb/>vió encumbrado con tantas honras, vitores y aclamaciones
                                     que en al-<lb/>tas voces le llamaban EL SALVADOR DEL MUNDO, y
                                     con todos pro-<lb/>cedió tan humilde que no salió jamás de su
                                     boca una palabra siquiera<lb/>de vanidad, ni mostró
                                     complacencia alguna de las honras y pompas;<lb/>antes con todos
                                     se hizo muy tratable y humano y por esto le
                                     querian<lb/>entrañablemente.</p>
-          <p><lb/>Si bien sirvió la casa de Putifar, mejor sirvió el reino de
+          <p>
+            <lb/>Si bien sirvió la casa de Putifar, mejor sirvió el reino de
                                     Faraon,<lb/>Con suma prudencia, exquisita solicitud y fidelidad
                                     inviolable, fué<lb/>visitando él por si todas las provincias
-                                    de Egipto, y recogiendo granos<lb/>para que su pueblo no
+                                    de <name>Egipto</name>, y recogiendo granos<lb/>para que su pueblo no
                                     pereciese de hambre en los siete años de<lb/>esterilidad.</p>
-          <p><lb/>Llegaron estos, y entonces fué cuando el pueblo todo imploró
+          <p>
+            <lb/>Llegaron estos, y entonces fué cuando el pueblo todo imploró
                                     la<lb/>misericordia de su rey, quien le consolaba diciéndole:
                                     Sosegaos, hi-<lb/>jos; id á José que él os socorrerá. Y
                                     efectivamente José á todos<lb/>consolaba y socorria,
                                     volviéndose á sus casas alegres y contentos,<lb/>aplaudiendo
                                     la misericordia de su rey y el buen gobierno de su
                                     con-<lb/>sejero y ministro.</p>
-          <p><lb/>Jamás conoció el rencor; nada nos dice la Sagrada Escritura
+          <p>
+            <lb/>Jamás conoció el rencor; nada nos dice la Sagrada Escritura
                                     de<lb/>la mujer de Putifar; pero es seguro que José no se
                                     volvió á acordar de<lb/>ella, y lo prueba la bondad con que
                                     abrió sus brazos á los mismos<lb/>que habian querido
                                     matarle.</p>
         </div>
         <div type="capitulo" n="5">
-          <head type="titulo_parte"><lb/>CAPITULO V.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Los hermanos de José
+          <head type="titulo_parte">
+            <lb/>CAPITULO V.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Los hermanos de José
                                     pasan á Egipto á comprar trigo.—El los conoce y<lb/>trata con
                                     aparente severidad y dureza.—Por úllimo, dejando á
                                     Simeon<lb/>en prision, les deja volver á la tierra de Canaan,
                                     con la condicion de<lb/>que le han de traer á Benjamin.</head>
-          <p><lb/>Bien pronto se resintió la tierra de Canaan de esta grande
-                                    esteri-<lb/>lidad, y sabiendo Jacob que en Egipto se vendia
+          <p>
+            <lb/>Bien pronto se resintió la tierra de <name>Canaan</name> de esta grande
+                                    esteri-<lb/>lidad, y sabiendo Jacob que en <name>Egipto</name> se vendia
                                     trigo, envió á sus<lb/>hijos para que compraran el necesario
                                     para la familia. José los reco-<lb/>noció al momento y tuvo
                                     que violentarse para no arrojarse en sus<lb/>brazos. Mas
@@ -3509,33 +3619,38 @@
                                     que<lb/>iban con la escusa del trigo, á reconocer las
                                     fortificaciones y puntos<lb/>más flacos de la ciudad para dar
                                     cuenta de ello á los amigos.</p>
-          <p><lb/>Para sincerarse los hermanos de José, le respondieron que
+          <p>
+            <lb/>Para sincerarse los hermanos de José, le respondieron que
                                     esta-<lb/>ban muy lejos de ser traidores; que su condicion era
                                     apacible, que<lb/>eran todos hijos de un mismo padre que se
-                                    habia quedado en Canaan<lb/>con el menor de los hermanos.—José
+                                    habia quedado en <name>Canaan</name><lb/>con el menor de los hermanos.—José
                                     les contestó finalmente que<lb/>para estar seguro de la verdad,
                                     uno de ellos que se quedara preso en<lb/>rehenes, mientras le
                                     traian y le presentaban el menor de los herma-<lb/>nos.—Tocó la
                                     suerte á Simeon, que fué encerrado al momento. Hecho<lb/>esto,
                                     les dió licencia para marchar con sus cargas de trigo; pero el
+
                                           <pb n="11" source="Varios_435_11.jpg" facs="varios/Varios_435_11.jpg"/>
-                                    <fw type="paginaNum">— 11 —</fw>
-                                    <lb/>dinero que por él habian dado se les puso secretamente en
+
+            <fw type="paginaNum">— 11 —</fw>
+            <lb/>dinero que por él habian dado se les puso secretamente en
                                     los costa- <lb/>les por órden de José. Cuando ellos lo
                                     advirtieron, estaban ya de- <lb/>masiado lejos para volver
                                     atrás.</p>
-          <p><lb/>Llegado que hubieron á su casa, dieron noticia á su padre
-                                    de <lb/>todo cuanto les habia pasado en Egipto, y el buen
+          <p>
+            <lb/>Llegado que hubieron á su casa, dieron noticia á su padre
+                                    de <lb/>todo cuanto les habia pasado en <name>Egipto</name>, y el buen
                                     anciano no pudo <lb/>contener las lágrimas al saber que querian
                                     quitarle á su hijo Benja- <lb/>min. Renovó este dolor el de la
                                     muerte de José, y todo el dia lo pa- <lb/>saba sumido en
                                     llanto.</p>
-          <p><lb/>Viendo sus hijos que era matar á su padre el tratar de la
+          <p>
+            <lb/>Viendo sus hijos que era matar á su padre el tratar de la
                                     partida <lb/>de Benjamin, dejaron pasar mucho tiempo sin
                                     hablarle una palabra <lb/>de ello; pero la suerte de Simeon les
                                     inquietaba sobre manera. <lb/>Cada dia iba siendo mayor la
                                     escasez del trigo, y Jacob propuso á <lb/>sus hijos que
-                                    hicieran otro viaje á Egipto. Contestáronle estos que <lb/>era
+                                    hicieran otro viaje á <name>Egipto</name>. Contestáronle estos que <lb/>era
                                     de todo punto inútil, si con ellos no iba Benjamin. Con tal
                                     res- <lb/>puesta se renovó el dolor del anciano.—Finalmente, á
                                     fuerza de rue- <lb/>gos y despues de haberle jurado Judá que
@@ -3556,12 +3671,15 @@
                                     nuevas de vosotros.</p>
         </div>
         <div type="capitulo" n="6">
-          <head type="titulo_parte"><lb/>CAPITULO VI.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Los hermanos de José
+          <head type="titulo_parte">
+            <lb/>CAPITULO VI.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Los hermanos de José
                                     vuelven á Egipto con Benjamin, y con varios regalo<lb/>para
                                     José que los recibe con mucha afabilidad y les tiene un
                                     banquete.</head>
-          <p><lb/>Ocioso será decir cómo quedaría el buen Patriarca; pero
+          <p>
+            <lb/>Ocioso será decir cómo quedaría el buen Patriarca; pero
                                     pronto<lb/>su dolor será cambiado en el mayor contento que
                                     esperar podia,<lb/>Llegado que hubieron otra vez á la presencia
                                     de José, este los<lb/>recibió con muchísima afabilidad:
@@ -3571,9 +3689,11 @@
                                     vuelto con felicidad. Despues preguntó por la salud de su
                                     ancia-<lb/>no padre, y en fin, disimulando la grande
                                     satisfaccion que tenia de<lb/>ver á Benjamin, le dijo: «¿Es
-                                    este vuestro hermano pequeña de quien <pb n="12" source="Varios_435_12.jpg" facs="varios/Varios_435_12.jpg"/>
-                                    <fw type="paginaNum">— 12—</fw>
-                                    <lb/>me hablásteis? y dijo despues: Dios tenga misericordia de
+                                    este vuestro hermano pequeña de quien
+ <pb n="12" source="Varios_435_12.jpg" facs="varios/Varios_435_12.jpg"/>
+
+            <fw type="paginaNum">— 12—</fw>
+            <lb/>me hablásteis? y dijo despues: Dios tenga misericordia de
                                     tí hijo mio.»<lb/>Pero no pudiendo detener las lágrimas que le
                                     salian de gozo y de<lb/>ternura, se retiró á toda prisa de la
                                     vista de sus hermanos. Al cabo de<lb/>un rato volvió con rostro
@@ -3582,19 +3702,23 @@
                                     comiendo en su compañía.</p>
         </div>
         <div type="capitulo" n="7">
-          <head type="titulo_parte"><lb/>CAPITULO VII.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>José manda que
+          <head type="titulo_parte">
+            <lb/>CAPITULO VII.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>José manda que
                                     escondan su copa en el saco de Benjamin, y les achaca
                                     este<lb/>hurto, queriendo que Benjamin quede por su esclavo.
                                     Judá se ofrece que-<lb/>dar en su lugar.</head>
-          <p><lb/>Refiere la Sagrada Escritura que una vez concluido el
+          <p>
+            <lb/>Refiere la Sagrada Escritura que una vez concluido el
                                     banquete,<lb/>los hijos de Jacob determinaron marchar á su
                                     tierra para sacar de<lb/>cuidado á su padre, lo que pusieron en
                                     obra al amanecer del dia<lb/>siguiente.—No quiso el tesorero
                                     recibirles el dinero de la otra vez,<lb/>diciéndoles, que él
                                     lo habia cobrado y que si lo habian hallado en<lb/>los costales
                                     diesen por ello gracias á Dios.</p>
-          <p><lb/>De órden de José volviéronles á llenar de trigo los
+          <p>
+            <lb/>De órden de José volviéronles á llenar de trigo los
                                     costales y en<lb/>el de Benjamin por su mandato, se escondió la
                                     copa en que bebió<lb/>durante la comida. Poco trecho habian
                                     andado, cuando vieron llegar<lb/>á ellos el mayordomo de
@@ -3602,7 +3726,8 @@
                                     obstante el buen acogimiento que les habia hecho su amo,<lb/>le
                                     hubiesen hurtado la copa que él usaba y en la que solia
                                     adivinar.</p>
-          <p><lb/>Escusáronse como mejor pudieron diciéndole que no eran
+          <p>
+            <lb/>Escusáronse como mejor pudieron diciéndole que no eran
                                     ellos<lb/>capaces de semejante accion; y consentian en que el
                                     delincuente fuese<lb/>castigado con todo rigor. Al momento
                                     ordenó el mayordomo regis-<lb/>trar todos los costales, y
@@ -3622,7 +3747,9 @@
                                     uterino ha<lb/>muerto, y á este solo tiene su madre, y su padre
                                     le ama tiernamente.<lb/>Y dijiste á tus siervos: traédmelo
                                     acá, y pondré mis ojos sobre él.</p>
+
           <pb n="13" source="Varios_435_13.jpg" facs="varios/Varios_435_13.jpg"/>
+
           <fw type="paginaNum">— 13—</fw>
           <p>Insinuamos á mi señor: no puede el muchacho dejar á su padre
                                     por-<lb/>que si le dejare morirá, y dijiste á tus siervos: Si
@@ -3634,74 +3761,88 @@
                                     más pequeño descendiere con nosotros iremos juntos:
                                     de<lb/>otra manera estando él ausente, no nos atrevemos á ver
                                     el rostro del<lb/>hombre.»</p>
-          <p><lb/>Y así le iba contando Judá á José todo cuanto habia pasado
+          <p>
+            <lb/>Y así le iba contando Judá á José todo cuanto habia pasado
                                     con<lb/>su padre para que dejara venir con ellos al pequeño
                                     Benjamin, y<lb/>finalmente le dijo que él se quedaría esclavo
                                     en vez de su hermano,<lb/>porque de la vuelta de este dependia
                                     la vida de su padre; que si este<lb/>llegaba á saber que su
                                     querido hije quedaba preso por ladron, moria<lb/>sin
                                     remedio.</p>
-          <p><lb/>No le contestó José ni una sola palabra, y dando órden para
+          <p>
+            <lb/>No le contestó José ni una sola palabra, y dando órden para
                                     que<lb/>todo el mundo despejara, se quedó solo con sus
                                     hermanos, lo que<lb/>estaban aguardando con una horrible
                                     ansiedad.</p>
         </div>
         <div type="capitulo" n="8">
-          <head type="titulo_parte"><lb/>CAPITULO VIII.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>José se descubre á sus hermanos á quienes abraza con la
+          <head type="titulo_parte">
+            <lb/>CAPITULO VIII.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>José se descubre á sus hermanos á quienes abraza con la
                                     mayor ternura: en-<lb/>terado Faraon da órden para que venga
                                     Jacob á Egipto con toda su<lb/>familia. José llena de regalos
                                     á sus hermanos, y los despide para su padre.<lb/>Este admirado
                                     de lo que le dicen de su hijo, se dispone para partir á
                                     Egipto.</head>
-          <p><lb/>Despejado que hubieron los extraños, levantándose José
+          <p>
+            <lb/>Despejado que hubieron los extraños, levantándose José
                                     del trono <lb/>y con el rostro anegado en llanto, exclamó:
                                     Venid á mis brazos y <lb/>cesen vuestros temores; yo soy
                                     vuestro hermano José.</p>
-          <p><lb/>Atónitos quedaron todos con estas palabras y tan fuera de
+          <p>
+            <lb/>Atónitos quedaron todos con estas palabras y tan fuera de
                                     sí, que <lb/>no acertaron á hablar en largo rato. El virtuoso
                                     José cuanto más <lb/>asombrados los veia, los acariciaba más:
                                     y haciéndoles poner á todos <lb/>á su alrededor, les habló
                                     en estos tégminos:</p>
-          <p><lb/>Yo soy, queridos hermanos mios, yo soy José, el mismo que
-                                    ven- <lb/>dísteis á los Ismaelitas para ser traido á Egipto:
+          <p>
+            <lb/>Yo soy, queridos hermanos mios, yo soy José, el mismo que
+                                    ven- <lb/>dísteis á los Ismaelitas para ser traido á <name>Egipto</name>:
                                     no os turbeis, ama- <lb/>dos mios, no os acongojeis ni temais,
                                     que Dios lo permitió todo por <lb/>vuestro bien y por el mio.
                                     Dos años de hambre han pasado y aun</p>
-          <p><lb/>quedan cinco, y he venido yo enviado del cielo á Egipto
+          <p>
+            <lb/>quedan cinco, y he venido yo enviado del cielo á <name>Egipto</name>
                                     para susten- <lb/>taros y conservaros en este calamitoso tiempo.
                                     No sucedió por vues- <lb/>tros consejos mi venta, sino por
-                                    voluntad de Dios. Y veisme aquí <pb n="14" source="Varios_435_14.jpg" facs="varios/Varios_435_14.jpg"/>
-                                    <fw type="paginaNum">— 14 —</fw>
-                                    <lb/>ahora que soy como el Padre de Faraon superintendente de su
-                                    casa <lb/>y príncipe de Egipto. Id, pues, presto y traedme á
+                                    voluntad de Dios. Y veisme aquí
+ <pb n="14" source="Varios_435_14.jpg" facs="varios/Varios_435_14.jpg"/>
+
+            <fw type="paginaNum">— 14 —</fw>
+            <lb/>ahora que soy como el Padre de Faraon superintendente de su
+                                    casa <lb/>y príncipe de <name>Egipto</name>. Id, pues, presto y traedme á
                                     mi amado padre, <lb/>dadle las nuevas de mi vida y de mi
                                     dignidad. Contadle toda la glo- <lb/>ria y grandeza de que
                                     vosotros mismos sois testigos, y decidleque <lb/>le aguardo, y
                                     que es la voluntad de Dios que venga á descansar á la
-                                    <lb/>tierra de Gesen, donde tendrá todo lo que pueda desear
+                                    <lb/>tierra de <name>Gesen</name>, donde tendrá todo lo que pueda desear
                                     para sus <lb/>hiios y para sus ganados.</p>
-          <p><lb/>Al oir tales palabras los hermanos de José se le arrojaron
+          <p>
+            <lb/>Al oir tales palabras los hermanos de José se le arrojaron
                                     todos <lb/>al cuello y él les fué abrazando uno á uno,
                                     vertiendo abundantes <lb/>lágrimas de regocijo y de ternura.
                                     Pidiéronle perdon y el virtuoso <lb/>hebreo los volvió á
                                     abrazar de nuevo.</p>
-          <p><lb/>Este suceso pronto llegó á oidos de Faraon, quien lo
+          <p>
+            <lb/>Este suceso pronto llegó á oidos de Faraon, quien lo
                                     celebró mu- <lb/>chísimo y al punto envió á llamar á José.
                                     Este le contó cuanto le ha- <lb/>bia pasado y de tal relacion
-                                    asombrado le mandó que hiciese venir á <lb/>su padre á Egipto
+                                    asombrado le mandó que hiciese venir á <lb/>su padre á <name>Egipto</name>
                                     con sus hermanos y le dió muchos carros y cabal- <lb/>gaduras
                                     para que trajesen cuanto en su tierra tenian.</p>
-          <p><lb/>Llenos de gozo marcharon los hermanos de José, cargados
+          <p>
+            <lb/>Llenos de gozo marcharon los hermanos de José, cargados
                                     con <lb/>los regalos que este les habia hecho, y en cuanto
                                     llegaron á su casa <lb/>dieron cuenta á su anciano padre de
                                     cuanto les habia sucedido. Jacob <lb/>les esperaba impaciente
                                     con el deseo de volver á ver á su querido <lb/>Benjamin y al
                                     preso Simeon junto con todos los demás. Dijéronle <lb/>como
                                     José estaba vivo aun, que le habian visto, hablado y comido
-                                    <lb/>con él, y que era la segunda persona del reino de Egipto,
+                                    <lb/>con él, y que era la segunda persona del reino de <name>Egipto</name>,
                                     teniendo <lb/>á su cargo todo el gobierno.</p>
-          <p><lb/>Parecíale un sueño al buen anciano cuanto sus hijos le
+          <p>
+            <lb/>Parecíale un sueño al buen anciano cuanto sus hijos le
                                     decian; <lb/>hizo que volvieran á referirle con todos los
                                     pormenores cuanío habian <lb/>visto y cuanto les habia
                                     acontecido. La vista de los presentes que le <lb/>hacian su hijo
@@ -3713,36 +3854,44 @@
                                     lugar á los pocos dias.</p>
         </div>
         <div type="capitulo" n="9">
-          <head type="titulo_parte"><lb/>CAPITULO IX.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Llega Jacob á Egipto
+          <head type="titulo_parte">
+            <lb/>CAPITULO IX.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Llega Jacob á Egipto
                                     y su hijo va á recibirle y le presenta á Faraon; este
                                     le<lb/>dá para él y sus descendientes la lierra de Gesen.
                                     Muerte de Jacob.</head>
-          <p><lb/>A los pocos dias de haber salido de su tierra llegó Jacob
-                                    á Egipto<lb/>con toda su familia, ganados, etc. En cuanto
+          <p>
+            <lb/>A los pocos dias de haber salido de su tierra llegó Jacob
+                                    á <name>Egipto</name><lb/>con toda su familia, ganados, etc. En cuanto
                                     llegó á noticia de José<lb/>la llegada de su padre fué
                                     corriendo á recibirle, y arroyándose á sus<lb/>brazos, no
-                                    sabian disasirse ni el uno ni el otro, mezclando juntos las <pb n="15" source="Varios_435_15.jpg" facs="varios/Varios_435_15.jpg"/>
-                                    <fw type="paginaNum">— 15—</fw>
-                                    <lb/>lágrimas que tan fausto suceso les hacia verter. Ya puedo
+                                    sabian disasirse ni el uno ni el otro, mezclando juntos las
+ <pb n="15" source="Varios_435_15.jpg" facs="varios/Varios_435_15.jpg"/>
+
+            <fw type="paginaNum">— 15—</fw>
+            <lb/>lágrimas que tan fausto suceso les hacia verter. Ya puedo
                                     morir, hijo <lb/>mio, le decia Jacob á José, ya puedo morir
                                     contento, pues que mi <lb/>Dios y Señor me ha hecho la merced
                                     de que te viera y te dejara vivo <lb/>despues de mis dias.</p>
-          <p><lb/>En cuanto estuvo repuesto algun tanto del viaje, fué
+          <p>
+            <lb/>En cuanto estuvo repuesto algun tanto del viaje, fué
                                     acompañado <lb/>de su hijo á ver á Faraon, quien le recibió
                                     con todo el agasajo ima- <lb/>ginable; hízole diferentes
                                     preguntas y le dijo que hacia donacion de <lb/>la tierra de
-                                    Gesen para él y para sus hijos y para los descendientes <lb/>de
+                                    <name>Gesen</name> para él y para sus hijos y para los descendientes <lb/>de
                                     estos. Agradecióselo Jacob y le dijo: que eran ya pasados por
                                     <lb/>él muchos años, y que no llegaria á la edad de sus
                                     padres, que su <lb/>muerte la consideraba cerca y antes de
                                     despedirse de él le daba la <lb/>bendicion.</p>
-          <p><lb/>Repitióle Faraon lo mucho que le apreciaba, y despues de
+          <p>
+            <lb/>Repitióle Faraon lo mucho que le apreciaba, y despues de
                                     despe- <lb/>dirse y agradecerie cuanto por él habia hecho, se
-                                    marchó Jacob con <lb/>sus hijos á la tierra de Gesen, en donde
+                                    marchó Jacob con <lb/>sus hijos á la tierra de <name>Gesen</name>, en donde
                                     cargado de años murió en el <lb/>Señor, rodeado de toda su
                                     numerosa familia.</p>
-          <p><lb/>Antes de morir anunció á sus hijos lo que les habia de
+          <p>
+            <lb/>Antes de morir anunció á sus hijos lo que les habia de
                                     acontecer <lb/>en los tiempos venideros. Bendíjoles asimismo y
                                     con especialidad á <lb/>Judá, profetizándole no faltaria el
                                     cetro de su tribu, hasta que viniese <lb/>el Redentor del mundo
@@ -3752,29 +3901,35 @@
                                     Manasés y <lb/>Efrain. Recibióles como suyos el moribundo, y
                                     bendiciéndoles profe- <lb/>tizó sobre ellos, y despidiéndose
                                     de todos les mandó que su cadáver <lb/>fuese conducido al
-                                    sepulcro de sus padres á la tierra de Canaan; y <lb/>dicho esto
+                                    sepulcro de sus padres á la tierra de <name>Canaan</name>; y <lb/>dicho esto
                                     entregó su alma al Señor.</p>
-          <p><lb/>Grande fué el desconsuelo de toda la familia; pero en
+          <p>
+            <lb/>Grande fué el desconsuelo de toda la familia; pero en
                                     particular <lb/>el de José, quien despues de haber cubierto de
                                     besos el cadáver, <lb/>mandó á sus médicos que le
                                     embalsamasen su cuerpo con ungüentos <lb/>aromáticos, y así
                                     arreglado lo tuvo expuesto al público por espacio <lb/>de
-                                    cuarenta dias, pasados los cuales lo condujo á Canaan con todo
+                                    cuarenta dias, pasados los cuales lo condujo á <name>Canaan</name> con todo
                                     <lb/>el lujo y pompa imaginables.</p>
         </div>
         <div type="capitulo" n="10">
-          <head type="titulo_parte"><lb/>CAPITULO X.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Muerte de
+          <head type="titulo_parte">
+            <lb/>CAPITULO X.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Muerte de
                                     José.—Profetiza á los suyos la salida de Egipto para la tierra
                                     de<lb/>promision.—Mándales que lleven consigo sus huesos, y los
                                     sepulten en el<lb/>sepulcro de sus padres.</head>
-          <p><lb/>Sin duda creyendo los hermanos de José que este no se
+          <p>
+            <lb/>Sin duda creyendo los hermanos de José que este no se
                                     habia<lb/>vengado de ellos por respeto á su padre, con la
                                     muerte de este volvió<lb/>el miedo que tenian, y presentándose
                                     á sus hermanos se arrojaron á<lb/>sus plantas pidiéndole
-                                    perdon de lo pasado y que lo echase en olvido: <pb n="16" source="Varios_435_16.jpg" facs="varios/Varios_435_16.jpg"/>
-                                    <fw type="paginaNum">— 16—</fw>
-                                    <lb/>levantóles José con las lágrimas en los ojos, y
+                                    perdon de lo pasado y que lo echase en olvido:
+ <pb n="16" source="Varios_435_16.jpg" facs="varios/Varios_435_16.jpg"/>
+
+            <fw type="paginaNum">— 16—</fw>
+            <lb/>levantóles José con las lágrimas en los ojos, y
                                     prometióles que su ca- <lb/>riño fraternal no cambiaria nunca,
                                     añadiendo: no califiqueis, amados <lb/>hermanos mios, de
                                     crímen lo que conmigo hicisteis: Dios lo tenia de-
@@ -3783,7 +3938,8 @@
                                     José mostrase <lb/>preferencia por este ó por aquel, y sus
                                     hermanos y la familia toda <lb/>le idolatraban por su noble y
                                     generosa conducta.</p>
-          <p><lb/>Mas como en este mundo todo tiene fin, y como todo lo que
+          <p>
+            <lb/>Mas como en este mundo todo tiene fin, y como todo lo que
                                     nace <lb/>debe morir, sintiendo el Santo Patriarca que la muerte
                                     se acercaba, <lb/>llamó al derredor de la cama á todos los
                                     suyos y les dijo como iba á <lb/>abandonar este mundo dentro de
@@ -3795,20 +3951,23 @@
                                     saliesen llevasen consigo sus hue- <lb/>sos, para sepultarlos en
                                     el sepulcro de sus padres. Dichas estas pala- <lb/>bras, murió
                                     el Santo Patriarca á la edad de 110 años, habiendo man-
-                                    <lb/>dado 80 en Egipto, segun el parecer de algunos
+                                    <lb/>dado 80 en <name>Egipto</name>, segun el parecer de algunos
                                     escritores.</p>
-          <p><lb/>Fué embalsamado su cuerpo, y su muerte llorada por todo
-                                    Egipto. <lb/>Hiciéronsele magníficos funerales y el cadáver
+          <p>
+            <lb/>Fué embalsamado su cuerpo, y su muerte llorada por todo
+                                    <name>Egipto</name>. <lb/>Hiciéronsele magníficos funerales y el cadáver
                                     fué colocado con gran <lb/>pompa cerca de los reales
                                     sepulcros.</p>
-          <p><lb/>Algunos autores aseguran que fué José honrado como á un
+          <p>
+            <lb/>Algunos autores aseguran que fué José honrado como á un
                                     Dios <lb/>entre los Egipcios, bajo el nombre de Sérapis,
                                     fundándose en las di- <lb/>terentes etimologías de este
                                     nombre, que segun todos manifiesta el <lb/>bien que José habia
-                                    hecho en Egipto, por la fertilidad que le habia
+                                    hecho en <name>Egipto</name>, por la fertilidad que le habia
                                     <lb/>proporcionado, de la cual era el símbolo el buey llamado
                                     Apis.</p>
-          <p><lb/>Las profecías y los deseos de José fueron cumplidos.—Sus
+          <p>
+            <lb/>Las profecías y los deseos de José fueron cumplidos.—Sus
                                     huesos <lb/>descansaron en el sepulcro de sus padres, y los
                                     Ismaelitas habitaron <lb/>la tierra que Dios habia prometido á
                                     Abraham, á Isaac y á Jacob.</p>

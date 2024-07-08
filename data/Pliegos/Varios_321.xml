@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -91,6 +106,32 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q917888">
+            <placeName key="Vinaroz">Vinaroz</placeName>
+            <location>
+              <geo>40.4704444444445 0.475388888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1486">
+            <placeName key="Buenos_Aires">Buenos Aires</placeName>
+            <location>
+              <geo>-34.599722222222 -58.381944444444</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1011">
+            <placeName key="Cabo_Verde">Cabo Verde</placeName>
+            <location>
+              <geo>15.916666666667 -24.083333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q12130">
+            <placeName key="Bretaña">Bretaña</placeName>
+            <location>
+              <geo>48 -3</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -126,8 +167,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-08" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-08" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1271,18 +1311,19 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_321_1.jpg" facs="varios/Varios_321_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>Triste<lb/>Historia de un Marino.</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>Triste<lb/>Historia de un Marino.</head>
           <lg>
             <l rend="indent">Les vamos à relatar</l>
             <l>la hístoria de un marino</l>
             <l>que se salvò de un naufragio</l>
             <l>oirán cuanto ha sufrido.</l>
-            <l>Salieron de Vínaroz</l>
-            <l>con rumbo á Buenos Aires</l>
+            <l>Salieron de <name>Vínaroz</name></l>
+            <l>con rumbo á <name>Buenos Aires</name></l>
             <l>con el bergantín San Juan</l>
             <l>veinteisirte tripulantes.</l>
             <l>El dia cuatro de Agosto</l>
@@ -1434,17 +1475,22 @@
             <l>que al leerlo horroriza.</l>
           </lg>
         </div>
-
         <div n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>LA CARTA</head>
-          <p><lb/>Cabo Verde 22 de Febrero de 1907.</p>
-
-          <p rend="indent"><lb/>Queridísima esposa: Con gran alegria tomo la pluma para
+          <head type="titulo_parte" rend="negrita">
+            <lb/>LA CARTA</head>
+          <p>
+            <lb/>Cabo Verde 22 de Febrero de 1907.</p>
+          <p rend="indent">
+            <lb/>Queridísima esposa: Con gran alegria tomo la pluma para
             manifes-<lb/>tarte que si Dios quiere pronto estaré á tu lado.</p>
-          <p rend="indent"><lb/>He sufrido muchisimo porque cuando salí de Vinarez á los
+          <p rend="indent">
+            <lb/>He sufrido muchisimo porque cuando salí de Vinarez á los
             pocos<lb/>dias naufragamos por culpa de un terrible temporal que nos cogió,
             el<lb/>capitan se pegó un tiro, yo soy vivo por milagro.</p>
-          <p rend="indent"><lb/>Esposa mia figurate cuanto he sufrido el buque se izo á pedazos <pb n="3" source="Varios_321_3.jpg" facs="varios/Varios_321_3.jpg"/>
+          <p rend="indent">
+            <lb/>Esposa mia figurate cuanto he sufrido el buque se izo á pedazos
+ <pb n="3" source="Varios_321_3.jpg" facs="varios/Varios_321_3.jpg"/>
+
             <lb/>contra una roca, yo al ver que habia de morir ahogado me agarró á<lb/>un madero
             al mismo madero se agarró Jaime Roca mas tuvo la fatal<lb/>mala suerte de clavarse un
             clavo al pié agarrados al madero fuimos á<lb/>parar á una isla alli murió Jaime á
@@ -1453,15 +1499,14 @@
             fin pasó un<lb/>buque que me recogió estaba ya sin esperanzas de vida me dejaron
             al<lb/>hospital de Cabo Verde y aqui me tieues, pronto estaré á tu lado ya<lb/>te lo
             esplicaré todo mas detallado.</p>
-
-          <p rend="indent"><lb/>Daras muchos besos á nuestros hijos, rdcuerdos á mi madre y
+          <p rend="indent">
+            <lb/>Daras muchos besos á nuestros hijos, rdcuerdos á mi madre y
             tu<lb/>recibe el cariño de tu esposo que decea abrazarte.</p>
-
-          <p><lb/>Bautista Rabi.</p>
-
-          <p><lb/>P. D. No digas nada de mi carta à nadie. Adios Rosario.</p>
+          <p>
+            <lb/>Bautista Rabi.</p>
+          <p>
+            <lb/>P. D. No digas nada de mi carta à nadie. Adios Rosario.</p>
         </div>
-
         <div n="3">
           <l>En 1907</l>
           <l>el dia ocho de Marzo</l>
@@ -1511,14 +1556,13 @@
           <l>vamos á casa que es tarde</l>
           <l>y alli encontre á su marido.</l>
           <l>cuando vió á su enposo</l>
-
         </div>
 
         <pb n="4" source="Varios_321_4.jpg" facs="varios/Varios_321_4.jpg"/>
 
         <div n="4">
-          <head type="titulo_cancion" rend="negrita"><lb/>La<lb/>Tempestad.</head>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>La<lb/>Tempestad.</head>
           <l rend="indent">La lluvia ha cesado</l>
           <l>alèjase el trueno,</l>
           <l>el cielo nublado</l>
@@ -1585,9 +1629,9 @@
           <l>el encanto de nuevo allaré</l>
           <l>recordando las horas aquí.</l>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imp. Mallorca 198, Barcelona.</p>
+          <p>
+            <lb/>Imp. Mallorca 198, Barcelona.</p>
         </div>
       </div>
     </body>

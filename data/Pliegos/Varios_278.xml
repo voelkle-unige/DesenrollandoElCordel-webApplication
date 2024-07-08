@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -31,7 +45,8 @@
             <title type="titulo_breve">Canciones de los comediantes de Antaño</title>
           </titleStmt>
           <editionStmt>
-            <p>Otras impresiones: <ref target="Varios_361.xml">Varios_361</ref> y <ref target="Varios_370.xml">Varios_370</ref></p>
+            <p>Otras impresiones: <ref target="Varios_361.xml">Varios_361</ref> y <ref target="Varios_370.xml">Varios_370</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Juan Grau</publisher>
@@ -74,7 +89,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -106,6 +122,38 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q15699">
+            <placeName key="León">León</placeName>
+            <location>
+              <geo>42.598888888889 -5.5669444444444</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1183">
+            <placeName key="Puerto_Rico">Puerto Rico</placeName>
+            <location>
+              <geo>18.25 -66.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q15682">
+            <placeName key="Cádiz">Cádiz</placeName>
+            <location>
+              <geo>36.535 -6.2975</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -141,8 +189,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1093,12 +1140,14 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_278_1.jpg" facs="varios/Varios_278_1.jpg"/>
 
-        <head type="primer_titulo" rend="negrita"><lb/>CANCIONES DE LOS COMEDIANTES DE ANTAÑO</head>
-        <head type="subtitulo"><lb/>SEGUIDAS DE LAS DE LA GITANILLA Y<lb/>AUMENTADAS CON EL
+        <head type="primer_titulo" rend="negrita">
+          <lb/>CANCIONES DE LOS COMEDIANTES DE ANTAÑO</head>
+        <head type="subtitulo">
+          <lb/>SEGUIDAS DE LAS DE LA GITANILLA Y<lb/>AUMENTADAS CON EL
           NEGUITO</head>
-
         <div n="1">
           <div>
             <lg>
@@ -1204,7 +1253,7 @@
               <l>que se deje de tocar,</l>
               <l>para usar soberbio porte</l>
               <l>y comer sin trabajar.</l>
-              <l rend="indent">En Madrid sublime emporio</l>
+              <l rend="indent">En <name>Madrid</name> sublime emporio</l>
               <l>de esperanzas en agraz</l>
               <l>cada rostro es un jolgorio,</l>
               <l>cada bolsa un funeral.</l>
@@ -1215,13 +1264,13 @@
               <l>Ay! que corte, etc.</l>
             </lg>
           </div>
-
           <div>
-            <head type="titulo_cancion" rend="negrita"><lb/>LA PUERTO RIQUENA</head>
-            <head type="subtitulo_cancion"><lb/>TANGO.</head>
-
-            <l rend="indent">De Puerto-Rico á Cádiz fuí</l>
-            <l>y desde Cádiz vine á Madrid,</l>
+            <head type="titulo_cancion" rend="negrita">
+              <lb/>LA PUERTO RIQUENA</head>
+            <head type="subtitulo_cancion">
+              <lb/>TANGO.</head>
+            <l rend="indent">De <name>Puerto-Rico</name> á <name>Cádiz</name> fuí</l>
+            <l>y desde <name>Cádiz</name> vine á <name>Madrid</name>,</l>
             <l>y aquí en la corte me fué</l>
             <l>que desde entonces no me ausenté.</l>
             <l rend="indent">Por que en España, tierra de flores</l>
@@ -1233,11 +1282,11 @@
             <l>bendita tierra donde mi alma</l>
             <l>en dulce calma aprendió á amar.</l>
           </div>
-
           <div>
-            <head type="titulo_cancion" rend="negrita"><lb/>MÍRAME NIÑA</head>
-            <head type="subtitulo_cancion"><lb/>HABANERA</head>
-
+            <head type="titulo_cancion" rend="negrita">
+              <lb/>MÍRAME NIÑA</head>
+            <head type="subtitulo_cancion">
+              <lb/>HABANERA</head>
             <l rend="indent">Ay niña no me castigues</l>
             <l>Negándome una mirada,</l>
             <l>Que no se con que compare</l>
@@ -1260,8 +1309,8 @@
         <pb n="3" source="Varios_278_3.jpg" facs="varios/Varios_278_3.jpg"/>
 
         <div n="2">
-          <head type="titulo_cancion"><lb/>LA GITANILLA</head>
-
+          <head type="titulo_cancion">
+            <lb/>LA GITANILLA</head>
           <l rend="indent">Aquí está la gitanilla</l>
           <l>la de la buena ventura</l>
           <l>y decir verdá te jura</l>
@@ -1298,18 +1347,19 @@
           <l>y piensa en la gitanía</l>
           <l>que en esta pícara via</l>
           <l>lo dulce se güerve amargo.</l>
-
           <div type="colofon">
-            <p><lb/>Se halla de venta en casa Juan Grau, calle del Metje Fortuny, 5. REUS.</p>
+            <p>
+              <lb/>Se halla de venta en casa Juan Grau, calle del Metje Fortuny, 5. REUS.</p>
           </div>
         </div>
 
         <pb n="4" source="Varios_278_4.jpg" facs="varios/Varios_278_4.jpg"/>
 
         <div n="3">
-          <head type="titulo_cancion"><lb/>EL NEGUITO</head>
-          <head type="subtitulo_parte"><lb/>AMERICANA</head>
-
+          <head type="titulo_cancion">
+            <lb/>EL NEGUITO</head>
+          <head type="subtitulo_parte">
+            <lb/>AMERICANA</head>
           <l rend="indent">Al arma</l>
           <l>Al arma ya...</l>
           <l>Silencio</l>

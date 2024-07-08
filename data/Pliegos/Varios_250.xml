@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -93,7 +107,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -126,6 +141,68 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q21">
+            <placeName key="Inglaterra">Inglaterra</placeName>
+            <location>
+              <geo>53 -1</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q31">
+            <placeName key="Bélgica">Bélgica</placeName>
+            <location>
+              <geo>50.641111111111 4.6680555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q38">
+            <placeName key="Italia">Italia</placeName>
+            <location>
+              <geo>42.5 12.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q90">
+            <placeName key="París">París</placeName>
+            <location>
+              <geo>48.8566666666667 2.35222222222222</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q39193">
+            <placeName key="Bohemia">Bohemia</placeName>
+            <location>
+              <geo>49.833333333333 14.333333333333</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q115329">
+            <placeName key="Camagüey">Camagüey</placeName>
+            <location>
+              <geo>21.378611111111 -77.918611111111</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q148">
+            <placeName key="República_Popular_China">República Popular China</placeName>
+            <location>
+              <geo>35.8447222222222 103.451944444445</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1156">
+            <placeName key="Bombay">Bombay</placeName>
+            <location>
+              <geo>19.0758333333333 72.8775</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2842387">
+            <placeName key="Sacromonte">Sacromonte</placeName>
+            <location>
+              <geo>37.18083333 -3.59277778</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -161,8 +238,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1409,18 +1485,20 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_250_1.jpg" facs="varios/Varios_250_1.jpg"/>
 
-        <p><lb/>WILSON <lb/>Rey de Inglaterra. <lb/>Rey Alberto de Bélgica. <lb/>Rey de Italia</p>
-
+        <p>
+          <lb/>WILSON <lb/>Rey de Inglaterra. <lb/>Rey Alberto de Bélgica. <lb/>Rey de Italia</p>
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>IRIS DE PAZ</head>
-          <head type="subtitulo"><lb/>HIMNO.</head>
-
-          <p><lb/>Creación de MERCEDES SERÓS.<lb/>Letra de Tomás Biscamps.<lb/>Música de J.
+          <head type="primer_titulo" rend="negrita">
+            <lb/>IRIS DE PAZ</head>
+          <head type="subtitulo">
+            <lb/>HIMNO.</head>
+          <p>
+            <lb/>Creación de MERCEDES SERÓS.<lb/>Letra de Tomás Biscamps.<lb/>Música de J.
             Sagarra Robert</p>
           <p>Los grandés éxitos de dichos autores.</p>
-
           <lg>
             <head type="titulo_estrofa">I</head>
             <l>Ya no silban las balas,</l>
@@ -1480,17 +1558,19 @@
             <l>ya retorna la vida</l>
             <l>al asomo de Paz.</l>
           </lg>
-          <p><lb/>(Al Estribillo 1.°)</p>
+          <p>
+            <lb/>(Al Estribillo 1.°)</p>
         </div>
 
         <pb n="2" source="Varios_250_2.jpg" facs="varios/Varios_250_2.jpg"/>
 
         <div n="2">
-          <head type="titulo_cancion" rend="negrita"><lb/>LINDA GACELA</head>
-          <head type="subtitulo"><lb/>Seguidillas trianeras para canto y baile.</head>
-
-          <p><lb/>Creación de MERCEDES SERÓS.</p>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>LINDA GACELA</head>
+          <head type="subtitulo">
+            <lb/>Seguidillas trianeras para canto y baile.</head>
+          <p>
+            <lb/>Creación de MERCEDES SERÓS.</p>
           <lg>
             <head type="titulo_estrofa">I</head>
             <l rend="indent">Aquí está Linda Gacela,</l>
@@ -1500,7 +1580,7 @@
             <l>Tengo más sangre que el Gallo,</l>
             <l>más hechuras que Belmonte</l>
             <l>y más sal que las gitanas</l>
-            <l>que han nacido en Sacro-Monte.</l>
+            <l>que han nacido en <name>Sacro-Monte</name>.</l>
             <l>Recitado</l>
             <l>¡No hay quien me afronte!</l>
           </lg>
@@ -1544,21 +1624,21 @@
             <l>¡Vaya finura!</l>
             <l>(Al estribillo)</l>
           </lg>
-
         </div>
-
         <div n="3">
-          <head type="titulo_cancion" rend="negrita"><lb/>UVAS Y BESOS</head>
-          <head type="subtitulo"><lb/>Duetto pasional.</head>
-
-          <p><lb/>Creación de los MARI- BONETTI.</p>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>UVAS Y BESOS</head>
+          <head type="subtitulo">
+            <lb/>Duetto pasional.</head>
+          <p>
+            <lb/>Creación de los MARI- BONETTI.</p>
           <sp>
             <speaker>El</speaker>
             <stage>(Desde dentro).</stage>
             <l>En Septiembre y en Agosto</l>
             <l>de las uvas hago mosto</l>
-            <l>más sabroso que la miel. <stage>(Apareciendo</stage></l>
+            <l>más sabroso que la miel. <stage>(Apareciendo</stage>
+            </l>
           </sp>
           <sp>
             <speaker>Ella</speaker>
@@ -1674,11 +1754,13 @@
         <pb n="3" source="Varios_250_3.jpg" facs="varios/Varios_250_3.jpg"/>
 
         <div n="4">
-          <head type="titulo_cancion" rend="negrita"><lb/>HONRA Y VIDA (1)</head>
-          <head type="subtitulo"><lb/><lb/>CANCIÓN VIVIDA.</head>
-
-          <p><lb/>Creación de ASUNCIÓN G. PARREÑO.</p>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>HONRA Y VIDA (1)</head>
+          <head type="subtitulo">
+            <lb/>
+            <lb/>CANCIÓN VIVIDA.</head>
+          <p>
+            <lb/>Creación de ASUNCIÓN G. PARREÑO.</p>
           <lg>
             <head type="titulo_estrofa">I</head>
             <l>Con palabras de amor vehementes</l>
@@ -1714,7 +1796,8 @@
             <l>besando su frente,</l>
             <l>le otorgues tu nombre.</l>
           </lg>
-          <p><lb/>(Al refrán).</p>
+          <p>
+            <lb/>(Al refrán).</p>
           <lg>
             <head type="titulo_estrofa">III</head>
             <l>Reflexiona con calma y cariño,</l>
@@ -1730,25 +1813,25 @@
             <l>matarte ¡bandido!</l>
             <l>vengando así agravios.</l>
           </lg>
-          <p><lb/>(Al refrán).</p>
-
+          <p>
+            <lb/>(Al refrán).</p>
           <note>(1) Hay letra catalana.</note>
         </div>
 
         <pb n="4" source="Varios_250_4.jpg" facs="varios/Varios_250_4.jpg"/>
 
         <div type="parte" n="5">
-          <head type="titulo_cancion" rend="negrita"><lb/>La errante bohemia</head>
-
-          <p><lb/>Letra de E. García Molina.<lb/>Música de F. Cotó y V. Pastallé.</p>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>La errante bohemia</head>
+          <p>
+            <lb/>Letra de E. García Molina.<lb/>Música de F. Cotó y V. Pastallé.</p>
           <lg>
             <head type="titulo_estrofa">I</head>
-            <l>Bohemia es la patria mía,</l>
+            <l><name>Bohemia</name> es la patria mía,</l>
             <l>le lloro con ansiedad</l>
             <l>el yugo y la tiranía</l>
             <l>le roban su libertad.</l>
-            <l>Bohemia soy yo,</l>
+            <l><name>Bohemia</name> soy yo,</l>
             <l>bohemia soy yo;</l>
             <l>bohemia que va por el mundo</l>
             <l>con pena y dolor,</l>
@@ -1762,13 +1845,13 @@
             <l>terminaron ya las penas;</l>
             <l>reina la tranquilidad.</l>
             <l>Por fin ya cayó el tirano,</l>
-            <l>Oh, gran Bohemia respira,</l>
+            <l>Oh, gran <name>Bohemia</name> respira,</l>
             <l>rie, canta y suspira</l>
             <l>por la santa libertad.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">II</head>
-            <l>Bohemia... yo soy bohemia,</l>
+            <l><name>Bohemia</name>... yo soy bohemia,</l>
             <l>es mi dicha la ilusión</l>
             <l>la risa llevo en los labios</l>
             <l>y el llanto en el corazón.</l>
@@ -1779,14 +1862,14 @@
             <l>entonando canciones diversas,</l>
             <l>libertad y amor.</l>
           </lg>
-          <p><lb/>(Al estribillo)</p>
+          <p>
+            <lb/>(Al estribillo)</p>
         </div>
-
         <div type="parte" n="6">
-          <head type="titulo_cancion" rend="negrita"><lb/>La Chunguita</head>
-
-          <p><lb/>Letra de E. García Molina.<lb/>Música de J. Arolas y V. Pastallé.</p>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>La Chunguita</head>
+          <p>
+            <lb/>Letra de E. García Molina.<lb/>Música de J. Arolas y V. Pastallé.</p>
           <lg>
             <l>El baile de «La Chunguita»</l>
             <l>¡Jay!</l>
@@ -1795,7 +1878,7 @@
             <l>que se baila en Camagüey</l>
             <l>es de ley</l>
             <l>es de ley</l>
-            <l>y se baila en Camagüey.</l>
+            <l>y se baila en <name>Camagüey</name>.</l>
             <l>Cuando dos novios se quieren</l>
             <l>y se adoran con pasión</l>
             <l>al mismo tiempo que bailan</l>
@@ -1819,20 +1902,21 @@
             <l>¡jay!</l>
             <l>que en España no la hay</l>
             <l>más se bailará en España</l>
-            <l>en la China y en Bombay.</l>
+            <l>en la <name>China</name> y en <name>Bombay</name>.</l>
             <l>Que caray</l>
             <l>que caray</l>
-            <l>bailar la rumba en Bombay</l>
+            <l>bailar la rumba en <name>Bombay</name></l>
             <l>El que baile mi rumbita</l>
             <l>que vaya con precaución</l>
             <l>y que enseñe a su pareja</l>
             <l>a cantar esta canción.</l>
           </lg>
-          <p><lb/>(Al estribillo).</p>
+          <p>
+            <lb/>(Al estribillo).</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imp. Aldana, 12.—BARCELONA.</p>
+          <p>
+            <lb/>Imp. Aldana, 12.—BARCELONA.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -92,6 +107,32 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="6" corresp="Q222702">
+            <placeName key="Tarifa">Tarifa</placeName>
+            <location>
+              <geo>36.015305555556 -5.6056666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1114855">
+            <placeName key="Cerezo_de_Río_Tirón">Cerezo De Río Tirón</placeName>
+            <location>
+              <geo>42.491111111111 -3.1355555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15699">
+            <placeName key="León">León</placeName>
+            <location>
+              <geo>42.598888888889 -5.5669444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -127,8 +168,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-19" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-19" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1224,13 +1264,15 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_157_1.jpg" facs="varios/Varios_157_1.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>GUZMAN EL BUENO.</head>
-          <head type="subtitulo" rend="cursiva"><lb/>Relacion histórica del trágico fin de su hijo
+          <head type="primer_titulo" rend="negrita">
+            <lb/>GUZMAN EL BUENO.</head>
+          <head type="subtitulo" rend="cursiva">
+            <lb/>Relacion histórica del trágico fin de su hijo
             don Pedro, asesinado por los<lb/>moros al pié de los muros de Tarifa con el
             puñal<lb/>que su mismo padre les tiró.</head>
-
           <l rend="indent">De una hazaña sin ejemplo</l>
           <l>voy á contaros la historia,</l>
           <l>que casi nadie creyera</l>
@@ -1250,7 +1292,7 @@
 
           <pb n="2" source="Varios_157_2.jpg" facs="varios/Varios_157_2.jpg"/>
 
-          <l rend="indent">Gobernador de Tarifa</l>
+          <l rend="indent">Gobernador de <name>Tarifa</name></l>
           <l>era tan bravo español ;</l>
           <l>de seguro no habia otro</l>
           <l>mas digno debajo el sol.</l>
@@ -1279,17 +1321,17 @@
           <l>mas saludó muy cortés</l>
           <l>y supo disimular.</l>
           <l rend="indent">Siendo muy ambicioso</l>
-          <l>el Infante de Castilla,</l>
+          <l>el Infante de <name>Castilla</name>,</l>
           <l>que soñara en ser traidor</l>
           <l>en nada me maravilla.</l>
           <l rend="indent">Llevado de la codicia</l>
           <l>se propuso en breve plazo</l>
           <l>hacer trozos de su patria</l>
           <l>para obtener un pedazo.</l>
-          <l rend="indent">Debia vender Tarifa,</l>
+          <l rend="indent">Debia vender <name>Tarifa</name>,</l>
           <l>y en pago de su traicion</l>
           <l>dominaria en los reinos</l>
-          <l>de Castilla y de Leon.</l>
+          <l>de <name>Castilla</name> y de <name>Leon</name>.</l>
           <l rend="indent">Concertóse la perfidia</l>
           <l>con Aben-Said, sin rubor,</l>
           <l>pues los labios del Infante,</l>
@@ -1304,7 +1346,7 @@
           <l>y su felonía encubre.</l>
           <l rend="indent">En un muy vivo altercado</l>
           <l>mal su grado vió don Juan</l>
-          <l>que en Tarifa no mandaba</l>
+          <l>que en <name>Tarifa</name> no mandaba</l>
           <l>nadie mas que el de Guzman.</l>
           <l rend="indent">Bien pronto cundió la voz</l>
           <l>que el enemigo venia</l>
@@ -1368,7 +1410,7 @@
           <l rend="indent">Trató de impedir la madre</l>
           <l>que el hijo al moro volviera,</l>
           <l>pero tampoco queria</l>
-          <l>que Tarifa se perdiera.</l>
+          <l>que <name>Tarifa</name> se perdiera.</l>
           <l rend="indent">Mas el llanto de María</l>
           <l>no movió su corazon</l>
           <l>á que su vida manchara</l>
@@ -1454,7 +1496,7 @@
           <l>ofreciendo montes de oro.</l>
           <l rend="indent">Mas de don Juan que allí manda,</l>
           <l>trae un insolente escrito,</l>
-          <l>sólo Tarifa en rescate</l>
+          <l>sólo <name>Tarifa</name> en rescate</l>
           <l>admitiendo aquel maldito.</l>
           <l rend="indent">Y á don Pedro ( al tercer toque</l>
           <l>del clarin, si con presteza</l>
@@ -1492,16 +1534,15 @@
           <l>el mas hondo sentimiento,</l>
           <l>y de tomar cruel venganza</l>
           <l>hicieron el juramento.</l>
-          <l rend="indent">Y á Tarifa defendieron</l>
+          <l rend="indent">Y á <name>Tarifa</name> defendieron</l>
           <l>con tal teson y constancia,</l>
           <l>que en aquel cerco abatióse</l>
           <l>de los moros la arrogancia.</l>
-
           <trailer>FIN</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona : Imp. de Llorens, Palma de Sla Catalina, n.°6.</p>
+          <p>
+            <lb/>Barcelona : Imp. de Llorens, Palma de Sla Catalina, n.°6.</p>
         </div>
       </div>
     </body>

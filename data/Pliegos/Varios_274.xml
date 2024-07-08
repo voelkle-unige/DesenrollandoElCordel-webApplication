@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -71,7 +85,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -101,6 +116,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q87">
+            <placeName key="Alejandría">Alejandría</placeName>
+            <location>
+              <geo>31.1975 29.8925</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -135,8 +158,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-17" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-17" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1266,16 +1288,17 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_274_1.jpg" facs="varios/Varios_274_1.jpg"/>
 
         <fw type="impresorNum">(Núm. 96.)</fw>
-
         <div n="1">
-          <head type="primer_titulo"><lb/>NUEVAS SEGUIDILLAS</head>
-          <head type="subtitulo" rend="cursiva"><lb/>en las que un fino enamorado esplica sus
+          <head type="primer_titulo">
+            <lb/>NUEVAS SEGUIDILLAS</head>
+          <head type="subtitulo" rend="cursiva">
+            <lb/>en las que un fino enamorado esplica sus
             amores, buejándose á Cupido y<lb/>pintando al mismo tiempo la hermosura y
             perfecciones<lb/>de su querida dama.</head>
-
           <l rend="indent">Cupidillo me abrasa</l>
           <l>con sus incendios,</l>
           <l>mas como son Cupidos</l>
@@ -1371,10 +1394,8 @@
           <l>desde luego me obligo</l>
           <l>aunque muriendo.</l>
         </div>
-
         <div n="2">
           <head type="titulo_cancion">OTRAS SEGUIDILLAS.</head>
-
           <l rend="indent">Procuraré obligarte,</l>
           <l>bella tirana,</l>
           <l>pintando tu hermosura</l>
@@ -1555,11 +1576,10 @@
           <l rend="indent">Y pido en suma,</l>
           <l>que perdones los yerros</l>
           <l>de esta mi pluma.</l>
-
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.— Despacho: Hernando, Arenal; 11.</p>
+          <p>
+            <lb/>MADRID.— Despacho: Hernando, Arenal; 11.</p>
         </div>
       </div>
     </body>

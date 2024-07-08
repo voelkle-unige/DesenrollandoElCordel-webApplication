@@ -1,386 +1,413 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_014">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Romance nuevo</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LF">
-                              <name>Lorysmar Franco</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Romance nuevo, en el qual se da
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romance nuevo</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LF">
+          <name>Lorysmar Franco</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Romance nuevo, en el qual se da
                                           cuenta de lo que sucedió a una Dama con un Leon, con todo
                                           lo demás que verá el curioso Letor.</title>
-                                    <title type="titulo_breve">Romance nuevo</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p/>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Herederos de Juan Jolis</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6811260</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">XXXVIII</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="2">Dos grabados (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_014_1.xml" facs="varios/BCN_014_1.jpg/194,193,670,614/100,/0/default.jpg">grabado_b_014_1</item>
-                                                      <item corresp="grabado_b_014_2.xml" facs="varios/BCN_014_1.jpg/877,241,720,600/100,/0/default.jpg">grabado_b_014_2</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+            <title type="titulo_breve">Romance nuevo</title>
+          </titleStmt>
+          <editionStmt>
+            <p/>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Herederos de Juan Jolis</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.12644100</idno>
+            <altIdentifier>
+              <idno type="num_impresor">XXXVIII</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="2">Dos grabados (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_014_1.xml" facs="varios/BCN_014_1.jpg/194,193,670,614/100,/0/default.jpg">grabado_b_014_1</item>
+                  <item corresp="grabado_b_014_2.xml" facs="varios/BCN_014_1.jpg/877,241,720,600/100,/0/default.jpg">grabado_b_014_2</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q14309">
+            <placeName key="Guadalquivir">Guadalquivir</placeName>
+            <location>
+              <geo>37.8392 -2.9736</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5818">
+            <placeName key="Córdoba">Córdoba</placeName>
+            <location>
+              <geo>37.883333333333 -4.7666666666667</geo>
+            </location>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term target="XX527614.html" type="tipo_texto">Romances</term>
-                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-10-02" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term target="XX527614.html" type="tipo_texto">Romances</term>
+          <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-10-02" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_014_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-      <facsimile>
-            <graphic url="varios/BCN_014_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_014_1.jpg" facs="varios/BCN_014_1.jpg"/>
+          <pb n="1" source="BCN_014_1.jpg" facs="varios/BCN_014_1.jpg"/>
 
-                              <head type="primer_titulo">
-                                    <lb/><hi rend="negrita">ROMANCE NUEVO,</hi><lb/>EN EL QUAL SE DA
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">ROMANCE NUEVO,</hi>
+            <lb/>EN EL QUAL SE DA
                                     CUENTA DE LO QUE<lb/>sucedió à una Dama con un Leon, con todo
                                     lo<lb/>demás que verá el curioso Letor.</head>
+          <l>
+            <hi rend="negrita">L</hi>As Tres Divinas Personas</l>
+          <l>de la Trinidad Suprema</l>
+          <l>alumbre mi entendimiento,</l>
+          <l>y memoria, porque pueda</l>
+          <l>mover mi rustico estilo,</l>
+          <l>y dar principio mi lengua.</l>
+          <l>Salí pues una mañana</l>
+          <l>à divertir las tristesas</l>
+          <l>de la tempestad passada,</l>
+          <l>y el antubion de mi pena,</l>
+          <l>por las orillas del <name>Betis</name>,</l>
+          <l>y en esta hermosa ribera,</l>
+          <l>buscando entre los ramos,</l>
+          <l>la braveza de las fieras.</l>
+          <l>En lo aspero de los Sáuces</l>
+          <l>vi una muger (que belleza!)</l>
+          <l>una Venus, poco he dicho;</l>
+          <l>una Palas con dos flechas,</l>
+          <l>y con la una tiraba</l>
+          <l>à mi amor finas saetas,</l>
+          <l>y con la otra ofrecia</l>
+          <l>al corazon sus ofertas.</l>
+          <l>Lleguéme à ella, y le dixe:</l>
+          <l>Dios te guarda hermosa prenda</l>
+          <l>dime: que ha sido el motivo</l>
+          <l>de venir à esta aspereza?</l>
+          <l>Respondióme con donayre;</l>
+          <l>si te acompaña nobleza,</l>
+          <l>gallardo, y piadoso Joven,</l>
+          <l>oye, y sabrás la entereza</l>
+          <l>de esta mi tragica historia</l>
+          <l>que mi boca te comfiessa:</l>
+          <fw type="reclamo">Na-</fw>
 
-                              <l><hi rend="negrita">L</hi>As Tres Divinas Personas</l>
-                              <l>de la Trinidad Suprema</l>
-                              <l>alumbre mi entendimiento,</l>
-                              <l>y memoria, porque pueda</l>
-                              <l>mover mi rustico estilo,</l>
-                              <l>y dar principio mi lengua.</l>
-                              <l>Salí pues una mañana</l>
-                              <l>à divertir las tristesas</l>
-                              <l>de la tempestad passada,</l>
-                              <l>y el antubion de mi pena,</l>
-                              <l>por las orillas del Betis,</l>
-                              <l>y en esta hermosa ribera,</l>
-                              <l>buscando entre los ramos,</l>
-                              <l>la braveza de las fieras.</l>
-                              <l>En lo aspero de los Sáuces</l>
-                              <l>vi una muger (que belleza!)</l>
-                              <l>una Venus, poco he dicho;</l>
-                              <l>una Palas con dos flechas,</l>
-                              <l>y con la una tiraba</l>
-                              <l>à mi amor finas saetas,</l>
-                              <l>y con la otra ofrecia</l>
-                              <l>al corazon sus ofertas.</l>
-                              <l>Lleguéme à ella, y le dixe:</l>
-                              <l>Dios te guarda hermosa prenda</l>
-                              <l>dime: que ha sido el motivo</l>
-                              <l>de venir à esta aspereza?</l>
-                              <l>Respondióme con donayre;</l>
-                              <l>si te acompaña nobleza,</l>
-                              <l>gallardo, y piadoso Joven,</l>
-                              <l>oye, y sabrás la entereza</l>
-                              <l>de esta mi tragica historia</l>
-                              <l>que mi boca te comfiessa:</l>
-                              <fw type="reclamo">Na-</fw>
+          <pb n="2" source="BCN_014_2.jpg" facs="varios/BCN_014_2.jpg"/>
 
-                              <pb n="2" source="BCN_014_2.jpg" facs="varios/BCN_014_2.jpg"/>
+          <l>Nací yo de nobles Padres</l>
+          <l>en <name>Cordova</name> la opulenta,</l>
+          <l>me criaron con regalos</l>
+          <l>entre primores, y sedas;</l>
+          <l>y apenas tuve tres lustros</l>
+          <l>(aqui empiezan mis tragedias)</l>
+          <l>trataron pues de casarme</l>
+          <l>(que sentimiento, y que pena!)</l>
+          <l>con un noble Cavallero;</l>
+          <l>y aunque es mucha su nobleza</l>
+          <l>no me llevó la aficion,</l>
+          <l>ni me obligó su fineza.</l>
+          <l>Mi Padre con grande enojo,</l>
+          <l>quando vió mi resistencia,</l>
+          <l>me castiga con rigor,</l>
+          <l>y amenaza con fiereza.</l>
+          <l>Tenia yo dada palabra,</l>
+          <l>con mucho agrado, y firmeza</l>
+          <l>à un criado de mi hermano,</l>
+          <l>quien con gala, y gentileza,</l>
+          <l>se llevaba mi atencion;</l>
+          <l>y una noche con presteza</l>
+          <l>me vali de una criada,</l>
+          <l>(que nunca faltan terceras)</l>
+          <l>para escribirle un papel,</l>
+          <l>diciendo de esta manera:</l>
+          <l>Gallardo, y hermoso Joven,</l>
+          <l>mi lealtad te confiessa,</l>
+          <l>como mi Padre empeñado</l>
+          <l>quiere casarme, y se empeña</l>
+          <l>en cumplir con la promesa,</l>
+          <l>que le hizo à Don Francisco,</l>
+          <l>y con esto me amedrenta</l>
+          <l>dandome fuertes castigos;</l>
+          <l>y temiendo la sobervia</l>
+          <l>de mi Padre te suplico,</l>
+          <l>que me saques de esta tierra:</l>
+          <l>y à la hora de las doce</l>
+          <l>un Leon, que con sus garras</l>
+          <l>me hallarás en esta reja,</l>
+          <l>donde solemos hablar;</l>
+          <l>preventa para la empresa,</l>
+          <l>y mira que no hagas falta,</l>
+          <l>porque quedo ya resuelta</l>
+          <l>à hacer algun desatino,</l>
+          <l>que atropelle mi nobleza,</l>
+          <l>no digo mas, Dios te gnarde</l>
+          <l>del alma querida prenda.</l>
+          <l>Me previne aquella noche</l>
+          <l>de joyas, galas, y prendas</l>
+          <l>para emprender la conquista</l>
+          <l>del amor, que me atormenta;</l>
+          <l>yá pues llegada la hora</l>
+          <l>de la noche con presteza</l>
+          <l>en un ligero Cavallo,</l>
+          <l>que al viento su ligereza</l>
+          <l>le quita por lo velóz</l>
+          <l>de su exalacion la fuerza.</l>
+          <l>Llegados pues à este sitio,</l>
+          <l>de mi amante la fiereza</l>
+          <l>ingrato, y desconocido</l>
+          <l>quiso violar con violencia</l>
+          <l>la flor de mi Abril florido.</l>
+          <l>Y viendo mi resistencia,</l>
+          <l>me dió cinco puñaladas,</l>
+          <l>que sin alientos me dexan;</l>
+          <l>y yo rebuelta en mi sangre</l>
+          <l>entre suspiros, y quexas,</l>
+          <l>justicia le pido al Cielo,</l>
+          <l>y llamé à la Sacra Reyna,</l>
+          <l>Madre de los afligidos</l>
+          <l>de misericordia llena;</l>
+          <l>quien oyendo mis clamores</l>
+          <l>me envió con ligereza</l>
+          <l>despedazó con fiereza</l>
+          <l>à aquel aleve traydor.</l>
+          <fw type="reclamo">Y</fw>
 
-                              <l>Nací yo de nobles Padres</l>
-                              <l>en Cordova la opulenta,</l>
-                              <l>me criaron con regalos</l>
-                              <l>entre primores, y sedas;</l>
-                              <l>y apenas tuve tres lustros</l>
-                              <l>(aqui empiezan mis tragedias)</l>
-                              <l>trataron pues de casarme</l>
-                              <l>(que sentimiento, y que pena!)</l>
-                              <l>con un noble Cavallero;</l>
-                              <l>y aunque es mucha su nobleza</l>
-                              <l>no me llevó la aficion,</l>
-                              <l>ni me obligó su fineza.</l>
-                              <l>Mi Padre con grande enojo,</l>
-                              <l>quando vió mi resistencia,</l>
-                              <l>me castiga con rigor,</l>
-                              <l>y amenaza con fiereza.</l>
-                              <l>Tenia yo dada palabra,</l>
-                              <l>con mucho agrado, y firmeza</l>
-                              <l>à un criado de mi hermano,</l>
-                              <l>quien con gala, y gentileza,</l>
-                              <l>se llevaba mi atencion;</l>
-                              <l>y una noche con presteza</l>
-                              <l>me vali de una criada,</l>
-                              <l>(que nunca faltan terceras)</l>
-                              <l>para escribirle un papel,</l>
-                              <l>diciendo de esta manera:</l>
-                              <l>Gallardo, y hermoso Joven,</l>
-                              <l>mi lealtad te confiessa,</l>
-                              <l>como mi Padre empeñado</l>
-                              <l>quiere casarme, y se empeña</l>
-                              <l>en cumplir con la promesa,</l>
-                              <l>que le hizo à Don Francisco,</l>
-                              <l>y con esto me amedrenta</l>
-                              <l>dandome fuertes castigos;</l>
-                              <l>y temiendo la sobervia</l>
-                              <l>de mi Padre te suplico,</l>
-                              <l>que me saques de esta tierra:</l>
-                              <l>y à la hora de las doce</l>
-                              <l>un Leon, que con sus garras</l>
-                              <l>me hallarás en esta reja,</l>
-                              <l>donde solemos hablar;</l>
-                              <l>preventa para la empresa,</l>
-                              <l>y mira que no hagas falta,</l>
-                              <l>porque quedo ya resuelta</l>
-                              <l>à hacer algun desatino,</l>
-                              <l>que atropelle mi nobleza,</l>
-                              <l>no digo mas, Dios te gnarde</l>
-                              <l>del alma querida prenda.</l>
-                              <l>Me previne aquella noche</l>
-                              <l>de joyas, galas, y prendas</l>
-                              <l>para emprender la conquista</l>
-                              <l>del amor, que me atormenta;</l>
-                              <l>yá pues llegada la hora</l>
-                              <l>de la noche con presteza</l>
-                              <l>en un ligero Cavallo,</l>
-                              <l>que al viento su ligereza</l>
-                              <l>le quita por lo velóz</l>
-                              <l>de su exalacion la fuerza.</l>
-                              <l>Llegados pues à este sitio,</l>
-                              <l>de mi amante la fiereza</l>
-                              <l>ingrato, y desconocido</l>
-                              <l>quiso violar con violencia</l>
-                              <l>la flor de mi Abril florido.</l>
-                              <l>Y viendo mi resistencia,</l>
-                              <l>me dió cinco puñaladas,</l>
-                              <l>que sin alientos me dexan;</l>
-                              <l>y yo rebuelta en mi sangre</l>
-                              <l>entre suspiros, y quexas,</l>
-                              <l>justicia le pido al Cielo,</l>
-                              <l>y llamé à la Sacra Reyna,</l>
-                              <l>Madre de los afligidos</l>
-                              <l>de misericordia llena;</l>
-                              <l>quien oyendo mis clamores</l>
-                              <l>me envió con ligereza</l>
-                              <l>despedazó con fiereza</l>
-                              <l>à aquel aleve traydor.</l>
-                              <fw type="reclamo">Y</fw>
+          <pb n="3" source="BCN_014_3.jpg" facs="varios/BCN_014_3.jpg"/>
 
-                              <pb n="3" source="BCN_014_3.jpg" facs="varios/BCN_014_3.jpg"/>
+          <l>Y luego con diligencia</l>
+          <l>llegóse à mi, y con halagos</l>
+          <l>templada yá su braveza</l>
+          <l>lamiendome mis heridas</l>
+          <l>me cura y luego me lleva</l>
+          <l>a su albergue donde he estado</l>
+          <l>tres años segun mi cuenta,</l>
+          <l>donde me he alimentado</l>
+          <l>con la carne de las fieras,</l>
+          <l>que este animal me ha traído:</l>
+          <l>Esta es, Señor; la certeza,</l>
+          <l>y aora, Señor te suplico</l>
+          <l>que te ausentes de la selva,</l>
+          <l>porque sí viene el Leon,</l>
+          <l>temo, que con su braveza</l>
+          <l>atomos te haga en sus garras.</l>
+          <l>Y viendo en peligro puesta</l>
+          <l>mi vida, dixe atrevido,</l>
+          <l>valeroso nunca fuera,</l>
+          <l>si à la furia de un Leon,</l>
+          <l>oy mi valor se rindiera;</l>
+          <l>pues aunq hubiera mas Leones</l>
+          <l>que arboles hay en la selva,</l>
+          <l>para mi valor heroico</l>
+          <l>todo es nada en tu presencia:</l>
+          <l>y asi si quieres salir</l>
+          <l>de aquesta selva sobervia,</l>
+          <l>levanta, no tengas miedo,</l>
+          <l>sigamos pues la ribera</l>
+          <l>de este tan hermoso Rio,</l>
+          <l>que si saliesse la fiera,</l>
+          <l>t e promete mi valor,</l>
+          <l>de castigar su soberbia,</l>
+          <l>y sacarte del peligro,</l>
+          <l>aunque mil vidas perdiera.</l>
+          <l>Y asiendola de la mano,</l>
+          <l>nos entramos por la senda,</l>
+          <l>y entre unos muy verdes ramos</l>
+          <l>oygo rugir con fiereza</l>
+          <l>de aquella furia inhumana</l>
+          <l>la sobervia, y gentileza:</l>
+          <l>yo conociendo el peligro,</l>
+          <l>preparando mi escopeta,</l>
+          <l>y esperando à que llegára,</l>
+          <l>para tirarle mas cerca.</l>
+          <l>Ciego en sus iras se arroja,</l>
+          <l>y haciendo el padernal fuerza</l>
+          <l>de la polvora el incendio</l>
+          <l>disparó con gran fiereza,</l>
+          <l>cinco saetas de plomo</l>
+          <l>en el pecho de la fiera,</l>
+          <l>sin respetar su valor</l>
+          <l>con cinco heridas perversas,</l>
+          <l>cayó el bruto, y al bramido</l>
+          <l>se estremecieron las selvas.</l>
+          <l>Conseguida la victoria,</l>
+          <l>buelvo à mi querida prenda,</l>
+          <l>que se hallava desmayada</l>
+          <l>considerando que fuera,</l>
+          <l>lo postrero de mi vida</l>
+          <l>aquella tan ardua empressa;</l>
+          <l>me dixo: Gallardo Joven</l>
+          <l>con que pagaré tal fineza?</l>
+          <l>Llevame donde quisieres,</l>
+          <l>y si quieres, que yo sea</l>
+          <l>tu Esposa, te serviré</l>
+          <l>como humilde esclava vuestra</l>
+          <l>Yo le dixe: hermosa Dama,</l>
+          <l>vivo encanto de mi idea,</l>
+          <l>como podré yo pagar</l>
+          <l>tan sublimadas finezas,</l>
+          <l>como tu favor me hace</l>
+          <l>sin yo poder merecerlas;</l>
+          <l>pero ya que agradecida</l>
+          <l>tu hermosura se me muestra,</l>
+          <l>he de pagarte, ó morir</l>
+          <fw type="reclamo">el</fw>
 
-                              <l>Y luego con diligencia</l>
-                              <l>llegóse à mi, y con halagos</l>
-                              <l>templada yá su braveza</l>
-                              <l>lamiendome mis heridas</l>
-                              <l>me cura y luego me lleva</l>
-                              <l>a su albergue donde he estado</l>
-                              <l>tres años segun mi cuenta,</l>
-                              <l>donde me he alimentado</l>
-                              <l>con la carne de las fieras,</l>
-                              <l>que este animal me ha traído:</l>
-                              <l>Esta es, Señor; la certeza,</l>
-                              <l>y aora, Señor te suplico</l>
-                              <l>que te ausentes de la selva,</l>
-                              <l>porque sí viene el Leon,</l>
-                              <l>temo, que con su braveza</l>
-                              <l>atomos te haga en sus garras.</l>
-                              <l>Y viendo en peligro puesta</l>
-                              <l>mi vida, dixe atrevido,</l>
-                              <l>valeroso nunca fuera,</l>
-                              <l>si à la furia de un Leon,</l>
-                              <l>oy mi valor se rindiera;</l>
-                              <l>pues aunq hubiera mas Leones</l>
-                              <l>que arboles hay en la selva,</l>
-                              <l>para mi valor heroico</l>
-                              <l>todo es nada en tu presencia:</l>
-                              <l>y asi si quieres salir</l>
-                              <l>de aquesta selva sobervia,</l>
-                              <l>levanta, no tengas miedo,</l>
-                              <l>sigamos pues la ribera</l>
-                              <l>de este tan hermoso Rio,</l>
-                              <l>que si saliesse la fiera,</l>
-                              <l>t e promete mi valor,</l>
-                              <l>de castigar su soberbia,</l>
-                              <l>y sacarte del peligro,</l>
-                              <l>aunque mil vidas perdiera.</l>
-                              <l>Y asiendola de la mano,</l>
-                              <l>nos entramos por la senda,</l>
-                              <l>y entre unos muy verdes ramos</l>
-                              <l>oygo rugir con fiereza</l>
-                              <l>de aquella furia inhumana</l>
-                              <l>la sobervia, y gentileza:</l>
-                              <l>yo conociendo el peligro,</l>
-                              <l>preparando mi escopeta,</l>
-                              <l>y esperando à que llegára,</l>
-                              <l>para tirarle mas cerca.</l>
-                              <l>Ciego en sus iras se arroja,</l>
-                              <l>y haciendo el padernal fuerza</l>
-                              <l>de la polvora el incendio</l>
-                              <l>disparó con gran fiereza,</l>
-                              <l>cinco saetas de plomo</l>
-                              <l>en el pecho de la fiera,</l>
-                              <l>sin respetar su valor</l>
-                              <l>con cinco heridas perversas,</l>
-                              <l>cayó el bruto, y al bramido</l>
-                              <l>se estremecieron las selvas.</l>
-                              <l>Conseguida la victoria,</l>
-                              <l>buelvo à mi querida prenda,</l>
-                              <l>que se hallava desmayada</l>
-                              <l>considerando que fuera,</l>
-                              <l>lo postrero de mi vida</l>
-                              <l>aquella tan ardua empressa;</l>
-                              <l>me dixo: Gallardo Joven</l>
-                              <l>con que pagaré tal fineza?</l>
-                              <l>Llevame donde quisieres,</l>
-                              <l>y si quieres, que yo sea</l>
-                              <l>tu Esposa, te serviré</l>
-                              <l>como humilde esclava vuestra</l>
-                              <l>Yo le dixe: hermosa Dama,</l>
-                              <l>vivo encanto de mi idea,</l>
-                              <l>como podré yo pagar</l>
-                              <l>tan sublimadas finezas,</l>
-                              <l>como tu favor me hace</l>
-                              <l>sin yo poder merecerlas;</l>
-                              <l>pero ya que agradecida</l>
-                              <l>tu hermosura se me muestra,</l>
-                              <l>he de pagarte, ó morir</l>
-                              <fw type="reclamo">el</fw>
+          <pb n="4" source="BCN_014_4.jpg" facs="varios/BCN_014_4.jpg"/>
 
-                              <pb n="4" source="BCN_014_4.jpg" facs="varios/BCN_014_4.jpg"/>
-
-                              <l>el amor que me professas;</l>
-                              <l>y assi, aunque passe las aguas</l>
-                              <l>del mar muerto, y aunque vea</l>
-                              <l>los peligros à los ojos</l>
-                              <l>seré tuyo, hermosa prenda,</l>
-                              <l>y sacandote de aqui,</l>
-                              <l>haré segura mi oferta.</l>
-                              <l>Vamos siguiendo el camino</l>
-                              <l>por esta fresca ribera,</l>
-                              <l>pues llegando à la Ciudad</l>
-                              <l>al Vicario le doy cuenta,</l>
-                              <l>quien informado del caso,</l>
-                              <l>luego de su punto ordena</l>
-                              <l>el desposarnos, y luego</l>
-                              <l>hechas estas diligencias,</l>
-                              <l>fuimos á su casa donde</l>
-                              <l>con sentimiento, y con pena,</l>
-                              <l>está el Padre sin saber</l>
-                              <l>donde estava esta Minerva:</l>
-                              <l>Pero al punto que la vido,</l>
-                              <l>y supo aquesta tragedia,</l>
-                              <l>quedó muy agradecido,</l>
-                              <l>y en su casa me aposenta;</l>
-                              <l>dandole infinitas gracias,</l>
-                              <l>à la Trinidad Suprema.</l>
-                              <l>Y ahora noble auditorio</l>
-                              <l>aqui el humilde Poeta</l>
-                              <l>de rodillas por el suelo</l>
-                              <l>suplica con reverencia</l>
-                              <l>que le perdones las faltas</l>
-                              <l>que en este pliego se encierran</l>
-
-                              <trailer rend="negrita">FIN.</trailer>
-                        </div>
-                        <div type="colofon">
-                              <p>
-                                    <lb/><hi rend="cursiva">Barcelona</hi>: En la Imprenta de los
+          <l>el amor que me professas;</l>
+          <l>y assi, aunque passe las aguas</l>
+          <l>del mar muerto, y aunque vea</l>
+          <l>los peligros à los ojos</l>
+          <l>seré tuyo, hermosa prenda,</l>
+          <l>y sacandote de aqui,</l>
+          <l>haré segura mi oferta.</l>
+          <l>Vamos siguiendo el camino</l>
+          <l>por esta fresca ribera,</l>
+          <l>pues llegando à la Ciudad</l>
+          <l>al Vicario le doy cuenta,</l>
+          <l>quien informado del caso,</l>
+          <l>luego de su punto ordena</l>
+          <l>el desposarnos, y luego</l>
+          <l>hechas estas diligencias,</l>
+          <l>fuimos á su casa donde</l>
+          <l>con sentimiento, y con pena,</l>
+          <l>está el Padre sin saber</l>
+          <l>donde estava esta Minerva:</l>
+          <l>Pero al punto que la vido,</l>
+          <l>y supo aquesta tragedia,</l>
+          <l>quedó muy agradecido,</l>
+          <l>y en su casa me aposenta;</l>
+          <l>dandole infinitas gracias,</l>
+          <l>à la Trinidad Suprema.</l>
+          <l>Y ahora noble auditorio</l>
+          <l>aqui el humilde Poeta</l>
+          <l>de rodillas por el suelo</l>
+          <l>suplica con reverencia</l>
+          <l>que le perdones las faltas</l>
+          <l>que en este pliego se encierran</l>
+          <trailer rend="negrita">FIN.</trailer>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona</hi>: En la Imprenta de los
                                     Herederos de Juan Jolis, <lb/>en la calle de los
                                     Algodoneros.</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

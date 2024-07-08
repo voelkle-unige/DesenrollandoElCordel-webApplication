@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -81,7 +95,8 @@
                   <dim>in-4</dim>
                   <material subtype="verde"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -102,6 +117,14 @@
           </physDesc>
           <history/>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q649">
+            <placeName key="Moscú">Moscú</placeName>
+            <location>
+              <geo>55.755833333333 37.617777777778</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -138,8 +161,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-08-31" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-08-31" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -900,20 +922,22 @@
     <body>
       <div>
         <div n="1">
+
           <pb n="1" source="Varios_107_1.jpg" facs="varios/Varios_107_1.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>LA RADIO</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA RADIO</head>
           <div type="parte" n="1">
-            <head type="titulo_parte" rend="negrita"><lb/>PRIMERA PARTE</head>
-
+            <head type="titulo_parte" rend="negrita">
+              <lb/>PRIMERA PARTE</head>
             <lg>
-              <head type="titulo_estrofa"><lb/>I</head>
+              <head type="titulo_estrofa">
+                <lb/>I</head>
               <l rend="indent">Es la radio un aparato</l>
               <l>que fa poch qu' ha sortit nou</l>
               <l>es bonich i mol baratu</l>
               <l>i d'aqui a poch ratu</l>
-              <l>respón á Moscou.</l>
+              <l>respón á <name>Moscou</name>.</l>
               <l>Tan sols posá una antena</l>
               <l>un filferro i uns cordons</l>
               <l>sentiran a boca plena.</l>
@@ -928,7 +952,8 @@
               <l>itoca' l piano pels quatre costats</l>
             </lg>
             <lg>
-              <head type="titulo_estrofa"><lb/>II</head>
+              <head type="titulo_estrofa">
+                <lb/>II</head>
               <l>Un dia la Filomena</l>
               <l>li va dí han el seu promés</l>
               <l>pue li pusés una antena</l>
@@ -945,7 +970,8 @@
               <l>Ojo moreneta, etc., etc.</l>
             </lg>
             <lg>
-              <head type="titulo_estrofa"><lb/>III</head>
+              <head type="titulo_estrofa">
+                <lb/>III</head>
               <l>Una noia moreneta</l>
               <l>per favor m'ha demanat</l>
               <l>que li posi una anteneta</l>
@@ -962,14 +988,15 @@
               <l>Ojo moreneta, etc., etc.</l>
             </lg>
           </div>
-
           <div type="parte" n="2">
+
             <pb n="2" source="Varios_107_2.jpg" facs="varios/Varios_107_2.jpg"/>
 
-            <head type="titulo_parte" rend="negrita"><lb/>Segunda partede La RADIO</head>
-
+            <head type="titulo_parte" rend="negrita">
+              <lb/>Segunda partede La RADIO</head>
             <lg>
-              <head type="titulo_estrofa"><lb/>IV</head>
+              <head type="titulo_estrofa">
+                <lb/>IV</head>
               <l>L'altre dia a la Clareta</l>
               <l>lel xicot l'i ha regalat</l>
               <l>una Radio de trompeta</l>
@@ -986,7 +1013,8 @@
               <l>Ojo moreneta, etc., etc.</l>
             </lg>
             <lg>
-              <head type="titulo_estrofa"><lb/>V</head>
+              <head type="titulo_estrofa">
+                <lb/>V</head>
               <l>Jo tinch una cosineta</l>
               <l>que la Radio li fa pó</l>
               <l>y cuan ja sent la trompera</l>
@@ -1003,7 +1031,8 @@
               <l>Ojo moreneta, etc., etc.</l>
             </lg>
             <lg>
-              <head type="titulo_estrofa"><lb/>VI</head>
+              <head type="titulo_estrofa">
+                <lb/>VI</head>
               <l>Perque pugui passa el rato</l>
               <l>un marit a regalat</l>
               <l>a la dona un aparato</l>
@@ -1020,7 +1049,8 @@
               <l>Ojo moreneta, etc., etc.</l>
             </lg>
             <lg>
-              <head type="titulo_estrofa"><lb/>VII</head>
+              <head type="titulo_estrofa">
+                <lb/>VII</head>
               <l>Desde que hi han tantes antenes</l>
               <l>pels terats y pels balcons</l>
               <l>ja no's veuen tantes nenes</l>
@@ -1037,7 +1067,8 @@
               <l>Ojo moreneta, etc., etc.</l>
             </lg>
             <lg>
-              <head type="titulo_estrofa"><lb/>VIII</head>
+              <head type="titulo_estrofa">
+                <lb/>VIII</head>
               <l>Una señora en gran pompa</l>
               <l>una Radio n'ha comprat</l>
               <l>es d'aquelles que tenen tromps</l>
@@ -1053,14 +1084,15 @@
             <trailer>F I N</trailer>
           </div>
         </div>
-
         <div n="2">
+
           <pb n="3" source="Varios_107_3.jpg" facs="varios/Varios_107_3.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>La Gaviota</head>
-          <head type="titulo_parte"><lb/>Zarzuela en dos actos letra de «Amichatis» y A.
+          <head type="primer_titulo" rend="negrita">
+            <lb/>La Gaviota</head>
+          <head type="titulo_parte">
+            <lb/>Zarzuela en dos actos letra de «Amichatis» y A.
             Oliveros<lb/>Música del eminente y popular maestro compositor Rafael Millan.</head>
-
           <l>Felices hijos de esta tierra</l>
           <l>hermanos míos del alma,</l>
           <l>yo siempre fui hombre de guerra,</l>
@@ -1093,13 +1125,15 @@
           <l>¡que trapelles son</l>
           <l>¡epamorats!</l>
         </div>
-
         <div n="3">
+
           <pb n="4" source="Varios_107_4.jpg" facs="varios/Varios_107_4.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>La Rosario<lb/>MARCHA</head>
-          <head type="subtitulo_parte">Letra de Luis Santed<lb/>Con la música de<lb/><hi rend="negrita">La Bien Amada</hi></head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>La Rosario<lb/>MARCHA</head>
+          <head type="subtitulo_parte">Letra de Luis Santed<lb/>Con la música de<lb/>
+            <hi rend="negrita">La Bien Amada</hi>
+          </head>
           <l>Rosario</l>
           <l>Se murmura por el barrio, de que tienes la mania</l>
           <l>Rosario</l>

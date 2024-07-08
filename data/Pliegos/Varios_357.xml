@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -32,7 +46,8 @@
             <title type="titulo_breve">Don Claudio y Dona Margarita</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_116.xml">Varios_116</ref></p>
+            <p>Otra impresión: <ref target="Varios_116.xml">Varios_116</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Sucesores de Hernando</publisher>
@@ -71,7 +86,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -100,6 +116,20 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q90">
+            <placeName key="París">París</placeName>
+            <location>
+              <geo>48.8566666666667 2.35222222222222</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -135,8 +165,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-02" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-02" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -2667,17 +2696,20 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_357_1.jpg" facs="varios/Varios_357_1.jpg"/>
 
           <fw type="impresorNum">(Núm. 9)</fw>
-
-          <head type="primer_titulo" rend="negrita"><lb/>DON CLAUDIO Y DONA MARGARITA.</head>
-          <head type="subtitulo"><lb/><hi rend="negrita">ADMIRABLE Y CURIOSA RELACION</hi><lb/>en la
+          <head type="primer_titulo" rend="negrita">
+            <lb/>DON CLAUDIO Y DONA MARGARITA.</head>
+          <head type="subtitulo">
+            <lb/>
+            <hi rend="negrita">ADMIRABLE Y CURIOSA RELACION</hi>
+            <lb/>en la
             que se refiere un suceso muy extraordinario acaecido a estos<lb/>nobles señores.</head>
-
           <div type="parte" n="1">
-            <head type="titulo_parte" rend="negrita"><lb/>PRIMERA PARTE.</head>
-
+            <head type="titulo_parte" rend="negrita">
+              <lb/>PRIMERA PARTE.</head>
             <l rend="indent">Hoy señores, hoy se alienta</l>
             <l>m¡ discurso por un rato,</l>
             <l>á referir las mayores</l>
@@ -2690,7 +2722,7 @@
             <l>como lo iré declarando.</l>
             <l>Estaba, pues, en la corte,</l>
             <l>siendo grande de palacio,</l>
-            <l>en Francia un gran caballero</l>
+            <l>en <name>Francia</name> un gran caballero</l>
             <l>cuyo nombre era don Claudio:</l>
             <l>rendido de la hermosura</l>
             <l>de esta señora, ha intentado</l>
@@ -2700,7 +2732,6 @@
             <pb n="2" source="Varios_357_2.jpg" facs="varios/Varios_357_2.jpg"/>
 
             <fw type="paginaNum">— 2 —</fw>
-
             <l>por las tapias del jardin,</l>
             <l>hizo avance, y reparando</l>
             <l>era alfombrado el suelo</l>
@@ -2793,7 +2824,6 @@
             <pb n="3" source="Varios_357_3.jpg" facs="varios/Varios_357_3.jpg"/>
 
             <fw type="paginaNum">— 3 —</fw>
-
             <l>Rompió el silencio una voz</l>
             <l>un dia que salió al campo</l>
             <l>por divertir sus pasiones</l>
@@ -2886,7 +2916,6 @@
             <pb n="4" source="Varios_357_4.jpg" facs="varios/Varios_357_4.jpg"/>
 
             <fw type="paginaNum">— 4 —</fw>
-
             <l>No halla disculpa, ni halla</l>
             <l>con qué aclarar del villano</l>
             <l>la traicion, ni tampoco</l>
@@ -2979,7 +3008,6 @@
             <pb n="5" source="Varios_357_5.jpg" facs="varios/Varios_357_5.jpg"/>
 
             <fw type="paginaNum">— 5 —</fw>
-
             <l>Llevó á la triste señora</l>
             <l>á su cabaña, y llegando</l>
             <l>se la entregó á su esposa,</l>
@@ -3001,10 +3029,9 @@
             <l>castigada la maldad,</l>
             <l>y en lo cierto el desengaño.</l>
           </div>
-
           <div type="parte" n="2">
-            <head type="titulo_parte"><lb/>SEGUNDA PARTE.</head>
-
+            <head type="titulo_parte">
+              <lb/>SEGUNDA PARTE.</head>
             <l rend="indent">Ya dice el primer romace</l>
             <l>cómo quedó la cabaña</l>
             <l>recojida esta señora,</l>
@@ -3067,7 +3094,6 @@
             <pb n="6" source="Varios_357_6.jpg" facs="varios/Varios_357_6.jpg"/>
 
             <fw type="paginaNum">— 6 —</fw>
-
             <l>Vino el pastor y dispuso</l>
             <l>de que luego al punto hagan</l>
             <l>de cenar cumplidamente,</l>
@@ -3160,7 +3186,6 @@
             <pb n="7" source="Varios_357_7.jpg" facs="varios/Varios_357_7.jpg"/>
 
             <fw type="paginaNum">— 7 —</fw>
-
             <l>y sin que sea sentido,</l>
             <l>mas á escuchar se aplicaba.</l>
             <l>Estando en tal confusion,</l>
@@ -3253,7 +3278,6 @@
             <pb n="8" source="Varios_357_8.jpg" facs="varios/Varios_357_8.jpg"/>
 
             <fw type="paginaNum">— 8 —</fw>
-
             <l>y prorumpiendo don Claudio,</l>
             <l>la dice: esposa del alma,</l>
             <l>ó es encanto cuanto miro,</l>
@@ -3291,7 +3315,7 @@
             <l>hasta entrar dentro de París</l>
             <l>fué siguiendo sus pisadas.</l>
             <l>Hizo el caso tal ruido,</l>
-            <l>que conmovida la Francia,</l>
+            <l>que conmovida la <name>Francia</name>,</l>
             <l>van á ver tan gran prodigio,</l>
             <l>y es un jubileo la casa.</l>
             <l>Enseñáronle á hablar</l>
@@ -3310,12 +3334,11 @@
             <l>Y aquí la historia se acaba;</l>
             <l>pidiendo ahora el poeta</l>
             <l>perdon de todas sus faltas.</l>
-
             <trailer>FIN.</trailer>
           </div>
-
           <div type="colofon">
-            <p><lb/>MADRID.— Despacho : Sucesores de Hernendo, Arenal, 11.</p>
+            <p>
+              <lb/>MADRID.— Despacho : Sucesores de Hernendo, Arenal, 11.</p>
           </div>
         </div>
       </div>

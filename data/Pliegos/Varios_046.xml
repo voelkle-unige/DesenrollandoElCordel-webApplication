@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -33,7 +47,8 @@
               horrible asesinato que han ejecutado en el pueblo de Berzocana</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_161.xml">Varios_161</ref></p>
+            <p>Otra impresión: <ref target="Varios_161.xml">Varios_161</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>M. García</publisher>
@@ -68,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +112,44 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q1645666">
+            <placeName key="Berzocana">Berzocana</placeName>
+            <location>
+              <geo>39.437777777778 -5.4619444444444</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q15678">
+            <placeName key="Cáceres">Cáceres</placeName>
+            <location>
+              <geo>39.473055555556 -6.3711111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q17012">
+            <placeName key="Guadalupe">Guadalupe</placeName>
+            <location>
+              <geo>16.2595 -61.5605</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1632442">
+            <placeName key="Logrosán">Logrosán</placeName>
+            <location>
+              <geo>39.337222222222 -5.4922222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q81977">
+            <placeName key="provincia_de_Cáceres">Provincia De Cáceres</placeName>
+            <location>
+              <geo>39.667 -6</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -136,7 +190,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_046_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_046_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_046_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_046_1/full/full/0/default.jpg"/>
@@ -1110,16 +1166,18 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_046_1.jpg" facs="varios/Varios_046_1.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>Nuevo y curioso papel</head>
-          <head type="subtitulo"><lb/>en el que se da cuenta y declara el horrible asesinato
+          <head type="primer_titulo" rend="negrita">
+            <lb/>Nuevo y curioso papel</head>
+          <head type="subtitulo">
+            <lb/>en el que se da cuenta y declara el horrible asesinato
             que<lb/>han ejecutado en el pueblo de Berzocana,<lb/>provincia de Cáceres<lb/>en la
             madrugada del 26 de octubre del presento año<lb/>PRIMERA PARTE</head>
-
           <div n="1">
-            <head type="titulo_parte"><lb/>PRIMERA PARTE</head>
-
+            <head type="titulo_parte">
+              <lb/>PRIMERA PARTE</head>
             <l rend="indent">A la bellísíma aurora,</l>
             <l>Madre del divino Verbo,</l>
             <l>le pido me dé su gracia</l>
@@ -1128,12 +1186,11 @@
             <l>ni á mis labios movimiento,</l>
             <l>para poder explicar</l>
             <l>el caso más estupendo.</l>
-
-            <l rend="indent">En la provincia de Cáceres</l>
-            <l>en la sierra de Guadalupe</l>
+            <l rend="indent">En la provincia de <name>Cáceres</name></l>
+            <l>en la sierra de <name>Guadalupe</name></l>
             <l>que por españa es nombrado,</l>
             <l>se encuentra nn famoso pueblo</l>
-            <l>que se llama Berzocana;</l>
+            <l>que se llama <name>Berzocana</name>;</l>
             <l>habitaba un caballero</l>
             <l>que don Fulgencio se llama,</l>
             <l>casado con doña Dolores</l>
@@ -1189,7 +1246,6 @@
             <l>que dormía en su compañía</l>
             <l rend="indent">A su amo desgraciado</l>
             <l>lo asesinan con un hacha</l>
-
             <l>y á su desgraciada esposa</l>
             <l>que también laa sesinaban</l>
             <l>Con aquella hacha cortante</l>
@@ -1239,17 +1295,17 @@
             <l>abandonon la matanza</l>
             <l>y se dedican al robo</l>
             <l>de cuanto había en la casa</l>
-
             <div type="colofon">
-              <p><lb/>Tip. M. Garcia; Milans, 4.=Barcelona</p>
+              <p>
+                <lb/>Tip. M. Garcia; Milans, 4.=Barcelona</p>
             </div>
           </div>
-
           <div n="2">
+
             <pb n="3" source="Varios_046_3.jpg" facs="varios/Varios_046_3.jpg"/>
 
-            <head type="titulo_parte"><lb/>SEGUNDA PARTE</head>
-
+            <head type="titulo_parte">
+              <lb/>SEGUNDA PARTE</head>
             <l rend="indent">Abren cómodas y cofres</l>
             <l>y las aroas que encontraban</l>
             <l>buscando todo el dinero,</l>
@@ -1265,7 +1321,6 @@
             <l>y todos juntos se marchan</l>
             <l>en casa del mayoral</l>
             <l>y allí el robo disfrutaban.</l>
-
             <l rend="indent">En el veintiseis de Gctubre</l>
             <l>los cinco, de madrugada</l>
             <l>en casa del mayoral</l>
@@ -1322,7 +1377,6 @@
             <l>Prendieron los otros dos,</l>
             <l>á la cárcel los llevaban</l>
             <l>y en compañía de Frasquito</l>
-
             <l>el crimen lo declaraban</l>
             <l>dando parte al señor Juez</l>
             <l>y al Teniente de la Guardia;</l>
@@ -1332,14 +1386,14 @@
             <l>fué esta gente asesinada;</l>
             <l>sin detenerse un momento</l>
             <l>á los reos se llevaban</l>
-            <l>al pueblo de Logrosán;</l>
+            <l>al pueblo de <name>Logrosán</name>;</l>
             <l>el Teniente de la Guardia</l>
             <l>metió á todos en la cárcel</l>
             <l>declaración les tomaban.</l>
             <l rend="indent">Y todos han declarado</l>
             <l>sin equivocarse nada;</l>
             <l>los conducen á la cárcel</l>
-            <l>de Cáceres que se llama,</l>
+            <l>de <name>Cáceres</name> que se llama,</l>
             <l>que esta es la capital</l>
             <l>Con presteza y diligencia</l>
             <l>se les termina la causa,</l>
@@ -1360,13 +1414,12 @@
             <l>de pensar acciones malas,</l>
             <l>y después de buena muerte</l>
             <l>nos premie en la gloria santa.</l>
-
             <trailer>FIN</trailer>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>IMPRENTA GARCÍA
+          <p>
+            <lb/>IMPRENTA GARCÍA
             <lb/>LA MÁS ECONÓMICA
             <lb/>MILANS, 4. (<hi rend="cursiva">esquina Gignáts</hi>) BARCELONA</p>
         </div>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +114,74 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="8" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q38">
+            <placeName key="Italia">Italia</placeName>
+            <location>
+              <geo>42.5 12.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q159">
+            <placeName key="Rusia">Rusia</placeName>
+            <location>
+              <geo>66.4166666666667 94.25</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q183">
+            <placeName key="Alemania">Alemania</placeName>
+            <location>
+              <geo>51 10</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q13930">
+            <placeName key="Almansa">Almansa</placeName>
+            <location>
+              <geo>38.8682065 -1.0978627</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8356">
+            <placeName key="Valladolid">Valladolid</placeName>
+            <location>
+              <geo>41.651980555556 -4.7285611111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15682">
+            <placeName key="Cádiz">Cádiz</placeName>
+            <location>
+              <geo>36.535 -6.2975</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8717">
+            <placeName key="Sevilla">Sevilla</placeName>
+            <location>
+              <geo>37.383333333333 -5.9833333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8818">
+            <placeName key="Valencia">Valencia</placeName>
+            <location>
+              <geo>39.47 -0.376388888888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -134,8 +217,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-01-21" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-01-21" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1498,11 +1580,14 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_131_1.jpg" facs="varios/Varios_131_1.jpg"/>
 
-          <head type="primer_titulo"><lb/><hi rend="negrita">SATIRA BURLESCA</hi><lb/>DE LA VIDA,
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">SATIRA BURLESCA</hi>
+            <lb/>DE LA VIDA,
             MILAGROS, USOS Y COSTUMBRES DE CUATRO<lb/>CLASES DE MUGERES QUE HAY EN MADRID.</head>
-
           <lg>
             <l rend="indent">Atencion, oigan y escuchen</l>
             <l>una cosa de importancia,</l>
@@ -1511,13 +1596,12 @@
             <l>distingo de estas del dia,</l>
             <l>que por no trabajar andan</l>
             <l>haciendo al blanco y al negro,</l>
-            <l>al portugués, al de Italia,</l>
+            <l>al portugués, al de <name>Italia</name>,</l>
             <l>al francés, al genovés,</l>
-            <l>al de Rusia y de Alemania,</l>
+            <l>al de <name>Rusia</name> y de <name>Alemania</name>,</l>
             <l>se entiende si tiene cuartos,</l>
             <l>que si no los hay, no hay nada.</l>
           </lg>
-
           <lg rend="cursiva">
             <head type="estrivillo">ESTRIVILLO.</head>
             <l>Alerta jóvenes,</l>
@@ -1525,7 +1609,6 @@
             <l>guardarse todos</l>
             <l>de esta canalla.</l>
           </lg>
-
           <lg>
             <l rend="indent">Cuántas señoritas de estas</l>
             <l>nos echamos á la cara</l>
@@ -1561,7 +1644,7 @@
           </lg>
           <lg>
             <l rend="indent">Hay cuatro clases de tias</l>
-            <l>hoy en el dia en Madrid,</l>
+            <l>hoy en el dia en <name>Madrid</name>,</l>
             <l>si ustedes quieren saberlas</l>
             <l>pronto las voy á decir.</l>
             <l>Las primeras son maestras,</l>
@@ -1642,7 +1725,7 @@
             <l>una con un coronel;</l>
             <l>otra con un cabo de escuadra,</l>
             <l>otra con un capitan</l>
-            <l>del rejimiento de Almansa,</l>
+            <l>del rejimiento de <name>Almansa</name>,</l>
             <l>otra con un carretero</l>
             <l>de la famosa brigada,</l>
             <l>y algunas con los tambores,</l>
@@ -1658,13 +1741,13 @@
             <l>¡infelices insensatas!</l>
             <l>¿qué es lo que han adelantado?</l>
             <l>el quedarse abandonadas,</l>
-            <l>unas en Valladolid,</l>
-            <l>otras cerca de Granada,</l>
-            <l>otras en Cadiz, Sevilla,</l>
-            <l>en Valencia, desdichadas!</l>
+            <l>unas en <name>Valladolid</name>,</l>
+            <l>otras cerca de <name>Granada</name>,</l>
+            <l>otras en <name>Cadiz</name>, <name>Sevilla</name>,</l>
+            <l>en <name>Valencia</name>, desdichadas!</l>
             <l>y á espensas de cualesquiera</l>
             <l>que quiera beneficiarlas;</l>
-            <l>de estas en Madrid hay muchas</l>
+            <l>de estas en <name>Madrid</name> hay muchas</l>
             <l>y estan tan civilizadas,</l>
             <l>que son capaz de pegarle</l>
             <l>un pastel á una campana.</l>
@@ -1704,7 +1787,7 @@
             <l>que es la gente mas ufana</l>
             <l>que andan por los caminos,</l>
             <l>esos llegan de mañana</l>
-            <l>á Madrid, y al medio dia</l>
+            <l>á <name>Madrid</name>, y al medio dia</l>
             <l>ya tienen la cita dada,</l>
             <l>el cómo, la casa y cuando,</l>
             <l>donde han de ir á pillarla;</l>
@@ -1723,7 +1806,7 @@
             <l rend="cursiva">Alerta jóvenes, etc.</l>
           </lg>
           <lg>
-            <l rend="indent">Luego salen de Madrid</l>
+            <l rend="indent">Luego salen de <name>Madrid</name></l>
             <l>los carreteros de fama,</l>
             <l>contándose unos á otros</l>
             <l>sus regocijos y hazañas :</l>
@@ -1815,7 +1898,7 @@
             <l>han traido una ensalada,</l>
             <l>se entiende de todas yerbas,</l>
             <l>y las pobretas cuitadas,</l>
-            <l>á Madrid se han refugiado</l>
+            <l>á <name>Madrid</name> se han refugiado</l>
             <l>hasta que salga otra ganga.</l>
           </lg>
           <lg rend="indent">
@@ -1837,7 +1920,7 @@
             <l>al instante le rejista,</l>
             <l>todos los cuartos le saca,</l>
             <l>y pillando su ropica</l>
-            <l>fuera de Madrid se larga:</l>
+            <l>fuera de <name>Madrid</name> se larga:</l>
             <l>el gallego que despierta</l>
             <l>y solo en la cama se halla,</l>
             <l>y la cama era una estera</l>
@@ -1873,7 +1956,7 @@
           </lg>
           <lg>
             <l rend="indent">Falta decir otra cosa</l>
-            <l>que dentro de Madrid pasa</l>
+            <l>que dentro de <name>Madrid</name> pasa</l>
             <l>con una gente que dicen,</l>
             <l>la partida de la manta:</l>
             <l>esta es gente sin oficio,</l>
@@ -1903,9 +1986,9 @@
           </lg>
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><hi rend="cursiva">Madrid,</hi> 1849.=<hi rend="cursiva">Imprenta de D. J. M. Marés, calle de Relatores, n.</hi> 17. </p>
+          <p>
+            <hi rend="cursiva">Madrid,</hi> 1849.=<hi rend="cursiva">Imprenta de D. J. M. Marés, calle de Relatores, n.</hi> 17. </p>
         </div>
       </div>
     </body>

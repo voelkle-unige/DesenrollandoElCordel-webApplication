@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +111,20 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q16683">
+            <placeName key="Cardona">Cardona</placeName>
+            <location>
+              <geo>41.9141431 1.6809864</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +160,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-03" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-03" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -540,15 +568,18 @@
     <body>
       <div>
         <div>
-          <pb n="1" source="Varios_128_1.jpg" facs="varios/Varios_128_1.jpg"/>
-          <head type="primer_titulo" rend="negrita"><lb/>LOS MISTERIOS.</head>
-          <head type="subtitulo_parte"><lb/>DE LAS CRIADAS LEONOR Ó SEA DE CRIADA Á SEÑORA</head>
 
+          <pb n="1" source="Varios_128_1.jpg" facs="varios/Varios_128_1.jpg"/>
+
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LOS MISTERIOS.</head>
+          <head type="subtitulo_parte">
+            <lb/>DE LAS CRIADAS LEONOR Ó SEA DE CRIADA Á SEÑORA</head>
           <div n="1">
             <lg>
               <l rend="indent">Tres años ha que bajó</l>
-              <l>De la villa de Cardona</l>
-              <l>Á servir en Barcelona</l>
+              <l>De la villa de <name>Cardona</name></l>
+              <l>Á servir en <name>Barcelona</name></l>
               <l>La muchacha Leonor.</l>
               <l rend="indent">Aunque de montaña fuera</l>
               <l>Tenia el rostro muy bella,</l>
@@ -628,15 +659,16 @@
               <l>. . . . . . . . . .</l>
               <l>. . . . , . . . ,</l>
             </lg>
-
             <trailer>Fin de la primera parte.</trailer>
           </div>
-
           <div n="2">
+
             <pb n="3" source="Varios_128_3.jpg" facs="varios/Varios_128_3.jpg"/>
 
-            <head type="titulo_parte"><lb/><hi rend="negrita">SEGUNDA</hi><lb/>PARTE.</head>
-
+            <head type="titulo_parte">
+              <lb/>
+              <hi rend="negrita">SEGUNDA</hi>
+              <lb/>PARTE.</head>
             <lg>
               <l rend="indent">Seis meses pasado habian</l>
               <l>Que en la iglesia de S. Pedro,</l>
@@ -670,17 +702,16 @@
               <l>Recnerde la joven que fué una criada,</l>
               <l>Y nada hay eterno. . . . tan solo Dios.</l>
             </lg>
-
             <trailer rend="negrita">FIN</trailer>
           </div>
-          
           <div>
-            <p rend="cursiva"><lb/>(Es propiedad del AUTOR.)</p>
+            <p rend="cursiva">
+              <lb/>(Es propiedad del AUTOR.)</p>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>BARCELONA.—Imprenta do M. BORRÁS, calle del <hi rend="cursiva">Carmen. n°.</hi> 1</p>
+          <p>
+            <lb/>BARCELONA.—Imprenta do M. BORRÁS, calle del <hi rend="cursiva">Carmen. n°.</hi> 1</p>
         </div>
       </div>
     </body>

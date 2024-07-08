@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -77,7 +91,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -108,6 +123,32 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1901803">
+            <placeName key="Zarzuela">Zarzuela</placeName>
+            <location>
+              <geo>40.254444444444 -2.1363888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q46940">
+            <placeName key="Alcalá_de_Henares">Alcalá De Henares</placeName>
+            <location>
+              <geo>40.481815 -3.364305</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8717">
+            <placeName key="Sevilla">Sevilla</placeName>
+            <location>
+              <geo>37.383333333333 -5.9833333333333</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q2566034">
+            <placeName key="Lavapiés">Lavapiés</placeName>
+            <location>
+              <geo>40.4085 -3.701</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -143,8 +184,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -914,51 +954,53 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_229_1.jpg" facs="varios/Varios_229_1.jpg"/>
+
         <fw type="impresorNum">(Núm. 75)</fw>
-        
-        <head type="primer_titulo" rend="negrita"><lb/>COLECCION DE CANCIONES.</head>
-        
+        <head type="primer_titulo" rend="negrita">
+          <lb/>COLECCION DE CANCIONES.</head>
         <div n="1">
-          <head type="titulo_cancion"><lb/>LA CASTANERA.</head>
-          
-            <l rend="indent">Entre tablas de madera</l>
-            <l>gano, Curra, la comía;</l>
-            <l>bebo copas, y siquiera</l>
-            <l>un real gasto en todo el dia,</l>
-            <l>diciendo como lo sientes:</l>
-            <l>cuántas, calentitas, cuántas,</l>
-            <l>que ahora han salido calientes;</l>
-            <l>que queman, cuántas.</l>
-            <l rend="indent">El rigor de la estacion</l>
-            <l>le sobrellevo con calma,</l>
-            <l>y al chisporrear el carbon,</l>
-            <l>principio con toda mi alma</l>
-            <l>la cantinela siguiente:</l>
-            <l>cuántas, calentitas cuántas,</l>
-            <l>que ahora han salido calientes.</l>
-            <l rend="indent">Con los fuelles y el hornillo</l>
-            <l>y el cañon de hoja de lata,</l>
-            <l>acomodo en mi bolsillo</l>
-            <l>algunos reales de plata,</l>
-            <l>diciendo á los concurrentes:</l>
-            <l>cuántas, calentitas, cuántas,</l>
-            <l>que ahora han salido calientes.</l>
-            <l rend="indent">En la puerta de la taberna</l>
-            <l>pregono con grande gozo,</l>
-            <l>pues logro de fama eterna,</l>
-            <l>que desde el anciano al mozo,</l>
-            <l>le hacen tilin mis repentes:</l>
-            <l>cuántas, calentitas, cuántas,</l>
-            <l>que ahora han salido calientes.</l>
+          <head type="titulo_cancion">
+            <lb/>LA CASTANERA.</head>
+          <l rend="indent">Entre tablas de madera</l>
+          <l>gano, Curra, la comía;</l>
+          <l>bebo copas, y siquiera</l>
+          <l>un real gasto en todo el dia,</l>
+          <l>diciendo como lo sientes:</l>
+          <l>cuántas, calentitas, cuántas,</l>
+          <l>que ahora han salido calientes;</l>
+          <l>que queman, cuántas.</l>
+          <l rend="indent">El rigor de la estacion</l>
+          <l>le sobrellevo con calma,</l>
+          <l>y al chisporrear el carbon,</l>
+          <l>principio con toda mi alma</l>
+          <l>la cantinela siguiente:</l>
+          <l>cuántas, calentitas cuántas,</l>
+          <l>que ahora han salido calientes.</l>
+          <l rend="indent">Con los fuelles y el hornillo</l>
+          <l>y el cañon de hoja de lata,</l>
+          <l>acomodo en mi bolsillo</l>
+          <l>algunos reales de plata,</l>
+          <l>diciendo á los concurrentes:</l>
+          <l>cuántas, calentitas, cuántas,</l>
+          <l>que ahora han salido calientes.</l>
+          <l rend="indent">En la puerta de la taberna</l>
+          <l>pregono con grande gozo,</l>
+          <l>pues logro de fama eterna,</l>
+          <l>que desde el anciano al mozo,</l>
+          <l>le hacen tilin mis repentes:</l>
+          <l>cuántas, calentitas, cuántas,</l>
+          <l>que ahora han salido calientes.</l>
         </div>
-        
+
         <pb n="2" source="Varios_229_2.jpg" facs="varios/Varios_229_2.jpg"/>
-        
+
         <div n="2">
-          <head type="titulo_cancion"><lb/>LA JARDINERA,</head>
-          <head type="subtitulo_cancion"><lb/>cantada en la Zarzuela con el título EL DUENDE.</head>
-          
+          <head type="titulo_cancion">
+            <lb/>LA JARDINERA,</head>
+          <head type="subtitulo_cancion">
+            <lb/>cantada en la Zarzuela con el título EL DUENDE.</head>
           <sp>
             <speaker>CORO.</speaker>
             <l>Cantad, compañeros,</l>
@@ -1031,64 +1073,62 @@
             <l rend="indent">Doy la rosa, etc.</l>
           </sp>
         </div>
-        
+
         <pb n="3" source="Varios_229_3.jpg" facs="varios/Varios_229_3.jpg"/>
-        
+
         <div type="cancion" n="3">
-          <head type="titulo_cancion"><lb/>LA AVELLANERA.</head>
-          
-            <l rend="indent">Como la leche, avellanas,</l>
-            <l>voy gritando en la ciudá,</l>
-            <l>colgada al brazo la cesta,</l>
-            <l>que es mi sola propiedá,</l>
-            <l>sin darme envidia nenguna</l>
-            <l>la dama mas entoná.</l>
-            <l rend="indent">Está usté...? Pues...</l>
-            <l>Que aunque probe avellanera</l>
-            <l>con modesto guardapiés,</l>
-            <l>me proclaman en el barrio</l>
-            <l>la reina de Lavapiés.</l>
-            <l rend="indent">Lechuguinos mequetrefes,</l>
-            <l>y usías de caliá,</l>
-            <l>se acercan á requebrarme</l>
-            <l>con achaque de mercar;</l>
-            <l>mas yo suelo responderles:</l>
-            <l>«usté á mí no me la dá.»</l>
-            <l rend="indent">Está usté...? Pues...</l>
-            <l>Que aunque probe avellanera,</l>
-            <l>es tan grande mi honradez,</l>
-            <l>que me llaman en el barrio</l>
-            <l>Lucrecia de Lavapiés.</l>
-            <l rend="indent">Ya vienen pronto las ferias,</l>
-            <l>que es la mejor temporá:</l>
-            <l>con el dinero que saque,</l>
-            <l>saldrá de la cárcel Juan,</l>
-            <l>donde está el probe seis meses</l>
-            <l>por yo no sé qué mojá.</l>
-            <l rend="indent">Está usté...? Pues...</l>
-            <l>De su causa el escribano</l>
-            <l>me manifiesta interés;</l>
-            <l>mas no pierdo por escribas</l>
-            <l>la fama de Lavapiés.</l>
-            <l rend="indent">El otro dia en el Prao</l>
-            <l>á una niña remilgá,</l>
-            <l>al tropezar con mi cesta</l>
-            <l>se la rompió el faralá,</l>
-            <l>se insolentó la muñeca,</l>
-            <l>y ya la iba á repelar.</l>
-            <l rend="indent">Está usté...? Pues...</l>
-            <l>Que aunque probe avellanera,</l>
-            <l>con modesto guardapiés,</l>
-            <l>no ha de sufrir se la insulte</l>
-            <l>la reina de Lavapiés.</l>
-          
+          <head type="titulo_cancion">
+            <lb/>LA AVELLANERA.</head>
+          <l rend="indent">Como la leche, avellanas,</l>
+          <l>voy gritando en la ciudá,</l>
+          <l>colgada al brazo la cesta,</l>
+          <l>que es mi sola propiedá,</l>
+          <l>sin darme envidia nenguna</l>
+          <l>la dama mas entoná.</l>
+          <l rend="indent">Está usté...? Pues...</l>
+          <l>Que aunque probe avellanera</l>
+          <l>con modesto guardapiés,</l>
+          <l>me proclaman en el barrio</l>
+          <l>la reina de Lavapiés.</l>
+          <l rend="indent">Lechuguinos mequetrefes,</l>
+          <l>y usías de caliá,</l>
+          <l>se acercan á requebrarme</l>
+          <l>con achaque de mercar;</l>
+          <l>mas yo suelo responderles:</l>
+          <l>«usté á mí no me la dá.»</l>
+          <l rend="indent">Está usté...? Pues...</l>
+          <l>Que aunque probe avellanera,</l>
+          <l>es tan grande mi honradez,</l>
+          <l>que me llaman en el barrio</l>
+          <l>Lucrecia de Lavapiés.</l>
+          <l rend="indent">Ya vienen pronto las ferias,</l>
+          <l>que es la mejor temporá:</l>
+          <l>con el dinero que saque,</l>
+          <l>saldrá de la cárcel Juan,</l>
+          <l>donde está el probe seis meses</l>
+          <l>por yo no sé qué mojá.</l>
+          <l rend="indent">Está usté...? Pues...</l>
+          <l>De su causa el escribano</l>
+          <l>me manifiesta interés;</l>
+          <l>mas no pierdo por escribas</l>
+          <l>la fama de Lavapiés.</l>
+          <l rend="indent">El otro dia en el Prao</l>
+          <l>á una niña remilgá,</l>
+          <l>al tropezar con mi cesta</l>
+          <l>se la rompió el faralá,</l>
+          <l>se insolentó la muñeca,</l>
+          <l>y ya la iba á repelar.</l>
+          <l rend="indent">Está usté...? Pues...</l>
+          <l>Que aunque probe avellanera,</l>
+          <l>con modesto guardapiés,</l>
+          <l>no ha de sufrir se la insulte</l>
+          <l>la reina de Lavapiés.</l>
         </div>
-        
+
         <pb n="4" source="Varios_229_4.jpg" facs="varios/Varios_229_4.jpg"/>
-        
+
         <div type="cancion" n="4">
           <head type="titulo_cancion">LA BUÑOLERA.</head>
-          
           <lg>
             <l rend="indent">Con mi lebrillo de masa,</l>
             <l>mi jorniyita ensendia,</l>
@@ -1144,15 +1184,15 @@
             <l rend="indent">No sirve el mejor recreo,</l>
             <l>ni nenguna maravilla</l>
             <l>pa la tienda de guñuelos</l>
-            <l>que tiene Curra en Seviya.</l>
+            <l>que tiene Curra en <name>Seviya</name>.</l>
           </lg>
           <lg>
             <l rend="indent">Pa tomar, etc.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID. — Despacho : Sucesores de Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID. — Despacho : Sucesores de Hernando, Arenal, 11.</p>
         </div>
       </div>
     </body>

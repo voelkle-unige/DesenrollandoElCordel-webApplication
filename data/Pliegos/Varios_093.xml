@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve"/>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_148.xml">Varios_148</ref></p>
+            <p>Otra impresión: <ref target="Varios_148.xml">Varios_148</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Hernando</publisher>
@@ -65,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -132,8 +148,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-08-31" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-08-31" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1319,13 +1334,15 @@
     <body>
       <div>
         <div>
-        <pb n="1" source="Varios_093_1.jpg" facs="varios/Varios_093_1.jpg"/>
-        
-        <fw type="impresorNum">(Núm. 30)</fw>
-        
-          <head type="titulo_parte"><lb/>SÁTIRA GRACIOSA<lb/>EN QUE SE DECLARAN LAS CONTINUAS
-            DISPUTAS<lb/>QUE OCURREN ENTRE<lb/><hi rend="negrita">SUEGRA Y NUERA</hi></head>
-          
+
+          <pb n="1" source="Varios_093_1.jpg" facs="varios/Varios_093_1.jpg"/>
+
+          <fw type="impresorNum">(Núm. 30)</fw>
+          <head type="titulo_parte">
+            <lb/>SÁTIRA GRACIOSA<lb/>EN QUE SE DECLARAN LAS CONTINUAS
+            DISPUTAS<lb/>QUE OCURREN ENTRE<lb/>
+            <hi rend="negrita">SUEGRA Y NUERA</hi>
+          </head>
           <sp>
             <speaker rend="cursiva">Nuera.—</speaker>
             <l>Mai haya quien me casó</l>
@@ -1356,7 +1373,9 @@
             <l>y con los mocitos</l>
             <l>siempre la hallo hablando</l>
           </sp>
+
           <pb n="2" source="Varios_093_2.jpg" facs="varios/Varios_093_2.jpg"/>
+
           <sp>
             <speaker rend="cursiva">N. —</speaker>
             <l>Mi marido me engañó</l>
@@ -1468,9 +1487,9 @@
             <l>que estás siempre desganada,</l>
             <l>y cuando el pobre se va</l>
             <l>te comes buena empanada.</l>
-            
+
             <pb n="3" source="Varios_093_3.jpg" facs="varios/Varios_093_3.jpg"/>
-            
+
             <l>¡Oh, qué picardía!;</l>
             <l>demonio de nuera,</l>
             <l>ruega que mi hijo</l>
@@ -1580,9 +1599,9 @@
             <l>por boca y narices</l>
             <l>sólo de tabaco</l>
             <l>cincuenta cahices?</l>
-            
+
             <pb n="4" source="Varios_093_4.jpg" facs="varios/Varios_093_4.jpg"/>
-            
+
             <l>Ella es la cochina,</l>
             <l>pues los mocos echa;</l>
             <l>no es mucho, pues es.</l>
@@ -1671,9 +1690,9 @@
           </sp>
           <trailer>FIN</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID. — Despacho: Librería y Casa Editorial Hernando (S. A.) Arenal, 11</p>
+          <p>
+            <lb/>MADRID. — Despacho: Librería y Casa Editorial Hernando (S. A.) Arenal, 11</p>
         </div>
       </div>
     </body>

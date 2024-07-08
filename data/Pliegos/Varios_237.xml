@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve"/>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_075.xml">Varios_075</ref></p>
+            <p>Otra impresión: <ref target="Varios_075.xml">Varios_075</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Juan Grau</publisher>
@@ -69,7 +84,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +114,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,8 +157,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1135,11 +1158,14 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_237_1.jpg" facs="varios/Varios_237_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo"><lb/><hi rend="negrita">NUEVA CANCIÓN</hi><lb/>DEL<lb/>CORREGIDOR Y LA MOLINERA</head>
-
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">NUEVA CANCIÓN</hi>
+            <lb/>DEL<lb/>CORREGIDOR Y LA MOLINERA</head>
           <lg>
             <l rend="indent">En cierto lugar de España</l>
             <l>había un molinero honrado</l>
@@ -1381,10 +1407,9 @@
             <l rend="indent">que Molineros.</l>
           </lg>
         </div>
-
         <div n="2">
-          <head type="titulo_trovo" rend="negrita"><lb/>Sátira en trovos.</head>
-
+          <head type="titulo_trovo" rend="negrita">
+            <lb/>Sátira en trovos.</head>
           <l rend="indent">Muchas que van á servir</l>
           <l>Son madres siendo doncellas,</l>
           <l>Casadas sin sacramento,</l>
@@ -1409,12 +1434,11 @@
           <l>Miren no se fian de ellas</l>
           <l>Que se van á divertir</l>
           <l>Y entiéndanme como quieran.</l>
-
           <trailer>FIN</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>REUS. Librería de Juan Grau, calle del Metje Fortuny, núm. 5. En dicha casa
+          <p>
+            <lb/>REUS. Librería de Juan Grau, calle del Metje Fortuny, núm. 5. En dicha casa
             hallarán un gran surtido de historias, libritos, sainetes, romances y estampas, todo
             bueno y barato.</p>
         </div>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -89,7 +103,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -118,6 +133,44 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="5" corresp="Q8717">
+            <placeName key="Sevilla">Sevilla</placeName>
+            <location>
+              <geo>37.383333333333 -5.9833333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5783">
+            <placeName key="Andalucía">Andalucía</placeName>
+            <location>
+              <geo>37.405 -5.9875</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q90">
+            <placeName key="París">París</placeName>
+            <location>
+              <geo>48.8566666666667 2.35222222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q733">
+            <placeName key="Paraguay">Paraguay</placeName>
+            <location>
+              <geo>-23.5 -58</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q572800">
+            <placeName key="Alcañiz">Alcañiz</placeName>
+            <location>
+              <geo>41.050254 -0.1329565</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -153,8 +206,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1491,38 +1543,43 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_378_1.jpg" facs="varios/Varios_378_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>La Alondra</head>
-          <head type="subtitulo"><lb/>Primera parte</head>
-
-          <p rend="indent"><lb/>Soy la más hermosota de las muchachas <lb/>que hay en mi aldea, y
+          <head type="primer_titulo" rend="negrita">
+            <lb/>La Alondra</head>
+          <head type="subtitulo">
+            <lb/>Primera parte</head>
+          <p rend="indent">
+            <lb/>Soy la más hermosota de las muchachas <lb/>que hay en mi aldea, y
             el elemento joven <lb/>en torno mío rovolotea y como a nadie <lb/>elijo, quieren que
             escoja novio formal <lb/>como quieren que elija, si a todos quiero <lb/>en general. Y
             luego tras de mí, me van <lb/>diciendo así: Alón, alón, alóndra, no seas
             <lb/>coqueta, ni pispireta, ni revoltosa, <lb/>ten corazón. Alón, alón, alón, vete
             <lb/>a otra parte, por que en el suelo van <lb/>á dejarte sin un aulón. </p>
-          <p rend="indent"><lb/>Tanto el señor alcalde como el alveca <lb/>que es un abuelo me
+          <p rend="indent">
+            <lb/>Tanto el señor alcalde como el alveca <lb/>que es un abuelo me
             tienen por alondra</p>
         </div>
-
         <div n="2">
-          <head type="primer_titulo" rend="negrita"><lb/>La Margueritina</head>
-          <head type="subtitulo"><lb/>Primera parte</head>
-
-          <p rend="indent"><lb/>Allá en el bosque llorando esta, las <lb/>amarguras de su dolor.
+          <head type="primer_titulo" rend="negrita">
+            <lb/>La Margueritina</head>
+          <head type="subtitulo">
+            <lb/>Primera parte</head>
+          <p rend="indent">
+            <lb/>Allá en el bosque llorando esta, las <lb/>amarguras de su dolor.
             Una pastora <lb/>graciosa y linda, abandonada de su <lb/>pastor Las mil promesas de su
             doncel <lb/>fingíendo amores la dejo alli. La pobre <lb/>niña va recordando, cuando
             amorosa <lb/>la dijo así Margueritina mia, no dijas <lb/>nada a nadie que nuestro amor
             secreto <lb/>que saber debe lanzarlo el aire si el eco <lb/>de tus besos viene el aire y
             se lleva <lb/>siempre queda en mis labios el fuego </p>
         </div>
-
         <div n="3">
-          <head type="titulo_cancion" rend="negrita"><lb/>Ramón y Encarnaciòn</head>
-
-          <p rend="indent"><lb/>A la hora de salir la linda Encarnación <lb/>desde el taller solia
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>Ramón y Encarnaciòn</head>
+          <p rend="indent">
+            <lb/>A la hora de salir la linda Encarnación <lb/>desde el taller solia
             ir al Trianón, <lb/>a la Meson con su Ramón, Ramón <lb/>buscaban un ricón propicio
             para hablar <lb/>y alli el galan mentaba su pasión <lb/>ay que bribón, y lo que
             sucedio calcule V. <lb/>a fuerza de ir al cine o al café <lb/>solo se que cuando
@@ -1530,7 +1587,8 @@
             Encarnación, que muy sucofada <lb/>le decia a su novio: Ay Ramón te lo pido <lb/>de
             rodillas, ay Ramón ten por Dios <lb/>educación, ay Ramón no me busques <lb/>las
             cosquillas, ay Ramón que te doy <lb/>un coscorrón.</p>
-          <p rend="indent"><lb/>No se porque será más sé que <lb/>Encarnación dice que ya no
+          <p rend="indent">
+            <lb/>No se porque será más sé que <lb/>Encarnación dice que ya no
             volverá <lb/>ni al Trianón ni a la Mesón con su <lb/>Ramón, Ramón y que ahora para
             <lb/>hablar alquilan un simón y alli su <lb/>amor se suelen demostrar sín alarmar
             <lb/>y no se cual será su distracción ocutos <lb/>en el fondo de un simón. Solo se
@@ -1544,9 +1602,10 @@
         <pb n="2" source="Varios_378_2.jpg" facs="varios/Varios_378_2.jpg"/>
 
         <div n="4">
-          <head type="titulo_cancion" rend="negrita"><lb/>EL<lb/>Betunero</head>
-          <head type="subtitulo_cancion" rend="negrita"><lb/>Paso doble<lb/>moderno</head>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>EL<lb/>Betunero</head>
+          <head type="subtitulo_cancion" rend="negrita">
+            <lb/>Paso doble<lb/>moderno</head>
           <lg>
             <l rend="indent">Betunero est</l>
             <l>betunero estos zapatos</l>
@@ -1632,8 +1691,8 @@
             <l>betunero a termínado ya.</l>
           </lg>
           <lg>
-            <l rend="indent">Sevilla hermosa Sevilla</l>
-            <l>Sevilla hermosa Sevilla</l>
+            <l rend="indent"><name>Sevilla</name> hermosa <name>Sevilla</name></l>
+            <l><name>Sevilla</name> hermosa <name>Sevilla</name></l>
             <l>tierra de gracia y salero</l>
             <l>eres por tus simpatias</l>
             <l>eres por tus simpatías</l>
@@ -1642,8 +1701,8 @@
             <l>como ellas solas</l>
             <l>por su elegancia</l>
             <l>y gracia seductora</l>
-            <l>viva Sevilla</l>
-            <l>hermosa Andalucia</l>
+            <l>viva <name>Sevilla</name></l>
+            <l>hermosa <name>Andalucia</name></l>
             <l>que es la tierra</l>
             <l>de la madre mia</l>
             <l>verdad verdad</l>
@@ -1654,9 +1713,10 @@
         <pb n="3" source="Varios_378_3.jpg" facs="varios/Varios_378_3.jpg"/>
 
         <div n="5">
-          <head type="titulo_cancion" rend="negrita"><lb/>Lá Márgueritiná</head>
-          <head type="subtitulo_cancion"><lb/>Segunda parte</head>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>Lá Márgueritiná</head>
+          <head type="subtitulo_cancion">
+            <lb/>Segunda parte</head>
           <lg>
             <l>ardiente que tu amor deja trala la rá</l>
             <l rend="indent">Tras las montañas se oculta el sol</l>
@@ -1670,11 +1730,11 @@
             <l rend="indent">Margueritina mía. etc., etc</l>
           </lg>
         </div>
-
         <div n="6">
-          <head type="titulo_cancion" rend="negrita"><lb/>Lá Alondrá</head>
-          <head type="subtitulo_cancion"><lb/>Segunda parte</head>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>Lá Alondrá</head>
+          <head type="subtitulo_cancion">
+            <lb/>Segunda parte</head>
           <lg>
             <l>de esos que se cazan con espejuelo.</l>
             <l>Por ver si me decido, me mandan joyas</l>
@@ -1692,11 +1752,10 @@
             <l>me van diciendo así: talón. alón, etc., et</l>
           </lg>
         </div>
-
         <div n="7">
-          <head type="titulo_cancion"><lb/>LA NUEVA PASTORA o segunda parte de LA
+          <head type="titulo_cancion">
+            <lb/>LA NUEVA PASTORA o segunda parte de LA
             MARGUERITINA</head>
-
           <l rend="indent">Dime tu niña si esta es verdad</l>
           <l>lo que en el bosque oí decir</l>
           <l>todos me dicen que tu, pastora</l>
@@ -1714,10 +1773,9 @@
           <l>viendote a todashoras</l>
           <l>radiante y linda contu</l>
         </div>
-        
         <div n="8">
-          <head type="titulo_cancion" rend="negrita"><lb/>TANGO FATAL</head>
-          
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>TANGO FATAL</head>
           <lg>
             <head type="titulo_estrofa">I</head>
             <l rend="indent">Bailando la darza argentina</l>
@@ -1738,10 +1796,10 @@
             <l>y amor y fortuna otreció.</l>
             <l>El tango produce emoción</l>
             <l>es baile de fuego y pasión</l>
-            <l>yo vengo a Paris que allá al Paraguay;</l>
+            <l>yo vengo a <name>Paris</name> que allá al <name>Paraguay</name>;</l>
             <l>mujeres tán bravas y hermosas no hay</l>
             <l>Te qui ro, te adoro Margot</l>
-            <l>la reina serás de Paris</l>
+            <l>la reina serás de <name>Paris</name></l>
             <l>tus besos harán, ¡oh mi estrella!</l>
             <l>la vida mas bella que alla en mi pais</l>
           </lg>
@@ -1784,15 +1842,15 @@
             <l>la ultima danza</l>
             <l rend="indent">Tu tango fatal</l>
           </lg>
-          
-          <trailer><lb/>FIN </trailer>
+          <trailer>
+            <lb/>FIN </trailer>
         </div>
-        
+
         <pb n="4" source="Varios_378_4.jpg" facs="varios/Varios_378_4.jpg"/>
-        
+
         <div n="9">
-          <head type="titulo_cancion" rend="negrita"><lb/>La Batelera</head>
-          
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>La Batelera</head>
           <lg>
             <l rend="indent">Me llaman la Batelera,</l>
             <l>Batelera del amor,</l>
@@ -1830,13 +1888,13 @@
             <l>cantaré mi amor.</l>
           </lg>
         </div>
-        
         <div n="10">
-          <head type="titulo_cancion"><lb/>Los Tropiezos</head>
-          <head type="subtitulo_cancion"><lb/>Primera y Sagunda parte</head>
-          
+          <head type="titulo_cancion">
+            <lb/>Los Tropiezos</head>
+          <head type="subtitulo_cancion">
+            <lb/>Primera y Sagunda parte</head>
           <lg>
-            <l rend="indent">Que cosas ocnrren en este Madrid,</l>
+            <l rend="indent">Que cosas ocnrren en este <name>Madrid</name>,</l>
             <l>hace cuatro dias salí de Alcañiz</l>
             <l>y tengo los sesos que paicen migajas</l>
             <l>y esto no lo digo a humico de pajas.</l>
@@ -1845,7 +1903,8 @@
             <l rend="indent">Ayer en el Santo llegué a sofocarme</l>
             <l>porque unos mocetes querian montarme</l>
             <l>en un tio vivo, y dije que nó</l>
-            <l>más luego uno de ellos pesao como el<add place="debajo">(plomo</add></l>
+            <l>más luego uno de ellos pesao como el<add place="debajo">(plomo</add>
+            </l>
             <l>sin darme cuenta de cuando ni como</l>
             <l>al fin me montó. Qué barbaridad qué etc..</l>
           </lg>
@@ -1857,8 +1916,10 @@
             <l>Todo lo he perdido en esta ciudá. Bajé del</l>
             <l>Tiovivo, y al punto lijera, salí con el mozo</l>
             <l>alacarretera, y alli por descuido pegué un</l>
-            <l>tropezon rodè por el suelo rompí la <add place="debajo">(cestica</add></l>
-            <l>y luego entre el polvo perdi las torticasy a <add place="debajo">(más</add></l>
+            <l>tropezon rodè por el suelo rompí la <add place="debajo">(cestica</add>
+            </l>
+            <l>y luego entre el polvo perdi las torticasy a <add place="debajo">(más</add>
+            </l>
             <l>un sichon Qué barbaridáque barbaridá</l>
             <l>todo son tropiezos en esta ciudá. etc</l>
           </lg>

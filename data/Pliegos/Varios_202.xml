@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1563">
+            <placeName key="La_Habana">La Habana</placeName>
+            <location>
+              <geo>23.136666666667 -82.358888888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +153,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-13" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-13" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1431,13 +1453,17 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_202_1.jpg" facs="varios/Varios_202_1.jpg"/>
 
         <div>
-          <head type="primer_titulo"><lb/>JUGUET EN CATALÀ</head>
-          <head type="titulo_parte"><lb/>TITOLAT<lb/><hi rend="negrita">LO SERENO Y 'L
-            BORRATXO</hi></head>
-
+          <head type="primer_titulo">
+            <lb/>JUGUET EN CATALÀ</head>
+          <head type="titulo_parte">
+            <lb/>TITOLAT<lb/>
+            <hi rend="negrita">LO SERENO Y 'L
+            BORRATXO</hi>
+          </head>
           <div type="reparto">
             <head type="reparto_titulo">PERSONAS</head>
             <castList>
@@ -1445,14 +1471,11 @@
               <castItem>SERENO</castItem>
             </castList>
           </div>
-
           <div>
             <stage rend="cursiva">(La escena passa en un carrer. Es de nit y fa lluna. Sur lo Pau,
               portant mitja pinya y diu:)</stage>
-
             <sp>
               <speaker>PAU.</speaker>
-
               <l>A resalau; ja estem bé;</l>
               <l>he sopat de bó de bó;</l>
               <l>me n' he begut un porró</l>
@@ -1523,26 +1546,28 @@
               <l>Dos embutadas.... y bueno;</l>
               <l>déixemhi aná ab un salt,</l>
               <l>mosea, ja veig un fanal,</l>
-              <l>futg bato, que vé 'l sereno. <stage>(Se 'n va)</stage></l>
+              <l>futg bato, que vé 'l sereno. <stage>(Se 'n va)</stage>
+              </l>
             </sp>
-
             <stage rend="cursiva">(Surt lo sereno y tocan las once )</stage>
-
             <sp>
               <speaker>SER.</speaker>
               <l>Ba cantem: <hi rend="cursiva">las once han dado</hi>
-                <stage>(cantant)</stage></l>
+                <stage>(cantant)</stage>
+              </l>
               <l>Are no sé si está ras;</l>
               <l>lo que 's seré, no 'n fá pas,</l>
               <l>alló, sisquera.... m' agrada,</l>
-              <l>bueno donchs, canto <hi rend="cursiva">nublado</hi>. <stage>(cantant)</stage></l>
+              <l>bueno donchs, canto <hi rend="cursiva">nublado</hi>. <stage>(cantant)</stage>
+              </l>
               <l>Quina nit fá més hermosa;</l>
               <l>es bén rebonich l' estiu,</l>
               <l>jo crech que ningú l' escriu</l>
               <l>cosa tan maravillosa.</l>
               <l>Fém alto en aquet cantó,</l>
               <l>y en fi, ja no 'm encaparro:</l>
-              <l>se farém patá un cigarro <stage>(ne fa un)</stage></l>
+              <l>se farém patá un cigarro <stage>(ne fa un)</stage>
+              </l>
               <l>y endevant la professó.</l>
               <l>Despres donarem un tom,</l>
               <l>per si convé alguna cosa,</l>
@@ -1606,13 +1631,13 @@
               <l>anémsen que ja déu ser tart.</l>
               <stage>(toca un quart)</stage>
               <l>Ola, ara toca un quart,</l>
-              <l><hi rend="cursiva">Las once y cuarto, sereno.</hi>
-                <stage>(cantant)</stage></l>
+              <l>
+                <hi rend="cursiva">Las once y cuarto, sereno.</hi>
+                <stage>(cantant)</stage>
+              </l>
             </sp>
-
             <stage rend="cursiva">
               <lb/>(Surt per l' altre cantó lo Pau, borratxo <lb/>y diu:) </stage>
-
             <sp>
               <speaker>PAU.</speaker>
               <l>A guapo, ja ha arribat tropa;</l>
@@ -1620,7 +1645,6 @@
               <l>quin carré més tort qué hi há,</l>
               <l>¿qui ha cantat? ¿lo rey de copa?</l>
             </sp>
-
             <sp>
               <speaker>SER.</speaker>
               <l>¿Un borratxo? No potsé;</l>
@@ -1628,11 +1652,9 @@
               <l>naltros may podem fer porra,</l>
               <l>veyam, l' inspeccionaré.</l>
             </sp>
-
             <stage rend="cursiva">
               <lb/>(Se retira lo sereno á un costat, y al mitg <lb/>si queda lo Pau, fent eses y
               barallanse ab <lb/>la seva sombra). </stage>
-
             <sp>
               <speaker>PAU.</speaker>
               <l>Pastarada; mala veu,</l>
@@ -1651,7 +1673,8 @@
               <l>¡fuig del méu devant, borratxo!</l>
               <l>vaig sol; no vull ningú ab mi.</l>
               <l>Marxau, au, cap á la palla</l>
-              <l>Quin carré més mal forjat <stage>(ensepega)</stage></l>
+              <l>Quin carré més mal forjat <stage>(ensepega)</stage>
+              </l>
               <l>¿d' aixó 'n diuhen empedrat?</l>
               <l>¡si una falsilla si encalla!</l>
               <l>Batua, ¿qui 'm té la gorra?</l>
@@ -1669,7 +1692,8 @@
               <l>Aquet no m' escapa. ¡Dos!</l>
               <l>¿y donchs, que 't creyas ximplet?</l>
               <l>¿Que vols remenja, pagant?</l>
-              <l>apa, ja que tant t' esventas, <stage rend="cursiva">(fa una esse)</stage></l>
+              <l>apa, ja que tant t' esventas, <stage rend="cursiva">(fa una esse)</stage>
+              </l>
               <l>¡ay! á no pegá espenta....</l>
               <l>crech que 'm decanto endevant.</l>
               <l>¡Y com neva! ¡Ola, un parte!</l>
@@ -1683,7 +1707,6 @@
                 (Guaita 'l sereno per un costat y diu:)
               </stage>
             </sp>
-
             <sp>
               <speaker>SER.</speaker>
               <l>Veyam aquet borratxó</l>
@@ -1691,7 +1714,6 @@
               <l>entreguardémlo una mica</l>
               <l>per veure en que pára aixó.</l>
             </sp>
-
             <sp>
               <speaker>PAU.</speaker>
               <l>Qui ha aquí, ¿ja tornas tú?</l>
@@ -1711,7 +1733,8 @@
               </stage>
               <l>toma aquesta, papanatas,</l>
               <l>ó jo 't mato ó tu 'm matas,</l>
-              <l>borratxo, dropo, embustero. <stage>(cau)</stage></l>
+              <l>borratxo, dropo, embustero. <stage>(cau)</stage>
+              </l>
               <l>Ya t' tinch, d' aquí no 't escapas,</l>
               <l>¿ja m' has tornat á fugí?</l>
               <l>mira.... no 't fiis de mí,</l>
@@ -1730,7 +1753,8 @@
               <l>Calla: ja tinch un parany.</l>
               <l>clau en ma, ¡Alsa, com neva!</l>
               <l>Cuan pasará casa meva</l>
-              <l>ficaré la clau al pany. <stage>(Tamboleija)</stage></l>
+              <l>ficaré la clau al pany. <stage>(Tamboleija)</stage>
+              </l>
               <l>A poch á poch... no estirém</l>
               <l>ó sinó acabo la feyna;</l>
               <l>aquell que 'm tornará á espenya...</l>
@@ -1738,7 +1762,8 @@
               <l>No 's vol aguantá la barca;</l>
               <l>deixem seure y dormiré...</l>
               <l>pero... dormit no beuré.</l>
-              <l>Allá vá plantem la marea <stage>(s' asenta)</stage></l>
+              <l>Allá vá plantem la marea <stage>(s' asenta)</stage>
+              </l>
               <stage>
                 (cantant)
               </stage>
@@ -1751,33 +1776,28 @@
               </stage>
               <l>¿Qué feu per aquí company?</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>No 'n tinch de company, vaig sol</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Jo crech, que anen dos, bunyol.</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Y bueno, ¿que hi há de estrany?</l>
               <l>Déume un paper de fumar,</l>
-              
+
               <pb n="4" source="Varios_202_4.jpg" facs="varios/Varios_202_4.jpg"/>
-              
+
               <l>ves... tenía tres petacas</l>
               <l>y m' escuro las butxacas....</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Mestre, anemt; s' hau de aixecá.</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Fumem y no aneu cremat.</l>
@@ -1785,26 +1805,22 @@
               <l>me volguessiu doná un misto</l>
               <l>calla, ja m' he n' he trobat.</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Alseuse, y veniu ab mi.</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>¿Qui ets tú que 'm vols maná?</l>
               <l>Donchs ara 't vull convidá</l>
               <l>anem á fé un glop de vi</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Creyeu de bonas en bonas</l>
               <l>y seguiu, que hi guanyaréu.</l>
               <l>¿Vaija donchs, que no s' alseu?</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Si no saps lo qu' enrahonas</l>
@@ -1813,107 +1829,94 @@
               <l>los taberners se 'n mantenen</l>
               <l>sereno, ¿no 't mantents tú?</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Ja 'm comensas á cremá</l>
               <l>y 'm fas perdre la pasiencia.</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Ja hu sé que 'n tens tú de ciencia</l>
               <l>y en fi, no t' has d' enfadá.</l>
               <l>Te vull cantá una cansó,</l>
-              <l>que cantabam á la Habana, <stage>(canta)</stage></l>
-              <l>tana... tana... tana... tana... <stage>(parla)</stage></l>
+              <l>que cantabam á la <name>Habana</name>, <stage>(canta)</stage>
+              </l>
+              <l>tana... tana... tana... tana... <stage>(parla)</stage>
+              </l>
               <l>¡es que soch bon cantadó!</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
-              <l>Prenemho ab un altre sentit <stage>(Apart)</stage></l>
+              <l>Prenemho ab un altre sentit <stage>(Apart)</stage>
+              </l>
               <l>ó sinó encare hi perdría</l>
               <l>alseuse que 's fá de día.</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Oy no, que jo no he dormit.</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Home, no sigueu pesat,</l>
               <l>alseuse, deume la má.</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Yo no s' ha la vull doná</l>
               <l>que quedaría esguerrat.</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>¿Y si á vos se molestessin?</l>
               <l>á ningú deixeu dormí.</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Al que no 's pugi abaltí,</l>
               <l>diheuli donchs que 'l abressin.</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Va que 's tart ¿com se diheu?</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Pau Gat, de nit y de día,</l>
               <l>soch fill de l' Estevanía.</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Donchs mestre, sou parent meu.</l>
               <l>¿Cuant temps fa que sou aquí?</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Set días menos un més,</l>
               <l>ay... no, que 'u dich al revés</l>
               <l>dinou días va fé ahir.</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Digam en quin carró estás</l>
               <l>que ti acompañaré.</l>
             </sp>
-            
             <sp>
               <speaker>PA .</speaker>
               <l>Lo nom del carré no 'l sé</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Pero tú ya 'l trobarás.</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Prou, y no 'l tinch de trobá,</l>
-              <l>ara que la pussa 'm passa; <stage>(s' alsa)</stage></l>
+              <l>ara que la pussa 'm passa; <stage>(s' alsa)</stage>
+              </l>
               <l>avuy si que he begut massa,</l>
               <l>pero bueno, ¿y qué hi ha?</l>
             </sp>
-            
             <sp>
               <speaker>SER.</speaker>
               <l>Mira Pau, no hi tornis més,</l>
@@ -1921,7 +1924,6 @@
               <l>¡moure escándol pel carré!....</l>
               <l>¡Sér la burla dels demés!</l>
             </sp>
-            
             <sp>
               <speaker>PAU.</speaker>
               <l>Prometo d' aquí endevant,</l>
@@ -1931,13 +1933,13 @@
             </sp>
             <trailer>FI</trailer>
           </div>
-          
           <div>
-            <p><lb/>(ES PROPIETAT DE JOAN GRAU)</p>
+            <p>
+              <lb/>(ES PROPIETAT DE JOAN GRAU)</p>
           </div>
-          
           <div type="colofon">
-            <p><lb/>Reus: En la llibrería de Joan Grau. carrer d' Aleus, se venen historias,
+            <p>
+              <lb/>Reus: En la llibrería de Joan Grau. carrer d' Aleus, se venen historias,
               sainetes, <lb/>llibrets y romansos, cartas, jochs del quinto, etc., etc.)</p>
           </div>
         </div>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material>amarillo</material>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +109,26 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q159">
+            <placeName key="Rusia">Rusia</placeName>
+            <location>
+              <geo>66.4166666666667 94.25</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q45">
+            <placeName key="Portugal">Portugal</placeName>
+            <location>
+              <geo>38.7 -9.1833333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +164,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-04-18" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-04-18" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -2110,44 +2144,59 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_177_1.jpg" facs="varios/Varios_177_1.jpg"/>
 
-          <head type="subtitulo_parte"><lb/><hi rend="negrita">SAYNETE COMPLÉT</hi><lb/>conforme lo
+          <head type="subtitulo_parte">
+            <lb/>
+            <hi rend="negrita">SAYNETE COMPLÉT</hi>
+            <lb/>conforme lo
             compongué lo sombrista<lb/>A. A. y E. titulat:</head>
-          <head type="primer_titulo"><lb/>D. POLICARPIO.</head>
-
+          <head type="primer_titulo">
+            <lb/>D. POLICARPIO.</head>
           <div type="colofon">
-            <p><lb/>BARCELONA.<lb/>Se ven en casa Francisco Vallés carrer del Pi, n.° 9.</p>
+            <p>
+              <lb/>BARCELONA.<lb/>Se ven en casa Francisco Vallés carrer del Pi, n.° 9.</p>
           </div>
 
           <pb n="2" source="Varios_177_2.jpg" facs="varios/Varios_177_2.jpg"/>
 
+
           <pb n="3" source="Varios_177_3.jpg" facs="varios/Varios_177_3.jpg"/>
 
           <div>
-            <head type="titulo_parte"><lb/>DON POLICARPIO<lb/>Y<lb/>Lo Pare rapatani y la Mare
+            <head type="titulo_parte">
+              <lb/>DON POLICARPIO<lb/>Y<lb/>Lo Pare rapatani y la Mare
               vanitosa.</head>
-
             <div type="reparto">
-              <head type="reparto_titulo"><lb/>PERSONAS.</head>
+              <head type="reparto_titulo">
+                <lb/>PERSONAS.</head>
               <castList>
                 <castItem>
                   <hi rend="negrita">Uu Sereno.</hi>
                 </castItem>
-                <castItem><hi rend="negrita">Don Policarpio,</hi> oficial.</castItem>
-                <castItem><hi rend="negrita">Roseta.</hi></castItem>
-                <castItem><hi rend="negrita">Hipólit,</hi> son pare.</castItem>
-                <castItem><hi rend="negrita">Cascarria,</hi> sa mare.</castItem>
-                <castItem><hi rend="negrita">Pancrás,</hi> dontor de edád.</castItem>
-                <castItem><hi rend="negrita">Músichs.</hi></castItem>
-                <castItem><hi rend="negrita">Cantors</hi> (si pot ser.)</castItem>
+                <castItem>
+                  <hi rend="negrita">Don Policarpio,</hi> oficial.</castItem>
+                <castItem>
+                  <hi rend="negrita">Roseta.</hi>
+                </castItem>
+                <castItem>
+                  <hi rend="negrita">Hipólit,</hi> son pare.</castItem>
+                <castItem>
+                  <hi rend="negrita">Cascarria,</hi> sa mare.</castItem>
+                <castItem>
+                  <hi rend="negrita">Pancrás,</hi> dontor de edád.</castItem>
+                <castItem>
+                  <hi rend="negrita">Músichs.</hi>
+                </castItem>
+                <castItem>
+                  <hi rend="negrita">Cantors</hi> (si pot ser.)</castItem>
               </castList>
             </div>
-
             <div>
-              <stage rend="negrita"><lb/>Carrer. Hix lo Sereno, tocan las once (de la nit) y canta
+              <stage rend="negrita">
+                <lb/>Carrer. Hix lo Sereno, tocan las once (de la nit) y canta
                 la<lb/>primera línea següent.</stage>
-
               <sp>
                 <speaker rend="cursiva">Ser.</speaker>
                 <l>Las once han dado, sereno.</l>
@@ -2173,7 +2222,8 @@
                 <l>del que fibla las orellas,</l>
                 <l>despues lo acompañaré</l>
                 <l>altra volta á casá seva,</l>
-                <stage rend="cursiva"><lb/>(Rosela aguaita desde son balco<lb/> ó
+                <stage rend="cursiva">
+                  <lb/>(Rosela aguaita desde son balco<lb/> ó
                   finestra.)</stage>
                 <l>aniré á da algunas voltas</l>
                 <l>y cuan lo dia clarejia</l>
@@ -2181,10 +2231,12 @@
                 <l>jo estiraré be la perna.</l>
                 <l rend="indent">Veus aquí lo que es lo mon :</l>
                 <l>lo un se lleva y l' altre á jeura.</l>
-                <stage rend="cursiva"><lb/>(Toca un cuart.)</stage>
+                <stage rend="cursiva">
+                  <lb/>(Toca un cuart.)</stage>
                 <l rend="indent">Un cuart de dotse ha tocát,</l>
                 <l>men vas que ara ja me espera. (vase.)</l>
-                <stage rend="cursiva"><lb/>(Hix Roseta al balcó.)</stage>
+                <stage rend="cursiva">
+                  <lb/>(Hix Roseta al balcó.)</stage>
               </sp>
               <sp>
                 <speaker rend="cursiva">Ros.</speaker>
@@ -2198,7 +2250,6 @@
                 <pb n="4" source="Varios_177_4.jpg" facs="varios/Varios_177_4.jpg"/>
 
                 <fw type="paginaNum">— 4 —</fw>
-
                 <l>Mentres que pendré la fresca</l>
                 <l>vindrá l' mes estimát meu</l>
                 <l>y la causa de mas penas,</l>
@@ -2210,7 +2261,8 @@
                 <l>y crech sa paraula certa</l>
                 <l>¡no s' pot fiá gaire dels homes</l>
                 <l>ni tampoch de sas promesas!</l>
-                <stage rend="cursiva"><lb/>(Tocan dos cuarts.)</stage>
+                <stage rend="cursiva">
+                  <lb/>(Tocan dos cuarts.)</stage>
                 <l>¡Peró massa tarda abuy!</l>
                 <l>¡Si tal volta altra bellesa</l>
                 <l>entretingút mel tindrá!</l>
@@ -2225,7 +2277,8 @@
                 <l>aixequés alguna gresca,</l>
                 <l>y sapigués lo vehinat</l>
                 <l>lo que pasa en casa agena.</l>
-                <stage rend="cursiva"><lb/>(Hix D. Policarpio ab lo Sereno.)</stage>
+                <stage rend="cursiva">
+                  <lb/>(Hix D. Policarpio ab lo Sereno.)</stage>
               </sp>
               <sp>
                 <speaker rend="cursiva">Ser.</speaker>
@@ -2242,7 +2295,8 @@
                 <l>pero no tenga cuidado</l>
                 <l>que á aquel que anda enamorado</l>
                 <l>sus pasos guia el amor.</l>
-                <stage rend="cursiva"><lb/>(Tocan tres cuarts.)</stage>
+                <stage rend="cursiva">
+                  <lb/>(Tocan tres cuarts.)</stage>
                 <l>Entre tanto que yo espero</l>
                 <l>que salga Rosa al balcon</l>
                 <l>vos á cierta comision</l>
@@ -2272,9 +2326,11 @@
               <sp>
                 <speaker rend="cursiva">Ser.</speaker>
                 <l>Ja l'entench visca mols añs.</l>
-                <stage rend="cursiva"><lb/>(Tocan las dose.)</stage>
+                <stage rend="cursiva">
+                  <lb/>(Tocan las dose.)</stage>
                 <l>(ap) Deu nos conservi aquets guañs.</l>
-                <stage rend="cursiva"><lb/>(Canta.)</stage>
+                <stage rend="cursiva">
+                  <lb/>(Canta.)</stage>
                 <l>Las doce han dado sereno. (vas.)</l>
               </sp>
               <sp>
@@ -2283,7 +2339,8 @@
                 <l>vamos á hacerle la seña</l>
                 <l>que el amor cuando se empeña</l>
                 <l>en todo se manifiesta.</l>
-                <stage rend="cursiva"><lb/>(Dona 5 palmadas.)</stage>
+                <stage rend="cursiva">
+                  <lb/>(Dona 5 palmadas.)</stage>
                 <l>¡Válgame Dios! no se asoma</l>
                 <l>al balcon ¿ qué habrá tenido ?</l>
                 <l>Puede que la hayan reñido</l>
@@ -2292,7 +2349,8 @@
                 <l>pero no que llegan ya</l>
                 <l>y el instrumento hablará</l>
                 <l>esta vez en mi lugar.</l>
-                <stage rend="cursiva"><lb/>(Hixen lo Sereno, musichs y si pot ser
+                <stage rend="cursiva">
+                  <lb/>(Hixen lo Sereno, musichs y si pot ser
                   <lb/>cantors.)</stage>
               </sp>
               <sp>
@@ -2308,7 +2366,8 @@
                 <l>un bolero ú otra cosa</l>
                 <l>para dispertar la hermosa</l>
                 <l>y el norte de mi esperanza.</l>
-                <stage rend="cursiva"><lb/>(Tocan, y si ha cantors cantan. Al cap <lb/>de un rato ix
+                <stage rend="cursiva">
+                  <lb/>(Tocan, y si ha cantors cantan. Al cap <lb/>de un rato ix
                   Hipolit á altra finestra, <lb/>ab gorra de dormir y en camisa.)</stage>
 
                 <pb n="5" source="Varios_177_5.jpg" facs="varios/Varios_177_5.jpg"/>
@@ -2317,7 +2376,6 @@
                     <sic>9</sic>
                     <corr>5</corr>
                   </choice> —</fw>
-
                 <l>li parlo ab mes confiansa,</l>
                 <l>pues tinch fundada esperansa</l>
                 <l>que se certa ma ventura.</l>
@@ -2439,21 +2497,24 @@
                 <l>¡Criatura mas que humana,</l>
                 <l>que candor y que franqueza!</l>
               </sp>
-              <stage rend="cursiva"><lb/>(Hix Hipólit.)</stage>
+              <stage rend="cursiva">
+                <lb/>(Hix Hipólit.)</stage>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/><stage rend="cursiva">ap.</stage> ¿Ja hi som? ¡ Veus aqui las <lb/>resultas
+                <p>
+                  <lb/>
+                  <stage rend="cursiva">ap.</stage> ¿Ja hi som? ¡ Veus aqui las <lb/>resultas
                   de la musica de nit ! ¡Si <lb/>aquell burdell de dona es la qui en- <lb/>reda tot
-                  aixó! En bon fandango ans <lb/>posem. <l><stage rend="cursiva">Rep. </stage> Vaya
+                  aixó! En bon fandango ans <lb/>posem. <l>
+                    <stage rend="cursiva">Rep. </stage> Vaya
                     sañó aufacial: saba us-</l>
-                  
+
                   <pb n="6" source="Varios_177_6.jpg" facs="varios/Varios_177_6.jpg"/>
-                  
+
                   <fw type="paginaNum ">— <choice>
                       <sic>10</sic>
                       <corr>6</corr>
                     </choice> —</fw>
-                  
                   <lb/>ted que ja hi respuesto á ma muquer
                   <lb/>que jó no lligo am las pratancionas
                   <lb/>de vusted, y aixi, ¿ qué vol ? ¿ qué
@@ -2461,102 +2522,125 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Las de casarme con su hija.</p>
+                <p>
+                  <lb/>Las de casarme con su hija.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip. ap.</speaker>
-                <p><lb/>¿Si? tots som uns. No ho veu-
+                <p>
+                  <lb/>¿Si? tots som uns. No ho veu-
                 <lb/>rás tú mentres no se acluquianaques-
                 <lb/>tas dugas finestras.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Rep.</speaker>
-                <p><lb/>Pues señor, mi hica ja está
+                <p>
+                  <lb/>Pues señor, mi hica ja está
                 <lb/>casada.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Cómo se entiende casada ?</p>
+                <p>
+                  <lb/>Cómo se entiende casada ?</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Si, señor, purqué jó la tengu pru-
+                <p>
+                  <lb/>Si, señor, purqué jó la tengu pru-
                 <lb/>mesa á un gran señor.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>La muchacha no le tiene inclina—
+                <p>
+                  <lb/>La muchacha no le tiene inclina—
                 <lb/>cion, y asi: yo he de ser su esposo.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>La mia hica no quiero darla jó á
+                <p>
+                  <lb/>La mia hica no quiero darla jó á
                 <lb/>un pelacañas.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>¿ Qué es eso de pelacañas ?
-                <stage rend="cursiva"><lb/>(Hix Cascarria.)</stage></p>
+                <p>
+                  <lb/>¿ Qué es eso de pelacañas ?
+                <stage rend="cursiva">
+                    <lb/>(Hix Cascarria.)</stage>
+                </p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Xarraira, calla, calla, ascasarán,
+                <p>
+                  <lb/>Xarraira, calla, calla, ascasarán,
                 <lb/>as casarán, encara que no vulgas,
                 <lb/>matapá, cara de pecat mortal, mus-
                 <lb/>sol, tastarut, afront de la parentela.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Mira no me impugnias pas, que si
+                <p>
+                  <lb/>Mira no me impugnias pas, que si
                 <lb/>agarro una forma at badu el cap.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Que farás pagot ? que si te agar-
+                <p>
+                  <lb/>Que farás pagot ? que si te agar-
                 <lb/>ro ballas luego el contrapás.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Men vas perque am perdria. Pe-
+                <p>
+                  <lb/>Men vas perque am perdria. Pe-
                 <lb/>ro not pensis per aixó que deixi casá
                 <lb/>la noya ab aquet calaverota, no, no.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>¿ Qué indecente modo de hablar es
+                <p>
+                  <lb/>¿ Qué indecente modo de hablar es
                 <lb/>este ? ¿ Y usted probará lo que ha di-
                 <lb/>cho ?</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Si la forsa de la justicia mels casés
+                <p>
+                  <lb/>Si la forsa de la justicia mels casés
                 <lb/>obligantme á darli dot ; si que ho
                 <lb/>probaria.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Qué saps lo que dius? y com ho
+                <p>
+                  <lb/>Qué saps lo que dius? y com ho
                 <lb/>probarias?</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Cóm, cóm?</p>
+                <p>
+                  <lb/>Cóm, cóm?</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Sí, cómo lo probaria V.?</p>
+                <p>
+                  <lb/>Sí, cómo lo probaria V.?</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Ab la desgraciada esperiencia , si
+                <p>
+                  <lb/>Ab la desgraciada esperiencia , si
                 <lb/>señor, perqué homes que gastin di-
                 <lb/>nés ab músicas á la nit.... Men vas,
                 <lb/>men vas...
-                <stage rend="cursiva"><lb/>(vas.)</stage></p>
+                <stage rend="cursiva">
+                    <lb/>(vas.)</stage>
+                </p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Ja fas bé mal pensát, de anarten
+                <p>
+                  <lb/>Ja fas bé mal pensát, de anarten
                 <lb/>que sino....¡ Ay señó ! com jó penso
                 <lb/>quem podia habé casát ab lo Marqués
                 <lb/>de la Serena y he hagút de caure á
@@ -2564,13 +2648,15 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>¡ Vaya que chasco mayor no lo ha-
+                <p>
+                  <lb/>¡ Vaya que chasco mayor no lo ha-
                 <lb/>bia recibido jamas! y por quién? por
                 <lb/>la hija de un zapat...</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Apoch <stage rend="cursiva">(se formalisa)</stage> apocu que
+                <p>
+                  <lb/>Apoch <stage rend="cursiva">(se formalisa)</stage> apocu que
                 <lb/>encara que vusted me vejia casada ab
                 <lb/>un sabateru de biecu, soy desandien-
                 <lb/>ta de una molt lluenta familia. Mun
@@ -2595,14 +2681,16 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Todo esto es magnífico, pero vive
+                <p>
+                  <lb/>Todo esto es magnífico, pero vive
                 <lb/>Dios, que si no fuera por guardarla
                 <lb/>los respectos á V. y á mi querida
                 <lb/>Rosita.....</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Deixiu corre que aquest hombra
+                <p>
+                  <lb/>Deixiu corre que aquest hombra
                 <lb/>no saba lo que se pesca, es urdinariu
                 <lb/>y de pocu mas ó menos. Ja veurá
                 <lb/>vusté, entri á dentru y parlaremus
@@ -2611,164 +2699,198 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Vámonos á dentro. <stage rend="cursiva">(vanse.)</stage></p>
+                <p>
+                  <lb/>Vámonos á dentro. <stage rend="cursiva">(vanse.)</stage>
+                </p>
               </sp>
-              <stage rend="cursiva"><lb/>(Hixen Hipolit y Pancrás) </stage>
+              <stage rend="cursiva">
+                <lb/>(Hixen Hipolit y Pancrás) </stage>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Si ja pots creure lo quet dich. La
+                <p>
+                  <lb/>Si ja pots creure lo quet dich. La
                 <lb/>meba dona lo aproba en totas sas parts
                 <lb/>y la meba pulquerrima Roseta está
                 <lb/>esperant aquell tant dols : «asi pare.»</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pan.</speaker>
-                <p><lb/>Pues entonces parlem del dot.</p>
+                <p>
+                  <lb/>Pues entonces parlem del dot.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Oh, ja tením temps. Mira, mira:
+                <p>
+                  <lb/>Oh, ja tením temps. Mira, mira:
                 <lb/>ara cridaré á la noya y tu mateix
-                <lb/>sentirás... noya, noya... <stage rend="cursiva">(cridant.)</stage></p>
+                <lb/>sentirás... noya, noya... <stage rend="cursiva">(cridant.)</stage>
+                </p>
               </sp>
-              <stage rend="cursiva"><lb/>(Hix Roseta).</stage>
+              <stage rend="cursiva">
+                <lb/>(Hix Roseta).</stage>
               <sp>
                 <speaker rend="cursiva">Rosa.</speaker>
-                <p><lb/>Qué mana papá ?</p>
+                <p>
+                  <lb/>Qué mana papá ?</p>
               </sp>
-              
+
               <pb n="7" source="Varios_177_7.jpg" facs="varios/Varios_177_7.jpg"/>
-              
+
               <fw type="paginaNum ">— <choice>
                   <sic>11</sic>
                   <corr>7</corr>
                 </choice> —</fw>
-              
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Jat paparé jó las costellas. Mira
+                <p>
+                  <lb/>Jat paparé jó las costellas. Mira
                 <lb/>aquest señó es lo espós que jó te he
                 <lb/>destinát.</p>
               </sp>
               <stage rend="cursiva">(Roseta plora é hix Cascarria. )</stage>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>¿ Qué es aixó, ja fas plorá á la
+                <p>
+                  <lb/>¿ Qué es aixó, ja fas plorá á la
                 <lb/>nova ? ¿ Qui es aquest palatreca ?</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pan.</speaker>
-                <p><lb/>Só un señó doctor, parlia confor-
+                <p>
+                  <lb/>Só un señó doctor, parlia confor-
                 <lb/>me.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Es lo marit de la noya.</p>
+                <p>
+                  <lb/>Es lo marit de la noya.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Cóm se enten marit? No señó.
+                <p>
+                  <lb/>Cóm se enten marit? No señó.
                 <lb/>Señó doctó : aquest home es boig.
-                <lb/>Don Palicarpu, don Pulicarpu.. <stage rend="cursiva">(cri-<add place="debajo">dant.)</add></stage></p>
+                <lb/>Don Palicarpu, don Pulicarpu.. <stage rend="cursiva">(cri-<add place="debajo">dant.)</add>
+                  </stage>
+                </p>
               </sp>
-              <stage rend="cursiva"><lb/>( Hix D. Policarpio furiós. )</stage>
+              <stage rend="cursiva">
+                <lb/>( Hix D. Policarpio furiós. )</stage>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Quién es capaz?...</p>
+                <p>
+                  <lb/>Quién es capaz?...</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Si señó la noya está baix la mia
+                <p>
+                  <lb/>Si señó la noya está baix la mia
                 <lb/>protecció. Y jó qué no puch fè lo que
                 <lb/>m' dona la gana ?</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Con animales ó cosas se hace lo
+                <p>
+                  <lb/>Con animales ó cosas se hace lo
                 <lb/>que dá la gana , peró no con perso-
                 <lb/>nas aun que sean hijos por lo tocante
                 <lb/>à darles estado.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>La noya es meba.</p>
+                <p>
+                  <lb/>La noya es meba.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Peró no lo es para sacrificarla.</p>
+                <p>
+                  <lb/>Peró no lo es para sacrificarla.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Jo buy que sí y par forsa as casa-
+                <p>
+                  <lb/>Jo buy que sí y par forsa as casa-
                 <lb/>rà ab aquet granda sañor doctoro.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Se casarà con quien èlla misma
+                <p>
+                  <lb/>Se casarà con quien èlla misma
                 <lb/>escoja.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>No es coixa no, ja es ben dreta è
+                <p>
+                  <lb/>No es coixa no, ja es ben dreta è
                 <lb/>igual , gracias à Deu , D. Pulicarpu.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Vajisen de casa meba, atrevidu,
+                <p>
+                  <lb/>Vajisen de casa meba, atrevidu,
                 <lb/>pocus muedus. Pancràs, Pancràs aju-
                 <lb/>dam à treurel.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pan.</speaker>
-                <p><lb/>Si, si treyemlo.</p>
+                <p>
+                  <lb/>Si, si treyemlo.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Con Rosita me hirè.</p>
+                <p>
+                  <lb/>Con Rosita me hirè.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Si ; si, ab la nova, ab la noya.
+                <p>
+                  <lb/>Si ; si, ab la nova, ab la noya.
                 <lb/>Don Pulicarpu no la deixi pas à las
                 <lb/>grapas de aquest home , que la ma-
                 <lb/>taria.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Y usted señor Doctor : ¿ no se
+                <p>
+                  <lb/>Y usted señor Doctor : ¿ no se
                 <lb/>avergüenza de estar animado á que-
                 <lb/>rer forzosamente á Rosita sin ser
                 <lb/>èlla gustosa ?</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pan.</speaker>
-                <p><lb/>Jó li puch asegura l' dot milló
+                <p>
+                  <lb/>Jó li puch asegura l' dot milló
                 <lb/>que vuste.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Tens rahó Pancras. Y digas que
+                <p>
+                  <lb/>Tens rahó Pancras. Y digas que
                 <lb/>si èll, an casaca de colorainas, li as-
                 <lb/>segurará ab la muchilla ó be ab los
                 <lb/>arreus de illustrá las botas.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Yo me caso con Rosita, no con la
+                <p>
+                  <lb/>Yo me caso con Rosita, no con la
                 <lb/>dote , peró en caso de que se la dè ;
                 <lb/>tengo para afianzar diez y muchos
                 <lb/>mas de dotes.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip</speaker>
-                <p><lb/> Aixó si, chachará prou, pero tin-
+                <p>
+                  <lb/> Aixó si, chachará prou, pero tin-
                   <lb/>ga fiansas no tingia fiansas, no vull
                   <lb/>chicherellos, no vull bólicas, vull
                   <lb/>gent reposada.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>¡ Y si home tens rahó , ben pen-
+                <p>
+                  <lb/>¡ Y si home tens rahó , ben pen-
                 <lb/>sát casa la noya ab un vell , y que
                 <lb/>la pobreta de aqui á uns cuantsanys,
                 <lb/>l' hagi de aixugá l's mochs y las
@@ -2776,119 +2898,145 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>No s' casará, no ho vull.</p>
+                <p>
+                  <lb/>No s' casará, no ho vull.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Per forsa.</p>
+                <p>
+                  <lb/>Per forsa.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Nos casaremos, si señor.</p>
+                <p>
+                  <lb/>Nos casaremos, si señor.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Si no sen vá lan trech.</p>
+                <p>
+                  <lb/>Si no sen vá lan trech.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Vive el cielo que primero pondré
+                <p>
+                  <lb/>Vive el cielo que primero pondré
                 <lb/>mano en mi espada y lo arrollaré
                 <lb/>todo antes que partir sin mi adora-
                 <lb/>da Rosita.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Portiselan , portiselan D. Puli-
+                <p>
+                  <lb/>Portiselan , portiselan D. Puli-
                 <lb/>carpu.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>¿ Veyamu ? Vusté sen guardará
+                <p>
+                  <lb/>¿ Veyamu ? Vusté sen guardará
                 <lb/>muchu.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pan.</speaker>
-                <p><lb/>Aixó nos deu comportar.</p>
+                <p>
+                  <lb/>Aixó nos deu comportar.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Queriéndome la muchacha es mia,
+                <p>
+                  <lb/>Queriéndome la muchacha es mia,
                 <lb/>y no transigiré en dejarla, me la lle-
                 <lb/>varé.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>No ho logrará.</p>
+                <p>
+                  <lb/>No ho logrará.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Rosa.</speaker>
-                <p><lb/>Anem , anem D. Policarpio que
+                <p>
+                  <lb/>Anem , anem D. Policarpio que
                 <lb/>ja ans aclarirém.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>¡ Ah mossa dolenta! Si, si, fuih ab
+                <p>
+                  <lb/>¡ Ah mossa dolenta! Si, si, fuih ab
                 <lb/>éll, ja veurás com te pentinará.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pol.</speaker>
-                <p><lb/>Vamonos Rosita , luego. Doña
+                <p>
+                  <lb/>Vamonos Rosita , luego. Doña
                 <lb/>Cascarria á Dios que va nos veremos.
                 <lb/>Y ustedes espantajos , quédense con
                 <lb/>el diablo.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Rosa.</speaker>
-                <p><lb/>Si, si , fugim de aquest infern.</p>
+                <p>
+                  <lb/>Si, si , fugim de aquest infern.</p>
               </sp>
-              <stage rend="cursiva"><lb/>(Don Policarpio pren de la ma à Ro- <lb/>seta y sen van. Hipolit y Pancras
+              <stage rend="cursiva">
+                <lb/>(Don Policarpio pren de la ma à Ro- <lb/>seta y sen van. Hipolit y Pancras
                 se hi <lb/>oposan desistint al fi temerosos , peró se- <lb/>guintlos.)</stage>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Lladres , lladres que se men por-
+                <p>
+                  <lb/>Lladres , lladres que se men por-
                 <lb/>tan la noya.
-                <stage rend="cursiva">(cridant.)</stage></p>
+                <stage rend="cursiva">(cridant.)</stage>
+                </p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pan.</speaker>
-                <p><lb/>Agafeu aquest que me ha robát
+                <p>
+                  <lb/>Agafeu aquest que me ha robát
                 <lb/>la nuvia.
-                <stage rend="cursiva">(cridant.)</stage></p>
+                <stage rend="cursiva">(cridant.)</stage>
+                </p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Hip.</speaker>
-                <p><lb/>Pancras : seguimlos y alborotemo
+                <p>
+                  <lb/>Pancras : seguimlos y alborotemo
                 <lb/>tot.
-                <stage rend="cursiva">(vase.)</stage></p>
+                <stage rend="cursiva">(vase.)</stage>
+                </p>
               </sp>
-              
+
               <pb n="8" source="Varios_177_8.jpg" facs="varios/Varios_177_8.jpg"/>
-              
+
               <fw type="paginaNum ">— <choice>
                   <sic>12</sic>
                   <corr>8</corr>
                 </choice> —</fw>
-              
               <sp>
                 <speaker rend="cursiva">Pan.</speaker>
-                <p><lb/>Si, si: deteniu al llop. <stage rend="cursiva">(vase.)</stage></p>
+                <p>
+                  <lb/>Si, si: deteniu al llop. <stage rend="cursiva">(vase.)</stage>
+                </p>
               </sp>
-              <stage rend="cursiva"><lb/>(Continuan cridant desde dins.)</stage>
+              <stage rend="cursiva">
+                <lb/>(Continuan cridant desde dins.)</stage>
               <sp>
                 <speaker rend="cursiva">Los dos.</speaker>
-                <p><lb/>Al llop ab la ovella , al llop
+                <p>
+                  <lb/>Al llop ab la ovella , al llop
                 <lb/>ab la ovella, etc. etc.</p>
               </sp>
               <sp>
                 <speaker rend="cursiva">Casc.</speaker>
-                <p><lb/>Ja li podeu aná á fé un nus á la
+                <p>
+                  <lb/>Ja li podeu aná á fé un nus á la
                 <lb/>cua á aquest llop que potsé abuy
                 <lb/>mateix serán casats.
                 <lb/>¡ Vaya lo señó doctó metje Pancras!
                 <lb/>¿ tendra y rica ? ¡ ben pensát !
-                <stage rend="cursiva"><lb/>(fará una pausa. )</stage>
-                <lb/>¿ No veyeu pares que passa ?
+                <stage rend="cursiva">
+                    <lb/>(fará una pausa. )</stage>
+                  <lb/>¿ No veyeu pares que passa ?
                 <lb/>¿ no veyeu fillas que os fan ?
                 <lb/>¡ Ay cuantas sen casarán
                 <lb/>ab lo crit y ab la amenassa ,
@@ -2899,12 +3047,12 @@
                 <lb/>sacrificá als fills, may , no ,
                 <lb/>que res de bó sen sol treure.</p>
               </sp>
-              
-              <p><lb/>( Es verdadera propietat de F. V. y J. )</p>
+              <p>
+                <lb/>( Es verdadera propietat de F. V. y J. )</p>
             </div>
-            
             <div type="colofon_impresor">
-              <p><lb/>Imp. de F. Granell.</p>
+              <p>
+                <lb/>Imp. de F. Granell.</p>
             </div>
           </div>
         </div>

@@ -1,434 +1,459 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_035">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Nuevo y famoso romance en que se refiere las atrocidades de Sebastiana del Castillo</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LF">
-                              <name>Lorysmar Franco</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Nuevo y famoso romance en que se
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Nuevo y famoso romance en que se refiere las atrocidades de Sebastiana del Castillo</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LF">
+          <name>Lorysmar Franco</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Nuevo y famoso romance en que se
                                           refiere las atrocidades de Sebastiana del Castillo; y como
                                           mató á su padre, á su madre y á dos hermanos suyos, porque
                                           la tuvieron encerrada mas de un año, guardándola de su
                                           amante, y el castigo que en ella se ejecutó en
                                           Ciudad-Rodrigo.</title>
-                                    <title type="titulo_breve">Nuevo y famoso romance en que se
+            <title type="titulo_breve">Nuevo y famoso romance en que se
                                           refiere las atrocidades de Sebastiana del Castillo</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p/>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Herederos de la Viuda Pla</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6817777</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">LXIII</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="2">Dos grabados (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_035_1.xml" facs="varios/BCN_035_1.jpg/132,25,470,644/100,/0/default.jpg">grabado_b_035_1</item>
-                                                      <item corresp="grabado_b_035_2.xml" facs="varios/BCN_035_1.jpg/597,35,750,620/100,/0/default.jpg">grabado_b_035_2</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+          </titleStmt>
+          <editionStmt>
+            <p/>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Herederos de la Viuda Pla</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.6817777</idno>
+            <altIdentifier>
+              <idno type="num_impresor">LXIII</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="2">Dos grabados (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_035_1.xml" facs="varios/BCN_035_1.jpg/132,25,470,644/100,/0/default.jpg">grabado_b_035_1</item>
+                  <item corresp="grabado_b_035_2.xml" facs="varios/BCN_035_1.jpg/597,35,750,620/100,/0/default.jpg">grabado_b_035_2</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="3" corresp="Q820476">
+            <placeName key="Ciudad_Rodrigo">Ciudad Rodrigo</placeName>
+            <location>
+              <geo>40.596944444444 -6.5225</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1114768">
+            <placeName key="Jabalquinto">Jabalquinto</placeName>
+            <location>
+              <geo>38.019526 -3.725588</geo>
+            </location>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term target="XX527614.html" type="tipo_texto">Romances</term>
-                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-10-12" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term target="XX527614.html" type="tipo_texto">Romances</term>
+          <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-10-12" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_035_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-      <facsimile>
-            <graphic url="varios/BCN_035_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_035_1.jpg" facs="varios/BCN_035_1.jpg"/>
+          <pb n="1" source="BCN_035_1.jpg" facs="varios/BCN_035_1.jpg"/>
 
-                              <head type="primer_titulo">
-                                    <lb/>NUEVO Y FAMOSO ROMANCE ENQUE SE REFIERE<lb/>las atrocidades
+          <head type="primer_titulo">
+            <lb/>NUEVO Y FAMOSO ROMANCE ENQUE SE REFIERE<lb/>las atrocidades
                                     de Sebastiana del Castillo; y como mató á su padre,<lb/>á su
                                     madre y á dos hermanos suyos, porque la tuvieron<lb/>encerrada
                                     mas de un año, guardándola de su amante,<lb/>y el castigo que
                                     en ella se ejecutó<lb/>en Ciudad-Rodrigo.</head>
+          <l>
+            <hi rend="negrita">P</hi>ara el mayor sentimiento,</l>
+          <l>no se ha visto, ni se ha oido,</l>
+          <l>en este presente tiempo,</l>
+          <l>á mis oyentes convido:</l>
+          <l>para admiracion del orbe,</l>
+          <l>para que sumergidos</l>
+          <l>les cause espanto y asombro,</l>
+          <l>pido que me den oidos.</l>
+          <l>Tambien le pido á la Reina</l>
+          <l>de los cielos el ausilio,</l>
+          <l>para poder explicar</l>
+          <l>el valor mas atrevido,</l>
+          <l>la atrocidad mas enorme,</l>
+          <l>que en muger jamás se ha visto,</l>
+          <l>y el poco temor de Dios,</l>
+          <l>y de sus justos juicios:</l>
+          <l>mas con su divina luz</l>
+          <l>doy á este caso principio.</l>
+          <l>En la gran Sierra morena,</l>
+          <l>amparo de foragidos,</l>
+          <l>en un pequeño lugar,</l>
+          <l>que se llama <name>Javalquinto</name>,</l>
+          <l>vivia Alonso Gutierrez</l>
+          <l>con una hija y dos hijos,</l>
+          <l>en compañía de su esposa,</l>
+          <l>que eran dos amantes finos,</l>
+          <l>y por la paz y sosiego,</l>
+          <l>y por gusto que han tenido,</l>
+          <l>á los dos hijos casaron</l>
+          <l>con gran fiesta y regocijo.</l>
+          <l>Quedó sola con sus padres</l>
+          <l>Sebastiana del Castillo,</l>
+          <l>la muger mas desalmada</l>
+          <l>que de madres ha nacido.</l>
+          <l>De esta tal se enamoró</l>
+          <l>un mancebo granadino,</l>
+          <l>que estaba en aquel lugar</l>
+          <l>desde la edad de muy niño.</l>
+          <l>Dió en pasearle la calle</l>
+          <l>con fiestas y regocijos;</l>
+          <fw type="reclamo">al-</fw>
 
-                              <l><hi rend="negrita">P</hi>ara el mayor sentimiento,</l>
-                              <l>no se ha visto, ni se ha oido,</l>
-                              <l>en este presente tiempo,</l>
-                              <l>á mis oyentes convido:</l>
-                              <l>para admiracion del orbe,</l>
-                              <l>para que sumergidos</l>
-                              <l>les cause espanto y asombro,</l>
-                              <l>pido que me den oidos.</l>
-                              <l>Tambien le pido á la Reina</l>
-                              <l>de los cielos el ausilio,</l>
-                              <l>para poder explicar</l>
-                              <l>el valor mas atrevido,</l>
-                              <l>la atrocidad mas enorme,</l>
-                              <l>que en muger jamás se ha visto,</l>
-                              <l>y el poco temor de Dios,</l>
-                              <l>y de sus justos juicios:</l>
-                              <l>mas con su divina luz</l>
-                              <l>doy á este caso principio.</l>
-                              <l>En la gran Sierra morena,</l>
-                              <l>amparo de foragidos,</l>
-                              <l>en un pequeño lugar,</l>
-                              <l>que se llama Javalquinto,</l>
-                              <l>vivia Alonso Gutierrez</l>
-                              <l>con una hija y dos hijos,</l>
-                              <l>en compañía de su esposa,</l>
-                              <l>que eran dos amantes finos,</l>
-                              <l>y por la paz y sosiego,</l>
-                              <l>y por gusto que han tenido,</l>
-                              <l>á los dos hijos casaron</l>
-                              <l>con gran fiesta y regocijo.</l>
-                              <l>Quedó sola con sus padres</l>
-                              <l>Sebastiana del Castillo,</l>
-                              <l>la muger mas desalmada</l>
-                              <l>que de madres ha nacido.</l>
-                              <l>De esta tal se enamoró</l>
-                              <l>un mancebo granadino,</l>
-                              <l>que estaba en aquel lugar</l>
-                              <l>desde la edad de muy niño.</l>
-                              <l>Dió en pasearle la calle</l>
-                              <l>con fiestas y regocijos;</l>
-                              <fw type="reclamo">al-</fw>
+          <pb n="2" source="BCN_035_2.jpg" facs="varios/BCN_035_2.jpg"/>
 
-                              <pb n="2" source="BCN_035_2.jpg" facs="varios/BCN_035_2.jpg"/>
+          <l>alcanzo el sí de la dama,</l>
+          <l>de sus padres no ha podido,</l>
+          <l>antes con mucho rigor</l>
+          <l>la castigan de contínuo.</l>
+          <l>Enfurecida se enoja,</l>
+          <l>y hecha como un basilisco;</l>
+          <l>cuanto mas la castigaban,</l>
+          <l>rompiéndose los vestidos,</l>
+          <l>tirándose de las trenzas,</l>
+          <l>mas se enciende en su delirio;</l>
+          <l>mas de un año en una sala</l>
+          <l>encerrada la han tenido,</l>
+          <l>en donde sus dos hermanos</l>
+          <l>la dieron algun castigo.</l>
+          <l>Tuvo forma Sebastiana</l>
+          <l>de escribir un papelillo,</l>
+          <l>que en breves renglones dice:</l>
+          <l>Dulcísimo dueño mio,</l>
+          <l>sabrás que he estado encerrada,</l>
+          <l>pasando dos mil martirios</l>
+          <l>de mi padre y mis hermanos</l>
+          <l>con dolores excesivos:</l>
+          <l>supuesto que eres mi amante,</l>
+          <l>y que eres hombre de brios,</l>
+          <l>para esta noche á las doce</l>
+          <l>te espero bien prevenido:</l>
+          <l>y mira no me hagas falta,</l>
+          <l>porque te espero, bien mio.</l>
+          <l>No digo mas, y con esto</l>
+          <l>ha cerrado el papelillo,</l>
+          <l>y á un muchacho se lo entrega,</l>
+          <l>el cual era su sobrino,</l>
+          <l>para que se lo llevase</l>
+          <l>á Juan Gonzalez del Pino.</l>
+          <l>Tomó el papel el mancebo,</l>
+          <l>lo recibió agradecido,</l>
+          <l>por la vista lo repasa,</l>
+          <l>y así que lo hubo leido,</l>
+          <l>lágrimas del corazon</l>
+          <l>derramaba hilo á hilo.</l>
+          <l>Se fué al instante á su casa,</l>
+          <l>donde sus armas previno,</l>
+          <l>dos pistolas y una espada,</l>
+          <l>y un cuchillo de dos filos.</l>
+          <l>Oyó las diez, y las once,</l>
+          <l>dan las doce, y ha salido;</l>
+          <l>se fué á casa de su dama,</l>
+          <l>y ella que ya está en aviso,</l>
+          <l>abrió la puerta, y entró</l>
+          <l>sin ser de nadie sentido.</l>
+          <l>Ella encendió una bugia,</l>
+          <l>y de esta suerte le ha dicho:</l>
+          <l>Yo he de matar á mi padre</l>
+          <l>y á mi madre, vive Cristo,</l>
+          <l>que he de vengar mis injurias,</l>
+          <l>pues lo tienen merecido;</l>
+          <l>aunque sepa que al infierno</l>
+          <l>vaya á pagar mis delitos,</l>
+          <l>y me has de ayudar tambien;</l>
+          <l>y advierte lo que te digo,</l>
+          <l>que si ayudarme no quieres,</l>
+          <l>contigo he de hacer lo mismo.</l>
+          <l>El mozo la vió arrestada,</l>
+          <l>y con ánimo la dijo:</l>
+          <l>Habrá mas que ejecutarlo?</l>
+          <l>Ea, vamos al proviso.</l>
+          <l>Fué donde estaban sus padres</l>
+          <l>con un ánimo atrevido,</l>
+          <l>le dió cuatro puñaladas,</l>
+          <l>que el corazon le ha partido</l>
+          <l>al padre; y luego á la madre</l>
+          <l>hizo con ella lo mismo,</l>
+          <l>porque con dos puñaladas</l>
+          <l>la dejó allí sin sentido:</l>
+          <l>habló solo estas palabras,</l>
+          <l>y palpitando la dijo:</l>
+          <l>Hija de mi corazon,</l>
+          <l>en qué te hemos ofendido?</l>
+          <l>La dice: Señora madre,</l>
+          <l>esto es vengar mi castigo,</l>
+          <fw type="reclamo">y</fw>
 
-                              <l>alcanzo el sí de la dama,</l>
-                              <l>de sus padres no ha podido,</l>
-                              <l>antes con mucho rigor</l>
-                              <l>la castigan de contínuo.</l>
-                              <l>Enfurecida se enoja,</l>
-                              <l>y hecha como un basilisco;</l>
-                              <l>cuanto mas la castigaban,</l>
-                              <l>rompiéndose los vestidos,</l>
-                              <l>tirándose de las trenzas,</l>
-                              <l>mas se enciende en su delirio;</l>
-                              <l>mas de un año en una sala</l>
-                              <l>encerrada la han tenido,</l>
-                              <l>en donde sus dos hermanos</l>
-                              <l>la dieron algun castigo.</l>
-                              <l>Tuvo forma Sebastiana</l>
-                              <l>de escribir un papelillo,</l>
-                              <l>que en breves renglones dice:</l>
-                              <l>Dulcísimo dueño mio,</l>
-                              <l>sabrás que he estado encerrada,</l>
-                              <l>pasando dos mil martirios</l>
-                              <l>de mi padre y mis hermanos</l>
-                              <l>con dolores excesivos:</l>
-                              <l>supuesto que eres mi amante,</l>
-                              <l>y que eres hombre de brios,</l>
-                              <l>para esta noche á las doce</l>
-                              <l>te espero bien prevenido:</l>
-                              <l>y mira no me hagas falta,</l>
-                              <l>porque te espero, bien mio.</l>
-                              <l>No digo mas, y con esto</l>
-                              <l>ha cerrado el papelillo,</l>
-                              <l>y á un muchacho se lo entrega,</l>
-                              <l>el cual era su sobrino,</l>
-                              <l>para que se lo llevase</l>
-                              <l>á Juan Gonzalez del Pino.</l>
-                              <l>Tomó el papel el mancebo,</l>
-                              <l>lo recibió agradecido,</l>
-                              <l>por la vista lo repasa,</l>
-                              <l>y así que lo hubo leido,</l>
-                              <l>lágrimas del corazon</l>
-                              <l>derramaba hilo á hilo.</l>
-                              <l>Se fué al instante á su casa,</l>
-                              <l>donde sus armas previno,</l>
-                              <l>dos pistolas y una espada,</l>
-                              <l>y un cuchillo de dos filos.</l>
-                              <l>Oyó las diez, y las once,</l>
-                              <l>dan las doce, y ha salido;</l>
-                              <l>se fué á casa de su dama,</l>
-                              <l>y ella que ya está en aviso,</l>
-                              <l>abrió la puerta, y entró</l>
-                              <l>sin ser de nadie sentido.</l>
-                              <l>Ella encendió una bugia,</l>
-                              <l>y de esta suerte le ha dicho:</l>
-                              <l>Yo he de matar á mi padre</l>
-                              <l>y á mi madre, vive Cristo,</l>
-                              <l>que he de vengar mis injurias,</l>
-                              <l>pues lo tienen merecido;</l>
-                              <l>aunque sepa que al infierno</l>
-                              <l>vaya á pagar mis delitos,</l>
-                              <l>y me has de ayudar tambien;</l>
-                              <l>y advierte lo que te digo,</l>
-                              <l>que si ayudarme no quieres,</l>
-                              <l>contigo he de hacer lo mismo.</l>
-                              <l>El mozo la vió arrestada,</l>
-                              <l>y con ánimo la dijo:</l>
-                              <l>Habrá mas que ejecutarlo?</l>
-                              <l>Ea, vamos al proviso.</l>
-                              <l>Fué donde estaban sus padres</l>
-                              <l>con un ánimo atrevido,</l>
-                              <l>le dió cuatro puñaladas,</l>
-                              <l>que el corazon le ha partido</l>
-                              <l>al padre; y luego á la madre</l>
-                              <l>hizo con ella lo mismo,</l>
-                              <l>porque con dos puñaladas</l>
-                              <l>la dejó allí sin sentido:</l>
-                              <l>habló solo estas palabras,</l>
-                              <l>y palpitando la dijo:</l>
-                              <l>Hija de mi corazon,</l>
-                              <l>en qué te hemos ofendido?</l>
-                              <l>La dice: Señora madre,</l>
-                              <l>esto es vengar mi castigo,</l>
-                              <fw type="reclamo">y</fw>
+          <pb n="3" source="BCN_035_3.jpg" facs="varios/BCN_035_3.jpg"/>
 
-                              <pb n="3" source="BCN_035_3.jpg" facs="varios/BCN_035_3.jpg"/>
+          <l>y con otra puñalada</l>
+          <l>concluyó á su vida el hilo;</l>
+          <l>les sacó los corazones,</l>
+          <l>y en aceite los ha frito;</l>
+          <l>y de tan gran crueldad</l>
+          <l>cayó el mozo amortecido;</l>
+          <l>le dice: muere tambien,</l>
+          <l>pues que tú la causa has sido;</l>
+          <l>le ha dado de puñaladas,</l>
+          <l>y con ánimo atrevido</l>
+          <l>le quitó todas las armas,</l>
+          <l>y se puso su vestido,</l>
+          <l>y en un caballo del padre</l>
+          <l>montó, y se puso en camino.</l>
+          <l>Y luego por la mañana</l>
+          <l>sus hermanos han venido</l>
+          <l>á la casa de sus padres,</l>
+          <l>y hallan dolor tan crecido.</l>
+          <l>Justicia piden al cielo,</l>
+          <l>acudieron los vecinos,</l>
+          <l>y los llantos fueron tantos,</l>
+          <l>los clamores y gemidos,</l>
+          <l>que bastaban á ablandar</l>
+          <l>á las montañas y riscos.</l>
+          <l>No condenaron á nadie,</l>
+          <l>porque saben quien ha sido;</l>
+          <l>y con solemne aparato,</l>
+          <l>de todo el pueblo asistidos,</l>
+          <l>dispusieron los entierros:</l>
+          <l>Dios les haya dado ausilio.</l>
+          <l>Despachan requisitorias,</l>
+          <l>para saber si la han visto,</l>
+          <l>y á donde quiera la prendan,</l>
+          <l>que se ejecute el castigo.</l>
+          <l>Salieron los dos hermanos</l>
+          <l>por montes, valles y riscos;</l>
+          <l>ella estaba en una cueva,</l>
+          <l>y con ella dos vandidos,</l>
+          <l>que tambien huyendo andaban</l>
+          <l>por otros graves delitos.</l>
+          <l>Vió pasar sus dos hermanos,</l>
+          <l>y ella les salió al camino,</l>
+          <l>y de dos carabinazos</l>
+          <l>los mató luego al proviso.</l>
+          <l>Con un cuchillo les corta</l>
+          <l>las cabezas, y se ha ido</l>
+          <l>donde estan sus compañeros,</l>
+          <l>y se las lleva consigo.</l>
+          <l>Los compañeros la riñen,</l>
+          <l>y con ánimo atrevido,</l>
+          <l>cruel y desesperada,</l>
+          <l>con ellos hizo lo mismo.</l>
+          <l>Llevó las cuatro cabezas,</l>
+          <l>y se fué á <name>Ciudad-Rodrigo</name>,</l>
+          <l>y en una esquina en la plaza</l>
+          <l>las puso con un escrito,</l>
+          <l>que de esta suerte decia:</l>
+          <l>A estos dos hermanos mios</l>
+          <l>di la muerte, por vengarme</l>
+          <l>de haberme dado castigo,</l>
+          <l>y á los otros dos maté</l>
+          <l>por saber que eran vandidos.</l>
+          <l>Ya está la venganza hecha,</l>
+          <l>ya mi gusto se ha cumplido,</l>
+          <l>si hay alguno que se oponga,</l>
+          <l>salga á campaña conmigo,</l>
+          <l>porque al rigor de este brazo</l>
+          <l>son pocos los de este siglo.</l>
+          <l>El señor Corregidor</l>
+          <l>dió aviso á sus ministros,</l>
+          <l>de que salgan á prenderla,</l>
+          <l>y acudieron infinitos.</l>
+          <l>A dos alcaldes mató,</l>
+          <l>y hasta cinco ó seis ministros,</l>
+          <l>y con la espada en la mano</l>
+          <l>parecia un basilisco.</l>
+          <l>Nadie le para delante,</l>
+          <l>como á un toro embravecido.</l>
+          <l>Pidiendo favor al Rey,</l>
+          <l>acudieron los vecinos</l>
 
-                              <l>y con otra puñalada</l>
-                              <l>concluyó á su vida el hilo;</l>
-                              <l>les sacó los corazones,</l>
-                              <l>y en aceite los ha frito;</l>
-                              <l>y de tan gran crueldad</l>
-                              <l>cayó el mozo amortecido;</l>
-                              <l>le dice: muere tambien,</l>
-                              <l>pues que tú la causa has sido;</l>
-                              <l>le ha dado de puñaladas,</l>
-                              <l>y con ánimo atrevido</l>
-                              <l>le quitó todas las armas,</l>
-                              <l>y se puso su vestido,</l>
-                              <l>y en un caballo del padre</l>
-                              <l>montó, y se puso en camino.</l>
-                              <l>Y luego por la mañana</l>
-                              <l>sus hermanos han venido</l>
-                              <l>á la casa de sus padres,</l>
-                              <l>y hallan dolor tan crecido.</l>
-                              <l>Justicia piden al cielo,</l>
-                              <l>acudieron los vecinos,</l>
-                              <l>y los llantos fueron tantos,</l>
-                              <l>los clamores y gemidos,</l>
-                              <l>que bastaban á ablandar</l>
-                              <l>á las montañas y riscos.</l>
-                              <l>No condenaron á nadie,</l>
-                              <l>porque saben quien ha sido;</l>
-                              <l>y con solemne aparato,</l>
-                              <l>de todo el pueblo asistidos,</l>
-                              <l>dispusieron los entierros:</l>
-                              <l>Dios les haya dado ausilio.</l>
-                              <l>Despachan requisitorias,</l>
-                              <l>para saber si la han visto,</l>
-                              <l>y á donde quiera la prendan,</l>
-                              <l>que se ejecute el castigo.</l>
-                              <l>Salieron los dos hermanos</l>
-                              <l>por montes, valles y riscos;</l>
-                              <l>ella estaba en una cueva,</l>
-                              <l>y con ella dos vandidos,</l>
-                              <l>que tambien huyendo andaban</l>
-                              <l>por otros graves delitos.</l>
-                              <l>Vió pasar sus dos hermanos,</l>
-                              <l>y ella les salió al camino,</l>
-                              <l>y de dos carabinazos</l>
-                              <l>los mató luego al proviso.</l>
-                              <l>Con un cuchillo les corta</l>
-                              <l>las cabezas, y se ha ido</l>
-                              <l>donde estan sus compañeros,</l>
-                              <l>y se las lleva consigo.</l>
-                              <l>Los compañeros la riñen,</l>
-                              <l>y con ánimo atrevido,</l>
-                              <l>cruel y desesperada,</l>
-                              <l>con ellos hizo lo mismo.</l>
-                              <l>Llevó las cuatro cabezas,</l>
-                              <l>y se fué á Ciudad-Rodrigo,</l>
-                              <l>y en una esquina en la plaza</l>
-                              <l>las puso con un escrito,</l>
-                              <l>que de esta suerte decia:</l>
-                              <l>A estos dos hermanos mios</l>
-                              <l>di la muerte, por vengarme</l>
-                              <l>de haberme dado castigo,</l>
-                              <l>y á los otros dos maté</l>
-                              <l>por saber que eran vandidos.</l>
-                              <l>Ya está la venganza hecha,</l>
-                              <l>ya mi gusto se ha cumplido,</l>
-                              <l>si hay alguno que se oponga,</l>
-                              <l>salga á campaña conmigo,</l>
-                              <l>porque al rigor de este brazo</l>
-                              <l>son pocos los de este siglo.</l>
-                              <l>El señor Corregidor</l>
-                              <l>dió aviso á sus ministros,</l>
-                              <l>de que salgan á prenderla,</l>
-                              <l>y acudieron infinitos.</l>
-                              <l>A dos alcaldes mató,</l>
-                              <l>y hasta cinco ó seis ministros,</l>
-                              <l>y con la espada en la mano</l>
-                              <l>parecia un basilisco.</l>
-                              <l>Nadie le para delante,</l>
-                              <l>como á un toro embravecido.</l>
-                              <l>Pidiendo favor al Rey,</l>
-                              <l>acudieron los vecinos</l>
+          <pb n="4" source="BCN_035_4.jpg" facs="varios/BCN_035_4.jpg"/>
 
-                              <pb n="4" source="BCN_035_4.jpg" facs="varios/BCN_035_4.jpg"/>
-
-                              <l>cuantos hay en la ciudad;</l>
-                              <l>y pienso que si no ha sido</l>
-                              <l>por una fuerte pedrada</l>
-                              <l>que tiraron de un postigo,</l>
-                              <l>que la dieron en dos pechos,</l>
-                              <l>y en el suelo le han tendido;</l>
-                              <l>entonces se le arrojaron</l>
-                              <l>los agarrantes ministros,</l>
-                              <l>y el señor Corregidor,</l>
-                              <l>que era don Pedro Jacinto,</l>
-                              <l>mandó llevarla á la cárcel,</l>
-                              <l>donde la cargan de grillos;</l>
-                              <l>le leyeron la sentencia</l>
-                              <l>dentro de Ciudad-Rodrigo,</l>
-                              <l>y al tercer dia la sacan</l>
-                              <l>á que pague sus delitos.</l>
-                              <l>Llegan al pie de la horca,</l>
-                              <l>que suba arriba la dicen,</l>
-                              <l>y cuando estuvo en lo alto</l>
-                              <l>á todo el concurso dijo:</l>
-                              <l>Padres, los que teneis hijas,</l>
-                              <l>no seais como los mios,</l>
-                              <l>no las estorbeis matrimonios,</l>
-                              <l>que es sacramento divino</l>
-                              <l>de nuestra madre la Iglesia,</l>
-                              <l>dispuesto del Uno y Trino.</l>
-                              <l>Mirad en lo que me veo,</l>
-                              <l>y en que trabajos me he visto;</l>
-                              <l>pedidle á Dios me perdone,</l>
-                              <l>y á todos perdon os pido.</l>
-                              <l>Alzó los ojos al cielo,</l>
-                              <l>y dijo: Jesús divino,</l>
-                              <l>por la sangre virginal</l>
-                              <l>que os vertieron los judíos;</l>
-                              <l>por la cruel bofetada</l>
-                              <l>de vuestro rostro divino;</l>
-                              <l>y por toda la pasion</l>
-                              <l>que padecisteis, Dios mio,</l>
-                              <l>te pido que me perdones:</l>
-                              <l>pequé, Señor, mala he sido;</l>
-                              <l>mas vuestra misericordia</l>
-                              <l>es mayor que mis delitos.</l>
-                              <l>Al verdugo le avisaron,</l>
-                              <l>para que hiciera su oficio,</l>
-                              <l>y al instante la arrojó,</l>
-                              <l>y quedó el cadáver frio,</l>
-                              <l>dando muestras de que fué</l>
-                              <l>á gozar del cielo empíreo.</l>
-                              <l>Esta es la vida y muerte</l>
-                              <l>de Sebastiana del Castillo,</l>
-                              <l>y de esta suerte acabó</l>
-                              <l>de veinte años no cumplidos,</l>
-                              <l>en este presente año,</l>
-                              <l>segun lo dice el escrito,</l>
-                              <l>que es de mil y setecientos</l>
-                              <l>en este de veinte y cinco.</l>
-                              <l>Dios le dé eterno descanso</l>
-                              <l>en su santo paraíso,</l>
-                              <l>y á nosotros nos dé gracia</l>
-                              <l>por los siglos de los siglos.</l>
-                              <trailer>FIN.</trailer>
-                        </div>
-                        <div type="colofon">
-                              <p>
-                                    <lb/>Barcelona: Imprenta de Herederos de la Viuda Pla, calle
+          <l>cuantos hay en la ciudad;</l>
+          <l>y pienso que si no ha sido</l>
+          <l>por una fuerte pedrada</l>
+          <l>que tiraron de un postigo,</l>
+          <l>que la dieron en dos pechos,</l>
+          <l>y en el suelo le han tendido;</l>
+          <l>entonces se le arrojaron</l>
+          <l>los agarrantes ministros,</l>
+          <l>y el señor Corregidor,</l>
+          <l>que era don Pedro Jacinto,</l>
+          <l>mandó llevarla á la cárcel,</l>
+          <l>donde la cargan de grillos;</l>
+          <l>le leyeron la sentencia</l>
+          <l>dentro de <name>Ciudad-Rodrigo</name>,</l>
+          <l>y al tercer dia la sacan</l>
+          <l>á que pague sus delitos.</l>
+          <l>Llegan al pie de la horca,</l>
+          <l>que suba arriba la dicen,</l>
+          <l>y cuando estuvo en lo alto</l>
+          <l>á todo el concurso dijo:</l>
+          <l>Padres, los que teneis hijas,</l>
+          <l>no seais como los mios,</l>
+          <l>no las estorbeis matrimonios,</l>
+          <l>que es sacramento divino</l>
+          <l>de nuestra madre la Iglesia,</l>
+          <l>dispuesto del Uno y Trino.</l>
+          <l>Mirad en lo que me veo,</l>
+          <l>y en que trabajos me he visto;</l>
+          <l>pedidle á Dios me perdone,</l>
+          <l>y á todos perdon os pido.</l>
+          <l>Alzó los ojos al cielo,</l>
+          <l>y dijo: Jesús divino,</l>
+          <l>por la sangre virginal</l>
+          <l>que os vertieron los judíos;</l>
+          <l>por la cruel bofetada</l>
+          <l>de vuestro rostro divino;</l>
+          <l>y por toda la pasion</l>
+          <l>que padecisteis, Dios mio,</l>
+          <l>te pido que me perdones:</l>
+          <l>pequé, Señor, mala he sido;</l>
+          <l>mas vuestra misericordia</l>
+          <l>es mayor que mis delitos.</l>
+          <l>Al verdugo le avisaron,</l>
+          <l>para que hiciera su oficio,</l>
+          <l>y al instante la arrojó,</l>
+          <l>y quedó el cadáver frio,</l>
+          <l>dando muestras de que fué</l>
+          <l>á gozar del cielo empíreo.</l>
+          <l>Esta es la vida y muerte</l>
+          <l>de Sebastiana del Castillo,</l>
+          <l>y de esta suerte acabó</l>
+          <l>de veinte años no cumplidos,</l>
+          <l>en este presente año,</l>
+          <l>segun lo dice el escrito,</l>
+          <l>que es de mil y setecientos</l>
+          <l>en este de veinte y cinco.</l>
+          <l>Dios le dé eterno descanso</l>
+          <l>en su santo paraíso,</l>
+          <l>y á nosotros nos dé gracia</l>
+          <l>por los siglos de los siglos.</l>
+          <trailer>FIN.</trailer>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>Barcelona: Imprenta de Herederos de la Viuda Pla, calle
                                     <lb/>de Cotoners.</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

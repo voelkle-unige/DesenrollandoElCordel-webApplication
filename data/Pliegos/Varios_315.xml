@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,24 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q5783">
+            <placeName key="Andalucía">Andalucía</placeName>
+            <location>
+              <geo>37.405 -5.9875</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q21">
+            <placeName key="Inglaterra">Inglaterra</placeName>
+            <location>
+              <geo>53 -1</geo>
+            </location>
+          </place>
+          <place n="3">
+            <placeName key="Asnópolis">Asnópolis</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +163,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1328,15 +1360,17 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_315_1.jpg" facs="varios/Varios_315_1.jpg"/>
 
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>LA SOCIEDAD BORRICAL.</head>
-          <head type="subtitulo" rend="negrita"><lb/>Acta de una sesion celebrada por varios
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA SOCIEDAD BORRICAL.</head>
+          <head type="subtitulo" rend="negrita">
+            <lb/>Acta de una sesion celebrada por varios
             jumentos<lb/>en un establo de la Capital de Asnópolis.</head>
-
-          <p rend="negrita"><lb/>Acta de la sesion de la Sociedad Borrical.</p>
-
+          <p rend="negrita">
+            <lb/>Acta de la sesion de la Sociedad Borrical.</p>
           <lg>
             <l rend="indent">Asnópolis seis de Enero</l>
             <l>del año mil ochocientos,</l>
@@ -1344,7 +1378,6 @@
             <l>deja sentir sus violentos</l>
             <l>treinta grados bajo cero.</l>
           </lg>
-
           <l rend="indent">Reunidos los jumentos infrascritos,</l>
           <l>jumentos de valía,</l>
           <l>de prudencia, de pró, y sabiduría,</l>
@@ -1375,7 +1408,8 @@
           <l rend="indent">Pero dejando ripios,</l>
           <l>despues de haber sentado mis principios,</l>
           <l>diré que á objeto y fin de dar comienzo</l>
-          <l>á una Sociedad que será <hi rend="cursiva">pata</hi></l>
+          <l>á una Sociedad que será <hi rend="cursiva">pata</hi>
+          </l>
           <l>del borrical progreso que se trata,</l>
           <l>por el cual me convenzo</l>
           <l>rebuznaréis constantes y elocuentes,</l>
@@ -1417,7 +1451,8 @@
           <l>—Debo hacer observar al Presidente</l>
           <l>que si ha ser un cuento, no, lo cuente.</l>
           <l>—Entienda el atrevido</l>
-          <l>que tendré mucha <hi rend="cursiva">cuenta, en contar cuentos</hi></l>
+          <l>que tendré mucha <hi rend="cursiva">cuenta, en contar cuentos</hi>
+          </l>
           <l>pues lo he dieho en estilo figurado,</l>
           <l>y semejante estilo es muy usado;</l>
           <l>mas no desperdiciemos los momentos,</l>
@@ -1446,10 +1481,12 @@
           <l>ó creo que la paja os gusta mucho,</l>
           <l>por cuanto ni <hi rend="cursiva">por pienso</hi> vais al <hi rend="cursiva">grano</hi>.</l>
           <l>—Os pido mil perdones,</l>
-          <l>mas <hi rend="cursiva">pienso</hi> que por <hi rend="cursiva">pienso</hi></l>
+          <l>mas <hi rend="cursiva">pienso</hi> que por <hi rend="cursiva">pienso</hi>
+          </l>
           <l>dejara mis rebuznos en suspenso,</l>
           <l>porque si fuesen granos, aunque vivos</l>
-          <l>comiérame........ <hi rend="cursiva">estos puntos suspensivos.</hi></l>
+          <l>comiérame........ <hi rend="cursiva">estos puntos suspensivos.</hi>
+          </l>
           <l rend="indent">Repito que las bases he formado</l>
           <l>de nuestro reglamento,</l>
           <l>y para ver si son de vuestro agrado</l>
@@ -1459,9 +1496,9 @@
 
           <pb n="3" source="Varios_315_3.jpg" facs="varios/Varios_315_3.jpg"/>
 
-          <p rend="cursiva"><lb/>(Marcada agitacion por todos lados; <lb/>los jumentos escuchan
+          <p rend="cursiva">
+            <lb/>(Marcada agitacion por todos lados; <lb/>los jumentos escuchan
             preparados). </p>
-
           <lg>
             <head type="titulo_estrofa">1.ª</head>
             <l>Esta Sociedad Asnal,</l>
@@ -1504,11 +1541,10 @@
             <l>lo habran de verificar</l>
             <l>por la indispensable puerta.</l>
           </lg>
-
-          <p><lb/>( Muestras de aprobacion, murmullos, risas; <lb/>En algunos se vén nécias
+          <p>
+            <lb/>( Muestras de aprobacion, murmullos, risas; <lb/>En algunos se vén nécias
             sonrisas. <lb/>Prosigue el <hi rend="cursiva">orador</hi> grave y profundo, <lb/>Es
             decir, <hi rend="cursiva">orador</hi> grave y fecundo ). </p>
-
           <lg>
             <head type="titulo_estrofa">7.ª</head>
             <l>En el establecimiento,</l>
@@ -1555,7 +1591,8 @@
             <head type="titulo_estrofa">12.</head>
             <l>En los bailes, los jumentos</l>
             <l>irán todos enjaezados,</l>
-            <l>enguantados, digo, <hi rend="cursiva">herrados</hi></l>
+            <l>enguantados, digo, <hi rend="cursiva">herrados</hi>
+            </l>
             <l>y con muchos <hi rend="cursiva">cumplos-y-mientos</hi>.</l>
           </lg>
           <lg>
@@ -1579,9 +1616,8 @@
             <l>cada cual tendrá delante</l>
             <l>lleno de paja el pesebre.</l>
           </lg>
-
-          <p><lb/>(Infinitas palmadas, <lb/>vivas, bravos y grandes carcajadas ). </p>
-
+          <p>
+            <lb/>(Infinitas palmadas, <lb/>vivas, bravos y grandes carcajadas ). </p>
           <lg>
             <head type="titulo_estrofa">16.</head>
             <l>Como bestias muy sensatas,</l>
@@ -1593,7 +1629,8 @@
             <head type="titulo_estrofa">17.</head>
             <l>Es preciso y lo deploro,</l>
             <l>decir que se tenga celo</l>
-            <l>en que <hi rend="cursiva">no se alfombre el suelo</hi></l>
+            <l>en que <hi rend="cursiva">no se alfombre el suelo</hi>
+            </l>
             <l rend="cursiva">con enormes copos de oro.</l>
             <l>Y por si cabeza lerda</l>
             <l>no entiende mis espresiones,</l>
@@ -1610,9 +1647,8 @@
             <l>que es sobre todo....... peró.....</l>
             <l rend="cursiva">no se hablará de politica.</l>
           </lg>
-
-          <p><lb/>( Universal barullo. <lb/>Se oye un prolongadísimo murmullo ). </p>
-
+          <p>
+            <lb/>( Universal barullo. <lb/>Se oye un prolongadísimo murmullo ). </p>
           <l rend="indent">En esto un guapo rucio</l>
           <l>con ínfulas de Pitt ó de Confucio,</l>
           <l>dijo en medio de aquella batahola</l>
@@ -1620,7 +1656,7 @@
           <l>—Si puedo rebuznar rebuznaré :</l>
           <l>Y se le contesto :—Rebuzne usté.</l>
           <l>—Allá voy. Yo diré que, entre peréntesis,</l>
-          <l>en la misma Inglaterra</l>
+          <l>en la misma <name>Inglaterra</name></l>
           <l>y no tau solo allá, en cualquiera tierra,</l>
           <l>la política......—Pido el rebuznar.</l>
           <l>—Y yo.—Y yo.—Y yo.—Quereis callar?</l>
@@ -1659,10 +1695,8 @@
           <l>pero qué le he de hacer? paciencia y calma,</l>
           <l>calma y paciencia, que tambien soy burro,</l>
           <l>y soy...... pero ¡qué diablos! ya me aburro.</l>
-
           <trailer>FIN.</trailer>
         </div>
-
         <div type="productos_a_la_venta">
           <p>NOTA. Se hallará á mas del surtido de romances, una coleccion de historias de dos,
             tres y cuatro <lb/>pliegos; vários sainetes nuevos, tonadillas y algunos libritos de
@@ -1688,9 +1722,9 @@
             1.ª y 2ª parte.—<hi rend="cursiva">Marcela ó el asesino<lb/>inocente</hi>, 1.ª y 2.ª
             parte. </p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona: Imprenta de Juan Llorens, Palma de Sta. Catalina, núm. 6.—1862</p>
+          <p>
+            <lb/>Barcelona: Imprenta de Juan Llorens, Palma de Sta. Catalina, núm. 6.—1862</p>
         </div>
       </div>
     </body>

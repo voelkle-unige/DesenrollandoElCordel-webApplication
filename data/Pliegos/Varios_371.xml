@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -103,6 +118,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -138,8 +161,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1075,13 +1097,14 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_371_1.jpg" facs="varios/Varios_371_1.jpg"/>
-        
+
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>CANSÓ DE LA CARBONERA.</head>
-          
+          <head type="primer_titulo" rend="negrita">
+            <lb/>CANSÓ DE LA CARBONERA.</head>
           <lg>
-            <l rend="indent">Fadrinets de Barcelona</l>
+            <l rend="indent">Fadrinets de <name>Barcelona</name></l>
             <l>parlo ab los que porteu jech</l>
             <l>no penseu ab la Roseta</l>
             <l>que ya hi habeu perdut lo dret,</l>
@@ -1110,11 +1133,10 @@
             <l>Mira tu la cara bruta</l>
             <l>per marit vol un señó.</l>
           </lg>
-          
+
           <pb n="2" source="Varios_371_2.jpg" facs="varios/Varios_371_2.jpg"/>
-          
+
           <fw type="paginaNum">— 2 —</fw>
-          
           <lg>
             <l rend="indent">Lo ofisi de carbonera</l>
             <l>li está dels mes pintats</l>
@@ -1146,11 +1168,11 @@
             <l>Com du la micha al garró.</l>
           </lg>
         </div>
-        
         <div n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>LETRILLA DEL PARARAYOS</head>
-          <head type="subtitulo_parte" rend="negrita"><lb/>Y EL TALARÁN LARÁ.</head>
-          
+          <head type="titulo_parte" rend="negrita">
+            <lb/>LETRILLA DEL PARARAYOS</head>
+          <head type="subtitulo_parte" rend="negrita">
+            <lb/>Y EL TALARÁN LARÁ.</head>
           <lg>
             <l rend="indent">A cuantas presuman</l>
             <l>Casarse conmigo,</l>
@@ -1202,12 +1224,12 @@
             <l>Talarán lará</l>
           </lg>
         </div>
-        
+
         <pb n="3" source="Varios_371_3.jpg" facs="varios/Varios_371_3.jpg"/>
-        
+
         <div n="3">
-          <head type="titulo_parte"><lb/>DECIMAS DEL SOLTERO DESENGAÑADO.</head>
-          
+          <head type="titulo_parte">
+            <lb/>DECIMAS DEL SOLTERO DESENGAÑADO.</head>
           <lg>
             <l rend="indent">Te ofrezco lector amado ,</l>
             <l>El cuadro mas lisongero</l>
@@ -1261,11 +1283,10 @@
             <l>Me acarícian con ternura</l>
             <l>Y me tratan con dulzura,</l>
             <l>Pero es á fin de atraparme</l>
-            
+
             <pb n="4" source="Varios_371_4.jpg" facs="varios/Varios_371_4.jpg"/>
-            
+
             <fw type="paginaNum">— 4 —</fw>
-            
             <l>Ellas creen presentarme</l>
             <l>Con su platica un gran terno,</l>
             <l>Para pasar buen invierno,</l>
@@ -1355,14 +1376,14 @@
             <l>Has de festejar con todas,</l>
             <l>Y casarte con ninguna.</l>
           </lg>
-          
           <p>(Es propiedad.)</p>
-          
           <trailer rend="negrita">FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/><hi rend="negrita">Imp. de P. Fullá.</hi></p>
+          <p>
+            <lb/>
+            <hi rend="negrita">Imp. de P. Fullá.</hi>
+          </p>
         </div>
       </div>
     </body>

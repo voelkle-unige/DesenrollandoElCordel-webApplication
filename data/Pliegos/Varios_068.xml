@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -31,7 +45,8 @@
             <title type="titulo_breve">Juan Portela</title>
           </titleStmt>
           <editionStmt>
-            <p>Otras impresiones: <ref target="Varios_136.xml">Varios_136</ref>y <ref target="Varios_343.xml">Varios_343</ref></p>
+            <p>Otras impresiones: <ref target="Varios_136.xml">Varios_136</ref>y <ref target="Varios_343.xml">Varios_343</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>El Abanico</publisher>
@@ -70,7 +85,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +111,44 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="7" corresp="Q5818">
+            <placeName key="Córdoba">Córdoba</placeName>
+            <location>
+              <geo>37.883333333333 -4.7666666666667</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q686362">
+            <placeName key="Sierra_Morena">Sierra Morena</placeName>
+            <location>
+              <geo>38.3 -5.4</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q753825">
+            <placeName key="Utrera">Utrera</placeName>
+            <location>
+              <geo>37.1824646 -5.7817506</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q572041">
+            <placeName key="Antequera">Antequera</placeName>
+            <location>
+              <geo>37.0183652 -4.5596649</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1448408">
+            <placeName key="El_Carpio">El Carpio</placeName>
+            <location>
+              <geo>37.9399109 -4.4987079</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +184,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1523,19 +1576,22 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_068_1.jpg" facs="varios/Varios_068_1.jpg"/>
 
-          <head type="primer_titulo"><lb/>JUAN PORTELA</head>
-          <head type="subtitulo"><lb/>Relación puesta en trovos de los asesinatos y robos
+          <head type="primer_titulo">
+            <lb/>JUAN PORTELA</head>
+          <head type="subtitulo">
+            <lb/>Relación puesta en trovos de los asesinatos y robos
             que<lb/>cometió en las inmediaciones de Córdoba</head>
-
           <div n="1" type="parte">
-            <head type="titulo_parte" rend="negrita"><lb/>PRIMERA PARTE</head>
+            <head type="titulo_parte" rend="negrita">
+              <lb/>PRIMERA PARTE</head>
             <lg rend="cursiva">
               <l rend="indent">Escuchen señores míos,</l>
               <l>les diré de Juan Portela,</l>
               <l>el ladrón más afamado</l>
-              <l>que en la gran Sierra-Morena.</l>
+              <l>que en la gran <name>Sierra-Morena</name>.</l>
             </lg>
             <lg>
               <l rend="indent">De mis padres fui querido,</l>
@@ -1553,7 +1609,7 @@
             </lg>
             <lg>
               <l rend="indent">Fuí un labrador honrado</l>
-              <l>que en Córdoba trabajaba,</l>
+              <l>que en <name>Córdoba</name> trabajaba,</l>
               <l>a una hacienda retirado</l>
               <l>y por querer a una dama</l>
               <l rend="cursiva">fui el ladrón más afamado.</l>
@@ -1563,7 +1619,7 @@
               <l>esta jóven se casó</l>
               <l>con otro y amí me deja,</l>
               <l>cuya causa me llevó.</l>
-              <l rend="cursiva">a la gran Sierra-Morena.</l>
+              <l rend="cursiva">a la gran <name>Sierra-Morena</name>.</l>
             </lg>
             <lg rend="cursiva">
               <l rend="indent">Lloraba de noche y día</l>
@@ -1578,7 +1634,9 @@
               <l>cuando me vi despreciado</l>
               <l rend="cursiva">lloraba de noche y día.</l>
             </lg>
+
             <pb n="2" source="Varios_068_2.jpg" facs="varios/Varios_068_2.jpg"/>
+
             <lg>
               <l rend="indent">Sus quejas llegué a entender</l>
               <l>de una pícara traidora</l>
@@ -1643,14 +1701,14 @@
             <lg>
               <l rend="indent">Me escapé por una puerta</l>
               <l>aquella noche me buscaron,</l>
-              <l>en Córdoba Juan Portela</l>
+              <l>en <name>Córdoba</name> Juan Portela</l>
               <l>seis personas ha matado</l>
               <l rend="cursiva">giré un poco mi cabeza.</l>
             </lg>
             <lg>
               <l rend="indent">Caminaba con cuidado</l>
               <l>y al romper su claro día</l>
-              <l>junto a las Ventas del Carpio</l>
+              <l>junto a las <name>Ventas del Carpio</name></l>
               <l>un caballero venía</l>
               <l rend="cursiva">con mi trabuco apuntando.</l>
             </lg>
@@ -1665,7 +1723,7 @@
               <l rend="indent">Se marchó el pobre pelado</l>
               <l>como s. fuera patena</l>
               <l>yo piré con su caballo</l>
-              <l>porque en las puertas de Utrera</l>
+              <l>porque en las puertas de <name>Utrera</name></l>
               <l rend="cursiva">cuatro muertos ha dejado.</l>
             </lg>
             <lg rend="cursiva">
@@ -1682,7 +1740,7 @@
               <l rend="cursiva">las partídas me persiguen</l>
             </lg>
             <lg>
-              <l rend="indent">En los montes de Antequera</l>
+              <l rend="indent">En los montes de <name>Antequera</name></l>
               <l>una mañana robé</l>
               <l>a un coche y a una galera</l>
               <l>seiscientos machos choré</l>
@@ -1704,13 +1762,14 @@
             </lg>
             <trailer rend="negrita">FIN DE LA PRIMERA PARTE</trailer>
           </div>
-
           <div n="2" type="parte">
+
             <pb n="3" source="Varios_068_3.jpg" facs="varios/Varios_068_3.jpg"/>
 
-            <head type="titulo_parte"><lb/>JUAN PORTELA</head>
-            <head type="subtitulo_parte"><lb/>SEGUNDA PARTE EN DÉCIMAS GLOSADAS</head>
-
+            <head type="titulo_parte">
+              <lb/>JUAN PORTELA</head>
+            <head type="subtitulo_parte">
+              <lb/>SEGUNDA PARTE EN DÉCIMAS GLOSADAS</head>
             <lg rend="cursiva">
               <l rend="indent">A dar pienso a mi cabalo,</l>
               <l>¡ay de mi! que soy perdido</l>
@@ -1746,9 +1805,9 @@
               <l>estas palabras decía :</l>
               <l>«Te van a quitar la vida</l>
               <l>»hijo mío lo he pensado,</l>
-              <l>»que te marches de la España</l>
+              <l>»que te marches de la <name>España</name></l>
               <l>»no cometas más estragos.</l>
-              <l>»que en Córdoba tu cabeza</l>
+              <l>»que en <name>Córdoba</name> tu cabeza</l>
               <l>»ayer triste pregonaron».</l>
               <l>¡Oh! qué noticia recibo</l>
               <l rend="cursiva">en esta casa de campo.</l>
@@ -1837,7 +1896,9 @@
               <l>y me llevan a un bagaje</l>
               <l rend="cursiva">ya perdí las esperanzas.</l>
             </lg>
+
             <pb n="4" source="Varios_068_4.jpg" facs="varios/Varios_068_4.jpg"/>
+
             <lg>
               <l rend="indent">Con tal anhelo y cuidado</l>
               <l>a pasos dobles marchaban</l>
@@ -1846,7 +1907,7 @@
               <l>les pedí un poco de agua</l>
               <l>y les dije en alta voz:</l>
               <l>Por Dios quitadme la vida</l>
-              <l>que en Córdoba no entro yo</l>
+              <l>que en <name>Córdoba</name> no entro yo</l>
               <l>que está mi familia honrada;</l>
               <l rend="cursiva">de mis padre el honor.</l>
             </lg>
@@ -1855,7 +1916,7 @@
               <l>el comandante me dijo,</l>
               <l>ya no tienes más recurso</l>
               <l>es preciso caminar,</l>
-              <l>a Córdoba te llevamos</l>
+              <l>a <name>Córdoba</name> te llevamos</l>
               <l>por orden del tribunal</l>
               <l>padre, madre y hermanito</l>
               <l>mis culpas voy a pagar,</l>
@@ -1917,7 +1978,7 @@
             </lg>
             <lg>
               <l rend="indent">Calles, ventanas y casas,</l>
-              <l>Córdoba y sus habitantes,</l>
+              <l><name>Córdoba</name> y sus habitantes,</l>
               <l>perdonadme en adelante</l>
               <l>socorred mis dos hermanos.</l>
               <l>Ancisnos, padres y niños,</l>
@@ -1953,9 +2014,9 @@
             </lg>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imps. Hospital, 19. «El Abanico»</p>
+          <p>
+            <lb/>Imps. Hospital, 19. «El Abanico»</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve"/>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_011.xml">Varios_011</ref></p>
+            <p>Otra impresión: <ref target="Varios_011.xml">Varios_011</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>[s.n.]</publisher>
@@ -69,7 +84,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +110,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +153,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-08" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-08" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -897,11 +920,12 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_320_1.jpg" facs="varios/Varios_320_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>CHISTE<lb/>NOU Y DIVERTIT.</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>CHISTE<lb/>NOU Y DIVERTIT.</head>
           <l>Escóltenme señores</l>
           <l>qu' els apresisa</l>
           <l>y oirán el gran chasco</l>
@@ -1058,15 +1082,14 @@
           <l>y tot eu feu Deu</l>
           <l>pera que ningú toque</l>
           <l>lo que no es seu.</l>
-
           <trailer rend="negrita">FIN.</trailer>
         </div>
-        
+
         <pb n="4" source="Varios_320_4.jpg" facs="varios/Varios_320_4.jpg"/>
-        
+
         <div n="2">
-          <head type="titulo_cancion" rend="negrita"><lb/>TROVO NOU.</head>
-          
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>TROVO NOU.</head>
           <lg>
             <l rend="indent">En lo que pasa güi en dia</l>
             <l>degüen viudes y donselles</l>

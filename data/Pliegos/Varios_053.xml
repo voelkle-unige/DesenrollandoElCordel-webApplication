@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,50 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q41">
+            <placeName key="Grecia">Grecia</placeName>
+            <location>
+              <geo>38.5 23</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2041829">
+            <placeName key="Miramar">Miramar</placeName>
+            <location>
+              <geo>38.9505154 -0.1415109</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q15468">
+            <placeName key="Badalona">Badalona</placeName>
+            <location>
+              <geo>41.433333333333 2.2333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1122701">
+            <placeName key="Montjuic">Montjuic</placeName>
+            <location>
+              <geo>41.364166666667 2.1580555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2371388">
+            <placeName key="Hospital_Clínic_de_Barcelona">Hospital Clínic De Barcelona</placeName>
+            <location>
+              <geo>41.389511 2.152219</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q81949">
+            <placeName key="provincia_de_Barcelona">Provincia De Barcelona</placeName>
+            <location>
+              <geo>41.45 2.0833333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +189,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -849,23 +907,29 @@
       <div>
         <div>
           <div n="1">
-            <pb n="1" source="Varios_053_1.jpg" facs="varios/Varios_053_1.jpg"/>
-            <head type="primer_titulo"><lb/><hi rend="negrita">Lo que hizo una madre
-                para</hi><lb/><hi rend="negrita">robar la herencio de su hijo</hi></head>
 
-            <p><lb/>Pozo donde fué encontrado el niño.</p>
+            <pb n="1" source="Varios_053_1.jpg" facs="varios/Varios_053_1.jpg"/>
+
+            <head type="primer_titulo">
+              <lb/>
+              <hi rend="negrita">Lo que hizo una madre
+                para</hi>
+              <lb/>
+              <hi rend="negrita">robar la herencio de su hijo</hi>
+            </head>
+            <p>
+              <lb/>Pozo donde fué encontrado el niño.</p>
             <lg n="1">
               <head type="titulo_estrofa">I</head>
               <l rend="indent">Si escuchan un momento</l>
               <l>les vamos a relatar</l>
-              <l>lo que ocurrió en Gracia</l>
-              <l>a la calle de Malgrát.</l>
+              <l>lo que ocurrió en <name>Gracia</name></l>
+              <l>a la <name>calle de Malgrát</name>.</l>
               <l rend="indent">Se trata de una madre</l>
               <l>que no tiene sangre humana</l>
               <l>quedó viuda con un hijo</l>
               <l>que cinco años contaba.</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">II</head>
               <l rend="indent">Así que se quedó viuda</l>
@@ -891,7 +955,6 @@
               <l>que separarme de tí</l>
               <l>hasta que muera tu bijo.</l>
             </lg>
-
             <lg n="4">
               <head type="titulo_estrofa">IV</head>
               <l rend="indent">Y te juro desde hoy</l>
@@ -903,7 +966,6 @@
               <l>nos echaria de casa</l>
               <l>al momento a la calle.</l>
             </lg>
-
             <lg n="5">
               <head type="titulo_estrofa">V</head>
               <l rend="indent">De cuando ella tenia</l>
@@ -915,7 +977,6 @@
               <l>que una vez muerto su hijo</l>
               <l>que ella todo lo heredaba.</l>
             </lg>
-
             <lg n="6">
               <head type="titulo_estrofa">VI</head>
               <l rend="indent">Se necesita valor</l>
@@ -927,7 +988,6 @@
               <l>al hijo de sus entrañas</l>
               <l>sin compasión ni piedad.</l>
             </lg>
-
             <lg n="7">
               <head type="titulo_estrofa">VII</head>
               <l rend="indent">Sin ningun remordimiento</l>
@@ -939,7 +999,6 @@
               <l>quedando el pobrecito</l>
               <l>más negro que un carbon.</l>
             </lg>
-
             <lg n="8">
               <head type="titulo_estrofa">VIII</head>
               <l rend="indent">Entre los dos lo echaron</l>
@@ -955,7 +1014,6 @@
               <l>que horrrizaba de ver</l>
               <l>aquel pobre inocente.</l>
             </lg>
-
             <lg n="9">
               <head type="titulo_estrofa">IV</head>
               <l rend="indent">Ahora veran ustedes</l>
@@ -967,9 +1025,9 @@
               <l>y delante de su hijo</l>
               <l>cayo alli desmayada.</l>
             </lg>
-
             <lg n="10">
-              <head type="titulo_estrofa"><lb/>X</head>
+              <head type="titulo_estrofa">
+                <lb/>X</head>
               <l rend="indent">Con los papeles que hacia</l>
               <l>nadie hubiera creido</l>
               <l>que ella fuese la causante</l>
@@ -979,9 +1037,9 @@
               <l>por hacerle la auptosia</l>
               <l>por orden de la justicia</l>
             </lg>
-
             <lg n="11">
-              <head type="titulo_estrofa"><lb/>XI</head>
+              <head type="titulo_estrofa">
+                <lb/>XI</head>
               <l rend="indent">Dijo el medico al verle</l>
               <l>que ya lo habian muerto</l>
               <l>antes de echarle en el pozo</l>
@@ -991,7 +1049,6 @@
               <l>a su madre y el querido</l>
               <l>pronto les echaron mano</l>
             </lg>
-
             <lg n="12">
               <head type="titulo_estrofa">XII</head>
               <l rend="indent">En aquel mismo momento</l>
@@ -1008,69 +1065,72 @@
               <l>los llevaron a la carcel.</l>
             </lg>
           </div>
-
           <div n="2">
+
             <pb n="3" source="Varios_053_3.jpg" facs="varios/Varios_053_3.jpg"/>
 
-            <head type="primer_titulo" rend="negrita"><lb/>Crímen espantoso<lb/>Una mujer apuñalada
+            <head type="primer_titulo" rend="negrita">
+              <lb/>Crímen espantoso<lb/>Una mujer apuñalada
               por su amante<lb/>en Miramar. (Montjuicht)Barcelona.</head>
-
-            <p rend="indent"><lb/>El hecho causó gran emoción entre los vecinos de la barriada de
+            <p rend="indent">
+              <lb/>El hecho causó gran emoción entre los vecinos de la barriada de
               Casa<lb/>Antúnez.</p>
-
-            <p rend="indent"><lb/>La mujer representaba una edad de veintitrés años, siendo su aspecto<lb/>de una
+            <p rend="indent">
+              <lb/>La mujer representaba una edad de veintitrés años, siendo su aspecto<lb/>de una
               mujer de vida alegre.</p>
-
-            <p rend="indent"><lb/>Al principio el suceso apareció rodeado de misterio</p>
-
-            <p rend="indent"><lb/>Según circuló la vercíón del crimen acudieron al lugar donde yacía,<lb/>la
+            <p rend="indent">
+              <lb/>Al principio el suceso apareció rodeado de misterio</p>
+            <p rend="indent">
+              <lb/>Según circuló la vercíón del crimen acudieron al lugar donde yacía,<lb/>la
               infeliz mujer buen número de coriosos.</p>
 
             <pb n="4" source="Varios_053_4.jpg" facs="varios/Varios_053_4.jpg"/>
 
-            <p rend="indent"><lb/>Varios de éstos reconocieron en la muerta a una ramera, muy popular<lb/>por el
+            <p rend="indent">
+              <lb/>Varios de éstos reconocieron en la muerta a una ramera, muy popular<lb/>por el
               remoquete de «La Chata».</p>
-
-            <p rend="indent"><lb/>En seguida se dió cuenta del hecho a la policia quien a su vez avisó
+            <p rend="indent">
+              <lb/>En seguida se dió cuenta del hecho a la policia quien a su vez avisó
               al<lb/>Juzgado de guardia.</p>
-
-            <p rend="indent"><lb/>Practicadas las primeras diligencias, se ordenó el levantamiento
+            <p rend="indent">
+              <lb/>Practicadas las primeras diligencias, se ordenó el levantamiento
               del<lb/>cadáver, que fue conducido al Hospital Clínieo.</p>
-
-            <p rend="indent"><lb/>Por referencias de algunasamigas de la interfacta, se vino én sos-<lb/>pecha de
+            <p rend="indent">
+              <lb/>Por referencias de algunasamigas de la interfacta, se vino én sos-<lb/>pecha de
               que en el crimen pudiera hallarse complicado un sujeto de malos<lb/>antecedentes,
               conocido por Luis «El Francés.</p>
-
             <div>
-              <head type="subtitulo_parte" rend="negrita"><lb/>¿El verdadero autor?</head>
-
-              <p rend="indent"><lb/>Ayer mañana el Juzgado de guardia entrego las diligencias del<lb/>crimen al
+              <head type="subtitulo_parte" rend="negrita">
+                <lb/>¿El verdadero autor?</head>
+              <p rend="indent">
+                <lb/>Ayer mañana el Juzgado de guardia entrego las diligencias del<lb/>crimen al
                 Juzgado del Sur, continuando las indagaciones con gran acti-<lb/>vidad para der con
                 el verdadero culpable del heoho de antos. <lb/>El crimen podia clasificarse entre
                 las hazañas de la gente del hampa.</p>
-
-              <p rend="indent"><lb/>Luis, «El Francés» era el amante de «La Chata», a quien explotaba<lb/>a cambio
+              <p rend="indent">
+                <lb/>Luis, «El Francés» era el amante de «La Chata», a quien explotaba<lb/>a cambio
                 de relaciones amorosas.</p>
-
-              <p rend="indent"><lb/>Por lo visto, antenoche Luis arreció en sus peticiones de dinero, sien-<lb/>do
+              <p rend="indent">
+                <lb/>Por lo visto, antenoche Luis arreció en sus peticiones de dinero, sien-<lb/>do
                 desoido, por su amante quien se negó terminantemente a seguir satis-<lb/>faciendo
                 los caprichos y peticiones de aquel.</p>
-
-              <p rend="indent"><lb/>Los dos protogonistas debieron disputar con alguna violencia, hasta<lb/>que
+              <p rend="indent">
+                <lb/>Los dos protogonistas debieron disputar con alguna violencia, hasta<lb/>que
                 «El Francés» exacerbado por la actitud de «La Chata», infirió a ésta<lb/>las
                 distintas heridas que le ocasionaron su muerte.</p>
-
-              <p rend="indent"><lb/>Pocas horas después el asesino se presentó a una compañera de la
+              <p rend="indent">
+                <lb/>Pocas horas después el asesino se presentó a una compañera de la
                 víc-<lb/>tima, pidiendole dos pesetas y diciendole:<lb/>—Ahora le acabo de cortar la
                 cara a la «La Chata».</p>
-
-              <p rend="indent"><lb/>Enterada de este incidente la policia, procedió a la busca y captura<lb/>del
+              <p rend="indent">
+                <lb/>Enterada de este incidente la policia, procedió a la busca y captura<lb/>del
                 delincuente.</p>
             </div>
-
             <div>
-              <head type="subtitulo_parte" rend="negrita"><lb/>Detención del criminal</head>
-              <p rend="indent"><lb/>En Badalona junto con dos bandidos más prendieron al crimial al mo <lb/>mento
+              <head type="subtitulo_parte" rend="negrita">
+                <lb/>Detención del criminal</head>
+              <p rend="indent">
+                <lb/>En Badalona junto con dos bandidos más prendieron al crimial al mo <lb/>mento
                 de haber hecho un robo, comvicto y confeso del crimen que hizo <lb/>el Sr. Juez de
                 Badalona con se especial avilidad supo hacerle cantar de <lb/>plano toda la relación
                 del crimen y desde luego confesarse autor del <lb/>crimen siendo esta persona de
@@ -1078,9 +1138,9 @@
                 inmediatamente hasta esperar la pena que <lb/>le pertenece. </p>
             </div>
           </div>
-
           <div type="colofon">
-            <p><lb/>Imp. Aldaua, 12 — BARCELONA</p>
+            <p>
+              <lb/>Imp. Aldaua, 12 — BARCELONA</p>
           </div>
         </div>
       </div>

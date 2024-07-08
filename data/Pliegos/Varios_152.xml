@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -71,7 +85,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +113,86 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1769060">
+            <placeName key="Morales_de_Rey">Morales De Rey</placeName>
+            <location>
+              <geo>42.067814 -5.7856032</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8717">
+            <placeName key="Sevilla">Sevilla</placeName>
+            <location>
+              <geo>37.383333333333 -5.9833333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5705">
+            <placeName key="Cataluña">Cataluña</placeName>
+            <location>
+              <geo>41.8375 1.53777777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15487">
+            <placeName key="Berga">Berga</placeName>
+            <location>
+              <geo>42.1 1.8455555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q12246">
+            <placeName key="Huelva">Huelva</placeName>
+            <location>
+              <geo>37.25 -6.95</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q14328">
+            <placeName key="Santa_Cruz_de_Tenerife">Santa Cruz De Tenerife</placeName>
+            <location>
+              <geo>28.466666666667 -16.25</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1563">
+            <placeName key="La_Habana">La Habana</placeName>
+            <location>
+              <geo>23.136666666667 -82.358888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q96">
+            <placeName key="México">México</placeName>
+            <location>
+              <geo>23 -102</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q9067020">
+            <placeName key="Real_Audiencia_de_los_Grados_de_Sevilla">Real Audiencia De Los Grados De Sevilla</placeName>
+            <location>
+              <geo>37.38900731 -5.993716574</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q19829172">
+            <placeName key="Pedrajas">Pedrajas</placeName>
+            <location>
+              <geo>41.826748 -2.576328</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,8 +228,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-03-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-03-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1572,16 +1666,22 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_152_1.jpg" facs="varios/Varios_152_1.jpg"/>
+
           <fw type="impresorNum">(Núm. 52.)</fw>
-
-          <head type="primer_titulo"><lb/>DON RODULFO DE PEDRAJAS.</head>
-          <head type="subtitulo"><lb/><hi rend="negrita">NUEVA RELACION,</hi><lb/><hi rend="cursiva">en que se da cuenta de los valerosos hechos y aventuras que le sucedieron<lb/>á este
-              caballero y cómo S. M. le premió por sus distinguidas hazañas.</hi></head>
-
+          <head type="primer_titulo">
+            <lb/>DON RODULFO DE PEDRAJAS.</head>
+          <head type="subtitulo">
+            <lb/>
+            <hi rend="negrita">NUEVA RELACION,</hi>
+            <lb/>
+            <hi rend="cursiva">en que se da cuenta de los valerosos hechos y aventuras que le sucedieron<lb/>á este
+              caballero y cómo S. M. le premió por sus distinguidas hazañas.</hi>
+          </head>
           <div n="1" type="parte">
-            <head type="titulo_parte"><lb/>PRIMERA PARTE.</head>
-
+            <head type="titulo_parte">
+              <lb/>PRIMERA PARTE.</head>
             <l rend="indent">Todo bandido se esconda,</l>
             <l>no manifieste la charpa,</l>
             <l>á vista de mis arrojos</l>
@@ -1600,8 +1700,8 @@
             <l>es dar lauros á la fama.</l>
             <l>Y por que sepan quién soy,</l>
             <l>mi nacimiento y crianza,</l>
-            <l>nací en Morales del Rey,</l>
-            <l>yo, Rodulfo de Pedrajas,</l>
+            <l>nací en <name>Morales del Rey</name>,</l>
+            <l>yo, Rodulfo de <name>Pedrajas</name>,</l>
             <l>que el astro de mi fortuna</l>
             <l>me señalo letrus y armas.</l>
             <l>Llegué á cumplir veinte años,</l>
@@ -1639,7 +1739,7 @@
             <l>de pólvora y de barajas.</l>
             <l>A los presos los liberto</l>
             <l>y socorro al que me llama.</l>
-            <l>Dígalo si no Sevilla,</l>
+            <l>Dígalo si no <name>Sevilla</name>,</l>
             <l>cuando un jueves de mañana</l>
             <l>iban á ahorcar á un hombre,</l>
             <l>y compasivas lloraban</l>
@@ -1681,7 +1781,7 @@
             <l>despejé toda la plaza,</l>
             <l>donde hice doce muertos,</l>
             <l>otros las piernas quebrada;</l>
-            <l>meti al reo en San Francisco,</l>
+            <l>meti al reo en <name>San Francisco</name>,</l>
             <l>sin que nadie lo estorbara.</l>
             <l>Y caminando á mi tierra,</l>
             <l>hallé mi casa cercada</l>
@@ -1717,8 +1817,8 @@
             <l>Y sin temer mi desgracia,</l>
             <l>en un ligero caballo,</l>
             <l>cual águila que volaba,</l>
-            <l>llegué á los montes de Berga,</l>
-            <l>y el Marqués de Huelva pasa</l>
+            <l>llegué á los montes de <name>Berga</name>,</l>
+            <l>y el Marqués de <name>Huelva</name> pasa</l>
             <l>con su esposa y sus dos hijas,</l>
             <l>mayordomos y criadas:</l>
             <l>salieron ocho ladrones,</l>
@@ -1771,10 +1871,9 @@
             <l>y acabaré en la segunda</l>
             <l>de referir sus hazañas.</l>
           </div>
-
           <div n="2" type="parte">
-            <head type="titulo_parte" rend="negrita"><lb/>SEGUNDA PARTE.</head>
-
+            <head type="titulo_parte" rend="negrita">
+              <lb/>SEGUNDA PARTE.</head>
             <l rend="indent">Dije en la primera parte,</l>
             <l>como libres se quedaban,</l>
             <l>y al marqués le supliqué</l>
@@ -1856,7 +1955,7 @@
             <l>y con sogas los amarran;</l>
             <l>y antes que fuera de dia</l>
             <l>tomamos la caminata</l>
-            <l>de vuelta á Barcelona,</l>
+            <l>de vuelta á <name>Barcelona</name>,</l>
             <l>y un soldado se adelanta,</l>
             <l>diciendo al gobernador:</l>
             <l>«desde que España es España,</l>
@@ -1902,7 +2001,7 @@
             <l>y el gobernador, me abrazan;</l>
             <l>y luego al siguiente dia</l>
             <l>se dispuso la jornada</l>
-            <l>á la corte de Madrid,</l>
+            <l>á la corte de <name>Madrid</name>,</l>
             <l>á contarle las hazañas</l>
             <l>de mi valor invencible</l>
             <l>al Católico Monarca</l>
@@ -1910,12 +2009,12 @@
             <l>y asi que llegué á la sala,</l>
             <l>hincandome de rodillas,</l>
             <l>me preguntó por mi pátria.</l>
-            <l>—Soy de Morales del Rey,</l>
+            <l>—Soy de <name>Morales del Rey</name>,</l>
             <l>y venero vuestras plantas.</l>
             <l>Generoso me responde:</l>
-            <l>ya es Morales de Pedrajas,</l>
-            <l>y marqués de Santa Cruz,</l>
-            <l>conde insigne de la Habana,</l>
+            <l>ya es Morales de <name>Pedrajas</name>,</l>
+            <l>y marqués de <name>Santa Cruz</name>,</l>
+            <l>conde insigne de la <name>Habana</name>,</l>
             <l>de Méjico grán Virey,</l>
             <l>y general de las armas,</l>
             <l>caballero cómandante.</l>
@@ -1936,9 +2035,9 @@
             <l>pide perdon de sus fallas.</l>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.— Despacho: Sucesores de Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID.— Despacho: Sucesores de Hernando, Arenal, 11.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve">Las tres canciones nuevas</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_268.xml">Varios_268</ref></p>
+            <p>Otra impresión: <ref target="Varios_268.xml">Varios_268</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Juan Bautista Vidal</publisher>
@@ -73,7 +88,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +115,32 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q21">
+            <placeName key="Inglaterra">Inglaterra</placeName>
+            <location>
+              <geo>53 -1</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q45">
+            <placeName key="Portugal">Portugal</placeName>
+            <location>
+              <geo>38.7 -9.1833333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5818">
+            <placeName key="Córdoba">Córdoba</placeName>
+            <location>
+              <geo>37.883333333333 -4.7666666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1410">
+            <placeName key="Gibraltar">Gibraltar</placeName>
+            <location>
+              <geo>36.14 -5.35</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -134,8 +176,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-06-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-06-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -993,15 +1034,18 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_076_1.jpg" facs="varios/Varios_076_1.jpg"/>
 
           <fw type="numeroPliego">(Núm. 37).</fw>
-          
-          <head type="primer_titulo"><lb/>LAS TRES CANCIONES NUEVAS:<lb/><hi rend="negrita">EL
-              PRISIONERO, EL CONTRABANDISTA Y EL VOLCAN.</hi></head>
-
+          <head type="primer_titulo">
+            <lb/>LAS TRES CANCIONES NUEVAS:<lb/>
+            <hi rend="negrita">EL
+              PRISIONERO, EL CONTRABANDISTA Y EL VOLCAN.</hi>
+          </head>
           <div n="1">
-            <head type="titulo_cancion"><lb/>EL PRISIONERO.</head>
+            <head type="titulo_cancion">
+              <lb/>EL PRISIONERO.</head>
             <lg>
               <l>1.ª Prisionero triste y solo</l>
               <l>aquí me pongo á llorar,</l>
@@ -1010,7 +1054,9 @@
             </lg>
             <lg>
               <head type="titulo_estrofa">CORO.</head>
-              <l rend="indent"><hi rend="cursiva">¡Ay tirana suerte mia!</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">¡Ay tirana suerte mia!</hi>
+              </l>
               <l rend="cursiva">¿ Hasta cuando has de durar?</l>
             </lg>
             <lg>
@@ -1018,7 +1064,9 @@
               <l>para poder pasear,</l>
               <l>y un momento imprevisto</l>
               <l>me quedé sin libertad.</l>
-              <l rend="indent"><hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>3.ª Centinela de mi vista,</l>
@@ -1028,53 +1076,65 @@
 
               <l>esta si que es mayor pena,</l>
               <l>que es oir, ver y callar.</l>
-              <l rend="indent"><hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>4.ª Viéndome sin libertad</l>
               <l>cai por fin desmayado,</l>
               <l>de un centinela guardado</l>
               <l>para mi pena doblar.</l>
-              <l rend="indent"><hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>5.ª Preso y cargado de hierro</l>
               <l>me ven de esta manera,</l>
               <l>con los huesos tan podridos</l>
               <l>de la humedad de la tierra.</l>
-              <l rend="indent"><hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>6.ª Las rejas del calabozo</l>
               <l>todas bañadas están,</l>
               <l>con lágrimas de mis ojos</l>
               <l>sin poderlo remediar.</l>
-              <l rend="indent"><hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>7.ª Las rejas y calabozo</l>
               <l>de mi no tienen piedad,</l>
               <l>que han de hacer mis tristes ojos</l>
               <l>nada más sinó llorar.</l>
-              <l rend="indent"><hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>8.ª Me despido hermoso cielo</l>
               <l>de tu hermosa claredad;</l>
               <l>y mi amante me concede</l>
               <l>amor, patria y libertad.</l>
-              <l rend="indent"><hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">¡Ay tirana suerte mia! etc.</hi>
+              </l>
             </lg>
             <trailer>FIN.</trailer>
           </div>
-
           <div n="2">
-            <head type="titulo_cancion"><lb/>EL CONTRABANDISTA.</head>
+            <head type="titulo_cancion">
+              <lb/>EL CONTRABANDISTA.</head>
             <lg>
               <l>1.ª Ciudadano soy del campo</l>
               <l>contrabandista en mi tierra</l>
-              <l>paso género á lnglaterra</l>
-              <l>y tabaco en Portugal</l>
+              <l>paso género á <name>lnglaterra</name></l>
+              <l>y tabaco en <name>Portugal</name></l>
               <l>porque no temo á los hombres</l>
               <l>ni aunque fuera á la ronda</l>
               <l>de una legu a á la redonda</l>
@@ -1085,7 +1145,9 @@
 
             <lg>
               <head type="titulo_estrofa">CORO.</head>
-              <l rend="indent"><hi rend="cursiva">Es la onza para el libre</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">Es la onza para el libre</hi>
+              </l>
               <l rend="cursiva">y la muerte despreciar</l>
               <l rend="cursiva">á la ley de sus contrarios,</l>
               <l rend="cursiva">soberanos proclamar.</l>
@@ -1099,7 +1161,9 @@
               <l>la paso sin mas zozobra</l>
               <l>y á mi potrito le digo</l>
               <l>huye que viene la ronda.</l>
-              <l rend="indent"><hi rend="cursiva">Es la onza para el libre etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">Es la onza para el libre etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>3.ª Desde la costa á los montes</l>
@@ -1110,7 +1174,9 @@
               <l>á perturbarme el camino</l>
               <l>yo al punto lo espavilo</l>
               <l>aunque sea el mas feroz...</l>
-              <l rend="indent"><hi rend="cursiva">Es la onza para el libre etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">Es la onza para el libre etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>4.ª Son las estrellas mi guia</l>
@@ -1121,29 +1187,35 @@
               <l>como el rey en su palacio</l>
               <l>sin temor de que me pillen</l>
               <l>la justicia ni el resguardo.</l>
-              <l rend="indent"><hi rend="cursiva">Es la onza para el libre etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">Es la onza para el libre etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>5.ª Los montes son mis palacios;</l>
               <l>por compañas las botellas</l>
               <l>para amigas las estrellas</l>
-              <l>para riqueza Gibraltar,</l>
+              <l>para riqueza <name>Gibraltar</name>,</l>
               <l>porque me rio de hombres</l>
               <l>como de leyes me rio</l>
               <l>yo á nadie he obedecido</l>
               <l>porque todo es mi lugar..</l>
-              <l rend="indent"><hi rend="cursiva">Es la onza para el libre etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">Es la onza para el libre etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>6.ª El moro me dá el tesoro</l>
               <l>de las piedras mas preciosas</l>
               <l>el inglés me dá otras cosas</l>
               <l>tan buenas como el francés;</l>
-              <l>Portugal me dá despues</l>
+              <l><name>Portugal</name> me dá despues</l>
               <l>la proteccion en entrar</l>
               <l>y si quiero descargar</l>
               <l>todo lo vendo muy bien...</l>
-              <l rend="indent"><hi rend="cursiva">Es la onza para el libre etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">Es la onza para el libre etc.</hi>
+              </l>
             </lg>
             <lg>
               <l>7.ª Cuando diviso las costas</l>
@@ -1154,10 +1226,12 @@
               <l>no temer que no hay cuidado</l>
               <l>soy solo y el que se arrima</l>
               <l>lo parto de un trabucazo.</l>
-              <l rend="indent"><hi rend="cursiva">Es la onza para el libre etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">Es la onza para el libre etc.</hi>
+              </l>
             </lg>
             <lg>
-              <l>8.ª Portugal me dá tabaco</l>
+              <l>8.ª <name>Portugal</name> me dá tabaco</l>
               <l>y pedrerias el moro</l>
               <l>el inglés me dá un tesoro</l>
               <l>pero en trapos de algodon:</l>
@@ -1165,16 +1239,18 @@
               <l>pero mezeladas con oro</l>
               <l>mas que el inglés y el moro</l>
               <l>viva siempre el ESPAÑOL.</l>
-              <l rend="indent"><hi rend="cursiva">Es la onza para el libre etc.</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">Es la onza para el libre etc.</hi>
+              </l>
             </lg>
             <trailer>FIN.</trailer>
           </div>
-
           <div n="3">
+
             <pb n="4" source="Varios_076_4.jpg" facs="varios/Varios_076_4.jpg"/>
 
-            <head type="titulo_cancion" rend="negrita"><lb/>EL VOLCAN</head>
-
+            <head type="titulo_cancion" rend="negrita">
+              <lb/>EL VOLCAN</head>
             <lg>
               <l rend="indent">Cual volcan que mil llamas arroja</l>
               <l>y despide centellas al viento</l>
@@ -1258,9 +1334,9 @@
             <trailer>FIN.</trailer>
           </div>
         </div>
-
         <div type="colofon">
-          <p><lb/>Reus: Establecimiento de Juan Bautista Vidal, Arrabal alto de Jesús, núm. 5.</p>
+          <p>
+            <lb/>Reus: Establecimiento de Juan Bautista Vidal, Arrabal alto de Jesús, núm. 5.</p>
         </div>
       </div>
     </body>

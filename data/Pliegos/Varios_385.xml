@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -68,7 +82,8 @@
                   <dim>in-4</dim>
                   <material subtype="verde"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +114,114 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="6" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q90">
+            <placeName key="París">París</placeName>
+            <location>
+              <geo>48.8566666666667 2.35222222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q84">
+            <placeName key="Londres">Londres</placeName>
+            <location>
+              <geo>51.507222222222 -0.1275</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q3354707">
+            <placeName key="Monasterio_de_Jonqueres">Monasterio De Jonqueres</placeName>
+            <location>
+              <geo>41.38773 2.1742</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q13922">
+            <placeName key="Sardañola_del_Vallés">Sardañola Del Vallés</placeName>
+            <location>
+              <geo>41.491944444444 2.1388888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q19848811">
+            <placeName key="calle_de_la_Princesa">Calle De La Princesa</placeName>
+            <location>
+              <geo>41.385619444444 2.1808138888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q720994">
+            <placeName key="Barrio_de_Sant_Antoni">Barrio De Sant Antoni</placeName>
+            <location>
+              <geo>41.37801 2.15949</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8255466">
+            <placeName key="Calle_Montcada">Calle Montcada</placeName>
+            <location>
+              <geo>41.385 2.180833</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q850593">
+            <placeName key="La_Rambla">La Rambla</placeName>
+            <location>
+              <geo>41.381389 2.173056</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15225338">
+            <placeName key="Horta">Horta</placeName>
+            <location>
+              <geo>41.42950278 2.1601</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15623">
+            <placeName key="Martorell">Martorell</placeName>
+            <location>
+              <geo>41.47444 1.930537</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q17154">
+            <placeName key="Barrio_Gótico">Barrio Gótico</placeName>
+            <location>
+              <geo>41.382777777778 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1798216">
+            <placeName key="Palacio_de_la_Virreina">Palacio De La Virreina</placeName>
+            <location>
+              <geo>41.38236 2.17159</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q250935">
+            <placeName key="Sant_Martí">Sant Martí</placeName>
+            <location>
+              <geo>41.417863888889 2.1986805555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q3447905">
+            <placeName key="Calle_de_Ferran">Calle De Ferran</placeName>
+            <location>
+              <geo>41.381536 2.175686</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q4504596">
+            <placeName key="iglesia_de_Belén_Barcelona">Iglesia De Belén (Barcelona)</placeName>
+            <location>
+              <geo>41.383092 2.171248</geo>
+            </location>
+          </place>
+          <place n="2">
+            <placeName key="Puerta_Nueva">Puerta Nueva</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -134,8 +257,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1411,14 +1533,17 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_385_1.jpg" facs="varios/Varios_385_1.jpg"/>
+
         <div>
           <head type="primer_titulo">
-            <hi rend="negrita"><lb/>RELACION VERIDICA <lb/>DE LA GRAN CATÁSTROFE <lb/>POR LA
+            <hi rend="negrita">
+              <lb/>RELACION VERIDICA <lb/>DE LA GRAN CATÁSTROFE <lb/>POR LA
               INUNDACION DE LA CIUDAD DE BARCELONA,</hi>
-            <lb/><hi rend="cursiva">ocurrida en la mañana del dia 15 de setiembre de 1862.</hi>
+            <lb/>
+            <hi rend="cursiva">ocurrida en la mañana del dia 15 de setiembre de 1862.</hi>
           </head>
-
           <lg>
             <l rend="indent">Triste y conturbado el pecho,</l>
             <l>llena de dolor el alma,</l>
@@ -1436,7 +1561,6 @@
             <pb n="2" source="Varios_385_2.jpg" facs="varios/Varios_385_2.jpg"/>
 
             <fw type="paginaNum">— 2 —</fw>
-
             <l>y omisiones en que incurra</l>
             <l>quien en un papel relata</l>
             <l>lo que ha visto por sus ojos</l>
@@ -1455,7 +1579,7 @@
             <l>ser tenido por machaca.</l>
           </lg>
           <lg>
-            <l>En la rica Barcelona,</l>
+            <l>En la rica <name>Barcelona</name>,</l>
             <l>primera ciudad de España,</l>
             <l>por industria y por comercio</l>
             <l>hoy como antes afamada,</l>
@@ -1504,7 +1628,7 @@
             <l>Cesa casi por completo</l>
             <l>á las diez de la mañana,</l>
             <l>cuando un caudaloso rio</l>
-            <l>precipitase en la Rambla</l>
+            <l>precipitase en la <name>Rambla</name></l>
             <l>de repente, y arrastrando</l>
             <l>cuanto á su paso encontraba</l>
             <l>vigas, carros y personas,</l>
@@ -1515,7 +1639,7 @@
             <l rend="cursiva">Lo que bombas no alcanzaran</l>
             <l rend="cursiva">en tus contiendas civiles,</l>
             <l rend="cursiva">lo alcanzaron fieras aguas.</l>
-            <l rend="cursiva">De hoy mas quien busque á Barcino !</l>
+            <l rend="cursiva">De hoy mas quien busque á <name>Barcino</name> !</l>
             <l rend="cursiva">la hallará solo en el mapa!</l>
           </lg>
           <lg>
@@ -1530,7 +1654,7 @@
             <l>no son para nuestra pluma;</l>
             <l>es para ello mal cortada.</l>
             <l rend="indent">Para el anhelado ensanche</l>
-            <l>que á Barcino ha de dar fama.</l>
+            <l>que á <name>Barcino</name> ha de dar fama.</l>
             <l>que con París y con Lóndres</l>
             <l>debe al menos nivelarla,</l>
             <l>con universal aplauso</l>
@@ -1541,11 +1665,11 @@
             <l>que una plaza sitiaban.</l>
             <l rend="indent">Pues el arte de Belona</l>
             <l>al mostrar la ineficacia</l>
-            <l>de los muros, dió á Barcino</l>
+            <l>de los muros, dió á <name>Barcino</name></l>
             <l>el espacio que anhelaba,</l>
             <l>Efecto de aquella lluvia</l>
             <l>tan copiosa, las montañas</l>
-            <l>que circuyen Barcelona,</l>
+            <l>que circuyen <name>Barcelona</name>,</l>
             <l>por torrentes desbordadas</l>
             <l>á la llanura lanzaron</l>
             <l>con furor sin par las aguas.</l>
@@ -1557,8 +1681,8 @@
             <l>aguas, aguas y mis uguas</l>
 
             <pb n="3" source="Varios_385_3.jpg" facs="varios/Varios_385_3.jpg"/>
-            <fw type="paginaNum">— 3 —</fw>
 
+            <fw type="paginaNum">— 3 —</fw>
             <l>y á medida que se juntan</l>
             <l>todo en pos de sí lo arrastran,</l>
             <l>hasta que por fin rompiendo</l>
@@ -1566,7 +1690,7 @@
             <l>sin hallar dique á su embate,</l>
             <l>cuanto por do quier alcanza</l>
             <l>lo destruye y lo aniquila</l>
-            <l>y se emboca por la Rambla</l>
+            <l>y se emboca por la <name>Rambla</name></l>
             <l>en un caudaloso rio</l>
             <l>en un santiamen trocada.</l>
             <l>Por todas sus boca-calles</l>
@@ -1611,9 +1735,9 @@
             <l>todo cuanto hay en la plaza</l>
             <l>se desprende de su sitio.</l>
             <l>Allí descargando estaba,</l>
-            <l>frente á la Vireina, un carro</l>
+            <l>frente á la <name>Vireina</name>, un carro</l>
             <l>y el empuje de las aguas</l>
-            <l>Rambla abajo lo llevaron.</l>
+            <l><name>Rambla</name> abajo lo llevaron.</l>
             <l>Del Hospital en la calle</l>
             <l>la corriente se adelanta</l>
             <l>con una rapidez suma,</l>
@@ -1646,10 +1770,10 @@
             <l>puesto se llevaba trazas</l>
             <l>de hallarse á la fin del mundo</l>
             <l>tantas veces anunciada.</l>
-            <l>En la calle de Fernando</l>
+            <l>En la <name>calle de Fernando</name></l>
             <l>entró la corriente ufana,</l>
             <l>y en aquellas ricas tiendas</l>
-            <l>que son de Barcino gala</l>
+            <l>que son de <name>Barcino</name> gala</l>
             <l>produciendo en los vecinos</l>
             <l>sustos, ayes, y la alarma</l>
             <l>y el temor y los destrozos</l>
@@ -1669,33 +1793,32 @@
             <l>en aquella rica calle</l>
             <l>al comercio dedicada.</l>
             <l>Mientras esto sucedia</l>
-            <l>por la parte de la Rambla,</l>
+            <l>por la parte de la <name>Rambla</name>,</l>
             <l>del Bogatell la riera,</l>
             <l>imitando á sus hermanas,</l>
             <l>salvó su cáuce ordinario</l>
             <l>y entró fiera, desbandada,</l>
-            <l>por junto á la Puerta Nueva</l>
+            <l>por junto á la <name>Puerta Nueva</name></l>
             <l>invadiendo bruscamente</l>
-            <l>calle de Tantarantana,</l>
-            <l>Puerta Nueva y demás calles</l>
+            <l><name>calle de Tantarantana</name>,</l>
+            <l><name><name>Puerta Nueva</name> </name>y demás calles</l>
             <l>que lindan con las nombradas.</l>
 
             <pb n="4" source="Varios_385_4.jpg" facs="varios/Varios_385_4.jpg"/>
-            
-            <fw type="paginaNum">— 4 —</fw>
 
-            <l>La calle de la Princesa,</l>
-            <l>igual que la de Moncada,</l>
+            <fw type="paginaNum">— 4 —</fw>
+            <l>La <name>calle de la Princesa</name>,</l>
+            <l>igual que la de <name>Moncada</name>,</l>
             <l>sufrieron como las otras</l>
             <l>toda suerte de desgracias.</l>
-            <l>Por la parte de Junqueras</l>
+            <l>Por la parte de <name>Junqueras</name></l>
             <l>penetro tambien el agua,</l>
             <l>y por la ex-puerta del Angel</l>
-            <l>á la plaza de Santa Ana</l>
-            <l>siguió la calle del Pino,</l>
+            <l>á la <name>plaza de Santa Ana</name></l>
+            <l>siguió la <name>calle del Pino</name>,</l>
             <l>por cuya Riera embocaba</l>
             <l>abundante, roja y fiera</l>
-            <l>la que entraba por la Rambla.</l>
+            <l>la que entraba por la <name>Rambla</name>.</l>
             <l>Fué mayor alli el peligro,</l>
             <l>pues la altura de las aguas</l>
             <l>era tal, que solo á nado</l>
@@ -1706,8 +1829,8 @@
             <l>que en aquel punto arreciara.</l>
             <l>Por fortuna son muy pocas</l>
             <l>las personas anegadas</l>
-            <l>aquí dentro Barcelona:</l>
-            <l>solo un jóven en la Rambla</l>
+            <l>aquí dentro <name>Barcelona</name>:</l>
+            <l>solo un jóven en la <name>Rambla</name></l>
             <l>pereció al introducirse</l>
             <l>en una casa inundada.</l>
             <l>Como tan tristes recuerdos</l>
@@ -1722,25 +1845,27 @@
             <l>mas ó menos desgraciadas</l>
             <l>de aquella tormenta horrible.</l>
             <l>San Gervasio, Sans y Gracia,</l>
-            <l>Martorell y Serdañola</l>
+            <l><name>Martorell</name> y <name>Serdañola</name></l>
             <l>ven sus tierras anegadas:</l>
-            <l>Horta, San Martin y otras</l>
+            <l><name>Horta</name>, <name>San Martin</name> y otras</l>
             <l>poblaciones son trocadas</l>
             <l>en lagunas pantanosas</l>
             <l>por aquellas turbias aguas.</l>
             <l>La catástrofe es tan grande,</l>
             <l>tan inmensa la desgracia,</l>
-            <l>que en la historia de Barcino</l>
+            <l>que en la historia de <name>Barcino</name></l>
             <l>quedará muy renombrada</l>
             <l>como de las mas terribles</l>
             <l>que se leen en sus páginas.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Se halla de venta en casa de Antonio Bosch, calle del Bou de la plaza Nueva, núm.
+          <p>
+            <lb/>Se halla de venta en casa de Antonio Bosch, calle del Bou de la plaza Nueva, núm.
             3. Barcelona.</p>
-          <p><lb/><hi rend="cursiva">Barcelona.—Impr. de Narciso Ramirez, calle de Escudillers, 40, piso principal,</hi>—1862.</p>
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona.—Impr. de Narciso Ramirez, calle de Escudillers, 40, piso principal,</hi>—1862.</p>
         </div>
       </div>
     </body>

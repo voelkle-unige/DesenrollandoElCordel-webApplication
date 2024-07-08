@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -93,6 +108,62 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="3" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q844209">
+            <placeName key="La_Mancha">La Mancha</placeName>
+            <location>
+              <geo>39.4011 -3.015</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8818">
+            <placeName key="Valencia">Valencia</placeName>
+            <location>
+              <geo>39.47 -0.376388888888889</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q4018">
+            <placeName key="Navarra">Navarra</placeName>
+            <location>
+              <geo>42.816666666667 -1.65</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q21">
+            <placeName key="Inglaterra">Inglaterra</placeName>
+            <location>
+              <geo>53 -1</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q241">
+            <placeName key="Cuba">Cuba</placeName>
+            <location>
+              <geo>22 -79.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1563">
+            <placeName key="La_Habana">La Habana</placeName>
+            <location>
+              <geo>23.136666666667 -82.358888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1947581">
+            <placeName key="Castilla_la_Nueva">Castilla La Nueva</placeName>
+            <location>
+              <geo>39.8 -3.05</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -128,8 +199,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-24" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-24" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1287,17 +1357,21 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_293_1.jpg" facs="varios/Varios_293_1.jpg"/>
-        
+
         <fw type="impresorNum">(Núm. 16.)</fw>
-        
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>RELACION<hi rend="cursiva"><lb/>del carácter, genio y condiciones que
-            tienen los habitantes de<lb/>las provincias de España.</hi></head>
-          <head type="subtitulo"><lb/>DECIMAS</head>
-          
+          <head type="primer_titulo" rend="negrita">
+            <lb/>RELACION<hi rend="cursiva">
+              <lb/>del carácter, genio y condiciones que
+            tienen los habitantes de<lb/>las provincias de España.</hi>
+          </head>
+          <head type="subtitulo">
+            <lb/>DECIMAS</head>
           <lg>
-            <head type="titulo_estrofa"><lb/>ESPAÑA.</head>
+            <head type="titulo_estrofa">
+              <lb/>ESPAÑA.</head>
             <l rend="indent">El español es honrado,</l>
             <l>es esforzado y valiente,</l>
             <l>es moderado y prudente,</l>
@@ -1322,12 +1396,13 @@
             <l>es solo el que da su tierra,</l>
             <l>el pan pan, y el vino vino.</l>
           </lg>
-          
+
           <pb n="2" source="Varios_293_2.jpg" facs="varios/Varios_293_2.jpg"/>
-          
+
           <lg>
-            <head type="titulo_estrofa"><lb/>CASTILLA LA NUEVA.</head>
-            <l rend="indent">Castilla la Nueva es</l>
+            <head type="titulo_estrofa">
+              <lb/>CASTILLA LA NUEVA.</head>
+            <l rend="indent"><name>Castilla la Nueva</name> es</l>
             <l>país sano y agradable,</l>
             <l>la gente bastante amable</l>
             <l>aunque afecta al interés;</l>
@@ -1336,10 +1411,11 @@
             <l>harán mucho mas que un Cid</l>
             <l>sin probar jamás el pan,</l>
             <l>si un año con otro dan</l>
-            <l>cebada para Madrid.</l>
+            <l>cebada para <name>Madrid</name>.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>LA ALCARRIA.</head>
+            <head type="titulo_estrofa">
+              <lb/>LA ALCARRIA.</head>
             <l rend="indent">El alcarreño sencillo</l>
             <l>en su modo de vivir,</l>
             <l>no sabe jamás salir</l>
@@ -1352,9 +1428,10 @@
             <l>es un poquito de miel.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>MANCHA.</head>
+            <head type="titulo_estrofa">
+              <lb/>MANCHA.</head>
             <l rend="indent">El que llegue á caminar</l>
-            <l>por la Mancha con frecuencia,</l>
+            <l>por la <name>Mancha</name> con frecuencia,</l>
             <l>le enseñarán, sin falencia,</l>
             <l>la horca antes que el lugar:</l>
             <l>no gustan de trabajar,</l>
@@ -1365,7 +1442,8 @@
             <l>de lo que tiene cualquiera.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>ESTREMADURA.</head>
+            <head type="titulo_estrofa">
+              <lb/>ESTREMADURA.</head>
             <l rend="indent">Espíritu desunido</l>
             <l>domina á los extremeños,</l>
             <l>jamás entran en empeños</l>
@@ -1378,7 +1456,8 @@
             <l>los indios de la nacion.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>ANDALUCIA.</head>
+            <head type="titulo_estrofa">
+              <lb/>ANDALUCIA.</head>
             <l rend="indent">Al andaluz retador,</l>
             <l>y escesivo en ponderar,</l>
             <l>no se les puede negar</l>
@@ -1391,7 +1470,8 @@
             <l>y luego quedan compadres.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>ARAGON.</head>
+            <head type="titulo_estrofa">
+              <lb/>ARAGON.</head>
             <l rend="indent">El aragonés osado</l>
             <l>todas las cosas emprende,</l>
             <l>y con teson las defiende</l>
@@ -1404,7 +1484,8 @@
             <l>su dominio y su memoria.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>CATALUÑA.</head>
+            <head type="titulo_estrofa">
+              <lb/>CATALUÑA.</head>
             <l rend="indent">El catalan bullicioso,</l>
             <l>viajero y navegante,</l>
             <l>mercader y fabricante,</l>
@@ -1416,12 +1497,13 @@
             <l>al fin por arte del diablo</l>
             <l>hace de las piedras panes.</l>
           </lg>
-          
+
           <pb n="3" source="Varios_293_3.jpg" facs="varios/Varios_293_3.jpg"/>
-          
+
           <lg>
-            <head type="titulo_estrofa"><lb/>VALENCIA.</head>
-            <l rend="indent">Valencia, fuera de chanza,</l>
+            <head type="titulo_estrofa">
+              <lb/>VALENCIA.</head>
+            <l rend="indent"><name>Valencia</name>, fuera de chanza,</l>
             <l>que infunde á todos, infiero,</l>
             <l>un espíritu ligero,</l>
             <l>muy dispuesto á la mudanza:</l>
@@ -1433,7 +1515,8 @@
             <l>de gente de regadío.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>MURCIA.</head>
+            <head type="titulo_estrofa">
+              <lb/>MURCIA.</head>
             <l rend="indent">El murciano trabajando</l>
             <l>alegre en su barraquilla,</l>
             <l>al son de la guitarrilla</l>
@@ -1446,7 +1529,8 @@
             <l>y guiar una carreta.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>GALICIA.</head>
+            <head type="titulo_estrofa">
+              <lb/>GALICIA.</head>
             <l rend="indent">No se les puede negar</l>
             <l>á los gallegos más legos,</l>
             <l>que vale por mil gallegos</l>
@@ -1459,7 +1543,8 @@
             <l>menos al lugar de Meco.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>MARAGATOS.</head>
+            <head type="titulo_estrofa">
+              <lb/>MARAGATOS.</head>
             <l rend="indent">Los maragatos bonazos</l>
             <l>no son brutos por un tris,</l>
             <l>pues cualquiera del país</l>
@@ -1472,7 +1557,8 @@
             <l>pero nos dan la camisa.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>LEON.</head>
+            <head type="titulo_estrofa">
+              <lb/>LEON.</head>
             <l rend="indent">El leonés, hombre sano,</l>
             <l>es de ordinario no mas,</l>
             <l>de carácter poco mas</l>
@@ -1485,7 +1571,8 @@
             <l>inflexible en su opinion.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>MONTAÑAS DE SANTANDER.</head>
+            <head type="titulo_estrofa">
+              <lb/>MONTAÑAS DE SANTANDER.</head>
             <l rend="indent">Es del montañés la gloria</l>
             <l>guardar como antigua prenda</l>
             <l>en una pequeña hacienda</l>
@@ -1498,7 +1585,8 @@
             <l>mas cercana de la nieve.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>ASTURIAS.</head>
+            <head type="titulo_estrofa">
+              <lb/>ASTURIAS.</head>
             <l rend="indent">El asturiano cerdoso,</l>
             <l>bajo, rechonzo y cuadrado.</l>
             <l>forcejudo y mal formado,</l>
@@ -1510,9 +1598,9 @@
             <l>y bastante perezoso</l>
             <l>para salir á campaña.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_293_4.jpg" facs="varios/Varios_293_4.jpg"/>
-          
+
           <lg>
             <head type="titulo_estrofa">VIZCAYA.</head>
             <l rend="indent">El vizcaino severo</l>
@@ -1528,7 +1616,7 @@
           </lg>
           <lg>
             <head type="titulo_estrofa">NAVARRA.</head>
-            <l rend="indent">Navarra, en realidad,</l>
+            <l rend="indent"><name>Navarra</name>, en realidad,</l>
             <l>da de sí la gente honrada,</l>
             <l>y aunque es un poco pesada,</l>
             <l>guardan palabra y verdad:</l>
@@ -1555,7 +1643,7 @@
           <lg>
             <head type="titulo_estrofa">MADRID.</head>
             <l rend="indent">Aun las personas más sanas</l>
-            <l>que son en Madrid nacidas,</l>
+            <l>que son en <name>Madrid</name> nacidas,</l>
             <l>tienen que hacer sus comidas</l>
             <l>de pildoras y tisanas!</l>
             <l>diamantes como avellanas,</l>
@@ -1589,14 +1677,14 @@
             <l>su fértil y hermosa tierra;</l>
             <l>y así viene á estar con maña,</l>
             <l>sujeto al rey de España</l>
-            <l>y amigo del de Inglaterra.</l>
+            <l>y amigo del de <name>Inglaterra</name>.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">ISLA DE CUBA.</head>
             <l rend="indent">El indiano, con ardid</l>
             <l>vence mil riesgos, y gana</l>
-            <l>mucho dinero en la Habana</l>
-            <l>para gastarlo en Madrid;</l>
+            <l>mucho dinero en la <name>Habana</name></l>
+            <l>para gastarlo en <name>Madrid</name>;</l>
             <l>él vive en continua lid,</l>
             <l>y su gran manía es</l>
             <l>con todo el afan que ves,</l>
@@ -1605,9 +1693,9 @@
             <l>ó un título de marqués.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.—Despacho: Sucesores de Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID.—Despacho: Sucesores de Hernando, Arenal, 11.</p>
         </div>
       </div>
     </body>

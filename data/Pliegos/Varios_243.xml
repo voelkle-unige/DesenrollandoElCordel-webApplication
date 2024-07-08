@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -31,7 +45,8 @@
             <title type="titulo_breve">El cantor de los amores</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_459.xml">Varios_459</ref></p>
+            <p>Otra impresión: <ref target="Varios_459.xml">Varios_459</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Antonio Llorens</publisher>
@@ -71,7 +86,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -101,6 +117,7 @@
             <acquisition/>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -136,8 +153,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-13" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-13" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -772,18 +788,23 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_243_1.jpg" facs="varios/Varios_243_1.jpg"/>
 
-        <head type="primer_titulo"><lb/>EL<lb/>CANTOR DE LOS AMORES</head>
-        <head type="subtitulo_parte"><lb/>COLECCION DE CANCIONES DE AMOR, DEDICADAS<lb/><hi rend="negrita">Á LAS HERMOSAS</hi><lb/>15</head>
-
+        <head type="primer_titulo">
+          <lb/>EL<lb/>CANTOR DE LOS AMORES</head>
+        <head type="subtitulo_parte">
+          <lb/>COLECCION DE CANCIONES DE AMOR, DEDICADAS<lb/>
+          <hi rend="negrita">Á LAS HERMOSAS</hi>
+          <lb/>15</head>
         <div n="1">
-          <head type="titulo_cancion"><lb/>PENAS DE AMOR</head>
+          <head type="titulo_cancion">
+            <lb/>PENAS DE AMOR</head>
           <notatedMusic type="partitura"/>
 
           <pb n="2" source="Varios_243_2.jpg" facs="varios/Varios_243_2.jpg"/>
-          <notatedMusic type="partitura"/>
 
+          <notatedMusic type="partitura"/>
           <lg>
             <head type="titulo_estrofa" rend="cursiva"> Coro.</head>
             <l rend="indent">Corred, Zagalas.</l>
@@ -810,7 +831,8 @@
             <l rend="indent">Sed, sensibles, niñas bellas,</l>
             <l>No le hagais ya mas sufrir.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Con vosotros vivía la ingrata</l>
             <l>Que robó de su pecho la calma,</l>
@@ -823,7 +845,8 @@
             <l rend="indent">Id, zagalas, id al valle.</l>
             <l>Que sin duda se halla allá.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">El vivia feliz y dichoso</l>
             <l>Con Dorila su prenda adorada,</l>
@@ -836,7 +859,8 @@
             <l rend="indent">Que ella es su amor y su vida,</l>
             <l>Su esperanza y su ilusion.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Marchad pronto, sensibles zagalas,</l>
             <l>Por collados, valles y riberas;</l>
@@ -849,7 +873,8 @@
             <l rend="indent">Volved pronto, zagalejas,</l>
             <l>O muerto le encontraréis.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
           <lg>
             <l rend="indent">Le decís, que su triste Medoro</l>
             <l>La idolatra con fé tierna y pura,</l>
@@ -862,13 +887,17 @@
             <l rend="indent">Decidle, hermosas, se duela</l>
             <l>De su amante por piedad.</l>
           </lg>
-          <p rend="cursiva"><lb/>Coro.</p>
+          <p rend="cursiva">
+            <lb/>Coro.</p>
         </div>
-
         <div n="2">
-          <pb n="4" source="Varios_243_4.jpg" facs="varios/Varios_243_4.jpg"/>
-          <head type="titulo_cancion"><lb/><hi rend="negrita">AMORES DE ALFREDO Y ELVIRA</hi><lb/>¡OH, QUE BELLA!</head>
 
+          <pb n="4" source="Varios_243_4.jpg" facs="varios/Varios_243_4.jpg"/>
+
+          <head type="titulo_cancion">
+            <lb/>
+            <hi rend="negrita">AMORES DE ALFREDO Y ELVIRA</hi>
+            <lb/>¡OH, QUE BELLA!</head>
           <lg>
             <l rend="indent">Tal un jóven</l>
             <l>A su amada</l>
@@ -959,12 +988,13 @@
             <l>Al mirarla</l>
             <l>Se querella.</l>
           </lg>
-          <p><lb/>A.C.</p>
+          <p>
+            <lb/>A.C.</p>
           <p>(<hi rend="cursiva">Es propiedad</hi>).</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona: Imprenta de Antonio Llorens, Palma de Sta. Catalina, n.° 6</p>
+          <p>
+            <lb/>Barcelona: Imprenta de Antonio Llorens, Palma de Sta. Catalina, n.° 6</p>
         </div>
       </div>
     </body>

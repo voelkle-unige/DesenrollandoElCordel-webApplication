@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -31,7 +45,8 @@
             <title type="titulo_breve">El sepulcro ó lo que puede el amor</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_454.xml">Varios_454</ref></p>
+            <p>Otra impresión: <ref target="Varios_454.xml">Varios_454</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>El Abanico</publisher>
@@ -70,7 +85,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +112,7 @@
             <acquisition/>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -132,8 +149,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1195,52 +1211,65 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_257_1.jpg" facs="varios/Varios_257_1.jpg"/>
-        
+
         <div n="1">
-          <head type="primer_titulo"><lb/>EL SEPULCRO<lb/>Ó<lb/><hi rend="negrita">LO QUE PUEDE EL AMOR</hi></head>
-          <head type="subtitulo"><lb/>ÚLTIMO ADIÓS DE LEANDRO Á SU ADORADA EMILIA</head>
-          <head type="titulo_parte" rend="negrita"><lb/>TERCERA PARTE</head>
-          
+          <head type="primer_titulo">
+            <lb/>EL SEPULCRO<lb/>Ó<lb/>
+            <hi rend="negrita">LO QUE PUEDE EL AMOR</hi>
+          </head>
+          <head type="subtitulo">
+            <lb/>ÚLTIMO ADIÓS DE LEANDRO Á SU ADORADA EMILIA</head>
+          <head type="titulo_parte" rend="negrita">
+            <lb/>TERCERA PARTE</head>
           <sp>
             <speaker rend="cursiva">Sepulturero.</speaker>
-            <p rend="indent"><lb/>No hay otro medio; voy
+            <p rend="indent">
+              <lb/>No hay otro medio; voy
             <lb/>á colocarle fuera de este recinto; sí,
             <lb/>sí, abriré la verja y lo dejaré fuera,
             <lb/>y así creerán que allí espiró.</p>
-            <p rend="indent"><lb/>Voy á cargarlo sobre mis hom-
+            <p rend="indent">
+              <lb/>Voy á cargarlo sobre mis hom-
             <lb/>bros... pero, ¡qué es est!o... ¡Dios
             <lb/>de bondad!... ¡su corazón aún pal-
             <lb/>pita!... ¡percibo su aliento!... ¡Ah!
+
             
             <pb n="2" source="Varios_257_2.jpg" facs="varios/Varios_257_2.jpg"/>
-            
-            <lb/>si aún no se hubiese consumado el
+
+              <lb/>si aún no se hubiese consumado el
             <lb/>sacrificio!</p>
-            <p rend="indent"><lb/>Saquemos el pomo del éter, que
+            <p rend="indent">
+              <lb/>Saquemos el pomo del éter, que
             <lb/>llevo prevenido, y aún tal vez po-
             <lb/>dré salvar su existencia. ¡Se rea-
             <lb/>nima! ¡Leandro!</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leandro.</speaker>
-            <p rend="indent"><lb/>¡Dios mío! ¿qué es lo que
+            <p rend="indent">
+              <lb/>¡Dios mío! ¿qué es lo que
             <lb/>me sucede?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Nada, nada: aspirad esta esen-
+            <p rend="indent">
+              <lb/>Nada, nada: aspirad esta esen-
             <lb/>cia... así, así, ánimo, no temais
             <lb/>nada... ha sido un vahido, pronto
             <lb/>se pasará.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>¿Quién sois?</p>
+            <p rend="indent">
+              <lb/>¿Quién sois?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Vuestro amigo... vuestro cono-
+            <p rend="indent">
+              <lb/>Vuestro amigo... vuestro cono-
             <lb/>cido...soy yo, sí, yo mismo... soy...
             <lb/>id aspirando este frasquito... ¿Os
             <lb/>sentís más aliviado? Probad de le-
@@ -1252,13 +1281,15 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>¿Pero quién sois vos que os
+            <p rend="indent">
+              <lb/>¿Pero quién sois vos que os
             <lb/>interesais tanto por este desgracia-
             <lb/>do mortal?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Un amigo que os aprecia mucho;
+            <p rend="indent">
+              <lb/>Un amigo que os aprecia mucho;
             <lb/>señor, esforzaos un poco más, así...
             <lb/>ya estamos cerca... entrad... sen-
             <lb/>taos bien... tomad este poco de
@@ -1267,20 +1298,24 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>¡Ah! vos sois el sepulturero,
+            <p rend="indent">
+              <lb/>¡Ah! vos sois el sepulturero,
             <lb/>¿es decir que aún existo?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Sí, gracias á Dios.</p>
+            <p rend="indent">
+              <lb/>Sí, gracias á Dios.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>¡Maldición!</p>
+            <p rend="indent">
+              <lb/>¡Maldición!</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>¡Joven, sellad el labio! en este
+            <p rend="indent">
+              <lb/>¡Joven, sellad el labio! en este
             <lb/>recinto no se oyen sino bendicio-
             <lb/>nes y preces al Eterno por los que
             <lb/>fueron; la maldición no tiene en-
@@ -1288,7 +1323,8 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>¡Cómo no he de maldecir
+            <p rend="indent">
+              <lb/>¡Cómo no he de maldecir
             <lb/>esta existencia que detesto si me
             <lb/>falta la única cosa que me podía
             <lb/>hacer amable la vida! ¡Ay, Emilia
@@ -1297,7 +1333,8 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Señor, sosegaos un momento, no
+            <p rend="indent">
+              <lb/>Señor, sosegaos un momento, no
             <lb/>deis más impulso á vuestro dolor, y
             <lb/>atended las palabras de un anciano
             <lb/>que conoce vuestro pesar y desea
@@ -1306,11 +1343,13 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Imposible.</p>
+            <p rend="indent">
+              <lb/>Imposible.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Tal vez no lo sea tanto como
+            <p rend="indent">
+              <lb/>Tal vez no lo sea tanto como
             <lb/>os figurais. Veamos: Vos adoras-
             <lb/>teis á una joven bella y modesta,
             <lb/>que tuvisteis la desgracia de que
@@ -1319,38 +1358,46 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Sí, por mi desgracia.</p>
+            <p rend="indent">
+              <lb/>Sí, por mi desgracia.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Y no pudiendo olvidar el amor
+            <p rend="indent">
+              <lb/>Y no pudiendo olvidar el amor
             <lb/>que le profesabais, atentasteis á
             <lb/>vuestra existencia...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Es verdad, no puedo negarlo.</p>
+            <p rend="indent">
+              <lb/>Es verdad, no puedo negarlo.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>¿Y con qué objeto?</p>
+            <p rend="indent">
+              <lb/>¿Y con qué objeto?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Con el de reunirme eterna-
+            <p rend="indent">
+              <lb/>Con el de reunirme eterna-
             <lb/>mente á ella.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>¡Con un crimen?</p>
+            <p rend="indent">
+              <lb/>¡Con un crimen?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>¿Crimen decís?</p>
+            <p rend="indent">
+              <lb/>¿Crimen decís?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Sí, enorme, imperdonable, horri-
+            <p rend="indent">
+              <lb/>Sí, enorme, imperdonable, horri-
             <lb/>ble. ¿Quién os ha dado poder para
             <lb/>atentar á vuestra vida?... insensato,
             <lb/>si vuestros días están contados en
@@ -1360,28 +1407,33 @@
             <lb/>atreveis á quitaros la existencia
             <lb/>faltando á los preceptos del que os
             <lb/>crió?</p>
-            <p rend="indent"><lb/>Dices en tu loco devaneo, que
+            <p rend="indent">
+              <lb/>Dices en tu loco devaneo, que
             <lb/>atentaste á tu vida para reunirte á
             <lb/>ella...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Sí.</p>
+            <p rend="indent">
+              <lb/>Sí.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Pues bien, escuchad con aten-
+            <p rend="indent">
+              <lb/>Pues bien, escuchad con aten-
             <lb/>ción y vereis cómo el camino que
             <lb/>emprendisteis es el que más os aleja
             <lb/>de su lado.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>No os comprendo.</p>
+            <p rend="indent">
+              <lb/>No os comprendo.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Escuchad. Considerando que el
+            <p rend="indent">
+              <lb/>Escuchad. Considerando que el
             <lb/>loco que atenta á su vida lo hace
             <lb/>olvidando los preceptos del Divino
             <lb/>Hacedor, la Iglesia no le da tierra
@@ -1389,50 +1441,59 @@
             <lb/>inmundo muladar, como á las bes-
             <lb/>tias. Siendo así ya conoceis que en
             <lb/>vez de reuniros como deseabais
+
             
             <pb n="3" source="Varios_257_3.jpg" facs="varios/Varios_257_3.jpg"/>
-            
-            <lb/>cerca la tumba de vuestra amada,
+
+              <lb/>cerca la tumba de vuestra amada,
             <lb/>estariais separados para siempre.
             <lb/>¿Lo que os digo comprendeis?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>¡Es verdad!</p>
+            <p rend="indent">
+              <lb/>¡Es verdad!</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Vos me dijisteis que vuestra
+            <p rend="indent">
+              <lb/>Vos me dijisteis que vuestra
             <lb/>amada era pura como las vírgenes
             <lb/>del Edén.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Es verdad.</p>
+            <p rend="indent">
+              <lb/>Es verdad.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Siendo inocente y pura, gozará
+            <p rend="indent">
+              <lb/>Siendo inocente y pura, gozará
             <lb/>de la celeste morada...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Es justo.</p>
+            <p rend="indent">
+              <lb/>Es justo.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Y el que muere por un crimen,
+            <p rend="indent">
+              <lb/>Y el que muere por un crimen,
             <lb/>sin confesión, sin el amparo de la
             <lb/>religión ¿dónde va su alma?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>¡Ay de mí! ¿qué es lo que
+            <p rend="indent">
+              <lb/>¡Ay de mí! ¿qué es lo que
             <lb/>yo he hecho?...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Bien haceis en verter lágrimas,
+            <p rend="indent">
+              <lb/>Bien haceis en verter lágrimas,
             <lb/>joven; ellas me dan á conocer que
             <lb/>vuestro corazón no está pervertido,
             <lb/>y que sólo una ofuscación de vues-
@@ -1442,16 +1503,19 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Pero ¿quién os ha dicho que
+            <p rend="indent">
+              <lb/>Pero ¿quién os ha dicho que
             <lb/>yo trataba de suicidarme?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Este papel.</p>
+            <p rend="indent">
+              <lb/>Este papel.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>¡Ah, dádmelo por piedad!
+            <p rend="indent">
+              <lb/>¡Ah, dádmelo por piedad!
             <lb/>Sép Joven, no temais; el pábilo
             <lb/>de esta luz guardará vuestro secre-
             <lb/>to... mirad... ya está reducido á ce-
@@ -1459,38 +1523,45 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Gracias, amigo. Yo premiaré
+            <p rend="indent">
+              <lb/>Gracias, amigo. Yo premiaré
             <lb/>vuestra honradez. Tomad el oro
             <lb/>que me resta.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>No permita Dios que vuelva yo
+            <p rend="indent">
+              <lb/>No permita Dios que vuelva yo
             <lb/>á tomar otra moneda vuestra.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Pues ¿cómo pagaré el favor
+            <p rend="indent">
+              <lb/>Pues ¿cómo pagaré el favor
             <lb/>queherecibido esta noche de vos?...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Con un favor muy sencillo,
+            <p rend="indent">
+              <lb/>Con un favor muy sencillo,
             <lb/>que me prometais cumplir exacta-
             <lb/>mente.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>Bajo mi palabra os lo prometo.</p>
+            <p rend="indent">
+              <lb/>Bajo mi palabra os lo prometo.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Que nunca más atentaréis con-
+            <p rend="indent">
+              <lb/>Que nunca más atentaréis con-
             <lb/>tra vuestra existencia.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Leand.</speaker>
-            <p rend="indent"><lb/>No lo temais, honrado ancia-
+            <p rend="indent">
+              <lb/>No lo temais, honrado ancia-
             <lb/>no; vuestras palabras me han he-
             <lb/>cho abrir los ojos á la luz de la
             <lb/>razón y me han hecho conocer la
@@ -1499,7 +1570,8 @@
             <lb/>haré todo lo posible para hacerme
             <lb/>digno de la que fué en la tierra un
             <lb/>ángel de amor.</p>
-            <p rend="indent"><lb/>Un sayal cubrirá mi cuerpo, y
+            <p rend="indent">
+              <lb/>Un sayal cubrirá mi cuerpo, y
             <lb/>con las plantas desnudas empren-
             <lb/>deré mi peregrinación hasta la ciu-
             <lb/>dad Santa, y postrado á los piés
@@ -1510,27 +1582,32 @@
             <lb/>la penitencia y el bien de las al-
             <lb/>mas, como vos habeis hecho con-
             <lb/>migo.</p>
-            <p rend="indent"><lb/>Adiós, amigo; hasta que nos vol-
+            <p rend="indent">
+              <lb/>Adiós, amigo; hasta que nos vol-
             <lb/>vamos á ver.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sep.</speaker>
-            <p rend="indent"><lb/>Adiós, Dios os guie. ¡Pobre
+            <p rend="indent">
+              <lb/>Adiós, Dios os guie. ¡Pobre
             <lb/>Leandro!...</p>
-            <p rend="indent"><lb/>Vamos á descansar un poco hasta
+            <p rend="indent">
+              <lb/>Vamos á descansar un poco hasta
             <lb/>dar principio á nuestra tarea, ó tal
             <lb/>vez á presenciar otra terrible esce-
             <lb/>na. Dios no lo permita.</p>
           </sp>
           <trailer>FIN</trailer>
         </div>
-        
+
         <pb n="4" source="Varios_257_4.jpg" facs="varios/Varios_257_4.jpg"/>
-        
+
         <div n="2">
-          <head type="titulo_cancion"><lb/>CANCIÓN<lb/>DE<lb/><hi rend="negrita">LEANDRO EL
-              PEREGRINO</hi><lb/>Á SU ADORADA EMILIA</head>
-          
+          <head type="titulo_cancion">
+            <lb/>CANCIÓN<lb/>DE<lb/>
+            <hi rend="negrita">LEANDRO EL
+              PEREGRINO</hi>
+            <lb/>Á SU ADORADA EMILIA</head>
           <lg>
             <l rend="indent">Angel de amor,</l>
             <l>luz de mi vida,</l>
@@ -1614,9 +1691,9 @@
           </lg>
           <trailer>FIN</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imps. Hospital, 19 «El Abanico»</p>
+          <p>
+            <lb/>Imps. Hospital, 19 «El Abanico»</p>
         </div>
       </div>
     </body>

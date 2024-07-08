@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve"/>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_050.xml">Varios_050</ref></p>
+            <p>Otra impresión: <ref target="Varios_050.xml">Varios_050</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Imprenta Peninsular</publisher>
@@ -81,7 +96,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -115,6 +131,56 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q15681">
+            <placeName key="Jaén">Jaén</placeName>
+            <location>
+              <geo>37.769722222222 -3.7888888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q84">
+            <placeName key="Londres">Londres</placeName>
+            <location>
+              <geo>51.507222222222 -0.1275</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q60">
+            <placeName key="Nueva_York">Nueva York</placeName>
+            <location>
+              <geo>40.7 -74</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1312844">
+            <placeName key="Alberique">Alberique</placeName>
+            <location>
+              <geo>39.116666666667 -0.52111111111111</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q4040">
+            <placeName key="Aragón">Aragón</placeName>
+            <location>
+              <geo>41 -1</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5030">
+            <placeName key="Sagua_la_Grande">Sagua La Grande</placeName>
+            <location>
+              <geo>22.808611111111 -80.071111111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -150,8 +216,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-11" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-11" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1630,10 +1695,11 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_266_1.jpg" facs="varios/Varios_266_1.jpg"/>
 
-        <head type="primer_titulo"><lb/>CANCIONES DE LA VUELTA AL MUNDO.</head>
-
+        <head type="primer_titulo">
+          <lb/>CANCIONES DE LA VUELTA AL MUNDO.</head>
         <div n="1">
           <lg>
             <head type="titulo_estrofa">1.ª</head>
@@ -1679,7 +1745,6 @@
           <pb n="2" source="Varios_266_2.jpg" facs="varios/Varios_266_2.jpg"/>
 
           <fw type="paginaNum">— 2 —</fw>
-
           <lg>
             <head type="titulo_estrofa">3.ª</head>
             <l rend="indent">Hace ya bastantes noches</l>
@@ -1695,7 +1760,7 @@
             <l>alzaba la cola</l>
             <l>y se sonreia,</l>
             <l>hasta que me dijo</l>
-            <l>uno de Jaen:</l>
+            <l>uno de <name>Jaen</name>:</l>
             <l>no es burro que es burra,</l>
             <l>mírelo usted bien.</l>
           </lg>
@@ -1771,7 +1836,7 @@
             <l>y viva la religion.</l>
             <l rend="indent">Cuando ya son ricos</l>
             <l>sueltan el fusil,</l>
-            <l>y se van á Francia</l>
+            <l>y se van á <name>Francia</name></l>
             <l>en ferrocarril.</l>
             <l rend="indent">Y dicen á Cárlos</l>
             <l>cuando allí se ven</l>
@@ -1802,10 +1867,8 @@
         <pb n="3" source="Varios_266_3.jpg" facs="varios/Varios_266_3.jpg"/>
 
         <fw type="paginaNum">— 3 —</fw>
-
         <div n="2">
           <head type="titulo_cancion">SEGUIDILLAS.</head>
-
           <lg>
             <head type="titulo_estrofa">1.ª</head>
             <l rend="indent">Al pescar boqueron</l>
@@ -1843,14 +1906,12 @@
             <l>de estornudar!</l>
           </lg>
         </div>
-
         <div n="3">
           <head type="titulo_cancion">CANCIONES DEL INGLES.</head>
-
           <lg>
-            <l rend="indent">En Nueva-York hay un tram-via</l>
+            <l rend="indent">En <name>Nueva-York</name> hay un tram-via</l>
             <l>por cuatro cuartos nada mas,</l>
-            <l>y allá en Madrid fuera del coche,</l>
+            <l>y allá en <name>Madrid</name> fuera del coche,</l>
             <l>cada diez pasos cuesta un real.</l>
             <l>Allí el que gasta coche y lujo</l>
             <l>paga una gran contribucion,</l>
@@ -1889,7 +1950,7 @@
           </lg>
           <lg>
             <head type="titulo_estrofa">3.ª</head>
-            <l rend="indent">En Nueva-York si hay elecciones</l>
+            <l rend="indent">En <name>Nueva-York</name> si hay elecciones</l>
             <l>toda la gente va á votar</l>
             <l>y aquí se marchan á los toros</l>
             <l>en cuanto hay lucha electoral.</l>
@@ -1921,7 +1982,7 @@
             <l>y aquí te trenquen una cama</l>
             <l>en un coet així de llarch.</l>
             <l>El altra dia una siñora</l>
-            <l>que á vengudo de Alberich</l>
+            <l>que á vengudo de <name>Alberich</name></l>
             <l>li varen cremar la roba</l>
             <l>y altras cosas que no dich.</l>
             <l rend="indent">¡Oh qué patria rica!</l>
@@ -1933,7 +1994,9 @@
             <head type="titulo_estrofa" rend="cursiva">Coro.</head>
             <l>¡Oh qué patria, etc.</l>
           </lg>
+
           <pb n="4" source="Varios_266_4.jpg" facs="varios/Varios_266_4.jpg"/>
+
           <fw type="paginaNum">— 4 —</fw>
           <lg>
             <head type="titulo_estrofa" rend="cursiva">final.</head>
@@ -1947,10 +2010,8 @@
             <l>que habeis de amparar.</l>
           </lg>
         </div>
-
         <div n="4">
           <head type="titulo_cancion">TANGO DE LOS NEGROS.<lb/>DEL CUARTO ACTO.</head>
-
           <lg>
             <head type="titulo_estrofa">1.°</head>
             <l rend="indent">Una guajirata antigua</l>
@@ -1962,7 +2023,7 @@
             <l>no me vengas á buscar</l>
             <l>no me vengas á buscar.</l>
             <l rend="indent">¡Ay! mulatita</l>
-            <l>nacida en Sagua</l>
+            <l>nacida en <name>Sagua</name></l>
             <l>que eres mas dulce</l>
             <l>que un coco de agua;</l>
             <l>si pa quererte</l>
@@ -2016,25 +2077,23 @@
             <l>es lo mejor.</l>
           </lg>
         </div>
-
         <div type="5">
           <head type="titulo_cancion">JOTA DE LA FLOR DE ARAGON.</head>
-
           <l rend="indent">A regalarte venimos</l>
           <l>si venimos, si venimos,</l>
           <l>María luz de estos valles,</l>
           <l>las zagalas bellas flores</l>
           <l>y el corazon los zagales.</l>
           <l rend="indent">Siempre crece la alegria</l>
-          <l>en los campos de Aragon</l>
+          <l>en los campos de <name>Aragon</name></l>
           <l>con las sombras de la noche</l>
           <l>y con los rayos del sol.</l>
           <l>Para cantar la guitarra,</l>
           <l>la jota para bailar,</l>
-          <l>viva la flor de Aragon</l>
+          <l>viva la flor de <name>Aragon</name></l>
           <l>que es la Vírgen del Pilar.</l>
           <l>Siempre crece la alegría, etc.</l>
-          <l>Viva la flor de Aragon, etc.</l>
+          <l>Viva la flor de <name>Aragon</name>, etc.</l>
           <l rend="indent">Cuando alegre y placentera,</l>
           <l>placentera, placentera,</l>
           <l>María bajas al valle,</l>
@@ -2043,20 +2102,24 @@
           <l rend="indent">Pues eres la diosa del valle,</l>
           <l>del mundo la admiracion, admiracion</l>
           <l>la reina de la hermosura</l>
-          <l>y la rosa de Aragon.</l>
+          <l>y la rosa de <name>Aragon</name>.</l>
           <l>Niños, jóvenes y ancianos</l>
           <l>te salen á recibir</l>
           <l>dándote mil parabienes</l>
           <l>que aplauden con frenesí.</l>
           <l>Tú eres la diosa del valle, etc.</l>
-          <l>Viva la flor de Aragon, etc.</l>
+          <l>Viva la flor de <name>Aragon</name>, etc.</l>
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Se h allará de venta en casa los sucesores de <choice><sic>ntonio</sic><corr>Antonio</corr></choice> Bosch, calle del Bou de la
+          <p>
+            <lb/>Se h allará de venta en casa los sucesores de <choice>
+              <sic>ntonio</sic>
+              <corr>Antonio</corr>
+            </choice> Bosch, calle del Bou de la
             plaza Nueva, núm. 13.</p>
-          <p><lb/>Barcelona.—Imprenta Peninsular, Asalto, núm 69.</p>
+          <p>
+            <lb/>Barcelona.—Imprenta Peninsular, Asalto, núm 69.</p>
         </div>
       </div>
     </body>

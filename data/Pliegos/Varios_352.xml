@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -71,7 +85,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -101,6 +116,26 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q4018">
+            <placeName key="Navarra">Navarra</placeName>
+            <location>
+              <geo>42.816666666667 -1.65</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q1563">
+            <placeName key="La_Habana">La Habana</placeName>
+            <location>
+              <geo>23.136666666667 -82.358888888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -137,8 +172,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1413,17 +1447,18 @@
   <text>
     <body>
       <div>
-        <pb n="1" source="Varios_352_1.jpg" facs="varios/Varios_352_1.jpg"/>
-        
-        <div n="1">
-          <head type="primer_titulo"><lb/>CONVERSA DE DOS INDIVIDUOS<lb/>de una aristocrasia mol
-            abundán, anomenats <lb/><hi rend="negrita">BATISTA Y LLETEROLA</hi>.</head>
 
+        <pb n="1" source="Varios_352_1.jpg" facs="varios/Varios_352_1.jpg"/>
+
+        <div n="1">
+          <head type="primer_titulo">
+            <lb/>CONVERSA DE DOS INDIVIDUOS<lb/>de una aristocrasia mol
+            abundán, anomenats <lb/>
+            <hi rend="negrita">BATISTA Y LLETEROLA</hi>.</head>
           <stage>(Surt Lleterola ab jech al coll y canta.)</stage>
-          
           <sp>
             <speaker rend="cursiva">Lleterola.</speaker>
-            <l>«Navarra no tiene rey</l>
+            <l>«<name>Navarra</name> no tiene rey</l>
             <l>ni en tot España ni ya</l>
             <l>yo no se pas qui goberna</l>
             <l>cuan tutom vol goberná.»</l>
@@ -1452,9 +1487,9 @@
             <l>que 's troba una mica be</l>
             <l>pero 'l que no menja re</l>
             <l>vinticuatre y sis catorsa.</l>
-            
+
             <pb n="2" source="Varios_352_2.jpg" facs="varios/Varios_352_2.jpg"/>
-            
+
             <l>Ya que ningu ans aconsola</l>
             <l>y en cap puesto ya repós</l>
             <l>val mes que 'ns vestim de gós</l>
@@ -1570,9 +1605,9 @@
             <l>la mare 'm va di al momen:</l>
             <l>y á que fa, am posa aprenen.</l>
           </sp>
-          
+
           <pb n="3" source="Varios_352_3.jpg" facs="varios/Varios_352_3.jpg"/>
-          
+
           <sp>
             <speaker rend="cursiva">Batista.</speaker>
             <l>¿De aqué?</l>
@@ -1704,22 +1739,22 @@
             <l>«La gana no vol rahons.»</l>
             <l>NO NI HÁ MES.</l>
           </sp>
-          
-          <p rend="cursiva"><lb/>(Es propietat de Juan Grau.)</p>
+          <p rend="cursiva">
+            <lb/>(Es propietat de Juan Grau.)</p>
         </div>
-        
+
         <pb n="4" source="Varios_352_4.jpg" facs="varios/Varios_352_4.jpg"/>
-        
+
         <div n="2">
-          <head type="titulo_cancion" rend="negrita"><lb/>AMERICANA COREADA<lb/>LA FLOR.</head>
-          
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>AMERICANA COREADA<lb/>LA FLOR.</head>
           <lg>
             <head type="titulo_estrofa">1.ª</head>
             <l rend="indent">A tí hermosa Americana</l>
             <l>te doy amor,</l>
             <l>te amo mas que mi vida</l>
             <l>con mucho ardor.</l>
-            <l rend="indent">En la Habana he venido</l>
+            <l rend="indent">En la <name>Habana</name> he venido</l>
             <l>sin dilacion,</l>
             <l>por ver la hermosa prenda</l>
             <l>del corazon.</l>
@@ -1747,19 +1782,21 @@
             <l>y verás á un amante</l>
             <l>con gran pasion.</l>
           </lg>
-          <p><lb/>Vamos hermosa etc.</p>
+          <p>
+            <lb/>Vamos hermosa etc.</p>
           <lg>
             <head type="titulo_estrofa">3.ª</head>
             <l rend="indent">A tí hermosa Americana</l>
             <l>te quiero amar,</l>
             <l>en tu choza pretendo</l>
             <l>contigo estar.</l>
-            <l rend="indent">En la Habana he venido</l>
+            <l rend="indent">En la <name>Habana</name> he venido</l>
             <l>por un amor,</l>
             <l>y eres tú, tan hermosa</l>
             <l>como una flor.</l>
           </lg>
-          <p><lb/>Vamos hermosa etc.</p>
+          <p>
+            <lb/>Vamos hermosa etc.</p>
           <lg>
             <head type="titulo_estrofa">4.ª</head>
             <l rend="indent">Acepta mis canciones</l>
@@ -1771,7 +1808,8 @@
             <l>alza pues un poquito</l>
             <l>tu hermosa voz.</l>
           </lg>
-          <p><lb/>Vamos hermosa etc.</p>
+          <p>
+            <lb/>Vamos hermosa etc.</p>
           <lg>
             <head type="titulo_estrofa">5.ª</head>
             <l rend="indent">Una linda guanábana</l>
@@ -1783,7 +1821,8 @@
             <l>tu pié tan pequeñito</l>
             <l>me causa ardor.</l>
           </lg>
-          <p><lb/>Vamos hermosa etc.</p>
+          <p>
+            <lb/>Vamos hermosa etc.</p>
           <lg>
             <head type="titulo_estrofa">6.ª</head>
             <l rend="indent">Tus ojos tan brillantes</l>
@@ -1792,10 +1831,11 @@
             <l>este embeleso.</l>
             <l rend="indent">Tu boca es graciosa</l>
             <l>como el Zaray,</l>
-            <l>de niñas en la Habana</l>
+            <l>de niñas en la <name>Habana</name></l>
             <l>como tú no hay.</l>
           </lg>
-          <p><lb/>Vamos hermosa etc.</p>
+          <p>
+            <lb/>Vamos hermosa etc.</p>
           <lg>
             <head type="titulo_estrofa">7.°</head>
             <l rend="indent">No te ausentes de mi lado</l>
@@ -1807,13 +1847,14 @@
             <l>no hagas á tu amante</l>
             <l>una traicion.</l>
           </lg>
-          <p><lb/>Vamos hermosa etc.</p>
-          
-          <p rend="cursiva"><lb/>E. Gavarró.</p>
+          <p>
+            <lb/>Vamos hermosa etc.</p>
+          <p rend="cursiva">
+            <lb/>E. Gavarró.</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>REUS :—En casa de Juan Grau se venden romances, sainetes, historias, etc., etc</p>
+          <p>
+            <lb/>REUS :—En casa de Juan Grau se venden romances, sainetes, historias, etc., etc</p>
         </div>
       </div>
     </body>

@@ -8,6 +8,20 @@
           <resp>Codificación TEI</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de
                               Genève</authority>
@@ -35,7 +49,7 @@
             <country>Suisse</country>
             <settlement>Genève</settlement>
             <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
+            </repository>
             <collection>Colección Varios</collection>
             <idno type="cote"/>
             <idno type="DOI">10.5281/zenodo.6802821</idno>
@@ -57,7 +71,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="24"/>24
+                <extent>
+                  <measure unit="página" quantity="24"/>24
                                                   p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
@@ -83,6 +98,36 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="16">
+            <placeName key="Bethulia">Bethulia</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+          <place n="5" corresp="Q1218">
+            <placeName key="Jerusalén">Jerusalén</placeName>
+            <location>
+              <geo>31.7788888888889 35.2255555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q79">
+            <placeName key="Egipto">Egipto</placeName>
+            <location>
+              <geo>27 29</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q132811">
+            <placeName key="Golfo_de_California">Golfo De California</placeName>
+            <location>
+              <geo>28 -112</geo>
+            </location>
+          </place>
+          <place n="6" corresp="Q801">
+            <placeName key="Israel">Israel</placeName>
+            <location>
+              <geo>31 35</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -118,10 +163,12 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-        <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_446_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_446_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_446_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_446_1/full/full/0/default.jpg"/>
@@ -7191,24 +7238,38 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_446_1.jpg" facs="varios/Varios_446_1.jpg"/>
-        <head type="primer_titulo"><lb/>HISTORIA<lb/>VERDADERA, Y SAGRADA<lb/>DE LA GLORIA DE
+
+        <head type="primer_titulo">
+          <lb/>HISTORIA<lb/>VERDADERA, Y SAGRADA<lb/>DE LA GLORIA DE
                               BETHULIA<lb/>JUDITH<lb/>CONTRA HOLOFERNES.</head>
-        <head type="subtitulo_parte"><lb/>SACADA DE LA SAGRADA
+        <head type="subtitulo_parte">
+          <lb/>SACADA DE LA SAGRADA
                               ESCRITURA.<lb/>Baronio, Causino y otros.</head>
-        <p><lb/>SU AUTOR <lb/>D. MANUEL JOSEPH MARTIN, residente en esta Corte.</p>
+        <p>
+          <lb/>SU AUTOR <lb/>D. MANUEL JOSEPH MARTIN, residente en esta Corte.</p>
         <div type="colofon">
-          <p><lb/>MADRID: MDCCLXXIX. <lb/>Por D. MANUEL MARTIN, calle de la
+          <p>
+            <lb/>MADRID: MDCCLXXIX. <lb/>Por D. MANUEL MARTIN, calle de la
                                     CRUZ, donde <lb/>se hallará y otras diferentes.</p>
         </div>
         <div type="propiedad">
-          <p><lb/>Con las licencias necesarias.</p>
+          <p>
+            <lb/>Con las licencias necesarias.</p>
         </div>
+
         <pb n="2" source="Varios_446_2.jpg" facs="varios/Varios_446_2.jpg"/>
+
+
         <pb n="3" source="Varios_446_3.jpg" facs="varios/Varios_446_3.jpg"/>
+
         <div type="parte" n="1">
-          <head type="titulo_parte"><lb/>RESUMEN DE LA HISTORIA.</head>
-          <p><lb/>RESOLUCION ALTIVA DE NAVUCODONOSOR <hi rend="cursiva"><lb/>para sojuzgar el mundo. Arrogancia de Holofernes, y
+          <head type="titulo_parte">
+            <lb/>RESUMEN DE LA HISTORIA.</head>
+          <p>
+            <lb/>RESOLUCION ALTIVA DE NAVUCODONOSOR <hi rend="cursiva">
+              <lb/>para sojuzgar el mundo. Arrogancia de Holofernes, y
                                           <lb/>grandeza, de su Ejercito. Aflicciones del Pueblo de
                                           Dios <lb/>al venir Helofernes contra él. Heroycas
                                           prevenciones del <lb/>Sumo Socerdote. Informase Holofernes
@@ -7240,11 +7301,15 @@
                                           <lb/>tribucion de los ricos despojos de los enemigos. Dá
                                           Judith <lb/>los que la pertenecen al Templo de Jerusalen.
                                           Progresos de la <lb/>vida de Judith hasta su santa muerte.
-                                          Sus plausibles honras.</hi></p>
+                                          Sus plausibles honras.</hi>
+          </p>
           <fw type="signaturas">A2</fw>
           <fw type="reclamoss">Es</fw>
+
           <pb n="4" source="Varios_446_4.jpg" facs="varios/Varios_446_4.jpg"/>
-          <p><lb/>Estaba Nabucodonosor <lb/>en la flor de su edad, y <lb/>en
+
+          <p>
+            <lb/>Estaba Nabucodonosor <lb/>en la flor de su edad, y <lb/>en
                                     el vigor de sus Conquis- <lb/>tas, quando tuvo un mys-
                                     <lb/>terioso consejo, en que to- <lb/>mó la resolucion de
                                     sojuzgar <lb/>todo el mundo. Despues de <lb/>una breve
@@ -7258,7 +7323,8 @@
                                     nacer los <lb/>hombres. Veisle aqui á este <lb/>hombre
                                     esforzado rodeado <lb/>de todas las Legiones, que <lb/>echaban
                                     de sí fuego, y cen- <lb/>tellas.</p>
-          <p><lb/>Estaba yá su Ejercito <lb/>con gran tren, y aparato de
+          <p>
+            <lb/>Estaba yá su Ejercito <lb/>con gran tren, y aparato de
                                     <lb/>viveres, y municiones. Pare- <lb/>cia que el Cielo le
                                     miraba <lb/>con asombro, y que la tier- <lb/>ra temblaba á cada
                                     paso con <lb/>el ruido de sus armas. Su <lb/>marcha atemorizaba
@@ -7277,7 +7343,8 @@
                                     <lb/>reusandolo todo, dispuso el <lb/>marchar sobre las cabezas
                                     <lb/>de los hombres, y hacer un <lb/>rio de sangre para teñir
                                     sus <lb/>palmas.</p>
-          <p><lb/>La fama que con cien <lb/>bocas publicaba los destro- <lb/>zos
+          <p>
+            <lb/>La fama que con cien <lb/>bocas publicaba los destro- <lb/>zos
                                     que iba por rodas partes <lb/>haciendo este diluvio de
                                     <lb/>hombres, llegó á Jerusalén, <lb/>y dió las tristes
                                     nuevas al <lb/>Pueblo de Dios.No se oia á la <lb/>sazon sino
@@ -7286,8 +7353,10 @@
                                     ni corazon ni armas <lb/>para oponerse. Los animos <lb/>estaban
                                     abatidos, las manos <lb/>desmayadas, y las lenguas <lb/>mudas.
                                     No tenian mas de- <lb/>fensa que las lagrimas que <fw type="reclamos">der-</fw>
-                                    <pb n="5" source="Varios_446_5.jpg" facs="varios/Varios_446_5.jpg"/>
-                                    <lb/>derramaban en abundancia <lb/>para comenzar los funerales
+
+            <pb n="5" source="Varios_446_5.jpg" facs="varios/Varios_446_5.jpg"/>
+
+            <lb/>derramaban en abundancia <lb/>para comenzar los funerales
                                     <lb/>de la amada Patria. Reynaba <lb/>por entonces Manasés en
                                     Je- <lb/>rusalén, setecientos años an- <lb/>tes de la venida de
                                     nuestro <lb/>Redentor, el qual no vien- <lb/>do expediente
@@ -7298,7 +7367,8 @@
                                     ani- <lb/>mó á su pobre pueblo, y <lb/>enjugó las lagrimas de
                                     todos <lb/>para mostrarle el primer vis- <lb/>lumbre de la
                                     esperanza que <lb/>concibieron de su amada li- <lb/>bertad.</p>
-          <p><lb/>Despachó correos por <lb/>rodas parres, y mandó á las
+          <p>
+            <lb/>Despachó correos por <lb/>rodas parres, y mandó á las
                                     <lb/>Ciudades que estaban ame- <lb/>nazadas con el paso de estas
                                     <lb/>crueles, y soberbias tro- <lb/>pas, que contribuyesen lo
                                     <lb/>posible con dinero, armas, <lb/>hombres, y viveres para re-
@@ -7312,7 +7382,8 @@
                                     <lb/>cubierto de cilicio, los Sa- <lb/>cerdotes estaban con un
                                     sa- <lb/>co, y todo el Pueblo en ora- <lb/>cion en ayunos, y
                                     sollozos.</p>
-          <p><lb/>Los niños tambien postra- <lb/>dos en tierra, imploraban
+          <p>
+            <lb/>Los niños tambien postra- <lb/>dos en tierra, imploraban
                                     <lb/>con las voces de su inocen- <lb/>cia la misericordia de
                                     Dios. <lb/>Este excelenre Pontifice, no <lb/>ignorando que
                                     juntamente <lb/>con la prudencia es menes- <lb/>ter menear las
@@ -7320,7 +7391,8 @@
                                     Altar, sino que <lb/>visiró en persona las Ciuda- <lb/>des, y
                                     Aldeas, consolando <lb/>á los afligidos, animando á <lb/>los
                                     cobardes, y fortifican- <lb/>do á los flacos.</p>
-          <p><lb/>Llegó la nueva á Holo- <lb/>fernes, que los Judios se pre-
+          <p>
+            <lb/>Llegó la nueva á Holo- <lb/>fernes, que los Judios se pre-
                                     <lb/>venian a la defensa, y que- <lb/>rian oponerse á su poder,
                                     de <lb/>que se encolerizó mucho, <lb/>y llamó á los Principes
                                     de <lb/>los Amonitas, y Moabitas, <lb/>que estaban en su
@@ -7329,9 +7401,11 @@
                                     y respirando <lb/>bolcanes, equivocó la con- <lb/>sulta con
                                     terminos de ame- <lb/>naza : Qué Reyno es este <lb/>Soldados?
                                     les dixo: Qué nu- <lb/>mero de Ciudades son las que <fw type="reclamos">ha-</fw>
-                                    <pb n="6" source="Varios_446_6.jpg" facs="varios/Varios_446_6.jpg"/>
-                                    <fw type="paginaNum">6</fw>
-                                    <lb/>habitan? En qué poder con- <lb/>fia su insolencia ? Que
+
+            <pb n="6" source="Varios_446_6.jpg" facs="varios/Varios_446_6.jpg"/>
+
+            <fw type="paginaNum">6</fw>
+            <lb/>habitan? En qué poder con- <lb/>fia su insolencia ? Que
                                     confe- <lb/>deracion mantienen? De dón- <lb/>de esperan auxilio
                                     contra el <lb/>poder de mis armas ? Si to- <lb/>dos los del
                                     Oriente se sujetan <lb/>á Nabuco, cómo desprecia- <lb/>ron
@@ -7342,11 +7416,12 @@
                                     levantó <lb/>y le hizo una larga relacion <lb/>del origen, y
                                     qualidades de <lb/>los Judios, diciendole en <lb/>breve lo
                                     siguiente.</p>
-          <p rend="cursiva"><lb/>Sabrás,Señor, como esta <lb/>Nacion desciende
+          <p rend="cursiva">
+            <lb/>Sabrás,Señor, como esta <lb/>Nacion desciende
                                     de los Cal- <lb/>deos, y se separó de ellos <lb/>por causa de
                                     la Religion, <lb/>menospreciando á todor los <lb/>Dioses
                                     Gentiles, y no cre- <lb/>yendo sino en un Dios, Au- <lb/>tor del
-                                    Cielo, y de la tierra. <lb/>Estos pasaron á Egypto por <lb/>una
+                                    Cielo, y de la tierra. <lb/>Estos pasaron á <name>Egypto</name> por <lb/>una
                                     grande hambre, y alli se <lb/>multiplicaron tanto, que co-
                                     <lb/>menzaron á dar recelos á los <lb/>Egypcios, que
                                     continuamen- <lb/>re les maltrataban. Pero su <lb/>Dios vengó
@@ -7355,7 +7430,7 @@
                                     <lb/>migos se vieron obligados á <lb/>dejarles ir libres donde
                                     qui- <lb/>siesen. Pero el Rey Faraon, <lb/>habiendo tomado la
                                     resolucion <lb/>de persegirlos, y acabarlos, <lb/>fue sepultado
-                                    con toda su <lb/>armada en el mar Bermejo, <lb/>por donde este
+                                    con toda su <lb/>armada en el <name>mar Bermejo</name>, <lb/>por donde este
                                     Pueblo habia <lb/>pasado á pie en junto. Des- <lb/>de alli
                                     caminaron por los de- <lb/>siertos esteriles de la Ara-
                                     <lb/>bia, en que Dios los susten- <lb/>ró milagrosamente,
@@ -7376,8 +7451,11 @@
                                     bien unidos con él, <lb/>y le adoran, y reverencian <lb/>como
                                     deben, siempre queda- <lb/>rán vencedores.</p>
           <fw type="reclamos">Los</fw>
+
           <pb n="7" source="Varios_446_7.jpg" facs="varios/Varios_446_7.jpg"/>
-          <p><lb/>Los Capitanes de Holo- <lb/>fernes, oyendo las palabras
+
+          <p>
+            <lb/>Los Capitanes de Holo- <lb/>fernes, oyendo las palabras
                                     <lb/>de Achior , le dijeron mil <lb/>injurias, y soberbios, y
                                     enfa- <lb/>dados le llenaron de opro- <lb/>brios, solo por haber
                                     pensa- <lb/>do, que un tan corto nume- <lb/>ro de gente mal
@@ -7394,7 +7472,7 @@
                                     á Achior, por mengua- <lb/>do, y cobarde, y mandó que <lb/>le
                                     entregasen á los judios, <lb/>pues era Judío de corazon, <lb/>y
                                     de afecto. Y de hecho los <lb/>Soldados agarraron con él,
-                                    <lb/>y le llevaron á las puertas <lb/>de la Ciudad de Bethulia,
+                                    <lb/>y le llevaron á las puertas <lb/>de la Ciudad de <name>Bethulia</name>,
                                     y <lb/>alli atandole á un palo, le <lb/>dejaron á discrecion
                                     de los <lb/>Ciudadanos, los quales, sa <lb/>liendo por él le
                                     llevaron de- <lb/>lante de los Sacerdores que <lb/>gobernaban, y
@@ -7407,8 +7485,9 @@
                                     postrando- <lb/>se en tierra, y prometiendo <lb/>todo favor, y
                                     veneficio á su <lb/>prisionero, que le recogie- <lb/>ron y
                                     cuidaron afectuosa- <lb/>mente.</p>
-          <p><lb/>En el interin Holofernes <lb/>mandó abanzar sus tropas
-                                    <lb/>para escalar á la pequeña <lb/>Ciudad de Bethulia, pero
+          <p>
+            <lb/>En el interin Holofernes <lb/>mandó abanzar sus tropas
+                                    <lb/>para escalar á la pequeña <lb/>Ciudad de <name>Bethulia</name>, pero
                                     viò <lb/>peleaban contra él gentes que <lb/>no se veian,
                                     escondidas en <lb/>los montes, que hacian mu- <lb/>cho daño en
                                     su Ejercito por <lb/>hallarse embarazado en los <lb/>pasos
@@ -7419,9 +7498,11 @@
                                     á <lb/>poco trabajo. Esto executa- <lb/>do, hizo un grande
                                     efecto; <lb/>porque el pueblo viendose <lb/>prívado del agua,
                                     comenzó <lb/>á murmurar publicamente <fw type="reclamos">dó</fw>
-                                    <pb n="8" source="Varios_446_8.jpg" facs="varios/Varios_446_8.jpg"/>
-                                    <fw type="paginaNum">8</fw>
-                                    <lb/>contra los Sacerdores, que <lb/>por su temeridad se habian
+
+            <pb n="8" source="Varios_446_8.jpg" facs="varios/Varios_446_8.jpg"/>
+
+            <fw type="paginaNum">8</fw>
+            <lb/>contra los Sacerdores, que <lb/>por su temeridad se habian
                                     <lb/>puesto á resistir à un tan <lb/>grande y poderoso
                                     Ejercito <lb/>contra el ejemplar de tantos <lb/>Pueblos, que
                                     advertidos de <lb/>esto mismo, se habian some- <lb/>tido al
@@ -7432,7 +7513,8 @@
                                     Eliachin, los apaci- <lb/>guó con sus lagrimas, y al-
                                     <lb/>canzo con ellos tuviesen pa- <lb/>ciencia, y espera no mas
                                     que <lb/>cinco dias.</p>
-          <p><lb/>Esta Ciudad de Bethulia <lb/>tenia dentro de sus murallas
+          <p>
+            <lb/>Esta Ciudad de <name>Bethulia</name> <lb/>tenia dentro de sus murallas
                                     <lb/>un gran tesoro de virtudes, <lb/>cuyos merirtos aun no te-
                                     <lb/>nia conocidos. Era pues, <lb/>la valerosa Judith, en quien
                                     <lb/>el Cielo habia puesto raras <lb/>qualidades, y la habia es-
@@ -7440,13 +7522,13 @@
                                     <lb/>y por qué medios tan estra- <lb/>ños procuras favorecer á
                                     los <lb/>que te aman, y sirven en sus <lb/>mayores
                                     tribulaciones, y fa- <lb/>tigas ! Era Judirh nobilisi- <lb/>ma
-                                    Matrona, ilustre He- <lb/>roina del Pueblo de Israel, <lb/>hija
+                                    Matrona, ilustre He- <lb/>roina del Pueblo de <name>Israel</name>, <lb/>hija
                                     de Merari, y descen- <lb/>diente del antiguo Ruben: su
                                     <lb/>nobilisima estirpe se mereció <lb/>los respetos en todas
                                     las doce <lb/>Tribus, y las graciosas per- <lb/>fecciones de que
                                     Dios la <lb/>adornó la hicieron muy ama- <lb/>ble; propusola su
                                     padre pa- <lb/>ra esposo á un bizarro man- <lb/>cebo llamado
-                                    Manasés, que <lb/>vivia en Bethulia, adonde <lb/>tenia sus
+                                    Manasés, que <lb/>vivia en <name>Bethulia</name>, adonde <lb/>tenia sus
                                     padres ; y prece- <lb/>diendo las debidas diligen- <lb/>cias, y
                                     el casto consenti- <lb/>miento de la hermosa Judith <lb/>se
                                     celebraron las bodas, y se <lb/>casó con Manasés. Era este
@@ -7464,8 +7546,10 @@
                                     sin abundantes lagri- <lb/>mas, y habiendo cumplido <lb/>con la
                                     funeral memoria, dió <lb/>modos su providencia para
                                     <lb/>entablar nueva vida. Man- <fw type="reclamos">dó</fw>
-                                    <pb n="9" source="Varios_446_9.jpg" facs="varios/Varios_446_9.jpg"/>
-                                    <lb/>dó fabricar en lo alto de su <lb/>casa, una pequeña
+
+            <pb n="9" source="Varios_446_9.jpg" facs="varios/Varios_446_9.jpg"/>
+
+            <lb/>dó fabricar en lo alto de su <lb/>casa, una pequeña
                                     Soledad, <lb/>en forma de Oratorio, don- <lb/>de se retiraba con
                                     sus donce- <lb/>llas á comunicar con su <lb/>Dios en continuos
                                     ejercicios, <lb/>y oraciones. Alli tenia depo- <lb/>sitada toda
@@ -7473,7 +7557,8 @@
                                     Querido, y Amado, y des- <lb/>de alli subian sus castisimas
                                     <lb/>oraciones, que llevaban los <lb/>suspiros de su pueblo
                                     hasta el <lb/>trono del Altisimo.</p>
-          <p><lb/>La Santa Dama tenia su <lb/>delicado cuerpo todo rodea-
+          <p>
+            <lb/>La Santa Dama tenia su <lb/>delicado cuerpo todo rodea-
                                     <lb/>do de aspero cilicio : ayu- <lb/>naba todos los dias, á no
                                     ser <lb/>los Sabados, y Fiestas so- <lb/>lemnes, que guardaban
                                     los <lb/>Judios.Su corazon estaba <lb/>encendido en un zelo
@@ -7497,8 +7582,10 @@
                                           la vida pasada, é im- <lb/>plorar la clemencia Divina
                                           <lb/>con efusion de lagrimas, que <lb/>ella sabria hallar
                                           el remedio <lb/>á tanta necesidad, y con-
-                                          <lb/>flicto.</hi></p>
-          <p><lb/>Dióles á entender, ma- <lb/>nifestandoles una exemplar
+                                          <lb/>flicto.</hi>
+          </p>
+          <p>
+            <lb/>Dióles á entender, ma- <lb/>nifestandoles una exemplar
                                     <lb/>doctrina, que todas las per- <lb/>sonas escogidas son
                                     necesa- <lb/>riamente probadas, y tenta- <lb/>das con diversas
                                     tribulacio- <lb/>nes, y que los que las lle- <lb/>vaban con
@@ -7512,9 +7599,12 @@
                                     de exhortarle á <lb/>la paciencia. </p>
           <fw type="signaturas">B</fw>
           <fw type="reclamos">Los</fw>
+
           <pb n="10" source="Varios_446_10.jpg" facs="varios/Varios_446_10.jpg"/>
+
           <fw type="paginaNum">10</fw>
-          <p><lb/>Los principales de la <lb/>Ciudad quedaron absortos <lb/>de
+          <p>
+            <lb/>Los principales de la <lb/>Ciudad quedaron absortos <lb/>de
                                     verla hablar tan divina- <lb/>mente ; porque las palabras
                                     <lb/>que salian de su santa bo- <lb/>ca tenian una incomparable
                                     <lb/>gracia para ablandar los <lb/>mas duros corazones. Con-
@@ -7532,7 +7622,8 @@
                                     <lb/>dio. Ozias la respondió, que <lb/>haria todo lo que pedia,
                                     y <lb/>rogaria a Dios con inten- <lb/>sisimas oraciones, saliese
                                     con <lb/>su intento para el bien uni- <lb/>versal del Pueblo. </p>
-          <p><lb/>Antes de emprender Ju- <lb/>dith esta grande obra, se fue
+          <p>
+            <lb/>Antes de emprender Ju- <lb/>dith esta grande obra, se fue
                                     <lb/>prontamente á su Oratorio, <lb/>donde estuvo mucho tiem-
                                     <lb/>po postrada delante de su <lb/>Dios Omnipotente, ceñidas
                                     <lb/>sus carnes de cilicio, y cu- <lb/>bierta la cabeza de
@@ -7541,7 +7632,8 @@
                                     penitente, <lb/>y mortificada, llorando de- <lb/>lante de su
                                     presencia amar- <lb/>gamente, implorandole su <lb/>auxilio.
                                     Deciale tiernamente <lb/>amorosa. </p>
-          <p><lb/>"Dios mio, y Dueño de <lb/>"mi alma, Dios de mis
+          <p>
+            <lb/>"Dios mio, y Dueño de <lb/>"mi alma, Dios de mis
                                     <lb/>"padres, á quien nada es im- <lb/>"posible, mirad con los
                                     <lb/>"ojos de vuestra Divina Cle- <lb/>"mencia este tu Pueblo
                                     afli- <lb/>"gido ; y atribulado : mirad <lb/>"el dia de hoy el
@@ -7555,8 +7647,10 @@
                                     vista de vuestros <lb/>"ojos. Levantad aquel mis- <lb/>"mo
                                     brazo: que por toda la <lb/>"antiguedad fue señalado en
                                     <lb/>"tantas maravillas , y ho- <fw type="reclamos">llad</fw>
-                                    <pb n="11" source="Varios_446_11.jpg" facs="varios/Varios_446_11.jpg"/>
-                                    <lb/>"llad col los pies toda, <lb/>"y las fuerzas con vuestro
+
+            <pb n="11" source="Varios_446_11.jpg" facs="varios/Varios_446_11.jpg"/>
+
+            <lb/>"llad col los pies toda, <lb/>"y las fuerzas con vuestro
                                     for¬ <lb/>"nmidable poder. No permi¬ <lb/>"ntais, que ellos
                                     violenten <lb/>"n vuesrro Templo, y sa¬ <lb/>"oqueen la casa, en
                                     que vues¬ <lb/>"ntro nombre siempre ha si¬ <lb/>"ndo invocado.
@@ -7586,7 +7680,8 @@
                                     vues¬ <lb/>"otra casa, y que todas las <lb/>"Naciones de la
                                     tierra habi¬ <lb/>"otable sepan que no hay <lb/>"otro Dios sino
                                     vos. te</p>
-          <p><lb/>Estas eran las armas, y <lb/>maquinas de esta excelente
+          <p>
+            <lb/>Estas eran las armas, y <lb/>maquinas de esta excelente
                                     <lb/>muger ; esta era la confianza <lb/>que tenia en el Dios de
                                     los <lb/>Ejercitos. Despues de acaba¬ <lb/>da esra oracion,
                                     salió de su <lb/>Oratorio, y bajó á su Cama¬ <lb/>ra,
@@ -7600,15 +7695,18 @@
                                     rica gar¬ <lb/>gantilla, sus dedos con sor¬ <lb/>tijas, su pecho
                                     con algunas <lb/>joyas. Calzóse unos bellos <lb/>chapines, que
                                     la hacian ga¬ <lb/>llarda, y agigantada donce¬ <fw type="signaturas">B2</fw>
-                                    <fw type="reclamos">lla,</fw>
-                                    <pb n="12" source="Varios_446_12.jpg" facs="varios/Varios_446_12.jpg"/>
-                                    <lb/>lla, cii fin adornose quane <lb/>to pudo con los mas ricos
+            <fw type="reclamos">lla,</fw>
+
+            <pb n="12" source="Varios_446_12.jpg" facs="varios/Varios_446_12.jpg"/>
+
+            <lb/>lla, cii fin adornose quane <lb/>to pudo con los mas ricos
                                     <lb/>vestidos, y alhajas que tenia, <lb/>Parece que Dios tomaba
                                     pla¬ <lb/>cer aquel dia de hacerla mas <lb/>hermosa que nunca
                                     habia <lb/>sido, y todas las gracias <lb/>andaban risueñas en
                                     su be¬ <lb/>llisimo semblante, por estar <lb/>ella adornada por
                                     virtud, y <lb/>no por deleyte.</p>
-          <p><lb/>Mandó á su esclava, que <lb/>dispusiese comida, y bebida
+          <p>
+            <lb/>Mandó á su esclava, que <lb/>dispusiese comida, y bebida
                                     <lb/>para las dos, temiendo en¬ <lb/>suciar su cuerpo con las
                                     vian¬ <lb/>das de los Infieles ; y luego <lb/>que todo estaba
                                     dispuesto, <lb/>salió de su casa, y caminó <lb/>ácia la
@@ -7626,14 +7724,15 @@
                                     Salio , pues, de la <lb/>ciudad, invocando el nom <lb/>bre de
                                     Dios, y rezando al¬ <lb/>gunas oraciones con su es¬
                                     <lb/>clava.</p>
-          <p><lb/>Como ella bajaba del <lb/>monte al apuntar el dia,
+          <p>
+            <lb/>Como ella bajaba del <lb/>monte al apuntar el dia,
                                     <lb/>descubriendola los Soldados, <lb/>fueron coriendo adonde
                                     es¬ <lb/>taba, y viendola tan admi¬ <lb/>rablemente hermosa,
                                     que¬ <lb/>daron de golpe mas deslum¬ <lb/>brados de las luces de
                                     su ros¬ <lb/>tro, que de los primeros ra¬ <lb/>yos del dia.
                                     Informaronse <lb/>de dónde era, dónde iba, y <lb/>quales eran
                                     sus pretensiones. <lb/>A que respondió que era <lb/>de
-                                    Bethulia, y dejaba aquel <lb/>dia aquella desdichada Cit¬
+                                    <name>Bethulia</name>, y dejaba aquel <lb/>dia aquella desdichada Cit¬
                                     <lb/>dad en lastimosa infelicidad: <lb/>que venia sola á verse
                                     con <lb/>su General, con quien tenia <lb/>cosas muy arduas, y
                                     singu¬ <lb/>lares que comunicar, y que <lb/>asi la llevasen
@@ -7645,9 +7744,11 @@
                                     Ges <lb/>neral. <lb/>Admirárase alguno de eso <lb/>te modo de
                                     proceder Judith <lb/>Una muger tan hermosa, y <lb/>tan capaz de
                                     provocar los <fw type="reclamos">hom¬</fw>
-                                    <pb n="13" source="Varios_446_13.jpg" facs="varios/Varios_446_13.jpg"/>
-                                    <fw type="paginaNum">13</fw>
-                                    <lb/>hombres, irse á meter en <lb/>medio de los Soldados, sin
+
+            <pb n="13" source="Varios_446_13.jpg" facs="varios/Varios_446_13.jpg"/>
+
+            <fw type="paginaNum">13</fw>
+            <lb/>hombres, irse á meter en <lb/>medio de los Soldados, sin
                                     <lb/>temer el riesgo de la ho- <lb/>nestidad, que amaba tanto,
                                     <lb/>no considerando, que con <lb/>verla, se excitaban los de-
                                     <lb/>seos, estando en lo mejor <lb/>de su edad, para recibir
@@ -7658,7 +7759,8 @@
                                     en <lb/>esto huviera seguro, siem- <lb/>pre una muger honesta ha
                                     <lb/>de procurar no exponer su <lb/>cuerpo á la menor afren-
                                     <lb/>ta, aunque fuera por salvar <lb/>la Ciudad.</p>
-          <p><lb/>Si consideramos todo la <lb/>dicho, segun el mundo, es
+          <p>
+            <lb/>Si consideramos todo la <lb/>dicho, segun el mundo, es
                                     <lb/>cierto, que no se puede de- <lb/>fender ; pero quién se
                                     puede <lb/>atrever á condenar lo que se <lb/>hacia con una
                                     manifiesta ins- <lb/>piracion de Dios, y del <lb/>buen Angel que
@@ -7673,7 +7775,8 @@
                                     <lb/>salvar la vida, supuesto, que <lb/>algunos Theologos, y Ju-
                                     <lb/>risconsultos afirman, que son <lb/>buenos y loables por
                                     hacerse <lb/>á buen fin, y por medios le- <lb/>gitimos?</p>
-          <p><lb/>Llevaronla, pues delan- <lb/>te del General Holofernes,
+          <p>
+            <lb/>Llevaronla, pues delan- <lb/>te del General Holofernes,
                                     <lb/>quien estaba magestuoso sen- <lb/>tado en su trono, debajo
                                     <lb/>de un pavellon de oro, y <lb/>de purpura, todo guarne-
                                     <lb/>cido de esmeraldas, soberbio, <lb/>é inflado como un pavo
@@ -7687,12 +7790,17 @@
                                     <lb/>estaban presentes no queda- <lb/>ron menos cautivos que el
                                     <lb/>General al ver su gallardia, <lb/>hermosura, y donayre; y
                                     asi <lb/>comenzaron á decir con ad- <lb/>miracion : <hi rend="cursiva">Que tierra que pro-</hi>
-                                    <fw type="reclamos">du-</fw>
-                                    <pb n="14" source="Varios_446_14.jpg" facs="varios/Varios_446_14.jpg"/>
-                                    <fw type="paginaNum">14</fw>
-                                    <hi rend="cursiva"><lb/>ducia tan bellas mugeres me- <lb/>recian
-                                          qualquiera trabajo para <lb/>conquistarla.</hi></p>
-          <p><lb/>Holofernes la mandó le- <lb/>vantar luego al punto, y ella
+            <fw type="reclamos">du-</fw>
+
+            <pb n="14" source="Varios_446_14.jpg" facs="varios/Varios_446_14.jpg"/>
+
+            <fw type="paginaNum">14</fw>
+            <hi rend="cursiva">
+              <lb/>ducia tan bellas mugeres me- <lb/>recian
+                                          qualquiera trabajo para <lb/>conquistarla.</hi>
+          </p>
+          <p>
+            <lb/>Holofernes la mandó le- <lb/>vantar luego al punto, y ella
                                     <lb/>fingia tener algun miedo, y <lb/>haberse turbado por la
                                     pro- <lb/>funda reverencia que se de- <lb/>bia á la presencia
                                     de un tan <lb/>gran General, sabiendo que <lb/>era muy vano, y
@@ -7714,7 +7822,8 @@
                                     razonamiento, pues <lb/>Dios lo tomaba por instru- <lb/>mento
                                     para tan gran nego- <lb/>cio. Diola licencia para ha- <lb/>blar,
                                     y empezó, diciendo.</p>
-          <p rend="cursiva"><lb/>Bien sé,Señor, que Na- <lb/>bucodonosor es
+          <p rend="cursiva">
+            <lb/>Bien sé,Señor, que Na- <lb/>bucodonosor es
                                     electo por <lb/>Dios para Rey del mundo, <lb/>y que todo el
                                     poder de su Mo- <lb/>narquía se encierra en Ho- <lb/>lofernes,
                                     donde vive y triun- <lb/>fa magnificamente para bien <lb/>de los
@@ -7734,9 +7843,11 @@
                                     haceis muy bien al pre- <lb/>sente, que Dios está irri-
                                     <lb/>tado contra ella, y la tiene <lb/>amenazada por sus
                                     Profetas <lb/>su ruina. Por esta caura es- <fw type="reclamos" rend="cursiva">tan</fw>
-                                    <pb n="15" source="Varios_446_15.jpg" facs="varios/Varios_446_15.jpg"/>
-                                    <fw type="paginaNum">15</fw>
-                                    <lb/>tán todos tan amedrantados, <lb/>que no os lo puedo
+
+            <pb n="15" source="Varios_446_15.jpg" facs="varios/Varios_446_15.jpg"/>
+
+            <fw type="paginaNum">15</fw>
+            <lb/>tán todos tan amedrantados, <lb/>que no os lo puedo
                                     ponderar <lb/>mas. Fuera, que la hambre, <lb/>y la sed conspiran
                                     en su des- <lb/>truccion, y están resueltos á <lb/>matar todos
                                     los animales, pa- <lb/>ra beber la sangre, sin per- <lb/>donar
@@ -7755,7 +7866,8 @@
                                     á un po- <lb/>der tan formidable ; conduci- <lb/>de por mano
                                     del Altisimo, <lb/>siendo esta la orden de su
                                     <lb/>Providencia.</p>
-          <p><lb/>Holofernes que yá esta- <lb/>ba preso por los ojos, fue
+          <p>
+            <lb/>Holofernes que yá esta- <lb/>ba preso por los ojos, fue
                                     <lb/>encadenado por los oidos <lb/>con dulzura, y utilidad de
                                     <lb/>estos discursos , no siendo ya <lb/>su corazon suyo.
                                     Acaricióla <lb/>mucho, prometiendola, que <lb/>su Dios seria el
@@ -7779,9 +7891,11 @@
                                     <lb/>Mandó Holofernes des- <lb/>pues de esto que la aloja-
                                     <lb/>sen en una rica tienda para <lb/>que reposase, y antes de
                                     se- <lb/>pararse le pidió una mer- <fw type="reclamos">ced,</fw>
-                                    <pb n="16" source="Varios_446_16.jpg" facs="varios/Varios_446_16.jpg"/>
-                                    <fw type="paginaNum">16</fw>
-                                    <lb/>ced, que era la dejasen salir <lb/>antes del dia para hacer
+
+            <pb n="16" source="Varios_446_16.jpg" facs="varios/Varios_446_16.jpg"/>
+
+            <fw type="paginaNum">16</fw>
+            <lb/>ced, que era la dejasen salir <lb/>antes del dia para hacer
                                     sus <lb/>oraciones al Dios que adora- <lb/>ba, segun su
                                     costumbre, y <lb/>atravesar todo su Campo <lb/>con toda
                                     libertad, sin que <lb/>ninguno osase impedirla, ni
@@ -7792,7 +7906,8 @@
                                     purificarse <lb/>del comercio con los In- <lb/>fieles, y rogó
                                     á Dios ince- <lb/>sablemente fuese servido de <lb/>conducir sus
                                     designios para <lb/>la libertad de su Patria.</p>
-          <p><lb/>Quatro dias habian ya <lb/>pasado, que Judith estaba <lb/>en
+          <p>
+            <lb/>Quatro dias habian ya <lb/>pasado, que Judith estaba <lb/>en
                                     los Reales de Holofer- <lb/>nes aguardando ocasion de
                                     <lb/>ejecutar lo que tenia pen- <lb/>sado, quando este quiso de
                                     <lb/>puro contento hacer un <lb/>festin, con intencion de con-
@@ -7815,7 +7930,8 @@
                                     suya, y <lb/>luego al punto se adornó, <lb/>y aliñó lo mejor
                                     que pudo, <lb/>por parecerle mejor, y asi <lb/>pasó á su
                                     retrete.</p>
-          <p><lb/>Al mismo instante que la <lb/>vió sola junto á si se le al-
+          <p>
+            <lb/>Al mismo instante que la <lb/>vió sola junto á si se le al-
                                     <lb/>borotó el corazon, y pare- <lb/>cia que los explendores
                                     que <lb/>salian de los ojos de esta bel- <lb/>dad le habian
                                     sacado fue- <lb/>ra de si. Su pasion no le da- <lb/>ba lugar á
@@ -7824,12 +7940,15 @@
                                     <lb/>gurandola, que le habia <lb/>grangeado el corazon. La
                                     <lb/>santa Judith le suplicó tuvie- <lb/>se por bien de que
                                     ella se <lb/>portase á su modo por en- <fw type="reclamos">ton-</fw>
-                                    <pb n="17" source="Varios_446_17.jpg" facs="varios/Varios_446_17.jpg"/>
-                                    <fw type="paginaNum">17</fw>
-                                    <lb/>tonces, y la dejase comer de <lb/>lo que su esclava la
+
+            <pb n="17" source="Varios_446_17.jpg" facs="varios/Varios_446_17.jpg"/>
+
+            <fw type="paginaNum">17</fw>
+            <lb/>tonces, y la dejase comer de <lb/>lo que su esclava la
                                     trahia. <lb/>El se lo concedió gustoso, <lb/>dejandola hacer
                                     toda su vo- <lb/>luntad por no disgustarla.</p>
-          <p><lb/>Teniase ya entonces Ho- <lb/>lofernes por el hombre mas
+          <p>
+            <lb/>Teniase ya entonces Ho- <lb/>lofernes por el hombre mas
                                     <lb/>dichoso del mundo, mani- <lb/>festandolo con un sumo pla-
                                     <lb/>cer, y alegria : bebia abun- <lb/>dantemente, y se mostra-
                                     <lb/>ba gallardo, y placentero <lb/>por estremo, de lo que Ju-
@@ -7852,7 +7971,8 @@
                                     aguardase detras de <lb/>la puerta, y de alli no se
                                     <lb/>apartase, para que al menor <lb/>aviso, concurriese á lo
                                     que <lb/>la mandase.</p>
-          <p><lb/>Ya se hallaba sola la bue- <lb/>na Judih con Holofernes en
+          <p>
+            <lb/>Ya se hallaba sola la bue- <lb/>na Judih con Holofernes en
                                     <lb/>su retrete, y bien que sola, <lb/>pues este estaba como
                                     muer- <lb/>to con el sueño profundo <lb/>de su embriaguez.
                                     Pusose <lb/>a contemplar en aquel bar- <lb/>baro General, que
@@ -7868,10 +7988,12 @@
                                     <lb/>llos, y diciendo solo en su co- <lb/>razon Dios mio,
                                     alentad aho- <lb/>ra mi brazo, ejecutó varonil- <lb/>mente el
                                     golpe, de suerte, <lb/>que de dos cuchiladas le <fw type="signaturas">C</fw>
-                                    <fw type="reclamos">cor-</fw>
-                                    <pb n="18" source="Varios_446_18.jpg" facs="varios/Varios_446_18.jpg"/>
-                                    <fw type="paginaNum">18</fw>
-                                    <lb/>cortó, y separó lá cabeza de <lb/>los hombros. Llamò
+            <fw type="reclamos">cor-</fw>
+
+            <pb n="18" source="Varios_446_18.jpg" facs="varios/Varios_446_18.jpg"/>
+
+            <fw type="paginaNum">18</fw>
+            <lb/>cortó, y separó lá cabeza de <lb/>los hombros. Llamò
                                     pronto <lb/>á la esclava, y la entregó la <lb/>cabeza de
                                     Holofernes, y es- <lb/>ta la metió en el saco en que <lb/>habia
                                     trahido la comida. Em- <lb/>volvió Judith el cuerpo en-
@@ -7879,10 +8001,11 @@
                                     <lb/>se salieron de la tienda muy <lb/>disimuladas. Atravesaron
                                     los <lb/>Reales sin que persona, ni <lb/>Soldado alguno les
                                     impidie- <lb/>se, por la orden que ya te- <lb/>nian del General. </p>
-          <p><lb/>Llegaron de noche á la <lb/>puerta de la Ciudad de Be-
+          <p>
+            <lb/>Llegaron de noche á la <lb/>puerta de la Ciudad de Be-
                                     <lb/>thulia, y desde lejos comen- <lb/>zaron á dar voces á las
                                     Cen- <lb/>tinelas, diciendo : Abrid, que <lb/>Dios está con
-                                    nosotros, y ha- <lb/>hecho maravillas en lsrael, <lb/>Fueron
+                                    nosotros, y ha- <lb/>hecho maravillas en <name>lsrael</name>, <lb/>Fueron
                                     corriendo á avisar al <lb/>Sacerdote Ozias, y á todos <lb/>los
                                     demas, que con toda <lb/>prisa salieron á recibirla. <lb/>El
                                     Pueblo todo, luego que <lb/>se estendió la noticia, corria
@@ -7891,7 +8014,8 @@
                                     <lb/>altas voces el parabien de <lb/>su vuelta, y venida, pues
                                     <lb/>pensaban antes, que ya se ha- <lb/>bia perdido, y la
                                     miraban co- <lb/>mo si viniera del otro mun- <lb/>do.</p>
-          <p><lb/>Mandó Judith encen- <lb/>der faroles, y subienido á un
+          <p>
+            <lb/>Mandó Judith encen- <lb/>der faroles, y subienido á un
                                     <lb/>lugar eminente, donde se so- <lb/>lia hablar al Pueblo,
                                     despues <lb/>de pedir silencio, dixo asi: <lb/>"Señores, y
                                     compatrioras <lb/>"mios, dad gracias à Dios <lb/>"nuestro
@@ -7912,13 +8036,16 @@
                                     ha <lb/>"conservado pura en la ida, <lb/>"vuelta, y estancia en
                                     su <lb/>"Campo: sin permitir, que <lb/>"persona alguna intentase
                                     <lb/>"contra mi honor; y asi que <fw type="reclamos">"do</fw>
-                                    <pb n="19" source="Varios_446_19.jpg" facs="varios/Varios_446_19.jpg"/>
-                                    <fw type="paginaNum">19.</fw>
-                                    <lb/>"do gozosa de la victoria, <lb/>"mi bien y de vuestra
+
+            <pb n="19" source="Varios_446_19.jpg" facs="varios/Varios_446_19.jpg"/>
+
+            <fw type="paginaNum">19.</fw>
+            <lb/>"do gozosa de la victoria, <lb/>"mi bien y de vuestra
                                     liber- <lb/>"tad. A él es á quien habeis <lb/>"de dar toda la
                                     alabanza; <lb/>"porque sus bondades, y mi- <lb/>"sericordias son
                                     inagota- <lb/>"bles."</p>
-          <p><lb/>El Pueblo salió fuera de <lb/>si con el grande gozo que
+          <p>
+            <lb/>El Pueblo salió fuera de <lb/>si con el grande gozo que
                                     <lb/>concibió de sus demostra- <lb/>ciones, y palabras, y vien-
                                     <lb/>do la cabeza de Holofornes á <lb/>la luz de las antorchas,
                                     co- <lb/>mo era de noche, les pare- <lb/>cia era sueño, quanto
@@ -7931,8 +8058,10 @@
                                     <lb/>maciones, protestando, que <lb/>ella era su madre, y
                                     liberta- <lb/>dora, y diciendo á grandes <lb/>voces, <hi rend="cursiva">Tu eres las gloria de <lb/>Jerusalén, tu
                                           la alegria de <lb/>Israél, y tu el honor de nuest-
-                                          <lb/>tro Pueblo.</hi></p>
-          <p><lb/>Entonces el Sacerdote <lb/>Ozias,Principe de Israél, la
+                                          <lb/>tro Pueblo.</hi>
+          </p>
+          <p>
+            <lb/>Entonces el Sacerdote <lb/>Ozias,Principe de Israél, la
                                     <lb/>dixo : ,,Vos sois el dia de <lb/>"hoy hija mia, bendita, y
                                     <lb/>"gloriosa entre todas las <lb/>"mugeres, que viven en la
                                     <lb/>"tierra habitable. Alabado <lb/>"sea el Criador del Cielo,
@@ -7951,18 +8080,21 @@
                                     de <lb/>"nuestro Dios. Veis aqui <lb/>"la cabeza del General de
                                     <lb/>"los incredulos cortada por <lb/>"la mano de esta Santa He-
                                     <lb/>"roina. Veis ahi quien o- <lb/>"amenazaba que os quitas
-                                    <lb/>"ria la vida en ganando- <lb/>"Bethulia, y ahora os deá-
+                                    <lb/>"ria la vida en ganando- <lb/>"<name>Bethulia</name>, y ahora os deá-
                                     <lb/>"jará estar en grande repo- <lb/>"so, y quietud. "Quedó
                                     <lb/>este hombre tan asombrado <lb/>con esta nueva que se desma-
                                     <lb/>yó, y habiendo vuelto en sí, <lb/>se echó á los pies de
                                     Judith, <fw type="signaturas">C2</fw>
-                                    <fw type="reclamos">y</fw>
-                                    <pb n="20" source="Varios_446_20.jpg" facs="varios/Varios_446_20.jpg"/>
-                                    <fw type="paginaNum">20</fw>
-                                    <lb/>y la adoró, y por su medio <lb/>se convirtió á la
+            <fw type="reclamos">y</fw>
+
+            <pb n="20" source="Varios_446_20.jpg" facs="varios/Varios_446_20.jpg"/>
+
+            <fw type="paginaNum">20</fw>
+            <lb/>y la adoró, y por su medio <lb/>se convirtió á la
                                     verdadera <lb/>Religion, y dió toda la glo- <lb/>ria al Dios de
                                     Jerusalén.</p>
-          <p><lb/>Judith, prosiguiendo la <lb/>empresa aconsejó al Pueblo
+          <p>
+            <lb/>Judith, prosiguiendo la <lb/>empresa aconsejó al Pueblo
                                     <lb/>que al despuntar el dia salie- <lb/>sen armados de la
                                     Ciudad, <lb/>como dando á entender, que- <lb/>rian dar la
                                     batalla : que con <lb/>esto irian corriendo los Asy- <lb/>rios
@@ -7984,7 +8116,8 @@
                                     que el enemigo <lb/>estaba puesto en batalla, cor- <lb/>rió con
                                     mucho tiento la cor- <lb/>rina, y vió el cuerpo de su
                                     <lb/>Señor sin cabeza, que esta- <lb/>ba nadando en sangre.</p>
-          <p><lb/>Quedó tan fuera de si, <lb/>que hizo luego al punto pe-
+          <p>
+            <lb/>Quedó tan fuera de si, <lb/>que hizo luego al punto pe-
                                     <lb/>dazos sus vestiduras en señal <lb/>de dolor, y sentimiento
                                     , y <lb/>fue corriendo á la camara de <lb/>Judith, para darla
                                     mil muer- <lb/>tes si la encontrase : pero no <lb/>hallandola ,
@@ -7997,13 +8130,18 @@
                                     por todo el Ejerci- <lb/>to el estrago, y todo era una
                                     <lb/>desesperacion, todo lagrimas <lb/>y ahullidos. Al mismo
                                     tiem- <lb/>po se descubrió la cabeza de <lb/>Holofornes colgada
-                                    de las <lb/>murallas de Bethulia, y todas <lb/>las Tropas del
+                                    de las <lb/>murallas de <name>Bethulia</name>, y todas <lb/>las Tropas del
                                     Ejercito de los <lb/>Asyrios temblaban con un te- <lb/>mor
                                     panico, y como castiga- <lb/>das con un azote del Cielo,
                                     <lb/>comenzaron á desbaratarse, y <lb/>á tumultuarse ,
                                     huyendo, <lb/>procurando cada uno librar <lb/>su vida con la
                                     fuga.</p>
-          <p><lb/>Al verlos los Israelitas <fw type="reclamos">die-</fw><pb n="21" source="Varios_446_21.jpg" facs="varios/Varios_446_21.jpg"/><lb/>dieron contra ellos, hacien- <lb/>do una grande mortandad.
+          <p>
+            <lb/>Al verlos los <name>Israel</name>itas <fw type="reclamos">die-</fw>
+
+            <pb n="21" source="Varios_446_21.jpg" facs="varios/Varios_446_21.jpg"/>
+
+            <lb/>dieron contra ellos, hacien- <lb/>do una grande mortandad.
                                     <lb/>Fueronlos siguiendo con una <lb/>grande algazara, y como si
                                     <lb/>tuviesen muy grandes Tropas: <lb/>y como sus Esquadrones
                                     mar- <lb/>chaban en batalla, y con <lb/>buena orden, les era
@@ -8011,14 +8149,15 @@
                                     esperanza <lb/>de vida ni fortuna. Todos los <lb/>Pueblos
                                     circunvecinos, lue- <lb/>go que oyeron, y vieron la
                                     <lb/>novedad, salieron armados <lb/>y furiosos contra sus enemi-
-                                    <lb/>gos, viniendo á tomar parte <lb/>en la gloria de Bethulia,
+                                    <lb/>gos, viniendo á tomar parte <lb/>en la gloria de <name>Bethulia</name>,
                                     y <lb/>poniendose en campaña, por <lb/>todas partes acometian,
                                     y da- <lb/>ban sobre sus contrarios. No <lb/>acertaban à
                                     defenderse ; por <lb/>que estaban aun pasmados <lb/>del fracaso,
                                     y asi como es- <lb/>taban atonitos, y derrotados <lb/>sin Gefe
                                     que los governase, <lb/>hacian en ellos una horrible
                                     <lb/>carniceria.</p>
-          <p><lb/>En fin, todo el campo de <lb/>Holofernes fue destruido, en
+          <p>
+            <lb/>En fin, todo el campo de <lb/>Holofernes fue destruido, en
                                     <lb/>medio de ser tan quantioso, <lb/>que pasaban de cien mil
                                     <lb/>hombres. Hallóse tan gran <lb/>despojo, tan rico, y abun-
                                     <lb/>dante que era admiracion, <lb/>porque los enemigos, mas
@@ -8028,10 +8167,11 @@
                                     Joachin, vino á Be- <lb/>thulia con sus Sacerdotes, <lb/>por
                                     ver á la victoriosa Judith, <lb/>y llenarla de bendiciones.
                                     <lb/>Luego que oyo Judith, que <lb/>venia el Pontifice á
-                                    Bethulia, <lb/>salió á recibirle, y al llegar <lb/>á su
+                                    <name>Bethulia</name>, <lb/>salió á recibirle, y al llegar <lb/>á su
                                     presencia, se echó á sus <lb/>pies para que la echase su
                                     <lb/>bendicion, lo qual hizo el su- <lb/>mo Sacerdore,
-                                    diciendola: <hi rend="cursiva"><lb/>Tu eres, hermosa Judith, la <lb/>gloria de
+                                    diciendola: <hi rend="cursiva">
+              <lb/>Tu eres, hermosa Judith, la <lb/>gloria de
                                           Jerusalén, tu la ale- <lb/>gria de todo lsraél, tu en
                                           fin <lb/>la honra de todo nuestro <lb/>Pueblo ; porque has
                                           obrado <lb/>varonilmente en esta grande <lb/>empresa. Tu
@@ -8048,12 +8188,17 @@
                                           de Jeru- <lb/>salén, gozo de lsrael, honra <lb/>del
                                           Pueblo, la muger fuerte, <lb/>la casta y valerora
                                           Princesa,</hi>
-                                    <fw type="reclamos">y</fw>
-                                    <pb n="22" source="Varios_446_22.jpg" facs="varios/Varios_446_22.jpg"/>
-                                    <fw type="paginaNum">22</fw>
-                                    <hi rend="cursiva"><lb/>y la Dama incomparable, cuya <lb/>fama
-                                          habia de vivir eterna- <lb/>mente.</hi></p>
-          <p><lb/>Un mes se pasó todo en <lb/>continuos regocijos musicas
+            <fw type="reclamos">y</fw>
+
+            <pb n="22" source="Varios_446_22.jpg" facs="varios/Varios_446_22.jpg"/>
+
+            <fw type="paginaNum">22</fw>
+            <hi rend="cursiva">
+              <lb/>y la Dama incomparable, cuya <lb/>fama
+                                          habia de vivir eterna- <lb/>mente.</hi>
+          </p>
+          <p>
+            <lb/>Un mes se pasó todo en <lb/>continuos regocijos musicas
                                     <lb/>y trofeos en el Pueblo. Casi <lb/>treinta dias duró el
                                     recoger <lb/>los despojos que dejó en su <lb/>campo el enemigo,
                                     de los <lb/>quales los mas preciosos en <lb/>oro, plata,
@@ -8061,12 +8206,13 @@
                                     juzgaban ser de <lb/>Holofernes, fueron presenta- <lb/>dos á
                                     Judith, lo demás, que <lb/>fue por estremo mucho, y <lb/>rico,
                                     como tambien muchos <lb/>viveres de trigo, carnes, y <lb/>vino,
-                                    todo se repartió en los <lb/>vecinos de Bethulia, que
+                                    todo se repartió en los <lb/>vecinos de <name>Bethulia</name>, que
                                     <lb/>quedaron muy ricos. Com- <lb/>puso Judith entonces un can-
                                     <lb/>tico de triunfos en accion de <lb/>gracias al Señor, el
                                     qual fue <lb/>cantado solemnemente con <lb/>admiracion de
                                     todos.</p>
-          <p><lb/>Pasado este mes de ale- <lb/>gria, se dispusieron todos á
+          <p>
+            <lb/>Pasado este mes de ale- <lb/>gria, se dispusieron todos á
                                     <lb/>ir á Jerusalén al Templo de <lb/>Dios á darle gracias,
                                     distri- <lb/>buir los votos de todo el Pue- <lb/>blo, y hacer
                                     grandes ofren- <lb/>das, en que se pasaron tres <lb/>meses con
@@ -8080,13 +8226,14 @@
                                     Pueblo habia <lb/>ofrecido, y dado de joyas, <lb/>perlas, plata,
                                     y oro de Holo- <lb/>fernes, todo se lo dió á Dios <lb/>en
                                     accion de gracias, por lo <lb/>mucho que la habia favore-
-                                    <lb/>cido, y ayudado á su Patria, <lb/>y todo Israel. Fueron
+                                    <lb/>cido, y ayudado á su Patria, <lb/>y todo <name>Israel</name>. Fueron
                                     los de- <lb/>mas asimismo ofreciendo de <lb/>los despojos que
                                     les habia to- <lb/>cado, con que dejaron el <lb/>Templo de Dios
                                     muy rico.</p>
-          <p><lb/>Al cabo de estas ofren- <lb/>das, y regocijos se volvieron
+          <p>
+            <lb/>Al cabo de estas ofren- <lb/>das, y regocijos se volvieron
                                     <lb/>todos á sus casas, y la Santa <lb/>Judith se volvió à su
-                                    peque- <lb/>na Ciudad de Bethulia, siem- <lb/>pre viuda desde
+                                    peque- <lb/>na Ciudad de <name>Bethulia</name>, siem- <lb/>pre viuda desde
                                     que murió <lb/>su Manasés, y siempre hon- <lb/>rada de todo el
                                     mundo, co- <lb/>mo la causa mas gloriosa que <lb/>habia sobre la
                                     tierra. Dio li- <lb/>bertad á su esclava Abraham <lb/>ó
@@ -8096,17 +8243,20 @@
                                     habido <lb/>quien inquietase à Israél. En <lb/>Israél.En
                                     <lb/>fin, murió esta grande He- <lb/>roina ; y fue sepultada en
                                     el <fw type="reclamos">se-</fw>
-                                    <pb n="23" source="Varios_446_23.jpg" facs="varios/Varios_446_23.jpg"/>
-                                    <fw type="paginaNum">23</fw>
-                                    <lb/>sepulcro de su marido en Be- <lb/>thulia, donde asi aqui,
-                                    como <lb/>en todo lsrael, fue llorada <lb/>por siete dias
+
+            <pb n="23" source="Varios_446_23.jpg" facs="varios/Varios_446_23.jpg"/>
+
+            <fw type="paginaNum">23</fw>
+            <lb/>sepulcro de su marido en Be- <lb/>thulia, donde asi aqui,
+                                    como <lb/>en todo <name>lsrael</name>, fue llorada <lb/>por siete dias
                                     continuos. To- <lb/>do lo restante de su vida des- <lb/>pues de
                                     su vicroria, lo pasó <lb/>en una retirada soledad, dan- <lb/>do
                                     á todos un grande ejemplo <lb/>de virtud. El dia de su triun-
                                     <lb/>fo fue celebrado siempre, y <lb/>puesto en el numero de las
                                     <lb/>grandes Festividades de los <lb/>Judios para toda la poste-
                                     <lb/>ridad.</p>
-          <p><lb/>Justo es , que tambien <lb/>nosotros hagamos á esta gran
+          <p>
+            <lb/>Justo es , que tambien <lb/>nosotros hagamos á esta gran
                                     <lb/>Matrona sus honras, predi- <lb/>cando sus virtudes, para
                                     <lb/>ejemplar edificacion, y doc- <lb/>trina de todos. Nada tuvo
                                     <lb/>Judith de femenina sino el <lb/>sexo : todo fue varonil,
@@ -8130,7 +8280,8 @@
                                     en sus combates, ni tan <lb/>glorioso en sus triunfos, <lb/>pues
                                     triunfó, y venció al <lb/>que en su soberbia imagina-
                                     <lb/>cion le parecia poco todo el <lb/>mundo.</p>
-          <p><lb/>Finalmente, Dios, que <lb/>obra tantas maravillas, abo-
+          <p>
+            <lb/>Finalmente, Dios, que <lb/>obra tantas maravillas, abo-
                                     <lb/>na esra Historia, habiendo <lb/>querido sea una parte de su
                                     <lb/>Escritura Sagrada. Es un mo- <lb/>numento eterno de la
                                     virtud <lb/>y fuerza de su brazo, el qual <lb/>deshace los
@@ -8141,9 +8292,11 @@
                                     <lb/>que braveaba en medio de un <lb/>Ejercito de cien mil
                                     Solda- <lb/>dos de á pie, y doce mil de <lb/>á caballo,
                                     rodeado todo de <fw type="reclamos">ace-</fw>
-                                    <pb n="24" source="Varios_446_24.jpg" facs="varios/Varios_446_24.jpg"/>
-                                    <fw type="paginaNum">24</fw>
-                                    <lb/>acero, de fuegos, y rayos, <lb/>que decia : <hi rend="cursiva">Iré haré, y asom- <lb/>braré</hi>, que
+
+            <pb n="24" source="Varios_446_24.jpg" facs="varios/Varios_446_24.jpg"/>
+
+            <fw type="paginaNum">24</fw>
+            <lb/>acero, de fuegos, y rayos, <lb/>que decia : <hi rend="cursiva">Iré haré, y asom- <lb/>braré</hi>, que
                                     tenia el consejo <lb/>de la muerte, en que orde- <lb/>naba
                                     incendios de Pueblos, <lb/>saqueos de Provincias, y don- <lb/>de
                                     tantos dragones bebian las <lb/>lagrimas de los inocentes Pue-

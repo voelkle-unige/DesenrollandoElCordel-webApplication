@@ -14,6 +14,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -101,6 +116,44 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q4040">
+            <placeName key="Aragón">Aragón</placeName>
+            <location>
+              <geo>41 -1</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q12225">
+            <placeName key="Murcia">Murcia</placeName>
+            <location>
+              <geo>37.986111111111 -1.1302777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q38">
+            <placeName key="Italia">Italia</placeName>
+            <location>
+              <geo>42.5 12.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q285235">
+            <placeName key="Bañuelos_de_Bureba">Bañuelos De Bureba</placeName>
+            <location>
+              <geo>42.500833333333 -3.2805555555556</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -141,7 +194,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_028_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_028_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_028_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_028_1/full/full/0/default.jpg"/>
@@ -793,18 +848,21 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_028_1.jpg" facs="varios/Varios_028_1.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>EL<lb/>CANTOR DE LAS HERMOSAS.</head>
-          <head type="subtitulo"><lb/>TROVAS DE AMOR DEDICADAS AL BELLO SEXO POR
+          <head type="primer_titulo" rend="negrita">
+            <lb/>EL<lb/>CANTOR DE LAS HERMOSAS.</head>
+          <head type="subtitulo">
+            <lb/>TROVAS DE AMOR DEDICADAS AL BELLO SEXO POR
             UNOS<lb/>AFICIONADOS.</head>
-
           <div n="1">
-            <head type="titulo_cancion"><lb/>67 LA ESTRELLA MATUTINA.</head>
+            <head type="titulo_cancion">
+              <lb/>67 LA ESTRELLA MATUTINA.</head>
             <head type="subtitulo_cancion">CORO PASTORIL.</head>
-
             <lg n="1">
-              <head type="titulo_estrofa"><lb/>I.</head>
+              <head type="titulo_estrofa">
+                <lb/>I.</head>
               <lg>
                 <l rend="indent">Cuando en noche serena y tranquila</l>
                 <l>Puebla el aire de imágenes bellas.</l>
@@ -813,14 +871,13 @@
 
                 <pb n="2" source="Varios_028_2.jpg" facs="varios/Varios_028_2.jpg"/>
 
-                <fw type="paginaNum"><lb/>86</fw>
-
+                <fw type="paginaNum">
+                  <lb/>86</fw>
                 <l rend="indent">Puro disco de plata en Oriente</l>
                 <l>Una ostenta, mas bella y luciente,</l>
                 <l>Con que eclipsa á millares el brillo</l>
                 <l>Derramando torrentes de luz.</l>
               </lg>
-
               <lg>
                 <l rend="indent">En tanto al valle acuden</l>
                 <l>Vistiendo ricas galas,</l>
@@ -831,7 +888,6 @@
                 <l>Entonan dulces cánticos</l>
                 <l>Del caramillo al son.</l>
               </lg>
-
               <lg>
                 <l rend="indent">Y allí,BELISA, irradia</l>
                 <l>Fu majestad entre ellas,</l>
@@ -843,7 +899,6 @@
                 <l>De mágico rielar.</l>
               </lg>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">II.</head>
               <lg>
@@ -856,7 +911,6 @@
                 <l>Al halago apacible del céfiro,</l>
                 <l>Culto fiel á su luz virginal.</l>
               </lg>
-
               <lg>
                 <l rend="indent">Y á su esplendor, BELISA,</l>
                 <l>Se miran bulliciosas,</l>
@@ -867,7 +921,6 @@
                 <l>Con que al nuevo crepúsculo</l>
                 <l>Ornar tu rica sien.</l>
               </lg>
-
               <lg>
                 <l rend="indent">Y ante la faz divina</l>
                 <l>Se humillan todas ellas,</l>
@@ -879,16 +932,15 @@
                 <l>De mágico rielar.</l>
               </lg>
             </lg>
-
-            <p><lb/>J. A. C.</p>
+            <p>
+              <lb/>J. A. C.</p>
           </div>
-
           <div n="2">
+
             <pb n="3" source="Varios_028_3.jpg" facs="varios/Varios_028_3.jpg"/>
 
             <head type="titulo_cancion" rend="negrita">68 EL PESCADOR.</head>
             <head type="subtitulo_cancion">TROVAS MARÍTIMAS.</head>
-
             <lg n="1">
               <head type="titulo_estrofa">I.</head>
               <l rend="indent">Surcando sedal y redes</l>
@@ -900,7 +952,6 @@
               <l>Navega mientras el bote</l>
               <l>Vuela del viento á merced.</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">II.</head>
               <l rend="indent">El sosiego de los peces</l>
@@ -909,7 +960,6 @@
               <l>Les roban la libertad.</l>
               <l rend="indent">Vuela, etc.</l>
             </lg>
-
             <lg n="3">
               <head type="titulo_estrofa">III.</head>
               <l rend="indent">Al amanecer la aurora</l>
@@ -918,7 +968,6 @@
               <l>Con el truto de mi atan.</l>
               <l rend="indent">Vuela, etc.</l>
             </lg>
-
             <lg n="4">
               <head type="titulo_estrofa">IV.</head>
               <l rend="indent">Mi regreso allá en la playa</l>
@@ -927,7 +976,6 @@
               <l>Besa mi tostada faz.</l>
               <l rend="indent">Vuela, etc.</l>
             </lg>
-
             <lg n="5">
               <head type="titulo_estrofa">V.</head>
               <l rend="indent">Morenilla de ojos negros</l>
@@ -936,7 +984,6 @@
               <l>Que vé el alba al despuntar,</l>
               <l rend="indent">Vuela etc.</l>
             </lg>
-
             <lg n="6">
               <head type="titulo_estrofa">VI.</head>
               <l rend="indent">Por mi amor, salvando escollos,</l>
@@ -946,13 +993,13 @@
               <l rend="indent">Vuela, etc.</l>
             </lg>
           </div>
-
           <div n="3">
+
             <pb n="4" source="Varios_028_4.jpg" facs="varios/Varios_028_4.jpg"/>
 
-            <head type="titulo_cancion">69. <hi rend="negrita">EL LELE.</hi></head>
+            <head type="titulo_cancion">69. <hi rend="negrita">EL LELE.</hi>
+            </head>
             <head type="subtitulo_cancion">PLAYERAS DE ANDALUᑕIA.</head>
-
             <lg n="1">
               <head type="titulo_estrofa">I.</head>
               <lg>
@@ -963,7 +1010,6 @@
                 <l rend="indent">(Para mí toitico... ico!)</l>
                 <l>Y haremos cucurru... cu.</l>
               </lg>
-
               <lg>
                 <l>A la zungarabandunga</l>
                 <l rend="indent">Pandungandanga,</l>
@@ -979,7 +1025,6 @@
                 <l>Ay lelé! ay! ay!.. ay! ayl..</l>
               </lg>
             </lg>
-            
             <lg n="2">
               <head type="titulo_estrofa">II.</head>
               <l rend="indent">Cuando te veo en la calfe</l>
@@ -987,7 +1032,6 @@
               <l>Porque siempre ma gustao</l>
               <l>Tu cuerpo zaragatero</l>
             </lg>
-            
             <lg n="3">
               <head type="titulo_estrofa">III.</head>
               <l>Que derrame mas aquel</l>
@@ -995,40 +1039,39 @@
               <l>Que mi morena pulia</l>
               <l>Si en la calle sienta el pié.</l>
             </lg>
-            
             <lg n="4">
               <head type="titulo_estrofa">IV.</head>
               <l rend="indent">Me gustan las Valencianas,</l>
-              <l>Las de Aragon y de Múrcia,</l>
+              <l>Las de <name>Aragon</name> y de <name>Múrcia</name>,</l>
               <l>Me gustan las Catalanas,</l>
               <l>Pero mas las Andaluzas.</l>
             </lg>
-            
             <lg n="5">
               <head type="titulo_estrofa">V.</head>
-              <l rend="indent">Las de Italia tienen fama,</l>
+              <l rend="indent">Las de <name>Italia</name> tienen fama,</l>
               <l>Por constantes en amar;</l>
-              <l>Las de Francia por sus besos;</l>
+              <l>Las de <name>Francia</name> por sus besos;</l>
               <l>Las de España por su sal.</l>
             </lg>
-            
             <lg n="6">
               <head type="titulo_estrofa">VI.</head>
               <l rend="indent">Las gitanas Andaluzas</l>
               <l>Por la gracia é su popa,</l>
               <l>Son los buques mas veletos</l>
-              <l>De las escuadras de Europa.</l>
+              <l>De las escuadras de <name>Europa</name>.</l>
             </lg>
-            
-            <p><lb/>—M. Z.—</p>
-            <p rend="cursiva"><lb/>(Es propiedad.)</p>
+            <p>
+              <lb/>—M. Z.—</p>
+            <p rend="cursiva">
+              <lb/>(Es propiedad.)</p>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Se halla de venta en casa los sucesores de Antonio Bosch, calle del Bou de la
+          <p>
+            <lb/>Se halla de venta en casa los sucesores de Antonio Bosch, calle del Bou de la
             Plaza Nueva, núm. 13.</p>
-          <p><lb/>Barcelona.—Imp. de Narciso Ramirez y Comp.ª, pasaje de Escudillers, núm.
+          <p>
+            <lb/>Barcelona.—Imp. de Narciso Ramirez y Comp.ª, pasaje de Escudillers, núm.
             4.—1876.</p>
         </div>
       </div>

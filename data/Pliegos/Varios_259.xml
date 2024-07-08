@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -70,7 +84,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -100,6 +115,32 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="3" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q615722">
+            <placeName key="Santa_Fe">Santa Fe</placeName>
+            <location>
+              <geo>37.189444444444 -3.7180555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q945626">
+            <placeName key="Pulgar">Pulgar</placeName>
+            <location>
+              <geo>39.694722222222 -4.1522222222222</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -136,8 +177,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1439,25 +1479,26 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_259_1.jpg" facs="varios/Varios_259_1.jpg"/>
 
         <fw type="impresorNum">(Núm. 63.)</fw>
-
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>EL TRIUNFO DEL AVE MARÍA,</head>
-          <head type="titulo_parte"><lb/>Ó<lb/>GARCILASO DE LA VEGA Y EL MORO
+          <head type="primer_titulo" rend="negrita">
+            <lb/>EL TRIUNFO DEL AVE MARÍA,</head>
+          <head type="titulo_parte">
+            <lb/>Ó<lb/>GARCILASO DE LA VEGA Y EL MORO
             TARFE.<lb/>RELACION.</head>
-
           <l rend="indent">Despues de haber celebrado</l>
           <l>el rey Boabdil triunfante,</l>
           <l>sus victorias con festines,</l>
           <l>les quitó el brillo y abate</l>
-          <l>don Fernando del Pulgar;</l>
+          <l>don Fernando del <name>Pulgar</name>;</l>
           <l>que valiente y arrogante</l>
           <l>fijó sobre la mezquita</l>
           <l>el AVE llena de Gracia.</l>
           <l>Estando el Real á la mira</l>
-          <l>de Granada no distante,</l>
+          <l>de <name>Granada</name> no distante,</l>
           <l>del Católico Fernando,</l>
           <l>cuyo acero tan cortante</l>
           <l>fue azote de la morisma</l>
@@ -1467,16 +1508,16 @@
           <l>todos se quejan al Rey,</l>
           <l>que los guardias castigase</l>
           <l>pues si ellos no se durmieran,</l>
-          <l>Pulgar no lograra el lance;</l>
+          <l><name>Pulgar</name> no lograra el lance;</l>
           <l>en fin, toman el acuerdo,</l>
           <l>que salga el valiente Tarfe.</l>
           <l>El gallardo moro acepta.</l>
           <l>y armado de gran coraje</l>
           <l>salió tan galan y airoso,</l>
           <l>que los corazones parte,</l>
-          <l>y mirando á Santa Fe</l>
+          <l>y mirando á <name>Santa Fe</name></l>
           <l>á sus muros alto hace,</l>
-          <l>diciendo: salga Pulgar,</l>
+          <l>diciendo: salga <name>Pulgar</name>,</l>
           <l>á ver si sabe librarse</l>
           <l>de este Neblí que le reta,</l>
           <l>á él y á los Aguilares.</l>
@@ -1501,8 +1542,8 @@
           <l>hazaña de tanto esmalte.</l>
           <l>Indeciso está Fernando;</l>
           <l>pesaroso de que falte</l>
-          <l>Pulgar en esta ocasion,</l>
-          <l>que en Santa Fé no se halle.</l>
+          <l><name>Pulgar</name> en esta ocasion,</l>
+          <l>que en <name>Santa Fe</name>́ no se halle.</l>
           <l>Llamando á sus caballeros,</l>
           <l>todos vienen vigilantes,</l>
           <l>y el famoso Garcilaso</l>
@@ -1545,9 +1586,9 @@
           <l>del AVE, mas te engañaste.</l>
           <l>Con resolucion gallarda</l>
           <l>le atajó el moro al instante.</l>
-          <l>¿Eres Pulgar? le pregunta.</l>
+          <l>¿Eres <name>Pulgar</name>? le pregunta.</l>
           <l>—No soy quien imaginaste,</l>
-          <l>que si el Pulgar te escuchara,</l>
+          <l>que si el <name>Pulgar</name> te escuchara,</l>
           <l>vieras que entre sus pulgares</l>
           <l>desbarataba esos miembros</l>
           <l>que los moros tanto aplauden.</l>
@@ -1588,14 +1629,15 @@
           <l>porque en la Vega hicisteis</l>
           <l>hazaña de tanto alarde.</l>
         </div>
-        
         <div n="2">
+
           <pb n="3" source="Varios_259_3.jpg" facs="varios/Varios_259_3.jpg"/>
-          
-          <head type="titulo_parte" rend="negrita"><lb/>PASILLO<lb/>DEL<lb/>TRIUNFO DEL AVE
+
+          <head type="titulo_parte" rend="negrita">
+            <lb/>PASILLO<lb/>DEL<lb/>TRIUNFO DEL AVE
             MARÍA.</head>
-          <head type="subtitulo_parte" rend="negrita"><lb/>TRIUNFO DEL AVE MARÍA.</head>
-          
+          <head type="subtitulo_parte" rend="negrita">
+            <lb/>TRIUNFO DEL AVE MARÍA.</head>
           <sp>
             <speaker rend="cursiva">Tarf.</speaker>
             <l>¡Oh! cómo esperar impaciente</l>
@@ -1605,7 +1647,7 @@
             <l>Bien el cristiano vengó,</l>
             <l>el arrojo que logré,</l>
             <l>pues si á sus tierras llegué,</l>
-            <l>dentro de Granada él entró.</l>
+            <l>dentro de <name>Granada</name> él entró.</l>
             <l>Si un rótulo puso osado</l>
             <l>en el régio pabellon,</l>
             <l>él con mas admiracion</l>
@@ -1629,7 +1671,7 @@
             <l>¡Celima, que es sol, robada</l>
             <l>por un infame español!</l>
             <l>robaréle al cielo el sol</l>
-            <l>pues falta el sol de Granada.</l>
+            <l>pues falta el sol de <name>Granada</name>.</l>
             <l>Cristianos, Tarfe hoy es quien</l>
             <l>el nombre del AVE atropella,</l>
             <l>¿habra quien vuelva por ella?</l>
@@ -1719,9 +1761,9 @@
             <l>y que te envian á tí</l>
             <l>para mover mis piedades.</l>
           </sp>
-          
+
           <pb n="4" source="Varios_259_4.jpg" facs="varios/Varios_259_4.jpg"/>
-          
+
           <sp>
             <speaker rend="cursiva">Garc.</speaker>
             <l>¿Bárbaro, de qué lo infieres?</l>
@@ -1744,7 +1786,7 @@
             <l>Para trasto tan pequeño</l>
             <l>muy grande cólera traes;</l>
             <l>vuélvete al conde de Cabra,</l>
-            <l>y á Pulgar, y de mi parte</l>
+            <l>y á <name>Pulgar</name>, y de mi parte</l>
             <l>les dices que aquí espero,</l>
             <l>y te envio sin maltratarte.</l>
           </sp>
@@ -1895,12 +1937,12 @@
             <l>Llevaré el AVE-MARIA,</l>
             <l>para que en el Real se ensalce.</l>
           </sp>
-          
-          <p rend="cursiva"><lb/>(Autorizado segun la ley vigente.)</p>
+          <p rend="cursiva">
+            <lb/>(Autorizado segun la ley vigente.)</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID, 1866. <lb/>IMPRENTA DE MARÉS Y COMPAÑIA, PLAZUELA DE A CEBADA, NUM. 13.</p>
+          <p>
+            <lb/>MADRID, 1866. <lb/>IMPRENTA DE MARÉS Y COMPAÑIA, PLAZUELA DE A CEBADA, NUM. 13.</p>
         </div>
       </div>
     </body>

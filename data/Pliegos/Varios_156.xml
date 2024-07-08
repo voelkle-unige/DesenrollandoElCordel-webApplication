@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +109,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="18" corresp="Q5776">
+            <placeName key="Belén">Belén</placeName>
+            <location>
+              <geo>31.704444444444 35.206111111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +152,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-19" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-19" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1149,10 +1171,11 @@
       <div>
         <div>
           <div>
+
             <pb n="1" source="Varios_156_1.jpg" facs="varios/Varios_156_1.jpg"/>
 
-            <head type="primer_titulo"><lb/>VILLANCICOS QUE SE CANTAN EN CÁDIZ POR NOCHE BUENA.</head>
-
+            <head type="primer_titulo">
+              <lb/>VILLANCICOS QUE SE CANTAN EN CÁDIZ POR NOCHE BUENA.</head>
             <l rend="indent">En un portal de Belén</l>
             <l>espuesto al aire y al frio,</l>
             <l>nació un niño muy hermoso,</l>
@@ -1261,12 +1284,12 @@
             <l>muy felices Pascuas,</l>
             <l>gracia y salvacion.</l>
           </div>
-
           <div>
+
             <pb n="3" source="Varios_156_3.jpg" facs="varios/Varios_156_3.jpg"/>
 
-            <head type="titulo_parte"><lb/>PRIMERA PASTORELA.</head>
-
+            <head type="titulo_parte">
+              <lb/>PRIMERA PASTORELA.</head>
             <lg>
               <l rend="indent">Vamos á Belén,</l>
               <l>que en el frio invierno</l>
@@ -1328,9 +1351,9 @@
               <l>carrasclá, carrasclá, carrasclá.</l>
             </lg>
           </div>
-
           <div>
-            <head type="titulo_parte"><lb/>SEGUNDA PASTORELA.</head>
+            <head type="titulo_parte">
+              <lb/>SEGUNDA PASTORELA.</head>
             <lg>
               <l rend="indent">A Belén camina,</l>
               <l>quisiera saber,</l>
@@ -1351,7 +1374,9 @@
               <l>antes de las doce</l>
               <l>á Belén llegar.</l>
             </lg>
+
             <pb n="4" source="Varios_156_4.jpg" facs="varios/Varios_156_4.jpg"/>
+
             <lg>
               <l rend="indent">Respondió María,</l>
               <l>como es tan discreta:</l>
@@ -1448,9 +1473,9 @@
             </lg>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.— Despacho : Sucesores de Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID.— Despacho : Sucesores de Hernando, Arenal, 11.</p>
         </div>
       </div>
     </body>

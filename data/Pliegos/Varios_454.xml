@@ -1,196 +1,219 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Varios_454">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>El Sepulcro o lo que puede el amor</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LB">
-                              <name>Luana Bermúdez</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">El Sepulcro o lo que puede el
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>El Sepulcro o lo que puede el amor</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LB">
+          <name>Luana Bermúdez</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">El Sepulcro o lo que puede el
                                           amor. Último adiós de leandro á su adorada emilia. Tercera
                                           Parte</title>
-                                    <title type="titulo_breve">El Sepulcro o lo que puede el
+            <title type="titulo_breve">El Sepulcro o lo que puede el
                                           amor.</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p>Otra impresión: <ref target="Varios_257.xml">Varios_257</ref></p>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>El Abanico</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6802902</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">57</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary>Sainete + Canción</summary>
-                                    <msItem>
-                                          <locus>1-3</locus>
-                                          <title>Tercera parte</title>
-                                    </msItem>
-                                    <msItem>
-                                          <locus>4</locus>
-                                          <title>Canción de Leandro el peregrino á su adorada Emilia.</title>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="2">Dos grabados (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_v_454_1.xml" facs="varios/Varios_454_1.jpg/182,355,826,1203/100,/0/default.jpg">grabado_v_454_1</item>
-                                                      <item corresp="grabado_v_454_2.xml" facs="varios/Varios_454_1.jpg/1016,373,837,1200/100,/0/default.jpg">grabado_v_454_2</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+          </titleStmt>
+          <editionStmt>
+            <p>Otra impresión: <ref target="Varios_257.xml">Varios_257</ref>
+            </p>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>El Abanico</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.6802902</idno>
+            <altIdentifier>
+              <idno type="num_impresor">57</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary>Sainete + Canción</summary>
+            <msItem>
+              <locus>1-3</locus>
+              <title>Tercera parte</title>
+            </msItem>
+            <msItem>
+              <locus>4</locus>
+              <title>Canción de Leandro el peregrino á su adorada Emilia.</title>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="2">Dos grabados (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_v_454_1.xml" facs="varios/Varios_454_1.jpg/182,355,826,1203/100,/0/default.jpg">grabado_v_454_1</item>
+                  <item corresp="grabado_v_454_2.xml" facs="varios/Varios_454_1.jpg/1016,373,837,1200/100,/0/default.jpg">grabado_v_454_2</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
                                     original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term target="XX4876797.html" type="tipo_texto">Sainetes</term>
-                              <term target="XX525577.html" type="tipo_texto">Canciones</term>
-                              <term type="tipo_estrofa"/>
-                              <term type="verso_prosa">Verso y prosa</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-12-21" who="#EL">Création du fichier TEI P5 et encodage du
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term target="XX4876797.html" type="tipo_texto">Sainetes</term>
+          <term target="XX525577.html" type="tipo_texto">Canciones</term>
+          <term type="tipo_estrofa"/>
+          <term type="verso_prosa">Verso y prosa</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-12-21" who="#EL">Création du fichier TEI P5 et encodage du
                         corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
-      <facsimile><graphic url="varios/Varios_454_1.jpg/full/200,/0/default.jpg"/></facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="Varios_454_1.jpg" facs="varios/Varios_454_1.jpg"/>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/Varios_454_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-                              <fw type="impresorNum">57</fw>
+          <pb n="1" source="Varios_454_1.jpg" facs="varios/Varios_454_1.jpg"/>
 
-                              <head type="primer_titulo">
-                                    <lb/><hi rend="negrita">EL SEPULCRO</hi><lb/>ó<lb/><hi rend="negrita">LO QUE PUEDE EL AMOR</hi><lb/>ÚLTIMO ADIÓS
+          <fw type="impresorNum">57</fw>
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">EL SEPULCRO</hi>
+            <lb/>ó<lb/>
+            <hi rend="negrita">LO QUE PUEDE EL AMOR</hi>
+            <lb/>ÚLTIMO ADIÓS
                                     DE LEANDRO A SU ADORADA EMILIA</head>
-
-                              <div>
-                                    <head type="titulo_parte" rend="negrita">
-                                          <lb/>TERCERA PARTE</head>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sepulturero.</speaker>
-                                          <p><lb/>No hay otro medio; voy <lb/>á colocarle fuera de
+          <div>
+            <head type="titulo_parte" rend="negrita">
+              <lb/>TERCERA PARTE</head>
+            <sp>
+              <speaker rend="cursiva">Sepulturero.</speaker>
+              <p>
+                <lb/>No hay otro medio; voy <lb/>á colocarle fuera de
                                                 este recinto; sí, <lb/>sí, abriré la verja y lo
                                                 dejaré fuera, <lb/>y así creerán que allí
                                                 espiró.</p>
-
-                                          <p rend="indent"><lb/>Voy á cargarlo sobre mis hom-
+              <p rend="indent">
+                <lb/>Voy á cargarlo sobre mis hom-
                                                 <lb/>bros... pero, ¡qué es esto... ¡Dios <lb/>de
                                                 bondad!...¡su corazón aún pal- <lb/>pita!...
-                                                ¡percibo su aliento!... ¡Ah! <pb n="2" source="Varios_454_2.jpg" facs="varios/Varios_454_2.jpg"/>
-                                                <lb/>si aún no se hubiese consumado el
-                                                <lb/>sacrificio!</p>
+                                                ¡percibo su aliento!... ¡Ah!
+ <pb n="2" source="Varios_454_2.jpg" facs="varios/Varios_454_2.jpg"/>
 
-                                          <p rend="indent"><lb/>Saquemos el pomo del éter, que
+                <lb/>si aún no se hubiese consumado el
+                                                <lb/>sacrificio!</p>
+              <p rend="indent">
+                <lb/>Saquemos el pomo del éter, que
                                                 <lb/>llevo prevenido, y aún tal vez po- <lb/>dré
                                                 salvar su existencia. ¡Se rea- <lb/>nima!
                                                 ¡Leandro!</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leandro.</speaker>
-                                          <p><lb/>¡Dios mío! ¿qué es lo que <lb/>me sucede?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Nada, nada: aspirad esta esen- <lb/>cia... así,
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leandro.</speaker>
+              <p>
+                <lb/>¡Dios mío! ¿qué es lo que <lb/>me sucede?</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Nada, nada: aspirad esta esen- <lb/>cia... así,
                                                 así, ánimo, no temais <lb/>nada... ha sido un
                                                 vahido, pronto <lb/>se pasará.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>¿Quién sois?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Vuestro amigo... vuestro cono- <lb/>cido...soy yo,
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>¿Quién sois?</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Vuestro amigo... vuestro cono- <lb/>cido...soy yo,
                                                 sí, yo mismo... soy... <lb/>id aspirando este
                                                 frasquito... ¿Os <lb/>sentís más aliviado? Probad
                                                 de le- <lb/>vantaros, así, bien... apoyad vues-
@@ -198,119 +221,119 @@
                                                 caminad, poco á poco llegaremos <lb/>á mi
                                                 habitación... el relente de la <lb/>noche os es
                                                 perjudicial...</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>¿Pero quién sois vos que os <lb/>interesais tanto
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>¿Pero quién sois vos que os <lb/>interesais tanto
                                                 por este desgracia- <lb/>do mortal?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Un amigo que os aprecia mucho; <lb/>señor,
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Un amigo que os aprecia mucho; <lb/>señor,
                                                 esforzaos un poco más, así... <lb/>ya estamos
                                                 cerca... entrad... sen- <lb/>taos bien... tomad este
                                                 poco de <lb/>cordial... así... Ya se reanima...
                                                 <lb/>¡Alabado sea Dios!</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>¡Ah! vos sois el sepulturero, <lb/>¿es decir que
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>¡Ah! vos sois el sepulturero, <lb/>¿es decir que
                                                 aún existo?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Sí, gracias á Dios.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>¡Maldición!</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>¡Joven, sellad el labio! en este <lb/>recinto no
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Sí, gracias á Dios.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>¡Maldición!</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>¡Joven, sellad el labio! en este <lb/>recinto no
                                                 se oyen sino bendicio- <lb/>nes y preces al Eterno
                                                 por los que <lb/>fueron; la maldición no tiene en-
                                                 <lb/>trada aquí.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>¡Cómo no he de maldecir <lb/>esta existencia que
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>¡Cómo no he de maldecir <lb/>esta existencia que
                                                 detesto si me <lb/>falta la única cosa que me
                                                 podía <lb/>hacer amable la vida! ¡Ay, Emilia
                                                 <lb/>de mi corazón, sin ti para qué quie- <lb/>ro
                                                 yo vivir! ...</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Señor, sosegaos un momento, no <lb/>deis más
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Señor, sosegaos un momento, no <lb/>deis más
                                                 impulso á vuestro dolor, y <lb/>atended las
                                                 palabras de un anciano <lb/>que conoce vuestro pesar
                                                 y desea <lb/>cicatrizar las llagas de vuestro lace-
                                                 <lb/>rado corazón.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Imposible.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Tal vez no lo sea tanto como <lb/>os figurais.
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Imposible.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Tal vez no lo sea tanto como <lb/>os figurais.
                                                 Veamos: Vos adoras¬ <lb/>teis á una joven bella y
                                                 modesta, <lb/>que tuvisteis la desgracia de que
                                                 <lb/>perdiera su existencia en la flor de <lb/>su
                                                 edad...</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Sí, por mi desgracia.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Y no pudiendo olvidar el amor <lb/>que le
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Sí, por mi desgracia.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Y no pudiendo olvidar el amor <lb/>que le
                                                 profesabais, atentasteis á <lb/>vuestra
                                                 existencia...</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Es verdad, no puedo negarlo.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>¿Y con qué objeto?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Con el de reunirme eterna¬ <lb/>mente á ella.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>¡Con un crimen?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>¿Crimen decís?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Sí, enorme, imperdonable, horri¬ <lb/>ble.
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Es verdad, no puedo negarlo.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>¿Y con qué objeto?</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Con el de reunirme eterna¬ <lb/>mente á ella.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>¡Con un crimen?</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>¿Crimen decís?</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Sí, enorme, imperdonable, horri¬ <lb/>ble.
                                                 ¿Quién os ha dado poder para <lb/>atentar á
                                                 vuestra vida?... insensato, <lb/>si vuestros días
                                                 están contados en <lb/>el libro del destino hora
@@ -319,161 +342,162 @@
                                                 <lb/>atreveis á quitaros la existencia
                                                 <lb/>faltando á los preceptos del que os
                                                 <lb/>crío?</p>
-                                          <p rend="indent"><lb/>Dices en tu loco devaneo, que
+              <p rend="indent">
+                <lb/>Dices en tu loco devaneo, que
                                                 <lb/>atentaste á tu vida para reunirte á
                                                 <lb/>ella...</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <l>Sí.</l>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Pues bien, escuchad con aten¬ <lb/>ción y vereis
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <l>Sí.</l>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Pues bien, escuchad con aten¬ <lb/>ción y vereis
                                                 cómo el camino que <lb/>emprendisteis es el que
                                                 más os aleja <lb/>de su lado.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>No os comprendo.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Escuchad. Considerando que el <lb/>loco que atenta
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>No os comprendo.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Escuchad. Considerando que el <lb/>loco que atenta
                                                 á su vida lo hace <lb/>olvidando los preceptos del
                                                 Divino <lb/>Hacedor, la Iglesia no le da tierra
                                                 <lb/>sagrada y lo manda enterrar en un <lb/>inmundo
                                                 muladar, como á las bes¬ <lb/>tias. Siendo así ya
                                                 conoceis que en <lb/>vez de reuniros como dese abais
+
                                                   <pb n="3" source="Varios_454_3.jpg" facs="varios/Varios_454_3.jpg"/>
-                                                <lb/>cerca la tumba de vuestra amada,
+
+                <lb/>cerca la tumba de vuestra amada,
                                                 <lb/>estaríais separados para siempre. <lb/>¿Lo que
                                                 os digo comprendeis?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>¡Es verdad!</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Vos me dijisteis que vuestra <lb/>amada era pura
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>¡Es verdad!</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Vos me dijisteis que vuestra <lb/>amada era pura
                                                 como las vírgenes <lb/>del Edén.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Es verdad.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Siendo inocente y pura, gozará <lb/>de la celeste
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Es verdad.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Siendo inocente y pura, gozará <lb/>de la celeste
                                                 morada...</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Es justo.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Y el que muere por un crimen, <lb/>sin confesión,
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Es justo.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Y el que muere por un crimen, <lb/>sin confesión,
                                                 sin el amparo de la <lb/>religión ¿dónde va su
                                                 alma?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>¡Ay de mí! ¿qué es lo que <lb/>yo he
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>¡Ay de mí! ¿qué es lo que <lb/>yo he
                                                 hecho?...</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Bien haceis en verter lágrimas, <lb/>joven; ellas
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Bien haceis en verter lágrimas, <lb/>joven; ellas
                                                 me dan á conocer que <lb/>vuestro corazón no está
                                                 pervertido, <lb/>y que sólo una ofuscación de
                                                 vues- <lb/>tros sentidos os hizo cometer el
                                                 <lb/>crimen que gracias á Dios no ha <lb/>logrado
                                                 consumarse.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Pero ¿quién os ha dicho que <lb/>yo trataba de
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Pero ¿quién os ha dicho que <lb/>yo trataba de
                                                 suicidarme?</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Este papel.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>¡Ah, dádmelo por piedad!</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep</speaker>
-                                          <p><lb/>Joven, no temais; el pábilo <lb/>de esta luz
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Este papel.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>¡Ah, dádmelo por piedad!</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep</speaker>
+              <p>
+                <lb/>Joven, no temais; el pábilo <lb/>de esta luz
                                                 guardará vuestro secre- <lb/>to... mirad... ya
                                                 está reducido á ce- <lb/>nizas.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Gracias, amigo. Yo premiaré <lb/>vuestra
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Gracias, amigo. Yo premiaré <lb/>vuestra
                                                 honradez. Tomad el oro <lb/>que me resta.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>No permita Dios que vuelva yo <lb/>á tomar otra
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>No permita Dios que vuelva yo <lb/>á tomar otra
                                                 moneda vuestra.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Pues ¿cómo pagaré el favor <lb/>queherecibido
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Pues ¿cómo pagaré el favor <lb/>queherecibido
                                                 esta noche de vos?...</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Con un favor muy sencillo, <lb/>que me prometais
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Con un favor muy sencillo, <lb/>que me prometais
                                                 cumplir exacta- <lb/>mente.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p><lb/>Bajo mi palabra os lo prometo.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <l>Que nunca más atentaréis con-</l>
-                                          <l>tra vuestra existencia.</l>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Leand.</speaker>
-                                          <p rend="indent"><lb/>No lo temais, honrado ancia-
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p>
+                <lb/>Bajo mi palabra os lo prometo.</p>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <l>Que nunca más atentaréis con-</l>
+              <l>tra vuestra existencia.</l>
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Leand.</speaker>
+              <p rend="indent">
+                <lb/>No lo temais, honrado ancia-
                                                 <lb/>no; vuestras palabras me han he- <lb/>cho abrir
                                                 los ojos á la luz de la <lb/>razón y me han hecho
                                                 conocer la <lb/>enormidad de mi falta... Pues bien,
                                                 <lb/>yo trataré de purgar mi delito, y <lb/>haré
                                                 todo lo posible para hacerme <lb/>digno de la que
                                                 fué en la tierra un <lb/>ángel de amor.</p>
-
-                                          <p><lb/>Un sayal cubrirá mi cuerpo, y <lb/>con las
+              <p>
+                <lb/>Un sayal cubrirá mi cuerpo, y <lb/>con las
                                                 plantas desnudas empren- <lb/>deré mi
                                                 peregrinación hasta la ciu- <lb/>dad Santa, y
                                                 postrado á los piés <lb/>del Vicario de Jesucristo
@@ -482,127 +506,119 @@
                                                 <lb/>pensamientos, sólo me ocuparé en <lb/>la
                                                 penitencia y el bien de las al- <lb/>mas, como vos
                                                 habeis hecho con- <lb/>migo.</p>
-
-                                          <p><lb/>Adiós, amigo; hasta que nos vol- <lb/>vamos á
+              <p>
+                <lb/>Adiós, amigo; hasta que nos vol- <lb/>vamos á
                                                 ver.</p>
-                                    </sp>
-
-                                    <sp>
-                                          <speaker rend="cursiva">Sep.</speaker>
-                                          <p><lb/>Adiós, Dios os guie. ¡Pobre <lb/>Leandro!...</p>
-
-                                          <p rend="indent"><lb/>Vamos á descansar un poco hasta
+            </sp>
+            <sp>
+              <speaker rend="cursiva">Sep.</speaker>
+              <p>
+                <lb/>Adiós, Dios os guie. ¡Pobre <lb/>Leandro!...</p>
+              <p rend="indent">
+                <lb/>Vamos á descansar un poco hasta
                                                 <lb/>dar principio á nuestra tarea, ó tal <lb/>vez
                                                 á presenciar otra terrible esce- <lb/>na. Dios no
                                                 lo permita.</p>
-                                    </sp>
+            </sp>
+            <trailer>FIN</trailer>
+          </div>
+          <div>
 
-                                    <trailer>FIN</trailer>
-                              </div>
+            <pb n="4" source="Varios_454_4.jpg" facs="varios/Varios_454_4.jpg"/>
 
-                              <div>
-                                    <pb n="4" source="Varios_454_4.jpg" facs="varios/Varios_454_4.jpg"/>
-
-                                    <head type="primer_titulo">
-                                          <lb/>CANCIÓN<lb/>DE<lb/><hi rend="negrita">LEANDRO EL PEREGRINO</hi><lb/>Á SU
+            <head type="primer_titulo">
+              <lb/>CANCIÓN<lb/>DE<lb/>
+              <hi rend="negrita">LEANDRO EL PEREGRINO</hi>
+              <lb/>Á SU
                                           ADORADA EMILIA</head>
-
-                                    <lg>
-                                          <l rend="indent">Angel de amor,</l>
-                                          <l>luz de mi vida,</l>
-                                          <l>prenda querida</l>
-                                          <l>del corazón;</l>
-                                          <l rend="indent">De desde el cielo,</l>
-                                          <l>do es tu morada,</l>
-                                          <l>ten, prenda amada,</l>
-                                          <l>ten compasión.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Raudales vierten</l>
-                                          <l>mis pobres ojos,</l>
-                                          <l>son los despojos</l>
-                                          <l>de mi existir.</l>
-                                          <l rend="indent">Mas ese llanto</l>
-                                          <l>es nueva vida;</l>
-                                          <l>por ti, querida,</l>
-                                          <l>justo es vivir.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">La tumba fría</l>
-                                          <l>hoy nos separa,</l>
-                                          <l>la hora llegada</l>
-                                          <l>aún no sonó.</l>
-                                          <l rend="indent">La vida es corta,</l>
-                                          <l>dueño adorado,</l>
-                                          <l>pronto á tu lado</l>
-                                          <l>llegaré yo.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Si en esta vida</l>
-                                          <l>cruel el hado</l>
-                                          <l>te ha separado,</l>
-                                          <l>mi bien, de mí.</l>
-                                          <l rend="indent">A Dios le ruego</l>
-                                          <l>hoy reverente,</l>
-                                          <l>pío y clemente,</l>
-                                          <l>me acerque á ti.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Si eterno gozas</l>
-                                          <l>allá en las nubes</l>
-                                          <l>entre querubes</l>
-                                          <l>don celestial;</l>
-                                          <l rend="indent">Siempre piadosa,</l>
-                                          <l>clemente y pía,</l>
-                                          <l>los pasos guía</l>
-                                          <l>de este mortal.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Adiós, Emilia,</l>
-                                          <l>que por el mundo</l>
-                                          <l>dolor profundo</l>
-                                          <l>me llevará.</l>
-                                          <l rend="indent">Sin luz ni guía,</l>
-                                          <l>perdido el tino.</l>
-                                          <l>¿el peregrino</l>
-                                          <l>adonde irá?</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">La paz del alma,</l>
-                                          <l>cual peregrino,</l>
-                                          <l>por el camino</l>
-                                          <l>yo buscaré.</l>
-                                          <l rend="indent">Pero olvidarte</l>
-                                          <l>¡bien de mi vida!</l>
-                                          <l>¡prenda querida!</l>
-                                          <l>nunca podré.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">¡Perdón, Dios mío!</l>
-                                          <l>mis pasos guía:</l>
-                                          <l>la prenda mía</l>
-                                          <l>es ya ilusión.</l>
-                                          <l rend="indent">¡Terrible pena!</l>
-                                          <l>¡cruel destino!</l>
-                                          <l>¡de un peregrino</l>
-                                          <l>ten compasión!</l>
-                                    </lg>
-
-                                    <trailer>FIN</trailer>
-                              </div>
-                        </div>
-                        <div type="colofon">
-                              <p>
-                                    <lb/>Imps. Hospital, 19 «El Abanico »</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+            <lg>
+              <l rend="indent">Angel de amor,</l>
+              <l>luz de mi vida,</l>
+              <l>prenda querida</l>
+              <l>del corazón;</l>
+              <l rend="indent">De desde el cielo,</l>
+              <l>do es tu morada,</l>
+              <l>ten, prenda amada,</l>
+              <l>ten compasión.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Raudales vierten</l>
+              <l>mis pobres ojos,</l>
+              <l>son los despojos</l>
+              <l>de mi existir.</l>
+              <l rend="indent">Mas ese llanto</l>
+              <l>es nueva vida;</l>
+              <l>por ti, querida,</l>
+              <l>justo es vivir.</l>
+            </lg>
+            <lg>
+              <l rend="indent">La tumba fría</l>
+              <l>hoy nos separa,</l>
+              <l>la hora llegada</l>
+              <l>aún no sonó.</l>
+              <l rend="indent">La vida es corta,</l>
+              <l>dueño adorado,</l>
+              <l>pronto á tu lado</l>
+              <l>llegaré yo.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Si en esta vida</l>
+              <l>cruel el hado</l>
+              <l>te ha separado,</l>
+              <l>mi bien, de mí.</l>
+              <l rend="indent">A Dios le ruego</l>
+              <l>hoy reverente,</l>
+              <l>pío y clemente,</l>
+              <l>me acerque á ti.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Si eterno gozas</l>
+              <l>allá en las nubes</l>
+              <l>entre querubes</l>
+              <l>don celestial;</l>
+              <l rend="indent">Siempre piadosa,</l>
+              <l>clemente y pía,</l>
+              <l>los pasos guía</l>
+              <l>de este mortal.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Adiós, Emilia,</l>
+              <l>que por el mundo</l>
+              <l>dolor profundo</l>
+              <l>me llevará.</l>
+              <l rend="indent">Sin luz ni guía,</l>
+              <l>perdido el tino.</l>
+              <l>¿el peregrino</l>
+              <l>adonde irá?</l>
+            </lg>
+            <lg>
+              <l rend="indent">La paz del alma,</l>
+              <l>cual peregrino,</l>
+              <l>por el camino</l>
+              <l>yo buscaré.</l>
+              <l rend="indent">Pero olvidarte</l>
+              <l>¡bien de mi vida!</l>
+              <l>¡prenda querida!</l>
+              <l>nunca podré.</l>
+            </lg>
+            <lg>
+              <l rend="indent">¡Perdón, Dios mío!</l>
+              <l>mis pasos guía:</l>
+              <l>la prenda mía</l>
+              <l>es ya ilusión.</l>
+              <l rend="indent">¡Terrible pena!</l>
+              <l>¡cruel destino!</l>
+              <l>¡de un peregrino</l>
+              <l>ten compasión!</l>
+            </lg>
+            <trailer>FIN</trailer>
+          </div>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>Imps. Hospital, 19 «El Abanico »</p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

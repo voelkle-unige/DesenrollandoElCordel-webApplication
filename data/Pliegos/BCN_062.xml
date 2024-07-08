@@ -1,490 +1,562 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_062">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Nuevo romance, en que se refieren los portentosos lances que le sucedieron al Capitán Don Carlos</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LF">
-                              <name>Lorysmar Franco</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Nuevo romance, en que se refieren
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Nuevo romance, en que se refieren los portentosos lances que le sucedieron al Capitán Don Carlos</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LF">
+          <name>Lorysmar Franco</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Nuevo romance, en que se refieren
                                           los portentosos lances que le sucedieron al Capitán Don
                                           Carlos, y à su Esposa Doña Juana Merino.</title>
-                                    <title type="titulo_breve"/>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p/>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Juan Jolis</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6821342</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">VI (NO PUBL.)</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="2">Dos grabados (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_062_1.xml" facs="varios/BCN_062_1.jpg/261,117,550,652/100,/0/default.jpg">grabado_b_062_1</item>
-                                                      <item corresp="grabado_b_062_2.xml" facs="varios/BCN_062_1.jpg/887,75,595,685/100,/0/default.jpg">grabado_b_062_2</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+            <title type="titulo_breve"/>
+          </titleStmt>
+          <editionStmt>
+            <p/>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Juan Jolis</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.6821342</idno>
+            <altIdentifier>
+              <idno type="num_impresor">VI (NO PUBL.)</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="2">Dos grabados (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_062_1.xml" facs="varios/BCN_062_1.jpg/261,117,550,652/100,/0/default.jpg">grabado_b_062_1</item>
+                  <item corresp="grabado_b_062_2.xml" facs="varios/BCN_062_1.jpg/887,75,595,685/100,/0/default.jpg">grabado_b_062_2</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q234">
+            <placeName key="Flandes">Flandes</placeName>
+            <location>
+              <geo>51 4.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q44160">
+            <placeName key="Tolón">Tolón</placeName>
+            <location>
+              <geo>43.125 5.9305555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q11959">
+            <placeName key="Alicante">Alicante</placeName>
+            <location>
+              <geo>38.345277777778 -0.48305555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8818">
+            <placeName key="Valencia">Valencia</placeName>
+            <location>
+              <geo>39.47 -0.376388888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1114855">
+            <placeName key="Cerezo_de_Río_Tirón">Cerezo De Río Tirón</placeName>
+            <location>
+              <geo>42.491111111111 -3.1355555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q4018">
+            <placeName key="Navarra">Navarra</placeName>
+            <location>
+              <geo>42.816666666667 -1.65</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q10305">
+            <placeName key="Zaragoza">Zaragoza</placeName>
+            <location>
+              <geo>41.65 -0.88333333333333</geo>
+            </location>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term target="XX527614.html" type="tipo_texto">Romances</term>
-                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-10-25" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term target="XX527614.html" type="tipo_texto">Romances</term>
+          <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-10-25" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_062_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-      <facsimile>
-            <graphic url="varios/BCN_062_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_062_1.jpg" facs="varios/BCN_062_1.jpg"/>
+          <pb n="1" source="BCN_062_1.jpg" facs="varios/BCN_062_1.jpg"/>
 
-                              <head type="primer_titulo">
-                                    <lb/><hi rend="negrita">NUEVO ROMANCE,</hi>
-                                    <lb/>EN QUE SE REFIEREN LOS PORTENTOSOS <lb/>lances que le
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">NUEVO ROMANCE,</hi>
+            <lb/>EN QUE SE REFIEREN LOS PORTENTOSOS <lb/>lances que le
                                     sucedieron al Capitán Don Carlos, <lb/>y à su Esposa Doña
                                     Juana Merino.</head>
+          <l>
+            <hi rend="negrita">Q</hi>uien de Cupido se fia,</l>
+          <l>y en él pone su esperanza,</l>
+          <l>vive ciego en este mundo,</l>
+          <l>que como niño le engaña.</l>
+          <l>Por èl se vén mil desdichas,</l>
+          <l>fatalidades, desgracias,</l>
+          <l>ruidos, muertes, y afrentas;</l>
+          <l>y sus almas arriesgadas</l>
+          <l>à padecer graves penas,</l>
+          <l>sepultadas en las llamas.</l>
+          <l>No tengo mas que dezir,</l>
+          <l>aqui se cierra esta plana,</l>
+          <l>dandole à entender al vulgo</l>
+          <l>lo que del amor se saca.</l>
+          <l>Con el auxilio feliz</l>
+          <l>de la Trinidad Sagrada,</l>
+          <l>el Padre tambien, y el Hijo,</l>
+          <l>del Espiritu en compaña,</l>
+          <l>despierte mi entendimiento,</l>
+          <l>paraque en breves palabras</l>
+          <l>explique à los que me oyen</l>
+          <l>la mas poderosa hazaña</l>
+          <l>que en los anales se ha visto,</l>
+          <l>y en los archivos se halla.</l>
+          <l>Fué el caso, que una Señora</l>
+          <l>de sangre calificada,</l>
+          <l>natural de <name>Zaragoza</name>,</l>
+          <l>á quien persiguió la parca</l>
+          <l>de la fortuna, que à muchos</l>
+          <l>sigue, que al fin es boltaria.</l>
+          <l>Llego à esta Ciudad gozoso</l>
+          <l>un Capitan de gran fama,</l>
+          <l>galán, discreto, y tan noble,</l>
+          <l>como lo dize su fama,</l>
+          <l>con licencia de Felipe,</l>
+          <l>que Dios guarde edades largas.</l>
+          <l>Puso su sitio, y Vandera</l>
+          <l>enfrente de las ventanas</l>
+          <l>de aquella noble Señora;</l>
+          <l>y un Domingo de mañana,</l>
+          <l>por entre rayos de luzes</l>
+          <l>vido una rosa temprana,</l>
+          <l>retratandose á un espejo,</l>
+          <l>que el claro cristal empaña,</l>
+          <l>la hermosura de sus ojos,</l>
+          <l>de su frente, y de su cara.</l>
+          <l>Tiró Cupido una flecha,</l>
+          <l>y el entre mortales ansias</l>
+          <fw type="reclamo">quitó</fw>
 
-                              <l><hi rend="negrita">Q</hi>uien de Cupido se fia,</l>
-                              <l>y en él pone su esperanza,</l>
-                              <l>vive ciego en este mundo,</l>
-                              <l>que como niño le engaña.</l>
-                              <l>Por èl se vén mil desdichas,</l>
-                              <l>fatalidades, desgracias,</l>
-                              <l>ruidos, muertes, y afrentas;</l>
-                              <l>y sus almas arriesgadas</l>
-                              <l>à padecer graves penas,</l>
-                              <l>sepultadas en las llamas.</l>
-                              <l>No tengo mas que dezir,</l>
-                              <l>aqui se cierra esta plana,</l>
-                              <l>dandole à entender al vulgo</l>
-                              <l>lo que del amor se saca.</l>
-                              <l>Con el auxilio feliz</l>
-                              <l>de la Trinidad Sagrada,</l>
-                              <l>el Padre tambien, y el Hijo,</l>
-                              <l>del Espiritu en compaña,</l>
-                              <l>despierte mi entendimiento,</l>
-                              <l>paraque en breves palabras</l>
-                              <l>explique à los que me oyen</l>
-                              <l>la mas poderosa hazaña</l>
-                              <l>que en los anales se ha visto,</l>
-                              <l>y en los archivos se halla.</l>
-                              <l>Fué el caso, que una Señora</l>
-                              <l>de sangre calificada,</l>
-                              <l>natural de Zaragoza,</l>
-                              <l>á quien persiguió la parca</l>
-                              <l>de la fortuna, que à muchos</l>
-                              <l>sigue, que al fin es boltaria.</l>
-                              <l>Llego à esta Ciudad gozoso</l>
-                              <l>un Capitan de gran fama,</l>
-                              <l>galán, discreto, y tan noble,</l>
-                              <l>como lo dize su fama,</l>
-                              <l>con licencia de Felipe,</l>
-                              <l>que Dios guarde edades largas.</l>
-                              <l>Puso su sitio, y Vandera</l>
-                              <l>enfrente de las ventanas</l>
-                              <l>de aquella noble Señora;</l>
-                              <l>y un Domingo de mañana,</l>
-                              <l>por entre rayos de luzes</l>
-                              <l>vido una rosa temprana,</l>
-                              <l>retratandose á un espejo,</l>
-                              <l>que el claro cristal empaña,</l>
-                              <l>la hermosura de sus ojos,</l>
-                              <l>de su frente, y de su cara.</l>
-                              <l>Tiró Cupido una flecha,</l>
-                              <l>y el entre mortales ansias</l>
-                              <fw type="reclamo">quitó</fw>
+          <pb n="2" source="BCN_062_2.jpg" facs="varios/BCN_062_2.jpg"/>
 
-                              <pb n="2" source="BCN_062_2.jpg" facs="varios/BCN_062_2.jpg"/>
+          <l>quitó cortés el sombrero,</l>
+          <l>y en el suelo se postrava,</l>
+          <l>y en una discreta seña</l>
+          <l>le dixo aquestas palabras:</l>
+          <l>Soy muerto, bella señora,</l>
+          <l>si tu amor no me rescata</l>
+          <l>la vida que me has robado,</l>
+          <l>que en mi noble pecho entrava,</l>
+          <l>con essas vivas centellas</l>
+          <l>que de tus ojos exalas.</l>
+          <l>Correspondióle entendida,</l>
+          <l>muy discreta, y cortesana:</l>
+          <l>En fee de ser mi marido,</l>
+          <l>à todo estoy arriesgada;</l>
+          <l>pero por otro camino,</l>
+          <l>nula es vuestra confianza.</l>
+          <l>Don Carlos viendo su dicha,</l>
+          <l>luego aceptó la palabra:</l>
+          <l>prosiguieron sus amores</l>
+          <l>con villetes, y con cartas.</l>
+          <l>Al cabo de aqueste tiempo,</l>
+          <l>de nuestro Real Monarca</l>
+          <l>vino una orden expressa,</l>
+          <l>para que à <name>Flandes</name> se vaya.</l>
+          <l>Dióle à su prenda noticia</l>
+          <l>de lo que le precisava,</l>
+          <l>y entre los dos dispusieron</l>
+          <l>la hora para sacarla.</l>
+          <l>A diez y nueve de Mayo</l>
+          <l>puso su gente en campaña,</l>
+          <l>mandando à sus Oficiales</l>
+          <l>que prosiguen su jornada:</l>
+          <l>mas aquella misma noche</l>
+          <l>echó al balcon una escala:</l>
+          <l>la Dama que está en aviso,</l>
+          <l>no fué nada su tardanza.</l>
+          <l>Vino à este tiempo la ronda,</l>
+          <l>y siguiendo sus pisadas</l>
+          <l>le cercan, y reconocen;</l>
+          <l>y el señor Virrey le habla,</l>
+          <l>que si despachó su gente,</l>
+          <l>como no vá en su compaña,</l>
+          <l>que fuerza será dar cuenta</l>
+          <l>si de contado no marcha;</l>
+          <l>dandole quatro Ministros</l>
+          <l>para que le acompañáran,</l>
+          <l>hasta dexarle en su Tercio </l>
+          <l>que no le desemparáran.</l>
+          <l>Vamos aora à la niña,</l>
+          <l>que en este tiempo passava</l>
+          <l>un buen hombre, que venia</l>
+          <l>con una yegua alazana.</l>
+          <l>Juzgando que era Don Carlos,</l>
+          <l>de secreto le llamàra,</l>
+          <l>diziendole, que parasse,</l>
+          <l>y en un cofre le arrojava</l>
+          <l>mas de doze mil ducados</l>
+          <l>en prendas, joyas, y alhajas:</l>
+          <l>baxó veloz à la calle,</l>
+          <l>y viendo que no le hallava,</l>
+          <l>llora, suspira, y solloza,</l>
+          <l>diziendo aquestas palabras:</l>
+          <l>Ay desdichada de mi,</l>
+          <l>quanta ha sido mi desgracia,</l>
+          <l>que fui la muger mas facil,</l>
+          <l>que en todo el mundo se halla:</l>
+          <l>supuesto que estoy perdida,</l>
+          <l>yo he de seguir tus pisadas.</l>
+          <l>Pusose à su rostro un velo,</l>
+          <l>y à las puertas se llegava</l>
+          <l>de una afligida Viuda,</l>
+          <l>y su ropa le entregava,</l>
+          <l>pidiendola de su esposo</l>
+          <l>el vestido que llevava.</l>
+          <l>Vistióse de un gruesso paño,</l>
+          <l>alpargatas, y polaynas,</l>
+          <l>con una montera vieja,</l>
+          <l>se salió desesperada,</l>
+          <l>diziendo que era Soldado.</l>
+          <l>Llegó à la raya de <name>Francia</name>
+          </l>
+          <l>con otros quatro mancebos;</l>
+          <l>pero viendo que les falta</l>
+          <l>el sustento necessario,</l>
+          <l>luego de buscarle tratan.</l>
+          <l>Llegaron tarde à una Venta,</l>
+          <l>donde les dieron posada;</l>
+          <l>mas aquella misma noche</l>
+          <l>matan al amo de casa,</l>
+          <l>y à la ventera dexaron</l>
+          <l>en un poste maniatada:</l>
+          <l>robaron lo que alli hallaron,</l>
+          <l>y por su camino marchan,</l>
+          <l>y à la vista de Leon</l>
+          <l>en una quinta descanzan,</l>
+          <l>donde le dieron assalto,</l>
+          <l>robando el oro, y la plata.</l>
+          <l>Noche del Señor San Pedro,</l>
+          <l>dentro la Corte de <name>Francia</name>
+          </l>
+          <l>robaron tres Mercaderes,</l>
+          <l>y porque no les buscáran</l>
+          <l>les despachan por la posta,</l>
+          <l>que la muerte les aguarda.</l>
+          <fw type="reclamo">Se</fw>
 
-                              <l>quitó cortés el sombrero,</l>
-                              <l>y en el suelo se postrava,</l>
-                              <l>y en una discreta seña</l>
-                              <l>le dixo aquestas palabras:</l>
-                              <l>Soy muerto, bella señora,</l>
-                              <l>si tu amor no me rescata</l>
-                              <l>la vida que me has robado,</l>
-                              <l>que en mi noble pecho entrava,</l>
-                              <l>con essas vivas centellas</l>
-                              <l>que de tus ojos exalas.</l>
-                              <l>Correspondióle entendida,</l>
-                              <l>muy discreta, y cortesana:</l>
-                              <l>En fee de ser mi marido,</l>
-                              <l>à todo estoy arriesgada;</l>
-                              <l>pero por otro camino,</l>
-                              <l>nula es vuestra confianza.</l>
-                              <l>Don Carlos viendo su dicha,</l>
-                              <l>luego aceptó la palabra:</l>
-                              <l>prosiguieron sus amores</l>
-                              <l>con villetes, y con cartas.</l>
-                              <l>Al cabo de aqueste tiempo,</l>
-                              <l>de nuestro Real Monarca</l>
-                              <l>vino una orden expressa,</l>
-                              <l>para que à Flandes se vaya.</l>
-                              <l>Dióle à su prenda noticia</l>
-                              <l>de lo que le precisava,</l>
-                              <l>y entre los dos dispusieron</l>
-                              <l>la hora para sacarla.</l>
-                              <l>A diez y nueve de Mayo</l>
-                              <l>puso su gente en campaña,</l>
-                              <l>mandando à sus Oficiales</l>
-                              <l>que prosiguen su jornada:</l>
-                              <l>mas aquella misma noche</l>
-                              <l>echó al balcon una escala:</l>
-                              <l>la Dama que está en aviso,</l>
-                              <l>no fué nada su tardanza.</l>
-                              <l>Vino à este tiempo la ronda,</l>
-                              <l>y siguiendo sus pisadas</l>
-                              <l>le cercan, y reconocen;</l>
-                              <l>y el señor Virrey le habla,</l>
-                              <l>que si despachó su gente,</l>
-                              <l>como no vá en su compaña,</l>
-                              <l>que fuerza será dar cuenta</l>
-                              <l>si de contado no marcha;</l>
-                              <l>dandole quatro Ministros</l>
-                              <l>para que le acompañáran,</l>
-                              <l>hasta dexarle en su Tercio </l>
-                              <l>que no le desemparáran.</l>
-                              <l>Vamos aora à la niña,</l>
-                              <l>que en este tiempo passava</l>
-                              <l>un buen hombre, que venia</l>
-                              <l>con una yegua alazana.</l>
-                              <l>Juzgando que era Don Carlos,</l>
-                              <l>de secreto le llamàra,</l>
-                              <l>diziendole, que parasse,</l>
-                              <l>y en un cofre le arrojava</l>
-                              <l>mas de doze mil ducados</l>
-                              <l>en prendas, joyas, y alhajas:</l>
-                              <l>baxó veloz à la calle,</l>
-                              <l>y viendo que no le hallava,</l>
-                              <l>llora, suspira, y solloza,</l>
-                              <l>diziendo aquestas palabras:</l>
-                              <l>Ay desdichada de mi,</l>
-                              <l>quanta ha sido mi desgracia,</l>
-                              <l>que fui la muger mas facil,</l>
-                              <l>que en todo el mundo se halla:</l>
-                              <l>supuesto que estoy perdida,</l>
-                              <l>yo he de seguir tus pisadas.</l>
-                              <l>Pusose à su rostro un velo,</l>
-                              <l>y à las puertas se llegava</l>
-                              <l>de una afligida Viuda,</l>
-                              <l>y su ropa le entregava,</l>
-                              <l>pidiendola de su esposo</l>
-                              <l>el vestido que llevava.</l>
-                              <l>Vistióse de un gruesso paño,</l>
-                              <l>alpargatas, y polaynas,</l>
-                              <l>con una montera vieja,</l>
-                              <l>se salió desesperada,</l>
-                              <l>diziendo que era Soldado.</l>
-                              <l>Llegó à la raya de Francia</l>
-                              <l>con otros quatro mancebos;</l>
-                              <l>pero viendo que les falta</l>
-                              <l>el sustento necessario,</l>
-                              <l>luego de buscarle tratan.</l>
-                              <l>Llegaron tarde à una Venta,</l>
-                              <l>donde les dieron posada;</l>
-                              <l>mas aquella misma noche</l>
-                              <l>matan al amo de casa,</l>
-                              <l>y à la ventera dexaron</l>
-                              <l>en un poste maniatada:</l>
-                              <l>robaron lo que alli hallaron,</l>
-                              <l>y por su camino marchan,</l>
-                              <l>y à la vista de Leon</l>
-                              <l>en una quinta descanzan,</l>
-                              <l>donde le dieron assalto,</l>
-                              <l>robando el oro, y la plata.</l>
-                              <l>Noche del Señor San Pedro,</l>
-                              <l>dentro la Corte de Francia</l>
-                              <l>robaron tres Mercaderes,</l>
-                              <l>y porque no les buscáran</l>
-                              <l>les despachan por la posta,</l>
-                              <l>que la muerte les aguarda.</l>
-                              <fw type="reclamo">Se</fw>
+          <pb n="3" source="BCN_062_3.jpg" facs="varios/BCN_062_3.jpg"/>
 
-                              <pb n="3" source="BCN_062_3.jpg" facs="varios/BCN_062_3.jpg"/>
+          <l>Se salen para <name>Tolon</name>,</l>
+          <l>y à dos Peregrinas hallan:</l>
+          <l>quisieron burlarse dellas,</l>
+          <l>y ella defendió la causa,</l>
+          <l>pues à un compañero suyo,</l>
+          <l>de dos fuertes estocadas,</l>
+          <l>y à otro con una pistola,</l>
+          <l>dexó dos cuerpo s sin alma:</l>
+          <l>fueronse las Peregrinas,</l>
+          <l>rindiendole muchas gracias.</l>
+          <l>Luego trató de embarcarse,</l>
+          <l>porque ya se rezelava:</l>
+          <l>llegaron los tres à un Puerto,</l>
+          <l>que una Nave se aprestava</l>
+          <l>para Levante, y en èlla</l>
+          <l>su viage concertáva.</l>
+          <l>Y en aquella misma noche</l>
+          <l>èlla, y sus dos camaradas</l>
+          <l>tuvieron un gran combite</l>
+          <l>de pasteles, y empanadas,</l>
+          <l>se brindaron à menudo,</l>
+          <l>mas èlla no lo gustava;</l>
+          <l>los dos perdieron las fuerzas,</l>
+          <l>y al sueño se entregavan;</l>
+          <l>se retiraron à un quarto,</l>
+          <l>y à las dos de la mañana</l>
+          <l>tiraron pieza de aviso,</l>
+          <l>y à los dos los escusava</l>
+          <l>los malos passos que han hecho,</l>
+          <l>à los filos de una daga.</l>
+          <l>Cargó con quanto tenian,</l>
+          <l>y à favor del viento marcha:</l>
+          <l>llegó à dar vista gozosa</l>
+          <l>al Puerto que deseava,</l>
+          <l>con nuevecientos dablones,</l>
+          <l>y mucha moneda en plata,</l>
+          <l>se passeava gustosa,</l>
+          <l>comia, y se regalava</l>
+          <l>siempre con los Militares</l>
+          <l>era toda su habitanza.</l>
+          <l>Y estando assentada un dia,</l>
+          <l>conoció un Cabo de Esquadra</l>
+          <l>del Tercio de su querido,</l>
+          <l>llegó travando palabras,</l>
+          <l>que razones traen razones,</l>
+          <l>con que conoció la Dama,</l>
+          <l>que no era causa Don Carlos</l>
+          <l>de todo lo que le passa.</l>
+          <l>Correspondió agradecida,</l>
+          <l>que alli tiene su posada,</l>
+          <l>que quanto se le ofreciera</l>
+          <l>por él sacará la cara.</l>
+          <l>Y al otro dia siguiente</l>
+          <l>se compró una rica gala,</l>
+          <l>un coleto de ante fino,</l>
+          <l>y una linda espada, y daga.</l>
+          <l>Se fué con otros amigos</l>
+          <l>donde está el cuerpo de guardia</l>
+          <l>de que el Capitán le vió,</l>
+          <l>à sus Oficiales manda,</l>
+          <l>que le llamen aquel mozo,</l>
+          <l>porque mucho le agradava:</l>
+          <l>preguntó si era Español,</l>
+          <l>y ella cortesana le habla,</l>
+          <l>que desde su nacimiento</l>
+          <l>noble Español se llamava;</l>
+          <l>con suplicas, y dineros</l>
+          <l>al instante sentó plaza.</l>
+          <l>En un meson la aloxaron</l>
+          <l>con su patente firmada;</l>
+          <l>y estando juntos comiendo,</l>
+          <l>conoció algunas alhajas;</l>
+          <l>y el huesped le dixo, amigo</l>
+          <l>tambien yo he estado en España,</l>
+          <l>en <name>Alicante</name>, en <name>Valencia</name>,</l>
+          <l>en <name>Castilla</name>, y en <name>Navarra</name>:</l>
+          <l>y una noche en <name>Zaragoza</name>
+          </l>
+          <l>por cierta parte passava</l>
+          <l>á cavallo en una yegua,</l>
+          <l>quando por una ventana</l>
+          <l>de secreto me llamaron,</l>
+          <l>y en un cofre me arrojaron</l>
+          <l>quanta riqueza posseo,</l>
+          <l>en que compré aquesta casa.</l>
+          <l>Dissimuló quanto pudo,</l>
+          <l>y assì que en claro lo saca,</l>
+          <l>con una daga furiosa</l>
+          <l>le abrió tres puertas al alma.</l>
+          <l>A las vozes, y al ruido</l>
+          <l>acudió el mozo de casa</l>
+          <l>pana quererle agarrar,</l>
+          <l>pero de una puñalada</l>
+          <l>le pagó con el azero</l>
+          <l>la codicia que llevava.</l>
+          <l>Vino toda la justicia,</l>
+          <l>y à la carcel la llevavan:</l>
+          <l>la encierran, y aprisionan,</l>
+          <l>y averiguando la causa,</l>
+          <l>la sentencian de que muera.</l>
+          <l>Y un Martes por la mañana</l>
+          <l>la sacaron de la carcel</l>
+          <l>con mucha gente en compaña,</l>
+          <fw type="reclamo">y</fw>
 
-                              <l>Se salen para Tolon,</l>
-                              <l>y à dos Peregrinas hallan:</l>
-                              <l>quisieron burlarse dellas,</l>
-                              <l>y ella defendió la causa,</l>
-                              <l>pues à un compañero suyo,</l>
-                              <l>de dos fuertes estocadas,</l>
-                              <l>y à otro con una pistola,</l>
-                              <l>dexó dos cuerpo s sin alma:</l>
-                              <l>fueronse las Peregrinas,</l>
-                              <l>rindiendole muchas gracias.</l>
-                              <l>Luego trató de embarcarse,</l>
-                              <l>porque ya se rezelava:</l>
-                              <l>llegaron los tres à un Puerto,</l>
-                              <l>que una Nave se aprestava</l>
-                              <l>para Levante, y en èlla</l>
-                              <l>su viage concertáva.</l>
-                              <l>Y en aquella misma noche</l>
-                              <l>èlla, y sus dos camaradas</l>
-                              <l>tuvieron un gran combite</l>
-                              <l>de pasteles, y empanadas,</l>
-                              <l>se brindaron à menudo,</l>
-                              <l>mas èlla no lo gustava;</l>
-                              <l>los dos perdieron las fuerzas,</l>
-                              <l>y al sueño se entregavan;</l>
-                              <l>se retiraron à un quarto,</l>
-                              <l>y à las dos de la mañana</l>
-                              <l>tiraron pieza de aviso,</l>
-                              <l>y à los dos los escusava</l>
-                              <l>los malos passos que han hecho,</l>
-                              <l>à los filos de una daga.</l>
-                              <l>Cargó con quanto tenian,</l>
-                              <l>y à favor del viento marcha:</l>
-                              <l>llegó à dar vista gozosa</l>
-                              <l>al Puerto que deseava,</l>
-                              <l>con nuevecientos dablones,</l>
-                              <l>y mucha moneda en plata,</l>
-                              <l>se passeava gustosa,</l>
-                              <l>comia, y se regalava</l>
-                              <l>siempre con los Militares</l>
-                              <l>era toda su habitanza.</l>
-                              <l>Y estando assentada un dia,</l>
-                              <l>conoció un Cabo de Esquadra</l>
-                              <l>del Tercio de su querido,</l>
-                              <l>llegó travando palabras,</l>
-                              <l>que razones traen razones,</l>
-                              <l>con que conoció la Dama,</l>
-                              <l>que no era causa Don Carlos</l>
-                              <l>de todo lo que le passa.</l>
-                              <l>Correspondió agradecida,</l>
-                              <l>que alli tiene su posada,</l>
-                              <l>que quanto se le ofreciera</l>
-                              <l>por él sacará la cara.</l>
-                              <l>Y al otro dia siguiente</l>
-                              <l>se compró una rica gala,</l>
-                              <l>un coleto de ante fino,</l>
-                              <l>y una linda espada, y daga.</l>
-                              <l>Se fué con otros amigos</l>
-                              <l>donde está el cuerpo de guardia</l>
-                              <l>de que el Capitán le vió,</l>
-                              <l>à sus Oficiales manda,</l>
-                              <l>que le llamen aquel mozo,</l>
-                              <l>porque mucho le agradava:</l>
-                              <l>preguntó si era Español,</l>
-                              <l>y ella cortesana le habla,</l>
-                              <l>que desde su nacimiento</l>
-                              <l>noble Español se llamava;</l>
-                              <l>con suplicas, y dineros</l>
-                              <l>al instante sentó plaza.</l>
-                              <l>En un meson la aloxaron</l>
-                              <l>con su patente firmada;</l>
-                              <l>y estando juntos comiendo,</l>
-                              <l>conoció algunas alhajas;</l>
-                              <l>y el huesped le dixo, amigo</l>
-                              <l>tambien yo he estado en España,</l>
-                              <l>en Alicante, en Valencia,</l>
-                              <l>en Castilla, y en Navarra:</l>
-                              <l>y una noche en Zaragoza</l>
-                              <l>por cierta parte passava</l>
-                              <l>á cavallo en una yegua,</l>
-                              <l>quando por una ventana</l>
-                              <l>de secreto me llamaron,</l>
-                              <l>y en un cofre me arrojaron</l>
-                              <l>quanta riqueza posseo,</l>
-                              <l>en que compré aquesta casa.</l>
-                              <l>Dissimuló quanto pudo,</l>
-                              <l>y assì que en claro lo saca,</l>
-                              <l>con una daga furiosa</l>
-                              <l>le abrió tres puertas al alma.</l>
-                              <l>A las vozes, y al ruido</l>
-                              <l>acudió el mozo de casa</l>
-                              <l>pana quererle agarrar,</l>
-                              <l>pero de una puñalada</l>
-                              <l>le pagó con el azero</l>
-                              <l>la codicia que llevava.</l>
-                              <l>Vino toda la justicia,</l>
-                              <l>y à la carcel la llevavan:</l>
-                              <l>la encierran, y aprisionan,</l>
-                              <l>y averiguando la causa,</l>
-                              <l>la sentencian de que muera.</l>
-                              <l>Y un Martes por la mañana</l>
-                              <l>la sacaron de la carcel</l>
-                              <l>con mucha gente en compaña,</l>
-                              <fw type="reclamo">y</fw>
+          <pb n="4" source="BCN_062_4.jpg" facs="varios/BCN_062_4.jpg"/>
 
-                              <pb n="4" source="BCN_062_4.jpg" facs="varios/BCN_062_4.jpg"/>
-
-                              <l>y una ilustre Compañía</l>
-                              <l>de Soldados de importancía.</l>
-                              <l>Llegó afligida en el suplicio,</l>
-                              <l>y á un Religioso le encarga</l>
-                              <l>que le llamen á Don Carlos,</l>
-                              <l>Capitan de aquella Esquadra;</l>
-                              <l>le ha dicho: Señor Don Carlos,</l>
-                              <l>vuestra nobleza me ampara</l>
-                              <l>todas aquellas finezas</l>
-                              <l>que en Zaragoza pasavan.</l>
-                              <l>Respondióles Hermano mio</l>
-                              <l>mire en el puesto que se halla:</l>
-                              <l>repare que va à morir.</l>
-                              <l>Pues Señor, vos sois la causa,</l>
-                              <l>respondióle, de que suerte?</l>
-                              <l>Señor yo lo digo, y basta:</l>
-                              <l>no os acordais los favores,</l>
-                              <l>las penas, fatigas, y ansias</l>
-                              <l>que por mi haveis padecido?</l>
-                              <l>Quien os dió essa esmeralda</l>
-                              <l>que llevais en este dedo?</l>
-                              <l>Con quien tan dulzes palabras,</l>
-                              <l>con quien tan tiernos requiebros,</l>
-                              <l>con quien quedó efectuada</l>
-                              <l>palabra de ser tu Esposa,</l>
-                              <l>aqui está la desdichada</l>
-                              <l>de Doña Juana Merino,</l>
-                              <l>en quien vos idolatravais:</l>
-                              <l>si quiera por ser muger</l>
-                              <l>oy vuestro auxilio me valga,</l>
-                              <l>que ya conoceis el tronco,</l>
-                              <l>mi nobleza, sangre, y casa:</l>
-                              <l>que si no os basta en razones,</l>
-                              <l>aqui me teneis postrada:</l>
-                              <l>vertiendo mares de perlas</l>
-                              <l>sus ojos manifestavan.</l>
-                              <l>Arrojóse, y abrazóla,</l>
-                              <l>y à la Compañia manda</l>
-                              <l>que pusiessen bala en boca,</l>
-                              <l>y en un Convento la entrava,</l>
-                              <l>ofreciendo su cab za</l>
-                              <l>por librar aquella Dama.</l>
-                              <l>Escrivieron à sus padres,</l>
-                              <l>y con testigos declaran</l>
-                              <l>de las razones que ha dicho:</l>
-                              <l>y al huesped de la casa</l>
-                              <l>le embargan quanto tenia,</l>
-                              <l>las prendas, joyas, y casa.</l>
-                              <l>Vino su padre, y su tio</l>
-                              <l>para llevarla à su patria;</l>
-                              <l>mas ella firme responde,</l>
-                              <l>que su intento es ser casada</l>
-                              <l>con el Capitan Don Carlos,</l>
-                              <l>pues que tanto le costava.</l>
-                              <l>Gustoso el Señor Obispo</l>
-                              <l>mandó que los desposáran:</l>
-                              <l>con fiestas, y con torneos</l>
-                              <l>las bodas se celebravan.</l>
-                              <l>Nuestro Rey que supo esto,</l>
-                              <l>à Don Carlos adelanta</l>
-                              <l>para Maestre de Campo,</l>
-                              <l>porque le estimó la hazaña.</l>
-                              <l>Escarmienten las mugeres,</l>
-                              <l>reparen en Doña Juana,</l>
-                              <l>que anduvo rondando el mundo</l>
-                              <l>con su honra acrisolada,</l>
-                              <l>hasta que la dexò en manos</l>
-                              <l>de quien tanto deseava.</l>
-                              <trailer rend="negrita">FIN.</trailer>
-                        </div>
-                        <div type="colofon">
-                              <p>
-                                    <lb/><hi rend="cursiva">Barcelona</hi>: Por JUAN JOLIS
+          <l>y una ilustre Compañía</l>
+          <l>de Soldados de importancía.</l>
+          <l>Llegó afligida en el suplicio,</l>
+          <l>y á un Religioso le encarga</l>
+          <l>que le llamen á Don Carlos,</l>
+          <l>Capitan de aquella Esquadra;</l>
+          <l>le ha dicho: Señor Don Carlos,</l>
+          <l>vuestra nobleza me ampara</l>
+          <l>todas aquellas finezas</l>
+          <l>que en <name>Zaragoza</name> pasavan.</l>
+          <l>Respondióles Hermano mio</l>
+          <l>mire en el puesto que se halla:</l>
+          <l>repare que va à morir.</l>
+          <l>Pues Señor, vos sois la causa,</l>
+          <l>respondióle, de que suerte?</l>
+          <l>Señor yo lo digo, y basta:</l>
+          <l>no os acordais los favores,</l>
+          <l>las penas, fatigas, y ansias</l>
+          <l>que por mi haveis padecido?</l>
+          <l>Quien os dió essa esmeralda</l>
+          <l>que llevais en este dedo?</l>
+          <l>Con quien tan dulzes palabras,</l>
+          <l>con quien tan tiernos requiebros,</l>
+          <l>con quien quedó efectuada</l>
+          <l>palabra de ser tu Esposa,</l>
+          <l>aqui está la desdichada</l>
+          <l>de Doña Juana Merino,</l>
+          <l>en quien vos idolatravais:</l>
+          <l>si quiera por ser muger</l>
+          <l>oy vuestro auxilio me valga,</l>
+          <l>que ya conoceis el tronco,</l>
+          <l>mi nobleza, sangre, y casa:</l>
+          <l>que si no os basta en razones,</l>
+          <l>aqui me teneis postrada:</l>
+          <l>vertiendo mares de perlas</l>
+          <l>sus ojos manifestavan.</l>
+          <l>Arrojóse, y abrazóla,</l>
+          <l>y à la Compañia manda</l>
+          <l>que pusiessen bala en boca,</l>
+          <l>y en un Convento la entrava,</l>
+          <l>ofreciendo su cab za</l>
+          <l>por librar aquella Dama.</l>
+          <l>Escrivieron à sus padres,</l>
+          <l>y con testigos declaran</l>
+          <l>de las razones que ha dicho:</l>
+          <l>y al huesped de la casa</l>
+          <l>le embargan quanto tenia,</l>
+          <l>las prendas, joyas, y casa.</l>
+          <l>Vino su padre, y su tio</l>
+          <l>para llevarla à su patria;</l>
+          <l>mas ella firme responde,</l>
+          <l>que su intento es ser casada</l>
+          <l>con el Capitan Don Carlos,</l>
+          <l>pues que tanto le costava.</l>
+          <l>Gustoso el Señor Obispo</l>
+          <l>mandó que los desposáran:</l>
+          <l>con fiestas, y con torneos</l>
+          <l>las bodas se celebravan.</l>
+          <l>Nuestro Rey que supo esto,</l>
+          <l>à Don Carlos adelanta</l>
+          <l>para Maestre de Campo,</l>
+          <l>porque le estimó la hazaña.</l>
+          <l>Escarmienten las mugeres,</l>
+          <l>reparen en Doña Juana,</l>
+          <l>que anduvo rondando el mundo</l>
+          <l>con su honra acrisolada,</l>
+          <l>hasta que la dexò en manos</l>
+          <l>de quien tanto deseava.</l>
+          <trailer rend="negrita">FIN.</trailer>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona</hi>: Por JUAN JOLIS
                                     Impressor, en la calle <lb/>de los Algodoneros.</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

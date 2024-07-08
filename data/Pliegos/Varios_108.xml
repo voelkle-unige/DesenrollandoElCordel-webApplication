@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -92,6 +107,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q1563">
+            <placeName key="La_Habana">La Habana</placeName>
+            <location>
+              <geo>23.136666666667 -82.358888888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -127,8 +150,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-01" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-01" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1453,18 +1475,20 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_108_1.jpg" facs="varios/Varios_108_1.jpg"/>
 
-          <head type="primer_titulo"><lb/>COPLAS NUEVAS<lb/><hi rend="negrita">GLOSADAS EN DECIMAS,</hi><lb/>PARA CANTAR LOS
+          <head type="primer_titulo">
+            <lb/>COPLAS NUEVAS<lb/>
+            <hi rend="negrita">GLOSADAS EN DECIMAS,</hi>
+            <lb/>PARA CANTAR LOS
             AFICIONADOS.</head>
-
           <lg rend="cursiva">
             <l rend="indent">Determinado me siento</l>
             <l>A aborrecer lo que adoro,</l>
             <l>En el mismo instante lloro</l>
             <l>Mi propio aborrecimiento.</l>
           </lg>
-
           <lg>
             <l rend="indent">Amo á una deidad hermosa,</l>
             <l>Pero es una ingrata fiera,</l>
@@ -1477,7 +1501,6 @@
             <l>Y entre adorarla y quererla</l>
             <l rend="cursiva">Determinado me siento.</l>
           </lg>
-
           <lg>
             <l rend="indent">Es un serafin, un cielo,</l>
             <l>Esta belleza que adoro,</l>
@@ -1490,7 +1513,6 @@
             <l>Ya me obligo, no me obligo</l>
             <l rend="cursiva">A aborrecer lo que adoro.</l>
           </lg>
-
           <lg>
             <l rend="indent">Mi pena es tan escesiva,</l>
             <l>Y mi pasion tan violenta,</l>
@@ -1503,7 +1525,6 @@
             <l>Pensando serle inconstante,</l>
             <l rend="cursiva">En el mismo instante lloro.</l>
           </lg>
-
           <lg>
             <l rend="indent">En fin no la puedo ver,</l>
             <l>Y si la miro, me pesa,</l>
@@ -1525,7 +1546,6 @@
             <l>Todos mis cinco sentidos,</l>
             <l>El destino y la razon.</l>
           </lg>
-
           <lg>
             <l rend="indent">A tu puerta gime y llora</l>
             <l>Un afligido pastor,</l>
@@ -1538,7 +1558,6 @@
             <l>Mas yo siempre te diré,</l>
             <l rend="cursiva">Tú me robastes el alma.</l>
           </lg>
-
           <lg>
             <l rend="indent">No basta haberme quitado</l>
             <l>La vista, y tenerme ciego,</l>
@@ -1551,7 +1570,6 @@
             <l>Que por quererte he perdido</l>
             <l rend="cursiva">La vida y el corazon.</l>
           </lg>
-
           <lg>
             <l rend="indent">Hasta que llegue la muerte</l>
             <l>Constante te he de adorar,</l>
@@ -1564,7 +1582,6 @@
             <l>Y tambien me ha cautivado</l>
             <l rend="cursiva">Todos mis cinco sentidos.</l>
           </lg>
-
           <lg>
             <l rend="indent">Adios, mi prenda querida,</l>
             <l>Mi veneno apetecido</l>
@@ -1577,14 +1594,12 @@
             <l>Porque por tí he de perder</l>
             <l rend="cursiva">El destino y la razon.</l>
           </lg>
-
           <lg rend="cursiva">
             <l rend="indent">No se puede hacer culpable</l>
             <l>Al hombre que solicita.</l>
             <l>Mas culpable es la muger</l>
             <l>Que sin reparar lo admita.</l>
           </lg>
-
           <lg>
             <l rend="indent">Si la pluma de Doctores,</l>
             <l>Afirman con Salomon,</l>
@@ -1597,7 +1612,6 @@
             <l>Pudiéndola pues querer</l>
             <l rend="cursiva">No se puede hacer culpable.</l>
           </lg>
-
           <lg>
             <l rend="indent">Por la violenta pasion</l>
             <l>Que agita á todo mortal,</l>
@@ -1610,7 +1624,6 @@
             <l>No toma, si no le dan.</l>
             <l rend="cursiva">El hombre que solicita.</l>
           </lg>
-
           <lg>
             <l rend="indent">El incendio mas violento,</l>
             <l>Si dá en la nieve ó el hielo,</l>
@@ -1623,7 +1636,6 @@
             <l>Estopa, que el fuego alienta,</l>
             <l rend="cursiva">Mas culpable es la muger.</l>
           </lg>
-
           <lg>
             <l rend="indent">Al hombre se le ordenó</l>
             <l>Comer su pan con sudor,</l>
@@ -1645,7 +1657,6 @@
             <l>Pues sin libertad me veo</l>
             <l>En lo mejor de mi edad.</l>
           </lg>
-
           <lg>
             <l rend="indent">El sol, estrellas y Luna,</l>
             <l>Signos y demas planetas,</l>
@@ -1658,7 +1669,6 @@
             <l>Pues estoy amás de preso</l>
             <l rend="cursiva">En aquesta soledad.</l>
           </lg>
-
           <lg>
             <l rend="indent">El hombre, peces y aves,</l>
             <l>El aire, tierra y el fuego,</l>
@@ -1671,7 +1681,6 @@
             <l>Pues amás de estan penando,</l>
             <l rend="cursiva">Lloro un bien que no poseo.</l>
           </lg>
-
           <lg>
             <l rend="indent">Las rosas y demas flores,</l>
             <l>Aunque en su abril divertidas,</l>
@@ -1684,7 +1693,6 @@
             <l>Lloren, lloren sin cesar,</l>
             <l rend="cursiva">Pues sin libertad me veo.</l>
           </lg>
-
           <lg>
             <l rend="indent">Hasta las mas duras rocas</l>
             <l>Que incapaces son de hablar,</l>
@@ -1697,14 +1705,12 @@
             <l>Quién es quien preso, me tiene</l>
             <l rend="cursiva">En la mejor de mi edad.</l>
           </lg>
-
           <lg rend="cursiva">
             <l rend="indent">Una paloma maté</l>
             <l>Pero mucho me costó,</l>
             <l>No hay duda que ella cayó,</l>
             <l>Despues de muerta se fué.</l>
           </lg>
-
           <lg>
             <l rend="indent">Señores, voy a contar</l>
             <l>Lo que à mi me ha sucedido,</l>
@@ -1717,7 +1723,6 @@
             <l>Y en una cierta ocasion</l>
             <l rend="cursiva">Una paloma maté.</l>
           </lg>
-
           <lg>
             <l rend="indent">Mucho tiempo fui buscando,</l>
             <l>Sin poder vaciar, el tiro,</l>
@@ -1730,7 +1735,6 @@
             <l>En fin la víne à apuntar</l>
             <l rend="cursiva">Pero mucho me costó.</l>
           </lg>
-
           <lg>
             <l rend="indent">Con toda aquella armonia</l>
             <l>Que requiere la ocasion,</l>
@@ -1743,7 +1747,6 @@
             <l>En fin la vine à matar,</l>
             <l rend="cursiva">No hay duda que ella cayó.</l>
           </lg>
-
           <lg>
             <l rend="indent">¡Quién mas infeliz que yo</l>
             <l>En el mundo habrá nacido!</l>
@@ -1765,7 +1768,6 @@
             <l>Tiene cresta como el gallo,</l>
             <l>Y como el raton orejas.</l>
           </lg>
-
           <lg>
             <l rend="indent">Cuando con ella encontré,</l>
             <l>Trabamos conversacion,</l>
@@ -1778,7 +1780,6 @@
             <l>Este consejo sagrado</l>
             <l rend="cursiva">Una vieja me lo dió.</l>
           </lg>
-
           <lg>
             <l rend="indent">La vieja me dijo: hijito;</l>
             <l>Procura tomar enmienda</l>
@@ -1791,7 +1792,6 @@
             <l>Un buen consejo tomar,</l>
             <l rend="cursiva">Qué tambien lo dan las viejas.</l>
           </lg>
-
           <lg>
             <l rend="indent">Me dijo hiciera memoria</l>
             <l>Que Dios era santo y justo,</l>
@@ -1804,7 +1804,6 @@
             <l>Porque el pecado mortal</l>
             <l rend="cursiva">Tiene cresta como el gallo.</l>
           </lg>
-
           <lg>
             <l>El diablo hizo presente</l>
             <l>Toda su fisonomía,</l>
@@ -1817,14 +1816,12 @@
             <l>Hocieo y cara de gato,</l>
             <l rend="cursiva">Y como el raton orejas.</l>
           </lg>
-
           <lg rend="cursiva">
-            <l rend="indent">Adios ciudad de la Habana,</l>
+            <l rend="indent">Adios ciudad de la <name>Habana</name>,</l>
             <l>Adios dije, puerto hermoso.</l>
             <l>Adios Morro, adios Cabaña,</l>
             <l>Adios murallas y foso.</l>
           </lg>
-
           <lg>
             <l rend="indent">El tiempo que estuve allí</l>
             <l>Disfrutando sus favores,</l>
@@ -1835,9 +1832,8 @@
             <l>Aunque á mí no fué tirana,</l>
             <l>Forzoso me fue el venir,</l>
             <l>Esclamando allá al partir.</l>
-            <l rend="cursiva">Adios ciudad de la Habana.</l>
+            <l rend="cursiva">Adios ciudad de la <name>Habana</name>.</l>
           </lg>
-
           <lg>
             <l rend="indent">Ella es un jardin de flores</l>
             <l>Blancas, pardas y morenas,</l>
@@ -1850,7 +1846,6 @@
             <l>Adios, blancas, morenitas.</l>
             <l rend="cursiva">adios dije, puerto, hermoso.</l>
           </lg>
-
           <lg>
             <l rend="indent">Adios á su artillería</l>
             <l>Y à toda su gente junta,</l>
@@ -1863,7 +1858,6 @@
             <l>Adios regla peregrina,</l>
             <l rend="cursiva">¡dios Morra, adios Cabaña.</l>
           </lg>
-
           <lg>
             <l rend="indent">Adios casa de prision</l>
             <l>Con san Lázaro y Salud</l>
@@ -1876,12 +1870,11 @@
             <l>Adios todos mis placeres,</l>
             <l rend="cursiva">Adios murallas y foso.</l>
           </lg>
-
           <trailer>F I N.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Valencia: <hi rend="cursiva">Imprenta de Laborda, calle de la Bolsería, número</hi> 18.</p>
+          <p>
+            <lb/>Valencia: <hi rend="cursiva">Imprenta de Laborda, calle de la Bolsería, número</hi> 18.</p>
         </div>
       </div>
     </body>

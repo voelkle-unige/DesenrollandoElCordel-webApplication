@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -90,6 +105,50 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q82070">
+            <placeName key="Tiro">Tiro</placeName>
+            <location>
+              <geo>33.266666666667 35.2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1294629">
+            <placeName key="Samaria">Samaria</placeName>
+            <location>
+              <geo>32.14306 35.26062</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q79">
+            <placeName key="Egipto">Egipto</placeName>
+            <location>
+              <geo>27 29</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q858">
+            <placeName key="Siria">Siria</placeName>
+            <location>
+              <geo>35.216667 38.583333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q801">
+            <placeName key="Israel">Israel</placeName>
+            <location>
+              <geo>31 35</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q80561">
+            <placeName key="Antioquía">Antioquía</placeName>
+            <location>
+              <geo>36.2025 36.1605555555555</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q35591">
+            <placeName key="Tigris">Tigris</placeName>
+            <location>
+              <geo>38.5032 39.5058</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -125,8 +184,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-04-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-04-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1418,16 +1476,17 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_168_1.jpg" facs="varios/Varios_168_1.jpg"/>
 
           <fw type="impresorNum">Núm. 150</fw>
-
-          <head type="primer_titulo"><lb/>RELACION<lb/>VIDA Y MUERTE DE SANSON.</head>
-
-          <l><hi rend="negrita">D</hi>uque excelso de Antioqnia,</l>
-          <l>Principe heroico de Tiro,</l>
-          <l>jurado Rey de Samaria,</l>
-          <l>grande Emperador de Egipto,</l>
+          <head type="primer_titulo">
+            <lb/>RELACION<lb/>VIDA Y MUERTE DE SANSON.</head>
+          <l>
+            <hi rend="negrita">D</hi>uque excelso de Antioqnia,</l>
+          <l>Principe heroico de <name>Tiro</name>,</l>
+          <l>jurado Rey de <name>Samaria</name>,</l>
+          <l>grande Emperador de <name>Egipto</name>,</l>
           <l>mi calidad, patria y nombre,</l>
           <l>mis hazañas y prodigios</l>
           <l>escucha, para que sepas</l>
@@ -1447,14 +1506,14 @@
           <l>Naci, Sanson me llamaron,</l>
           <l>cuyo sagrado apellido,</l>
           <l>Sol significa en Hebreo.</l>
-          <l>y en lengua Siria Ministro.</l>
+          <l>y en lengua <name>Siria</name> Ministro.</l>
           <l>Crecí en virtudes morales,</l>
           <l>hice varios ejercicios,</l>
           <l>estudié diversas ciencias,</l>
           <l>visité Reynos distintos</l>
           <l>Y en fin, por orden del Cielo,</l>
           <l>Capitan quedé elegido</l>
-          <l>de las tropas de Israel.</l>
+          <l>de las tropas de <name>Israel</name>.</l>
           <l>y Juez de sus doce Tribus:</l>
           <l>Para cuya gran funcion.</l>
           <l>piadoso el Cielo y propicio,</l>
@@ -1502,7 +1561,7 @@
           <l>á un envion quebrantaba</l>
           <l>los cañamos retorcidos.</l>
           <l>Mataba un hombre de un golpe,</l>
-          <l>saltaba el Tigris de un brinco.</l>
+          <l>saltaba el <name>Tigris</name> de un brinco.</l>
           <l>Corría mas que un caballo,</l>
           <l>derribaba un edificio</l>
           <l>con solo arrimarme á él;</l>
@@ -1532,7 +1591,7 @@
           <l>que la opresion llama agravios,</l>
           <l>y la política arbitrios,</l>
           <l>tomé contra ti las armas,</l>
-          <l>y entré en la Siria atrevido,</l>
+          <l>y entré en la <name>Siria</name> atrevido,</l>
           <l>donde en menos de veinte años</l>
           <l>que fui del Pueblo caudillo,</l>
           <l>sabe el mundo, y tu lo sabes.</l>
@@ -1740,9 +1799,9 @@
           <l>donde hay mas de quatro mil,</l>
           <l>ninguno se escapó de ellos.</l>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Con licencia: En Córdoba , en la Imprenta de Don Rafael Garcia<lb/>Rodriguez, Calle de la Librería.</p>
+          <p>
+            <lb/>Con licencia: En Córdoba , en la Imprenta de Don Rafael Garcia<lb/>Rodriguez, Calle de la Librería.</p>
         </div>
       </div>
     </body>

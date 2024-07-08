@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -43,7 +57,7 @@
             <country>Suisse</country>
             <settlement>Genève</settlement>
             <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
+            </repository>
             <collection>Colección Varios</collection>
             <idno type="cote"/>
             <idno type="DOI">10.5281/zenodo.6798765</idno>
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material rend="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="16"/>16 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="16"/>16 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -90,6 +105,68 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q38">
+            <placeName key="Italia">Italia</placeName>
+            <location>
+              <geo>42.5 12.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1017">
+            <placeName key="Aquisgrán">Aquisgrán</placeName>
+            <location>
+              <geo>50.776207 6.083788</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1179">
+            <placeName key="Aquitania">Aquitania</placeName>
+            <location>
+              <geo>44.6 0</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q490">
+            <placeName key="Milán">Milán</placeName>
+            <location>
+              <geo>45.466944444444 9.19</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q980">
+            <placeName key="Baviera">Baviera</placeName>
+            <location>
+              <geo>49.0786111111111 11.3855555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q568611">
+            <placeName key="Cannas">Cannas</placeName>
+            <location>
+              <geo>41.296388888889 16.151666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q13712">
+            <placeName key="río_Tíber">Río Tíber</placeName>
+            <location>
+              <geo>43.786916666667 12.077666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q159856">
+            <placeName key="Ducado_de_Brabante">Ducado De Brabante</placeName>
+            <location>
+              <geo>4.3 50.8</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q16086">
+            <placeName key="Rheinberg">Rheinberg</placeName>
+            <location>
+              <geo>6.600555555 51.546666666</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,7 +207,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_439_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_439_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_439_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_439_1/full/full/0/default.jpg"/>
@@ -3185,32 +3264,45 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_439_1.jpg" facs="varios/Varios_439_1.jpg"/>
+
         <fw type="numeroPliego">(CUATRO PLIEGOS.)</fw>
         <head type="primer_titulo">
           <lb/>
           <hi rend="cursiva">EL ANILLO DE ZAFIRA</hi>
         </head>
-        <head type="subtitulo_parte"><lb/>LEYENDA FRANCESA DEL TIEMPO DE CARLO-MAGNO</head>
+        <head type="subtitulo_parte">
+          <lb/>LEYENDA FRANCESA DEL TIEMPO DE CARLO-MAGNO</head>
         <div type="colofon">
-          <p><lb/>DESPACHOS:<lb/>MADRID <lb/>Hernando, Arenal, 11. <lb/>BARCELONA <lb/>Bou
+          <p>
+            <lb/>DESPACHOS:<lb/>MADRID <lb/>Hernando, Arenal, 11. <lb/>BARCELONA <lb/>Bou
                                     de la Plaza Nueva, 13.</p>
         </div>
+
         <pb n="2" source="Varios_439_2.jpg" facs="varios/Varios_439_2.jpg"/>
+
         <div type="propiedad">
-          <p><lb/>ES PROPIEDAD</p>
+          <p>
+            <lb/>ES PROPIEDAD</p>
         </div>
+
         <pb n="3" source="Varios_439_3.jpg" facs="varios/Varios_439_3.jpg"/>
+
         <div type="capitulo" n="1">
-          <head type="primer_titulo"><lb/>EL ANILLO DE ZAFIRA.</head>
-          <head type="titulo_parte"><lb/>CAPÍTULO PRIMERO.</head>
-          <head type="subtitulo_parte"><lb/>En que se refieren los amores de Carlo Magno y Zafira, como
+          <head type="primer_titulo">
+            <lb/>EL ANILLO DE ZAFIRA.</head>
+          <head type="titulo_parte">
+            <lb/>CAPÍTULO PRIMERO.</head>
+          <head type="subtitulo_parte">
+            <lb/>En que se refieren los amores de Carlo Magno y Zafira, como
                                     esta fué á <lb/>visitar á una maga para que la dijese si podia
                                     estar segura de los amores <lb/>de Cárlo-Magno.</head>
-          <p><lb/>En el año de 780, despues del famoso y general bautismo de
+          <p>
+            <lb/>En el año de 780, despues del famoso y general bautismo de
                                     <lb/>los sajones, el ilustre Carlo-Magno, quiso ver el Tiber y
-                                    el suelo <lb/>feliz de Italia; pero aquel noble Emperador,
-                                    siempre invicto en la <lb/>guerra, quedó en Roma prisionero
+                                    el suelo <lb/>feliz de <name>Italia</name>; pero aquel noble Emperador,
+                                    siempre invicto en la <lb/>guerra, quedó en <name>Roma</name> prisionero
                                     entre los brazos de una hermosa <lb/>jóven llamada Zafira,
                                     demostrándose de este modo, que el amor <lb/>rinde á los más
                                     esforzados capitanes y vence á los más valerosos
@@ -3227,34 +3319,40 @@
                                     poseer un hermoso rostro, una gran discrecion y un carácter
                                     <lb/>dulce y apacible, cualidades todas que Zafira reunia en
                                     grado su- <lb/>perlativo.</p>
-          <p><lb/>Carlo-Magno estaba loco de amor por la hermosa italiana
+          <p>
+            <lb/>Carlo-Magno estaba loco de amor por la hermosa italiana
                                     has- <lb/>ta el punto que de buena gana se hubiera quedado á
                                     residir allí; <lb/>pero sus deberes de conquistador y jefe de
                                     un pueblo grande y po- <lb/>deroso le impedían consagrarse á
-                                    sí propio y determinó dirigirse <lb/>al Bravante, llevándose
+                                    sí propio y determinó dirigirse <lb/>al <name>Bravante</name>, llevándose
                                     á la beldad que tanto le habia impre- <lb/>sionado.</p>
-          <p><lb/>Ignorante de esta resolucion, Zafira que vió los
+          <p>
+            <lb/>Ignorante de esta resolucion, Zafira que vió los
                                     preparativos de <lb/>marcha, preguntó á un soldado lo que todo
                                     aquello significaba y <lb/>entonces fué cuando supo que su
                                     adorado amante Carlo-Magno ha- <lb/>bia dado la órden de
-                                    marchar al dia siguiente hácia el Bravante. <pb n="4" source="Varios_439_4.jpg" facs="varios/Varios_439_4.jpg"/>
-                                    <fw type="paginaNum">— 4 —</fw>
-                                    <lb/>Triste y llorosa se fué hácia su pobre casa la infeliz
+                                    marchar al dia siguiente hácia el <name>Bravante</name>.
+ <pb n="4" source="Varios_439_4.jpg" facs="varios/Varios_439_4.jpg"/>
+
+            <fw type="paginaNum">— 4 —</fw>
+            <lb/>Triste y llorosa se fué hácia su pobre casa la infeliz
                                     Zafira, mesán- <lb/>dose los cabellos y llena de dolor viendo
                                     cuán breve habia sido su <lb/>dicha, pues demasiado comprendia
                                     que por la elevada gerarquía de <lb/>su amante y además por
                                     estar casado con Hildegarda no era posi- <lb/>ble que la llevase
                                     con él.</p>
-          <p><lb/>Despues de un rato en que su pena pudo desahogarse con
+          <p>
+            <lb/>Despues de un rato en que su pena pudo desahogarse con
                                     <lb/>abundantes lágrimas y como si de pronto le hubiera
                                     ocurrido una <lb/>idea feliz, procuró serenarse, y saliendo de
-                                    su casa, al oscurecer, <lb/>visitó allende el Tíber una humilde
+                                    su casa, al oscurecer, <lb/>visitó allende el <name>Tíber</name> una humilde
                                     y mísera cabaña, donde vivía <lb/>una vieja profetisa, que
                                     leía en las rayas de las manos el porvenir <lb/>de las personas
                                     que le consultaban, y además disponía á su antojo <lb/>con
                                     ciertas yerbas encantadas del poder, de la fortuna y de la
                                     <lb/>gloria.</p>
-          <p><lb/>Anhelante y temblorosa la bella Zafira, porque el dictámen
+          <p>
+            <lb/>Anhelante y temblorosa la bella Zafira, porque el dictámen
                                     de <lb/>la hechicera no fuese favorable á su deseo, se
                                     presentó á ella pre- <lb/>guntándole tímidamente si la amaba
                                     Carlo-Magno. <lb/>La vieja, que tenia el más repugnante aspecto
@@ -3265,14 +3363,16 @@
                                     el ilustre rey de los galos estaba loco de <lb/>amor por ella y
                                     que la imágen de su amada estaba fijamente graba- <lb/>da en su
                                     corazon.</p>
-          <p><lb/>Volvió la calma al de Zafira con estas noticias, y
+          <p>
+            <lb/>Volvió la calma al de Zafira con estas noticias, y
                                     queriendo <lb/>asegurarse más, preguntó de nuevo si
                                     conservaría por mucho tiem- <lb/>po el amor del Emperador, á
                                     lo cual la vieja profetisa contestó en- <lb/>señándole un
                                     hermoso anillo que brillaba entre los negros dedos <lb/>de la
                                     hechicera, que lo conservaría tanto tiempo como poseyese el
                                     <lb/>anillo y con él el precioso don que encerraba.</p>
-          <p><lb/>Zafira se quedó absorta contemplando aquella hermosa joya, de
+          <p>
+            <lb/>Zafira se quedó absorta contemplando aquella hermosa joya, de
                                     <lb/>cuya posesion dependía su dicha. Era una sortija de oro
                                     con una <lb/>piedra muy rara, que en la oscuridad lanzaba
                                     brillantes rayos co- <lb/>mo si fuera un lucero; y preguntando
@@ -3280,7 +3380,8 @@
                                     respondió con gran pausa que era un ma- <lb/>ravilloso anillo
                                     que en otros tiempos habia pertenecido á la reina
                                     <lb/>Cleopatra.</p>
-          <p><lb/>—Ved por qué—dijo—una egipcia tan fea, negra, pequeña y
+          <p>
+            <lb/>—Ved por qué—dijo—una egipcia tan fea, negra, pequeña y
                                     fla- <lb/>ca, fué tan adorada y querida del gran Antonio, y por
                                     qué este sin- <lb/>tió por ella un fuego amoroso tan grande,
                                     que su llama no pudo <lb/>ser apagada por los mares, cuando á
@@ -3290,15 +3391,18 @@
                                     sepais que sus virtudes aumentan cuando está al ser- <lb/>vicio
                                     de mujeres hermosas y jóvenes cual sois vos, y no cuando
                                     <lb/>como ahora pertenece á una vieja tan arrugadita y fea como
-                                    yo soy. <pb n="5" source="Varios_439_5.jpg" facs="varios/Varios_439_5.jpg"/>
-                                    <fw type="paginaNum">— 5 —</fw>
-                                    <lb/>Este anillo—continuó diciendo—se formó de oro puro, y el
+                                    yo soy.
+ <pb n="5" source="Varios_439_5.jpg" facs="varios/Varios_439_5.jpg"/>
+
+            <fw type="paginaNum">— 5 —</fw>
+            <lb/>Este anillo—continuó diciendo—se formó de oro puro, y el
                                     gran <lb/>papa Adriano, con celeste y santa inspiracion le
                                     bendijo, y de ahí ar- <lb/>rancan todas sus virtudes, de las
                                     cuales jamás podrá vencer el de- <lb/>monio, por muchas y
                                     grandes que sean las sujestiones que haga <lb/>para
                                     lograrlo.</p>
-          <p><lb/>Despues de la batalla de Cannas, fué á poder de Aníbal,
+          <p>
+            <lb/>Despues de la batalla de <name>Cannas</name>, fué á poder de Aníbal,
                                     quien <lb/>lo recibió envuelto entre infinidad de joyas que
                                     formaban el botin de <lb/>guerra, y de todos los anillos que le
                                     presentaron en una bandeja <lb/>sólo quiso conservar el de
@@ -3306,9 +3410,10 @@
                                     guerra y en sus conquistas; pero un dia lo perdió <lb/>y se
                                     eclipsó su estrella, sus soldados le vendieron y sus armas fue-
                                     <lb/>ron humilladas y vencidas.</p>
-          <p><lb/>Zafira entró en deseos de adquirir el preciado anillo y
+          <p>
+            <lb/>Zafira entró en deseos de adquirir el preciado anillo y
                                     conveni- <lb/>da en el precio, que consistió en dejar á la
-                                    hechicera por dueña y <lb/>señora de su casa y bienes de Roma,
+                                    hechicera por dueña y <lb/>señora de su casa y bienes de <name>Roma</name>,
                                     dijo la vieja entregándoselo: <lb/>—Tomad este anillo, talisman
                                     de gloria y fama, que en vuestras <lb/>manos está llamado á
                                     ser rico tesoro de esperanzas y de amor. <lb/>Con él sereis
@@ -3322,7 +3427,8 @@
                                     anillo en la boca y disponer que con él os entierren y <lb/>de
                                     este modo el gran Emperador Carlo os amará tambien despues
                                     <lb/>de muerta.</p>
-          <p><lb/>Satisfecha con estas explicaciones, Zafira tomó el anillo,
+          <p>
+            <lb/>Satisfecha con estas explicaciones, Zafira tomó el anillo,
                                     le con- <lb/>templó con amoroso éxtasis y lo besó con
                                     arrobamiento, notando <lb/>entonces con placer que no se
                                     empañaba con el aliento. Púsolo en <lb/>sus dedos, y soñando
@@ -3331,33 +3437,41 @@
                                     bienes á <lb/>cambio de la preciada joya.</p>
         </div>
         <div type="capitulo" n="2">
-          <head type="titulo_parte"><lb/>CAPÍTULO II.</head>
-          <head type="subtitulo_parte"><lb/>Como Carlo-Magno en una cacería fué sorprendido por un
+          <head type="titulo_parte">
+            <lb/>CAPÍTULO II.</head>
+          <head type="subtitulo_parte">
+            <lb/>Como Carlo-Magno en una cacería fué sorprendido por un
                                     búfalo, siendo <lb/>librado por Zafira de una muerte cierta, en
                                     premio de lo cual fué admitida en <lb/>la córte del
                                     Emperador.</head>
-          <p><lb/>Muy bella era Zafira antes de poseer el anillo, puesto que
+          <p>
+            <lb/>Muy bella era Zafira antes de poseer el anillo, puesto que
                                     sin él <lb/>habia alcanzado el amor del poderoso rey de los
                                     galos, pero mucho <lb/>más lo estuvo despues, pues no parecía
                                     sino que la preciada joya tenia</p>
+
           <pb n="6" source="Varios_439_6.jpg" facs="varios/Varios_439_6.jpg"/>
+
           <fw type="paginaNum">— 6 —</fw>
-          <p><lb/>el don de aumentar la hermosura de las mujeres que la poseian.
+          <p>
+            <lb/>el don de aumentar la hermosura de las mujeres que la poseian.
                                     <lb/>Asi fué que cuando Carlo-Magno la vió no pudo contener
                                     una ex- <lb/>clamacion de gozo, y juró amarla hasta morir,
                                     dando al olvido á <lb/>la reina Hildegarda, de la cual habia
                                     tenido seis hijos. <lb/>Por esta causa Carlo-Magno, en su
-                                    expedicion á Bravante, llevó <lb/>consigo á la hermosa
+                                    expedicion á <name>Bravante</name>, llevó <lb/>consigo á la hermosa
                                     romana, que no se separaba de él ni á sol <lb/>ni á sombra, y
                                     le acompañaba á todos los sitios que iba. En estas
                                     <lb/>escursiones emplearon algun tiempo, siendo los dos muy
                                     felices <lb/>con su amor.</p>
-          <p><lb/>Mientras tanto, en la poblacion de Aix, que entonces no
+          <p>
+            <lb/>Mientras tanto, en la poblacion de <name>Aix</name>, que entonces no
                                     tenia la <lb/>majestuosa grandeza que despues alcanzó con su
                                     Basílica suntuosa, <lb/>sus mosáicos, muros, bronces, mármoles
                                     y jaspes, vivía tranquila- <lb/>mente la reina Hildegarda, en
                                     un castillo mandado hacer por el rey <lb/>Pipino.</p>
-          <p><lb/>Era Hildegarda una reina de porte muy majestuoso, de arro-
+          <p>
+            <lb/>Era Hildegarda una reina de porte muy majestuoso, de arro-
                                     <lb/>gante presencia y muy altiva para mandar. Ignorante de la
                                     pasion <lb/>que su esposo sentia por la romana, pasaba sus dias
                                     en plácida cal- <lb/>ma, bien agena de que el Emperador,
@@ -3374,9 +3488,9 @@
                                     la victoria. Nuestro buen hijo Pipin, bautizado <lb/>por el
                                     Papa, recibió la uncion real con la bendicion del ilustre pa-
                                     <lb/>dre de la Iglesia; y Luis, otro de nuestros amados hijos,
-                                    rey de <lb/>Aquitania, recibió igual beneficio por disposicion
+                                    rey de <lb/><name>Aquitania</name>, recibió igual beneficio por disposicion
                                     del cielo. Gisela, <lb/>la más niña, fué sacada de pila por
-                                    el docto obispo de Milan, y al <lb/>gran duque de Baviera envié
+                                    el docto obispo de <name>Milan</name>, y al <lb/>gran duque de <name>Baviera</name> envié
                                     mis embajadores, que me aseguran <lb/>está dispuesto á seguir
                                     prestándome obediencia. Hé aquí todo lo <lb/>más principal
                                     de mis gestiones, añadió Carlo-Magno, y volviéndose <lb/>á
@@ -3393,9 +3507,12 @@
                                     cacería con gran disgusto <lb/>de sus servidores, que más
                                     hubieran deseado ir á reposar de las <lb/>penalidades del viaje
                                     que correr por el soto detrás de la caza; pero</p>
+
           <pb n="7" source="Varios_439_7.jpg" facs="varios/Varios_439_7.jpg"/>
+
           <fw type="paginaNum">— 7</fw>
-          <p><lb/>el Emperador lo habia mandado, p<gap reason="borradas"/>nvenir
+          <p>
+            <lb/>el Emperador lo habia mandado, p<gap reason="borradas"/>nvenir
                                     así á sus fines par- <lb/>ticulares, y no habia más remedio
                                     que obedecer. <lb/>Esta cacería tan de improviso dispuesta,
                                     chocó á todos y prin- <lb/>cipalmente á la reina Hildegarda,
@@ -3408,7 +3525,8 @@
                                     jóven clérigo lla- <lb/>mado Gaulo, pretendiente de una mitra,
                                     y que todas sus aspiracio- <lb/>nes las concentraba en alcanzar
                                     un báculo.</p>
-          <p><lb/>La reina, que estaba impaciente con la cacería del emperador,
+          <p>
+            <lb/>La reina, que estaba impaciente con la cacería del emperador,
                                     <lb/>se dirigió á Gaulo y le dijo, que si le servia con
                                     perseverancia y <lb/>celo, pediria para él á su esposo la
                                     primer sede vacante. Con esta <lb/>promesa Gaulo se puso á
@@ -3416,11 +3534,12 @@
                                     saber todo cuanto en la cacería ocurriese, pues le
                                     <lb/>barruntaba el corazon que algo de extraordinario tenia que
                                     suce- <lb/>der. Gaulo, que sabia muy bien que el anciano obispo
-                                    de Rinberg <lb/>estaba enfermo de gran peligro, y juzgándose ya
+                                    de <name>Rinberg</name> <lb/>estaba enfermo de gran peligro, y juzgándose ya
                                     en posesion de <lb/>esta prebenda, prometió á Hildegarda
                                     complacerla en lo que desea- <lb/>ba saber, y partió á la
                                     cacería lleno el corazon de gratas es- <lb/>peranzas.</p>
-          <p><lb/>A su regreso, tuvo una entrevista con la reina, y le dió
+          <p>
+            <lb/>A su regreso, tuvo una entrevista con la reina, y le dió
                                     cuenta <lb/>del desempeño de su mision en los siguientes
                                     términos: <lb/>—El emperador, señora, guiado de su ánimo
                                     esforzado, se aven- <lb/>turó en lo más profundo de las selvas
@@ -3434,7 +3553,8 @@
                                     se hallaba ca- <lb/>sualmente por aquellos sitios, le prestó
                                     auxilio. <lb/>—¿Una amazona? preguntó con sobresalto
                                     Hildegarda; y, ¿es <lb/>muy bella?</p>
-          <p><lb/>—Tan bella, respondió Gaulo, que solamente puede ser compa-
+          <p>
+            <lb/>—Tan bella, respondió Gaulo, que solamente puede ser compa-
                                     <lb/>rada con el crepúsculo de la mañana. Ya el espantoso
                                     animal se <lb/>disponia á devorar al Emperador, y éste,
                                     desenvainada la espada, <lb/>le aguardaba á pié firme; el
@@ -3443,12 +3563,15 @@
                                     calzado é hiriéndole en una pierna. En este momento, la
                                     <lb/>hermosa amazona dispara su venablo sobre el búfalo, se lo
                                     clava <lb/>en la cerviz y lo mata.</p>
-          <p><lb/>Las gentes del emperador llegan, y al ver herido á su
+          <p>
+            <lb/>Las gentes del emperador llegan, y al ver herido á su
                                     señor <lb/>procuran curarle, pero él con ánimo esforzado
                                     exclamó: <lb/>—Todos quedos, dejad ensangrentada la pierna para
-                                    que así la <pb n="8" source="Varios_439_8.jpg" facs="varios/Varios_439_8.jpg"/>
-                                    <fw type="paginaNum">— 8 —</fw>
-                                    <lb/>vea mi dulce esposa Hildegarda. La reina al escuchar esta
+                                    que así la
+ <pb n="8" source="Varios_439_8.jpg" facs="varios/Varios_439_8.jpg"/>
+
+            <fw type="paginaNum">— 8 —</fw>
+            <lb/>vea mi dulce esposa Hildegarda. La reina al escuchar esta
                                     relacion <lb/>se conmovió mucho, y preguntó afanosa por el
                                     estado de su espo- <lb/>so, y Gaulo añade: <lb/>—Ningun peligro
                                     amenaza al presente los dias del Emperador; <lb/>su herida es
@@ -3470,7 +3593,8 @@
                                     hombre que <lb/>ha de dejar á la posteridad nombre y fama
                                     duraderos, solo debe <lb/>cubrir su cuerpo con lino, hierro y
                                     lana.</p>
-          <p><lb/>Entre tanto, una graciosa, jóven y bella mujer, en actitud
+          <p>
+            <lb/>Entre tanto, una graciosa, jóven y bella mujer, en actitud
                                     con- <lb/>templativa, se hallaba apoyada en el dintel del salon;
                                     detrás de ella <lb/>dos esclavos persas; llevan sobre una tabla
                                     la horrenda cabeza del <lb/>búfalo, coronada de astas.
@@ -3488,14 +3612,19 @@
                                     en el palacio, en premio á su arrojo y he- <lb/>roismo, por
                                     haber librado al ilustre Carlo-Magno de una muerte
                                     <lb/>segura.</p>
-          <p><lb/>Como se vé, el anillo mágico empezaba á producir sus
+          <p>
+            <lb/>Como se vé, el anillo mágico empezaba á producir sus
                                     efectos <lb/>maravillosos</p>
         </div>
+
         <pb n="9" source="Varios_439_9.jpg" facs="varios/Varios_439_9.jpg"/>
+
         <fw type="paginaNum">— 9 —</fw>
         <div type="parte" n="3">
-          <head type="titulo_parte"><lb/>CAPÍTULO III.</head>
-          <head type="subtitulo_parte"><lb/>Cómo Hildegarda pidió prestado á
+          <head type="titulo_parte">
+            <lb/>CAPÍTULO III.</head>
+          <head type="subtitulo_parte">
+            <lb/>Cómo Hildegarda pidió prestado á
                                     Zafira el anillo, y cómo ésta le dió otro, y la <lb/>extraña
                                     y terrible aventura que la ocurrió con él á la reina.</head>
           <p>
@@ -3561,14 +3690,27 @@
                                           tan</l>
             <l>tiernamente amaba.</l>
           </p>
-          <p><l>Además del anillo de la hechicera, tenia Zafira otro con
-                                          una</l><l>piedra envenenada, de modo que la menor herida ó rasguño
-                                          que se</l><l>produjese con él producia la muerte. Este anillo lo habia
-                                          heredado</l><l>Zafira de un tio suyo, napolitano, famoso nigromante, que se
-                                          lo ha-</l><l>bia dado por si alguna vez se veia en trances peligrosos, y
-                                          recor-</l><l>dando ella su funesto poder, le entraban de vez en cuando
-                                          ardien-</l><l>tísimos deseos de envenenar á Hildegarda y ocupar despues
-                                          su</l><fw type="signaturas">2</fw><pb n="10" source="Varios_439_10.jpg" facs="varios/Varios_439_10.jpg"/><fw type="paginaNum">— 10 —</fw><lb/>puesto; pero Zafira era buena, y tantas veces como este
+          <p>
+            <l>Además del anillo de la hechicera, tenia Zafira otro con
+                                          una</l>
+            <l>piedra envenenada, de modo que la menor herida ó rasguño
+                                          que se</l>
+            <l>produjese con él producia la muerte. Este anillo lo habia
+                                          heredado</l>
+            <l>Zafira de un tio suyo, napolitano, famoso nigromante, que se
+                                          lo ha-</l>
+            <l>bia dado por si alguna vez se veia en trances peligrosos, y
+                                          recor-</l>
+            <l>dando ella su funesto poder, le entraban de vez en cuando
+                                          ardien-</l>
+            <l>tísimos deseos de envenenar á Hildegarda y ocupar despues
+                                          su</l>
+            <fw type="signaturas">2</fw>
+
+            <pb n="10" source="Varios_439_10.jpg" facs="varios/Varios_439_10.jpg"/>
+
+            <fw type="paginaNum">— 10 —</fw>
+            <lb/>puesto; pero Zafira era buena, y tantas veces como este
                                     horrible <lb/>pensamiento se le habia presentado en la
                                     imaginacion, otras tantas <lb/>lo habia desechado valerosamente
                                     con la mayor nobleza. <lb/>Un dia Hildegarda pasó á la cámara
@@ -3577,13 +3719,15 @@
                                     fuera del lecho, tuvo ocasion de ver los dos <lb/>anillos,
                                     quedando sumamente prendada de su limpidez y hermo-
                                     <lb/>sura.</p>
-          <p><lb/>Zafira, que no le tenia ódio ni mala voluntad á
+          <p>
+            <lb/>Zafira, que no le tenia ódio ni mala voluntad á
                                     Hildegarda, sino <lb/>una envidia pacífica, le explicó la
                                     virtud de aquellos anillos, pero <lb/>trocándolos, es decir,
                                     atribuyendo al de la hechicera la virtud mala <lb/>de envenenar,
                                     y diciendo del otro sus portentosos efectos para po- <lb/>seer
                                     el amor, la fortuna y la gloria.</p>
-          <p><lb/>Con esta explicacion entró Hildegarda en deseos de poseer
+          <p>
+            <lb/>Con esta explicacion entró Hildegarda en deseos de poseer
                                     los <lb/>anillos, pero Zafira la dijo que por nada del mundo se
                                     habia de <lb/>deshacer de ellos, pues los tenia en mucha estima.
                                     Resignóse Hilde- <lb/>garda y queriendo experimentar la virtud
@@ -3596,7 +3740,8 @@
                                     anillo malo, creyendo que te- <lb/>nia en su poder el precioso
                                     talisman que aseguraba el amor, la for- <lb/>tuna y la
                                     gloria.</p>
-          <p><lb/>Habia entre la alta servidumbre de capitanes de
+          <p>
+            <lb/>Habia entre la alta servidumbre de capitanes de
                                     Carlo-Magno, <lb/>un gentil y apuesto oficial de la guardia
                                     real, que siempre habia <lb/>tenido para la reina Hildegarda
                                     tiernas miradas y cortesanas fine- <lb/>zas que habian llamado
@@ -3606,12 +3751,14 @@
                                     <lb/>experimentar en el dicho oficial, y una de las veces que
                                     como tenia <lb/>de costumbre le prestó homenaje y le saludó,
                                     le hizo un signo de <lb/>inteligencia para que se quedase.</p>
-          <p><lb/>—He observado, dijo Hildegarda al oficial, que hay en
+          <p>
+            <lb/>—He observado, dijo Hildegarda al oficial, que hay en
                                     vuestros <lb/>ojos algo que atrae, como el imán, y solo por
                                     esta circunstancia <lb/>deseo protejeros. Influiré con el
                                     Emperador, para que os distinga y <lb/>os haga avanzar en
                                     vuestra carrera.</p>
-          <p><lb/>El oficial hizo una gran reverencia, y al retirarse la
+          <p>
+            <lb/>El oficial hizo una gran reverencia, y al retirarse la
                                     reina le di- <lb/>rigió una profunda mirada, que parecia
                                     brotarle del corazon, segun <lb/>lo ardiente y fija que en el
                                     jóven militar se habia clavado. <lb/>Verdaderamente el
@@ -3621,16 +3768,19 @@
                                     habia presta- <lb/>do, y al mismo tiempo, si producia efecto,
                                     tener el placer de que <lb/>el Emperador se encelase, lo que
                                     seria indudablemente la mejor <lb/>prueba de la firmeza de su
-                                    amor, dado que sin celos no puede ha- <pb n="11" source="Varios_439_11.jpg" facs="varios/Varios_439_11.jpg"/>
-                                    <fw type="paginaNum">— 11 —</fw>
-                                    <lb/>ber amor. Firme en estos propósitos, la reina Hildegarda,
+                                    amor, dado que sin celos no puede ha-
+ <pb n="11" source="Varios_439_11.jpg" facs="varios/Varios_439_11.jpg"/>
+
+            <fw type="paginaNum">— 11 —</fw>
+            <lb/>ber amor. Firme en estos propósitos, la reina Hildegarda,
                                     bien age- <lb/>na de que tenia en su poder un talisman de
                                     muerte, seguía ejer- <lb/>ciendo en el oficial una infiluencia
                                     cada vez más creciente, en tér- <lb/>minos que el jóven
                                     militar concluyó por creer en la pasion de Hil- <lb/>degarda,
                                     felicitándose á sí mismo por haber merecido las atencio-
                                     <lb/>nes de su reina.</p>
-          <p><lb/>Creia esta que todos aquellos resultados consistian en el
+          <p>
+            <lb/>Creia esta que todos aquellos resultados consistian en el
                                     anillo <lb/>de Zafira, cosa que no era cierta, porque lo que
                                     habia hecho llamar <lb/>la atencion del oficial eran las miradas
                                     ardientes y los ademanes <lb/>expresivos de Hildegarda, que
@@ -3638,7 +3788,8 @@
                                     la reina le amaba, cosa que tampoco era cierta, <lb/>puesto que
                                     lo que Hildegarda quería era saber si el anillo producía
                                     <lb/>los efectos anunciados.</p>
-          <p><lb/>Creciendo este funesto error en ambos, llegaron hasta el
+          <p>
+            <lb/>Creciendo este funesto error en ambos, llegaron hasta el
                                     extre- <lb/>mo de verse con frecuencia á solas, y en una de
                                     estas entrevistas, <lb/>deseando Hildegarda llevar hasta el
                                     límite los efectos maravillosos <lb/>del anillo, tomó
@@ -3649,7 +3800,8 @@
                                     dió tiempo á salir de la <lb/>cámara de la reina, donde
                                     espiró en menos de cinco minutos entre <lb/>horribles y
                                     extrañas convulsiones.</p>
-          <p><lb/>Aterrada quedó Hildegarda ante aquel triste resultado y
+          <p>
+            <lb/>Aterrada quedó Hildegarda ante aquel triste resultado y
                                     com- <lb/>prendió, aunque tarde, que la advertencia de Zafira
                                     respecto á que <lb/>no era bueno herir con el anillo, era por
                                     desgracia suya muy cierta, <lb/>puesto que como herido de un
@@ -3659,18 +3811,23 @@
                                     <lb/>cunstancia que le comprometía mucho, pues todo el mundo se
                                     pre- <lb/>guntaría qué habia ido á hacer allí el
                                     oficial.</p>
-          <p><lb/>Hildegarda, con gran serenidad de ánimo, y comprendiendo
+          <p>
+            <lb/>Hildegarda, con gran serenidad de ánimo, y comprendiendo
                                     la <lb/>gravedad de las circunstancias, ocultó ella misma el
                                     cadáver, arras- <lb/>trándolo hasta ponerlo detrás de un
                                     mueble, á fin de evitar que su <lb/>esposo pudiera encontrarle
                                     allí y creer lo que no había ocurrido, <lb/>es á saber, que
                                     la reina le habia sido infiel.</p>
         </div>
+
         <pb n="12" source="Varios_439_12.jpg" facs="varios/Varios_439_12.jpg"/>
+
         <fw type="paginaNum">— 12 —</fw>
         <div type="capitulo" n="4">
-          <head type="titulo_parte"><lb/>CAPÍTULO IV.</head>
-          <head type="subtitulo_parte"><lb/>De lo que Hildegarda hizo con el cadáver de su amante y
+          <head type="titulo_parte">
+            <lb/>CAPÍTULO IV.</head>
+          <head type="subtitulo_parte">
+            <lb/>De lo que Hildegarda hizo con el cadáver de su amante y
                                     del gran incremento <lb/>que tuvieron los amores de Carlo-Magno
                                     y Zafira.</head>
           <p>
@@ -3740,11 +3897,20 @@
                                           Hil-</l>
             <l>degarda podia descubrir aquel misterio.</l>
           </p>
-          <p><l>Cuando se dió cuenta de lo que pasaba, Hildegarda sintió
-                                          que</l><l>por todo su cuerpo circulaban los escalofrios de la fiebre.
-                                          Com-</l><l>prendió que todas aquellas personas estaban deseosas de
-                                          saber qué</l><l>era lo que habia pasado, y coordinando sus ideas, empezó su
-                                          relato</l><pb n="13" source="Varios_439_13.jpg" facs="varios/Varios_439_13.jpg"/><fw type="paginaNum">— 13 —</fw><lb/>diciendo que sintiéndose mala durante la pasada noche,
+          <p>
+            <l>Cuando se dió cuenta de lo que pasaba, Hildegarda sintió
+                                          que</l>
+            <l>por todo su cuerpo circulaban los escalofrios de la fiebre.
+                                          Com-</l>
+            <l>prendió que todas aquellas personas estaban deseosas de
+                                          saber qué</l>
+            <l>era lo que habia pasado, y coordinando sus ideas, empezó su
+                                          relato</l>
+
+            <pb n="13" source="Varios_439_13.jpg" facs="varios/Varios_439_13.jpg"/>
+
+            <fw type="paginaNum">— 13 —</fw>
+            <lb/>diciendo que sintiéndose mala durante la pasada noche,
                                     salió á la <lb/>ventana para respirar el aire libre, y que de
                                     pronto oyó que una <lb/>persona se quejaba; y como habia
                                     tempestad, pudo despues de un <lb/>rato ver á la luz de un
@@ -3753,7 +3919,8 @@
                                     auxilio, todo lo cual fué suficiente para llenarla de terror, y
                                     <lb/>que despues de esto no recordaba más sino que habia
                                     snetido un <lb/>agudo dolor en las sienes.</p>
-          <p><lb/>Satisfizo la explicacion, y entonces la noticiaron cómo el
+          <p>
+            <lb/>Satisfizo la explicacion, y entonces la noticiaron cómo el
                                     muer- <lb/>to era un oficial de la guardia que habia sido
                                     encontrado tendido <lb/>en mitad de la calle con la cabeza
                                     abierta en dos ó tres pedazos. <lb/>Era este oficial muy
@@ -3764,7 +3931,8 @@
                                     pudiese averiguarse la ver- <lb/>dad, y aun cuando se
                                     averiguase, no era de creer que la cólera del <lb/>rey
                                     descargase sobre la cabeza de su fiel esposa.</p>
-          <p><lb/>Tan pronto como Hildegarda se restableció de su
+          <p>
+            <lb/>Tan pronto como Hildegarda se restableció de su
                                     indisposicion, <lb/>corrió á ver á Zafira para entregarla el
                                     funesto anillo, y como Zafi- <lb/>ra sabia todo cuanto habia
                                     pasado, reconstruyó con la imaginacion <lb/>la verdad del caso.
@@ -3773,7 +3941,8 @@
                                     hecho uso del talisman. Calló Hildegarda, y al cabo de rato
                                     <lb/>dijo que sí lo habia experimentado, pero que no le habia
                                     dado re- <lb/>sultado ninguno.</p>
-          <p><lb/>—¿Cómo no? exclamó Zafira; pues y la muerte del oficial
+          <p>
+            <lb/>—¿Cómo no? exclamó Zafira; pues y la muerte del oficial
                                     de la <lb/>guardia, ¿quién sino vos con ayuda del anillo la ha
                                     producido? <lb/>Aterrada la reina, negó ser verdad, y entonces
                                     Zafira refirió <lb/>punto por punto lo que segun su imaginacion
@@ -3782,7 +3951,8 @@
                                     se lo prometió de muy buena gana, di- <lb/>ciéndole que si
                                     hubiese hecho caso de sus advertencias no hubiera <lb/>ocurrido
                                     aquella desgracia.</p>
-          <p><lb/>Con esto, la amistad de Hildegarda y Zafira creció más y
+          <p>
+            <lb/>Con esto, la amistad de Hildegarda y Zafira creció más y
                                     más, <lb/>en términos que más parecian hermanas que rivales,
                                     de todo lo cual <lb/>se alegraba mucho Carlo-Magno, pues solo
                                     deseaba que sus amores <lb/>ocultos con la bella Zafira no
@@ -3793,12 +3963,15 @@
                                     sido <lb/>ella la que sin pensarlo habia matado al bravo oficial
                                     de la guardia, <lb/>cuya muerte deseaba vengar tan cruelmente el
                                     valeroso Carlo- <lb/>Magno.</p>
-          <p><lb/>De esto modo, Hildegarda quedaba á merced de Zafira, pues
+          <p>
+            <lb/>De esto modo, Hildegarda quedaba á merced de Zafira, pues
                                     <lb/>bastaba una sola palabra de esta para que la reina, aun
                                     cuando sin <lb/>culpa, se viese acusada y deshonrada á los ojos
-                                    del Emperador y <pb n="14" source="Varios_439_14.jpg" facs="varios/Varios_439_14.jpg"/>
-                                    <fw type="paginaNum">— 14 —</fw>
-                                    <lb/>de toda la córte, pues muy difícil habia de ser á
+                                    del Emperador y
+ <pb n="14" source="Varios_439_14.jpg" facs="varios/Varios_439_14.jpg"/>
+
+            <fw type="paginaNum">— 14 —</fw>
+            <lb/>de toda la córte, pues muy difícil habia de ser á
                                     Hildegarda el jus- <lb/>tificarse y mucho más el explicar cómo
                                     habia sido la presencia en <lb/>su cámara del oficial difunto.
                                     Por todas estas razones, Zafira, que <lb/>no era mala ni tenia
@@ -3806,7 +3979,8 @@
                                     satisfecha y contenta, pues su aspiracion princi- <lb/>pal
                                     consistia en poder disfrutar tranquilamente de su amor sin que
                                     <lb/>nadie pudiese amargarle su dicha.</p>
-          <p><lb/>El Emperador cada dia estaba más enamorado de la romana, y
+          <p>
+            <lb/>El Emperador cada dia estaba más enamorado de la romana, y
                                     <lb/>se comprende bien, porque Zafira tenia unos ojos tan
                                     dulces, un <lb/>encanto tan irresistible en su cabeza y una
                                     belleza tan extraordi- <lb/>naria, que no parecia sino que el
@@ -3816,7 +3990,8 @@
                                     <lb/>tipo de belleza varonil perfecta. Sus negros y rasgados
                                     ojos fasci- <lb/>naban y parecia destacarse de su cabeza una
                                     aureola de gloria y <lb/>de valor inmarcesibles.</p>
-          <p><lb/>Por el contrario, Hildegarda, que tenia mucha más edad que
+          <p>
+            <lb/>Por el contrario, Hildegarda, que tenia mucha más edad que
                                     <lb/>Zafira y que habia dado al rey de los galos robustos é
                                     ilustres vás- <lb/>tagos, empezaba á ver marchitarse su
                                     antigua belleza, y de dia en <lb/>dia perdia mayores encantos.
@@ -3833,18 +4008,23 @@
                                     aguerrido y estimado oficial de <lb/>su guardia.</p>
         </div>
         <div type="capitulo" n="5">
-          <head type="titulo_parte"><lb/>CAPÍTULO V.</head>
-          <head type="subtitulo_parte"><lb/>En el que se refieren las tribulaciones de Hildegarda, la
+          <head type="titulo_parte">
+            <lb/>CAPÍTULO V.</head>
+          <head type="subtitulo_parte">
+            <lb/>En el que se refieren las tribulaciones de Hildegarda, la
                                     ambicion de Gaulo <lb/> y la desgracia de Zafira.</head>
-          <p><lb/>Bien comprendia Hildegarda que su esposo Carlo-Magno iba
+          <p>
+            <lb/>Bien comprendia Hildegarda que su esposo Carlo-Magno iba
                                     <lb/>estando con ella cada dia más indiferente y frio, y por
                                     esto pasaba <lb/>ratos muy amargos pensando si consistiria esta
                                     indiferencia en que <lb/>Zafira le hubiese revelado la historia
                                     del fallecimiento del bravo <lb/>oficial de la guardia; así es
                                     que no se atrevia á preguntarle á su <lb/>esposo la causa
-                                    verdadera de sus desvíos. <pb n="15" source="Varios_439_15.jpg" facs="varios/Varios_439_15.jpg"/>
-                                    <fw type="paginaNum">— 15 —</fw>
-                                    <lb/>Y no era ciertamente que Zafira hubiese dicho nada al rey
+                                    verdadera de sus desvíos.
+ <pb n="15" source="Varios_439_15.jpg" facs="varios/Varios_439_15.jpg"/>
+
+            <fw type="paginaNum">— 15 —</fw>
+            <lb/>Y no era ciertamente que Zafira hubiese dicho nada al rey
                                     de <lb/>los galos respecto á la muerte del militar la causa de
                                     sus desvíos <lb/>con Hildgarda, sino que Carlo-Magno cada dia
                                     estaba más domina- <lb/>do por la belleza, juventud y gracia de
@@ -3858,7 +4038,8 @@
                                     esposo y de la be- <lb/>lla italiana, empezó á desconfiar y á
                                     ver claro y, en suma, á com- <lb/>prender la verdad de lo que
                                     ocurria.</p>
-          <p><lb/>Entretanto su antiguo confidente Gaulo no hacia más que
+          <p>
+            <lb/>Entretanto su antiguo confidente Gaulo no hacia más que
                                     im- <lb/>portunar á Hildegarda reclamándole todos los dias el
                                     cumplimiento <lb/>de su promesa, como justo premio al gran
                                     servicio que le prestó <lb/>cuando fué á enterarse de lo que
@@ -3870,14 +4051,16 @@
                                     tenerle más seguro, <lb/>le iba entreteniendo aplazando sus
                                     esperanzas de ser obispo de una <lb/>de las diócesis que habian
                                     quedado vacantes.</p>
-          <p><lb/>—Señora, decia el pobre Gaulo; bien sabeis que me
-                                    prometísteis <lb/>la sede episcopal de Rinberg, para cuando el
+          <p>
+            <lb/>—Señora, decia el pobre Gaulo; bien sabeis que me
+                                    prometísteis <lb/>la sede episcopal de <name>Rinberg</name>, para cuando el
                                     anciano obispo que la de- <lb/>sempeñaba falleciese. Pues bien;
                                     el venerable anciano ya ha muerto, <lb/>y su silla está
                                     vacante, y es ocasion de que me cumplais la promesa. <lb/>A
                                     todos estos razonamientos, contestaba siempre Hildegarda
                                     <lb/>con muchas evasivas.</p>
-          <p><lb/>—No hay prisa, exclamaba; y el pobre Gaulo, se desesperaba
+          <p>
+            <lb/>—No hay prisa, exclamaba; y el pobre Gaulo, se desesperaba
                                     <lb/>viendo que pasaba y pasaba el tiempo, y la anhelada mitra
                                     no ve- <lb/>nia. Tanto llegó á importunar á Hildegarda con
                                     sus pretensiones, <lb/>que esta un dia que estaba de mal humor
@@ -3885,7 +4068,8 @@
                                     demandas? Pues <lb/>vas á verlo. Y sin decir más, le ocultó
                                     detrás de unas grandes cor- <lb/>tinas, y mandó dar audiencia
                                     á todos los pretendientes á la sede <lb/>vacante.</p>
-          <p><lb/>Al poco rato empezaron á desfilar infinidad de personajes
+          <p>
+            <lb/>Al poco rato empezaron á desfilar infinidad de personajes
                                     que <lb/>todos alegaban grandes derechos para alcanzar la
                                     codiciada pre- <lb/>benda. Entre ellos los habia oficiales
                                     nobles, señores de alta alcur- <lb/>nia, clérigos de todas
@@ -3896,9 +4080,11 @@
                                     muy con- <lb/>tritamente que interpusiese sus buenos oficios
                                     cerca de Carlo-Mag- <lb/>no, para que éste los prefiriese y
                                     nombrase, y con tales ahincos é <lb/>instancias que lograron
-                                    aburrir á la reina. <pb n="16" source="Varios_439_16.jpg" facs="varios/Varios_439_16.jpg"/>
-                                    <fw type="paginaNum">— 16 —</fw>
-                                    <lb/>A tal grado llegó su porfía, que el abad Alcuino, un santo
+                                    aburrir á la reina.
+ <pb n="16" source="Varios_439_16.jpg" facs="varios/Varios_439_16.jpg"/>
+
+            <fw type="paginaNum">— 16 —</fw>
+            <lb/>A tal grado llegó su porfía, que el abad Alcuino, un santo
                                     va- <lb/>ron, que dirigía espiritualmente á la reina, inflamado
                                     en celeste <lb/>cólera reprendió á los pretendientes,
                                     denigró sus pretensiones y <lb/>los apostrofó en esta forma:
@@ -3912,7 +4098,8 @@
                                     pretensiones, y todos sus rivales al verle en aquella
                                     <lb/>humilde manera y con tan escasos merecimientos, se rieron
                                     de él <lb/>haciéndole blanco de sus burlas.</p>
-          <p><lb/>Irritado Alcuino, viendo que se mofaban de la humildad de
+          <p>
+            <lb/>Irritado Alcuino, viendo que se mofaban de la humildad de
                                     <lb/>Gaulo, gritó con acento profético: <lb/>—Dios abate á
                                     los soberbios y á los humildes exalta, á cuya voz <lb/>se
                                     retiraron confundidos todos los cortesanos. Gaulo iba tambien á
@@ -3936,7 +4123,8 @@
                                     en una pequeña tribuna <lb/>leía en voz alta los pasajes
                                     sagrados, en un libro de San Agustin <lb/>titulado La Ciudad de
                                     Dios.</p>
-          <p><lb/>Cuando estaban todos en lo más culminante de la fiesta,
+          <p>
+            <lb/>Cuando estaban todos en lo más culminante de la fiesta,
                                     apare- <lb/>cio Zafira desgreñada y llorosa, buscando con afan
                                     por todas partes <lb/>una cosa que se le habia perdido,
                                     mostrando tan grande senti- <lb/>miento que puso en conmocion á

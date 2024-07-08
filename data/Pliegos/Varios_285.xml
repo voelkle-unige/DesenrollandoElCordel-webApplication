@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -92,6 +107,38 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="3" corresp="Q324489">
+            <placeName key="Trujillo">Trujillo</placeName>
+            <location>
+              <geo>39.465277777778 -5.8788888888889</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q686362">
+            <placeName key="Sierra_Morena">Sierra Morena</placeName>
+            <location>
+              <geo>38.3 -5.4</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5818">
+            <placeName key="Córdoba">Córdoba</placeName>
+            <location>
+              <geo>37.883333333333 -4.7666666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q97626442">
+            <placeName key="Convento_de_Santa_Isabel_de_los_Ángeles">Convento De Santa Isabel De Los Ángeles</placeName>
+            <location>
+              <geo>37.8894303 -4.775453183</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -127,8 +174,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1304,308 +1350,310 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_285_1.jpg" facs="varios/Varios_285_1.jpg"/>
-        
+
         <div>
           <head type="primer_titulo" rend="negrita">ROSAURA LA DE TRUJILLO</head>
           <head type="subtitulo" rend="cursiva">Relación de un caso lastimoso que sucedió á una incauta
             donce- <lb/>lla llamada Rosaura, natural de la ciudad de Trujillo.</head>
-          
-            <l rend="indent">Sobre una alfombra de flores,</l>
-            <l>cerca de hermosas plantas,</l>
-            <l>à donde las avecillas</l>
-            <l>tienden sus pintadas alas</l>
-            <l>y con sus trinos alegres</l>
-            <l>al Rey del cielo dan gracias,</l>
-            <l>en aqueste prado ameno,</l>
-            <l>en este edén de fragancias,</l>
-            <l>en este sitio ue encubre</l>
-            <l>tantas aflictivas causas</l>
-            <l>de las que una os contaré,</l>
-            <l>si el cielo me dá su gracia,</l>
-            <l>y porque es país su nombre</l>
-            <l>será preciso nombrarla.</l>
-            <l rend="indent">En la gran Sierra Morena,</l>
-            <l>de tantos delitos capa,</l>
-            <l>amparo de aquel que ofende,</l>
-            <l>defensa del que mal anda,</l>
-            <l>me puse sentado un día,</l>
-            <l>cansado de andar de caza,</l>
-            <l>arrimado á un duro tronco</l>
-            <l>discurriendo en cosas varias,</l>
-            <l>quejoso de la fortuna</l>
-            <l>que con rigor me maltrata,</l>
-            <l>oí una voz lastimosa</l>
-            <l>que sonaba en la montaña</l>
-            <l>á orillas de un arroyuelo,</l>
-            <l>que con las breñas se enlaza.</l>
-          
+          <l rend="indent">Sobre una alfombra de flores,</l>
+          <l>cerca de hermosas plantas,</l>
+          <l>à donde las avecillas</l>
+          <l>tienden sus pintadas alas</l>
+          <l>y con sus trinos alegres</l>
+          <l>al Rey del cielo dan gracias,</l>
+          <l>en aqueste prado ameno,</l>
+          <l>en este edén de fragancias,</l>
+          <l>en este sitio ue encubre</l>
+          <l>tantas aflictivas causas</l>
+          <l>de las que una os contaré,</l>
+          <l>si el cielo me dá su gracia,</l>
+          <l>y porque es país su nombre</l>
+          <l>será preciso nombrarla.</l>
+          <l rend="indent">En la gran <name>Sierra Morena</name>,</l>
+          <l>de tantos delitos capa,</l>
+          <l>amparo de aquel que ofende,</l>
+          <l>defensa del que mal anda,</l>
+          <l>me puse sentado un día,</l>
+          <l>cansado de andar de caza,</l>
+          <l>arrimado á un duro tronco</l>
+          <l>discurriendo en cosas varias,</l>
+          <l>quejoso de la fortuna</l>
+          <l>que con rigor me maltrata,</l>
+          <l>oí una voz lastimosa</l>
+          <l>que sonaba en la montaña</l>
+          <l>á orillas de un arroyuelo,</l>
+          <l>que con las breñas se enlaza.</l>
+
           <pb n="2" source="Varios_285_2.jpg" facs="varios/Varios_285_2.jpg"/>
-          
-            <l rend="indent">Estuve atento por ver</l>
-            <l>si era de persona humana,</l>
-            <l>y percibí que decía</l>
-            <l>estas sentidas palabras:</l>
+
+          <l rend="indent">Estuve atento por ver</l>
+          <l>si era de persona humana,</l>
+          <l>y percibí que decía</l>
+          <l>estas sentidas palabras:</l>
           <l rend="indent">—Tirano amor, pues tú has sido</l>
-            <l>la causa de mi desgracia,</l>
-            <l>díspara tus duras flechas</l>
-            <l>contra el que así me maltrata.</l>
+          <l>la causa de mi desgracia,</l>
+          <l>díspara tus duras flechas</l>
+          <l>contra el que así me maltrata.</l>
           <l rend="indent">¿Amante falso y traidor,</l>
-            <l>cómo me dejas sin causa</l>
-            <l>en tan terrible abandono</l>
-            <l>y de la muerte cercana?</l>
-            <l rend="indent">Sacra Virgen del Rosario,</l>
-            <l>mi patrona y abogada,</l>
-            <l>alcanzadme que confiese</l>
-            <l>porque no peligre el alma.</l>
-            <l rend="indent">Puse carga á mi escopeta</l>
-            <l>bien prevenida de balas,</l>
-            <l>por el eco de la voz</l>
-            <l>llegué á parar donde estaba</l>
-            <l>una juvenil belleza</l>
-            <l>á un duro tronco amarrada,</l>
-            <l>desmelenado el cabello</l>
-            <l>y de ropas despojada.</l>
-            <l rend="indent">Cuando ví tal hermosura</l>
-            <l>quedé sin hablar palabra;</l>
-            <l>viéndome ella suspenso</l>
-            <l>de aquesta suerte me habla:</l>
-            <l>—Llega, mancebo y no temas,</l>
-            <l>pues soy una desgraciada,</l>
-            <l>y mis pecados me tienen</l>
-            <l>en el sitio en que me hallas;</l>
-            <l>desátame y te diré</l>
-            <l>mis penas, fatigas y ánsias</l>
-            <l>y también los alevosos</l>
-            <l>que son de mi mal la causa.</l>
-            <l rend="indent">Compadecido en extremo,</l>
-            <l>saco pues mi larga daga,</l>
-            <l>rompo los gruesos cordeles</l>
-            <l>que á aquel angel sujetaban,</l>
-            <l>me quité al punto el gabán</l>
-            <l>y encima se lo arrojaba,</l>
-            <l>cubriendo sus blancas carnes,</l>
-            <l>que con el sol se comparan.</l>
-            <l rend="indent">Mirando á un lado y á otro,</l>
-            <l>ví que estaba en unas matas</l>
-            <l>la ropa misma que fué</l>
-            <l>de aquella desgracia causa.</l>
-            <l rend="indent">Ella suspira y solloza</l>
-            <l>pidiendo al cielo venganza,</l>
-            <l>y mirándola, la dije:</l>
-            <l>—Por Dios, hermosa Diana,</l>
-            <l>os suplico por la Virgen</l>
-            <l>que me digais lo que pasa.</l>
-            <l>Y agradecida responde</l>
-            <l>con las siguientes palabras:</l>
-            <l rend="indent">Habeis de saber, buen joven,</l>
-            <l>que en Trujillo fui criada,</l>
-            <l>hija soy de un caballero</l>
-            <l>que D. Diego se llama</l>
-            <l>de Castro por apellido</l>
-            <l>que es de lo ilustre de España:</l>
-            <l>mi madre doña Isabel</l>
-            <l>de Mendoza, es su prosapia</l>
-            <l>y por gusto de padrinos</l>
-            <l>á mí me llaman Rosaura,</l>
-            <l>tan amada en mis principios</l>
-            <l>como ahora desgraciada.</l>
-            <l rend="indent">Vivía pared en medio</l>
-            <l>más abajo de mi casa,</l>
-            <l>un hijo de un labrador</l>
-            <l>de hacienda algo moderada,</l>
-            <l>mozo galán y valiente,</l>
-            <l>discreto y de linda traza</l>
-            <l>que se llevó mi afición</l>
-            <l>y me amaba con ánsia;</l>
-            <l>mas como las cualidades</l>
-            <l>del uno al otro no igualan,</l>
-            <l>tuve lugar una noche</l>
-            <l>para escribir una carta</l>
-            <l>dándole á entender por ella</l>
-            <l>que me saque de mi casa</l>
-            <l>con sigiloso secreto</l>
-            <l>y con cautelosa maña;</l>
-            <l>mas el alevoso amante</l>
-            <l>á un primo suyo le daba</l>
-          
+          <l>cómo me dejas sin causa</l>
+          <l>en tan terrible abandono</l>
+          <l>y de la muerte cercana?</l>
+          <l rend="indent">Sacra Virgen del Rosario,</l>
+          <l>mi patrona y abogada,</l>
+          <l>alcanzadme que confiese</l>
+          <l>porque no peligre el alma.</l>
+          <l rend="indent">Puse carga á mi escopeta</l>
+          <l>bien prevenida de balas,</l>
+          <l>por el eco de la voz</l>
+          <l>llegué á parar donde estaba</l>
+          <l>una juvenil belleza</l>
+          <l>á un duro tronco amarrada,</l>
+          <l>desmelenado el cabello</l>
+          <l>y de ropas despojada.</l>
+          <l rend="indent">Cuando ví tal hermosura</l>
+          <l>quedé sin hablar palabra;</l>
+          <l>viéndome ella suspenso</l>
+          <l>de aquesta suerte me habla:</l>
+          <l>—Llega, mancebo y no temas,</l>
+          <l>pues soy una desgraciada,</l>
+          <l>y mis pecados me tienen</l>
+          <l>en el sitio en que me hallas;</l>
+          <l>desátame y te diré</l>
+          <l>mis penas, fatigas y ánsias</l>
+          <l>y también los alevosos</l>
+          <l>que son de mi mal la causa.</l>
+          <l rend="indent">Compadecido en extremo,</l>
+          <l>saco pues mi larga daga,</l>
+          <l>rompo los gruesos cordeles</l>
+          <l>que á aquel angel sujetaban,</l>
+          <l>me quité al punto el gabán</l>
+          <l>y encima se lo arrojaba,</l>
+          <l>cubriendo sus blancas carnes,</l>
+          <l>que con el sol se comparan.</l>
+          <l rend="indent">Mirando á un lado y á otro,</l>
+          <l>ví que estaba en unas matas</l>
+          <l>la ropa misma que fué</l>
+          <l>de aquella desgracia causa.</l>
+          <l rend="indent">Ella suspira y solloza</l>
+          <l>pidiendo al cielo venganza,</l>
+          <l>y mirándola, la dije:</l>
+          <l>—Por Dios, hermosa Diana,</l>
+          <l>os suplico por la Virgen</l>
+          <l>que me digais lo que pasa.</l>
+          <l>Y agradecida responde</l>
+          <l>con las siguientes palabras:</l>
+          <l rend="indent">Habeis de saber, buen joven,</l>
+          <l>que en <name>Trujillo</name> fui criada,</l>
+          <l>hija soy de un caballero</l>
+          <l>que D. Diego se llama</l>
+          <l>de Castro por apellido</l>
+          <l>que es de lo ilustre de España:</l>
+          <l>mi madre doña Isabel</l>
+          <l>de Mendoza, es su prosapia</l>
+          <l>y por gusto de padrinos</l>
+          <l>á mí me llaman Rosaura,</l>
+          <l>tan amada en mis principios</l>
+          <l>como ahora desgraciada.</l>
+          <l rend="indent">Vivía pared en medio</l>
+          <l>más abajo de mi casa,</l>
+          <l>un hijo de un labrador</l>
+          <l>de hacienda algo moderada,</l>
+          <l>mozo galán y valiente,</l>
+          <l>discreto y de linda traza</l>
+          <l>que se llevó mi afición</l>
+          <l>y me amaba con ánsia;</l>
+          <l>mas como las cualidades</l>
+          <l>del uno al otro no igualan,</l>
+          <l>tuve lugar una noche</l>
+          <l>para escribir una carta</l>
+          <l>dándole á entender por ella</l>
+          <l>que me saque de mi casa</l>
+          <l>con sigiloso secreto</l>
+          <l>y con cautelosa maña;</l>
+          <l>mas el alevoso amante</l>
+          <l>á un primo suyo le daba</l>
+
           <pb n="3" source="Varios_285_3.jpg" facs="varios/Varios_285_3.jpg"/>
-          
-            <l>cuenta, que traidor é infame</l>
-            <l>fué causa de mi desgracia.</l>
-            <l rend="indent">A los catorce de Abril</l>
-            <l>me sacaron de mi casa,</l>
-            <l>bien prevenida de joyas</l>
-            <l>y de muy costosas galas,</l>
-            <l>como ahí presente véis,</l>
-            <l>que ellas mismas lo declaran.</l>
-            <l rend="indent">Cínco días caminamos</l>
-            <l>marchando á largas jornadas,</l>
-            <l>hasta llegar á este sitio</l>
-            <l>encubridor de mi infamia;</l>
-            <l>aquí los dos desmontaron</l>
-            <l>con intención depravada,</l>
-            <l>para marchitar la flor</l>
-            <l>que de algunos fué envidiada;</l>
-            <l>ambos mancillan mi honor..</l>
-            <l>¡Jesús que suma desgracia!</l>
-            <l>sin temer la justa ira</l>
-            <l>del Señor que nos miraba.</l>
-            <l rend="indent">Luego el alevoso primo</l>
-            <l>hizo que me desnudara,</l>
-            <l>luego que en carnes me viera</l>
-            <l>entrambas manos me ata,</l>
-            <l>y sacando una pistola</l>
-            <l>el fuerte muelle levanta</l>
-            <l>para quitarme la vida,</l>
-            <l>mas mi amante lo estorbara</l>
-            <l>diciendo: no quiere el cielo</l>
-            <l>que, pues yo he sido la causa</l>
-            <l>de que esta doncella pierda</l>
-            <l>su honor, se cometa otra infamia.</l>
-            <l rend="indent">Aquí la pienso dejar</l>
-            <l>entre estas espesas matas,</l>
-            <l>expuesta á las muchas fieras</l>
-            <l>que por estas breñas pasan,</l>
-            <l>y ellas le darán la muerte</l>
-            <l>mal merecida y sin causa.</l>
-            <l rend="indent">Se fueron y me dejaron</l>
-            <l>como la flor en la escarcha:</l>
-            <l>tres días ha que no como</l>
-            <l>cosa que me dé sustancia,</l>
-            <l>sino las amargas yerbas</l>
-            <l>que con la boca alcanzaba.</l>
-            <l rend="indent">Esta es mi historia y te pido</l>
-            <l>te duelas de mi desgracia</l>
-            <l>y en tu compañía me lleves</l>
-            <l>á la ciudad más cercana,</l>
-            <l>porque desde allí pretende</l>
-            <l>el castigo de esta infamia.</l>
-            <l rend="indent">De la mano la tomé</l>
-            <l>y á una quinta la llevaba</l>
-            <l>donde la dí de comer</l>
-            <l>de lo que allí se encontraba;</l>
-            <l>luego después la ofrecí</l>
-            <l>con mano leal y franca,</l>
-            <l>mi protección y el caballo</l>
-            <l>que más que el viento volaba,</l>
-            <l>y el valor de mi persona</l>
-            <l>para ir en su compaña.</l>
-            <l rend="indent">Dispusimos el viaje;</l>
-            <l>á Córdoba caminamos,</l>
-            <l>y á la puerta del Rosario</l>
-            <l>(donde reso.ví dejarla).</l>
-            <l>la eché los brazos al cuello</l>
-            <l>y de esta suerte le hablaba:</l>
-            <l>— Adiós, joven, quiera el cielo</l>
-            <l>que sea tu dicha tanta,</l>
-            <l>que logres tu buen deseo</l>
-            <l>y después la gloria santa.</l>
-            <l rend="indent">Ella respondió:—Mancebo</l>
-            <l>noble, la Virgen te valga,</l>
-            <l>y tu leal acción premie</l>
-            <l>el alto Rey de la gracia.</l>
-            <l rend="indent">Sentóse en el duro suelo</l>
-            <l>aquella joven incauta,</l>
-            <l>aguardando por momentos</l>
-            <l>la aurora de la mañana</l>
-            <l>para emprender animosa</l>
-            <l>el intento que llevaba.</l>
-            <l rend="indent">Fué á casa de D. Francisco</l>
-            <l>de los Ríos, noble rama,</l>
-            <l>y á un criado le pregunta</l>
-            <l>si está su señor en casa,</l>
-            <l>y al punto la respondió:</l>
-            <l>—Su merced está en la cama.</l>
-          
+
+          <l>cuenta, que traidor é infame</l>
+          <l>fué causa de mi desgracia.</l>
+          <l rend="indent">A los catorce de Abril</l>
+          <l>me sacaron de mi casa,</l>
+          <l>bien prevenida de joyas</l>
+          <l>y de muy costosas galas,</l>
+          <l>como ahí presente véis,</l>
+          <l>que ellas mismas lo declaran.</l>
+          <l rend="indent">Cínco días caminamos</l>
+          <l>marchando á largas jornadas,</l>
+          <l>hasta llegar á este sitio</l>
+          <l>encubridor de mi infamia;</l>
+          <l>aquí los dos desmontaron</l>
+          <l>con intención depravada,</l>
+          <l>para marchitar la flor</l>
+          <l>que de algunos fué envidiada;</l>
+          <l>ambos mancillan mi honor..</l>
+          <l>¡Jesús que suma desgracia!</l>
+          <l>sin temer la justa ira</l>
+          <l>del Señor que nos miraba.</l>
+          <l rend="indent">Luego el alevoso primo</l>
+          <l>hizo que me desnudara,</l>
+          <l>luego que en carnes me viera</l>
+          <l>entrambas manos me ata,</l>
+          <l>y sacando una pistola</l>
+          <l>el fuerte muelle levanta</l>
+          <l>para quitarme la vida,</l>
+          <l>mas mi amante lo estorbara</l>
+          <l>diciendo: no quiere el cielo</l>
+          <l>que, pues yo he sido la causa</l>
+          <l>de que esta doncella pierda</l>
+          <l>su honor, se cometa otra infamia.</l>
+          <l rend="indent">Aquí la pienso dejar</l>
+          <l>entre estas espesas matas,</l>
+          <l>expuesta á las muchas fieras</l>
+          <l>que por estas breñas pasan,</l>
+          <l>y ellas le darán la muerte</l>
+          <l>mal merecida y sin causa.</l>
+          <l rend="indent">Se fueron y me dejaron</l>
+          <l>como la flor en la escarcha:</l>
+          <l>tres días ha que no como</l>
+          <l>cosa que me dé sustancia,</l>
+          <l>sino las amargas yerbas</l>
+          <l>que con la boca alcanzaba.</l>
+          <l rend="indent">Esta es mi historia y te pido</l>
+          <l>te duelas de mi desgracia</l>
+          <l>y en tu compañía me lleves</l>
+          <l>á la ciudad más cercana,</l>
+          <l>porque desde allí pretende</l>
+          <l>el castigo de esta infamia.</l>
+          <l rend="indent">De la mano la tomé</l>
+          <l>y á una quinta la llevaba</l>
+          <l>donde la dí de comer</l>
+          <l>de lo que allí se encontraba;</l>
+          <l>luego después la ofrecí</l>
+          <l>con mano leal y franca,</l>
+          <l>mi protección y el caballo</l>
+          <l>que más que el viento volaba,</l>
+          <l>y el valor de mi persona</l>
+          <l>para ir en su compaña.</l>
+          <l rend="indent">Dispusimos el viaje;</l>
+          <l>á Córdoba caminamos,</l>
+          <l>y á la puerta del Rosario</l>
+          <l>(donde reso.ví dejarla).</l>
+          <l>la eché los brazos al cuello</l>
+          <l>y de esta suerte le hablaba:</l>
+          <l>— Adiós, joven, quiera el cielo</l>
+          <l>que sea tu dicha tanta,</l>
+          <l>que logres tu buen deseo</l>
+          <l>y después la gloria santa.</l>
+          <l rend="indent">Ella respondió:—Mancebo</l>
+          <l>noble, la Virgen te valga,</l>
+          <l>y tu leal acción premie</l>
+          <l>el alto Rey de la gracia.</l>
+          <l rend="indent">Sentóse en el duro suelo</l>
+          <l>aquella joven incauta,</l>
+          <l>aguardando por momentos</l>
+          <l>la aurora de la mañana</l>
+          <l>para emprender animosa</l>
+          <l>el intento que llevaba.</l>
+          <l rend="indent">Fué á casa de D. Francisco</l>
+          <l>de los Ríos, noble rama,</l>
+          <l>y á un criado le pregunta</l>
+          <l>si está su señor en casa,</l>
+          <l>y al punto la respondió:</l>
+          <l>—Su merced está en la cama.</l>
+
           <pb n="4" source="Varios_285_4.jpg" facs="varios/Varios_285_4.jpg"/>
-          
-            <l rend="indent">Siu aguardar más razones</l>
-            <l>hacia adentro se entraba,</l>
-            <l>y arrimada junto al lecho</l>
-            <l>de aquesta suerte le habla:</l>
+
+          <l rend="indent">Siu aguardar más razones</l>
+          <l>hacia adentro se entraba,</l>
+          <l>y arrimada junto al lecho</l>
+          <l>de aquesta suerte le habla:</l>
           <l rend="indent">—¿Conoceréis, señor mío,</l>
-            <l>á la que dísteis el agua</l>
-            <l>del bautismo allá en Trujillo,</l>
-            <l>y le pusistéis Rosaura?</l>
-            <l rend="indent">Habéis de saber soy yo</l>
-            <l>la que nunca se criara,</l>
-            <l>pues fuí la mujer más frágil</l>
-            <l>que se ha visto en toda España.</l>
-            <l rend="indent">Por fiarme del amor</l>
-            <l>perdido mi honor se halla;</l>
-            <l>mirad bien mi tierna edad</l>
-            <l>que de quince años no pasa,</l>
-            <l>no mireis el mal sarmiento</l>
-            <l>sino el árbol donde baja,</l>
-            <l>que si lo consideráis</l>
-            <l>cierto tomaréis venganza.</l>
-            <l rend="indent">Dos viles me han seducido</l>
-            <l>sacándome de mi casa,</l>
-            <l>y han mancillado mi honor</l>
-            <l>en Sierra Morena, basta.</l>
-            <l rend="indent">Oyendo esto D. Francisco</l>
-            <l>de la cama se levanta,</l>
-            <l>y al punto manda á un criado</l>
-            <l>que un caballo le ensillara,</l>
-            <l>y antes de partir dispuso</l>
-            <l>el dejarla con su hermana</l>
-            <l>recogida en un convento</l>
-            <l>que de Santa Isabel llaman.</l>
-            <l rend="indent">Camina para Trujilio</l>
-            <l>con un criado en compaña;</l>
-            <l>pretende entrar en secreto</l>
-            <l>porque no se sepa nada.</l>
-            <l rend="indent">Fuese á casa de D. Diego,</l>
-            <l>afable le saludaba,</l>
-            <l>y en seguida le pregunta</l>
-            <l>por su querida Rosaura.</l>
-            <l rend="indent">Le respondió entristecido</l>
-            <l>don Diego estas palabras:</l>
-            <l>—Hará unos ocho días</l>
-            <l>que se ausentó de mi casa</l>
-            <l>sin poder hallar persona</l>
-            <l>que me diga donde para,</l>
-            <l>la que de mi casa era espejo</l>
-            <l>donde todos se miraban.</l>
-            <l rend="indent">En seguida don Francisco</l>
-            <l>sacó del pecho una carta</l>
-            <l>y se la dió á D. Diego</l>
-            <l>que al instante la tomaba,</l>
-            <l>y mirando el sobrescrito</l>
-            <l>de puro gozo lloraba,</l>
-            <l>porque conoció la letra</l>
-            <l>de su querida Rosaura;</l>
-            <l>pero dentro iba el pesar,</l>
-            <l>que es cosa muy ordinaria</l>
-            <l>no haber placer sin disgusto</l>
-            <l>en aquesta vida humana.</l>
-            <l>Abrióla, y viendo en ella</l>
-            <l>los autores de la infamia,</l>
-            <l>al señor Corregidor</l>
-            <l>del caso cuenta le daba.</l>
-            <l rend="indent">Al instante los prendieron,</l>
-            <l>y sustanciada la causa,</l>
-            <l>el juoz con recta justicia</l>
-            <l>á muerte los condenaba.</l>
-            <l rend="indent">Los meten en la capilla</l>
-            <l>y llorando al cielo claman,</l>
-            <l>pidiendo misericordia</l>
-            <l>á la Virgen soberana.</l>
-            <l rend="indent">Los sacaron de la cárcel</l>
-            <l>pregonando por las plazas</l>
-            <l>diciendo:—Esta es la justicia</l>
-            <l>que por las leyes se manda</l>
-            <l>ejecutar con los reos</l>
-            <l>por su delincuente infamia.</l>
-            <l rend="indent">Ya los suben al suplicio,</l>
-            <l>el verdugo se prepara,</l>
-            <l>y en una muerte afrentosa</l>
-            <l>á Dios entregan su alma.</l>
+          <l>á la que dísteis el agua</l>
+          <l>del bautismo allá en <name>Trujillo</name>,</l>
+          <l>y le pusistéis Rosaura?</l>
+          <l rend="indent">Habéis de saber soy yo</l>
+          <l>la que nunca se criara,</l>
+          <l>pues fuí la mujer más frágil</l>
+          <l>que se ha visto en toda España.</l>
+          <l rend="indent">Por fiarme del amor</l>
+          <l>perdido mi honor se halla;</l>
+          <l>mirad bien mi tierna edad</l>
+          <l>que de quince años no pasa,</l>
+          <l>no mireis el mal sarmiento</l>
+          <l>sino el árbol donde baja,</l>
+          <l>que si lo consideráis</l>
+          <l>cierto tomaréis venganza.</l>
+          <l rend="indent">Dos viles me han seducido</l>
+          <l>sacándome de mi casa,</l>
+          <l>y han mancillado mi honor</l>
+          <l>en <name>Sierra Morena</name>, basta.</l>
+          <l rend="indent">Oyendo esto D. Francisco</l>
+          <l>de la cama se levanta,</l>
+          <l>y al punto manda á un criado</l>
+          <l>que un caballo le ensillara,</l>
+          <l>y antes de partir dispuso</l>
+          <l>el dejarla con su hermana</l>
+          <l>recogida en un convento</l>
+          <l>que de <name>Santa Isabel</name> llaman.</l>
+          <l rend="indent">Camina para Trujilio</l>
+          <l>con un criado en compaña;</l>
+          <l>pretende entrar en secreto</l>
+          <l>porque no se sepa nada.</l>
+          <l rend="indent">Fuese á casa de D. Diego,</l>
+          <l>afable le saludaba,</l>
+          <l>y en seguida le pregunta</l>
+          <l>por su querida Rosaura.</l>
+          <l rend="indent">Le respondió entristecido</l>
+          <l>don Diego estas palabras:</l>
+          <l>—Hará unos ocho días</l>
+          <l>que se ausentó de mi casa</l>
+          <l>sin poder hallar persona</l>
+          <l>que me diga donde para,</l>
+          <l>la que de mi casa era espejo</l>
+          <l>donde todos se miraban.</l>
+          <l rend="indent">En seguida don Francisco</l>
+          <l>sacó del pecho una carta</l>
+          <l>y se la dió á D. Diego</l>
+          <l>que al instante la tomaba,</l>
+          <l>y mirando el sobrescrito</l>
+          <l>de puro gozo lloraba,</l>
+          <l>porque conoció la letra</l>
+          <l>de su querida Rosaura;</l>
+          <l>pero dentro iba el pesar,</l>
+          <l>que es cosa muy ordinaria</l>
+          <l>no haber placer sin disgusto</l>
+          <l>en aquesta vida humana.</l>
+          <l>Abrióla, y viendo en ella</l>
+          <l>los autores de la infamia,</l>
+          <l>al señor Corregidor</l>
+          <l>del caso cuenta le daba.</l>
+          <l rend="indent">Al instante los prendieron,</l>
+          <l>y sustanciada la causa,</l>
+          <l>el juoz con recta justicia</l>
+          <l>á muerte los condenaba.</l>
+          <l rend="indent">Los meten en la capilla</l>
+          <l>y llorando al cielo claman,</l>
+          <l>pidiendo misericordia</l>
+          <l>á la Virgen soberana.</l>
+          <l rend="indent">Los sacaron de la cárcel</l>
+          <l>pregonando por las plazas</l>
+          <l>diciendo:—Esta es la justicia</l>
+          <l>que por las leyes se manda</l>
+          <l>ejecutar con los reos</l>
+          <l>por su delincuente infamia.</l>
+          <l rend="indent">Ya los suben al suplicio,</l>
+          <l>el verdugo se prepara,</l>
+          <l>y en una muerte afrentosa</l>
+          <l>á Dios entregan su alma.</l>
         </div>
-        
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">MADRID. Imp. Universal, Cabestreros, 5</hi></p>
+          <p>
+            <lb/>
+            <hi rend="cursiva">MADRID. Imp. Universal, Cabestreros, 5</hi>
+          </p>
         </div>
       </div>
     </body>

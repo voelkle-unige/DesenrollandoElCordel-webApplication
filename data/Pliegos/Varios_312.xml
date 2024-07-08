@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -70,7 +84,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q12303">
+            <placeName key="Jerez_de_la_Frontera">Jerez De La Frontera</placeName>
+            <location>
+              <geo>36.7 -6.1166666666667</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +153,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1574,15 +1596,18 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_312_1.jpg" facs="varios/Varios_312_1.jpg"/>
 
-        <head type="primer_titulo" rend="cursiva"><lb/>Coplas para cantarse con la música da las
+        <head type="primer_titulo" rend="cursiva">
+          <lb/>Coplas para cantarse con la música da las
           zarzuelas Adriana Angot<lb/>y la Vuelta al Mundo.</head>
-
         <div n="1">
-          <head type="titulo_cancion"><lb/><hi rend="negrita">ADRIANA ANGOT.</hi><lb/>PRIMERA
+          <head type="titulo_cancion">
+            <lb/>
+            <hi rend="negrita">ADRIANA ANGOT.</hi>
+            <lb/>PRIMERA
             PARTE.</head>
-
           <lg>
             <head type="titulo_estrofa">1.</head>
             <l>Yo soy Adriana Angot,</l>
@@ -1608,7 +1633,6 @@
             <l rend="indent">Todas las flores</l>
             <l rend="indent">son para tí.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">2.</head>
             <l>Yo soy de mi galan</l>
@@ -1637,7 +1661,6 @@
             <l rend="indent">del cielo bellas,</l>
             <l rend="indent">fuentes de luz.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">3.</head>
             <l>Yo he visto en mi jardin</l>
@@ -1663,7 +1686,6 @@
             <l rend="indent">que eres mi amado,</l>
             <l rend="indent">mi solo bien.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">4.</head>
             <l>Del baile en el compás,</l>
@@ -1689,7 +1711,6 @@
             <l rend="indent">cual mariposas</l>
             <l rend="indent">de flor en flor.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">5.</head>
             <l>Yo siento, Adriana Angot,</l>
@@ -1714,7 +1735,6 @@
             <l rend="indent">para consuelo</l>
             <l rend="indent">de tu galan.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">6.</head>
             <l>Debajo del balcon</l>
@@ -1768,7 +1788,6 @@
             <l rend="indent">ángel de amores,</l>
             <l rend="indent">divina hurí.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">8.</head>
             <l>Solos allí los dos,</l>
@@ -1794,7 +1813,6 @@
             <l rend="indent">miles de estrellas</l>
             <l rend="indent">alumbrarán.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">9.</head>
             <l>Yo quiero sin cesar</l>
@@ -1820,7 +1838,6 @@
             <l rend="indent">cuando suspira</l>
             <l rend="indent">por su galan.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">10.</head>
             <l>Yo soy Adriana Angot,</l>
@@ -1847,14 +1864,13 @@
             <l rend="indent">Adriana Angot.</l>
           </lg>
         </div>
-
         <div n="2">
-          <head type="titulo_cancion" rend="negrita"><lb/>LA VUELTA AL MUNDO.</head>
-
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>LA VUELTA AL MUNDO.</head>
           <lg>
             <head type="titulo_estrofa">1.</head>
             <l rend="indent">Compré un burro en una feria</l>
-            <l>á un gitano de Jerez,</l>
+            <l>á un gitano de <name>Jerez</name>,</l>
             <l>y treinta duros cabales</l>
             <l>al momento dí por él.</l>
             <l rend="indent">Fuíme á casa con el burro</l>
@@ -1874,7 +1890,6 @@
             <l>—Yo tengo talento,</l>
             <l>mucho más que V.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">2.</head>
             <l rend="indent">Un artista yo conozco</l>
@@ -1895,7 +1910,6 @@
             <l>perdonen ustedes,</l>
             <l>que estoy ronco hoy.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">3.</head>
             <l rend="indent">La otra noche se reunieron</l>
@@ -1916,7 +1930,6 @@
             <l>como cualquier burro</l>
             <l>vueltas sin parar.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">4.</head>
             <l rend="indent">Es la suegra para el yerno</l>
@@ -1937,7 +1950,6 @@
             <l>ya tengo la víctima</l>
             <l>de mi cruel rigor.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">5.</head>
             <l rend="indent">Un dia entré en el pesebre</l>
@@ -1958,7 +1970,6 @@
             <l>que soy una burra</l>
             <l>como puede ver.</l>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">6.</head>
             <l rend="indent">Es el mundo una gran feria</l>
@@ -1979,12 +1990,12 @@
             <l>sólo de este mundo</l>
             <l>el oro es el dios.</l>
           </lg>
-
-          <p rend="cursiva"><lb/>(Es propiedad de José Martinez.)</p>
+          <p rend="cursiva">
+            <lb/>(Es propiedad de José Martinez.)</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Se halla de venta en la calle S. Antonio, 89, Barceloneta.— Asimismo se
+          <p>
+            <lb/>Se halla de venta en la calle S. Antonio, 89, Barceloneta.— Asimismo se
             proporcionará la música, tanto para guitarra como para piano, á todos los que la
             soliciten.<lb/>Imp de V. Berdós, San Simplicio del Regómir, 4.</p>
         </div>

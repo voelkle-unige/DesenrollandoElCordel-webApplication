@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,20 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q828">
+            <placeName key="América">América</placeName>
+            <location>
+              <geo>19 -96</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q36">
+            <placeName key="Polonia">Polonia</placeName>
+            <location>
+              <geo>52 19</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +159,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -3017,46 +3045,63 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_376_1.jpg" facs="varios/Varios_376_1.jpg"/>
-        <head type="primer_titulo"><lb/>JUGUET NOU, EN CATALÁ Y EN VERS<lb/>TITULAT<lb/>AVENTURAS DE
+
+        <head type="primer_titulo">
+          <lb/>JUGUET NOU, EN CATALÁ Y EN VERS<lb/>TITULAT<lb/>AVENTURAS DE
           UN PAPÉ</head>
-
-        <p><lb/>Escrit per J. Ferré (á) Queri</p>
-
+        <p>
+          <lb/>Escrit per J. Ferré (á) Queri</p>
         <div type="reparto">
-          <head type="reparto_titulo"><lb/>PERSONAS</head>
+          <head type="reparto_titulo">
+            <lb/>PERSONAS</head>
           <castList>
             <castItem>JUANET. . . . . . . . . . . . . . . . . <hi rend="cursiva">criat
-              del</hi></castItem>
+              del</hi>
+            </castItem>
             <castItem>SENYOR COSME. . . . . . . . . . . . . <hi rend="cursiva">Fadrí
-              vell</hi></castItem>
+              vell</hi>
+            </castItem>
             <castItem>SENYOR BERNAT. . . . . . . . . . . . . <hi rend="cursiva">home
-              frenétich</hi></castItem>
-            <castItem>FELIU. . . . . . . . . . . . . . . . . . <hi rend="cursiva">menestral</hi></castItem>
-            <castItem>UN XUPLERO Ó BUNYOLERO. . . . . . . <hi rend="cursiva">Valencià</hi></castItem>
+              frenétich</hi>
+            </castItem>
+            <castItem>FELIU. . . . . . . . . . . . . . . . . . <hi rend="cursiva">menestral</hi>
+            </castItem>
+            <castItem>UN XUPLERO Ó BUNYOLERO. . . . . . . <hi rend="cursiva">Valencià</hi>
+            </castItem>
             <castItem>PAU AMICH DE FELIU. . . . . . . . . . <hi rend="cusiva">no
-              parla</hi></castItem>
+              parla</hi>
+            </castItem>
             <castItem>UNA VEU DE DINS. . . . . . . . . . . <hi rend="cursiva">Company de
-              Juanet</hi></castItem>
+              Juanet</hi>
+            </castItem>
           </castList>
         </div>
 
         <pb n="2" source="Varios_376_2.jpg" facs="varios/Varios_376_2.jpg"/>
 
         <fw type="paginaNum">2</fw>
-
         <div type="parte" n="1">
-          <stage rend="cursiva"><p><lb/>La escena representa un recibido. A la dreta al primé
+          <stage rend="cursiva">
+            <p>
+              <lb/>La escena representa un recibido. A la dreta al primé
               terme, una porta que va al cuarto del<lb/>senyor Cosme. Segon terme, un balcó que
               dona al carré. A la esquerra á primé terme una<lb/>porta que va 'l cuarto de
               Joanet;y al segon terme altre porta que dona al hortet. Porta al<lb/>foro que es la
-              que vá al carré.</p><p><lb/>Al mij de la escena y haurá una taula y á sobre de
+              que vá al carré.</p>
+            <p>
+              <lb/>Al mij de la escena y haurá una taula y á sobre de
               ella y haurá un tinté un papé y dos ó<lb/>tres llibres, Per las parets, arrimadas
               tres ó cuatre cadiras. y sobre de una de ellas, un siva-<lb/>dé de cassado y una
-              escopeta; y sobre de una altre cadira. un joch de cartas vellas.</p><p><lb/>Al alsarse
-              'l teló, se senten tocar campanas.</p><p><lb/>Apareix Joanet molt alegre y
-              refregantse las mans diu:</p></stage>
-
+              escopeta; y sobre de una altre cadira. un joch de cartas vellas.</p>
+            <p>
+              <lb/>Al alsarse
+              'l teló, se senten tocar campanas.</p>
+            <p>
+              <lb/>Apareix Joanet molt alegre y
+              refregantse las mans diu:</p>
+          </stage>
           <sp>
             <speaker rend="cursiva">Joanet.</speaker>
             <l>Avuy si que fará un día</l>
@@ -3225,7 +3270,6 @@
             <pb n="3" source="Varios_376_3.jpg" facs="varios/Varios_376_3.jpg"/>
 
             <fw type="paginaNum">3</fw>
-
             <l>¿Y aquet que porta la canya,</l>
             <l>ya hu te arreglat tot com sá?</l>
             <l>¡Mira que aixó de pescá</l>
@@ -3240,7 +3284,8 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Cos.</speaker>
-            <l><hi rend="cursiva">Mórchen...</hi> áu; cap á la guerra;</l>
+            <l>
+              <hi rend="cursiva">Mórchen...</hi> áu; cap á la guerra;</l>
             <l>anémsen cap á lutxá;</l>
             <l>avuy se van á acaba</l>
             <l>los animals de la terra.</l>
@@ -3295,7 +3340,8 @@
           <stage>Surt lo senyó Bernat tot cremat y diu</stage>
           <sp>
             <speaker rend="cursiva">S. Bernát.</speaker>
-            <l>Deu te guart, ¿Don Cosme <add place="debajo">(ahónt es.</add></l>
+            <l>Deu te guart, ¿Don Cosme <add place="debajo">(ahónt es.</add>
+            </l>
           </sp>
           <sp>
             <speaker rend="cursiva">Joa.</speaker>
@@ -3332,7 +3378,8 @@
           <sp>
             <speaker rend="cursiva">Joa.</speaker>
             <l>Massa que me atrapara.</l>
-            <stage><lb/>Lo senyó Bernat va pera pegarli: lo Joanet fuig <lb/>al altre part de la
+            <stage>
+              <lb/>Lo senyó Bernat va pera pegarli: lo Joanet fuig <lb/>al altre part de la
               taula; y taula y tot lo de <lb/>sobre va á terra.</stage>
             <l>Mal com un bras no se esguerra:</l>
             <l>¿Que no hu veu ara que ha fel?</l>
@@ -3389,7 +3436,6 @@
           <pb n="4" source="Varios_376_4.jpg" facs="varios/Varios_376_4.jpg"/>
 
           <fw type="paginaNum">4</fw>
-
           <stage rend="cursiva">(Surt lo chuflero ab una canasta y diu)</stage>
           <sp>
             <speaker rend="cursiva">Chu.</speaker>
@@ -3578,11 +3624,10 @@
             <speaker rend="cursiva">La veu</speaker>
             <l>Joanet, ¿Que no vens?</l>
           </sp>
-          
+
           <pb n="5" source="Varios_376_5.jpg" facs="varios/Varios_376_5.jpg"/>
-          
+
           <fw type="paginaNum">5</fw>
-          
           <sp>
             <speaker rend="cursiva">Joa.</speaker>
             <l>Ay batúa 'l mon dulent.</l>
@@ -3769,11 +3814,10 @@
             <speaker rend="cursiva">Fel.</speaker>
             <l>Y aquells dos Civils, que tal?</l>
             <l>quin modu de fe brumetas,</l>
-            
+
             <pb n="6" source="Varios_376_6.jpg" facs="varios/Varios_376_6.jpg"/>
-            
+
             <fw type="paginaNum">6</fw>
-            
             <l>que 'ns han pres las escopetas</l>
             <l>cuan hem entrat lo portal.</l>
           </sp>
@@ -4000,11 +4044,10 @@
             <speaker rend="cursiva">Cos.</speaker>
             <l>Acorreus veslo á buscá.</l>
           </sp>
-          
+
           <pb n="7" source="Varios_376_7.jpg" facs="varios/Varios_376_7.jpg"/>
-          
+
           <fw type="paginaNum">7</fw>
-          
           <sp>
             <speaker rend="cursiva">Joa.</speaker>
             <l>Men y vaig com un llampech.</l>
@@ -4075,7 +4118,8 @@
             <l>anémsen dins mentres tan</l>
             <l>que farém una copeta.</l>
           </sp>
-          <stage><lb/>Los dos entran dins del cuarto del S. Cosme. <lb/>Surt Joanet per la porta del
+          <stage>
+            <lb/>Los dos entran dins del cuarto del S. Cosme. <lb/>Surt Joanet per la porta del
             foro ab lo jech á la. <lb/>má tot xorrán de aigua.</stage>
           <sp>
             <speaker rend="cursiva">Joa.</speaker>
@@ -4113,7 +4157,8 @@
             <stage>Joanet te la ma dintre la butxaca del jech.</stage>
             <l>Sembla que 'l tens dintre un pou.</l>
           </sp>
-          <stage><lb/>Joanet treu lo papé de la butxaca y 'l dona á <lb/>son amo,</stage>
+          <stage>
+            <lb/>Joanet treu lo papé de la butxaca y 'l dona á <lb/>son amo,</stage>
           <sp>
             <speaker rend="cursiva">Joa.</speaker>
             <l>Tingui cuidadu que es tou.</l>
@@ -4209,11 +4254,10 @@
             <speaker rend="cursiva">Ber.</speaker>
             <l>Aixó mateix que li he dit.</l>
             <l>Yo, cuan era mol petit</l>
-            
+
             <pb n="8" source="Varios_376_8.jpg" facs="varios/Varios_376_8.jpg"/>
-            
+
             <fw type="paginaNum">8</fw>
-            
             <l>á América 'm van portá.</l>
           </sp>
           <sp>
@@ -4285,17 +4329,20 @@
           </sp>
           <trailer>FI</trailer>
         </div>
-        
         <div type="propiedad">
-          <head type="titulo_estrofa"><lb/>L' AUTOR ALS LECTORS</head>
-          <p><lb/>Lector, si no t' ha agradat<lb/>aquest sensillet sainete,<lb/>dispensam, no soch
+          <head type="titulo_estrofa">
+            <lb/>L' AUTOR ALS LECTORS</head>
+          <p>
+            <lb/>Lector, si no t' ha agradat<lb/>aquest sensillet sainete,<lb/>dispensam, no soch
             poeta,<lb/>sols soch un aficienat.</p>
-          <p><lb/>J.F, (a) Queri</p>
-          <p><lb/>(Es propietat de Joan Grau.)</p>
+          <p>
+            <lb/>J.F, (a) Queri</p>
+          <p>
+            <lb/>(Es propietat de Joan Grau.)</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>REUS:—Se vent en la llibrería de Joan Grau, carrer del Metje Fortuny, núm. 5.En la mateixa 
+          <p>
+            <lb/>REUS:—Se vent en la llibrería de Joan Grau, carrer del Metje Fortuny, núm. 5.En la mateixa 
             <lb/>casa se trova un gran surtit de romansus, sainetes, llibrets,
             historias, comedias, aleluyas de <lb/>sants y soldats pintats, Lupésit de llibrets pera
             fumá y capsas de mistos. Papé pera escriure <lb/>sobres pera cartas, plomas, palillos,

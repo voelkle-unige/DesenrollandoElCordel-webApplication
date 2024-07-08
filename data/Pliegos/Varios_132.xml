@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,44 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="3" corresp="Q604539">
+            <placeName key="Monserrat">Monserrat</placeName>
+            <location>
+              <geo>39.3578888888889 -0.603055555555555</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q508754">
+            <placeName key="Vilaseca">Vilaseca</placeName>
+            <location>
+              <geo>41.11098 1.144988</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q487096">
+            <placeName key="Reus">Reus</placeName>
+            <location>
+              <geo>41.15487 1.10871</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q548045">
+            <placeName key="Flix">Flix</placeName>
+            <location>
+              <geo>41.231043 0.550137</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1230080">
+            <placeName key="Castellvell">Castellvell</placeName>
+            <location>
+              <geo>41.18005 1.0987</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +183,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -3027,24 +3079,29 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_132_1.jpg" facs="varios/Varios_132_1.jpg"/>
 
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>LO JAYU DE REUS</head>
-          <head type="subtitulo"><lb/>(HISTÓRICH)<lb/>PESSA AB DOS CUADROS. ESCRITA EN VERS PER
-              <lb/><hi rend="negrita">JOSEP FERRÈ (A) QUERI</hi></head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LO JAYU DE REUS</head>
+          <head type="subtitulo">
+            <lb/>(HISTÓRICH)<lb/>PESSA AB DOS CUADROS. ESCRITA EN VERS PER
+              <lb/>
+            <hi rend="negrita">JOSEP FERRÈ (A) QUERI</hi>
+          </head>
           <div>
-            <head type="reparto_titulo" rend="negrita"><lb/>PERSONAS</head>
-              <castList>
-                <castItem rend="negrita">Lo Jayu. Crospu.</castItem>
-                <castItem rend="negrita">Baltasá. Dos mossos que no parlan.</castItem>
-                <castItem rend="negrita">Quicu. Comparsa de homens y do¬</castItem>
-                <castItem rend="negrita">Benét. nas y musichs.</castItem>
+            <head type="reparto_titulo" rend="negrita">
+              <lb/>PERSONAS</head>
+            <castList>
+              <castItem rend="negrita">Lo Jayu. Crospu.</castItem>
+              <castItem rend="negrita">Baltasá. Dos mossos que no parlan.</castItem>
+              <castItem rend="negrita">Quicu. Comparsa de homens y do¬</castItem>
+              <castItem rend="negrita">Benét. nas y musichs.</castItem>
             </castList>
           </div>
-
           <div>
+
             <pb n="2" source="Varios_132_2.jpg" facs="varios/Varios_132_2.jpg"/>
 
             <stage rend="cursiva">
@@ -3054,13 +3111,14 @@
               <speaker>BALTASÁ.</speaker>
               <l>Váija, da un ras mes no puch.</l>
               <l>¡Válgam Deu que estich cansát!</l>
-              <l>Dos cops tot Reus ey boltát</l>
+              <l>Dos cops tot <name>Reus</name> ey boltát</l>
               <l>y en cap puestu trobu un rúch.</l>
               <l>Veyám si 'l Jayu te 'l seu. . .</l>
               <l>pero no crech que me 'l deixi.</l>
               <l>Li llogaré; que no 's quéixi;</l>
               <l>no renyirém pas pí el preu.</l>
-              <l>Jayu.. ¿si hi será? <stage rend="cursiva">(cridán)</stage></l>
+              <l>Jayu.. ¿si hi será? <stage rend="cursiva">(cridán)</stage>
+              </l>
               <l>Jayu... ha, ya ve.</l>
             </sp>
             <sp>
@@ -3137,7 +3195,8 @@
               <l>Bueno donchs, quedém així...</l>
               <l>en fi, tot se arreglará.</l>
               <l>Lo rúch podeu arreglá</l>
-              <l>que yo luegu torno ha se aquí. <stage rend="cursiva">(Sen va)</stage></l>
+              <l>que yo luegu torno ha se aquí. <stage rend="cursiva">(Sen va)</stage>
+              </l>
             </sp>
             <sp>
               <speaker>JAYU.</speaker>
@@ -3255,23 +3314,22 @@
               <l>Estich que era al any passat,</l>
               <l>que ma filla y ma mullé</l>
               <l>per forsa varen vulgué</l>
-              <l>Las portés á Montserrat.</l>
+              <l>Las portés á <name>Montserrat</name>.</l>
               <l>Lo ruquet vay arrelá:</l>
               <l>y sense gaire treball</l>
               <l>puijo las dos á cavall,</l>
               <l>butifarras y vi y pá.</l>
-  
+
               <pb n="3" source="Varios_132_3.jpg" facs="varios/Varios_132_3.jpg"/>
-  
+
               <fw type="paginaNum">— 3 —</fw>
-  
               <l>La dona 'm va dir: ¿Martxém?</l>
               <l>Yo vay di: Apa, enseguida:</l>
               <l>ella aguantava la brida</l>
               <l>y la expedició empreném.</l>
               <l>Vinga bolta p' els carrés;</l>
               <l>lo ruch ya estava cansat:</l>
-              <l>y al carré de Montserrat</l>
+              <l>y al carré de <name>Montserrat</name></l>
               <l>vay fer que allí se aturés.</l>
               <l>Com que allí hi ha una capella,</l>
               <l>després de dona 'l gran tom</l>
@@ -3279,7 +3337,7 @@
               <l>y baixan la noya y ella.</l>
               <l>La dona 's posá á plorá</l>
               <l>perque la havia enganyat.</l>
-              <l>Li vay dí: á Montserrat</l>
+              <l>Li vay dí: á <name>Montserrat</name></l>
               <l>vas di que haviam de aná,</l>
               <l>«Ya hi som, menjeu y beven,</l>
               <l>divertiuse hi feu gatsara;</l>
@@ -3295,7 +3353,8 @@
               <l>no me han demanat res mes.</l>
               <l>Ves ahont volían aná;</l>
               <l>aurían semblat dos monas,</l>
-              <l>ya ho diu be 'l que crida <hi rend="cursiva">«donas</hi></l>
+              <l>ya ho diu be 'l que crida <hi rend="cursiva">«donas</hi>
+              </l>
               <l rend="cursiva">cadiras per adobá».</l>
             </sp>
             <stage rend="cursiva">(Surt lo Benèt tot depressa)</stage>
@@ -3311,7 +3370,7 @@
             <sp>
               <speaker>BENÉT.</speaker>
               <l>Vinch perque 'm lluguéu lo ruch</l>
-              <l>que tinch de aná á Vilaseca.</l>
+              <l>que tinch de aná á <name>Vilaseca</name>.</l>
             </sp>
             <sp>
               <speaker>JAYU.</speaker>
@@ -3319,7 +3378,8 @@
             </sp>
             <sp>
               <speaker>BEN.</speaker>
-              <l>Teniu. Ara'lruch esperu<stage rend="cursiva">(los y dona)</stage></l>
+              <l>Teniu. Ara'lruch esperu<stage rend="cursiva">(los y dona)</stage>
+              </l>
               <l>tinch de veure à un curanderu</l>
               <l>que 'm curi 'l mal de caixals.</l>
             </sp>
@@ -3342,7 +3402,7 @@
               <l>que després no 'm podré alsá.</l>
               <l>Ho, y no 'm recorda 'l camí.</l>
               <l>Ya me ho dirá la Coloma,</l>
-              <l>que preguntán se va á Roma</l>
+              <l>que preguntán se va á <name>Roma</name></l>
               <l>segóns ey sentit á dí</l>
             </sp>
             <stage rend="cursiva">Surt lo Juyu ab lo burru ab la aubarda<lb/> posada.</stage>
@@ -3438,9 +3498,9 @@
               <l>Ca home, si yó l' tinch pagat;</l>
               <l>baixa hi déix aná la brida.</l>
             </sp>
-  
+
             <pb n="4" source="Varios_132_4.jpg" facs="varios/Varios_132_4.jpg"/>
-  
+
             <sp>
               <speaker>QUICU.</speaker>
               <l>Yo 'l vull sinó... hi aurá guerra.</l>
@@ -3499,28 +3559,31 @@
             <stage rend="cursiva">Tots cridan, se pegan, volen pujá al ruch, y <lb/>martxan de la
               escena, movent gran escándol.</stage>
           </div>
-
           <div>
             <head type="titulo_parte" rend="negrita">Cuadro segón</head>
-
-            <stage rend="cursiva"><p><lb/>Cámbia la decoració. Lo teatro representa<lb/> un pis al
+            <stage rend="cursiva">
+              <p>
+                <lb/>Cámbia la decoració. Lo teatro representa<lb/> un pis al
                 pla terreno. Al foro hi aurá una es¬<lb/> cala de pochs esgrahóns. Al replá del
                 esgrahó<lb/> de dal hi aura una porta que dona ha una<lb/> sala que hi fan
                 saráu.</p>
-              <p><lb/> Se sen tocá música; de tan entan se veu<lb/> passá alguna pareja de home y
+              <p>
+                <lb/> Se sen tocá música; de tan entan se veu<lb/> passá alguna pareja de home y
                 dona que ba¬<lb/> llan. A la barana de la escala hi aurá un llum<lb/> de ganxu
                 penjàt hi ensés. Al pla de terre al<lb/> peu de la escala hi aurá un cup ple de
                 palla<lb/> tapát ab tres ho cuatre pots. Una porta ha la<lb/> dreta que 's la de la
                 cuina hi cuarto del Jayu:<lb/> y una ha la esquerra que 's va ha la estable.<lb/> hi
                 al carrè.</p>
-              <p><lb/> En un costát hi aurá dos semalés; una se¬<lb/> nalla plena de guix y una
+              <p>
+                <lb/> En un costát hi aurá dos semalés; una se¬<lb/> nalla plena de guix y una
                 ferrada de aigüa<lb/> y una portadora buida. Al altre costát una<lb/> tauleta, hi
                 ha sobre hi aurá un purró plé de<lb/> ví; un tupí ab mel; una capsana ho dráp
                 hi<lb/> una flaúta que cuan la bufan, de dintre surt<lb/> fum de estampa hi mascara
                 la cara de 'l qui<lb/> la bufa.</p>
-              <p><lb/> Entre Benét ab las mans ha las gallas, hi<lb/> picán de pens perque li fan
-                mal los caixàls.</p></stage>
-
+              <p>
+                <lb/> Entre Benét ab las mans ha las gallas, hi<lb/> picán de pens perque li fan
+                mal los caixàls.</p>
+            </stage>
             <sp>
               <speaker>BEN.</speaker>
               <l>¡Yó no puch assosega..!</l>
@@ -3566,7 +3629,8 @@
             </sp>
             <sp>
               <speaker>JAYU.</speaker>
-              <l>Be; Alabát siga Deu.<stage rend="cursiva">(rién)</stage></l>
+              <l>Be; Alabát siga Deu.<stage rend="cursiva">(rién)</stage>
+              </l>
             </sp>
             <sp>
               <speaker>BEN.</speaker>
@@ -3638,13 +3702,13 @@
             <sp>
               <speaker>BEN.</speaker>
               <l>Doncas bueno; si es axí</l>
-              <l>hasta un regalu us faré.<stage rend="cursiva">(sen va)</stage></l>
+              <l>hasta un regalu us faré.<stage rend="cursiva">(sen va)</stage>
+              </l>
             </sp>
-            
+
             <pb n="5" source="Varios_132_5.jpg" facs="varios/Varios_132_5.jpg"/>
-              
+
             <fw type="paginaNum">— 5 —</fw>
-            
             <sp>
               <speaker>JAYU.</speaker>
               <l>¡Ay Benét, ya estás ben frésch!</l>
@@ -3674,7 +3738,7 @@
             <sp>
               <speaker>CROS</speaker>
               <l>Me han dit uns conegúts meus</l>
-              <l>que está aquí 'l Jayu de Reus.</l>
+              <l>que está aquí 'l Jayu de <name>Reus</name>.</l>
               <l>Vinch per si 'm voléu llogà.</l>
             </sp>
             <sp>
@@ -3705,8 +3769,10 @@
             <sp>
               <speaker>JAYU.</speaker>
               <l>Al momén: tot desseguida.</l>
-              <l>Au, esperdenyas ha fora.<stage rend="cursiva">(se les lleva)</stage></l>
-              <l>Entiéu dins la portadora.<stage rend="cursiva">(hi entra)</stage></l>
+              <l>Au, esperdenyas ha fora.<stage rend="cursiva">(se les lleva)</stage>
+              </l>
+              <l>Entiéu dins la portadora.<stage rend="cursiva">(hi entra)</stage>
+              </l>
             </sp>
             <sp>
               <speaker>CROS.</speaker>
@@ -3716,9 +3782,10 @@
             </sp>
             <sp>
               <speaker>JAYU.</speaker>
-              <l>Així se acostuma ha Reus</l>
+              <l>Així se acostuma ha <name>Reus</name></l>
               <l>ivérn, istiu, y tot l' any.</l>
-              <l>Ara, l' aigüa hi vay tirán<stage rend="cursiva">(ho fá)</stage></l>
+              <l>Ara, l' aigüa hi vay tirán<stage rend="cursiva">(ho fá)</stage>
+              </l>
             </sp>
             <sp>
               <speaker>CROS.</speaker>
@@ -3727,10 +3794,13 @@
             <sp>
               <speaker>JAYU.</speaker>
               <l>Ara 'l guix hi tiraré,</l>
-              <l>hi vos anéu pateiján.<stage rend="cursiva">(ho fan)</stage></l>
+              <l>hi vos anéu pateiján.<stage rend="cursiva">(ho fan)</stage>
+              </l>
               <l>Depressa que ara ve 'l bo.</l>
-              <l><stage rend="cursiva">(apart)</stage> ¡Quida gen! ¡Que son tanocas!</l>
-              <l><stage rend="cursiva">(ha éll)</stage> Sembla ara que ballen cocas</l>
+              <l>
+                <stage rend="cursiva">(apart)</stage> ¡Quida gen! ¡Que son tanocas!</l>
+              <l>
+                <stage rend="cursiva">(ha éll)</stage> Sembla ara que ballen cocas</l>
               <l>allà ha la festa maijó.</l>
               <l>Cuan se canséu, reposéu;</l>
               <l>no anéu tan desesperat;</l>
@@ -3745,7 +3815,8 @@
             <sp>
               <speaker>JAYU.</speaker>
               <l>Reposéu un ratu mes;</l>
-              <l>teniu, aquí va 'l purró.<stage rend="cursiva">(li dona)</stage></l>
+              <l>teniu, aquí va 'l purró.<stage rend="cursiva">(li dona)</stage>
+              </l>
             </sp>
             <sp>
               <speaker>CROS,</speaker>
@@ -3794,7 +3865,8 @@
               <stage rend="cursiva">(cridán à la porta del carré)</stage>
               <stage rend="cursiva">(Surten dos homens)</stage>
               <l>acorréns feu lo cap víu:</l>
-              <l>agafeu los samalés.<stage rend="cursiva">(ho fan)</stage></l>
+              <l>agafeu los samalés.<stage rend="cursiva">(ho fan)</stage>
+              </l>
               <l>Agaféu la portadora</l>
               <l>hi portaréu aquét moble</l>
               <l>ha passeijarlo p' el poble</l>
@@ -3816,11 +3888,10 @@
             <sp>
               <speaker>JAYU.</speaker>
               <l>Ha; ha, ha, ¡Quin fart de riure!..</l>
-              
+
               <pb n="6" source="Varios_132_6.jpg" facs="varios/Varios_132_6.jpg"/>
-              
+
               <fw type="paginaNum">— 6 —</fw>
-              
               <l>valgam Den, casí 'm rebentu.</l>
               <l>Aixó si que 's un bon cuentu</l>
               <l>que casi be 's pot escriure,</l>
@@ -3902,12 +3973,14 @@
             <sp>
               <speaker>BERT.</speaker>
               <l>Ho, hi que portu uns cuans cra¬</l>
-              <l>¿que ya molta gen? <add place="debajo">[melos.</add></l>
+              <l>¿que ya molta gen? <add place="debajo">[melos.</add>
+              </l>
             </sp>
             <sp>
               <speaker>JAXU.</speaker>
               <l>No gaires:</l>
-              <l>deu dones, «once xerraires»<stage rend="cursiva">(apart)</stage></l>
+              <l>deu dones, «once xerraires»<stage rend="cursiva">(apart)</stage>
+              </l>
               <l>hi set ho vúit xixarétlus.</l>
               <l>Tambe ya cosinas teves.</l>
             </sp>
@@ -4003,11 +4076,10 @@
               <speaker>JAYU.</speaker>
               <l>¿Que no véns que te las matu?</l>
             </sp>
-            
+
             <pb n="7" source="Varios_132_7.jpg" facs="varios/Varios_132_7.jpg"/>
-              
+
             <fw type="paginaNum">— 7 —</fw>
-            
             <sp>
               <speaker>BEN.</speaker>
               <l>Si que las matéu baratu</l>
@@ -4063,7 +4135,7 @@
             <sp>
               <speaker>JAYU.</speaker>
               <l>Si home que ya ho sap éll.</l>
-              <l>Mira; tinch de Castellvell</l>
+              <l>Mira; tinch de <name>Castellvell</name></l>
               <l>un carratéll de granatxa.</l>
               <l>Demá las neulas farém</l>
               <l>y ab granatxa con te ey dit,</l>
@@ -4120,7 +4192,8 @@
               <l>de clavarme un vidre al peu;</l>
               <l>¡com que no portu esperdenyas!</l>
               <l>Mira, encara son aquí,</l>
-              <l>calsemse, no ho perdém tot: <stage rend="cursiva">(selas posa)</stage></l>
+              <l>calsemse, no ho perdém tot: <stage rend="cursiva">(selas posa)</stage>
+              </l>
               <l>Malahit siga 'l vellót</l>
               <l>hi la burra que 'l va parí.</l>
               <l>Ep, mestre. ¿Ahont se ha ficát?</l>
@@ -4136,28 +4209,31 @@
               <l>ni me an sentit ni 'm escoltan.</l>
               <l>¡Cristu de Deu, hi com boltan!!</l>
               <l>Pero ya 'ls arreglaré.</l>
-              <l><hi rend="cursiva">Heche uste</hi>́ balsa que balsa,</l>
+              <l>
+                <hi rend="cursiva">Heche uste</hi>́ balsa que balsa,</l>
               <l>hi anán seguin la brumete.</l>
-              <l><stage rend="cursiva">(mira á terra)</stage> ¿Aques aixó: ¿una pesseta?</l>
-              <l><stage rend="cursiva">(lo plega)</stage> una pela, pero es falsa.</l>
+              <l>
+                <stage rend="cursiva">(mira á terra)</stage> ¿Aques aixó: ¿una pesseta?</l>
+              <l>
+                <stage rend="cursiva">(lo plega)</stage> una pela, pero es falsa.</l>
               <l>Yó ya la faré passá.</l>
               <l>Aurá caygút del aréus</l>
-              <l>de la gran vila de Reus.</l>
+              <l>de la gran vila de <name>Reus</name>.</l>
               <l>Molta fatxenda hi poch pá.</l>
               <stage rend="cursiva">Surt lu Crospu</stage>
               <l>Ep, vos que'm eu en¬</l>
-              <l>au, depressa. vull cobrá <add place="debajo">[ganyát:</add></l>
+              <l>au, depressa. vull cobrá <add place="debajo">[ganyát:</add>
+              </l>
               <l>lo guix que me eu fet pastá</l>
               <l>sinó us fay quedá esgarrát.</l>
             </sp>
             <sp>
               <speaker>JAYU.</speaker>
               <l>Be home, no se enfadéu:</l>
-              
+
               <pb n="8" source="Varios_132_8.jpg" facs="varios/Varios_132_8.jpg"/>
-              
+
               <fw type="paginaNum">— 8 —</fw>
-              
               <l>Alló ha estát un pún y.... coma.</l>
               <l>¿No veyéu que ha estát per broma?</l>
               <l>Teniu, una pela cobréu.</l>
@@ -4214,7 +4290,8 @@
             </sp>
             <stage rend="cursiva">«Destapa las pots del cup; tréu un brassát<lb/> de palla, sen
               vá á la estable y torna ha surti<lb/> luego. Surt Benét ab un sach al coll ple
-              de<lb/> pedrasa».<lb/></stage>
+              de<lb/> pedrasa».<lb/>
+            </stage>
             <sp>
               <speaker>BEN.</speaker>
               <l>Hoy mare, estich rebentát;</l>
@@ -4304,7 +4381,8 @@
               <l>Carme, Joan.</l>
             </sp>
             <stage rend="cursiva"> Surt lo Jayu ab una llumanera ensesa hi<lb/> la posa sobre de la
-              tanla, hi tots van surtin<lb/> del cup dunanlos la ma Bertrán.<lb/></stage>
+              tanla, hi tots van surtin<lb/> del cup dunanlos la ma Bertrán.<lb/>
+            </stage>
             <sp>
               <speaker>BERT.</speaker>
               <l>Aixó es broma en massa estrem.</l>
@@ -4324,19 +4402,18 @@
               <l>Feu corre al poble las veus:</l>
               <l>que 'ls que 's vulguin divertí,</l>
               <l>que vinguin tots cap aquí</l>
-              <l>ha veure 'l Jayu de Reus.</l>
+              <l>ha veure 'l Jayu de <name>Reus</name>.</l>
             </sp>
           </div>
-          
           <trailer rend="negrita">SE HA ACABAT</trailer>
         </div>
-        
         <div type="propiedad">
-          <p><lb/>ES PROPIETAT DE JOAN GRAU GENÉ.</p>
+          <p>
+            <lb/>ES PROPIETAT DE JOAN GRAU GENÉ.</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Reus. Libreria «La Fleca», carré de Aleus, núm. 1.</p>
+          <p>
+            <lb/>Reus. Libreria «La Fleca», carré de Aleus, núm. 1.</p>
         </div>
       </div>
     </body>

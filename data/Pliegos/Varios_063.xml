@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -68,7 +82,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -93,6 +108,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -128,8 +151,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-21" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-21" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1437,15 +1459,19 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_063_1.jpg" facs="varios/Varios_063_1.jpg"/>
 
-          <head type="primer_titulo" rend="negrita"><lb/>LA ESTISORA</head>
-          <head type="subtitulo"><lb/>Sermó sense ser furiós, pero pica y punxa: reparteix alguns
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA ESTISORA</head>
+          <head type="subtitulo">
+            <lb/>Sermó sense ser furiós, pero pica y punxa: reparteix alguns
             clatallots y surras<lb/>Está carregat de mentidas vestidas de alguns trossas de
             veritat<lb/>Está escrit per un mes embustero que un gos de dos nassos<lb/>y mes
-            dormilega que una marmota, y en prova d'aixó <lb/><hi rend="negrita">ALLÁ VA
-            BOLA</hi></head>
-
+            dormilega que una marmota, y en prova d'aixó <lb/>
+            <hi rend="negrita">ALLÁ VA
+            BOLA</hi>
+          </head>
           <l rend="indent">Comenso y escolteu bé</l>
           <l>sino may comensaré,</l>
           <l>perqué vos dieh que será bó</l>
@@ -1480,17 +1506,20 @@
           <l>hasta 'l que es creu se fí</l>
           <l>alguns hi troben que di.</l>
           <l rend="indent">Si acás vols estalviá</l>
-          <l>dihuen <hi rend="cursiva">quin avaro que hi há</hi></l>
+          <l>dihuen <hi rend="cursiva">quin avaro que hi há</hi>
+          </l>
           <l>si gastas a discreció</l>
           <l>dihuen qu 'ets mal gastadó.</l>
           <l rend="indent">Si traballas ab excés</l>
-          <l>dihuen <hi rend="cursiva">te fam de dinés</hi></l>
+          <l>dihuen <hi rend="cursiva">te fam de dinés</hi>
+          </l>
           <l>y si acás traballas poch,</l>
           <l>diuhen, <hi rend="cursiva">quin gandul lo 't loc</hi>,</l>
           <l>si no jugas per modestia,</l>
           <l>dihuen, <hi rend="cursiva">ca alló</hi> es una bestia,</l>
           <l>arriba a ser jugadó</l>
-          <l>dirán <hi rend="cursiva">quina perdició</hi></l>
+          <l>dirán <hi rend="cursiva">quina perdició</hi>
+          </l>
           <l>y a voltes també s' enganyan,</l>
           <l>que 'ls que jugan també guanyan.</l>
           <l rend="indent">Si acás vols ser presumit</l>
@@ -1506,7 +1535,8 @@
           <l>que per no gastar diners</l>
           <l>no pots sabé quina hora es.</l>
           <l rend="indent">Que dus rellotje y es teu,</l>
-          <l>mols dihuen <hi rend="cursiva">si ancara 'l deu</hi></l>
+          <l>mols dihuen <hi rend="cursiva">si ancara 'l deu</hi>
+          </l>
           <l>¿Verge santa dels rosaris!!!</l>
           <l>¡Ay quin mon de estrafalaris!!!</l>
           <l rend="indent">Que un día t'agafa set</l>
@@ -1520,7 +1550,8 @@
           <l rend="indent">Pasas per vora de un café</l>
           <l>y l'entrari no 't convé;</l>
           <l>aquel que t'ha reparat</l>
-          <l>luegu diu es <hi rend="cursiva">un pelal</hi></l>
+          <l>luegu diu es <hi rend="cursiva">un pelal</hi>
+          </l>
           <l>Si ti acostumas entrá</l>
           <l>¿saps lo que't sucsuirá?</l>
           <l>que sense veuret la bossa</l>
@@ -1538,7 +1569,8 @@
           <l>que vols anar pentinat</l>
           <l>ab lo cap miti arreglat</l>
           <l>per anar un poquet curiós;</l>
-          <l>dihuen, <hi rend="cursiva">ay, quin fastigos</hi></l>
+          <l>dihuen, <hi rend="cursiva">ay, quin fastigos</hi>
+          </l>
           <l>porta la clencha molt llisa</l>
           <l>y pot sé no du camisa.</l>
           <l rend="indent">Y dels saraus ¿quen dirém?</l>
@@ -1557,7 +1589,7 @@
           <l>perque sigui cristiá!</l>
           <l>¿Que no es un gran sentiment</l>
           <l>béuresel cart y dolent?</l>
-          <l rend="indent">Vet aqui lo que pasa a Espanya</l>
+          <l rend="indent">Vet aqui lo que pasa a <name>Espanya</name></l>
           <l>se 'l béu bó lo qui no'l guanya</l>
           <l>hi ha home que hasta murmura</l>
           <l>que es per mor de la malura.</l>
@@ -1570,7 +1602,8 @@
           <l>dihuen, ya hu arreglarém,</l>
           <l>pero encara trigarém</l>
           <l>perque tenim temps de sobra</l>
-          <l>y <hi rend="cursiva">'l prometre no fa pobre</hi></l>
+          <l>y <hi rend="cursiva">'l prometre no fa pobre</hi>
+          </l>
           <l>quedém de una manera</l>
           <l>que mes calent es l' aiguera</l>
           <l>deixém passá 'l vi per alt</l>
@@ -1641,7 +1674,6 @@
           <l rend="indent">Ara miremse 'ls manobras;</l>
           <l>¿Ni han gayres de mes pobres?</l>
           <l rend="indent">Quan la fenya no 'ls arriba</l>
-
           <l>se 'n tenen d' anar a la oliva,</l>
           <l>y ab mil penas y amarguras</l>
           <l>mantenen las criaturas.</l>
@@ -1729,7 +1761,6 @@
           <l>Que no més alsan las barras</l>
           <l>ya ploguessin botifarras;</l>
           <l>y que tots los empadrats</l>
-
           <l>fossin coca y foradats</l>
           <l>y que no mes dihen vina,</l>
           <l>tiguessim una gallina.</l>
@@ -1755,16 +1786,14 @@
           <l>que gana no 'n faltará.</l>
           <l rend="indent">Ara dispenseu si os plau</l>
           <l>y ab aquesta a deu síau.</l>
-
           <trailer>Ja no hi soch</trailer>
         </div>
-        
         <div>
           <p rend="cursiva">(Es propietat de Joan Grau.)</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Reus.= se vent en la librería de Joan Grau, carrer de Aleus, núm. 1. En la mateixa
+          <p>
+            <lb/>Reus.= se vent en la librería de Joan Grau, carrer de Aleus, núm. 1. En la mateixa
             casa se troba un gran surtit de romansus, sayuetes, llibrets, historias, comedias,
             aleluyas de sants y soldats pintats. Diposit de llibrets pera fumar y capsas de mistos.
             Papé pera escriure, sobres pera cartas, plomas, palillos, llapicers. etc., etc. Tot a

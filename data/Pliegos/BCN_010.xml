@@ -1,619 +1,580 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_010">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Testamento de Christo</title>
-                        <respStmt>
-                              <name xml:id="EL">Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Testamento de Christo. A la fin el
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Testamento de Christo</title>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Testamento de Christo. A la fin el
                                           devoto Romance à la Assumpcion de la Virgen</title>
-                                    <title type="titulo_breve">Testamento de Christo</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p/>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Herederos de Juan Jolis</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6807252</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">XXXII</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="1">Un grabado (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_010_1.xml" facs="varios/BCN_010_1.jpg/622,563,580,550/100,/0/default.jpg">grabado_b_010_1</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+            <title type="titulo_breve">Testamento de Christo</title>
+          </titleStmt>
+          <editionStmt>
+            <p/>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Herederos de Juan Jolis</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.12643878</idno>
+            <altIdentifier>
+              <idno type="num_impresor">XXXII</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="1">Un grabado (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_010_1.xml" facs="varios/BCN_010_1.jpg/622,563,580,550/100,/0/default.jpg">grabado_b_010_1</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q332444">
+            <placeName key="Monte_Sion">Monte Sion</placeName>
+            <location>
+              <geo>31.771666666667 35.228611111111</geo>
+            </location>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term target="XX524876.html" type="tipo_texto">Testamentos</term>
-                              <term type="tipo_estrofa">Romance (en coplas)</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Sagrado</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-10-02" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term target="XX524876.html" type="tipo_texto">Testamentos</term>
+          <term type="tipo_estrofa">Romance (en coplas)</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Sagrado</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-10-02" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_010_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-      <facsimile>
-            <graphic url="varios/BCN_010_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_010_1.jpg" facs="varios/BCN_010_1.jpg"/>
-                              <head type="primer_titulo">
-                                    <lb/><hi rend="negrita">TESTAMENTO DE CHRISTO</hi>. <lb/><hi rend="cursiva">A la fin el devoto Romance à la Assumpcion
+          <pb n="1" source="BCN_010_1.jpg" facs="varios/BCN_010_1.jpg"/>
+
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">TESTAMENTO DE CHRISTO</hi>. <lb/>
+            <hi rend="cursiva">A la fin el devoto Romance à la Assumpcion
                                           de la Virgen.</hi>
-                              </head>
-
-                              <lg>
-                                    <l rend="indent"><hi rend="negrita">E</hi>L gran Monarca
+          </head>
+          <lg>
+            <l rend="indent">
+              <hi rend="negrita">E</hi>L gran Monarca
                                           JESUS,</l>
-                                    <l>del Padre Eteno heredero,</l>
-                                    <l>teniendo la Cruz por cama</l>
-                                    <l>hazer quiere Testamento.</l>
-                              </lg>
+            <l>del Padre Eteno heredero,</l>
+            <l>teniendo la Cruz por cama</l>
+            <l>hazer quiere Testamento.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Porque la Corona, y Clavos</l>
+            <l>le tienen ya casi muerto,</l>
+            <l>y con cinco mil azotes</l>
+            <l>de llagas cubierto el cuerpo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">No por falta de poder,</l>
+            <l>que su poder es inmenso;</l>
+            <l>pero quiere con su muerte</l>
+            <l>dar á los hombres exemplo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">No muda de parecer</l>
+            <l>que muda los Santos presos</l>
+            <l>de las baxesas del Limbo,</l>
+            <l>á las altezas del Cielo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Hicieron luego una Cruz</l>
+            <l>donde pusieron su Cuerpo</l>
+            <l>hecha de quatro maderos</l>
+            <l>Cyprés, Palma, Olivo, y Cedro.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y á los lados de la Cruz</l>
+            <l>otras dos Cruzes pusieron,</l>
+            <l>á donde los dos Ladrones</l>
+            <l>clavaron, y á Christo en medio.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y estando Crucificado</l>
+            <l>las tres Marias vinieron,</l>
+            <l>y al pié de la Cruz se ponen,</l>
+            <l>que es voluntad del Maestro.</l>
+          </lg>
+          <lg>
+            <l rend="indent">No le dá temor de muerte,</l>
+            <l>que de morir es contento,</l>
+            <l>mas quiere con su temor</l>
+            <l>dár á los hombres exemplo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Pidióle el primero Ladrón,</l>
+            <l>que estava en su lado derecho</l>
+            <l>perdón, y oyendole Christo,</l>
+            <l>assi respondió, diciendo:</l>
+          </lg>
+          <lg>
+            <l rend="indent">Hijo veys estos tres Clavos</l>
+            <l>que me tienen casi muerto,</l>
+            <l>pues aunque assido me tienen,</l>
+            <l>yo los sujeté primero.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Vestí del mismo vestido</l>
+            <l>que vistió el Padre Eterno:</l>
+            <l>pero pecaron los hombres,</l>
+            <l>y baxé á morir por ellos.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Miradme bien por si acaso</l>
+            <l>no estays de mi satisfechos,</l>
+            <l>que aqui está el Hijo de Dios</l>
+            <l>que á perdonar vino al suelo.</l>
+          </lg>
+          <fw type="reclamo">Muero</fw>
 
-                              <lg>
-                                    <l rend="indent">Porque la Corona, y Clavos</l>
-                                    <l>le tienen ya casi muerto,</l>
-                                    <l>y con cinco mil azotes</l>
-                                    <l>de llagas cubierto el cuerpo.</l>
-                              </lg>
+          <pb n="2" source="BCN_010_2.jpg" facs="varios/BCN_010_2.jpg"/>
 
-                              <lg>
-                                    <l rend="indent">No por falta de poder,</l>
-                                    <l>que su poder es inmenso;</l>
-                                    <l>pero quiere con su muerte</l>
-                                    <l>dar á los hombres exemplo.</l>
-                              </lg>
+          <lg>
+            <l rend="indent">Muero para que heredeys</l>
+            <l>aquel Celestial Imperio,</l>
+            <l>que no podia heredarlo</l>
+            <l>ninguno sin ser yo muerto.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Nos mando otra cosa alguna,</l>
+            <l>por en mandaros al Cielo</l>
+            <l>doy lo que me dió mi Padre,</l>
+            <l>porque os lo diera por vuestro.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y perdonando al Ladron,</l>
+            <l>baxó los ojos al suelo,</l>
+            <l>y viendo presente á Juan,</l>
+            <l>le dixo con ronco pecho:</l>
+          </lg>
+          <lg>
+            <l rend="indent">Essa angustiada muger</l>
+            <l>vuestra Madre os encomiendo,</l>
+            <l>honradla como su hijo,</l>
+            <l>pues como Madre os la dexo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y á mis queridos ausentes,</l>
+            <l>razon es, les deys consuelo,</l>
+            <l>que si amo mucho á vos,</l>
+            <l>tambien amo á todos ellos.</l>
+          </lg>
+          <lg>
+            <l rend="indent">La Virgen le dixo á Juan,</l>
+            <l>mirando á Christo el sujeto:</l>
+            <l>oy me quedo yo sin Hijo,</l>
+            <l>y vos tambien sin Maestro.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Todos los suyos le lloran,</l>
+            <l>y hacen tal sentimiento</l>
+            <l>que hasta las piedras lo sienten,</l>
+            <l>pues se partieron por medio.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Alegrase todo el Orbe,</l>
+            <l>pues doy vida siendo muerto</l>
+            <l>y muriendo por tres dias,</l>
+            <l>vida para siempre dexo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">No lloreys, Christo les dixo,</l>
+            <l>pues muriendo doy contento,</l>
+            <l>y cumplo de mis Profetas</l>
+            <l>sus honrados pensamientos.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Si yo Catholico soy,</l>
+            <l>los mios no serán menos,</l>
+            <l>que doy Catholica Ley,</l>
+            <l>y han de serlo todos éllos.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Mando que estas dos Cruzes,</l>
+            <l>despues de yo fallecido</l>
+            <l>se les hagan con la mia</l>
+            <l>debaxo de tierra su entierro.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y aqueste Santo Ladron,</l>
+            <l>que tengo á mi lado derecho,</l>
+            <l>de sus culpas, y pecados</l>
+            <l>sumo perdon le concedo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y pues supo confessarme,</l>
+            <l>la Gloria eterna le dexo,</l>
+            <l>y mi Padre se la dé,</l>
+            <l>pues le perdono sus yerros.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y pues viene á conjuntura,</l>
+            <l>el Padre el hombre encomiendo,</l>
+            <l>que encomendarle á mi Padre,</l>
+            <l>es querer favorecerle.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y es por quien vine al mundo</l>
+            <l>por solo darle contento,</l>
+            <l>y le hago con mi muerte</l>
+            <l>heredero de mis Reynos.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Mando acabadas mis penas,</l>
+            <l>que me entierra Nicodemus</l>
+            <l>donde hará una mesa á la tierra,</l>
+            <l>la sepultura á mi Cuerpo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Con los que están en el Limbo</l>
+            <l>que esté mi Espiritu quiero,</l>
+            <l>pues á mi querida Madre,</l>
+            <l>con mi primo Juan la dexo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y esta soberana Cruz,</l>
+            <l>con los tres Clavos que tengo,</l>
+            <l>passados docientos años</l>
+            <l>á Santa Elena la dexo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y á la grave Madalena</l>
+            <l>la consolaré en el Huerto;</l>
+            <l>mas antes de consolarla</l>
+            <l>Resuscitaré primero.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Concedo con mi Passion</l>
+            <l>la Gloria á vivos, y muertos,</l>
+            <l>que creyeron en mi Doctrina,</l>
+            <l>y esperaron su remedio.</l>
+          </lg>
+          <fw type="reclamo">Y</fw>
 
-                              <lg>
-                                    <l rend="indent">No muda de parecer</l>
-                                    <l>que muda los Santos presos</l>
-                                    <l>de las baxesas del Limbo,</l>
-                                    <l>á las altezas del Cielo.</l>
-                              </lg>
+          <pb n="3" source="BCN_010_3.jpg" facs="varios/BCN_010_3.jpg"/>
 
-                              <lg>
-                                    <l rend="indent">Hicieron luego una Cruz</l>
-                                    <l>donde pusieron su Cuerpo</l>
-                                    <l>hecha de quatro maderos</l>
-                                    <l>Cyprés, Palma, Olivo, y Cedro.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y á los lados de la Cruz</l>
-                                    <l>otras dos Cruzes pusieron,</l>
-                                    <l>á donde los dos Ladrones</l>
-                                    <l>clavaron, y á Christo en medio.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y estando Crucificado</l>
-                                    <l>las tres Marias vinieron,</l>
-                                    <l>y al pié de la Cruz se ponen,</l>
-                                    <l>que es voluntad del Maestro.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">No le dá temor de muerte,</l>
-                                    <l>que de morir es contento,</l>
-                                    <l>mas quiere con su temor</l>
-                                    <l>dár á los hombres exemplo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Pidióle el primero Ladrón,</l>
-                                    <l>que estava en su lado derecho</l>
-                                    <l>perdón, y oyendole Christo,</l>
-                                    <l>assi respondió, diciendo:</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Hijo veys estos tres Clavos</l>
-                                    <l>que me tienen casi muerto,</l>
-                                    <l>pues aunque assido me tienen,</l>
-                                    <l>yo los sujeté primero.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Vestí del mismo vestido</l>
-                                    <l>que vistió el Padre Eterno:</l>
-                                    <l>pero pecaron los hombres,</l>
-                                    <l>y baxé á morir por ellos.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Miradme bien por si acaso</l>
-                                    <l>no estays de mi satisfechos,</l>
-                                    <l>que aqui está el Hijo de Dios</l>
-                                    <l>que á perdonar vino al suelo.</l>
-                              </lg>
-
-                              <fw type="reclamo">Muero</fw>
-
-                              <pb n="2" source="BCN_010_2.jpg" facs="varios/BCN_010_2.jpg"/>
-
-                              <lg>
-                                    <l rend="indent">Muero para que heredeys</l>
-                                    <l>aquel Celestial Imperio,</l>
-                                    <l>que no podia heredarlo</l>
-                                    <l>ninguno sin ser yo muerto.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Nos mando otra cosa alguna,</l>
-                                    <l>por en mandaros al Cielo</l>
-                                    <l>doy lo que me dió mi Padre,</l>
-                                    <l>porque os lo diera por vuestro.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y perdonando al Ladron,</l>
-                                    <l>baxó los ojos al suelo,</l>
-                                    <l>y viendo presente á Juan,</l>
-                                    <l>le dixo con ronco pecho:</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Essa angustiada muger</l>
-                                    <l>vuestra Madre os encomiendo,</l>
-                                    <l>honradla como su hijo,</l>
-                                    <l>pues como Madre os la dexo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y á mis queridos ausentes,</l>
-                                    <l>razon es, les deys consuelo,</l>
-                                    <l>que si amo mucho á vos,</l>
-                                    <l>tambien amo á todos ellos.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">La Virgen le dixo á Juan,</l>
-                                    <l>mirando á Christo el sujeto:</l>
-                                    <l>oy me quedo yo sin Hijo,</l>
-                                    <l>y vos tambien sin Maestro.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Todos los suyos le lloran,</l>
-                                    <l>y hacen tal sentimiento</l>
-                                    <l>que hasta las piedras lo sienten,</l>
-                                    <l>pues se partieron por medio.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Alegrase todo el Orbe,</l>
-                                    <l>pues doy vida siendo muerto</l>
-                                    <l>y muriendo por tres dias,</l>
-                                    <l>vida para siempre dexo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">No lloreys, Christo les dixo,</l>
-                                    <l>pues muriendo doy contento,</l>
-                                    <l>y cumplo de mis Profetas</l>
-                                    <l>sus honrados pensamientos.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Si yo Catholico soy,</l>
-                                    <l>los mios no serán menos,</l>
-                                    <l>que doy Catholica Ley,</l>
-                                    <l>y han de serlo todos éllos.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Mando que estas dos Cruzes,</l>
-                                    <l>despues de yo fallecido</l>
-                                    <l>se les hagan con la mia</l>
-                                    <l>debaxo de tierra su entierro.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y aqueste Santo Ladron,</l>
-                                    <l>que tengo á mi lado derecho,</l>
-                                    <l>de sus culpas, y pecados</l>
-                                    <l>sumo perdon le concedo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y pues supo confessarme,</l>
-                                    <l>la Gloria eterna le dexo,</l>
-                                    <l>y mi Padre se la dé,</l>
-                                    <l>pues le perdono sus yerros.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y pues viene á conjuntura,</l>
-                                    <l>el Padre el hombre encomiendo,</l>
-                                    <l>que encomendarle á mi Padre,</l>
-                                    <l>es querer favorecerle.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y es por quien vine al mundo</l>
-                                    <l>por solo darle contento,</l>
-                                    <l>y le hago con mi muerte</l>
-                                    <l>heredero de mis Reynos.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Mando acabadas mis penas,</l>
-                                    <l>que me entierra Nicodemus</l>
-                                    <l>donde hará una mesa á la tierra,</l>
-                                    <l>la sepultura á mi Cuerpo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Con los que están en el Limbo</l>
-                                    <l>que esté mi Espiritu quiero,</l>
-                                    <l>pues á mi querida Madre,</l>
-                                    <l>con mi primo Juan la dexo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y esta soberana Cruz,</l>
-                                    <l>con los tres Clavos que tengo,</l>
-                                    <l>passados docientos años</l>
-                                    <l>á Santa Elena la dexo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y á la grave Madalena</l>
-                                    <l>la consolaré en el Huerto;</l>
-                                    <l>mas antes de consolarla</l>
-                                    <l>Resuscitaré primero.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Concedo con mi Passion</l>
-                                    <l>la Gloria á vivos, y muertos,</l>
-                                    <l>que creyeron en mi Doctrina,</l>
-                                    <l>y esperaron su remedio.</l>
-                              </lg>
-
-                              <fw type="reclamo">Y</fw>
-
-                              <pb n="3" source="BCN_010_3.jpg" facs="varios/BCN_010_3.jpg"/>
-
-                              <lg>
-                                    <l rend="indent">Y por mi Sangre á los hombres</l>
-                                    <l>de mi Gloria los heredo,</l>
-                                    <l>pues oy usurpo la culpa,</l>
-                                    <l>que los usurpó primero.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Vestirme de trage humano,</l>
-                                    <l>y en Pan, y Vino me quedo,</l>
-                                    <l>dando al sediento á beber,</l>
-                                    <l>y de comer al hambriento.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Entré en el mundo tan pobre,</l>
-                                    <l>y tan amigo del ageno,</l>
-                                    <l>que hallé en el quien me vendió</l>
-                                    <l>por solos treinta dineros.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Adan, y Eva, y á sus hijos,</l>
-                                    <l>desde oy les perdono, y quiero,</l>
-                                    <l>que pues yo los hago proprios,</l>
-                                    <l>no han de ser mas estrangeros.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y a mis queridos Profetas</l>
-                                    <l>conmigo verlos deseo,</l>
-                                    <l>que los Santos por sí mismos,</l>
-                                    <l>son dignos de mayor premio.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Al hombre pues le perdono</l>
-                                    <l>le daré franco mi Cielo,</l>
-                                    <l>y al que antes le sugetava,</l>
-                                    <l>yo le tendrè mas sugeto.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y á mi Divina Justicia</l>
-                                    <l>tenganle todos respeto,</l>
-                                    <l>que justifica los Justos,</l>
-                                    <l>y castiga los sobervios.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Al hombre doy mi tesoro</l>
-                                    <l>por lo mucho que le quiero,</l>
-                                    <l>pues tambien le quiero, y amo,</l>
-                                    <l>que por él en Cruz me veo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">De aquesta grave Passion</l>
-                                    <l>doce horas ha que padezco,</l>
-                                    <l>que estoy en la Cruz clavado</l>
-                                    <l>pagando lo que no devo.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">T<damage><supplied>e</supplied></damage>ngo mi
+          <lg>
+            <l rend="indent">Y por mi Sangre á los hombres</l>
+            <l>de mi Gloria los heredo,</l>
+            <l>pues oy usurpo la culpa,</l>
+            <l>que los usurpó primero.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Vestirme de trage humano,</l>
+            <l>y en Pan, y Vino me quedo,</l>
+            <l>dando al sediento á beber,</l>
+            <l>y de comer al hambriento.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Entré en el mundo tan pobre,</l>
+            <l>y tan amigo del ageno,</l>
+            <l>que hallé en el quien me vendió</l>
+            <l>por solos treinta dineros.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Adan, y Eva, y á sus hijos,</l>
+            <l>desde oy les perdono, y quiero,</l>
+            <l>que pues yo los hago proprios,</l>
+            <l>no han de ser mas estrangeros.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y a mis queridos Profetas</l>
+            <l>conmigo verlos deseo,</l>
+            <l>que los Santos por sí mismos,</l>
+            <l>son dignos de mayor premio.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Al hombre pues le perdono</l>
+            <l>le daré franco mi Cielo,</l>
+            <l>y al que antes le sugetava,</l>
+            <l>yo le tendrè mas sugeto.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y á mi Divina Justicia</l>
+            <l>tenganle todos respeto,</l>
+            <l>que justifica los Justos,</l>
+            <l>y castiga los sobervios.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Al hombre doy mi tesoro</l>
+            <l>por lo mucho que le quiero,</l>
+            <l>pues tambien le quiero, y amo,</l>
+            <l>que por él en Cruz me veo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">De aquesta grave Passion</l>
+            <l>doce horas ha que padezco,</l>
+            <l>que estoy en la Cruz clavado</l>
+            <l>pagando lo que no devo.</l>
+          </lg>
+          <lg>
+            <l rend="indent">T<damage>
+                <supplied>e</supplied>
+              </damage>ngo mi
                                           Cuerpo llagado</l>
-                                    <l>por rehedificar mi Templo,</l>
-                                    <l>y por pagar muchas culpas,</l>
-                                    <l>tengo muchos agujeros.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Ya con la antigua Ley</l>
-                                    <l>no tendrá el hombre remedio,</l>
-                                    <l>mi testamento reciba,</l>
-                                    <l>porque este es el verdadero.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Al fin quiero declararme</l>
-                                    <l>en mi nuevo Testamento</l>
-                                    <l>pues voy venciendo la muerte,</l>
-                                    <l>aunque por vencerla muero.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Mi Espiritu mando al Padre,</l>
-                                    <l>mi muerte al Sepulcro dexo,</l>
-                                    <l>mando a mi Madre, à Juan,</l>
-                                    <l>y al Santo Ladron mi Reyno.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Mando que le dén al hombre</l>
-                                    <l>el Sacramento mi Cuerpo,</l>
-                                    <l>y se juntarán dos cosas</l>
-                                    <l>Dios, y Hombre en un momento.</l>
-                              </lg>
-
-                              <lg>
-                                    <l rend="indent">Y al fin esto acabo,</l>
-                                    <l>y dixo à su Padre Eterno:</l>
-                                    <l>en vuestras manos, Señor,</l>
-                                    <l>mi Espiritu os encomiendo.</l>
-                              </lg>
-
-                              <div>
-                                    <head type="titulo_parte" rend="cursiva">
-                                          <lb/>Romance á la Assumpcion.</head>
-
-                                    <lg>
-                                          <l rend="indent"><hi rend="negrita">O</hi>Y la Paloma
+            <l>por rehedificar mi Templo,</l>
+            <l>y por pagar muchas culpas,</l>
+            <l>tengo muchos agujeros.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Ya con la antigua Ley</l>
+            <l>no tendrá el hombre remedio,</l>
+            <l>mi testamento reciba,</l>
+            <l>porque este es el verdadero.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Al fin quiero declararme</l>
+            <l>en mi nuevo Testamento</l>
+            <l>pues voy venciendo la muerte,</l>
+            <l>aunque por vencerla muero.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Mi Espiritu mando al Padre,</l>
+            <l>mi muerte al Sepulcro dexo,</l>
+            <l>mando a mi Madre, à Juan,</l>
+            <l>y al Santo Ladron mi Reyno.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Mando que le dén al hombre</l>
+            <l>el Sacramento mi Cuerpo,</l>
+            <l>y se juntarán dos cosas</l>
+            <l>Dios, y Hombre en un momento.</l>
+          </lg>
+          <lg>
+            <l rend="indent">Y al fin esto acabo,</l>
+            <l>y dixo à su Padre Eterno:</l>
+            <l>en vuestras manos, Señor,</l>
+            <l>mi Espiritu os encomiendo.</l>
+          </lg>
+          <div>
+            <head type="titulo_parte" rend="cursiva">
+              <lb/>Romance á la Assumpcion.</head>
+            <lg>
+              <l rend="indent">
+                <hi rend="negrita">O</hi>Y la Paloma
                                                 Divina,</l>
-                                          <l>en quien nunca se vió falta</l>
-                                          <l>para subir á su nido</l>
-                                          <l>el dulce buelo levanta.</l>
-                                    </lg>
+              <l>en quien nunca se vió falta</l>
+              <l>para subir á su nido</l>
+              <l>el dulce buelo levanta.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Es la Paloma la Virgen</l>
+              <l>Maria llena de gracia,</l>
+              <l>oy sube á reynar al Cielo</l>
+              <l>de virtudes rodeada.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Lleva en sus divinos pies</l>
+              <l>la Luna preciosa, y clara,</l>
+              <l>y assi van dos Lunas juntas,</l>
+              <l>una bella, y otra galana.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Sube la Virgen preciosa</l>
+              <l>de resplandor tan cercada,</l>
+              <l>que à los Angeles admira,</l>
+              <l>y á toda la Corte espanta.</l>
+            </lg>
+            <fw type="reclamo">Pre-</fw>
 
-                                    <lg>
-                                          <l rend="indent">Es la Paloma la Virgen</l>
-                                          <l>Maria llena de gracia,</l>
-                                          <l>oy sube á reynar al Cielo</l>
-                                          <l>de virtudes rodeada.</l>
-                                    </lg>
+            <pb n="4" source="BCN_010_4.jpg" facs="varios/BCN_010_4.jpg"/>
 
-                                    <lg>
-                                          <l rend="indent">Lleva en sus divinos pies</l>
-                                          <l>la Luna preciosa, y clara,</l>
-                                          <l>y assi van dos Lunas juntas,</l>
-                                          <l>una bella, y otra galana.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Sube la Virgen preciosa</l>
-                                          <l>de resplandor tan cercada,</l>
-                                          <l>que à los Angeles admira,</l>
-                                          <l>y á toda la Corte espanta.</l>
-                                    </lg>
-                                    <fw type="reclamo">Pre-</fw>
-
-                                    <pb n="4" source="BCN_010_4.jpg" facs="varios/BCN_010_4.jpg"/>
-
-                                    <lg>
-                                          <l rend="indent">Preguntanse unos à otros,</l>
-                                          <l>quien es esta hermosa Dama,</l>
-                                          <l>que tan relumbrante sube,</l>
-                                          <l>la Luna trahe á sus plantas?</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Responden: esta es aquella,</l>
-                                          <l>que de la Persona Sacra</l>
-                                          <l>que es Segunda de las Tres,</l>
-                                          <l>nueve meses fué morada.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Y ahora el Hijo querido,</l>
-                                          <l>que sin ella no se halla,</l>
-                                          <l>la sube á reynar consigo</l>
-                                          <l>á su Corte Soberana.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Oyendo la nueva alegre,</l>
-                                          <l>con tan divina alabanza,</l>
-                                          <l>los Angeles Soberanos</l>
-                                          <l>dulces canciones le cantan.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Unos bendicen su Parto,</l>
-                                          <l>otros su Limpieza ensalzan,</l>
-                                          <l>y contemplando el Misterio</l>
-                                          <l>todos le hacen la salva.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Con Trompetas, Chirimias,</l>
-                                          <l>con Sacapuches, y Flautas,</l>
-                                          <l>con Dulzaynes, y Clarines,</l>
-                                          <l>y con sonorosas Harpas.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Todos los Coros Divinos</l>
-                                          <l>alzando al Cielo las manos</l>
-                                          <l>le cantan dulces motetes,</l>
-                                          <l>y dizen en vozes altas:</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Subid Torre de David,</l>
-                                          <l>subid Fuente dulce, y clara,</l>
-                                          <l>subid christalino Espejo,</l>
-                                          <l>subid fructuosa Planta.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Subid Cyprés de Sion,</l>
-                                          <l>subid gustosa Calandria,</l>
-                                          <l>subid flor del Parayso,</l>
-                                          <l>subid preciosa Esmeralda.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Subid Angelica Reyna,</l>
-                                          <l>subid Luna no eclipsada,</l>
-                                          <l>subid Azucena hermosa,</l>
-                                          <l>subid Clavellina sacra.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Subid Lucero del dia,</l>
-                                          <l>subid hija de Santa Ana,</l>
-                                          <l>subid dulcissima Esposa,</l>
-                                          <l>subid que el Esposo os llama.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Con esto llegó la Virgen</l>
-                                          <l>á la Celestial morada,</l>
-                                          <l>de Serafines Gloriosos,</l>
-                                          <l>y Angeles acompañada.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Do el Padre la llama Hija,</l>
-                                          <l>y el Hijo Madre la llama,</l>
-                                          <l>y el Espiritu Santo Esposa,</l>
-                                          <l>de todos tres dulce amada.</l>
-                                    </lg>
-
-                                    <lg>
-                                          <l rend="indent">Luego los angeles Santos</l>
-                                          <l>dizen en voz alta, y clara,</l>
-                                          <l>viva la Reyna del Cielo,</l>
-                                          <l>que oy sube á ser Coronada.</l>
-                                    </lg>
-                              </div>
-                        </div>
-
-                        <div type="colofon">
-                              <p>
-                                    <lb/><hi rend="cursiva">Barcelona</hi>: En la Imprenta de los
+            <lg>
+              <l rend="indent">Preguntanse unos à otros,</l>
+              <l>quien es esta hermosa Dama,</l>
+              <l>que tan relumbrante sube,</l>
+              <l>la Luna trahe á sus plantas?</l>
+            </lg>
+            <lg>
+              <l rend="indent">Responden: esta es aquella,</l>
+              <l>que de la Persona Sacra</l>
+              <l>que es Segunda de las Tres,</l>
+              <l>nueve meses fué morada.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Y ahora el Hijo querido,</l>
+              <l>que sin ella no se halla,</l>
+              <l>la sube á reynar consigo</l>
+              <l>á su Corte Soberana.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Oyendo la nueva alegre,</l>
+              <l>con tan divina alabanza,</l>
+              <l>los Angeles Soberanos</l>
+              <l>dulces canciones le cantan.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Unos bendicen su Parto,</l>
+              <l>otros su Limpieza ensalzan,</l>
+              <l>y contemplando el Misterio</l>
+              <l>todos le hacen la salva.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Con Trompetas, Chirimias,</l>
+              <l>con Sacapuches, y Flautas,</l>
+              <l>con Dulzaynes, y Clarines,</l>
+              <l>y con sonorosas Harpas.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Todos los Coros Divinos</l>
+              <l>alzando al Cielo las manos</l>
+              <l>le cantan dulces motetes,</l>
+              <l>y dizen en vozes altas:</l>
+            </lg>
+            <lg>
+              <l rend="indent">Subid Torre de David,</l>
+              <l>subid Fuente dulce, y clara,</l>
+              <l>subid christalino Espejo,</l>
+              <l>subid fructuosa Planta.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Subid Cyprés de <name>Sion</name>,</l>
+              <l>subid gustosa Calandria,</l>
+              <l>subid flor del Parayso,</l>
+              <l>subid preciosa Esmeralda.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Subid Angelica Reyna,</l>
+              <l>subid Luna no eclipsada,</l>
+              <l>subid Azucena hermosa,</l>
+              <l>subid Clavellina sacra.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Subid Lucero del dia,</l>
+              <l>subid hija de Santa Ana,</l>
+              <l>subid dulcissima Esposa,</l>
+              <l>subid que el Esposo os llama.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Con esto llegó la Virgen</l>
+              <l>á la Celestial morada,</l>
+              <l>de Serafines Gloriosos,</l>
+              <l>y Angeles acompañada.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Do el Padre la llama Hija,</l>
+              <l>y el Hijo Madre la llama,</l>
+              <l>y el Espiritu Santo Esposa,</l>
+              <l>de todos tres dulce amada.</l>
+            </lg>
+            <lg>
+              <l rend="indent">Luego los angeles Santos</l>
+              <l>dizen en voz alta, y clara,</l>
+              <l>viva la Reyna del Cielo,</l>
+              <l>que oy sube á ser Coronada.</l>
+            </lg>
+          </div>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona</hi>: En la Imprenta de los
                                     Herederos de Juan Jolis, <lb/>en la calle de los Algodoneros.</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

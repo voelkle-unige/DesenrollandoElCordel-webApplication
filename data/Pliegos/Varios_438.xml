@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="32"/>32 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="32"/>32 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -90,6 +105,98 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q5783">
+            <placeName key="Andalucía">Andalucía</placeName>
+            <location>
+              <geo>37.405 -5.9875</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1646215">
+            <placeName key="Cercedilla">Cercedilla</placeName>
+            <location>
+              <geo>40.7375 -4.0630555555556</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q517450">
+            <placeName key="Guadarrama">Guadarrama</placeName>
+            <location>
+              <geo>40.672777777778 -4.0888888888889</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q686362">
+            <placeName key="Sierra_Morena">Sierra Morena</placeName>
+            <location>
+              <geo>38.3 -5.4</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q15681">
+            <placeName key="Jaén">Jaén</placeName>
+            <location>
+              <geo>37.769722222222 -3.7888888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q33532">
+            <placeName key="Gandía">Gandía</placeName>
+            <location>
+              <geo>38.966666666667 -0.18222222222222</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q5818">
+            <placeName key="Córdoba">Córdoba</placeName>
+            <location>
+              <geo>37.883333333333 -4.7666666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8717">
+            <placeName key="Sevilla">Sevilla</placeName>
+            <location>
+              <geo>37.383333333333 -5.9833333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1719533">
+            <placeName key="Sierras_de_Córdoba">Sierras De Córdoba</placeName>
+            <location>
+              <geo>-30.84416667 -64.47611111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q6102193">
+            <placeName key="Realejo-San_Matías">Realejo-San Matías</placeName>
+            <location>
+              <geo>37.17333333 -3.59388889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q53711">
+            <placeName key="sierra_de_Guadarrama">Sierra De Guadarrama</placeName>
+            <location>
+              <geo>40.81277778 -3.94944444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q97603163">
+            <placeName key="Convento_de_la_Concepción">Convento De La Concepción</placeName>
+            <location>
+              <geo>37.1791602532 -3.59278583</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -124,8 +231,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-31" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-31" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -4780,80 +4886,95 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_438_1.jpg" facs="varios/Varios_438_1.jpg"/>
-        
+
         <fw type="numeroPliego">(CUATRO PLIEGOS.)</fw>
-        
-        <head type="primer_titulo"><lb/>MELCHOR DE LA CRUZ<lb/>ALIAS<lb/>EL DIABLO</head>
-        
+        <head type="primer_titulo">
+          <lb/>MELCHOR DE LA CRUZ<lb/>ALIAS<lb/>EL DIABLO</head>
         <div type="colofon">
-          <p><lb/>MADRID <lb/>Despacho, calle de Miguel Servet, 13.—Teléfono 651.</p>
+          <p>
+            <lb/>MADRID <lb/>Despacho, calle de Miguel Servet, 13.—Teléfono 651.</p>
         </div>
-        
+
         <pb n="2" source="Varios_438_2.jpg" facs="varios/Varios_438_2.jpg"/>
-        
+
         <div type="colofon">
-          <p><lb/>ES PROPRIEDAD<lb/>Imprenta de M. Minuesa.—Miguel Servet, 13.</p>
+          <p>
+            <lb/>ES PROPRIEDAD<lb/>Imprenta de M. Minuesa.—Miguel Servet, 13.</p>
         </div>
-        
+
         <pb n="3" source="Varios_438_3.jpg" facs="varios/Varios_438_3.jpg"/>
-        
+
         <div>
-          <head type="primer_titulo"><lb/>MELCHOR DE LA CRUZ</head>
-          
+          <head type="primer_titulo">
+            <lb/>MELCHOR DE LA CRUZ</head>
           <div type="parte" n="1">
-            <head type="titulo_parte"><lb/>I</head>
-            <p><lb/>Melchor de la Cruz (a) el Diablo ha sido uno de los ban- <lb/>didos que alcanzó
+            <head type="titulo_parte">
+              <lb/>I</head>
+            <p>
+              <lb/>Melchor de la Cruz (a) el Diablo ha sido uno de los ban- <lb/>didos que alcanzó
               tanta fama en su tiempo como la alcanza- <lb/>ron después José María, Juan
               Caballero, Los Botijas y el <lb/>Barquero de Cantillana, que fueron el terror de
               Andalucía, y <lb/>durante muchos años los reyes y dictadores de los caminos.</p>
-              <p><lb/>El verdadero nombre del que nos ocupa lo guarda con <lb/>gran reserva su historia, y
+            <p>
+              <lb/>El verdadero nombre del que nos ocupa lo guarda con <lb/>gran reserva su historia, y
               nosotros, aunque lo conocemos <lb/>demasiado, haremos lo mismo, para evitar
               susceptibilidades <lb/>y disgustos que desde luego nos saldrían al encuentro.</p>
-              <p><lb/>Transmitiremos solamente la relación que nos hizo un <lb/>anciano venerable,
+            <p>
+              <lb/>Transmitiremos solamente la relación que nos hizo un <lb/>anciano venerable,
               amigo nuestro, que conoció demasiado <lb/>al bandido y presenció muchos de sus
               actos, al que tuvo que <lb/>amparar en más de una ocasión, gracias al abandono en
               <lb/>que tenían las autoridades los pueblos, los caseríos y los cor- <lb/>tijos de
               toda la Andalucía.</p>
-              <p><lb/>Hé aquí, pues, lo manifestado por nuestro amigo:</p>
-             <p> <lb/>Nació Melchor en una de
+            <p>
+              <lb/>Hé aquí, pues, lo manifestado por nuestro amigo:</p>
+            <p>
+              <lb/>Nació Melchor en una de
               las principales ciudades de An- <lb/>dalucía, de padres acaudalados y
               aristocráticos, emparenta- <lb/>dos con la más alta nobleza y los más distinguidos
               persona- <lb/>jes de la corte; hijo único, y voluntarioso como todos los
               <lb/>muchachos, sus gustos y sus inclinaciones eran siempre <lb/>respetados por
               cuantos le rodeaban, y sus padres gozaban á <lb/>más y mejor con sus continuas y
               diabólicas travesuras.</p>
-              <p><lb/>Ya mozalbete, y pervertida su alma por las reuniones de
-              <lb/>otros jóvenes desocupados y de instintos tan perversos co- 
+            <p>
+              <lb/>Ya mozalbete, y pervertida su alma por las reuniones de
+              <lb/>otros jóvenes desocupados y de instintos tan perversos co-
+ 
               
               <pb n="4" source="Varios_438_4.jpg" facs="varios/Varios_438_4.jpg"/>
-              
+
               <fw type="paginaNum">— 4 —</fw>
-              
               <lb/>mo los suyos, tuvo su padre necesidad de hacer un viaje á la<lb/>corte para
               ventilar un asunto de familia del mayor interés.</p>
-              <p><lb/>Determinó que le acompañase
+            <p>
+              <lb/>Determinó que le acompañase
               Melchor, creyendo que se-<lb/>ría un viaje instructivo para el joven, pero éste
               pensaba de<lb/>distinta manera que el autor de sus días; y si accedió gus-<lb/>toso,
               fué convencido de lo mucho que podía divertirse en la<lb/>corte, donde abundaban los
               desocupados y las mujeres her-<lb/>mosas, en las que pensaba con una insistencia
               impropia de<lb/>sus pocos años.</p>
-            <p><lb/>Algunas aventuras, llevadas á cabo entre sus
+            <p>
+              <lb/>Algunas aventuras, llevadas á cabo entre sus
               amigos<lb/>con un descaro y una insolencia inaudita, le valieron el so-<lb/>brenombre
               del <hi rend="cursiva">Temerario</hi>, que él aceptó con un orgullo y<lb/>una fatuidad que le hicieron
               cometer algunos atropellos que<lb/>hubieran detenido á muchos hombres desalmados y
               galan-<lb/>teadores.</p>
-            <p><lb/>No hizo otros estudios que el manejo de las armas, en
+            <p>
+              <lb/>No hizo otros estudios que el manejo de las armas, en
               las<lb/>que había hecho rápidos progresos, llegándolas á dominar<lb/>por completo,
               no sólo en las que esgrimen los caballeros, si-<lb/>no también en la navaja y el
               cuchillo, de la propiedad del<lb/>rufián y del galeote.</p>
-            <p><lb/>Con estas condiciones,
+            <p>
+              <lb/>Con estas condiciones,
               adornadas de un valor salvaje,<lb/>emprendieron padre é hijo el viaje á la corte,
               pareciéndole al<lb/>último que no llegaban nunca.</p>
-            <p><lb/>Aunque Melchor sólo contaba
+            <p>
+              <lb/>Aunque Melchor sólo contaba
               diez y siete años, repre-<lb/>sentaba mucha más edad, efecto sin duda de lo mucho
               que<lb/>había abusado de la naturaleza en sus primeros años.</p>
-            <p><lb/>Al llegar á la
+            <p>
+              <lb/>Al llegar á la
               corte los esperaba un pariente cercano,<lb/>hombre riquísimo, el que desde los
               primeros momentos de-<lb/>mostró á Melchor un cariño filial, del que no era digno,
               al<lb/>que correspondió con la más negra de las ingratitudes. Los<lb/>condujo á su
@@ -4861,182 +4982,210 @@
               bien educadas como preciosas,<lb/>las que prodigaron á los forasteros toda clase de
               atenciones,<lb/>con una finura y delicadeza que revelaban su exquisita
               edu-<lb/>cación.</p>
-            <p><lb/>Verlas, y cruzar por la mente de Melchor un
+            <p>
+              <lb/>Verlas, y cruzar por la mente de Melchor un
               pensamiento<lb/>horrible, fué obra de un momento.
               <lb/>Apenas instalados en el domicilio de su pariente, y des-
+
             
               <pb n="5" source="Varios_438_5.jpg" facs="varios/Varios_438_5.jpg"/>
-            
+
               <fw type="paginaNum">— 5 —</fw>
-            
               <lb/>pués de los cumplimientos de ordenanza, se lanzó á la calle,<lb/>bajo el
               pretexto de recorrer la población, que, como la pri-<lb/>mera capital de España,
               debía ser hermosísima.</p>
-            <p><lb/>A ninguno le causó extrañeza este natural deseo; pero
+            <p>
+              <lb/>A ninguno le causó extrañeza este natural deseo; pero
               la<lb/>verdadera causa era el deseo lúbrico que le inspiraban las<lb/>hermosas
               mujeres que en distintas direcciones cruzaban<lb/>por sus calles, de las que había
               oído contar maravillas y noc-<lb/>turnas aventuras á varios de sus amigotes que
               habían visi-<lb/>tado la corte.</p>
-            <p><lb/>Dos días después regresó á casa de su
+            <p>
+              <lb/>Dos días después regresó á casa de su
               pariente, que, co-<lb/>mo su padre, estaba con sumo cuidado por su extraña
               au-<lb/>sencia, cuando no conocía á nadie, siendo, por razón natu-<lb/>ral,
               inexplicable su conducta.</p>
-            <p><lb/>¿Dónde había pasado aquel tiempo? Nunca le fué
+            <p>
+              <lb/>¿Dónde había pasado aquel tiempo? Nunca le fué
               posible<lb/>explicarlo, pero sí recordaba que había estado en muchos<lb/>garitos, y
               después de francachela con unos cuantos perdi-<lb/>dos, que se brindaron
               espontáneamente, en vista del dinero<lb/>que derrochaba, á ser su guía en el
               laberinto de la corte y<lb/>proporcionarle conocimiento con todas las mujeres
               hermo-<lb/>sas aficionadas á la vida alegre.</p>
-            <p><lb/>Dejamos á un lado los continuos y
+            <p>
+              <lb/>Dejamos á un lado los continuos y
               graves disgustos que<lb/>Melchor proporcionaba á su familia, especialmente á su
               pa-<lb/>dre, la debilidad de éste, y, sobre todo, la cariñosa solicitud<lb/>de su
               pariente, que todo se lo consentía y que continuamen-<lb/>te le llenaba de oro los
               bolsillos.</p>
-            <p><lb/>Los ratos que le quedaban libres en la vida licenciosa que<lb/>había
+            <p>
+              <lb/>Los ratos que le quedaban libres en la vida licenciosa que<lb/>había
               emprendido, los dedicaba á hacerle el amor á la mayor<lb/>de las hijas de su
               pariente, ante la que aparecía como un jo-<lb/>ven un tanto calavera, pero digno y
               pundonoroso, incapaz<lb/>de manchar el ilustre apellido que llevaba.</p>
-            <p><lb/>Su inocente y
+            <p>
+              <lb/>Su inocente y
               candorosa prima tuvo la debilidad de amar-<lb/>le con un cariño tan puro é inmenso
               como infame y villana<lb/>era la pasión que le pintaba Melchor con la vehemencia
               pro-<lb/>pia de un conquistador de oficio, que tenía la convicción de<lb/>vencer en
               la lucha desigual emprendida entre una paloma y<lb/>un gavilán de aceradas
               uñas.</p>
-            <p><lb/>Procuró por todos los medios posibles que estas rela-<lb/>ciones no se
+            <p>
+              <lb/>Procuró por todos los medios posibles que estas rela-<lb/>ciones no se
               traslucieran, porque desde luego su padre hu-
+
             
               <pb n="6" source="Varios_438_6.jpg" facs="varios/Varios_438_6.jpg"/>
-            
+
               <fw type="paginaNum">— 6 —</fw>
-            
               <lb/>biera desengañado á la pobre niña, y su familia se hubiera<lb/>opuesto á que
               continuasen aquellos amores, que debían cau-<lb/>sar la desgracia de toda su
               vida.</p>
-              <p><lb/>El hermano de su madre había presentado á su cuñado y<lb/>sobrino en
+            <p>
+              <lb/>El hermano de su madre había presentado á su cuñado y<lb/>sobrino en
               todas partes, haciéndoles frecuentar los salones<lb/>aristocráticos de cuantos
               nobles habitaban la corte, donde<lb/>al poco tiempo Melchor se hizo con una veintena
               de amigos<lb/>tan calaveras y despreocupados como él, á los que aventaja-<lb/>ba en
               valor y en el manejo de las armas.</p>
-              <p><lb/>Confiado en estas cualidades, provocó algunos
+            <p>
+              <lb/>Confiado en estas cualidades, provocó algunos
               lances<lb/>con los que tenían más nombre de diestros y valerosos, po-<lb/>niéndolos
               fuera de combate después de burlarse de su valor<lb/>y destreza. También se había
               dado á conocer entre la cana-<lb/>lla, unas veces con el cuchillo y otras con la
               navaja cachi-<lb/>cuerna llamada del <hi rend="cursiva">Santo Óleo</hi>.</p>
-              <p><lb/>Llegó en poco tiempo á infundir
+            <p>
+              <lb/>Llegó en poco tiempo á infundir
               miedo entre los aristó-<lb/>cratas, y pavor entre la galopesca, los que le adulaban
               conti-<lb/>nuamente y á los que mandaba con un despotismo insolente<lb/>é irritante,
               sin que ninguno se atreviese á replicarle una pa-<lb/>labra.</p>
-              <p><lb/>Humillados los de
+            <p>
+              <lb/>Humillados los de
               arriba y los de abajo, se dejó llevar de<lb/>sus instintos lujuriosos, y no había
               mujer que no asediase<lb/>con sus pretensiones; y si no conseguía por sí mismo
               sus<lb/>favores, los alcanzaba por medio de la traición y la violencia.<lb/>Cuanto
               más se resistía cualquiera de sus elegidas, tanto ma-<lb/>yor era su venganza y más
               extensa la publicación de su des-<lb/>honra, no dejándola de la mano hasta sumirla
               en la miseria<lb/>y hacer que sucumbiese de hambre y desesperación.</p>
-              <p><lb/>Sentía un
+            <p>
+              <lb/>Sentía un
               placer infinito haciendo sufrir á cuantos le ro-<lb/>deaban, y sus crueldades é
               infamias hicieron que algún al-<lb/>calde de casa y corte fijase en él su mirada y
               diera con su<lb/>cuerpo en la cárcel á consecuencia de la delación de alguno<lb/>de
               los mismos que le ayudaban á cometer ciertos actos sal-<lb/>vajes.</p>
-              <p><lb/>Pero
+            <p>
+              <lb/>Pero
               inmediatamente se echó encima su familia; y fué<lb/>tal el cúmulo de
               recomendaciones y aun de amenazas que<lb/>cayeron sobre el desdichado alcalde, de
               elevadísimos perso-<lb/>najes, que terminó el sumario apenas comenzado, ponién-
+
             
                 <pb n="7" source="Varios_438_7.jpg" facs="varios/Varios_438_7.jpg"/>
-            
-                <fw type="paginaNum">— 7 —</fw>
-            
+
+              <fw type="paginaNum">— 7 —</fw>
               <lb/>dolo en libertad, y lo que es más, dándole toda clase de sa-<lb/>tisfacciones.</p>
-              <p><lb/>Su padre trató de alejarle de la corte, mandándole que
+            <p>
+              <lb/>Su padre trató de alejarle de la corte, mandándole que
               re-<lb/>gresara al lado de su madre, con el pretexto de que le lleva-<lb/>se noticias
               del pleito que había entablado contra los que<lb/>querían usurparle una parte
               respetable de sus bienes; pero<lb/>Melchor se negó rotundamente á obedecerle, y esta
               negativa<lb/>dió margen á un rompimiento entre padre é hijo, viéndose<lb/>obligado
               á abandonar la casa de su tío, interrumpiéndose<lb/>con este motivo las relaciones
               que sostenía con su prima.</p>
-              <p><lb/>Aunque Melchor no la amaba, ni mucho menos, su
+            <p>
+              <lb/>Aunque Melchor no la amaba, ni mucho menos, su
               her-<lb/>mosura é inocencia le habían empeñado de tal modo, que no<lb/>retrocedía
               ante ningún obstáculo que se le presentase hasta<lb/>hacerla suya, aunque luego la
               arrojase de su lado como un<lb/>mueble inservible.</p>
-              <p><lb/>Su padre quiso imponerle su
+            <p>
+              <lb/>Su padre quiso imponerle su
               voluntad cerrándole su bol-<lb/>sa y rogándole á su cuñado hiciese lo mismo,
               única manera<lb/>de alejarle de las amistades contraídas, imposibilitándole
               de<lb/>continuar aquella vida infame de perversidad en que perma-<lb/>necía
               encenagado y que volviese al buen camino; pero él acu-<lb/>dió á su madre, que
               ignoraba por completo su conducta, la<lb/>que puso á su disposición cantidades
               mayores de las que<lb/>pudiera desear.</p>
-              <p><lb/>El tío de Melchor, que le quería
+            <p>
+              <lb/>El tío de Melchor, que le quería
               muchísimo y era dema-<lb/>siado débil, no tardó mucho tiempo en abrirle de nuevo
               su<lb/>bolsa, creyendo que la dureza de su padre le habría hecho<lb/>contraer deudas,
               y, sobre todo, que estaría lleno de priva-<lb/>ciones impropias de un noble rico que
               ostentaba su mismo<lb/>apellido. El castigo, pues, impuesto por su padre,
               resultaba<lb/>contraproducente, puesto que desde entonces dispuso de<lb/>dos bolsas
               que llenaban de oro continuamente la suya.</p>
-              <p><lb/>No tardó mucho tiempo en comprar la
+            <p>
+              <lb/>No tardó mucho tiempo en comprar la
               fidelidad de la per-<lb/>sona encargada de los asuntos domésticos de la casa de
               su<lb/>buen tío, una especie de <hi rend="cursiva">factótum</hi>, ama de llaves y señora<lb/>de confianza,
               que gozaba de una reputación intachable, y á<lb/>la que los dueños de la casa la
               creían incapaz de cometer,<lb/>una mala acción. Esta complaciente señora le
               facilitó varias<lb/>entrevistas con su prima, con la que se quejaba de la sepa-
+
             
                 <pb n="8" source="Varios_438_8.jpg" facs="varios/Varios_438_8.jpg"/>
-            
-                <fw type="paginaNum">— 8 —</fw>
-            
+
+              <fw type="paginaNum">— 8 —</fw>
               <lb/>ración forzosa á que su padre la había condenado injusta-<lb/>mente por no
               querer doblegarse á su caprichosa tiranía, de-<lb/>mostrando un dolor y una
               desesperación que estaba muy<lb/>lejos de sentir.</p>
-              <p><lb/>La pobre niña, cada vez más
+            <p>
+              <lb/>La pobre niña, cada vez más
               enamorada, creyéndole hom-<lb/>bre de honor, no dudaba de sus palabras y juramentos,
               por<lb/>lo que llegó á concebir contra el padre de Melchor una terri-<lb/>ble
               aversión, que bien pronto fué notada por su tío.</p>
-              <p><lb/>No se sabe de quién partiría
+            <p>
+              <lb/>No se sabe de quién partiría
               una explicación, pero fué lo<lb/>cierto que vinieron á un acuerdo, prometiéndola
               su tío so-<lb/>lemnemente que juntos examinarían su conducta, para que<lb/>se
               desengañase de la razón que tenía para alejarle de su la-<lb/>do y viese la clase de
               hombre en quien había depositado su<lb/>cariño.</p>
-              <p><lb/>Lo mismo que Melchor había
+            <p>
+              <lb/>Lo mismo que Melchor había
               comprado la persona de<lb/>confianza de su cuñado, lo mismo hizo su padre con el
               ma-<lb/>yordomo que regentaba la casa de su hijo, un rufián des-<lb/>almado, de la
               misma calaña de los criados que le rodeaban,<lb/>los que le obedecían ciegamente y
               eran sus cómplices en las<lb/>infamias que cometía casi á diario.</p>
-              <p><lb/>Le convenía
+            <p>
+              <lb/>Le convenía
               una servidumbre muda y ciega, encubridora<lb/>de crímenes que hubiera castigado la
               justicia, al tener de<lb/>ellos conocimiento, por encima de sus parientes y
               amigos.</p>
-              <p><lb/>Su padre debió asistir, acompañado de su sobrina, sin<lb/>que nadie lo
+            <p>
+              <lb/>Su padre debió asistir, acompañado de su sobrina, sin<lb/>que nadie lo
               notase, á una de las muchas orgías que celebra-<lb/>ba Melchor en un salón de su
               casa destinado al efecto, por-<lb/>que algunos días después de su última entrevista
               con su<lb/>amada prima recibió carta de ésta, en la que le manifestaba<lb/>lo
               imposible de su unión con un hombre que lo había per-<lb/>dido todo; y que si le
               quedaba un resto de pudor, haría muy<lb/>bien en no volver á visitarla.</p>
-              <p><lb/>La carta
+            <p>
+              <lb/>La carta
               le enfureció hasta el punto de concebir contra la<lb/>pobre niña una terrible
               venganza; pero intentó antes enga-<lb/>ñarla de nuevo, y le rogó al ama de llaves le
               proporcionase<lb/>una entrevista con su prima, acompañando la petición con<lb/>una
               fuerte cantidad. La respuesta se la llevó la complaciente<lb/>señora de confianza, y
               ocho días después, en ausencia de los<lb/>padres de la pobre Aurora, le introdujo
               furtivamente en el
+
             
                 <pb n="9" source="Varios_438_9.jpg" facs="varios/Varios_438_9.jpg"/>
-            
-                <fw type="paginaNum">— 9 —</fw>
-            
+
+              <fw type="paginaNum">— 9 —</fw>
               <lb/>cuarto de su prima, tomando antes toda clase de precaucio-<lb/>nes para evitar
               una sorpresa; y antes de penetrar en la habi-<lb/>tación la estuvo observando entre
               el portier que cubría la<lb/>puerta.</p>
-              <p><lb/>Descubrió la bella é interesante figura de
+            <p>
+              <lb/>Descubrió la bella é interesante figura de
               su prima sen-<lb/>tada en una butaca, con la cabeza inclinada sobre el seno, y<lb/>sin
               duda pensaba en sus amores imposibles, puesto que por<lb/>su hermoso semblante rodaban
               continuamente gruesas y<lb/>transparentes lágrimas. Contemplóla con la sonrisa en
               los<lb/>labios, satisfecho del amor que la había inspirado y gozando<lb/>en su
               sufrimiento, del que esperaba que más tarde la des-<lb/>esperación la arrojaría en
               sus brazos.</p>
-              <p><lb/>Compuso el semblante con arreglo á las circunstancias;<lb/>y
+            <p>
+              <lb/>Compuso el semblante con arreglo á las circunstancias;<lb/>y
               levantando el cortinaje, se presentó á la pobre niña tan<lb/>abatido como ella lo
               estaba.</p>
-              <p><lb/>Pero Melchor no había contado con la dignidad de su<lb/>prima. Esta se
+            <p>
+              <lb/>Pero Melchor no había contado con la dignidad de su<lb/>prima. Esta se
               alzó rápidamente de su asiento, lanzando un<lb/>grito de sorpresa; y al mismo tiempo
               que se enjugaba sus<lb/>lágrimas, le señaló con ademán digno y majestuoso la
               sali-<lb/>da, diciéndole:<lb/>—¡Salid de mi cuarto, caballero, si no queréis que
@@ -5051,89 +5200,99 @@
               manera<lb/>violenta:<lb/>—¡Tus injurias y desprecios se convertirán en
               súplicas,<lb/>que devolveré con carcajadas tan ruidosas como va á serlo<lb/>nuestro
               rompimiento!<lb/>—¡Mi inocencia y mi honra están á más altura que vues-
-             <fw type="sig"><lb/>2</fw>
-            
-                <pb n="10" source="Varios_438_10.jpg" facs="varios/Varios_438_10.jpg"/>
-            
-                <fw type="paginaNum">— 10 —</fw>
-            
+             <fw type="sig">
+                <lb/>2</fw>
+
+              <pb n="10" source="Varios_438_10.jpg" facs="varios/Varios_438_10.jpg"/>
+
+              <fw type="paginaNum">— 10 —</fw>
               <lb/>tras injuriosas manifestaciones: podéis hacer contra mí<lb/>cuanto queráis,
               que siempre será una acción tan dígna co-<lb/>mo del canalla que pasa su vida entre
               rufianes, ladrones y<lb/>mujeres perdidas!</p>
-              <p><lb/>Apenas terminó Aurora estas palabras,
+            <p>
+              <lb/>Apenas terminó Aurora estas palabras,
               su primo, furioso<lb/>y frenético, se lanzó sobre la pobre criatura; y
               cogiéndola<lb/>con una fuerza brutal por la cintura, la arrojó con tal
               violen-<lb/>cia, que chocó su cuerpo contra el piano y rodó por el suelo<lb/>privada
               de sentido. El infame huyó, temeroso de que regre-<lb/>saran sus padres, con los
               hombres que había llevado para<lb/>evitar una sorpresa.</p>
           </div>
-          
           <div type="parte" n="2">
-            <head type="titulo_parte"><lb/>II</head>
-              <p><lb/>Algunos años después murió la madre de Aurora; y aun-<lb/>que Melchor no había
+            <head type="titulo_parte">
+              <lb/>II</head>
+            <p>
+              <lb/>Algunos años después murió la madre de Aurora; y aun-<lb/>que Melchor no había
               vuelto á verla, no por eso había aban-<lb/>donado el campo, esperando una ocasión
               oportana para ven-<lb/>garse de la que le había rechazado á causa de su infame
               con-<lb/>ducta. Tenía vigilada la casa, y nunca faltaba quien le dijese<lb/>cuanto
               sucedía dentro, puesto que espiaban á las dos her-<lb/>manas, interpretando á su
               manera sus más inocentes ac-<lb/>ciones.</p>
-              <p><lb/>Su nombre era despreciado por todo el
+            <p>
+              <lb/>Su nombre era despreciado por todo el
               mundo é infamado<lb/>por sus hechos miserables y repugnantes, los cuales
               llega-<lb/>ron á conocimiento de su tío; el que, desengañado de creerle<lb/>digno
               de su aprecio, le retiró su cariño, y pasaba por su lado<lb/>sin saludarle. Ofendido
               Melchor, quiso tomarle satisfacción<lb/>con las armas en la mano; pero medió su
               padre, al que trató<lb/>con el mayor desprecio, jurándole que haría pasar á su
               tío<lb/>por la mayor de las afrentas.</p>
-              <p><lb/>Algunos meses después se falló el pleito
+            <p>
+              <lb/>Algunos meses después se falló el pleito
               que había traído<lb/>á la corte al padre de Melchor, y antes de regresar á su
               casa<lb/>tuvo una última entrevista con su hijo, tratando de disua-<lb/>dirle y
               apartarle de la escabrosa sonda por donde caminaba<lb/>ciego hasta dar en el
               precipicio; pero todo fué en vano: termi-<lb/>nó insultándole y negándose á
               volver al lado de su madre; le<lb/>despidió como si nunca le hubiera conocido. Un
               año des-
+
               
                 <pb n="11" source="Varios_438_11.jpg" facs="varios/Varios_438_11.jpg"/>
-            
-                <fw type="paginaNum">— 11 —</fw>
-            
+
+              <fw type="paginaNum">— 11 —</fw>
               <lb/>pués de abandonar la corte moría á consecuencia de los dis-<lb/>gustos que
               continuamente le proporcionaba aquel hijo á<lb/>quien tanto había
               amado.</p>
-              <p><lb/>Recibió la triste nueva por conducto de su madre, á la<lb/>que no se
+            <p>
+              <lb/>Recibió la triste nueva por conducto de su madre, á la<lb/>que no se
               tomó el trabajo de contestar, pero nombró en<lb/>cambio un apoderado para que
               reclamase su legítima, puesto<lb/>que ya había cumplido los veinticinco años. Al
               poco tiempo<lb/>le fué entregada, y satisfizo las infinitas deudas
               contraídas,<lb/>empezando contra su tío una campaña terrible para vengar-<lb/>se de
               él, al mismo tiempo que de su prima.</p>
-              <p><lb/>Derramó con profusión el oro hasta
+            <p>
+              <lb/>Derramó con profusión el oro hasta
               conseguir penetrar<lb/>una noche en el aposento de la que había sido su
               prometida,<lb/>con la infame intención de deshonrarla; y si bien no
               pudo<lb/>conseguirlo, promovió tal escándalo que no hubo persona<lb/>en la corte que
               no pusiera en duda la inocencia de aquella<lb/>pobre niña, que era un dechado de
               virtudes.</p>
-              <p><lb/>El padre de Aurora buscó á Melchor, le abofeteó, y hubie-<lb/>ra
+            <p>
+              <lb/>El padre de Aurora buscó á Melchor, le abofeteó, y hubie-<lb/>ra
               terminado la infamia cometida por su villano sobrino en<lb/>un drama sangriento sin la
               intervención de los amigos de<lb/>una y otra parte, que impidieron el lance por
               tratarse de pa-<lb/>rientes tan cercanos.</p>
-              <p><lb/>Con el propósito de evitar un nuevo
+            <p>
+              <lb/>Con el propósito de evitar un nuevo
               atentado por parte<lb/>de Melchor, su tío hizo los preparativos de viaje,
               retirándose<lb/>de la corte, escogiendo para retiro de él y sus hijas una
-              pre-<lb/>ciosa quinta de su propiedad en la falda del Guadarrama, in-<lb/>mediata al
-              pueblo de Cercedilla.</p>
-              <p><lb/>Los espías asalariados de Melchor pusieron en su
+              pre-<lb/>ciosa quinta de su propiedad en la falda del <name>Guadarrama</name>, in-<lb/>mediata al
+              pueblo de <name>Cercedilla</name>.</p>
+            <p>
+              <lb/>Los espías asalariados de Melchor pusieron en su
               cono-<lb/>cimiento la determinación de su pariente, y en el acto formó<lb/>una
               partida, compuesta en su mayor parte de ladrones y<lb/>asesinos; y algunos días antes
-              que se pusiese en camino su<lb/>tío, salieron de Madrid por diferentes puertas para
+              que se pusiese en camino su<lb/>tío, salieron de <name>Madrid</name> por diferentes puertas para
               no llamar<lb/>la atención, los hombres que habían de secundar el plan<lb/>inicuo que
               había concebido contra aquella familia, que tan-<lb/>tos favores le había dispensado
               y que eran de su propia<lb/>sangre.</p>
-              <p><lb/>Se instalaron en la sierra de Guadarrama; y si
+            <p>
+              <lb/>Se instalaron en la <name>sierra de Guadarrama</name>; y si
               bien por<lb/>lo pronto no molestaron á ningún caminante por no llamar<lb/>la
               atención, es lo cierto que nadie podía atravesarla si Mel-
+
             
                 <pb n="12" source="Varios_438_12.jpg" facs="varios/Varios_438_12.jpg"/>
-            
-                <fw type="paginaNum">— 12 —</fw>
-              
+
+              <fw type="paginaNum">— 12 —</fw>
               <lb/>chor y los suyos le cerraban el paso. Como quiera que trans-<lb/>curriese una
               semana sin que apareciese su tío, la canalla<lb/>que le rodeaba dió muestras de
               impacientarse; empezaron<lb/>las murmuraciones, y dos de los más osados trataron
@@ -5142,12 +5301,14 @@
               Melchor, frenético y cie-<lb/>go de ira, dos pistolas de las que llevaba á la
               cintura, hizo<lb/>fuego y cayeron á sus pies con la tapa de los sesos
               levantada.</p>
-              <p><lb/>El terror y el espanto se difundieron entre sus compañe-<lb/>ros, á
+            <p>
+              <lb/>El terror y el espanto se difundieron entre sus compañe-<lb/>ros, á
               quienes increpó y excitó á que manifestasen sus quejas,<lb/>pero ninguno se
               atrevió á pronunciar una palabra. Se había<lb/>impuesto de una manera terrible, y
               desde aquel momento<lb/>podía contar con la obediencia y fidelidad de sus
               bandidos.</p>
-              <p><lb/>Serían sobre las tres de la tarde cuando uno de los centi-<lb/>nelas
+            <p>
+              <lb/>Serían sobre las tres de la tarde cuando uno de los centi-<lb/>nelas
               que tenía apostados le dió cuenta de que bastante le-<lb/>jos, y por la carretera,
               avanzaba un coche de camino escol-<lb/>tado por algunos hombres armados, y que sin
               duda debía<lb/>ser el que esperaba con tanta impaciencia. Inmediatamente<lb/>dió
@@ -5155,7 +5316,8 @@
               preparando la sorpresa que había de<lb/>rendir á los del coche, sin tener necesidad
               de librar un com-<lb/>bate, en el que la ventaja estaba sin duda de parte de
               los<lb/>bandidos.</p>
-              <p><lb/>Las órdenes que éstos recibieron eran terminantes:
+            <p>
+              <lb/>Las órdenes que éstos recibieron eran terminantes:
               no<lb/>debían hacer fuego hasta tanto que el capitán soltase el pri-<lb/>mer
               escopetazo, teniendo especial cuidado de que los pro-<lb/>yectiles no tocasen á la
               berlina; que los valores que condu-<lb/>jeran en el equipaje se le entregarían
@@ -5164,29 +5326,33 @@
               precediera una orden suya, tratándolos con toda clase<lb/>de consideraciones, y, por
               último, en caso de resistencia por<lb/>parte de la escolta, el ataque sería tan
               rápido como simul-<lb/>táneo, terminando la lucha lo antes posible.</p>
-              <p><lb/>Melchor se
+            <p>
+              <lb/>Melchor se
               posesionó detrás de un alto peñasco, domi-<lb/>nándolo todo, y esperó la llegada
               del vehículo con una im-<lb/>paciencia que los minutos le parecían siglos.</p>
-            
-              <pb n="13" source="Varios_438_13.jpg" facs="varios/Varios_438_13.jpg"/>
-            
-              <fw type="paginaNum">— 13 —</fw>
-            
-              <p><lb/>No bien penetró el coche y su escolta en la jurisdicción<lb/>de los bandidos,
+
+            <pb n="13" source="Varios_438_13.jpg" facs="varios/Varios_438_13.jpg"/>
+
+            <fw type="paginaNum">— 13 —</fw>
+            <p>
+              <lb/>No bien penetró el coche y su escolta en la jurisdicción<lb/>de los bandidos,
               se presentó de improviso Melchor, escope-<lb/>ta en mano, dándoles el ¡alto! con
               acento enérgico; los esco-<lb/>peteros, que no esperaban aquella acometida, le
               hicieron<lb/>una descarga, sin resultado por la precipitación irreflexiva<lb/>con que
               ejecutaron la maniobra.</p>
-              <p><lb/>Casi al propio tiempo el capitán hizo fuego sobre las
+            <p>
+              <lb/>Casi al propio tiempo el capitán hizo fuego sobre las
               mu-<lb/>las del tronco, cayendo una é interrumpiendo la marcha del<lb/>coche,
               quedándose parado en medio del camino; los bandi-<lb/>dos se presentaron de
               improviso, acometiendo con furia á<lb/>los criados y escopeteros, que rodaron sin
               vida por el suelo,<lb/>excepto uno, que se rindió pidiendo clemencia.</p>
-              <p><lb/>Su tío se
+            <p>
+              <lb/>Su tío se
               había echado fuera del vehículo y defendía la<lb/>portezuela del coche con un valor
               heroico, haciendo fuego<lb/>indistintamente sobre los bandidos con un par de
               pistolas<lb/>que cargaba y descargaba con suma rapidez.</p>
-              <p><lb/>Melchor, afinando la
+            <p>
+              <lb/>Melchor, afinando la
               puntería, le soltó un escopetazo, es-<lb/>cogiendo el sitio para que no muriese en
               el acto, cuyo pro-<lb/>yectil le atravesó el pecho, cayendo herido gravemente.
               Al<lb/>acercarse al coche reconoció á su sobrino; y aunque en los<lb/>labios del
@@ -5197,21 +5363,23 @@
               este hombre á mi aposento, y de-<lb/>jadle en uno de los lechos que al efecto tengo
               preparados.<lb/>Cuatro de los bandidos que le auxiliaban se apoderaron<lb/>de su
               infortunado tío y desaparecieron por las accidentacio-<lb/>nes de la
-              sierra.</p>
-              <p><lb/>Mientras los otros muchachos se ocupaban en atar fuer-<lb/>temente á los
+              <name>sierra</name>.</p>
+            <p>
+              <lb/>Mientras los otros muchachos se ocupaban en atar fuer-<lb/>temente á los
               conductores del vehículo y en descerrajar los<lb/>cofres, volcando su contenido en
               las mantas, su segundo,<lb/>un galeote licenciado de presidio, conocido por Cartucho,
               le<lb/>ayudaba á sacar fuera del coche á sus dos primas, que esta-<lb/>ban
               desmayadas de terror.<lb/>—Este síncope—dijo Melchor dirigiéndose á su
               teniente<lb/>—nos evita las súplicas y lamentaciones. ¡Carga con esa y
+
             
                 <pb n="14" source="Varios_438_14.jpg" facs="varios/Varios_438_14.jpg"/>
-            
-                <fw type="paginaNum">— 14 —</fw>
-            
+
+              <fw type="paginaNum">— 14 —</fw>
               <lb/>vamos de prisa, antes que vuelvan en sí y nos veamos obliga-<lb/>dos á
               someterlas á nuestra voluntad par la violencia!</p>
-              <p><lb/>Durante el trayecto, el teniente
+            <p>
+              <lb/>Durante el trayecto, el teniente
               imprimía de cuando en<lb/>cuando un beso lúbrico en el casto y puro semblante de
               la<lb/>hermosa joven que conducía.<lb/>—Me parece—dijo Melchor—que te propasas sin mi
               per-<lb/>miso, y esa falta de respeto sería muy fácil que te costase<lb/>la
@@ -5233,30 +5401,35 @@
               género.<lb/>—Corriente, mi capitán, y ¡ya verá su mercé de la manera<lb/>que
               cumplo yo mi palabra!<lb/>—Pues no hablemos más, y silencio, que ya hemos
               llegado.</p>
-              <p><lb/>En lo más agrio é intrincado del Guadarrama había com-<lb/>prado
+            <p>
+              <lb/>En lo más agrio é intrincado del <name>Guadarrama</name> había com-<lb/>prado
               Melchor hacía tiempo una casa de labranza, compues-<lb/>ta de planta baja y
               principal, y después de renovarla y amue-<lb/>blarla convenientemente, solía pasar
               en ella algunas sema-
+
               
                 <pb n="15" source="Varios_438_15.jpg" facs="varios/Varios_438_15.jpg"/>
-            
-                <fw type="paginaNum">— 15 —</fw>
-            
+
+              <fw type="paginaNum">— 15 —</fw>
               <lb/>nas con las queridas que le ayudaban á dilapidar su ha-<lb/>cienda.</p>
-              <p><lb/>El capitán cedió la planta baja al teniente y los mucha-<lb/>chos, y se reservó el
+            <p>
+              <lb/>El capitán cedió la planta baja al teniente y los mucha-<lb/>chos, y se reservó el
               principal, amueblado con lujo y con las<lb/>comodidades necesarias para un hombre que
               había vivido<lb/>siempre en la opulencia.</p>
-              <p><lb/>Apenas entraron en la casa, el teniente
+            <p>
+              <lb/>Apenas entraron en la casa, el teniente
               desapareció con<lb/>su preciosa carga, y Melchor, con la suya, se dirigió á la
               es-<lb/>calera, subiéndola con una rapidez pasmosa. Esta prisa obe-<lb/>decía al
               temor de que expirase su tío sin presenciar el horri-<lb/>ble suplicio á que le
               había condenado.</p>
-              <p><lb/>Atravesó la sala, por cuyos balcones penetraba una
+            <p>
+              <lb/>Atravesó la sala, por cuyos balcones penetraba una
               clari-<lb/>dad incierta, puesto que había empezado á anochecer, y sin<lb/>detenerse
               se introdujo en la alcoba, depositando á su prima<lb/>en una cama, frente de la que
               ocupaba su padre, cuya respi-<lb/>ración y casi imperceptibles quejidos acusaban lo
               gravísimo<lb/>de su estado.</p>
-              <p><lb/>Sobre el lavabo había un gran candelabro, y sin
+            <p>
+              <lb/>Sobre el lavabo había un gran candelabro, y sin
               perder<lb/>un momento encendió las ocho bujías colocadas en sus bra-<lb/>zos,
               quedando fuertemente alumbrada la habitación; mien-<lb/>tras, desnudaba á su prima
               sin ninguna clase de miramien-<lb/>tos, acto que su padre presenciaba con los ojos
@@ -5264,7 +5437,8 @@
               destructora para su sobrino y un poema de amor<lb/>para su inocente hija; sin duda
               comprendiendo lo que iba á<lb/>suceder, le atacó una terrible convulsión que debía
               terminar<lb/>con su existencia.</p>
-              <p><lb/>Satisfecho Melchor, y gozándose en los
+            <p>
+              <lb/>Satisfecho Melchor, y gozándose en los
               sufrimientos de<lb/>aquel hombre, que moría desesperado, se acostó con su
               ino-<lb/>cente víctima, que permanecía desmayada, y abusó cínica-<lb/>mente de la
               que en otro tiempo le amara con una pasión pu-<lb/>ra y candorosa. Durante aquel acto
@@ -5274,46 +5448,51 @@
               sangre, rodó desde el lecho al suelo<lb/>produciendo la caída del cuerpo un golpe
               sordo y seco.</p>
           </div>
-          
+
           <pb n="16" source="Varios_438_16.jpg" facs="varios/Varios_438_16.jpg"/>
-          
+
           <fw type="paginaNum">— 16 —</fw>
-          
           <div type="parte" n="3">
-            <head type="titulo_parte"><lb/>III</head>
-            <p><lb/>Quince días después de la terrible noche en que Melchor<lb/>con una saña
+            <head type="titulo_parte">
+              <lb/>III</head>
+            <p>
+              <lb/>Quince días después de la terrible noche en que Melchor<lb/>con una saña
               inaudita cometiera á mansalva los más espan-<lb/>tosos crímenes, salían con los
-              ojos vendados de la casa mal-<lb/>dita de la sierra Aurora y su hermana, conducidas en
+              ojos vendados de la casa mal-<lb/>dita de la <name>sierra</name> Aurora y su hermana, conducidas en
               su<lb/>propio coche y custodiadas por cuatro bandidos, que tenían<lb/>la orden de
               dejarlas á la puerta de la quinta de su padre.</p>
-              <p><lb/>Al sentir el ruido del carruaje
+            <p>
+              <lb/>Al sentir el ruido del carruaje
               salió el mayordomo, que<lb/>esperaba impaciente la llegada de su amo, pues ignoraba
               lo<lb/>que había sucedido; se quedó atónito al encontrarse con las<lb/>señoritas
               en un estado tal de postración y con una calentura<lb/>que apenas podían sostenerse;
               su primer cuidado fué que se<lb/>metieran en la cama y que las administrasen unas
               tazas de<lb/>tila, en tanto que él iba por el médico al inmediato pueblo
-              de<lb/>Cercedilla.</p>
-              <p><lb/>El galeno puso muy mala cara acerca del estado de
+              de<lb/><name>Cercedilla</name>.</p>
+            <p>
+              <lb/>El galeno puso muy mala cara acerca del estado de
               las<lb/>enfermas, y manifestó al mayordomo que no podía decir en<lb/>qué pararían
               aquellas misas, y que sería conveniente avisa-<lb/>se á la familia sin pérdida de
               tiempo, mientras tanto que él<lb/>hacía cuanto estuviese de su parte para que
               recobrasen la<lb/>salud.</p>
-              <p><lb/>El mayordomo, que mientras más pensaba, menos
+            <p>
+              <lb/>El mayordomo, que mientras más pensaba, menos
               com-<lb/>prendía la ausencia de su amo, que nunca se separaba de<lb/>sus hijas,
               ignorando su paradero; y siendo imposible inte-<lb/>rrogar á las señoritas, el buen
               hombre escribió á la única<lb/>tía que les quedaba, madre de Melchor, rogándole
               volara en<lb/>su auxilio; esta carta coincidió con otra que un pariente le-<lb/>jano
-              le escribió desde Madrid, dándole cuenta de los suce-<lb/>sos de Guadarrama, en que
+              le escribió desde <name>Madrid</name>, dándole cuenta de los suce-<lb/>sos de <name>Guadarrama</name>, en que
               figuraba como héroe su hijo,<lb/>que se había puesto fuera de la ley.</p>
-              <p><lb/>La infortunada madre acudió en auxilio de sus sobrinas<lb/>cuanto de prisa le fué
+            <p>
+              <lb/>La infortunada madre acudió en auxilio de sus sobrinas<lb/>cuanto de prisa le fué
               posible, y la entrevista fué dolorosa-<lb/>mente triste, y unidas derramaron
               abundantes lágrimas,<lb/>abatidas bajo el peso de tanto infortunio. Convinieron en
               no
+
             
                 <pb n="17" source="Varios_438_17.jpg" facs="varios/Varios_438_17.jpg"/>
-            
-                <fw type="paginaNum">— 17 —</fw>
-            
+
+              <fw type="paginaNum">— 17 —</fw>
               <lb/>volverse á separar más; y cuando las pobres niñas estuvie-<lb/>ron un tanto
               restablecidas, emprendieron el viaje á uno de<lb/>los cortijos de la madre de
               Melchor, retirándose por comple-<lb/>to de todo trato social, sin otro deseo que las
@@ -5321,99 +5500,113 @@
               vivía<lb/>sola, regresaba de nuevo á su casa con dos hijas del alma,<lb/>pero ambas
               estaban heridas de muerte.</p>
           </div>
-          
           <div type="parte" n="4">
-            <head type="titulo_parte"><lb/>IV</head>
-            
-              <p><lb/>Mientras su madre amparaba las víctimas del nefando<lb/>crimen cometido por
+            <head type="titulo_parte">
+              <lb/>IV</head>
+            <p>
+              <lb/>Mientras su madre amparaba las víctimas del nefando<lb/>crimen cometido por
               Melchor, éste y los suyos se entrega-<lb/>ban por completo al robo, al saqueo de los
               pueblos y al ase-<lb/>sinato de los desgraciados que intentaban defenderse al
               par<lb/>que defendían sus intereses.</p>
-              <p><lb/>Inmediatamente mandaron de Madrid una
+            <p>
+              <lb/>Inmediatamente mandaron de <name>Madrid</name> una
               compañía en<lb/>persecución de los bandoleros, que habían sembrado el te-<lb/>rror
-              y el espanto en los pueblos de la sierra, y que además<lb/>de quitarles el dinero,
+              y el espanto en los pueblos de la <name>sierra</name>, y que además<lb/>de quitarles el dinero,
               les quitaban la vida á cuantos tenían<lb/>necesariamente que atravesar el puerto de
-              Guadarrama.</p>
-              <p><lb/>Melchor se propuso sorprender la compañía de soldados,<lb/>que no le
+              <name>Guadarrama</name>.</p>
+            <p>
+              <lb/>Melchor se propuso sorprender la compañía de soldados,<lb/>que no le
               dejaba reposar; y una tarde en que la tropa estaba<lb/>rendida de fatiga por la marcha
               que había hecho en perse-<lb/>cución de su teniente <hi rend="cursiva">Cartucho</hi> y de unos cuantos
               mucha-<lb/>chos que, cumpliendo sus órdenes, se dejaban ver continua-<lb/>mente,
               consiguió meterlos en un paso peligroso, donde los<lb/>esperaba Melchor con el resto
               de la partida.</p>
-              <p><lb/>El teniente Cartucho, conocedor como pocos del terreno,<lb/>debía
+            <p>
+              <lb/>El teniente Cartucho, conocedor como pocos del terreno,<lb/>debía
               unírsele apenas se disparasen los primeros tiros,<lb/>puesto que, tomando por un
               escarpado sendero, acortaba<lb/>un par de leguas de camino. El capitán, engañado por
               el<lb/>guía, que era de los bandidos, cayó en la emboscada, de la<lb/>que no pudo
               darse cuenta hasta que resonó de un modo lú-<lb/>gubre la primera descarga.
               <lb/>Los soldados se arremolinaron, dando gritos, y algunos<lb/>arrojaron las armas, queriendo
               huir vergonzosamente antes<lb/>3
+
             
                 <pb n="18" source="Varios_438_18.jpg" facs="varios/Varios_438_18.jpg"/>
-            
-                <fw type="paginaNum">— 18 —</fw>
-            
+
+              <fw type="paginaNum">— 18 —</fw>
               <lb/>que oponer resistencia al furioso é inesperado ataque de los<lb/>bandoleros. El
               digno y valiente oficial arengó á los sorpren-<lb/>didos, que bien pronto se
               reanimaron; y tomando la mejor<lb/>posición que se le presentaba, rodeado de los
               suyos, prepa-<lb/>róse á vender cara su vida antes de caer prisionero de los<lb/>que
               por sus hechos vandálicos estaban fuera de la ley.</p>
-              <p><lb/>Como quiera que Melchor y los
+            <p>
+              <lb/>Como quiera que Melchor y los
               suyos ocupaban la parte<lb/>superior de la hondonada en que se libraba la acción, y
               te-<lb/>nían resguardado el cuerpo por las peñas, no hay que decir<lb/>la ventaja
               que llevaban sobre aquellos desgraciados, que<lb/>recibían descubiertos el mortífero
               plomo de sus escopetas.</p>
-              <p><lb/>Los ayes de dolor de los que caían, los gritos, las
+            <p>
+              <lb/>Los ayes de dolor de los que caían, los gritos, las
               maldi-<lb/>ciones, las injurias de los que aún permanecían de pie, lla-<lb/>mando á
               los bandidos ¡cobardes!, ¡asesinos!, que carecían<lb/>de valor para atacarles frente
               á frente, excitaron la indómita<lb/>bravura de Melchor, que dió orden de desalojar
               los peñas-<lb/>cos y bajar á la hondonada, atacando al enemigo por distin-<lb/>tas
               direcciones.</p>
-             <p> <lb/>La ya mermada compañía no pudo resistir mucho tiempo<lb/>aquella
+            <p>
+              <lb/>La ya mermada compañía no pudo resistir mucho tiempo<lb/>aquella
               brusca y terrible acometida. Donde quiera que la tro-<lb/>pa oponía á los bandidos
               una brava resistencia, batiéndose<lb/>con el valor que presta la desesperación,
               allí se presentaba<lb/>Melchor, sembrando la muerte á su paso, como si le
               prote-<lb/>giera un ser superior y desconocido.</p>
-              <p><lb/>No tardó mucho tiempo en declararse por los bandidos<lb/>la victoria.</p>
-              <p><lb/>Apenas dejó de existir el capitán,
+            <p>
+              <lb/>No tardó mucho tiempo en declararse por los bandidos<lb/>la victoria.</p>
+            <p>
+              <lb/>Apenas dejó de existir el capitán,
               que luchaba con Mel-<lb/>chor cuerpo á cuerpo, tratando de herirle con la espada,
               cu-<lb/>yos golpes paraba con una serenidad pasmosa, parando los<lb/>tajos y reveses
               que le dirigía su contrario, el que siempre<lb/>tropezaba con un largo cuchillo de
               monte de que estaba ar-<lb/>mado, los que aún se batían, emprendieron la fuga,
               ampara-<lb/>dos por las primeras tinieblas de la noche.</p>
-              <p><lb/>Los muchachos recogieron
+            <p>
+              <lb/>Los muchachos recogieron
               sus heridos, abandonando<lb/>los de la tropa á merced de los lobos y aves de rapiña,
               y sa-<lb/>lieron de la hondonada en medio de los lamentos de los
               mo-<lb/>ribundos.</p>
-              <p><lb/>No tardó en llegar la noticia de la hazaña llevada á cabo
+            <p>
+              <lb/>No tardó en llegar la noticia de la hazaña llevada á cabo
+
             
                 <pb n="19" source="Varios_438_19.jpg" facs="varios/Varios_438_19.jpg"/>
-            
-                <fw type="paginaNum">— 19 —</fw>
-            
+
+              <fw type="paginaNum">— 19 —</fw>
               <lb/>por los bandidos á los pueblos de la slerra, comunicada por<lb/>los fugitivos
               que, aspeados y maltrechos, se presentaron á<lb/>los alcaldes en demanda de
-              alojamiento. Estas autoridades<lb/>comunicaron la infausta noticia á las de Madrid,
+              alojamiento. Estas autoridades<lb/>comunicaron la infausta noticia á las de <name>Madrid</name>,
               las que dis-<lb/>pusieron que inmediatamente saliese uno de los batallones<lb/>que la
               guarnecían, y que, dividido por compañías, empren-<lb/>diera la persecución de los
               malhechores, hasta concluir<lb/>con el último de la partida.</p>
-              <p><lb/>Aunque Melchor
+            <p>
+              <lb/>Aunque Melchor
               estaba prevenido para cualquier evento<lb/>que pudiera surgir, conociendo que el
               centro en que manio-<lb/>braba era demasiado reducido, pocos los pasajeros que
-              atra-<lb/>vesaban la sierra y mucho el dinero que necesitaba para sos-<lb/>tener su
+              atra-<lb/>vesaban la <name>sierra</name> y mucho el dinero que necesitaba para sos-<lb/>tener su
               gente, determinó correrse sobre Andalucía, bur-<lb/>lando al gobierno y sus
               soldados, los que debían encontrarse<lb/>con cara de palo no bien hiciesen su
-              irrupción en la sierra.</p>
-              <p><lb/>Dos noches después abandonaron el Guadarrama,
+              irrupción en la <name>sierra</name>.</p>
+            <p>
+              <lb/>Dos noches después abandonaron el <name>Guadarrama</name>,
               car-<lb/>gando en mulas y caballos cuanto tenían de valor y concep-<lb/>tuaron de
               necesidad; y después de una larga y penosa tra-<lb/>vesía por sitios inhabitados y
               solitarios, penetraron en Sie-<lb/>rra Morena sin ningún contratiempo.</p>
-              <p><lb/>No tardó
+            <p>
+              <lb/>No tardó
               mucho tiempo en dejar sentir el terrible azote<lb/>que había caido sobre la bella
               comarca, pues en poco tiempo<lb/>quemó varias heredades, privó de la vida á cuantos
               se opo-<lb/>nían á su paso, asaltó los pueblos con una audacia y un va-<lb/>lor
               inauditos, despojó á los templos de cuantas alhajas te-<lb/>nían, atropelló á las
               mujeres, dejando tras sí las huellas de<lb/>las lágrimas y la desesperación.</p>
-              <p><lb/>En
+            <p>
+              <lb/>En
               las ciudades y en el campo se pronunciaba con terror<lb/>su nombre, á causa de su
               presencia inesperada en distintos<lb/>puntos en breve tiempo, lo que unido á la
               osadía, la bravura<lb/>y la suerte con que llevaba á cabo difíciles empresas, le
@@ -5421,63 +5614,66 @@
               en<lb/>contradicción con su apellido de la Cruz, á no ser que los<lb/>andaluces, con
               su privilegiada imaginación, quisieran hacer<lb/>bueno el adagio de: <hi rend="cursiva">Detrás de la
               Cruz el diablo</hi>.</p>
-              <p><lb/>Algún tiempo después de emprendida esta campaña con-<lb/>tra
-              todo el mundo fué aflojando respecto á los pastores y<lb/>cortijeros de la sierra,
+            <p>
+              <lb/>Algún tiempo después de emprendida esta campaña con-<lb/>tra
+              todo el mundo fué aflojando respecto á los pastores y<lb/>cortijeros de la <name>sierra</name>,
               los que le ofrecían ampararle y prote-
+
             
                 <pb n="20" source="Varios_438_20.jpg" facs="varios/Varios_438_20.jpg"/>
-            
-                <fw type="paginaNum">— 20 —</fw>
-            
+
+              <fw type="paginaNum">— 20 —</fw>
               <lb/>gerle en cambio de que respetara sus vidas y haciendas. Ayu-<lb/>dado por los
               serranos derrotó y destruyó en varias ocasio-<lb/>nes á la tropa y cuadrilleros que
               le perseguían, desistiendo<lb/>las autoridades, en vista del menoscabo que sufrían
               las le-<lb/>yes y el principio de autoridad, á cesar de mandar gente ar-<lb/>mada en
               su persecución.</p>
-              <p><lb/>Entonces se decidió á comprar un cortijuelo en la
-              sierra,<lb/>aparente para lo que necesitaba, no tanto con el objeto de<lb/>explotarlo,
+            <p>
+              <lb/>Entonces se decidió á comprar un cortijuelo en la
+              <name>sierra</name>,<lb/>aparente para lo que necesitaba, no tanto con el objeto de<lb/>explotarlo,
               sino con la idea de que le sirviese de guarida y<lb/>pudiesen los muchachos descansar
               cómodamente de sus<lb/>continuas correrías. Al frente había puesto un buen
               hombre,<lb/>entendido en las faenas del campo, que lo labraba con bene-<lb/>ficio, al
               que había hecho muchos favores, de los que le esta-<lb/>ba sumamente agradecido, y
               antes se hubiera dejado hacer<lb/>pedazos que venderle ni perjudicarle en lo más
               mínimo.<lb/>Aunque Melchor estaba muy bien con los cortijeros y pasto-<lb/>res de la
-              sierra, que por temor le querían y pronunciaban<lb/>su nombre con respeto, evitaba
+              <name>sierra</name>, que por temor le querían y pronunciaban<lb/>su nombre con respeto, evitaba
               cuanto le era posible alojar-<lb/>se en sus cortijos para no serles gravoso.
-              Agradecidos por<lb/>esta deferencia, no pisaba la sierra un soldado ó un
+              Agradecidos por<lb/>esta deferencia, no pisaba la <name>sierra</name> un soldado ó un
               cuadri-<lb/>llero, sin que instantáneamente no lo pusieran en su
               cono-<lb/>cimiento.</p>
-              <p><lb/>Su actividad vertiginosa no le dejaba un momento de
+            <p>
+              <lb/>Su actividad vertiginosa no le dejaba un momento de
               re-<lb/>poso; y cuando no tenía que presentarse necesariamente en<lb/>el camino, se
-              marchaba solo, entreteniéndose en estudiar lo<lb/>intrincado de la sierra, la que
+              marchaba solo, entreteniéndose en estudiar lo<lb/>intrincado de la <name>sierra</name>, la que
               podía decirse que conocía pal-<lb/>mo á palmo; acababa de llegar á su cortijo de
               una de estas<lb/>expediciones, y apenas penetró en su despacho mandó que<lb/>se le
               presentase el teniente.</p>
-           </div>
-           
+          </div>
           <div type="parte" n="5">
-             <head type="titulo_parte"><lb/>V</head>
-              
-             <p><lb/>Dos golpes dados con los nudillos en la puerta de entra-<lb/>da,
+            <head type="titulo_parte">
+              <lb/>V</head>
+            <p>
+              <lb/>Dos golpes dados con los nudillos en la puerta de entra-<lb/>da,
               denunciaron la presencia del teniente.<lb/>—¡Adelante!—contestó Melchor.<lb/>—¿Me ha
               llamao el capitán?—dijo penetrando en la estancia.
+
             
              <pb n="21" source="Varios_438_21.jpg" facs="varios/Varios_438_21.jpg"/>
-            
-             <fw type="paginaNum">— 21 —</fw>
-            
+
+              <fw type="paginaNum">— 21 —</fw>
               <lb/>—Sí, hombre; necesito hablarte de un asunto urgente.<lb/>—Pues aquí me tiene á
               sus órdones, y no perderé una<lb/>sola palabra.<lb/>—Acabo de tener una confidencia
               importante y de interés<lb/>para nosotros.<lb/>—¿Viene de güena
               procedencia?<lb/>—Por supuesto—contestó Melchor;—porque de otra ma-<lb/>nera hubiera
               hecho caso omiso, como una de las tantas ton-<lb/>terías que nos dicen
               continuamente.<lb/>—Veamos de lo que se trata, mi capitán.<lb/>—Hace poco tiempo que
-              falleció en Granada un ricacho,<lb/>solterón y sin parientes; y no sabiendo qué
+              falleció en <name>Granada</name> un ricacho,<lb/>solterón y sin parientes; y no sabiendo qué
               hacer de su for-<lb/>tuna, se le ocurrió la idea de legársela á los ermitaños
               de<lb/>Córdoba.<lb/>—Yo no sé—dijo el teniente—cómo se las compone la gen-<lb/>te
               de iglesia, que á cá dos por tres se les entra la fortuna por<lb/>las puertas.
               ¡Vamos, es cosa de desesperarse!<lb/>—Pues por esta vez me parece que seremos nosotros
-              los<lb/>que heredaremos al piadoso solterón de Granada, y sin per-<lb/>miso de los
+              los<lb/>que heredaremos al piadoso solterón de <name>Granada</name>, y sin per-<lb/>miso de los
               religiosos de las ermitas.<lb/>—Me alegraría jugarles una mala pasada, porque
               esos<lb/>señores se alimentan de oraciones y ná necesitan, y á nos-<lb/>otros nos
               jacen falta los dineros pa comprar las vituallas.<lb/>—Precisamente te he llamado para
@@ -5491,11 +5687,11 @@
               orden,<lb/>se encargasen de la conducción de caudales, que entrega-<lb/>rían en las
               propias manos del prior de las ermitas.<lb/>—Con esos datos yo averiguaré cuanto se
               necesita, pues<lb/>tenemos lo que nos jace falta; ahora mesmo mando montar
+
             
                <pb n="22" source="Varios_438_22.jpg" facs="varios/Varios_438_22.jpg"/>
-            
-               <fw type="paginaNum">— 22 —</fw>
-              
+
+              <fw type="paginaNum">— 22 —</fw>
               <lb/>á caballo á nuestro comisionao, y antes de cuatro días le te-<lb/>nemos de
               vuelta y nos dice en qué forma se traslada el par-<lb/>né, la fuerza que acompaña
               á los frailes, el camino que<lb/>traen y jasta la cara que tienen: ¡pues apenas si el
@@ -5507,34 +5703,39 @@
               que se disfrace con la ropa de uno de los<lb/>trabajadores del cortijo, á fin de que
               no infunda sospechas. <lb/>—Descuide usté, mi capitán, que tó se jará á medía de
               su<lb/>deseo.</p>
-            </div>
-          
+          </div>
           <div type="parte" n="6">
-            <head type="titulo_parte"><lb/>VI</head>
-            <p><lb/>Pelote, mozangón de diez y nueve años, que acababa de<lb/>recomendar Cartucho
+            <head type="titulo_parte">
+              <lb/>VI</head>
+            <p>
+              <lb/>Pelote, mozangón de diez y nueve años, que acababa de<lb/>recomendar Cartucho
               al capitán, salió del cortijo disfrazado<lb/>de trabajador; y sin duda era un gran
               jinete, puesto que pu-<lb/>so el caballo al trote, tomando por las veredas y trochas,
               cu-<lb/>yo itinerario le diera el teniente.</p>
-              <p><lb/>Durante la noche atravesó la sierra
+            <p>
+              <lb/>Durante la noche atravesó la <name>sierra</name>
               de Córdoba, y antes<lb/>de que amaneciera se metió en la provincia de Jaén, sin
               to-<lb/>marse un momento de reposo, á pesar de las asperezas y<lb/>escabrosidades del
               terreno, y sin que su cuerpo demostrase<lb/>el menor cansancio.</p>
-              <p><lb/>Bien entrada la
+            <p>
+              <lb/>Bien entrada la
               mañana, y á unas cuantas leguas de esta<lb/>ultima provincia, divisó en la
               carretera un pequeño vento-<lb/>rro, y hacia él encaminó su cabalgadura.</p>
-              <p><lb/>Antes
+            <p>
+              <lb/>Antes
               de penetrar en aquel refugio, donde se proponía sa-<lb/>tisfacer la necesidad de su
               estómago, que le pedía á gritos<lb/>algún alimento, examinó el cebo de dos
               pistolas que llevaba<lb/>ocultas entre la faja; y satisfecho de que no había sufrido
               de-<lb/>trimento la pólvora, volvió á guardarlas en el mismo sitio.
+
             
                 <pb n="23" source="Varios_438_23.jpg" facs="varios/Varios_438_23.jpg"/>
-            
-                <fw type="paginaNum">— 23 —</fw>
-            
+
+              <fw type="paginaNum">— 23 —</fw>
               <lb/>Apeóse en la puerta, llamando al ventero á grandes voces,
               <lb/>como quien piensa pagar el gasto sin reparar la cuenta.</p>
-            <p><lb/>Inmediatamente apareció un hombre de unos cuarenta
+            <p>
+              <lb/>Inmediatamente apareció un hombre de unos cuarenta
               <lb/>años, de fisonomía franca y simpática, cuyo rostro estaba
               <lb/>adornado con dos grandes patillas de boca de hacha. Exami-
               <lb/>nó al recién llegado, al que tomó por criado de algún cortijo
@@ -5545,7 +5746,8 @@
               <lb/>cebada, pero que no se la coma el mozo.
               <lb/>—Descuide usté; y si quiere, venga conmigo, y se conven-
               <lb/>cerá de que en esta casa no se engaña á naide.</p>
-            <p><lb/>Una hora después salía del ventorrillo; y cuando lo hubo
+            <p>
+              <lb/>Una hora después salía del ventorrillo; y cuando lo hubo
               <lb/>perdido de vista, abandonó la carretera; y metiéndose por la
               <lb/>falda de una montaña, se internó en la síerra, tomando la
               <lb/>trocha que antes abandonara. Durante el camino no encon-
@@ -5560,12 +5762,13 @@
               <lb/>entabla querella al posadero por desacato humillante á su
               <lb/>persona; tal era la posada de mezquina y sucia, que se nece-
               <lb/>sitaban zancos para penetrar en aquella inmunda cloaca.</p>
-            <p><lb/>Ajustóse por una semana por la asistencia, manutención
+            <p>
+              <lb/>Ajustóse por una semana por la asistencia, manutención
               <lb/>de su cabalgadura y una habitación para dormir, puesto que
               <lb/>los muchos encargos que traía, y el compromiso de un ami-
               <lb/>go á quien quería mucho, le impedirían de seguro comer en
               <lb/>el establecimiento. Pagó ocho días adelantados y salió á la
-              <lb/>calle en demanda del convento de los Franciscanos, que era
+              <lb/>calle en demanda del <name>convento de los Franciscanos</name>, que era
               <lb/>un famoso edificio, impropio por su magnificencia de los
               <lb/>que decían vivir de la caridad pública.</p>
             <p>
@@ -5573,16 +5776,17 @@
               <lb/>vento, y al cerrarle el paso un lego largo y enjuto, que pare-
               <lb/>cía le habian prensado, pegó con él la hebra, y antes de una
               <lb/>hora eran buenos amigos, obsequiándole con una buena ce-
+
             
               <pb n="24" source="Varios_438_24.jpg" facs="varios/Varios_438_24.jpg"/>
-            
+
               <fw type="paginaNum">— 24 —</fw>
-            
               <lb/>na, pagada por el mozangón, y durante los brindis le hizo<lb/>desembuchar que
               el padre fray Serapio de los Santos, con<lb/>otro de la comunidad, eran los encargados
               de conducir el<lb/>cuantioso donativo del solterón á los ermitaños de
               Córdoba,<lb/>contra los que se deshizo en injurias é improperios.</p>
-              <p><lb/>Pelote
+            <p>
+              <lb/>Pelote
               correspondió á esta confianza diciéndole que para<lb/>el propio reverendo traía
               una cantidad de dinero para que<lb/>dijese unas misas, aplicadas por el eterno
               descanso de su<lb/>ama, que lo encargó con sumo interés á la hora de la
@@ -5590,20 +5794,24 @@
               le proporcionaba la extravagancia del solterón,<lb/>que volvería á la mañana
               siguiente á ver si era más afortu-<lb/>nado, y de camino almorzarían
               juntos.</p>
-              <p><lb/>Esta última parte le produjo al lego un estremecimiento<lb/>de gozo
+            <p>
+              <lb/>Esta última parte le produjo al lego un estremecimiento<lb/>de gozo
               infinito, y hubiera abrazado de buena gana á su ami-<lb/>go si no temiera la llegada
               inoportuna de algún fraile, pues<lb/>se acercaba la hora de cerrar el
               convento.</p>
-              <p><lb/>Excusamos decir que el muchacho no dejaba la ida por la<lb/>venida, y
+            <p>
+              <lb/>Excusamos decir que el muchacho no dejaba la ida por la<lb/>venida, y
               siempre á las horas en que sabía no estaba su pater-<lb/>nidad, para charlar á sus
               anchas con el hermano lego, que<lb/>estaba muy bien enterado de cuanto pasaba en la
               comunidad.</p>
-              <p><lb/>Sabiendo ya cuanto necesitaba, se despidió de su amigo,<lb/>el lego
+            <p>
+              <lb/>Sabiendo ya cuanto necesitaba, se despidió de su amigo,<lb/>el lego
               portero, y se dirigió al palacio del finado solterón pa-<lb/>ra observar si los
               frailes empezaban sus preparativos de<lb/>marcha. El lego que había de acompañarlos
               se ocupaba en<lb/>aquel momento en aparejar tres poderosas mulas, en
               cuya<lb/>operación le ayudaba el portero.</p>
-              <p><lb/>Pelote, convencido de que había
+            <p>
+              <lb/>Pelote, convencido de que había
               llegado la hora, se tras-<lb/>ladó á su posada más ligero que el viento, de la que
               salió<lb/>montado en su jaca antes de que pasase un cuarto de hora.<lb/>Regresó por
               el mismo camino para cerciorarse de si los frai-<lb/>les habían emprendido la marcha;
@@ -5611,63 +5819,71 @@
               conduc-<lb/>tores del dinero. Pasó por delante sin mirarlos; y acomodan-<lb/>do su
               jaca al paso de las mulas, se dirigió á la puerta de la<lb/>ciudad, por donde daba
               comienzo la carretera de Jaén.</p>
-              <p><lb/>En aquel sitio esperaban la llegada de los
+            <p>
+              <lb/>En aquel sitio esperaban la llegada de los
               reverendos cin-<lb/>cuenta provinciales, mandados por un oficial de recono-
+
             
                 <pb n="25" source="Varios_438_25.jpg" facs="varios/Varios_438_25.jpg"/>
-            
-                <fw type="paginaNum">— 25 —</fw>
-              
+
+              <fw type="paginaNum">— 25 —</fw>
               <lb/>cido valor y práctico en la persecución de malhechores.</p>
-              <p><lb/>El muchacho, que ya había terminado su cometido, de un<lb/>repelón se metió en la
-              sierra; y sin desviarse un punto del<lb/>itinerario marcado por el teniente, regresó
+            <p>
+              <lb/>El muchacho, que ya había terminado su cometido, de un<lb/>repelón se metió en la
+              <name>sierra</name>; y sin desviarse un punto del<lb/>itinerario marcado por el teniente, regresó
               al cortijo, donde<lb/>era esperado con impaciencia.</p>
-              <p><lb/>El capitán y el teniente
-              oyeron detalle por detalle cuanto<lb/>había pasado en Granada, y la salida de los
+            <p>
+              <lb/>El capitán y el teniente
+              oyeron detalle por detalle cuanto<lb/>había pasado en <name>Granada</name>, y la salida de los
               frailes, custodia-<lb/>dos por soldados de la provincia, manifestándole el
               capitán<lb/>que si era verídico su relato, desde luego quedaba admitido<lb/>en la
               partida.</p>
-              <p><lb/>Aquella misma noche dispuso Melchor que su teniente<lb/>saliese al
+            <p>
+              <lb/>Aquella misma noche dispuso Melchor que su teniente<lb/>saliese al
               encuentro de los franciscanos, en unión de dos<lb/>muchachos, y no los perdiesen de
-              vista desde que penetra-<lb/>sen en la sierra de Córdoba, pero que debían hacerlo de
+              vista desde que penetra-<lb/>sen en la <name>sierra</name> de Córdoba, pero que debían hacerlo de
               ma-<lb/>nera que ni frailes ni soldados adivinasen su presencia; los<lb/>sometía á
               este espionaje por si alguien trataba de venderlos,<lb/>excitado por la codicia de una
               buena recompensa.</p>
           </div>
-          
           <div type="parte" n="7">
-            <head type="titulo_parte"><lb/>VII</head>
-            
-            <p><lb/>El teniente salió aquella misma noche del cortijo, según<lb/>le había
+            <head type="titulo_parte">
+              <lb/>VII</head>
+            <p>
+              <lb/>El teniente salió aquella misma noche del cortijo, según<lb/>le había
               ordenado el capitán, en demanda de los límites de<lb/>la provincia de Córdoba, donde
               debía esperar á los encarga-<lb/>dos del espléndido donativo. Como quiera que los
               frailes ha-<lb/>cían el camino á pequeñas jornadas, el teniente estuvo
               de<lb/>plantón unos cuantos días antes de percibirlos en la carre-<lb/>tera: desde
               aquel momento no dieron un paso sin estar<lb/>bajo la vigilancia de los
               bandidos.</p>
-              <p><lb/>Una tarde, en que la niebla de la montaña era bastante<lb/>espesa, el
+            <p>
+              <lb/>Una tarde, en que la niebla de la montaña era bastante<lb/>espesa, el
               teniente, amparado por ella, se acercó cuanto pudo<lb/>á la carretera, y vió que un
               hombre, que parecía haberse des-<lb/>prendido de un peñasco, se metió en el camino;
               y saludando<lb/>al oficial que mandaba la fuerza, le habló como si ya
               fueran<lb/>conocidos, yendo á su lado más de media legua. Antes de se-<lb/>pararse
               recibió del militar unas cuantas monedas.</p>
-              <p><lb/>No era menester tanto para que el teniente Cartucho com-
-              <fw type="sig"><lb/>4</fw>
-            
-                <pb n="26" source="Varios_438_26.jpg" facs="varios/Varios_438_26.jpg"/>
-            
-                <fw type="paginaNum">— 26 —</fw>
-            
+            <p>
+              <lb/>No era menester tanto para que el teniente Cartucho com-
+              <fw type="sig">
+                <lb/>4</fw>
+
+              <pb n="26" source="Varios_438_26.jpg" facs="varios/Varios_438_26.jpg"/>
+
+              <fw type="paginaNum">— 26 —</fw>
               <lb/>prendiese que aquel sujeto era un espía que acababa de dar-<lb/>le noticias de
-              la existencia de los bandidos en la sierra. Vol-<lb/>vióse el delator á los
+              la existencia de los bandidos en la <name>sierra</name>. Vol-<lb/>vióse el delator á los
               breñales por el lado que marchaba el<lb/>teniente, y apenas se aventuró por un
               estrecho sendero, una<lb/>mano de hierro le cogió por la garganta, y medio
               asfixiado<lb/>abrió las manos, de las que se desprendió la escopeta que
               lle-<lb/>vaba en el seguro.</p>
-              <p><lb/>Mientras esto sucedía, los frailes y provinciales
+            <p>
+              <lb/>Mientras esto sucedía, los frailes y provinciales
               tomaban<lb/>posesión de la posada del próximo pueblo, donde debían<lb/>pasar
               tranquilamente la noche.</p>
-              <p><lb/>Antes de que el confidente pudiera darse cuenta de lo
+            <p>
+              <lb/>Antes de que el confidente pudiera darse cuenta de lo
               que<lb/>le sucedía, se sintió amarrar fuertemente los brazos con<lb/>uno de esos
               cordeles de cáñamo que llevan siempre á pre-<lb/>vención los bandidos; el que le
               había cogido por el cuello<lb/>afilojó un tanto, diciéndole al mismo
@@ -5675,11 +5891,13 @@
               paladar; conque así tú verás lo que jaces y lo que<lb/>te conviene.<lb/>—¿Pero yo
               qué he jecho pa que me traten de esta manera?<lb/>—dijo con acento ronco, á causa de
               la caricia que le había<lb/>hecho el teniente en el gaznate.</p>
-              <p><lb/>La contestación no
+            <p>
+              <lb/>La contestación no
               se hizo esperar: apenas concluída la<lb/>última palabra, sintió entre oreja y oreja
               tan terrible cogota-<lb/>zo, que el pobre hombre dió algunos traspiés y estuvo á
               pun-<lb/>to de rodar por el sendero.</p>
-              <p><lb/>Llegaron á una pequeña choza, y uno de los
+            <p>
+              <lb/>Llegaron á una pequeña choza, y uno de los
               muchachos<lb/>llamó con la culata de la escopeta; aquélla se abrió
               inmediata-<lb/>mente, apareciendo un jastialote, con un candil en la mano,<lb/>de
               aspecto entre gañán y bandido. Entraron el teniente y su<lb/>prisionero, y detrás
@@ -5689,13 +5907,14 @@
               alguna parte.<lb/>—Vamos, tunante, desembucha por el aire cuanto has di-<lb/>cho al
               oficial de provinciales; y ten cudiao con lo que dices,<lb/>porque si te cojo en un
               renuncio, estoy jaciendo judiás con-<lb/>tigo mientras te dure la vida.</p>
-            
-              <pb n="28" source="Varios_438_28.jpg" facs="varios/Varios_438_28.jpg"/>
-            
-              <fw type="paginaNum">— 28 —</fw>
-            
-              <p><lb/>encaminó al cortijo, donde le esperaba el famoso Melchor.</p>
-              <p><lb/>Puso en su
+
+            <pb n="28" source="Varios_438_28.jpg" facs="varios/Varios_438_28.jpg"/>
+
+            <fw type="paginaNum">— 28 —</fw>
+            <p>
+              <lb/>encaminó al cortijo, donde le esperaba el famoso Melchor.</p>
+            <p>
+              <lb/>Puso en su
               conocimiento cuantas observaciones había<lb/>hecho desde que los conductores del
               dinero penetraron en<lb/>la carretera de Córdoba, sin omitir lo que le declarara el
               es-<lb/>pía, al que había hecho pagar cara su traición.<lb/>—El aviso de ese
@@ -5716,37 +5935,41 @@
               pasado mañana, á la hora conveniente, esperare-<lb/>mos á los provinciales en el
               barranquillo de las tórtolas.<lb/>—Güeno, mi capitán, y yo le aseguro que, como
               siempre,<lb/>daremos leña á los provinciales, y ni éstos ni los cuadrille-<lb/>ros
-              pisarán en mucho tiempo la sierra.<lb/>—Ocúpate de todos los preparativos—dijo
+              pisarán en mucho tiempo la <name>sierra</name>.<lb/>—Ocúpate de todos los preparativos—dijo
               Melchor refle-<lb/>xionando,—sin decirle á la gente el asunto que tenemos en-<lb/>tre
               manos.<lb/>—Descudie usté, mi capitán; y esa advertencia no
               reza<lb/>conmigo.</p>
-              <p><lb/>Dos días después, á las once de la mañana, Melchor de
+            <p>
+              <lb/>Dos días después, á las once de la mañana, Melchor de
               la<lb/>Cruz tomaba posesión del barranquillo de las Tórtolas, dis-<lb/>tribuyendo su
               gente y haciéndola ocupar los puestos estra-
+
             
                 <pb n="29" source="Varios_438_29.jpg" facs="varios/Varios_438_29.jpg"/>
-            
-                <fw type="paginaNum">— 29 —</fw>
-            
+
+              <fw type="paginaNum">— 29 —</fw>
               <lb/>tégicos. Al teniente se le encomendó que atacase á los pro-<lb/>vinciales
               siempre que éstos tratasen de forzar el paso, esca-<lb/>pando con los frailes por la
               salida de una profunda cañada<lb/>que daba paso á las montañas de las ermitas. Un
               profundo<lb/>silencio reinaba en aquel sitio sombrío, que aun lo era más<lb/>por el
               tristísimo y monótono canto de las tórtolas que ani-<lb/>daban en los chaparros y
               quejigos.</p>
-              <p><lb/>Una hora después empezaron á descender á lo más pro-<lb/>fundo del
+            <p>
+              <lb/>Una hora después empezaron á descender á lo más pro-<lb/>fundo del
               barranco los migueletes, que marchaban en ala,<lb/>llevando en medio á los
               conductores del dinero; ya en medio<lb/>de aquella especie de cañón, por donde
               tenían necesaria-<lb/>mente que atravesar, sonó un escopetazo, seguido de
               una<lb/>descarga cerrada.</p>
-              <p><lb/>Aunque los soldados iban prevenidos por la delación
+            <p>
+              <lb/>Aunque los soldados iban prevenidos por la delación
               del<lb/>espía, no dejó de sorprenderles lo violento y rudo del ata-<lb/>que; otra
               nueva descarga hizo más aflictiva la situación de<lb/>los pobres provinciales. Los
               frailes gritaban como energú-<lb/>menos, pidiendo á Dios misericordia, y
               deslizándose de las<lb/>mulas, echaron abajo las cajas que contenían el dinero,
               y<lb/>poniéndolas de canto, se parapetaron detrás de aquel im-<lb/>provisado
               baluarte.</p>
-              <p><lb/>El fuego que sobre la tropa habían hecho y seguían ha-<lb/>ciendo los
+            <p>
+              <lb/>El fuego que sobre la tropa habían hecho y seguían ha-<lb/>ciendo los
               bandidos, causó bajas definitivas y buen número<lb/>de heridos, equilibrando las
               fuerzas de ambos enemigos.<lb/>Los bandidos, resguardados por las salientes de las
               monta-<lb/>ñas, herían á mansalva, mientras que el plomo de los pro-<lb/>vinciales
@@ -5756,75 +5979,92 @@
               de<lb/>Melchor, preferían morir de este modo á que los asesinasen<lb/>en la
               inacción. El combate se prolongaba demasiado; y aun-<lb/>que los bandidos llevaban la
               mejor parte, la victoria aún no<lb/>se había decidido por ninguno.</p>
-              <p><lb/>Melchor el
+            <p>
+              <lb/>Melchor el
               Diablo, con su vista de águila, no perdía un<lb/>solo movimiento del enemigo; y
               apenas el capitán de provin-<lb/>ciales inició un movimiento para atacar el flanco
               izquierdo,<lb/>le salió al encuentro con seis muchachos, arremetiéndole
+
             
                 <pb n="30" source="Varios_438_30.jpg" facs="varios/Varios_438_30.jpg"/>
-            
-                <fw type="paginaNum">— 30 —</fw>
-            
+
+              <fw type="paginaNum">— 30 —</fw>
               <lb/>con tal denuedo y bravura que los hizo huir á la desbanda-<lb/>da: aquella fué
               la señal de sálvese el que pueda, y los que<lb/>aún peleaban imitaron el ejemplo de
               su jefe, perdiéndose<lb/>enseguida entre las accidentaciones del terreno.</p>
-              <p><lb/>Tampoco
+            <p>
+              <lb/>Tampoco
               los frailes se aguardaron á razones: remanga-<lb/>dos los hábitos, emprendieron por
               la montaña tan vertigi-<lb/>nosa carrera, que parecían conejos huyendo de una
               traílla<lb/>de podencos.</p>
-              <p><lb/>Las pérdidas sufridas por parte de Melchor habían
+            <p>
+              <lb/>Las pérdidas sufridas por parte de Melchor habían
               si-<lb/>do sensibles: el teniente Cartucho y cuatro muchachos de<lb/>los más osados
               murieron en la acción batiéndose como<lb/>fieras.</p>
-              <p><lb/>Las cuatro cajas conteniendo
+            <p>
+              <lb/>Las cuatro cajas conteniendo
               los ochenta mil duros del<lb/>donativo fueron trasladadas al cortijo, donde se hizo el
               re-<lb/>parto, concediendo Melchor á sus bandidos quince días de<lb/>libertad para
               que se divirtiesen y llevasen dinero á sus fami-<lb/>lias. Antes de partir nombró su
               teniente á uno de los mu-<lb/>chachos apodado <hi rend="cursiva">Poca pena</hi>; y aunque este
               nombramiento<lb/>no fué del agrado de los bandidos, ninguno se atrevió á
               re-<lb/>chazarlo.</p>
-              <p><lb/><hi rend="cursiva">Poca pena</hi> había ingresado en la partida un año antes;
+            <p>
+              <lb/>
+              <hi rend="cursiva">Poca pena</hi> había ingresado en la partida un año antes;
               y,<lb/>según confesión propia, había cometido varios crímenes y<lb/>no pocas
               fechorías.</p>
-              <p><lb/>Pero el relato de sus hazañas era ni más ni menos que<lb/>un tejido
+            <p>
+              <lb/>Pero el relato de sus hazañas era ni más ni menos que<lb/>un tejido
               de imposturas; todas sus guapezas se reducían á<lb/>haber cometido dos asesinatos
               cobardes y con el ensaña-<lb/>miento de un miserable que carece por completo de
               todo<lb/>sentimiento de humanidad.</p>
-              <p><lb/>Hacía tres años que contrajera matrimonio con
+            <p>
+              <lb/>Hacía tres años que contrajera matrimonio con
               una joven<lb/>de la vecindad, tan honrada como hermosa y tan limpia
               como<lb/>económica, y mujer capaz de volver su casa lo de arriba aba-<lb/>jo en menos
               tiempo que nosotros empleamos en decirlo.</p>
-              <p><lb/>Antes de casarse María con <hi rend="cursiva">Poca pena</hi>,
+            <p>
+              <lb/>Antes de casarse María con <hi rend="cursiva">Poca pena</hi>,
               mote con que era<lb/>conocido en el pueblo, había tenido relaciones unos dos
               me-<lb/>ses con el hijo del alcalde, relaciones que terminaron por la<lb/>oposición
               de los padres del mozo á causa de la pobreza de<lb/>la muchacha.</p>
-              <p><lb/>Sin embargo de la ruptura, no por eso dejaron de apre-
+            <p>
+              <lb/>Sin embargo de la ruptura, no por eso dejaron de apre-
+
             
                 <pb n="31" source="Varios_438_31.jpg" facs="varios/Varios_438_31.jpg"/>
-            
-                <fw type="paginaNum">— 31 —</fw>
-            
+
+              <fw type="paginaNum">— 31 —</fw>
               <lb/>ciarse dentro de los límites de la más pura y santa amistad.</p>
-              <p><lb/>Aunque María,
+            <p>
+              <lb/>Aunque María,
               obrando lealmente, había puesto en cono-<lb/>cimiento de su marido antes de casarse
               estas relaciones y la<lb/>causa de su rompimiento, <hi rend="cursiva">Poca pena</hi> manifestaba serle
               indi-<lb/>ferente, siempre que ella le quisiese con toda su alma.</p>
-              <p><lb/>Pero todas estas
+            <p>
+              <lb/>Pero todas estas
               promesas cayeron por tierra ocho días<lb/>después de su casamiento.</p>
-              <p><lb/>Por si
+            <p>
+              <lb/>Por si
               María miró ó no miró al hijo del alcalde, por si le<lb/>saludó con la sonrisa en
               los labios, ó por si se le encontraba<lb/>á menudo, era suficiente motivo para
               propinarla tan tremen-<lb/>da paliza, hasta dejarla completamente
               desfallecida.</p>
-              <p><lb/>Las amenazas de muerte, las injurias, los puntapiés y
+            <p>
+              <lb/>Las amenazas de muerte, las injurias, los puntapiés y
               las<lb/>bofetadas eran prodigados á todas horas.</p>
-              <p><lb/>Una tarde en que María fué
+            <p>
+              <lb/>Una tarde en que María fué
               saludada por el hijo del alcal-<lb/>de cuando iba al campo, lo vió su marido; y
               cogiéndola bru-<lb/>talmente por un brazo y metiéndola á empujones en su
               casa,<lb/>la dijo con acento amenazador y terrible:<lb/>—¡Ha llegado la hora, infame y
               mala mujer, en que yo te<lb/>cumpla lo prometido!</p>
-              <p><lb/>Y poniéndose la chaqueta y el
+            <p>
+              <lb/>Y poniéndose la chaqueta y el
               sombrero, salió de su casa<lb/>como una tromba.</p>
-              <p><lb/>Cerca del anochecer se apareció
+            <p>
+              <lb/>Cerca del anochecer se apareció
               al hijo del alcalde, que es-<lb/>taba arando las tierras de su padre, y le
               dijo:<lb/>—Francisco, ¿quieres darme tabaco para echar un ciga-<lb/>rro? porque he
               concluido con el mío y tengo hambre de<lb/>fumar.<lb/>—¡Sí, hombre! Allí tienes la
@@ -5832,52 +6072,61 @@
               puedo fu-<lb/>marme en una semana.<lb/>—No, ven conmigo y dámelo, porque á mí no me
               gusta<lb/>meter la mano en bolsillo ajeno.<lb/>—Como quieras; pero ese escrúpulo me
               parece tonto, sien-<lb/>do así que yo te autorizo.</p>
-              <p><lb/>Y los dos juntos se dirigieron
+            <p>
+              <lb/>Y los dos juntos se dirigieron
               á un repecho, donde Fran-<lb/>cisco tenía la chaqueta y el sombrero.</p>
-              <p><lb/>Apenas el
+            <p>
+              <lb/>Apenas el
               hijo del alcalde se inclinó para tomar la pren-<lb/>da, <hi rend="cursiva">Poca pena</hi>, con la rapidez del
               relámpago, hundió por dos<lb/>veces en la espalda un ancho cuchillo que llevaba
               preveni-
+
             
                 <pb n="32" source="Varios_438_32.jpg" facs="varios/Varios_438_32.jpg"/>
-            
-                <fw type="paginaNum">— 32 —</fw>
+
+              <fw type="paginaNum">— 32 —</fw>
             
               do, partiéndole los pulmones y dejándolo muerto en el acto.</p>
-              <p><lb/>Después de
+            <p>
+              <lb/>Después de
               cometido este infame y alevoso asesinato, co-<lb/>rrió á su casa, donde llegó un
               cuarto de hora después.</p>
-              <p><lb/>Atrajo con engaños á su mujer á las habitaciones
+            <p>
+              <lb/>Atrajo con engaños á su mujer á las habitaciones
               inte-<lb/>riores, y apenas penetró en la alcoba, le tiró tan tremendo<lb/>tajo, que
               casi le cercenó la cabeza.</p>
-              <p><lb/>Cayó la pobre María sin exhalar un grito, y aquella
+            <p>
+              <lb/>Cayó la pobre María sin exhalar un grito, y aquella
               fiera<lb/>se arrojó sobre su cadáver, mutilándole de una manera tan<lb/>horrorosa
               que la pluma se resiste á describirlo.</p>
-              <p><lb/>Con la mayor calma se mudó de ropas,
-              abandonó la casa,<lb/>dejándola cerrada con llave, se metió en la sierra, por
+            <p>
+              <lb/>Con la mayor calma se mudó de ropas,
+              abandonó la casa,<lb/>dejándola cerrada con llave, se metió en la <name>sierra</name>, por
               donde<lb/>vagó algunos días, hasta encontrarse con la partida de Mel-<lb/>chor, que
               le admitió en fuerza de ruegos y súplicas.</p>
-              <p><lb/>Su carácter taciturno y sombrío le
+            <p>
+              <lb/>Su carácter taciturno y sombrío le
               hacía repulsivo, y no<lb/>tenía un solo amigo en la partida.</p>
           </div>
-            
           <div type="parte" n="8">
             <head type="titulo_parte">VIII</head>
-            
-              <p><lb/>Diez meses después prendieron á Melchor, mientras dor-<lb/>mía la siesta en
+            <p>
+              <lb/>Diez meses después prendieron á Melchor, mientras dor-<lb/>mía la siesta en
               un cortijo de las cercanías de Córdoba, ven-<lb/>dido por su nuevo teniente <hi rend="cursiva">Poca
               pena</hi> por la suma de cinco<lb/>mil ducados y su indulto.</p>
-              <p><lb/>Le trasladaron á Sevilla,
+            <p>
+              <lb/>Le trasladaron á <name>Sevilla</name>,
               escoltado por numerosa fuerza<lb/>de caballería; le metieron en la cárcel y en el
               calabozo más<lb/>seguro mientras se actuaba la causa, que se sustanció con<lb/>una
               rapidez pasmosa, condenándole á sufrir la pena de<lb/>muerte en la horca. Cuando
               fueron á buscarle la mañana<lb/>que debía ingresar en la capilla, le encontraron
               muerto so-<lb/>bre la paja que le servía de lecho.</p>
-              <p><lb/>Se murmuró mucho tiempo,
+            <p>
+              <lb/>Se murmuró mucho tiempo,
               diciéndose que sus parien-<lb/>tes le proporcionaron un veneno para que se librara de
               aque-<lb/>lla muerte ignominiosa.</p>
-              <trailer>FIN</trailer>
-            </div>
+            <trailer>FIN</trailer>
+          </div>
         </div>
       </div>
     </body>

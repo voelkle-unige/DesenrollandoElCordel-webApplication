@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -70,7 +84,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +114,20 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -134,8 +163,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-23" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-23" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1244,12 +1272,14 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_213_1.jpg" facs="varios/Varios_213_1.jpg"/>
-        
+
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>LOS DIEZ MANDAMIENTOS AMOROSOS</head>
-          <head type="subtitulo_parte"><lb/>Y VARIOS TROVOS PARA CANTAR LOS AFICIONADOS</head>
-          
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LOS DIEZ MANDAMIENTOS AMOROSOS</head>
+          <head type="subtitulo_parte">
+            <lb/>Y VARIOS TROVOS PARA CANTAR LOS AFICIONADOS</head>
           <lg>
             <l rend="indent">Señora, los mandamientos</l>
             <l>aquí los voy á cantar,</l>
@@ -1291,11 +1321,10 @@
             <l>si otro galán te gozara</l>
             <l>yo no sé lo que haría.</l>
           </lg>
-          
+
           <pb n="2" source="Varios_213_2.jpg" facs="varios/Varios_213_2.jpg"/>
-          
+
           <fw type="paginaNum">— 2 —</fw>
-          
           <lg>
             <head type="titulo_estrofa">VI</head>
             <l rend="indent">En el sexto no he gozado</l>
@@ -1338,10 +1367,9 @@
             <l>contigo me he de casar.</l>
           </lg>
         </div>
-        
         <div n="2">
-          <head type="titulo_trovo" rend="negrita"><lb/>TROVOS</head>
-          
+          <head type="titulo_trovo" rend="negrita">
+            <lb/>TROVOS</head>
           <lg rend="cursiva">
             <l rend="indent">Adiós luna de la noche</l>
             <l>adiós, sol del mediodía</l>
@@ -1401,11 +1429,10 @@
             <l>para olvidarte de mí,</l>
             <l>yo siempre te iré detrás</l>
             <l>y si quieres darme el sí</l>
-            
+
             <pb n="3" source="Varios_213_3.jpg" facs="varios/Varios_213_3.jpg"/>
-            
+
             <fw type="paginaNum">— 3 —</fw>
-            
             <l rend="cursiva">no me hagas penar más.</l>
           </lg>
           <lg>
@@ -1464,7 +1491,7 @@
           </lg>
           <lg>
             <l rend="indent">Olvidarte nunca puedo</l>
-            <l>aunque me vaya á Roma,</l>
+            <l>aunque me vaya á <name>Roma</name>,</l>
             <l>sabes que yo te venero,</l>
             <l>ojos de dulce paloma,</l>
             <l rend="cursiva">seré tu amor verdadero.</l>
@@ -1520,11 +1547,10 @@
           <lg rend="cursiva">
             <l rend="indent">Jamás el olvido en mí</l>
             <l>tendra la menor cabida</l>
-            
+
             <pb n="4" source="Varios_213_4.jpg" facs="varios/Varios_213_4.jpg"/>
-            
+
             <fw type="paginaNum">— 4 —</fw>
-            
             <l>así mientras tenga vida</l>
             <l>te amaré con frenesí.</l>
           </lg>
@@ -1624,12 +1650,16 @@
             <l>nadie tiene, lo confieso;</l>
             <l rend="cursiva">hermosa con tal primor.</l>
           </lg>
-          <p><lb/>(Es PROPIEDAD).</p>
+          <p>
+            <lb/>(Es PROPIEDAD).</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">Se hallará de venta en casa los sucesores de A. Bosch, calle Bou de la Plaza Nueva, 13</hi> </p>
-          <p><lb/>Tipografía Española, calle del Hospital, núm., 87 —BARCELONA.</p>
+          <p>
+            <lb/>
+            <hi rend="cursiva">Se hallará de venta en casa los sucesores de A. Bosch, calle Bou de la Plaza Nueva, 13</hi>
+          </p>
+          <p>
+            <lb/>Tipografía Española, calle del Hospital, núm., 87 —BARCELONA.</p>
         </div>
       </div>
     </body>

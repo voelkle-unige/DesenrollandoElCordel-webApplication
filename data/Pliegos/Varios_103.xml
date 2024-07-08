@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -78,7 +92,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -113,6 +128,50 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q928">
+            <placeName key="Filipinas">Filipinas</placeName>
+            <location>
+              <geo>12 123</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q15088">
+            <placeName key="Tarragona">Tarragona</placeName>
+            <location>
+              <geo>41.1175 1.25277777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q904212">
+            <placeName key="Fraga">Fraga</placeName>
+            <location>
+              <geo>41.5206796 0.3516343</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q985269">
+            <placeName key="El_Escorial">El Escorial</placeName>
+            <location>
+              <geo>40.581608 -4.125124</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8717">
+            <placeName key="Sevilla">Sevilla</placeName>
+            <location>
+              <geo>37.383333333333 -5.9833333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8818">
+            <placeName key="Valencia">Valencia</placeName>
+            <location>
+              <geo>39.47 -0.376388888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q10305">
+            <placeName key="Zaragoza">Zaragoza</placeName>
+            <location>
+              <geo>41.65 -0.88333333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -148,8 +207,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1079,16 +1137,20 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_103_1.jpg" facs="varios/Varios_103_1.jpg"/>
 
           <div type="parte" n="1">
-            <head type="primer_titulo"><lb/><hi rend="negrita">DOCTOR DON TIXERAS.</hi><lb/>RECEPTA
+            <head type="primer_titulo">
+              <lb/>
+              <hi rend="negrita">DOCTOR DON TIXERAS.</hi>
+              <lb/>RECEPTA
               NOVA</head>
-            <head type="subtitulo_parte"><lb/>Pera curar de mal de Mare, de Orina, de Migranya,
+            <head type="subtitulo_parte">
+              <lb/>Pera curar de mal de Mare, de Orina, de Migranya,
               de<lb/>Poagre, de Orella y altres diferents.<lb/>Vá á continuació la de D.
               Cristófol, que es prespectiva de totas las enfer¬<lb/>metats, y método pera viurer
               alegre y allargar la vida fins á la mort.</head>
-
             <l rend="indent">Primerament pendrás las set Cabretas,</l>
             <l>peladas, esmocadas y ben netas:</l>
             <l>Del gran carro del Sol quatre freixuras</l>
@@ -1100,14 +1162,13 @@
             <l>Quatre dents y vuit unglas de una araña,</l>
             <l>y de mestre Llibori la gran manya,</l>
             <l>ab dos unsas de orins de set gallinas</l>
-            <l>vingudas de las islas Filipinas:</l>
+            <l>vingudas de las <name>islas Filipinas</name>:</l>
             <l>Despullada una mosca tota núa,</l>
             <l>arréncali lo raba de la cúa;</l>
 
             <pb n="2" source="Varios_103_2.jpg" facs="varios/Varios_103_2.jpg"/>
 
             <fw type="paginaNum">—2—</fw>
-
             <l>y ab set dracmas de llet de lloca blanca,</l>
             <l>y del arbre de Adam un tros de branca,</l>
             <l>ho posarás tot dins una caldera,</l>
@@ -1192,17 +1253,18 @@
             <l>aplícau en lo tercer de Desembre,</l>
             <l>ahont ton cos tindrá major dolencia,</l>
             <l>y veurás del remey la esperiencia.</l>
-
-            <p rend="cursiva"><lb/>Es propietat.</p>
+            <p rend="cursiva">
+              <lb/>Es propietat.</p>
           </div>
-
           <div type="parte" n="2">
+
             <pb n="3" source="Varios_103_3.jpg" facs="varios/Varios_103_3.jpg"/>
 
-            <head type="primer_titulo"><lb/>RECEPTA</head>
-            <head type="subtitulo"><lb/>pera curar de tots mals, y preservativa de totas
+            <head type="primer_titulo">
+              <lb/>RECEPTA</head>
+            <head type="subtitulo">
+              <lb/>pera curar de tots mals, y preservativa de totas
               enfermetats,<lb/>viurer alegre', y allargar la vida fns á la mort.</head>
-
             <p rend="indent">
               <lb/>Pendrás un gros manat de arrels de <lb/>Alegría; dos lliuras de Poch se m' en
               <lb/>dóna; dos dotzenas de fullas de Bé li <lb/>vaga; un sou de Bella basca em fá;
@@ -1213,8 +1275,8 @@
               brotets <lb/>de qui ha fet avuy fará demá; quatre <lb/>punyats de Canteu, canteu;
               onze es¬ <lb/>crúpols de Tarragona manxan: catorze <lb/>dracmas de Si tens pa sech
               feste sopas.</p>
-
-            <p rend="indent"><lb/>Tot aixó ho escalfarás rient, y ho <lb/>posarás en una olla á
+            <p rend="indent">
+              <lb/>Tot aixó ho escalfarás rient, y ho <lb/>posarás en una olla á
               bullir sota lo cap¬ <lb/>sal del llit, y te ajeurás, posantni lo cap <lb/>y lo
               endemá ho treurás, y quant conei <lb/>xerás que han bullitlosdits ingredients
               <lb/>de síngular y esperimentada virtut, hi <lb/>mesclarás cosa de una pesetade la
@@ -1224,26 +1286,26 @@
               agradia que 's passegia, ab <lb/>mitja pesseta de confecció de lo que no <lb/>es cou
               per tú que 's cremia; tot barrei¬ <lb/>jat, ab dos mitadellas de Dexaume está <lb/>y
               dos diners de Déixau correr.</p>
-
-            <p rend="indent"><lb/>Després passeijat ab gent de bon <lb/>humor, menja bé, y beu
+            <p rend="indent">
+              <lb/>Després passeijat ab gent de bon <lb/>humor, menja bé, y beu
               millor, y tot <lb/>aixó en qualsevol hora te gustia, y <lb/>quant estigas cansat, per
               no estar <lb/>ociós, cálat á jáurer; de esta medicina <lb/>ne pendrás á lo menos
               tres vegadas <lb/>al dia.</p>
-
-            <p rend="indent"><lb/>Advertinte, que si algú te vé á bus¬ <lb/>car algun enredo ó
+            <p rend="indent">
+              <lb/>Advertinte, que si algú te vé á bus¬ <lb/>car algun enredo ó
               pesar, antes de es¬ <lb/>plicarse, dígali que estás ab remeys, <lb/>y sens acabarlo
               de escoltar, despát¬ <lb/>xal á la fresca, altrament dita Recep¬ <lb/>ta no fará
               efecte.</p>
           </div>
-
           <div type="parte" n="3">
+
             <pb n="4" source="Varios_103_4.jpg" facs="varios/Varios_103_4.jpg"/>
 
             <fw type="paginaNum">—4—</fw>
-
-            <head type="titulo_parte"><lb/>LICENCIA PARA VENTOSEAR.</head>
-
-            <p><lb/>Nos el Dr. D. Canuto de Montan¬ <lb/>chez, Catedrático de medicina en la
+            <head type="titulo_parte">
+              <lb/>LICENCIA PARA VENTOSEAR.</head>
+            <p>
+              <lb/>Nos el Dr. D. Canuto de Montan¬ <lb/>chez, Catedrático de medicina en la
               <lb/>Universidad de Bésamelanca, y Pro¬ <lb/>tomédico de estos Reinos, á todos los
               <lb/>que la presente vieren, salud y sarna <lb/>para rascar, etc., sabed: Que ante Nos
               <lb/>pareció la parte de <lb/>diciendo que padece humores flatulen¬ <lb/>tos,
@@ -1267,22 +1329,24 @@
               el <lb/>cuerno, el leon la mano, el cimborio <lb/>del Escorial, la Giralda de Sevilla,
               el <lb/>Miguelete de Valencia, la torre nueva <lb/>de Zaragoza, sal y vinagre y el
               reme¬ <lb/>dio del fraile con todas las demás <lb/>cláusulas del caso.</p>
-
-            <p><lb/>Dada en la secreta sala de nuestro <lb/>Palacio, firmada de nuestro nombre.
+            <p>
+              <lb/>Dada en la secreta sala de nuestro <lb/>Palacio, firmada de nuestro nombre.
               <lb/>sellada con el sello de nuestro Oficio, <lb/>y refrendada de nuestro infrascrito
               <lb/>Secretario á 3l del mes de los Nabos <lb/>del corriente año.</p>
-
-            <p><lb/>Dr. D. <hi rend="cursiva">Canuto de Montanchez.</hi><lb/>Por mandato de Lic.
-              Sóplame acá, <lb/><hi rend="cursiva">Toribio Chupeta</hi>.</p>
-
+            <p>
+              <lb/>Dr. D. <hi rend="cursiva">Canuto de Montanchez.</hi>
+              <lb/>Por mandato de Lic.
+              Sóplame acá, <lb/>
+              <hi rend="cursiva">Toribio Chupeta</hi>.</p>
             <trailer>FIN.</trailer>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Se hallará de venta en casa de los sucesores de Antonio Bosch, calle del Bou de la
+          <p>
+            <lb/>Se hallará de venta en casa de los sucesores de Antonio Bosch, calle del Bou de la
             Plaza Nueva, núm. 13. tienda.</p>
-          <p><lb/>Barcelona.— Tipografía Española, Hospital, 87. —1886.</p>
+          <p>
+            <lb/>Barcelona.— Tipografía Española, Hospital, 87. —1886.</p>
         </div>
       </div>
     </body>

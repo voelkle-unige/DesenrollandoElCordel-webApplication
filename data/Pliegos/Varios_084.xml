@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +114,20 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1767001">
+            <placeName key="Roselló">Roselló</placeName>
+            <location>
+              <geo>41.6959 0.596032</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5822588">
+            <placeName key="El_Muyo">El Muyo</placeName>
+            <location>
+              <geo>-3.317222222 41.283888888</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -134,8 +163,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-26" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-26" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1315,14 +1343,16 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_084_1.jpg" facs="varios/Varios_084_1.jpg"/>
 
           <div n="1">
-            <head type="primer_titulo"><lb/>CANSÓ NOVA<lb/>DE LA<lb/>VIDA Y COSTUMS DELS
+            <head type="primer_titulo">
+              <lb/>CANSÓ NOVA<lb/>DE LA<lb/>VIDA Y COSTUMS DELS
               PAGESOS</head>
-
             <lg>
-              <head rend="negrita"><lb/>Coro</head>
+              <head rend="negrita">
+                <lb/>Coro</head>
               <l rend="cursiva">Lo pagés trevalla</l>
               <l rend="cursiva">de dia y de nit;</l>
               <l rend="cursiva">menja pa moreno</l>
@@ -1656,7 +1686,8 @@
               <l rend="indent">L' endemá han de aná á matinas</l>
               <l>per podé guanyá 'l jornal,</l>
               <l>que ab los amos no hi ha escusas,</l>
-              <l><hi rend="cursiva">toma el pan</hi> y deixa 'l ral.</l>
+              <l>
+                <hi rend="cursiva">toma el pan</hi> y deixa 'l ral.</l>
             </lg>
             <lg>
               <l rend="indent">Aqueixa es la vida triste</l>
@@ -1684,12 +1715,12 @@
             </lg>
             <trailer>FÍ.</trailer>
           </div>
-
           <div n="2">
+
             <pb n="4" source="Varios_084_4.jpg" facs="varios/Varios_084_4.jpg"/>
 
-            <head type="titulo_cancion"><lb/>CANSÓ DE LA PASTORA</head>
-
+            <head type="titulo_cancion">
+              <lb/>CANSÓ DE LA PASTORA</head>
             <lg>
               <l rend="indent">Mon pare m' ha casada,</l>
               <l>m' ha dada á un pastó,</l>
@@ -1697,7 +1728,8 @@
               <l>Deu men guart de pitjós.</l>
             </lg>
             <lg rend="cursiva">
-              <head type="titulo_estrofa"><lb/>Coro.</head>
+              <head type="titulo_estrofa">
+                <lb/>Coro.</head>
               <l rend="indent">Jo que no l' aymo gayre,</l>
               <l>jo que no l' aymo, no,</l>
               <l>dich que no l' aymo gayre</l>
@@ -1709,28 +1741,32 @@
               <l>ell beu de la aygua fresca,</l>
               <l>y jo ví del Rosselló.</l>
             </lg>
-            <p rend="cursiva"><lb/>Coro.—Jo que no l' aymo gare, etc.</p>
+            <p rend="cursiva">
+              <lb/>Coro.—Jo que no l' aymo gare, etc.</p>
             <lg>
               <l rend="indent">En derm ab la samarra,</l>
               <l>jo ab llansols de cutó;</l>
               <l>ell menja sopa ab oli,</l>
               <l>jo ab caldo de moltó.</l>
             </lg>
-            <p rend="cursiva"><lb/>Coro.—Jo que no l' aymo gare, etc.</p>
+            <p rend="cursiva">
+              <lb/>Coro.—Jo que no l' aymo gare, etc.</p>
             <lg>
               <l rend="indent">Se pensa que estich sola,</l>
               <l>sola non estich, no;</l>
               <l>una estoneta ab lo Batlle,</l>
               <l>y un altre ab lo Regidó.</l>
             </lg>
-            <p rend="cursiva"><lb/>Coro.—Jo que no l' aymo gare, etc.</p>
+            <p rend="cursiva">
+              <lb/>Coro.—Jo que no l' aymo gare, etc.</p>
             <lg>
               <l rend="indent">Pastoras de ma esfera</l>
               <l>no vulgau cap pastó,</l>
               <l>que encara que cumpliu</l>
               <l>fan correr lo bastó.</l>
             </lg>
-            <p rend="cursiva"><lb/>Coro.—Jo que no l' aymo gare, etc.</p>
+            <p rend="cursiva">
+              <lb/>Coro.—Jo que no l' aymo gare, etc.</p>
             <lg>
               <l rend="indent">No poseu vostre amor</l>
               <l>en rassa de pastó,</l>
@@ -1738,19 +1774,19 @@
               <l>quedau com era jo.</l>
             </lg>
             <lg rend="cursiva">
-              <head type="titulo_estrofa"><lb/>Coro.</head>
+              <head type="titulo_estrofa">
+                <lb/>Coro.</head>
               <l>Jo que no l' aymo gayre,</l>
               <l>jo que no l' aymo, no,</l>
               <l>dich que no l' aymo gayre</l>
               <l>la vida del pastó.</l>
             </lg>
-
             <trailer rend="negrita">FÍ.</trailer>
           </div>
         </div>
-
         <div type="colofon">
-          <p><lb/>Barcelona.— Imps. de Llorens, Palma de Santa Catarina, 6,</p>
+          <p>
+            <lb/>Barcelona.— Imps. de Llorens, Palma de Santa Catarina, 6,</p>
         </div>
       </div>
     </body>

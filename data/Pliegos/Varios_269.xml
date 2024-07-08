@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -71,7 +85,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -103,6 +118,7 @@
             </acquisition>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -138,8 +154,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1052,14 +1067,18 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_269_1.jpg" facs="varios/Varios_269_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>LA LIGAS DE MI MORENA.</head>
-          <head type="subtitulo_parte" rend="negrita"><lb/>Nueva cancion que tanto aplauso ha
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA LIGAS DE MI MORENA.</head>
+          <head type="subtitulo_parte" rend="negrita">
+            <lb/>Nueva cancion que tanto aplauso ha
             merecido<lb/>de los señores aficionados. La cual va aña-<lb/>dida con la nueva y
-            graciosa<lb/>cancion titulada: <lb/><hi rend="negrita">LA FLOR DE LA CANELA.</hi></head>
-
+            graciosa<lb/>cancion titulada: <lb/>
+            <hi rend="negrita">LA FLOR DE LA CANELA.</hi>
+          </head>
           <l rend="indent">No te pueo yo ecir,</l>
           <l>Colasa ; lo que me gusta</l>
           <l>sobre una pierna robusta</l>
@@ -1159,129 +1178,133 @@
           <l>echaremos la caena,</l>
           <l>y diré: vivan, salero,</l>
           <l>las ligas de mi morena.</l>
-
           <trailer rend="negrita">FIN.</trailer>
         </div>
 
         <pb n="3" source="Varios_269_3.jpg" facs="varios/Varios_269_3.jpg"/>
 
         <div n="2">
-          <head type="titulo_cancion"><lb/><hi rend="negrita">LA FLOR DE LA
-              CANELA.</hi><lb/>DEDICADA<lb/><hi rend="negrita">A UNA MORENA SANDUNGUERA.</hi></head>
-          
-            <l rend="indent">Si me pierdo, que me busquen</l>
-            <l>hácia el sol del medio dia,</l>
-            <l>donde nacen las morenas</l>
-            <l>y la sal de Dios se cria.</l>
-            <l rend="indent">Ay! morena,</l>
-            <l>ay morena de mi corazon,</l>
-            <l>un beso y me aparto,</l>
-            <l>dámelo por Dios.</l>
-            <l rend="indent">Todo el hombre que se casa</l>
-            <l>con una muger bonita,</l>
-            <l>hasta que llega á ser vieja,</l>
-            <l>el susto no se le quita.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Todo el hombre que se muere</l>
-            <l>sin tratar á una morena,</l>
-            <l>se va de este mundo al otro</l>
-            <l>sin saber lo que es canela.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Los ojos de mi morena</l>
-            <l>son lo mismo que mis males,</l>
-            <l>grandes como mis fatigas,</l>
-            <l>negros, como mis pesares.</l>
-            <l rend="indent">Ay ! morena, etc.</l>
-            <l rend="indent">Con el aire y el meneo</l>
-            <l>que acostumbras á llevar ,</l>
-            <l>á los hombres mas honestos</l>
-          
+          <head type="titulo_cancion">
+            <lb/>
+            <hi rend="negrita">LA FLOR DE LA
+              CANELA.</hi>
+            <lb/>DEDICADA<lb/>
+            <hi rend="negrita">A UNA MORENA SANDUNGUERA.</hi>
+          </head>
+          <l rend="indent">Si me pierdo, que me busquen</l>
+          <l>hácia el sol del medio dia,</l>
+          <l>donde nacen las morenas</l>
+          <l>y la sal de Dios se cria.</l>
+          <l rend="indent">Ay! morena,</l>
+          <l>ay morena de mi corazon,</l>
+          <l>un beso y me aparto,</l>
+          <l>dámelo por Dios.</l>
+          <l rend="indent">Todo el hombre que se casa</l>
+          <l>con una muger bonita,</l>
+          <l>hasta que llega á ser vieja,</l>
+          <l>el susto no se le quita.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Todo el hombre que se muere</l>
+          <l>sin tratar á una morena,</l>
+          <l>se va de este mundo al otro</l>
+          <l>sin saber lo que es canela.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Los ojos de mi morena</l>
+          <l>son lo mismo que mis males,</l>
+          <l>grandes como mis fatigas,</l>
+          <l>negros, como mis pesares.</l>
+          <l rend="indent">Ay ! morena, etc.</l>
+          <l rend="indent">Con el aire y el meneo</l>
+          <l>que acostumbras á llevar ,</l>
+          <l>á los hombres mas honestos</l>
+
           <pb n="4" source="Varios_269_4.jpg" facs="varios/Varios_269_4.jpg"/>
-          
-            <l>los haces tu chochear.</l>
-            <l rend="indent">Ay ! morena, etc.</l>
-            <l rend="indent">Con tu cuerpo tan cachondo</l>
-            <l>y tu cara tan gitana,</l>
-            <l>me entorpeces los sentidos</l>
-            <l>y me haces tanta gracia!</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">A mi morena con gusto</l>
-            <l>la digo: vente, pichona,</l>
-            <l>me darás un fuerte abrazo</l>
-            <l>y un besito con tu boca.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">A Bellecas cierta tarde</l>
-            <l>con mi morena me fuí;</l>
-            <l>lo que pasó en el camino,</l>
-            <l>yo no lo puedo decir.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Mi morenilla, con gracia ,</l>
-            <l>me dice : vente chaval,</l>
-            <l>nos iremos los dos juntos</l>
-            <l>á por tomillo al canal.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Con tu terne tan hermoso,</l>
-            <l>yo no sé lo que me dá</l>
-            <l>que parece que me muero,</l>
-            <l>y no es muerte natural.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Toditas las morenillas</l>
-            <l>se jalean cuando andan,</l>
-            <l>y por firme que sea un hombre,</l>
-            <l>se encandila y se ablanda.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Mi morena, cuando sale</l>
-            <l>alguna vez de paseo,</l>
-            <l>si se ofrece alguna broma</l>
-            <l>su dinero es el primero.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Donde mi morena entra</l>
-            <l>no es casa de maliciar,</l>
-            <l>que son damas cortesanas</l>
-            <l>con muchísima calidad.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Mi gitana no es viciosa,</l>
-            <l>solo le gusta el fumar,</l>
-            <l>el beber vino, y los naipes</l>
-            <l>con caballeros jugar.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Cuando mi morena dá</l>
-            <l>con algunos majaderos,</l>
-            <l>dice: dame á mí el parné,</l>
-            <l>y dejarse de apaleo.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Mi morena, si se encuentra</l>
-            <l>con algunos lechuguinos,</l>
-            <l>si no la enseñan la plata,</l>
-            <l>los dice : vayan al limbo.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Si á los toros ó al teatro</l>
-            <l>alguna vez la convidan,</l>
-            <l>el convite no desprecia,</l>
-            <l>y les dá la entretenida.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Cuando sale de los toros</l>
-            <l>le dice á su camarada,</l>
-            <l>á comer chuletas vamos,</l>
-            <l>y despues... hasta mañana.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Vivan todas las morenas,</l>
-            <l>viva su garbo y salero,</l>
-            <l>viva su cuerpo bonito</l>
-            <l>y su talle sandunguero.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l rend="indent">Vivan los ojos hermosos</l>
-            <l>que parecen dos luceros;</l>
-            <l>cuando me miran me matan</l>
-            <l>y en no viéndolos me muero.</l>
-            <l rend="indent">Ay! morena, etc.</l>
-            <l>ay morena de mi corazon, etc.</l>
+
+          <l>los haces tu chochear.</l>
+          <l rend="indent">Ay ! morena, etc.</l>
+          <l rend="indent">Con tu cuerpo tan cachondo</l>
+          <l>y tu cara tan gitana,</l>
+          <l>me entorpeces los sentidos</l>
+          <l>y me haces tanta gracia!</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">A mi morena con gusto</l>
+          <l>la digo: vente, pichona,</l>
+          <l>me darás un fuerte abrazo</l>
+          <l>y un besito con tu boca.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">A Bellecas cierta tarde</l>
+          <l>con mi morena me fuí;</l>
+          <l>lo que pasó en el camino,</l>
+          <l>yo no lo puedo decir.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Mi morenilla, con gracia ,</l>
+          <l>me dice : vente chaval,</l>
+          <l>nos iremos los dos juntos</l>
+          <l>á por tomillo al canal.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Con tu terne tan hermoso,</l>
+          <l>yo no sé lo que me dá</l>
+          <l>que parece que me muero,</l>
+          <l>y no es muerte natural.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Toditas las morenillas</l>
+          <l>se jalean cuando andan,</l>
+          <l>y por firme que sea un hombre,</l>
+          <l>se encandila y se ablanda.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Mi morena, cuando sale</l>
+          <l>alguna vez de paseo,</l>
+          <l>si se ofrece alguna broma</l>
+          <l>su dinero es el primero.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Donde mi morena entra</l>
+          <l>no es casa de maliciar,</l>
+          <l>que son damas cortesanas</l>
+          <l>con muchísima calidad.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Mi gitana no es viciosa,</l>
+          <l>solo le gusta el fumar,</l>
+          <l>el beber vino, y los naipes</l>
+          <l>con caballeros jugar.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Cuando mi morena dá</l>
+          <l>con algunos majaderos,</l>
+          <l>dice: dame á mí el parné,</l>
+          <l>y dejarse de apaleo.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Mi morena, si se encuentra</l>
+          <l>con algunos lechuguinos,</l>
+          <l>si no la enseñan la plata,</l>
+          <l>los dice : vayan al limbo.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Si á los toros ó al teatro</l>
+          <l>alguna vez la convidan,</l>
+          <l>el convite no desprecia,</l>
+          <l>y les dá la entretenida.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Cuando sale de los toros</l>
+          <l>le dice á su camarada,</l>
+          <l>á comer chuletas vamos,</l>
+          <l>y despues... hasta mañana.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Vivan todas las morenas,</l>
+          <l>viva su garbo y salero,</l>
+          <l>viva su cuerpo bonito</l>
+          <l>y su talle sandunguero.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l rend="indent">Vivan los ojos hermosos</l>
+          <l>que parecen dos luceros;</l>
+          <l>cuando me miran me matan</l>
+          <l>y en no viéndolos me muero.</l>
+          <l rend="indent">Ay! morena, etc.</l>
+          <l>ay morena de mi corazon, etc.</l>
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona: Imp. J. Tauló.—1851.</p>
-          <p><lb/>Véndese en casa Juan Llorens, calle de la Palma de Sta. Catalina.</p>
+          <p>
+            <lb/>Barcelona: Imp. J. Tauló.—1851.</p>
+          <p>
+            <lb/>Véndese en casa Juan Llorens, calle de la Palma de Sta. Catalina.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +109,12 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1">
+            <placeName key="torre_de_San_Juan">Torre de San Juan</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +150,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-09" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-09" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1143,12 +1163,17 @@
   <text>
     <body>
       <div>
-        <pb n="1" source="Varios_198_1.jpg" facs="varios/Varios_198_1.jpg"/>
-        <div>
-          <head type="primer_titulo"><lb/>LA<hi rend="negrita"><lb/>AVELLANERA<lb/>Y EL
-              LICENCIADO.</hi></head>
-          <head type="subtitulo" rend="negrita"><lb/>Diálogo entre <hi rend="cursiva">Perico y Manuela</hi>.</head>
 
+        <pb n="1" source="Varios_198_1.jpg" facs="varios/Varios_198_1.jpg"/>
+
+        <div>
+          <head type="primer_titulo">
+            <lb/>LA<hi rend="negrita">
+              <lb/>AVELLANERA<lb/>Y EL
+              LICENCIADO.</hi>
+          </head>
+          <head type="subtitulo" rend="negrita">
+            <lb/>Diálogo entre <hi rend="cursiva">Perico y Manuela</hi>.</head>
           <l rend="indent">Gracias á Dios ya he cumplido ;</l>
           <l>Ya la licencia he tomado ;</l>
           <l>Olvidando lo pasado</l>
@@ -1165,7 +1190,7 @@
           <l>Como pagaron la entrada,</l>
 
           <pb n="2" source="Varios_198_2.jpg" facs="varios/Varios_198_2.jpg"/>
-          
+
           <l>Y es pretension excusada</l>
           <l>El solicitar favor.</l>
           <l>Soldado, cabo y sargento</l>
@@ -1191,7 +1216,7 @@
           <l>Que ya para dicha mia</l>
           <l>Estoy en el paraiso.</l>
           <l>Pues la punta ya diviso</l>
-          <l>De la torre de San Juan.</l>
+          <l>De la <name>torre de San Juan</name>.</l>
           <sp>
             <speaker rend="cursiva">Manuela.</speaker>
             <l>Avellanitas yo vendo,</l>
@@ -1303,9 +1328,9 @@
             <l>Alegremente viví,</l>
             <l>Soñando siempre tu amor.</l>
           </sp>
-          
+
           <pb n="3" source="Varios_198_3.jpg" facs="varios/Varios_198_3.jpg"/>
-          
+
           <sp>
             <speaker rend="cursiva">Per.—</speaker>
             <l>Y qué ahora no me amas ?</l>
@@ -1424,9 +1449,9 @@
             <l>Que otro se haya puesto ya</l>
             <l>Pero con todo, Manuela</l>
             <l>Quiero probarte mi aprecio :</l>
-            
+
             <pb n="4" source="Varios_198_4.jpg" facs="varios/Varios_198_4.jpg"/>
-            
+
             <l>Si tu marido, el muy necio</l>
             <l>Llega á tocarte ni así,</l>
             <l>Le dirás que yo te he dicho,</l>
@@ -1490,10 +1515,12 @@
           </lg>
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="productos_a_la_venta">
-          <head rend="negrita"><lb/>CANCIONES PUBLICADAS EN EL CANTOR DE LOS AMORES.</head>
-          <p><lb/><hi rend="cursiva">Núm</hi>. 1.Ayes del corazon.—La tumba ue Elisa.—A Lelia. <hi rend="cursiva">Núm</hi>. 2. Las Ventas de
+          <head rend="negrita">
+            <lb/>CANCIONES PUBLICADAS EN EL CANTOR DE LOS AMORES.</head>
+          <p>
+            <lb/>
+            <hi rend="cursiva">Núm</hi>. 1.Ayes del corazon.—La tumba ue Elisa.—A Lelia. <hi rend="cursiva">Núm</hi>. 2. Las Ventas de
             Cárde- <lb/>nas —La Pinturera. La Mantilla de Tira.—Juanita. <hi rend="cursiva">Núm</hi>. 3. Rosendo á su
             amada Luisita.— <lb/>Luisita á su rendido amante.—Lamentos de Anita. <hi rend="cursiva">Núm</hi>. 4. E Panteon
             feliz.—A Elvira.— <lb/>Amores de Alfredo y Elvira. <hi rend="cursiva">Núm</hi>. 5. ¡ El Angel del cielo
@@ -1507,9 +1534,9 @@
             (americana).— Lolita la Marinera (americana) <hi rend="cursiva">Núm</hi>. 15. Penas de <lb/>amor.—Amores de
             Alfredo y Elvira</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona : Imprenta de LLORENS, Palma de Sta. Catalina. n° 6.</p>
+          <p>
+            <lb/>Barcelona : Imprenta de LLORENS, Palma de Sta. Catalina. n° 6.</p>
         </div>
       </div>
     </body>

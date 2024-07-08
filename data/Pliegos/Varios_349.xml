@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve"/>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Carmona_007.xml">Carmona_007</ref></p>
+            <p>Otra impresión: <ref target="Carmona_007.xml">Carmona_007</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Sucesores de Hernando</publisher>
@@ -65,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +112,30 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q15">
+            <placeName key="África">África</placeName>
+            <location>
+              <geo>21.09375 7.1881</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q24022058">
+            <placeName key="Melilla">Melilla</placeName>
+            <location>
+              <geo>35.29187 -2.9409</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1542411">
+            <placeName key="granada">Granada</placeName>
+            <location>
+              <geo> </geo>
+            </location>
+          </place>
+          <place n="1">
+            <placeName key="San_Antonio">San Antonio</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +171,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1101,13 +1140,14 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_349_1.jpg" facs="varios/Varios_349_1.jpg"/>
-        
+
         <div>
-          <head type="primer_titulo"><lb/>PASILLO<lb/>DEL<lb/>TIO CAMACHO Y EL TIO MATEO.</head>
-          
-          <stage rend="cursiva"><lb/>Salen haciéndose el orracho</stage>
-          
+          <head type="primer_titulo">
+            <lb/>PASILLO<lb/>DEL<lb/>TIO CAMACHO Y EL TIO MATEO.</head>
+          <stage rend="cursiva">
+            <lb/>Salen haciéndose el orracho</stage>
           <sp>
             <speaker rend="cursiva">Mateo.</speaker>
             <l>¿Adónde, tio Camacho,</l>
@@ -1132,9 +1172,9 @@
             <l>podrá ser... ¿pero qué veo?</l>
             <l>¿un hombre con esas barbas</l>
             <l>se me pone á hacer pucheros?</l>
-            
+
             <pb n="2" source="Varios_349_2.jpg" facs="varios/Varios_349_2.jpg"/>
-            
+
             <l>¿qué ha sucedido, qué hay?</l>
           </sp>
           <sp>
@@ -1172,7 +1212,7 @@
             <l>hombre de aquellos tiempos,</l>
             <l>salió por calles y plazas</l>
             <l>con mucho acompañamiento:</l>
-            <l>el Africa vió seis veces,</l>
+            <l>el <name>Africa</name> vió seis veces,</l>
             <l>otras seis estuvo preso:</l>
             <l>¡qué escalamientos que hizo!</l>
             <l>¡como se tragó el tormento</l>
@@ -1269,9 +1309,9 @@
             <l>(callaré que está en adobo)</l>
             <l>con un burro que ha muerto.</l>
           </sp>
-          
+
           <pb n="3" source="Varios_349_3.jpg" facs="varios/Varios_349_3.jpg"/>
-          
+
           <sp>
             <speaker rend="cursiva">Mat.</speaker>
             <l>Si V. quiere que concurra?</l>
@@ -1288,14 +1328,14 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Mat.</speaker>
-            <l>¿Pues no fueron á Melilla?</l>
+            <l>¿Pues no fueron á <name>Melilla</name>?</l>
           </sp>
           <sp>
             <speaker rend="cursiva">Cam.</speaker>
             <l>Sí señor, y se volvieron,</l>
             <l>y han estado por allá</l>
             <l>tan gustosos y contentos,</l>
-            <l>pero sin Granaa no se jallan</l>
+            <l>pero sin <name>Granaa</name> no se jallan</l>
             <l>y se volvieron muy presto;</l>
             <l>los gitanos siempre tienen</l>
             <l>el espíritu andariego.</l>
@@ -1368,10 +1408,10 @@
             <l>y lo mandé á los infiernos</l>
             <l>para mas seguridad;</l>
             <l>por último, entre dos luces,</l>
-            <l>robé en San Antonio el Vie</l>
-            
+            <l>robé en <name>San Antonio</name> el Vie</l>
+
             <pb n="4" source="Varios_349_4.jpg" facs="varios/Varios_349_4.jpg"/>
-            
+
             <l>las rendijas de las cruces</l>
             <l>que ya se estaban cayendo...</l>
           </sp>
@@ -1395,7 +1435,8 @@
             <l>pues ninguno lo que hurta</l>
             <l>lo devuelve en estos tiempos,</l>
             <l>se los dejo á Camachicos,</l>
-            <l>mi mas estimado nieto <stage rend="cursiva">(llora)</stage></l>
+            <l>mi mas estimado nieto <stage rend="cursiva">(llora)</stage>
+            </l>
             <l>á quien siempre he cuidado</l>
             <l>y es mi legítimo heredero.</l>
             <stage rend="cursiva">Deja de leer.</stage>
@@ -1447,9 +1488,9 @@
             <l>el perdon de nuestros yerros.</l>
           </sp>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.— Despacho: Sucesores de Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID.— Despacho: Sucesores de Hernando, Arenal, 11.</p>
         </div>
       </div>
     </body>

@@ -14,6 +14,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -63,7 +77,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -129,8 +144,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-06-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-06-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -941,27 +955,33 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_060_1.jpg" facs="varios/Varios_060_1.jpg"/>
-        
+
         <div>
-          <head type="primer_titulo"><lb/><hi rend="negrita">DIALOGO</hi><lb/>de un padre que aconseja al hijo que se case
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">DIALOGO</hi>
+            <lb/>de un padre que aconseja al hijo que se case
             por<lb/>librarle de la quinta.</head>
-          
           <sp>
             <speaker rend="cursiva">Padre.</speaker>
-            <p><lb/>Hijo mio, ahora mismo acabo de
+            <p>
+              <lb/>Hijo mio, ahora mismo acabo de
             <lb/>leer algunos periódicos, é inútil fue¬
             <lb/>ra descrihirte la tristeza que han cau¬
             <lb/>sado á mi corazon.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hijo.</speaker>
-            <p><lb/>¿Por qué? ¿qué novedad es esa, pa¬
+            <p>
+              <lb/>¿Por qué? ¿qué novedad es esa, pa¬
             <lb/>dre mio?...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Vas á saberlo: han decretado el sor¬
+            <p>
+              <lb/>Vas á saberlo: han decretado el sor¬
             <lb/>teo para la quinta, y como te vas
             <lb/>acercando á la elad de entrar en ella,
             <lb/>será preciso tomar sériamente una
@@ -971,20 +991,22 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>¿Y es eso lo que le dá á V. tanta
+            <p>
+              <lb/>¿Y es eso lo que le dá á V. tanta
             <lb/>pena?...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Sí, hijo mio ; porque la quinta ar¬
+            <p>
+              <lb/>Sí, hijo mio ; porque la quinta ar¬
             <lb/>rebata á los hijos del seno de la fa¬
             <lb/>milia, cubriendo de luto á los des¬
+
             
               <pb n="2" source="Varios_060_2.jpg" facs="varios/Varios_060_2.jpg"/>
-            
+
               <fw type="paginaNum">-2-</fw>
-            
-            <lb/>venturados padres; y así, para li¬
+              <lb/>venturados padres; y así, para li¬
             <lb/>brarme de un disgusto, tal vez inso¬
             <lb/>portable á mis años, me veo precisado
             <lb/>á aconsejarte que tomes en matrimo¬
@@ -994,95 +1016,111 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>No, padre mio; no he nacido yo para
+            <p>
+              <lb/>No, padre mio; no he nacido yo para
             <lb/>casarme.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>¿Y cómo no, siendo el matrimonio
+            <p>
+              <lb/>¿Y cómo no, siendo el matrimonio
             <lb/>una cosa tan útil y necesaria al hom¬
             <lb/>bre?...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Porque la mujer es frágil é incons¬
+            <p>
+              <lb/>Porque la mujer es frágil é incons¬
             <lb/>tante.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>¡Pues qué! ¿temes acaso que te en¬
+            <p>
+              <lb/>¡Pues qué! ¿temes acaso que te en¬
             <lb/>gañe?...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Sí, señor, porque las mujeres son
+            <p>
+              <lb/>Sí, señor, porque las mujeres son
             <lb/>naturalmente malas, y desgraciado el
             <lb/>hombre que de ellas depende.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>¡Mas desgraciado es el hombre que
+            <p>
+              <lb/>¡Mas desgraciado es el hombre que
             <lb/>está sujeto en el rudo ejercicio de las
             <lb/>armas!...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>No tanto como el que es juguete de
+            <p>
+              <lb/>No tanto como el que es juguete de
             <lb/>los caprichos de una mujer, porque
             <lb/>al fin y al cabo es hombre y como á
             <lb/>tal mas compasivo.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Mucho odias á las mujeres, y tal
+            <p>
+              <lb/>Mucho odias á las mujeres, y tal
             <lb/>vez seas el que mas fácilmente caiga
             <lb/>en sus redes ; pues no serias tú el
             <lb/>primero á quien esto ha sucedido.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>La suerte del hombre solo Dios la
+            <p>
+              <lb/>La suerte del hombre solo Dios la
             <lb/>sabe, pero haré lo que sepa para que
             <lb/>no dependa de ellas.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Hijo mio, tú quieres perderme.</p>
+            <p>
+              <lb/>Hijo mio, tú quieres perderme.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Tambien quiere V. perderme á mí,
+            <p>
+              <lb/>Tambien quiere V. perderme á mí,
             <lb/>haciéndome esclavo de la loca vani¬
             <lb/>dad de una mujer.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>No digas eso, porque el matrimonio
+            <p>
+              <lb/>No digas eso, porque el matrimonio
             <lb/>es una institucion sagrada, como lo
             <lb/>son todas las que vienen de Dios.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>No niego que efectivamente es así;
+            <p>
+              <lb/>No niego que efectivamente es así;
             <lb/>pero ¡cuántos trabajos y disgustos no
             <lb/>ocasiona por otra parte la vida de
             <lb/>casado.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Ninguno, si se tiene la suerte de
+            <p>
+              <lb/>Ninguno, si se tiene la suerte de
             <lb/>dar con una mujer buena y hacen¬
             <lb/>dosa.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>¡Ya!... Pero como entre todas no
+            <p>
+              <lb/>¡Ya!... Pero como entre todas no
             <lb/>hay una que valga lo que valen los
             <lb/>hombres!...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>¡Qué blasfemia, hijo mio, qué blas¬
+            <p>
+              <lb/>¡Qué blasfemia, hijo mio, qué blas¬
             <lb/>femia!... ¿lgnoras acaso que la mu¬
             <lb/>jer se regenera con el amor á los
             <lb/>hijos y con los dulces sentimientos de
@@ -1090,22 +1128,25 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Padre, muy difícil lo veo, como no
+            <p>
+              <lb/>Padre, muy difícil lo veo, como no
             <lb/>sea un milagro, porque
             <lg>
-              <l>Arbol que crece torcido,</l>
-              <l>Tarde su tronco endereza.</l>
-            </lg>
+                <l>Arbol que crece torcido,</l>
+                <l>Tarde su tronco endereza.</l>
+              </lg>
             </p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Hijo mio, la mujer es un ángel que
+            <p>
+              <lb/>Hijo mio, la mujer es un ángel que
             <lb/>ha venido á consolar al hombre.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Diga V. lo que quiera; pero á lo que
+            <p>
+              <lb/>Diga V. lo que quiera; pero á lo que
             <lb/>ha venido es á hacernos desgracia¬
             <lb/>dos, porque apenas se casa uno, se
             <lb/>vé agobiado de trabajos y de hijos á
@@ -1115,28 +1156,31 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>En cambio el soltero vive mucho
+            <p>
+              <lb/>En cambio el soltero vive mucho
             <lb/>peor, porque no tiene hijos ni esposa
             <lb/>que enjuguen su llanto en las aflic¬
             <lb/>ciones, y viene á ser lo que un cielo
+
             
               <pb n="3" source="Varios_060_3.jpg" facs="varios/Varios_060_3.jpg"/>
-            
+
               <fw type="paginaNum">—3-</fw>
-            
-            <lb/>sin sol, pradera sin flores y ave sin
+              <lb/>sin sol, pradera sin flores y ave sin
             <lb/>árbol donde hacer su nido.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Si los hombres pudieran leer en la
+            <p>
+              <lb/>Si los hombres pudieran leer en la
             <lb/>cabeza y el corazon de una mujer
             <lb/>como en un libro abierto, ya ve¬
             <lb/>ria V. cuan pocos se casaban.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Pues entonces, segun tú, pronto se
+            <p>
+              <lb/>Pues entonces, segun tú, pronto se
             <lb/>acababa el mundo, porque no ha¬
             <lb/>biendo esposos, no habria padres, y
             <lb/>no habiendo padres, no habria hijos
@@ -1146,99 +1190,116 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Padre, no tugje V. de convencerme,
+            <p>
+              <lb/>Padre, no tugje V. de convencerme,
             <lb/>porque la mujer es un escollo en los
             <lb/>mares de la vida, donde se estrella
             <lb/>el hombre.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>De tí no oigo mas que disparates.
+            <p>
+              <lb/>De tí no oigo mas que disparates.
             <lb/>¡Eres un hombre sin corazon!...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>No se incomode V., padre. La mujer
+            <p>
+              <lb/>No se incomode V., padre. La mujer
             <lb/>es traidora, y lleva consigo falsedad,
             <lb/>é hipocresía.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Te engañas, porque la mujer es
+            <p>
+              <lb/>Te engañas, porque la mujer es
             <lb/>buena como el hombre y mansa como
             <lb/>una oveja.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>¡Qué poco las conoce V.!.. La mujer
+            <p>
+              <lb/>¡Qué poco las conoce V.!.. La mujer
             <lb/>es un gran talento y una gran actriz
             <lb/>para engañar al hombre, si le con¬
             <lb/>viene.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Oye, perverso : ¿en qué te fundas
+            <p>
+              <lb/>Oye, perverso : ¿en qué te fundas
             <lb/>para decir esas barbaridades?...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>En la esperiencia que tengo de ellas
+            <p>
+              <lb/>En la esperiencia que tengo de ellas
             <lb/>mismas aprendida.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>¿De modo que estás resuelto á des¬
+            <p>
+              <lb/>¿De modo que estás resuelto á des¬
             <lb/>preciar mi con sejo?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Enteramente, padre. No quiero ca¬
+            <p>
+              <lb/>Enteramente, padre. No quiero ca¬
             <lb/>sarme.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>¿De manera que me abandonas y tú
+            <p>
+              <lb/>¿De manera que me abandonas y tú
             <lb/>te precipitas voluntariamente al abis¬
             <lb/>mo de la quinta?...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Sí, señor, prefiero ser soldado del
+            <p>
+              <lb/>Sí, señor, prefiero ser soldado del
             <lb/>rey antes que de una mujer.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Serias fatal si habias de convertirte
+            <p>
+              <lb/>Serias fatal si habias de convertirte
             <lb/>en juez de las mujeres. De seguro
             <lb/>que pronto te darian su voto de gra¬
             <lb/>cias.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Padre, es difícil domar á la mujer.</p>
+            <p>
+              <lb/>Padre, es difícil domar á la mujer.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>¡Calla, por Dios, que me horrorizan
+            <p>
+              <lb/>¡Calla, por Dios, que me horrorizan
             <lb/>las estravagancias que salen de esa
             <lb/>boca condenada!...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Pues por poco se alarma V. Todavía
+            <p>
+              <lb/>Pues por poco se alarma V. Todavía
             <lb/>no le he dicho un céntimo de lo que
             <lb/>se merecen las mujeres.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Pad.</speaker>
-            <p><lb/>Ya que, segun veo, es inútil tratar
+            <p>
+              <lb/>Ya que, segun veo, es inútil tratar
             <lb/>de convencerte, te abandono á tu
             <lb/>suerte, y me lavo las manos. Haz lo
             <lb/>que quieras.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Hij.</speaker>
-            <p><lb/>Padre mio, disponga V. en cuerpo y
+            <p>
+              <lb/>Padre mio, disponga V. en cuerpo y
             <lb/>alma de su hijo, como no sea para
             <lb/>casarle; pues estoy muy contento de
             <lb/>haber nacido hombre, y aunque no
@@ -1246,16 +1307,19 @@
             <lb/>so con mujer buena, tampoco ignoro
             <lb/>lo difícil ó imposible que es encon¬
             <lb/>trarla, y como dijo aquel refran:
+
             <pb n="4" source="Varios_060_4.jpg" facs="varios/Varios_060_4.jpg"/>
-            <fw type="paginaNum">—4—</fw>
-            <lb/>Antes no te cases
+
+              <fw type="paginaNum">—4—</fw>
+              <lb/>Antes no te cases
             <lb/>mira lo que haces.
             <lb/>Y si aun no está V. del todo conven¬
             <lb/>cido, allá van unos versos que leí en
             <lb/>un docto libro acerca del matrimo¬
             <lb/>nio:</p>
             <lg>
-              <head type="titulo_estrofa"><lb/>SONETO.</head>
+              <head type="titulo_estrofa">
+                <lb/>SONETO.</head>
               <l rend="indent">Entre muchos que allá se sentenciaban</l>
               <l>A muertes y castigos infinitos,</l>
               <l>Un hombre se encontraba á quien delitos</l>
@@ -1274,14 +1338,15 @@
           </sp>
           <trailer>FIN.</trailer>
         </div>
-        
         <div>
-          <p rend="cursiva"><lb/>(Es propiedad.)</p>
+          <p rend="cursiva">
+            <lb/>(Es propiedad.)</p>
         </div>
-        
         <div type="colofon">
-          <p rend="cursiva"><lb/>Se halla de venta en casa Antonio Bosch, calle del Bou de la Plaza Nueva, núm. 3.</p>
-          <p><lb/>Barcelona.—Imprenta de Narciso Ramirez y C.ª, Pasaje de Escudillers, núm. 4.—1866.</p>
+          <p rend="cursiva">
+            <lb/>Se halla de venta en casa Antonio Bosch, calle del Bou de la Plaza Nueva, núm. 3.</p>
+          <p>
+            <lb/>Barcelona.—Imprenta de Narciso Ramirez y C.ª, Pasaje de Escudillers, núm. 4.—1866.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -106,6 +121,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q10965">
+            <placeName key="Ebro">Ebro</placeName>
+            <location>
+              <geo>43.0375 -4.37</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -141,8 +164,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-24" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-24" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -775,11 +797,12 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_292_1.jpg" facs="varios/Varios_292_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>CANCION<lb/>DEL TROVADOR.</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>CANCION<lb/>DEL TROVADOR.</head>
           <lg>
             <l rend="indent">Un tiempo fué que en cítara sonora</l>
             <l>Gloria y amor el Trovador cantó;</l>
@@ -867,10 +890,9 @@
             <l>Vengo á tus piés á agonizar de amor.</l>
           </lg>
         </div>
-
         <div n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>LEONOR AL TROVADOR.</head>
-
+          <head type="titulo_parte" rend="negrita">
+            <lb/>LEONOR AL TROVADOR.</head>
           <lg>
             <l rend="indent">Cése el llorar, amante de amargura,</l>
             <l>Cése el gemir querido Trovador :</l>
@@ -955,12 +977,11 @@
             <l>Oh Trovador: de tu querido bien.</l>
           </lg>
         </div>
-
         <div n="3">
-          <head type="titulo_estrofa" rend="negrita"><lb/>ESTROFAS.</head>
-
+          <head type="titulo_estrofa" rend="negrita">
+            <lb/>ESTROFAS.</head>
           <lg>
-            <l rend="indent">Camina orillas del Ebro</l>
+            <l rend="indent">Camina orillas del <name>Ebro</name></l>
             <l>Caballero lidiador,</l>
             <l>Puesta en la cuja la lanza</l>
             <l>Que mil contrarios venció.</l>
@@ -991,20 +1012,23 @@
             <l rend="cursiva">Ay ! adios, Leonor,</l>
             <l rend="cursiva">Leonor.</l>
           </lg>
-          
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="productos_a_la_venta">
           <head>CANCIONES PUBLICADAS EN EL CANTOR DE LOS AMORES.</head>
-          <p><lb/><hi rend="cursiva">Núm.</hi> 1. Ayes del corazon.—La tumba de Elisa.—A Lelia. <hi rend="cursiva">Núm.</hi> 2. Las Ventas de Cár-
+          <p>
+            <lb/>
+            <hi rend="cursiva">Núm.</hi> 1. Ayes del corazon.—La tumba de Elisa.—A Lelia. <hi rend="cursiva">Núm.</hi> 2. Las Ventas de Cár-
             <lb/>denas —La Pinturera.—La Mantilla de Tira.—Juanita. <hi rend="cursiva">Núm.</hi> 3. Rosendo á su amada Lui-
             <lb/>sita.—Luisita á su rendido amante.—Lamentos de Anita. <hi rend="cursiva">Núm.</hi> 4. El Panteon feliz.—A
             <lb/>Elvira.—Amores de Alfredo y Elvira. <hi rend="cursiva">Núm.</hi> 5. ¡ El Angel del cielo !—Delicias del
-            amor. <lb/><hi rend="cursiva">Núm.</hi> 6. Una tarde de Abril (americana).—Declaracion de amor á Violante. <hi rend="cursiva">Núm.</hi>
+            amor. <lb/>
+            <hi rend="cursiva">Núm.</hi> 6. Una tarde de Abril (americana).—Declaracion de amor á Violante. <hi rend="cursiva">Núm.</hi>
             7. La <lb/>Habanera (americana).—El último adios á Malvina. <hi rend="cursiva">Núm.</hi> 8. La Peruana
-            (americana). <lb/><hi rend="cursiva">Núm.</hi> 9.—La Querella.—Los ensueños amorosos.—El Paseo en la
-            Pradera—Trovos de amor. <lb/><hi rend="cursiva">Núm.</hi> 10. La Caleza.—La Manola.—El Terne del Avapiés. <hi rend="cursiva">Núm.</hi>
+            (americana). <lb/>
+            <hi rend="cursiva">Núm.</hi> 9.—La Querella.—Los ensueños amorosos.—El Paseo en la
+            Pradera—Trovos de amor. <lb/>
+            <hi rend="cursiva">Núm.</hi> 10. La Caleza.—La Manola.—El Terne del Avapiés. <hi rend="cursiva">Núm.</hi>
             11 La Estudiantina.—Una <lb/>queja—A los ojos de Pepilla.—Amores de Alfredo y Elvira.
             <hi rend="cursiva">Núm.</hi> 12. Gozes del alma. <lb/>—A la hermosa Antonina.—La Florera.—Ramillete de amor.
             <hi rend="cursiva">Núm.</hi> 13. Lamentos de <lb/>amor.—Amores de Alfredo y Elvira. <hi rend="cursiva">Núm.</hi> 14. La Paquita
@@ -1013,9 +1037,9 @@
             bermosa.—Amores de Alfredoy Elvi- <lb/>ra.—<hi rend="cursiva">Núm.</hi> 18. A las lindas catalanas.— Rosendo á
             su amada.—Amores de Alfredo y Elvira. </p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona: Imp. de LLORENS, Palma de Sta. Catalina, n.° 6.</p>
+          <p>
+            <lb/>Barcelona: Imp. de LLORENS, Palma de Sta. Catalina, n.° 6.</p>
         </div>
       </div>
     </body>

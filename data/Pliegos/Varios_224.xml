@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,26 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q285235">
+            <placeName key="Bañuelos_de_Bureba">Bañuelos De Bureba</placeName>
+            <location>
+              <geo>42.500833333333 -3.2805555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q20118">
+            <placeName key="río_Turia">Río Turia</placeName>
+            <location>
+              <geo>39.565536111111 -0.59261666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q649">
+            <placeName key="Moscú">Moscú</placeName>
+            <location>
+              <geo>55.755833333333 37.617777777778</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +165,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-03" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-03" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1226,13 +1260,14 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_224_1.jpg" facs="varios/Varios_224_1.jpg"/>
 
           <fw type="impresorNum">Num 7.</fw>
-
-          <head type="primer_titulo" rend="negrita"><lb/>COPLAS DE LA JÓTA</head>
-          <head type="subtitulo"><lb/>POR LOS NOMBRES DE MUGER<lb/>Y SIGUIDILLAS NUEVAS.</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>COPLAS DE LA JÓTA</head>
+          <head type="subtitulo">
+            <lb/>POR LOS NOMBRES DE MUGER<lb/>Y SIGUIDILLAS NUEVAS.</head>
           <div n="1">
             <l rend="indent">María del alma mia,</l>
             <l>imán de mi corazon,</l>
@@ -1260,7 +1295,6 @@
             <pb n="2" source="Varios_224_2.jpg" facs="varios/Varios_224_2.jpg"/>
 
             <fw type="paginaNum">2</fw>
-
             <l>reclutando enamorados</l>
             <l>por vencer de amor la guerra.</l>
             <l rend="indent">Vicenta está en el balcon</l>
@@ -1355,7 +1389,6 @@
             <pb n="3" source="Varios_224_3.jpg" facs="varios/Varios_224_3.jpg"/>
 
             <fw type="paginaNum">3</fw>
-
             <l rend="indent">Bárbara sale venciendo</l>
             <l>al hombre mas atrevido,</l>
             <l>que las armas no pudieron</l>
@@ -1371,9 +1404,9 @@
             <l>con su escelente hermosura.</l>
             <l rend="indent">Entre claveles, y rosas</l>
             <l>voy retratando á Ventura,</l>
-            <l>pues no he encontrado en la Europa</l>
+            <l>pues no he encontrado en la <name>Europa</name></l>
             <l>quien la gane de hermosura.</l>
-            <l rend="indent">Por las riberas del Turia</l>
+            <l rend="indent">Por las riberas del <name>Turia</name></l>
             <l>salió Paula con su amor,</l>
             <l>y les ván acompañando</l>
             <l>con música y con primor.</l>
@@ -1398,10 +1431,9 @@
             <l>Francisco pide perdon</l>
             <l>si en algo llegó á ofender.</l>
           </div>
-
           <div n="2">
-            <head type="titulo_parte"><lb/>SIGUIDILLAS.</head>
-
+            <head type="titulo_parte">
+              <lb/>SIGUIDILLAS.</head>
             <lg rend="cursiva">
               <l rend="indent">Si quieres que las damas</l>
               <l>tras de ti anden</l>
@@ -1454,7 +1486,6 @@
             <pb n="4" source="Varios_224_4.jpg" facs="varios/Varios_224_4.jpg"/>
 
             <fw type="paginaNum">4</fw>
-
             <lg rend="cursiva">
               <l rend="indent">La muger que es casada</l>
               <l>si pare un hijo,</l>
@@ -1541,7 +1572,7 @@
             </lg>
             <lg rend="cursiva">
               <l rend="indent">Un peral me enseñaron</l>
-              <l>junto á Moscovia</l>
+              <l>junto á <name>Moscovia</name></l>
               <l>cuyas peras pesaban</l>
               <l>ochenta arrobas.</l>
             </lg>
@@ -1551,11 +1582,12 @@
               <l>iban peces con cañas</l>
               <l>á pescar hombres.</l>
             </lg>
-            <trailer><lb/>Fin.</trailer>
+            <trailer>
+              <lb/>Fin.</trailer>
           </div>
-
           <div type="colofon">
-            <p><lb/>Reus: Imp. y lib. de Juan Bautista Vidal, en la plazuela de la Iglesia—Año
+            <p>
+              <lb/>Reus: Imp. y lib. de Juan Bautista Vidal, en la plazuela de la Iglesia—Año
               1847.</p>
           </div>
         </div>

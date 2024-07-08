@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -91,6 +106,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q913099">
+            <placeName key="Herodión">Herodión</placeName>
+            <location>
+              <geo>31.66583 35.24139</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -126,8 +149,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1167,13 +1189,16 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_100_1.jpg" facs="varios/Varios_100_1.jpg"/>
 
-          <head type="primer_titulo"><lb/>RELACION</head>
-          <head type="subtitulo" rend="cursiva"><lb/>HECHA POR UN MOZO SOLTERO, MA¬<lb/>nifestando
+          <head type="primer_titulo">
+            <lb/>RELACION</head>
+          <head type="subtitulo" rend="cursiva">
+            <lb/>HECHA POR UN MOZO SOLTERO, MA¬<lb/>nifestando
             los quarenta motivos para no casarse<lb/>y treinta y seis para descasarse.</head>
-
-          <l><hi rend="negrita">P</hi>ues me preguntan algunos</l>
+          <l>
+            <hi rend="negrita">P</hi>ues me preguntan algunos</l>
           <l>necios tontos mentecatos,</l>
           <l>buenos simples, y sin juicio,</l>
           <l>que porqué no me he casado?</l>
@@ -1217,7 +1242,7 @@
           <pb n="2" source="Varios_100_2.jpg" facs="varios/Varios_100_2.jpg"/>
 
           <l>con que despues de traerlo</l>
-          <l>desde Herodes à Pilatos,</l>
+          <l>desde <name>Herodes</name> à Pilatos,</l>
           <l>le vienen à hacer que salga</l>
           <l>sin paciencia, y sin un quartos</l>
           <l>luego se sigue la Iglesia,</l>
@@ -1422,12 +1447,11 @@
           <l>al infante encanijado:</l>
           <l>y así amigo, si pudieres,</l>
           <l>librate de este gran chasco.</l>
-
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="colofon" rend="cursiva">
-          <p><lb/>Con licencia: En Córdoba, en la Oficina de D. Luis Ramos <lb/>y Coria, Plazuela de
+          <p>
+            <lb/>Con licencia: En Córdoba, en la Oficina de D. Luis Ramos <lb/>y Coria, Plazuela de
             las Cañas, donde se hallará todo <lb/>género de surtimiento y Estampas.</p>
         </div>
       </div>

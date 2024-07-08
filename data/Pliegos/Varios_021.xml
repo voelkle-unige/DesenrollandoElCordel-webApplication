@@ -14,6 +14,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -29,7 +43,8 @@
             <author role="letrista">J. F. (a) Queri</author>
           </titleStmt>
           <editionStmt>
-            <p>Otras impresiones: <ref target="Varios_219.xml">Varios_219</ref>, <ref target="Varios_251.xml">Varios_251</ref> y <ref target="Varios_308.xml">Varios_308</ref></p>
+            <p>Otras impresiones: <ref target="Varios_219.xml">Varios_219</ref>, <ref target="Varios_251.xml">Varios_251</ref> y <ref target="Varios_308.xml">Varios_308</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>El Abanico</publisher>
@@ -68,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +110,38 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q995601">
+            <placeName key="Cornudella">Cornudella</placeName>
+            <location>
+              <geo>41.2657 0.90504</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q90">
+            <placeName key="París">París</placeName>
+            <location>
+              <geo>48.8566666666667 2.35222222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5705">
+            <placeName key="Cataluña">Cataluña</placeName>
+            <location>
+              <geo>41.8375 1.53777777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q41">
+            <placeName key="Grecia">Grecia</placeName>
+            <location>
+              <geo>38.5 23</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,10 +179,12 @@
     <revisionDesc>
       <change when="2022-05-07" who="#PJ">Création du fichier TEI P5 et encodage du corps du
         texte</change>
-    <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_021_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_021_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_021_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_021_1/full/full/0/default.jpg"/>
@@ -1286,17 +1336,18 @@
     <body>
       <div>
         <div n="1">
+
           <pb n="1" source="Varios_021_1.jpg" facs="varios/Varios_021_1.jpg"/>
 
           <fw type="impresorNum">Núm. 100</fw>
-
-          <head type="primer_titulo" rend="negrita"><lb/>Coplas novas, humorísticas y
-            epigramáticas<lb/></head>
+          <head type="primer_titulo" rend="negrita">
+            <lb/>Coplas novas, humorísticas y
+            epigramáticas<lb/>
+          </head>
           <head type="subtitulo">Seguit de unas endevinallas modernas extretas de lletras del
             abacadari</head>
-
-          <p rend="negrita"><lb/>Escritas per J. F. (a) Queri</p>
-
+          <p rend="negrita">
+            <lb/>Escritas per J. F. (a) Queri</p>
           <lg>
             <l rend="indent">Un pagés bastant tanoca</l>
             <l>va aná'l teatro una nit,</l>
@@ -1308,7 +1359,6 @@
             <l>á la comuna 'l portá.</l>
             <l rend="cursiva">—Com que á las comenas hi ha 'l numere cent.</l>
           </lg>
-
           <lg>
             <l rend="indent">Una que venía figas</l>
             <l>tan gran escandol va armá,</l>
@@ -1320,7 +1370,6 @@
             <l>de prop del cul... del pané,</l>
             <l rend="cursiva">« No sé si era de coll de dama.</l>
           </lg>
-
           <lg>
             <l rend="indent">A ca la meva xicota,</l>
             <l>jo no sé com ha sigut</l>
@@ -1332,7 +1381,6 @@
             <l>«be prou que la trobarás».</l>
             <l rend="cursiva">—Palpan, palpan, pot ser.</l>
           </lg>
-
           <lg>
             <l rend="indent">Un peixaté peix venía</l>
             <l>y anava eridant la gent</l>
@@ -1358,7 +1406,6 @@
             <l>que hi havía dos bovés.</l>
             <l rend="cursiva">—Y que eran ben grossos.</l>
           </lg>
-
           <lg>
             <l rend="indent">Lo Pau y la Doloretas</l>
             <l>la grua feyan volá</l>
@@ -1370,7 +1417,6 @@
             <l>al fi li va rompre'l fil.</l>
             <l rend="cursiva">Y aixó que l u de la grua era molt fort.</l>
           </lg>
-
           <lg>
             <l rend="indent">Va veure un burro ab cinch potas.</l>
             <l>un pagés, y l va comprá;</l>
@@ -1382,10 +1428,9 @@
             <l>cinch ne tornará á tení.</l>
             <l rend="cursiva">¡Vaya un fenómeno més estrany!</l>
           </lg>
-
           <lg>
-            <l rend="indent">Un casat de Cornudella</l>
-            <l>á Barcelona va aná,</l>
+            <l rend="indent">Un casat de <name>Cornudella</name></l>
+            <l>á <name>Barcelona</name> va aná,</l>
             <l>y al torín á veure 'ls toros</l>
             <l>un amich lo va portá.</l>
             <l>Y al veure aquella corrida</l>
@@ -1394,7 +1439,6 @@
             <l>os dich que m'agradan molt.</l>
             <l rend="cursiva">—Oh! y era casat de poch...</l>
           </lg>
-
           <lg>
             <l rend="indent">Jo conech una modista</l>
             <l>que va vindre de París,</l>
@@ -1406,7 +1450,6 @@
             <l>y encara hi vol torná.</l>
             <l rend="cursiva">—Ja de se un poble ben bonich.</l>
           </lg>
-
           <lg>
             <l rend="indent">A casa de certa noya</l>
             <l>ningú hi entraba per ré,</l>
@@ -1418,7 +1461,6 @@
             <l>la va fe desocupá.</l>
             <l rend="cursiva">—Au, trastes al carré si no pagan.</l>
           </lg>
-
           <lg>
             <l rend="indent">Una noya en un brasé</l>
             <l>s'escalfaba el devantal,</l>
@@ -1430,7 +1472,6 @@
             <l>se setía socarrím.</l>
             <l rend="cursiva">—Devia teni'l quarto plé de clin.</l>
           </lg>
-
           <lg>
             <l rend="indent">A una dona molt prenyada</l>
             <l>li va dir un estudiant:</l>
@@ -1442,7 +1483,6 @@
             <l>tota la pessa hi va entrá;</l>
             <l rend="cursiva">—Devia se una pessa de pocas canas.</l>
           </lg>
-
           <lg>
             <l rend="indent">Un guino á la pescateria</l>
             <l>ne posava um pam de greix</l>
@@ -1454,7 +1494,6 @@
             <l>va darli una gran tunyina.</l>
             <l rend="cursiva">Tot es peix si no son cops.</l>
           </lg>
-
           <lg>
             <l rend="indent">Un pobre robava llenya</l>
             <l>pera coures lo diná</l>
@@ -1480,7 +1519,6 @@
             <l>jo vull dos ous aferrats.</l>
             <l rend="cursiva">—Ben bons que son segons com...</l>
           </lg>
-
           <lg>
             <l rend="indent">Dos enamorats, á fira</l>
             <l>alegres varen aná;</l>
@@ -1492,7 +1530,6 @@
             <l>y ella la anell va dá á ell.</l>
             <l rend="cursiva">¿Y per fe una barata se'ls va acalentá'l cap?</l>
           </lg>
-
           <lg>
             <l rend="indent">Una bugadera, un dia</l>
             <l>feya un modo de rentá,</l>
@@ -1504,7 +1541,6 @@
             <l>faig surtí més sabonera.</l>
             <l rend="cursiva">— Oh, ja'n saben ja (de beura).</l>
           </lg>
-
           <lg>
             <l rend="indent">Un masové que ous venía</l>
             <l>á vint céntims lo parell,</l>
@@ -1516,7 +1552,6 @@
             <l>son quasi ls més delicats.</l>
             <l rend="cursiva">—Eran ous del... dia.</l>
           </lg>
-
           <lg>
             <l rend="indent">Feyan á un poble plegarias</l>
             <l>ab molta solemnitat:</l>
@@ -1528,7 +1563,6 @@
             <l>si no fa plujas de ví.</l>
             <l rend="cursiva">—Si plogués vi quins crits d ora pro nobis.</l>
           </lg>
-
           <lg>
             <l rend="indent">Dintre del mar una minyona</l>
             <l>prenent banys buscava peix,</l>
@@ -1540,7 +1574,6 @@
             <l>qne aprop del cul hi te un pop.</l>
             <l rend="cursiva">—Devia se un pop roqué.</l>
           </lg>
-
           <lg>
             <l rend="indent">quan havía d'embastá</l>
             <l>Una noya cusidora</l>
@@ -1552,7 +1585,6 @@
             <l>que hi havía cuyó blanch.</l>
             <l rend="cursiva">—Era molt bo per cusi..</l>
           </lg>
-
           <lg>
             <l rend="indent">Una que á un noy festejaba</l>
             <l>son pare un dia'ls vejé,</l>
@@ -1564,7 +1596,6 @@
             <l>no feyan sino pitjá.</l>
             <l rend="cursiva">— No va calgué posarhi la barra.</l>
           </lg>
-
           <lg>
             <l rend="indent">Una florista á la Rambla</l>
             <l>venía allí varias flors,</l>
@@ -1576,7 +1607,6 @@
             <l>cap nas com el de vosté.</l>
             <l rend="cursiva">— Deuia se una rosa de tot l'any.</l>
           </lg>
-
           <lg>
             <l rend="indent">La Lola per sabé de comptes,</l>
             <l>se va buscá un mestre bo,</l>
@@ -1599,21 +1629,18 @@
             <l>Y un vehí que era adrogué</l>
             <l rend="cursiva">guaytava per un forat,</l>
           </lg>
-
           <lg>
             <l rend="indent">y li va di, picant especies;</l>
             <l>¡Ay xata...! ja t'he filat.</l>
             <l rend="cursiva">Picava especies ab la ma de morté.</l>
           </lg>
-
           <trailer>PROU SALSA DE PEBRE PER ARA...</trailer>
         </div>
-
         <div n="2">
-          <head type="primer_titulo"><lb/>ENDEVINALLAS DE LAS MÉS MODERNAS<lb/>extretas de lletras
+          <head type="primer_titulo">
+            <lb/>ENDEVINALLAS DE LAS MÉS MODERNAS<lb/>extretas de lletras
             del abecedari, las quals se podrán usar en tertulias ó<lb/>reunions pera distreures un
             rato, entre amichs ó amigas;<lb/>pensadas per lo mateix autor</head>
-
           <l rend="indent">¿Quin nom de poble es lo que una lle¬</l>
           <l>tra que may es cru? La Cecuita. C.</l>
           <l rend="indent">¿Quina es la lletra que may está mas-</l>
@@ -1627,19 +1654,22 @@
           <l rend="indent">¿Quina es la lletra que'a canta y's balla</l>
           <l>más? La «jota» J.</l>
           <l rend="indent">¿Quina es la lletra que es més bestia?</l>
-          <l>La K <hi rend="cursiva">es un gos en catalá.</hi></l>
+          <l>La K <hi rend="cursiva">es un gos en catalá.</hi>
+          </l>
           <l rend="indent">Quan un marit y mulle han fet una</l>
           <l>feta, una mort, si ell no l'ha fet ¿qui la</l>
           <l>haurá feta? Ella. LL.</l>
           <l rend="indent">Y'l que no endevina una cosa ¿quina</l>
-          <l>falta comet? Erra. R. <hi rend="cursiva">Que vol dir equi-</hi></l>
+          <l>falta comet? Erra. R. <hi rend="cursiva">Que vol dir equi-</hi>
+          </l>
           <l rend="cursiva">rocá.</l>
           <l rend="indent">¿Quina lletra es la més franca, més</l>
-          <l>noble y més lliberal? La T <hi rend="cursiva">perque tot</hi></l>
+          <l>noble y més lliberal? La T <hi rend="cursiva">perque tot</hi>
+          </l>
           <l rend="cursiva">ho dona.</l>
           <l rend="indent">¿Y la Iletra que may está parada, y</l>
           <l>may se'n va? La ve. V.</l>
-          <l rend="indent">¿Quina es la lletra filla de Grecia? La</l>
+          <l rend="indent">¿Quina es la lletra filla de <name>Grecia</name>? La</l>
           <l>y grega. Y.</l>
           <l rend="indent">¿Quin es el número que fan més los</l>
           <l>sastres y boleros? Lo punt. 1.</l>
@@ -1653,12 +1683,11 @@
           <l rend="indent">¿Y'l més bo de tots? Lo milló 1.000. 000</l>
           <l rend="indent">¿Quin es l'ofici que mata una lletra?</l>
           <l>Lo matalacé. C.</l>
-          
           <trailer rend="negrita">PROU Y BASTA</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imps. Hospital, 19 «El Abanico»</p>
+          <p>
+            <lb/>Imps. Hospital, 19 «El Abanico»</p>
         </div>
       </div>
     </body>

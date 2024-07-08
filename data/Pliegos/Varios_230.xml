@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +111,44 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q928">
+            <placeName key="Filipinas">Filipinas</placeName>
+            <location>
+              <geo>12 123</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1028">
+            <placeName key="Marruecos">Marruecos</placeName>
+            <location>
+              <geo>32 -6</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1092146">
+            <placeName key="Ubrique">Ubrique</placeName>
+            <location>
+              <geo>36.6797472 -5.4451945</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q261085">
+            <placeName key="Lebrija">Lebrija</placeName>
+            <location>
+              <geo>36.919444444444 -6.0780555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q375851">
+            <placeName key="Porcuna">Porcuna</placeName>
+            <location>
+              <geo>37.869722222222 -4.1872222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q741234">
+            <placeName key="Chiclana_de_Segura">Chiclana De Segura</placeName>
+            <location>
+              <geo>38.312231 -3.0424063</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +184,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-09-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-09-05" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1136,19 +1188,22 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_230_1.jpg" facs="varios/Varios_230_1.jpg"/>
+
         <fw type="impresorNum">(Núm. 245.)</fw>
-
         <div>
-          <head type="primer_titulo"><lb/>EL NUNCA BIEN PONDERADO, <lb/>CÈLEBRE CUAL NO OTRO, Y
-            ALEGRE COMO CUALQUIERA, <hi rend="negrita"><lb/>CASAMIENTO <lb/>DE JUAN PINDAJO, </hi>
+          <head type="primer_titulo">
+            <lb/>EL NUNCA BIEN PONDERADO, <lb/>CÈLEBRE CUAL NO OTRO, Y
+            ALEGRE COMO CUALQUIERA, <hi rend="negrita">
+              <lb/>CASAMIENTO <lb/>DE JUAN PINDAJO, </hi>
             <lb/>CON MARIA CURIANA. </head>
-          <head rend="cursiva" type="subtitulo"><lb/>Sus celebridades, ropa, comida, dote, y demás
+          <head rend="cursiva" type="subtitulo">
+            <lb/>Sus celebridades, ropa, comida, dote, y demás
             ocurrencias que verá <lb/>quien pagare dos cuartos por cada papelillo. </head>
-
           <l rend="indent">Mariquita Curiana</l>
           <l>y Juan Pindajo,</l>
-          <l>se han casado en Porcura</l>
+          <l>se han casado en <name>Porcura</name></l>
           <l>estos dos majos.</l>
           <l>La novia es quebrada,</l>
           <l>patizamba coja y jorobada,</l>
@@ -1192,10 +1247,10 @@
           <l rend="indent">Y la novia un gran traje</l>
           <l>de muselina,</l>
           <l>que compró por seis cuartos</l>
-          <l>en Filipinas:</l>
+          <l>en <name>Filipinas</name>:</l>
           <l>manto de bayeta,</l>
           <l>padrino y madrina</l>
-          <l>que en Marruecos se compró á peseta</l>
+          <l>que en <name>Marruecos</name> se compró á peseta</l>
           <l>con un rico moño,</l>
           <l>de raíz y fruto de madroño,</l>
           <l>brazos remangados,</l>
@@ -1302,7 +1357,7 @@
           <l>sacudia á cuantos señorazos</l>
           <l>acudió bastantísima jente,</l>
           <l>y para desquite</l>
-          <l>acabó cual cemedia de Ubrique.</l>
+          <l>acabó cual cemedia de <name>Ubrique</name>.</l>
           <l rend="indent">Acabó como he dicho</l>
           <l>el casamiento,</l>
           <l>y oiran ahora el dote,</l>
@@ -1360,9 +1415,9 @@
           <l>de ratas y ratones</l>
           <l>diez carretadas;</l>
           <l>parió la Caleta,</l>
-          <l>el pinar de Chiclana y su huerta,</l>
+          <l>el pinar de <name>Chiclana</name> y su huerta,</l>
           <l>dos mil lagartijas,</l>
-          <l>un borrico que se fué á Lebrija,</l>
+          <l>un borrico que se fué á <name>Lebrija</name>,</l>
           <l>parió un cigarron</l>
           <l>con orejas de perro pachon.</l>
           <l rend="indent">Parió treinta lagartos,</l>
@@ -1386,9 +1441,11 @@
           <l>con suspiros tiernos</l>
           <l>se largó á descansar al infierno.</l>
         </div>
-
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">Madrid, 1852.—Imprenta de J. Marés, calle de Relatores núm. 17.</hi></p>
+          <p>
+            <lb/>
+            <hi rend="cursiva">Madrid, 1852.—Imprenta de J. Marés, calle de Relatores núm. 17.</hi>
+          </p>
         </div>
       </div>
     </body>

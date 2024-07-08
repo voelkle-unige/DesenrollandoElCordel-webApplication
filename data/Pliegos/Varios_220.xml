@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -90,6 +105,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -125,8 +148,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -2446,16 +2468,22 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_220_1.jpg" facs="varios/Varios_220_1.jpg"/>
 
         <fw type="impresorNum">N° 6</fw>
-
-        <fw type="numeroPliego"><hi rend="cursiva">Preu 6 cuartos.</hi></fw>
-
-        <head type="primer_titulo"><lb/><hi rend="negrita">SAINETE NOU</hi><lb/>LO CASAMENT<lb/><hi rend="negrita">DEN SALDONI Y LA MARGARIDA.</hi></head>
-        
+        <fw type="numeroPliego">
+          <hi rend="cursiva">Preu 6 cuartos.</hi>
+        </fw>
+        <head type="primer_titulo">
+          <lb/>
+          <hi rend="negrita">SAINETE NOU</hi>
+          <lb/>LO CASAMENT<lb/>
+          <hi rend="negrita">DEN SALDONI Y LA MARGARIDA.</hi>
+        </head>
         <div type="reparto">
-          <head type="reparto_titulo" rend="negrita"><lb/>PERSONAS.</head>
+          <head type="reparto_titulo" rend="negrita">
+            <lb/>PERSONAS.</head>
           <castList>
             <castItem>RECTÓ.</castItem>
             <castItem>ABIA.</castItem>
@@ -2463,25 +2491,25 @@
             <castItem>MARGARIDA.</castItem>
           </castList>
         </div>
-        
         <div>
-          <stage rend="cursiva"><lb/>Apareix lo Señó Rectó sentat ab lo<lb/>breviari al
+          <stage rend="cursiva">
+            <lb/>Apareix lo Señó Rectó sentat ab lo<lb/>breviari al
             devant.</stage>
-          
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Valgam Deu, y quin dia de
+            <p>
+              <lb/>Valgam Deu, y quin dia de
             <lb/>trafech no am deixan sosegar un
             <lb/>instant; desde las sinch que am so
             <lb/>llevát, no he tingut temps de res.
             <lb/>He dit la misa, dos combregás, tres
             <lb/>enterros, cinch batejs, y dos es-
+
             
             <pb n="2" source="Varios_220_2.jpg" facs="varios/Varios_220_2.jpg"/>
-            
-            <fw type="paginaNum">2</fw>
-            
-            <lb/>trema-uncions; casi tot per amor
+
+              <fw type="paginaNum">2</fw>
+              <lb/>trema-uncions; casi tot per amor
             <lb/>de Deu. Si sabia que no am des-
             <lb/>de Deu. Si sabia que no am des-
             <lb/>torbesen, am posaria á resar; al
@@ -2519,42 +2547,53 @@
             <lb/>In nomine Patris, et Filii et
             <lb/>Spiritus Sancti amen.
             <stage rend="cursiva">(Trucan á la porta.)</stage>
-            <lb/>Ja hi som; mes abiat hagues co-
+              <lb/>Ja hi som; mes abiat hagues co-
             <lb/>mensat, ja am venen á destorbar...
             <lb/>Qui hi há?
-            <stage rend="cursiva">(Respon la abia desde adins.)</stage></p>
+            <stage rend="cursiva">(Respon la abia desde adins.)</stage>
+            </p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Señó Rectó.</p>
+            <p>
+              <lb/>Señó Rectó.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Entreu, tia Sinforosa.</p>
+            <p>
+              <lb/>Entreu, tia Sinforosa.</p>
             <stage rend="cursiva">(cridan desde dintre.)</stage>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Per ahont?</p>
+            <p>
+              <lb/>Per ahont?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Dona, per la porta. <stage rend="cursiva">(cridan.)</stage></p>
+            <p>
+              <lb/>Dona, per la porta. <stage rend="cursiva">(cridan.)</stage>
+            </p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Es tancada. <stage rend="cursiva">(desde dintre.)</stage></p>
+            <p>
+              <lb/>Es tancada. <stage rend="cursiva">(desde dintre.)</stage>
+            </p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Alseu el baldó. <stage rend="cursiva">(cridan.)</stage></p>
+            <p>
+              <lb/>Alseu el baldó. <stage rend="cursiva">(cridan.)</stage>
+            </p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>No al trobo. Ah! ja al tinch.
+            <p>
+              <lb/>No al trobo. Ah! ja al tinch.
             <stage rend="cursiva">(de dintre)</stage>
-            <stage rend="cursiva">(entra la abia que es un poch sorda.)</stage>
-            <lb/>Deu lo guart, Seño Rectó, San Pe-
+              <stage rend="cursiva">(entra la abia que es un poch sorda.)</stage>
+              <lb/>Deu lo guart, Seño Rectó, San Pe-
             <lb/>ra y san Pau san Macari y san Pan-
             <lb/>crás, san Gervasi y san Potrasi, y
             <lb/>tota la cort celestial al guardi da
@@ -2562,21 +2601,25 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Amen. Espliqueus , perque
+            <p>
+              <lb/>Amen. Espliqueus , perque
             <lb/>habeu vingut?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Jo li diré, venia á incomo-
+            <p>
+              <lb/>Jo li diré, venia á incomo-
             <lb/>darlo.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Tot aixó crech; y que voleu?</p>
+            <p>
+              <lb/>Tot aixó crech; y que voleu?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Veu, jo tracto de casa la no-
+            <p>
+              <lb/>Veu, jo tracto de casa la no-
             <lb/>ya ab un miñó que la estima molt;
             <lb/>es un bon miñó; encara que ha
             <lb/>estat dos vegadas á presidi, pero
@@ -2586,13 +2629,15 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>No hi ha dupte, segons vos
+            <p>
+              <lb/>No hi ha dupte, segons vos
             <lb/>espliquen no li falta res per ser
             <lb/>un estrafalari.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Si, señó, si, al notari, també
+            <p>
+              <lb/>Si, señó, si, al notari, també
             <lb/>era culpa del notari. Al demés es
             <lb/>un miñó molt viu, molt viu señó
             <lb/>Recto, quan enrahonan en la no-
@@ -2603,12 +2648,12 @@
             <lb/>da... pero jo me ho afiguro, per-
             <lb/>que cuan ell li diu alguna cosa la
             <lb/>noya sel escolta, y sen riu, sobre
+
             
               <pb n="3" source="Varios_220_3.jpg" facs="varios/Varios_220_3.jpg"/>
-            
+
               <fw type="paginaNum">3</fw>
-            
-            <lb/>tot es mol bon cristiá, va á misa
+              <lb/>tot es mol bon cristiá, va á misa
             <lb/>cada semana, y tots los añs diu
             <lb/>trina no an parlem; fins á la pri-
             <lb/>mera plana del llibre, diu que la
@@ -2617,46 +2662,54 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Aqueixa bona dona no acaba-
+            <p>
+              <lb/>Aqueixa bona dona no acaba-
             <lb/>ria may. <stage rend="cursiva">(cridan.)</stage> Y be, encara
             <lb/>no me habeu dit perque veniu.
             <lb/>Deixeuvos de arengas y cuiteu.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Tot aixó li dich perque as fa-
+            <p>
+              <lb/>Tot aixó li dich perque as fa-
             <lb/>si ben incapás de la sort que tin¬
             <lb/>gut la meba noya.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Tia Sinforosa, despacheu, que
+            <p>
+              <lb/>Tia Sinforosa, despacheu, que
             <lb/>jo tinch molta presa.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>No, no señó, no an vas gens
+            <p>
+              <lb/>No, no señó, no an vas gens
             <lb/>de depresa.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Vos dich que yo estich abuy
+            <p>
+              <lb/>Vos dich que yo estich abuy
             <lb/>molt ocupat.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Doncas men alegro de haberlo
+            <p>
+              <lb/>Doncas men alegro de haberlo
             <lb/>trobat desocupat.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Ja veitj jo que será menesté
+            <p>
+              <lb/>Ja veitj jo que será menesté
             <lb/>deixarla di y carregarme de pa¬
             <lb/>ciencia.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Al demés tornan ab an Saldoni,
+            <p>
+              <lb/>Al demés tornan ab an Saldoni,
             <lb/>es un miñó molt destruit de ente¬
             <lb/>niment; ha corregut tota la Eu¬
             <lb/>gropa; fins sab da rahó de tots los
@@ -2664,7 +2717,8 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Com ell ha estat á presidi, no
+            <p>
+              <lb/>Com ell ha estat á presidi, no
             <lb/>es molt que sápiga com está fet. Ja
             <lb/>veitx jo que a juest es un subjecte
             <lb/>de moltas prendas. <stage rend="cursiva">(cridan.)</stage> Y ab
@@ -2675,7 +2729,8 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/> Mireu tia Sinforosa, jo estich
+            <p>
+              <lb/> Mireu tia Sinforosa, jo estich
             <lb/>ple de ocupacions, y no puch ara
             <lb/>ecsaminarlos, torneu demá á las
             <lb/>onse del matí, y tot seguit als ec
@@ -2683,50 +2738,61 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Ara tot seguit als vol ecsaminá.</p>
+            <p>
+              <lb/>Ara tot seguit als vol ecsaminá.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>No, no, demá al dematí</p>
+            <p>
+              <lb/>No, no, demá al dematí</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Si señó ja son aquí; se esperan
+            <p>
+              <lb/>Si señó ja son aquí; se esperan
               <lb/>baix á la entrada.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Aneu y no als feu pas pujá.</p>
+            <p>
+              <lb/>Aneu y no als feu pas pujá.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Molt be, ja als vas á buscá.</p>
+            <p>
+              <lb/>Molt be, ja als vas á buscá.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Dono no am feu enfadá; vos
+            <p>
+              <lb/>Dono no am feu enfadá; vos
             <lb/>dich que no estich per vos.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Si señó, ja hi son tots dos.</p>
+            <p>
+              <lb/>Si señó, ja hi son tots dos.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Valgam Deu, y que pesada!
+            <p>
+              <lb/>Valgam Deu, y que pesada!
             <lb/>no podré traurela del men devant.
             <lb/>Aneu, feulos pujá, y eiximne abiat.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Está molt be, ja als diré que
+            <p>
+              <lb/>Está molt be, ja als diré que
             <lb/>pugin de seguida. Pasiu be, señó
             <lb/>Rectó; estigui bo, Deu lo guart de
-            <lb/>mal; de aqui luego. <stage rend="cursiva">(sen va.)</stage></p>
+            <lb/>mal; de aqui luego. <stage rend="cursiva">(sen va.)</stage>
+            </p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Aueu en nom de Deu. Aques
+            <p>
+              <lb/>Aueu en nom de Deu. Aques
             <lb/>ta bona dona me ha vingut á in¬
             <lb/>comodar terriblement com si jo no
             <lb/>tingués altres mals de caps que es¬
@@ -2746,31 +2812,36 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Jo. <stage rend="cursiva">(de ditre.)</stage></p>
+            <p>
+              <lb/>Jo. <stage rend="cursiva">(de ditre.)</stage>
+            </p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Qui es jo!</p>
+            <p>
+              <lb/>Qui es jo!</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>An Saldoni, la Abia, y la Mar-
-              <lb/>garida. <stage rend="cursiva">(de dins.)</stage></p>
+            <p>
+              <lb/>An Saldoni, la Abia, y la Mar-
+              <lb/>garida. <stage rend="cursiva">(de dins.)</stage>
+            </p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
             <l>Sembla que la bestia va al</l>
             <l>devant. Entreu.</l>
           </sp>
-          
+
           <pb n="4" source="Varios_220_4.jpg" facs="varios/Varios_220_4.jpg"/>
-          
+
           <fw type="paginaNum">4</fw>
-          
           <stage rend="cursiva">(Entran Saldoni, Abia y Margarida.)</stage>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Deu lo guart señó Rectó; aqui
+            <p>
+              <lb/>Deu lo guart señó Rectó; aqui
             <lb/>som perque hem vingut; y voliam
             <lb/>que ans desanimés de doctrina per-
             <lb/>que aquesta noya y jo ans volem
@@ -2778,51 +2849,62 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Doncas tia Sinforosa, voleu
+            <p>
+              <lb/>Doncas tia Sinforosa, voleu
             <lb/>casar la noya?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Si señó, si, aqueixa es la me-
+            <p>
+              <lb/>Si señó, si, aqueixa es la me-
             <lb/>ba noya.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>No, dona, que vos diu <stage rend="cursiva">(cri-</stage>
-            <lb/><stage rend="cursiva">dan.)</stage> si voleu casá la Margarida.</p>
+            <p>
+              <lb/>No, dona, que vos diu <stage rend="cursiva">(cri-</stage>
+              <lb/>
+              <stage rend="cursiva">dan.)</stage> si voleu casá la Margarida.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Ah! si señó, perque veitj que
+            <p>
+              <lb/>Ah! si señó, perque veitj que
             <lb/>la cosa va molt calenta, y jo no
             <lb/>vuy carros de conciencia.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Y que te aquet xicot per ca-
+            <p>
+              <lb/>Y que te aquet xicot per ca-
             <lb/>sarse?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>No pas res.</p>
+            <p>
+              <lb/>No pas res.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Y la noya?</p>
+            <p>
+              <lb/>Y la noya?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Encara te menos que jo.</p>
+            <p>
+              <lb/>Encara te menos que jo.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Vet aqui un casament ben
+            <p>
+              <lb/>Vet aqui un casament ben
             <lb/>arreglat, penseu viure del aire del
             <lb/>cel. Y quin ofici sabs fe?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Jo li diré; cuant era petit me
+            <p>
+              <lb/>Jo li diré; cuant era petit me
             <lb/>van posá á sabater ; hi vas estar
             <lb/>dos mesos. Despues feya de sastre,
             <lb/>hi ja sabia enfilá agullas; pero á
@@ -2834,29 +2916,34 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Quina vivesa tan gran! Y com
+            <p>
+              <lb/>Quina vivesa tan gran! Y com
             <lb/>esteu de doctrina?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Tots dos an sabem fins á prop
+            <p>
+              <lb/>Tots dos an sabem fins á prop
             <lb/>del comensament. No es axis abia?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Que dius Saldoni?
+            <p>
+              <lb/>Que dius Saldoni?
             <lb/>Sald. <stage rend="cursiva">(cridan.)</stage> Al señó Rectó diu si
             <lb/>an sabem de doctrina?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Si señó, si ja veurá la noya:
+            <p>
+              <lb/>Si señó, si ja veurá la noya:
             <lb/>si veyés á casa la xarra: jo me es-
             <lb/>tich ab la boca badada.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Doncas, calleu, conech que
+            <p>
+              <lb/>Doncas, calleu, conech que
             <lb/>es inútil fervos cap reflecsió, per-
             <lb/>que sou gent que quant vos fixeu
             <lb/>una cosa á la clepsa al diable que
@@ -2865,16 +2952,19 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>De doctrina ray, quant era
+            <p>
+              <lb/>De doctrina ray, quant era
             <lb/>xich la sabia tota.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Y qui te la va enseñar.</p>
+            <p>
+              <lb/>Y qui te la va enseñar.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Al señó rectó del poble. Ca-
+            <p>
+              <lb/>Al señó rectó del poble. Ca-
             <lb/>da diumenge hi anabam, que fe-
             <lb/>yam una bulla de alló mes. Ab
             <lb/>la noya de cal Curru y al xicot de
@@ -2886,219 +2976,261 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Doncas veurem si at recor-
+            <p>
+              <lb/>Doncas veurem si at recor-
             <lb/>da. Digas, que cosa es fé?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Es una herba que es fa pels
+            <p>
+              <lb/>Es una herba que es fa pels
             <lb/>camps, estreta del cap de munt,
             <lb/>ab la cua verda y la fulla ber-
             <lb/>mella.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Que dius?</p>
+            <p>
+              <lb/>Que dius?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Si señó, al camp de casa ne
+            <p>
+              <lb/>Si señó, al camp de casa ne
             <lb/>es tot ple, y es bona per da als
             <lb/>animals.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Y ara que somiem? Que te
+            <p>
+              <lb/>Y ara que somiem? Que te
             <lb/>has tornat boitx.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>No am pregunta que cosa es
+            <p>
+              <lb/>No am pregunta que cosa es
             <lb/>fé? Jo hi respost be; oh! y que
             <lb/>anguany ni ha hagut una bona
             <lb/>cullita.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>No ho hé dit jo? Endevan, ja
+            <p>
+              <lb/>No ho hé dit jo? Endevan, ja
             <lb/>deus sabé que las virtuts cardinals
             <lb/>son cuatre prudencia, justicia, for-
             <lb/>talesa, y templansa.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Ara que vusé ho ha dit, ja
+            <p>
+              <lb/>Ara que vusé ho ha dit, ja
             <lb/>ho se.</p>
           </sp>
-          
+
           <pb n="5" source="Varios_220_5.jpg" facs="varios/Varios_220_5.jpg"/>
-          
+
           <fw type="paginaNum">5</fw>
-          
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Que es prudencia?</p>
+            <p>
+              <lb/>Que es prudencia?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Prudencia? es una cosa... com
+            <p>
+              <lb/>Prudencia? es una cosa... com
             <lb/>li esplicaré jo ara?... es un home
             <lb/>que es prudent?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Qué es justicia?</p>
+            <p>
+              <lb/>Qué es justicia?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Massa que ho sé al que es jus-
+            <p>
+              <lb/>Massa que ho sé al que es jus-
             <lb/>ticia. Ni may que ni hagués. Son
             <lb/>el batlle, als regidors, al jutge y
             <lb/>als aguasils.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Qué es fortaleza?</p>
+            <p>
+              <lb/>Qué es fortaleza?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Fortaleza, es Monjuich, las
+            <p>
+              <lb/>Fortaleza, es Monjuich, las
             <lb/>Adrasanas, Ciutadela, al Fortu
             <lb/>pillu....</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Que es templanza?</p>
+            <p>
+              <lb/>Que es templanza?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Señó Rectó, aixó no es de la
+            <p>
+              <lb/>Señó Rectó, aixó no es de la
             <lb/>doctrina.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Si que ho es.</p>
+            <p>
+              <lb/>Si que ho es.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Doncas jo no ho se pas.</p>
+            <p>
+              <lb/>Doncas jo no ho se pas.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Ben dit. Cuans Deus hi ha?</p>
+            <p>
+              <lb/>Ben dit. Cuans Deus hi ha?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>No als hi contat may. Ni deu
+            <p>
+              <lb/>No als hi contat may. Ni deu
             <lb/>habé un á cada iglesia.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Cuantas son las obras de Mi-
+            <p>
+              <lb/>Cuantas son las obras de Mi-
             <lb/>sericordia?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Son cremadas.</p>
+            <p>
+              <lb/>Son cremadas.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Que es lo que es cremat?</p>
+            <p>
+              <lb/>Que es lo que es cremat?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Al poble van dir que á la Mi-
+            <p>
+              <lb/>Al poble van dir que á la Mi-
             <lb/>sericordia si va ficar foch, y tot
             <lb/>se va cremá.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Va abia. <stage rend="cursiva">(cridan.)</stage> Sabeu lo
+            <p>
+              <lb/>Va abia. <stage rend="cursiva">(cridan.)</stage> Sabeu lo
             <lb/>que us diré; que aquet xicot no
             <lb/>an sab un borrall de doctrina.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Idós, Saldoni, no deyas que
+            <p>
+              <lb/>Idós, Saldoni, no deyas que
             <lb/>la sabias?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Si no se de que am parla; ja
+            <p>
+              <lb/>Si no se de que am parla; ja
             <lb/>ho veurá, que am pregunti mes
             <lb/>doctrina.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Cuantas son las personas de
+            <p>
+              <lb/>Cuantas son las personas de
             <lb/>la Santísima Trinitat.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Vinti sis.</p>
+            <p>
+              <lb/>Vinti sis.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Com vint sis?</p>
+            <p>
+              <lb/>Com vint sis?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Te rahó; son vinti cinch; que
+            <p>
+              <lb/>Te rahó; son vinti cinch; que
             <lb/>as va morí frara Pera.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>No hu veyeu lo que diu?</p>
+            <p>
+              <lb/>No hu veyeu lo que diu?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Ay jot flich; als frares de la
+            <p>
+              <lb/>Ay jot flich; als frares de la
             <lb/>Trinitat no son vinti cinch? Miri
             <lb/>que als hi contat cuatre vegadas.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Sembla que gateixém; aixó
+            <p>
+              <lb/>Sembla que gateixém; aixó
             <lb/>as pot pendre per una comedia.
             <lb/>Home, digas que es lo que sabs
             <lb/>de la doctrina?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Jo se tota la doctrina menos
+            <p>
+              <lb/>Jo se tota la doctrina menos
             <lb/>aixó que am pregunta, fins se la
             <lb/>lletania.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Doncas digas la lletania.</p>
+            <p>
+              <lb/>Doncas digas la lletania.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Vusté ha de comensá.</p>
+            <p>
+              <lb/>Vusté ha de comensá.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Pero no dius que la saps?</p>
+            <p>
+              <lb/>Pero no dius que la saps?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Si señó, vusté digui, y jo res-
+            <p>
+              <lb/>Si señó, vusté digui, y jo res-
             <lb/>pondré: Ora pron obis.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Doncas, com quedém, señó
+            <p>
+              <lb/>Doncas, com quedém, señó
             <lb/>Rectó? Cuan als casarém?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/><stage rend="cursiva">(cridan.)</stage> Pero si no sap lo que
+            <p>
+              <lb/>
+              <stage rend="cursiva">(cridan.)</stage> Pero si no sap lo que
             <lb/>as pesca.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Si vusté am pregunta unas co-
+            <p>
+              <lb/>Si vusté am pregunta unas co-
             <lb/>sas tan intrincadas, que vol que
             <lb/>li responga? Cuans Deus hi ha? Que
             <lb/>hu se jo? portils aqui que als con-
@@ -3106,17 +3238,20 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Rectó.</speaker>
-            <p><lb/>Y la noya an sab de doc-
+            <p>
+              <lb/>Y la noya an sab de doc-
             <lb/>trina?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>No an sab tan com an Saldo-
+            <p>
+              <lb/>No an sab tan com an Saldo-
             <lb/>ni, pero no sen falta gaire.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Si que an sabrá poch. Donchs
+            <p>
+              <lb/>Si que an sabrá poch. Donchs
             <lb/>cuantas cosas son necesarias per
             <lb/>anar á combregar?
             <lb/>Margarida. Sortir de casa ben de-
@@ -3124,94 +3259,109 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Tan ne tenim com ne tenian.
+            <p>
+              <lb/>Tan ne tenim com ne tenian.
             <lb/>Bon parell de baligas balagas. Qui
             <lb/>es Deu?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Marg.</speaker>
-            <p><lb/>Jo al voldria coneixe; perque
+            <p>
+              <lb/>Jo al voldria coneixe; perque
             <lb/>temps ha que an sento parlá,
             <lb/>ningú an sab dar rahó.</p>
           </sp>
-          
+
           <pb n="6" source="Varios_220_6.jpg" facs="varios/Varios_220_6.jpg"/>
-          
+
           <fw type="paginaNum">6</fw>
-          
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Ja ho diré jo per tu, Marga-
+            <p>
+              <lb/>Ja ho diré jo per tu, Marga-
             <lb/>rida; es un home gros y gran com
             <lb/>un jegant, que sab fe de tot y
             <lb/>no menja.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>No se qui am fa tenir tanta
+            <p>
+              <lb/>No se qui am fa tenir tanta
             <lb/>paciencia, sino que estich ocupat,
             <lb/>ho podria pendrer per diversió.
             <lb/>Noya digas lo crech en un Deu.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Marg.</speaker>
-            <p><lb/>Jo al se de un altre manera.</p>
+            <p>
+              <lb/>Jo al se de un altre manera.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Dígaslo com al saps.</p>
+            <p>
+              <lb/>Dígaslo com al saps.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Marg.</speaker>
-            <p><lb/>Jo crech ab an Saldoni, que
+            <p>
+              <lb/>Jo crech ab an Saldoni, que
             <lb/>es al noy mes graciós del cel y
             <lb/>de la terra, que ha de ser lo unich
             <lb/>marit meu....</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Que no an saps mes, Marga-
+            <p>
+              <lb/>Que no an saps mes, Marga-
             <lb/>rida? Quin credo tan bonich?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Quin casament! Qui as va en-
+            <p>
+              <lb/>Quin casament! Qui as va en-
             <lb/>carná?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Marg.</speaker>
-            <p><lb/>Tots los de casa el dia de
+            <p>
+              <lb/>Tots los de casa el dia de
             <lb/>la festa major. Van matá dos chays,
             <lb/>un porcell, y un marrinxó.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Pero noya, respon be, que
+            <p>
+              <lb/>Pero noya, respon be, que
             <lb/>si no sabs doctrina, no at podrás
             <lb/>casar.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Marg.</speaker>
-            <p><lb/>Señó Rectó, als que son ca-
+            <p>
+              <lb/>Señó Rectó, als que son ca-
             <lb/>sats, que tiran un tros de doctri-
             <lb/>na al olla cada dia?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Vaya una proposició.</p>
+            <p>
+              <lb/>Vaya una proposició.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Señó Rectó, jo diria que fe-
+            <p>
+              <lb/>Señó Rectó, jo diria que fe-
             <lb/>sim una cosa; casemnos tots dos?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Ab aqui at vols casar? ab mi.</p>
+            <p>
+              <lb/>Ab aqui at vols casar? ab mi.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>No parlo de vusté; ab la Mar-
+            <p>
+              <lb/>No parlo de vusté; ab la Mar-
             <lb/>garida, ans podria casar á proba,
             <lb/>y si de aqui nou ó deu mesos no
             <lb/>som bons per casats que sen tor-
@@ -3219,9 +3369,11 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Aquet xicot es boitj ó el fa.
+            <p>
+              <lb/>Aquet xicot es boitj ó el fa.
             <lb/>Veyen ab quina pata de gall surt.
-            <lb/><stage rend="cursiva">(cridan.)</stage> Mireu, abia, per ara veitj
+            <lb/>
+              <stage rend="cursiva">(cridan.)</stage> Mireu, abia, per ara veitj
             <lb/>que no farem re, perque ni lo un
             <lb/>ni lo altre saben lo que as pescan,
             <lb/>y lo que jo veitj que no están ab
@@ -3234,28 +3386,33 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Doncas, señó Rectó, que no
+            <p>
+              <lb/>Doncas, señó Rectó, que no
             <lb/>fem res ab aixó de casá á proba?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>No tonto, que no sápigas de
+            <p>
+              <lb/>No tonto, que no sápigas de
             <lb/>doctrina no at podrás casar.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Doncas es dir que tinch de po-
+            <p>
+              <lb/>Doncas es dir que tinch de po-
             <lb/>sá el bacallá en remull....</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Posal allá ahont vulgas, men-
+            <p>
+              <lb/>Posal allá ahont vulgas, men-
             <lb/>tres me surtiu de devant, que jo
             <lb/>no vull carrechs de conciencia.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Es que jo am vull casar, si se-
+            <p>
+              <lb/>Es que jo am vull casar, si se-
             <lb/>ñó, y no me entench de doctri-
             <lb/>nas, que ab la doctrina jo no puch
             <lb/>menjar ni divertirme: y ab la do-
@@ -3268,24 +3425,28 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Calleu, calleu; aneu, aneu;
+            <p>
+              <lb/>Calleu, calleu; aneu, aneu;
             <lb/>torneu de aqui á quinse dias, que
             <lb/>us duré la llicencia.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Y ans tirará las municions: y
+            <p>
+              <lb/>Y ans tirará las municions: y
             <lb/>cuan serán tiradas, ja ans podrem
             <lb/>casar tot de seguida. No es aixo?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Si, aneusen, que es tart, y
+            <p>
+              <lb/>Si, aneusen, que es tart, y
             <lb/>jo tinch de resar.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Que ja están llestos señó Rectó.
+            <p>
+              <lb/>Que ja están llestos señó Rectó.
             <lb/>Recto. <stage rend="cursiva">(cridan.)</stage> Ni lo un ni lo altre
             <lb/>saben lo que es doctrina; abaixó
             <lb/>he determinat que la estudien, y
@@ -3293,71 +3454,83 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Vol dir que no han saben prou?</p>
+            <p>
+              <lb/>Vol dir que no han saben prou?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Per ara, encara no.</p>
+            <p>
+              <lb/>Per ara, encara no.</p>
           </sp>
-          
+
           <pb n="7" source="Varios_220_7.jpg" facs="varios/Varios_220_7.jpg"/>
-          
+
           <fw type="paginaNum">7</fw>
-          
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Ja ho entench. Vusté ho fa
+            <p>
+              <lb/>Ja ho entench. Vusté ho fa
             <lb/>perque la sapigan ab perfecció.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Teniu rahó : aneu, aneu en
+            <p>
+              <lb/>Teniu rahó : aneu, aneu en
             <lb/>nom de Deu</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Doncas, señó Rectó, en cuant
+            <p>
+              <lb/>Doncas, señó Rectó, en cuant
             <lb/>aixó de la doctrina, no an pasi
             <lb/>cap ansia; que jo ja als la faré
             <lb/>estudiar.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Veji, señó Recto si fará un
+            <p>
+              <lb/>Veji, señó Recto si fará un
             <lb/>pensament de casarnos á proba.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Estudia la doctrina. De aqui
+            <p>
+              <lb/>Estudia la doctrina. De aqui
             <lb/>á quinse dias podreu tornar.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Vusté pensa com un sant, que
+            <p>
+              <lb/>Vusté pensa com un sant, que
             <lb/>nosaltres entretant, escombrarem
             <lb/>la escala.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Aneu bona dona, aneu.</p>
+            <p>
+              <lb/>Aneu bona dona, aneu.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Abia.</speaker>
-            <p><lb/>Pasiau be, señó Recto.</p>
+            <p>
+              <lb/>Pasiau be, señó Recto.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Deu lo guardi de mal, á vus-
+            <p>
+              <lb/>Deu lo guardi de mal, á vus-
             <lb/>té, y á mi.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Marg.</speaker>
-            <p><lb/>Estiga bonet.</p>
+            <p>
+              <lb/>Estiga bonet.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>A Deu siau. <stage rend="cursiva">(sen van.)</stage>
-            <lb/>Ben preparats están per casarse.
+            <p>
+              <lb/>A Deu siau. <stage rend="cursiva">(sen van.)</stage>
+              <lb/>Ben preparats están per casarse.
             <lb/>No haguera cregut que hi hagués
             <lb/>al mon, una gent tant bestia. No
             <lb/>obstan, ara se fan molts casaments
@@ -3377,39 +3550,46 @@
           <stage rend="cursiva">(Entra an Saldoni tot depresa.)</stage>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Escolti señó Recto, que al mi-
+            <p>
+              <lb/>Escolti señó Recto, que al mi-
             <lb/>lló ans an descuidabam, que am
             <lb/>preguntará de la doctrina?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Com se anten que at pregun-
+            <p>
+              <lb/>Com se anten que at pregun-
             <lb/>taré de la doctrina, allá ahont
             <lb/>me vindrá be.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Y doncas com ho farem?</p>
+            <p>
+              <lb/>Y doncas com ho farem?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Com fins ahont? fins al úl-
+            <p>
+              <lb/>Com fins ahont? fins al úl-
             <lb/>tim.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Oh! si la haix de apendre to-
+            <p>
+              <lb/>Oh! si la haix de apendre to-
             <lb/>ta, de aqui á un añ no la sabré
             <lb/>señó Rectó.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Que la sápigas cuant vulgas,
+            <p>
+              <lb/>Que la sápigas cuant vulgas,
             <lb/>á mi no me importa res.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Es que si ho anem allargant
+            <p>
+              <lb/>Es que si ho anem allargant
             <lb/>ja am pasará la casera, y ja tin-
             <lb/>dré temps de haber estat á presi-
             <lb/>di una altre vegada. Y miri que
@@ -3422,73 +3602,87 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Ixme de devant, no bull sen-
+            <p>
+              <lb/>Ixme de devant, no bull sen-
             <lb/>tí mes bestiesas, cap de burro, que
             <lb/>at pensas que parlá ab un Rectó
             <lb/>es parlá ab un presidari? A fora.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>No se enfadi, home, valgam
+            <p>
+              <lb/>No se enfadi, home, valgam
             <lb/>Deu, si es tan fort de geni lo au-
             <lb/>ran de sangrá massa subint. Fem
             <lb/>pactes?....</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Que pactes, ni pactes ! No
+            <p>
+              <lb/>Que pactes, ni pactes ! No
             <lb/>vull pactes ab animal.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Mala ingra de bet! home! dei-
+            <p>
+              <lb/>Mala ingra de bet! home! dei-
             <lb/>xim xarra; perque sino Deu no
             <lb/>me ajudi, so incapás de ferna una
             <lb/>de las mebas.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>No sé quin san me deté....
+            <p>
+              <lb/>No sé quin san me deté....
             <lb/>Que vols di? Quins pactes vols fé?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Aixis home , si as posa á la ra-
+            <p>
+              <lb/>Aixis home , si as posa á la ra-
             <lb/>hó, tot se pot compondre encara.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Aqui no hi ha composicions?</p>
+            <p>
+              <lb/>Aqui no hi ha composicions?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Si no am deixa dir, me en-
+            <p>
+              <lb/>Si no am deixa dir, me en-
+
             
             <pb n="8" source="Varios_220_8.jpg" facs="varios/Varios_220_8.jpg"/>
-            
-            <fw type="paginaNum">8</fw>
-            
-            <lb/>fado. Ni la seba ni la meba; ne
+
+              <fw type="paginaNum">8</fw>
+              <lb/>fado. Ni la seba ni la meba; ne
             <lb/>estudiarem per ara sis planetas...</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto. </speaker>
-            <p><lb/><stage rend="cursiva">(enfadat.)</stage> Sis planetas!</p>
+            <p>
+              <lb/>
+              <stage rend="cursiva">(enfadat.)</stage> Sis planetas!</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Vamos, serán set, y no digui
+            <p>
+              <lb/>Vamos, serán set, y no digui
             <lb/>res.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto. </speaker>
-            <p><lb/><stage rend="cursiva">(mes enfadat.)</stage> Que at pen-
+            <p>
+              <lb/>
+              <stage rend="cursiva">(mes enfadat.)</stage> Que at pen-
             <lb/>sas que regatejas una gorra ó un
             <lb/>mucadó?</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/>Home, vusté no me entent: des-
+            <p>
+              <lb/>Home, vusté no me entent: des-
             <lb/>pues cuan serém casats ja estarém
             <lb/>mes desocupats y no portarem tan-
             <lb/>ta pressa, y allavoras encara que
@@ -3497,36 +3691,45 @@
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/><stage rend="cursiva">(ab impetu.)</stage> A fora de se-
+            <p>
+              <lb/>
+              <stage rend="cursiva">(ab impetu.)</stage> A fora de se-
             <lb/>guida.</p>
           </sp>
           <sp>
             <speaker rend="cursiva">Sald.</speaker>
-            <p><lb/><stage rend="cursiva">(tot anansen.)</stage> Ey y quin ho-
+            <p>
+              <lb/>
+              <stage rend="cursiva">(tot anansen.)</stage> Ey y quin ho-
             <lb/>me mes tosut ni ans ha volgut ca-
             <lb/>sá á proba ni as vol entendre de
             <lb/>rahons, que dimoni li costaba?
             <lb/>Cuan jo sápiga la doctrina, li tinch
             <lb/>de fe esplicá perque serveix? <stage rend="cursiva">(en-
             <lb/>fadat.)</stage> Deu me guardi de els morts
-            <lb/>y de vusté. <stage rend="cursiva">(sen va.)</stage></p>
+            <lb/>y de vusté. <stage rend="cursiva">(sen va.)</stage>
+            </p>
           </sp>
           <sp>
             <speaker rend="cursiva">Recto.</speaker>
-            <p><lb/>Deu nos guardi de animals,
+            <p>
+              <lb/>Deu nos guardi de animals,
             <lb/>que no donan sino cosas, Jesus,
             <lb/>Maria y Josep que disbarats! No
             <lb/>se com hi tingut tanta paciencia.
             <lb/>Men vas á resá. In nomine Patris
-            <lb/><stage rend="cursiva">(tot fense creus)</stage> et Filli, et Es-
+            <lb/>
+              <stage rend="cursiva">(tot fense creus)</stage> et Filli, et Es-
             <lb/>piritus Sancti. Amen.</p>
           </sp>
           <trailer rend="negrita">FI.</trailer>
         </div>
-
         <div type="colofon">
-          <p><lb/>BARCELONA. <lb/>Reimpres per F. Vallés, carrer del Pi. <lb/><hi rend="cursiva">En la mateixa llibreria se
-            trobará una gran co-<lb/> lecció de Sainetes antichs y moderns.</hi></p>
+          <p>
+            <lb/>BARCELONA. <lb/>Reimpres per F. Vallés, carrer del Pi. <lb/>
+            <hi rend="cursiva">En la mateixa llibreria se
+            trobará una gran co-<lb/> lecció de Sainetes antichs y moderns.</hi>
+          </p>
         </div>
       </div>
     </body>

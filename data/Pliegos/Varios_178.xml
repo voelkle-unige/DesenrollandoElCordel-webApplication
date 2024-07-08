@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -104,6 +119,44 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q60787313">
+            <placeName key="Krakatoa_archipelago">Krakatoa Archipelago</placeName>
+            <location>
+              <geo>-6.102 105.423</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q3492">
+            <placeName key="Sumatra">Sumatra</placeName>
+            <location>
+              <geo>0 101.997</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q3757">
+            <placeName key="Java">Java</placeName>
+            <location>
+              <geo>-7.4916666666667 110.00444444444</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q3630">
+            <placeName key="Yakarta">Yakarta</placeName>
+            <location>
+              <geo>-6.175 106.8275</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q192790">
+            <placeName key="estrecho_de_la_Sonda">Estrecho De La Sonda</placeName>
+            <location>
+              <geo>-5.9702777777778 105.76972222222</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q8156">
+            <placeName key="Bandar_Lampung">Bandar Lampung</placeName>
+            <location>
+              <geo>-5.4294444444444 105.2625</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -139,8 +192,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-04-19" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-04-19" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1151,15 +1203,17 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_178_1.jpg" facs="varios/Varios_178_1.jpg"/>
-        
-          <head type="primer_titulo"><lb/>HORRIBLE CATÁSTROFE</head>
-          <head type="subtitulo"><lb/>que el dia 27 de Agosto del año de gracia 1883
+
+        <head type="primer_titulo">
+          <lb/>HORRIBLE CATÁSTROFE</head>
+        <head type="subtitulo">
+          <lb/>que el dia 27 de Agosto del año de gracia 1883
             sumergió en el mar<lb/>de la Sonda la isla de KRAKATOA con las ciudades de
             AUGER,<lb/>TJERINGEN, TELOGBETONG, parte de las costas de las islas<lb/>de SUMATRA y
             JAVA, pérdida de los buques SIAK,<lb/>VILHELMINA y otros muchos, y causando
             una<lb/>mortandad de mas de 30.000 víctimas!!!!</head>
-          
         <div type="parte" n="1">
           <lg>
             <head type="titulo_estrofa">1.</head>
@@ -1180,18 +1234,18 @@
             <l rend="indent">Mas allá de Filipínas</l>
             <l>En medio de la mar brava</l>
             <l>Están, entre otras islas,</l>
-            <l>Las de Sumatra y de Java.</l>
+            <l>Las de <name>Sumatra</name> y de <name>Java</name>.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">4.</head>
-            <l rend="indent">Las separa el mar de Sonda</l>
+            <l rend="indent">Las separa el mar de <name>Sonda</name></l>
             <l>Que agitan los temporales,</l>
             <l>Y hacen ganancia redonda</l>
             <l>Los que pescan los corales.</l>
           </lg>
-          
+
           <pb n="2" source="Varios_178_2.jpg" facs="varios/Varios_178_2.jpg"/>
-          
+
           <lg>
             <head type="titulo_estrofa">5.</head>
             <l rend="indent">Por esto muy codiciadas</l>
@@ -1203,26 +1257,26 @@
             <head type="titulo_estrofa">6.</head>
             <l rend="indent">Y cuando las poseyeron,</l>
             <l>Mas aplacada su rabia,</l>
-            <l>La gran ciudad de Batavia</l>
-            <l>Allí en Java construyeron.</l>
+            <l>La gran ciudad de <name>Batavia</name></l>
+            <l>Allí en <name>Java</name> construyeron.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">7.</head>
-            <l rend="indent">Y Batavia, la ciudad</l>
+            <l rend="indent">Y <name>Batavia</name>, la ciudad</l>
             <l>De colonias holandesas</l>
             <l>Contiene muchas bellezas</l>
             <l>De pompa y autoridad.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">8.</head>
-            <l rend="indent">Tgeringen, Tolokbeton</l>
-            <l>Y Auger, pueblos de entorno,</l>
+            <l rend="indent"><name>Tgeringen</name>, <name>Tolokbeton</name></l>
+            <l>Y <name>Auger</name>, pueblos de entorno,</l>
             <l>Le sirven como de adorno,</l>
             <l>Formándole un cinturon.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">9.</head>
-            <l rend="indent">Batavia es el corazon</l>
+            <l rend="indent"><name>Batavia</name> es el corazon</l>
             <l>De las colonias de oriente,</l>
             <l>Por esto lleva en su frente</l>
             <l>Grandeza y ostentacion.</l>
@@ -1244,7 +1298,7 @@
           <lg>
             <head type="titulo_estrofa">12.</head>
             <l rend="indent">Y no muy lejos están</l>
-            <l>Las islas de Krakatoa</l>
+            <l>Las islas de <name>Krakatoa</name></l>
             <l>Como una serpiente boa</l>
             <l>Que asecha con su volcan.</l>
           </lg>
@@ -1257,7 +1311,7 @@
           </lg>
           <lg>
             <head type="titulo_estrofa">14.</head>
-            <l rend="indent">¡Desdichada Krakatoa!</l>
+            <l rend="indent">¡Desdichada <name>Krakatoa</name>!</l>
             <l>El Señor que está en los cielos</l>
             <l>Te sumergió en hondos duelos</l>
             <l>Diciendo:—Llegó tu hora.</l>
@@ -1280,7 +1334,7 @@
             <head type="titulo_estrofa">17.</head>
             <l rend="indent">Y nadie puede encontrar</l>
             <l>Aunque busque con fe loca</l>
-            <l>Un palmo de Krakatoa</l>
+            <l>Un palmo de <name>Krakatoa</name></l>
             <l>Que no esté dentro del mar.</l>
           </lg>
           <lg>
@@ -1290,14 +1344,15 @@
             <l>Leed la Segunda Parte</l>
             <l>Que yo os lo voy á decir.</l>
           </lg>
-          <trailer rend="negrita"><lb/>Fin de la primera parte.</trailer>
+          <trailer rend="negrita">
+            <lb/>Fin de la primera parte.</trailer>
         </div>
-        
         <div n="2" type="parte">
+
           <pb n="3" source="Varios_178_3.jpg" facs="varios/Varios_178_3.jpg"/>
-          
-          <head type="titulo_parte"><lb/>SEGUNDA PARTE.</head>
-          
+
+          <head type="titulo_parte">
+            <lb/>SEGUNDA PARTE.</head>
           <lg>
             <head type="titulo_estrofa">1.</head>
             <l rend="indent">Nubes muy negras muy negras</l>
@@ -1307,7 +1362,8 @@
           </lg>
           <lg>
             <head type="titulo_estrofa">2.</head>
-            <l rend="indent">El patron del <hi rend="cursiva">Bafikuhnteo</hi></l>
+            <l rend="indent">El patron del <hi rend="cursiva">Bafikuhnteo</hi>
+            </l>
             <l>A quien los mares no asustan</l>
             <l>Dijo—Chicos, no me gustan</l>
             <l>Aquellas señas que veo.</l>
@@ -1342,7 +1398,8 @@
           </lg>
           <lg>
             <head type="titulo_estrofa">7.</head>
-            <l rend="indent">El buque de guerra <hi rend="cursiva">Siak</hi></l>
+            <l rend="indent">El buque de guerra <hi rend="cursiva">Siak</hi>
+            </l>
             <l>Reforzó bien las amarras,</l>
             <l>Pues los hombres se guarecen</l>
             <l>Cuando los cielos batallan.</l>
@@ -1396,9 +1453,9 @@
             <l>De los hilos del telegrafo</l>
             <l>Ha contado lo que vió.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_178_4.jpg" facs="varios/Varios_178_4.jpg"/>
-          
+
           <lg>
             <head type="titulo_estrofa">15.</head>
             <l rend="indent">«Era el dia veinte y siete,</l>
@@ -1418,40 +1475,40 @@
             <l rend="indent">Vi que entraba tierra adentro</l>
             <l>Torciéndose á su placer,</l>
             <l>Y creo que ya en su centro</l>
-            <l>No está la ciudad de Auger.»</l>
+            <l>No está la ciudad de <name>Auger</name>.»</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">18.</head>
             <l rend="indent">El dia veinte y nueve</l>
-            <l>Los de Batavia buscaban</l>
+            <l>Los de <name>Batavia</name> buscaban</l>
             <l>Una esplicacion que llevo</l>
             <l>Las razones que ignoraban.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">19.</head>
             <l rend="indent">Y vieron que buena parte</l>
-            <l>De aquella isla de Java</l>
+            <l>De aquella isla de <name>Java</name></l>
             <l>La sepultó la mar brava</l>
             <l>Con espantoso desastre.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">20.</head>
-            <l rend="indent">Todos los Faros de Sonda</l>
+            <l rend="indent">Todos los Faros de <name>Sonda</name></l>
             <l>Los ha sepultado el mar</l>
             <l>Entre la espumosa onda</l>
             <l>Y el trueno del huracán.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">21.</head>
-            <l rend="indent">Auger, Tjeringen,</l>
+            <l rend="indent"><name>Auger</name>, Tjeringen,</l>
             <l>Tolokbeston en su asiento</l>
             <l>Se hundieron en un momento</l>
             <l>Para nunca mas volver.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">22.</head>
-            <l rend="indent">¿Y Krakatoa? Inmolada</l>
-            <l>Tambien Krakatoa ha sido.</l>
+            <l rend="indent">¿Y <name>Krakatoa</name>? Inmolada</l>
+            <l>Tambien <name>Krakatoa</name> ha sido.</l>
             <l>La podeis dar en olvido.</l>
             <l>¡¡No hay mas que la mar salada!!</l>
           </lg>
@@ -1466,7 +1523,7 @@
             <head type="titulo_estrofa">24.</head>
             <l rend="indent">Ni uno solo salvo está:</l>
             <l>Ni uno de los que vivian</l>
-            <l>En Krakatoa podrá</l>
+            <l>En <name>Krakatoa</name> podrá</l>
             <l>Decirnos lo que ocurria.</l>
           </lg>
           <lg>
@@ -1497,13 +1554,15 @@
             <l>Y luego de ti gocemos</l>
             <l>Por siempre en la gloria. Amen.</l>
           </lg>
-          <p rend="cursiva"><lb/>(Es propiedad.)</p>
+          <p rend="cursiva">
+            <lb/>(Es propiedad.)</p>
           <trailer rend="negrita">FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Palma. —Impr. de B. Rotger.</p>
-          <p><lb/>PALMA. Tienda de M Borras. Cuesta del Teatro.</p>
+          <p>
+            <lb/>Palma. —Impr. de B. Rotger.</p>
+          <p>
+            <lb/>PALMA. Tienda de M Borras. Cuesta del Teatro.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -75,7 +89,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -102,6 +117,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -138,8 +161,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-04-13" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-04-13" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -988,16 +1010,18 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_175_1.jpg" facs="varios/Varios_175_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>NOVA CONTRA-DANSA</head>
-          <head type="subtitulo_parte"><lb/>Sobra mutius dels Cascus y vestits Municipals</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>NOVA CONTRA-DANSA</head>
+          <head type="subtitulo_parte">
+            <lb/>Sobra mutius dels Cascus y vestits Municipals</head>
           <lg>
             <lg>
               <head type="titulo_estrofa">1.</head>
-              <l>La Ciutat de Barcelona</l>
+              <l>La Ciutat de <name>Barcelona</name></l>
               <l>es la gran Ciutat Condal</l>
               <l>que per festas y per bromas</l>
               <l>sempre es la mes principal.</l>
@@ -1008,7 +1032,6 @@
               <l>are ans á nant fet lluhí</l>
               <l>la guardia municipal.</l>
             </lg>
-
 
             <pb n="2" source="Varios_175_2.jpg" facs="varios/Varios_175_2.jpg"/>
 
@@ -1093,19 +1116,23 @@
               <l>vestits d' aquesta gran gala</l>
               <l>pera férla lluhí</l>
               <l>los furastés que aquí vindrán</l>
-              <l>á la ciutat de Barcelona</l>
+              <l>á la ciutat de <name>Barcelona</name></l>
               <l>desseguida esclamarán</l>
               <l>viva Rius y Fontrodona.</l>
             </lg>
           </lg>
         </div>
-
         <div n="2">
+
           <pb n="3" source="Varios_175_3.jpg" facs="varios/Varios_175_3.jpg"/>
 
-          <head type="titulo_parte"><lb/><hi rend="cursiva">GRAN SCHOTICHS NOUS</hi><lb/>DELS BUROTS
-            Y LOS SEUS VESTITS<lb/><hi rend="cursiva">TRETS PER UN CEGO TRANQUIL</hi></head>
-
+          <head type="titulo_parte">
+            <lb/>
+            <hi rend="cursiva">GRAN SCHOTICHS NOUS</hi>
+            <lb/>DELS BUROTS
+            Y LOS SEUS VESTITS<lb/>
+            <hi rend="cursiva">TRETS PER UN CEGO TRANQUIL</hi>
+          </head>
           <lg>
             <head type="titulo_estrofa">1.</head>
             <lg>
@@ -1121,7 +1148,6 @@
               <l>per descuntals mes dinés.</l>
             </lg>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">2.</head>
             <lg>
@@ -1152,7 +1178,6 @@
               <l>per advocat y aná mudats.</l>
             </lg>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">4.</head>
             <lg>
@@ -1168,7 +1193,6 @@
               <l>que donan gust de mirá.</l>
             </lg>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">5.</head>
             <lg>
@@ -1184,7 +1208,6 @@
               <l>á n' als pobres burots.</l>
             </lg>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">6.</head>
             <lg>
@@ -1203,7 +1226,6 @@
               <l>desde 'l cap fins als talons.</l>
             </lg>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">7.</head>
             <lg>
@@ -1219,14 +1241,14 @@
               <l>y los pobres hu han de pagá.</l>
             </lg>
           </lg>
-
           <lg>
             <head type="titulo_estrofa">8.</head>
             <lg>
               <l>Los posan alguna multa</l>
               <l>per cosas insignificants</l>
               <l>y no falta qui murmura</l>
-              <l>que aqui hi ha un gran joch de <add place="degajo">(mans</add></l>
+              <l>que aqui hi ha un gran joch de <add place="degajo">(mans</add>
+              </l>
             </lg>
             <lg>
               <l>No 'ls donan compte de re</l>
@@ -1236,10 +1258,9 @@
             </lg>
           </lg>
         </div>
-        
         <div n="3">
-          <head type="titulo_parte"><lb/>TANGO DE TOROS DE PUNTA</head>
-          
+          <head type="titulo_parte">
+            <lb/>TANGO DE TOROS DE PUNTA</head>
           <lg>
             <head type="titulo_estrofa">1.</head>
             <l>Una preciosa cubana</l>
@@ -1296,9 +1317,10 @@
             <l>me gustan á mí.</l>
             <l>sangá, sangá, me gustan á mí</l>
           </lg>
-          
-          <p><lb/>TIMBRE IMPERIAL.</p>
-          <p><lb/>Propiedad de José Soriano y Manuel Tallada </p>
+          <p>
+            <lb/>TIMBRE IMPERIAL.</p>
+          <p>
+            <lb/>Propiedad de José Soriano y Manuel Tallada </p>
         </div>
       </div>
     </body>

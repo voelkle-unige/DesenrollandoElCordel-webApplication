@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,44 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q8810">
+            <placeName key="Granada">Granada</placeName>
+            <location>
+              <geo>37.178055555556 -3.6008333333333</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q16271">
+            <placeName key="Provincia_de_Salerno">Provincia De Salerno</placeName>
+            <location>
+              <geo>40.683333333333 14.766666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2044">
+            <placeName key="Florencia">Florencia</placeName>
+            <location>
+              <geo>43.771388888889 11.254166666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1614490">
+            <placeName key="Alhambra">Alhambra</placeName>
+            <location>
+              <geo>38.8983204 -3.0535507</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1460">
+            <placeName key="Sicilia">Sicilia</placeName>
+            <location>
+              <geo>37.599958333333 14.015377777778</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +183,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-14" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-14" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1168,19 +1220,18 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_134_1.jpg" facs="varios/Varios_134_1.jpg"/>
 
           <fw type="numeroPliego">(Núm. 59.)</fw>
-
-          <head type="primer_titulo"><lb/>RELACION JOCOSA<lb/>DE LA CALABAZA Y EL VINO,</head>
-
+          <head type="primer_titulo">
+            <lb/>RELACION JOCOSA<lb/>DE LA CALABAZA Y EL VINO,</head>
           <head type="subtitulo" rend="negrita">
             <lb/>compuesta por un ingenio que se meneaba.</head>
-
           <l rend="indent">Silencio, atencion, soniche.</l>
           <l>atendite, camarada,</l>
           <l>que voy á contar un caso</l>
-          <l>que me sucedió en Granada;</l>
+          <l>que me sucedió en <name>Granada</name>;</l>
           <l>pero para que lo cuente,</l>
           <l>se han de estar manicruzadas,</l>
           <l>con silencio y atencion,</l>
@@ -1235,10 +1286,10 @@
           <l>un picarillo en España,</l>
           <l>un capitan Belisario,</l>
           <l>una Inés cuello de garza,</l>
-          <l>un mágico de Salerno,</l>
+          <l>un mágico de <name>Salerno</name>,</l>
           <l>una dama capitana,</l>
-          <l>un Médicis de Florencia,</l>
-          <l>una sierva de Tinacria,</l>
+          <l>un Médicis de <name>Florencia</name>,</l>
+          <l>una sierva de <name>Tinacria</name>,</l>
           <l>un perro del hortelano,</l>
           <l>un áspid de Cleopatra,</l>
           <l>un Coello undon Quijote,</l>
@@ -1273,7 +1324,7 @@
           <l>otra salida va ya,</l>
           <l>¿si será este el entre y salgat</l>
           <l>y encaminé mi paseo</l>
-          <l>á la cuesta de la Alhambra;</l>
+          <l>á la cuesta de la <name>Alhambra</name>;</l>
           <l>embosquéme en el sotillo,</l>
           <l>tendí en el prado la capa,</l>
           <l>hinqué la rodilla en tierra,</l>
@@ -1337,7 +1388,8 @@
           <l>los diablos y las beatas,</l>
           <l>la escuadra de los armados</l>
           <l>que sale en semana santa,</l>
-          <l><hi rend="cursiva">quique cumque</hi>, que me digas</l>
+          <l>
+            <hi rend="cursiva">quique cumque</hi>, que me digas</l>
           <l>si eres cuerpo ó eres alma,</l>
           <l>ó si eres la contra-ronda</l>
           <l>que siempre á deshoras anda!</l>
@@ -1428,11 +1480,11 @@
           <l>hablando fuera de chanza,</l>
           <l>digo que seria el VINO</l>
           <l>ene llevé en la CÁLADAT</l>
-
           <trailer>FIN</trailer>
         </div>
         <div type="colofon">
-          <p><lb/>MADRID. — Despacho: Libreria y Casa Editorial Hernando (S. A.), Arenal, 11.</p>
+          <p>
+            <lb/>MADRID. — Despacho: Libreria y Casa Editorial Hernando (S. A.), Arenal, 11.</p>
         </div>
       </div>
     </body>

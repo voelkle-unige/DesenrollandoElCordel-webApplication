@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -73,7 +87,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +114,26 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q3314337">
+            <placeName key="El_Pardo">El Pardo</placeName>
+            <location>
+              <geo>40.516666666667 -3.7666666666667</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -134,8 +169,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-31" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-31" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1254,12 +1288,15 @@
   <text>
     <body>
       <div>
-        <pb n="1" source="Varios_221_1.jpg" facs="varios/Varios_221_1.jpg"/>
-        
-        <div n="1">
-          <head type="primer_titulo"><lb/><hi rend="negrita">NUEVO MINISTERIO</hi><lb/>QUE SE DICE
-            VAN A FORMAR LAS MUJERES</head>
 
+        <pb n="1" source="Varios_221_1.jpg" facs="varios/Varios_221_1.jpg"/>
+
+        <div n="1">
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">NUEVO MINISTERIO</hi>
+            <lb/>QUE SE DICE
+            VAN A FORMAR LAS MUJERES</head>
           <lg>
             <l rend="indent">Ya vereis disponer á las mujeres</l>
             <l>y la España vereis aumentar</l>
@@ -1348,12 +1385,12 @@
             <l>en cierta parte no pueda tocar.</l>
           </lg>
         </div>
-        
         <div n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>Desengaños del dia</head>
+          <head type="titulo_parte" rend="negrita">
+            <lb/>Desengaños del dia</head>
           <lg>
             <l rend="indent">Ha venido una orden</l>
-            <l>nueva de Madrid</l>
+            <l>nueva de <name>Madrid</name></l>
             <l>que castiguen los alcaldes</l>
             <l>á todos los pobres que vean pedir.</l>
             <l>Que conciencia más divina</l>
@@ -1404,9 +1441,9 @@
             <l>ya no necesitan trabucos</l>
             <l>como antes usaban</l>
             <l>el ladrón lo que necesita</l>
-            
+
             <pb n="3" source="Varios_221_3.jpg" facs="varios/Varios_221_3.jpg"/>
-            
+
             <l>una levita adornada</l>
             <l>con un buen reloj</l>
             <l>tener buena pluma y largo gaban</l>
@@ -1430,10 +1467,9 @@
             <l>D, Paco en el co desapareció.</l>
           </lg>
         </div>
-        
         <div n="3">
-          <head type="titulo_parte"><lb/>Lios y trapisondas de las mujeres</head>
-          
+          <head type="titulo_parte">
+            <lb/>Lios y trapisondas de las mujeres</head>
           <lg>
             <l rend="indent">El marido que es celoso</l>
             <l>martiriza á su mujer</l>
@@ -1490,9 +1526,9 @@
             <l>¿Cómo quiere su marido</l>
             <l>que su mujer sea honrada?</l>
           </lg>
-          
+
           <pb n="4" source="Varios_221_4.jpg" facs="varios/Varios_221_4.jpg"/>
-          
+
           <lg>
             <l rend="indent">Delante de su marido</l>
             <l>la mujer no tiene gana,</l>
@@ -1539,7 +1575,7 @@
             <l rend="indent">Un diputado tenía</l>
             <l>un borrico adelantado</l>
             <l>y un día se fué tras de él</l>
-            <l>para meterse en el Pardo.</l>
+            <l>para meterse en el <name>Pardo</name>.</l>
             <l>Mariano Trampas que estaba</l>
             <l>dijo—Aquí no puede entrar</l>
             <l>ningún hombre sin carrera</l>
@@ -1578,9 +1614,11 @@
             <l>á costa de la mujer,</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/><hi rend="cursiva">Tipografía LA POPULAR. Calle de Mina, 8—Barcelona.</hi></p>
+          <p>
+            <lb/>
+            <hi rend="cursiva">Tipografía LA POPULAR. Calle de Mina, 8—Barcelona.</hi>
+          </p>
         </div>
       </div>
     </body>

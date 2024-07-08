@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -78,7 +92,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -103,6 +118,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q5776">
+            <placeName key="Belén">Belén</placeName>
+            <location>
+              <geo>31.704444444444 35.206111111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -138,8 +161,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-05-03" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-05-03" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1436,17 +1458,18 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_185_1.jpg" facs="varios/Varios_185_1.jpg"/>
 
           <fw type="numeroPliego">(Núm. 156.)</fw>
-
-          <head type="primer_titulo" rend="negrita"><lb/>VILLANCICOS PATRIOTICOS</head>
-          <head type="subtitulo" rend="cursiva"><lb/>que se cantan este año por el nacimiento del
+          <head type="primer_titulo" rend="negrita">
+            <lb/>VILLANCICOS PATRIOTICOS</head>
+          <head type="subtitulo" rend="cursiva">
+            <lb/>que se cantan este año por el nacimiento del
             Redentor del mundo, escla-<lb/>vizado, y triunfo de la libertad.</head>
-
           <div>
-            <head type="titulo_cancion"><lb/>VIAJE DE LA VÍRGEN Y SAN JOSE.</head>
-
+            <head type="titulo_cancion">
+              <lb/>VIAJE DE LA VÍRGEN Y SAN JOSE.</head>
             <l rend="indent">Camina para Belén</l>
             <l>una hermosa Peregrina,</l>
             <l>en cuya preciosa sien,</l>
@@ -1496,10 +1519,9 @@
             <l>principia á dar en el suelo</l>
             <l>do falta la caridad.</l>
           </div>
-
           <div>
-            <head type="titulo_cancion"><lb/>LOS PASTORES EN BELÉN. CORO.</head>
-
+            <head type="titulo_cancion">
+              <lb/>LOS PASTORES EN BELÉN. CORO.</head>
             <l>Coro. Sencillos Pastores</l>
             <l>alegres llegad,</l>
             <l>que al nacer el Niño</l>
@@ -1660,10 +1682,8 @@
             <l>conservadla, honrados,</l>
             <l>con la libertad.</l>
           </div>
-
           <div>
             <head type="titulo_estrofa">PASTORELA EN SEGUIDILLAS.</head>
-
             <l rend="indent">Hoy á la media noche</l>
             <l>nace el Mesías,</l>
             <l>para dar á los hombres</l>
@@ -1696,11 +1716,11 @@
             <l>le haremos que camine</l>
             <l>por buena senda.</l>
           </div>
-
           <div>
-            <head type="titulo_estrofa">ADORACION.<lb/><hi rend="cursiva">De los Reyes
-              magos.</hi></head>
-
+            <head type="titulo_estrofa">ADORACION.<lb/>
+              <hi rend="cursiva">De los Reyes
+              magos.</hi>
+            </head>
             <l rend="indent">Tres Reyes de Oriente</l>
             <l>de un astro guiados,</l>
             <l>á Belen caminan</l>
@@ -1775,7 +1795,6 @@
             <l>sereis compensados</l>
             <l>con paz en la tierra,</l>
             <l>con gloria, en lo alto.</l>
-
           </div>
         </div>
       </div>

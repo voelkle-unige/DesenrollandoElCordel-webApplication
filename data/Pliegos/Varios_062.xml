@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve">El hambriento burlado.</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_353.xml">Varios_353</ref></p>
+            <p>Otra impresión: <ref target="Varios_353.xml">Varios_353</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>[s.n.]</publisher>
@@ -65,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +110,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q2000928">
+            <placeName key="Santa_Inés">Santa Inés</placeName>
+            <location>
+              <geo>42.039444444444 -3.7025</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +153,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1927,22 +1950,24 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_062_1.jpg" facs="varios/Varios_062_1.jpg"/>
+
         <div>
-          <head type="primer_titulo"><lb/>EL HAMBRIENTO BURLADO.</head>
-          <head type="subtitulo"><lb/>PRIMERA PARTE.</head>
-          
+          <head type="primer_titulo">
+            <lb/>EL HAMBRIENTO BURLADO.</head>
+          <head type="subtitulo">
+            <lb/>PRIMERA PARTE.</head>
           <castList>
             <head type="reparto_titulo">PERSONAJES.</head>
             <castItem>D. PÁNFILO.</castItem>
             <castItem>D. TORTUGA.</castItem>
           </castList>
-          
-          <stage><lb/>La escena figura una guardilla de un nigromántico, en la cual hay una mesita
+          <stage>
+            <lb/>La escena figura una guardilla de un nigromántico, en la cual hay una mesita
             con un <lb/>candil medio apagado, una cazolita tapada con comida, varias botellas en los
             es- <lb/>tantes de la sala, y otra encima de la mesa; un cubierto y una navaja pequeña,
             pan <lb/>y un vaso. Una ventana. Aparece D. Panfilo restregándose las manos. </stage>
-          
           <sp>
             <speaker>DON PÁNFILO.</speaker>
             <l>Vamos por fin á cenar,</l>
@@ -1979,11 +2004,10 @@
             <stage rend="cursiva">(Hace lo que va diciendo.)</stage>
             <l>estas dos sillas aqui,</l>
             <l>que figuren los cañones;</l>
-            
+
             <pb n="2" source="Varios_062_2.jpg" facs="varios/Varios_062_2.jpg"/>
-            
+
             <fw type="paginaNum">2</fw>
-            
             <l>voy á encender los mechones,</l>
             <l>y al asalto; ¡vamos! sí.</l>
             <l>Voy á buscar de contado</l>
@@ -2019,7 +2043,8 @@
             <l>arma en mano y asaltemos,</l>
             <l>solo asi vencer podremos;</l>
             <l>no se dé cuartel jamás.</l>
-            <stage rend="cursiva"><lb/>(Queda pegan- <lb/>do sablazos y tirando bolitas de papel que fi- <lb/>guren
+            <stage rend="cursiva">
+              <lb/>(Queda pegan- <lb/>do sablazos y tirando bolitas de papel que fi- <lb/>guren
               balas. Luego asoma D. Tortuga por la ventana y dice:</stage>
           </sp>
           <sp>
@@ -2115,11 +2140,10 @@
             <l>la llenaré de buen vino.</l>
             <l>Vamos, pichona, aquí ven;</l>
             <stage rend="cursiva">(A la botella.)</stage>
-            
+
             <pb n="3" source="Varios_062_3.jpg" facs="varios/Varios_062_3.jpg"/>
-            
+
             <fw type="paginaNum">3</fw>
-            
             <l>pues que ya todo el castillo</l>
             <l>está pasado á cuchillo,</l>
             <l>no es razon que quedes bien.</l>
@@ -2283,11 +2307,10 @@
             <l>que si yo le encuentro aqui,</l>
             <l>¡por Satanás! pesi á mí,</l>
             <l>que sin mas le descuartizo.</l>
-            
+
             <pb n="4" source="Varios_062_4.jpg" facs="varios/Varios_062_4.jpg"/>
-            
+
             <fw type="paginaNum">4</fw>
-            
             <l>Pero vamos, que el marqués</l>
             <l>querrá mañana el veneno;</l>
             <l>el que lo bebió, ¡qué trueno</l>
@@ -2458,9 +2481,9 @@
             <l>un aplauso general.</l>
           </sp>
         </div>
-        
         <div type="colofon">
-          <p><lb/>PALMA. Tienda de M. Borrás. Cuesta del Teatro</p>
+          <p>
+            <lb/>PALMA. Tienda de M. Borrás. Cuesta del Teatro</p>
         </div>
       </div>
     </body>

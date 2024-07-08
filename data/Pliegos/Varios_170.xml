@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -72,7 +86,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +113,50 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="8" corresp="Q8818">
+            <placeName key="Valencia">Valencia</placeName>
+            <location>
+              <geo>39.47 -0.376388888888889</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q162615">
+            <placeName key="Cartagena">Cartagena</placeName>
+            <location>
+              <geo>37.6019444444444 -0.984166666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5705">
+            <placeName key="Cataluña">Cataluña</placeName>
+            <location>
+              <geo>41.8375 1.53777777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q11959">
+            <placeName key="Alicante">Alicante</placeName>
+            <location>
+              <geo>38.345277777778 -0.48305555555556</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,8 +192,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-04-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-04-12" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -2497,17 +2555,21 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_170_1.jpg" facs="varios/Varios_170_1.jpg"/>
+
         <div>
-          <head type="primer_titulo"><lb/>DOÑA JOSEFA RAMIREZ.</head>
-          <head type="subtitulo"><lb/>ROMANCE, EN QUE SE DA CUENTA DE LOS ARROJOS,<lb/>y valientes
+          <head type="primer_titulo">
+            <lb/>DOÑA JOSEFA RAMIREZ.</head>
+          <head type="subtitulo">
+            <lb/>ROMANCE, EN QUE SE DA CUENTA DE LOS ARROJOS,<lb/>y valientes
             arrestos de esta Dama natural de Valencia,<lb/>y la felicidad con que salió de todos
             ellos.</head>
-
           <div n="1" type="parte">
-            <head type="titulo_parte"><lb/>PRIMERA PARTE.</head>
-
-            <l><hi rend="negrita">A</hi> La que es Madre del Verbo,</l>
+            <head type="titulo_parte">
+              <lb/>PRIMERA PARTE.</head>
+            <l>
+              <hi rend="negrita">A</hi> La que es Madre del Verbo,</l>
             <l>Maria Señora nuestra,</l>
             <l>le pido humilde y postrado</l>
             <l>me dé gracia, con que pueda</l>
@@ -2516,7 +2578,7 @@
             <l>y el afortunado caso,</l>
             <l>que sucedió á una Doncella;</l>
             <l>atencion que ya comienzo.</l>
-            <l>En la ciudad de Valencia</l>
+            <l>En la ciudad de <name>Valencia</name></l>
             <l>nació de muy nobles padres</l>
             <l>la hermosa Doña Joseta:</l>
             <l>cen muy buenos documentos</l>
@@ -2623,7 +2685,7 @@
             <l>Luego partió á un contador</l>
             <l>y sacó de una gaveta</l>
             <l>hasta doscientos doblones,</l>
-            <l>y se ausentó de Valencia.</l>
+            <l>y se ausentó de <name>Valencia</name>.</l>
             <l>Entre unos montes se oculta,</l>
             <l>y de noche daba vuelta,</l>
             <l>iba à las casas de juego,</l>
@@ -2635,18 +2697,20 @@
             <l>Dicen con que Don Leonardo</l>
             <l>y Don Gaspar de Contreras</l>
           </div>
-
           <div n="2" type="parte">
+
             <pb n="3" source="Varios_170_3.jpg" facs="varios/Varios_170_3.jpg"/>
 
-            <head type="titulo_parte"><lb/>DOÑA JOSEFA RAMIREZ.<lb/>ROMANCE, EN QUE SE REFIERE EL
+            <head type="titulo_parte">
+              <lb/>DOÑA JOSEFA RAMIREZ.<lb/>ROMANCE, EN QUE SE REFIERE EL
               CAUTIVERIO DE<lb/>esta Dama, y los varios sucesos que pasó hasta<lb/>el fin de su
               vida.</head>
-            <head type="titulo_parte"><lb/>SEGUNDA PARTE.</head>
-
-            <l><hi rend="negrita">Y</hi>A dixe, como salió</l>
+            <head type="titulo_parte">
+              <lb/>SEGUNDA PARTE.</head>
+            <l>
+              <hi rend="negrita">Y</hi>A dixe, como salió</l>
             <l>amparada del silencio</l>
-            <l>de Cartagena una noche</l>
+            <l>de <name>Cartagena</name> una noche</l>
             <l>llena de mil pensamientos</l>
             <l>Doña Josefa Ramirez,</l>
             <l>y marchando para el Reyno</l>
@@ -2684,13 +2748,13 @@
             <l>á ambos los dexó muertos;</l>
             <l>y montando en su caballo</l>
             <l>(como quien nada habia hecho)</l>
-            <l>llegó en fin á Barcelona,</l>
+            <l>llegó en fin á <name>Barcelona</name>,</l>
             <l>á donde supo de cierto,</l>
             <l>que ya la andaba buscando</l>
             <l>su Padre con grande anhelo.</l>
             <l>Y al instante determina</l>
             <l>vender su caballo luego,</l>
-            <l>y embarcarse para Roma,</l>
+            <l>y embarcarse para <name>Roma</name>,</l>
             <l>sin reparar en los riesgos</l>
             <l>que puedan sobrevenirle,</l>
             <l>como adelante veremos.</l>
@@ -2866,7 +2930,7 @@
             <l>la votuntad que yo os tengo,</l>
             <l>y solo de vos me fio</l>
             <l>para descubrir mi pecho.</l>
-            <l>Pretendo pasar á Roma</l>
+            <l>Pretendo pasar á <name>Roma</name></l>
             <l>á ser de mi culpa absuelto,</l>
             <l>y despues el recogerme</l>
             <l>en un sagrado Convento.</l>
@@ -2880,17 +2944,15 @@
             <l>á quien pagado le tengo</l>
             <l>tn viage, y con él vas</l>
             <l>segura de muchos riesgos</l>
-            <l>él va á parar á Alicante,</l>
+            <l>él va á parar á <name>Alicante</name>,</l>
             <l>de España famoso puerto.</l>
             <l>Le entregó los mil doblones</l>
             <l>atados en un lenzuelo;</l>
 
-            
-
             <pb n="7" source="Varios_170_7.jpg" facs="varios/Varios_170_7.jpg"/>
 
             <l>salieron con gran sigilo</l>
-            <l>de la ciudad de Valencia.</l>
+            <l>de la ciudad de <name>Valencia</name>.</l>
             <l>Doña Josefa responde:</l>
             <l>pues que ocasion les molesta</l>
             <l>á esos nobles Caballeros</l>
@@ -2922,14 +2984,14 @@
             <l>respondió : Dios los asista;</l>
             <l>y á donde el viage llevan?</l>
             <l>Y ellos mismos le informaron,</l>
-            <l>que iban acia Cartagena.</l>
+            <l>que iban acia <name>Cartagena</name>.</l>
             <l>Salió del juego, diciendo:</l>
             <l>buena suerte ha estado esta;</l>
             <l>ya tendra mi pena alivio,</l>
             <l>si se me logra la idea.</l>
             <l>Y montando en un caballo,</l>
             <l>que al zéfiro puso rienda,</l>
-            <l>á Cartagena marchaba</l>
+            <l>á <name>Cartagena</name> marchaba</l>
             <l>con muy pronta diligencia.</l>
             <l>Llegó una tarde feliz</l>
             <l>á eso de las dos y media,</l>
@@ -2960,12 +3022,12 @@
             <l>en casa Don Juan Mancilla,</l>
             <l>porque en su casa se hospedan</l>
             <l>dos famosos Caballeros</l>
-            <l>naturales de Valencia,</l>
+            <l>naturales de <name>Valencia</name>,</l>
             <l>y quiere regocijarlos,</l>
             <l>y ha de hacer una Comedia</l>
             <l>y otros muchos Entremeses;</l>
             <l>mas no quiere que se sepa,</l>
-            <l>porque en Valencia mataron</l>
+            <l>porque en <name>Valencia</name> mataron</l>
             <l>á un hombre de grandes prendas.</l>
             <l>Tente hombre, no prosigas,</l>
             <l>calla ya tu infame lengua,</l>
@@ -2991,7 +3053,7 @@
             <l>me conoceis Caballeros ?</l>
             <l>Sabed soy Doña Josefa,</l>
             <l>aquella á quien agraviasteis</l>
-            <l>en la ciudad de Valencia;</l>
+            <l>en la ciudad de <name>Valencia</name>;</l>
             <l>vengo á tomar la venganza</l>
             <l>por Don Pedro Valenzuela,</l>
             <l>que habiendo muerto á mi amante</l>
@@ -3047,28 +3109,28 @@
             <l>Fue un Donado y se lo traxo,</l>
             <l>y agradeció la fineza;</l>
             <l>sin ser de nadie sentida</l>
-            <l>se salió de Cartagena.</l>
+            <l>se salió de <name>Cartagena</name>.</l>
             <l>Y ahora Pedro de Fuentes</l>
             <l>á aquesta plana primera</l>
             <l>da fin, que en la otra segunda</l>
             <l>dará noticias enteras</l>
             <l>en lo que vino á parar</l>
             <l>la hermosa Doña Josefa.</l>
-            
+
             <pb n="6" source="Varios_170_6.jpg" facs="varios/Varios_170_6.jpg"/>
-            
+
             <l>se fue á recoger su ropa</l>
             <l>y joyas de mucho precio;</l>
             <l>mandó el amo la llevasen</l>
             <l>al navio, asi lo hicieron.</l>
             <l>Embarcose el Renegado,</l>
-            <l>á Alicante se vinieron:</l>
+            <l>á <name>Alicante</name> se vinieron:</l>
             <l>tiernamente se despiden,</l>
             <l>y él con sus grandes deseos</l>
-            <l>para Roma se embarcó,</l>
+            <l>para <name>Roma</name> se embarcó,</l>
             <l>siendole feliz el viento,</l>
             <l>en breve tiempo llegó</l>
-            <l>á Roma, y con gran contento</l>
+            <l>á <name>Roma</name>, y con gran contento</l>
             <l>pasó á ver su Santidad,</l>
             <l>parte le dió del suceso,</l>
             <l>y confesando sus culpas</l>
@@ -3079,11 +3141,11 @@
             <l>para merecer el cielo.</l>
             <l>Pero volvamos ahora</l>
             <l>á la Dama, que al momento</l>
-            <l>en Alicante compró</l>
+            <l>en <name>Alicante</name> compró</l>
             <l>un caballo que a los vientos</l>
             <l>imitaba en su carrera,</l>
             <l>por lo veloz y ligero.</l>
-            <l>Pasó á Valencia, y en ella</l>
+            <l>Pasó á <name>Valencia</name>, y en ella</l>
             <l>entró con mucho secreto:</l>
             <l>se ha irformado de sus padres</l>
             <l>y supo que estaban buenos;</l>
@@ -3135,9 +3197,9 @@
             <l>donde vivió dando exemplo.</l>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Con licencia: En Córdoba en la Imprenta de Don Juan Garcia <lb/>Rodriguez de la
+          <p>
+            <lb/>Con licencia: En Córdoba en la Imprenta de Don Juan Garcia <lb/>Rodriguez de la
             Torre, calle de la Librería.</p>
         </div>
       </div>

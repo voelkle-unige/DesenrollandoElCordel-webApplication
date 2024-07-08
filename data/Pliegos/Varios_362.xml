@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +109,26 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8717">
+            <placeName key="Sevilla">Sevilla</placeName>
+            <location>
+              <geo>37.383333333333 -5.9833333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +164,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-04" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-04" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -2981,24 +3015,27 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_362_1.jpg" facs="varios/Varios_362_1.jpg"/>
 
         <fw type="impresorNum">Núm. 49.</fw>
-
         <div>
-          <head type="primer_titulo"><lb/><hi rend="negrita">UN DEUDOR DE VIAJE</hi><lb/>Ó<lb/>DON
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">UN DEUDOR DE VIAJE</hi>
+            <lb/>Ó<lb/>DON
             ROBREÑO HECHO COMICO.</head>
-          <head type="subtitulo_parte"><lb/>FIN DE FIESTA POR<lb/>EDUARDO SALA Y SAURI.</head>
-
+          <head type="subtitulo_parte">
+            <lb/>FIN DE FIESTA POR<lb/>EDUARDO SALA Y SAURI.</head>
           <div>
-            <p><lb/>NOTA.—La propiedad de esta pieza perteneze á José Torras, quien perseguirá
+            <p>
+              <lb/>NOTA.—La propiedad de esta pieza perteneze á José Torras, quien perseguirá
               ri- <lb/>gurosamente cualquier impresion fraudulenta.</p>
           </div>
 
           <pb n="2" source="Varios_362_2.jpg" facs="varios/Varios_362_2.jpg"/>
 
           <fw type="paginaNum">— 2 —</fw>
-
           <div type="reparto">
             <head type="reparto_titulo">PERSONAS.</head>
             <castList>
@@ -3014,19 +3051,18 @@
               <castItem>UN COCHERO.</castItem>
             </castList>
           </div>
-
           <div>
-            <head type="titulo_parte"><lb/>ACTO ÚNICO.</head>
-
-            <stage rend="cursiva"><lb/>Sala de una casa de huéspedes sencillamente amueblada, una
+            <head type="titulo_parte">
+              <lb/>ACTO ÚNICO.</head>
+            <stage rend="cursiva">
+              <lb/>Sala de una casa de huéspedes sencillamente amueblada, una
               puerta en el fondo con escale-<lb/>ra que conduce á las habitaciones de arriba, otra
               á la izquierda del actor que comunica al<lb/>cuarto de D. Diego, otra á la derecha
               que figura ser la entrada. Al levantarse el telon<lb/>aparecen D. Diego escribiendo y
               Robreño cerrando un baul.</stage>
-
             <div n="1">
-              <head type="titulo_parte"><lb/>ESCENA PRIMERA.</head>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA PRIMERA.</head>
               <sp>
                 <speaker rend="cursiva">Rob.</speaker>
                 <l>Se acabó: vamos por otro.</l>
@@ -3034,15 +3070,18 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Uno.</speaker>
-                <l><stage rend="cursiva">(dentro.)</stage> ¿lnés?</l>
+                <l>
+                  <stage rend="cursiva">(dentro.)</stage> ¿lnés?</l>
               </sp>
               <sp>
                 <speaker rend="cursiva">Inés.</speaker>
-                <l><stage rend="cursiva">(id.)</stage> Mi señor.</l>
+                <l>
+                  <stage rend="cursiva">(id.)</stage> Mi señor.</l>
               </sp>
               <sp>
                 <speaker rend="cursiva">Uno.</speaker>
-                <l><stage rend="cursiva">(id.)</stage> La leche.</l>
+                <l>
+                  <stage rend="cursiva">(id.)</stage> La leche.</l>
               </sp>
               <sp>
                 <speaker rend="cursiva">Diego.</speaker>
@@ -3167,7 +3206,6 @@
                 <pb n="3" source="Varios_362_3.jpg" facs="varios/Varios_362_3.jpg"/>
 
                 <fw type="paginaNum">— 3 —</fw>
-
                 <l>hacerse esperar...</l>
               </sp>
               <sp>
@@ -3214,10 +3252,9 @@
                 <l>en toda su barcarola.</l>
               </sp>
             </div>
-
             <div n="2">
-              <head type="titulo_parte"><lb/>ESCENA II.</head>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA II.</head>
               <sp>
                 <speaker rend="cursiva">Rob.</speaker>
                 <l>Pues señor, lindo suceso</l>
@@ -3278,9 +3315,9 @@
                   precaucion por la puerta del fondo en <lb/>cuyo umbral se queda.)</stage>
               </sp>
             </div>
-
             <div n="3">
-              <head type="titulo_parte"><lb/>ESCENA III.</head>
+              <head type="titulo_parte">
+                <lb/>ESCENA III.</head>
               <sp>
                 <speaker rend="cursiva">Inés.</speaker>
                 <l rend="indent">Contentadizo y alegre</l>
@@ -3307,11 +3344,12 @@
                 <pb n="4" source="Varios_362_4.jpg" facs="varios/Varios_362_4.jpg"/>
 
                 <fw type="paginaNum">— 4 —</fw>
-
-                <stage rend="cursiva"><lb/>(Ya acercándose á Robreño de puntillas y<lb/>lee lo
+                <stage rend="cursiva">
+                  <lb/>(Ya acercándose á Robreño de puntillas y<lb/>lee lo
                   que escribe por encima de su hombro.)</stage>
                 <l>Cuidadito no caigamos,</l>
-                <l><stage rend="cursiva">(lee)</stage> á Margarita, soneto.</l>
+                <l>
+                  <stage rend="cursiva">(lee)</stage> á Margarita, soneto.</l>
                 <l>¡Ah!</l>
               </sp>
               <sp>
@@ -3347,10 +3385,9 @@
               </sp>
               <stage rend="cursiva">(Sale un aprendiz zapatero con un par de,<lb/>botas.)</stage>
             </div>
-
             <div n="4">
-              <head type="titulo_parte"><lb/>ESCENA IV.</head>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA IV.</head>
               <sp>
                 <speaker rend="cursiva">Apr.</speaker>
                 <l>¡Ah de casa!</l>
@@ -3419,9 +3456,9 @@
               <stage rend="cursiva">(Vase el aprendiz por la puerta de entrada,<lb/>Inés por la del
                 fondo.)</stage>
             </div>
-
             <div n="5">
-              <head type="titulo_parte"><lb/>ESCENA V.</head>
+              <head type="titulo_parte">
+                <lb/>ESCENA V.</head>
               <sp>
                 <speaker rend="cursiva">Diego.</speaker>
                 <l>¿Qué tal?</l>
@@ -3478,10 +3515,9 @@
                 <stage rend="cursiva">(D. Diego sale de su cuarto.)</stage>
               </sp>
             </div>
-
             <div n="6">
-              <head type="titulo_parte"><lb/>ESCENA VI.</head>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA VI.</head>
               <sp>
                 <speaker rend="cursiva">Diego.</speaker>
                 <l>Hombre, habeis tardado un año;</l>
@@ -3524,7 +3560,6 @@
                 <pb n="5" source="Varios_362_5.jpg" facs="varios/Varios_362_5.jpg"/>
 
                 <fw type="paginaNum">— 5 —</fw>
-
                 <l>al señorito don Pablo</l>
                 <l>y que la aplique dirás</l>
                 <l>remedio á su grave mal</l>
@@ -3552,12 +3587,14 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Rob.</speaker>
-                <l><stage rend="cursiva">(ap.)</stage> Cómico.</l>
+                <l>
+                  <stage rend="cursiva">(ap.)</stage> Cómico.</l>
                 <stage rend="cursiva">(Sale Inés cantando.)</stage>
               </sp>
               <sp>
                 <speaker rend="cursiva">Inés.</speaker>
-                <l><stage rend="cursiva">(canta)</stage> Del Tajo en la amena orilla,</l>
+                <l>
+                  <stage rend="cursiva">(canta)</stage> Del Tajo en la amena orilla,</l>
                 <l>paciendo estaba el ganado</l>
                 <l>un pastor, que era adorado</l>
                 <l>de una linda pastorcilla.</l>
@@ -3674,12 +3711,10 @@
               </sp>
               <stage rend="cursiva">(Mostrando los pedazos de papel.)</stage>
             </div>
-
             <div n="7">
-              <head type="titulo_parte"><lb/>ESCENA VII.</head>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA VII.</head>
               <stage rend="cursiva">(Sale Miguel y su aprendiz que trae una bota.)</stage>
-
               <sp>
                 <speaker rend="cursiva">Miguel.</speaker>
                 <l>¡Ah de esta casa!</l>
@@ -3741,13 +3776,13 @@
                 <speaker rend="cursiva">Rob.</speaker>
                 <l>No grite V. ¡voto ásan!</l>
                 <l>porque de un sillatazo</l>
-                <l>le rompo á V... <stage rend="cursiva">(enarbolando una silla. )</stage></l>
+                <l>le rompo á V... <stage rend="cursiva">(enarbolando una silla. )</stage>
+                </l>
               </sp>
 
               <pb n="6" source="Varios_362_6.jpg" facs="varios/Varios_362_6.jpg"/>
 
               <fw type="paginaNum">— 6 —</fw>
-
               <sp>
                 <speaker rend="cursiva">Mig.</speaker>
                 <stage rend="cursiva">(riendo.)</stage>
@@ -3792,17 +3827,17 @@
               </sp>
               <stage rend="cursiva">(Sale Pablo y su aprendiz quetrae una bota.)</stage>
             </div>
-
             <div n="8">
-              <head type="titulo_parte"><lb/>ESCENA VIII.</head>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA VIII.</head>
               <sp>
                 <speaker rend="cursiva">Pablo.</speaker>
                 <l>¡Ah de casa!</l>
               </sp>
               <sp>
                 <speaker rend="cursiva">Rob.</speaker>
-                <l><stage rend="cursiva">(ap.)</stage> ¡Voto á España!</l>
+                <l>
+                  <stage rend="cursiva">(ap.)</stage> ¡Voto á España!</l>
               </sp>
               <sp>
                 <speaker rend="cursiva">Pablo.</speaker>
@@ -3851,7 +3886,7 @@
               <sp>
                 <speaker rend="cursiva">Pablo.</speaker>
                 <l>Vais á verlo,</l>
-                <l>aprendiz, voto á Sevilla!</l>
+                <l>aprendiz, voto á <name>Sevilla</name>!</l>
               </sp>
               <stage rend="cursiva">(El aprendiz toma la malela y se va riendo<lb/> á carcajada
                 suelta. Robreño enarbola una<lb/> silla, en cuya posicion se queda hasta que<lb/>
@@ -3872,7 +3907,8 @@
                 <l rend="indent">Ay Jesús ¿quién pudo, quién...</l>
                 <l>yo me vuelvo loco, sí;</l>
                 <l>¿qué dirá el tio de mí?</l>
-                <l>¿qué dirá el tio... <stage rend="cursiva">(se cae en una silla. )</stage></l>
+                <l>¿qué dirá el tio... <stage rend="cursiva">(se cae en una silla. )</stage>
+                </l>
               </sp>
               <sp>
                 <speaker rend="cursiva">Inés.</speaker>
@@ -3881,10 +3917,9 @@
               </sp>
               <stage rend="cursiva">(Sale Nolasco, seguido de varios acreedores.)</stage>
             </div>
-
             <div n="9">
-              <head type="titulo_parte"><lb/>ESCENA IX.</head>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA IX.</head>
               <sp>
                 <speaker rend="cursiva">Nol.</speaker>
                 <l>Ah de casa!... señor poeta,</l>
@@ -3982,17 +4017,15 @@
                 <pb n="7" source="Varios_362_7.jpg" facs="varios/Varios_362_7.jpg"/>
 
                 <fw type="paginaNum">— 7 —</fw>
-
                 <l>Robreño, esto por aquello</l>
                 <l>jugamos loco con loco.</l>
               </sp>
               <stage rend="cursiva">(Vanse todos. Robreño se queda tendido;
                 sale<lb/>Inés.)</stage>
             </div>
-
             <div n="10">
-              <head type="titulo_parte"><lb/>ESCENA X.</head>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA X.</head>
               <sp>
                 <speaker rend="cursiva">Inés.</speaker>
                 <l>¿Qué haces, Robreño, así?</l>
@@ -4038,11 +4071,11 @@
                 <l>con semblante altivo y regio?</l>
               </sp>
             </div>
-
             <div n="11">
-              <head type="titulo_parte"><lb/>ESCENA XI.</head>
-              <stage><lb/>Dichos y MARGARITA.</stage>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA XI.</head>
+              <stage>
+                <lb/>Dichos y MARGARITA.</stage>
               <sp>
                 <speaker rend="cursiva">Rob.</speaker>
                 <l>Margarita, á vuestros piés.</l>
@@ -4127,7 +4160,8 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Rob.</speaker>
-                <l>Héle aquí <stage rend="cursiva">(Diego entra.)</stage></l>
+                <l>Héle aquí <stage rend="cursiva">(Diego entra.)</stage>
+                </l>
               </sp>
               <sp>
                 <speaker rend="cursiva">Díego.</speaker>
@@ -4216,7 +4250,6 @@
               <pb n="8" source="Varios_362_8.jpg" facs="varios/Varios_362_8.jpg"/>
 
               <fw type="paginaNum">— 8 —</fw>
-
               <sp>
                 <speaker rend="cursiva">Rob.</speaker>
                 <l>Inés, ja, ja.</l>
@@ -4269,10 +4302,9 @@
               <stage rend="cursiva">(Todos los acreedores y zapateros vuelven á<lb/>entrar con todo
                 lo que se han llevado.)</stage>
             </div>
-
             <div n="12">
-              <head type="titulo_parte"><lb/>ESCENA XII.</head>
-
+              <head type="titulo_parte">
+                <lb/>ESCENA XII.</head>
               <sp>
                 <speaker rend="cursiva">Nol.</speaker>
                 <l>Vedle allí.</l>
@@ -4302,8 +4334,10 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Rob.</speaker>
-                <l><stage rend="cursiva">(lee)</stage>
-                  <hi rend="cursiva">No puede ser</hi></l>
+                <l>
+                  <stage rend="cursiva">(lee)</stage>
+                  <hi rend="cursiva">No puede ser</hi>
+                </l>
                 <l rend="cursiva">el guardar una mujer.</l>
                 <l rend="indent">Pues yo una décima haré</l>
                 <l>al público dedicada,</l>
@@ -4323,7 +4357,8 @@
               </sp>
               <sp>
                 <speaker rend="cursiva">Rob. </speaker>
-                <l rend="cursiva"><stage rend="cursiva">(lee)</stage> Hoy, público, á quien
+                <l rend="cursiva">
+                  <stage rend="cursiva">(lee)</stage> Hoy, público, á quien
                   adoro,</l>
                 <l rend="cursiva">á tus aras me presento,</l>
                 <l rend="cursiva">y con mi corto talento</l>
@@ -4388,9 +4423,9 @@
               </sp>
               <trailer>FIN.</trailer>
             </div>
-
             <div type="colofon">
-              <p><lb/>Se hallará de venta en casa los sucesores de Antonio Bosch, calle del Bou de
+              <p>
+                <lb/>Se hallará de venta en casa los sucesores de Antonio Bosch, calle del Bou de
                 la Plaza Nueva, núm. 13. tienda. <lb/>Barcelona.—Imp. de Narciso Ramirez y Comp.ª,
                 pasaje de Escudillers, núm. 4.—1877</p>
             </div>

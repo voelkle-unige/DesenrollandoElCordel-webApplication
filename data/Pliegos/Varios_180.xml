@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -112,6 +127,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -148,8 +171,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-04-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-04-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1259,11 +1281,12 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_180_1.jpg" facs="varios/Varios_180_1.jpg"/>
 
           <fw type="impresorNum">Núm. 84</fw>
-
-          <head type="primer_titulo" rend="negrita"><lb/>LA LLUNA EN UN COVA.</head>
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA LLUNA EN UN COVA.</head>
           <lg>
             <l rend="indent">Es un ditxo mòlt vulgar</l>
             <l>Buscá la lluna en un cova,</l>
@@ -1304,16 +1327,15 @@
             <l>Y la buscan en un cova</l>
             <l>Seguintne tots los racons.</l>
           </lg>
-          
+
           <pb n="2" source="Varios_180_2.jpg" facs="varios/Varios_180_2.jpg"/>
-          
+
           <fw type="paginaNum">—2—</fw>
-          
           <lg>
             <l rend="indent">Los uns buscantla la troban</l>
             <l>Y 'n trehuen tot lo profit</l>
             <l>Anant á menjá costellas</l>
-            <l>Y predicánt á Madrid.</l>
+            <l>Y predicánt á <name>Madrid</name>.</l>
             <l>Altres que no s' espavilan</l>
             <l>Mal lo tret 'ls ha sortit</l>
             <l>Y la lluna se 'ls fa fosca</l>
@@ -1429,11 +1451,10 @@
             <l>L' han buscat, la buscarán</l>
             <l>Y la buscan en un cova.</l>
           </lg>
-          
+
           <pb n="3" source="Varios_180_3.jpg" facs="varios/Varios_180_3.jpg"/>
-          
+
           <fw type="paginaNum">— 3 —</fw>
-          
           <lg>
             <l rend="indent">Sense fer cap escepció,</l>
             <l>Desde 'l noble general</l>
@@ -1475,11 +1496,11 @@
             <l>Potser mes la busco jo.</l>
           </lg>
         </div>
-        
         <div>
-          <head type="primer_titulo" rend="negrita"><lb/>LA CONFIANZA.</head>
-          <head type="subtitulo"><lb/>DUO.</head>
-          
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA CONFIANZA.</head>
+          <head type="subtitulo">
+            <lb/>DUO.</head>
           <lg>
             <head type="titulo_estrofa">I.</head>
             <l rend="indent">Si mis lábios, siempre fieles,</l>
@@ -1513,11 +1534,10 @@
             <l>cual la brisa matutina</l>
             <l>la naciente y vírgen flor.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_180_4.jpg" facs="varios/Varios_180_4.jpg"/>
-          
+
           <fw type="paginaNum">— 4 —</fw>
-          
           <lg>
             <head type="titulo_estrofa">IV.</head>
             <l rend="indent">Es tu voz como del ave</l>
@@ -1597,11 +1617,12 @@
           </lg>
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Se hallará de venta en casa los sucesores de Antonio Bosch, calle del Bou de la
+          <p>
+            <lb/>Se hallará de venta en casa los sucesores de Antonio Bosch, calle del Bou de la
             Plaza Nueva, núm- 13. tienda. </p>
-          <p><lb/>Barcelona.—Imp. de Narciso Ramirez y Comp.ª, pasaje de Escudillers, núm.
+          <p>
+            <lb/>Barcelona.—Imp. de Narciso Ramirez y Comp.ª, pasaje de Escudillers, núm.
             4.—1877</p>
         </div>
       </div>

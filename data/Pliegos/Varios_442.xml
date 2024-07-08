@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de
                               Genève</authority>
@@ -44,7 +58,7 @@
             <country>Suisse</country>
             <settlement>Genève</settlement>
             <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
+            </repository>
             <collection>Colección Varios</collection>
             <idno type="cote"/>
             <idno type="DOI">10.5281/zenodo.6802778</idno>
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="32"/>32
+                <extent>
+                  <measure unit="página" quantity="32"/>32
                                                   p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
@@ -105,6 +120,82 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q1151567">
+            <placeName key="India_occidental">India Occidental</placeName>
+            <location>
+              <geo>19 74.15</geo>
+            </location>
+          </place>
+          <place n="17" corresp="Q1530">
+            <placeName key="Bagdad">Bagdad</placeName>
+            <location>
+              <geo>33.3152777777778 44.3661111111111</geo>
+            </location>
+          </place>
+          <place n="9" corresp="Q48195">
+            <placeName key="Basora">Basora</placeName>
+            <location>
+              <geo>30.515 47.81</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q669037">
+            <placeName key="Indias_Occidentales">Indias Occidentales</placeName>
+            <location>
+              <geo>21.98333333 -79.03333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q43048">
+            <placeName key="Rodas">Rodas</placeName>
+            <location>
+              <geo>36.17 27.92</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q794">
+            <placeName key="Irán">Irán</placeName>
+            <location>
+              <geo>32 53</geo>
+            </location>
+          </place>
+          <place n="7" corresp="Q854">
+            <placeName key="Sri_Lanka">Sri Lanka</placeName>
+            <location>
+              <geo>7 81</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q85">
+            <placeName key="El_Cairo">El Cairo</placeName>
+            <location>
+              <geo>30.0444444444444 31.2358333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q134514">
+            <placeName key="Suez">Suez</placeName>
+            <location>
+              <geo>29.966666666667 32.533333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q87">
+            <placeName key="Alejandría">Alejandría</placeName>
+            <location>
+              <geo>31.1975 29.8925</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q970">
+            <placeName key="Comoras">Comoras</placeName>
+            <location>
+              <geo>43.7 -12.3</geo>
+            </location>
+          </place>
+          <place n="1">
+            <placeName key="Salahat">Salahat</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+          <place n="1">
+            <placeName key="Kela">Kela</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -140,10 +231,12 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-    <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_442_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_442_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_442_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_442_1/full/full/0/default.jpg"/>
@@ -6443,25 +6536,41 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_442_1.jpg" facs="varios/Varios_442_1.jpg"/>
+
         <fw type="numeroPliego">(CUATRO PLIEGOS.)</fw>
-        <head type="primer_titulo"><lb/><hi rend="negrita">HISTORIA</hi><lb/>DE <lb/><hi rend="negrita">SIMBAD EL MARINO</hi></head>
+        <head type="primer_titulo">
+          <lb/>
+          <hi rend="negrita">HISTORIA</hi>
+          <lb/>DE <lb/>
+          <hi rend="negrita">SIMBAD EL MARINO</hi>
+        </head>
         <head type="subtitulo_parte">con las extraordinarias aventuras que le
                               sucedieron en los <lb/>siete viajes que hizo en los mares de la
                               India.</head>
         <div type="colofon">
-          <p><lb/>MADRID <lb/>Despacho: Sucesores de Hernando, Arenal,
+          <p>
+            <lb/>MADRID <lb/>Despacho: Sucesores de Hernando, Arenal,
                                     11.</p>
         </div>
+
         <pb n="2" source="Varios_442_2.jpg" facs="varios/Varios_442_2.jpg"/>
+
         <div type="propiedad">
-          <p><lb/>ES PROPIEDAD</p>
+          <p>
+            <lb/>ES PROPIEDAD</p>
         </div>
+
         <pb n="3" source="Varios_442_3.jpg" facs="varios/Varios_442_3.jpg"/>
+
         <div type="parte" n="1">
-          <head type="primer_titulo"><lb/>HISTORIA <lb/>DE <lb/>SIMBAD EL MARINO.</head>
-          <head type="titulo_parte" rend="negrita"><lb/>INTRODUCCION.</head>
-          <p><lb/>Habia en Bagdad un infeliz <lb/>mozo de carga llamado Na-
+          <head type="primer_titulo">
+            <lb/>HISTORIA <lb/>DE <lb/>SIMBAD EL MARINO.</head>
+          <head type="titulo_parte" rend="negrita">
+            <lb/>INTRODUCCION.</head>
+          <p>
+            <lb/>Habia en <name>Bagdad</name> un infeliz <lb/>mozo de carga llamado Na-
                                     <lb/>dir. Era un dia rigoroso del <lb/>verano, cuando este pobre
                                     caminaba <lb/>por las calles de la ciudad, llevando <lb/>sobre
                                     sus hombros un grandisimo <lb/>fardo. Tiempo hacia ya que mar-
@@ -6475,12 +6584,15 @@
                                     de los convidados, los escitantes olores <lb/>de los manjares y
                                     la suave melodia de armoniosos instrumentos, ninguna <lb/>duda
                                     dejaban.</p>
+
           <pb n="4" source="Varios_442_4.jpg" facs="varios/Varios_442_4.jpg"/>
-          <p><lb/>Escitada la curiosidad de Nadir, quiso saber quién vivía
+
+          <p>
+            <lb/>Escitada la curiosidad de Nadir, quiso saber quién vivía
                                     en aquella casa, <lb/>y acercándose á varios criados que vió
                                     en la puerta ricamente vestidos, les pre- <lb/>guntó cómo se
                                     llamaba el señor de aquel palacio.—Estraño es por cierto,
-                                    <lb/>le contestó uno de ellos, que viviendo en Bagdad no sepais
+                                    <lb/>le contestó uno de ellos, que viviendo en <name>Bagdad</name> no sepais
                                     que esta es la morada <lb/>del célebre Simbad el Marino, el
                                     cual ha viajado por todos los mares que alumn- <lb/>bra el sol.
                                     El pobre mozo, que ya tenia noticia del opulento Simbad, no pudo
@@ -6495,7 +6607,8 @@
                                     riquezas! ¿Cuáles <lb/>serán sus méritos para concederle el
                                     Cielo tantos dones, y qué habré yo hecho <lb/>para merecer
                                     tanta desgracia?»</p>
-          <p><lb/>Sumergido en sus tristes reflexiones permaneció un corto
+          <p>
+            <lb/>Sumergido en sus tristes reflexiones permaneció un corto
                                     espacio, hasta <lb/>que sintió que le agarraban del brazo y un
                                     hombre le decia: « Venid conmigo; <lb/>mi señor Simbad quiere
                                     hablaros.» <lb/>Nadir, temiendo que Simbad habria oido su
@@ -6503,19 +6616,22 @@
                                     aquella órden, diciondo que no podia dejar <lb/>abandonada su
                                     carga en medio de la calle; pero al fin tuvo que ceder á les
                                     re- <lb/>petidas instancias del criado.</p>
-          <p><lb/>Temblando llegó Nadir á un salon en donde habia muchos
+          <p>
+            <lb/>Temblando llegó Nadir á un salon en donde habia muchos
                                     señores comien- <lb/>do con indecible regocijo. El sitio de
                                     preferencia le ocupaba un personaje gra- <lb/>ve y agraciado, á
                                     quien servian con solicitud un gran número de criados rica-
                                     <lb/>mente vestidos. Era Simbad aquel señor, y mandando á
                                     Nadir que se sentase <lb/>á su lado, él mismo le sirvió de
                                     comer.</p>
-          <p><lb/>Concluida la comida, Simbad preguntó al mozo cómo se llamaba
+          <p>
+            <lb/>Concluida la comida, Simbad preguntó al mozo cómo se llamaba
                                     y cuál <lb/>era su ocupacion. Contestóle Nadir avergonzado, y
                                     Simbad añadió: « Ya que <lb/>tengo el gusto de conoceros,
                                     quisiera saber por vuestra boca en mi presencia lo <lb/>que os
                                     oí decir poco ha en la calle.</p>
-          <p><lb/>Nadir, á tal demanda, tembló de pies á cabeza, y muy
+          <p>
+            <lb/>Nadir, á tal demanda, tembló de pies á cabeza, y muy
                                     sonrojado contestó: <lb/>«Señor, os confieso que desesperado y
                                     trastornado por el cansancio, aventuré <lb/>algunas palabras
                                     indiscretas que os ruego me perdoneis.»—Muy lejos de re-
@@ -6533,10 +6649,14 @@
                                     ocasion, os haré una <lb/>narracion exacta, si me haceis el
                                     honor de escucharme.</p>
         </div>
+
         <pb n="5" source="Varios_442_5.jpg" facs="varios/Varios_442_5.jpg"/>
+
         <div type="parte" n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>PRIMER VIAJE DE SIMBAD EL MARINO.</head>
-          <p><lb/>Habiendo heredado un sin nú- <lb/>mero de bicnes, como
+          <head type="titulo_parte" rend="negrita">
+            <lb/>PRIMER VIAJE DE SIMBAD EL MARINO.</head>
+          <p>
+            <lb/>Habiendo heredado un sin nú- <lb/>mero de bicnes, como
                                     jóven <lb/>sin esperiencia y dueño de <lb/>mi voluntad,
                                     principié des- <lb/>de luego á gastar en capri- <lb/>chos y
                                     deleites. Viendo que <lb/>mis riquezas disminuian
@@ -6545,10 +6665,11 @@
                                     llegaria á la vejez, encontrándome sin dinero. <lb/>Tomé,
                                     pues, una resolucion: consulté con algunos mercaderes juiciosos
                                     <lb/>que traficaban por el mar, y aconsejado por ellos, pasé á
-                                    Balsora, donde <lb/>me embarqué, dando á la vela para las
-                                    indias orientales, con ánimo de <lb/>alli emplear el dinero que
+                                    <name>Balsora</name>, donde <lb/>me embarqué, dando á la vela para las
+                                    <name>indias</name> orientales, con ánimo de <lb/>alli emplear el dinero que
                                     me quedaba.</p>
-          <p><lb/>Un dia de nuestra navegacion, nos cojió una calma tocando á
+          <p>
+            <lb/>Un dia de nuestra navegacion, nos cojió una calma tocando á
                                     un is- <lb/>lote á flor de agua. El capitan permitió que se
                                     saliesen á tierra los que lo <lb/>deseasen, y yo fuí uno de
                                     estos. Principiamos á divertirnos, encendimos <lb/>lumbre para
@@ -6570,9 +6691,11 @@
                                     la noche siguiente, hasta que ya no tenia fuerzas ni esperanzas
                                     de <lb/>salvacion. Arrojado afortunadamente á una isla, estuve
                                     allí sobre la tier- <lb/>ra sin sentido, hasta que á la
-                                    mañana el calor del sol principió á reani- <pb n="6" source="Varios_442_6.jpg" facs="varios/Varios_442_6.jpg"/>
-                                    <fw type="paginaNum">—6—</fw>
-                                    <lb/>marme. Sumamente débil por la falta de alimento y el
+                                    mañana el calor del sol principió á reani-
+ <pb n="6" source="Varios_442_6.jpg" facs="varios/Varios_442_6.jpg"/>
+
+            <fw type="paginaNum">—6—</fw>
+            <lb/>marme. Sumamente débil por la falta de alimento y el
                                     escesivo cansan- <lb/>cio, fuí arrastrándome para buscar
                                     algunas yerbas de que comer: en <lb/>electo, comí de ellas, y
                                     el agua fresca de una fuente que tuve la dicha de <lb/>hallar,
@@ -6587,7 +6710,8 @@
                                     aventura, y cojiéndome <lb/>de la mano me internó en la gruta,
                                     en donde otras muchas personas que <lb/>habia se quedaron
                                     atónitas al verme.</p>
-          <p><lb/>Diéronme á comer alguncs manjares, y yo les pregunté qué
+          <p>
+            <lb/>Diéronme á comer alguncs manjares, y yo les pregunté qué
                                     hacian <lb/>en aquel lugar que me habia parecido una isla
                                     desierta. Ellos me res- <lb/>pondieron que servian de
                                     palafreneros al rey Mirsa, soberano de aquella <lb/>isla: que en
@@ -6601,34 +6725,39 @@
                                     ellos no estuviesen alli hub era <lb/>perecido sin remedio, pues
                                     las poblaciones estaban muy distantes, y era <lb/>imposible
                                     dirigirse á ellas sin guia ni camino.</p>
-          <p><lb/>Emprendimos nuestro viaje al dia siguiente hácia la capital
+          <p>
+            <lb/>Emprendimos nuestro viaje al dia siguiente hácia la capital
                                     de la isla. <lb/>Fuí presentado al rey Mirsa, y me hizo varias
                                     preguntas, á las cuales <lb/>contestando yo á su satisfaccion,
                                     declaró que se interesaba mucho en <lb/>mi desgracia, y por lo
                                     tanto dió órden de que se me proporcionase todo <lb/>cuanto
                                     necesitara.</p>
-          <p><lb/>Relacionándome yo con los mercaderes, particularmente los
-                                    estran- <lb/>geros que alli encontré, supe noticias de Bagdad,
+          <p>
+            <lb/>Relacionándome yo con los mercaderes, particularmente los
+                                    estran- <lb/>geros que alli encontré, supe noticias de <name>Bagdad</name>,
                                     y pensé en volverme <lb/>á mi pais creyéndolo fácil.
                                     Frecuentando la córte del rey, conversaba con <lb/>los
                                     gobernadores, los príncipes que le rodeaban y los sabios de la
-                                    India, <lb/>instruyéndome en las costumbres y leyes de sus
+                                    <name>India</name>, <lb/>instruyéndome en las costumbres y leyes de sus
                                     estados.</p>
-          <p><lb/>Un dia paseaba yo en el puerto, cuando llegando un buque,
+          <p>
+            <lb/>Un dia paseaba yo en el puerto, cuando llegando un buque,
                                     princi- <lb/>pió a descargar sus mercancias, entrándolas en
                                     los almacenes. De repen- <lb/>te fijaron mi atencion unos
                                     fardos, viendo en ellos escrito mi nombre: <lb/>los examiné
                                     detenidamente, y reconocí sin duda alguna que aquellos eran
                                     <lb/>los mismos que yo habia cargado cuando me embarqué en
-                                    Balsora. Tam- <lb/>bien conocí al capitan, y como yo estaba
+                                    <name>Balsora</name>. Tam- <lb/>bien conocí al capitan, y como yo estaba
                                     persuadido de que me creia <lb/>muerto, acercándome á él le
                                     pregunté de quién eran aquellos fardos. <lb/>No reconoció mis
                                     facciones, y me contestó: «Embarcándose conmigo <lb/>un
-                                    mercader de Bagdad, llamado Simbad, llegamos un dia cerca de una
+                                    mercader de <name>Bagdad</name>, llamado Simbad, llegamos un dia cerca de una
                                     <lb/>isla: el con otros pasageros desembarcó, y la supuesta
-                                    isla era una cis- <pb n="7" source="Varios_442_7.jpg" facs="varios/Varios_442_7.jpg"/>
-                                    <fw type="paginaNum">—7—</fw>
-                                    <lb/>forme ballena durmiendo á flor de agua; la cual cuando
+                                    isla era una cis-
+ <pb n="7" source="Varios_442_7.jpg" facs="varios/Varios_442_7.jpg"/>
+
+            <fw type="paginaNum">—7—</fw>
+            <lb/>forme ballena durmiendo á flor de agua; la cual cuando
                                     sintió sobre su <lb/>lomo el fuego que encendieron, se
                                     sumerjió en el agua. Se salvaron la <lb/>mayor parte de los que
                                     estaban encima; pero entre algunos que se aho- <lb/>garon fué
@@ -6638,7 +6767,8 @@
                                     de él aya sacado.—Pues yo <lb/>soy ese Simbad, mi capitan, le
                                     dije: os habeis equivocado creyéndome <lb/>difunto; mios son
                                     los fardos.</p>
-          <p><lb/>El capitan sorprendido con mis palabras, esclamó: «Será
+          <p>
+            <lb/>El capitan sorprendido con mis palabras, esclamó: «Será
                                     posible, <lb/>gran Dios! De quién puede uno ya fiarse? Adonde
                                     está la buena fé de los <lb/>hombres? Con que yo con mis
                                     propios ojos vi perecer á Simbad; todos <lb/>los pasageros lo
@@ -6650,7 +6780,8 @@
                                     quereis escucharme, le contesté, podreis saber el modo como
                                     <lb/>me salvé. Le referí, pues, lo que me habia ocurrido y mi
                                     encuentro con <lb/>los palafreneros del rey Mirsa.</p>
-          <p><lb/>Convencido por estas palabras, y llegando al mismo tiempo
+          <p>
+            <lb/>Convencido por estas palabras, y llegando al mismo tiempo
                                     algunos <lb/>pasageros de su buque, me reconocieron,
                                     manifestando su grande ale- <lb/>gría porque me volvian á ver,
                                     con lo cual el capitan persuadido de que <lb/>yo no era un
@@ -6667,22 +6798,25 @@
                                     Cambié las mercancias por otras del pais, y cuan- <lb/>do el
                                     buque se hizo á la vela me embarqué, habiéndome despedido del
                                     <lb/>rey Mirsa. Favorable nos fué la travesía, llegando por
-                                    fin á Balsora, de- <lb/>sembarcando mis géneros, por valor de
+                                    fin á <name>Balsora</name>, de- <lb/>sembarcando mis géneros, por valor de
                                     cien mil zequies. Inútil será de- <lb/>cir que yendo á ver á
                                     mi familia, me recibió con el júbilo que puede cau- <lb/>sar
                                     la inesperada vista de una persona que ya se ha creido perdida.
                                     Com- <lb/>pré muchos esclavos, campiñas, y construí una casa
                                     grandiosa, para <lb/>disfrutar en ella todos los placeres de la
                                     vida, despues de los quebrantos <lb/>que habia sufrido.</p>
-          <p><lb/>Simbad suspendió aquí su narracion para seguir comiendo, y
+          <p>
+            <lb/>Simbad suspendió aquí su narracion para seguir comiendo, y
                                     el ban- <lb/>quete duró hasta la noche. Se despidieron los
                                     convidados muy alegres y <lb/>satisfechos del agasajo con que
                                     los habia tratado su amigo: y cuando Na- <lb/>dir fué á
                                     retirarse le dijo Simbad, poniéndole en la mano un bolsillo con
                                     <lb/>cien zequies: «Tomad, amigo Nadir: ahí teneis para
-                                    socorrer á vuestra <pb n="8" source="Varios_442_8.jpg" facs="varios/Varios_442_8.jpg"/>
-                                    <fw type="paginaNum">—8—</fw>
-                                    <lb/>familia hasta mañana que volvereis á oir la continuacion
+                                    socorrer á vuestra
+ <pb n="8" source="Varios_442_8.jpg" facs="varios/Varios_442_8.jpg"/>
+
+            <fw type="paginaNum">—8—</fw>
+            <lb/>familia hasta mañana que volvereis á oir la continuacion
                                     de mis aventu- <lb/>ras.» Entusiasmado el mozo con tan
                                     inesperado presente se despidió, y <lb/>llegado á su casa,
                                     hizo un fiel relato de su ocurrencia á su esposa, que <lb/>ya
@@ -6691,7 +6825,8 @@
                                     dieron gracias á Dios por <lb/>el beneficio que les enviaba, y
                                     aquella noche durmieron mas tranquilos <lb/>de lo que tenian por
                                     costumbre.</p>
-          <p><lb/>Llegada la mañana siguiente, Nadir se aseó con la mejorcita
+          <p>
+            <lb/>Llegada la mañana siguiente, Nadir se aseó con la mejorcita
                                     ropa <lb/>que tenia y se fué á la casa de su generoso
                                     bienhechor. Este le recibió <lb/>con el mayor agasajo, y cuando
                                     estuvieron reunidos los convidados de la <lb/>víspera
@@ -6703,9 +6838,11 @@
                                     así.</p>
         </div>
         <div type="parte" n="3">
-          <head type="titulo_parte" rend="negrita"><lb/>SEGURDO VIAJE.</head>
-          <p><lb/>Decidido como estaba á pa- <lb/>sar tranquilamente en
-                                    Bagdad lo <lb/>que me restase de vida, pasaba los <lb/>dias en
+          <head type="titulo_parte" rend="negrita">
+            <lb/>SEGURDO VIAJE.</head>
+          <p>
+            <lb/>Decidido como estaba á pa- <lb/>sar tranquilamente en
+                                    <name>Bagdad</name> lo <lb/>que me restase de vida, pasaba los <lb/>dias en
                                     la mas indolente ociosidad, <lb/>y esto pronto vino á cansarme.
                                     <lb/>De nuevo me asaltaron los deseos <lb/>de viajar por mar, y
                                     asi lo verifi- <lb/>qué segunda vez, llevando con- <lb/>migo
@@ -6726,9 +6863,12 @@
                                     mercaderes que me habian acompañado. Muy en lontananza
                                     <lb/>distingui el buque á toda vela, que no tardó muche en
                                     perdérseme de <lb/>vista, desapareciendo en el horizonte.</p>
+
           <pb n="9" source="Varios_442_9.jpg" facs="varios/Varios_442_9.jpg"/>
+
           <fw type="paginaNum">—9—</fw>
-          <p><lb/>Considerad, amigos, cuánta seria nui amargura,
+          <p>
+            <lb/>Considerad, amigos, cuánta seria nui amargura,
                                     encontrándome allí <lb/>solo y desamparado en medio de un
                                     desierto. Se agolparon á mi imagi- <lb/>nacion las mas
                                     horrorosas ideas ; principié á golpearme en el suelo y á
@@ -6768,7 +6908,8 @@
                                     rayo, y entonces <lb/>yo al tocar en tierra me desaté
                                     prontamente de su pata. Ella dió un salto, <lb/>cojió en su
                                     pico una gran serpiente y desapareció volando.</p>
-          <p><lb/>Encontréme, pues, en un valle muy hondo, cuyas montañas
+          <p>
+            <lb/>Encontréme, pues, en un valle muy hondo, cuyas montañas
                                     largas <lb/>y escarpadas se perdian en las nubes. Miré á todas
                                     partes y me con- <lb/>venci de que no era mejor el sitio en
                                     donde estaba, que la isla desier- <lb/>ta que habia dejado.
@@ -6781,9 +6922,11 @@
                                     roc, y solamente salian de noche <lb/>Todo el dia le pasé
                                     recorriendo el valle, y cuando llegó la noche me <lb/>acogí á
                                     una cueva, cerrando bien la entrada con una gruesa piedra para
+
                                           <pb n="10" source="Varios_442_10.jpg" facs="varios/Varios_442_10.jpg"/>
-                                    <fw type="paginaNum">—10—</fw>
-                                    <lb/>librarme de las serpientes. Me puse á cenar y fuí
+
+            <fw type="paginaNum">—10—</fw>
+            <lb/>librarme de las serpientes. Me puse á cenar y fuí
                                     sobrecojido de temor <lb/>por los espantosos silvidos de las
                                     serpientes que cruzaban por el campo. <lb/>Fácilmente
                                     comprendereis con cuánto sobresalto pasaria yo la noche.
@@ -6796,7 +6939,8 @@
                                     me desper- <lb/>tó, miré asustado y era un tremendo trozo de
                                     carne fresca, viendo al <lb/>mismo tiempo caer otros muchos por
                                     todo el valle.</p>
-          <p><lb/>Comprendí entonces lo que aquello significaba, y era ni mas
+          <p>
+            <lb/>Comprendí entonces lo que aquello significaba, y era ni mas
                                     ni me- <lb/>nos lo que yo habia oido referir varias veces á los
                                     marineros acerca del <lb/>valle de los diamantes, y del modo
                                     estraño de cojerlos de un suelo adon- <lb/>de no podia penetrar
@@ -6812,7 +6956,8 @@
                                     mercaderes haciendo espantar á las águilas con fuer- <lb/>tes
                                     gritos, acuden á los nidos y cojen los diamantes que la carne
                                     tiene <lb/>clavados.</p>
-          <p><lb/>Siempre habia yo tenido por fabuloso este relato; pero
+          <p>
+            <lb/>Siempre habia yo tenido por fabuloso este relato; pero
                                     convencido <lb/>entonces de su verdad, resolvi aprovecharme de
                                     tal suceso para salir del <lb/>valle, que sin duda podia
                                     considerar como mi sepulcro. Recojí los dia- <lb/>mantes mas
@@ -6834,11 +6979,14 @@
                                     los diamantes, cuando llegaron los otros merca- <lb/>deres y
                                     admirados de verme, lo quedaron mucho mas cuando les refe-
                                     <lb/>rí mi singular historia y mi temerario arrojo.</p>
-          <p><lb/>Me llevaron á su albergue y entonces les manifesté los
+          <p>
+            <lb/>Me llevaron á su albergue y entonces les manifesté los
                                     diamantes que <lb/>llevaba en la bolsa, quedando tan admirados
-                                    de su grandioso tamaño, <pb n="11" source="Varios_442_11.jpg" facs="varios/Varios_442_11.jpg"/>
-                                    <fw type="paginaNum">— 11 —</fw>
-                                    <lb/>que confesaron no haber visto otros iguales en los muchos
+                                    de su grandioso tamaño,
+ <pb n="11" source="Varios_442_11.jpg" facs="varios/Varios_442_11.jpg"/>
+
+            <fw type="paginaNum">— 11 —</fw>
+            <lb/>que confesaron no haber visto otros iguales en los muchos
                                     paises que <lb/>habian recorrido. Le dije que tomase los que
                                     quisiese al mercader que <lb/>me habia encontrado en el nido. El
                                     fué tan modesto que solo tomó uno: <lb/>yo le instaba para que
@@ -6846,17 +6994,19 @@
                                     que bastará para proporcionarme una vida tranquila en la abun-
                                     <lb/>dancia, sin necesidad de volver á emprender mas
                                     viajes.»</p>
-          <p><lb/>Hacia ya dias que los mercaderes habian ido á recojer
+          <p>
+            <lb/>Hacia ya dias que los mercaderes habian ido á recojer
                                     diamantes, <lb/>y contándose satisfechos con los que tenian
                                     reunidos, pasamos la noche <lb/>sosegados, y á la mañana
                                     siguiente nos embarcamos todos juntos. Lle- <lb/>gamos á la
-                                    isla de Rodas, en la cual se cria el árbol del alcanfor, siendo
+                                    isla de <name>Rodas</name>, en la cual se cria el árbol del alcanfor, siendo
                                     <lb/>tan frondoso que pueden cobijarse cómodamente al rededor
                                     de su tronco <lb/>cien hombres. Haciendo en el tronco una
                                     abertura, mana un jugo, el <lb/>cual recogido en un vaso se
                                     endurece y forma el grano del alcanfor; en <lb/>seguida el
                                     árbol se seca y muere.</p>
-          <p><lb/>Allí tambien se crian los rinocerontes, animales no tan
+          <p>
+            <lb/>Allí tambien se crian los rinocerontes, animales no tan
                                     grandes como <lb/>el elefante y mayores que el búfalo: encima
                                     de la nariz tienen una asta <lb/>muy larga, con tal fuerza que,
                                     peleando con un elefante le clavan por <lb/>el vientre y le
@@ -6866,14 +7016,16 @@
                                     carga: en este momento <lb/>llega el roc, los coje á entrambos
                                     con sus garras y se lo lleva á su nido <lb/>para alimento de
                                     sus hijuelos.</p>
-          <p><lb/>Muchas mas particularidades hay en aquella isla, que no
+          <p>
+            <lb/>Muchas mas particularidades hay en aquella isla, que no
                                     refiero por <lb/>acortar mi narracion. Troqué allí muchos
                                     diamantes por mercancias de <lb/>gran precio, y despues
-                                    dirigiéndome á Balsora volví á Bagdad. Princi- <lb/>pié de
+                                    dirigiéndome á <name>Balsora</name> volví á Bagdad. Princi- <lb/>pié de
                                     nuevo á disfrutar las inmensas riquezas que poseia, ganadas con
                                     <lb/>tantos trabajos, y repartí gruesas sumas entre los
                                     pobres.</p>
-          <p><lb/>Hizo aquí punto Simbad á su segundo viaje, y mandando
+          <p>
+            <lb/>Hizo aquí punto Simbad á su segundo viaje, y mandando
                                     entregar <lb/>cien zepuies á Nadir le dijo: recoged ese dinero
                                     para atender á la sub- <lb/>sistencia de vuestra familia, y con
                                     mucho agrado, le despidió hasta el <lb/>dia siguiente para que
@@ -6885,19 +7037,24 @@
                                     los circunstantes principió su relacion en la <lb/>forma que
                                     sigue.</p>
         </div>
+
         <pb n="12" source="Varios_442_12.jpg" facs="varios/Varios_442_12.jpg"/>
+
         <fw type="paginaNum">— 12—</fw>
         <div type="parte" n="4">
-          <head type="titulo_parte" rend="negrita"><lb/>TERCER VIAJE.</head>
-          <p><lb/>Poco tiempo habia pasado <lb/>entregado á los deleites de
+          <head type="titulo_parte" rend="negrita">
+            <lb/>TERCER VIAJE.</head>
+          <p>
+            <lb/>Poco tiempo habia pasado <lb/>entregado á los deleites de
                                     la vida, <lb/>y ya en ellos habia perdido el re- <lb/>cuerdo de
                                     los riesgos corridos en <lb/>mis dos viajes. Estaba todavia en
                                     <lb/>la flor de mi edad, y el ardor de <lb/>la sangre me
                                     impulsaba á nuevos <lb/>peligros á mas estrañas aventu-
-                                    <lb/>ras. Desde Bagdad me dirijí otra vez á Balsora con ricas
+                                    <lb/>ras. Desde Bagdad me dirijí otra vez á <name>Balsora</name> con ricas
                                     mercancias, y <lb/>embarcándome con otros mercaderes, nada
                                     particular nos ocurrió enlos <lb/>primeros dias.</p>
-          <p><lb/>Uno en que nos hallábamos en alta mar, fuimos sorprendidos
+          <p>
+            <lb/>Uno en que nos hallábamos en alta mar, fuimos sorprendidos
                                     por <lb/>una terrible borrasca, y perdimos nuestro rumbo. Por
                                     algunos dias fui- <lb/>mos el juguete de las olas, y al fin
                                     salvándonos prodigiosamente, nos en- <lb/>contramos arrojados
@@ -6909,7 +7066,8 @@
                                     y en el momento que hiciésemos <lb/>daño á uno de ellos
                                     caerian como una bandada sobre nosotros y nos sa-
                                     <lb/>crificarian.»</p>
-          <p><lb/>Estas palabras sobrecogieron á todos los pasageros, y creció
+          <p>
+            <lb/>Estas palabras sobrecogieron á todos los pasageros, y creció
                                     nuestro <lb/>temor cuando vimos aparecer una multitud de
                                     salvages asquerosos, que <lb/>apenas tendrian tres pies de
                                     altura. Nuestro buque se hallaba anclado no <lb/>muy lejos de la
@@ -6923,10 +7081,13 @@
                                     Cuando llegamos allá, <lb/>nos hicieron desembarcar á todos, y
                                     al momento ellos se volvieron con <lb/>el buque hácia donde
                                     habian salido.</p>
-          <p><lb/>Encontrándanos en la isla solos y sin buque, nos internamos
-                                    en ella, <pb n="13" source="Varios_442_13.jpg" facs="varios/Varios_442_13.jpg"/>
-                                    <fw type="paginaNum">— 13—</fw>
-                                    <lb/>persuadidos á que nos aguardaba una muerte próxima; sin
+          <p>
+            <lb/>Encontrándanos en la isla solos y sin buque, nos internamos
+                                    en ella,
+ <pb n="13" source="Varios_442_13.jpg" facs="varios/Varios_442_13.jpg"/>
+
+            <fw type="paginaNum">— 13—</fw>
+            <lb/>persuadidos á que nos aguardaba una muerte próxima; sin
                                     embargo, en- <lb/>contramos diversas frutas sabrosas y comimos
                                     de ellas. Cansados ya de <lb/>andar, descubrimos á lo lejos un
                                     edificio grandísimo y á él nos dirijimos. <lb/>Lo primero que
@@ -6936,7 +7097,8 @@
                                     que aquel espectáculo nos <lb/>causó y el cansancio del
                                     camino, nos hizo caer al suelo, permaneciendo <lb/>largo rato
                                     abismados en un terror mortal.</p>
-          <p><lb/>Principiaba el sol á ponerse, y de pronto se abrió una
+          <p>
+            <lb/>Principiaba el sol á ponerse, y de pronto se abrió una
                                     puerta con <lb/>estruendo, apareciendo á nuestra vista un
                                     hombre negro muy alto, en <lb/>cuya horrible frente chispeaban
                                     dos ascuas; de su boca salian unos ter- <lb/>ribles y
@@ -6944,7 +7106,8 @@
                                     las <lb/>uñas eran disformes y encorvadas como de ave de
                                     rapiña. Todos que- <lb/>damos petrificados al aspecto de tan
                                     formidable gigante.</p>
-          <p><lb/>Cuando recobramos nuestros sentidos, él es taba sentado
+          <p>
+            <lb/>Cuando recobramos nuestros sentidos, él es taba sentado
                                     mirándonos <lb/>fijamente. Por fin alargó una mano, se
                                     dirigió á mí, me agarró por el pes- <lb/>cuezo, y dándome
                                     vueltas para verme bien de alto á bajo, no encontrán-
@@ -6959,7 +7122,8 @@
                                     pudimos sosegar ni un instante, agitados por <lb/>la mas cruel
                                     zozobra. Cuando el dia despuntó, salió el gigante del casti-
                                     <lb/>llo, dejándonos á todos dentro.</p>
-          <p><lb/>Habiamos permanecido toda la noche en un sepulcral silencio, y
+          <p>
+            <lb/>Habiamos permanecido toda la noche en un sepulcral silencio, y
                                     así, <lb/>cuando nos creimos libres de nuestro cruel enemigo,
                                     prorumpimos en <lb/>espantosos alaridos. Aunque nosotros éramos
                                     muchos y solo teniamos <lb/>un adversario, tal era nuestro
@@ -6971,7 +7135,8 @@
                                     Salimos á buscar frutas para comer; buscamos <lb/>otro albergue
                                     donde pasar la noche, pero ninguno hallamos, y tuvimos <lb/>que
                                     volver al castillo.</p>
-          <p><lb/>Cuando fué de noche vino el gigante y se cenó otro de
+          <p>
+            <lb/>Cuando fué de noche vino el gigante y se cenó otro de
                                     nuestros com- <lb/>pañeros; luego se durmió roncando como la
                                     noche anterior, y á la ma- <lb/>ñana salió como de costumbre.
                                     TTan horrorosa era nuestra situacion; que <lb/>pensamos algunos
@@ -6979,16 +7144,19 @@
                                     <lb/>sejaron que de ninguna manera atentásemos contra nuestra
                                     existencia, <lb/>ofendiendo asi á Dios; antes bien buscásemos
                                     un ardid para darle la muer- <lb/>te á nuestro feróz euemigo.
-                                    Entonces me ocurrió á mi una idea, que co- <pb n="14" source="Varios_442_14.jpg" facs="varios/Varios_442_14.jpg"/>
-                                    <fw type="paginaNum">— 14—</fw>
-                                    <lb/>municándola á otro compañero, mereció su aprobacion y
+                                    Entonces me ocurrió á mi una idea, que co-
+ <pb n="14" source="Varios_442_14.jpg" facs="varios/Varios_442_14.jpg"/>
+
+            <fw type="paginaNum">— 14—</fw>
+            <lb/>municándola á otro compañero, mereció su aprobacion y
                                     todos luego con- <lb/>vinieron en ella. "Hermanos, les dije,
                                     construyamos algunas balsas con <lb/>la mucha madera que hay en
                                     la playa, demos la muerte ó burlemos <lb/>la vigilancia de ese
                                     mónstruo gigante, y huyamos de aquí en las balsas.» <lb/>Todos
                                     aprobaron mi proposicion, y se construyeron inmediatamente las
                                     <lb/>balsas para tres personas cada una.</p>
-          <p><lb/>Volvimos al castillo cuando fué de noche, y tuvimos el dolor
+          <p>
+            <lb/>Volvimos al castillo cuando fué de noche, y tuvimos el dolor
                                     de ver <lb/>al gigante cenar otro de los nuestros. En seguida se
                                     tendió en el suelo y <lb/>se durmió. En aquel momento diez de
                                     los mas atrevidos, siendo yo uno <lb/>de ellos, pusimos cada uno
@@ -7001,13 +7169,15 @@
                                     nos- <lb/>otros pudimos librarnos de entre sus manos y
                                     guarecernos en los rincones <lb/>á donde su cuerpo no podia
                                     penetrar.</p>
-          <p><lb/>Andando á tientas encontró la puerta y salió, estremeciendo
+          <p>
+            <lb/>Andando á tientas encontró la puerta y salió, estremeciendo
                                     el recin- <lb/>to con rujidos espantosos. Corrimos nosotros al
                                     sitio en que teniamos <lb/>las balsas, y aguardamos para
                                     embarcarnos á que fuera de dia. No bien <lb/>despuntaba la
                                     aurora, divisamos á lo largo al gigante que venia hácia nos-
                                     <lb/>otros guiado por otros muchos tan mónstruos como él.</p>
-          <p><lb/>Inmediatamente nos echamos en las balsas, alejándonos á todo
+          <p>
+            <lb/>Inmediatamente nos echamos en las balsas, alejándonos á todo
                                     remo <lb/>de la playa: los gigantes que nos vieron huir,
                                     corrieron hasta la orilla, <lb/>y cogiendo grandes piedras nos
                                     las tiraron, con tal acierto, que todas <lb/>las baisas, escepto
@@ -7015,7 +7185,8 @@
                                     <lb/>deshechas, pereciendo los que iban en ellas. Los tres que
                                     nos habiamos <lb/>felizmente librado, apuramos nuestras fuerzas
                                     y logramos vernos á salvo <lb/>del furor de los gigantes.</p>
-          <p><lb/>Nos encontramos en alta mar, pasando todo el dia y la noche,
+          <p>
+            <lb/>Nos encontramos en alta mar, pasando todo el dia y la noche,
                                     siendo <lb/>el juguete de las olas que, tirándonos de una parte
                                     á otra, amenazaban <lb/>tragarnos. Dichosamente al otro dia nos
                                     vimos arrojados á otra isla y <lb/>renació en nosotros la
@@ -7030,12 +7201,15 @@
                                     mis com- <lb/>pañeros que estaban mas bajos que yo, se los
                                     tragó instantáneamente y <lb/>se volvió por donde habia
                                     venido.</p>
-          <p><lb/>En la mayor angustia pasé alli la noche, y al amanecer bajé
+          <p>
+            <lb/>En la mayor angustia pasé alli la noche, y al amanecer bajé
                                     á tier- <lb/>ra, estremeciendome al pensar que á la noche
                                     siguiente me aguardaba <lb/>la suerte de mis dos compañeros.
-                                    Tentacion tuve de arrojarme al mar; <pb n="15" source="Varios_442_15.jpg" facs="varios/Varios_442_15.jpg"/>
-                                    <fw type="paginaNum">—15—</fw>
-                                    <lb/>pero el instinto de la propia conservacion me sujirió la
+                                    Tentacion tuve de arrojarme al mar;
+ <pb n="15" source="Varios_442_15.jpg" facs="varios/Varios_442_15.jpg"/>
+
+            <fw type="paginaNum">—15—</fw>
+            <lb/>pero el instinto de la propia conservacion me sujirió la
                                     idea de reunir <lb/>muchas ramas con punzantes espinas, y
                                     colocándolas al rededor del árbol <lb/>hasta una altura
                                     grandísima, formar una fortaleza en que resguardarme <lb/>del
@@ -7058,7 +7232,7 @@
                                     manifestaron <lb/>un grande alborozo al verme salvo de tantos
                                     peligros. A porfia se afana- <lb/>ron por darme de comer de lo
                                     mejor que llevaban: continuaron su ruta, <lb/>y llegamos á la
-                                    isla de Salahat, en la cual se cria el sándalo, madera de
+                                    isla de <name>Salahat</name>, en la cual se cria el sándalo, madera de
                                     <lb/>muchisima utilidad en medicina y en las artes. Cuando los
                                     mercaderes <lb/>principiaron á desembarcar sus mercancias, el
                                     capitan me llamó y me <lb/>dijo: «Hermano, hace algun tiempo
@@ -7079,7 +7253,7 @@
                                     mí no me conoció porque <lb/>creyéndome muerto no se habia
                                     fijado en mí. «Decís, capitan, que se <lb/>llama Simbad el
                                     dueño de esos fardos? le pregunté.—Si, hermano, asi <lb/>se
-                                    llamaba; mercader de Bagdad se embarcó en Balsora: iba en mi
+                                    llamaba; mercader de Bagdad se embarcó en <name>Balsora</name>: iba en mi
                                     buque, <lb/>y un dia que llegamos á una isla, en el momento de
                                     hacernos de nuevo <lb/>á la vela no advertí que faltaba él.
                                     Era el viento muy favorable y cuan- <lb/>do se notó su falta en
@@ -7088,20 +7262,23 @@
                                     murió? <lb/>le dije.—Sin duda ninguna, me contestó.—Padeceis
                                     un error, capitan, <lb/>repuse: miradme bien y reconoced á ese
                                     Simbad que dejásteis abando- <lb/>nado en la isla.» El capitan
-                                    sorprendido se paró á mirarme y al fin me cono- <pb n="16" source="Varios_442_16.jpg" facs="varios/Varios_442_16.jpg"/>
-                                    <fw type="paginaNum">— 16 —</fw>
-                                    <lb/>ció. «Me alegro, dijo abrazándome, que Dios me depare la
+                                    sorprendido se paró á mirarme y al fin me cono-
+ <pb n="16" source="Varios_442_16.jpg" facs="varios/Varios_442_16.jpg"/>
+
+            <fw type="paginaNum">— 16 —</fw>
+            <lb/>ció. «Me alegro, dijo abrazándome, que Dios me depare la
                                     ocasion de <lb/>poner en vuestras manos estas mercancias,
                                     mejoradas por mí con el <lb/>mayor cuidado.» Las recibí con
                                     todas las muestras del agradecimiento <lb/>que me merecia el
                                     capitan, y á pocos dias partimos de nuevo en la nave,
                                     <lb/>yendo á otra isla donde hice grandes acopios de clavo,
                                     canela y otras es- <lb/>pecias. Despues de una larga navegacion
-                                    llegué finalmente á Balsora, <lb/>regresando á Bagdad con
+                                    llegué finalmente á <name>Balsora</name>, <lb/>regresando á <name>Bagdad</name> con
                                     tantas riquezas, que ni yo mismo sabia su va- <lb/>lor.
                                     Distribuí entre los pobres considerable cantidad y aumenté las
                                     po- <lb/>sesiones que de antes poseia.</p>
-          <p><lb/>Terminó aqui Simbad la narracion de su tercer viaje; mandó
+          <p>
+            <lb/>Terminó aqui Simbad la narracion de su tercer viaje; mandó
                                     entre- <lb/>gar cien zequies al mozo Nadir, y convidándole para
                                     el dia siguiente le <lb/>despidó con su acostumbrado agasajo.
                                     Al dia inmediato volvieron á reu- <lb/>nirse los convidados,
@@ -7109,13 +7286,15 @@
                                     estos términos las aventuras de su</p>
         </div>
         <div type="parte" n="5">
-          <head type="titulo_parte" rend="negrita"><lb/>CUARTO VIAJE.</head>
-          <p><lb/>Los riesgos que habia cor- <lb/>rido en mis viajes, las
+          <head type="titulo_parte" rend="negrita">
+            <lb/>CUARTO VIAJE.</head>
+          <p>
+            <lb/>Los riesgos que habia cor- <lb/>rido en mis viajes, las
                                     muchas ri- <lb/>quezas acumuladas en ellos, ni los <lb/>placeres
                                     que disfrutaba en mi vida <lb/>pacífica, pudieron retraerme de
                                     <lb/>emprender otras nuevas aventuras. <lb/>Arrebatado por el
                                     deseo de mas <lb/>ganancias y de nuevos sucesos, <lb/>hice
-                                    acopios de diferentes mercancias y me dirijí á la Persia,
+                                    acopios de diferentes mercancias y me dirijí á la <name>Persia</name>,
                                     donde me <lb/>embarqué despues de atravesar diferentes
                                     provincias. Dando á la vela, <lb/>tocamos en varios puertos y
                                     en muchas islas orientales. Ua dia nos aco- <lb/>metió en alta
@@ -7133,9 +7312,12 @@
                                     negros, los cuales apoderándose de nosotros, hicieron <lb/>un
                                     reparto y nos llevaron á sus casas, cada cual los que le
                                     habiamos tocado.</p>
+
           <pb n="17" source="Varios_442_17.jpg" facs="varios/Varios_442_17.jpg"/>
+
           <fw type="paginaNum">—17—</fw>
-          <p><lb/>Tres compañeros y yo fuimos á un mismo sitio; nos
+          <p>
+            <lb/>Tres compañeros y yo fuimos á un mismo sitio; nos
                                     mandaron sen- <lb/>tar y nos presentaron una yerba diciéndonos
                                     por señas que comiésemos <lb/>de ella. Yo desde luego recelé
                                     que no hubiese buena intencion en los <lb/>que la ofrecian, y no
@@ -7146,7 +7328,8 @@
                                     Nos presentaron en segui- <lb/>da una gran cantidad de arroz
                                     cocido con mucha grasa, y tampoco yo <lb/>hice mas que
                                     probarlo.</p>
-          <p><lb/>La intencion de los negros al darnos la yerba, era que se
+          <p>
+            <lb/>La intencion de los negros al darnos la yerba, era que se
                                     nos tras- <lb/>tornase la cabeza y no conociésemos lo triste de
                                     nuestra situacion, á <lb/>fin de que el pesar no nos impidiera
                                     engordar con el arroz sustancio- <lb/>so que diariamente
@@ -7156,7 +7339,8 @@
                                     la tristeza <lb/>cada dia fuí poniéndome mas flaco, sirviendo
                                     esto para que los negros <lb/>aplazasen mi muerte para cuando
                                     estuviese mejor.</p>
-          <p><lb/>Me daban mucha libertad y hacian poco caso de mis acciones,
+          <p>
+            <lb/>Me daban mucha libertad y hacian poco caso de mis acciones,
                                     con <lb/>lo cual decidí un dia fugarme de su lado. En el
                                     momento de verificar- <lb/>lo, un anciano que me vió marchar,
                                     principió á vocearme fuertemente; <lb/>mas yo entonces
@@ -7174,23 +7358,28 @@
                                     hablaron en árabe. Al oir el idioma mio, recibí <lb/>gran
                                     contento y les hice una ligera, pero exacta relacion de mi
                                     aventu- <lb/>ra, quedando ellos muy admirados.</p>
-          <p><lb/>Cuando concluyeron de recojer la pimienta, me embarqué con
+          <p>
+            <lb/>Cuando concluyeron de recojer la pimienta, me embarqué con
                                     ellos, <lb/>dirijiéndome á la isla de que habian salido. Fuí
                                     presentado á su rey, el <lb/>cual me pareció desde luego muy
                                     bondadoso; y refiriéndole mis aventu- <lb/>ras, quedó admirado
                                     de ellas. Mandó que me diesen otros vestidos y en- <lb/>cargó
                                     que me cuidasen con particular esmero.</p>
-          <p><lb/>Los frutos en abundancia y sabrosos de la isla y su buena
+          <p>
+            <lb/>Los frutos en abundancia y sabrosos de la isla y su buena
                                     pobla- <lb/>cion, junto con los agasajos que diariamente me
                                     hacia el principe, hi- <lb/>cieron insensiblemente que yo me
                                     aficionase al pais aquel, olvidándome <lb/>de que me hallaba en
                                     tierra estraña.</p>
-          <p><lb/>Un dia de los muchos que yo concurria á palacio, me dijo el
+          <p>
+            <lb/>Un dia de los muchos que yo concurria á palacio, me dijo el
                                     rey: <lb/>«Simbad, tanto es el carño que te profeso, que
                                     quisiera retenerte <fw type="signaturas">3</fw>
-                                    <pb n="18" source="Varios_442_18.jpg" facs="varios/Varios_442_18.jpg"/>
-                                    <fw type="paginaNum">—18—</fw>
-                                    <lb/>para siempre á mi lado; y á fin de lograrlo, he pensado
+
+            <pb n="18" source="Varios_442_18.jpg" facs="varios/Varios_442_18.jpg"/>
+
+            <fw type="paginaNum">—18—</fw>
+            <lb/>para siempre á mi lado; y á fin de lograrlo, he pensado
                                     en un medio, <lb/>confiado en que has de hacerme la fineza de no
                                     oponerte á él.—Pronto <lb/>estoy, señor, le respondí, á
                                     obedecer lo que vuestra magestad se dig- <lb/>nase
@@ -7200,8 +7389,9 @@
                                     señora noble, virtuosa, hermosa y <lb/>rica. Pasé algun tiempo
                                     á su lado saboreando las delicias de un esposo <lb/>feliz; pero
                                     siempre fijo en mi pensamiento el designio de escaparme y
-                                    <lb/>volver á mi casa de Bagdad.</p>
-          <p><lb/>Con tales intentos, buscaba yo una coyuntura favorable. Cayó
+                                    <lb/>volver á mi casa de <name>Bagdad</name>.</p>
+          <p>
+            <lb/>Con tales intentos, buscaba yo una coyuntura favorable. Cayó
                                     en- <lb/>ferma y murió la mujer de uno con quien yo habia
                                     contraido amistad <lb/>estrecha. Tratando yo de consolarle, fuí
                                     á verle, y le hallé sumido en <lb/>la mas honda desesperacion,
@@ -7217,7 +7407,8 @@
                                     marido enterrado con ella, y <lb/>si la muger enviuda, entra
                                     viva en la sepultura con su marido; esta <lb/>es una ley de que
                                     nadie puede salvarme.</p>
-          <p><lb/>Horrorizado quedé al oir tan cruel costumbre. En el momento
+          <p>
+            <lb/>Horrorizado quedé al oir tan cruel costumbre. En el momento
                                     lle- <lb/>garon los parientes que debian verificar las
                                     exéquias: adornaron el ca- <lb/>dáver con el vestido mas
                                     lujoso que tenia y preciosísimas joyas. Con- <lb/>cluida esta
@@ -7242,10 +7433,13 @@
                                     <lb/>obligados tambien á ella?— Qué duda tiene, contestó el
                                     rey. Están obli- <lb/>gados habiéndose casado dentro de la
                                     isla.</p>
-          <p><lb/>Considerad, señores, cuánto me afligiria esta noticia.
-                                    Volví á mí <pb n="19" source="Varios_442_19.jpg" facs="varios/Varios_442_19.jpg"/>
-                                    <fw type="paginaNum">— 19—</fw>
-                                    <lb/>casa en la mayor angustia, temiendo á cada instante por la
+          <p>
+            <lb/>Considerad, señores, cuánto me afligiria esta noticia.
+                                    Volví á mí
+ <pb n="19" source="Varios_442_19.jpg" facs="varios/Varios_442_19.jpg"/>
+
+            <fw type="paginaNum">— 19—</fw>
+            <lb/>casa en la mayor angustia, temiendo á cada instante por la
                                     vida de mi <lb/>muger. Por fin, hube de abandonarme á la
                                     voluntad de Dios, y esta no <lb/>tardó en manifestarse. Cayó
                                     mi muger enferma y en pocos dias murió. <lb/>Cuál seria mi
@@ -7265,7 +7459,8 @@
                                     <lb/>la orilla del pozo bajaron á mi muger, haciendo lo mismo
                                     conmigo en <lb/>otro ataud con el cantarillo y los siete
                                     panes.</p>
-          <p><lb/>Cuando llegué al fondo del subterráneo, pude distinguir á
+          <p>
+            <lb/>Cuando llegué al fondo del subterráneo, pude distinguir á
                                     la escasa <lb/>luz que bajaba de lo alto, que aquello era una
                                     estensa cueva. El edor <lb/>de los cadáveres que allí habia
                                     principió á trastornarme, y oí algunos <lb/>ahogados lamentos
@@ -7297,9 +7492,11 @@
                                     dias, pues por for- <lb/>tuna para mí, fué grande la mortandad
                                     que hubo en la ciudad. <lb/>Maté á una muger un dia, y en el
                                     acto de concluir mi sacrificio <lb/>tentí pasos y oí como
-                                    respirar: volví la cabeza sobresaltado al sitio donde <pb n="20" source="Varios_442_20.jpg" facs="varios/Varios_442_20.jpg"/>
-                                    <fw type="paginaNum">— 20—</fw>
-                                    <lb/>habia oido el ruido, y me pareció que un bulto se alejaba.
+                                    respirar: volví la cabeza sobresaltado al sitio donde
+ <pb n="20" source="Varios_442_20.jpg" facs="varios/Varios_442_20.jpg"/>
+
+            <fw type="paginaNum">— 20—</fw>
+            <lb/>habia oido el ruido, y me pareció que un bulto se alejaba.
                                     En efec- <lb/>to, seguí tras de aquella sombra y ella
                                     prosiguió huyendo. Conti- <lb/>nuando yo en su persecucion,
                                     llegué muy lejos y divisé todavia <lb/>mas allá una ráfaga
@@ -7313,7 +7510,8 @@
                                     acostumbraria entrar por la hendidura para comerse los
                                     <lb/>cadáveres, y aquello seria el bulto que yo habia
                                     perseguido.</p>
-          <p><lb/>Reconocí bien el terreno y encontré que las peñas en
+          <p>
+            <lb/>Reconocí bien el terreno y encontré que las peñas en
                                     aquella parte <lb/>se elevaban á tal altura y eran tan
                                     escarpadas, que no podia ser el <lb/>bajar por ellas.
                                     Arrodillado alcé las manos y los ojos al cielo, dando gra-
@@ -7333,19 +7531,20 @@
                                     que yo les decia y me recibieron con los <lb/>lios en su
                                     embarcacion. Siguieron su rumbo y abordamos en varios
                                     <lb/>puertos é islas, y entre otras tocamos á la llamada de
-                                    Serendik, que es la <lb/>mas apartada de aquel archipiélago. En
+                                    <name>Serendik</name>, que es la <lb/>mas apartada de aquel archipiélago. En
                                     ella hay muchas minas de ricos <lb/>metales y piedras preciosas,
                                     así como abundancia de plantas medicinales, <lb/>pero nos
                                     detuvimos poco en ella por que sus habitantes odían á los es-
                                     <lb/>trangeros, y son tan sumamente bárbaros, que hasta comen
-                                    carne huma- <lb/>na. De allí pasamos á la isla de Kela, muy
+                                    carne huma- <lb/>na. De allí pasamos á la isla de <name>Kela</name>, muy
                                     poblada y riquísima. En ella <lb/>hice muy buen negocio con mis
                                     fardos, volví á embarcarme y tuve la <lb/>dicha de verme otra
-                                    vez en el puerto de Bagdad con innumerables riquezas. <lb/>Hice
+                                    vez en el puerto de <name>Bagdad</name> con innumerables riquezas. <lb/>Hice
                                     muchas limosnas á los pobres, dí grandes cantidades á dife-
                                     <lb/>rentes mezquitas, y nuevamente principié á gastar
                                     alegremente con mis <lb/>antiguos amigos.</p>
-          <p><lb/>Concluyó Simbad la historia de su cuarto viaje, mas
+          <p>
+            <lb/>Concluyó Simbad la historia de su cuarto viaje, mas
                                     interesante que <lb/>las anteriores, y regalando á Nadir como
                                     en los otros dias cien zequies, <lb/>le encargó mucho que no
                                     faltase al dia siguiente para que, acompañán- <lb/>dole á la
@@ -7354,11 +7553,15 @@
                                     convidados de <lb/>Simbad, y despues tomó este la palabra
                                     diciendo así:</p>
         </div>
+
         <pb n="21" source="Varios_442_21.jpg" facs="varios/Varios_442_21.jpg"/>
+
         <fw type="paginaNum">— 21 —</fw>
         <div type="parte" n="6">
-          <head type="titulo_parte" rend="negrita"><lb/>QUINTO VIAJE.</head>
-          <p><lb/>La memoria de mis pasados <lb/>peligros se borró con los
+          <head type="titulo_parte" rend="negrita">
+            <lb/>QUINTO VIAJE.</head>
+          <p>
+            <lb/>La memoria de mis pasados <lb/>peligros se borró con los
                                     goces de <lb/>mi vida alegre, y se disiparon los
                                     <lb/>propósitos que habia hecno de no <lb/>esponerme a otros
                                     nuevos. Ansiaba <lb/>el emprender mas viajes, y com- <lb/>prando
@@ -7368,7 +7571,8 @@
                                     gusto. Cuando le tuve concluido car- <lb/>gué mis mercancías y
                                     admití en él á otros mercaderes, haciéndolo á la <lb/>vela
                                     en cuanto se presentó viento favorable.</p>
-          <p><lb/>Fué muy larga la navegacion, y al fin tocamos en una isla
+          <p>
+            <lb/>Fué muy larga la navegacion, y al fin tocamos en una isla
                                     desierta, <lb/>onde lo primero que se presentó á nuestra vista
                                     fué un enorme huevo <lb/>e roc, parecido al que yo habia
                                     encontrado en mi segundo viaje. Ya es- <lb/>taba el polluelo
@@ -7385,7 +7589,8 @@
                                     del roc y que sin pérdida de tiempo nos embar- <lb/>cásemos,
                                     pues de otro modo corríamos un grande riesgo. Inmediatamente
                                     <lb/>hicimos lo que nos aconsejaba, volviendo á la mar.</p>
-          <p><lb/>Cuando la pareja del roc se acercó principió á dar
+          <p>
+            <lb/>Cuando la pareja del roc se acercó principió á dar
                                     espantosos alari- <lb/>dos y creció de punto su furor al ver el
                                     huevo destrozado y que no estaba <lb/>en él su hijuelo.
                                     Fácilmente se conoció que intentaban vengarse y volvie-
@@ -7393,8 +7598,13 @@
                                     Desaparecieron de nuestra <lb/>vista y nosotros rápidamente
                                     desplegamos las velas para huir del peligro <lb/>que nos
                                     amenazaba.</p>
-          <p><lb/>Poco tiempo tardamos en distinguirlos otra vez en lo alto, que
-                                    venian <pb n="22" source="Varios_442_22.jpg" facs="varios/Varios_442_22.jpg"/><fw type="paginaNum">—22—</fw><lb/>trayendo en sus garras cada uno un disforme veñasco.
+          <p>
+            <lb/>Poco tiempo tardamos en distinguirlos otra vez en lo alto, que
+                                    venian
+ <pb n="22" source="Varios_442_22.jpg" facs="varios/Varios_442_22.jpg"/>
+
+            <fw type="paginaNum">—22—</fw>
+            <lb/>trayendo en sus garras cada uno un disforme veñasco.
                                     Llegaron pron- <lb/>tamente á ponerse sobre nuestro buque y
                                     entonces uno de ellos dejó <lb/>caer á plomo el peñasco que
                                     traia; pero afortunadamente supo el piloto <lb/>virar con
@@ -7416,7 +7626,8 @@
                                     comí de dife- <lb/>rentes frutas que hallé á mano, sumamente
                                     sabrosas. Luego me levanté y <lb/>reconocí el terreno, que me
                                     pareció muy delicioso.</p>
-          <p><lb/>Seguí adelantándome á lo interior de la isla y en mi camino
+          <p>
+            <lb/>Seguí adelantándome á lo interior de la isla y en mi camino
                                     encontré <lb/>un anciano sentado á la orilla de un arroyo, y
                                     en el momento me ima- <lb/>giné que seria un desgraciado
                                     náufrago como yo. Le saludé y solo recibí <lb/>por respuesta
@@ -7443,15 +7654,18 @@
                                     Inútil es decir cuánto sufriria yo al verme aprisionado de
                                     aquel <lb/>modo, sin poderme quitar de encima semejante
                                     carga.</p>
-          <p><lb/>Un dia ancontré muchas calabazas secas en el suelo, cojí una
+          <p>
+            <lb/>Un dia ancontré muchas calabazas secas en el suelo, cojí una
                                     y la <lb/>Hlené con el jugo de uvas, que abundaban en aquella
                                     isla. Dejé la calaba- <lb/>za con el vino en el hueco de un
                                     tronco, y pasados algunos dias volví <lb/>por allí y bebi un
                                     licor tan escelente, que por un rato me hizo olvidar de <lb/>mi
                                     amarga situacion, trastornándome la cabeza, de modo que segun
-                                    iba <pb n="23" source="Varios_442_23.jpg" facs="varios/Varios_442_23.jpg"/>
-                                    <fw type="paginaNum">— 23—</fw>
-                                    <lb/>caminando principié á cantar y saltar. Cuando el anciano
+                                    iba
+ <pb n="23" source="Varios_442_23.jpg" facs="varios/Varios_442_23.jpg"/>
+
+            <fw type="paginaNum">— 23—</fw>
+            <lb/>caminando principié á cantar y saltar. Cuando el anciano
                                     advirtió el efec- <lb/>to que me habia producido aquella bebida
                                     quiso tambien probarla é in- <lb/>dicó por señas que le diese
                                     de ella. Tomó la calabaza, la llegó á su boca <lb/>y
@@ -7463,7 +7677,8 @@
                                     el <lb/>cuello, le tiré al suelo, cayendo embriagado
                                     completamente. Cojí prónta- <lb/>mente una gruesa piedra y le
                                     machaqué la cabeza.</p>
-          <p><lb/>Libre ya del viejo importuno y cruel, me dirijí hácia el
+          <p>
+            <lb/>Libre ya del viejo importuno y cruel, me dirijí hácia el
                                     mar con <lb/>grande alegria, y esta se aumentó al encontrarme
                                     allí algunos marineros <lb/>que acababan de llegar y hacian
                                     descanso. Me acerqué á ellos, les referí <lb/>mi aventura y
@@ -7482,7 +7697,8 @@
                                     grande, me recomendó á otros hom- <lb/>bres que tambien tenian
                                     sacos iguales al mio, y les dijo que me llevasen <lb/>con ellos
                                     á cojer cocos.</p>
-          <p><lb/>Bien provisto de viveres para todo el dia, fuí con aquellos
+          <p>
+            <lb/>Bien provisto de viveres para todo el dia, fuí con aquellos
                                     hombres á <lb/>un estenso bosque poblado de árboles tan
                                     estremadamente altos y tan <lb/>recto su tronco, que parecia
                                     imposible poder cojer su fruto, que era el <lb/>coco.Al
@@ -7495,7 +7711,8 @@
                                     <lb/>traciones de enojo. Proseguiamos nosotros en tirarles
                                     piedras y ellos en <lb/>contestar tirándonos cocos, de los
                                     cueles pudimos llenar nuestros sacos <lb/>en breve tiempo.</p>
-          <p><lb/>Concluida nuestra faena volvimos á la ciudad, y el mercader
+          <p>
+            <lb/>Concluida nuestra faena volvimos á la ciudad, y el mercader
                                     que me <lb/>habia dado el saco para ir al bosque me pagó el
                                     valor de los cocos que <lb/>yo llevaba, mandándome que los dias
                                     siguientes volviese al bosque para <lb/>el mismo trabajo, hasta
@@ -7504,24 +7721,27 @@
                                     <lb/>sejo, hice lo que me decia, y fuí acopiando una gran
                                     cantidad de cocos. <lb/>Entre tanto se marchó el buque donde yo
                                     habia ido á la ciudad, y tuve <lb/>que aguardar la ocasion en
-                                    que otro se disponia para salir. Cuando estuve <pb n="24" source="Varios_442_24.jpg" facs="varios/Varios_442_24.jpg"/>
-                                    <fw type="paginaNum">—24—</fw>
-                                    <lb/>dispuesto á recibir cargamento, mandé embarcar en él
+                                    que otro se disponia para salir. Cuando estuve
+ <pb n="24" source="Varios_442_24.jpg" facs="varios/Varios_442_24.jpg"/>
+
+            <fw type="paginaNum">—24—</fw>
+            <lb/>dispuesto á recibir cargamento, mandé embarcar en él
                                     todos los cocos <lb/>que tenia reunidos, y despidéindome de
                                     aquel amigo, partí hácia una is- <lb/>la muy abundante de
-                                    canela. Luego pasé á la isla de Comari, donde se <lb/>cria la
+                                    canela. Luego pasé á la isla de <name>Comari</name>, donde se <lb/>cria la
                                     mas escelente madera de aloe. Cambié mis cocos por los dos
                                     frutos <lb/>privilegiados de estas islas, y asociado con otros
                                     mercaderes salí á la pes- <lb/>ca de las perlas, llevando
                                     buzos costeados por mi cuenta. Cargado con <lb/>gran cantidad de
                                     perlas gruesísimas volví á emprender la navegacion, lle-
-                                    <lb/>gando por quinta vez felizmente á Bagdad, en donde me
+                                    <lb/>gando por quinta vez felizmente á <name>Bagdad</name>, en donde me
                                     enriquecí consi- <lb/>derablemente vendiendo la canela la
                                     madera de aloe y las perlas que <lb/>traia. No me olvidé de
                                     distribuir en limosnas una cantidad proporcionada <lb/>á mis
                                     ganancias, y resolvi disfrutar el resto con tranquilidad en
                                     medio <lb/>de mi amigos.</p>
-          <p><lb/>Asi concluyó Simbad de referir lo acaecido en su quinto
+          <p>
+            <lb/>Asi concluyó Simbad de referir lo acaecido en su quinto
                                     viaje, y dan- <lb/>do á Nadir el diario de los cien zequies, le
                                     convidó á comer tambien para <lb/>el dia siguiente. Como es de
                                     suponer, no faltó el mandadero á la hora <lb/>dada, ni tampoco
@@ -7530,8 +7750,10 @@
                                     al <lb/>relato de su</p>
         </div>
         <div type="parte" n="7">
-          <head type="titulo_parte" rend="negrita"><lb/>SESTO VIASE.</head>
-          <p><lb/>Sin duda ninguna, señores, <lb/>les dijo, os imaginareis
+          <head type="titulo_parte" rend="negrita">
+            <lb/>SESTO VIASE.</head>
+          <p>
+            <lb/>Sin duda ninguna, señores, <lb/>les dijo, os imaginareis
                                     que despues <lb/>de haber hecho cinco viajes en que <lb/>tan
                                     graves riesgos corrí, despues <lb/>de tantos propósitos de no
                                     volver á <lb/>sal r de mi casa, ya el que hice <lb/>cuando
@@ -7541,7 +7763,7 @@
                                     <lb/>lo cierto que al cabo de un año de quietud me decidí á
                                     emprender otro <lb/>viaje, sin atender á los ruegos de mis
                                     parientes y amigos. <lb/>Esta vez me dirijí atravesando muchas
-                                    provincias de la India, y en <lb/>un puerto de mar muy distante
+                                    provincias de la <name>India</name>, y en <lb/>un puerto de mar muy distante
                                     me embarqué en un buque dispuesto <lb/>para una larga
                                     navegacion. Viajamos dias y dias, meses y meses, y nun- <lb/>ca
                                     veiamos el término. El capitan y el piloto perdieron el rumbo y
@@ -7549,9 +7771,12 @@
                                     conocerlo; mas fué para <lb/>llenarnos de consternacion á
                                     cuantos ibamos en el buque, pues el capi- <lb/>tan como un
                                     furioso principió á dar espantosos alaridos.</p>
+
           <pb n="25" source="Varios_442_25.jpg" facs="varios/Varios_442_25.jpg"/>
+
           <fw type="paginaNum">—25—</fw>
-          <p><lb/>Preguntándole por qué haca tales demostraciones, nos
+          <p>
+            <lb/>Preguntándole por qué haca tales demostraciones, nos
                                     contesto: «Se. <lb/>ñores, no puedo menos de anunciaros que nos
                                     hallamos en el sitio ma: <lb/>peligroso del mar; el buque
                                     arrebatado por una rapidísima corriente, nos <lb/>conduce sin
@@ -7562,7 +7787,8 @@
                                     las peñas, salvando nuestras vidas antes <lb/>que se sumergiera
                                     completamente, y desembarcando con los viveres y las
                                     <lb/>mercancias de mas valor.</p>
-          <p><lb/>En cuanto estuvimos en tierra, nos dijo el capitan: La mano
+          <p>
+            <lb/>En cuanto estuvimos en tierra, nos dijo el capitan: La mano
                                     de Dios <lb/>nos ha conducido á donde ha sido su voluntad
                                     Ocupémonos sin tardanza <lb/>en darnos el último adios y
                                     dispongamos nuestras sepulturas; pues el sitio <lb/>en que nos
@@ -7584,7 +7810,8 @@
                                     <lb/>aguas de un manantial cuya corriente, siendo de una especie
                                     de resina, <lb/>los muchos peces que contiene, despues de
                                     tragarla volvian á echarla con- <lb/>vertida en el ámbar.</p>
-          <p><lb/>A la cumbre del monte no era posible subir, por lo
+          <p>
+            <lb/>A la cumbre del monte no era posible subir, por lo
                                     resbaladizo y lo <lb/>erizado de sus puntas: el alejarnos de
                                     aquel sitio, tampoco podia ser por <lb/>estar cercado de
                                     precipicios; conque no tuvimos mas remedio que per- <lb/>manecer
@@ -7605,9 +7832,11 @@
                                     maquinalmente hácia el rio que se ocultaba en la cueva. Largo
                                     rato <lb/>estuve meditando allí á la orilla, y concluí por
                                     decir entre mí: precisa- <fw type="signaturas">4</fw>
-                                    <pb n="26" source="Varios_442_26.jpg" facs="varios/Varios_442_26.jpg"/>
-                                    <fw type="paginaNum">—26—</fw>
-                                    <lb/>mente debe salir por alguna parte este rio que se resbala
+
+            <pb n="26" source="Varios_442_26.jpg" facs="varios/Varios_442_26.jpg"/>
+
+            <fw type="paginaNum">—26—</fw>
+            <lb/>mente debe salir por alguna parte este rio que se resbala
                                     por entre es- <lb/>tas peñas. Si yo construyo una balsa y me
                                     abandono á la corriente del <lb/>agua, llegaré á otras
                                     tierras tal vez mejores que esta, ó sino acabaré con <lb/>la
@@ -7622,7 +7851,8 @@
                                     Tomé dos pequeños remos, equilibré perfecta- <lb/>mente la
                                     carga de la balsa, y me abandoné á la corriente del rio,
                                     ponien- <lb/>do mi esperanza en Dios.</p>
-          <p><lb/>Pronto me hallé dentro de la cueva, sin ver ni el mas
+          <p>
+            <lb/>Pronto me hallé dentro de la cueva, sin ver ni el mas
                                     pequeño resqui- <lb/>cio de luz; seguia corriendo sobre las
                                     aguas, y no podia saber adonde <lb/>me encaminaba. Por la
                                     duracion del tiempo conocí que llevaba corrien- <lb/>do algunos
@@ -7662,15 +7892,18 @@
                                     sumamente sorprendidos, y convinieron en que <lb/>tan
                                     estraordinaria historia merecia ser contad por mí mismo á su
                                     rey.</p>
+
           <pb n="27" source="Varios_442_27.jpg" facs="varios/Varios_442_27.jpg"/>
+
           <fw type="paginaNum">—27—</fw>
-          <p><lb/>Entonces me presentaron un caballo magnífico, diciéndome que
+          <p>
+            <lb/>Entonces me presentaron un caballo magnífico, diciéndome que
                                     mon- <lb/>tase, cargaron con la balsa los mas robustos,
                                     llevándola con los fardos <lb/>que contenia, nos pusimos en
                                     camino, y llegando á la ciudad de Seren- <lb/>dib, me
                                     presentaron á su rey. Llegué á los pies del trono, y
                                     postrándo- <lb/>me ante el rey, besé la tierra, segun la
-                                    costumbre de las Indias. El prín- <lb/>cipe con la mayor
+                                    costumbre de las <name>Indias</name>. El prín- <lb/>cipe con la mayor
                                     afabilidad me mandó levantar y me preguntó por qué
                                     <lb/>casualidad habia llegado á sus Estados. Yo le referí
                                     minuciosamente mi <lb/>aventura, y quedó tan admirado de ella,
@@ -7680,7 +7913,8 @@
                                     presen- <lb/>cia fueron abiertos los fardos, causándole mucho
                                     asombro la gran canti- <lb/>dad de ámbar, y sobre todo las
                                     esmeraldas y los rubíes.</p>
-          <p><lb/>Conociendo yo lo prendado que se hallaba el monarca de tales
+          <p>
+            <lb/>Conociendo yo lo prendado que se hallaba el monarca de tales
                                     pre- <lb/>ciosidades, postrándome á sus pies le dije: «Señor,
                                     os ruego dispongais <lb/>de mi persona y de cuanto me
                                     pertenece.» A estas palabras me contestó <lb/>sonriéndose.
@@ -7710,23 +7944,27 @@
                                     carta lo entregase de parte suya <lb/>al califa Harun,
                                     asegurándole su amistad: Yo le prometí cumplir fielmen-
                                     <lb/>te sus órdenes y me despedí respetuosamente.</p>
-          <p><lb/>La carta del rey de Serendib, escrita con preciosísimos
+          <p>
+            <lb/>La carta del rey de <name>Serendib</name>, escrita con preciosísimos
                                     caractéres <lb/>de oro en finisima vitela, contenía en lengua
-                                    india las siguientes palabras: <lb/>«Yo el rey de las Indias,
+                                    india las siguientes palabras: <lb/>«Yo el rey de las <name>Indias</name>,
                                     cuyos pasos preceden mil elefantes, sobre <lb/>cuya cabeza
                                     chispean en dorados techos mas de cien mil rubíes, y cu-
                                     <lb/>yas sienes ciñe la mas preciosa corona engastada con
                                     veinte mil diaman- <lb/>tes, á mi muy caro hermano el califa
                                     Harun, salud. <lb/>«Aunque no sea cual mereceis el presente que
-                                    os enviamos, no rehu- <pb n="28" source="Varios_442_28.jpg" facs="varios/Varios_442_28.jpg"/>
-                                    <fw type="paginaNum">—28—</fw>
-                                    <lb/>seis aceptarlo, solo en atencion á la sinceridad con que os
+                                    os enviamos, no rehu-
+ <pb n="28" source="Varios_442_28.jpg" facs="varios/Varios_442_28.jpg"/>
+
+            <fw type="paginaNum">—28—</fw>
+            <lb/>seis aceptarlo, solo en atencion á la sinceridad con que os
                                     ama nuestro <lb/>corazon como hermano y amigo, de lo cual nos
                                     complacemos en daros <lb/>un testimonio. En retribucion os
                                     pedimos nos concedais un lugar en el <lb/>vuestro, á lo cual
                                     creemos poder aspirar, siendo de una categoría igual á <lb/>la
                                     que os realza.—Alá os guarde. etc.»</p>
-          <p><lb/>Consistia el regalo en un vaso hecho de un rubí en una
+          <p>
+            <lb/>Consistia el regalo en un vaso hecho de un rubí en una
                                     pieza, su for- <lb/>ma era la de una copa. Iba acompañado de
                                     una piel rarísima de serpien- <lb/>te, la cual tenia la
                                     propiedad de curar las enfermedades á quien se acos- <lb/>tase
@@ -7734,10 +7972,10 @@
                                     pro- <lb/>lijo y otras precíosidades, acompañando á todo esto
                                     una hermosísima <lb/>esclava, vestida ricamente y dornada con
                                     muchas piedras preciosas. <lb/>Se aprestó el buque para mi
-                                    marcha y se hizo á la vela, llegando á <lb/>Balsora despues de
+                                    marcha y se hizo á la vela, llegando á <lb/><name>Balsora</name> despues de
                                     una larga navegacion. Desembarcamos felizmente y <lb/>desde alli
-                                    pasé á Bagdad, cumpliendo inmediatamente que llegué, con
-                                    <lb/>el encargo que traia del príncipe de Serendib. Acompañado
+                                    pasé á <name>Bagdad</name>, cumpliendo inmediatamente que llegué, con
+                                    <lb/>el encargo que traia del príncipe de <name>Serendib</name>. Acompañado
                                     de muchos <lb/>criados llevando los regalos, me presenté en
                                     palacio sin detencion, lle- <lb/>gando hasta el trono del
                                     califa. Despues de saludarle respetuosamente <lb/>como es de
@@ -7753,8 +7991,10 @@
                                     despues de comer, dijo así á sus convidados:</p>
         </div>
         <div type="parte" n="8">
-          <head type="titulo_parte" rend="negrita"><lb/>SÉTIMO Y ÚLTIMO VIAJE.</head>
-          <p><lb/>Aunque despues de mi <lb/>sesto viaje habia he- <lb/>cho el
+          <head type="titulo_parte" rend="negrita">
+            <lb/>SÉTIMO Y ÚLTIMO VIAJE.</head>
+          <p>
+            <lb/>Aunque despues de mi <lb/>sesto viaje habia he- <lb/>cho el
                                     firme propósito <lb/>de no emprender nin- <lb/>gun otro, el
                                     Cielo me <lb/>reservaba todavía mas <lb/>aventuras. Yo por mi
                                     <lb/>edad y por mis traba- <lb/>jos necesitaba ya del
@@ -7762,9 +8002,12 @@
                                     imaginacion la <lb/>memoria de tantos riesgos á que me habia
                                     espuesto, solo pensaba en <lb/>disfrutar alegremente las
                                     numerosas riquezas que el Cielo me habia dado.</p>
+
           <pb n="29" source="Varios_442_29.jpg" facs="varios/Varios_442_29.jpg"/>
+
           <fw type="paginaNum">—29—</fw>
-          <p><lb/>Estaba aun compartiendo mis placeres con unos amigos, y un
+          <p>
+            <lb/>Estaba aun compartiendo mis placeres con unos amigos, y un
                                     cria- <lb/>do entró avisándome de que deseaba hablarme un
                                     emisario del califa. <lb/>Dejé al punto la mesa y salí á ver
                                     al oficial preguntándole qué me que- <lb/>ria, y me dijo: «El
@@ -7772,21 +8015,23 @@
                                     á palacio, y llegando á los pies del príncipe, luego que le
                                     saludé res- <lb/>petuosamente, me dijo: «Simbad, teneis que
                                     hacerme un servicio de <lb/>Importancia. Quiero que vayais á la
-                                    córte de Serendib y le lleveis al rey <lb/>la respuesta de su
+                                    córte de <name>Serendib</name> y le lleveis al rey <lb/>la respuesta de su
                                     carta y mis regalos. La ingratitud es el peor defecto <lb/>de un
                                     hombre bien nacido, y líbreme Dios de semejante falta con quien
                                     <lb/>procede conmigo cortésmente.»</p>
-          <p><lb/>No fué de mi agrado la órden del califa; pero sin embargo
+          <p>
+            <lb/>No fué de mi agrado la órden del califa; pero sin embargo
                                     hube de <lb/>aparentar complacencia y le dije: «Caudillo de los
                                     creyentes, pronto me <lb/>tiene V. M. á ejecutar cuanto se
                                     dignare ordenarme: solamente le ruego <lb/>tenga en
                                     consideracion lo fatigado que me tienen las muchas vicisitudes
                                     <lb/>que llevo sufridas en mis largos viajes, por cuya causa
-                                    tenia hecho pro- <lb/>pósito de no volver á salir de Bagdad.»
+                                    tenia hecho pro- <lb/>pósito de no volver á salir de <name>Bagdad</name>.»
                                     El califa me pidió entonces que <lb/>le refiriese la historia
                                     de mis viajes, y yo le obedecí, sin omitir ni el <lb/>mas leve
                                     suceso de mis aventuras.</p>
-          <p><lb/>Concluida mi relacion, el califa me dijo: «Son estraordinarios
+          <p>
+            <lb/>Concluida mi relacion, el califa me dijo: «Son estraordinarios
                                     por <lb/>cierto tales acontecimientos; pero si es sincero
                                     vuestro amor hácia mí, <lb/>no deben retraeros de emprender el
                                     viaje que yo ahora os encargo; pues <lb/>bien veis cuánto hago
@@ -7798,29 +8043,33 @@
                                     contesté que dispuesto me tenia á obedecerle. Recibió gran
                                     <lb/>complacencia el califa con mi respuesta y dió órden de
                                     que me fuesen <lb/>entregados mil zequies para el viaje.</p>
-          <p><lb/>Pocos dias bastaron para quedar dispuesto lo necesario á mi
+          <p>
+            <lb/>Pocos dias bastaron para quedar dispuesto lo necesario á mi
                                     marcha, <lb/>y despues de recibir los regalos que enviaba el
-                                    califa y una carta escrita <lb/>por su mano, salí para Balsora
+                                    califa y una carta escrita <lb/>por su mano, salí para <name>Balsora</name>
                                     y me embarqué allí. Próspera y corta <lb/>fué mi navegacion.
-                                    Llegué á la isla Serendib y presentándome á los mi-
+                                    Llegué á la isla <name>Serendib</name> y presentándome á los mi-
                                     <lb/>nistros del rey les manifesté el objeto de mi embajada:
                                     ellos me conduje- <lb/>ron al palacio, y cuando estuve delante
                                     del príncipe, le presenté la carta <lb/>y los regalos del
                                     califa, recibiéndolos aquel señor con muestras de gran
                                     <lb/>satisfaccion.</p>
-          <p><lb/>Los presentes que le hacia el califa consistian en una cama
+          <p>
+            <lb/>Los presentes que le hacia el califa consistian en una cama
                                     completa <lb/>de brocado que valia mas de mil zequies; otra de
                                     riquísimo damasco, <lb/>cien vestidos completos de telas
-                                    esquisitas de lo mejor que se halla en <lb/>el Cairo, Suez y
+                                    esquisitas de lo mejor que se halla en <lb/>el Cairo, <name>Suez</name> y
                                     Alejandría; un preciosísimo vaso de ágata, labrado <lb/>con
                                     el mayor primor, teniendo en su tallado la figura de un hombre
                                     ar- <lb/>rodillado, disparando á un leon una flecha; y por
                                     último una mesa <lb/>de gran valor y esmerada construccion, la
-                                    cual segun tradiciones del pais <pb n="30" source="Varios_442_30.jpg" facs="varios/Varios_442_30.jpg"/>
-                                    <fw type="paginaNum">— 30—</fw>
-                                    <lb/>perteneció al gran Salomon. El contenido de la carta era el
+                                    cual segun tradiciones del pais
+ <pb n="30" source="Varios_442_30.jpg" facs="varios/Varios_442_30.jpg"/>
+
+            <fw type="paginaNum">— 30—</fw>
+            <lb/>perteneció al gran Salomon. El contenido de la carta era el
                                     siguiente: <lb/>«Al nombre del supremo, feliz y poderoso sultan
-                                    de las indias, sa- <lb/>lud envia Abdalá Harun, colocado por la
+                                    de las <name>indias</name>, sa- <lb/>lud envia Abdalá Harun, colocado por la
                                     mano de Dios en el honroso <lb/>puesto que ocuparon sus
                                     antepasados de gloriosa memoria. <lb/>Habiendo recibido con
                                     satisfaccion vuestra carta, y por ello os de- <lb/>volvemos
@@ -7829,13 +8078,14 @@
                                     de que al poner <lb/>en ella vuestra vista, reconocereis la
                                     buena intencion que nos ha movido <lb/>á enviarla, y no la
                                     despreciareis.»</p>
-          <p><lb/>Gran contento recibió el rey de Serendib al verse
+          <p>
+            <lb/>Gran contento recibió el rey de <name>Serendib</name> al verse
                                     correspondido en <lb/>la amistad que habia manifestado al
                                     califa, y me trató con todas las con- <lb/>sideraciones debidas
                                     á un representante de aquel cerca de su persona. <lb/>Me detuve
                                     pocos dias en aquella isla, y cuando fuí á despedirme del rey
                                     <lb/>me regaló varias prendas de incalculable valor. Me
-                                    embarqué para vol- <lb/>ver á Bagdad: el viento era favorable
+                                    embarqué para vol- <lb/>ver á <name>Bagdad</name>: el viento era favorable
                                     y hubiera podido llegar en breve <lb/>con felicidad; pero la
                                     voluntad Divina lo dispuso de otro modo. <lb/>Llevábamos tres
                                     dias de navegacion, cuando fuimos acometides por <lb/>unos
@@ -7847,7 +8097,8 @@
                                     <lb/>Nos desnudaron, nos dieron unos vertidos muy malos y nos
                                     condujeron <lb/>á una isla muy distante, y allí nos
                                     vendieron.</p>
-          <p><lb/>Yo dí en manos de un mercader muy rico, el cual me trataba
+          <p>
+            <lb/>Yo dí en manos de un mercader muy rico, el cual me trataba
                                     con <lb/>bastante humanidad, teniéndome perfectamente vestido
                                     como esclavo, <lb/>y dándome bien de comer. A los pocos dias de
                                     estar en su casa me <lb/>preguntó si sabia yo algun oficio, y
@@ -7867,14 +8118,18 @@
                                     algunos dias.» Al <lb/>acabar estas palabras volvió á montar
                                     en el elefante y se marchó á la <lb/>ciudad, quedándome yo
                                     solo en el árbol.</p>
-          <p><lb/>Estuve toda la noche acechando y ningun elefante ví pasar;
+          <p>
+            <lb/>Estuve toda la noche acechando y ningun elefante ví pasar;
                                     pero ape- <lb/>nas rayaba el dia se presentó un gran número de
                                     ellos. Disparé varias <lb/>flechas y al fin logré dejar
                                     tendido uno. Se retiraron los demas y enton- <lb/>ces bajé yo y
                                     fuí á dar parte á mi amo del buen resultado de mi caza.</p>
+
           <pb n="31" source="Varios_442_31.jpg" facs="varios/Varios_442_31.jpg"/>
+
           <fw type="paginaNum">—31—</fw>
-          <p><lb/>Mi amo quedó muy satisfecho de mi destreza y me dió
+          <p>
+            <lb/>Mi amo quedó muy satisfecho de mi destreza y me dió
                                     perfectamente de <lb/>comer. Fué conmigo al bosque, abrimos un
                                     hoyo y enterramos allí al <lb/>elefante muerto por mí. El
                                     hacer esto era para que se pudriese la carne <lb/>y recojiendo
@@ -7894,7 +8149,8 @@
                                     oculto del bos- <lb/>que. Me bajó con sumo cuidado y me dejó
                                     en el suelo, marchándose con <lb/>todos los que le
                                     acompañaban.</p>
-          <p><lb/>Lleno de temor quedé allí esperando algun terrible
+          <p>
+            <lb/>Lleno de temor quedé allí esperando algun terrible
                                     suceso; pero <lb/>luego que pasó algun tiempo y nada me
                                     acontecia ni volvian los elefan- <lb/>tes, me levanté y anduve
                                     para reconocer el terreno. Vi que me hallaba en <lb/>una llanura
@@ -7908,7 +8164,8 @@
                                     daño. Muy <lb/>lleno de gozo me dirijí á la ciudad, y
                                     caminando todo un dia y una noche, <lb/>llegué á casa de mi
                                     amo.</p>
-          <p><lb/>Cuando me vió entrar me dijo: «Pobre Simbad! qué te ha
+          <p>
+            <lb/>Cuando me vió entrar me dijo: «Pobre Simbad! qué te ha
                                     sucedido? <lb/>Impaciente cuanto tardabas fuí al bosque y
                                     encontrando un árbol recien <lb/>arrancado y á su lado el arco
                                     y las flechas, te busqué por todas partes, <lb/>perdiendo al
@@ -7928,9 +8185,12 @@
                                     á él no quiero yo oponerme. A mas de la <lb/>libertad os doy
                                     otros bienes de mayor consideracion, para que con ellos
                                     <lb/>podais contaros desde hoy un hombre riquísimo.»</p>
+
           <pb n="32" source="Varios_442_32.jpg" facs="varios/Varios_442_32.jpg"/>
+
           <fw type="paginaNum">— 32 —</fw>
-          <p><lb/>Embriagado de gozo le respondí: «Señor, lo que haya hecho,
+          <p>
+            <lb/>Embriagado de gozo le respondí: «Señor, lo que haya hecho,
                                     que- <lb/>da suficientemente retribuido con la libertad que me
                                     concedeis; quiero <lb/>solo que añadais á este don el permiso
                                     para volverme á mi pais.» Tan <lb/>pronto como lleguen aquí unos
@@ -7941,17 +8201,19 @@
                                     cantidad <lb/>de marfil. No pudo estar oculto mucho tiempo aquel
                                     descubrimiento, y <lb/>tambien otros mercaderes se aprovecharon
                                     de él.</p>
-          <p><lb/>Llegaron los buques, y mi amo cargó uno por cuenta suya,
+          <p>
+            <lb/>Llegaron los buques, y mi amo cargó uno por cuenta suya,
                                     cedien- <lb/>do á mi favor todo su producto. Dándome además
                                     muchas preciosidades <lb/>de aquel pais, me despidió,
                                     agradeciéndole yo los beneficios que me dis- <lb/>pensaba. Me
                                     embarqué, y la navegacion fué sumamente próspera, lle-
-                                    <lb/>gando á un puerto de tierra firme de la India, donde
+                                    <lb/>gando á un puerto de tierra firme de la <name>India</name>, donde
                                     vendiendo el mar- <lb/>fil, saqué una crecida cantidad de dinero
                                     y dispuse mi viaje hácia Bag- <lb/>dad por tierra en union á una
                                     caravana.</p>
-          <p><lb/>Fué largo el camino y tuve que sufrir mucho; pero al fin
-                                    llegué fe- <lb/>lizmente á Bagdad, presentándome al instante al
+          <p>
+            <lb/>Fué largo el camino y tuve que sufrir mucho; pero al fin
+                                    llegué fe- <lb/>lizmente á <name>Bagdad</name>, presentándome al instante al
                                     califa para darle cuenta <lb/>de mi embajada. Mucha fué la
                                     satisfaccion que tuvo el monarca viéndo- <lb/>ne, pues me dijo
                                     que habia temido por mi cuando tardaba tanto en la <lb/>vuelta.
@@ -7961,7 +8223,8 @@
                                     presentes de su mano y me retiré <lb/>á mi casa con mis
                                     parientes y amigos, firmemente resuelto á no volver á
                                     <lb/>emprender otros viajes.</p>
-          <p><lb/>Aquí terminó Simbad su historia con el sétimo viaje, y
+          <p>
+            <lb/>Aquí terminó Simbad su historia con el sétimo viaje, y
                                     poniendo la <lb/>mano sobre el hombro de Nadir le dijo: «¿Qué os
                                     parece, amigo? ¿Ha- <lb/>biais oido nunca decir de alguno que
                                     hubiese corrido tan estrañas aven- <lb/>turas como las mias?
@@ -7976,7 +8239,8 @@
                                     Continuad siendo <lb/>feliz y haciendo buen uso de vuestras
                                     riquezas con vuestra caridad, hasta <lb/>la hora de vuestro
                                     fallecimiento.</p>
-          <p><lb/>Mandó Simbad que le diesen otros cien zequies y haciéndole
+          <p>
+            <lb/>Mandó Simbad que le diesen otros cien zequies y haciéndole
                                     dejar <lb/>el oficio de mandadero le admitió en el número de sus
                                     amigos, comien- <lb/>do con ellos en su mesa frecuentemente,
                                     para que jamás olvidase las <lb/>aventuras de SIMBAD EL

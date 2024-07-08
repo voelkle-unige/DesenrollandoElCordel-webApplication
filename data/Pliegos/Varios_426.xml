@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="3"/>3 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="3"/>3 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -93,6 +108,56 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="10" corresp="Q15878">
+            <placeName key="Normandía">Normandía</placeName>
+            <location>
+              <geo>49.1223391111111 -0.436644305555556</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1173">
+            <placeName key="Borgoña">Borgoña</placeName>
+            <location>
+              <geo>47 4.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q801">
+            <placeName key="Israel">Israel</placeName>
+            <location>
+              <geo>31 35</geo>
+            </location>
+          </place>
+          <place n="30" corresp="Q220">
+            <placeName key="Roma">Roma</placeName>
+            <location>
+              <geo>41.893055555556 12.482777777778</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q12512">
+            <placeName key="basílica_de_San_Pedro">Basílica De San Pedro</placeName>
+            <location>
+              <geo>41.9022222222222 12.4534166666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q236736">
+            <placeName key="Vernon">Vernon</placeName>
+            <location>
+              <geo>49.091666666667 1.485</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q30974">
+            <placeName key="Ruan">Ruan</placeName>
+            <location>
+              <geo>49.443055555556 1.1025</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -127,8 +192,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-28" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-28" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -5528,45 +5592,58 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_426_1.jpg" facs="varios/Varios_426_1.jpg"/>
-        
+
         <fw type="numeroPliego">(CUATRO PLIEGOS.)</fw>
-        
-        <head type="primer_titulo"><lb/><hi rend="negrita">HISTORIA MARAVILLOSA</hi><lb/>DE<lb/><hi rend="negrita">ROBERTO EL DIABLO</hi>,
-          <lb/><hi rend="negrita">HIJO DEL DUQUE DE NORMANDIA,</hi><lb/>EL CUAL DESPUES FUE
+        <head type="primer_titulo">
+          <lb/>
+          <hi rend="negrita">HISTORIA MARAVILLOSA</hi>
+          <lb/>DE<lb/>
+          <hi rend="negrita">ROBERTO EL DIABLO</hi>,
+          <lb/>
+          <hi rend="negrita">HIJO DEL DUQUE DE NORMANDIA,</hi>
+          <lb/>EL CUAL DESPUES FUE
           LLAMADO<lb/>HOMBRE DE DIOS.</head>
-        
         <p rend="cursiva">
           <lb/>Escrita por Juan de la Puente y corregida en esta última edicion.
         </p>
-       
         <div type="colofon">
-          <p><lb/><hi rend="negrita">Madrid.</hi><lb/>Imprenta de Marés y compañía, calle de la
+          <p>
+            <lb/>
+            <hi rend="negrita">Madrid.</hi>
+            <lb/>Imprenta de Marés y compañía, calle de la
             Encomienda, núm.19.</p>
         </div>
-        
+
         <pb n="2" source="Varios_426_2.jpg" facs="varios/Varios_426_2.jpg"/>
-        
+
         <div type="propiedad">
-          <p><lb/>Autorizada segun la ley vigente.</p>
+          <p>
+            <lb/>Autorizada segun la ley vigente.</p>
         </div>
-        
+
         <pb n="3" source="Varios_426_3.jpg" facs="varios/Varios_426_3.jpg"/>
-        
+
         <div type="parte" n="1">
-          <head type="primer_titulo"><lb/>HISTORIA MARAVILLOSA<lb/>DE<lb/><hi rend="negrita">ROBERTO EL DIABLO.</hi></head>
-          
-          <head type="titulo_parte"><lb/>CAPITULO PRIMERO.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Casamiento del duque Normandía con la
+          <head type="primer_titulo">
+            <lb/>HISTORIA MARAVILLOSA<lb/>DE<lb/>
+            <hi rend="negrita">ROBERTO EL DIABLO.</hi>
+          </head>
+          <head type="titulo_parte">
+            <lb/>CAPITULO PRIMERO.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Casamiento del duque Normandía con la
             duquesa de Borgoña.—Disensio-<lb/>nes domésticas por falta de sucesion.—Ofrecimiento
             diabólico de la du-<lb/>quesa en un acceso de desesperacion.</head>
-         
-            <p rend="indent"><lb/>EN el reino de Francia, provincia de Normandía, hubo un duque<lb/>muy noble,
+          <p rend="indent">
+            <lb/>EN el reino de <name>Francia</name>, provincia de Normandía, hubo un duque<lb/>muy noble,
             discreto y esforzado, el cual se llamaba Auberto, cuyos he-<lb/>chos y hazañas en las
             crónicas francesas se hallan patentemente declaradas,<lb/>de las cuales dejo de hablar
             por no ser prólijo, y solamente diré lo<lb/>que á esta historia
             concierne.</p>
-            <p rend="indent"><lb/>Determinó este duque reunir córtes en una villa llamada Vernon,
+          <p rend="indent">
+            <lb/>Determinó este duque reunir córtes en una villa llamada <name>Vernon</name>,
             á<lb/>las cuales fueron llamados los señores, varones y caballeros de todo
             el<lb/>ducado de Normandía; y como el duque Auberto se hallase en eatsdo<lb/>de
             soltero, despues de unidos en córtes, y ventilados los asuntos que<lb/>debian de
@@ -5576,12 +5653,12 @@
             casar que le fuese mas honroso y<lb/>de provecho para sus Estados, y que pues su
             contento era el de satisfacer<lb/>sus ruegos, les fijaba un término para reflexionar en
             ello.</p>
-          
+
           <pb n="4" source="Varios_426_4.jpg" facs="varios/Varios_426_4.jpg"/>
-          
+
           <fw type="paginaNum">— 4 —</fw>
-          
-          <p rend="indent"><lb/>De allí á pocos dias se le presentaron unos comisionados, y le di-<lb/>jeron que
+          <p rend="indent">
+            <lb/>De allí á pocos dias se le presentaron unos comisionados, y le di-<lb/>jeron que
             el duque de Borgoña tenia una hija, muy dotada de virtudes<lb/>y de estremada
             hermosura, la que si tenia por bien podría ser deman-<lb/>dada; el duque despues de un
             rato de reflexion, les dijo que viniesen<lb/>á otro dia por la contestacion; luego
@@ -5591,13 +5668,15 @@
             le<lb/>procedia honra y provecho á sí mismo y á la república. Al otro
             dia<lb/>reuniendo sus caballeros, ordenó enviar una embajada al duque de<lb/>Borgoña,
             del cual fué bien recibida; y aceptada su pretension.</p>
-          <p rend="indent"><lb/>El duque Auberto hizo traer
+          <p rend="indent">
+            <lb/>El duque Auberto hizo traer
             su prometida á Normandía, acompañada<lb/>de muchos varones nobles, de dueñas y
-            doncellas, y llegados que fue-<lb/>ron á la ciudad de Ruan, se verificaron los
+            doncellas, y llegados que fue-<lb/>ron á la ciudad de <name>Ruan</name>, se verificaron los
             desposorios y se celebra-<lb/>ron las fiestas y las diversiones con asombrosa
             solemnidad, las cuales<lb/>dejaré de referir por huir de prolijidades, y seguiré lo
             que sea mas in-<lb/>teresante á la presente historia.</p>
-          <p rend="indent"><lb/>El duque Auberto y la
+          <p rend="indent">
+            <lb/>El duque Auberto y la
             duquesa, su esposa, vivieron en conyugal<lb/>compañía sin tener fruto de bendicion por
             espacio de diez y siete años,<lb/>por lo cual se hallaban poseidos de una gran
             tristeza, y no cesaban de<lb/>hacer muchas limosnas y otras obras pias, rogando con
@@ -5612,7 +5691,8 @@
             pesa-<lb/>dumbre, sino darle contínuas gracias, y conformarnos en todo lo que<lb/>él
             fuére servido. Viéndola el duque tan enojada, no habló mas de aquel<lb/>caso, antes
             la consoló cuanto pudo; pero no por eso entró la alegría en<lb/>su corazon.</p>
-          <p rend="indent"><lb/>Con el disgusto que se notaba en el duque, estaban asimismo los<lb/>caballeros muy
+          <p rend="indent">
+            <lb/>Con el disgusto que se notaba en el duque, estaban asimismo los<lb/>caballeros muy
             apesadumbrados, los cuales, como siempre pensasen<lb/>en darle placer por apartarle de
             tan tristes pensamientos, le rogaron<lb/>un dia que fuese á caza, y él, conociendo los
             buenos deseos, salió con<lb/>ellos al monte. Entrados en él con multitud de perros,
@@ -5620,16 +5700,17 @@
             ca-<lb/>mino de la sierra; siguiéronle los caballeros y toda la demas
             gente,<lb/>quedando el duque solo, que muy poco se le daba por el ciervo, por-<lb/>que
             tenia el corazon muy turbado y envuelto en otros diversos pen-
+
             
             <pb n="5" source="Varios_426_5.jpg" facs="varios/Varios_426_5.jpg"/>
-            
+
             <fw type="paginaNum">— 5 —</fw>
-            
             <lb/>samientos, siendo tanto lo que sentia y oprimia su corazon que
             casi<lb/>cayó en una especie de abatimiento. Estuvo así, hasta que vino la gen-<lb/>te
             con el ciervo muerto, y dando la cacería por concluida, subió el du-<lb/>que en una
-            hacanea marchándose con la comitiva para la ciudad.<lb/></p>
-            <p rend="indent">La esposa del duque poseida
+            hacanea marchándose con la comitiva para la ciudad.<lb/>
+          </p>
+          <p rend="indent">La esposa del duque poseida
             tambien de una profunda tristeza,<lb/>acompañada de cierta especie de delirio, se puso
             en un estado com-<lb/>pleto de postracion, lo cual la obligó á guardar cama, y aunque
             la de-<lb/>cian que el duque venia y traia un ciervo muerto, no hacia el menor<lb/>caso
@@ -5642,20 +5723,22 @@
             costa<lb/>de ofrecer al diablo el fruto de mis entrañas</hi>: y por desgracia así lo
             hizo.</p>
         </div>
-        
         <div type="parte" n="2">
-          <head type="titulo_parte"><lb/>CAPITULO II.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Nacimiento de Roberto y tempestad que
+          <head type="titulo_parte">
+            <lb/>CAPITULO II.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Nacimiento de Roberto y tempestad que
             hubo al darle á luz.—Sucesos no-<lb/>tables de su infancia.—Perversidad demostrada en
             sus inclinaciones.</head>
-          
-          <p rend="indent"><lb/>Por voluntad de Dios concibió la duquesa un hijo, que fué muy<lb/>diestro y
+          <p rend="indent">
+            <lb/>Por voluntad de Dios concibió la duquesa un hijo, que fué muy<lb/>diestro y
             perverso en todas maldades; mas por la gracia Divina, hizo<lb/>despues digna penitencia
             de sus pecados como en adelante diremos.<lb/>Trajo la duquesa nueve meses el hijo en sus
             entrañas, y estuvo de<lb/>parto un mes entero.nPensaba el duque y todos los de palacio
             que fe-<lb/>neneceria, pero plugó á Dios que pariese, aunque no sin gran
             trabajo,<lb/>porque se singularizase este maravilloso hecho.</p>
-          <p rend="indent"><lb/>En la hora que nació
+          <p rend="indent">
+            <lb/>En la hora que nació
             el niño, como se halla en las crónicas fran-<lb/>cesas, sobrevino una niebla muy
             espesa, que cubria toda la ciudad y<lb/>parecia media noche; tronaba y centelleaba de
             tal suerte, que todos<lb/>pedian misericordia á Dios, pensando que la ciudad se hundia.
@@ -5666,11 +5749,11 @@
             maltratado de la tempestad, que gran parte<lb/>de él se arruinó, y pensaron los que en
             él estaban perder las vidas;<lb/>mas por la gracia de Dios y la intercesion de nuestra
             Señora, cesó la
+
           
             <pb n="6" source="Varios_426_6.jpg" facs="varios/Varios_426_6.jpg"/>
-          
+
             <fw type="paginaNum">— 6 —</fw>
-          
             <lb/>tempestad. Fué llevado el niño á bautizar, y le pusieron por nom-<lb/>bre
             Roberto; las jentes acudian á verlo por maravilla, porque de dos<lb/>dias de nacido
             parecia que tenia un año. Al llevarlo y traerlo de la<lb/>iglesia, jamás su boca se
@@ -5683,21 +5766,24 @@
             con palos y con piedras, los gol-<lb/>peaba y rasguñaba; y en fin, en cualquier parte
             que estuviese jamás<lb/>cesaba de hacer mal, y destruir cuanto le venia á las
             manos.</p>
-            <p rend="indent"><lb/>Creció en cuerpo, y maldades, en tanto grado, que los que tenian<lb/>hijos
+          <p rend="indent">
+            <lb/>Creció en cuerpo, y maldades, en tanto grado, que los que tenian<lb/>hijos
             no los dejaban salir de casa por temor de que Roberto les encon-<lb/>trase. Algunas
             veces se juntaban muchos niños para pelear con él, mas<lb/>no porque fuesen muchos,
             dejaba de acometerlos con piedras ó con<lb/>palos, y algunas veces le descalabraban,
             pero siempre habia muchos<lb/>de ellos heridos y maltratados, así que cuando le veian
             decian todos:<lb/>ahí viene Roberto el Diablo! cuyo nombre le quedó por mucho
             tiempo.</p>
-            <p rend="indent"><lb/>Si veian que eran pocos para resistirle, poníanse todos á huir,
+          <p rend="indent">
+            <lb/>Si veian que eran pocos para resistirle, poníanse todos á huir,
             y<lb/>algunas veces los seguia hasta entrar en sus casas, pero por ser de<lb/>quien era
             no osaban sus padres ni parientes castigarle ni enojarle,<lb/>antes le halagaban
             dándole frutas y otras cosas que los niños desean;<lb/>mas ni por eso pudieron jamás
             conseguir de él la menor correccion; pues<lb/>era de condicion tan perversa, que sus
             deseos se fundaban solo en la<lb/>maldad y las obras eran en un todo conforme á
             ellos.</p>
-          <p rend="indent"><lb/>Tendría Roberto unos siete años, cuando el buen duque, su pa-<lb/>dre,
+          <p rend="indent">
+            <lb/>Tendría Roberto unos siete años, cuando el buen duque, su pa-<lb/>dre,
             informado de su mala condicion, pensó poner enmienda en él por<lb/>medio del estudio;
             un dia le mandó llamar y le dijo: hijo, ya es tiempo<lb/>que aprendas de educacion y
             ciencia, pues que Dios te dió habilidad para<lb/>ello, porque en todo tengas ventaja á
@@ -5711,11 +5797,11 @@
             habiendo Roberto un dia<lb/>herido y apedreado á otros muchachos, quejáronse sus
             padres al maes-<lb/>tro, y queriéndole este castigar, dió á su discipulo un bofeton,
             pero él<lb/>sacando su cuchillo, le dió tan fuerte estocada en el pecho que cayó
+
           
             <pb n="7" source="Varios_426_7.jpg" facs="varios/Varios_426_7.jpg"/>
-          
+
             <fw type="paginaNum">— 7 —</fw>
-          
             <lb/>tendido en el suelo; despues se marchó maldiciendo la ciencia y quien<lb/>se la
             enseñaba, diciendo que de allí en adelante no consentiría que<lb/>ningun superior le
             castigase. No osó despues ninguno tomar á su<lb/>cargo el enseñarle, ni se atrevia
@@ -5726,19 +5812,21 @@
             Viendo el duque y la duquesa la perversidad de su hijo, no<lb/>estaban menos tristes por
             eso que antes de su tan deseado nacimiento.</p>
         </div>
-        
         <div type="parte" n="3">
-          <head type="titulo_parte"><lb/>CAPITULO III.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Roberto es armado de caballero.—Comete
+          <head type="titulo_parte">
+            <lb/>CAPITULO III.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Roberto es armado de caballero.—Comete
             grandes desórdenes y atropellos en<lb/>un torneo.—Parte de la ciudad de Ruan.—Se
             entrega á toda suerte<lb/>de escesos.</head>
-          
-          <p rend="indent"><lb/>SIENDO ya Roberto de diez y siete años, dijo la duquesa á su espo-<lb/>so que le
+          <p rend="indent">
+            <lb/>SIENDO ya Roberto de diez y siete años, dijo la duquesa á su espo-<lb/>so que le
             parecia ser muy conveniente que á su hijo Roberto se le<lb/>armase de caballero, y de
             este modo conseguirian tal vez hacerle variar<lb/>de condicion, y aprenderia las reglas
             y buenas costumbres de sus nue-<lb/>vos compañeros, á cuyas razones dijo el duque que
             le parecia bien.</p>
-          <p rend="indent"><lb/>Para llevar á efecto con toda formalidad dicha ceremonia, mandó
+          <p rend="indent">
+            <lb/>Para llevar á efecto con toda formalidad dicha ceremonia, mandó
             el<lb/>duque reunir á su córte todos los principales señores de sus Estados,
             y<lb/>delante de ellos hizo comparecer á su hijo Roberto, y le dijo: hijo,
             con-<lb/>formándome con el parecer de estos nobles señores, he ordenado de
@@ -5748,18 +5836,19 @@
             dijo á eso: señor, yo haré lo que me mandeis,<lb/>respecto á ser armado caballero,
             pero tocante á mis condiciones no<lb/>me hable nadie de ello, porque tengo hecho
             propósito de seguir mi<lb/>voluntad y capricho toda mi vida.</p>
-          <p rend="indent"><lb/>Aquella misma noche
+          <p rend="indent">
+            <lb/>Aquella misma noche
             veló Roberto en la iglesia, como es cos-<lb/>tumbre á los que han de ser armados
             caballeros, y en toda ella no<lb/>cesó de molestar á los que estaban en el templo para
             su compañía,<lb/>sin hacer ningun aprecio de la honra que habia de recibir.
             Venido<lb/>el dia, fué armado caballero con la celebridad y ceremonia que en
             este<lb/>acto se requeria. De allí á algunos dias, el duque hizo publicar unas
             jus-<lb/>tas, á las que vinieron damas y caballeros de diversas partes; lle-
+
           
             <pb n="8" source="Varios_426_8.jpg" facs="varios/Varios_426_8.jpg"/>
-          
+
             <fw type="paginaNum">— 8 —</fw>
-          
             <lb/>gado el dia señalado, Roberto fue armado de muy lucidas armas, y<lb/>montando en
             un brioso caballo entró en las justas, y del primer en-<lb/>cuentro mató á un
             caballero principal, y en poco tiempo no quedó en<lb/>todo el palenque quien se
@@ -5774,13 +5863,15 @@
             á abandonar la pla-<lb/>za, saliéndose todos en tropel llenos de vergüenza y coraje
             por tener<lb/>que huir como vencidos por un jóven atolondrado, superior á
             ellos<lb/>solo en categoría, pero no en valor.</p>
-          <p rend="indent"><lb/>Grande fué el enojo de los
+          <p rend="indent">
+            <lb/>Grande fué el enojo de los
             caballeros en vista de los desórdenes<lb/>cometidos por el imprudente Roberto, y en sus
             ademanes al retirarse da-<lb/>ban bien á entender que el resentimiento que con harto
             pesar suyo ha-<lb/>bian disimulado hasta entonces, solo pudo ser contenido por los
             res-<lb/>petos debidos al duque, quien por su parte trató de apaciguarlos,
             dán-<lb/>doles las mas cumplidas satisfacciones.</p>
-          <p rend="indent"><lb/>Cuando Roberto vió que no hallaba
+          <p rend="indent">
+            <lb/>Cuando Roberto vió que no hallaba
             con quien pelear, se salió de<lb/>la plaza; mas no quiso ir á palacio por el enojo que
             su padre tenia,<lb/>y juntándose con algunos de su condicion, salió de la ciudad con
             ellos<lb/>cometiendo toda clase de escesos: entraba en las aldeas, atropellaba
@@ -5792,18 +5883,19 @@
             humildemente los consolase y trajese<lb/>á su hijo á la verdadera carrera de
             salvacion, haciendo muchas limos-<lb/>nas y otras obras de piedad, y socorriendo con sus
             haciendas á los me-<lb/>nesterosos,con el fin de lograr su peticion.</p>
-          <p rend="indent"><lb/>Un caballero de los mas principales de la ciudad y que gozaba de<lb/>mas confianza con el duque,
+          <p rend="indent">
+            <lb/>Un caballero de los mas principales de la ciudad y que gozaba de<lb/>mas confianza con el duque,
             pesaroso de la multitud de desgracias que<lb/>ocasionaba aquel desgraciado jóven por
             todo el pais, trató de ver si<lb/>podria poner remedio á tantas demasias; presentóse
             al duque y le dijo:<lb/>señor, á mí me parece seria conveniente que vuestra señoría
             mandase<lb/>llamar á Roberto amonestándole, que deje el mal camino que hasta<lb/>ahora
             ha llevado, y amenazándole que le castigareis posponiendo al<lb/>amor patemal todo el
             rigor de un padre irritado, por el primer yerro
+
           
             <pb n="9" source="Varios_426_9.jpg" facs="varios/Varios_426_9.jpg"/>
-          
+
             <fw type="paginaNum">— 9 —</fw>
-          
             <lb/>que en adelante cometiese; y tal vez el temor le desviará de lo que<lb/>vuestra
             lenidad ni ruegos de los vasallos pudiera conseguir. Aprobaron<lb/>los duques las
             razones del caballero, y acordaron hacerlo así; al ins¬<lb/>tante se mandó disponer
@@ -5834,31 +5926,32 @@
             pronto para ir en persecucion de su hijo<lb/>Roberto y sus compañeros, para que vivos
             ó muertos fuesen llevados<lb/>á la ciudad.</p>
         </div>
-        
         <div type="parte" n="4">
-          <head type="titulo_parte"><lb/>CAPTTULO IV.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>La guarida de asesinos en el
+          <head type="titulo_parte">
+            <lb/>CAPTTULO IV.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>La guarida de asesinos en el
             monte.—Entrevista de la duquesa y su hijo.<lb/>—Arrepentimiento de Roberto.—Destruccion
             de los malhechores.</head>
-          
-          <p rend="indent"><lb/>CUANDO Roberto supo el bando que su padre habia dado por to-<lb/>dos sus domimios,
+          <p rend="indent">
+            <lb/>CUANDO Roberto supo el bando que su padre habia dado por to-<lb/>dos sus domimios,
             se entregó á la mas grande desesperacion. lba por<lb/>el monte como leon rabioso dando
             gritos y bramidos, llamando á gran-
           
           <fw type="sig">2</fw>
-          
-          <pb n="10" source="Varios_426_10.jpg" facs="varios/Varios_426_10.jpg"/>
-          
-          <fw type="paginaNum">— 10 —</fw>
-          
-          <lb/>des voces los diablos, ofreciéndoles su cuerpo y alma; y á ellos sola-<lb/>mente
+
+            <pb n="10" source="Varios_426_10.jpg" facs="varios/Varios_426_10.jpg"/>
+
+            <fw type="paginaNum">— 10 —</fw>
+            <lb/>des voces los diablos, ofreciéndoles su cuerpo y alma; y á ellos sola-<lb/>mente
             pedia ayuda y favor, y con tales despropósitos salia muchas<lb/>veces á un camino, y
             si por desgracia hallaba á algun infeliz viajero,<lb/>lo mataba por valiente que fuese,
             porque era hombre de grandes fuer-<lb/>zas y diestro en todo; y no contento con aquello,
             á unos sacaba el cora-<lb/>zon, á otros descuartizaba y echaba por el monte, á otros
             desnudaba y<lb/>colgaba por los pies en un árbol; en fin, otras muchas crueldades
             que<lb/>estremecerian el referirlas.</p>
-          <p rend="indent"><lb/>Sabiendo que se llevaba á cabo la reunion y
+          <p rend="indent">
+            <lb/>Sabiendo que se llevaba á cabo la reunion y
             apresto de la gente<lb/>que mandaba su padre para prenderle, se internó con sus
             compañeros<lb/>por el monte adelante, y en un sitio escabroso mandó construir
             una<lb/>especie de fuerte para reunirse y defenderse cuando llegase el caso;<lb/>hecha
@@ -5869,7 +5962,8 @@
             habitantes,<lb/>y tanto se escedieron en sus crueldades, que toda la comarca estaba
             ate-<lb/>morizada, no atreviéndose la gente á andar por los caminos á
             veinte<lb/>leguas al rededor del monte.</p>
-          <p rend="indent"><lb/>Un dia se separó Roberto de sus
+          <p rend="indent">
+            <lb/>Un dia se separó Roberto de sus
             compañeros, y andando por el<lb/>monte mirando á todas partes, escuchando si descubria
             á alguno para<lb/>ejecutar en él su malignidad; tanto anduvo, que se encontró con
             tres<lb/>ermitaños muy viejos, y se alegró tanto de verlos, así como el
@@ -5880,7 +5974,7 @@
             con un pastor, el cual temiendo le matase, fué á<lb/>echarse á sus pies, pidiéndole
             por merced que no le quitase la vida,<lb/>pues tenia que darle un comunicacion
             importante. Roberto entonces<lb/>le preguntó por el duque su padre, y el pastor le
-            dijo: que se habia<lb/>marchado á la córte del rey de Francia, y que la duquesa estaba
+            dijo: que se habia<lb/>marchado á la córte del rey de <name>Francia</name>, y que la duquesa estaba
             en<lb/>un castillo una legua de allí; Roberto le perdonó por las noticias que<lb/>le
             dió. Se fue corriendo para el castillo, y como la gente del lugar y<lb/>del castillo le
             viesen venir, todos se escondian y se encerraban en sus<lb/>casas porque llevaba Roberto
@@ -5890,11 +5984,11 @@
             maravillado.<lb/>Apeóse del caballo y entró en el castillo; los que estaban en las
             pri-<lb/>meras habitaciones comenzaron á decir á grandes voces: ¡que viene<lb/>Roberto
             el Diablo! y huyendo de él se encerraban en las cámaras,
+
           
               <pb n="11" source="Varios_426_11.jpg" facs="varios/Varios_426_11.jpg"/>
-          
-              <fw type="paginaNum">—11—</fw>
-          
+
+            <fw type="paginaNum">—11—</fw>
             <lb/>pero Roberto sin seguirles ni hacer demostracion de causarles mal alguno;<lb/>así
             anduvo Roberto por el castillo, hasta que llegó al cuarto en que es-<lb/>taba la
             duquesa su madre; y como hallase la puerta cerrada por den-<lb/>tro, comenzó á dar
@@ -5910,7 +6004,8 @@
             ó el du-<lb/>que mi padre, no tengais alguna culpa en este mi mal vivir, y
             quisie-<lb/>ra saber si vosotros fuisteis causantes de ello, para que mas
             facilmente<lb/>pudiese yo enmendar mi vida.</p>
-          <p rend="indent"><lb/>Cuando la duquesa oyó la voluntad y
+          <p rend="indent">
+            <lb/>Cuando la duquesa oyó la voluntad y
             buena disposicion de su hijo<lb/>para entregarse á buen vivir, le saltaron nuevas
             lágrimas de sus ojos<lb/>del gran gozo que recibió, abrazándole y besándole á
             menudo, y ro-<lb/>gándole la quisiera perdonar; luego le contó por estenso cómo le
@@ -5929,17 +6024,17 @@
             que se hacen; perdona á<lb/>esta mi triste madre su gran yerro cometido, y á mí,
             mezquino pe-<lb/>cador lo mucho que te he ofendido, y pon en mi corazon entera
             con-<lb/>tricion de mis pecados, ábreme la carrera de tus mandamientos,
-            como<lb/>abriste el mar Rojo para los hijos de Israel.» Acabada esta súplica
+            como<lb/>abriste el mar Rojo para los hijos de <name>Israel</name>.» Acabada esta súplica
             ar-<lb/>rodillose delante de su madre, la pidió perdon, besóla la mano, la ro-<lb/>gó
             que le encomendase al duque su padre y le dijese que le pedia per-<lb/>don de sus
-            yerros. Decidle, añadió, que parto á Roma para ponerme<lb/>á los pies del Padre
+            yerros. Decidle, añadió, que parto á <name>Roma</name> para ponerme<lb/>á los pies del Padre
             Santo á confesar todos mis pecados.</p>
-          
+
           <pb n="12" source="Varios_426_12.jpg" facs="varios/Varios_426_12.jpg"/>
-          
+
           <fw type="paginaNum">—12—</fw>
-          
-          <p rend="indent"><lb/>Así llorando y sollozando se salió del castillo y montó en su ca-<lb/>ballo,
+          <p rend="indent">
+            <lb/>Así llorando y sollozando se salió del castillo y montó en su ca-<lb/>ballo,
             quedando la duquesa muy asombrada de lo que acababa de suce-<lb/>der; llegó á poco
             despues el duque al castillo, y como hallase la gen-<lb/>te alborotada y la duquesa
             llorando, preguntó luego si Roberto habia<lb/>estado por allá, y si le habia hecho
@@ -5947,7 +6042,8 @@
             suspirando: Dios por su<lb/>piedad quiera tener misericordia de él y le conduzca al
             camino de<lb/>salvacion! Y despues se ocupó en consolar á la duquesa de la gran
             con-<lb/>mocion que le habia causado la novedad de su hijo.</p>
-          <p rend="indent"><lb/>Luego que Roberto partió del castillo, se fué á toda prisa para el<lb/>monte, temiendo ser cojido por
+          <p rend="indent">
+            <lb/>Luego que Roberto partió del castillo, se fué á toda prisa para el<lb/>monte, temiendo ser cojido por
             la gente de su padre; llegando á la<lb/>casa que allí tenia, encontró á sus
             compañeros comiendo y divirtién-<lb/>dose; luego que le vieron, todos se levantaron á
             recibirle, y se ale-<lb/>graron de su venida: él les habló muy cortesmente, los hizo
@@ -5977,25 +6073,25 @@
             maldades. Y esperan-<lb/>de ocasion oportuna, así que los vió entregados al sueño,
             fué y tomó<lb/>presto una hacha de armas, y empezó á dar hachazos y herir á
             dis-<lb/>
-          
+
             <pb n="13" source="Varios_426_13.jpg" facs="varios/Varios_426_13.jpg"/>
-          
+
             <fw type="paginaNum">— 13—</fw>
-          
             <lb/>crecion sin dar lugar á que dispertasen y se defendiesen, hasta que los
             der-<lb/>ribó á todos en el suelo; y cuando ya los tuvo muertos dijo: <hi rend="cursiva">quien á
             buen<lb/>señor sirve, buen galardon espera</hi>: si bien me servísteis, tal como
             mere-<lb/>ciais os he pagado. Despues quiso quemar la casa, mas se detuvo, por<lb/>las
             infinitas riquezas que en ella habia, y cerrando la puerta montó<lb/>en su caballo,
-            resuelto á emprender el camino para Roma.</p>
+            resuelto á emprender el camino para <name>Roma</name>.</p>
         </div>
-        
         <div type="parte" n="5">
-          <head type="titulo_parte"><lb/>CAPITULO V.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Despido tierno en la abadía.—Llegada á
+          <head type="titulo_parte">
+            <lb/>CAPITULO V.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Despido tierno en la abadía.—Llegada á
             Roma y presentacion al Santo<lb/>Padre.—Singular penitencia impuesta á Roberto.</head>
-          
-          <p rend="indent"><lb/>HABIENDO andado Roberto todo el dia y noche sin comer cosa<lb/>alguna, á la
+          <p rend="indent">
+            <lb/>HABIENDO andado Roberto todo el dia y noche sin comer cosa<lb/>alguna, á la
             mañana siguente llegó á una abadía (cuyo prelado era<lb/>pariente suyo), en la cual
             habia hecho grandes daños. Roberto se apeó<lb/>del caballo á la puerta de la iglesia
             y entró en ella á hacer oracion. Cuando<lb/>los monjes le vieron, se asustaron de tal
@@ -6010,22 +6106,22 @@
             al abad y le dijo: yo os ruego, señor que me en-<lb/>comendeis á mi padre, y que le
             deis esta llave, que es de la casa en<lb/>que me reunia con mis compañeros, y en ella
             hallará muchos tesoros<lb/>y riquezas que hemos robado en diversas partes; y le direis
-            que resti-<lb/>tuya toda aquella hacienda á sus dueños, y que yo voy á Roma á
+            que resti-<lb/>tuya toda aquella hacienda á sus dueños, y que yo voy á <name>Roma</name> á
             con-<lb/>fesar y hacer penitencia de mis pecados. Cuando los monjes vieron el<lb/>grande
             arrepentimiento de Roberto, dieron por ello infinitas gracias á<lb/>Dios, y estuvo muy
             bien asistido en la abadía aquel dia y la noche,<lb/>que el abad no le dejó partir. A
             la mañana siguiente, dejó el caballo<lb/>y las armas, emprendiendo á pie el camino
-            para Roma, y el abad en-<lb/>vió la llave al duque, padre de Roberto, con la noticia de
+            para <name>Roma</name>, y el abad en-<lb/>vió la llave al duque, padre de Roberto, con la noticia de
             la conver-<lb/>sion de su hijo, el cual aunque ya tenia conocimiento de ello,
             tuvo<lb/>gran alegría; partió para el monte é hizo dar todos los bienes que
             halló<lb/>en la casa á sus respectivos dueños. Dejemos ahora al duque, y
             siga-<lb/>mos á Roberto en su peregrinacion.</p>
-          
+
           <pb n="14" source="Varios_426_14.jpg" facs="varios/Varios_426_14.jpg"/>
-          
+
           <fw type="paginaNum">— 14 —</fw>
-          
-          <p rend="indent"><lb/>Después de muchas penalidades y cansancio llego á Roma Rober-<lb/>to el dia de
+          <p rend="indent">
+            <lb/>Después de muchas penalidades y cansancio llego á <name>Roma</name> Rober-<lb/>to el dia de
             Jueves Santo, en ocasion que el Padre Santo en la iglesia<lb/>de San Pedro estaba
             celebrando los divinos oficios, y como su ardiente de-<lb/>seo no le dejase esperar
             mejor oportunidad, se introdujo entre el in-<lb/>menso gentío poco á poco, hasta que
@@ -6044,7 +6140,8 @@
             entrañas, contestó que sí; entonces el Papa<lb/>le dijo; yo te prometo delante de
             Dios de oirte despues de celebrar los<lb/>divinos oficios. Entonces se apartó un poco
             Roberto, y oyó con<lb/>mucha devocion los divinos oficios.</p>
-            <p><lb/>Despues de concluidos,
+          <p>
+            <lb/>Despues de concluidos,
             Su Santidad le mandó llamar, y Roberto se<lb/>hincó de rodillas con muestras de muy
             grande contricion, y empezó á<lb/>declarar todos los acontecimientos de su vida, sin
             omitir que cuando<lb/>le concibió su madre, le habia ofrecido al diablo. Entonces el
@@ -6053,7 +6150,8 @@
             á quien informarás de tus faltas, le dirás que te envio á él, y<lb/>te dará el
             remedio que conviene para la salvacion de tu alma; y dán-<lb/>dole su bendicion le
             despidió.</p>
-          <p rend="indent"><lb/>Estuvo Roberto en la ciudad aquella noche, y al otro dia se mar-<lb/>chó
+          <p rend="indent">
+            <lb/>Estuvo Roberto en la ciudad aquella noche, y al otro dia se mar-<lb/>chó
             para el monte que se le indicó; anduvo por él buscando á todas<lb/>partes, hasta que
             halló al santo ermitaño; y habiéndole encontrado,<lb/>fué á postrarse á sus pies,
             y le dijo, que el Papa le enviaba á él para que<lb/>le oyese en confesion; el buen
@@ -6064,13 +6162,14 @@
             no-<lb/>che sin absolverle aun, diciéndole que queria interrogarle mas
             larga-<lb/>mente. Venida la noche, el ermitaño hizo una cama junto á la
             capilla<lb/>con un poco de heno para que durmiera Roberto, y él estuvo toda la
+
           
             <pb n="15" source="Varios_426_15.jpg" facs="varios/Varios_426_15.jpg"/>
-          
+
             <fw type="paginaNum">— 15 —</fw>
-          
             <lb/>noche en oracion rogando á Dios por alcanzar el perdon de su penitente.</p>
-          <p rend="indent"><lb/>Ya iba á amanecer cuando el santo ermitaño vencido del sueño,<lb/>y reclinado á un canto
+          <p rend="indent">
+            <lb/>Ya iba á amanecer cuando el santo ermitaño vencido del sueño,<lb/>y reclinado á un canto
             que le servia de cabecera, cerró los ojos para<lb/>descansar, y estando en una especie
             de ensueño oyó una voz misterio-<lb/>sa que le decia: <hi rend="cursiva">Siervo de Dios, á este pecador
             que tienes en tu compa-<lb/>ñía, por disposicion del Altísimo le impondrás por
@@ -6085,34 +6184,35 @@
             y llorando, le llamó y le hizo poner<lb/>de rodillas delante de sí, y luego le dijo:
             hermano, por inspiracion<lb/>divina me ha sido revelada esta noche la penitencia que te
             conviene<lb/>hacer por redimir tus pecados, y esta consiste en tener que andar por
-            la<lb/>ciudad de Roma sin hacer mal ni daño alguno á nadie; que te finjas<lb/>loco y
+            la<lb/>ciudad de <name>Roma</name> sin hacer mal ni daño alguno á nadie; que te finjas<lb/>loco y
             mudo, y asimismo no comerás cosa ninguna, salvo lo que pu-<lb/>dieres quitar á los
             perros, y así andarás hasta que Dios disponga otra<lb/>cosa; y en seguida le
             absolvió, y dió su bendicion. Luego que hubo<lb/>recibido la absolucion, dió Roberto
             infinitas gracias á Dios de tantas<lb/>mercedes y beneficios como le concedia por tan
-            pequeña penitencia;<lb/>despidióse del ermitaño, y se fué para la ciudad de Roma,
+            pequeña penitencia;<lb/>despidióse del ermitaño, y se fué para la ciudad de <name>Roma</name>,
             con gran<lb/>deseo de comenzar y cumplir su penitencia.</p>
         </div>
-        
         <div type="parte" n="6">
-          <head type="titulo_parte"><lb/>CAPITULO VI.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Resignacion ejemplar de Roberto.—Se
+          <head type="titulo_parte">
+            <lb/>CAPITULO VI.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Resignacion ejemplar de Roberto.—Se
             introduce en el palacio del empera-<lb/>dor.—Manifiesta su odio á los judíos,
             sirviéndole de tema para sus fin-<lb/>jidas locuras.</head>
-          
-          <p rend="indent"><lb/>ENTRÓ Roberto por la ciudad de Roma haciendo jestos con la boca<lb/>y con los
+          <p rend="indent">
+            <lb/>ENTRÓ Roberto por la ciudad de <name>Roma</name> haciendo jestos con la boca<lb/>y con los
             ojos, bailando y saltando por las calles como hombre ajeno<lb/>de todo sentido, y en
             poco tiempo se reunió un gran número de mu-<lb/>chachos que le seguian y maltrataban
             continuamente, el uno le tiraba<lb/>lodo á la cara, otros zapatos viejos y otras
             suciedades que hallaban<lb/>por las calles, y otros le apedreaban sin dejarle descansar,
             en fin, era<lb/>objeto de burla para todo el mundo; mas Roberto nunca les decia
             nada,</p>
-          
+
           <pb n="16" source="Varios_426_16.jpg" facs="varios/Varios_426_16.jpg"/>
-          
+
           <fw type="paginaNum">— 16 —</fw>
-          
-          <p rend="indent"><lb/>ni jamás les mostraba mal semblante; y estando un dia delante del<lb/>palacio del
+          <p rend="indent">
+            <lb/>ni jamás les mostraba mal semblante; y estando un dia delante del<lb/>palacio del
             emperador muy acosado del hambre; tuvo por un acaso<lb/>oportunidad de introducirse en
             palacio y penetrar hasta la sala donde<lb/>estaba el mismo emperador comiendo; y
             haciendo su debida reveren-<lb/>cia como hombre de cordura y de buena crianza; se quedó
@@ -6137,7 +6237,8 @@
             para sí, y sentado cara á cara con el perro comió su<lb/>parte. El emperador se
             quedó aturdido de la gran mansedumbre que<lb/>el animal usaba con Roberto, sin jamás
             haberle visto hacer cosa<lb/>semejante.</p>
-          <p rend="indent"><lb/>Cuando hubo concluido de comer el pan, se
+          <p rend="indent">
+            <lb/>Cuando hubo concluido de comer el pan, se
             levantó y fué por la<lb/>sala paseándose y mirando á todas partes, unas veces andaba
             hácia<lb/>atras, otras se dejaba caer, otras miraba al techo, y así haciendo mil
             es-<lb/>travagancias, vió abrir una puerta por donde se salia á un jardin
@@ -6149,12 +6250,13 @@
             él, y como le viesen algunos y<lb/>se lo dijesen al emperador, mandó este que le
             diesen una cama en que<lb/>durmiese, mas Roberto nunca quiso dejar aquel lugar por mas
             que le<lb/>rogasen.</p>
-          <p rend="indent"><lb/>Es ciertamente cosa admirable este hombre que desde su niñez se
+          <p rend="indent">
+            <lb/>Es ciertamente cosa admirable este hombre que desde su niñez se
+
           
             <pb n="17" source="Varios_426_17.jpg" facs="varios/Varios_426_17.jpg"/>
-          
+
             <fw type="paginaNum">— 17—</fw>
-          
             <lb/>habia criado en grandes vicios y deleites, durmiendo en camas mulli-<lb/>das,
             habitando en palacios, vestir ropas muy costosas y comer manjares<lb/>los mas delicados,
             á quien servian y acataban muy grandes señores,<lb/>se le viese con tan grandísima
@@ -6166,7 +6268,8 @@
             privaciones y se habituó á la rudeza é inclemencia de los<lb/>elementos, pero con
             todo, nunca se habia desprendido de su carácter<lb/>orgulloso, por lo que es mas
             admirable su posterior humillacion.</p>
-          <p rend="indent"><lb/>Un dia fueron convidados en el palacio del
+          <p rend="indent">
+            <lb/>Un dia fueron convidados en el palacio del
             emperador, unos perso<lb/>najes estrangeros con algunos nobles de la ciudad, entre los
             cuales se<lb/>hallaba un comerciante judío de los mas acaudalados, y que
             además<lb/>era tesorero general del emperador; comiendo estaban en la mesa,<lb/>cuando
@@ -6182,7 +6285,8 @@
             estravagancias y caprichos procuraba ser agradable á<lb/>todos los que le trataban, sin
             enojar ni causar perjuicio á ninguno; y<lb/>así, de este modo cumplia su penitencia
             pasando por loco y mudo en<lb/>todas partes.</p>
-          <p rend="indent"><lb/>Andando, un dia Roberto por una de las
+          <p rend="indent">
+            <lb/>Andando, un dia Roberto por una de las
             calles mas concurridas<lb/>de la ciudad, haciendo mil gestos y contorsiones con un palo
             muy lar-<lb/>go que llevaba, vió pasar una gran comitiva de judíos, que
             acompaña-<lb/>ban una novia muy ricamente vestida; fué corriendo hácia ellos
@@ -6195,21 +6299,23 @@
             travesuras, pegándola siempre con los<lb/>judíos, todo lo cual llegaba á noticia del
             emperador, dándole motivo<lb/>para reirse y causando diversion en los de su
             córte.</p>
-          <fw type="sig"><lb/>3</fw>
+          <fw type="sig">
+            <lb/>3</fw>
         </div>
-        
         <div type="parte" n="7">
+
           <pb n="18" source="Varios_426_18.jpg" facs="varios/Varios_426_18.jpg"/>
-          
+
           <fw type="paginaNum">— 18 —</fw>
-          
-          <head type="titulo_parte"><lb/>CAPITULO VII.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>CAPITULO VII.<lb/>Rebelion promovido por
+          <head type="titulo_parte">
+            <lb/>CAPITULO VII.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>CAPITULO VII.<lb/>Rebelion promovido por
             un almirante contra el emperador.—Roberto pro-<lb/>visto de caballo y armas defiende la
             causa de su favorecedor.—Por su<lb/>valor se consigue la dispersion de los
             rebeldes.</head>
-          
-          <p rend="indent"><lb/>EN el mismo tiempo que Roberto andaba por la ciudad de Roma<lb/>haciendo su
+          <p rend="indent">
+            <lb/>EN el mismo tiempo que Roberto andaba por la ciudad de <name>Roma</name><lb/>haciendo su
             penitencia, un almirante, vasallo del emperador, hombre<lb/>de ilustre linage, pero muy
             ambicioso, feroz y de ruin condicion si<lb/>bien esforzado y valiente en la guerra y muy
             sabio en política, hizo<lb/>pedir la hija del emperador por esposa; y como este no la
@@ -6220,7 +6326,8 @@
             apercibida, pues, toda aquella gente, y él por capitan de to-<lb/>dos, entró por los
             Estados del emperador haciendo grande destruccion<lb/>y daño en los pueblos y los
             campos.</p>
-          <p rend="indent"><lb/>Cuando el emperador supo la agresora invasion del almirante y los<lb/>malos
+          <p rend="indent">
+            <lb/>Cuando el emperador supo la agresora invasion del almirante y los<lb/>malos
             tratamientos que sus vasallos recibian y que estaba amenazada<lb/>la seguridad de sus
             Estados, mandó luego que inmediatamente se jun-<lb/>tasen en la córte todos los
             principales caballeros de su imperio, por<lb/>saber si habia alguno que favoreciese las
@@ -6239,16 +6346,17 @@
             pérdida de su gente y de los mas<lb/>principales y esforzados capitanes, por cuya razon
             no osaba aceptar la<lb/>batalla, temiendo de que sus armas llevasen la peor parte, y
             tuvo por<lb/>mas oportuno fortificarse en el lugar, aguardando que le viniese so-
+
           
             <pb n="19" source="Varios_426_19.jpg" facs="varios/Varios_426_19.jpg"/>
-          
+
             <fw type="paginaNum">— 19 —</fw>
-          
             <lb/>corro de sus parciales; mas conociendo el almirante la crítica situacion<lb/>en
             que se hallaba su contrario, mandó luego atacar el lugar, por lo<lb/>cual se vió
             obligado el emperador á salir de su posicion y presentar la<lb/>batalla con la poca y
             desalentada gente que tenia.</p>
-          <p rend="indent"><lb/>Roberto continuaba habitando en el palacio del
+          <p rend="indent">
+            <lb/>Roberto continuaba habitando en el palacio del
             emperador, y al<lb/>saber las fatales nuevas que habian venido á la córte, de la
             derrota del<lb/>ejército se puso muy triste. Una mañana que salió al jardin para
             beber<lb/>en la fuente como tenia de costumbre, despues de haber saciado su<lb/>sed, se
@@ -6267,7 +6375,8 @@
             á una ventana<lb/>de su aposento por distraerse mirando el jardin y la fuente, estuvo
             ob-<lb/>servándolo y le gustó mucho ver á Roberto armado y manejar la
             lanza.</p>
-          <p rend="indent"><lb/>Salió Roberto por una puerta escusada del jardin á gran prisa para<lb/>el
+          <p rend="indent">
+            <lb/>Salió Roberto por una puerta escusada del jardin á gran prisa para<lb/>el
             campo donde estaba el emperador con su gente, encontrándole en lo<lb/>mas fuerte del
             combate, y que iba ya en completa dispersion. Cuando<lb/>Roberto vió la gente
             desbaratada echó á correr hácia ellos animándolos<lb/>y haciéndoles entrar en
@@ -6283,12 +6392,12 @@
             siguió con su jen-<lb/>te hasta que los pusieron en huida, quedando por fin el campo
             por el em-<lb/>perador no sin haber recibido Roberto algunas contusiones. En
             seguida<lb/>él se escabulló de entre la gente, y secretamente se volvió á
-            Roma,<lb/>se metió por la puerta del jardin que halló aun abierta, entró en él y
+            <name>Roma</name>,<lb/>se metió por la puerta del jardin que halló aun abierta, entró en él y
+
           
             <pb n="20" source="Varios_426_20.jpg" facs="varios/Varios_426_20.jpg"/>
-          
+
             <fw type="paginaNum">—— 20 ——</fw>
-          
             <lb/>desarmóse muy presto; puso las armas encima de la silla del caballo,<lb/>se
             metió en el palacio y el caballo desapareció. La hija del emperador<lb/>que le vió
             marchar estaba ansiosa deseando ver cuando volvia, y efec-<lb/>tivamente, estuvo en
@@ -6296,15 +6405,16 @@
             desaparecieron, de lo que se admiró tanto, que<lb/>al contado lo hubiera referido todo
             á su padre sino le hubiese faltado<lb/>el don de la palabra.</p>
         </div>
-        
         <div type="parte" n="8">
-          <head type="titulo_parte"><lb/>CAPITULO VIII.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Sigue Roberto peleando contra los
+          <head type="titulo_parte">
+            <lb/>CAPITULO VIII.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Sigue Roberto peleando contra los
             enemigos del Estado—Empeño del em-<lb/>perador para descubrir al héroe.—Recibe Roberto
             una herida.</head>
-          
-          <p rend="indent"><lb/>LUEGO que el emperador vió á sus enemigos desbaratados y pues-<lb/>tos en huída,
-            tomó las disposiciones para volverse á Roma, donde<lb/>fué muy bien recibido del
+          <p rend="indent">
+            <lb/>LUEGO que el emperador vió á sus enemigos desbaratados y pues-<lb/>tos en huída,
+            tomó las disposiciones para volverse á <name>Roma</name>, donde<lb/>fué muy bien recibido del
             pueblo; llegado que fué á su palacio entró<lb/>Roberto en el salon donde estaba, y
             con ademanes chistosos fué á dar-<lb/>le la bien venida; y como traia un rasguño en
             la cara que le dieron en<lb/>la batalla, cuando el emperador se lo vió dijo con
@@ -6315,7 +6425,8 @@
             emperador así lo mandó, sopena de su indignacion y de un<lb/>severo castigo; en todo
             lo cual estaba Roberto disimulando siempre<lb/>como que ninguna cosa
             entendia.</p>
-          <p rend="indent"><lb/>Despues preguntó el emperador por el caballero que le habia ayu-<lb/>dado
+          <p rend="indent">
+            <lb/>Despues preguntó el emperador por el caballero que le habia ayu-<lb/>dado
             en tan grande apuro como se habia hallado, y que tanta parte<lb/>habia tomado en el
             combate, mas ninguno le pudo decir quién era ni<lb/>dónde se le podria hallar; y dijo
             el emperador: quien quiera que sea,<lb/>es el mas esforzado guerrero que yo haya visto
@@ -6324,16 +6435,17 @@
             mi<lb/>favor. ¡Oh cómo quisiera conocerle por galardonarle el beneficio que<lb/>de él
             recibimos, pues bien señalado era con su caballo blanco y sus<lb/>armas lucidas y mas
             hermosas que las de otro alguno.</p>
-          <p rend="indent"><lb/>Cuando la princesa entendió que un caballero con
+          <p rend="indent">
+            <lb/>Cuando la princesa entendió que un caballero con
             caballo blanco<lb/>venció en la batalla, tuvo gran placer y quiso decir por señas lo
             que<lb/>vió á Roberto en el jardin, mas nunca la pudo el emperador compren<lb/>der,
             por lo que mandó llamar unas entendidas señoras que tenian el<lb/>cargo de enseñarla
             y servirla, y las dijo, que observasen bien atentas
+
           
             <pb n="21" source="Varios_426_21.jpg" facs="varios/Varios_426_21.jpg"/>
-          
+
             <fw type="paginaNum">—21—</fw>
-          
             <lb/>todas las señas de su hija, y que viesen si entendian lo que queria<lb/>decir; á
             lo que las damas contestaron: señor, V. M. sabrá que la se-<lb/>ñorita princesa,
             vuestra hija, dice por señas que el loco que habita en<lb/>vuestro palacio seria el que
@@ -6351,10 +6463,11 @@
             volviéndose á<lb/>su habitacion, y el emperador quedó hablando con sus cortesanos
             del<lb/>caballero que le ayudara, no encontrando términos suficientes para<lb/>ensalzar
             debidamente su valor</p>
-          <p rend="indent"><lb/>De allí á algunos dias, el almirante, que á pesar de su
+          <p rend="indent">
+            <lb/>De allí á algunos dias, el almirante, que á pesar de su
             derrota no<lb/>habia desistido de su empeño y que no perdonó medio alguno para
             re-<lb/>poner su ejército, juntó hasta sesenta mil hombres entre descontentos<lb/>del
-            pais y estranjeros. vino otra vez sobre Roma, mas el emperador;<lb/>salió de la ciudad
+            pais y estranjeros. vino otra vez sobre <name>Roma</name>, mas el emperador;<lb/>salió de la ciudad
             con todos los romanos que en ella se hallaron para<lb/>llevar armas, á hacer frente al
             enemigo, pero hubieran librado mal con<lb/>el almirante y su gente, si Roberto no les
             socorriera por segunda vez,<lb/>el que halló las armas y el caballo en el jardin como
@@ -6365,25 +6478,26 @@
             del emperador no dejaban de observarle por verle<lb/>manejar la lanza y herir con ella;
             y cuando vió que la victoria no era<lb/>dudosa y que los del emperador tomaban
             sucesivamente el campamen-<lb/>to y riquezas de los enemigos, muy discretamente se
-            desvió de la<lb/>gente y se entró en Roma sin ser conocido, ni observado de
+            desvió de la<lb/>gente y se entró en <name>Roma</name> sin ser conocido, ni observado de
             ninguno,<lb/>solo si de la princesa, que le habia visto tambien armar y salir
             del<lb/>jardin como la vez anterior, pues estaba cuidadosa esperando á
             que<lb/>volviera, y le vió venir, desarmarse, y como desaparecieron el caba-<lb/>llo y
             las armas lo mismo que antes; mas no lo dijo á ninguna perso-<lb/>na, porque entendia
             que la darian el mismo crédito que anteriormen-<lb/>te; y Roberto se entró en el
             palacio haciendo estravagancias como<lb/>siempre lo tenia que hacer, por precision.</p>
-          
+
           <pb n="22" source="Varios_426_22.jpg" facs="varios/Varios_426_22.jpg"/>
-          
+
           <fw type="paginaNum">— 22—</fw>
-          
-          <p rend="indent"><lb/>Venido el emperador de la batalla conseguida la gran victoria,<lb/>mandó hacer
+          <p rend="indent">
+            <lb/>Venido el emperador de la batalla conseguida la gran victoria,<lb/>mandó hacer
             una escrupulosa pesquisa en todos los caballeros por si<lb/>sabia alguno, quién era
             aquel del caballo blanco que le sacó por se-<lb/>gunda vez de tan grande conflicto; mas
             no pudo saber por entonces<lb/>quien era por mas diligencias que se practicaron.</p>
-          <p rend="indent"><lb/>No se pasó mucho tiempo sin que el temerario almirante con<lb/>mucho mayor poder y mayor
+          <p rend="indent">
+            <lb/>No se pasó mucho tiempo sin que el temerario almirante con<lb/>mucho mayor poder y mayor
             número de combatientes tuviese la osa-<lb/>día de aprocsimarse hasta las puertas de la
-            ciudad de Roma; luego<lb/>que tuvo noticia de ello el emperador, quedó muy sorprendido
+            ciudad de <name>Roma</name>; luego<lb/>que tuvo noticia de ello el emperador, quedó muy sorprendido
             y ate-<lb/>morizado por el gran poder que sus enemigos traian, aunque confiaba<lb/>mucho
             con la ayuda del desconocido caballero que en tales peligros le<lb/>favorecia; y con
             esta esperanza mas que con el esfuerzo de su gente,<lb/>mandó apercibir á todos los
@@ -6393,7 +6507,8 @@
             presentaba),<lb/>y que de grado ó por fuerza se apoderasen de él y le condujesen á
             la<lb/>córte. Salió pues el emperador de la ciudad con todo su ejército y<lb/>fué á
             acometer á los enemigos.</p>
-          <p rend="indent"><lb/>Al mismo tiempo fué Roberto al jardin, y halló en él el
+          <p rend="indent">
+            <lb/>Al mismo tiempo fué Roberto al jardin, y halló en él el
             caballo<lb/>y las armas correspondientes y su lanza: quedó en un momento arma-<lb/>do y
             montó en su caballo, se salió del jardin á todo escape sin ser vis-<lb/>to, hasta que
             entró en el campo de batalla; y en seguida se le vió en-<lb/>trar en combate, derribar
@@ -6415,11 +6530,11 @@
             correr<lb/>hasta que consiguió meterse en el jardin sin ser descubierto de
             persona<lb/>alguna, salvo de la princesa, que estaba siempre en acecho desde
             la<lb/>acostumbrada ventana. Cuando se hubo desarmado, desapareció el
+
           
             <pb n="23" source="Varios_426_23.jpg" facs="varios/Varios_426_23.jpg"/>
-          
+
             <fw type="paginaNum">—23—</fw>
-          
             <lb/>caballo y las armas. Pensando que no le veia nadie, se arrimó á un<lb/>árbol
             para curar su herida, sacó el hierro que tenia dentro, y lo es-<lb/>condió debajo de
             una piedra cerca de la fuente, y despues se puso<lb/>ciertas yerbas en la llaga para
@@ -6431,7 +6546,7 @@
             el<lb/>hierro quedó clavado en el muslo; el emperador quedó muy satisfecho<lb/>de
             ello, y mandó que se buscase escrupulosamente por toda la ciudad, si<lb/>se hallaba un
             caballero que tuviese una herida de aquella especie y hu-<lb/>biese montado caballo
-            blanco; mas no se halló tal caballero en todo<lb/>Roma, por mas diligencias que se
+            blanco; mas no se halló tal caballero en todo<lb/><name>Roma</name>, por mas diligencias que se
             practicaron; y como el emperador<lb/>estuviese muy deseoso y tuviese mucho empeño de
             saber quién era el<lb/>generoso caballero á quien debia tan grandes beneficios para
             recompen-<lb/>sar su mérito, mandó pregonar por toda la monarqaía, que el
@@ -6440,29 +6555,30 @@
             que fuese, que vinese á la córte y se manifestase, que en galardon<lb/>de sus nobles
             hazañas, el emperador le daria su hija por muger (si se con-<lb/>formaba con la falta
             física de la princesa) y además la mitad del imperio.</p>
-          
-          <p rend="negrita"><lb/>EL ALMIRANTE SE PRESENTA A LA CÓRTE FINGIENDO SER EL VENCEDOR.</p>
+          <p rend="negrita">
+            <lb/>EL ALMIRANTE SE PRESENTA A LA CÓRTE FINGIENDO SER EL VENCEDOR.</p>
         </div>
-        
         <div type="parte" n="9">
+
           <pb n="24" source="Varios_426_24.jpg" facs="varios/Varios_426_24.jpg"/>
-          
+
           <fw type="paginaNum">— 24 —</fw>
-          
-          <head type="titulo_parte"><lb/>CAPITULO IX.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Perfidia del almirante para satisfacer su
+          <head type="titulo_parte">
+            <lb/>CAPITULO IX.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Perfidia del almirante para satisfacer su
             ambicion.—La princesa es dotada<lb/>del uso de la palabra y descubre el engaño.—El
             ermitaño anuncia á<lb/>Roberto que ha cumplido su penitencia.—Celébrase la boda de
             Rober-<lb/>to con la princesa.</head>
-          
-          <p rend="indent"><lb/>HABIENDO llegado á noticia del almirante el pregon del emperador,<lb/>se alegró
+          <p rend="indent">
+            <lb/>HABIENDO llegado á noticia del almirante el pregon del emperador,<lb/>se alegró
             mucho de ello, pues pensando por este medio venir á conse-<lb/>guir lo que su ambicion
             tanto deseaba, movido por la codicia y ambi-<lb/>cion de mando no menos que por su
             pasion amorosa hácia la prince-<lb/>sa, que aparte de la falta del habla era de una
             hermosura admirable,<lb/>por casarse con ella y suceder mañosamente en el mando del
             imperio,<lb/>se hizo traer un caballo blanco, despues tomó un hierro de una lanza
             y<lb/>se lo introdujo en el muslo; y en compañía de dos ó tres personas<lb/>de su
-            confianza se fué para Roma, en donde solicitó del emperador<lb/>que se dignase de
+            confianza se fué para <name>Roma</name>, en donde solicitó del emperador<lb/>que se dignase de
             oirle en audiencia especial; y obtenido el permiso<lb/>de S. M. se presentó á palacio,
             maravillándose mucho el emperador<lb/>de su venida: el almirante le dijo que él era el
             guerrero del caballo<lb/>blanco, que en las tres batallas peleó á su favor; y el
@@ -6478,24 +6594,26 @@
             lanza, y tambien la llaga que vuestro caballero me hizo<lb/>por conocerme. Cuando el
             emperador vió la llaga y el hierro de la lan-<lb/>za, tuvo por muy verdadero lo que el
             almirante decia.</p>
-          <p rend="indent"><lb/>Vamos á que en tanto Roberto cumplia su penitencia sin cesar
+          <p rend="indent">
+            <lb/>Vamos á que en tanto Roberto cumplia su penitencia sin cesar
             de<lb/>rogar á Dios le quisiese perdonar sus pecados, se hizo capaz de la
             mi-<lb/>sericordia de Dios, y quiso su divina Magestad dar fin á sus
             padecimien-<lb/>tos sacándole del estiercol donde yacia entre los perros, y sentarlo
             al-<lb/>gun dia en la imperial silla, quiso que el que era menospreciado y
             es-<lb/>carnecido de todos, fuese por su gran humildad ensalzado, acatado y
+
           
               <pb n="25" source="Varios_426_25.jpg" facs="varios/Varios_426_25.jpg"/>
-          
-              <fw type="paginaNum">— 25 —</fw>
-          
-              <lb/>honrado de todos. Estando pues, el almirante continuando sus preten-<lb/>siones en
-            la ciudad de Roma, como dijimos, el santo ermitaño confe-<lb/>sor de Roberto. tuvo una
-            revelacion en que se le ordenaba se fuese á<lb/>Roma, y advirtiese, á su penitente que
+
+            <fw type="paginaNum">— 25 —</fw>
+            <lb/>honrado de todos. Estando pues, el almirante continuando sus preten-<lb/>siones en
+            la ciudad de <name>Roma</name>, como dijimos, el santo ermitaño confe-<lb/>sor de Roberto. tuvo una
+            revelacion en que se le ordenaba se fuese á<lb/><name>Roma</name>, y advirtiese, á su penitente que
             era cumplida, la voluntad de<lb/>Dios y que habia quedado muy contento y satisfecho de
             su penitencia,<lb/>y por lo tanto que hablase ya de allí adelante.</p>
-          <p rend="indent"><lb/>El santo ermitaño dió gracias á Dios, y muy gozoso salió del<lb/>monte encaminándose para la
-            ciudad de Roma, en busca de Roberto,<lb/>pues ignoraba que residia en el palacio del
+          <p rend="indent">
+            <lb/>El santo ermitaño dió gracias á Dios, y muy gozoso salió del<lb/>monte encaminándose para la
+            ciudad de <name>Roma</name>, en busca de Roberto,<lb/>pues ignoraba que residia en el palacio del
             emperador, y como hubiese<lb/>andado toda la ciudad sin tener noticia suya, muy
             congojoso y apesa-<lb/>dumbrado pensó en ír al palacio de su Santidad por ver si le
             darian<lb/>alguna razon de él, pero antes quiso entrar en la iglesia de San
@@ -6521,23 +6639,25 @@
             la lanza y le enterró debajo de una piedra junto á la<lb/>fuente que está en el
             jardin de vuestro palacio, todo esto lo vi desde<lb/>la ventana de mi habitacion, y lo
             afirmo bajo palabra de juramento.</p>
-          <p rend="indent"><lb/>Cuando su Santidad con el emperador y todos los
+          <p rend="indent">
+            <lb/>Cuando su Santidad con el emperador y todos los
             allí presentes<lb/>vieron el gran milagro, y asimismo notaron la gran turbacion del
             almi<lb/>rante, quedaron muy pasmados, y su Santidad dijo: noble doncella,<lb/>declarad
             quién es el esforzado y benemérito caballero que con tanto<lb/>valor defendió la
             causa de vuestro padre, porque no sea defraudado<lb/>de lo que con tanta justicia
             merece; y la princesa le contestó: Su San-<lb/>tidad verá en el palacio de mi padre
             atestiguada la verdad de todo lo
-            <fw type="sig"><lb/>4</fw>
-          
+            <fw type="sig">
+              <lb/>4</fw>
+
             <pb n="26" source="Varios_426_26.jpg" facs="varios/Varios_426_26.jpg"/>
-          
+
             <fw type="paginaNum">— 26 —</fw>
-          
             <lb/>que digo, y á mayor abundamiento verá el hierro de la lanza, como <lb/>asimismo el
             propio caballero que con su esfuerzo y valor es capaz de <lb/>vencer á todos los
             caballeros del mundo, al propio tiempo que en hu- <lb/>mildad ninguno le iguala.</p>
-          <p rend="indent"><lb/>Concluida esta relacion, en el mismo órden que vinieron á la igle- <lb/>sia se
+          <p rend="indent">
+            <lb/>Concluida esta relacion, en el mismo órden que vinieron á la igle- <lb/>sia se
             volvieron al palacio del emperador, y el almirante ingeniosa- <lb/>mente se fué
             desapareciendo entre la multitud muy confuso y como un <lb/>desesperado: el santo
             ermitaño que estaba en la iglesia, siguió al Papa <lb/>y la demás gente, por ver el
@@ -6566,16 +6686,17 @@
             indigno <lb/>siervo, y cuánto bien por tan simple trabajo! Ruégote por tu inefable
             <lb/>bondad, que en todo tiempo te quieras acordar de mí, porque no me <lb/>desvie jamás
             de la carrera de tus mandamientos, y te merezca alabar <lb/>y bendecir para siempre!</p>
-          <p rend="indent"><lb/>Cuando el Padre Santo y los demás que estaban presentes oyeron <lb/>tan acertadas
+          <p rend="indent">
+            <lb/>Cuando el Padre Santo y los demás que estaban presentes oyeron <lb/>tan acertadas
             razones de Roberto y el grande sosiego suyo, quedaron <lb/>muy maravillados. La princesa
             en particular, quedó de ello muy alegre <lb/>y en estremo complacida, con la esperanza
             de que aquel habia de ser <lb/>su marido; porque sus comportamientos y grandes hazañas
             le habian
+
           
               <pb n="27" source="Varios_426_27.jpg" facs="varios/Varios_426_27.jpg"/>
-          
-              <fw type="paginaNum">— 27 —</fw>
-          
+
+            <fw type="paginaNum">— 27 —</fw>
             <lb/>ya introducido algunas centellas de amoroso fuego en sus castas entra-<lb/>ñas, y
             su graciosa habla fué mayor motivo para que de las mas pe-<lb/>queñas chispas
             procediese un poderoso fuego, cuyas llamas por todas<lb/>las partes de su cuerpo
@@ -6586,19 +6707,21 @@
             dias<lb/>le sucederia en el imperio. Mas Roberto no quiso aceptar por enton-<lb/>ces tan
             brillantes ofertas, escusándose que le convenia ir á una rome-<lb/>ria y cumplir
             ciertos votos; y tan solamente estuvo aquel dia y noche<lb/>con el emperador, y al otro
-            dia se despidió de él y de todos los corte-<lb/>sanos marchándose de Roma. Su objeto
+            dia se despidió de él y de todos los corte-<lb/>sanos marchándose de <name>Roma</name>. Su objeto
             era ir al monte y consultar<lb/>con el santo ermitaño si debería ó no contraer el
             matrimonio que se<lb/>le habia propuesto.</p>
-          <p rend="indent"><lb/>Quedó pues el emperador muy desconsolado
+          <p rend="indent">
+            <lb/>Quedó pues el emperador muy desconsolado
             como asimismo los<lb/>caballeros, y muy particularmente la princesa, y así estuvieron
             bastan-<lb/>tes dias que no supieron de su paradero. A poco tiempo de estar
             Ro-<lb/>berto con el santo ermitaño, este por mandato del Cielo, le dijo, que<lb/>Dios
-            le ordenaba fuese á Roma, que se casase con la hija del emperador,<lb/>y que de ellos
+            le ordenaba fuese á <name>Roma</name>, que se casase con la hija del emperador,<lb/>y que de ellos
             descenderia una generacion agradable á nuestro Dios y<lb/>Señor: Entonces salió
-            Roberto del monte y se partió para Roma, don-<lb/>de fué muy bien recibido del
+            Roberto del monte y se partió para <name>Roma</name>, don-<lb/>de fué muy bien recibido del
             emperador y su córte, los cuales creye-<lb/>ron que venia de la romeria segun él les
             habia dicho al marcharse.</p>
-          <p rend="indent"><lb/>De allí á pocos dias se verificó el casamiento con la
+          <p rend="indent">
+            <lb/>De allí á pocos dias se verificó el casamiento con la
             princesa, y<lb/>fueron celebradas las bodas con tanta solemnidad como
             correspondia<lb/>para la hija de tan gran señor y tan distinguido caballero, pues
             recono-<lb/>ciendo el emperador los señalados servicios que habia recibido del
@@ -6608,27 +6731,28 @@
             profusamente la ciudad, vistiéronse las fa-<lb/>chadas con ricas colgaduras, comparsas
             de músicas recorrian constan-<lb/>temente las calles y plazas; en fin, así los torneos
             como toda suerte de<lb/>diversiones tuvieron lugar por espacio de muchos dias. Estuvo
-            Ro-<lb/>berto tres años en la ciudad de Roma disfrutando con gran placer la<lb/>dulce
+            Ro-<lb/>berto tres años en la ciudad de <name>Roma</name> disfrutando con gran placer la<lb/>dulce
             compañía de su esposa. Despues de este tiempo recibieron la<lb/>noticia de que su
             padre el duque Auberto de Normandía habia muer-<lb/>to, por lo cual pidió licencia al
             emperador para ir á su patria, en com-<lb/>pañía de su mujer, y el emperador viendo
             la justa razon que Roberto<lb/>tenia, aunque con grande pesadumbre de su partida le hubo
-            de dar licen-<lb/>cia, y se partieron los dos esposos de Roma, con muy grandes
+            de dar licen-<lb/>cia, y se partieron los dos esposos de <name>Roma</name>, con muy grandes
             preces<lb/>y dádivas, acompañados de una numerosa y lucida comitiva.</p>
         </div>
-        
         <div type="parte" n="10">
+
           <pb n="28" source="Varios_426_28.jpg" facs="varios/Varios_426_28.jpg"/>
-          
+
           <fw type="paginaNum">—28 —</fw>
-          
-          <head type="titulo_parte"><lb/>CAPITULO X.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Roberto sofoca una rebelion en
+          <head type="titulo_parte">
+            <lb/>CAPITULO X.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Roberto sofoca una rebelion en
             Normandía.—Embajada del emperador re-<lb/>clamando el auxilio de su yerno.—Muerte
             alevosa del emperador y el<lb/>asesino recibe el castigo de su crimen.—Roberto es
             proclamado empe-<lb/>rador de Roma.</head>
-          
-          <p rend="indent"><lb/>HABIENDO llegado Roberto y su esposa con toda felicidad á la capi-<lb/>tal de
+          <p rend="indent">
+            <lb/>HABIENDO llegado Roberto y su esposa con toda felicidad á la capi-<lb/>tal de
             Normandía fueron recibidos de todos los caballeros y del pueblo<lb/>en general con
             todos los honores correspondientes á su clase, y con<lb/>grandes muestras de júbilo,
             pues en cuanto tuvieron noticia de su ve-<lb/>nida, se apresuraron en disponer todas las
@@ -6637,8 +6761,9 @@
             des-<lb/>de la pérdida de su esposo vivia muy retirada y llena de tristeza, se
             la<lb/>desvaneció en gran parte con la inesperada venida de su hijo á quien<lb/>tuvo
             el placer de estrechar entre sus brazos: este le hizo una relacion<lb/>muy estensa de
-            todo cuanto le habia pasado en Roma, de lo que que-<lb/>dó asombrada la duquesa.</p>
-          <p rend="indent"><lb/>A los pocos dias de su llegada, informaron á Roberto de que des-<lb/>pues del
+            todo cuanto le habia pasado en <name>Roma</name>, de lo que que-<lb/>dó asombrada la duquesa.</p>
+          <p rend="indent">
+            <lb/>A los pocos dias de su llegada, informaron á Roberto de que des-<lb/>pues del
             fallecimiento del duque su padre, un aventurero súbdito suyo<lb/>se habia levantado con
             una partida de gente, fortificando un castillo<lb/>desde el cual hacian sus correrías,
             causando infinitos daños y perjuicios<lb/>á los Estados de la duquesa viuda, en vista
@@ -6648,36 +6773,38 @@
             la<lb/>negativa, fué preciso que Roberto, reuniendo un número suficiente de<lb/>gente
             armada, saliese á batir aquella fortaleza; verificado el ataque pe-<lb/>netraron á
             viva fuerza dentro del fuerte matando á cuantos allí encon-<lb/>traron, escepto el
-            cabecilla que fué llevado á la ciudad de Ruan, donde<lb/>le quitaron la vida, siendo
+            cabecilla que fué llevado á la ciudad de <name>Ruan</name>, donde<lb/>le quitaron la vida, siendo
             descuartizado como traidor.</p>
-          <p rend="indent"><lb/>Dos años hacia que el duque Roberto vivia
+          <p rend="indent">
+            <lb/>Dos años hacia que el duque Roberto vivia
             pacíficamente en su<lb/>pais en compañía de su esposa y su madre, disfrutando de una
             paz y<lb/>tranquilidad envidiables, cuando recibió la noticia de que el
             almirante<lb/>aprovechando su ausencia, y deseoso de vengar la afrenta que
             recibió<lb/>al irse á desposar con la princesa, habia penetrado en los Estados
             ro-<lb/>manos con un numeroso ejército, abrasando villas y lugares, matando<lb/>las
             gentes indefensas, talando campos y cometiendo toda especie de
+
           
               <pb n="29" source="Varios_426_29.jpg" facs="varios/Varios_426_29.jpg"/>
-          
-              <fw type="paginaNum">— 29—</fw>
-          
+
+            <fw type="paginaNum">— 29—</fw>
             <lb/>atrocidades; y como el emperador tuviese mayor confianza en el valor<lb/>y
             disposicion de su yerno el duque Roberto, que en ninguno de los<lb/>caballeros de su
             imperio, se apresuró á enviarle mensajeros, encargán-<lb/>dole que sin demora alguna
             se pusiese en camino para ir á socorrerle<lb/>contra el almirante, que se habia
             presentado hasta las puertas de la ca-<lb/>pital. Llegados los mensageros romanos á la
-            ciudad de Ruan, donde á<lb/>la sazon se hallaba el duque Roberto segun se ha dicho,
+            ciudad de <name>Ruan</name>, donde á<lb/>la sazon se hallaba el duque Roberto segun se ha dicho,
             este los recibió<lb/>con las ceremonias debidas, y enterado que estuvo de su
             embajada,<lb/>mandó que con la mayor brevedad posible se equipasen hasta
             treinta<lb/>mil hombres normandos, dejando encargado el gobierno del ducado á<lb/>un
             inteligente caballero de toda su confianza, y á su esposa en compa-<lb/>ñía de su
             madre, y él se puso á la cabeza de aquella fuerza empren-<lb/>diendo la marcha á
             largas jornadas.</p>
-          <p rend="indent"><lb/>A su llegada á Roma se encontró con la inesperada novedad
+          <p rend="indent">
+            <lb/>A su llegada á <name>Roma</name> se encontró con la inesperada novedad
             de<lb/>que el emperador acababa de ser muerto en una batalla á manos del
             al-<lb/>mirante: al oir Roberto tan infausto acontecimiento, lleno de furor
-            y<lb/>coraje, hizo en seguida disponer á toda cuanta gente armada habia en<lb/>Roma, y
+            y<lb/>coraje, hizo en seguida disponer á toda cuanta gente armada habia en<lb/><name>Roma</name>, y
             unidos con el refuerzo que trajo consigo, salió de la ciudad<lb/>con grandes deseos de
             encontrar al almirante para retarle á un comba-<lb/>te parcial y vengar la alevosa
             muerte cometida en la persona del em-<lb/>perador, su suegro. Salió al frente de su
@@ -6695,20 +6822,21 @@
             sem-<lb/>brando la muerte y terror; ábrese paso entre sus víctimas que
             caen<lb/>amontonadas, y aguija el fatigado caballo que apenas puede pasar so-<lb/>bre
             las armas y los cadáveres.</p>
-          <p rend="indent"><lb/>En medio de la horrenda carnicería, del tumulto y de
+          <p rend="indent">
+            <lb/>En medio de la horrenda carnicería, del tumulto y de
             los gritos<lb/>de los fugitivos, el héroe cree descubrir al almirante al divisar un
             ca-<lb/>ballero montado en un brioso caballo, que traia un yelmo dorado con<lb/>una
             lucida armadura y muy pertrechado de armas; se dirige á él, le<lb/>hace seña que se
             ponga en defensa y ambos se acometen á un tiempo:<lb/>el caballero dirige la lanza
             sobre su contrario; el duque evita el golpe<lb/>y de un revés desguarreta al impetuoso
             animal. El guerrero cae. Ro-
+
           
             <pb n="30" source="Varios_426_30.jpg" facs="varios/Varios_426_30.jpg"/>
-          
+
             <fw type="paginaNum">— 3O —</fw>
-          
             <lb/>berto descarga el brazo sobre él y le hace morder la tierra
-            hiriéndole<lb/>gravemente; luego mandó á los suyos que lo llevasen á Roma,
+            hiriéndole<lb/>gravemente; luego mandó á los suyos que lo llevasen á <name>Roma</name>,
             dicien-<lb/>do que allí se le daria el castigo merecido á su alta traicion:
             oyendo<lb/>esto el caballero, se volvió á Roberto, y con débil voz le dijo: te
             rue-<lb/>go por mi nombre que no quites la honra y fama de mi nobleza ya<lb/>que quieres
@@ -6734,7 +6862,8 @@
             Leván-<lb/>tanse al punto, y sin atender á sus vidas, sin pensar en los
             escudos,<lb/>con espada en mano acércanse y descargan sus brazos: el acero corta<lb/>el
             hierro y sus corazas despiden vivo fuego.</p>
-          <p rend="indent"><lb/>El impaciente Roberto arroja el escudo, da
+          <p rend="indent">
+            <lb/>El impaciente Roberto arroja el escudo, da
             hácia atrás tres pasos,<lb/>empuña el formidable alfange, y volviendo como un rayo
             descarga so-<lb/>bre su enemigo partiéndole la coraza, y la punta se abre en el
             pecho<lb/>una ancha herida de donde mana la sangre. El almirante con una ro-<lb/>dilla
@@ -6746,62 +6875,67 @@
             esfuerzo, y<lb/>dada la señal se arrojan con ardor contra sus enemigos, los
             arrollan<lb/>por todas partes y los ponen en precipitada fuga, dejando la
             tierra<lb/>sembrada de muertos.</p>
-          
+
           <pb n="31" source="Varios_426_31.jpg" facs="varios/Varios_426_31.jpg"/>
-          
+
           <fw type="paginaNum">— 31 —</fw>
-          
-          <p rend="indent"><lb/>Sus nobles escuadrones le victorearon, y en perfecta formacion to-<lb/>maron el
-            camino de Roma, donde recibidos con entusiasmo y alegria<lb/>general hicieron su
+          <p rend="indent">
+            <lb/>Sus nobles escuadrones le victorearon, y en perfecta formacion to-<lb/>maron el
+            camino de <name>Roma</name>, donde recibidos con entusiasmo y alegria<lb/>general hicieron su
             triunfal entrada.</p>
-          <p rend="indent"><lb/>El cadáver del almirante fué llevado á la ciudad y al dia
+          <p rend="indent">
+            <lb/>El cadáver del almirante fué llevado á la ciudad y al dia
             siguiente<lb/>se mandó fuese arrastrado por las calles y plazas mas públicas,
             siendo<lb/>en seguida descuartizado por mano del verdugo.</p>
-          <p rend="indent"><lb/>Despues mandó Roberto que
-            se celebrasen en todas las iglesias de<lb/>Roma y particularmente en la Basílica de San
+          <p rend="indent">
+            <lb/>Despues mandó Roberto que
+            se celebrasen en todas las iglesias de<lb/><name>Roma</name> y particularmente en la Basílica de San
             Pedro, las mas suntuosas<lb/>y solemnes exequias por el alma del emperador su suegro.
             Conforme<lb/>á lo que dejó el difunto emperador, se procedió á la proclamacion
             de<lb/>su sucesor, por lo que Roberto llegó á ocupar el trono, siendo reco-<lb/>nocido
             por soberano de todos los Estados romanos, cuyo advenimiento<lb/>fué celebrado con
             grande júbilo y ostentacion.</p>
         </div>
-        
         <div type="parte" n="11">
-          <head type="titulo_parte" rend="negrita"><lb/>CONCLUSION.</head>
-          
-          <p rend="indent"><lb/>COLOCADO el prudente Roberto en el trono, estuvo sériamente dis-<lb/>curriendo
+          <head type="titulo_parte" rend="negrita">
+            <lb/>CONCLUSION.</head>
+          <p rend="indent">
+            <lb/>COLOCADO el prudente Roberto en el trono, estuvo sériamente dis-<lb/>curriendo
             sobre la nueva posicion en que las circunstancias le habian<lb/>elevado, resolvió pues
-            permanecer en Roma, empleando cerca de un año<lb/>en arreglar con el mayor acierto
+            permanecer en <name>Roma</name>, empleando cerca de un año<lb/>en arreglar con el mayor acierto
             todos los negocios del Estado, ponien-<lb/>do en todas las fortalezas y ciudades
             gobernadores adictos á su persona;<lb/>y despues de haber dejado interinamente un
             lugarteniente de toda su<lb/>confianza para regir el gobierno superior del imperio, se
-            volvió para<lb/>Normandía. Todas las autoridades y nobleza de la ciudad de Ruan,
+            volvió para<lb/>Normandía. Todas las autoridades y nobleza de la ciudad de <name>Ruan</name>,
             le<lb/>salieron á recibir y darle el parabien. Su madre y su amada
             esposa<lb/>recibieron un gozo indecible por su venida, abrazándole con la
             mayor<lb/>ternura y llenándose mútuamente de caricias.</p>
-          <p rend="indent"><lb/>Durante la ausencia de
+          <p rend="indent">
+            <lb/>Durante la ausencia de
             Roberto, su esposa habia dado á luz un<lb/>hijo que le llamaron Ricarte, y le dieron el
             título de duque de Nor-<lb/>mandía, el cual fué con el tiempo muy esforzado y
             valeroso caballe-<lb/>ro, distinguiéndose en muchas batallas, haciendo señaladas
             hazañas<lb/>como se lee en las crónicas francesas.</p>
-          <p rend="indent"><lb/>Finalmente, nuestro héroe
-            Roberto con su esposa, regresaron á<lb/>Roma, donde tomando posesion del trono
+          <p rend="indent">
+            <lb/>Finalmente, nuestro héroe
+            Roberto con su esposa, regresaron á<lb/><name>Roma</name>, donde tomando posesion del trono
             imperial, hallaron el conten-<lb/>to y la tranquilidad, gobernando mucho tiempo con la
             dulzura y justi-<lb/>cia que era la base de su conducta. Tuvieron además otros hijos,
             los<lb/>que instruyeron en los mas puros principios de la religion católica y<lb/>sana
             moral; llegaron á una edad avanzada disfrutando hasta el resto de<lb/>sus dias la
             felicidad y quietud del alma, que es el mejor fruto que la<lb/>práctica de las virtudes
             proporciona en la tierra.</p>
-          
           <trailer>FIN.</trailer>
         </div>
-        
+
         <pb n="32" source="Varios_426_32.jpg" facs="varios/Varios_426_32.jpg"/>
-        
+
         <div type="productos_a_la_venta">
-          <p><hi rend="negrita"><lb/>HISTORIAS<lb/>QUE SE HALLAN EN EL MISMO DESPACHO</hi>.
+          <p>
+            <hi rend="negrita">
+              <lb/>HISTORIAS<lb/>QUE SE HALLAN EN EL MISMO DESPACHO</hi>.
             <lb/>Pliegos. <lb/>Oliveros de Castilla y Artus de <lb/>Algarve. . . . . . . . 5
-            <lb/>Carlo-Magno y los doce Pares de <lb/>Francia........4 <lb/>Roberto el Diablo......
+            <lb/>Carlo-Magno y los doce Pares de <lb/><name>Francia</name>........4 <lb/>Roberto el Diablo......
             4 <lb/>El conde Partinoples....4 <lb/>Clamades y Clarmonda, ó el ca- <lb/>ballo de
             Madera......4 <lb/>Flores y Blanca-Flor.... 4 <lb/>Pierres y Magalona..... 4
             <lb/>Aladino ó la Lampara Maravillosa. 4 <lb/>Bertoldo,Bertoldino y Cacaseno.. 4
@@ -6816,14 +6950,15 @@
             Portugal.....3 <lb/>La doncella Teodora.....3 <lb/>La heróica Judith...... 3
             <lb/>Noches lúgubres de Cadalso... 3 <lb/>Matilde y Malek-Adhel.... 3 <lb/>Abelardo y
             Eloisa...... 3 <lb/>Ricardo é Isabela ó la Española-In- <lb/>glesa......... 3 </p>
-          <p><lb/>pliegos <lb/>El marqués de Villena ó la Re- <lb/>doma Encantada..... 3 <lb/>El
+          <p>
+            <lb/>pliegos <lb/>El marqués de Villena ó la Re- <lb/>doma Encantada..... 3 <lb/>El
             robo de Elisa ó la Rosa Blanca <lb/>Encantada........ 3 <lb/>El conde de las
             Maravillas. . . 3 <lb/>Santa Geno[vev]a....... 3 <lb/>El Nuevo N[a]vegador ó la Pasion
             <lb/>de Nuestro Señor Jesucristo... 3 <lb/>El Gran Capitan Gonzalo de Cór-
             <lb/>doba.......... 3 <lb/>El Bastardo de Castilla ó el Cas- <lb/>tillo del
             Diablo...... 3 <lb/>Tablante de Ricamonte y Jofre Do- <lb/>nason......... 3 <lb/>La
             Hermosa de los cabellos de oro. 3 <lb/>La Guirnalda milagrosa... 3 <lb/>Los siete Sabios
-            de Roma. ... 3 <lb/>Guerra de la Independencia espa- <lb/>ñola.......... 3 <lb/>Los
+            de <name>Roma</name>. ... 3 <lb/>Guerra de la Independencia espa- <lb/>ñola.......... 3 <lb/>Los
             Niños de Ecija...... 3 <lb/>Doña Juana la Loca .... 3 <lb/>El Toro blanco
             encantado.... 3 <lb/>El Príncipe Selim...... 3 <lb/>Las Dos Doncellas disfrazadas.. 3
             <lb/>Antelmo Collet....... 4 <lb/>El Santo Rey David...... 3 <lb/>San Alejo......... 2

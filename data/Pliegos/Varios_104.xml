@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +109,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1766980">
+            <placeName key="Verdú">Verdú</placeName>
+            <location>
+              <geo>41.60954 1.14086</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +152,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -2456,24 +2478,27 @@
   <text>
     <body>
       <div>
-        <pb n="1" source="Varios_104_1.jpg" facs="varios/Varios_104_1.jpg"/>
-        <div>
-          <head type="primer_titulo"><lb/>JUGUET CATALÁ TITULAT<lb/>LA NIT DE NADAL</head>
 
+        <pb n="1" source="Varios_104_1.jpg" facs="varios/Varios_104_1.jpg"/>
+
+        <div>
+          <head type="primer_titulo">
+            <lb/>JUGUET CATALÁ TITULAT<lb/>LA NIT DE NADAL</head>
           <div>
             <head type="reparto_titulo">PERSONAS</head>
             <castList>
-              <castItem>GERONI...... <hi rend="cursiva">Jove mol divertit</hi></castItem>
-              <castItem>TON... .... <hi rend="cursiva">Algu tontu</hi></castItem>
-              <castItem>PEDASSUS . . . . .<hi rend="cursiva">Gitano</hi></castItem>
+              <castItem>GERONI...... <hi rend="cursiva">Jove mol divertit</hi>
+              </castItem>
+              <castItem>TON... .... <hi rend="cursiva">Algu tontu</hi>
+              </castItem>
+              <castItem>PEDASSUS . . . . .<hi rend="cursiva">Gitano</hi>
+              </castItem>
             </castList>
           </div>
-
           <div>
             <stage rend="cursiva">La essena representa un carrér, Á la dreta la casa de Geroni. (Es
             de nit)</stage>
             <stage>Apareix Geroni tot freganse las mans.</stage>
-
             <sp>
               <speaker rend="cursiva">Geroni.</speaker>
               <l>Ya'm arribát Déu me valga</l>
@@ -2485,11 +2510,10 @@
               <l>mols ne van calens de aurellas</l>
               <l>á fen fret tenen caló.</l>
               <l>Los uns sen van á matinas</l>
-  
+
               <pb n="2" source="Varios_104_2.jpg" facs="varios/Varios_104_2.jpg"/>
-  
+
               <fw type="paginaNum">— 2 —</fw>
-  
               <l>ó be á la missa del gall,</l>
               <l>vinga gresca, vinga festa</l>
               <l>y que may no pari 'l ball.</l>
@@ -2598,11 +2622,10 @@
               <speaker rend="cursiva">Ger.</speaker>
               <l>Te aurás de vestí de rey.</l>
             </sp>
-  
+
             <pb n="3" source="Varios_104_3.jpg" facs="varios/Varios_104_3.jpg"/>
-  
+
             <fw type="paginaNum">— 3 —</fw>
-  
             <sp>
               <speaker rend="cursiva">Tan.</speaker>
               <l>¿De rey me auré de vestí?</l>
@@ -2614,7 +2637,8 @@
               <l>es un vestit de papé</l>
               <l>que ara tel vay á buscá.</l>
             </sp>
-            <stage><lb/>Geroni pren lo sach y entra dins de casa <lb/>seva, luego torna á surtí ab
+            <stage>
+              <lb/>Geroni pren lo sach y entra dins de casa <lb/>seva, luego torna á surtí ab
               un vestit de <lb/>papé y una candela.</stage>
             <sp>
               <speaker rend="cursiva">Ton.</speaker>
@@ -2691,7 +2715,8 @@
               <l>sen tindrém de aná</l>
               <l>y allí las bufetas</l>
               <l>sentirém petá.</l>
-              <stage rend="cursiva"><lb/>(ab ta candela ell mateix) <lb/>se ensen lo vestit.)</stage>
+              <stage rend="cursiva">
+                <lb/>(ab ta candela ell mateix) <lb/>se ensen lo vestit.)</stage>
             </sp>
             <sp>
               <speaker rend="cursiva">Ped.</speaker>
@@ -2720,11 +2745,10 @@
               <l>lo fá marchá cada dia</l>
               <l>á fè erba pe 'ls ruquets.</l>
               <l>Cuan jó veig que la quitxalla</l>
-              
+
               <pb n="4" source="Varios_104_4.jpg" facs="varios/Varios_104_4.jpg"/>
-              
+
               <fw type="paginaNum">— 4 —</fw>
-              
               <l>lo enquietan pe' ls carrés,</l>
               <l>vaija, jó no hi puch fé mes,</l>
               <l>als daría un cop de tralla,</l>
@@ -2830,11 +2854,10 @@
               <l>carám queaviat te enfadas;</l>
               <l>apenas me deixas di.</l>
               <l>Jó soch ben enralhonát:</l>
-              
+
               <pb n="5" source="Varios_104_5.jpg" facs="varios/Varios_104_5.jpg"/>
-              
+
               <fw type="paginaNum">— 5 —</fw>
-              
               <l>me agrada cumpli 'l que 's pacta,</l>
               <l>jó may é rompít cap tracte,</l>
               <l>de ningú may me hi burlat.</l>
@@ -2963,11 +2986,10 @@
               <l>miréusel al mala sort,</l>
               <l>vaija esplicat cap de mórt.</l>
               <l>Ton Callen ya 'u esplicaré,</l>
-              
+
               <pb n="6" source="Varios_104_6.jpg" facs="varios/Varios_104_6.jpg"/>
-              
+
               <fw type="paginaNum">— 6 —</fw>
-              
               <l>Cuánt á casa hi arribát</l>
               <l>feyan la bulla mes gran;</l>
               <l>ya podeu aná pensán</l>
@@ -3083,11 +3105,10 @@
               <l>que 'l chiste te agradará</l>
               <stage rend="cursiva">(li dona un ou)</stage>
             </sp>
-            
+
             <pb n="7" source="Varios_104_7.jpg" facs="varios/Varios_104_7.jpg"/>
-            
+
             <fw type="paginaNum">— 7 —</fw>
-            
             <sp>
               <speaker rend="cursiva">Ped.</speaker>
               <l>Nom fa ré, demá esmorsá</l>
@@ -3153,7 +3174,8 @@
               <speaker rend="cursiva">Ger.</speaker>
               <l>Be te 'l trobaré be prou</l>
               <l>á de se aquí, de segú.</l>
-              <stage rend="cursiva"><lb/>(li pega un cop de puny á la <lb/>esquena y chafa l' ou)</stage>
+              <stage rend="cursiva">
+                <lb/>(li pega un cop de puny á la <lb/>esquena y chafa l' ou)</stage>
             </sp>
             <sp>
               <speaker rend="cursiva">Ton.</speaker>
@@ -3228,11 +3250,10 @@
               <l>Vinga que tan me refúm,</l>
               <l>caminen que ya fay llum</l>
               <l>pero primé vull cantá.</l>
-              
+
               <pb n="8" source="Varios_104_8.jpg" facs="varios/Varios_104_8.jpg"/>
-              
+
               <fw type="paginaNum">— 8 —</fw>
-              
               <stage rend="cursiva">Canta.</stage>
               <l>Fay de sereno</l>
               <l>aquesta nit,</l>
@@ -3328,10 +3349,12 @@
           </div>
         </div>
         <div>
-          <p rend="cursiva"><lb/>Es propietat de Joan Grau.</p>
+          <p rend="cursiva">
+            <lb/>Es propietat de Joan Grau.</p>
         </div>
         <div type="colofon">
-          <p><lb/>REUS:—Se vent en la librerta de Joan Grau. carrer del Metje Fortuny, núm 5. En la
+          <p>
+            <lb/>REUS:—Se vent en la librerta de Joan Grau. carrer del Metje Fortuny, núm 5. En la
             mateixa <lb/>casa se trova un gran surtit de romansus sainetes, llibrets, historias,
             comedias, aleluyas de <lb/>sante y soldats pintats. Diposit de llibrets pera fumá y capsas
             de místos, Papé pera escriuer, <lb/>sobres pera cartas, plomas, palillos, llapicers, etc.,

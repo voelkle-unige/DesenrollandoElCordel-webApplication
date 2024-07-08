@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -82,7 +96,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -113,6 +128,12 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1">
+            <placeName key="Eden">Eden</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -148,8 +169,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-25" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1019,16 +1039,21 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_419_1.jpg" facs="varios/Varios_419_1.jpg"/>
+
         <fw type="impresorNum">Núm. 19.</fw>
-        
-        <head type="primer_titulo"><lb/>EL<lb/><hi rend="negrita">CANTOR DE LAS HERMOSAS</hi><lb/>TROVAS DE AMOR DEDICADAS
+        <head type="primer_titulo">
+          <lb/>EL<lb/>
+          <hi rend="negrita">CANTOR DE LAS HERMOSAS</hi>
+          <lb/>TROVAS DE AMOR DEDICADAS
           AL BELLO SEXO POR UNOS<lb/>AFICIONADOS.</head>
-        
         <div n="1">
-          <head type="titulo_cancion"><lb/>(157.) <hi rend="negrita">EL PRISIONERO.</hi></head>
-          <head type="subtitulo_cancion"><lb/>(SOLO.)</head>
-          
+          <head type="titulo_cancion">
+            <lb/>(157.) <hi rend="negrita">EL PRISIONERO.</hi>
+          </head>
+          <head type="subtitulo_cancion">
+            <lb/>(SOLO.)</head>
           <lg>
             <head type="titulo_estrofa">I.</head>
             <l rend="indent">Tras de la reja</l>
@@ -1042,11 +1067,10 @@
             <l>¡Madre del alma!</l>
             <l>¡ruega por mí á Dios!</l>
           </lg>
-          
+
           <pb n="2" source="Varios_419_2.jpg" facs="varios/Varios_419_2.jpg"/>
-          
+
           <fw type="paginaNum">2</fw>
-          
           <lg>
             <head type="titulo_estrofa">II.</head>
             <l rend="indent">El prisionero</l>
@@ -1086,13 +1110,15 @@
             <l>gracia, favor;</l>
             <l>ruega por èl á Dios.</l>
           </lg>
-          <p><lb/>R.B.</p>
+          <p>
+            <lb/>R.B.</p>
         </div>
-        
         <div n="2">
-          <head type="titulo_cancion"><lb/>(158.) <hi rend="negrita">EL JAZMIN.</hi></head>
-          <head type="subtitulo_cancion"><lb/>(VALS COREADO.)</head>
-          
+          <head type="titulo_cancion">
+            <lb/>(158.) <hi rend="negrita">EL JAZMIN.</hi>
+          </head>
+          <head type="subtitulo_cancion">
+            <lb/>(VALS COREADO.)</head>
           <lg>
             <head type="titulo_estrofa">I.</head>
             <l rend="indent">Del jazmin la linda flor</l>
@@ -1107,7 +1133,7 @@
             <l>grato es vuestro sonreir,</l>
             <l>cuanto hareis, bellas, sufrir</l>
             <l>al jóven que alucinais.</l>
-            <l rend="indent">Danzad, hurís del Eden,</l>
+            <l rend="indent">Danzad, hurís del <name>Eden</name>,</l>
             <l>danzad, ojos seductores,</l>
             <l>que á su brillo, hasta las flores</l>
             <l>os rinden su galardon.</l>
@@ -1116,11 +1142,10 @@
             <l>rendid, rendid á la vez</l>
             <l>vuestro hermoso corazon</l>
           </lg>
-          
+
           <pb n="3" source="Varios_419_3.jpg" facs="varios/Varios_419_3.jpg"/>
-          
+
           <fw type="paginaNum">3</fw>
-          
           <lg>
             <head type="titulo_estrofa">II.</head>
             <l rend="indent">Si os encontrais al jardin</l>
@@ -1135,7 +1160,7 @@
             <l>vuestro rostro agraciado;</l>
             <l>y al verlo tan sonrosado,</l>
             <l>¡qué de prisiones no hareis!</l>
-            <l rend="indent">Danzad, huris del Eden,</l>
+            <l rend="indent">Danzad, huris del <name>Eden</name>,</l>
             <l>Danzad, ojos seductores;</l>
             <l>que á su brillo, hasta las flores</l>
             <l>os rinden su galardon.</l>
@@ -1158,7 +1183,7 @@
             <l>vuestros riquísimos trajes,</l>
             <l>pedrerias y encajes,</l>
             <l>flores, sí, lucid, lucid.</l>
-            <l rend="indent">Danzad, hurís del Eden,</l>
+            <l rend="indent">Danzad, hurís del <name>Eden</name>,</l>
             <l>danzad, ojos seductores;</l>
             <l>que á su brillo, hasta las flores</l>
             <l>os rinden su galardon.</l>
@@ -1167,14 +1192,14 @@
             <l>rendid, rendid á la vez</l>
             <l>vuestro hermoso corazon.</l>
           </lg>
-          
-          <p rend="cursiva"><lb/>F.B.</p>
+          <p rend="cursiva">
+            <lb/>F.B.</p>
         </div>
-        
         <div n="3">
-          <head type="titulo_cancion"><lb/>LA BELLA ZAGALA.<lb/>(159.)</head>
-          <head type="subtitulo_cancion"><lb/>(CONTRADANZA COREADA.)</head>
-          
+          <head type="titulo_cancion">
+            <lb/>LA BELLA ZAGALA.<lb/>(159.)</head>
+          <head type="subtitulo_cancion">
+            <lb/>(CONTRADANZA COREADA.)</head>
           <lg>
             <head type="titulo_estrofa">I.ª</head>
             <l>Corred,</l>
@@ -1196,7 +1221,9 @@
             <l>á mí,</l>
             <l>y aquí</l>
             <l>parad.</l>
+
             <pb n="4" source="Varios_419_4.jpg" facs="varios/Varios_419_4.jpg"/>
+
             <fw type="paginaNum">4</fw>
             <l>Placer,</l>
             <l>amor,</l>
@@ -1231,13 +1258,15 @@
             <l>por su hermosura y su gala,</l>
             <l>que derrama hechizos mil.</l>
           </lg>
-          <p rend="cursiva"><lb/>F.B.</p>
+          <p rend="cursiva">
+            <lb/>F.B.</p>
         </div>
-        
         <div n="4">
-          <head type="titulo_parte"><lb/>(160.) <hi rend="negrita">A ELVIRA.</hi></head>
-          <head type="subtitulo_parte"><lb/>(DUO.)</head>
-          
+          <head type="titulo_parte">
+            <lb/>(160.) <hi rend="negrita">A ELVIRA.</hi>
+          </head>
+          <head type="subtitulo_parte">
+            <lb/>(DUO.)</head>
           <lg>
             <head type="titulo_estrofa">I.</head>
             <l rend="indent">Oye, niña, mi acento amoroso,</l>
@@ -1260,15 +1289,16 @@
             <l>dame un sí de tus labios, hermosa,</l>
             <l>que lo anhela este pobre cantor.</l>
           </lg>
-          
-          <p rend="cursiva"><lb/>R.B.</p>
+          <p rend="cursiva">
+            <lb/>R.B.</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Se halla de venta en casa los Sucesores de Antonio Bosch, Bou de la plaza Nueva,
+          <p>
+            <lb/>Se halla de venta en casa los Sucesores de Antonio Bosch, Bou de la plaza Nueva,
             núm. 13. <lb/>La música de estas cuatro piezas, se hallará en la misma tienda de
             romances.</p>
-          <p><lb/>Imp. de Ramirez y C.ª, pasaje de Escudillers, núm, 4.—1875.</p>
+          <p>
+            <lb/>Imp. de Ramirez y C.ª, pasaje de Escudillers, núm, 4.—1875.</p>
         </div>
       </div>
     </body>

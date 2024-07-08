@@ -1,485 +1,537 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Varios_464">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Los amantes de Teruel</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LB">
-                              <name>Luana Bermúdez</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Los amantes de Teruel</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LB">
+          <name>Luana Bermúdez</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de
                               Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Los amantes de Teruel, Nueva
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Los amantes de Teruel, Nueva
                                           relación histórica y compendiada de los amores y trágico
                                           suceso de dichos amantes, Don Diego de Mareilla y Doña
                                           Isabel de Segura, Segunda parte.</title>
-                                    <title type="titulo_breve">Los amantes de Teruel</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p>Otras impresiones: <ref target="Varios_086.xml">Varios_086</ref> y <ref target="Varios_208.xml">Varios_208</ref></p>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>El Abanico</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6807115</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">2</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="1">Un grabado (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_v_464_1.xml" facs="varios/Varios_464_1.jpg/133,287,1460,1269/100,/0/default.jpg">grabado_v_464_1</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+            <title type="titulo_breve">Los amantes de Teruel</title>
+          </titleStmt>
+          <editionStmt>
+            <p>Otras impresiones: <ref target="Varios_086.xml">Varios_086</ref> y <ref target="Varios_208.xml">Varios_208</ref>
+            </p>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>El Abanico</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.6807115</idno>
+            <altIdentifier>
+              <idno type="num_impresor">2</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="1">Un grabado (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_v_464_1.xml" facs="varios/Varios_464_1.jpg/133,287,1460,1269/100,/0/default.jpg">grabado_v_464_1</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q1114855">
+            <placeName key="Cerezo_de_Río_Tirón">Cerezo De Río Tirón</placeName>
+            <location>
+              <geo>42.491111111111 -3.1355555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q4018">
+            <placeName key="Navarra">Navarra</placeName>
+            <location>
+              <geo>42.816666666667 -1.65</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q4040">
+            <placeName key="Aragón">Aragón</placeName>
+            <location>
+              <geo>41 -1</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q6441">
+            <placeName key="Montpellier">Montpellier</placeName>
+            <location>
+              <geo>43.610919444444 3.8772305555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q405292">
+            <placeName key="Haro">Haro</placeName>
+            <location>
+              <geo>42.576944444444 -2.8461111111111</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q14336">
+            <placeName key="Teruel">Teruel</placeName>
+            <location>
+              <geo>40.343611111111 -1.1072222222222</geo>
+            </location>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
                                     original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="es">Español</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term type="tipo_texto">Relaciones</term>
-                              <term type="tipo_estrofa" target="XX4843218.html">Romances</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-12-11" who="#EL">Création du fichier TEI P5 et encodage du
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term type="tipo_texto">Relaciones</term>
+          <term type="tipo_estrofa" target="XX4843218.html">Romances</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-12-11" who="#EL">Création du fichier TEI P5 et encodage du
                         corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
-      <facsimile><graphic url="varios/Varios_464_1.jpg/full/200,/0/default.jpg"/></facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="Varios_464_1.jpg" facs="varios/Varios_464_1.jpg"/>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/Varios_464_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-                              <fw type="impresorNum" rend="negrita">Núm. 2</fw>
+          <pb n="1" source="Varios_464_1.jpg" facs="varios/Varios_464_1.jpg"/>
 
-                              <head type="primer_titulo" rend="negrita">
-                                    <lb/>LOS AMANTES DE TERUEL.<lb/>Nueva relación histórica y
+          <fw type="impresorNum" rend="negrita">Núm. 2</fw>
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LOS AMANTES DE TERUEL.<lb/>Nueva relación histórica y
                                     compendiada<lb/>de los amores y trágico enceso de dichos
                                     amantes<lb/>Don Diego de Marcilla y Doña Isabel de
                                     Segura</head>
+          <head type="titulo_parte" rend="negrita">
+            <lb/>SEGUNDA PARTE</head>
+          <l rend="indent">En un soberbio alazano</l>
+          <l>que el huracán desafía,</l>
+          <l>cabalga con bizarría</l>
+          <l>un guerrero castellano.</l>
+          <l>No se detiene un momento</l>
+          <l>en su impetuosa carrera</l>
+          <l>que el caballero quisiera</l>
+          <l>volar con el pensamiento.</l>
+          <l>A <name>Castilla</name> se encamina</l>
+          <l>donde una hueste aguerrida</l>
 
-                              <head type="titulo_parte" rend="negrita">
-                                    <lb/>SEGUNDA PARTE</head>
+          <pb n="2" source="Varios_464_2.jpg" facs="varios/Varios_464_2.jpg"/>
 
-                              <l rend="indent">En un soberbio alazano</l>
-                              <l>que el huracán desafía,</l>
-                              <l>cabalga con bizarría</l>
-                              <l>un guerrero castellano.</l>
-                              <l>No se detiene un momento</l>
-                              <l>en su impetuosa carrera</l>
-                              <l>que el caballero quisiera</l>
-                              <l>volar con el pensamiento.</l>
-                              <l>A Castilla se encamina</l>
-                              <l>donde una hueste aguerrida</l>
+          <l>por el rey mismo escogida</l>
+          <l>está á formarse vecina.</l>
+          <l>Pronto á regar el laurel</l>
+          <l>con la sangre de sus venas</l>
+          <l>parte á lidiar como fiel</l>
+          <l>contra huestes sarracenas.</l>
+          <l>La nobleza que más brilla</l>
+          <l>ya se encuentra á la sazón</l>
+          <l>con los reyes de <name>Castilla</name>,</l>
+          <l>de <name>Navarra</name> y Aragón.</l>
+          <l>Encuéntranse con los tales</l>
+          <l>los caballeros templarios</l>
+          <l>de <name>Montpeller</name> y otros varios,</l>
+          <l>todos en valor iguales.</l>
+          <l>Y el que sin paz ni sosiego</l>
+          <l>hace minutos las leguas,</l>
+          <l>sin dar á su escape treguas:</l>
+          <l>es el amoroso Diego.</l>
+          <l>Que carcome su memoria</l>
+          <l>de su desgracia la idea</l>
+          <l>y va á buscar muerte ó gloria</l>
+          <l>en la sangrienta pelea.</l>
+          <l>Porque un recuerdo cruel</l>
+          <l>hacia el combate le llama,</l>
+          <l>que ha de comprar con su fama</l>
+          <l>el cariño de Isabel.</l>
+          <l>Su nombre paso le ha hecho;</l>
+          <l>y al punto le han admitido:</l>
+          <l>con la roja cruz al pecho</l>
+          <l>está á luchar prevenido.</l>
+          <l>Esperaba el paladín</l>
+          <l>mostrar pronto la pujanza</l>
+          <l>de su brazo y de su lanza;</l>
+          <l>cuando el guerrero clarín</l>
+          <l>rasgando los aires vanos;</l>
+          <l>retumba en los hondos senos</l>
+          <l>llamando á todos los buenos</l>
+          <l>á luchar como cristianos.</l>
+          <l>El pecho de Diego late</l>
+          <l>y se arroja denodado</l>
+          <l>donde más encarnizado</l>
+          <l>espera hallar el combate.</l>
+          <l>Y en los peligros se place</l>
+          <l>y sin temer mil aceros,</l>
+          <l>abre, atraviesa y deshace</l>
+          <l>una nube de guerreros.</l>
+          <l>Si alguna vez la fortuna</l>
+          <l>en su inconstante tarea,</l>
+          <l>lo mejor en la pelea</l>
+          <l>concede á la media luna;</l>
+          <l>de su valor hace alarde,</l>
+          <l>renueva el vigor perdido</l>
+          <l>y deja roto y vencido</l>
+          <l>al cerraceno cobarde,</l>
+          <l>y convierten sus valientes</l>
+          <l>el belicoso escuadrón</l>
+          <l>en asqueroso montón</l>
+          <l>de cadáveres sangrientos.</l>
+          <l>El conde de <name>Haro</name> que estaba</l>
+          <l>al frente de los cruzados</l>
+          <l>vió los triunfos señalados</l>
+          <l>que el Marcilla alcanzaba;</l>
+          <l>y para recompensarlos</l>
+          <l>cuando la acción terminó,</l>
+          <l>el nombramiento le dió</l>
+          <l>de capitán de Caballeros;</l>
+          <l>y admirándole tan bravo,</l>
+          <l>de tal denuedo y pericia,</l>
+          <l>lo hizo llegar á noticia</l>
+          <l>del rey D. Alfonso octavo.</l>
+          <l>Al salir de los horrores</l>
+          <l>de cada lucha en que entraba,</l>
+          <l>el buen Diego se entregaba</l>
+          <l>á sus recuerdos de amores.</l>
+          <l>Para alentar la esperanza</l>
+          <l>de la que ansiosa le espera</l>
+          <l>la noticia sin tardanza</l>
+          <l>su futura lisonjera.</l>
+          <l>¡Mas en cuán fatal engaño</l>
+          <l>confía su corazón!</l>
+          <l>la más infame traición</l>
+          <l>fraguando están en su daño.</l>
+          <l>Porque el padre de su amada</l>
+          <l>con la edad se hizo avariento,</l>
+          <l>y para lograr su intento</l>
+          <l>le falta á la fé jurada.</l>
+          <l>Las cartas del buen amante</l>
+          <l>llegan todas á <name>Teruel</name>;</l>
+          <l>mas el padre de Isabel</l>
+          <l>las intercepta al instante;</l>
+          <l>porque ha formado el concierto,</l>
+          <l>aunque en el alma se aflija,</l>
+          <l>su buena y cándida hija,</l>
+          <l>de dar á Diego por muerto.</l>
+          <l>Así lo hizo en efecto</l>
+          <l>en su ambiciosa impiedad</l>
+          <l>para lograr su proyecto</l>
+          <l>con toda felicidad.</l>
+          <l>En tanto pasaban días...</l>
+          <l>Isabel, muy afligida,</l>
+          <l>se encontraba sumergida</l>
+          <l>en negras melancolías.</l>
+          <l>Ya había pasado un año</l>
+          <l>y ella en lágrimas deshecha</l>
+          <l>no se atreve á la sospecha</l>
+          <l>de que en Diego quepa engaño,</l>
 
-                              <pb n="2" source="Varios_464_2.jpg" facs="varios/Varios_464_2.jpg"/>
+          <pb n="3" source="Varios_464_3.jpg" facs="varios/Varios_464_3.jpg"/>
 
-                              <l>por el rey mismo escogida</l>
-                              <l>está á formarse vecina.</l>
-                              <l>Pronto á regar el laurel</l>
-                              <l>con la sangre de sus venas</l>
-                              <l>parte á lidiar como fiel</l>
-                              <l>contra huestes sarracenas.</l>
-                              <l>La nobleza que más brilla</l>
-                              <l>ya se encuentra á la sazón</l>
-                              <l>con los reyes de Castilla,</l>
-                              <l>de Navarra y Aragón.</l>
-                              <l>Encuéntranse con los tales</l>
-                              <l>los caballeros templarios</l>
-                              <l>de Montpeller y otros varios,</l>
-                              <l>todos en valor iguales.</l>
-                              <l>Y el que sin paz ni sosiego</l>
-                              <l>hace minutos las leguas,</l>
-                              <l>sin dar á su escape treguas:</l>
-                              <l>es el amoroso Diego.</l>
-                              <l>Que carcome su memoria</l>
-                              <l>de su desgracia la idea</l>
-                              <l>y va á buscar muerte ó gloria</l>
-                              <l>en la sangrienta pelea.</l>
-                              <l>Porque un recuerdo cruel</l>
-                              <l>hacia el combate le llama,</l>
-                              <l>que ha de comprar con su fama</l>
-                              <l>el cariño de Isabel.</l>
-                              <l>Su nombre paso le ha hecho;</l>
-                              <l>y al punto le han admitido:</l>
-                              <l>con la roja cruz al pecho</l>
-                              <l>está á luchar prevenido.</l>
-                              <l>Esperaba el paladín</l>
-                              <l>mostrar pronto la pujanza</l>
-                              <l>de su brazo y de su lanza;</l>
-                              <l>cuando el guerrero clarín</l>
-                              <l>rasgando los aires vanos;</l>
-                              <l>retumba en los hondos senos</l>
-                              <l>llamando á todos los buenos</l>
-                              <l>á luchar como cristianos.</l>
-                              <l>El pecho de Diego late</l>
-                              <l>y se arroja denodado</l>
-                              <l>donde más encarnizado</l>
-                              <l>espera hallar el combate.</l>
-                              <l>Y en los peligros se place</l>
-                              <l>y sin temer mil aceros,</l>
-                              <l>abre, atraviesa y deshace</l>
-                              <l>una nube de guerreros.</l>
-                              <l>Si alguna vez la fortuna</l>
-                              <l>en su inconstante tarea,</l>
-                              <l>lo mejor en la pelea</l>
-                              <l>concede á la media luna;</l>
-                              <l>de su valor hace alarde,</l>
-                              <l>renueva el vigor perdido</l>
-                              <l>y deja roto y vencido</l>
-                              <l>al cerraceno cobarde,</l>
-                              <l>y convierten sus valientes</l>
-                              <l>el belicoso escuadrón</l>
-                              <l>en asqueroso montón</l>
-                              <l>de cadáveres sangrientos.</l>
-                              <l>El conde de Haro que estaba</l>
-                              <l>al frente de los cruzados</l>
-                              <l>vió los triunfos señalados</l>
-                              <l>que el Marcilla alcanzaba;</l>
-                              <l>y para recompensarlos</l>
-                              <l>cuando la acción terminó,</l>
-                              <l>el nombramiento le dió</l>
-                              <l>de capitán de Caballeros;</l>
-                              <l>y admirándole tan bravo,</l>
-                              <l>de tal denuedo y pericia,</l>
-                              <l>lo hizo llegar á noticia</l>
-                              <l>del rey D. Alfonso octavo.</l>
-                              <l>Al salir de los horrores</l>
-                              <l>de cada lucha en que entraba,</l>
-                              <l>el buen Diego se entregaba</l>
-                              <l>á sus recuerdos de amores.</l>
-                              <l>Para alentar la esperanza</l>
-                              <l>de la que ansiosa le espera</l>
-                              <l>la noticia sin tardanza</l>
-                              <l>su futura lisonjera.</l>
-                              <l>¡Mas en cuán fatal engaño</l>
-                              <l>confía su corazón!</l>
-                              <l>la más infame traición</l>
-                              <l>fraguando están en su daño.</l>
-                              <l>Porque el padre de su amada</l>
-                              <l>con la edad se hizo avariento,</l>
-                              <l>y para lograr su intento</l>
-                              <l>le falta á la fé jurada.</l>
-                              <l>Las cartas del buen amante</l>
-                              <l>llegan todas á Teruel;</l>
-                              <l>mas el padre de Isabel</l>
-                              <l>las intercepta al instante;</l>
-                              <l>porque ha formado el concierto,</l>
-                              <l>aunque en el alma se aflija,</l>
-                              <l>su buena y cándida hija,</l>
-                              <l>de dar á Diego por muerto.</l>
-                              <l>Así lo hizo en efecto</l>
-                              <l>en su ambiciosa impiedad</l>
-                              <l>para lograr su proyecto</l>
-                              <l>con toda felicidad.</l>
-                              <l>En tanto pasaban días...</l>
-                              <l>Isabel, muy afligida,</l>
-                              <l>se encontraba sumergida</l>
-                              <l>en negras melancolías.</l>
-                              <l>Ya había pasado un año</l>
-                              <l>y ella en lágrimas deshecha</l>
-                              <l>no se atreve á la sospecha</l>
-                              <l>de que en Diego quepa engaño,</l>
+          <l>pero tal incertidumbre</l>
+          <l>en duda su amor atiza,</l>
+          <l>y una cruel pesadumbre</l>
+          <l>su corazón martiriza.</l>
+          <l>Don Pedro con entereza</l>
+          <l>tuvo un día el ardimiento</l>
+          <l>de ofrecerle en casamiento</l>
+          <l>un joven de gran riqueza;</l>
+          <l>diciéndole que el callar</l>
+          <l>de su amante, suponía,</l>
+          <l>que muerto en la guerra habría.</l>
+          <l>Mas ella sin vacilar,</l>
+          <l>contestó: «Padre y señor,</l>
+          <l>si muerto á Diego creis</l>
+          <l>no hallo justo que aumenteis</l>
+          <l>mi dolor con más dolor;</l>
+          <l>tal vez en prisión cruel</l>
+          <l>sufre solo y desvalido,</l>
+          <l>por el amor que ha tenido</l>
+          <l>á su querida Isabel!</l>
+          <l>Tal vez ¡ay Dios! haya muerto</l>
+          <l>por míl por mil... desdichada</l>
+          <l>y quereis que preparada</l>
+          <l>al importuno concierto</l>
+          <l>de mis bodas esté yo?</l>
+          <l>yo he de hacer tan fea acción?</l>
+          <l>pensáis que mi corazón</l>
+          <l>es de bronce, padre? nol</l>
+          <l>Cinco años de plazo tiene,</l>
+          <l>en memoria lo tened,</l>
+          <l>si en cinco años no viene</l>
+          <l>lo que más os guste haced.</l>
+          <l>Entonces yo rogaré</l>
+          <l>por el de Marcilla á Dios;</l>
+          <l>por complaceros á vos</l>
+          <l>entonces me casaré.</l>
+          <l>Pretende Azagra mi mano,</l>
+          <l>á Azagra me proponeis,</l>
+          <l>que le aprecio ya sabeis</l>
+          <l>como á noble castellano.</l>
+          <l>Si ¡ay Dios! si la muerte airada</l>
+          <l>me roba mi bien querido,</l>
+          <l>triste de mí? resignada,</l>
+          <l>lo aceptaré por marido.</l>
+          <l>Mas si amante, señor,</l>
+          <l>vuelve y su amor me consagra,</l>
+          <l>tened piedad de mi amor</l>
+          <l>y no me hableis más de Azagra.»</l>
+          <l>Don Pedro vió su aflicción</l>
+          <l>y se retiró al momento</l>
+          <l>aguardando otra ocasión</l>
+          <l>de poder lograr su intento.</l>
+          <l>Entre tanto el pobre amante</l>
+          <l>por Asabel peleaba,</l>
+          <l>por Isabel alcanzaba</l>
+          <l>el renombre de valiente.</l>
+          <l>Ay! de qué te sirve Diego,</l>
+          <l>tu valor y tu honradez</l>
+          <l>si tu obra destruye luego</l>
+          <l>la ambición de la vejez?</l>
+          <l>Si el premio de tus arrojos</l>
+          <l>participas á Isabel,</l>
+          <l>que vale si un padre cruel</l>
+          <l>lo ha de ocultar á sus ojos?</l>
+          <l>Don Pedro continuaba</l>
+          <l>en su ambiciosa manía;</l>
+          <l>cuantas cartas escribía</l>
+          <l>Diego, las ocultaba,</l>
+          <l>y proponía de nuevo</l>
+          <l>á Isabel el casamiento.</l>
+          <l>La joven se resistió</l>
+          <l>su juramento alegando,</l>
+          <l>mas iba el tiempo pasando</l>
+          <l>y en fin el plazo llegó.</l>
+          <l>D. Pedro que ya tomadas</l>
+          <l>tiene sus medidas todas,</l>
+          <l>hizo celebrar las bodas</l>
+          <l>tanto tiempo deseadas.</l>
+          <l>De alegre música al son</l>
+          <l>Isabel llegó al altar,</l>
+          <l>envuelto su corazón</l>
+          <l>en el luto y el pesar;</l>
+          <l>y contristada y llorosa</l>
+          <l>dió su temblorosa mano</l>
+          <l>á Azagra que muy ufano</l>
+          <l>la recibió por esposa.</l>
+          <l>Con tan plausible ocasión</l>
+          <l>dió Azagra un baile suntuoso</l>
+          <l>dó asistió lo más gracioso</l>
+          <l>y más noble de Aragón.</l>
+          <l>Pero llegado el momento</l>
+          <l>de despedir á la gente,</l>
+          <l>Isabel humildemente</l>
+          <l>y casi falta de aliento</l>
+          <l>le dice al marido así:</l>
+          <l>«Ya mi mano os entregué,</l>
+          <l>seros fiel os prometí,</l>
+          <l>y hasta morir lo seré:</l>
+          <l>mas os ruego que por hoy</l>
+          <l>vuestros goces suspendais,</l>
+          <l>Azagra, si es que me amais,</l>
+          <l>porque muy postrada estoy:</l>
+          <l>permitidme dedicar</l>
+          <l>esta noche á la oración</l>
+          <l>para que mi corazón</l>
+          <l>venga Dios á confortar.»</l>
 
-                              <pb n="3" source="Varios_464_3.jpg" facs="varios/Varios_464_3.jpg"/>
+          <pb n="4" source="Varios_464_4.jpg" facs="varios/Varios_464_4.jpg"/>
 
-                              <l>pero tal incertidumbre</l>
-                              <l>en duda su amor atiza,</l>
-                              <l>y una cruel pesadumbre</l>
-                              <l>su corazón martiriza.</l>
-                              <l>Don Pedro con entereza</l>
-                              <l>tuvo un día el ardimiento</l>
-                              <l>de ofrecerle en casamiento</l>
-                              <l>un joven de gran riqueza;</l>
-                              <l>diciéndole que el callar</l>
-                              <l>de su amante, suponía,</l>
-                              <l>que muerto en la guerra habría.</l>
-                              <l>Mas ella sin vacilar,</l>
-                              <l>contestó: «Padre y señor,</l>
-                              <l>si muerto á Diego creis</l>
-                              <l>no hallo justo que aumenteis</l>
-                              <l>mi dolor con más dolor;</l>
-                              <l>tal vez en prisión cruel</l>
-                              <l>sufre solo y desvalido,</l>
-                              <l>por el amor que ha tenido</l>
-                              <l>á su querida Isabel!</l>
-                              <l>Tal vez ¡ay Dios! haya muerto</l>
-                              <l>por míl por mil... desdichada</l>
-                              <l>y quereis que preparada</l>
-                              <l>al importuno concierto</l>
-                              <l>de mis bodas esté yo?</l>
-                              <l>yo he de hacer tan fea acción?</l>
-                              <l>pensáis que mi corazón</l>
-                              <l>es de bronce, padre? nol</l>
-                              <l>Cinco años de plazo tiene,</l>
-                              <l>en memoria lo tened,</l>
-                              <l>si en cinco años no viene</l>
-                              <l>lo que más os guste haced.</l>
-                              <l>Entonces yo rogaré</l>
-                              <l>por el de Marcilla á Dios;</l>
-                              <l>por complaceros á vos</l>
-                              <l>entonces me casaré.</l>
-                              <l>Pretende Azagra mi mano,</l>
-                              <l>á Azagra me proponeis,</l>
-                              <l>que le aprecio ya sabeis</l>
-                              <l>como á noble castellano.</l>
-                              <l>Si ¡ay Dios! si la muerte airada</l>
-                              <l>me roba mi bien querido,</l>
-                              <l>triste de mí? resignada,</l>
-                              <l>lo aceptaré por marido.</l>
-                              <l>Mas si amante, señor,</l>
-                              <l>vuelve y su amor me consagra,</l>
-                              <l>tened piedad de mi amor</l>
-                              <l>y no me hableis más de Azagra.»</l>
-                              <l>Don Pedro vió su aflicción</l>
-                              <l>y se retiró al momento</l>
-                              <l>aguardando otra ocasión</l>
-                              <l>de poder lograr su intento.</l>
-                              <l>Entre tanto el pobre amante</l>
-                              <l>por Asabel peleaba,</l>
-                              <l>por Isabel alcanzaba</l>
-                              <l>el renombre de valiente.</l>
-                              <l>Ay! de qué te sirve Diego,</l>
-                              <l>tu valor y tu honradez</l>
-                              <l>si tu obra destruye luego</l>
-                              <l>la ambición de la vejez?</l>
-                              <l>Si el premio de tus arrojos</l>
-                              <l>participas á Isabel,</l>
-                              <l>que vale si un padre cruel</l>
-                              <l>lo ha de ocultar á sus ojos?</l>
-                              <l>Don Pedro continuaba</l>
-                              <l>en su ambiciosa manía;</l>
-                              <l>cuantas cartas escribía</l>
-                              <l>Diego, las ocultaba,</l>
-                              <l>y proponía de nuevo</l>
-                              <l>á Isabel el casamiento.</l>
-                              <l>La joven se resistió</l>
-                              <l>su juramento alegando,</l>
-                              <l>mas iba el tiempo pasando</l>
-                              <l>y en fin el plazo llegó.</l>
-                              <l>D. Pedro que ya tomadas</l>
-                              <l>tiene sus medidas todas,</l>
-                              <l>hizo celebrar las bodas</l>
-                              <l>tanto tiempo deseadas.</l>
-                              <l>De alegre música al son</l>
-                              <l>Isabel llegó al altar,</l>
-                              <l>envuelto su corazón</l>
-                              <l>en el luto y el pesar;</l>
-                              <l>y contristada y llorosa</l>
-                              <l>dió su temblorosa mano</l>
-                              <l>á Azagra que muy ufano</l>
-                              <l>la recibió por esposa.</l>
-                              <l>Con tan plausible ocasión</l>
-                              <l>dió Azagra un baile suntuoso</l>
-                              <l>dó asistió lo más gracioso</l>
-                              <l>y más noble de Aragón.</l>
-                              <l>Pero llegado el momento</l>
-                              <l>de despedir á la gente,</l>
-                              <l>Isabel humildemente</l>
-                              <l>y casi falta de aliento</l>
-                              <l>le dice al marido así:</l>
-                              <l>«Ya mi mano os entregué,</l>
-                              <l>seros fiel os prometí,</l>
-                              <l>y hasta morir lo seré:</l>
-                              <l>mas os ruego que por hoy</l>
-                              <l>vuestros goces suspendais,</l>
-                              <l>Azagra, si es que me amais,</l>
-                              <l>porque muy postrada estoy:</l>
-                              <l>permitidme dedicar</l>
-                              <l>esta noche á la oración</l>
-                              <l>para que mi corazón</l>
-                              <l>venga Dios á confortar.»</l>
-
-                              <pb n="4" source="Varios_464_4.jpg" facs="varios/Varios_464_4.jpg"/>
-
-                              <l>Azagra condescendió,</l>
-                              <l>é Isabel se fué á orar</l>
-                              <l>á la virgen, y á llorar,</l>
-                              <l>y Azagra se recogió.</l>
-                              <l>Diego volvió de la guerra</l>
-                              <l>al quinto año, al mismo día</l>
-                              <l>como prometido había</l>
-                              <l>al marcharse de su tierra.</l>
-                              <l>Cuando sus padres le vieron</l>
-                              <l>tiernamente le abrazaron,</l>
-                              <l>pues muchos días pasaron</l>
-                              <l>que por muerto le tuvieron.</l>
-                              <l>Como D. Diego observara</l>
-                              <l>en ellos cierto pesar</l>
-                              <l>quiso al momento apear</l>
-                              <l>lo que aquello motivara;</l>
-                              <l>y cuando el padre le dijo</l>
-                              <l>que Isabel casada estaba,</l>
-                              <l>con tal noticia pensaba</l>
-                              <l>haber perdido á su hijo.</l>
-                              <l>Como si un rayo le hiriera</l>
-                              <l>quedóse petrificado,</l>
-                              <l>aturdido, anonadado</l>
-                              <l>porque nunca tal creyera.</l>
-                              <l>Vuelto en sí de su estupor</l>
-                              <l>lloró tan amargamente</l>
-                              <l>que al verle tan solamente</l>
-                              <l>causaba terrible horror.</l>
-                              <l>Por fin un tanto calmado</l>
-                              <l>en apariencia el dolor,</l>
-                              <l>pide al padre por favor</l>
-                              <l>estar solo y retirado;</l>
-                              <l>y apenas condescendió</l>
-                              <l>D. Martín del hijo al ruego,</l>
-                              <l>cuando á la calle D. Diego</l>
-                              <l>al instante se largó.</l>
-                              <l>Corre de Azagra á la casa</l>
-                              <l>más que centella veloz,</l>
-                              <l>llevando un volcán atroz</l>
-                              <l>en el pecho que le abrasa;</l>
-                              <l>y sin que nadie le viera</l>
-                              <l>se cuela precipitado</l>
-                              <l>de mil ansias acosado</l>
-                              <l>á do amor le condujera.</l>
-                              <l>En un cuarto donde brilla</l>
-                              <l>trémula lua de una vela,</l>
-                              <l>de puntilla y con cautela</l>
-                              <l>se introduce el de Marcilla.</l>
-                              <l>Azagra estaba dormido,</l>
-                              <l>Isabel en oración</l>
-                              <l>y con tanta devoción</l>
-                              <l>que Marcilla no fué oído;</l>
-                              <l>mas este tan conmovido</l>
-                              <l>estaba y fuera de sí</l>
-                              <l>que un rapto de frenesí</l>
-                              <l>le arrancó un triste gemido.</l>
-                              <l>Mira Isabel azorada,</l>
-                              <l>y á su lado ve un guerrero</l>
-                              <l>que le dice «Isabel, muero,</l>
-                              <l>de ti viene la estocada.</l>
-                              <l>Hágate feliz el cielo</l>
-                              <l>pues yo no puedo serlo,</l>
-                              <l>si un día llegué á creerlo</l>
-                              <l>hoy sólo morir anhelo.</l>
-                              <l>Adios... Isabel... Adios...»</l>
-                              <l>Y sin poder acabar</l>
-                              <l>vióle Isabel aspirar:</l>
-                              <l>entonces un grito atroz</l>
-                              <l>dió Isabel que despertó</l>
-                              <l>á Azagra despavorido,</l>
-                              <l>quien en un sillón tendido</l>
-                              <l>un cadáver encontró.</l>
-                              <l>Tal fué el terrible delirio</l>
-                              <l>que le cogió á Isabel,</l>
-                              <l>tan horrendo y tan cruel</l>
-                              <l>de su pecho era el martirio,</l>
-                              <l>que cayendo sin sentido</l>
-                              <l>en el suelo así exclamó:</l>
-                              <l>no me culpes... Diego... yo...</l>
-                              <l>por... ti... sólo... he vivi...dol»</l>
-                              <l>De las campanas al vuelo</l>
-                              <l>al otro día en Teruel</l>
-                              <l>de D. Diego y de Isabel</l>
-                              <l>llamaban al triste duelo.</l>
-                              <l>En magnífico panteón</l>
-                              <l>fueron los dos enterrados,</l>
-                              <l>y en Teruel visitados</l>
-                              <l>por los viajeros son.</l>
-                              <l>Esto en compendido es la historia</l>
-                              <l>descrita por pluma fiel;</l>
-                              <l>tenga Dios en santa gloria</l>
-                              <l>los AMANTES DE TERUEL.</l>
-
-                              <p rend="cursiva"><lb/>(Es propiedad)</p>
-
-                              <trailer rend="negrita">FIN</trailer>
-                        </div>
-                        <div type="colofon">
-                              <p>
-                                    <lb/>Imps. Hospital, 19 «El Abanico»</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+          <l>Azagra condescendió,</l>
+          <l>é Isabel se fué á orar</l>
+          <l>á la virgen, y á llorar,</l>
+          <l>y Azagra se recogió.</l>
+          <l>Diego volvió de la guerra</l>
+          <l>al quinto año, al mismo día</l>
+          <l>como prometido había</l>
+          <l>al marcharse de su tierra.</l>
+          <l>Cuando sus padres le vieron</l>
+          <l>tiernamente le abrazaron,</l>
+          <l>pues muchos días pasaron</l>
+          <l>que por muerto le tuvieron.</l>
+          <l>Como D. Diego observara</l>
+          <l>en ellos cierto pesar</l>
+          <l>quiso al momento apear</l>
+          <l>lo que aquello motivara;</l>
+          <l>y cuando el padre le dijo</l>
+          <l>que Isabel casada estaba,</l>
+          <l>con tal noticia pensaba</l>
+          <l>haber perdido á su hijo.</l>
+          <l>Como si un rayo le hiriera</l>
+          <l>quedóse petrificado,</l>
+          <l>aturdido, anonadado</l>
+          <l>porque nunca tal creyera.</l>
+          <l>Vuelto en sí de su estupor</l>
+          <l>lloró tan amargamente</l>
+          <l>que al verle tan solamente</l>
+          <l>causaba terrible horror.</l>
+          <l>Por fin un tanto calmado</l>
+          <l>en apariencia el dolor,</l>
+          <l>pide al padre por favor</l>
+          <l>estar solo y retirado;</l>
+          <l>y apenas condescendió</l>
+          <l>D. Martín del hijo al ruego,</l>
+          <l>cuando á la calle D. Diego</l>
+          <l>al instante se largó.</l>
+          <l>Corre de Azagra á la casa</l>
+          <l>más que centella veloz,</l>
+          <l>llevando un volcán atroz</l>
+          <l>en el pecho que le abrasa;</l>
+          <l>y sin que nadie le viera</l>
+          <l>se cuela precipitado</l>
+          <l>de mil ansias acosado</l>
+          <l>á do amor le condujera.</l>
+          <l>En un cuarto donde brilla</l>
+          <l>trémula lua de una vela,</l>
+          <l>de puntilla y con cautela</l>
+          <l>se introduce el de Marcilla.</l>
+          <l>Azagra estaba dormido,</l>
+          <l>Isabel en oración</l>
+          <l>y con tanta devoción</l>
+          <l>que Marcilla no fué oído;</l>
+          <l>mas este tan conmovido</l>
+          <l>estaba y fuera de sí</l>
+          <l>que un rapto de frenesí</l>
+          <l>le arrancó un triste gemido.</l>
+          <l>Mira Isabel azorada,</l>
+          <l>y á su lado ve un guerrero</l>
+          <l>que le dice «Isabel, muero,</l>
+          <l>de ti viene la estocada.</l>
+          <l>Hágate feliz el cielo</l>
+          <l>pues yo no puedo serlo,</l>
+          <l>si un día llegué á creerlo</l>
+          <l>hoy sólo morir anhelo.</l>
+          <l>Adios... Isabel... Adios...»</l>
+          <l>Y sin poder acabar</l>
+          <l>vióle Isabel aspirar:</l>
+          <l>entonces un grito atroz</l>
+          <l>dió Isabel que despertó</l>
+          <l>á Azagra despavorido,</l>
+          <l>quien en un sillón tendido</l>
+          <l>un cadáver encontró.</l>
+          <l>Tal fué el terrible delirio</l>
+          <l>que le cogió á Isabel,</l>
+          <l>tan horrendo y tan cruel</l>
+          <l>de su pecho era el martirio,</l>
+          <l>que cayendo sin sentido</l>
+          <l>en el suelo así exclamó:</l>
+          <l>no me culpes... Diego... yo...</l>
+          <l>por... ti... sólo... he vivi...dol»</l>
+          <l>De las campanas al vuelo</l>
+          <l>al otro día en <name>Teruel</name></l>
+          <l>de D. Diego y de Isabel</l>
+          <l>llamaban al triste duelo.</l>
+          <l>En magnífico panteón</l>
+          <l>fueron los dos enterrados,</l>
+          <l>y en <name>Teruel</name> visitados</l>
+          <l>por los viajeros son.</l>
+          <l>Esto en compendido es la historia</l>
+          <l>descrita por pluma fiel;</l>
+          <l>tenga Dios en santa gloria</l>
+          <l>los AMANTES DE TERUEL.</l>
+          <p rend="cursiva">
+            <lb/>(Es propiedad)</p>
+          <trailer rend="negrita">FIN</trailer>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>Imps. Hospital, 19 «El Abanico»</p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

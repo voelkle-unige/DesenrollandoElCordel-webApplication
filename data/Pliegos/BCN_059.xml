@@ -1,506 +1,559 @@
 <?xml-model href="../Schema/oddPliego_varios.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BCN_059">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Col-loqui de quatre aprenents</title>
-                        <respStmt xml:id="PJ">
-                              <name>Pauline Jacsont</name>
-                              <resp>Segmentación y transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="LF">
-                              <name>Lorysmar Franco</name>
-                              <resp>Corrección de la transcripción</resp>
-                        </respStmt>
-                        <respStmt xml:id="EL">
-                              <name>Elina Leblanc</name>
-                              <resp>Codificación TEI</resp>
-                        </respStmt>
-                  </titleStmt>
-                  <publicationStmt>
-                        <authority role="rightsHolder">Bibliothèque Universitaire de
-                              Genève</authority>
-                        <availability status="restricted">
-                              <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <biblFull>
-                              <titleStmt>
-                                    <title type="titulo_completo">Col-loqui de quatre aprenents: un
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Col-loqui de quatre aprenents</title>
+        <respStmt xml:id="PJ">
+          <name>Pauline Jacsont</name>
+          <resp>Segmentación y transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="LF">
+          <name>Lorysmar Franco</name>
+          <resp>Corrección de la transcripción</resp>
+        </respStmt>
+        <respStmt xml:id="EL">
+          <name>Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title type="titulo_completo">Col-loqui de quatre aprenents: un
                                           teixidor, un forner, un sastre y un sabater.</title>
-                                    <title type="titulo_breve">Col-loqui de quatre aprenents</title>
-                              </titleStmt>
-                              <editionStmt>
-                                    <p>Otra impresión (s.a.): <ref target="BCN_058.xml">BCN_058</ref></p>
-                              </editionStmt>
-                              <publicationStmt>
-                                    <publisher>Herederos de la Viuda Pla</publisher>
-                                    <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
-                                    <date cert="low" when="1800-01-01">[s.a.]</date>
-                              </publicationStmt>
-                        </biblFull>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>Suisse</country>
-                                    <settlement>Genève</settlement>
-                                    <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
-                                    <collection>Colección Varios</collection>
-                                    <idno type="cote"/>
-                                    <idno type="DOI">10.5281/zenodo.6821334</idno>
-                                    <altIdentifier>
-                                          <idno type="num_impresor">LXXXVIII</idno>
-                                    </altIdentifier>
-                              </msIdentifier>
-                              <msContents>
-                                    <summary/>
-                                    <msItem>
-                                          <locus/>
-                                          <title/>
-                                    </msItem>
-                              </msContents>
-                              <physDesc>
-                                    <objectDesc>
-                                          <supportDesc>
-                                                <support>
-                                                  <dim>in-4</dim>
-                                                  <material rend="amarillo"/>
-                                                </support>
-                                                <extent>
-                                                  <measure unit="página" quantity="4"/>4 p.</extent>
-                                                <condition>Bueno</condition>
-                                          </supportDesc>
-                                          <layoutDesc>
-                                                <p>2 columnas</p>
-                                          </layoutDesc>
-                                    </objectDesc>
-                                    <decoDesc>
-                                          <summary n="4">Cuatro grabados (p.1)</summary>
-                                          <decoNote type="lista_grabados">
-                                                <list>
-                                                      <item corresp="grabado_b_059_1.xml" facs="varios/BCN_059_1.jpg/185,108,330,640/100,/0/default.jpg">grabado_b_059_1</item>
-                                                      <item corresp="grabado_b_059_2.xml" facs="varios/BCN_059_1.jpg/516,101,290,650/100,/0/default.jpg">grabado_b_059_2</item>
-                                                      <item corresp="grabado_b_059_3.xml" facs="varios/BCN_059_1.jpg/801,104,390,650/100,/0/default.jpg">grabado_b_059_3</item>
-                                                      <item corresp="grabado_b_059_4.xml" facs="varios/BCN_059_1.jpg/1179,116,390,650/100,/0/default.jpg">grabado_b_059_4</item>
-                                                </list>
-                                          </decoNote>
-                                    </decoDesc>
-                                    <additions/>
-                              </physDesc>
-                              <history/>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <encodingDesc>
-                  <projectDesc>
-                        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
+            <title type="titulo_breve">Col-loqui de quatre aprenents</title>
+          </titleStmt>
+          <editionStmt>
+            <p>Otra impresión (s.a.): <ref target="BCN_058.xml">BCN_058</ref>
+            </p>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Herederos de la Viuda Pla</publisher>
+            <pubPlace ref="https://www.geonames.org/3128760/barcelona.html">Barcelona</pubPlace>
+            <date cert="low" when="1800-01-01">[s.a.]</date>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <country>Suisse</country>
+            <settlement>Genève</settlement>
+            <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
+            </repository>
+            <collection>Colección Varios</collection>
+            <idno type="cote"/>
+            <idno type="DOI">10.5281/zenodo.6821334</idno>
+            <altIdentifier>
+              <idno type="num_impresor">LXXXVIII</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <msItem>
+              <locus/>
+              <title/>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <dim>in-4</dim>
+                  <material rend="amarillo"/>
+                </support>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
+                <condition>Bueno</condition>
+              </supportDesc>
+              <layoutDesc>
+                <p>2 columnas</p>
+              </layoutDesc>
+            </objectDesc>
+            <decoDesc>
+              <summary n="4">Cuatro grabados (p.1)</summary>
+              <decoNote type="lista_grabados">
+                <list>
+                  <item corresp="grabado_b_059_1.xml" facs="varios/BCN_059_1.jpg/185,108,330,640/100,/0/default.jpg">grabado_b_059_1</item>
+                  <item corresp="grabado_b_059_2.xml" facs="varios/BCN_059_1.jpg/516,101,290,650/100,/0/default.jpg">grabado_b_059_2</item>
+                  <item corresp="grabado_b_059_3.xml" facs="varios/BCN_059_1.jpg/801,104,390,650/100,/0/default.jpg">grabado_b_059_3</item>
+                  <item corresp="grabado_b_059_4.xml" facs="varios/BCN_059_1.jpg/1179,116,390,650/100,/0/default.jpg">grabado_b_059_4</item>
+                </list>
+              </decoNote>
+            </decoDesc>
+            <additions/>
+          </physDesc>
+          <history/>
+        </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q12335">
+            <placeName key="Ripoll">Ripoll</placeName>
+            <location>
+              <geo>42.201085 2.190272</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q679015">
+            <placeName key="Riudoms">Riudoms</placeName>
+            <location>
+              <geo>41.1390915 1.0519702</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1901435">
+            <placeName key="Puig_Gros">Puig Gros</placeName>
+            <location>
+              <geo>41.552222222222 0.89</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q13855">
+            <placeName key="Vic">Vic</placeName>
+            <location>
+              <geo>41.930379 2.254575</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q13854">
+            <placeName key="Torelló">Torelló</placeName>
+            <location>
+              <geo>42.049229 2.262913</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q3049748">
+            <placeName key="El_Borne">El Borne</placeName>
+            <location>
+              <geo>41.3855555555556 2.18416666666667</geo>
+            </location>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el
                               Cordel/Démêler le cordel/Untangling the cordel, dirigido por la
                               profesora Constance Carta de la Universidad de Ginebra, con el apoyo
                               de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
-                  </projectDesc>
-                  <editorialDecl corresp="#automaticTranscription">
-                        <correction>
-                              <p>OCR corregido</p>
-                        </correction>
-                        <normalization>
-                              <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto
-                                    original.</p>
-                        </normalization>
-                        <punctuation>
-                              <p>Se conserva la puntuación original.</p>
-                        </punctuation>
-                  </editorialDecl>
-            </encodingDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="ca">Catalán</language>
-                  </langUsage>
-                  <textClass>
-                        <keywords xml:base="http://datos.bne.es/tema/">
-                              <term type="tipo_texto">Coloquios</term>
-                              <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
-                              <term type="verso_prosa">Verso</term>
-                              <term type="sagrado_profano">Profano</term>
-                        </keywords>
-                  </textClass>
-            </profileDesc>
-            <revisionDesc>
-                  <change when="2023-10-23" who="#EL">Création du fichier TEI P5 et encodage du
-                        corps du texte</change>
-                  <change when="2024-01-09" who="#EL">Add the IIIF links</change>
-            </revisionDesc>
-      </teiHeader>
+      </projectDesc>
+      <editorialDecl corresp="#automaticTranscription">
+        <correction>
+          <p>OCR corregido</p>
+        </correction>
+        <normalization>
+          <p>Se conservan la ortografía, las mayúsculas y las cursivas del texto original.</p>
+        </normalization>
+        <punctuation>
+          <p>Se conserva la puntuación original.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ca">Catalán</language>
+      </langUsage>
+      <textClass>
+        <keywords xml:base="http://datos.bne.es/tema/">
+          <term type="tipo_texto">Coloquios</term>
+          <term target="XX4843218.html" type="tipo_estrofa">Romances</term>
+          <term type="verso_prosa">Verso</term>
+          <term type="sagrado_profano">Profano</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2023-10-23" who="#EL">Création du fichier TEI P5 et encodage du corps du texte</change>
+      <change when="2024-01-09" who="#EL">Add the IIIF links</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="varios/BCN_059_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <div>
 
-      <facsimile>
-            <graphic url="varios/BCN_059_1.jpg/full/200,/0/default.jpg"/>
-      </facsimile>
-      <text>
-            <body>
-                  <div>
-                        <div>
-                              <pb n="1" source="BCN_059_1.jpg" facs="varios/BCN_059_1.jpg"/>
+          <pb n="1" source="BCN_059_1.jpg" facs="varios/BCN_059_1.jpg"/>
 
-                              <head type="primer_titulo">
-                                    <lb/><hi rend="negrita">COL-LOQUI DE QUATRE
-                                    APRENENTS:</hi><lb/>UN TEIXIDOR, UN FORNER, UN SASTRE Y UN
+          <head type="primer_titulo">
+            <lb/>
+            <hi rend="negrita">COL-LOQUI DE QUATRE
+                                    APRENENTS:</hi>
+            <lb/>UN TEIXIDOR, UN FORNER, UN SASTRE Y UN
                                     SABATER.</head>
+          <l rend="indent">Confrares de la alegría</l>
+          <l>y devots del bon humor,</l>
+          <l>si estau un poch de patxorra,</l>
+          <l>escolteu ab atenció,</l>
+          <l>que'us vull referir un cuento</l>
+          <l>alegre, gustós y nou.</l>
+          <l>Una tarde de estas festas</l>
+          <l>passava jo desdel <name>Born</name>
+          </l>
+          <l>per la vora del gran rech</l>
+          <l>dret á la plassa dels porchs,</l>
+          <l>quant vegí sobre un pedrís</l>
+          <l>dels que fan barana al pont,</l>
+          <l>quatre canaris novells</l>
+          <l>que estavan prenent lo sol,</l>
+          <l>y que passavan lo cant</l>
+          <l>ab molta gala y primor.</l>
+          <l>Viu allí quatre aprenents,</l>
+          <l>que formavan entre tots</l>
+          <l>la mes pícara quatreta</l>
+          <l>que se haja vist de minyons.</l>
+          <l>Lo un se diu Climent Borruga,</l>
+          <l>es natural de <name>Ripoll</name>,</l>
+          <l>es fill de un pedrenyaler,</l>
+          <l>y es aprenent teixidor.</l>
+          <l>Altre que fa de forner,</l>
+          <l>se anomena Blay Cendrós,</l>
+          <l>y es fill de una pobre viuda</l>
+          <l>de la vila de <name>Riudoms</name>.</l>
+          <l>Lo ters es fill de un pagés</l>
+          <l>que fou batlle de Puiggrós,</l>
+          <l>se diu Bernat Pastanaga,</l>
+          <l>fa cara de gran bribó,</l>
+          <l>y, segons diu, se ha fet sastre</l>
+          <l>per no anar detras dels bous.</l>
+          <l>Lo quart es lo mes vergant,</l>
+          <l>si bè apareix un mussol,</l>
+          <l>(que prou vegadas als fets</l>
+          <l>la cara no correspon):</l>
+          <l>es de la plana de <name>Vich</name>,</l>
+          <l>batejat en Torelló,</l>
+          <l>es aprenent sabater,</l>
+          <l>y s' diu Celdoni Clicot.</l>
+          <l>Estavan los quatre allí</l>
+          <l>dihentse quatre mil mots,</l>
+          <l>quant jo reparant la bulla,</l>
+          <l>procurí acostarmehi prop,</l>
+          <l>assentantme detras de ells,</l>
+          <l>com qui no hi es per axó.</l>
+          <l>En aquest temps lo forner,</l>
+          <l>parlant ab lo teixidor,</l>
+          <l>li deya: ¡Ay desditxat!</l>
+          <l>No sé com fores tan boig,</l>
+          <l>que prenguesses eix ofici</l>
+          <l>en que serás un pobrot,</l>
+          <l>un perdut, un mort de fam,</l>
+          <l>desconegut, sense nom,</l>
+          <l>puig lo mes que pots preténdrer</l>
+          <l>es ser mestre teixidor.</l>
+          <l>Si lo mestratge no alcansas,</l>
+          <l>si no logras aqueix goig,</l>
 
-                              <l rend="indent">Confrares de la alegría</l>
-                              <l>y devots del bon humor,</l>
-                              <l>si estau un poch de patxorra,</l>
-                              <l>escolteu ab atenció,</l>
-                              <l>que'us vull referir un cuento</l>
-                              <l>alegre, gustós y nou.</l>
-                              <l>Una tarde de estas festas</l>
-                              <l>passava jo desdel Born</l>
-                              <l>per la vora del gran rech</l>
-                              <l>dret á la plassa dels porchs,</l>
-                              <l>quant vegí sobre un pedrís</l>
-                              <l>dels que fan barana al pont,</l>
-                              <l>quatre canaris novells</l>
-                              <l>que estavan prenent lo sol,</l>
-                              <l>y que passavan lo cant</l>
-                              <l>ab molta gala y primor.</l>
-                              <l>Viu allí quatre aprenents,</l>
-                              <l>que formavan entre tots</l>
-                              <l>la mes pícara quatreta</l>
-                              <l>que se haja vist de minyons.</l>
-                              <l>Lo un se diu Climent Borruga,</l>
-                              <l>es natural de Ripoll,</l>
-                              <l>es fill de un pedrenyaler,</l>
-                              <l>y es aprenent teixidor.</l>
-                              <l>Altre que fa de forner,</l>
-                              <l>se anomena Blay Cendrós,</l>
-                              <l>y es fill de una pobre viuda</l>
-                              <l>de la vila de Riudoms.</l>
-                              <l>Lo ters es fill de un pagés</l>
-                              <l>que fou batlle de Puiggrós,</l>
-                              <l>se diu Bernat Pastanaga,</l>
-                              <l>fa cara de gran bribó,</l>
-                              <l>y, segons diu, se ha fet sastre</l>
-                              <l>per no anar detras dels bous.</l>
-                              <l>Lo quart es lo mes vergant,</l>
-                              <l>si bè apareix un mussol,</l>
-                              <l>(que prou vegadas als fets</l>
-                              <l>la cara no correspon):</l>
-                              <l>es de la plana de Vich,</l>
-                              <l>batejat en Torelló,</l>
-                              <l>es aprenent sabater,</l>
-                              <l>y s' diu Celdoni Clicot.</l>
-                              <l>Estavan los quatre allí</l>
-                              <l>dihentse quatre mil mots,</l>
-                              <l>quant jo reparant la bulla,</l>
-                              <l>procurí acostarmehi prop,</l>
-                              <l>assentantme detras de ells,</l>
-                              <l>com qui no hi es per axó.</l>
-                              <l>En aquest temps lo forner,</l>
-                              <l>parlant ab lo teixidor,</l>
-                              <l>li deya: ¡Ay desditxat!</l>
-                              <l>No sé com fores tan boig,</l>
-                              <l>que prenguesses eix ofici</l>
-                              <l>en que serás un pobrot,</l>
-                              <l>un perdut, un mort de fam,</l>
-                              <l>desconegut, sense nom,</l>
-                              <l>puig lo mes que pots preténdrer</l>
-                              <l>es ser mestre teixidor.</l>
-                              <l>Si lo mestratge no alcansas,</l>
-                              <l>si no logras aqueix goig,</l>
+          <pb n="2" source="BCN_059_2.jpg" facs="varios/BCN_059_2.jpg"/>
 
-                              <pb n="2" source="BCN_059_2.jpg" facs="varios/BCN_059_2.jpg"/>
+          <l>¿qué serás tota ta vida</l>
+          <l>sinó un pobre burinot,</l>
+          <l>reduhit á la miseria</l>
+          <l>de dormir sempre tot sol?</l>
+          <l>Perque ¿cóm podrás casarte</l>
+          <l>si may tindrás quatre sous?</l>
+          <l>Mentres serás aprenent</l>
+          <l>no temes tornarte gros,</l>
+          <l>ni tingas por de enfitarte,</l>
+          <l>que bè ten guardarán prou.</l>
+          <l>No t' veurás may fart de pa,</l>
+          <l>de vi non' beurás un got,</l>
+          <l>serás esclau del taler</l>
+          <l>consuminte per racons;</l>
+          <l>passarás altras desditxas</l>
+          <l>quem causan compassió.</l>
+          <l>Mes nosaltres los forners</l>
+          <l>som molt diferents en tot:</l>
+          <l>apenas som aprenents</l>
+          <l>ja manejam dinerons;</l>
+          <l>puig nos ne donan alguns</l>
+          <l>sols pera portar las pots:</l>
+          <l>per Nadal tenim estrenas,</l>
+          <l>y á la matansa dels porchs</l>
+          <l>recullim de botifarras</l>
+          <l>una bona porció.</l>
+          <l>Nosaltres nos passejam</l>
+          <l>per los carrers mes remots;</l>
+          <l>traginant pots, y venent</l>
+          <l>peras cuytas y codonys:</l>
+          <l>los fadrins solen guanyar</l>
+          <l>diners á discreció,</l>
+          <l>y si tenen esperit</l>
+          <l>pera córrer per lo mon,</l>
+          <l>á vegadas se fan homes</l>
+          <l>en una expedició.</l>
+          <l>Finalment, de nostre ofici</l>
+          <l>los que al tercer escaló</l>
+          <l>posan lo peu, es cert tenen</l>
+          <l>abundants ocasions</l>
+          <l>de volar prosperament,</l>
+          <l>y alguns sen pujan de un bot</l>
+          <l>al carro de la fortuna,</l>
+          <l>quels dispensa mil favors,</l>
+          <l>los que no sabeu lograr</l>
+          <l>vosaltres los teixidors.</l>
+          <l>Amich, digué lo Climent,</l>
+          <l>entre las moltas rahons</l>
+          <l>no set' pot negar que tens</l>
+          <l>alguna part de rahó;</l>
+          <l>perque verdaderament</l>
+          <l>en materia de dar bots,</l>
+          <l>ó fer salts, ó remontarse</l>
+          <l>fins á la esfera del sol,</l>
+          <l>tots los de nostre estament</l>
+          <l>es cert que uns ignorants son:</l>
+          <l>no aspiran á tanta altura,</l>
+          <l>y es la moderació</l>
+          <l>la que sos desitgs regula:</l>
+          <l>peró dígasme, Cendrós,</l>
+          <l>¿no es axó lo mes segur?</l>
+          <l>¿no es sempre axó lo millor?</l>
+          <l>No sabrém volar tan alt,</l>
+          <l>es veritat: mes tampoch</l>
+          <l>non's trovarém exposats</l>
+          <l>á que los ardors del sol</l>
+          <l>nos cremen las débils alas,</l>
+          <l>y n's precipiten al gorch</l>
+          <l>de una terrible desditxa,</l>
+          <l>com ha succehit á molts</l>
+          <l>de vostre gran estament,</l>
+          <l>que han plorat sense consol.</l>
+          <l>¿Quants de ells fabricat havian</l>
+          <l>una torre de esplendor,</l>
+          <l>y la veren destruhir</l>
+          <l>los propis arquitectors?</l>
+          <l>No pretench que la fortuna</l>
+          <l>me dispense altres favors,</l>
+          <l>que la de un honrat passament,</l>
+          <l>que es lo mes elevat colm</l>
+          <l>á que prudentment aspira</l>
+          <l>tota nostra ambició.</l>
+          <l>Si nom' caso, estaré libre</l>
+          <l>de mil tribulacions:</l>
+          <l>mes, si vull, no faltará</l>
+          <l>quim prenga de mil amors,</l>
+          <l>puig hi ha dona de tal geni,</l>
+          <l>ques casaria ab un gos;</l>
+          <l>¿quant mes ab mi, que per últim</l>
+          <l>no sò geperut ni coix?</l>
+          <l>Al temps del aprenentatge</l>
+          <l>passaré alguns treballons,</l>
+          <l>crech que de tot aprenent</l>
+          <l>es natoral pensió:</l>
 
-                              <l>¿qué serás tota ta vida</l>
-                              <l>sinó un pobre burinot,</l>
-                              <l>reduhit á la miseria</l>
-                              <l>de dormir sempre tot sol?</l>
-                              <l>Perque ¿cóm podrás casarte</l>
-                              <l>si may tindrás quatre sous?</l>
-                              <l>Mentres serás aprenent</l>
-                              <l>no temes tornarte gros,</l>
-                              <l>ni tingas por de enfitarte,</l>
-                              <l>que bè ten guardarán prou.</l>
-                              <l>No t' veurás may fart de pa,</l>
-                              <l>de vi non' beurás un got,</l>
-                              <l>serás esclau del taler</l>
-                              <l>consuminte per racons;</l>
-                              <l>passarás altras desditxas</l>
-                              <l>quem causan compassió.</l>
-                              <l>Mes nosaltres los forners</l>
-                              <l>som molt diferents en tot:</l>
-                              <l>apenas som aprenents</l>
-                              <l>ja manejam dinerons;</l>
-                              <l>puig nos ne donan alguns</l>
-                              <l>sols pera portar las pots:</l>
-                              <l>per Nadal tenim estrenas,</l>
-                              <l>y á la matansa dels porchs</l>
-                              <l>recullim de botifarras</l>
-                              <l>una bona porció.</l>
-                              <l>Nosaltres nos passejam</l>
-                              <l>per los carrers mes remots;</l>
-                              <l>traginant pots, y venent</l>
-                              <l>peras cuytas y codonys:</l>
-                              <l>los fadrins solen guanyar</l>
-                              <l>diners á discreció,</l>
-                              <l>y si tenen esperit</l>
-                              <l>pera córrer per lo mon,</l>
-                              <l>á vegadas se fan homes</l>
-                              <l>en una expedició.</l>
-                              <l>Finalment, de nostre ofici</l>
-                              <l>los que al tercer escaló</l>
-                              <l>posan lo peu, es cert tenen</l>
-                              <l>abundants ocasions</l>
-                              <l>de volar prosperament,</l>
-                              <l>y alguns sen pujan de un bot</l>
-                              <l>al carro de la fortuna,</l>
-                              <l>quels dispensa mil favors,</l>
-                              <l>los que no sabeu lograr</l>
-                              <l>vosaltres los teixidors.</l>
-                              <l>Amich, digué lo Climent,</l>
-                              <l>entre las moltas rahons</l>
-                              <l>no set' pot negar que tens</l>
-                              <l>alguna part de rahó;</l>
-                              <l>perque verdaderament</l>
-                              <l>en materia de dar bots,</l>
-                              <l>ó fer salts, ó remontarse</l>
-                              <l>fins á la esfera del sol,</l>
-                              <l>tots los de nostre estament</l>
-                              <l>es cert que uns ignorants son:</l>
-                              <l>no aspiran á tanta altura,</l>
-                              <l>y es la moderació</l>
-                              <l>la que sos desitgs regula:</l>
-                              <l>peró dígasme, Cendrós,</l>
-                              <l>¿no es axó lo mes segur?</l>
-                              <l>¿no es sempre axó lo millor?</l>
-                              <l>No sabrém volar tan alt,</l>
-                              <l>es veritat: mes tampoch</l>
-                              <l>non's trovarém exposats</l>
-                              <l>á que los ardors del sol</l>
-                              <l>nos cremen las débils alas,</l>
-                              <l>y n's precipiten al gorch</l>
-                              <l>de una terrible desditxa,</l>
-                              <l>com ha succehit á molts</l>
-                              <l>de vostre gran estament,</l>
-                              <l>que han plorat sense consol.</l>
-                              <l>¿Quants de ells fabricat havian</l>
-                              <l>una torre de esplendor,</l>
-                              <l>y la veren destruhir</l>
-                              <l>los propis arquitectors?</l>
-                              <l>No pretench que la fortuna</l>
-                              <l>me dispense altres favors,</l>
-                              <l>que la de un honrat passament,</l>
-                              <l>que es lo mes elevat colm</l>
-                              <l>á que prudentment aspira</l>
-                              <l>tota nostra ambició.</l>
-                              <l>Si nom' caso, estaré libre</l>
-                              <l>de mil tribulacions:</l>
-                              <l>mes, si vull, no faltará</l>
-                              <l>quim prenga de mil amors,</l>
-                              <l>puig hi ha dona de tal geni,</l>
-                              <l>ques casaria ab un gos;</l>
-                              <l>¿quant mes ab mi, que per últim</l>
-                              <l>no sò geperut ni coix?</l>
-                              <l>Al temps del aprenentatge</l>
-                              <l>passaré alguns treballons,</l>
-                              <l>crech que de tot aprenent</l>
-                              <l>es natoral pensió:</l>
+          <pb n="2" source="BCN_059_3.jpg" facs="varios/BCN_059_3.jpg"/>
 
-                              <pb n="2" source="BCN_059_3.jpg" facs="varios/BCN_059_3.jpg"/>
+          <l>peró també considero</l>
+          <l>que tu los abultas molt;</l>
+          <l>no serán tants, com ponderan</l>
+          <l>las tuas expressions.</l>
+          <l>De pa men donan bastant,</l>
+          <l>lo vi ja may me ha fet goig,</l>
+          <l>de vianda no men falta,</l>
+          <l>perque com no sò golós,</l>
+          <l>me satisfá facilment</l>
+          <l>als dematins un pebrot,</l>
+          <l>al mitg dia la escudella,</l>
+          <l>y á la nit un plat de cols.</l>
+          <l>Amich Blay, jo estich content</l>
+          <l>de haverme fet teixidor,</l>
+          <l>y donantme Deu salut,</l>
+          <l>perseveraré gustós.</l>
+          <l>Aturdit quasi me deixa</l>
+          <l>tanta copia de rahons</l>
+          <l>(exclama lo Pastanaga)</l>
+          <l>mes ara he de parlar jo;</l>
+          <l>y puig atent vos he ohit,</l>
+          <l>es just me atengau un poch.</l>
+          <l>Deixant de la agricultura</l>
+          <l>aquell treball fatigós,</l>
+          <l>aquellas duras tareas</l>
+          <l>y aquell tracte de pastors;</l>
+          <l>renunciant cávachs y rellas,</l>
+          <l>podadoras y falsons;</l>
+          <l>arrimant las espardenyas</l>
+          <l>y arraconant los esclops,</l>
+          <l>determiní jo seguir</l>
+          <l>la mia propensió</l>
+          <l>que á menestral me tirava:</l>
+          <l>y despedit de Puiggrós,</l>
+          <l>me plantí dins quatre dias</l>
+          <l>en aquesta antigua Cort,</l>
+          <l>amparo de desvalguts,</l>
+          <l>y en fi refugi de tots.</l>
+          <l>Dos ó tres dias rodí</l>
+          <l>pensatiu y cuydadós,</l>
+          <l>observant alguns oficis,</l>
+          <l>que apareixentme tots bons,</l>
+          <l>me tenian indecisa</l>
+          <l>realment ma elecció.</l>
+          <l>Peró, haventho ben pensat,</l>
+          <l>y ja enterament resolt</l>
+          <l>en ser sastre, logrí entrar</l>
+          <l>en casa mestre Grifoll,</l>
+          <l>que es botiga acreditada.</l>
+          <l>Fa mes de tres anys que hi sò,</l>
+          <l>tant content de amos y ofici,</l>
+          <l>que tot me apar lo millor</l>
+          <l>que podia jo elegir.</l>
+          <l>Tant la mestressa me vol</l>
+          <l>y ab tal carinyo me tracta,</l>
+          <l>com si germá ó fill li fos.</l>
+          <l>Lo amo es de tan bona pasta,</l>
+          <l>que may me ha donat un cop,</l>
+          <l>no obstant que á un aprenent,</l>
+          <l>conforme ho sabeu bè tots,</l>
+          <l>sempre las faltas li sobran,</l>
+          <l>majorment quant novellot.</l>
+          <l>La pitota va molt bè;</l>
+          <l>me donan uns plats de arrós,</l>
+          <l>uns tascos de carnsalada,</l>
+          <l>y ara uns trossos de indiot,</l>
+          <l>que quasi bastar podria</l>
+          <l>lo de un dia pera dos.</l>
+          <l>Peró, parlant del ofici,</l>
+          <l>¿quin com lo nostre es llustrós?</l>
+          <l>Nosaltres vestim marquesos,</l>
+          <l>vestim comptes y barons,</l>
+          <l>vestim generals, prínceps,</l>
+          <l>papas, reys y emperadors.</l>
+          <l>No ignoro quels sabaters</l>
+          <l>calsan á tot gentilhom:</l>
+          <l>peró ¿qui podrá negarme</l>
+          <l>que en aqueixa funció</l>
+          <l>posats de genolls per terra</l>
+          <l>van entre peus de tothom?</l>
+          <l>Nosaltres ab desahogo</l>
+          <l>al costat de un gran senyor</l>
+          <l>anirém per las botigas</l>
+          <l>en qualsevol part de mon.</l>
+          <l>Las senyoras mes il-lustres</l>
+          <l>fan tal estimació</l>
+          <l>de nosaltres, ques despullan</l>
+          <l>sens lo reparo menor</l>
+          <l>á nostra vista, quedant</l>
+          <l>sens cotilla ni gipó.</l>
+          <l>Ab los botiguers estam</l>
+          <l>en tan bona opinió,</l>
+          <l>que sens diners nos entregan</l>
+          <l>las robas de mes valor.</l>
 
-                              <l>peró també considero</l>
-                              <l>que tu los abultas molt;</l>
-                              <l>no serán tants, com ponderan</l>
-                              <l>las tuas expressions.</l>
-                              <l>De pa men donan bastant,</l>
-                              <l>lo vi ja may me ha fet goig,</l>
-                              <l>de vianda no men falta,</l>
-                              <l>perque com no sò golós,</l>
-                              <l>me satisfá facilment</l>
-                              <l>als dematins un pebrot,</l>
-                              <l>al mitg dia la escudella,</l>
-                              <l>y á la nit un plat de cols.</l>
-                              <l>Amich Blay, jo estich content</l>
-                              <l>de haverme fet teixidor,</l>
-                              <l>y donantme Deu salut,</l>
-                              <l>perseveraré gustós.</l>
-                              <l>Aturdit quasi me deixa</l>
-                              <l>tanta copia de rahons</l>
-                              <l>(exclama lo Pastanaga)</l>
-                              <l>mes ara he de parlar jo;</l>
-                              <l>y puig atent vos he ohit,</l>
-                              <l>es just me atengau un poch.</l>
-                              <l>Deixant de la agricultura</l>
-                              <l>aquell treball fatigós,</l>
-                              <l>aquellas duras tareas</l>
-                              <l>y aquell tracte de pastors;</l>
-                              <l>renunciant cávachs y rellas,</l>
-                              <l>podadoras y falsons;</l>
-                              <l>arrimant las espardenyas</l>
-                              <l>y arraconant los esclops,</l>
-                              <l>determiní jo seguir</l>
-                              <l>la mia propensió</l>
-                              <l>que á menestral me tirava:</l>
-                              <l>y despedit de Puiggrós,</l>
-                              <l>me plantí dins quatre dias</l>
-                              <l>en aquesta antigua Cort,</l>
-                              <l>amparo de desvalguts,</l>
-                              <l>y en fi refugi de tots.</l>
-                              <l>Dos ó tres dias rodí</l>
-                              <l>pensatiu y cuydadós,</l>
-                              <l>observant alguns oficis,</l>
-                              <l>que apareixentme tots bons,</l>
-                              <l>me tenian indecisa</l>
-                              <l>realment ma elecció.</l>
-                              <l>Peró, haventho ben pensat,</l>
-                              <l>y ja enterament resolt</l>
-                              <l>en ser sastre, logrí entrar</l>
-                              <l>en casa mestre Grifoll,</l>
-                              <l>que es botiga acreditada.</l>
-                              <l>Fa mes de tres anys que hi sò,</l>
-                              <l>tant content de amos y ofici,</l>
-                              <l>que tot me apar lo millor</l>
-                              <l>que podia jo elegir.</l>
-                              <l>Tant la mestressa me vol</l>
-                              <l>y ab tal carinyo me tracta,</l>
-                              <l>com si germá ó fill li fos.</l>
-                              <l>Lo amo es de tan bona pasta,</l>
-                              <l>que may me ha donat un cop,</l>
-                              <l>no obstant que á un aprenent,</l>
-                              <l>conforme ho sabeu bè tots,</l>
-                              <l>sempre las faltas li sobran,</l>
-                              <l>majorment quant novellot.</l>
-                              <l>La pitota va molt bè;</l>
-                              <l>me donan uns plats de arrós,</l>
-                              <l>uns tascos de carnsalada,</l>
-                              <l>y ara uns trossos de indiot,</l>
-                              <l>que quasi bastar podria</l>
-                              <l>lo de un dia pera dos.</l>
-                              <l>Peró, parlant del ofici,</l>
-                              <l>¿quin com lo nostre es llustrós?</l>
-                              <l>Nosaltres vestim marquesos,</l>
-                              <l>vestim comptes y barons,</l>
-                              <l>vestim generals, prínceps,</l>
-                              <l>papas, reys y emperadors.</l>
-                              <l>No ignoro quels sabaters</l>
-                              <l>calsan á tot gentilhom:</l>
-                              <l>peró ¿qui podrá negarme</l>
-                              <l>que en aqueixa funció</l>
-                              <l>posats de genolls per terra</l>
-                              <l>van entre peus de tothom?</l>
-                              <l>Nosaltres ab desahogo</l>
-                              <l>al costat de un gran senyor</l>
-                              <l>anirém per las botigas</l>
-                              <l>en qualsevol part de mon.</l>
-                              <l>Las senyoras mes il-lustres</l>
-                              <l>fan tal estimació</l>
-                              <l>de nosaltres, ques despullan</l>
-                              <l>sens lo reparo menor</l>
-                              <l>á nostra vista, quedant</l>
-                              <l>sens cotilla ni gipó.</l>
-                              <l>Ab los botiguers estam</l>
-                              <l>en tan bona opinió,</l>
-                              <l>que sens diners nos entregan</l>
-                              <l>las robas de mes valor.</l>
+          <pb n="4" source="BCN_059_4.jpg" facs="varios/BCN_059_4.jpg"/>
 
-                              <pb n="4" source="BCN_059_4.jpg" facs="varios/BCN_059_4.jpg"/>
-
-                              <l>Lo treball de nostre ofici</l>
-                              <l>no fatiga, puig no es fort,</l>
-                              <l>que regularment las feynas</l>
-                              <l>se fan ab molt gran repós.</l>
-                              <l>Feu ara sobre estas cosas</l>
-                              <l>madura reflexîó,</l>
-                              <l>y vejeu si trobaréu</l>
-                              <l>un ofici mes honrós</l>
-                              <l>y que tinga circunstancias</l>
-                              <l>tan apreciables com son</l>
-                              <l>las del nostre: considero</l>
-                              <l>que fora dificultós.</l>
-                              <l>¡Válgam lo beneyt sant March!</l>
-                              <l>sant Crispí! sant Salvador!</l>
-                              <l>digué mirantse lo sastre</l>
-                              <l>son camarada Clicot.</l>
-                              <l>¿De ahont traus tanta materia?</l>
-                              <l>Te aturdias de estos dos,</l>
-                              <l>y xarras mes que una garsa,</l>
-                              <l>mes que trenta gafarrons.</l>
-                              <l>Tinch vist que tant lo Borruga,</l>
-                              <l>com tu y com lo Cendrós,</l>
-                              <l>tots vos demostrau gustosos,</l>
-                              <l>aquell de ser teixidor,</l>
-                              <l>aquest de portar capsana,</l>
-                              <l>y tu de ser sastrinyol.</l>
-                              <l>Donchs advertiu que també</l>
-                              <l>jo gusto de ser pegot:</l>
-                              <l>no m' sab mal rosegar cuyro,</l>
-                              <l>ni estirar lo pel de porch,</l>
-                              <l>ni portar lo devantal</l>
-                              <l>tan untat y safarrós;</l>
-                              <l>que encara que malas llenguas</l>
-                              <l>diuhen que es ofici llort,</l>
-                              <l>jo sé que es honrat ofici,</l>
-                              <l>que es ofici profitós,</l>
-                              <l>y que en ell ho passan bè</l>
-                              <l>tots los bons treballadors:</l>
-                              <l>jo deixo dir lo que vullan,</l>
-                              <l>com me deixen fer mon joch.</l>
-                              <l>Estich en casa de un amo,</l>
-                              <l>que es home de bon humor,</l>
-                              <l>de natural apacible</l>
-                              <l>y amable condició.</l>
-                              <l>Corretgeix benignament,</l>
-                              <l>y ensenya ab molt gran amor:</l>
-                              <l>es compassiu, es afable,</l>
-                              <l>es lliberal y garbós.</l>
-                              <l>La mestressa es de altre geni,</l>
-                              <l>que no m' satisfá del tot:</l>
-                              <l>es tan estreta ab nosaltres,</l>
-                              <l>que en ella no troba lloch</l>
-                              <l>lo que es lliberalitat.</l>
-                              <l>Al dematí quatre nous</l>
-                              <l>me dòna per esmorsar,</l>
-                              <l>y de pa un petit crostó:</l>
-                              <l>ó una cua de arengada</l>
-                              <l>y un parell de rosegons</l>
-                              <l>ab quatre gotetas de oli;</l>
-                              <l>y diu que n' hi posa poch</l>
-                              <l>perque no m' danye lo pit:</l>
-                              <l>jo li estimo lo favor,</l>
-                              <l>peró mes estimaria</l>
-                              <l>que son cor fos generós.</l>
-                              <l>No obstant, com ja me he fet compte</l>
-                              <l>que sols pot durar axó</l>
-                              <l>mentres del aprenentatge</l>
-                              <l>me subjecten los grillons,</l>
-                              <l>me alimento de esperansas</l>
-                              <l>de que arrivant al ditxós</l>
-                              <l>libre estat del fadrinatge,</l>
-                              <l>me atiparé de matons,</l>
-                              <l>de pa de ral, y sisenas</l>
-                              <l>de botifarras y ous:</l>
-                              <l>beuré vi com un inglés,</l>
-                              <l>y ayguardent com un saxô.</l>
-                              <l>Si després puch arrivar</l>
-                              <l>á véncer lo major gorp,</l>
-                              <l>vull dir, á passarme mestre,</l>
-                              <l>ja no envejaré la sort</l>
-                              <l>al rey de la Gran Bretanya,</l>
-                              <l>ni al Sofí, ni al Gran Mogol.</l>
-                              <l>Ja que de nostres oficis</l>
-                              <l>contents nos demostram tots,</l>
-                              <l>(digué lo Climent); importa</l>
-                              <l>que, ajudant Nostre Senyor,</l>
-                              <l>nos esmerem en cumplir</l>
-                              <l>la nostra obligació.</l>
-                              <l>En axó se dividiren,</l>
-                              <l>y jo quedí molt gustós</l>
-                              <l>de haver ohit los discursos</l>
-                              <l>de aquestas conclusions.</l>
-                        </div>
-                        <div type="colofon">
-                              <p>
-                                    <lb/><hi rend="cursiva">Barcelona:</hi> Estampa dels Hereus de
+          <l>Lo treball de nostre ofici</l>
+          <l>no fatiga, puig no es fort,</l>
+          <l>que regularment las feynas</l>
+          <l>se fan ab molt gran repós.</l>
+          <l>Feu ara sobre estas cosas</l>
+          <l>madura reflexîó,</l>
+          <l>y vejeu si trobaréu</l>
+          <l>un ofici mes honrós</l>
+          <l>y que tinga circunstancias</l>
+          <l>tan apreciables com son</l>
+          <l>las del nostre: considero</l>
+          <l>que fora dificultós.</l>
+          <l>¡Válgam lo beneyt sant March!</l>
+          <l>sant Crispí! sant Salvador!</l>
+          <l>digué mirantse lo sastre</l>
+          <l>son camarada Clicot.</l>
+          <l>¿De ahont traus tanta materia?</l>
+          <l>Te aturdias de estos dos,</l>
+          <l>y xarras mes que una garsa,</l>
+          <l>mes que trenta gafarrons.</l>
+          <l>Tinch vist que tant lo Borruga,</l>
+          <l>com tu y com lo Cendrós,</l>
+          <l>tots vos demostrau gustosos,</l>
+          <l>aquell de ser teixidor,</l>
+          <l>aquest de portar capsana,</l>
+          <l>y tu de ser sastrinyol.</l>
+          <l>Donchs advertiu que també</l>
+          <l>jo gusto de ser pegot:</l>
+          <l>no m' sab mal rosegar cuyro,</l>
+          <l>ni estirar lo pel de porch,</l>
+          <l>ni portar lo devantal</l>
+          <l>tan untat y safarrós;</l>
+          <l>que encara que malas llenguas</l>
+          <l>diuhen que es ofici llort,</l>
+          <l>jo sé que es honrat ofici,</l>
+          <l>que es ofici profitós,</l>
+          <l>y que en ell ho passan bè</l>
+          <l>tots los bons treballadors:</l>
+          <l>jo deixo dir lo que vullan,</l>
+          <l>com me deixen fer mon joch.</l>
+          <l>Estich en casa de un amo,</l>
+          <l>que es home de bon humor,</l>
+          <l>de natural apacible</l>
+          <l>y amable condició.</l>
+          <l>Corretgeix benignament,</l>
+          <l>y ensenya ab molt gran amor:</l>
+          <l>es compassiu, es afable,</l>
+          <l>es lliberal y garbós.</l>
+          <l>La mestressa es de altre geni,</l>
+          <l>que no m' satisfá del tot:</l>
+          <l>es tan estreta ab nosaltres,</l>
+          <l>que en ella no troba lloch</l>
+          <l>lo que es lliberalitat.</l>
+          <l>Al dematí quatre nous</l>
+          <l>me dòna per esmorsar,</l>
+          <l>y de pa un petit crostó:</l>
+          <l>ó una cua de arengada</l>
+          <l>y un parell de rosegons</l>
+          <l>ab quatre gotetas de oli;</l>
+          <l>y diu que n' hi posa poch</l>
+          <l>perque no m' danye lo pit:</l>
+          <l>jo li estimo lo favor,</l>
+          <l>peró mes estimaria</l>
+          <l>que son cor fos generós.</l>
+          <l>No obstant, com ja me he fet compte</l>
+          <l>que sols pot durar axó</l>
+          <l>mentres del aprenentatge</l>
+          <l>me subjecten los grillons,</l>
+          <l>me alimento de esperansas</l>
+          <l>de que arrivant al ditxós</l>
+          <l>libre estat del fadrinatge,</l>
+          <l>me atiparé de matons,</l>
+          <l>de pa de ral, y sisenas</l>
+          <l>de botifarras y ous:</l>
+          <l>beuré vi com un inglés,</l>
+          <l>y ayguardent com un saxô.</l>
+          <l>Si després puch arrivar</l>
+          <l>á véncer lo major gorp,</l>
+          <l>vull dir, á passarme mestre,</l>
+          <l>ja no envejaré la sort</l>
+          <l>al rey de la Gran Bretanya,</l>
+          <l>ni al Sofí, ni al Gran Mogol.</l>
+          <l>Ja que de nostres oficis</l>
+          <l>contents nos demostram tots,</l>
+          <l>(digué lo Climent); importa</l>
+          <l>que, ajudant Nostre Senyor,</l>
+          <l>nos esmerem en cumplir</l>
+          <l>la nostra obligació.</l>
+          <l>En axó se dividiren,</l>
+          <l>y jo quedí molt gustós</l>
+          <l>de haver ohit los discursos</l>
+          <l>de aquestas conclusions.</l>
+        </div>
+        <div type="colofon">
+          <p>
+            <lb/>
+            <hi rend="cursiva">Barcelona:</hi> Estampa dels Hereus de
                                     la V. Pla, carrer dels <hi rend="cursiva">Cotoners</hi>.</p>
-                        </div>
-                  </div>
-            </body>
-      </text>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

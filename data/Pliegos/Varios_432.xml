@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="24"/>24 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="24"/>24 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +114,122 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="5" corresp="Q21">
+            <placeName key="Inglaterra">Inglaterra</placeName>
+            <location>
+              <geo>53 -1</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q48175">
+            <placeName key="Tierra_Santa">Tierra Santa</placeName>
+            <location>
+              <geo>31.7783333333333 35.2297222222222</geo>
+            </location>
+          </place>
+          <place n="8" corresp="Q82070">
+            <placeName key="Tiro">Tiro</placeName>
+            <location>
+              <geo>33.266666666667 35.2</geo>
+            </location>
+          </place>
+          <place n="6" corresp="Q189383">
+            <placeName key="Damieta">Damieta</placeName>
+            <location>
+              <geo>31.4166666666667 31.8213888888889</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q285235">
+            <placeName key="Bañuelos_de_Bureba">Bañuelos De Bureba</placeName>
+            <location>
+              <geo>42.500833333333 -3.2805555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q13666">
+            <placeName key="Messina">Messina</placeName>
+            <location>
+              <geo>38.1936111111111 15.5541666666667</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q4018">
+            <placeName key="Navarra">Navarra</placeName>
+            <location>
+              <geo>42.816666666667 -1.65</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q16208">
+            <placeName key="Mesina">Mesina</placeName>
+            <location>
+              <geo>38.183333333333 15.55</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q1218">
+            <placeName key="Jerusalén">Jerusalén</placeName>
+            <location>
+              <geo>31.7788888888889 35.2255555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q23792">
+            <placeName key="Palestina">Palestina</placeName>
+            <location>
+              <geo>31.625321 35.145264</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q48">
+            <placeName key="Asia">Asia</placeName>
+            <location>
+              <geo>43.6811111111111 87.3311111111111</geo>
+            </location>
+          </place>
+          <place n="7" corresp="Q45829">
+            <placeName key="Ptolemaida">Ptolemaida</placeName>
+            <location>
+              <geo>32.706947370528 20.9529202521255</geo>
+            </location>
+          </place>
+          <place n="7" corresp="Q85">
+            <placeName key="El_Cairo">El Cairo</placeName>
+            <location>
+              <geo>30.0444444444444 31.2358333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q31945">
+            <placeName key="Arabia">Arabia</placeName>
+            <location>
+              <geo>23 46</geo>
+            </location>
+          </place>
+          <place n="3" corresp="Q471886">
+            <placeName key="Hadera">Hadera</placeName>
+            <location>
+              <geo>32.45 34.916666666667</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q185318">
+            <placeName key="Monte_Carmelo">Monte Carmelo</placeName>
+            <location>
+              <geo>32.6725 35.023333</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q180294">
+            <placeName key="Jaffa">Jaffa</placeName>
+            <location>
+              <geo>32.052222222222 34.753055555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q60956">
+            <placeName key="Ascalón">Ascalón</placeName>
+            <location>
+              <geo>31.665833333333 34.566388888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,8 +264,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-29" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -3928,68 +4058,86 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_432_1.jpg" facs="varios/Varios_432_1.jpg"/>
-        
+
         <fw type="numeroPliego">(TRES PLIEGOS.)</fw>
-        
-        <head type="primer_titulo"><lb/><hi rend="negrita">HISTORIA</hi><lb/>DE LOS AMORES<lb/><hi rend="negrita">de Matilde y Malek-Adhel,</hi></head>
-        <head type="subtitulo_parte"><lb/>ó<lb/>MEMORIAS SACADAS DE LA HISTORIA DE LAS
+        <head type="primer_titulo">
+          <lb/>
+          <hi rend="negrita">HISTORIA</hi>
+          <lb/>DE LOS AMORES<lb/>
+          <hi rend="negrita">de Matilde y Malek-Adhel,</hi>
+        </head>
+        <head type="subtitulo_parte">
+          <lb/>ó<lb/>MEMORIAS SACADAS DE LA HISTORIA DE LAS
           CRUZADAS.</head>
-        
         <div type="colofon">
-          <p><lb/>PALMA. Se ven en la tenda de M. de Borrás, Calle del Call, 40.</p>
-          <p><lb/><hi rend="negrita">Imprenta de Marés y Compañía, plaza de la Cebada, núm. 13.</hi></p>
+          <p>
+            <lb/>PALMA. Se ven en la tenda de M. de Borrás, Calle del Call, 40.</p>
+          <p>
+            <lb/>
+            <hi rend="negrita">Imprenta de Marés y Compañía, plaza de la Cebada, núm. 13.</hi>
+          </p>
         </div>
-        
+
         <pb n="2" source="Varios_432_2.jpg" facs="varios/Varios_432_2.jpg"/>
-        
+
         <div>
-          <p><lb/>(Autorizada segun la ley vigente.)</p>
+          <p>
+            <lb/>(Autorizada segun la ley vigente.)</p>
         </div>
-        
+
         <pb n="3" source="Varios_432_3.jpg" facs="varios/Varios_432_3.jpg"/>
-        
+
         <div type="capitulo" n="1">
-          <head type="primer_titulo"><lb/>HISTORIA<lb/>DE LOS AMORES DE<lb/><hi rend="negrita">MATILDE Y MALEK-ADHEL.</hi></head>
-          <head type="titulo_parte"><lb/>CAPITULO PRIMERO.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Recuerdos de las Cruzadas.—Pónese al
+          <head type="primer_titulo">
+            <lb/>HISTORIA<lb/>DE LOS AMORES DE<lb/>
+            <hi rend="negrita">MATILDE Y MALEK-ADHEL.</hi>
+          </head>
+          <head type="titulo_parte">
+            <lb/>CAPITULO PRIMERO.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Recuerdos de las Cruzadas.—Pónese al
             frente de todo el ejército<lb/>el rey de Inglaterra.—Sale con este su hermana
             Matilde.-<lb/>Casamiento de Ricardo con Berenguela.— Partida de este para<lb/>la Tierra
             Santa.— Desconsuelo de Berenguela por su separa-<lb/>cion.—Salen Berenguela y Matilde en
             compañia del arzobispo<lb/>de Tiro para la Tierra Santa.—Es apresado el buque
             por<lb/>Malek-Adhel.—Llegan á Damieta.</head>
-          
-          <p rend="indent"><lb/>La pérdida de la Tierra Santa causó inmenso dolor á todas las <lb/>naciones
-            cristianas. Guillermo, arzobispo de Tiro, pidió auxilio al <lb/>Papa Guillermo VIll
-            para hacer una nueva cruzada. Este piadoso <lb/>prelado, que recorria á pie la Europa
+          <p rend="indent">
+            <lb/>La pérdida de la <name>Tierra Santa</name> causó inmenso dolor á todas las <lb/>naciones
+            cristianas. Guillermo, arzobispo de <name>Tiro</name>, pidió auxilio al <lb/>Papa Guillermo VIll
+            para hacer una nueva cruzada. Este piadoso <lb/>prelado, que recorria á pie la <name>Europa</name>
             con un crucifijo en la mano <lb/>animado por el mas heróico celo por la religion
             cristiana, logró que <lb/>se uniesen á él para tan grande empresa un sin número de
             so- <lb/>beranos.</p>
-          <p rend="indent"><lb/>A la cabeza de todos estaban Ricardo, rey de Inglaterra, y Fe- <lb/>lipe Augusto,
-            de Francia. Las alocuciones tan piadosas que el ar- <lb/>zobispo de Tiro pronunciaba en
+          <p rend="indent">
+            <lb/>A la cabeza de todos estaban Ricardo, rey de <name>Inglaterra</name>, y Fe- <lb/>lipe Augusto,
+            de <name>Francia</name>. Las alocuciones tan piadosas que el ar- <lb/>zobispo de <name>Tiro</name> pronunciaba en
             todas partes, exaltaron el valor de <lb/>la juventud de ambos reinos. Todos acudieron
             presurosos á unirse <lb/>al ejército para marchar á derramar su sangre en defensa de
             la ré- <lb/>ligion cristiana.</p>
-          <p rend="indent"><lb/>No obstante, los dos monarcas se separaron citándose para Me- <lb/>sina, por
+          <p rend="indent">
+            <lb/>No obstante, los dos monarcas se separaron citándose para Me- <lb/>sina, por
             tener que efectuar allí Ricardo su proyectado casamiento <lb/>con Berenguela, hija de
-            Sancho, rey de Navarra. Antes de partir, <lb/>Ricardo quiso despedirse de su hermana
+            Sancho, rey de <name>Navarra</name>. Antes de partir, <lb/>Ricardo quiso despedirse de su hermana
             Matilde, que se hallaba <lb/>retirada desde su infancia en un convento, y hallarse
             presente á la <lb/>toma de hábito de la jóven novicia. Hallábase en este estado la
             be- <lb/>lla princesa, y daba gracias á Dios continuamente porque la hu-
+
           
             <pb n="4" source="Varios_432_4.jpg" facs="varios/Varios_432_4.jpg"/>
-          
+
             <fw type="paginaNum">— 4—</fw>
-          
             <lb/>biese guiado á tan santa vida, cuando el monarca inglés, cubierto<lb/>con una
             preciosa armadura, penetró en el convento. Su presencia<lb/>conmueve á todas sus
             habitadoras, ábrense las puertas ante el mo-<lb/>narca, donde penetran por primera vez
-            las miradas de un hombre.<lb/>Solo el arzobispo de Tiro osó seguir al monarca, y
+            las miradas de un hombre.<lb/>Solo el arzobispo de <name>Tiro</name> osó seguir al monarca, y
             Matilde se apre-<lb/>suró á recibir los brazos de su hermano y las bendiciones del
             ve-<lb/>nerable Guillermo. La abadesa, seguida de sus religiosas cubier-<lb/>tas con su
             negro velo, la acompañaron y fueron testigos de tan tier-<lb/>na
             entrevista.</p>
-          <p rend="indent"><lb/>Refiere el monarca sus proyectos, habla de su viaje, y enumera<lb/>los
+          <p rend="indent">
+            <lb/>Refiere el monarca sus proyectos, habla de su viaje, y enumera<lb/>los
             peligros que arrostrará para conseguir su piadoso objeto. Esta<lb/>narracion despierta
             en Matilde pensamientos tan nuevos como pia-<lb/>dosos, y declara, no sin rubor, que
             tomaria con gusto parte en las<lb/>fatigas que á su hermano estaban reservadas. Poco
@@ -3998,80 +4146,90 @@
             abadesa colocó en su pecho una brillante cruz, y Matilde reci-<lb/>bió con gratitud un
             don tan precioso y le suspendió de su cuello;<lb/>besó luego la mano á la abadesa, y
             dando el último adios á sus tí-<lb/>midas hermanas, salió del monasterio.</p>
-          <p rend="indent"><lb/>Llegó Matilde á Mesina, en donde se reunió con Berenguela, y<lb/>desde el momento que se
+          <p rend="indent">
+            <lb/>Llegó Matilde á <name>Mesina</name>, en donde se reunió con Berenguela, y<lb/>desde el momento que se
             vieron una tierna amistad unió entram-<lb/>bos corazones. Pocos dias despues, Ricardo
             se unió bajo los mas<lb/>felices auspicios con la tierna Berenguela.</p>
-          <p rend="indent"><lb/>Al eso de los
-            Cruzada vino el rey de Jerusalen, Güido de Lusi-<lb/>ñan, á implorar la proteccion de
+          <p rend="indent">
+            <lb/>Al eso de los
+            Cruzada vino el rey de <name>Jerusalen</name>, Güido de Lusi-<lb/>ñan, á implorar la proteccion de
             Ricardo contra el marqués de Mon-<lb/>ferrato que le habia espulsado de sus dominios.
             Instigado Ricardo<lb/>por la confianza de Lusiñan y movido por sus desventuras, se
             obli-<lb/>gó solemnemente á protejerle contra sus rivales; desde aquel mo-<lb/>mento,
             unidos por la gratitud y los beneficios, contrajeron estre-<lb/>cha amistad, jurándose
             eterna fe y confraternidad de armas hasta<lb/>su último suspiro.</p>
-          <p rend="indent"><lb/>Reunidas, despues
+          <p rend="indent">
+            <lb/>Reunidas, despues
             del casamiento, las armas de entrambos re-<lb/>yes, determinaron marchar con sus tropas
             á la conquista de la Tier-<lb/>ra Santa; y Ricardo, apenas pasó algunos dias al lado
-            de su esposa,<lb/>dispuso hacerse á la vela para la Palestina.</p>
-          <p rend="indent"><lb/>La amorosa
+            de su esposa,<lb/>dispuso hacerse á la vela para la <name>Palestina</name>.</p>
+          <p rend="indent">
+            <lb/>La amorosa
             Berenguela, desconsolada con la idea de separar-<lb/>se de un esposo que tanto amaba, se
             arrojó á sus pies, y pidiéndo-<lb/>le bañada en llanto, que la permitiera participar
             de los peligros á<lb/>los cuales iba á esponerse. A pesar de que Ricardo se
             conmovió<lb/>con la pena de la reina, se mantuvo inexorable y partió
             dejándola<lb/>anegada en lágrimas.</p>
-          <p rend="indent"><lb/>No obstante, dejó Ricardo fletado un buque para trasportar
+          <p rend="indent">
+            <lb/>No obstante, dejó Ricardo fletado un buque para trasportar
+
           
           <pb n="5" source="Varios_432_5.jpg" facs="varios/Varios_432_5.jpg"/>
-          
-          <fw type="paginaNum">—5—</fw>
-          
+
+            <fw type="paginaNum">—5—</fw>
             <lb/>las dos princesas á su campamento. Deseosas ambas de juntarse<lb/>una con su
             esposo y la otra con su hermano, determinaron mar-<lb/>char, y rogaron al arzobispo de
-            Tiro que las acompañase en el via-<lb/>je. Condescendió este con gozo á su
+            <name>Tiro</name> que las acompañase en el via-<lb/>je. Condescendió este con gozo á su
             proposicion, y marcharon po-<lb/>cos dias despues que Ricardo.</p>
-          <p rend="indent"><lb/>Pasado algun tiempo
+          <p rend="indent">
+            <lb/>Pasado algun tiempo
             de una navegacion feliz dieron vista á las<lb/>costas de Asia; mas al divisar el puerto
-            de Tolemaida vieron venir<lb/>hácia ellos un buque en cuya bandera se ostentaba la
+            de <name>Tolemaida</name> vieron venir<lb/>hácia ellos un buque en cuya bandera se ostentaba la
             media luna.<lb/>En el momento que los sarracenos observaron el pabellonin in-<lb/>glés,
             se arrojaron intrepidos sobre él; y despues de un furioso ata-<lb/>que apresaron el
             buque á los gritos de ¡Malek-Adhel! ¡Malek-Adhel!<lb/>Berenguela y Matilde, que estaban
             aterradas con el estrépido de las<lb/>armas, hacian oracion á Dios para que las
-            libertara de sus enemi-<lb/>gos. En vano el arzobispo de Tiro procuraba con sus santas
+            libertara de sus enemi-<lb/>gos. En vano el arzobispo de <name>Tiro</name> procuraba con sus santas
             pala-<lb/>bras calmarlas; sin embargo, no lo podia conseguir. De pronto pe-<lb/>netran
             en la cámara un sin número de musulmanes, y con ellos<lb/>Malek-Adhel, el cual se
             queda estático al contemplar la hermosura<lb/>de Matilde. «Nada temais, las dice,
             bellas princesas; vais á ser con-<lb/>ducidas con todo el respeto que mereceis á mi
             palacio.» Y condu-<lb/>ciendo á las princesas á su chalupa, da órden á los remeros,
-            y lles-<lb/>gan felizmente á vista del puerto de Damieta.</p>
-          <p rend="indent"><lb/>No tan pronto hubieron
+            y lles-<lb/>gan felizmente á vista del puerto de <name>Damieta</name>.</p>
+          <p rend="indent">
+            <lb/>No tan pronto hubieron
             llegado al muelle cuando ya las espe-<lb/>raban unas literas para conducirlas al palacio
             de Malek-Adhel, don-<lb/>de habia dispuesto aposentos ricamente adornados para la
-            estan-<lb/>cia de las dos princesas y del arzobispo de Tiro.</p>
+            estan-<lb/>cia de las dos princesas y del arzobispo de <name>Tiro</name>.</p>
         </div>
-        
         <div type="capitulo" n="2">
-          <head type="titulo_parte"><lb/>CAPITULO II.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Cautiverio de las dos princesas en
+          <head type="titulo_parte">
+            <lb/>CAPITULO II.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Cautiverio de las dos princesas en
             Damieta.-Paseos de estas con<lb/>el arzobispo por los jardines del palacio.—Encuentno de
             una<lb/>renegada.—Consuelos que la prodigan.—Se presenta Malek-<lb/>Adhel en sus
             aposentos, y tienen noticias de Ricardo.</head>
-          
-          <p rend="indent"><lb/>Penoso era para las princesas el cautiverio que sufrian en Da-<lb/>mieta; pero
+          <p rend="indent">
+            <lb/>Penoso era para las princesas el cautiverio que sufrian en Da-<lb/>mieta; pero
             estaban tan bien cuidadas, eran tan obedecidas, que el<lb/>dolor que las causaba la
             pérdida de la libertad era atemperado con<lb/>las consideraciones que con ellas se
             tenian.</p>
-          <p rend="indent"><lb/>Acostumbraban Matilde y Berenguela pasearse por las tardes en<lb/>los
+          <p rend="indent">
+            <lb/>Acostumbraban Matilde y Berenguela pasearse por las tardes en<lb/>los
             jardines del palacio. Eran estos unos magníficos bosques cu-<lb/>biertos de esas bellas
-            flores que solo se encuentran en el Asia, esos<lb/>bellos tulipanes y esas perfumadas
+            flores que solo se encuentran en el <name>Asia</name>, esos<lb/>bellos tulipanes y esas perfumadas
             magnolias tan puras y tan bri-<lb/>llantes. A la hora que el sol decaia en su ocaso, y
             á la hora en que<lb/>las plantas abren sus cálices para despedir las emanaciones de su
+
               
               <pb n="6" source="Varios_432_6.jpg" facs="varios/Varios_432_6.jpg"/>
-              
-              <fw type="paginaNum">— 6 —</fw>
-            
+
+            <fw type="paginaNum">— 6 —</fw>
             <lb/>seno, era cuando las dos princesas bajaban á los parterres á contar- <lb/>se sus
             mútuas penas y á consolarse tambien juntas.</p>
-          <p rend="indent"><lb/>Una de las bellas tardes en que unidas bajaban á las florestas <lb/>al lado de
+          <p rend="indent">
+            <lb/>Una de las bellas tardes en que unidas bajaban á las florestas <lb/>al lado de
             una deliclosa cascada que caía arrojando su brillante es- <lb/>puma sobre la tapizada
             alfombra de hermosas azucenas, y en su fon- <lb/>do un airoso kiosco que ostentaba en su
             magnifica cúpula de oro y <lb/>azul la triunfante media luna, vieron que se dirigia
@@ -4087,8 +4245,9 @@
             magestuosamente sobre su pecho; sin embargo, <lb/>á pesar de su hermosura y de tantos
             adornos, una mezcla de tris- <lb/>teza y recogimiento cubrian sus bellas facciones, mas
             esplendentes <lb/>aun por esta capa de melancolía que demostraba.</p>
-          <p rend="indent"><lb/>Era esta mujer, Inés, la desgraciada hija de Amaury, tan céle- <lb/>bre en el
-            Oriente por su belleza, que hallándose en Jerusalen con <lb/>su padre el dia en que fue
+          <p rend="indent">
+            <lb/>Era esta mujer, Inés, la desgraciada hija de Amaury, tan céle- <lb/>bre en el
+            Oriente por su belleza, que hallándose en <name>Jerusalen</name> con <lb/>su padre el dia en que fue
             tomada esta ciudad por Malek-Adhel, <lb/>que siendo este el primero que enarboló sobre
             sus murallas las in- <lb/>signias de la media luna, y en medio de la mas horrrible
             carni- <lb/>cería hizo brillar unas virtudes desconocidas en aquel siglo, sal-
@@ -4100,18 +4259,19 @@
             esposa; pero <lb/>como aquel no era producido por una verdadera pasion, no tardó
             <lb/>en abandonarla, dejándola en su harem confundida entre las de- <lb/>mas
             mujeres.</p>
-          <p rend="indent"><lb/>Pronto los celos penetraron en su corazon al ver que el prínci- <lb/>pe, sin hacer
+          <p rend="indent">
+            <lb/>Pronto los celos penetraron en su corazon al ver que el prínci- <lb/>pe, sin hacer
             caso de ella ni de sus compañeras preferia el amor <lb/>puro y casto que le inspiraba
             la princesa Matilde. Llegó, por últi- <lb/>mo, el dia en que, aprovechándose del
             tumulto que habia en el <lb/>harem, pudo evadirse y penetrar por miedio de una puerta
             secreta <lb/>y cubierta con el espeso ramaje al paraje donde se paseaban las
             <lb/>princesas.</p>
-          
+
           <pb n="7" source="Varios_432_7.jpg" facs="varios/Varios_432_7.jpg"/>
-          
+
           <fw type="paginaNum">—7—</fw>
-          
-          <p rend="indent"><lb/>Así que vió á Berenguela y Matilde se arrojó á sus pies admiran- <lb/>do en
+          <p rend="indent">
+            <lb/>Así que vió á Berenguela y Matilde se arrojó á sus pies admiran- <lb/>do en
             Matilde su angélica belleza, y en Berenguela la espresion de <lb/>caridad que su rostro
             manifestaba, y las rogó que se presentasen <lb/>ante el príncipe y le pidiese su
             libertad. Así se lo prometieron las <lb/>princesas en compañía del arzobispo
@@ -4123,12 +4283,14 @@
             plan y tuvo que escaparse disfrazada de guerrero. <lb/>Las princesas y el venerable
             Guillermo continuaron entregándose <lb/>al solaz que les proporcionaban tan deliciosos
             jardines.</p>
-          <p rend="indent"><lb/>Llegó la hora de retirarse al palacio, y al momento Malek-Ad- <lb/>hel se
+          <p rend="indent">
+            <lb/>Llegó la hora de retirarse al palacio, y al momento Malek-Ad- <lb/>hel se
             presentó delante del venerable prelado y las princesas. Le <lb/>preguntaron estas el
             objeto de su visita, y él das respondió que era <lb/>portador de una noticia muy
             interesante para ambas princesas, <lb/>cual era la de la salud que el gran Ricardo
             gozaba.</p>
-          <p rend="indent"><lb/>Mostráronse alegres Berenguela y Matilde; pero el arzobispo, <lb/>que penetró la
+          <p rend="indent">
+            <lb/>Mostráronse alegres Berenguela y Matilde; pero el arzobispo, <lb/>que penetró la
             intencion en el modo con que el príncipe miraba á <lb/>Matilde, se apresuró á hacer
             una señal que la manifestaba podia re- <lb/>tirarse.Verificólo así la princesa; pero
             mo sin haber dirigido una <lb/>mirada casta y ruborosa en la que estaba pintando su
@@ -4148,20 +4310,21 @@
             <lb/>motivo que llenaba su alma de admiracion, con todo, su concien- <lb/>cia no admitia
             su amor, porque al fin amaba á un sarrraceno.</p>
         </div>
-        
+
         <pb n="8" source="Varios_432_8.jpg" facs="varios/Varios_432_8.jpg"/>
-        
+
         <fw type="paginaNum">— 8—</fw>
-        
         <div type="capitulo" n="3">
-          <head type="titulo_parte" rend="negrita"><lb/>CAPITULO III.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Malek-Adhel declara su amor á
+          <head type="titulo_parte" rend="negrita">
+            <lb/>CAPITULO III.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Malek-Adhel declara su amor á
             Matilde.—Toma de Tolemaida.<lb/>—Rasgo heróico de Matilde.—Partida de esta al
             desierto.—<lb/>Una tropa de beduinos arrebata á Matilde de los brazos del
             er-<lb/>mitaño.—Es libertada por Malek-Adhel.—Juramento de amor<lb/>en medio del
             desierto.—Su regreso al Cairo.</head>
-          
-          <p rend="indent"><lb/>Una tarde en que el sol se ostentaba mas puro y radiante, ce-<lb/>dió Matilde al
+          <p rend="indent">
+            <lb/>Una tarde en que el sol se ostentaba mas puro y radiante, ce-<lb/>dió Matilde al
             deseo de disfrutar el bello espectáculo de la naturale-<lb/>za, y bajó sola á los
             jardines. Cansada ya, se sentó bajo una galería<lb/>de jazmiñes y plátanos: la
             silénciosa paz que allí reinaba restableció<lb/>en el corazon de la princesa la
@@ -4176,13 +4339,13 @@
             de mí? ¿Me mirais con horror?<lb/>—Dios me manda huir de sus enemigos, contestó
             Matilde:<lb/>—¡Ah! intérrumpió el príncipe; yo espero qué alguna chispa
             del<lb/>fuego que me devora prenderá en vuestro pecho y os resolverá
-            á<lb/>amar.<lb/>—Estoy destinada á ser una esposa de Jesucristo. A Inglaterra<lb/>es
+            á<lb/>amar.<lb/>—Estoy destinada á ser una esposa de Jesucristo. A <name>Inglaterra</name><lb/>es
             donde me llaman mis votos.
+
           
               <pb n="9" source="Varios_432_9.jpg" facs="varios/Varios_432_9.jpg"/>
-          
-              <fw type="paginaNum">—9—</fw>
-          
+
+            <fw type="paginaNum">—9—</fw>
             <lb/>—Angélica belleza,¿qué ordenais de mí?<lb/>Matilde, dirigiéndole entonces una
             mirada menos severa, la con-<lb/>testó con dulzura:<lb/>—Deseo que me conduzcais adonde
             está la reina. Dice, y empe-<lb/>zó á marchar la princesa, precedida de Malek-Adhel,
@@ -4191,9 +4354,10 @@
             Berenguela,<lb/>que se atreve á internarse en este recinto sin el
             correspondiente<lb/>permiso?<lb/>—Es Joselin de Montmorency, contestó
             Berenguela.<lb/>—Tan ilustre nombre ha llegado ya á mis oidos con el de todos<lb/>los
-            reyes de Europa, dijo el príncipe, sin cesar de admirar el con-<lb/>tinente marcial de
+            reyes de <name>Europa</name>, dijo el príncipe, sin cesar de admirar el con-<lb/>tinente marcial de
             Joselin.</p>
-          <p rend="indent"><lb/>Este caballero fue hecho prisionero en un combate, y
+          <p rend="indent">
+            <lb/>Este caballero fue hecho prisionero en un combate, y
             habiendo<lb/>Malek-Adhel concebido sospechas de que amaba á Matilde, mil
             vio-<lb/>lentos proyectos asaltaban su imaginacion, y todos le aconsejaban<lb/>á que se
             deshiciese de un rival tan peligroso; por fin resolvió casti-<lb/>gar á Montmorency,
@@ -4201,76 +4365,86 @@
             reales, le dijo, presen-<lb/>taos á vuestros jefes, y decidles queno les teme, puesto
             que tengo,<lb/>atrevimiento para dejar que se reuna á ellos un guerrero de
             vuestra<lb/>nombradía.</p>
-          <p rend="indent"><lb/>Dichas estas palabras y recibiendo Joselin los mensajes de
+          <p rend="indent">
+            <lb/>Dichas estas palabras y recibiendo Joselin los mensajes de
             las<lb/>princesas, marchó al campamento cristiano. Cuando llegó á el,
             se<lb/>encontraban los jefes disponiéndose para el asalto de la ciudad
-            de<lb/>Tolemaida.</p>
-          <p rend="indent"><lb/>Este se efectuó con gran valor por una y otra parte, y cada
+            de<lb/><name>Tolemaida</name>.</p>
+          <p rend="indent">
+            <lb/>Este se efectuó con gran valor por una y otra parte, y cada
             com-<lb/>batiente estaba animado de la mas ardiente fe por su causa. Mont-<lb/>morency
             hizo prodigios de valor, como asimismo todos los jefes<lb/>del ejército. Por fin,
             despues de penosos esfuerzos por parte de los<lb/>sitiadores, la ondeante bandera de la
             cruz se ostentaba en el sitio<lb/>que antes habia ocupado la de la media luna.</p>
-          <p rend="indent"><lb/>En tanto que estos sucesos pasaban en Tolemaida, las princesas<lb/>sufrian en Damieta su
+          <p rend="indent">
+            <lb/>En tanto que estos sucesos pasaban en <name>Tolemaida</name>, las princesas<lb/>sufrian en <name>Damieta</name> su
             cautiverio. Por último, despues de varlas es-<lb/>tipulaciones, ordenó el sultan
             Saladino que Matilde partiese al<lb/>campamento cristiano y Berenguela quedase en
-            rehenes hasta que<lb/>los cristianos le entregasen la ciudad de Tolemaida. Al recibir
+            rehenes hasta que<lb/>los cristianos le entregasen la ciudad de <name>Tolemaida</name>. Al recibir
             el<lb/>príncipe tan funesta órden, se apoderó de él y de Berenguela una<lb/>profunda
             tristeza; esta porque no podia estrechar entre sus brazos<lb/>á su amado esposo, y el
             príncipe por la separacion de Matilde que<lb/>le era tan costosa. En vano rogaron al
             sultan para que revocase sus<lb/>órdenes, pues la partida de Matilde se preparó para el
             sigulente dia.
             <fw type="signaturas">2</fw>
-          
-              <pb n="10" source="Varios_432_10.jpg" facs="varios/Varios_432_10.jpg"/>
-          
-              <fw type="paginaNum">— 10 —</fw>
-          
+
+            <pb n="10" source="Varios_432_10.jpg" facs="varios/Varios_432_10.jpg"/>
+
+            <fw type="paginaNum">— 10 —</fw>
             <lb/>—No, no me marcharé, esclamó en su interior la casta vírgen;<lb/>yo me quedaré y
             que Berenguela viva contenta y feliz al lado del<lb/>esposo que tanto ama.</p>
-          <p rend="indent"><lb/>Decidida su idea, la puso en conocimiento de Berenguela, la<lb/>que no queria consentir tan gran
+          <p rend="indent">
+            <lb/>Decidida su idea, la puso en conocimiento de Berenguela, la<lb/>que no queria consentir tan gran
             sacrificio; pero al fin, vencida<lb/>por los ruegos de Matilde, despues de cambiar los
             vestidos, la reina<lb/>Berenguela con el hábito blanco de Matilde se dispuso á
             marchar.</p>
-          <p rend="indent"><lb/>Llegó, en efecto, el dia determinado para la partida; y Beren-<lb/>guela,
+          <p rend="indent">
+            <lb/>Llegó, en efecto, el dia determinado para la partida; y Beren-<lb/>guela,
             merced á la inocente estratajema de la princesa Matilde,<lb/>pudo, por fin, embarcarse
             sin ser reconocida del encargado de<lb/>su conduccion.</p>
-          <p rend="indent"><lb/>¡ Qué alegría tuvo
+          <p rend="indent">
+            <lb/>¡ Qué alegría tuvo
             Malek-Adhel cuando, dirigiéndose al cuarto<lb/>en que habitaba Berenguela, creyendo que
             esta estaria en él, se<lb/>encontró con la princesa Matilde! ¡Con cuánto amor,
             trasportado<lb/>de gozo, besó la mano que esta le alargaba!</p>
-          <p rend="indent"><lb/>Despues de varias
+          <p rend="indent">
+            <lb/>Despues de varias
             demostraciones afectuosas, le manifestó Ma-<lb/>tilde el voto que habia hecho de ir á
             ver á un santo cenobita que<lb/>tenia su residencia en los áridos desiertos de la
-            Arabia, para que<lb/>este le absolviese de la poca repugnancia con que le miraba á
+            <name>Arabia</name>, para que<lb/>este le absolviese de la poca repugnancia con que le miraba á
             pe-<lb/>sar de la diferencia de religion que ambos profesaban.</p>
-          <p rend="indent"><lb/>Malek-Adhel trató de
+          <p rend="indent">
+            <lb/>Malek-Adhel trató de
             disuadirla de su proyecto, ponderándola<lb/>las dificultades que se oponian á su
             empresa por tener que atrave-<lb/>sar un pais inmenso y abrasador, rodeado de árabes
             homicidas.<lb/>Matilde le responde que Dios no abandona á sus hijos, y que
             la<lb/>defenderá de todos los peligros. La fe ardiente que brillaba en el<lb/>semblante
             de la vírgen convenció á Adhel que aquel momento no<lb/>era á propósito para
             oponerse á su idea.</p>
-          <p rend="indent"><lb/>El príncipe tambien tenia que ausentarse de Damieta para
+          <p rend="indent">
+            <lb/>El príncipe tambien tenia que ausentarse de <name>Damieta</name> para
             reu-<lb/>nir tropas por órden de su hermane Saladino; y dijo á Matilde<lb/>que se
             dispusiera para el dia siguiente que tenia dispuestas sus ga-<lb/>leras para subir
-            juntos el gran rio hasta el Cairo.</p>
-          <p rend="indent"><lb/>Por fin se pusieron en camino, y así llegaron á
+            juntos el gran rio hasta el <name>Cairo</name>.</p>
+          <p rend="indent">
+            <lb/>Por fin se pusieron en camino, y así llegaron á
             dicha ciudad,<lb/>y la princesa mandó llamar secretamente á unos cuantos
             caballeros<lb/>suyos, entre ellos el duque de Glocester; y les dijo la
             peregrinacion<lb/>que tenia que hacer. No bien supieron esto, cuando se
             apresuraron<lb/>á disponer los viveres necesarios para tan arriesgada
             espedicion.</p>
-          <p rend="indent"><lb/>Despues de unos dias de viaje empezaron á entrar en las tin-<lb/>mensas
+          <p rend="indent">
+            <lb/>Despues de unos dias de viaje empezaron á entrar en las tin-<lb/>mensas
             llanuras de arena ardiente, y los viajeros, unos abrasados<lb/>de calor, otros muertos
             de sed, y los mas rendidos de cansancio,<lb/>dieron vista á la gruta de un santo varon
             que en treinta años de<lb/>soledad era aquella la segunda vez que llegaba á sus oidos
             voz hu-<lb/>mana. Adelantóse la princesa, y postrándose á sus pies, esclama:<lb/>¡Oh,
             venerable anciano amparadme! El solitario, asombrado, se
+
               
             <pb n="11" source="Varios_432_11.jpg" facs="varios/Varios_432_11.jpg"/>
-            
+
             <fw type="paginaNum">— 11—</fw>
-          
             <lb/>desvía creyendo que Satanás, bajo la hgura encantadora de aque-<lb/>lla vírgen,
             venia á tentar su castidad. Retírate, la dice con un ter-<lb/>ror religioso: ¿qué
             vienes á buscar aquí? ¡Oh padre! responde la<lb/>princesa, no me despidais, he venido
@@ -4279,12 +4453,14 @@
             de<lb/>quiénes son los guerreros que la acompañan, enciende una resi-<lb/>nosa tea,
             entrando todos en la gruta, y les ofrece una comida fru-<lb/>gal compuesta de los frutos
             silvestres que producia aquella tierra.</p>
-          <p rend="indent"><lb/>En tanto llega la noche, y mientras que los
+          <p rend="indent">
+            <lb/>En tanto llega la noche, y mientras que los
             cristianos hallan<lb/>entre la breña un lecho que la fatiga les hace agradable,
             Matilde<lb/>pide al ermitaño que tenga á bien escucharla, pues deseaba,
             para<lb/>tranquilizar su espíritu, revelarle ciertos secretos que oprimian<lb/>su
             corazon.</p>
-          <p rend="indent"><lb/>Estando Matilde haciendo su confesion al cenobita, se presen-<lb/>tó una
+          <p rend="indent">
+            <lb/>Estando Matilde haciendo su confesion al cenobita, se presen-<lb/>tó una
             horda feroz de beduinos, los cuales ya habian dado la muer-<lb/>te á muchos caballeros
             de la comitiva, y se disponian á cojer á la<lb/>jóven, cuando el ermitaño,
             poniéndose delante de ella con semblan-<lb/>te airado y lleno de un espíritu divino,
@@ -4297,25 +4473,28 @@
             con<lb/>la cimitarra sangrienta, ojos centelleantes y mirada furibunda, aco-<lb/>mete á
             los árabes con un valor increible, haciendo de ellos una es-<lb/>ppantosa matanza, y se
             abre paso hasta llegar á la princesa.</p>
-          <p rend="indent"><lb/>Este era Malek-Adhel.</p>
-          <p rend="indent"><lb/>Entonces sin decir
+          <p rend="indent">
+            <lb/>Este era Malek-Adhel.</p>
+          <p rend="indent">
+            <lb/>Entonces sin decir
             una palabra, coje á Matilde entre sus bra-<lb/>zos, y con una rapidez sin igual se la
             lleva desmayada, la pone so-<lb/>bre un soberbio caballo, se coloca detras de ella, la
             abraza con una<lb/>mano, y huye seguido de unos cuantos guerreros que le
-            acompa-<lb/>ñaron al salir del Cairo (1).</p>
-          <p rend="indent"><lb/>Pero estos, rendidos de la infinita fatiga
+            acompa-<lb/>ñaron al salir del <name>Cairo</name> (1).</p>
+          <p rend="indent">
+            <lb/>Pero estos, rendidos de la infinita fatiga
             y la consternacion que<lb/>sentian por los peligros que les amenazaban, se rebelaron
             contra<lb/>Malek-Adhel, y se negaron á participar de sus infortunios. No
             con-<lb/>tentos con esto, pretendian sacrificar en su furor á la princesa
-            de<lb/>Inglaterra, orígen de tantos maleso. Pero apenas el impetuoso
+            de<lb/><name>Inglaterra</name>, orígen de tantos maleso. Pero apenas el impetuoso
             <note>
-              <p><lb/>(1)  Véase el grabado que va al frente de esta historia.</p>
+              <p>
+                <lb/>(1)  Véase el grabado que va al frente de esta historia.</p>
             </note>
-          
+
             <pb n="12" source="Varios_432_12.jpg" facs="varios/Varios_432_12.jpg"/>
-          
+
             <fw type="paginaNum">— 12—</fw>
-          
             <lb/>Adhel penetró sus designios, cuando sin considerar la desigualdad<lb/>del
             número, se arroja. quita á la princesa de encima del caballo, la<lb/>sostiene con un
             brazo y la defiende con el otro, diciéndoles: deteneos<lb/>temerarios; juro derribar la
@@ -4327,40 +4506,44 @@
             dolorosas escenas;<lb/>nos han abandonado, y quizás el dia de mañana será el de
             nuestra<lb/>muerte. No quisiera que esta nos cogiese sin que antes os digneis<lb/>darme
             el título de esposo vuestro.</p>
-          <p rend="indent"><lb/>Entonces la princesa parece oir una voz secreta que la
+          <p rend="indent">
+            <lb/>Entonces la princesa parece oir una voz secreta que la
             dice que<lb/>así se convertirá el príncipe á la fe de la religion cristiana.</p>
-          <p rend="indent"><lb/>No
+          <p rend="indent">
+            <lb/>No
             escucha ya mas, y cogiéndole las manos, le dijo:<lb/>—Malek-Adhel, yo os amo; aquí.
             donde la naturaleza calla, don-<lb/>de la luna nos alumbra con su débil resplandor,
             donde todos los<lb/>objetos que nos rodean nos sirven de testigos, os juro que no
-            seré<lb/>jamás de otro sino de Dios ó de tí. Dios ha recibido este juramento 
+            seré<lb/>jamás de otro sino de Dios ó de tí. Dios ha recibido este juramento
+ 
             
             <pb n="13" source="Varios_432_13.jpg" facs="varios/Varios_432_13.jpg"/>
-            
+
             <fw type="paginaNum">— 13 —</fw>
-            
             <lb/>en el tribunal de la penitencia, dice: y como si acabara de hacer un<lb/>gran
             esfuerzo reclina su cabeza sobre el pecho del príncipe; que la<lb/>sostiene estasiado y
             casi dudando de lo que acababa de oir.</p>
-          <p rend="indent"><lb/>Por útimo, en medio del lúgubre silencio de
+          <p rend="indent">
+            <lb/>Por útimo, en medio del lúgubre silencio de
             aquellas soleda-<lb/>des se oyó el ruido de una carabana que á pasos precipitados se
             di-<lb/>rigia hácia donde estaban ellos. Eran estos unos guerreros suyos<lb/>que,
             habiéndoles mandado el príncipe que se quedasen á socorrer<lb/>á los cristianos, en
             la refriega de la ermita; despues de hacerlo<lb/>así, iban en su busca. Merced á este
-            socorro pudieron por fin llegar<lb/>al Cairo y librarse ambos de una muerte cierta.</p>
+            socorro pudieron por fin llegar<lb/>al <name>Cairo</name> y librarse ambos de una muerte cierta.</p>
         </div>
-        
         <div type="capitulo" n="4">
-          <head type="titulo_parte"><lb/>CAPITULO I<choice>
+          <head type="titulo_parte">
+            <lb/>CAPITULO I<choice>
               <sic>X</sic>
               <corr>V</corr>
             </choice>.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Llegada de Montmorency.——Partida de este
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Llegada de Montmorency.——Partida de este
             con Matilde al cam-<lb/>po de los cristianos. —Muerte de Montmorency—Llega la
             prin-<lb/>cesa al lado de Ricardo. —Es enviado al lado de Matilde un emi-<lb/>sario de
             parte de Malek-Adhel.—Objeto de este emisario.</head>
-          
-          <p rend="indent"><lb/>Habian llegado al Cairo Matilde y el príncipe, cuando un dia le<lb/>pasaron
+          <p rend="indent">
+            <lb/>Habian llegado al <name>Cairo</name> Matilde y el príncipe, cuando un dia le<lb/>pasaron
             recado á este de que deseaba verse con él un caballero cris-<lb/>tiano. Malek-Adhel
             mandó que le conducieran á su presencia, y le<lb/>dijo luego que se quedó solo con
             él y la princesa:<lb/>—Date á conocer, ilustre héroe, pues que así te debo llamar
@@ -4368,7 +4551,8 @@
             descúbrete ahora. La presencia de la princesa supongo<lb/>nó te contendrá; y de mí,
             ¿qué puedes temer?<lb/>—Mucho, si estuviéramos en el campo de batalla; pero
             nada<lb/>cuando me entrego á tu generosidad.</p>
-          <p rend="indent"><lb/>Al decir estas palabras se quitó el
+          <p rend="indent">
+            <lb/>Al decir estas palabras se quitó el
             casco y pronto reconocieron<lb/>el príncipe y Matilde el noble continente de las
             facciones de Jose-<lb/>line de Montmorency. La princesa al conocerle dió un grito de
             ale-<lb/>gría; pero el príncipe no pudo reprimir un gesto de mal humor,<lb/>porque
@@ -4378,12 +4562,12 @@
             objeto á que vienes.<lb/>—Príncipe, le dijo Joselin, y vos, escelsa Matilde, estadme
             aten-<lb/>tos à lo que os voy á referir. Cuando regresé al campo de los
             cris-<lb/>tianos, como ya sabeis, el ilustre Ricardo y demas soberanos se<lb/>preparaban
-            para el asalto de Tolemaida, que á su parecer debia 
+            para el asalto de <name>Tolemaida</name>, que á su parecer debia
+ 
             
             <pb n="14" source="Varios_432_14.jpg" facs="varios/Varios_432_14.jpg"/>
-            
+
             <fw type="paginaNum">— 14—</fw>
-            
             <lb/>de ser al dia siguiente sin mas dilacion, para no dar lugar á que<lb/>vinieseis
             vos, ilustre Malek-Adhel, al socorro de Mechbut, que<lb/>estaba entonces mandando en
             áquella ciudad en nombre de vues-<lb/>tro augusto hermano. Efectivamente, así lo
@@ -4402,7 +4586,8 @@
             sitio bastante apartado de aquí á mis caba-<lb/>lleros cristianos, me he adelantado
             solo para manifestaros mi reso-<lb/>lución, la que espero no desairareis, ilustre
             príncipe, disponién-<lb/>doos para la partida.</p>
-          <p rend="indent"><lb/>Turbado se quedó este al ver el
+          <p rend="indent">
+            <lb/>Turbado se quedó este al ver el
             motivo de la venida de Joselin,<lb/>pero le acompañaba ensu tristeza Matilde, lo cual,
             observado por<lb/>Montmorency, se volviõ hácia la princesa y la dijo:<lb/>—Pues qué,
             señora, ¿rehusareis, por ventura, el acompañarme<lb/>al campo de vuestro hermano donde
@@ -4417,15 +4602,16 @@
             sacrificio, espero que Dios<lb/>acojerá esta débil prueba qué le ofrezco, porqne
             espero de él que se<lb/>dignará tocar con su mano el grande corazon de
             Malek-Adhel.</p>
-          <p rend="indent"><lb/>El príncipe, conmovido por las tiernas palabras de su
+          <p rend="indent">
+            <lb/>El príncipe, conmovido por las tiernas palabras de su
             adorada<lb/>Matilde, y obligado por una imperiosa necesidad, cual era la de no<lb/>poder
-            permanecer en el Cairo la princesa sin grave esposicion de<lb/>su vida por el encono que
-            la profesaban sus habitantes, se resuel- 
+            permanecer en el <name>Cairo</name> la princesa sin grave esposicion de<lb/>su vida por el encono que
+            la profesaban sus habitantes, se resuel-
+ 
             
               <pb n="15" source="Varios_432_15.jpg" facs="varios/Varios_432_15.jpg"/>
-            
-              <fw type="paginaNum">— 15—</fw>
-            
+
+            <fw type="paginaNum">— 15—</fw>
             <lb/>ve á separarse de ella, y lleno de turbacion se fue á comunicar las<lb/>órdenes
             necesarias para el viaje de la princesa. Despues de unas<lb/>cuantas horas volvió á su
             presencia, y les dijo: Ya está preparada<lb/>la litera en que ha de ir Matilde; y vos,
@@ -4441,32 +4627,35 @@
             como amigo, abandonán-<lb/>dose á nuestro honor con una confianza tan gloriosa para
             él como<lb/>para vosotros; viene á entregarnos al tesoro mas precioso que
             des-<lb/>pues del Sepulcro de Cristo nos han arrebatado las armas maho-<lb/>metanas; nos
-            vuelve á la princesa de Inglaterra... Los gritos de ale-<lb/>gría interrumpieron estas
+            vuelve á la princesa de <name>Inglaterra</name>... Los gritos de ale-<lb/>gría interrumpieron estas
             palabras: todos los caballeros rodearon<lb/>la litera inclinándose respetuosamente, y
             Joselin continuó diciendo:<lb/>despues de haber rendido el primer homenaje á la
             hermana de nues-<lb/>tro gran rey, tributad el segundo á su libertador, á este héroe
             cuyo<lb/>valor teme la cristiandad.</p>
-          <p rend="indent"><lb/>Gozosos los caballeros cristianos de poder
+          <p rend="indent">
+            <lb/>Gozosos los caballeros cristianos de poder
             admirar tan de cerca<lb/>al que con justa causa llamaban el rayo do las batallas y el
             leon de<lb/>los combates, se llegaron alegres á recibir al príncipe, y este
             enter-<lb/>necido por esta prueba de amistad, juró en su interior que en ade-<lb/>lante
             su mano no haria tanto mal en las batallas á los compañeros<lb/>de su querida
             Matilde.</p>
-          <p rend="indent"><lb/>Notando Joselin la tristeza que hacia rato dominaba al príncipe,<lb/>y
+          <p rend="indent">
+            <lb/>Notando Joselin la tristeza que hacia rato dominaba al príncipe,<lb/>y
             juzgando que aquella era una buena ocasion para decidirle que<lb/>se fuese con ellos, le
             dijo:<lb/>—Príncipe, conozco vuestro afecto hácia vuestro hermano, sé<lb/>el cariño
             que él os profesa; pero no obstante, me atrevo á propone-<lb/>ros que si quereis
             veniros ahora con nosotros, os prometo en nom-<lb/>bre del ilustre Ricardo, que la mano
             de Matilde nadie la poseerá si-<lb/>no vos, y estas mil espadas que veis á vuestro
             lado, sostendrán<lb/>lo que os digo.</p>
-          <p rend="indent"><lb/>Así lo juramos, contestaron todos; y el
+          <p rend="indent">
+            <lb/>Así lo juramos, contestaron todos; y el
             principe, vencido por el<lb/>dolor de separarse de Matilde, iba ya á acceder, cuando el
-            árabe<lb/>Kaled que estaba á su lado se inclinó al oido del príncipe, y le di- 
+            árabe<lb/>Kaled que estaba á su lado se inclinó al oido del príncipe, y le di-
+ 
           
               <pb n="16" source="Varios_432_16.jpg" facs="varios/Varios_432_16.jpg"/>
-            
-              <fw type="paginaNum">— 16 —</fw>
-            
+
+            <fw type="paginaNum">— 16 —</fw>
             <lb/>jo: ¡Vacilais, Malek-Adhel! Al momento reconoció este su deber, y <lb/>pensó que
             seria infiel á la amistad de su hermano y perjuro á la <lb/>obligacion que tenia de
             defender su patria; y así es, que despues <lb/>de haberse separado con Matilde á un
@@ -4475,12 +4664,14 @@
             <lb/>mas del jefe de tu Iglesia, podrán obligarte á tomar otro esposo.— <lb/>Yo lo
             juro, respondió ella levantando el rostro anegado en lágri- <lb/>mas: ó de tí ó de
             Dios.</p>
-          <p rend="indent"><lb/>Malk-Adhel la mira, y al querer pronunciar el último adios, se <lb/>le embarga la
+          <p rend="indent">
+            <lb/>Malk-Adhel la mira, y al querer pronunciar el último adios, se <lb/>le embarga la
             lengua, se aparta conmovido de dolor, monta sobre <lb/>el caballo y parte á galope
-            hácia el Cairo, seguido de su amigo Ka- <lb/>led, despues de haber dado las gracias á
+            hácia el <name>Cairo</name>, seguido de su amigo Ka- <lb/>led, despues de haber dado las gracias á
             Joselin y los suyos por sus <lb/>ofrecimientos, y llevar el corazon lacerado con el
             pesar y la amar- <lb/>gura que en tales casos puede conocer un corazon que ama.</p>
-          <p rend="indent"><lb/>Pasáronse algunos dias de viaje, en los cuales Matilde acompa- <lb/>ñada de sus
+          <p rend="indent">
+            <lb/>Pasáronse algunos dias de viaje, en los cuales Matilde acompa- <lb/>ñada de sus
             caballeros, iba triste, pero en parte mitigaba su pena <lb/>con el consuelo de ver á su
             hermano y á la hermosa Berenguela, <lb/>que la estarian esperando. Un dia notaron un
             espeso tropel de gen- <lb/>te, y no dudando de que serian enemigos, presto se pusieron
@@ -4502,12 +4693,12 @@
             el campeon cristiano, se estremece de furor, se pre- <lb/>cipita tras del atrevido
             guerrero, le derriba, va á llevantar su <lb/>brazo para arrancarle la vida, cuando oyó
             que su adversario <lb/>esclamaba: sepulta, Montmorency, tu espada en el seno de <lb/>una
-            mujer. A este nombre el héroe se detiene, le corta las 
+            mujer. A este nombre el héroe se detiene, le corta las
+ 
             
             <pb n="17" source="Varios_432_17.jpg" facs="varios/Varios_432_17.jpg"/>
-            
+
             <fw type="paginaNum">— 17—</fw>
-            
             <lb/>lazadas que atan el casco, y reconoce el semblante y la caballera de <lb/>una
             mujer; era Inés. Apenas se ha puesto de pie, vuelve á agarrar <lb/>la lanza y renueva
             el combate á las voces de: á mí, musulmanes va- <lb/>lientes, y Montmorency es
@@ -4524,17 +4715,20 @@
             vuelto en sí, la dijo en voz baja: ante la presencia del Eter- <lb/>no, adonde voy á
             comparecer, rogaré eternameme por la conver- <lb/>sion de Malek-Adhel; ¡ojalá sea
             cristiano y vos seais dichosa con él! <lb/>dijo: y espiró.</p>
-          <p rend="indent"><lb/>Despues de haber empleado el resto del dia en dar sepultura al <lb/>cadáver, se
+          <p rend="indent">
+            <lb/>Despues de haber empleado el resto del dia en dar sepultura al <lb/>cadáver, se
             pusieron en marcha, y al cabo de dos jornadas de cami- <lb/>no dieron vista á la ciudad
-            de Tolemaida. Inmenso fue el gozo que <lb/>tuvieron los cristianos al ver llegar á su
+            de <name>Tolemaida</name>. Inmenso fue el gozo que <lb/>tuvieron los cristianos al ver llegar á su
             princesa; pero tambien fue <lb/>profundo el dolor que causó la muerte del malogrado
             Montmorency.</p>
-          <p rend="indent"><lb/>Recibida Matilde en la corte de su hermanocon todos los hono- <lb/>res
+          <p rend="indent">
+            <lb/>Recibida Matilde en la corte de su hermanocon todos los hono- <lb/>res
             correspondientes á su clase, los caballeros mas ilustres se hon- <lb/>raban de ser
             admitidos á su presencia, y todos á porfía la prodiga- <lb/>ban su galanteos, pero en
             medio de tantos homenajes yplaceres, <lb/>Matilde indiferente á todo cuañto la rodeaba
             conservaba una triste- <lb/>za que nada podia disipar.</p>
-          <p rend="indent"><lb/>Entretanto, un dia, en una de las fiestas de torneo mas ucidas <lb/>que se habian
+          <p rend="indent">
+            <lb/>Entretanto, un dia, en una de las fiestas de torneo mas ucidas <lb/>que se habian
             dado desde su venida, se presentó de improviso á la <lb/>entrada del palenque un
             árabe montado en un soberbio caballo: <lb/>propone romper lanza contra los dos primeros
             campeones que quie- <lb/>ran dispensarle este honor, y no pide por premio de la victoria
@@ -4546,37 +4740,40 @@
             entrega las riendas de su caballo <lb/>á un escudero, y subiendo las gradas que
             conducen al balcon de <lb/>Matilde, pone una rodilla en tierra se inclina, besa el
             ribete de su <fw type="signaturas">3</fw>
-            
+
             <pb n="18" source="Varios_432_18.jpg" facs="varios/Varios_432_18.jpg"/>
-            
+
             <fw type="paginaNum">— 18—</fw>
-            
             <lb/>vestido, y al levantarse la dice en voz baja: Malek-Adhel se halla en<lb/>Cesárea,
             él es quien me envia á veros, porque no podia vivir en la<lb/>incertidumbre en que
             estaba de vuestra suerte; yo soy Kaled.<lb/>A estas palabras, la jóven enrojece y se
             turba; quiere hablar,<lb/>pero le falta la voz: el árabe se habia ausentado antes que
             ella vol-<lb/>viese en sí.</p>
         </div>
-        
         <div type="capitulo" n="5">
-          <head type="titulo_parte"><lb/>CAPITULO V.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Torneos en el campamento de los
+          <head type="titulo_parte">
+            <lb/>CAPITULO V.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Torneos en el campamento de los
             cristianos.—Asisten á ellos Sa-<lb/>ladino y su hermano.— Triunfa el príncipe en el
             combate que<lb/>tuvo con Lusiñan.—Desesperacion de este.—Entrevista de Ma-<lb/>tilde
             con Malek-Adhel.—El arzobispo de Tiro procura conver-<lb/>tir á Malek-Adhel.—Proyectos
             de Lusiñan.</head>
-          
-          <p rend="indent"><lb/>Grandes fiestas se preparaban en el real de los Cruzados en ce- <lb/>lebridad de
+          <p rend="indent">
+            <lb/>Grandes fiestas se preparaban en el real de los Cruzados en ce- <lb/>lebridad de
             la tregua acordada entre los soberanos de las potencias <lb/>beligerantes, ínterin se
             resolvia la admision de la alianza que Sala- <lb/>dino habia propuesto, y cuya decision
             estaba confiada á un conse- <lb/>jo de obispos.</p>
-          <p rend="indent"><lb/>Entre otras funciones, debia verificarse un magnífico torneo, en <lb/>que los
+          <p rend="indent">
+            <lb/>Entre otras funciones, debia verificarse un magnífico torneo, en <lb/>que los
             principales caballeros deseaban ser premiados por la mano <lb/>de Matilde.</p>
-          <p rend="indent"><lb/>Saladino, y en particular su hermano Adhel, deseosos de pre- <lb/>senciarlo,
+          <p rend="indent">
+            <lb/>Saladino, y en particular su hermano Adhel, deseosos de pre- <lb/>senciarlo,
             enviaron un mensaje á Ricardo, noticiándole que iban á <lb/>ponerse en marcha para su
             campamento.</p>
-          <p rend="indent"><lb/>Efectivamente, seguidos de una corte numerosa, se pusieron en <lb/>camino para
-            Tolemaida: marchaban delante cien caballeros monta- <lb/>dos, cubiertos con vistosos
+          <p rend="indent">
+            <lb/>Efectivamente, seguidos de una corte numerosa, se pusieron en <lb/>camino para
+            <name>Tolemaida</name>: marchaban delante cien caballeros monta- <lb/>dos, cubiertos con vistosos
             penachos y vestidos de ropas recamadas <lb/>de plata y seda; cincuenta guardias de á
             pie, ceñida su frente con <lb/>ricos turbantes, conducian los camellos cargados con las
             tiendas del <lb/>sultan y con los regalos destinados para la futura esposa de Malek-
@@ -4585,12 +4782,12 @@
             llevar á tan grandes héroes. A la terce- <lb/>ra aurora despues de su partida,
             llegaron al campo de los cristia- <lb/>nos, y al momento Ricardo salió á recibirlos
             acompañado única- <lb/>mente de su valor. Agradecido Saladino con esta muestra de
-            urba- <lb/>nidad, le tomó afectuosamente la mano, y le dijo: 
+            urba- <lb/>nidad, le tomó afectuosamente la mano, y le dijo:
+ 
             
             <pb n="19" source="Varios_432_19.jpg" facs="varios/Varios_432_19.jpg"/>
-            
+
             <fw type="paginaNum">— 19—</fw>
-            
             <lb/>—Gran rey, la última vez que nos vimos me manifestaste cuán <lb/>peligroso era
             tenerte por enemigo, y hoy me presentas la dicha que <lb/>se disfrutaria teniéndote por
             amigo. <lb/>—¿No consiente tu corazon el darnos este nombre, ilustre Ricar- <lb/>do?
@@ -4604,16 +4801,18 @@
             con los ojos <lb/>centelleantes de amor y de gloria. <lb/>—Reprime un poco tu valor,
             repuso el rey, y conténtate por ahora <lb/>con ser espectador hasta que los jueces
             determinen abrir el campo.</p>
-          <p rend="indent"><lb/>Llegados al sitio del combate, Saladino se colocó en un
+          <p rend="indent">
+            <lb/>Llegados al sitio del combate, Saladino se colocó en un
             trono <lb/>recamado de plata y púrpura, ondeando sobre su cimera el pendon <lb/>de la
             media luna. Malek-Adhel se sentó en su sitial un poco mas <lb/>bajo que el de su
-            hermano. A este tiempo se presentó la princesa <lb/>de Inglaterra, acompañada de su
+            hermano. A este tiempo se presentó la princesa <lb/>de <name>Inglaterra</name>, acompañada de su
             hermana Berenguela y otros va- <lb/>rios caballeros, entre ellos Lusiñan. Berenguela
             vió á los dos her- <lb/>manos, y despues de echar una mirada de gratitud al príncipe,
             sa- <lb/>ludó afectuosamente á Saladino. A este tiempo sonaron los clarines <lb/>y
             timbales anunciando que se empezaba el combate; al momento <lb/>se vió la liza cubierta
             de infinitos caballeros aspirantes al honor de <lb/>ser premiados por Matilde.</p>
-          <p rend="indent"><lb/>Lusiñan, animado de un valor sin igual, monta en un fogoso <lb/>caballo, levanta
+          <p rend="indent">
+            <lb/>Lusiñan, animado de un valor sin igual, monta en un fogoso <lb/>caballo, levanta
             la lanza y publica el desafio. Al punto se cruzan <lb/>los aceros, se rompen armaduras,
             brillan las chispas, y hombres <lb/>y caballos caen mezclados sobre la arena. Lusiñan
             es el único que <lb/>permanece en pie, y ya iba á recibir el premio de mano de la
@@ -4621,16 +4820,17 @@
             principales guerreros, le propuso el combate. <lb/>—Baja acá, ilustre sultan, le dice
             Lusiñan. que estoy ufano con <lb/>tu desafio: apresúrate, que el ruido de tu caida
             será como el precur- <lb/>sor de la de tu trono.</p>
-          <p rend="indent"><lb/>Saladino tembló de cólera al oir estas palabras. Llegan á las ma- <lb/>nos los
+          <p rend="indent">
+            <lb/>Saladino tembló de cólera al oir estas palabras. Llegan á las ma- <lb/>nos los
             dos guerreros con igual valor y esfuerzo, pasando así un <lb/>gran rato sin que los
             espectadores pudiesen decidir cuál de los dos <lb/>campeones llevaria lo mejor de la
             lid, mientras que ellos admirados <lb/>de hallar tanta resistencia en su contrario,
-            redoblaban la violencia 
+            redoblaban la violencia
+ 
             
             <pb n="20" source="Varios_432_20.jpg" facs="varios/Varios_432_20.jpg"/>
-            
+
             <fw type="paginaNum">— 20—</fw>
-            
             <lb/>y la rapidez de los golpes que se oian sonar con estruendo, pero por <lb/>fin,
             despues de un combate muy recio venció Lusiñan. Ya iba este <lb/>por segunda vez á
             ser premiado, cuando el príncipe se puso de un <lb/>salto dentro de la barrera. Montan
@@ -4641,16 +4841,18 @@
             de la princesa para que le coloque sobre el pecho <lb/>su retrato. ¡Cuán feliz y
             envanecida está Matilde con poder otor- <lb/>gar aquel don á su querido Adhel en
             presencia de tantas naciones <lb/>reunidas!</p>
-          <p rend="indent"><lb/>Antes de ocurrir los sucesos referidos, el arzobispo se habia mar- <lb/>chado al
+          <p rend="indent">
+            <lb/>Antes de ocurrir los sucesos referidos, el arzobispo se habia mar- <lb/>chado al
             encuentro de Malek-Adhel con el objeto de ver si podia ir <lb/>preparando su conversion
             á la religion católica; pero habiéndose di- <lb/>rigido por distinto camino queaquel,
-            llegó á la ciudad de Jafa, don- <lb/>de los infieles, á pesar de la tregua que
+            llegó á la ciudad de <name>Jafa</name>, don- <lb/>de los infieles, á pesar de la tregua que
             suspendió toda hostilidad, <lb/>le detuvieron y pusieron en un calabozo cargado de
             cadenas.</p>
-          <p rend="indent"><lb/>Matilde, deseosa de saber el paradero del arobispo, comunicó <lb/>la
+          <p rend="indent">
+            <lb/>Matilde, deseosa de saber el paradero del arobispo, comunicó <lb/>la
             marcha de este, en una entrevista, á Malek-Adhel, y le con- <lb/>fió á este sus
             temores. El príncipe, que era ya sabedor de este suce- <lb/>so, deseoso de complacerla,
-            se dirigió á Jafa, y habiendo llegado <lb/>allí fue á abrir las puertas del calabozo
+            se dirigió á <name>Jafa</name>, y habiendo llegado <lb/>allí fue á abrir las puertas del calabozo
             en que estaba cautivo el ar- <lb/>zobispo. Este, viendo al príncipe; le dijo qué
             objeto tenia su visita. <lb/>El príncipe le contestó que venia para libertarlo. El
             arzobispo, vien- <lb/>do su generosidad, probó á ver si movia aquel corazon inflexible
@@ -4658,7 +4860,8 @@
             hizo, no insistió. El príncipe, fiel á la amistad que profesaba <lb/>á su hermano,
             no quiso descontentar á este, aun á precio de su <lb/>amor, sin embargo que la luz
             divina empezaba á nacer en su corazon.</p>
-          <p rend="indent"><lb/>Mientras tanto la junta de obispos no habia
+          <p rend="indent">
+            <lb/>Mientras tanto la junta de obispos no habia
             tenido el resultado <lb/>que se esperaba: así es que concluyó la tregua, y Saladino
             prepara- <lb/>ba sus fuerzas y fortificaba á Cesárea, donde pronto habia de repre-
             <lb/>sentarse una escena bastante sangrienta. Esta escena era el gran <lb/>sitio que los
@@ -4666,18 +4869,19 @@
             aquella época, y cuya adquisicion era su- <lb/>mamente interesante para conseguir la
             deseada conquista de los <lb/>Santos Lugares.</p>
         </div>
-        
+
         <pb n="21" source="Varios_432_21.jpg" facs="varios/Varios_432_21.jpg"/>
-        
+
         <fw type="paginaNum">— 21—</fw>
-        
         <div type="capitulo" n="6">
-          <head type="titulo_parte" rend="negrita"><lb/>CAPITULO VI.</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>Perfidia de Lusiñan.—Batalla de
+          <head type="titulo_parte" rend="negrita">
+            <lb/>CAPITULO VI.</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>Perfidia de Lusiñan.—Batalla de
             Cesárea.—Lucha entre Malek-<lb/>Adhel y Lusiñan.—Asesinato de Malek-Adhel á manos de
             un<lb/>criminal.—Concluye Matilde sus dias en el Monte Carmelo.</head>
-          
-          <p rend="indent"><lb/>En las llanuras de Ascalon supo ricardo que Malek-Adhel ha- <lb/>bia vuelto á
+          <p rend="indent">
+            <lb/>En las llanuras de <name>Ascalon</name> supo ricardo que Malek-Adhel ha- <lb/>bia vuelto á
             tomar el mando de los ejércitos de su hermano, y que <lb/>los sarracenos se aprestaban
             á presentar la batalla. Al punto orde- <lb/>na á Lusiñan que se reuna á él con
             todas sus fuerzas, y siguen la <lb/>marcha hasta poner el campamento frente de los
@@ -4691,9 +4895,11 @@
             siempre junto á mí: si me alejo con él nos segui- <lb/>rás: si logro la victoria,
             permanecerás tranquilo; pero si caigo ó <lb/>muero cuento con tu fidelidad, y te
             repito que no permitas que me <lb/>sobreviva.</p>
-          <p rend="indent"><lb/>El escudero se lo prometió, y entonces Lusiñan quedó mas tran- <lb/>quilo sin
+          <p rend="indent">
+            <lb/>El escudero se lo prometió, y entonces Lusiñan quedó mas tran- <lb/>quilo sin
             temer ya las contingencias de un combate.</p>
-          <p rend="indent"><lb/>Llegó, por fin, el dia de la batalla, y
+          <p rend="indent">
+            <lb/>Llegó, por fin, el dia de la batalla, y
             Ricardo condujo sus tro- <lb/>pas á la vista de los muros de Cesárea. No hallamos
             voces para es- <lb/>presar el horror de la sangre, tanto cristiana como musulmana, que
             <lb/>regaron los campos de esta invicta ciudad. Hasta los obispos con co- <lb/>raza se
@@ -4703,12 +4909,12 @@
             punto de acosar- <lb/>la, cuando un confuso rumor de voces y gritos comunicaron la
             llega- <lb/>da de Malek-Adhel, y mientras que su hermano mandaba el grueso <lb/>del
             ejército, y Kaled la linea derecha, se puso él como un rayo al <lb/>lado de la linea
-            izquierda que se desalentaba acosada por Ricardo 
+            izquierda que se desalentaba acosada por Ricardo
+ 
             
               <pb n="22" source="Varios_432_22.jpg" facs="varios/Varios_432_22.jpg"/>
-            
-              <fw type="paginaNum">— 22—</fw>
-            
+
+            <fw type="paginaNum">— 22—</fw>
             <lb/>y Lusiñan. Pronto echó este de ver la presencia del príncipe; le <lb/>llama á
             grandes voces provocándole á un combate particular. El <lb/>héroe oye el desafio de
             Lusiñan, pero no le responde, porque se ha <lb/>propuesto evitar toda querella
@@ -4722,7 +4928,8 @@
             detrás de un peñasco que <lb/>los oculta de la vista de todos, Malek-Adhel arroja
             lejos de sí el es- <lb/>cudo, y dice á su contrario que se despoje tambien del suyo
             para <lb/>acelerar así el instante en que el uno cese de aborrecer al otro.</p>
-          <p rend="indent"><lb/>Lusiñan le imita dejando el escudo: sacan las espadas y princi- <lb/>pian el
+          <p rend="indent">
+            <lb/>Lusiñan le imita dejando el escudo: sacan las espadas y princi- <lb/>pian el
             combate. Jamás ha manifestado Lusiñan tanto valor ni ha <lb/>tenido tanta confianza en
             vencer por ver herido á su contrario; pe- <lb/>ro Malek-Adhel, en vez de desmayar
             redobla su esfuerzo, y asiendo <lb/>la espada con ambas manos descarga con ella tan
@@ -4742,20 +4949,22 @@
             <lb/>Malek-Adhel, sorprendido, se vuelve para vengarse, pero debilitado <lb/>por sus
             heridas, cierra los ojos, pronuncia todavía con voz moribun- <lb/>da el nombre de
             Matilde y cae tendido al suelo que baña con su <lb/>sangre.</p>
-          <p rend="indent"><lb/>El escudero de Lusiñan, horrorizado él mismo de aquel espec- <lb/>táculo, no
+          <p rend="indent">
+            <lb/>El escudero de Lusiñan, horrorizado él mismo de aquel espec- <lb/>táculo, no
             puede creer que haya sido víctima suya un guerrero tan <lb/>célebre; le estremece la
             sombra de Malek-Adhel; desea alejarse de <lb/>aquel sitio espantoso, pero quiere
-            llevarse el cuerpo de su amo, y 
+            llevarse el cuerpo de su amo, y
+ 
             
             <pb n="23" source="Varios_432_23.jpg" facs="varios/Varios_432_23.jpg"/>
-            
+
             <fw type="paginaNum">— 23 ——</fw>
-            
             <lb/>sus fuerzas no son suficientes: Percibe en lo escarpado de las ro- <lb/>cas un
             pastor que aterrado con el estruendo de la batalla se habia <lb/>refugiado allí; le
             llama y le obliga á que le ayude á trasportar al <lb/>campamento cristiano el cuerpo
             de Lusiñan.</p>
-          <p rend="indent"><lb/>Llegan, por fin, al campo, le conducen á su tienda, donde to- <lb/>dos acudieron
+          <p rend="indent">
+            <lb/>Llegan, por fin, al campo, le conducen á su tienda, donde to- <lb/>dos acudieron
             á suministrarle los socorros de la medicina y de la <lb/>Iglesia. La piadosa Matilde,
             olvidando los justos resentimientos que <lb/>contra él abrigaba, entra tambien
             presurosa en la tienda acompa- <lb/>ñada del venerable Guillermo, y ella misma con sus
@@ -4781,18 +4990,19 @@
             asesino nos guiará por los vestigios san- <lb/>grientos por donde ha venido.— Partamos,
             dice el arzobispo; y co- <lb/>giendo algunos simples propios para las heridas, emprenden
             el ca- <lb/>mino, precedidos por el escudero.</p>
-          <p rend="indent"><lb/>Todos tres iban agitados bajo diferentes sensaciones. El arzobis- <lb/>po, dechado
+          <p rend="indent">
+            <lb/>Todos tres iban agitados bajo diferentes sensaciones. El arzobis- <lb/>po, dechado
             de caridad, andaba animoso por ver si llegaba á tiem- <lb/>po para salvar la heróica
             alma por la cual tantas veces habia pedi- <lb/>do á Dios su conversion La vírgen,
             animada tambien por el mismo <lb/>celo, pero al propio tiempo temerosa de perder el
             objeto de su amor; <lb/>y, por último, el escudero, punzado por el penetrante aguijon
             de <lb/>los remordimientos, caminaba tambien ligero, deseoso de reparar, <lb/>en cuanto
-            le fuese posible, el mal que habia causado. Llegaron por 
+            le fuese posible, el mal que habia causado. Llegaron por
+ 
             
             <pb n="24" source="Varios_432_24.jpg" facs="varios/Varios_432_24.jpg"/>
-            
+
             <fw type="paginaNum">— 24—</fw>
-            
             <lb/>fin al sitio fatal. La vírgen, así que descubrió el cuerpo de su ama- <lb/>do,
             corrió presurosa, y con los ojos bañados en lágrimas se preci- <lb/>pita y arrodilla
             junto á él; pone una mano trémula sobre su cora- <lb/>zon y permanece algunos minutos
@@ -4803,7 +5013,8 @@
             ocupaba en esto, el arzobispo piensa en otro <lb/>deber mayor; al pie de las rocas habia
             oido murmurar un arroyo; <lb/>coje presuroso el ensangrentado casco del príncipe y se
             fue á lle- <lb/>narle de agua para bautizar, por fin, á aquella alma heróica. </p>
-          <p rend="indent"><lb/>El príncipe oyó la voz de la vírgen, que tanta influencia tenia <lb/>sobre él,
+          <p rend="indent">
+            <lb/>El príncipe oyó la voz de la vírgen, que tanta influencia tenia <lb/>sobre él,
             y empezó á entreabrir los ojos.—Hijo mio, le dijo el arzo- <lb/>bispo al ver que
             volvia en sí: hijo mio, consagra tus últimos pensa <lb/>mientos hácia un Dios
             sumamente bueno, y hazte digno de ir á su <lb/>lado.—Sí, amado mio, esclamó la
@@ -4817,15 +5028,15 @@
             amor, á vosotros <lb/>me entrego; adios, Matilde, que voy á esperarte. Entonces el ar-
             <lb/>zobispo, cogiendo la mano del príncipe y la de Matilde las unió <lb/>diciendo:
             Esposos cristianos, se el uno del otro.</p>
-          <p rend="indent"><lb/>Pocos dias despues, la vírgen, seguida del
+          <p rend="indent">
+            <lb/>Pocos dias despues, la vírgen, seguida del
             arzobispo, fue adon- <lb/>de estaba Saladino, y le pidió el cuerpo de su esposo. Este,
             á pe- <lb/>sar de lo que amaba á su hermano, no tuvo valor para negar á la
             <lb/>hermosa Matilde lo que solicitaba, y enternecido la dijo: llustre Ma- <lb/>tilde,
             ya que ha sido tuyo en vida, y aun despues de muerto, mi <lb/>querido hermano,
             llévatelo consigo.—Llegó, por fin, siguiendo el <lb/>fúnebre ataud, á la cima del
-            Monte Carmelo, seguida de Ricardo, <lb/>Berenguela y muchos caballeros, donde profesó
+            <name>Monte Carmelo</name>, seguida de Ricardo, <lb/>Berenguela y muchos caballeros, donde profesó
             á vista de todos <lb/>para no volver al mundo, del que nada tenia ya que esperar.</p>
-          
           <trailer>FIN.</trailer>
         </div>
       </div>

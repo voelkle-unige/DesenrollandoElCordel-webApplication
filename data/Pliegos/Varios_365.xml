@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +111,20 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q165090">
+            <placeName key="Chambéry">Chambéry</placeName>
+            <location>
+              <geo>45.566388888889 5.9208333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +160,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-06" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1246,18 +1274,20 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_365_1.jpg" facs="varios/Varios_365_1.jpg"/>
 
         <fw type="impresorNum">(Núm. 113.)</fw>
-
         <div type="parte" n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>LA GRAN LOTERIA.</head>
-          <head type="subtitulo" rend="negrita"><lb/>NUEVO MÉTODO<lb/>para que todas las mujeres que
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA GRAN LOTERIA.</head>
+          <head type="subtitulo" rend="negrita">
+            <lb/>NUEVO MÉTODO<lb/>para que todas las mujeres que
             se hallen em es<lb/>tado de merecer se casen muy á su gusto en el<lb/> término de un
             año</head>
-
           <lg>
-            <head type="titulo_estrofa" rend="negrita"><lb/>ATENCION.</head>
+            <head type="titulo_estrofa" rend="negrita">
+              <lb/>ATENCION.</head>
             <l rend="indent">Venid, venid, mujeres,</l>
             <l>venid todas acá,</l>
             <l>viuditas y solteras,</l>
@@ -1280,7 +1310,8 @@
             <l>que el juego empieza ya.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 1.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 1.</head>
             <l rend="indent">Me llaman Ana Palmera,</l>
             <l>y por mi mucha estatura</l>
             <l>no hallo un hombre que me quiera</l>
@@ -1291,8 +1322,9 @@
             <l>por su digna compañera.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 2.</head>
-            <l rend="indent">Tuve un novio en Chamberi</l>
+            <head type="titulo_estrofa">
+              <lb/>N.° 2.</head>
+            <l rend="indent">Tuve un novio en <name>Chamberi</name></l>
             <l>que se moria por mí,</l>
             <l>pero se ausentó y no ha escrito:</l>
             <l>habrá muerto el pobrecito,</l>
@@ -1305,7 +1337,8 @@
           <pb n="2" source="Varios_365_2.jpg" facs="varios/Varios_365_2.jpg"/>
 
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 3.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 3.</head>
             <l rend="indent">Sirvo á don Miguel Moflete,</l>
             <l>pero ya estoy despedida</l>
             <l>por no dejar plato á vida;</l>
@@ -1315,7 +1348,8 @@
             <l>admítelo pronto, y vete.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 4.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 4.</head>
             <l rend="indent">Sé que para ser casada</l>
             <l>hace falta gran paciencia.</l>
             <l>—Para afirmar tu creencia</l>
@@ -1324,7 +1358,8 @@
             <l>llevarás con excelencia.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 5.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 5.</head>
             <l rend="indent">Desde que enviudé, mi llanto</l>
             <l>no he conseguido enjugar;</l>
             <l>¿quién me podrá consolar..?</l>
@@ -1332,7 +1367,8 @@
             <l>que gime por otro tanto.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 6.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 6.</head>
             <l rend="indent">Antes que un hombre grosero,</l>
             <l>quedar soltera prefiero.</l>
             <l>—Llévate á don Luis Vitela,</l>
@@ -1342,7 +1378,8 @@
             <l>y en dulces para su <hi rend="cursiva">abuela</hi>.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 7.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 7.</head>
             <l rend="indent">No es mi empeño ser amada,</l>
             <l>y si infiel fuese mi esposo,</l>
             <l>no perderé yo el reposo</l>
@@ -1353,7 +1390,8 @@
             <l>que le gustan todas ellas.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 8.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 8.</head>
             <l rend="indent">Empecé por aguadora,</l>
             <l>pero me dí tanta maña,</l>
             <l>que ya soy grande de España.</l>
@@ -1363,7 +1401,8 @@
             <l>el título de marqués.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 9.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 9.</head>
             <l rend="indent">Aunque no soy callejera,</l>
             <l>si mi marido consiente,</l>
             <l>iré á misa diariamente.</l>
@@ -1372,7 +1411,8 @@
             <l>que en su casa es forastero.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 10.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 10.</head>
             <l rend="indent">Lo que es mi perrita negra,</l>
             <l>yo por nadie he de dejar.</l>
             <l>—Ahí tienes á don Gaspar,</l>
@@ -1380,7 +1420,8 @@
             <l>¡y á tí te quiere aguantar!!!</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 11.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 11.</head>
             <l rend="indent">Como los hombres son bobos,</l>
             <l>con mi dengue zalamero</l>
             <l>engancho á todo el que quiero.</l>
@@ -1390,7 +1431,8 @@
             <l>¿te acomoda este avestruz?</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 12.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 12.</head>
             <l rend="indent">Aborrezco el fingimiento,</l>
             <l>y así mi cara mitad</l>
             <l>ha de decirme verdad,</l>
@@ -1404,7 +1446,8 @@
           <pb n="3" source="Varios_365_3.jpg" facs="varios/Varios_365_3.jpg"/>
 
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 13.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 13.</head>
             <l rend="indent">No quiero gallo, porque un pollito</l>
             <l>será mas fácil de manejar.</l>
             <l>—Tambien es fácil eche á volar:</l>
@@ -1412,7 +1455,8 @@
             <l>que á tres pollitas quiere engañar.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 14.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 14.</head>
             <l rend="indent">Fuí bailarina famosa,</l>
             <l>y hoy soy marquesa del Viento.</l>
             <l>—Voy á casarte al momento</l>
@@ -1421,14 +1465,16 @@
             <l>y jura como un sargento.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 15.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 15.</head>
             <l rend="indent">Económica y activa,</l>
             <l>trabajo como una hormiga.</l>
             <l>—Por eso á este buen maulon</l>
             <l>pescarás sin dilacion.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 16.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 16.</head>
             <l rend="indent">Me llamo doña <hi rend="cursiva">Eminencia</hi>,</l>
             <l>y he publicado un escrito,</l>
             <l>que explica la impertinencia</l>
@@ -1440,7 +1486,8 @@
             <l>tu talento estraordinario.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 17.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 17.</head>
             <l rend="indent">Aun paso yo por hermosa...</l>
             <l>¡el artificio es gran cosa!</l>
             <l>—Mi amigo don Cuchiflate</l>
@@ -1449,7 +1496,8 @@
             <l>en su gran escaparate.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 18.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 18.</head>
             <l rend="indent">Cuando canto las rondeñas</l>
             <l>ablando á las mismas peñas.</l>
             <l>—Veré si ablanda tu encanto</l>
@@ -1457,7 +1505,8 @@
             <l>que es catalan, por mas señas.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 19.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 19.</head>
             <l rend="indent">Busco un esposo cualqulera</l>
             <l>por no quedarme soltera.</l>
             <l>—Carga con esta carcoma,</l>
@@ -1465,7 +1514,8 @@
             <l>halla mujer que le quiera.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 20.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 20.</head>
             <l rend="indent">El hablar es mi comida,</l>
             <l>puesno callo, ni aun dormida,</l>
             <l>—Para hallarte novio sudo,</l>
@@ -1474,14 +1524,16 @@
             <l>con este, que es sordo-mudo.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 21.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 21.</head>
             <l rend="indent">En misas y en jubileo,</l>
             <l>siempre hallé á don Amadeo.</l>
             <l>—Y hoy te pide por lo visto</l>
             <l>este buen hermano en Cristo.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 22.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 22.</head>
             <l rend="indent">Porque reparen en mí</l>
             <l>hasta he llegado á idear</l>
             <l>en el peinado llevar</l>
@@ -1493,7 +1545,8 @@
             <l>y hace cien mil tonterías.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 23.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 23.</head>
             <l rend="indent">A San Antonio le ruego</l>
             <l>que me case con Simon.</l>
             <l>—Cásate con él, y luego,</l>
@@ -1502,7 +1555,8 @@
             <l>el acto de contricion.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 24.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 24.</head>
             <l rend="indent">Consiste mi garabato</l>
             <l>en fingir juicio y recato.</l>
             <l>—Por eso llama á tu puerta</l>
@@ -1513,7 +1567,8 @@
           <pb n="4" source="Varios_365_4.jpg" facs="varios/Varios_365_4.jpg"/>
 
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 25.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 25.</head>
             <l rend="indent">Un hombre franco para mí no es</l>
             <l>que le quiero político y cortés.</l>
             <l>—Te uno á don Trinidad,</l>
@@ -1522,7 +1577,8 @@
             <l>es rebajarles la edad.</l>
           </lg>
           <lg>
-            <head type="titulo_estrofa"><lb/>N.° 26.</head>
+            <head type="titulo_estrofa">
+              <lb/>N.° 26.</head>
             <l rend="indent">En todo, en todo aseguro</l>
             <l>me gusta el claro y oscuro.</l>
             <l>—Entonces, por esa cuenta,</l>
@@ -1551,7 +1607,8 @@
             <l>otro medio no hallé</l>
             <l>que acudir á los polvos,</l>
             <l>cuya virtud sabeis;</l>
-            <l>y al gran <hi rend="cursiva">Birli-Birloque</hi></l>
+            <l>y al gran <hi rend="cursiva">Birli-Birloque</hi>
+            </l>
             <l>en mi auxilio llamé,</l>
             <l rend="indent">Este empleó su arte</l>
             <l>para hacerse entender,</l>
@@ -1578,9 +1635,9 @@
             <l>el juego de esta eterna lotería.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.—Despacho: Sucesores de Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID.—Despacho: Sucesores de Hernando, Arenal, 11.</p>
         </div>
       </div>
     </body>

@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -99,6 +114,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="3" corresp="Q597">
+            <placeName key="Lisboa">Lisboa</placeName>
+            <location>
+              <geo>38.708042 -9.139016</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -134,8 +157,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-20" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -2698,15 +2720,18 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_405_1.jpg" facs="varios/Varios_405_1.jpg"/>
 
         <fw type="impresorNum">(Número 3.)</fw>
-
         <div type="parte" n="1">
-          <head type="primer_titulo"><lb/>NUEVA Y CURIOSA RELACION<lb/><hi rend="negrita">DE LA
-              PEREGRINA DOCTORA</hi></head>
-          <head type="titulo_parte" rend="negrita"><lb/>PRIMERA PARTE</head>
-
+          <head type="primer_titulo">
+            <lb/>NUEVA Y CURIOSA RELACION<lb/>
+            <hi rend="negrita">DE LA
+              PEREGRINA DOCTORA</hi>
+          </head>
+          <head type="titulo_parte" rend="negrita">
+            <lb/>PRIMERA PARTE</head>
           <l rend="indent">Soberana luz brillante,</l>
           <l>Madre del divino Verbo,</l>
           <l>amparo de pecadores,</l>
@@ -2715,7 +2740,7 @@
           <l>que si la logro pretendo</l>
           <l>contar un caso admirable</l>
           <l>de los muchos que habeis hecho.</l>
-          <l rend="indent">En la ciudad de Lisboa</l>
+          <l rend="indent">En la ciudad de <name>Lisboa</name></l>
           <l>y en su lusitano pueblo,</l>
           <l>vivía un gran potentado</l>
           <l>tan noble y tan caballero,</l>
@@ -2735,7 +2760,6 @@
           <pb n="2" source="Varios_405_2.jpg" facs="varios/Varios_405_2.jpg"/>
 
           <fw type="paginaNum">— 2</fw>
-
           <l>tan discreta y tan bizarra</l>
           <l>que si á Vénus eligieron</l>
           <l>por Diosa de la hermosura</l>
@@ -2831,7 +2855,6 @@
           <pb n="3" source="Varios_405_3.jpg" facs="varios/Varios_405_3.jpg"/>
 
           <fw type="paginaNum">— 3 —</fw>
-
           <l>mas antes que lo ejecute</l>
           <l>yo quiero poner remedio.</l>
           <l>Mandó al punto que viniesen</l>
@@ -2926,7 +2949,6 @@
           <pb n="4" source="Varios_405_4.jpg" facs="varios/Varios_405_4.jpg"/>
 
           <fw type="paginaNum">— 4 —</fw>
-
           <l>Doña Inés á Federico</l>
           <l>le llevó un vestido nuevo,</l>
           <l>un caballo enjaezado,</l>
@@ -3021,7 +3043,6 @@
           <pb n="5" source="Varios_405_5.jpg" facs="varios/Varios_405_5.jpg"/>
 
           <fw type="paginaNum">— 5 —</fw>
-
           <l>que ya vendré á visitarte,</l>
           <l>aunque yo nunca te dejo;</l>
           <l>un leon te ha de traer</l>
@@ -3039,10 +3060,9 @@
           <l>á todo oyente, el relato</l>
           <l>del suceso verdadero.</l>
         </div>
-
         <div type="parte" n="2">
-          <head type="titulo_parte"><lb/>SEGUNDA PARTE</head>
-
+          <head type="titulo_parte">
+            <lb/>SEGUNDA PARTE</head>
           <l rend="indent">Vamos ahora á los cuatro</l>
           <l>que se quedaron riñendo,</l>
           <l>que entre los tres dieron muerte</l>
@@ -3107,7 +3127,6 @@
           <pb n="6" source="Varios_405_6.jpg" facs="varios/Varios_405_6.jpg"/>
 
           <fw type="paginaNum">— 6 —</fw>
-
           <l>Vamos á don Federico,</l>
           <l>que preguntó a los monteros</l>
           <l>si es verdad que la mataron,</l>
@@ -3184,7 +3203,7 @@
           <l>como bajado del cielo;</l>
           <l>quedándose doña Inés</l>
           <l>convertida en pasajero,</l>
-          <l>camino que va á Lisboa,</l>
+          <l>camino que va á <name>Lisboa</name>,</l>
           <l>con su báculo y sombrero,</l>
           <l>y peregrinando llega</l>
           <l>á la córte en breve tiempo,</l>
@@ -3202,7 +3221,6 @@
           <pb n="7" source="Varios_405_7.jpg" facs="varios/Varios_405_7.jpg"/>
 
           <fw type="paginaNum">— 7 —</fw>
-
           <l>Va la nueva al general</l>
           <l>don Alejandro Sarmiento,</l>
           <l>que estaba ya desahuciado</l>
@@ -3297,7 +3315,6 @@
           <pb n="8" source="Varios_405_8.jpg" facs="varios/Varios_405_8.jpg"/>
 
           <fw type="paginaNum">— 8—</fw>
-
           <l>viendo que era todo uno,</l>
           <l>se abrasó en vivos incendios,</l>
           <l>la dice:—Señora mia,</l>
@@ -3324,7 +3341,7 @@
           <l>y parientes que acudieron,</l>
           <l>que en el palacio no caben,</l>
           <l>sabiendo aqueste suceso.</l>
-          <l>En la ciudad de Lisboa</l>
+          <l>En la ciudad de <name>Lisboa</name></l>
           <l>hacen fiestas y torneos,</l>
           <l>toros y juegos de cañas,</l>
           <l>comedias y pasatiempos.</l>
@@ -3350,12 +3367,11 @@
           <l>poniendo al demonio freno,</l>
           <l>que siendo devota suya</l>
           <l>no la abandonó un momento.</l>
-
           <trailer>FIN.</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.—Despacho: Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID.—Despacho: Hernando, Arenal, 11.</p>
         </div>
       </div>
     </body>

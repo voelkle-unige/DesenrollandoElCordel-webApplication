@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="1"/>1 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="1"/>1 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -87,6 +102,32 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="4" corresp="Q686362">
+            <placeName key="Sierra_Morena">Sierra Morena</placeName>
+            <location>
+              <geo>38.3 -5.4</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5783">
+            <placeName key="Andalucía">Andalucía</placeName>
+            <location>
+              <geo>37.405 -5.9875</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q24022058">
+            <placeName key="Melilla">Melilla</placeName>
+            <location>
+              <geo>35.29187 -2.9409</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1419892">
+            <placeName key="Paseo_de_Gracia">Paseo De Gracia</placeName>
+            <location>
+              <geo>41.393044444444 2.1637861111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -122,8 +163,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-07" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-07" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -607,12 +647,14 @@
   <text>
     <body>
       <div>
-        <pb n="1" source="Varios_193_1.jpg" facs="varios/Varios_193_1.jpg"/>
-        <div>
-          <head type="primer_titulo" rend="negrita"><lb/>José Maria 'EL TEMPRANILLO'</head>
 
+        <pb n="1" source="Varios_193_1.jpg" facs="varios/Varios_193_1.jpg"/>
+
+        <div>
+          <head type="primer_titulo" rend="negrita">
+            <lb/>José Maria 'EL TEMPRANILLO'</head>
           <lg>
-            <l rend="indent">De allá de Sierra Morena</l>
+            <l rend="indent">De allá de <name>Sierra Morena</name></l>
             <l>venimos a saludar</l>
             <l>al Señor Gobernador</l>
             <l>de esta hermosa Capital.</l>
@@ -624,7 +666,7 @@
             <l>y a todo el Ayuntamiento.</l>
           </lg>
           <lg>
-            <l rend="indent">Venimos de Sierra Morena</l>
+            <l rend="indent">Venimos de <name>Sierra Morena</name></l>
             <l>con las mantas jerezanas</l>
             <l>a hacerle la cortesia</l>
             <l>a estas bellas catalanas.</l>
@@ -643,7 +685,7 @@
           </lg>
           <lg>
             <l rend="indent">El primer robo fué</l>
-            <l>a la entrada de Andalucia</l>
+            <l>a la entrada de <name>Andalucia</name></l>
             <l>vimos venir al Marqués</l>
             <l>que dentro del coche venía</l>
             <l>alto a José María</l>
@@ -667,7 +709,7 @@
             <l rend="indent">Si alguno se resiste</l>
             <l>en soltar la calderilla</l>
             <l>que los trabucos parezcan</l>
-            <l>los canones de Melilla.</l>
+            <l>los canones de <name>Melilla</name>.</l>
           </lg>
           <lg>
             <l rend="indent">Soy un celebre bandido</l>
@@ -703,7 +745,7 @@
             <l>si el público me permite</l>
             <l>un caso le voy a contar.</l>
             <l rend="indent">Al señor de Macandito</l>
-            <l>en el Paseo de Gracia</l>
+            <l>en el <name>Paseo de Gracia</name></l>
             <l>lo quisieron detener</l>
             <l>metió mano a su hocacha</l>
             <l>somos dos de compañeros</l>

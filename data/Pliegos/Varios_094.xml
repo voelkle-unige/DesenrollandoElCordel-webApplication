@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve">Cancion nueva a mi hermosa Elvira.</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_392.xml">Varios_392</ref></p>
+            <p>Otra impresión: <ref target="Varios_392.xml">Varios_392</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Antonio Llorens</publisher>
@@ -65,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -96,6 +112,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q115313">
+            <placeName key="Cofrentes">Cofrentes</placeName>
+            <location>
+              <geo>39.229722222222 -1.0613888888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -131,8 +155,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-07-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-07-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1120,13 +1143,17 @@
       <div>
         <div>
           <div n="1">
+
             <pb n="1" source="Varios_094_1.jpg" facs="varios/Varios_094_1.jpg"/>
 
-            <head type="primer_titulo"><lb/>CANCION NUEVA<lb/>A MI<lb/><hi rend="negrita">HERMOSA
-                ELVIRA.</hi><lb/>PARA CANTARSE CON GUITARRA.</head>
-
+            <head type="primer_titulo">
+              <lb/>CANCION NUEVA<lb/>A MI<lb/>
+              <hi rend="negrita">HERMOSA
+                ELVIRA.</hi>
+              <lb/>PARA CANTARSE CON GUITARRA.</head>
             <lg>
-              <head type="titulo_estrofa"><lb/>1.</head>
+              <head type="titulo_estrofa">
+                <lb/>1.</head>
               <l rend="indent">Bella Elvira, dueño mio,</l>
               <l>tierno hechizo, dulce bien,</l>
               <l>princesa de mi alvedrío,</l>
@@ -1140,9 +1167,9 @@
               <l>en la llama</l>
               <l>de tu amor.</l>
             </lg>
-
             <lg>
-              <head type="titulo_estrofa"><lb/>2.ª</head>
+              <head type="titulo_estrofa">
+                <lb/>2.ª</head>
               <l rend="indent">Oye, Elvira, atiende, deja</l>
               <l>que en tus ojos me embelese,</l>
               <l>no los vuelves, ay! no, deja</l>
@@ -1156,10 +1183,12 @@
               <l>de la aurora</l>
               <l>el arrebol.</l>
             </lg>
+
             <pb n="2" source="Varios_094_2.jpg" facs="varios/Varios_094_2.jpg"/>
 
             <lg>
-              <head type="titulo_estrofa"><lb/>3.ª</head>
+              <head type="titulo_estrofa">
+                <lb/>3.ª</head>
               <l rend="indent">Esos brazos dame, hermosa,</l>
               <l>deja que contra mi pecho</l>
               <l>esa pasion ardorosa</l>
@@ -1173,9 +1202,9 @@
               <l>mis cuidados</l>
               <l>te diré.</l>
             </lg>
-
             <lg>
-              <head type="titulo_estrofa"><lb/>4.ª</head>
+              <head type="titulo_estrofa">
+                <lb/>4.ª</head>
               <l rend="indent">Oh! tus lábios cuan hermosos</l>
               <l>sonrosados, tentadores,</l>
               <l>pequenitos, vaporosos,</l>
@@ -1189,9 +1218,9 @@
               <l>dáme ciento,</l>
               <l>dáme mil.</l>
             </lg>
-
             <lg>
-              <head type="titulo_estrofa"><lb/>5.ª</head>
+              <head type="titulo_estrofa">
+                <lb/>5.ª</head>
               <l rend="indent">Quien, Elvira, no te adora</l>
               <l>si eres bello serafin,</l>
               <l>y en sus ojos no devora</l>
@@ -1205,9 +1234,9 @@
               <l>y besarlas</l>
               <l>que placer!</l>
             </lg>
-
             <lg>
-              <head type="titulo_estrofa"><lb/>6.ª</head>
+              <head type="titulo_estrofa">
+                <lb/>6.ª</head>
               <l rend="indent">Esa blonda cabellera</l>
               <l>que meco er arro sutil,</l>
               <l>como rosa ¡ay hechicera</l>
@@ -1221,9 +1250,9 @@
               <l>con tus rizos</l>
               <l>tócame.</l>
             </lg>
-
             <lg>
-              <head type="titulo_estrofa"><lb/>7.ª</head>
+              <head type="titulo_estrofa">
+                <lb/>7.ª</head>
               <l rend="indent">Cuan celeste melodía</l>
               <l>en tu voz percibo yo!</l>
               <l>ay! si me hablas, mona mia,</l>
@@ -1237,9 +1266,9 @@
               <l>tan querida</l>
               <l>una mujer.</l>
             </lg>
-
             <lg>
-              <head type="titulo_estrofa"><lb/>8.ª</head>
+              <head type="titulo_estrofa">
+                <lb/>8.ª</head>
               <l rend="indent">Oh! que ha de ser á tu lado</l>
               <l>bella la vida, muy bella,</l>
               <l>siempre sentirse inundado</l>
@@ -1255,11 +1284,12 @@
             </lg>
             <trailer>FIN.</trailer>
           </div>
-
           <div n="2">
-            <pb n="3" source="Varios_094_3.jpg" facs="varios/Varios_094_3.jpg"/>
-            <head type="primer_titulo"><lb/>VIDA DE LAS DONCELLAS.</head>
 
+            <pb n="3" source="Varios_094_3.jpg" facs="varios/Varios_094_3.jpg"/>
+
+            <head type="primer_titulo">
+              <lb/>VIDA DE LAS DONCELLAS.</head>
             <l rend="indent">Por las señoras doncellas,</l>
             <l>señoras voy á empezar</l>
             <l>que todas saltan y brincan</l>
@@ -1378,16 +1408,16 @@
             <l rend="indent">No me hagan repulgos,</l>
             <l>ni recrujan dientes,</l>
             <l>que yo se lo he dicho</l>
-            <l>á las de Cofrentes.</l>
+            <l>á las de <name>Cofrentes</name>.</l>
             <l rend="indent">Y ahora las digo,</l>
             <l>de orejas muy cacho,</l>
             <l>que Dios las de un novio</l>
             <l>aunque sea MACHO.</l>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona: Imps. de Antonio Llorens, Palma de Sta. Catalina, 6.</p>
+          <p>
+            <lb/>Barcelona: Imps. de Antonio Llorens, Palma de Sta. Catalina, 6.</p>
         </div>
       </div>
     </body>

@@ -14,6 +14,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -28,7 +42,8 @@
             <title type="titulo_breve">El cantor de las hermosas.</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_034.xml">Varios_034</ref></p>
+            <p>Otra impresión: <ref target="Varios_034.xml">Varios_034</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>Narciso Ramírez</publisher>
@@ -79,7 +94,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -113,6 +129,14 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q835012">
+            <placeName key="Villafranca_del_Panadés">Villafranca Del Panadés</placeName>
+            <location>
+              <geo>41.344722222222 1.6994444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -154,7 +178,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_035_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_035_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_035_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_035_1/full/full/0/default.jpg"/>
@@ -1004,17 +1030,19 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_035_1.jpg" facs="varios/Varios_035_1.jpg"/>
 
           <fw type="impresorNum">Núm .14</fw>
-
-          <head type="primer_titulo" rend="negrita"><lb/>EL<lb/>CANTOR DE LAS HERMOSAS.</head>
-          <head type="subtitulo"><lb/>TROVAS DE AMOR DEDICADAS AL BELLO SECSO POR UNOS
+          <head type="primer_titulo" rend="negrita">
+            <lb/>EL<lb/>CANTOR DE LAS HERMOSAS.</head>
+          <head type="subtitulo">
+            <lb/>TROVAS DE AMOR DEDICADAS AL BELLO SECSO POR UNOS
             <lb/>AFICIONADOS.</head>
-
           <div n="1">
-            <head type="titulo_cancion"><lb/>41 <hi rend="negrita">EL ULTIMO ADIOS.</hi></head>
-
+            <head type="titulo_cancion">
+              <lb/>41 <hi rend="negrita">EL ULTIMO ADIOS.</hi>
+            </head>
             <lg n="1">
               <head type="titulo_estrofa">I.</head>
               <l rend="indent">Adios, vírgen celestial :</l>
@@ -1026,7 +1054,6 @@
               <l>Ah!... no maldigas mi lloro</l>
               <l>Que es el postrero de amor.</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">II.</head>
               <l rend="indent">Tú fuiste el primer ensueño</l>
@@ -1042,7 +1069,6 @@
             <pb n="2" source="Varios_035_2.jpg" facs="varios/Varios_035_2.jpg"/>
 
             <fw type="paginaNum">54</fw>
-
             <lg n="3">
               <head type="titulo_estrofa">III.</head>
               <l rend="indent">Adios! ¡oh mujer que adoro ;</l>
@@ -1054,7 +1080,6 @@
               <l>Ay! en tus horas doradas</l>
               <l>Ten compasion de mi amor.</l>
             </lg>
-
             <lg n="4">
               <head type="titulo_estrofa">IV.</head>
               <l rend="indent">Ten compasion, y no olvides</l>
@@ -1066,25 +1091,26 @@
               <l>Ay! verterás, alma mia,</l>
               <l>Un dia por compasion!</l>
             </lg>
-            <p><lb/>—J. P.</p>
+            <p>
+              <lb/>—J. P.</p>
           </div>
-
           <div n="2">
             <head type="titulo_cancion">42 LA NIT DE PASCUA.</head>
             <head type="subtitulo_cancion">CANSÓ DE CARAMELLA.</head>
-
             <lg n="1">
               <head type="titulo_estrofa">I.</head>
-              <l rend="indent"><hi rend="cursiva">Resurrexit aleluya !</hi></l>
+              <l rend="indent">
+                <hi rend="cursiva">Resurrexit aleluya !</hi>
+              </l>
               <l>Canten 'ls ángels al cel,</l>
               <l>Y nosaltres en la terra</l>
               <l>Seguim 'ls tons de sa veu!</l>
               <l>Ya som á la primavera</l>
               <l>Tot respira melodía...</l>
-              <l>CORO. <hi rend="cursiva">Celebrarém que passeu</hi></l>
+              <l>CORO. <hi rend="cursiva">Celebrarém que passeu</hi>
+              </l>
               <l rend="cursiva">Las pascuas ab alegria.</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">II.</head>
               <l rend="indent">Aquí teniu la sistella</l>
@@ -1093,34 +1119,37 @@
               <l>A n'al só dels cascabells;</l>
               <l>Puséunoshi butifarras</l>
               <l>Y uns cuans ous de aquells del dia.</l>
-              <l>CORO. <hi rend="cursiva">Celebrarém que passeu</hi></l>
+              <l>CORO. <hi rend="cursiva">Celebrarém que passeu</hi>
+              </l>
               <l rend="cursiva">Las pascuas ab alegría.</l>
             </lg>
-
             <lg n="3">
               <head type="titulo_estrofa">III.</head>
               <l rend="indent">Bulem fé unas cuantas truitas,</l>
               <l>Ya es en ramull l' ensiam,</l>
-              <l>Puig dels ous de <hi rend="cursiva">Vilafranca</hi></l>
+              <l>Puig dels ous de <hi rend="cursiva">Vilafranca</hi>
+              </l>
               <l>De menjarne 'n tenim fam;</l>
-              <l>Si hi corra alguna <hi rend="cursiva">medalla</hi></l>
+              <l>Si hi corra alguna <hi rend="cursiva">medalla</hi>
+              </l>
               <l>No'ns dará cap malaltía ...</l>
-              <l>CORO. <hi rend="cursiva">Celetrarém que passeu</hi></l>
+              <l>CORO. <hi rend="cursiva">Celetrarém que passeu</hi>
+              </l>
               <l rend="cursiva">Las pascuas ab alegría.</l>
             </lg>
-
             <lg n="4">
               <head type="titulo_estrofa">IV.</head>
               <l rend="indent">Als que sòn aquí la porta</l>
               <l>Sòn uns fadrins mòlt honrats</l>
-              <l>Que de aqueixas <hi rend="cursiva">Caramellas</hi></l>
+              <l>Que de aqueixas <hi rend="cursiva">Caramellas</hi>
+              </l>
               <l>Mòlts ne surtirán casats;</l>
               <l>Si Dèu 'ns guarda de guerras</l>
               <l>No 'n quedará cap per tia...</l>
-              <l>CORO. <hi rend="cursiva">Celebrarém que passeu</hi></l>
+              <l>CORO. <hi rend="cursiva">Celebrarém que passeu</hi>
+              </l>
               <l rend="cursiva">Las pascuas ab alegría.</l>
             </lg>
-
             <lg n="5">
               <head type="titulo_estrofa">V.</head>
               <l rend="indent">Adèu siau, miñonetas,</l>
@@ -1129,20 +1158,22 @@
               <l>Vostres jermans ylpadrí,</l>
               <l>Als mossus y las criadas</l>
               <l>Y la demés compañia.</l>
-              <l>CORO. <hi rend="cursiva">Celebrarém que passeu</hi></l>
+              <l>CORO. <hi rend="cursiva">Celebrarém que passeu</hi>
+              </l>
               <l rend="cursiva">Las pascuas ab alegria.</l>
             </lg>
-            <p><lb/>—P. G. R.—</p>
+            <p>
+              <lb/>—P. G. R.—</p>
           </div>
-
           <div n="3">
+
             <pb n="3" source="Varios_035_3.jpg" facs="varios/Varios_035_3.jpg"/>
 
             <fw type="paginaNum">55</fw>
-
-            <head type="titulo_cancion"><lb/>LA RESURRECCIÓ DEL SEÑOR.</head>
-            <head type="titulo_cancion"><lb/>ALTRES CARAMELLAS PER LA NIT DE PASCUA.</head>
-
+            <head type="titulo_cancion">
+              <lb/>LA RESURRECCIÓ DEL SEÑOR.</head>
+            <head type="titulo_cancion">
+              <lb/>ALTRES CARAMELLAS PER LA NIT DE PASCUA.</head>
             <lg n="0">
               <head type="titulo_estrofa">TORNADA.</head>
               <l>Celebreu la Pascua</l>
@@ -1150,7 +1181,6 @@
               <l>Que ha resucitat</l>
               <l>El fill de María.</l>
             </lg>
-
             <lg n="1">
               <head type="titulo_estrofa">I.</head>
               <l rend="indent">Desperteu que es nit de broma:</l>
@@ -1161,7 +1191,6 @@
               <l>Es lo que portem per guia.</l>
               <l rend="cursiva">—Tornada.—</l>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">II.</head>
               <l rend="indent">Aqui teniu la sistella</l>
@@ -1172,7 +1201,6 @@
               <l>Cansalada y ous del dia.</l>
               <l rend="cursiva">—Tornada.—</l>
             </lg>
-
             <lg n="3">
               <head type="titulo_estrofa">III.</head>
               <l rend="indent">Tú que ab tanta llaujaresa</l>
@@ -1183,7 +1211,6 @@
               <l>Dels cors la melancolía.</l>
               <l rend="cursiva">—Tornada.—</l>
             </lg>
-
             <lg n="4">
               <head type="titulo_estrofa">IV.</head>
               <l rend="indent">Novas com las de aquet porle</l>
@@ -1194,7 +1221,6 @@
               <l>Demá será un altre dia.</l>
               <l rend="cursiva">—Tornada.—</l>
             </lg>
-
             <lg n="5">
               <head type="titulo_estrofa">V.</head>
               <l rend="indent">Fadrins y amos de la casa,</l>
@@ -1205,17 +1231,16 @@
               <l>Seguirém la nostra via.</l>
               <l rend="cursiva">—Tornada.—</l>
             </lg>
-            <p><lb/>—P G. y R.—</p>
+            <p>
+              <lb/>—P G. y R.—</p>
           </div>
-
           <div n="4">
+
             <pb n="4" source="Varios_035_4.jpg" facs="varios/Varios_035_4.jpg"/>
 
             <fw type="paginaNum">56</fw>
-
             <head type="titulo_cancion">A MI AMADA.</head>
             <head type="subtitulo_cancion">HIMNO COREADO.</head>
-
             <lg n="1">
               <head type="titulo_estrofa">CORO DE INTRODUCCION.</head>
               <lg>
@@ -1239,7 +1264,6 @@
                 <l>Al trono del Señor.</l>
               </lg>
             </lg>
-
             <lg n="2">
               <head type="titulo_estrofa">CORO GENERAL.</head>
               <lg>
@@ -1251,11 +1275,11 @@
                 <l>Que ceñir á su sien virginal.</l>
               </lg>
             </lg>
-
             <lg n="3">
               <head type="titulo_estrofa">(DUO.)</head>
               <lg>
-                <l><hi rend="cursiva">Hada</hi> amiga que en plácida noche</l>
+                <l>
+                  <hi rend="cursiva">Hada</hi> amiga que en plácida noche</l>
                 <l>Só tus alas de gasa esmaltada,</l>
                 <l>En el seno de ELISA adorada</l>
                 <l>Depositas poética flor;</l>
@@ -1267,7 +1291,6 @@
                 <l>Sella un beso impregnado de amor.</l>
               </lg>
             </lg>
-
             <lg n="4">
               <head type="titulo_estrofa">CORO FINAL.</head>
               <lg>
@@ -1279,20 +1302,22 @@
                 <l>Que ceñir á su sien virginal.</l>
               </lg>
             </lg>
-
-            <p><lb/>—J. A. C.—</p>
-            <p rend="cursiva"><lb/>(Autorizado por la ley vigente.)</p>
-            <p><lb/>Es propiedad.</p>
+            <p>
+              <lb/>—J. A. C.—</p>
+            <p rend="cursiva">
+              <lb/>(Autorizado por la ley vigente.)</p>
+            <p>
+              <lb/>Es propiedad.</p>
           </div>
         </div>
-        
         <div type="colofon">
-          <p rend="cursiva"><lb/>Se hallará de venta en casa Antonio Bosch, calle del Bou de la Plasa Nueva, n.
+          <p rend="cursiva">
+            <lb/>Se hallará de venta en casa Antonio Bosch, calle del Bou de la Plasa Nueva, n.
             °3.</p>
-          <p><lb/>Barcelona. = Imp. de Narciso Ramirez y C.ª Pasaje de Escudillers, núm. 4.
+          <p>
+            <lb/>Barcelona. = Imp. de Narciso Ramirez y C.ª Pasaje de Escudillers, núm. 4.
             —1866.</p>
         </div>
-
       </div>
     </body>
   </text>

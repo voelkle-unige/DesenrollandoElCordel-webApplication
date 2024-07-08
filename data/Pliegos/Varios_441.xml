@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -43,7 +57,7 @@
             <country>Suisse</country>
             <settlement>Genève</settlement>
             <repository>Bibliothèque Universitaire de Genève <ref target="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/btt5ev/alma991008229029705502"/>
-                                    </repository>
+            </repository>
             <collection>Colección Varios</collection>
             <idno type="cote"/>
             <idno type="DOI">10.5281/zenodo.6802773</idno>
@@ -65,7 +79,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="16"/>16
+                <extent>
+                  <measure unit="página" quantity="16"/>16
                                                   p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
@@ -91,6 +106,66 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q5684">
+            <placeName key="Babilonia">Babilonia</placeName>
+            <location>
+              <geo>32.5425 44.4211111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q72303">
+            <placeName key="Monte_Ararat">Monte Ararat</placeName>
+            <location>
+              <geo>39.70186 44.29842</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q23792">
+            <placeName key="Palestina">Palestina</placeName>
+            <location>
+              <geo>31.625321 35.145264</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q399">
+            <placeName key="Armenia">Armenia</placeName>
+            <location>
+              <geo>40.383333 44.95</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q985269">
+            <placeName key="El_Escorial">El Escorial</placeName>
+            <location>
+              <geo>40.581608 -4.125124</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q531729">
+            <placeName key="Valle_de_Josafat">Valle De Josafat</placeName>
+            <location>
+              <geo>31.780277777778 35.24</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5776">
+            <placeName key="Belén">Belén</placeName>
+            <location>
+              <geo>31.704444444444 35.206111111111</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1218">
+            <placeName key="Jerusalén">Jerusalén</placeName>
+            <location>
+              <geo>31.7788888888889 35.2255555555556</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q617">
+            <placeName key="Padua">Padua</placeName>
+            <location>
+              <geo>45.406388888889 11.877777777778</geo>
+            </location>
+          </place>
+          <place n="1">
+            <placeName key="Babel">Babel</placeName>
+            <desc>Inclasificables</desc>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,7 +205,9 @@
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
-  <facsimile><graphic url="varios/Varios_441_1.jpg/full/200,/0/default.jpg"/></facsimile>
+  <facsimile>
+    <graphic url="varios/Varios_441_1.jpg/full/200,/0/default.jpg"/>
+  </facsimile>
   <sourceDoc xml:id="automaticTranscription">
     <surface xml:id="Varios_441_1" type="page" cert="silver">
       <graphic url="https://iiif-dev.unige.ch/iiif/2/fedora_Varios_441_1/full/full/0/default.jpg"/>
@@ -3081,28 +3158,44 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_441_1.jpg" facs="varios/Varios_441_1.jpg"/>
+
         <fw type="numeroPliego">(DOS PLIEGOS.)</fw>
-        <head type="titulo_parte"><lb/><hi rend="negrita">HISTORIA VERDADERA Y
-                              ESPANTOSA</hi><lb/>DEL<lb/>DILUVIO UNIVERSAL<lb/>FUNDACIÓN DE
+        <head type="titulo_parte">
+          <lb/>
+          <hi rend="negrita">HISTORIA VERDADERA Y
+                              ESPANTOSA</hi>
+          <lb/>DEL<lb/>DILUVIO UNIVERSAL<lb/>FUNDACIÓN DE
                               BABILONIA Y LA GRAN TORRE DE BABEL</head>
-        <head type="subtitulo_parte"><lb/>según la Sagrada Escritura y varios
+        <head type="subtitulo_parte">
+          <lb/>según la Sagrada Escritura y varios
                               autores eruditos<lb/>POR<lb/>DON MANUEL JOSÉ MARTÍN</head>
         <div type="colofon">
-          <p><lb/>MADRID <lb/>Despacho: Sucesores de Hernando, Arenal, 11.</p>
+          <p>
+            <lb/>MADRID <lb/>Despacho: Sucesores de Hernando, Arenal, 11.</p>
         </div>
+
         <pb n="2" source="Varios_441_2.jpg" facs="varios/Varios_441_2.jpg"/>
+
         <div type="propiedad">
-          <p><lb/>ES PROPIEDAD</p>
+          <p>
+            <lb/>ES PROPIEDAD</p>
         </div>
+
         <pb n="3" source="Varios_441_3.jpg" facs="varios/Varios_441_3.jpg"/>
+
         <div type="capitulo" n="1">
-          <head type="primer_titulo"><lb/>HISTORIA<lb/>DEL<lb/>DILUVIO UNIVERSAL.</head>
-          <head type="titulo_parte"><lb/>CAPÍTULO PRIMERO</head>
-          <head type="subtitulo_parte"><lb/>Motivos del Diluvio.—Formacion del
+          <head type="primer_titulo">
+            <lb/>HISTORIA<lb/>DEL<lb/>DILUVIO UNIVERSAL.</head>
+          <head type="titulo_parte">
+            <lb/>CAPÍTULO PRIMERO</head>
+          <head type="subtitulo_parte">
+            <lb/>Motivos del Diluvio.—Formacion del
                                     arca, y quiénes entraron en<lb/>ella.—Pintura espantosa del
                                     Diluvio.</head>
-          <p><lb/>Despues que el divino Poder formó el mundo y crió á
+          <p>
+            <lb/>Despues que el divino Poder formó el mundo y crió á
                                     nuestros <lb/>primeros padres Adan y Eva, siguióse la
                                     multiplicacion de los <lb/>hombres, y al paso que se
                                     multiplicaban estos se iban tambien au- <lb/>mentando sus
@@ -3121,16 +3214,19 @@
                                     especies.» Estos séres solo fue- <lb/>ron los que entraron y
                                     ocuparon el arca, los demás todos perecie- <lb/>ron sumergidos
                                     entre las aguas.</p>
-          <p><lb/>La magnitud del Arca constaba por longitud de trescientos co-
+          <p>
+            <lb/>La magnitud del Arca constaba por longitud de trescientos co-
                                     <lb/>dos, por latitud cincuenta y de elevacion treinta: solo
                                     contenia <lb/>una ventana de un codo de grande y una puerta por
                                     donda iban <lb/>entrando todos los que se habian de refugiar en
                                     ella, la cual le man- <lb/>dó Dios á Noé la hiciese á un
                                     costado del Arca. Dentro hizo sus se- <lb/>paraciones muy
                                     cómodas para que cada uno de los vivientes exis- <lb/>tiese y
-                                    se acomodase sin alteracion alguna. Todos los animales, por <pb n="4" source="Varios_441_4.jpg" facs="varios/Varios_441_4.jpg"/>
-                                    <fw type="paginaNum">—4—</fw>
-                                    <lb/>altísima Providencia, iban viniendo á entrarse en el Arca,
+                                    se acomodase sin alteracion alguna. Todos los animales, por
+ <pb n="4" source="Varios_441_4.jpg" facs="varios/Varios_441_4.jpg"/>
+
+            <fw type="paginaNum">—4—</fw>
+            <lb/>altísima Providencia, iban viniendo á entrarse en el Arca,
                                     solo <lb/>aquellos que el soberano Criador habia escogido y
                                     determinado <lb/>para la posterior procreacion de ellos; y al
                                     plazo señalado, cuando <lb/>ya todos los que habian de entrar
@@ -3138,7 +3234,8 @@
                                     Diluvio, que fué de la manera que aquí <lb/>se va á
                                     describir, para que se venga en conocimiento de aquel justo
                                     <lb/>y tremendo castigo de nuestro Dios airado.</p>
-          <p><lb/>Empezó á romper la Providencia las cataratas, rasgándose
+          <p>
+            <lb/>Empezó á romper la Providencia las cataratas, rasgándose
                                     es- <lb/>trepitosamente los elementos; comenzó á gemir el aire
                                     en silbos y <lb/>torbellinos. Rugian los vientos y se chocaban
                                     las nubes: no sir- <lb/>viendo los estruendosos bramidos y
@@ -3160,7 +3257,8 @@
                                     trastorno, bamboleaba como para sacudirle, y <lb/>titubeando sus
                                     ejes, hacia su violenta trepidacion arruinar los más
                                     <lb/>fuertes y permanentes edificios.</p>
-          <p><lb/>Al horrible estallido de las selvas, al fragor querelloso de
+          <p>
+            <lb/>Al horrible estallido de las selvas, al fragor querelloso de
                                     las <lb/>ramas, al estruendo espantoso de las ruinas salian de
                                     las concavi- <lb/>dades de la tierra las fieras que la
                                     habitaban, y los dragones é <lb/>insectos ponzoñosos
@@ -3172,9 +3270,11 @@
                                     apagándose el fuego, <lb/>que á impulsos batientes de los
                                     vientos habia crecido, se daba por <lb/>vencido á los embates
                                     de lo impetuoso y soberbio de las corrientes. <lb/>Despues de
-                                    esta horrible competencia quedó todo el trofeo por las <pb n="5" source="Varios_441_5.jpg" facs="varios/Varios_441_5.jpg"/>
-                                    <fw type="paginaNum">—5—</fw>
-                                    <lb/>aguas acompañadas de huracanes para aumentar más los
+                                    esta horrible competencia quedó todo el trofeo por las
+ <pb n="5" source="Varios_441_5.jpg" facs="varios/Varios_441_5.jpg"/>
+
+            <fw type="paginaNum">—5—</fw>
+            <lb/>aguas acompañadas de huracanes para aumentar más los
                                     estrago <lb/>Empezaron con extremada fuerza á descargar agua
                                     las nubes, <lb/>y comenzaron á correr, se puede decir, dos
                                     diluvios, uno de las <lb/>esferas y otro por el llanto de los
@@ -3191,7 +3291,8 @@
                                     imposibilidad del remedio. Esperarle era mejor que huir-
                                     <lb/>le: triste alternativa, donde el morir era el mejor
                                     alivio.</p>
-          <p><lb/>Entró tambien otra confusion horrible, porque desconocidos
+          <p>
+            <lb/>Entró tambien otra confusion horrible, porque desconocidos
                                     con- <lb/>fusamente los sexos deponian á la congoja sus recatos
                                     y al horror <lb/>sus obligaciones. Ni atendia el hijo al padre,
                                     ni la madre á las <lb/>prendas de sus entrañas, ni los hijos
@@ -3211,19 +3312,24 @@
                                     diafanidad ofuscaba la luz, y la poca que se gozaba <lb/>más
                                     bien acongojaba, porque siendo insuficiente para vislumbrar
                                     <lb/>el alivio era lo bastante para ver los apuros. </p>
-          <p><lb/>Por último, ya iban las aguas elevándose y tomando tanto
+          <p>
+            <lb/>Por último, ya iban las aguas elevándose y tomando tanto
                                     cuer- <lb/>po, que ya perdian todos la esperanza de huir del
                                     riesgo, aun los <lb/>que se habian posesionado de las cumbres;
                                     así que los más cuer- <lb/>dos y prudentes, si prudencia y
                                     cordura daba lugar á haberla, ele- <lb/>gian un triste rincon
                                     de su casa para esperar allí la muerte, ó so- <lb/>focados ó
                                     arruinados; arreciando los vientos con espantosos bra-</p>
+
           <pb n="6" source="Varios_441_6.jpg" facs="varios/Varios_441_6.jpg"/>
+
           <fw type="paginaNum">— 6—</fw>
-          <p><lb/>midos, trabucaban y confundian las ondas, descubriendo unas
+          <p>
+            <lb/>midos, trabucaban y confundian las ondas, descubriendo unas
                                     ve- <lb/>ces la tierra sus entrañas, y otras el agua pretendia
                                     mezclar y <lb/>juntar con las nubes sus olas.</p>
-          <p><lb/>No obstante la gravedad de su peso, empezó á elevarse el
+          <p>
+            <lb/>No obstante la gravedad de su peso, empezó á elevarse el
                                     Arca <lb/>de la tierra, y comenzando á azotar las olas caminaba
                                     errante (aun- <lb/>que bien guiada por la Providencia) sobre las
                                     aguas. Algun infeliz <lb/>mortal que se habia posesionado en las
@@ -3240,7 +3346,8 @@
                                     ocupando los montes, hasta que no exceptuando alto ni ele-
                                     <lb/>vado risco que no cubriesen, vinieron á quedar todos los
                                     habitan- <lb/>tes del globo sumergidos. </p>
-          <p><lb/>Este fué el Diluvio Universal del mundo: terrible
+          <p>
+            <lb/>Este fué el Diluvio Universal del mundo: terrible
                                     consecuencia <lb/>de tanta maldad, cuando obligó á Dios á
                                     imponerles castigo tan <lb/>espantoso. Qué seria ver huir los
                                     hombres á las eminencias, pero <lb/>en vano, pues llevaban
@@ -3252,7 +3359,8 @@
                                     muerte, los bru- <lb/>tos se rendian fatigados de andar, y los
                                     racionales desmayados <lb/>elegian por único recurso la muerte
                                     de ser sumergidos.</p>
-          <p><lb/>A los horrores de la muerte se juntaban atroces y espantosas
+          <p>
+            <lb/>A los horrores de la muerte se juntaban atroces y espantosas
                                     <lb/>circunstancias, pues además de verse sofocados por las
                                     aguas, mi- <lb/>rábanse al mismo tiempo rodeados de fieras, que
                                     rabiosas se encar- <lb/>nizaban con cuantos se encontraban, con
@@ -3262,9 +3370,12 @@
                                     la Escritura: Que el motivo de destruir Dios <lb/>la tierra con
                                     sus vivientes todos, fué el haberla visto tan llena de
                                     <lb/>maldades.</p>
+
           <pb n="7" source="Varios_441_7.jpg" facs="varios/Varios_441_7.jpg"/>
+
           <fw type="paginaNum">—7—</fw>
-          <p><lb/>Aprended, mortales, á temer la culpa, pues suveneno bastó
+          <p>
+            <lb/>Aprended, mortales, á temer la culpa, pues suveneno bastó
                                     pa- <lb/>ra dar muerte á todo el universo. Y si esto aconteció
                                     entonces, <lb/>¿qué será en la última desolacion del mundo?
                                     Entonces sin duda <lb/>se mostrará más rigido y justiciero el
@@ -3279,15 +3390,18 @@
                                     confusion y espanto de los malos.</p>
         </div>
         <div type="capitulo" n="2">
-          <head type="titulo_parte"><lb/>CAPITULO II.</head>
-          <head type="subtitulo_parte"><lb/>Duracion del Diluvio.—Falsas opiniones para poner en duda
+          <head type="titulo_parte">
+            <lb/>CAPITULO II.</head>
+          <head type="subtitulo_parte">
+            <lb/>Duracion del Diluvio.—Falsas opiniones para poner en duda
                                     si <lb/>fué universal.—Hace mansion el Arca en los montes de
                                     Arme- <lb/>nia.—Recházanse varias fábulas sobre el Arca.—Salen
                                     del Arca <lb/>Noé y sus hijos.—Planta Noé viñas y se
                                     embriaga.—Si Noé <lb/>pecó en esta embriaguez.—Maldice á Cham,
                                     bendice á Sen y á <lb/>Japhet, y por qué.—Fundacion de
                                     Babilonia.</head>
-          <p><lb/>Duró el Diluvio por espacio de cuarenta dias, lloviendo de
+          <p>
+            <lb/>Duró el Diluvio por espacio de cuarenta dias, lloviendo de
                                     dia <lb/>y de noche sin cesar hasta llegar las aguas á cubrir
                                     toda la tierra, <lb/>los más altos y elevados montes; pues
                                     asegura el Texto sagrado <lb/>que se elevaron las aguas sobre
@@ -3297,7 +3411,8 @@
                                     inclinacion de costumbres que predominaba tan desen-
                                     <lb/>vueltamente entre los hombres, sin temor ni respeto á
                                     Dios.</p>
-          <p><lb/>Esta verdad sagrada, que tan clara y patentemente nos lo ase-
+          <p>
+            <lb/>Esta verdad sagrada, que tan clara y patentemente nos lo ase-
                                     <lb/>guran las divinas letras, no ha faltado quien ha querido
                                     disuadir- <lb/>la, siendo el principal corifeo de esta opinion
                                     el perverso Preadami- <lb/>ta Isaac Peirere con otros sus
@@ -3306,25 +3421,28 @@
                                     no á todo el universo. Pero tiene contra sí unas razones
                                     <lb/>bastante congruentes. Lo primero que se ocurre es, ¿con
                                     qué me- <lb/>dios y de qué portento se valió la Providencia
-                                    para detener impe- <pb n="8" source="Varios_441_8.jpg" facs="varios/Varios_441_8.jpg"/>
-                                    <fw type="paginaNum">— 8—</fw>
-                                    <lb/>tuosidades y grandes corrientes de las aguas solo dentro de
-                                    los tér- <lb/>minos de Palestina, sin que pudiesen extenderse
+                                    para detener impe-
+ <pb n="8" source="Varios_441_8.jpg" facs="varios/Varios_441_8.jpg"/>
+
+            <fw type="paginaNum">— 8—</fw>
+            <lb/>tuosidades y grandes corrientes de las aguas solo dentro de
+                                    los tér- <lb/>minos de <name>Palestina</name>, sin que pudiesen extenderse
                                     á las demás regio- <lb/>nes? Lo segundo, si el Diluvio no
-                                    habia de inundar sino los térmi- <lb/>nos de Palestina, ¿á
+                                    habia de inundar sino los térmi- <lb/>nos de <name>Palestina</name>, ¿á
                                     qué fin mandó Dios á Noé fabricar el Arca cuan- <lb/>do sin
                                     dificultad podia mandarle que se acogiera él y su familia
                                     <lb/>fuera de sus límites? Lo tercero, ¿cómo habiendo enviado
                                     Noé á la <lb/>paloma para averiguar si habian aminorado las
                                     aguas, se volvió al <lb/>Arca en prueba de que aun estaba todo
                                     inundado, si pudo haberse <lb/>ido esta avecita sin atravesar
-                                    mucho espacio fuera de la Palestina? <lb/>Por último, ¿cómo
+                                    mucho espacio fuera de la <name>Palestina</name>? <lb/>Por último, ¿cómo
                                     podia haber ido el Arca á pasar y tomar puerto <lb/>á los
-                                    montes de la Armenia, si solo en Palestina habia acontecido
+                                    montes de la <name>Armenia</name>, si solo en Palestina habia acontecido
                                     <lb/>el Diluvio, teniéndose por muy seguro y evidente, que
                                     sobre la <lb/>eminencia de aquellos elevadísimos montes hizo
                                     mansion?</p>
-          <p><lb/>Tiene además contra sí esta opinion muchos textos de la
+          <p>
+            <lb/>Tiene además contra sí esta opinion muchos textos de la
                                     Escri- <lb/>tura Sagrada, de los cuales se infiere que fué
                                     universal el Diluvio, <lb/>pues uno de ellos dice: Que todos los
                                     hombres que existian sobre la <lb/>tierra se habian corrompido y
@@ -3339,9 +3457,10 @@
                                     Juicio Final será universal, así lo fué tambien el
                                     <lb/>Diluvio. Epis. 2, cap. 3. Y de este mismo parecer son todos
                                     los <lb/>Santos Padres y muchos escritores eruditos.</p>
-          <p><lb/>Habiéndose minorado ya las aguas del Diluvio, vino á hacer
+          <p>
+            <lb/>Habiéndose minorado ya las aguas del Diluvio, vino á hacer
                                     <lb/>trerra el Arca, como se ha dicho, en las eminencias de los
-                                    montes <lb/>de Armenia, y sobre el más elevado de todos,
+                                    montes <lb/>de <name>Armenia</name>, y sobre el más elevado de todos,
                                     llamado el Ararat; <lb/>allí llegó á reposar aquella
                                     portentosa máquina con todos los vi- <lb/>vientes que dentro de
                                     sí incluia. Son muchísimas las versiones <lb/>fabulosas que se
@@ -3351,9 +3470,12 @@
                                     <lb/>fomentado los varios sofismas que vulgarmente corren por
                                     todo el <lb/>mundo sobre dicha Arca, han sido los mismos
                                     armenios, ya por <lb/>dichos tradicionales, ya por escritos.</p>
+
           <pb n="9" source="Varios_441_9.jpg" facs="varios/Varios_441_9.jpg"/>
+
           <fw type="paginaNum">—9—</fw>
-          <p><lb/>cual antorchas. Y por último, no andarán concertadas las
+          <p>
+            <lb/>cual antorchas. Y por último, no andarán concertadas las
                                     celes- <lb/>tes influencias, porque será su obediencia el
                                     desórden, y sus <lb/>preceptos el desconcierto general. Y sobre
                                     todo, los pedazos de <lb/>fugitivas luces, precipitados de
@@ -3361,7 +3483,8 @@
                                     region del aire, que, trasformados en horribles <lb/>cometas,
                                     servirán de faroles para alumbrar fantasmagóricamente <lb/>tan
                                     espantoso cuadro.</p>
-          <p><lb/>Señora del mundo la oscuridad, solo algunos ligeros destellos
+          <p>
+            <lb/>Señora del mundo la oscuridad, solo algunos ligeros destellos
                                     <lb/>de opaca luz melancólica dejarán de ver al sol
                                     desanimado, en- <lb/>contrando en el Oriente su parasismo; la
                                     luna, huérfana, borran- <lb/>do sus medrosas claridades; las
@@ -3401,11 +3524,14 @@
                                     inquietudes, y huyendo de tanto espectácu- <lb/>lo los ojos,
                                     subirán al aire, donde variando de aspecto, no esta- <lb/>rán
                                     sin riesgo.</p>
-          <p><lb/>A tanta novedad nunca vista, temblarán los animales de la
+          <p>
+            <lb/>A tanta novedad nunca vista, temblarán los animales de la
                                     tier- <fw type="signaturas">Juicio universal. 2</fw>
-                                    <pb n="10" source="Varios_441_10.jpg" facs="varios/Varios_441_10.jpg"/>
-                                    <fw type="paginaNum">—10—</fw>
-                                    <lb/>ra, y esta, terremoto tras terremoto, los despedirá
+
+            <pb n="10" source="Varios_441_10.jpg" facs="varios/Varios_441_10.jpg"/>
+
+            <fw type="paginaNum">—10—</fw>
+            <lb/>ra, y esta, terremoto tras terremoto, los despedirá
                                     furiosa de sus ca- <lb/>vernas. Aparecerán mezclados entre los
                                     hombres los mónstruos y <lb/>las fieras, y todos rabiosos
                                     templarán su ira cebándose en los mor- <lb/>tales. No dejará
@@ -3423,7 +3549,8 @@
                                     <lb/>desengaño. Reduciráse el mundo á su nativo desgreñado
                                     caos, <lb/>y borrados los colores de tantas imágenes solo
                                     quedará de sus <lb/>hermosas pinturas las sombras.</p>
-          <p><lb/>En fin, entre esta desordenada y desenfrenada lucha de los
+          <p>
+            <lb/>En fin, entre esta desordenada y desenfrenada lucha de los
                                     <lb/>elementos, quedará el fuego por único señor de todo.
                                     Bajará de <lb/>los cielos, subirá del abismo, y uniéndose,
                                     como dice S. Buena- <lb/>ventura, cuanto fuego hay en tierra y
@@ -3436,7 +3563,8 @@
                                     des- <lb/>cubra alivio entre el horror, no dejará pintura que
                                     no sea som- <lb/>bra; oro, que no sea ceniza; mármol, que no
                                     sea pavesa: todo, en <lb/>fin, lo convertirá á la nada.</p>
-          <p><lb/>Despues de esta desconcertada pelea, calmará el aire
+          <p>
+            <lb/>Despues de esta desconcertada pelea, calmará el aire
                                     medro- <lb/>so, cesará el fuerte ruido los mares, y la tierra
                                     sosegará con de- <lb/>sasosiego, dejando sus cavernas patentes;
                                     el fuego esconderá entre <lb/>el humo sus volcanes. Huirán del
@@ -3446,15 +3574,18 @@
                                     <lb/>ven del globo terráqueo saltarán los cadáveres de sus
                                     tumbas, y <lb/>con el susto de ver á los cadáveres se
                                     convertirán los vivos en ca- <lb/>dáveres.</p>
-          <p><lb/>¿Quién puede pintar lo que pasará en el ánimo del hombre
+          <p>
+            <lb/>¿Quién puede pintar lo que pasará en el ánimo del hombre
                                     <lb/>injusto á la vista de tanto desconcierto? Al ver los
                                     pecadores que <lb/>todos los elementos amagan la ruina uiversal,
                                     conspirando á la <lb/>postrimera desolacion, llenos de
                                     turbaciones, angustias y desma- <lb/>yos, erizados con el horror
                                     y susto los cabellos, secas las fauces, <lb/>no podarn alentar
-                                    aun congojosas voces porque el corazon, con <pb n="11" source="Varios_441_11.jpg" facs="varios/Varios_441_11.jpg"/>
-                                    <fw type="paginaNum">—11—</fw>
-                                    <lb/>vuelcos palpitantes, querrá huir del pecho y la
+                                    aun congojosas voces porque el corazon, con
+ <pb n="11" source="Varios_441_11.jpg" facs="varios/Varios_441_11.jpg"/>
+
+            <fw type="paginaNum">—11—</fw>
+            <lb/>vuelcos palpitantes, querrá huir del pecho y la
                                     respiracion no <lb/>osará asomarse al labio. Contemplaránse
                                     atónitos y espantados <lb/>unos á los otros con los rostros
                                     ahilados, secos y amarillos; muer- <lb/>tos, antes de morir;
@@ -3489,12 +3620,15 @@
                                     le pongan de- <lb/>lante para eterno castigo!</p>
         </div>
         <div type="capitulo" n="3">
-          <head type="titulo_parte"><lb/>CAPITULO III.</head>
-          <head type="titulo_parte"><lb/>Horrible sonido de la trompeta del Juicio.—Venida del
+          <head type="titulo_parte">
+            <lb/>CAPITULO III.</head>
+          <head type="titulo_parte">
+            <lb/>Horrible sonido de la trompeta del Juicio.—Venida del
                                     Juez.—Temor y espanto de <lb/>los pecadores.—Separacion de los
                                     buenos y de los malos.—Tormentos horribles <lb/>de los
                                     pecadores.</head>
-          <p><lb/>Por más que los desdichados soliciten templar sus amargas
+          <p>
+            <lb/>Por más que los desdichados soliciten templar sus amargas
                                     <lb/>aflicciones escondiendo los sentidos, en manera alguna
                                     podrán <lb/>conseguirlo, porque estando sumergidos en este mar
                                     de trabajos <lb/>y tristezas, oirán resonar la ronca
@@ -3504,9 +3638,11 @@
                                     cerrados sepulcros, porque será tan fuerte su soni- <lb/>do que
                                     hasta los muertos le han de oir. Animará el sonoro metal
                                     <lb/>al aliento del Principe de los Sacros Tafetenes, San
-                                    Miguel, di- <pb n="12" source="Varios_441_12.jpg" facs="varios/Varios_441_12.jpg"/>
-                                    <fw type="paginaNum">— 12—</fw>
-                                    <lb/>ciendo á los hombres con penetrante voz: «Levantaos, muer-
+                                    Miguel, di-
+ <pb n="12" source="Varios_441_12.jpg" facs="varios/Varios_441_12.jpg"/>
+
+            <fw type="paginaNum">— 12—</fw>
+            <lb/>ciendo á los hombres con penetrante voz: «Levantaos, muer-
                                     <lb/>tos, y venid á Juicio.» Aquí será la confusion: cuanto
                                     hemos di- <lb/>cho es nada, en comparacion de lo que en esta
                                     ocasion debe su- <lb/>ceder. Obedientes los helados cadáveres
@@ -3514,7 +3650,8 @@
                                     quedado vivos se des- <lb/>mayarán muertos) unidas ya las almas
                                     á sus cuerpos, se levan- <lb/>tarán á comparecer á
                                     Juicio.</p>
-          <p><lb/>Animado ya otra vez el pisado polvo, tomará cuerpo, y roto
+          <p>
+            <lb/>Animado ya otra vez el pisado polvo, tomará cuerpo, y roto
                                     <lb/>el mármol de las tumbas, dará paso á los cadáveres que
                                     encier- <lb/>ra. Franquearán los soberbios jaspes sus
                                     clausuras, como si pu- <lb/>dieran trampear con la prontitud de
@@ -3522,7 +3659,7 @@
                                     sus depósitos, arrojando por muer- <lb/>tos vivos. Ni los
                                     pórfidos del mausoleo de Artemisa, ni el pan- <lb/>teon
                                     suntuoso de Porsena, ni los mármoles del sepulcro de Ab-
-                                    <lb/>salon, ni los jaspes bruñidos del Escorial esconderán sus
+                                    <lb/>salon, ni los jaspes bruñidos del <name>Escorial</name> esconderán sus
                                     reales <lb/>depósitos, sino que arrojarán sus helados huesos,
                                     porque revivi- <lb/>rán todos los cadáveres cuando morirá
                                     sola la muerte. Usurparán <lb/>al aire sus espacios, y
@@ -3533,20 +3670,22 @@
                                     desdi- <lb/>cha con la penetracion de la miseria. Será la
                                     última infelicidad <lb/>acordarse del remedio que se pudo
                                     poner.</p>
-          <p><lb/>Lleno de su gloria y majestad se presentará el Divino Juez
+          <p>
+            <lb/>Lleno de su gloria y majestad se presentará el Divino Juez
                                     <lb/>Jesucristo, Señor nuestro, sirviéndole un trono de nubes
                                     de do- <lb/>sel ó sitial. Estas vendrán tan arrebatadas por el
                                     aire, que con su <lb/>violento impulso levantarán una polvareda
                                     que ocupará toda la <lb/>region del viento, doblando las
                                     descolladas cervices de los mon- <lb/>tes, y allanando las más
                                     elevades cumbres.</p>
-          <p><lb/>Dirigirá su curso el majestuoso Juez, militando á su obe-
+          <p>
+            <lb/>Dirigirá su curso el majestuoso Juez, militando á su obe-
                                     <lb/>diencia multidud de ángeles, arcángeles, serafines, y
-                                    dirigirán- <lb/>se todos juntos al Valle de Josafat, donde
+                                    dirigirán- <lb/>se todos juntos al Valle de <name>Josafat</name>, donde
                                     todos le seguirán obe- <lb/>dientes, ya unidas sus almas con
                                     sus cuerpos. Hasta por ser este <lb/>el sitio de la Judicatura,
                                     será torturado para los malos, segun la <lb/>relacion que sobre
-                                    esto hacen los Santos. El Valle de Josafat con- <lb/>fina con
+                                    esto hacen los Santos. El Valle de <name>Josafat</name> con- <lb/>fina con
                                     todos los lugares donde obró Cristo nuestra Redencion, <lb/>por
                                     lo que tendrán á los ojos la acusacion más rigurosa de sus
                                     <lb/>ingratitudes: á cualquiera parte donde les vuelvan
@@ -3556,9 +3695,11 @@
                                     albergue, pobre y espuesto á la más rígida in- <lb/>clemencia
                                     de los hielos. Desde allí verán el templo donde predicó
                                     <lb/>su doetrina para que, siguiéndola, se libertasen del
-                                    infierno. Ve <pb n="13" source="Varios_441_13.jpg" facs="varios/Varios_441_13.jpg"/>
-                                    <fw type="paginaNum">—13—</fw>
-                                    <lb/>rán desde allí á Jerusalen, y en ella á las casas de
+                                    infierno. Ve
+ <pb n="13" source="Varios_441_13.jpg" facs="varios/Varios_441_13.jpg"/>
+
+            <fw type="paginaNum">—13—</fw>
+            <lb/>rán desde allí á <name>Jerusalen</name>, y en ella á las casas de
                                     los presidentes <lb/>y pontífices en que por ellos fué
                                     condenado á muerte. Verán desde <lb/>allí el Pretorio, donde
                                     fué infamado con sangrienta lluvia de azo- <lb/>tes, yel
@@ -3576,7 +3717,8 @@
                                     aquellos lugares será <lb/>terrible, porque los beneficios
                                     recibidos en ellos se volverán fis- <lb/>cales rigurosos contra
                                     sus ingratitudes.</p>
-          <p><lb/>Este, pues, será el lugar en que establezca su Tribunal el
+          <p>
+            <lb/>Este, pues, será el lugar en que establezca su Tribunal el
                                     <lb/>Divino Juez; y en su Rostro se leerá el decreto de la
                                     sentencia. <lb/>Será su semblante para los predestinados, luz,
                                     y para los pros- <lb/>criptos horror; porque se ostentará á
@@ -3593,14 +3735,16 @@
                                     tenidos por valerosos, y se trocará la vanidad de la
                                     <lb/>sabiduría, y la soberbia de la animosidad en miedo y
                                     rubor.</p>
-          <p><lb/>Reunidos todos en aquel tremendo Valle, mandará el Juez á
+          <p>
+            <lb/>Reunidos todos en aquel tremendo Valle, mandará el Juez á
                                     <lb/>los Angeles que separen los buenos de los malos; aquellos
                                     á la <lb/>mano derecha de su Dios, para llevarlos consigo á su
                                     Gloria; y á <lb/>estos á la izquierda, como desechados, para
                                     sumergirlos en el <lb/>profundo infierno; premiados los unos y
                                     castigados los otros por <lb/>toda la eternidad de los siglos de
                                     los siglos.</p>
-          <p><lb/>¡Cuántos, entonces, repasando su memoria se arrepentirán de
+          <p>
+            <lb/>¡Cuántos, entonces, repasando su memoria se arrepentirán de
                                     <lb/>su pasada conducta! Roguemos á Dios y la sagrada Vírgen
                                     de las <lb/>Mercedes no nos aparten su gracia, que al llegar ese
                                     tremendo <lb/>dia, podamos colocarnos á la diestra del Soberano
@@ -3608,13 +3752,16 @@
                                     bramidos, ni el aire con <lb/>su furor, ni el fuego con su
                                     voracidad, ni la turbacion de los <lb/>cielos, ni el precipicio
                                     de las estrellas, ni la oscuridad del sol y <lb/>de la luna, ni
-                                    los monstruos, fieras y ponzoñosos insectos igua <pb n="14" source="Varios_441_14.jpg" facs="varios/Varios_441_14.jpg"/>
-                                    <fw type="paginaNum">—14—</fw>
-                                    <lb/>larán á la angustia de los malos contemplando á los
+                                    los monstruos, fieras y ponzoñosos insectos igua
+ <pb n="14" source="Varios_441_14.jpg" facs="varios/Varios_441_14.jpg"/>
+
+            <fw type="paginaNum">—14—</fw>
+            <lb/>larán á la angustia de los malos contemplando á los
                                     buenos para <lb/>quienes todo será premio, placer y contento,
                                     mientras que para <lb/>ellos solo habrá un castigo horroroso y
                                     eterno.</p>
-          <p><lb/>Aquí entrará otra angustia mayor, que será el rubor; porque
+          <p>
+            <lb/>Aquí entrará otra angustia mayor, que será el rubor; porque
                                     <lb/>entonces hará el Divino Juez, segun escribe San Pablo, que
                                     los <lb/>pechos de los pecadores se trasparenten de tal modo,
                                     que se des- <lb/>cubran como un cristal las almas, para que
@@ -3640,7 +3787,8 @@
                                     <lb/>dad, y esto será un dolor, una pena, un martirio, que
                                     será ma- <lb/>yor, si cabe, que los tormentos más atroces del
                                     infierno.</p>
-          <p><lb/>Reflexiónelo cada uno para sí, y figúrese por un momento
+          <p>
+            <lb/>Reflexiónelo cada uno para sí, y figúrese por un momento
                                     <lb/>que se halla en una reunion y que de repente le levantan á
                                     lo <lb/>alto, y quitándole el rebozo á su alma, ponen á la
                                     vista de todos <lb/>sus más feos y ocultos delitos. ¡Qué
@@ -3651,7 +3799,8 @@
                                     <lb/>güenza imaginado se descubre en presencia de tierra y
                                     cielo, <lb/>que un San Juan Crisóstomo, reflexionando esta
                                     circunstancia, <lb/>no halla consuelo para templar su pena. </p>
-          <p><lb/>Y entonces los pecadores buscarán, como alivio, los calabo-
+          <p>
+            <lb/>Y entonces los pecadores buscarán, como alivio, los calabo-
                                     <lb/>zos oscuros del infierno, suplicándoles les escondan en su
                                     os- <lb/>curidad. Caed, gritarán rabiosos á los montes, caed
                                     sobre nos- <lb/>otros. Cubridnos aunque nos aplasteis con
@@ -3659,10 +3808,13 @@
                                     son tan duras las aterra- <lb/>das oscuridades que castigan
                                     nuestras culpas comolas luces que <lb/>publican nuestras
                                     conciencias. </p>
-          <p><lb/>Noso loserán estos los tormentos que sufrirán los réprobos;
+          <p>
+            <lb/>Noso loserán estos los tormentos que sufrirán los réprobos;
+
                                           <pb n="15" source="Varios_441_15.jpg" facs="varios/Varios_441_15.jpg"/>
-                                    <fw type="paginaNum">— 15—</fw>
-                                    <lb/>mayores los tendrán que sufrir; los acometerá una envidia
+
+            <fw type="paginaNum">— 15—</fw>
+            <lb/>mayores los tendrán que sufrir; los acometerá una envidia
                                     tan <lb/>rabiosa, que les aniquilará las entrañas. ¡Qué
                                     tormento no será <lb/>para ellos ver á los justos trasformados
                                     en astros luminosos, y <lb/>mientras que ellos, abatidos como
@@ -3676,30 +3828,34 @@
                                     resplandecieron como luz! <lb/>Tal antítesis encenderá en sus
                                     pechos una envidia y una rabia <lb/>tan penetrante y furiosa,
                                     que duplicará el volcan que los abrasa.</p>
-          <p><lb/>Tan insufrible infierno será para los malos ver el lucimiento
-                                    <lb/>que gozan los buenos, que dijo San Antonio de Padua, que
+          <p>
+            <lb/>Tan insufrible infierno será para los malos ver el lucimiento
+                                    <lb/>que gozan los buenos, que dijo San Antonio de <name>Padua</name>, que
                                     Dios <lb/>les hace gran favor y con misericordia les trata al
                                     desterrarlos al <lb/>infierno por toda una eternidad. Parece
                                     extraña ponderacion; pe- <lb/>ro verdad palpable, porque la
                                     envidia abulta el mal á medida del <lb/>bien. Todos los bienes
                                     los convierte en males; conque todas las <lb/>dichas que
                                     atienden los malos en los buenos, serán penas para los
-                                    <lb/>malos; por lo que tiene razon el Santo Paduano. Piedades
+                                    <lb/>malos; por lo que tiene razon el Santo <name>Padua</name>no. Piedades
                                     dester- <lb/>rarlos al infierno, porque ver un condenado, que
                                     vea á un jus- <lb/>to que goza todos los bienes seria para él
                                     mayor tormento que el <lb/>que pueden darle todos sus propios
                                     males reunidos.</p>
         </div>
         <div type="capitulo" n="4">
-          <head type="titulo_parte"><lb/>CAPITULO IV.</head>
-          <head type="subtitulo_parte"><lb/>Sentencia final dada por el Juez—Subida de los justos al
+          <head type="titulo_parte">
+            <lb/>CAPITULO IV.</head>
+          <head type="subtitulo_parte">
+            <lb/>Sentencia final dada por el Juez—Subida de los justos al
                                     cielo, y bajada de los <lb/>condenados al infierno.—Entrada de
                                     los justos en la gloria.—Clamores de los con-
                                     <lb/>denados.—Cierra la puerta de los Cielos el Hijo y los
                                     condenados se hunden en <lb/>el abismo á padecer
                                     eternamente.—Exhortacion para librarse de tan
                                     terrible<lb/>castigo.</head>
-          <p><lb/>Pasados los anteriores tormentos, vendrá otro mayor; fulmi-
+          <p>
+            <lb/>Pasados los anteriores tormentos, vendrá otro mayor; fulmi-
                                     <lb/>nará ya el Juez la sentencia para ausentarse eternamente
                                     de su <lb/>vista. Pero antes de desterrarlos á los infernales
                                     calabozos, lla- <lb/>mará á los justos al Reino de las luces,
@@ -3710,16 +3866,20 @@
                                     por sus obras, y dirá á los pecadores: Apartaos de <lb/>mí,
                                     malditos, id al fuego eterno que se preparó para habitacion
                                     <lb/>de los demonios.</p>
-          <p><lb/>¿Quién al oir esta voz no temblará de horror? ¿Quién al oir
+          <p>
+            <lb/>¿Quién al oir esta voz no temblará de horror? ¿Quién al oir
                                     <lb/>esta sentencia no desmaya? Desde entonces comenzará la
                                     ascen- <lb/>sion de los justos á la Gloria y verán los malos
-                                    desde la denegri- <pb n="16" source="Varios_441_16.jpg" facs="varios/Varios_441_16.jpg"/>
-                                    <fw type="paginaNum">— 16—</fw>
-                                    <lb/>da garganta del infierno, que suben escalando la región del
+                                    desde la denegri-
+ <pb n="16" source="Varios_441_16.jpg" facs="varios/Varios_441_16.jpg"/>
+
+            <fw type="paginaNum">— 16—</fw>
+            <lb/>da garganta del infierno, que suben escalando la región del
                                     vien- <lb/>to con galas de luz, con sonoros cánticos y festivos
                                     víctores en <lb/>compañia de los Angeles, de María Santísima
                                     y de su hijo á go- <lb/>zar una gloria sin fin.</p>
-          <p><lb/>Con todo, aun les queda otro tormento á los condenados; tor-
+          <p>
+            <lb/>Con todo, aun les queda otro tormento á los condenados; tor-
                                     <lb/>mento horrible, espantoso, el mayor de todos los tormentos,
                                     el <lb/>castigo más cruel para ellos. Llegarán los justos á
                                     la puerta del <lb/>Empireo, todos, yendo delante, como capitan,
@@ -3739,7 +3899,8 @@
                                     apoderará de <lb/>aquellos infelices; más, ¡ay! ya será
                                     tarde. Su condenacion es <lb/>eterna, su castigo por los siglos
                                     de los siglos.</p>
-          <p><lb/>Todo cuanto llevamos dicho es verdad de fé que nadie puede
+          <p>
+            <lb/>Todo cuanto llevamos dicho es verdad de fé que nadie puede
                                     <lb/>ni debe dudar. Todos debemos comparecer á tan tremendo
                                     jui- <lb/>cio; todos debemos presentarnos á aquel Juez que no
                                     se engaña, <lb/>y que sin testigos ni acusadores sabe la verdad
@@ -3756,7 +3917,8 @@
                                     representada, que no de- <lb/>jándola de la consideracion, se
                                     verán libres de que Jesucristo les <lb/>cierre la puerta y su
                                     Madre Santísima vuelva las espaldas.</p>
-          <p><lb/>Confio asimismo que el cuadro que acabamos de trazar forti-
+          <p>
+            <lb/>Confio asimismo que el cuadro que acabamos de trazar forti-
                                     <lb/>ficará á los justos y hará que los pecadores, abjurando
                                     sus erro- <lb/>res entren en la senda del bien para recibir en
                                     su dia el premio <lb/>que Jesucristo da á los buenos.

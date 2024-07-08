@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -71,7 +85,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -97,6 +112,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="3" corresp="Q5776">
+            <placeName key="Belén">Belén</placeName>
+            <location>
+              <geo>31.704444444444 35.206111111111</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -132,8 +155,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-17" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-17" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1189,11 +1211,16 @@
       <div>
         <div>
           <div>
-            <pb n="1" source="Varios_153_1.jpg" facs="varios/Varios_153_1.jpg"/>
-            <head type="primer_titulo" rend="negrita"><lb/>GRACIOSOS VILLANCICOS</head>
-            <head type="subtitulo_parte"><lb/>QUE CANTAN<lb/><hi rend="cursiva">las colegialas de
-                Loreto en esta córte por Noche-Buena.</hi></head>
 
+            <pb n="1" source="Varios_153_1.jpg" facs="varios/Varios_153_1.jpg"/>
+
+            <head type="primer_titulo" rend="negrita">
+              <lb/>GRACIOSOS VILLANCICOS</head>
+            <head type="subtitulo_parte">
+              <lb/>QUE CANTAN<lb/>
+              <hi rend="cursiva">las colegialas de
+                Loreto en esta córte por Noche-Buena.</hi>
+            </head>
             <lg rend="cursiva">
               <head>CORO.</head>
               <l rend="indent">Venid, pastorcitos,</l>
@@ -1298,9 +1325,9 @@
               <l>vuestra redencion.</l>
             </lg>
           </div>
-
           <div>
-            <head type="titulo_cancion"><lb/>RECITADO</head>
+            <head type="titulo_cancion">
+              <lb/>RECITADO</head>
             <l rend="indent">Amados israelitas, ya dichosos,</l>
             <l>felices peregrinos venturosos,</l>
             <l>ya el alto Dios, de su bondad movido</l>
@@ -1309,10 +1336,9 @@
             <l>pues eres del Altísimo tan amado?</l>
             <l>Conserva este favor en la memoria</l>
             <l>que El te dará paz, y despues la gloria.</l>
-
             <div>
-              <head type="titulo_estrofa"><lb/>COPLAS.</head>
-
+              <head type="titulo_estrofa">
+                <lb/>COPLAS.</head>
               <lg>
                 <l rend="indent">Hoy á la media noche</l>
                 <l>sale el divino Sol,</l>
@@ -1351,11 +1377,12 @@
               </lg>
             </div>
           </div>
-
           <div>
-            <pb n="3" source="Varios_153_3.jpg" facs="varios/Varios_153_3.jpg"/>
-            <head type="titulo_cancion"><lb/>PASTORELA.</head>
 
+            <pb n="3" source="Varios_153_3.jpg" facs="varios/Varios_153_3.jpg"/>
+
+            <head type="titulo_cancion">
+              <lb/>PASTORELA.</head>
             <l rend="indent">Pastores sencillos,</l>
             <l>que al frio y al hielo</l>
             <l>dejais en el monte</l>
@@ -1414,14 +1441,14 @@
             <l>y les advierte</l>
             <l>que allí hay muerte</l>
             <l>y perdicion.</l>
-
           </div>
-
           <div>
-            <pb n="4" source="Varios_153_4.jpg" facs="varios/Varios_153_4.jpg"/>
-            <head type="titulo_cancion"><lb/>OTROS VILLANCICOS AL NACIMIENTO DEL HIJO DE
-              DIOS.</head>
 
+            <pb n="4" source="Varios_153_4.jpg" facs="varios/Varios_153_4.jpg"/>
+
+            <head type="titulo_cancion">
+              <lb/>OTROS VILLANCICOS AL NACIMIENTO DEL HIJO DE
+              DIOS.</head>
             <lg>
               <l rend="indent">Veremos esta noche</l>
               <l>el prodigio mayor,</l>
@@ -1545,9 +1572,9 @@
             <trailer>FIN.</trailer>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID.— Despacho : Sucesores de Hernando. Arenal, 11.</p>
+          <p>
+            <lb/>MADRID.— Despacho : Sucesores de Hernando. Arenal, 11.</p>
         </div>
       </div>
     </body>

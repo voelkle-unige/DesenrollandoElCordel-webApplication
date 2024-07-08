@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -70,7 +84,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -98,6 +113,7 @@
             <acquisition/>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -133,8 +149,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-09-17" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-09-17" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1143,12 +1158,17 @@
     <body>
       <div>
         <div>
+
           <pb n="1" source="Varios_154_1.jpg" facs="varios/Varios_154_1.jpg"/>
 
           <div n="1">
-            <head type="primer_titulo"><lb/><hi rend="negrita">DECIMAS GLOSADAS</hi><lb/>PARA CANTAR
-              LOS AFICIONADOS,<lb/>COMPUESTAS<lb/><hi rend="negrita">POR UN AFICIONADO.</hi></head>
-
+            <head type="primer_titulo">
+              <lb/>
+              <hi rend="negrita">DECIMAS GLOSADAS</hi>
+              <lb/>PARA CANTAR
+              LOS AFICIONADOS,<lb/>COMPUESTAS<lb/>
+              <hi rend="negrita">POR UN AFICIONADO.</hi>
+            </head>
             <lg>
               <l rend="indent">Los Pedros y los Vicentes</l>
               <l>son feos y tartamudos,</l>
@@ -1181,7 +1201,8 @@
               <l>borrachos son los Alfonsos,</l>
               <l>falsos en su proceder,</l>
               <l>y á los Juanes les diré,</l>
-              <l>que están siempre empoltroni¬<add place="debajo">(dos,</add></l>
+              <l>que están siempre empoltroni¬<add place="debajo">(dos,</add>
+              </l>
               <l>de todos estos perdidos</l>
               <l>Libera nos, Domine,</l>
             </lg>
@@ -1278,7 +1299,9 @@
               <l>y si de ellas no te apartas</l>
               <l>Libera nos, Domine.</l>
             </lg>
+
             <pb n="3" source="Varios_154_3.jpg" facs="varios/Varios_154_3.jpg"/>
+
             <lg>
               <l rend="indent">Las Franciscas son celosas,</l>
               <l>no hay agrado en las Dolores,</l>
@@ -1370,12 +1393,12 @@
               <l rend="cursiva">Adios nínfa idolatrada.</l>
             </lg>
           </div>
-
           <div n="2">
+
             <pb n="4" source="Varios_154_4.jpg" facs="varios/Varios_154_4.jpg"/>
 
-            <head type="titulo_parte" rend="negrita"><lb/>CANCION DEL AVECHUCHO.</head>
-
+            <head type="titulo_parte" rend="negrita">
+              <lb/>CANCION DEL AVECHUCHO.</head>
             <lg>
               <l rend="indent">Una niña la otra noche</l>
               <l>Sin alientos se quedó,</l>
@@ -1439,8 +1462,11 @@
           </div>
         </div>
         <div type="colofon">
-          <p><lb/>RUZAFA: IMPRENTA DE MANUEL PILES Y CASTRO. <hi rend="cursiva"><lb/>Se hallará de venta en Valencia, calle
-            de San Fernando, <lb/>puesto de papel.</hi></p>
+          <p>
+            <lb/>RUZAFA: IMPRENTA DE MANUEL PILES Y CASTRO. <hi rend="cursiva">
+              <lb/>Se hallará de venta en Valencia, calle
+            de San Fernando, <lb/>puesto de papel.</hi>
+          </p>
         </div>
       </div>
     </body>

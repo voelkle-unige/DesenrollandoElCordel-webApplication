@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -66,7 +80,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -91,6 +106,44 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="6" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q11953">
+            <placeName key="Guadalajara">Guadalajara</placeName>
+            <location>
+              <geo>40.633333333333 -3.1666666666667</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="11" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q5823">
+            <placeName key="Ceuta">Ceuta</placeName>
+            <location>
+              <geo>35.886667 -5.3</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q8818">
+            <placeName key="Valencia">Valencia</placeName>
+            <location>
+              <geo>39.47 -0.376388888888889</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -128,8 +181,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-08-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-08-27" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1714,14 +1766,16 @@
   <text>
     <body>
       <div>
-        <pb n="1" source="Varios_216_1.jpg" facs="varios/Varios_216_1.jpg"/>
-        
-        <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>NUEVA RELACION</head>
-          <head type="titulo_parte"><lb/>en la que se declara los amores de MARIANO
-            PERONA<lb/>sastre de la ciudad de Barcelona</head>
 
-          <l rend="indent">En la hermosa Barcelona</l>
+        <pb n="1" source="Varios_216_1.jpg" facs="varios/Varios_216_1.jpg"/>
+
+        <div n="1">
+          <head type="primer_titulo" rend="negrita">
+            <lb/>NUEVA RELACION</head>
+          <head type="titulo_parte">
+            <lb/>en la que se declara los amores de MARIANO
+            PERONA<lb/>sastre de la ciudad de Barcelona</head>
+          <l rend="indent">En la hermosa <name>Barcelona</name></l>
           <l>en la celle de las muelas</l>
           <l>vive Mariano Perona,</l>
           <l>sastre de buena tijera.</l>
@@ -1808,7 +1862,7 @@
           <l>con pechera y cuello</l>
           <l>y aunque fuè deprisa</l>
           <l>también le dió aquello.</l>
-          <l rend="indent">En la calle Platerias</l>
+          <l rend="indent">En la <name>calle Platerias</name></l>
           <l>engañó á la Mariquita,</l>
           <l>la cortejaba de día</l>
           <l>porque era mujer bonita.</l>
@@ -1835,7 +1889,8 @@
           <l rend="indent">A Leonor sandunguera</l>
           <l>le dijo el sastre Perona</l>
           <l>eres la más retrechera</l>
-          <l>que se encuentra en Barce-<add place="debajo">(lona.</add></l>
+          <l>que se encuentra en Barce-<add place="debajo">(lona.</add>
+          </l>
           <l rend="indent">A tí mi vida</l>
           <l>te quiero por eso,</l>
           <l>Leonor enseguida</l>
@@ -1868,7 +1923,8 @@
           <l>también otra cosa,</l>
           <l>por Dios no lo digas</l>
           <l>que soy cariñosa.</l>
-          <l rend="indent">Doce novias tiene el sas-<add place="debajo">(tre.</add></l>
+          <l rend="indent">Doce novias tiene el sas-<add place="debajo">(tre.</add>
+          </l>
           <l>tejedoras de esteponas,</l>
           <l>como lo quieren bastante</l>
           <l>pasan muchas desazones.</l>
@@ -1895,7 +1951,7 @@
           <l rend="indent">Se hallaba comprometido</l>
           <l>el infeliz de Perona</l>
           <l>y por no escuchar el ruido</l>
-          <l>se salió de Barcelona.</l>
+          <l>se salió de <name>Barcelona</name>.</l>
           <l rend="indent">A los cuatro dias</l>
           <l>todas la supieron</l>
           <l>y en busca del sastre</l>
@@ -1903,7 +1959,7 @@
           <l>Toman el camino</l>
           <l>muy desesperadas</l>
           <l>y me lo han cogido</l>
-          <l>en Guadalajara.</l>
+          <l>en <name>Guadalajara</name>.</l>
           <l>Una paliza le dieron</l>
           <l>delante de la justicia,</l>
           <l>Antonia le dejó en cueros</l>
@@ -1911,7 +1967,7 @@
           <l>Unos azotazos</l>
           <l>le dió la Pelona,</l>
           <l>se oian muy claros</l>
-          <l>desde Barcelona,</l>
+          <l>desde <name>Barcelona</name>,</l>
           <l>ya veis lo que al sastre</l>
           <l>le vino á pasar,</l>
           <l>mirar lo que se hace</l>
@@ -1920,22 +1976,25 @@
           <l>son muy vengativas</l>
           <l>bueno fuera darles</l>
           <l>unas lavativas.</l>
-
           <trailer>FIN</trailer>
         </div>
-        
+
         <pb n="3" source="Varios_216_3.jpg" facs="varios/Varios_216_3.jpg"/>
-        
+
         <div n="2">
-          <head type="titulo_cancion"><lb/><hi rend="negrita">BONITO TANGO</hi><lb/>DEDICADO<lb/><hi rend="negrita">al difunto
-            VILLACAMPA</hi></head>
-          
+          <head type="titulo_cancion">
+            <lb/>
+            <hi rend="negrita">BONITO TANGO</hi>
+            <lb/>DEDICADO<lb/>
+            <hi rend="negrita">al difunto
+            VILLACAMPA</hi>
+          </head>
           <lg>
             <l>Guardad memoria,</l>
             <l>para siempre ciudadanos</l>
             <l>de esta desgraciada historia:</l>
             <l>el diez y nueve de septiembre</l>
-            <l>en las calles de Madrid;</l>
+            <l>en las calles de <name>Madrid</name>;</l>
             <l>Villacampa y sus valientes</l>
             <l>se disponen á morir,</l>
             <l>luchan por la libertad,</l>
@@ -1985,7 +2044,7 @@
           </lg>
           <lg>
             <l rend="indent">La hija de Villacampa</l>
-            <l>llegó á Madrid,</l>
+            <l>llegó á <name>Madrid</name>,</l>
             <l>por donde quiera que iba</l>
             <l>le daban vivas con frenesí.</l>
             <l rend="indent">Misión tan noble llevaba</l>
@@ -2005,23 +2064,23 @@
             <l rend="indent">Idea santa,</l>
             <l>idea santa</l>
             <l>la que tuvo el gobierno</l>
-            <l>mandando á Ceuta á Villacampa.</l>
+            <l>mandando á <name>Ceuta</name> á Villacampa.</l>
             <l rend="indent">El clima de Fernando Póo</l>
             <l>su salud perjudicaba</l>
             <l>y el anciano con dolor</l>
             <l>triste su vida acababa.</l>
             <l rend="indent">Desgraciado brigadier</l>
             <l>que ganó sus entorchados,</l>
-            <l>en Valencia el 73</l>
+            <l>en <name>Valencia</name> el 73</l>
             <l>por su patria peleando.</l>
             <l rend="indent">Nunca llegó á conseguir</l>
             <l>esa hermosa humanidad,</l>
             <l>que ese hombre llegó á morir</l>
             <l>sin ver en Españá la libertad.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_216_4.jpg" facs="varios/Varios_216_4.jpg"/>
-          
+
           <lg>
             <l rend="indent">Lo que pasa en España</l>
             <l>tiene salero,</l>
@@ -2131,13 +2190,13 @@
             <l>ejemplo de amor filial.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imp. S. Rafael, 27.—Barcelona. </p>
+          <p>
+            <lb/>Imp. S. Rafael, 27.—Barcelona. </p>
         </div>
-        
         <div type="productos_a_la_venta ">
-          <p><lb/>En la misma imprenta se halla de venta un buen surtido de trobos, relaciones.
+          <p>
+            <lb/>En la misma imprenta se halla de venta un buen surtido de trobos, relaciones.
             roman- <lb/>ces, oraciones, historias, argumentos de ópera y zarzuela y diferentes
             libritos chistosos. </p>
         </div>

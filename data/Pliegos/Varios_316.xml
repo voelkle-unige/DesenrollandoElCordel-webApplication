@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -78,7 +92,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -107,6 +122,44 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q2807">
+            <placeName key="Madrid">Madrid</placeName>
+            <location>
+              <geo>40.4169444444444 -3.70333333333333</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q43">
+            <placeName key="Turquía">Turquía</placeName>
+            <location>
+              <geo>39 36</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q90">
+            <placeName key="París">París</placeName>
+            <location>
+              <geo>48.8566666666667 2.35222222222222</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q487096">
+            <placeName key="Reus">Reus</placeName>
+            <location>
+              <geo>41.15487 1.10871</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q60">
+            <placeName key="Nueva_York">Nueva York</placeName>
+            <location>
+              <geo>40.7 -74</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q5705">
+            <placeName key="Cataluña">Cataluña</placeName>
+            <location>
+              <geo>41.8375 1.53777777777778</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -142,8 +195,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-11-07" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-11-07" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1550,13 +1602,15 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_316_1.jpg" facs="varios/Varios_316_1.jpg"/>
 
         <div n="1">
-          <head type="primer_titulo" rend="negrita"><lb/>LA CAZA DEL OSO</head>
-          <head type="subtitulo"><lb/>O EL TENDERO DE COMESTIBLES<lb/>DUO DEL MACHO ENAMORADO Ó LA
+          <head type="primer_titulo" rend="negrita">
+            <lb/>LA CAZA DEL OSO</head>
+          <head type="subtitulo">
+            <lb/>O EL TENDERO DE COMESTIBLES<lb/>DUO DEL MACHO ENAMORADO Ó LA
             PERDIZ ENAMORADA</head>
-
           <lg>
             <l rend="indent">Sale uno de su casa</l>
             <l>toma el ferrocarril,</l>
@@ -1598,7 +1652,7 @@
           <l rend="indent">Aunque es Juan igual,</l>
           <l>no me engaña á mi,</l>
           <l>porque soy un macho</l>
-          <l>harto de volar por Madrid.</l>
+          <l>harto de volar por <name>Madrid</name>.</l>
           <l rend="indent">Sin miedo extraño</l>
           <l>al pollo al macho llega,</l>
           <l>y cerca del engaño</l>
@@ -1613,12 +1667,12 @@
           <l>y herirle á traición.</l>
           <l>¡Pon!</l>
         </div>
-        
+
         <pb n="2" source="Varios_316_2.jpg" facs="varios/Varios_316_2.jpg"/>
-        
+
         <div n="2">
-          <head type="titulo_cancion" rend="negrita"><lb/>LA RATETA</head>
-          
+          <head type="titulo_cancion" rend="negrita">
+            <lb/>LA RATETA</head>
           <lg>
             <head type="titulo_estrofa">I</head>
             <l rend="indent">Ay escolta ma rateta</l>
@@ -1701,11 +1755,10 @@
             <l>rata estimada--mol bona nit.</l>
           </lg>
         </div>
-        
         <div n="3">
-          <head type="titulo_cancion"><lb/>LAS TRES
+          <head type="titulo_cancion">
+            <lb/>LAS TRES
             ALEGRIAS<lb/>SCHOTIS</head>
-          
           <lg>
             <head type="titulo_estrofa">I</head>
             <l rend="indent">Siguin cols ó giribías</l>
@@ -1725,9 +1778,9 @@
             <l>per darli la poma</l>
             <l>que don tan torment.</l>
             <l rend="indent">Tan pun ella á pogut traure</l>
-          
-          <pb n="3" source="Varios_316_3.jpg" facs="varios/Varios_316_3.jpg"/>
-          
+
+            <pb n="3" source="Varios_316_3.jpg" facs="varios/Varios_316_3.jpg"/>
+
             <l>aquell sí, daván de Deu,</l>
             <l>li agafa un gust de geure</l>
             <l>que ni Cristo ja l' hi treu</l>
@@ -1755,7 +1808,7 @@
           <lg>
             <head type="titulo_estrofa">II</head>
             <l rend="indent">Tan Espanya com Turquía,</l>
-            <l>París, Reus y New-Yorck,</l>
+            <l>París, <name>Reus</name> y <name>New-Yorck</name>,</l>
             <l>sempre te gran alogría</l>
             <l>cuan la dona mata 'l porch.</l>
             <l rend="indent">Sigui porch ó sigui porca</l>
@@ -1839,13 +1892,15 @@
             <l>que 's veigi ab l' autor.</l>
           </lg>
         </div>
-        
+
         <pb n="4" source="Varios_316_4.jpg" facs="varios/Varios_316_4.jpg"/>
-        
+
         <div n="4">
-          <head type="titulo_cancion"><lb/><hi rend="negrita">Dedicatoria á 'ls
-            obrers</hi><lb/>MAZURCA</head>
-          
+          <head type="titulo_cancion">
+            <lb/>
+            <hi rend="negrita">Dedicatoria á 'ls
+            obrers</hi>
+            <lb/>MAZURCA</head>
           <lg>
             <head type="titulo_estrofa">1.ª PART</head>
             <l rend="indent">S' ha escampat tant la miseria,</l>
@@ -1862,13 +1917,13 @@
             <l>que fa tan temps que esperém.</l>
             <l rend="indent">Y si per cás aíxó 's guanya</l>
             <l>tots plegats podrém cridar</l>
-            <l>que 'ls obrers de Catalunya</l>
+            <l>que 'ls obrers de <name>Catalunya</name></l>
             <l>hem guanyat la huelga</l>
             <l>que 's va proposar.</l>
           </lg>
           <lg>
             <head type="titulo_estrofa">2.ª PART</head>
-            <l rend="indent">Lo que falta á Catalunya</l>
+            <l rend="indent">Lo que falta á <name>Catalunya</name></l>
             <l>es lo que ara vos diré;</l>
             <l>valentía, fé y constancia</l>
             <l>y que no 'ns espanti rés.</l>
@@ -1927,13 +1982,13 @@
             <l>no 's poden uní.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imp. Calle de S. Rafael, 27.—Barcelona</p>
+          <p>
+            <lb/>Imp. Calle de S. Rafael, 27.—Barcelona</p>
         </div>
-        
         <div type="productos_a_la_venta">
-          <p><lb/>En la misma imprenta se halla de venta un buen surtido de trobos, relaciones,
+          <p>
+            <lb/>En la misma imprenta se halla de venta un buen surtido de trobos, relaciones,
             roman-<lb/>ces, oraciones, historias, argumentos de ópera y zarzuela y diferentes
             libritos chistosos.</p>
         </div>

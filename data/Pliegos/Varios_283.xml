@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -34,7 +48,8 @@
             <title type="titulo_breve">El niño cupido</title>
           </titleStmt>
           <editionStmt>
-            <p>Otra impresión: <ref target="Varios_165.xml">Varios_165</ref></p>
+            <p>Otra impresión: <ref target="Varios_165.xml">Varios_165</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>El Abanico</publisher>
@@ -69,7 +84,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="2"/>2 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="2"/>2 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -94,6 +110,7 @@
             <acquisition/>
           </history>
         </msDesc>
+        
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -129,8 +146,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-22" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1042,14 +1058,17 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_283_1.jpg" facs="varios/Varios_283_1.jpg"/>
-        
+
         <div>
-          <head type="primer_titulo"><lb/>EL NIÑO CUPIDO<lb/>CANCIÓN DE LOS AMORES<lb/>DE<lb/><hi rend="negrita">RAMON Y PEPITA</hi><lb/>A las doce de la noche un joven de robusto
+          <head type="primer_titulo">
+            <lb/>EL NIÑO CUPIDO<lb/>CANCIÓN DE LOS AMORES<lb/>DE<lb/>
+            <hi rend="negrita">RAMON Y PEPITA</hi>
+            <lb/>A las doce de la noche un joven de robusto
             talle y hermosa planta saltando por<lb/>las paredes del jardín, por una ventana se
             introduce en el dormitorio<lb/>de su hermosa enamorada. Los dos eran jóvenes; los dos se
             amaban...<lb/>Lo que pasó lo sabrá el que lea este papel.</head>
-          
           <sp>
             <speaker rend="cursiva">Ramón.</speaker>
             <l rend="indent">Por fin ya me encuentro</l>
@@ -1103,9 +1122,9 @@
             <l>sueños infantiles:</l>
             <l>tengo quince abriles</l>
             <l>que me hacen gozar.</l>
-            
+
             <pb n="2" source="Varios_283_2.jpg" facs="varios/Varios_283_2.jpg"/>
-            
+
             <l rend="indent">Diga caballero,</l>
             <l>yo qué sacaría</l>
             <l>si desde este día</l>
@@ -1323,9 +1342,9 @@
           <p rend="cursiva">Coro.</p>
           <trailer>FIN</trailer>
         </div>
-                
         <div type="productos_a_la_venta">
-          <p><lb/>NOTA: Se halla á más del gran surtido de romances una colección de historias
+          <p>
+            <lb/>NOTA: Se halla á más del gran surtido de romances una colección de historias
             antiguas y modernas y varios sainetes <lb/>como también algunos libritos de pliego como
             son: <hi rend="cursiva">El escribiente de los enarmorados</hi>, estilo de cartas de amor, adornado con <lb/>los
             secretos para triunfar de las mujeres y aumentada esta última edición con el lenguaje de
@@ -1343,9 +1362,9 @@
               <lb/>cretario moderno</hi>, arte de escribir cartas y memoriales. — <hi rend="cursiva">Nuevo ramillete de
             felicitaciones</hi>.</p>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imps. Hospital, 19 «El Abanico»</p>
+          <p>
+            <lb/>Imps. Hospital, 19 «El Abanico»</p>
         </div>
       </div>
     </body>

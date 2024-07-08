@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -69,7 +83,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -95,6 +110,50 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="2" corresp="Q234">
+            <placeName key="Flandes">Flandes</placeName>
+            <location>
+              <geo>51 4.5</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q898563">
+            <placeName key="Valdepeñas">Valdepeñas</placeName>
+            <location>
+              <geo>38.766389 -3.399722</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q96">
+            <placeName key="México">México</placeName>
+            <location>
+              <geo>23 -102</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1563">
+            <placeName key="La_Habana">La Habana</placeName>
+            <location>
+              <geo>23.136666666667 -82.358888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q159">
+            <placeName key="Rusia">Rusia</placeName>
+            <location>
+              <geo>66.4166666666667 94.25</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q21">
+            <placeName key="Inglaterra">Inglaterra</placeName>
+            <location>
+              <geo>53 -1</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -130,8 +189,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-10" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1403,17 +1461,19 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_377_1.jpg" facs="varios/Varios_377_1.jpg"/>
-        
+
         <fw type="impresorNum">(Núm. 51.).</fw>
-        
         <div n="1">
-          <head type="primer_titulo"><lb/>COPLAS NUEVAS<lb/><hi rend="negrita">GLOSADAS EN
-              DECIMAS</hi><lb/>PARA CANTAR LOS AFICIONADOS.</head>
-          
+          <head type="primer_titulo">
+            <lb/>COPLAS NUEVAS<lb/>
+            <hi rend="negrita">GLOSADAS EN
+              DECIMAS</hi>
+            <lb/>PARA CANTAR LOS AFICIONADOS.</head>
           <lg rend="cursiva">
             <l rend="indent">Caigan rayos y centellas</l>
-            <l>hechas de queso de Flandes,</l>
+            <l>hechas de queso de <name>Flandes</name>,</l>
             <l>una nube de pan blanco</l>
             <l>en seguida le acompañe.</l>
           </lg>
@@ -1439,7 +1499,7 @@
             <l>se vuelvan jamones grandes</l>
             <l>que pasen de treinta libras,</l>
             <l>y que lluevan piedras vivas</l>
-            <l rend="cursiva">hechas de queso de Flandes.</l>
+            <l rend="cursiva">hechas de queso de <name>Flandes</name>.</l>
           </lg>
           <lg>
             <l rend="indent">Caiga del cielo una fuente</l>
@@ -1450,9 +1510,9 @@
             <l>se vea anegado el campo,</l>
             <l>y que caigan de lo alto</l>
             <l>cien quintales de buñuelos,</l>
-            
+
             <pb n="2" source="Varios_377_2.jpg" facs="varios/Varios_377_2.jpg"/>
-            
+
             <l>y tambien venga con ellos</l>
             <l rend="cursiva">una nube de pan blanco.</l>
           </lg>
@@ -1475,9 +1535,9 @@
             <l>tiembla la naturaleza.</l>
           </lg>
           <lg>
-            <l rend="indent">Ni en Méjico, ni en la Habana</l>
-            <l>ni en Rusia, ni en Inglaterra,</l>
-            <l>ni en toda la Francia entera</l>
+            <l rend="indent">Ni en Méjico, ni en la <name>Habana</name></l>
+            <l>ni en <name>Rusia</name>, ni en <name>Inglaterra</name>,</l>
+            <l>ni en toda la <name>Francia</name> entera</l>
             <l>hay quien llegue á tanta fama:</l>
             <l>yo peleé con la rana,</l>
             <l>y con grande ligereza</l>
@@ -1559,9 +1619,9 @@
             <l>que aquel árbol que echa el vino:</l>
             <l>á él de corazon me inclino,</l>
             <l>decia el autor Valverde,</l>
-            
+
             <pb n="3" source="Varios_377_3.jpg" facs="varios/Varios_377_3.jpg"/>
-            
+
             <l>por sus estudios y leyes,</l>
             <l>porque crian gusarapos,</l>
             <l>anguilas, ranas y sapos,</l>
@@ -1668,9 +1728,9 @@
             <l>de todos sus apetitos,</l>
             <l>y aunque tenga mil delitos</l>
             <l>nada le es de desdoro;</l>
-            
+
             <pb n="4" source="Varios_377_4.jpg" facs="varios/Varios_377_4.jpg"/>
-            
+
             <l>porque el ruido sonoro</l>
             <l>de doblones es tan bueno...</l>
             <l>él está de bienes lleno</l>
@@ -1691,10 +1751,9 @@
             <l rend="cursiva">y prueba de lo mejor.</l>
           </lg>
         </div>
-        
         <div n="2">
-          <head type="titulo_parte"><lb/>TROVOS NUEVOS PARA CANTAR LOS GALANES A LAS DAMAS.</head>
-          
+          <head type="titulo_parte">
+            <lb/>TROVOS NUEVOS PARA CANTAR LOS GALANES A LAS DAMAS.</head>
           <lg rend="cursiva">
             <l rend="indent">Las mugeres de estos tiempos</l>
             <l>las acomparo á las medias,</l>
@@ -1798,9 +1857,9 @@
             <l rend="cursiva">nunca he sido porfiado.</l>
           </lg>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Madrid: 1853. Imprenta de José Marés, calle de Relatores, núm. 17.</p>
+          <p>
+            <lb/>Madrid: 1853. Imprenta de José Marés, calle de Relatores, núm. 17.</p>
         </div>
       </div>
     </body>

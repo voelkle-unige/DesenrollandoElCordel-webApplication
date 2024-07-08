@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -30,7 +44,8 @@
             <title type="titulo_breve">D. Juan de Serrallonga</title>
           </titleStmt>
           <editionStmt>
-            <p>Otras impresiones: <ref target="Varios_012.xml">Varios_012</ref> y <ref target="Varios_465.xml">Varios_465</ref></p>
+            <p>Otras impresiones: <ref target="Varios_012.xml">Varios_012</ref> y <ref target="Varios_465.xml">Varios_465</ref>
+            </p>
           </editionStmt>
           <publicationStmt>
             <publisher>El Abanico</publisher>
@@ -65,7 +80,8 @@
                   <dim>in-4</dim>
                   <material subtype="amarillo"/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -90,6 +106,38 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="8" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="4" corresp="Q142">
+            <placeName key="Francia">Francia</placeName>
+            <location>
+              <geo>47 2</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q29">
+            <placeName key="España">España</placeName>
+            <location>
+              <geo>40.2 -3.5</geo>
+            </location>
+          </place>
+          <place n="2" corresp="Q3048955">
+            <placeName key="Sierra_de_las_Guillerías">Sierra De Las Guillerías</placeName>
+            <location>
+              <geo>41.91667 2.5</geo>
+            </location>
+          </place>
+          <place n="5" corresp="Q5705">
+            <placeName key="Cataluña">Cataluña</placeName>
+            <location>
+              <geo>41.8375 1.53777777777778</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -125,8 +173,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-10-16" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-10-16" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1333,17 +1380,18 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_270_1.jpg" facs="varios/Varios_270_1.jpg"/>
 
         <div>
           <fw type="impresorNum">Núm. 61</fw>
-          
-          <head type="primer_titulo" rend="negrita"><lb/>D. JUAN DE SERRALLONGA</head>
-          <head type="subtitulo_parte"><lb/>(Historia escrita en trovos)</head>
-
+          <head type="primer_titulo" rend="negrita">
+            <lb/>D. JUAN DE SERRALLONGA</head>
+          <head type="subtitulo_parte">
+            <lb/>(Historia escrita en trovos)</head>
           <lg rend="cursiva">
             <l rend="indent">Nace D. Juan Serrallonga</l>
-            <l>en el pueblo de Caroz,</l>
+            <l>en el pueblo de <name>Caroz</name>,</l>
             <l>de padres nobles y honrados</l>
             <l>y temerosos de Dios.</l>
           </lg>
@@ -1359,7 +1407,7 @@
             <l>ya da pruebas de hidalguía;</l>
             <l>cual él no se encuentran dos,</l>
             <l>conocen su valentía</l>
-            <l rend="cursiva">en el pueblo de Caroz.</l>
+            <l rend="cursiva">en el pueblo de <name>Caroz</name>.</l>
           </lg>
           <lg>
             <l rend="indent">Siempre fueron esforzados</l>
@@ -1369,8 +1417,8 @@
             <l rend="cursiva">de padres nobles y honrados.</l>
           </lg>
           <lg>
-            <l rend="indent">Tienen su hogar en Caroz</l>
-            <l>y habitan en Barcelona,</l>
+            <l rend="indent">Tienen su hogar en <name>Caroz</name></l>
+            <l>y habitan en <name>Barcelona</name>,</l>
             <l>atento el pueblo á su voz,</l>
             <l>humildes cual la paloma</l>
             <l rend="cursiva">y temerosos de Dios.</l>
@@ -1379,13 +1427,13 @@
             <l rend="indent">En el juego de pelota</l>
             <l>Félix Torrella mató,</l>
             <l>le persigue la justicia</l>
-            <l>por eso á Francia marchó.</l>
+            <l>por eso á <name>Francia</name> marchó.</l>
           </lg>
           <lg>
             <l rend="indent">Su sangre que gota á gota,</l>
-            
+
             <pb n="2" source="Varios_270_2.jpg" facs="varios/Varios_270_2.jpg"/>
-            
+
             <l>arde en su pecho valiente,</l>
             <l>si le insultan se alborota</l>
             <l>y así mató á un insolente</l>
@@ -1406,11 +1454,11 @@
             <l rend="cursiva">le persigue la justicia.</l>
           </lg>
           <lg>
-            <l rend="indent">Barcelona abandonó</l>
+            <l rend="indent"><name>Barcelona</name> abandonó</l>
             <l>viéndose así perseguido,</l>
             <l>hasta el nombre cambió</l>
             <l>por temor de ser cogido:</l>
-            <l rend="cursiva">por eso á Francia marchó.</l>
+            <l rend="cursiva">por eso á <name>Francia</name> marchó.</l>
           </lg>
           <lg>
             <l rend="indent">Mentada una hermosa dama</l>
@@ -1449,8 +1497,8 @@
           <lg rend="cursiva">
             <l rend="indent">Está loco, enamorado</l>
             <l>de aquella hermosa matrona</l>
-            <l>por ella salió de Francia,</l>
-            <l>por ella fué á Barcelona.</l>
+            <l>por ella salió de <name>Francia</name>,</l>
+            <l>por ella fué á <name>Barcelona</name>.</l>
           </lg>
           <lg>
             <l rend="indent">Cuando se miró abrazado</l>
@@ -1471,14 +1519,14 @@
             <l>de ella fué correspondido,</l>
             <l>mas viendo que con instancia</l>
             <l>quieren darle otro marido,</l>
-            <l rend="cursiva">por ella salió de Francia.</l>
+            <l rend="cursiva">por ella salió de <name>Francia</name>.</l>
           </lg>
           <lg>
             <l rend="indent">Exponiendo su persona</l>
             <l>pues que le sobra arrogancia</l>
             <l>su amor á todas pregona,</l>
             <l>y con valor y constancia</l>
-            <l rend="cursiva">por ella fué á Barcelona.</l>
+            <l rend="cursiva">por ella fué á <name>Barcelona</name>.</l>
           </lg>
           <lg rend="cursiva">
             <l rend="indent">Vé que su amada es hermana</l>
@@ -1518,9 +1566,9 @@
             <l rend="indent">El Fadrí de Sau le incita</l>
             <l>porque sea el capitán,</l>
             <l>de un puñado de valientes,</l>
-            
+
             <pb n="3" source="Varios_270_3.jpg" facs="varios/Varios_270_3.jpg"/>
-            
+
             <l rend="cursiva">que á sus órdenes están.</l>
           </lg>
           <lg>
@@ -1620,7 +1668,7 @@
             <l rend="cursiva">y á los jefes libertó.</l>
           </lg>
           <lg rend="cursiva">
-            <l rend="indent">A Barcelona marchó</l>
+            <l rend="indent">A <name>Barcelona</name> marchó</l>
             <l>á desafiar su cuñado,</l>
             <l>y villano le prendió</l>
             <l>y en un cuarto lo ha encerrado.</l>
@@ -1630,7 +1678,7 @@
             <l>las cartas que su cuñado</l>
             <l>á la montaña le envió,</l>
             <l>viéndose otra vez retado</l>
-            <l rend="cursiva">á Barcelona marchó.</l>
+            <l rend="cursiva">á <name>Barcelona</name> marchó.</l>
           </lg>
           <lg>
             <l rend="indent">Por un balcón ha trepado</l>
@@ -1653,9 +1701,9 @@
             <l>é infame el gobernador.</l>
             <l rend="cursiva">en un cuarto lo ha encerrado.</l>
           </lg>
-          
+
           <pb n="4" source="Varios_270_4.jpg" facs="varios/Varios_270_4.jpg"/>
-          
+
           <lg rend="cursiva">
             <l rend="indent">Juana y Fadrí lo libertan.</l>
             <l>de la prisión en que está,</l>
@@ -1692,7 +1740,7 @@
           </lg>
           <lg rend="cursiva">
             <l rend="indent">Serrallonga prisionero</l>
-            <l>en Barcelona ha entrado,</l>
+            <l>en <name>Barcelona</name> ha entrado,</l>
             <l>sus grueles enemigos</l>
             <l>á muerte le han sentenciado.</l>
           </lg>
@@ -1708,7 +1756,7 @@
             <l>la cárcel quiere asaltar,</l>
             <l>con los suyos ha marchado</l>
             <l>para el capitán librar,</l>
-            <l rend="cursiva">en Barcelona han entrado.</l>
+            <l rend="cursiva">en <name>Barcelona</name> han entrado.</l>
           </lg>
           <lg>
             <l rend="indent">En la batalla rendidos</l>
@@ -1758,12 +1806,11 @@
             <l>él va ante Dios que le llama,</l>
             <l rend="cursiva">Juana á vengarlo marchó.</l>
           </lg>
-          
           <trailer rend="negrita">FIN</trailer>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Imps. Hospital, 19 «El Abanico»</p>
+          <p>
+            <lb/>Imps. Hospital, 19 «El Abanico»</p>
         </div>
       </div>
     </body>

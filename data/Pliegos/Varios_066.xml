@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -75,7 +89,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="4"/>4 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="4"/>4 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -107,6 +122,26 @@
             </acquisition>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q1563">
+            <placeName key="La_Habana">La Habana</placeName>
+            <location>
+              <geo>23.136666666667 -82.358888888889</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q1492">
+            <placeName key="Barcelona">Barcelona</placeName>
+            <location>
+              <geo>41.3825 2.1769444444444</geo>
+            </location>
+          </place>
+          <place n="1" corresp="Q916">
+            <placeName key="Angola">Angola</placeName>
+            <location>
+              <geo>-12.35 17.35</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -142,8 +177,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2022-06-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2022-06-15" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -1229,22 +1263,25 @@
       <div>
         <div>
           <div>
+
             <pb n="1" source="Varios_066_1.jpg" facs="varios/Varios_066_1.jpg"/>
 
-            <head type="primer_titulo"><lb/><hi rend="negrita">UN DRAMA RIDÍCULO DE AMOR Y CELOS</hi><lb/>entre un caballero
+            <head type="primer_titulo">
+              <lb/>
+              <hi rend="negrita">UN DRAMA RIDÍCULO DE AMOR Y CELOS</hi>
+              <lb/>entre un caballero
               y su sirvienta dos gatos y un mico</head>
-
             <l rend="indent">Una linda cocinera,</l>
             <l>más alegre que unas Pascuas,</l>
             <l>y además de alegre, joven,</l>
             <l>y además de joven, guapa,</l>
             <l>servía á cierto señor</l>
-            <l>que se vino de la Habana</l>
+            <l>que se vino de la <name>Habana</name></l>
             <l>por no sufrir más el vómito</l>
             <l>y tener repleta el arca,</l>
             <l>y porque en aquella antilla</l>
             <l>el gran calor le ahogaba.</l>
-            <l rend="indent">Puso casa en Barcelona</l>
+            <l rend="indent">Puso casa en <name>Barcelona</name></l>
             <l>por darse al placer y holganza,</l>
             <l>que es ciudad do se disfruta</l>
             <l>si abunda el oro y la plata.</l>
@@ -1300,7 +1337,8 @@
             <l>á él ya poco le atendía,</l>
             <l>distraída con la gata;</l>
             <l>y para vengar su honor</l>
-            <l>se buscó una <hi rend="cursiva">martingala</hi></l>
+            <l>se buscó una <hi rend="cursiva">martingala</hi>
+            </l>
             <l>ayudado por un mico,</l>
             <l>huésped en la misma casa,</l>
             <l>malhumorado y celoso,</l>
@@ -1329,7 +1367,7 @@
             <l>con arte y con mucha gracia.</l>
             <l>Mas ¡ay! que él no tuvo en cuenta</l>
             <l>que la doncella y la gata</l>
-            <l>eran dos gatas- de Angola</l>
+            <l>eran dos gatas- de <name>Angola</name></l>
             <l>que valían por cien gatas.</l>
             <l>Así fué que el pobre mico</l>
             <l>cayó en muchas emboscadas</l>
@@ -1350,22 +1388,22 @@
             <l>y menos si son de amores</l>
             <l>de señores y criadas.</l>
           </div>
-
           <div>
+
             <pb n="3" source="Varios_066_3.jpg" facs="varios/Varios_066_3.jpg"/>
 
-            <head type="titulo_cancion"><lb/>CANCIÓN DE LA JALEA<lb/>Y AMORES DE UNA DAMA CON UN
+            <head type="titulo_cancion">
+              <lb/>CANCIÓN DE LA JALEA<lb/>Y AMORES DE UNA DAMA CON UN
               CONFITERO</head>
-
             <lg>
               <l rend="indent">Nadie se admire que yo</l>
               <l>por un confitero muera:</l>
               <l>que me da dulces muy finos</l>
               <l>y también me da jalea.</l>
             </lg>
-
             <lg rend="cursiva">
-              <head type="titulo_estrofa"><lb/>CORO</head>
+              <head type="titulo_estrofa">
+                <lb/>CORO</head>
               <l rend="indent">Tú me vuelves loco,</l>
               <l>tú me haces penar,</l>
               <l>y á veces de gusto</l>
@@ -1444,12 +1482,12 @@
               <l>y mucho más su dinero.</l>
             </lg>
           </div>
-
           <div>
+
             <pb n="4" source="Varios_066_4.jpg" facs="varios/Varios_066_4.jpg"/>
 
-            <head type="titulo_cancion"><lb/>LA HERMOSA JULIA</head>
-
+            <head type="titulo_cancion">
+              <lb/>LA HERMOSA JULIA</head>
             <lg>
               <l rend="indent">Si de amor la viva llama</l>
               <l>en mi pecho ya devora;</l>
@@ -1525,9 +1563,9 @@
             <trailer>FIN</trailer>
           </div>
         </div>
-        
         <div type="colofon">
-          <p><lb/>Barcelona : En casa Cristina Segura, calle de la Palma de Sta. Catalina.</p>
+          <p>
+            <lb/>Barcelona : En casa Cristina Segura, calle de la Palma de Sta. Catalina.</p>
         </div>
       </div>
     </body>

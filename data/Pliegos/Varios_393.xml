@@ -17,6 +17,20 @@
           <resp>Verificación de la codificación y carga en el sitio web</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="2.0">
+          <title>Segunda versión de la edición, enriquecida con topónimos</title>
+          <date>2024</date>
+        </edition>
+        <respStmt>
+          <name>Elina Leblanc, Zoé Noël y Pauline Jacsont</name>
+          <resp>Creación del modelo de reconocimiento automático de topónimos y codificación TEI</resp>
+        </respStmt>
+        <respStmt>
+          <name>Belinda Palacios, Lorysmar Franco y Constance Carta</name>
+          <resp>Corrección de los resultados</resp>
+        </respStmt>
+      </editionStmt>
       <publicationStmt>
         <authority role="rightsHolder">Bibliothèque Universitaire de Genève</authority>
         <availability status="restricted">
@@ -67,7 +81,8 @@
                   <dim>in-4</dim>
                   <material/>
                 </support>
-                <extent><measure unit="página" quantity="8"/>8 p.</extent>
+                <extent>
+                  <measure unit="página" quantity="8"/>8 p.</extent>
                 <condition>Bueno</condition>
               </supportDesc>
               <layoutDesc>
@@ -93,6 +108,14 @@
             <acquisition/>
           </history>
         </msDesc>
+        <listPlace xml:base="https://www.wikidata.org/wiki/">
+          <place n="1" corresp="Q170516">
+            <placeName key="Calvario">Calvario</placeName>
+            <location>
+              <geo>31.778611111111 35.229444444444</geo>
+            </location>
+          </place>
+        </listPlace>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -128,8 +151,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2023-12-17" who="#PJ">Création du fichier TEI P5 et encodage du corps du
-        texte</change>
+      <change when="2023-12-17" who="#PJ">Création du fichier TEI P5 et encodage du corps du texte</change>
       <change when="2024-01-09" who="#EL">Add the IIIF links</change>
     </revisionDesc>
   </teiHeader>
@@ -2407,18 +2429,20 @@
   <text>
     <body>
       <div>
+
         <pb n="1" source="Varios_393_1.jpg" facs="varios/Varios_393_1.jpg"/>
 
         <fw type="impresorNum">(Núm. 21.)</fw>
-
-        <head type="primer_titulo" rend="negrita"><lb/>EL CONTADOR ESPIRITUAL.</head>
-        <head type="subtitulo" rend="cursiva"><lb/><lb/>Que contiene un nuevo y curioso romance,
+        <head type="primer_titulo" rend="negrita">
+          <lb/>EL CONTADOR ESPIRITUAL.</head>
+        <head type="subtitulo" rend="cursiva">
+          <lb/>
+          <lb/>Que contiene un nuevo y curioso romance,
           declarando por los números<lb/>lo que se debe contemplar para no errar la cuenta que cada
           uno hemos<lb/>de dar de nuestra vida en el tribunal de Dios.</head>
-
         <div type="parte" n="1">
-          <head type="titulo_parte" rend="negrita"><lb/>PRIMERA PARTE.</head>
-
+          <head type="titulo_parte" rend="negrita">
+            <lb/>PRIMERA PARTE.</head>
           <l rend="indent">Habiendo considerado</l>
           <l>que á Dios hemos de dar cuenta,</l>
           <l>quisiera para no errarla</l>
@@ -2431,7 +2455,6 @@
           <pb n="2" source="Varios_393_2.jpg" facs="varios/Varios_393_2.jpg"/>
 
           <fw type="paginaNum">— 2 —</fw>
-
           <l>Pongo el uno: luego al punto</l>
           <l>con mucho amor considera</l>
           <l>que hay un solo Dios, que es</l>
@@ -2518,10 +2541,9 @@
           <pb n="3" source="Varios_393_3.jpg" facs="varios/Varios_393_3.jpg"/>
 
           <fw type="paginaNum">— 3 —</fw>
-
           <l>y la Cruz en que murió</l>
           <l>que fue de tres palos hecha;</l>
-          <l>que llevándole al Calvario</l>
+          <l>que llevándole al <name>Calvario</name></l>
           <l>cayó tres veces con ella,</l>
           <l>para que tú no cayeses</l>
           <l>en las profundas cavernas;</l>
@@ -2605,7 +2627,6 @@
           <pb n="4" source="Varios_393_4.jpg" facs="varios/Varios_393_4.jpg"/>
 
           <fw type="paginaNum">— 4 —</fw>
-
           <l>Formando el ocho, dirás,</l>
           <l>que ochenta mil veces sea</l>
           <l>por todo el mundo aplaudida</l>
@@ -2682,17 +2703,17 @@
           <l>á aquesta parte primera</l>
           <l>dá fin, porque en la segunda</l>
           <l>decir lo que falta intenta.</l>
-
           <trailer>FIN DE LA PRIMERA PARTE.</trailer>
         </div>
 
         <pb n="5" source="Varios_393_5.jpg" facs="varios/Varios_393_5.jpg"/>
 
         <div type="parte" n="2">
-          <head type="titulo_parte" rend="negrita"><lb/>SEGUNDA PARTE,</head>
-          <head type="subtitulo_parte" rend="cursiva"><lb/>que contiene del modo que se ha de sumar
+          <head type="titulo_parte" rend="negrita">
+            <lb/>SEGUNDA PARTE,</head>
+          <head type="subtitulo_parte" rend="cursiva">
+            <lb/>que contiene del modo que se ha de sumar
             la cuenta para no llevarla<lb/>errada en el tribunal de Dios.</head>
-
           <l rend="indent">Habiendo, lector discreto,</l>
           <l>prometido de la cuenta</l>
           <l>sacar la segunda parte,</l>
@@ -2739,7 +2760,6 @@
           <pb n="6" source="Varios_393_6.jpg" facs="varios/Varios_393_6.jpg"/>
 
           <fw type="paginaNum">— 6 —</fw>
-
           <l>la vida siendo tú el reo</l>
           <l>para que tú no murieras?</l>
           <l>Si paciente, ¿dónde pudo</l>
@@ -2826,7 +2846,6 @@
           <pb n="7" source="Varios_393_7.jpg" facs="varios/Varios_393_7.jpg"/>
 
           <fw type="paginaNum">— 7 —</fw>
-
           <l>leño para ser tizon</l>
           <l>en las profundas cavernas,</l>
           <l>antorcha para lucir</l>
@@ -2913,7 +2932,6 @@
           <pb n="8" source="Varios_393_8.jpg" facs="varios/Varios_393_8.jpg"/>
 
           <fw type="paginaNum">— 8 —</fw>
-
           <l>que en pies, manos y costado</l>
           <l>están las puertas abiertas.</l>
           <l>Mira que es Pastor que sabe</l>
@@ -2989,9 +3007,11 @@
           <l>dá fin, pidiendo perdon</l>
           <l>las faltas de mis rudezas.</l>
         </div>
-        
         <div type="colofon">
-          <p><lb/>MADRID. <lb/><hi rend="cursiva">Imp. de</hi> MARES <hi rend="cursiva">y</hi> COMPAÑIA, <hi rend="cursiva">plazuela de la Cebada, núm. 13.</hi></p>
+          <p>
+            <lb/>MADRID. <lb/>
+            <hi rend="cursiva">Imp. de</hi> MARES <hi rend="cursiva">y</hi> COMPAÑIA, <hi rend="cursiva">plazuela de la Cebada, núm. 13.</hi>
+          </p>
         </div>
       </div>
     </body>
