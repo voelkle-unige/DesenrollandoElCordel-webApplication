@@ -130,7 +130,12 @@ declare variable $config:facets := [
         "dimension": "publisher",
         "heading": "facets.publisher",
         "max": (),
-        "hierarchical": false()
+        "hierarchical": false(),
+        "output": function($label) {
+            switch($label)
+                case "José María Moreno" return "José María Moreno (padre)"
+                default return $label
+        }
     },
     map {
         "dimension": "pubplace",
