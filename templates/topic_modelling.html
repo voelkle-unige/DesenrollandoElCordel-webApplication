@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Desenrollando el cordel</title>
+        <title>Topic modelling</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/lda.css"/>
         <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
     </head>
+    
     <body>
         <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
             <app-drawer-layout force-narrow="force-narrow">
@@ -24,7 +25,7 @@
                     <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
                         <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
                     </app-header>
-                    <main>
+                    <main class="content-static__vdiff">
                         <h1 class="content-static__main-title">
                             Topic modelling
                         </h1>
@@ -38,9 +39,11 @@
                 </app-header-layout>
             </app-drawer-layout>
         </pb-page>
+        
         <div class="splash"/>
+        
         <script>
-      var vis = new LDAvis("#lda", "resources/lda.json");
-    </script>
+            var vis = new LDAvis("#lda", "resources/lda.json");
+        </script>
     </body>
 </html>
