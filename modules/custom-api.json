@@ -397,7 +397,74 @@
                         }
                     }
                 }
-            }
+            },
+            
+            "/api/folhetos": {
+			    "get": {
+			        "summary": "List folhetos",
+			        "description": "Retrieve list of folhetos in format required by pb-split-list",
+			        "operationId": "custom:folhetos",
+			        "parameters": [
+			            {
+			                "name": "category",
+			                "in": "query",
+			                "schema": {
+			                    "type": "string",
+			                    "example": "1"
+			                }
+			            },
+			            {
+			                "name": "limit",
+			                "in": "query",
+			                "schema": {
+			                    "type": "integer",
+			                    "default": "50"
+			                }
+			            },
+			            {
+			                "name": "search",
+			                "in": "query",
+			                "schema": {
+			                    "type": "string"
+			                }
+			            }
+			        ],
+			        "responses": {
+			            "200": {
+			                "description": "Categories and folhetos to display",
+			                "content": {
+			                    "application/json": {
+			                        "schema": {
+			                            "type": "object",
+			                            "properties": {
+			                                "items": {
+			                                    "type": "array",
+			                                    "items": {
+			                                        "type": "string"
+			                                    }
+			                                },
+			                                "categories": {
+			                                    "type": "array",
+			                                    "items": {
+			                                        "type": "object",
+			                                        "properties": {
+			                                            "category": {
+			                                                "type": "string"
+			                                            },
+			                                            "count": {
+			                                                "type": "integer"
+			                                            }
+			                                        }
+			                                    }
+			                                }
+			                            }
+			                        }
+			                    }
+			                }
+			            }
+			        }
+			    }
+			}
     },
     
     "security": [

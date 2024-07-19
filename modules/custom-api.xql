@@ -354,3 +354,71 @@ function api:place-mentions($node as node(), $model as map(*), $type as xs:strin
                 </div>
         )
 };
+
+declare function api:folhetos($request as map(*)) {
+    let $search := normalize-space($request?parameters?search)
+    let $letterParam := $request?parameters?category
+    let $limit := $request?parameters?limit
+    let $folhetos := if($search and $search != '') then
+            doc($config:data-root || "/folhetos.xml")//tei:listBibl/tei:bibl[matches(@n, "^" || $search, "i")]
+        else
+            doc($config:data-root || "/folhetos.xml")//tei:listBibl/tei:bibl
+    let $sorted := sort($folhetos, "?lang=es-ES", function($folhetos) {lower-case($folhetos/@n)})
+    let $letter :=
+        if (count($folhetos) < $limit) then
+            "All"
+        else if ($letterParam = '') then
+            substring($sorted[1], 1, 1) => upper-case()
+        else
+            $letterParam
+    let $byLetter :=
+        if ($letter = 'All') then
+            $sorted
+        else
+            filter($sorted, function($entry) {
+                starts-with(lower-case($entry/@n), lower-case($letter))
+            
+            })
+    return
+        map {
+            "items": api:output-folhetos($byLetter, $letter, $search),
+            "categories":
+                if (count($folhetos) < $limit) then
+                    []
+                else array {
+                    for $index in 1 to string-length('AÁBCDEÉFGHIJKLMNOPQRSTUÚVWXYZ')
+                    let $alpha := substring('AÁBCDEÉFGHIJKLMNOPQRSTUÚVWXYZ', $index, 1)
+                    let $hits := count(filter($sorted, function($entry) {starts-with(lower-case($entry/@n), lower-case($alpha))}))
+                    where $hits > 0
+                    return 
+                        map {
+                            "category": $alpha,
+                            "count": $hits
+                        },
+                        map {
+                            "category": "All",
+                            "count": count($sorted)
+                        }
+                }
+        }
+};
+
+declare function api:output-folhetos($list, $category as xs:string, $search as xs:string?) {
+    array {
+    <ul>
+        {for $folhetos in $list
+            let $categoryParam := if ($category = "all") then substring($folhetos/@n, 1, 1) else $category
+            let $params := "category=" || $categoryParam || "&amp;search=" || $search
+            let $title := $folhetos/tei:title/string()
+            let $author := $folhetos/tei:author/string()
+            let $engraver := if ($folhetos/tei:editor != '') then concat(", ", $folhetos/tei:editor/string(), " (graveur)") else ()
+            let $date := $folhetos/tei:date/string()
+            let $pages := $folhetos/tei:measure/string()
+            let $idno := $folhetos/tei:idno/string()
+            
+            return
+                <li>{$author}, <i>{$title}</i>, {$date}, {$pages}{$engraver}, {$idno}</li>
+                }
+    </ul>
+    }
+};

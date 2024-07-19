@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Index - Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <meta name="pb-template" content="places.html"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!--CSS & Javascript -->
+        <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+        
+        <style>
+            main {
+                max-width: 42rem;
+                margin: 0 auto;
+                padding-top: 1em;
+            }
+            
+            ul {
+                padding-inline-start: 12px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
+            <app-header-layout>
+                <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                    <!-- Menu de navigation -->
+                    <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    <pb-progress subscribe="transcription" indeterminate="indeterminate" bottom-item="bottom-item"/>
+                </app-header>
+                
+                <main>
+                    <h1 class="content-static__main-title">
+                        <pb-i18n key="facets.meg">Colección del MEG</pb-i18n>
+                    </h1>
+                    
+                    <!--<p>Blabla</p>-->
+                    
+                    <!-- Liste des folhetos -->
+                    <pb-split-list url="api/folhetos" subforms="#options" selected="A" emit="transcription" subscribe="transcription"/>
+                </main>
+                
+                <footer data-template="lib:include" data-template-path="templates/footer.html"/>
+            </app-header-layout>
+        </pb-page>
+        <div class="splash"/>
+        
+    </body>
+</html>
