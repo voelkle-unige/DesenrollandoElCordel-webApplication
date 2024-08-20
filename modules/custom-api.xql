@@ -48,7 +48,7 @@ declare function api:get-manifest($node as node(), $model as map(*)) {
     (: Information about the manifest :)
     let $manifestFile := doc($config:data-root || "/manifest.xml")
     let $manifest := $manifestFile//tei:item[@n=$id]
-        =>substring-after("l/")
+        =>substring-after("os/")
     let $manifestN := $manifestFile//tei:item/string(@n)
     
     return if($id = $manifestN) then
@@ -411,7 +411,7 @@ declare function api:output-folhetos($list, $category as xs:string, $search as x
             let $params := "category=" || $categoryParam || "&amp;search=" || $search
             let $title := $folhetos/tei:title/string()
             let $author := $folhetos/tei:author/string()
-            let $engraver := if ($folhetos/tei:editor != '') then concat(", ", $folhetos/tei:editor/string(), " (graveur)") else ()
+            let $engraver := if ($folhetos/tei:editor != '') then concat(", ", $folhetos/tei:editor/string(), " (gravador)") else ()
             let $date := $folhetos/tei:date/string()
             let $pages := $folhetos/tei:measure/string()
             let $idno := $folhetos/tei:idno/string()

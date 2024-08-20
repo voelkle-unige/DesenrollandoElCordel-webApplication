@@ -431,7 +431,8 @@ app-drawer {
 .page-illustration__filariane a,
 .page-pliegos__drawerPlaces-paragraph a,
 .content-body__places-info a,
-.place a {
+.place a,
+.content-static__vdiff a {
     text-decoration: underline;
     color: var(--pb-color-primary-green-text);
 }
@@ -440,7 +441,8 @@ app-drawer {
 .page-illustration__filariane a:hover,
 .page-pliegos__drawerPlaces-paragraph a:hover,
 .content-body__places-info a:hover,
-.place a:hover {
+.place a:hover,
+.content-static__vdiff a:hover {
     color: var(--pb-color-secondary);
 }
 
@@ -1390,6 +1392,10 @@ app-drawer a:hover {
 
 app-drawer-layout:not([narrow]) [drawer-toggle] {
     display: none;
+}
+
+#lda {
+    margin-top: 3em;
 }
 
 /* Autres [à trier] */

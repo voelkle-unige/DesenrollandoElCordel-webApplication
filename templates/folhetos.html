@@ -17,7 +17,7 @@
         
         <style>
             main {
-                max-width: 42rem;
+                max-width: 60em;
                 margin: 0 auto;
                 padding-top: 1em;
             }
@@ -25,32 +25,40 @@
             ul {
                 padding-inline-start: 12px;
             }
+            
+            pb-split-list {
+                margin-top: 3em;
+            }
         </style>
     </head>
     
     <body>
         <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
-            <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
-            <app-header-layout>
-                <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
-                    <!-- Menu de navigation -->
-                    <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
-                    <pb-progress subscribe="transcription" indeterminate="indeterminate" bottom-item="bottom-item"/>
-                </app-header>
-                
-                <main>
-                    <h1 class="content-static__main-title">
-                        <pb-i18n key="facets.meg">Colección del MEG</pb-i18n>
-                    </h1>
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <!-- Menu de navigation -->
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                        <pb-progress subscribe="transcription" indeterminate="indeterminate" bottom-item="bottom-item"/>
+                    </app-header>
                     
-                    <!--<p>Blabla</p>-->
+                    <main>
+                        <h1 class="content-static__main-title">
+                            <pb-i18n key="facets.meg">Colección del MEG</pb-i18n>
+                        </h1>
+                        
+                        <p><pb-i18n key="collection.para6">El Museo de Etnografía de Ginebra (MEG) recibió de la Sociedad Suiza de Americanistas (SSA) una colección de más de dos mil doscientos folhetos de literatura de cordel brasileña del siglo XX, cuya proximidad formal y temática con la literatura de cordel peninsular es todavía notable: relatos de la tradición folclórica, relatos históricos (incluso de origen medieval), relatos de crímenes sangrientos, historias de amor feliz o infeliz, etc., redactados en verso y bellamente ilustrados con xilografías u otras técnicas más modernas. Los documentos se pueden consultar en el Museo, previa petición a los bibliotecarios y conservadores de la institución.</pb-i18n></p>
+                        <p><pb-i18n key="collection.para7">Debido a la vigencia de los derechos de autor, se ofrece aquí un listado completo de los títulos de la colección del MEG, desprovisto de reproducciones. Las entradas se organizan de la siguiente manera: apellido(s) y nombre del autor del texto (tal como aparece en el ejemplar ginebrino) o la mención [s.n.], título, fecha de publicación o la mención [s.a.], número de páginas, nombre del ilustrador si aparece en el grabado, signatura del folheto.</pb-i18n></p>
+                        <p><pb-i18n key="collection.para8">A quien desee buscar un título o un tema en particular, sugerimos utilizar “CTRL + F” desde la página “All”, que lista todos los ejemplares conservados en Ginebra.</pb-i18n></p>
+                        
+                        <!-- Liste des folhetos -->
+                        <pb-split-list url="api/folhetos" subforms="#options" selected="A" emit="transcription" subscribe="transcription"/>
+                    </main>
                     
-                    <!-- Liste des folhetos -->
-                    <pb-split-list url="api/folhetos" subforms="#options" selected="A" emit="transcription" subscribe="transcription"/>
-                </main>
-                
-                <footer data-template="lib:include" data-template-path="templates/footer.html"/>
-            </app-header-layout>
+                    <footer data-template="lib:include" data-template-path="templates/footer.html"/>
+                </app-header-layout>
+            </app-drawer-layout>
         </pb-page>
         <div class="splash"/>
         

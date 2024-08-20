@@ -26,11 +26,23 @@
                         <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
                     </app-header>
                     <main class="content-static__vdiff">
-                        <h1 class="content-static__main-title">
-                            Topic modelling
-                        </h1>
+                        <h1 class="content-static__main-title">Topic modelling</h1>
                         
-                        <!--<p>Blabla</p>-->
+                        <p>
+                            <pb-i18n key="topic.para1">Este prototipo permite explorar el corpus desde el punto de vista de los temas (o tópicos) que se encuentran más presentes en él. Cada burbuja representa un tema. Al hacer clic en una de ellas, el gráfico muestra las palabras reunidas bajo el mismo tema por su pertenencia al mismo campo semántico. Por ejemplo, el tema 6 está relacionado con la realeza; el tema 2, con los romances caballerescos; el tema 3, con la religión; el tema 9, con la guerra; el tema 4, con el amor, etc.</pb-i18n>
+                        </p>
+                        <p>
+                            <pb-i18n key="topic.para2">Este trabajo exploratorio se realizó en el marco del</pb-i18n> <a href="https://www.unige.ch/visualcontagions/conferences-new/CFP-Images-Deluge-Globalization/CFP-Hackathon-Images-Deluge-Globalization" target="_blank">hackathon</a> <pb-i18n key="topic.para3">organizado por el proyecto</pb-i18n> <a href="https://www.unige.ch/visualcontagions/" target="_blank">Visual Contagions</a> <pb-i18n key="topic.para4">(17-19 de junio de 2024, Universidad de Ginebra). Aunque el prototipo fue producido en un tiempo limitado (dos días), este demuestra la viabilidad y el interés de un enfoque de este tipo para un corpus mediano de impresos. También nos permite plantearnos nuevas vías de investigación para el análisis de esta literatura, en particular con vistas a ampliar el corpus para incluir más datos de épocas distintas.</pb-i18n>
+                        </p>
+                        <p>
+                            <pb-i18n key="topic.para5">El código R utilizado para desarrollar esta visualización está disponible en</pb-i18n> <a href="https://github.com/DesenrollandoElCordel/Hackathon_Geneve" target="_blank">GitHub</a>.
+                        </p>
+                        
+                        <p>
+                            <span class="bold"><pb-i18n key="topic.design">Diseño científico</pb-i18n></span>: Marina Berazategui, Simon Gabay, Pauline Jacsont, Elina Leblanc, Fassaleh Taal
+                            <br/><span class="bold"><pb-i18n key="topic.development">Desarrollo</pb-i18n></span>: Simon Gabay
+                            <br/><span class="bold"><pb-i18n key="topic.site">Incorporación al sitio web</pb-i18n></span>: Elina Leblanc
+                        </p>
                         
                         <div id="lda"/>
                     </main>
