@@ -1,0 +1,16 @@
+name: deploy to test
+on:
+  push:
+    branches:
+    - main
+jobs:
+  trigger-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+    - run: >
+        curl --fail-with-body 'https://gitlab.unige.ch/api/v4/projects/2436/ref/master/trigger/pipeline'
+        --data 'token=${{secrets.DEPLOY_TOKEN}}'
+        --data 'variables[EXISTDB_APP]=cordel-test'
+        --data 'variables[SRC_URL]=${{github.server_url}}/${{github.repository}}/archive/${{github.sha}}.zip'
+        --data 'variables[SRC_DIR]=DesenrollandoElCordel-webApplication-${{github.sha}}'
+        --data 'variables[EXIST_VERSION]=6.2.0'
