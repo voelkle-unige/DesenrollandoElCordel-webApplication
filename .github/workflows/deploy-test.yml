@@ -12,5 +12,5 @@ jobs:
         --data 'token=${{secrets.DEPLOY_TOKEN}}'
         --data 'variables[EXISTDB_APP]=cordel-test'
         --data 'variables[SRC_URL]=${{github.server_url}}/${{github.repository}}/archive/${{github.sha}}.zip'
-        --data 'variables[SRC_DIR]=DesenrollandoElCordel-webApplication-${{github.sha}}'
+        --data 'variables[SRC_DIR]=webApplication-${{github.sha}}'
         --data 'variables[EXIST_VERSION]=6.2.0'
